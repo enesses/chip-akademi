@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import data from "@/data/gpu_kiralama.json";
 import { getChipById } from "@/data/chips";
 import { cn } from "@/lib/utils";
+import BellekFiyatlari from "@/components/BellekFiyatlari";
 
 const usd = (v) => (v == null ? "—" : `$${v.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`);
 const pct = (v) => `${v > 0 ? "+" : ""}%${Math.abs(v).toLocaleString("tr-TR")}`;
@@ -27,13 +28,15 @@ export default function Prices() {
         <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-primary mb-3"><DollarSign className="h-3.5 w-3.5" />Kiralama Fiyatları</div>
         <h1 className="font-display text-3xl font-bold mb-2">AI çipleri bulutta saatlik kaça kiralanıyor?</h1>
         <p className="text-muted-foreground max-w-2xl">{data.kaynak.liste_notu}</p>
+        <a href="#bellek" onClick={(e) => { e.preventDefault(); document.getElementById("bellek")?.scrollIntoView({ behavior: "smooth" }); }} className="inline-block mt-3 text-xs text-primary hover:underline">Bellek (DRAM / HBM) fiyatları ↓</a>
       </section>
 
       <section className="container mx-auto px-4 pb-6">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
           <div className="rounded-xl border border-card-border bg-card p-4">
-            <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">4 hafta değişim</p>
+            <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground" title={`GetDeploying fiyat endeksi, ölçüm: ${data.kaynak.olcum_tarihi}`}>Endeks · 4 hafta</p>
             <p className="font-display font-bold text-xl mt-1" style={{ color: data.endeks.degisim_4_hafta_pct < 0 ? "#34d399" : "#f87171" }}>{pct(data.endeks.degisim_4_hafta_pct)}</p>
+            <p className="font-mono text-[9px] text-muted-foreground mt-0.5">ölçüm {data.kaynak.olcum_tarihi}</p>
           </div>
           <div className="rounded-xl border border-card-border bg-card p-4">
             <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">Model</p>
@@ -75,6 +78,8 @@ export default function Prices() {
           </div>
         </section>
       )}
+
+      <BellekFiyatlari />
 
       <section className="container mx-auto px-4 pb-16">
         <div className="flex flex-wrap items-center gap-2 mb-3">

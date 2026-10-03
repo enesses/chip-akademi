@@ -1,0 +1,82 @@
+{
+  "guncelleme": "2026-10-03",
+  "not": "Bellek, GPU kiralaması gibi saatlik bir piyasada fiyatlanmaz: üreticiler büyük alıcılarla çeyreklik sözleşme yapar. Aşağıdaki rakamlar bu sözleşme fiyatları için yayımlanmış tahminlerdir; gerçekleşen fiyat alıcıya göre değişir.",
+  "gostergeler": [
+    {
+      "urun": "Konvansiyonel DRAM (tümü)",
+      "donem": "4Ç 2026",
+      "olcu": "çeyreklik",
+      "alt": 10,
+      "ust": 15,
+      "kaynak": "TrendForce",
+      "tarih": "2026-09-30",
+      "url": "https://www.trendforce.com/presscenter/news/20260930-13258.html"
+    },
+    {
+      "urun": "PC DRAM",
+      "donem": "4Ç 2026",
+      "olcu": "çeyreklik",
+      "alt": 13,
+      "ust": 18,
+      "kaynak": "PC Master Insider (TrendForce verisi)",
+      "tarih": "2026-09-30",
+      "url": "https://pcmasterinsider.com/pc-dram-contract-price-forecast-q4-2026/"
+    },
+    {
+      "urun": "Sunucu DRAM",
+      "donem": "3Ç 2026",
+      "olcu": "çeyreklik",
+      "alt": 13,
+      "ust": 18,
+      "kaynak": "TrendForce",
+      "tarih": "2026-07-09",
+      "url": "https://www.trendforce.com/presscenter/news/20260709-13140.html"
+    },
+    {
+      "urun": "NAND Flash (tümü)",
+      "donem": "4Ç 2026",
+      "olcu": "çeyreklik",
+      "alt": 15,
+      "ust": 20,
+      "kaynak": "TrendForce",
+      "tarih": "2026-09-30",
+      "url": "https://www.trendforce.com/presscenter/news/20260930-13258.html"
+    },
+    {
+      "urun": "HBM (karma ortalama satış fiyatı)",
+      "donem": "2027",
+      "olcu": "yıllık",
+      "alt": 121,
+      "ust": 121,
+      "kaynak": "TrendForce",
+      "tarih": "2026-09-29",
+      "url": "https://www.trendforce.com/presscenter/news/20260929-13255.html"
+    }
+  ],
+  "yigin": {
+    "urun": "HBM4 12-Hi 36 GB yığın",
+    "once": {
+      "etiket": "2026",
+      "usd": 600
+    },
+    "sonra": {
+      "etiket": "2027 (tahmin)",
+      "usd": 1300
+    },
+    "kaynak": "Seoul Economic Daily (sektör tahmini)",
+    "tarih": "2026-10-01",
+    "url": "https://en.sedaily.com/finance/2026/10/01/hbm-prices-to-more-than-double-next-year-as-shortage"
+  },
+  "notlar": [
+    {
+      "metin": "8 katmanlı (8-Hi) HBM yığınları 2027'de GB başına 12-Hi'ye göre %10–20 daha pahalı olacak: taban die maliyeti daha az kapasiteye bölünüyor.",
+      "kaynak": "TrendForce",
+      "url": "https://www.trendforce.com/presscenter/news/20260929-13255.html"
+    },
+    {
+      "metin": "Micron 2027 üretiminin yaklaşık %75'inin şimdiden satıldığını, kıtlığın 2028'e kadar süreceğini söylüyor.",
+      "kaynak": "Semiconductor Engineering",
+      "url": "https://semiengineering.com/chip-industry-week-in-review-158/"
+    }
+  ]
+}

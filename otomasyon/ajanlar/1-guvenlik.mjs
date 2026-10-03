@@ -19,18 +19,39 @@ const YAYIN_URL = process.env.YAYIN_URL || ""; // ör. https://kullanici.github.
 const CIKTI = path.join(KOK, "dist", "chip-akademi.html");
 
 /* ---------------------------------------------- 1. bağımlılık açıkları */
+function kabulListesi() {
+  try {
+    const j = JSON.parse(fs.readFileSync(path.join(KOK, "otomasyon", "kabul-edilen-riskler.json"), "utf-8"));
+    const bugun = new Date().toISOString().slice(0, 10);
+    return (j.kayitlar || []).filter((k) => !k.gozden_gecir || k.gozden_gecir >= bugun);
+  } catch {
+    return [];
+  }
+}
+
 function bagimlilikAciklari() {
   const r = calistir("npm audit --json");
   try {
     const j = JSON.parse(r.cikti);
-    const s = j.metadata?.vulnerabilities ?? {};
-    return {
-      kritik: s.critical ?? 0,
-      yuksek: s.high ?? 0,
-      orta: s.moderate ?? 0,
-      dusuk: s.low ?? 0,
-      toplam: s.total ?? 0,
+    const kabul = kabulListesi();
+    const kabulEdilen = (url) => kabul.some((k) => String(url || "").includes(k.danisma));
+    const vulns = j.vulnerabilities || {};
+    // Bir paketin uyarısı, ona ulaşan TÜM danışmalar kabul listesindeyse kabul edilmiş sayılır.
+    const danismalar = (ad, gorulen = new Set()) => {
+      if (gorulen.has(ad) || !vulns[ad]) return [];
+      gorulen.add(ad);
+      return vulns[ad].via.flatMap((v) => (typeof v === "string" ? danismalar(v, gorulen) : [v.url]));
     };
+    const sayac = { kritik: 0, yuksek: 0, orta: 0, dusuk: 0, toplam: 0 };
+    const kabulEdilenler = [];
+    const SEV = { critical: "kritik", high: "yuksek", moderate: "orta", low: "dusuk" };
+    for (const [ad, v] of Object.entries(vulns)) {
+      const urls = danismalar(ad);
+      if (urls.length && urls.every(kabulEdilen)) { kabulEdilenler.push(ad); continue; }
+      if (SEV[v.severity]) sayac[SEV[v.severity]]++;
+      sayac.toplam++;
+    }
+    return { ...sayac, kabulEdilen: kabulEdilenler, kabulNedenleri: kabul.map((k) => `${k.paket} (${k.danisma}): ${k.neden} — gözden geçirme ${k.gozden_gecir}`) };
   } catch {
     return { hata: "npm audit çıktısı okunamadı", ham: r.cikti.slice(0, 400) };
   }
@@ -78,7 +99,7 @@ const DESENLER = [
     re: /(sk-[A-Za-z0-9]{16,}|api[_-]?key\s*[:=]\s*["'][A-Za-z0-9_\-]{16,})/gi,
     seviye: "kritik",
   },
-  { ad: "http:// (şifresiz) kaynak", re: /["']http:\/\/(?!localhost)/g, seviye: "düşük" },
+  { ad: "http:// (şifresiz) kaynak", re: /["']http:\/\/(?!localhost|www\.w3\.org)/g, seviye: "düşük" },
 ];
 
 function kodTaramasi() {
@@ -145,6 +166,7 @@ const durum = uyarilar.length === 0 ? "temiz" : acik.kritik > 0 ? "kritik" : "di
 baslik("1. AJAN · GÜVENLİK");
 console.log("Bağımlılık açıkları:", acik);
 console.log("Riskli desen bulgusu:", kod.length);
+if (acik.kabulEdilen?.length) console.log(`Kabul edilmiş risk (sayılmadı): ${acik.kabulEdilen.join(", ")}`);
 console.log("Yayın kontrolü:", yayin.durum);
 console.log("Durum:", durum);
 uyarilar.forEach((u) => console.log("  ⚠ " + u));

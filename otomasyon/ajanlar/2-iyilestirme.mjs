@@ -90,6 +90,13 @@ function veriKontrolu() {
       aciklama: "3. ajan (yenileme) çalıştırılarak güncellenebilir.",
     });
 
+  try {
+    const bellek = JSON.parse(oku(path.join(src, "bellek_fiyat.json")));
+    const g = gunFarki(bellek.guncelleme);
+    if (g > 10)
+      ekle({ alan: "veri", baslik: `Bellek fiyatları ${g} gündür güncellenmedi`, etki: g > 30 ? "orta" : "düşük", otomatik: false,
+        aciklama: "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)." });
+  } catch {}
   const bugun = JSON.parse(oku(path.join(src, "bugun.json")));
   const bGun = gunFarki(bugun.tarih);
   if (bGun >= 1)
@@ -133,13 +140,37 @@ function egitimKontrolu() {
 function erisilebilirlik() {
   let altsiz = 0;
   let etiketsizDugme = 0;
+  const etiketsizYerler = [];
   const dosyalar = [];
   for (const dosya of kaynakDosyalari([".jsx"])) {
     const m = oku(dosya);
     let bu = 0;
+    // ui/ altındaki temel bileşenler props'u ileten sarmalayıcılardır; etiketi çağıran verir.
+    const sarmalayici = /components[\\/]ui[\\/]/.test(dosya);
     for (const img of m.match(/<img\b[^>]*>/g) || []) if (!/\balt=/.test(img)) bu++;
-    for (const btn of m.match(/<button\b[^>]*>/g) || [])
-      if (!/aria-label|>\s*\{?\s*["'\w]/.test(btn) && !/aria-label/.test(btn)) etiketsizDugme++;
+    /*
+     * Düğmenin TAMAMINA bakılır: açılış etiketinde aria-label/title yoksa ve
+     * içinde ikonlar (kendiliğinden kapanan bileşenler) dışında metin ya da
+     * {ifade} yoksa ekran okuyucu bu düğmeyi adsız okur.
+     * (Eski kontrol yalnızca açılış etiketine bakıyordu; onClick içindeki
+     * "=> fn" desenini metin sanıp sonuçları rastgele sayıyordu.)
+     */
+    for (const eslesme of m.matchAll(/<(button|Button)\b((?:[^>{]|\{(?:[^{}]|\{[^{}]*\})*\})*)>([\s\S]*?)<\/\1>/g)) {
+      const [, , acilis, icerik] = eslesme;
+      if (/aria-label|title=/.test(acilis)) continue;
+      const kalan = icerik.replace(/<[A-Z][\w.]*\b[^>]*\/>/g, "").replace(/<\/?[a-z][^>]*>/g, "").trim();
+      if (kalan === "") {
+        etiketsizDugme++;
+        const satir = m.slice(0, eslesme.index).split("\n").length;
+        etiketsizYerler.push(`${rel(dosya)}:${satir}`);
+      }
+    }
+    // Kendiliğinden kapanan <button ... /> hiç içerik taşımaz
+    for (const eslesme of m.matchAll(/<button\b((?:[^>{]|\{(?:[^{}]|\{[^{}]*\})*\})*)\/>/g)) {
+      if (sarmalayici || /aria-label|title=|\{\.\.\.props\}/.test(eslesme[1])) continue;
+      etiketsizDugme++;
+      etiketsizYerler.push(`${rel(dosya)}:${m.slice(0, eslesme.index).split("\n").length}`);
+    }
     if (bu > 0) {
       altsiz += bu;
       dosyalar.push(`${rel(dosya)} (${bu})`);
@@ -157,6 +188,15 @@ function erisilebilirlik() {
       aciklama:
         "Her görselin ne anlattığını insanın yazması gerekiyor; otomatik üretilen alt metni denetimi geçirir ama işe yaramaz.",
       detay: dosyalar,
+    });
+  if (etiketsizDugme > 0)
+    ekle({
+      alan: "erişilebilirlik",
+      baslik: `${etiketsizDugme} ikon düğmesinin erişilebilir adı yok`,
+      etki: "orta",
+      otomatik: false,
+      aciklama: "Yalnızca ikon içeren düğmelere aria-label eklenmeli; ekran okuyucu bunları adsız okuyor.",
+      detay: etiketsizYerler,
     });
   return { altsiz, etiketsizDugme };
 }

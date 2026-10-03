@@ -94,7 +94,8 @@ export function analyze({ typeId, nodeId, placed }) {
   for (const issue of floorplan.issues) warnings.push(issue);
 
   return {
-    type, node, totals, counts, norm, transistors, dieArea, density: dieArea > 0 ? (transistors / 1e6) / dieArea : 0,
+    type, node, totals, counts, norm, transistors, dieArea, // blok transistörleri milyar cinsinden; yoğunluk milyon/mm² (gerçek çiplerle aynı birim)
+    density: dieArea > 0 ? (transistors * 1000) / dieArea : 0,
     power, powerDensity, usedPct, yieldRate, goodDies, costPerDie, bwRatio, throttle, thermalTrottle: thermalThrottle,
     budgetUse, floorplan, functionalScore: Math.round(functional), score, grade, requirements, warnings,
   };
