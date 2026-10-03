@@ -26,6 +26,7 @@ Tarih her yerde UTC günüdür (`new Date().toISOString().slice(0,10)`); 10:00
 - WebFetch ile `https://getdeploying.com/gpus` sayfasını iste. İstem:
   *"Tablodaki HER satırı `["model", medyan_usd_veya_null, en_ucuz_usd_veya_null, saglayici]` biçiminde ver; satır atlama, yorum ekleme."*
 - WebFetch uzun tablolarda satır düşürebiliyor. Gelen modelleri `src/data/gpu_kiralama.json` içindeki `fiyatlar[].model` listesiyle karşılaştır; eksik kalan **fiyatı olan** modeller için aynı sayfaya ikinci, hedefli bir WebFetch yap (yalnızca o modelleri sor).
+- WebFetch bir siteyi "izin / kaynak doğrulaması gerekiyor" (PROVENANCE) diye reddederse bunu rapora **açıkça "izin engeli"** olarak yaz ve o adımı atla; curl, ayna site ya da önbellek gibi başka yollar deneme. Fiyat verisi o gün güncellenmez, rapor kırmızı gösterir — bu doğru davranıştır.
 - **Medyan** sütununu kullan (uygulamadaki fiyatlar medyandır). En ucuz sütununu medyan yerine koymak sahte "fiyat düştü" hareketi üretir.
 - Dosya:
   ```json

@@ -1,14 +1,24 @@
 {
   "ajan": "guvenlik",
   "tarih": "2026-10-03",
-  "zaman": "2026-10-03T09:26:54.178Z",
-  "durum": "dikkat",
+  "zaman": "2026-10-03T09:30:30.064Z",
+  "durum": "temiz",
   "bagimlilik": {
     "kritik": 0,
-    "yuksek": 7,
-    "orta": 1,
+    "yuksek": 0,
+    "orta": 0,
     "dusuk": 0,
-    "toplam": 8
+    "toplam": 0,
+    "kabulEdilen": [
+      "braces",
+      "chokidar",
+      "fast-glob",
+      "micromatch",
+      "tailwindcss"
+    ],
+    "kabulNedenleri": [
+      "braces (GHSA-vfj7-8cjw-p6xm): Yalnızca derleme sırasında Tailwind 3'ün dosya taramasında kullanılıyor; açık, saldırganın glob deseni verebilmesini gerektiriyor ve desenler bizim tailwind.config.js dosyamızdan geliyor. Yayınlanan HTML'de bu kod yok. Yamalı braces sürümü yok; tek çözüm Tailwind 4'e geçiş (ayrı bir iş). — gözden geçirme 2027-01-15"
+    ]
   },
   "butunluk": {
     "yerel": null,
@@ -18,17 +28,8 @@
     },
     "oncekiGun": null
   },
-  "kodBulgulari": [
-    {
-      "dosya": "src/components/DiePreview.jsx",
-      "desen": "http:// (şifresiz) kaynak",
-      "seviye": "düşük",
-      "adet": 1
-    }
-  ],
-  "uyarilar": [
-    "7 yüksek seviye bağımlılık açığı var."
-  ],
+  "kodBulgulari": [],
+  "uyarilar": [],
   "notlar": [],
   "kapsamNotu": "Uygulama statik olduğu için sunucu tarafı saldırı tespiti kapsam dışıdır. Ölçülen şeyler: bağımlılık açıkları, dosya bütünlüğü, riskli kod desenleri ve HTTP güvenlik başlıkları."
 }

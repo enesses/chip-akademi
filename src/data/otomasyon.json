@@ -1,15 +1,15 @@
 {
-  "guncelleme": "2026-10-03T09:27:04.776Z",
+  "guncelleme": "2026-10-03T09:30:41.325Z",
   "tarih": "2026-10-03",
-  "durum": "dikkat",
+  "durum": "temiz",
   "ajanlar": [
     {
       "id": "guvenlik",
       "ad": "Güvenlik",
       "saat": "10:00",
       "calisti": true,
-      "durum": "dikkat",
-      "zaman": "2026-10-03T09:26:54.178Z"
+      "durum": "temiz",
+      "zaman": "2026-10-03T09:30:30.064Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-03T09:26:54.244Z"
+      "zaman": "2026-10-03T09:30:30.170Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-03T09:26:53.318Z"
+      "zaman": "2026-10-03T09:30:29.177Z"
     },
     {
       "id": "gelistirme",
@@ -33,87 +33,74 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-03T09:27:04.726Z"
+      "zaman": "2026-10-03T09:30:41.243Z"
     }
   ],
-  "dikkat": [
-    {
-      "seviye": "uyarı",
-      "metin": "Güvenlik: 7 yüksek seviye bağımlılık açığı var."
-    }
-  ],
+  "dikkat": [],
   "oneriler": [
     {
-      "baslik": "Fiyat çekme adımını WebFetch izin engelinden bağımsız hale getir",
-      "neden": "Bu çalıştırmada getdeploying.com/gpus sayfası WebFetch tarafından izin (kaynak doğrulama) gerektirdiği için okunamadı; sayfa arama sonuçlarında doğrudan çıkmıyor. GUNLUK.md adım 1 tek bir URL’ye bağlı. Arama sonuçlarında çıkan getdeploying.com/gpu-price-index veya model sayfaları (ör. /gpus/nvidia-h100) yedek kaynak olarak tanımlanabilir ya da zamanlanmış görevin istemine URL eklenebilir.",
-      "etki": "yüksek",
-      "alan": "otomasyon"
-    },
-    {
-      "baslik": "Yenileme raporu ‘bugün güncellendi’ ile ‘bu çalıştırmada çekildi’ ayrımını yapsın",
-      "neden": "otomasyon/ajanlar/3-yenileme.mjs satır 50 yalnızca kaynak.cekildigi_tarih’e bakıyor; bugün fiyat sayfası hiç okunmadığı halde rapor ‘✓ Fiyat verisi: bugün güncellendi’ yazdı. .son-isleme.json’daki fiyat:null bilgisi kullanılarak ‘sabah ölçümü korundu’ gibi ayrı bir durum gösterilebilir.",
-      "etki": "orta",
-      "alan": "otomasyon"
-    },
-    {
       "baslik": "Uygulamayı GitHub Pages'te yayına al",
-      "neden": "Otomasyon her gün güncel sürümü depodaki docs/index.html'e yazıyor. Pages açılırsa site her sabah kendiliğinden güncellenir; dosyayı elle indirmek gerekmez.",
+      "neden": "Otomasyon her gün docs/index.html'i güncelliyor ama depo ayarlarında Pages kapalı (has_pages: false). Settings → Pages → main / docs seçilince site her sabah kendiliğinden güncellenir.",
       "etki": "yüksek",
       "alan": "yayın"
     },
     {
-      "baslik": "Etiketsiz 15 düğmeye erişilebilir ad ekle",
-      "neden": "İyileştirme taraması ikon-only düğmelerde aria-label eksikliği buldu (ör. Karşılaştır'daki kaldır düğmesi, Tasarımlarım'daki kopyala/sil). Ekran okuyucu kullanıcıları bu düğmelerin ne yaptığını duyamıyor.",
-      "etki": "orta",
-      "alan": "erişilebilirlik"
+      "baslik": "Yarın sabah fiyat adımının izin engeline takılıp takılmadığını izle",
+      "neden": "Bugünkü doğrulama çalıştırmasında getdeploying.com/gpus WebFetch tarafından izin gerektiği için okunamadı. Görev istemine tam URL'ler eklendi; engel sürerse rapor 'Fiyat verisi: güncellenmedi' diye kırmızı gösterecek.",
+      "etki": "yüksek",
+      "alan": "otomasyon"
     },
     {
-      "baslik": "Fiyatlar sayfasına bellek (DRAM/HBM) fiyat bölümü",
-      "neden": "Bugünkü haberlerin çoğu bellek kıtlığı ve fiyat artışı üzerine. GPU kiralama fiyatlarının yanında bellek fiyat trendini göstermek sayfayı günün gündemine bağlar.",
-      "etki": "orta",
-      "alan": "içerik"
-    },
-    {
-      "baslik": "Karşılaştır'a kendi tasarımlarını ekleme",
-      "neden": "Atölyede kaydedilen tasarımlar şu an yalnızca kendi listelerinde görünüyor. Bir tasarımı gerçek bir çiple yan yana koymak öğrenme açısından en güçlü geri bildirim olur.",
+      "baslik": "Karşılaştır'da tasarım için 'nerede geride kaldın' analizi",
+      "neden": "advisor.js'teki findGaps ve beatsAfter hiçbir yerde kullanılmıyor (iyileştirme taraması: 21 kullanılmayan export). Tasarım bir gerçek çiple yan yana konduğunda hangi ölçütte ne kadar geride olduğunu ve hangi danışmanın bunu kapatabileceğini göstermek için hazırlar.",
       "etki": "orta",
       "alan": "özellik"
     },
     {
-      "baslik": "Atölyede sürükle-bırak ve mobil ızgara",
-      "neden": "Bloklar yalnızca tıklayarak yerleşiyor ve 16×12 ızgara telefonda çok küçük kalıyor. Sürükle-bırak ve yakınlaştırılabilir ızgara kullanımı belirgin şekilde kolaylaştırır.",
+      "baslik": "Atölyede yerleşik blokları klavyeyle taşıma",
+      "neden": "Sürükle-bırak fare ile çalışıyor; dokunmatik ekranda ve klavyede blok taşımak için önce silip yeniden yerleştirmek gerekiyor. Ok tuşlarıyla seçili bloğu bir hücre kaydırmak erişilebilirliği tamamlar.",
       "etki": "düşük",
-      "alan": "kullanılabilirlik"
+      "alan": "erişilebilirlik"
     },
     {
-      "baslik": "Vite'ı güncelleyip 7 yüksek seviye bağımlılık uyarısını kapat",
-      "neden": "Uyarılar yalnızca geliştirme sunucusunu etkiliyor, yayındaki HTML'i değil; yine de güvenlik raporunu her gün sarı gösteriyor. Ana sürüm yükseltmesi ayrı bir testle yapılmalı.",
+      "baslik": "Tailwind 4'e geçiş",
+      "neden": "Kalan tek bağımlılık uyarısı (braces, GHSA-vfj7-8cjw-p6xm) Tailwind 3'ten geliyor; yamalı sürüm yok. Risk derleme zamanıyla sınırlı olduğu için 15 Ocak 2027'ye kadar kabul listesinde; geçiş yapılırsa liste boşalır.",
       "etki": "düşük",
       "alan": "güvenlik"
     },
     {
-      "baslik": "GB300 ve RTX 4090 için katalog sayfası ekle",
-      "neden": "src/data/gpu_kiralama.json’da Nvidia GB300 ve Nvidia RTX 4090 satırlarının chip_id değeri null; fiyat tablosundan bu iki yaygın modelin detayına geçilemiyor (iyileştirme taraması da GB300’ü işaretledi).",
-      "etki": "orta",
-      "alan": "veri"
+      "baslik": "Kullanılmayan dışa aktarımları temizle",
+      "neden": "İyileştirme taraması 21 export'un hiçbir yerde kullanılmadığını gösteriyor (ör. ui/select.jsx bileşenleri, progress.js'teki sıfırlama fonksiyonları). Bir kısmı Hesap/Eğitim sayfalarına 'ilerlemeyi sıfırla' gibi özellik olarak bağlanabilir, gerisi silinebilir.",
+      "etki": "düşük",
+      "alan": "kod"
     }
   ],
   "guvenlik": {
-    "durum": "dikkat",
+    "durum": "temiz",
     "bagimlilik": {
       "kritik": 0,
-      "yuksek": 7,
-      "orta": 1,
+      "yuksek": 0,
+      "orta": 0,
       "dusuk": 0,
-      "toplam": 8
+      "toplam": 0,
+      "kabulEdilen": [
+        "braces",
+        "chokidar",
+        "fast-glob",
+        "micromatch",
+        "tailwindcss"
+      ],
+      "kabulNedenleri": [
+        "braces (GHSA-vfj7-8cjw-p6xm): Yalnızca derleme sırasında Tailwind 3'ün dosya taramasında kullanılıyor; açık, saldırganın glob deseni verebilmesini gerektiriyor ve desenler bizim tailwind.config.js dosyamızdan geliyor. Yayınlanan HTML'de bu kod yok. Yamalı braces sürümü yok; tek çözüm Tailwind 4'e geçiş (ayrı bir iş). — gözden geçirme 2027-01-15"
+      ]
     },
-    "kodBulgusu": 1,
+    "kodBulgusu": 0,
     "kapsamNotu": "Uygulama statik olduğu için sunucu tarafı saldırı tespiti kapsam dışıdır. Ölçülen şeyler: bağımlılık açıkları, dosya bütünlüğü, riskli kod desenleri ve HTTP güvenlik başlıkları."
   },
   "iyilestirme": {
     "olcumler": {
       "veri": {
-        "chipSayisi": 56,
+        "chipSayisi": 58,
         "fiyatSayisi": 107
       },
       "egitim": {
@@ -121,28 +108,18 @@
       },
       "erisim": {
         "altsiz": 0,
-        "etiketsizDugme": 15
+        "etiketsizDugme": 0
       },
       "kod": {
-        "dosyaSayisi": 43,
-        "toplamSatir": 10086,
+        "dosyaSayisi": 44,
+        "toplamSatir": 10606,
         "boyutKB": null
       }
     },
     "bulgular": [
       {
-        "alan": "veri",
-        "baslik": "1 veri merkezi GPU'su katalogda yok",
-        "etki": "düşük",
-        "otomatik": false,
-        "detay": [
-          "Nvidia GB300"
-        ],
-        "aciklama": "Kiralama listesinde yaygın olan bu modeller katalogda bulunmadığı için fiyat tablosundan chip sayfasına bağlantı verilemiyor."
-      },
-      {
         "alan": "kod",
-        "baslik": "22 export hiçbir yerde kullanılmıyor",
+        "baslik": "21 export hiçbir yerde kullanılmıyor",
         "etki": "düşük",
         "otomatik": false,
         "detay": [
@@ -152,7 +129,6 @@
           "SelectValue (src/components/ui/select.jsx)",
           "SelectContent (src/components/ui/select.jsx)",
           "SelectItem (src/components/ui/select.jsx)",
-          "metricsFrom (src/lib/advisor.js)",
           "findGaps (src/lib/advisor.js)",
           "beatsAfter (src/lib/advisor.js)",
           "designCount (src/lib/designs.js)",
@@ -177,13 +153,13 @@
     "adimlar": [
       {
         "ad": "Fiyat verisi",
-        "durum": "ok",
-        "detay": "bugün güncellendi (2026-10-03)"
+        "durum": "atlandı",
+        "detay": "bu çalıştırmada fiyat girdisi gelmedi; mevcut veri bugün daha önce işlenmiş"
       },
       {
         "ad": "Bugün sayfası",
-        "durum": "ok",
-        "detay": "bugün güncellendi (12 madde, puan 71)"
+        "durum": "atlandı",
+        "detay": "bu çalıştırmada girdi gelmedi; bugünün verisi daha önce işlenmiş (12 madde, puan 71)"
       },
       {
         "ad": "Derleme",
@@ -193,7 +169,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 1546 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 1568 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
