@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-03T09:19:44.150Z",
+  "guncelleme": "2026-10-03T09:27:04.776Z",
   "tarih": "2026-10-03",
   "durum": "dikkat",
   "ajanlar": [
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "dikkat",
-      "zaman": "2026-10-03T09:18:57.382Z"
+      "zaman": "2026-10-03T09:26:54.178Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-03T09:18:57.450Z"
+      "zaman": "2026-10-03T09:26:54.244Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-03T09:18:56.525Z"
+      "zaman": "2026-10-03T09:26:53.318Z"
     },
     {
       "id": "gelistirme",
@@ -33,7 +33,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-03T09:19:08.518Z"
+      "zaman": "2026-10-03T09:27:04.726Z"
     }
   ],
   "dikkat": [
@@ -193,7 +193,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 1545 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 1546 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
