@@ -13,9 +13,9 @@ export default {
         muted: { DEFAULT: "hsl(var(--muted))", foreground: "hsl(var(--muted-foreground))" },
       },
       fontFamily: {
-        display: ["'Space Grotesk'", "sans-serif"],
-        mono: ["'JetBrains Mono'", "monospace"],
-        sans: ["Inter", "sans-serif"],
+        display: ["'Space Grotesk Variable'", "'Inter Variable'", "system-ui", "sans-serif"],
+        mono: ["'JetBrains Mono Variable'", "ui-monospace", "Menlo", "monospace"],
+        sans: ["'Inter Variable'", "system-ui", "'Segoe UI'", "sans-serif"],
       },
     },
   },

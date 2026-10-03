@@ -9,5 +9,7 @@ export default defineConfig({
   },
   build: {
     outDir: "dist",
+    // Tek dosyalık dağıtım: yazı tipleri dahil tüm varlıklar CSS/JS içine data URI olarak gömülür.
+    assetsInlineLimit: 200 * 1024,
   },
 });
