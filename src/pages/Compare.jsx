@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import DiePreview from "@/components/DiePreview";
 import { chips } from "@/data/chips";
 import { getChipType } from "@/data/blocks";
-import { scoreChip, CLASS_LABELS } from "@/lib/chipScore";
+import { scoreChip, CLASS_LABELS, genelPuan, verimlilikPuani, maliyetPuani } from "@/lib/chipScore";
 import { analyze } from "@/lib/chipDesign";
 import { GAP_METRICS, metricsFrom } from "@/lib/advisor";
 import { listDesigns } from "@/lib/designs";
@@ -219,14 +219,42 @@ export default function Compare() {
           {/* Puan kartları */}
           <div className="grid gap-3 mb-3" style={{ gridTemplateColumns: `repeat(${entries.length}, minmax(7rem,1fr))`, overflowX: "auto" }}>
             {entries.map((e) => {
-              const best = puanKiyaslanir && e.score === enIyiPuan;
+              const g = e.kind === "chip" ? genelPuan(e.chip) : null;
+              const v = e.kind === "chip" ? verimlilikPuani(e.chip) : null;
+              const m = e.kind === "chip" ? maliyetPuani(e.chip) : null;
+              // Genel puan varsa onu kullan, yoksa tasarım puanı
+              const gosterPuan = g?.puan ?? e.score;
+              const enIyiGenelPuan = entries
+                .filter((x) => x.kind === "chip")
+                .map((x) => genelPuan(x.chip).puan ?? x.score ?? 0)
+                .reduce((a, b) => Math.max(a, b), 0);
+              const best = puanKiyaslanir && gosterPuan === enIyiGenelPuan && gosterPuan != null;
               return (
-                <div key={e.key} className={cn("rounded-xl border p-4 text-center", best ? "border-primary bg-primary/5" : "border-card-border bg-card")}>
-                  {best && <Trophy className="h-4 w-4 text-primary mx-auto mb-1" aria-label="en yüksek puan" />}
+                <div key={e.key} className={cn("rounded-xl border p-4", best ? "border-primary bg-primary/5" : "border-card-border bg-card")}>
+                  {best && <Trophy className="h-4 w-4 text-primary mb-1" aria-label="en yüksek puan" />}
                   {e.kind === "design" && <DiePreview placed={e.design.placed} className="w-full h-auto mb-2 rounded" />}
                   <p className="text-xs font-medium truncate" style={{ color: e.renk }}>{e.alt}</p>
-                  <p className="font-display font-bold text-2xl mt-1">{e.score ?? "—"}</p>
-                  <p className="text-[10px] text-muted-foreground mt-1">{e.sinifAd}</p>
+                  {/* Genel puan büyük */}
+                  <p className="font-display font-bold text-2xl mt-1">{gosterPuan ?? "—"}</p>
+                  <p className="text-[10px] text-muted-foreground mt-0.5">{g?.puan != null ? "genel puan" : e.sinifAd}</p>
+                  {/* Üç bileşen küçük çubuklar */}
+                  {g != null && (
+                    <div className="mt-3 space-y-1.5">
+                      {[
+                        { ad: "Tasarım", puan: g.tasarimPuan, renk: "bg-primary" },
+                        { ad: "Verimlilik", puan: g.verimlilikPuan, renk: "bg-emerald-400" },
+                        { ad: "Maliyet", puan: g.maliyetPuan, renk: "bg-violet-400" },
+                      ].map(({ ad, puan, renk }) => puan != null && (
+                        <div key={ad} className="flex items-center gap-1.5">
+                          <span className="text-[9px] text-muted-foreground w-12 shrink-0">{ad}</span>
+                          <div className="flex-1 h-1 rounded-full bg-muted overflow-hidden">
+                            <div className={cn("h-full rounded-full", renk)} style={{ width: `${puan}%` }} />
+                          </div>
+                          <span className="font-mono text-[9px] text-muted-foreground w-5 text-right">{puan}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               );
             })}

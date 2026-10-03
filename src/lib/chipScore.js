@@ -1,6 +1,7 @@
-/** Gerçek chip'ler için spec türevli tasarım puanı — sınıf içi normalize. */
+/** Gerçek chip'ler için çok boyutlu puanlama: tasarım · maliyet · verimlilik → genel. */
 import { chips } from "@/data/chips";
 import { isMultiDie, parseArea, parseBandwidth, parseTransistors, parseWatts } from "@/lib/specDecoder";
+import kiralamaRaw from "@/data/gpu_kiralama.json";
 
 // ─── Sayısal parser'lar ───────────────────────────────────────────────────────
 
@@ -477,4 +478,248 @@ export function rankInClass(chip) {
     .sort((a, b) => b.score - a.score);
   const index = peers.findIndex((p) => p.id === chip.id);
   return { rank: index + 1, total: peers.length };
+}
+
+// ─── Fiyat verisi ─────────────────────────────────────────────────────────────
+
+/** chip_id → { usdSaat, vramGb } — fiyatı bilinmeyen chipte null döner. */
+const FIYAT_MAP = (() => {
+  const m = new Map();
+  for (const row of kiralamaRaw.fiyatlar ?? []) {
+    if (row.chip_id && row.usd_saat != null) {
+      m.set(row.chip_id, { usdSaat: row.usd_saat, vramGb: row.vram_gb ?? null });
+    }
+  }
+  return m;
+})();
+
+export function fiyatBilgisi(chip) {
+  return FIYAT_MAP.get(chip.id) ?? null;
+}
+
+// ─── Verimlilik puanı (TFLOPS / W veya GB/s / W) ────────────────────────────
+
+/**
+ * Chip'in güç verimliliğini tek bir sayıya indirger.
+ * AI / GPU sınıfı: bant genişliği verimi (GB/s/W) — tüm sınıflarda kıyaslanabilir.
+ * CPU / SOC: (çekirdek × GHz) / W — işlemci verimliliği.
+ * Döndürülen değer daha yüksek = daha verimli.
+ */
+function hammVerimlilikhesapla(chip) {
+  const cls = classOf(chip);
+  const w = tdpOf(chip);
+  if (!w || w <= 0) return null;
+
+  if (cls === "AI" || cls === "GPU") {
+    // Önce AI hesap verimi (TFLOPS/W)
+    const tf = aiComputeGet(chip);
+    if (tf) return tf / w;
+    // Fallback: bant genişliği verimi (GB/s/W)
+    const bw = pick(chip, P.bandwidth, parseBandwidth);
+    if (bw) return bw / w;
+    // GPU: shader/W
+    const sh = shaderGet(chip);
+    if (sh) return sh / w;
+    return null;
+  }
+
+  if (cls === "CPU" || cls === "SOC") {
+    const n = pick(chip, P.cores, num);
+    const g = pick(chip, P.clock, ghz);
+    if (n && g) return (n * g) / w;
+    // SOC: NPU TOPS/W
+    const npu = pick(chip, P.npu, num);
+    if (npu) return npu / w;
+    return null;
+  }
+
+  if (cls === "RAM") {
+    const bw = pick(chip, P.bandwidth, parseBandwidth);
+    return bw ? bw / 1 : null; // RAM'de TDP yok; bant genişliği doğrudan kullanılır
+  }
+
+  return null;
+}
+
+/**
+ * Sınıf içi verimlilik puanı (0–100).
+ * ANCHOR: sınıftaki en verimli chip = 100.
+ */
+const VERIMLILIK_ANCHORS = (() => {
+  const out = {};
+  for (const cls of ["GPU", "AI", "CPU", "SOC", "RAM"]) {
+    const members = chips.filter((c) => classOf(c) === cls);
+    let max = 0;
+    for (const c of members) {
+      const v = hammVerimlilikhesapla(c);
+      if (typeof v === "number" && Number.isFinite(v) && v > max) max = v;
+    }
+    out[cls] = max || 1;
+  }
+  return out;
+})();
+
+const _verimCache = new Map();
+export function verimlilikPuani(chip) {
+  if (_verimCache.has(chip.id)) return _verimCache.get(chip.id);
+  const cls = classOf(chip);
+  const hammV = hammVerimlilikhesapla(chip);
+  if (hammV == null) {
+    const r = { puan: null, neden: "Güç tüketimi (TDP) verilmemiş — verimlilik hesaplanamaz.", hammDeger: null, birim: null };
+    _verimCache.set(chip.id, r);
+    return r;
+  }
+  const puan = Math.round(Math.min(1, hammV / VERIMLILIK_ANCHORS[cls]) * 100);
+  // Hangi metriği kullandığımızı belirle (gösterim için)
+  const kls = classOf(chip);
+  let birim = "—";
+  if (kls === "AI") birim = aiComputeGet(chip) ? "TFLOPS/W" : "GB/s/W";
+  else if (kls === "GPU") birim = shaderGet(chip) ? "shader/W" : "GB/s/W";
+  else if (kls === "CPU" || kls === "SOC") birim = "çekirdek×GHz/W";
+  else if (kls === "RAM") birim = "GB/s";
+  const r = { puan, hammDeger: parseFloat(hammV.toFixed(3)), birim, neden: null };
+  _verimCache.set(chip.id, r);
+  return r;
+}
+
+// ─── Maliyet puanı (daha düşük $/performans = daha yüksek puan) ──────────────
+
+/**
+ * Kiralama maliyetini performansa böler → $/TFLOPS veya $/GB/s.
+ * Daha düşük değer = daha iyi maliyet verimliliği → puan tersine çevrilir.
+ * Yalnızca fiyat verisi olan çiplerde hesaplanır.
+ */
+function hammMaliyetHesapla(chip) {
+  const fiyat = FIYAT_MAP.get(chip.id);
+  if (!fiyat || !fiyat.usdSaat) return null;
+  const usd = fiyat.usdSaat;
+
+  const cls = classOf(chip);
+  if (cls === "AI" || cls === "GPU") {
+    // TFLOPS başına maliyet ($/TFLOPS/h)
+    const tf = aiComputeGet(chip);
+    if (tf && tf > 0) return usd / tf;
+    // Fallback: bant genişliği başına ($/GB/s/h)
+    const bw = pick(chip, P.bandwidth, parseBandwidth);
+    if (bw && bw > 0) return usd / bw;
+    // Fallback 2: VRAM başına ($/GB/h)
+    const vr = vramGet(chip) ?? fiyat.vramGb;
+    if (vr && vr > 0) return usd / vr;
+  }
+
+  if (cls === "CPU" || cls === "SOC") {
+    const n = pick(chip, P.cores, num);
+    const g = pick(chip, P.clock, ghz);
+    if (n && g) return usd / (n * g);
+  }
+
+  return null; // Hesaplanamadı
+}
+
+/**
+ * Sınıf içi maliyet puanı (0–100). Daha ucuz = daha yüksek puan.
+ * ANCHOR: sınıftaki en pahalı (en kötü) $/perf değeri = 0, en ucuz = 100.
+ *
+ * Normalize: puan = (max_maliyet - maliyet) / (max_maliyet - min_maliyet) × 100
+ * Bu sayede ucuzun puanı 100, pahalının puanı 0'a yakın olur.
+ */
+const MALIYET_ANCHORS = (() => {
+  const out = {};
+  for (const cls of ["GPU", "AI", "CPU", "SOC", "RAM"]) {
+    const members = chips.filter((c) => classOf(c) === cls);
+    let min = Infinity, max = 0;
+    for (const c of members) {
+      const v = hammMaliyetHesapla(c);
+      if (typeof v === "number" && Number.isFinite(v) && v > 0) {
+        if (v < min) min = v;
+        if (v > max) max = v;
+      }
+    }
+    out[cls] = { min: min === Infinity ? 0 : min, max: max || 1 };
+  }
+  return out;
+})();
+
+const _maliyetCache = new Map();
+export function maliyetPuani(chip) {
+  if (_maliyetCache.has(chip.id)) return _maliyetCache.get(chip.id);
+  const fiyat = FIYAT_MAP.get(chip.id);
+  if (!fiyat) {
+    const r = { puan: null, neden: "Bu çip için kiralama fiyatı verisi yok.", usdSaat: null, hammMaliyet: null };
+    _maliyetCache.set(chip.id, r);
+    return r;
+  }
+  const cls = classOf(chip);
+  const hammM = hammMaliyetHesapla(chip);
+  if (hammM == null) {
+    const r = { puan: null, neden: "Performans spec'i yetersiz — $/performans hesaplanamadı.", usdSaat: fiyat.usdSaat, hammMaliyet: null };
+    _maliyetCache.set(chip.id, r);
+    return r;
+  }
+  const { min, max } = MALIYET_ANCHORS[cls];
+  const aralik = max - min;
+  const puan = aralik > 0
+    ? Math.round(Math.max(0, Math.min(1, (max - hammM) / aralik)) * 100)
+    : 50;
+  const r = { puan, usdSaat: fiyat.usdSaat, hammMaliyet: parseFloat(hammM.toFixed(6)), neden: null };
+  _maliyetCache.set(chip.id, r);
+  return r;
+}
+
+// ─── Genel puan (tasarım + maliyet + verimlilik ortalaması) ──────────────────
+
+/**
+ * Üç boyutun ağırlıklı ortalaması.
+ * Tasarım: 0.45 — temel spec gücü
+ * Verimlilik: 0.35 — güç/alan verimliliği (tüm chiplerde)
+ * Maliyet: 0.20 — erişilebilirlik (yalnızca fiyat verisi olan chiplerde)
+ *
+ * Fiyat verisi yoksa ağırlık 0.45/0.55 olarak yeniden dağıtılır:
+ *   tasarım → 0.55 × (0.45/0.80) = 0.562, verimlilik → 0.55 × (0.35/0.80) = 0.438
+ */
+const AGIRLIKLAR = { tasarim: 0.45, verimlilik: 0.35, maliyet: 0.20 };
+
+const _genelCache = new Map();
+export function genelPuan(chip) {
+  if (_genelCache.has(chip.id)) return _genelCache.get(chip.id);
+
+  const tasarim = scoreChip(chip);
+  const verimlilik = verimlilikPuani(chip);
+  const maliyet = maliyetPuani(chip);
+
+  const bileskenler = [];
+  let toplamAgirlik = 0, toplamDeger = 0;
+
+  if (tasarim.score != null) {
+    bileskenler.push({ ad: "Tasarım", puan: tasarim.score, agirlik: AGIRLIKLAR.tasarim });
+    toplamAgirlik += AGIRLIKLAR.tasarim;
+    toplamDeger += tasarim.score * AGIRLIKLAR.tasarim;
+  }
+  if (verimlilik.puan != null) {
+    bileskenler.push({ ad: "Verimlilik", puan: verimlilik.puan, agirlik: AGIRLIKLAR.verimlilik });
+    toplamAgirlik += AGIRLIKLAR.verimlilik;
+    toplamDeger += verimlilik.puan * AGIRLIKLAR.verimlilik;
+  }
+  if (maliyet.puan != null) {
+    bileskenler.push({ ad: "Maliyet", puan: maliyet.puan, agirlik: AGIRLIKLAR.maliyet });
+    toplamAgirlik += AGIRLIKLAR.maliyet;
+    toplamDeger += maliyet.puan * AGIRLIKLAR.maliyet;
+  }
+
+  const MIN_KAPSA = 0.45; // En az tasarım + verimlilik gerekli
+  const puan = toplamAgirlik >= MIN_KAPSA
+    ? Math.round(toplamDeger / toplamAgirlik)
+    : null;
+
+  const r = {
+    puan,
+    bileskenler,
+    tasarimPuan: tasarim.score,
+    verimlilikPuan: verimlilik.puan,
+    maliyetPuan: maliyet.puan,
+    usdSaat: maliyet.usdSaat,
+    neden: puan == null ? "Yeterli veri yok — genel puan hesaplanamıyor." : null,
+  };
+  _genelCache.set(chip.id, r);
+  return r;
 }
