@@ -17,6 +17,8 @@ import Exam from "@/pages/Exam";
 import Design from "@/pages/Design";
 import Designs from "@/pages/Designs";
 import Compare from "@/pages/Compare";
+import Ic from "@/pages/Ic";
+import IcDetail from "@/pages/IcDetail";
 
 /*
  * Uygulama tek dosyalık statik HTML olarak dağıtılıyor ve file:// ile
@@ -47,6 +49,8 @@ export default function App() {
             <Route path="/tasarla/:id" component={Design} />
             <Route path="/tasarla" component={Design} />
             <Route path="/karsilastir" component={Compare} />
+            <Route path="/ic/:id" component={IcDetail} />
+            <Route path="/ic" component={Ic} />
             <Route>
               <div className="container mx-auto px-4 py-16 text-muted-foreground">
                 Bu sayfa henüz yeniden kurulmadı.
