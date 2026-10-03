@@ -4,13 +4,13 @@
   "ozet": [
     "Haftanın ana teması yine bellek: Micron rekor 54 milyar dolarlık çeyreğin ardından kıtlığın 2028'e kadar süreceğini, 2027 üretiminin dörtte üçünün şimdiden satıldığını söyledi. Güney Kore'nin eylül çip ihracatının %262 artması aynı tabloyu sayılarla doğruluyor.",
     "Bunun arka planında HBM var: AI hızlandırıcılarının belleği, 2027'de DRAM wafer kapasitesinin yaklaşık %30'unu kullanacak. Bu da tüketici belleği için fiyat baskısı demek.",
-    "Tasarım tarafında OpenAI ile Synopsys'in çip tasarımı için ortak model anlaşması öne çıkıyor; paketleme ve optik bağlantı tarafına da ciddi yatırım akıyor.",
+    "Tasarım tarafında OpenAI ile Synopsys'in çip tasarımı için ortak model anlaşması öne çıkıyor; paketleme ve optik bağlantı tarafına da ciddi yatırım akıyor. Neocloud tarafında para akışı sürüyor: Lambda ve Sharon AI GPU teminatlı borçla 1,36 milyar $, GMI Cloud 668 milyon $ topladı; ancak büyümenin giderek borçla finanse edilmesi dikkat gerektiriyor.",
     "Gölge tarafı: Tencent'in Oracle üzerinden ~100.000 GPU kiralaması, ihracat kontrollerinin bulut üzerinden aşılabildiğini gösteriyor ve yeni düzenleme riskini gündeme taşıyor."
   ],
   "puan": {
     "etiket": "İyimser, maliyet uyarılı",
     "yorum": "Talep tarafı çok güçlü ve darboğazlara (bellek, paketleme, bağlantı) yatırım akıyor. Ama bu gücün bedeli kıtlık ve yüksek fiyatlar; ihracat kontrolleri cephesinde de belirsizlik büyüyor.",
-    "deger": 72
+    "deger": 71
   },
   "maddeler": [
     {
@@ -86,22 +86,40 @@
       "url": "https://www.reuters.com/business/volantis-raises-88-million-tech-connect-ai-memory-chips-2026-10-01/"
     },
     {
-      "baslik": "Samsung Electro-Mechanics alt tabaka kapasitesine 4,9 milyar $ yatırıyor",
-      "detay": "AI sunucuları için FCBGA alt tabaka kapasitesi Kore ve Vietnam'da genişletilecek; TOPPAN da Singapur'da ilk yurt dışı FC-BGA tesisini açtı.",
-      "kategori": "pozitif",
-      "agirlik": 1,
-      "neden": "Paketleme zincirindeki darboğazlardan biri olan alt tabaka arzı genişliyor.",
-      "kaynak": "Semiconductor Engineering",
-      "url": "https://semiengineering.com/chip-industry-week-in-review-158/"
+      "baslik": "Lambda ve Sharon AI, GPU teminatlı borçla toplam 1,36 milyar $ topladı",
+      "detay": "Lambda, J.P. Morgan düzenlemesiyle %6,78 sabit faizli 1 milyar $ yatırım yapılabilir notlu vadeli kredi aldı (Ağustosta 926 M$ almıştı). Sharon AI ise %9,95 sabit faizli, GPU teminatlı 356 M$ SPV borcu sağladı; Sidney için 8.200 Blackwell Ultra GPU planlıyor.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Neocloud kapasitesine para akması talebin sürdüğünü gösteriyor; ama büyümenin giderek GPU teminatlı borçla finanse edilmesi, kiralama fiyatları düşerse kırılgan bir yapı yaratıyor.",
+      "kaynak": "DatacenterDynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/sharon-ai-and-lambda-secure-gpu-backed-debt-funding/"
     },
     {
-      "baslik": "Google, Trillium TPU'larını uyduyla uzaya gönderdi",
-      "detay": "Project Suncatcher kapsamında dört Trillium TPU, uzay tabanlı makine öğrenmesi altyapısını denemek için bir SpaceX uydusuyla yörüngeye çıktı.",
+      "baslik": "Nvidia destekli GMI Cloud 668 milyon $ topladı",
+      "detay": "223 M$ hisse (B serisi, ARCHIV liderliğinde, Nvidia katılımıyla) ve CTBC liderliğinde 445 M$ kredi. Şirketin sözleşmeli yıllık geliri 600 M$ üzerinde; 2025 sonundan bu yana geliri 9 kattan fazla arttı. Para ABD, Tayvan ve Asya-Pasifik GPU kapasitesine gidecek.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Çıkarım (inference) talebinin somut sözleşmeli gelire dönüştüğünü gösteren bir veri noktası.",
+      "kaynak": "The Next Web",
+      "url": "https://thenextweb.com/news/gmi-cloud-668m-series-b-nvidia-archiv-ctbc"
+    },
+    {
+      "baslik": "Yarı iletken ETF’si SOXX eylülde %11 kazandı",
+      "detay": "Eylülde Intel %34, AMD %30, Micron %11, Nvidia %3 yükselirken Broadcom %5 geriledi. SOXX ekimin ilk iki gününde Micron bilançosunun ardından %3,6 daha yükseldi.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Piyasa, ajan tabanlı AI’nın GPU dışında CPU ve bellek talebini de artıracağını fiyatlıyor.",
+      "kaynak": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/10/02/why-the-ishares-semiconductor-etf-gained-11-in-september/"
+    },
+    {
+      "baslik": "İddia: TSMC, Musk’ın Terafab’ıyla Teksas’ta iş birliğini değerlendiriyor",
+      "detay": "Tim Culpan’ın isimsiz kaynaklara dayanan özel haberine göre TSMC, Terafab’ın Teksas’taki fabrikalarını işletmesine yardım etmeyi ve şirketi gelecekteki bir Teksas fabrikası için çapa müşteri yapmayı inceliyor. Şirketlerden resmî doğrulama yok.",
       "kategori": "notr",
       "agirlik": 1,
-      "neden": "İlginç ama deneysel bir adım; kısa vadede sektöre etkisi yok.",
-      "kaynak": "Google",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/"
+      "neden": "Doğrulanmamış bir görüşme haberi; gerçekleşirse ABD üretim kapasitesine katkı, ama şu an yalnızca iddia.",
+      "kaynak": "Culpium",
+      "url": "https://www.culpium.com/p/exclusive-tsmc-exploring-plans-to"
     }
   ],
   "yontem": {
@@ -109,6 +127,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = +7 · Σ ağırlık = 16 · Puan = 50 + 50 × 0.44 = 72"
+    "hesap": "Σ ağırlık×işaret = +8 · Σ ağırlık = 19 · Puan = 50 + 50 × 0.42 = 71"
   }
 }

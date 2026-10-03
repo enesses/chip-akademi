@@ -1,7 +1,7 @@
 {
   "ajan": "yenileme",
   "tarih": "2026-10-03",
-  "zaman": "2026-10-03T09:00:47.123Z",
+  "zaman": "2026-10-03T09:18:56.525Z",
   "durum": "ok",
   "adimlar": [
     {
@@ -12,7 +12,7 @@
     {
       "ad": "Bugün sayfası",
       "durum": "ok",
-      "detay": "bugün güncellendi (10 madde, puan 72)"
+      "detay": "bugün güncellendi (12 madde, puan 71)"
     },
     {
       "ad": "Derleme",
@@ -22,7 +22,7 @@
     {
       "ad": "Tek dosya",
       "durum": "ok",
-      "detay": "17 görsel, HTML: 1544 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+      "detay": "17 görsel, HTML: 1545 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
     }
   ]
 }

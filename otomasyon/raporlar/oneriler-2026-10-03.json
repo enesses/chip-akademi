@@ -2,6 +2,18 @@
   "tarih": "2026-10-03",
   "oneriler": [
     {
+      "baslik": "Fiyat çekme adımını WebFetch izin engelinden bağımsız hale getir",
+      "neden": "Bu çalıştırmada getdeploying.com/gpus sayfası WebFetch tarafından izin (kaynak doğrulama) gerektirdiği için okunamadı; sayfa arama sonuçlarında doğrudan çıkmıyor. GUNLUK.md adım 1 tek bir URL’ye bağlı. Arama sonuçlarında çıkan getdeploying.com/gpu-price-index veya model sayfaları (ör. /gpus/nvidia-h100) yedek kaynak olarak tanımlanabilir ya da zamanlanmış görevin istemine URL eklenebilir.",
+      "etki": "yüksek",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Yenileme raporu ‘bugün güncellendi’ ile ‘bu çalıştırmada çekildi’ ayrımını yapsın",
+      "neden": "otomasyon/ajanlar/3-yenileme.mjs satır 50 yalnızca kaynak.cekildigi_tarih’e bakıyor; bugün fiyat sayfası hiç okunmadığı halde rapor ‘✓ Fiyat verisi: bugün güncellendi’ yazdı. .son-isleme.json’daki fiyat:null bilgisi kullanılarak ‘sabah ölçümü korundu’ gibi ayrı bir durum gösterilebilir.",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
       "baslik": "Uygulamayı GitHub Pages'te yayına al",
       "neden": "Otomasyon her gün güncel sürümü depodaki docs/index.html'e yazıyor. Pages açılırsa site her sabah kendiliğinden güncellenir; dosyayı elle indirmek gerekmez.",
       "etki": "yüksek",
@@ -20,12 +32,6 @@
       "alan": "içerik"
     },
     {
-      "baslik": "GB300 ve RTX 4090'ı kataloğa ekle",
-      "neden": "Bugünkü taramada fiyat satırlarının 6'sı otomatik olarak çip sayfalarına bağlandı; GB300 ve RTX 4090'ın ise katalogda sayfası yok. Fiyat tablosundan bu modellerin detayına geçilemiyor.",
-      "etki": "orta",
-      "alan": "veri"
-    },
-    {
       "baslik": "Karşılaştır'a kendi tasarımlarını ekleme",
       "neden": "Atölyede kaydedilen tasarımlar şu an yalnızca kendi listelerinde görünüyor. Bir tasarımı gerçek bir çiple yan yana koymak öğrenme açısından en güçlü geri bildirim olur.",
       "etki": "orta",
@@ -42,6 +48,12 @@
       "neden": "Uyarılar yalnızca geliştirme sunucusunu etkiliyor, yayındaki HTML'i değil; yine de güvenlik raporunu her gün sarı gösteriyor. Ana sürüm yükseltmesi ayrı bir testle yapılmalı.",
       "etki": "düşük",
       "alan": "güvenlik"
+    },
+    {
+      "baslik": "GB300 ve RTX 4090 için katalog sayfası ekle",
+      "neden": "src/data/gpu_kiralama.json’da Nvidia GB300 ve Nvidia RTX 4090 satırlarının chip_id değeri null; fiyat tablosundan bu iki yaygın modelin detayına geçilemiyor (iyileştirme taraması da GB300’ü işaretledi).",
+      "etki": "orta",
+      "alan": "veri"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-03T09:00:59.444Z",
+  "guncelleme": "2026-10-03T09:19:44.150Z",
   "tarih": "2026-10-03",
   "durum": "dikkat",
   "ajanlar": [
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "dikkat",
-      "zaman": "2026-10-03T09:00:48.080Z"
+      "zaman": "2026-10-03T09:18:57.382Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-03T09:00:48.172Z"
+      "zaman": "2026-10-03T09:18:57.450Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-03T09:00:47.123Z"
+      "zaman": "2026-10-03T09:18:56.525Z"
     },
     {
       "id": "gelistirme",
@@ -33,7 +33,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-03T09:00:59.372Z"
+      "zaman": "2026-10-03T09:19:08.518Z"
     }
   ],
   "dikkat": [
@@ -43,6 +43,18 @@
     }
   ],
   "oneriler": [
+    {
+      "baslik": "Fiyat çekme adımını WebFetch izin engelinden bağımsız hale getir",
+      "neden": "Bu çalıştırmada getdeploying.com/gpus sayfası WebFetch tarafından izin (kaynak doğrulama) gerektirdiği için okunamadı; sayfa arama sonuçlarında doğrudan çıkmıyor. GUNLUK.md adım 1 tek bir URL’ye bağlı. Arama sonuçlarında çıkan getdeploying.com/gpu-price-index veya model sayfaları (ör. /gpus/nvidia-h100) yedek kaynak olarak tanımlanabilir ya da zamanlanmış görevin istemine URL eklenebilir.",
+      "etki": "yüksek",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Yenileme raporu ‘bugün güncellendi’ ile ‘bu çalıştırmada çekildi’ ayrımını yapsın",
+      "neden": "otomasyon/ajanlar/3-yenileme.mjs satır 50 yalnızca kaynak.cekildigi_tarih’e bakıyor; bugün fiyat sayfası hiç okunmadığı halde rapor ‘✓ Fiyat verisi: bugün güncellendi’ yazdı. .son-isleme.json’daki fiyat:null bilgisi kullanılarak ‘sabah ölçümü korundu’ gibi ayrı bir durum gösterilebilir.",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
     {
       "baslik": "Uygulamayı GitHub Pages'te yayına al",
       "neden": "Otomasyon her gün güncel sürümü depodaki docs/index.html'e yazıyor. Pages açılırsa site her sabah kendiliğinden güncellenir; dosyayı elle indirmek gerekmez.",
@@ -62,12 +74,6 @@
       "alan": "içerik"
     },
     {
-      "baslik": "GB300 ve RTX 4090'ı kataloğa ekle",
-      "neden": "Bugünkü taramada fiyat satırlarının 6'sı otomatik olarak çip sayfalarına bağlandı; GB300 ve RTX 4090'ın ise katalogda sayfası yok. Fiyat tablosundan bu modellerin detayına geçilemiyor.",
-      "etki": "orta",
-      "alan": "veri"
-    },
-    {
       "baslik": "Karşılaştır'a kendi tasarımlarını ekleme",
       "neden": "Atölyede kaydedilen tasarımlar şu an yalnızca kendi listelerinde görünüyor. Bir tasarımı gerçek bir çiple yan yana koymak öğrenme açısından en güçlü geri bildirim olur.",
       "etki": "orta",
@@ -84,6 +90,12 @@
       "neden": "Uyarılar yalnızca geliştirme sunucusunu etkiliyor, yayındaki HTML'i değil; yine de güvenlik raporunu her gün sarı gösteriyor. Ana sürüm yükseltmesi ayrı bir testle yapılmalı.",
       "etki": "düşük",
       "alan": "güvenlik"
+    },
+    {
+      "baslik": "GB300 ve RTX 4090 için katalog sayfası ekle",
+      "neden": "src/data/gpu_kiralama.json’da Nvidia GB300 ve Nvidia RTX 4090 satırlarının chip_id değeri null; fiyat tablosundan bu iki yaygın modelin detayına geçilemiyor (iyileştirme taraması da GB300’ü işaretledi).",
+      "etki": "orta",
+      "alan": "veri"
     }
   ],
   "guvenlik": {
@@ -171,7 +183,7 @@
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bugün güncellendi (10 madde, puan 72)"
+        "detay": "bugün güncellendi (12 madde, puan 71)"
       },
       {
         "ad": "Derleme",
@@ -181,7 +193,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 1544 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 1545 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
