@@ -1,0 +1,114 @@
+{
+  "tarih": "2026-10-03",
+  "derlenme": "3 Ekim 2026",
+  "ozet": [
+    "Haftanın ana teması yine bellek: Micron rekor 54 milyar dolarlık çeyreğin ardından kıtlığın 2028'e kadar süreceğini, 2027 üretiminin dörtte üçünün şimdiden satıldığını söyledi. Güney Kore'nin eylül çip ihracatının %262 artması aynı tabloyu sayılarla doğruluyor.",
+    "Bunun arka planında HBM var: AI hızlandırıcılarının belleği, 2027'de DRAM wafer kapasitesinin yaklaşık %30'unu kullanacak. Bu da tüketici belleği için fiyat baskısı demek.",
+    "Tasarım tarafında OpenAI ile Synopsys'in çip tasarımı için ortak model anlaşması öne çıkıyor; paketleme ve optik bağlantı tarafına da ciddi yatırım akıyor.",
+    "Gölge tarafı: Tencent'in Oracle üzerinden ~100.000 GPU kiralaması, ihracat kontrollerinin bulut üzerinden aşılabildiğini gösteriyor ve yeni düzenleme riskini gündeme taşıyor."
+  ],
+  "puan": {
+    "etiket": "İyimser, maliyet uyarılı",
+    "yorum": "Talep tarafı çok güçlü ve darboğazlara (bellek, paketleme, bağlantı) yatırım akıyor. Ama bu gücün bedeli kıtlık ve yüksek fiyatlar; ihracat kontrolleri cephesinde de belirsizlik büyüyor.",
+    "deger": 72
+  },
+  "maddeler": [
+    {
+      "baslik": "Micron rekor çeyrek: 54 milyar $ gelir, kıtlık 2028'e kadar sürecek",
+      "detay": "Micron 4. çeyrekte rekor 54 milyar $ gelir açıkladı. Şirkete göre bellek arzı 2028'e kadar sıkı kalacak; 2027 üretiminin yaklaşık %75'i şimdiden satılmış durumda.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "AI talebinin bellek tarafında da gerçek ve kalıcı olduğunu gösteriyor. Öte yandan alıcılar için RAM/GPU maliyetlerinin bir süre daha yüksek kalacağı anlamına geliyor.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/pc-components/dram/micron-projects-tightening-ram-shortages-through-2028"
+    },
+    {
+      "baslik": "HBM, 2027'de DRAM wafer kapasitesinin ~%30'unu yutacak",
+      "detay": "Tahminlere göre HBM'e ayrılan pay bugünkü ~%20'den 2027'de ~%30'a çıkıyor. Her HBM wafer'ı standart DRAM'den daha fazla kapasite tükettiği için PC ve telefon belleği arzı daralıyor.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Yapısal bir kayma: AI hızlandırıcılar için iyi, tüketici belleği fiyatları için baskı. Net etkisi tarafa göre değişiyor.",
+      "kaynak": "Semiconductor Engineering",
+      "url": "https://semiengineering.com/chip-industry-week-in-review-158/"
+    },
+    {
+      "baslik": "Güney Kore çip ihracatı eylülde %262 artışla 60 milyar $",
+      "detay": "Güney Kore'nin yarı iletken ihracatı eylülde yıllık %262 artışla rekor 60 milyar dolara ulaştı; artışın ana kaynağı bellek talebi ve yükselen bellek fiyatları.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Bellek döngüsünün güçlü olduğunu sayılarla doğrulayan bir veri.",
+      "kaynak": "Semiconductor Engineering",
+      "url": "https://semiengineering.com/chip-industry-week-in-review-158/"
+    },
+    {
+      "baslik": "OpenAI ve Synopsys çip tasarımı için GPT-Synopsys modelinde anlaştı",
+      "detay": "Çok yıllı anlaşmayla çip tasarım akışlarına (doğrulama, simülasyon, üretim) yönelik özel bir model geliştirilecek; OpenAI de Synopsys araçlarını lisanslıyor.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Çip tasarımının en pahalı ve yavaş adımı olan doğrulamanın hızlanması, yeni çiplerin pazara çıkış süresini kısaltabilir.",
+      "kaynak": "Synopsys",
+      "url": "https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design"
+    },
+    {
+      "baslik": "AMD, World Labs'i 8,2 milyar $'a satın alıyor",
+      "detay": "Tamamı hisseyle yapılan satın almayla AMD, robotik ve 3B ortam simülasyonu için uzamsal zeka modelleri geliştiren World Labs'i bünyesine katıyor.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "AMD'nin donanımın yanına yazılım/model tarafını da ekleme çabası; NVIDIA'nın ekosistem avantajına karşı bir hamle.",
+      "kaynak": "Semiconductor Engineering",
+      "url": "https://semiengineering.com/chip-industry-week-in-review-158/"
+    },
+    {
+      "baslik": "Tencent, Oracle üzerinden ~100.000 GPU kiralıyor",
+      "detay": "Financial Times'a göre Tencent, Oracle'ın Güneydoğu Asya veri merkezlerinde beş yıllık, yaklaşık 7 milyar $'lık bir anlaşmayla Çin'de satılamayan GPU'lara erişecek.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "İhracat kontrollerinin bulut kiralama yoluyla delinebildiğini gösteriyor; yeni düzenleme ve yaptırım riskini artırıyor.",
+      "kaynak": "DatacenterDynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/tencent-signs-on-for-100000-gpus-via-oracle-report/"
+    },
+    {
+      "baslik": "Broadcom, Anthropic'in çip kiralamaları için 42 milyar $'a kadar finansman sağlıyor",
+      "detay": "Bir dosyalamaya göre Broadcom, Anthropic'in çip kiralamalarını finanse etmek için 42 milyar dolara kadar dönüştürülebilir tahvil yapısında kredi verecek.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Hızlandırıcı talebinin büyüklüğünü gösteriyor, ama altyapının giderek daha fazla borçla finanse edilmesi kendi riskini taşıyor.",
+      "kaynak": "Reuters",
+      "url": "https://www.reuters.com/business/broadcom-lend-anthropic-up-42-billion-lease-its-chips-filing-says-2026-10-01/"
+    },
+    {
+      "baslik": "Optik bağlantı girişimlerine yatırım: Volantis 88 M$, CScale 145 M$",
+      "detay": "Volantis, GPU ile bellek arasında VCSEL lazerli optik bağlantı için 88 milyon $; CScale ise AI ölçek büyütmede optik ara bağlantılar için 145 milyon $ topladı.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Çipleri birbirine bağlayan kablolar artık darboğaz; bu sermaye o darboğaza çözüm arayan teknolojilere akıyor.",
+      "kaynak": "Reuters",
+      "url": "https://www.reuters.com/business/volantis-raises-88-million-tech-connect-ai-memory-chips-2026-10-01/"
+    },
+    {
+      "baslik": "Samsung Electro-Mechanics alt tabaka kapasitesine 4,9 milyar $ yatırıyor",
+      "detay": "AI sunucuları için FCBGA alt tabaka kapasitesi Kore ve Vietnam'da genişletilecek; TOPPAN da Singapur'da ilk yurt dışı FC-BGA tesisini açtı.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Paketleme zincirindeki darboğazlardan biri olan alt tabaka arzı genişliyor.",
+      "kaynak": "Semiconductor Engineering",
+      "url": "https://semiengineering.com/chip-industry-week-in-review-158/"
+    },
+    {
+      "baslik": "Google, Trillium TPU'larını uyduyla uzaya gönderdi",
+      "detay": "Project Suncatcher kapsamında dört Trillium TPU, uzay tabanlı makine öğrenmesi altyapısını denemek için bir SpaceX uydusuyla yörüngeye çıktı.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "İlginç ama deneysel bir adım; kısa vadede sektöre etkisi yok.",
+      "kaynak": "Google",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = +7 · Σ ağırlık = 16 · Puan = 50 + 50 × 0.44 = 72"
+  }
+}

@@ -1,0 +1,92 @@
+name: Chip Akademi Otomasyonu
+
+# Saatler UTC'dir. Türkiye UTC+3 olduğu için 3 saat geri yazılır.
+on:
+  schedule:
+    # 06:00 TRT — Yenileme (veri tazeleme), günün ilk işi
+    - cron: "0 3 * * *"
+    # 09:00 TRT — Güvenlik
+    - cron: "0 6 * * *"
+    # 10:00 TRT — İyileştirme + Geliştirme
+    - cron: "0 7 * * *"
+    # 23:30 TRT — GÜN SONU TAM ÇALIŞTIRMA.
+    # Gün içindeki zamanlamalardan biri atlanmış olabilir (GitHub Actions
+    # cron'u "en iyi çaba" ile çalışır, garantili değildir). Bu son çalıştırma
+    # eksik kalan ne varsa tamamlar; "her gün her şey yapıldı" güvencesi
+    # tek bir zamanlamaya değil buna dayanır.
+    - cron: "30 20 * * *"
+  workflow_dispatch:       # elle de tetiklenebilir
+    inputs:
+      ajan:
+        description: "Tek ajan çalıştır (boş bırakılırsa hepsi)"
+        required: false
+        default: ""
+
+jobs:
+  ajanlar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Bağımlılıklar
+        run: |
+          npm ci
+          pip install requests beautifulsoup4 pillow
+
+      - name: Hangi ajanlar çalışacak
+        id: sec
+        run: |
+          if [ -n "${{ github.event.inputs.ajan }}" ]; then
+            echo "liste=${{ github.event.inputs.ajan }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 3 * * *" ]; then
+            echo "liste=yenileme rapor" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 6 * * *" ]; then
+            echo "liste=guvenlik rapor" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 7 * * *" ]; then
+            echo "liste=iyilestirme gelistirme rapor" >> $GITHUB_OUTPUT
+          else
+            # Gün sonu: hepsi. Rapor ajanı --tamamla ile eksikleri de kapatır.
+            echo "liste=" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Ajanları çalıştır
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          HABER_SAGLAYICI: ${{ vars.HABER_SAGLAYICI }}
+          HABER_API_ANAHTARI: ${{ secrets.HABER_API_ANAHTARI }}
+          YAYIN_URL: ${{ vars.YAYIN_URL }}
+        run: node otomasyon/orkestrator.mjs ${{ steps.sec.outputs.liste }}
+
+      - name: Raporları sakla
+        uses: actions/upload-artifact@v4
+        with:
+          name: otomasyon-raporlari
+          path: otomasyon/raporlar/
+          retention-days: 30
+
+      # Veri değiştiyse ayrı bir dala yaz — ana dala asla doğrudan yazılmaz.
+      - name: Değişiklikleri dala gönder
+        run: |
+          if [ -n "$(git status --porcelain src/ otomasyon/raporlar/)" ]; then
+            git config user.name "chip-akademi-bot"
+            git config user.email "bot@users.noreply.github.com"
+            DAL="otomasyon/$(date +%Y-%m-%d-%H%M)"
+            git checkout -b "$DAL"
+            git add src/ otomasyon/raporlar/
+            git commit -m "otomasyon: günlük veri ve rapor güncellemesi"
+            git push origin "$DAL"
+            echo "Dal oluşturuldu: $DAL — gözden geçirip birleştir."
+          else
+            echo "Değişiklik yok."
+          fi

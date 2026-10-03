@@ -1,0 +1,222 @@
+{
+  "guncelleme": "2026-10-03T09:00:59.444Z",
+  "tarih": "2026-10-03",
+  "durum": "dikkat",
+  "ajanlar": [
+    {
+      "id": "guvenlik",
+      "ad": "Güvenlik",
+      "saat": "10:00",
+      "calisti": true,
+      "durum": "dikkat",
+      "zaman": "2026-10-03T09:00:48.080Z"
+    },
+    {
+      "id": "iyilestirme",
+      "ad": "İyileştirme",
+      "saat": "10:00",
+      "calisti": true,
+      "durum": "tamam",
+      "zaman": "2026-10-03T09:00:48.172Z"
+    },
+    {
+      "id": "yenileme",
+      "ad": "Yenileme",
+      "saat": "10:00",
+      "calisti": true,
+      "durum": "ok",
+      "zaman": "2026-10-03T09:00:47.123Z"
+    },
+    {
+      "id": "gelistirme",
+      "ad": "Geliştirme",
+      "saat": "10:00",
+      "calisti": true,
+      "durum": "degisiklik-yok",
+      "zaman": "2026-10-03T09:00:59.372Z"
+    }
+  ],
+  "dikkat": [
+    {
+      "seviye": "uyarı",
+      "metin": "Güvenlik: 7 yüksek seviye bağımlılık açığı var."
+    }
+  ],
+  "oneriler": [
+    {
+      "baslik": "Uygulamayı GitHub Pages'te yayına al",
+      "neden": "Otomasyon her gün güncel sürümü depodaki docs/index.html'e yazıyor. Pages açılırsa site her sabah kendiliğinden güncellenir; dosyayı elle indirmek gerekmez.",
+      "etki": "yüksek",
+      "alan": "yayın"
+    },
+    {
+      "baslik": "Etiketsiz 15 düğmeye erişilebilir ad ekle",
+      "neden": "İyileştirme taraması ikon-only düğmelerde aria-label eksikliği buldu (ör. Karşılaştır'daki kaldır düğmesi, Tasarımlarım'daki kopyala/sil). Ekran okuyucu kullanıcıları bu düğmelerin ne yaptığını duyamıyor.",
+      "etki": "orta",
+      "alan": "erişilebilirlik"
+    },
+    {
+      "baslik": "Fiyatlar sayfasına bellek (DRAM/HBM) fiyat bölümü",
+      "neden": "Bugünkü haberlerin çoğu bellek kıtlığı ve fiyat artışı üzerine. GPU kiralama fiyatlarının yanında bellek fiyat trendini göstermek sayfayı günün gündemine bağlar.",
+      "etki": "orta",
+      "alan": "içerik"
+    },
+    {
+      "baslik": "GB300 ve RTX 4090'ı kataloğa ekle",
+      "neden": "Bugünkü taramada fiyat satırlarının 6'sı otomatik olarak çip sayfalarına bağlandı; GB300 ve RTX 4090'ın ise katalogda sayfası yok. Fiyat tablosundan bu modellerin detayına geçilemiyor.",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Karşılaştır'a kendi tasarımlarını ekleme",
+      "neden": "Atölyede kaydedilen tasarımlar şu an yalnızca kendi listelerinde görünüyor. Bir tasarımı gerçek bir çiple yan yana koymak öğrenme açısından en güçlü geri bildirim olur.",
+      "etki": "orta",
+      "alan": "özellik"
+    },
+    {
+      "baslik": "Atölyede sürükle-bırak ve mobil ızgara",
+      "neden": "Bloklar yalnızca tıklayarak yerleşiyor ve 16×12 ızgara telefonda çok küçük kalıyor. Sürükle-bırak ve yakınlaştırılabilir ızgara kullanımı belirgin şekilde kolaylaştırır.",
+      "etki": "düşük",
+      "alan": "kullanılabilirlik"
+    },
+    {
+      "baslik": "Vite'ı güncelleyip 7 yüksek seviye bağımlılık uyarısını kapat",
+      "neden": "Uyarılar yalnızca geliştirme sunucusunu etkiliyor, yayındaki HTML'i değil; yine de güvenlik raporunu her gün sarı gösteriyor. Ana sürüm yükseltmesi ayrı bir testle yapılmalı.",
+      "etki": "düşük",
+      "alan": "güvenlik"
+    }
+  ],
+  "guvenlik": {
+    "durum": "dikkat",
+    "bagimlilik": {
+      "kritik": 0,
+      "yuksek": 7,
+      "orta": 1,
+      "dusuk": 0,
+      "toplam": 8
+    },
+    "kodBulgusu": 1,
+    "kapsamNotu": "Uygulama statik olduğu için sunucu tarafı saldırı tespiti kapsam dışıdır. Ölçülen şeyler: bağımlılık açıkları, dosya bütünlüğü, riskli kod desenleri ve HTTP güvenlik başlıkları."
+  },
+  "iyilestirme": {
+    "olcumler": {
+      "veri": {
+        "chipSayisi": 56,
+        "fiyatSayisi": 107
+      },
+      "egitim": {
+        "dersSayisi": 13
+      },
+      "erisim": {
+        "altsiz": 0,
+        "etiketsizDugme": 15
+      },
+      "kod": {
+        "dosyaSayisi": 43,
+        "toplamSatir": 10086,
+        "boyutKB": null
+      }
+    },
+    "bulgular": [
+      {
+        "alan": "veri",
+        "baslik": "1 veri merkezi GPU'su katalogda yok",
+        "etki": "düşük",
+        "otomatik": false,
+        "detay": [
+          "Nvidia GB300"
+        ],
+        "aciklama": "Kiralama listesinde yaygın olan bu modeller katalogda bulunmadığı için fiyat tablosundan chip sayfasına bağlantı verilemiyor."
+      },
+      {
+        "alan": "kod",
+        "baslik": "22 export hiçbir yerde kullanılmıyor",
+        "etki": "düşük",
+        "otomatik": false,
+        "detay": [
+          "Badge (src/components/ui/badge.jsx)",
+          "Select (src/components/ui/select.jsx)",
+          "SelectTrigger (src/components/ui/select.jsx)",
+          "SelectValue (src/components/ui/select.jsx)",
+          "SelectContent (src/components/ui/select.jsx)",
+          "SelectItem (src/components/ui/select.jsx)",
+          "metricsFrom (src/lib/advisor.js)",
+          "findGaps (src/lib/advisor.js)",
+          "beatsAfter (src/lib/advisor.js)",
+          "designCount (src/lib/designs.js)",
+          "togglePin (src/lib/notes.js)",
+          "searchNotes (src/lib/notes.js)",
+          "contextFromPath (src/lib/notes.js)",
+          "unmarkCompleted (src/lib/progress.js)",
+          "getAllQuizResults (src/lib/progress.js)",
+          "resetQuizResult (src/lib/progress.js)",
+          "resetAllQuizzes (src/lib/progress.js)",
+          "resetProgress (src/lib/progress.js)",
+          "getSummary (src/lib/progress.js)",
+          "getBestExam (src/lib/progress.js)",
+          "resetExam (src/lib/progress.js)",
+          "formatCompareValue (src/lib/utils.js)"
+        ]
+      }
+    ]
+  },
+  "yenileme": {
+    "durum": "ok",
+    "adimlar": [
+      {
+        "ad": "Fiyat verisi",
+        "durum": "ok",
+        "detay": "bugün güncellendi (2026-10-03)"
+      },
+      {
+        "ad": "Bugün sayfası",
+        "durum": "ok",
+        "detay": "bugün güncellendi (10 madde, puan 72)"
+      },
+      {
+        "ad": "Derleme",
+        "durum": "ok",
+        "detay": "başarılı"
+      },
+      {
+        "ad": "Tek dosya",
+        "durum": "ok",
+        "detay": "17 görsel, HTML: 1544 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+      }
+    ]
+  },
+  "gelistirme": {
+    "durum": "degisiklik-yok",
+    "uygulanan": 0,
+    "atlanan": 0,
+    "testler": [
+      {
+        "ad": "Derleme",
+        "gecti": true,
+        "detay": null
+      },
+      {
+        "ad": "Tek dosya",
+        "gecti": true,
+        "detay": null
+      },
+      {
+        "ad": "Arayüz duman testi",
+        "gecti": true,
+        "detay": null
+      }
+    ]
+  },
+  "gecmis": [
+    {
+      "tarih": "2026-09-02",
+      "durum": "dikkat",
+      "dikkat": 1
+    },
+    {
+      "tarih": "2026-10-03",
+      "durum": "dikkat",
+      "dikkat": 1
+    }
+  ]
+}

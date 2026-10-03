@@ -1,0 +1,20 @@
+{
+  "ajan": "gelistirme",
+  "tarih": "2026-09-02",
+  "zaman": "2026-09-02T09:55:26.382Z",
+  "durum": "degisiklik-yok",
+  "uygulanan": [],
+  "atlanan": [],
+  "testler": [
+    {
+      "ad": "Referans taraması",
+      "gecti": true
+    },
+    {
+      "ad": "Derleme",
+      "gecti": true
+    }
+  ],
+  "degisenDosyalar": [],
+  "geriAlindi": false
+}

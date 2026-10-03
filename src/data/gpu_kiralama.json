@@ -1,0 +1,1478 @@
+{
+  "kaynak": {
+    "ad": "GetDeploying — GPU Rental Price Index",
+    "url": "https://getdeploying.com/gpu-price-index",
+    "olcum_tarihi": "2026-08-17",
+    "cekildigi_tarih": "2026-10-03",
+    "yontem": "Her sağlayıcının kendi medyanı alınır, sonra sağlayıcılar arası medyan. Bir modeli sekiz farklı sunucu boyutunda listelemek tek oy sayılır.",
+    "kapsam": {
+      "saglayici": 74,
+      "model": 107,
+      "haftalik_gozlem": 4540,
+      "baslangic": "2024-07"
+    },
+    "liste_notu": "Tablodaki fiyatlar getdeploying.com/gpus sayfasının 2026-10-03 tarihli sağlayıcılar arası medyanlarıdır. Değişim sütunu 2026-09-02 tarihli bir önceki ölçüme göredir.",
+    "onceki_olcum": "2026-09-02"
+  },
+  "endeks": {
+    "taban": "6 Ocak 2025 = 100",
+    "degisim_4_hafta_pct": -3.2,
+    "degisim_12_ay_pct": 1.7,
+    "panel_model_sayisi": 27
+  },
+  "hareketler": {
+    "not": "Yalnızca en az 3 sağlayıcı tarafından listelenen modeller. Saatlik medyan on-demand fiyat (USD / GPU / saat).",
+    "artanlar": [
+      {
+        "model": "Nvidia RTX 3090 Ti",
+        "onceki": 0.18,
+        "guncel": 0.22,
+        "degisim_pct": 22
+      },
+      {
+        "model": "Nvidia RTX 2070",
+        "onceki": 0.06,
+        "guncel": 0.07,
+        "degisim_pct": 17
+      },
+      {
+        "model": "Nvidia B200",
+        "onceki": 6.37,
+        "guncel": 7.15,
+        "degisim_pct": 12,
+        "chip_id": "nvidia-blackwell-b200"
+      }
+    ],
+    "dusenler": [
+      {
+        "model": "Nvidia GH200",
+        "onceki": 6.5,
+        "guncel": 2.52,
+        "degisim_pct": -61
+      },
+      {
+        "model": "Nvidia V100",
+        "onceki": 2.14,
+        "guncel": 0.97,
+        "degisim_pct": -55
+      },
+      {
+        "model": "Nvidia A5000",
+        "onceki": 1.24,
+        "guncel": 0.75,
+        "degisim_pct": -40
+      }
+    ]
+  },
+  "detay": [
+    {
+      "model": "Nvidia B300",
+      "chip_id": "nvidia-blackwell-ultra-b300",
+      "en_ucuz": 6.33,
+      "tipik": 7.68,
+      "spot_taban": 4.3,
+      "aralik": [
+        4.15,
+        18
+      ],
+      "saglayici": 25,
+      "degisim_90_gun_pct": -1,
+      "url": "https://getdeploying.com/gpus/nvidia-b300-vs-nvidia-h200"
+    },
+    {
+      "model": "Nvidia H200",
+      "chip_id": "nvidia-hopper-h200",
+      "en_ucuz": 3,
+      "tipik": 4.29,
+      "spot_taban": 0.93,
+      "aralik": [
+        0.93,
+        13.78
+      ],
+      "saglayici": 36,
+      "degisim_90_gun_pct": 3,
+      "url": "https://getdeploying.com/gpus/nvidia-b300-vs-nvidia-h200"
+    }
+  ],
+  "hyperscaler_farki": {
+    "not": "Hyperscaler (AWS, Azure, Google Cloud) ile özel GPU bulutlarının medyan on-demand fiyatları.",
+    "satirlar": [
+      {
+        "model": "Nvidia H100",
+        "gpu_bulutu": 4.24,
+        "hyperscaler": 7.89,
+        "fark_pct": 86
+      },
+      {
+        "model": "Nvidia A100",
+        "gpu_bulutu": 2,
+        "hyperscaler": 3.67,
+        "fark_pct": 84
+      },
+      {
+        "model": "Nvidia H200",
+        "gpu_bulutu": 4.5,
+        "hyperscaler": 10.44,
+        "fark_pct": 132
+      },
+      {
+        "model": "Nvidia B200",
+        "gpu_bulutu": 7.88,
+        "hyperscaler": 15.18,
+        "fark_pct": 93
+      }
+    ]
+  },
+  "taahhut_indirimi": {
+    "satirlar": [
+      {
+        "sure": "1 ay",
+        "indirim_pct": -10
+      },
+      {
+        "sure": "3 ay",
+        "indirim_pct": -5
+      },
+      {
+        "sure": "6 ay",
+        "indirim_pct": -17
+      },
+      {
+        "sure": "1 yıl",
+        "indirim_pct": -24
+      },
+      {
+        "sure": "2 yıl",
+        "indirim_pct": -23
+      },
+      {
+        "sure": "3 yıl",
+        "indirim_pct": -45
+      }
+    ]
+  },
+  "spot_indirimi": {
+    "not": "Spot fiyatın aynı modelin on-demand fiyatına oranı. Spot kapasitesi kısa sürede geri alınabilir; indirim bu kesinti riskinin bedelidir.",
+    "medyan_oran_pct": 52,
+    "satirlar": [
+      {
+        "model": "Nvidia H100",
+        "oran_pct": 50
+      },
+      {
+        "model": "Nvidia A100",
+        "oran_pct": 50
+      },
+      {
+        "model": "Nvidia H200",
+        "oran_pct": 58
+      },
+      {
+        "model": "Nvidia RTX A6000",
+        "oran_pct": 84
+      },
+      {
+        "model": "Nvidia L40",
+        "oran_pct": 82
+      }
+    ]
+  },
+  "iki_gun": {
+    "baslangic": "2026-09-02",
+    "bitis": "2026-10-03",
+    "not": "İki günlük ölçüm arasındaki fark. Yalnızca en az 3 sağlayıcının listelediği modeller.",
+    "artanlar": [
+      {
+        "model": "Nvidia RTX 4000 Ada",
+        "bellek": "20GB GDDR6",
+        "vram_gb": 20,
+        "usd_saat": 0.74,
+        "onceki_usd": 0.28,
+        "degisim_pct": 164.3,
+        "saglayici": 6,
+        "chip_id": null,
+        "url": "https://getdeploying.com/gpus/nvidia-rtx-4000-ada"
+      },
+      {
+        "model": "Nvidia RTX 4070 Ti",
+        "bellek": "12GB GDDR6X",
+        "vram_gb": 12,
+        "usd_saat": 0.17,
+        "onceki_usd": 0.1,
+        "degisim_pct": 70,
+        "saglayici": 3,
+        "chip_id": null,
+        "url": "https://getdeploying.com/gpus/nvidia-rtx-4070-ti"
+      },
+      {
+        "model": "Nvidia RTX 5070",
+        "bellek": "12GB GDDR7",
+        "vram_gb": 12,
+        "usd_saat": 0.23,
+        "onceki_usd": 0.14,
+        "degisim_pct": 64.3,
+        "saglayici": 3,
+        "chip_id": "nvidia-blackwell-rtx-5070",
+        "url": "https://getdeploying.com/gpus/nvidia-rtx-5070"
+      },
+      {
+        "model": "Nvidia RTX 4070",
+        "bellek": "12GB GDDR6X",
+        "vram_gb": 12,
+        "usd_saat": 0.15,
+        "onceki_usd": 0.1,
+        "degisim_pct": 50,
+        "saglayici": 3,
+        "chip_id": null,
+        "url": "https://getdeploying.com/gpus/nvidia-rtx-4070"
+      },
+      {
+        "model": "Nvidia A40",
+        "bellek": "48GB GDDR6",
+        "vram_gb": 48,
+        "usd_saat": 0.65,
+        "onceki_usd": 0.44,
+        "degisim_pct": 47.7,
+        "saglayici": 9,
+        "chip_id": "nvidia-ampere-a40",
+        "url": "https://getdeploying.com/gpus/nvidia-a40"
+      }
+    ],
+    "dusenler": [
+      {
+        "model": "Nvidia GB200",
+        "bellek": "Up to 13.4TB HBM3e",
+        "vram_gb": 13722,
+        "usd_saat": 16,
+        "onceki_usd": 21.52,
+        "degisim_pct": -25.7,
+        "saglayici": 10,
+        "chip_id": "nvidia-grace-blackwell-gb200",
+        "url": "https://getdeploying.com/gpus/nvidia-gb200"
+      },
+      {
+        "model": "Nvidia RTX 5060",
+        "bellek": "8GB GDDR7",
+        "vram_gb": 8,
+        "usd_saat": 0.11,
+        "onceki_usd": 0.14,
+        "degisim_pct": -21.4,
+        "saglayici": 4,
+        "chip_id": null,
+        "url": "https://getdeploying.com/gpus/nvidia-rtx-5060"
+      },
+      {
+        "model": "Nvidia T4",
+        "bellek": "16GB GDDR6",
+        "vram_gb": 16,
+        "usd_saat": 0.64,
+        "onceki_usd": 0.81,
+        "degisim_pct": -21,
+        "saglayici": 11,
+        "chip_id": "nvidia-turing-t4",
+        "url": "https://getdeploying.com/gpus/nvidia-t4"
+      },
+      {
+        "model": "Nvidia RTX 4060",
+        "bellek": "8GB GDDR6",
+        "vram_gb": 8,
+        "usd_saat": 0.08,
+        "onceki_usd": 0.1,
+        "degisim_pct": -20,
+        "saglayici": 4,
+        "chip_id": null,
+        "url": "https://getdeploying.com/gpus/nvidia-rtx-4060"
+      },
+      {
+        "model": "Nvidia RTX 5000",
+        "bellek": "16GB GDDR6",
+        "vram_gb": 16,
+        "usd_saat": 0.6,
+        "onceki_usd": 0.71,
+        "degisim_pct": -15.5,
+        "saglayici": 3,
+        "chip_id": null,
+        "url": "https://getdeploying.com/gpus/nvidia-rtx-5000"
+      }
+    ]
+  },
+  "fiyatlar": [
+    {
+      "model": "Nvidia H100",
+      "bellek": "80GB HBM3",
+      "vram_gb": 80,
+      "usd_saat": 3.38,
+      "onceki_usd": 3.39,
+      "degisim_pct": -0.3,
+      "saglayici": 57,
+      "chip_id": "nvidia-hopper-h100",
+      "url": "https://getdeploying.com/gpus/nvidia-h100"
+    },
+    {
+      "model": "Nvidia B300",
+      "bellek": "Up to 288GB HBM3e",
+      "vram_gb": 288,
+      "usd_saat": 8.5,
+      "onceki_usd": 7.5,
+      "degisim_pct": 13.3,
+      "saglayici": 34,
+      "chip_id": "nvidia-blackwell-ultra-b300",
+      "url": "https://getdeploying.com/gpus/nvidia-b300"
+    },
+    {
+      "model": "Nvidia B200",
+      "bellek": "Up to 192GB HBM3e",
+      "vram_gb": 192,
+      "usd_saat": 6.79,
+      "onceki_usd": 6.13,
+      "degisim_pct": 10.8,
+      "saglayici": 40,
+      "chip_id": "nvidia-blackwell-b200",
+      "url": "https://getdeploying.com/gpus/nvidia-b200"
+    },
+    {
+      "model": "Nvidia H200",
+      "bellek": "141GB HBM3e",
+      "vram_gb": 141,
+      "usd_saat": 4.48,
+      "onceki_usd": 4.29,
+      "degisim_pct": 4.4,
+      "saglayici": 51,
+      "chip_id": "nvidia-hopper-h200",
+      "url": "https://getdeploying.com/gpus/nvidia-h200"
+    },
+    {
+      "model": "Nvidia RTX PRO 6000",
+      "bellek": "96GB GDDR7",
+      "vram_gb": 96,
+      "usd_saat": 2.19,
+      "onceki_usd": 2.22,
+      "degisim_pct": -1.4,
+      "saglayici": 53,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-pro-6000"
+    },
+    {
+      "model": "Nvidia RTX 5090",
+      "bellek": "32GB GDDR7",
+      "vram_gb": 32,
+      "usd_saat": 0.66,
+      "onceki_usd": 0.65,
+      "degisim_pct": 1.5,
+      "saglayici": 23,
+      "chip_id": "nvidia-blackwell-rtx-5090",
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-5090"
+    },
+    {
+      "model": "Nvidia A100",
+      "bellek": "40GB / 80GB HBM2e",
+      "vram_gb": 40,
+      "usd_saat": 1.79,
+      "onceki_usd": 1.73,
+      "degisim_pct": 3.5,
+      "saglayici": 48,
+      "chip_id": "nvidia-ampere-a100",
+      "url": "https://getdeploying.com/gpus/nvidia-a100"
+    },
+    {
+      "model": "Nvidia GB200",
+      "bellek": "Up to 13.4TB HBM3e",
+      "vram_gb": 13722,
+      "usd_saat": 16,
+      "onceki_usd": 21.52,
+      "degisim_pct": -25.7,
+      "saglayici": 10,
+      "chip_id": "nvidia-grace-blackwell-gb200",
+      "url": "https://getdeploying.com/gpus/nvidia-gb200"
+    },
+    {
+      "model": "Nvidia RTX 4090",
+      "bellek": "24GB GDDR6X",
+      "vram_gb": 24,
+      "usd_saat": 0.47,
+      "onceki_usd": 0.42,
+      "degisim_pct": 11.9,
+      "saglayici": 22,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-4090"
+    },
+    {
+      "model": "AMD MI300X",
+      "bellek": "192GB HBM3",
+      "vram_gb": 192,
+      "usd_saat": 2.99,
+      "onceki_usd": 2.99,
+      "degisim_pct": 0,
+      "saglayici": 11,
+      "chip_id": "amd-cdna3-instinct-mi300x",
+      "url": "https://getdeploying.com/gpus/amd-mi300x"
+    },
+    {
+      "model": "AMD MI355X",
+      "bellek": "288GB HBM3E",
+      "vram_gb": 288,
+      "usd_saat": 8.32,
+      "onceki_usd": 8.6,
+      "degisim_pct": -3.3,
+      "saglayici": 6,
+      "chip_id": "amd-cdna4-instinct-mi355x",
+      "url": "https://getdeploying.com/gpus/amd-mi355x"
+    },
+    {
+      "model": "Nvidia L40S",
+      "bellek": "48GB GDDR6",
+      "vram_gb": 48,
+      "usd_saat": 1.54,
+      "onceki_usd": 1.54,
+      "degisim_pct": 0,
+      "saglayici": 39,
+      "chip_id": "nvidia-ada-l40s",
+      "url": "https://getdeploying.com/gpus/nvidia-l40s"
+    },
+    {
+      "model": "Nvidia RTX 6000 Ada",
+      "bellek": "48GB GDDR6",
+      "vram_gb": 48,
+      "usd_saat": 0.96,
+      "onceki_usd": 0.83,
+      "degisim_pct": 15.7,
+      "saglayici": 14,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-6000-ada"
+    },
+    {
+      "model": "Nvidia RTX 3090",
+      "bellek": "24GB GDDR6X",
+      "vram_gb": 24,
+      "usd_saat": 0.15,
+      "onceki_usd": 0.14,
+      "degisim_pct": 7.1,
+      "saglayici": 8,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-3090"
+    },
+    {
+      "model": "Nvidia RTX A6000",
+      "bellek": "48GB GDDR6",
+      "vram_gb": 48,
+      "usd_saat": 0.56,
+      "onceki_usd": 0.55,
+      "degisim_pct": 1.8,
+      "saglayici": 22,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-a6000"
+    },
+    {
+      "model": "Nvidia L4",
+      "bellek": "24GB GDDR6",
+      "vram_gb": 24,
+      "usd_saat": 0.87,
+      "onceki_usd": 0.9,
+      "degisim_pct": -3.3,
+      "saglayici": 21,
+      "chip_id": "nvidia-ada-l4",
+      "url": "https://getdeploying.com/gpus/nvidia-l4"
+    },
+    {
+      "model": "Nvidia GB300",
+      "bellek": "Up to 20TB HBM3e",
+      "vram_gb": 20480,
+      "usd_saat": 18,
+      "onceki_usd": 18,
+      "degisim_pct": 0,
+      "saglayici": 7,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-gb300"
+    },
+    {
+      "model": "AMD MI325X",
+      "bellek": "256GB HBM3E",
+      "vram_gb": 256,
+      "usd_saat": 3.05,
+      "onceki_usd": 3.09,
+      "degisim_pct": -1.3,
+      "saglayici": 5,
+      "chip_id": "amd-cdna3-instinct-mi325x",
+      "url": "https://getdeploying.com/gpus/amd-mi325x"
+    },
+    {
+      "model": "Nvidia V100",
+      "bellek": "16GB / 32GB HBM2",
+      "vram_gb": 16,
+      "usd_saat": 0.99,
+      "onceki_usd": 0.97,
+      "degisim_pct": 2.1,
+      "saglayici": 20,
+      "chip_id": "nvidia-volta-v100",
+      "url": "https://getdeploying.com/gpus/nvidia-v100"
+    },
+    {
+      "model": "Nvidia GH200",
+      "bellek": "96GB HBM3 + 480GB LPDDR5X",
+      "vram_gb": 96,
+      "usd_saat": 3.87,
+      "onceki_usd": 4.51,
+      "degisim_pct": -14.2,
+      "saglayici": 10,
+      "chip_id": "nvidia-grace-hopper-gh200",
+      "url": "https://getdeploying.com/gpus/nvidia-gh200"
+    },
+    {
+      "model": "Nvidia RTX PRO 5000",
+      "bellek": "48GB GDDR7",
+      "vram_gb": 48,
+      "usd_saat": 0.67,
+      "onceki_usd": 0.74,
+      "degisim_pct": -9.5,
+      "saglayici": 4,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-pro-5000"
+    },
+    {
+      "model": "Nvidia RTX 5060 Ti",
+      "bellek": "16GB / 8GB GDDR7",
+      "vram_gb": 16,
+      "usd_saat": 0.15,
+      "onceki_usd": 0.11,
+      "degisim_pct": 36.4,
+      "saglayici": 4,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-5060-ti"
+    },
+    {
+      "model": "Nvidia RTX PRO 6000D",
+      "bellek": "84GB GDDR7",
+      "vram_gb": 84,
+      "usd_saat": 1.11,
+      "onceki_usd": 0.82,
+      "degisim_pct": 35.4,
+      "saglayici": 2,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-pro-6000d"
+    },
+    {
+      "model": "Nvidia RTX 3060",
+      "bellek": "12GB GDDR6",
+      "vram_gb": 12,
+      "usd_saat": 0.08,
+      "onceki_usd": 0.06,
+      "degisim_pct": 33.3,
+      "saglayici": 3,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-3060"
+    },
+    {
+      "model": "Nvidia T4",
+      "bellek": "16GB GDDR6",
+      "vram_gb": 16,
+      "usd_saat": 0.64,
+      "onceki_usd": 0.81,
+      "degisim_pct": -21,
+      "saglayici": 11,
+      "chip_id": "nvidia-turing-t4",
+      "url": "https://getdeploying.com/gpus/nvidia-t4"
+    },
+    {
+      "model": "Nvidia A10",
+      "bellek": "24GB GDDR6",
+      "vram_gb": 24,
+      "usd_saat": 1.55,
+      "onceki_usd": 1.42,
+      "degisim_pct": 9.2,
+      "saglayici": 8,
+      "chip_id": "nvidia-ampere-a10",
+      "url": "https://getdeploying.com/gpus/nvidia-a10"
+    },
+    {
+      "model": "Nvidia RTX 5080",
+      "bellek": "16GB GDDR7",
+      "vram_gb": 16,
+      "usd_saat": 0.3,
+      "onceki_usd": 0.31,
+      "degisim_pct": -3.2,
+      "saglayici": 6,
+      "chip_id": "nvidia-blackwell-rtx-5080",
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-5080"
+    },
+    {
+      "model": "Nvidia RTX 5070",
+      "bellek": "12GB GDDR7",
+      "vram_gb": 12,
+      "usd_saat": 0.23,
+      "onceki_usd": 0.14,
+      "degisim_pct": 64.3,
+      "saglayici": 3,
+      "chip_id": "nvidia-blackwell-rtx-5070",
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-5070"
+    },
+    {
+      "model": "Nvidia A40",
+      "bellek": "48GB GDDR6",
+      "vram_gb": 48,
+      "usd_saat": 0.65,
+      "onceki_usd": 0.44,
+      "degisim_pct": 47.7,
+      "saglayici": 9,
+      "chip_id": "nvidia-ampere-a40",
+      "url": "https://getdeploying.com/gpus/nvidia-a40"
+    },
+    {
+      "model": "Nvidia RTX 4000 Ada",
+      "bellek": "20GB GDDR6",
+      "vram_gb": 20,
+      "usd_saat": 0.74,
+      "onceki_usd": 0.28,
+      "degisim_pct": 164.3,
+      "saglayici": 6,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-4000-ada"
+    },
+    {
+      "model": "Nvidia A800",
+      "bellek": "40GB HBM2",
+      "vram_gb": 40,
+      "usd_saat": 1.18,
+      "onceki_usd": 0.93,
+      "degisim_pct": 26.9,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-a800"
+    },
+    {
+      "model": "Nvidia A5000",
+      "bellek": "24GB GDDR6",
+      "vram_gb": 24,
+      "usd_saat": 1.31,
+      "onceki_usd": 1.24,
+      "degisim_pct": 5.6,
+      "saglayici": 11,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-a5000"
+    },
+    {
+      "model": "Nvidia RTX 5070 Ti",
+      "bellek": "16GB GDDR7",
+      "vram_gb": 16,
+      "usd_saat": 0.22,
+      "onceki_usd": 0.16,
+      "degisim_pct": 37.5,
+      "saglayici": 2,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-5070-ti"
+    },
+    {
+      "model": "AMD MI250",
+      "bellek": "128GB HBM2e",
+      "vram_gb": 128,
+      "usd_saat": 1.5,
+      "onceki_usd": 1.5,
+      "degisim_pct": 0,
+      "saglayici": 1,
+      "chip_id": "amd-cdna2-instinct-mi250",
+      "url": "https://getdeploying.com/gpus/amd-mi250"
+    },
+    {
+      "model": "Nvidia RTX PRO 4500",
+      "bellek": "32GB GDDR7",
+      "vram_gb": 32,
+      "usd_saat": 0.82,
+      "onceki_usd": 0.72,
+      "degisim_pct": 13.9,
+      "saglayici": 6,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-pro-4500"
+    },
+    {
+      "model": "Nvidia RTX 3080",
+      "bellek": "10GB GDDR6X",
+      "vram_gb": 10,
+      "usd_saat": 0.14,
+      "onceki_usd": 0.1,
+      "degisim_pct": 40,
+      "saglayici": 4,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-3080"
+    },
+    {
+      "model": "Nvidia L40",
+      "bellek": "48GB GDDR6",
+      "vram_gb": 48,
+      "usd_saat": 1.05,
+      "onceki_usd": 0.99,
+      "degisim_pct": 6.1,
+      "saglayici": 13,
+      "chip_id": "nvidia-ada-l40",
+      "url": "https://getdeploying.com/gpus/nvidia-l40"
+    },
+    {
+      "model": "Nvidia RTX PRO 4000",
+      "bellek": "24GB GDDR7",
+      "vram_gb": 24,
+      "usd_saat": 0.42,
+      "onceki_usd": 0.41,
+      "degisim_pct": 2.4,
+      "saglayici": 3,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-pro-4000"
+    },
+    {
+      "model": "AMD MI455X",
+      "bellek": "432GB HBM4",
+      "vram_gb": 432,
+      "usd_saat": null,
+      "onceki_usd": null,
+      "degisim_pct": null,
+      "saglayici": 5,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/amd-mi455x"
+    },
+    {
+      "model": "Nvidia RTX 4060 Ti",
+      "bellek": "8GB / 16GB GDDR6",
+      "vram_gb": 8,
+      "usd_saat": 0.12,
+      "onceki_usd": 0.11,
+      "degisim_pct": 9.1,
+      "saglayici": 3,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-4060-ti"
+    },
+    {
+      "model": "Nvidia P100",
+      "bellek": "16GB HBM2",
+      "vram_gb": 16,
+      "usd_saat": 1.37,
+      "onceki_usd": 1.42,
+      "degisim_pct": -3.5,
+      "saglayici": 6,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-p100"
+    },
+    {
+      "model": "Nvidia RTX 4080",
+      "bellek": "16GB GDDR6X",
+      "vram_gb": 16,
+      "usd_saat": 0.24,
+      "onceki_usd": 0.25,
+      "degisim_pct": -4,
+      "saglayici": 7,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-4080"
+    },
+    {
+      "model": "Nvidia RTX 4070",
+      "bellek": "12GB GDDR6X",
+      "vram_gb": 12,
+      "usd_saat": 0.15,
+      "onceki_usd": 0.1,
+      "degisim_pct": 50,
+      "saglayici": 3,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-4070"
+    },
+    {
+      "model": "Nvidia A4000",
+      "bellek": "16GB GDDR6",
+      "vram_gb": 16,
+      "usd_saat": 0.19,
+      "onceki_usd": 0.19,
+      "degisim_pct": 0,
+      "saglayici": 14,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-a4000"
+    },
+    {
+      "model": "Nvidia RTX 4060",
+      "bellek": "8GB GDDR6",
+      "vram_gb": 8,
+      "usd_saat": 0.08,
+      "onceki_usd": 0.1,
+      "degisim_pct": -20,
+      "saglayici": 4,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-4060"
+    },
+    {
+      "model": "Nvidia P4",
+      "bellek": "8GB GDDR5",
+      "vram_gb": 8,
+      "usd_saat": 0.81,
+      "onceki_usd": 1.17,
+      "degisim_pct": -30.8,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-p4"
+    },
+    {
+      "model": "Nvidia RTX 3080 Ti",
+      "bellek": "12GB GDDR6X",
+      "vram_gb": 12,
+      "usd_saat": 0.17,
+      "onceki_usd": 0.18,
+      "degisim_pct": -5.6,
+      "saglayici": 4,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-3080-ti"
+    },
+    {
+      "model": "Nvidia RTX 5000 Ada",
+      "bellek": "32GB GDDR6",
+      "vram_gb": 32,
+      "usd_saat": 0.41,
+      "onceki_usd": 0.47,
+      "degisim_pct": -12.8,
+      "saglayici": 2,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-5000-ada"
+    },
+    {
+      "model": "Nvidia RTX 5060",
+      "bellek": "8GB GDDR7",
+      "vram_gb": 8,
+      "usd_saat": 0.11,
+      "onceki_usd": 0.14,
+      "degisim_pct": -21.4,
+      "saglayici": 4,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-5060"
+    },
+    {
+      "model": "Nvidia RTX 5880 Ada",
+      "bellek": "48GB GDDR6",
+      "vram_gb": 48,
+      "usd_saat": 0.49,
+      "onceki_usd": 0.41,
+      "degisim_pct": 19.5,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-5880-ada"
+    },
+    {
+      "model": "Nvidia RTX 3060 Ti",
+      "bellek": "8GB GDDR6",
+      "vram_gb": 8,
+      "usd_saat": 0.11,
+      "onceki_usd": 0.11,
+      "degisim_pct": 0,
+      "saglayici": 3,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-3060-ti"
+    },
+    {
+      "model": "Nvidia RTX 3090 Ti",
+      "bellek": "24GB GDDR6X",
+      "vram_gb": 24,
+      "usd_saat": 0.26,
+      "onceki_usd": 0.21,
+      "degisim_pct": 23.8,
+      "saglayici": 3,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-3090-ti"
+    },
+    {
+      "model": "Nvidia RTX 5000",
+      "bellek": "16GB GDDR6",
+      "vram_gb": 16,
+      "usd_saat": 0.6,
+      "onceki_usd": 0.71,
+      "degisim_pct": -15.5,
+      "saglayici": 3,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-5000"
+    },
+    {
+      "model": "Nvidia Quadro RTX 6000",
+      "bellek": "24GB GDDR6",
+      "vram_gb": 24,
+      "usd_saat": 0.82,
+      "onceki_usd": 0.82,
+      "degisim_pct": 0,
+      "saglayici": 3,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-6000"
+    },
+    {
+      "model": "Nvidia A16",
+      "bellek": "4x 16GB GDDR6",
+      "vram_gb": 16,
+      "usd_saat": 0.52,
+      "onceki_usd": 0.52,
+      "degisim_pct": 0,
+      "saglayici": 2,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-a16"
+    },
+    {
+      "model": "Nvidia RTX A2000",
+      "bellek": "6GB / 12GB GDDR6",
+      "vram_gb": 6,
+      "usd_saat": 0.11,
+      "onceki_usd": 0.18,
+      "degisim_pct": -38.9,
+      "saglayici": 2,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-a2000"
+    },
+    {
+      "model": "Nvidia RTX 3050",
+      "bellek": "8GB GDDR6",
+      "vram_gb": 8,
+      "usd_saat": 0.11,
+      "onceki_usd": 0.07,
+      "degisim_pct": 57.1,
+      "saglayici": 2,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-3050"
+    },
+    {
+      "model": "Nvidia GTX 1070",
+      "bellek": "8GB GDDR5",
+      "vram_gb": 8,
+      "usd_saat": 0.04,
+      "onceki_usd": 0.05,
+      "degisim_pct": -20,
+      "saglayici": 2,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-gtx-1070"
+    },
+    {
+      "model": "Nvidia GTX 1080 Ti",
+      "bellek": "11GB GDDR5X",
+      "vram_gb": 11,
+      "usd_saat": 0.05,
+      "onceki_usd": 0.05,
+      "degisim_pct": 0,
+      "saglayici": 2,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-gtx-1080-ti"
+    },
+    {
+      "model": "Nvidia A30",
+      "bellek": "24GB HBM2",
+      "vram_gb": 24,
+      "usd_saat": 0.68,
+      "onceki_usd": 0.77,
+      "degisim_pct": -11.7,
+      "saglayici": 8,
+      "chip_id": "nvidia-ampere-a30",
+      "url": "https://getdeploying.com/gpus/nvidia-a30"
+    },
+    {
+      "model": "Intel Gaudi2",
+      "bellek": "96GB HBM2e",
+      "vram_gb": 96,
+      "usd_saat": 1.14,
+      "onceki_usd": 1.13,
+      "degisim_pct": 0.9,
+      "saglayici": 3,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/intel-gaudi2"
+    },
+    {
+      "model": "Nvidia GTX 1050 Ti",
+      "bellek": "4GB GDDR5",
+      "vram_gb": 4,
+      "usd_saat": 0.02,
+      "onceki_usd": 0.06,
+      "degisim_pct": -66.7,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-gtx-1050-ti"
+    },
+    {
+      "model": "Nvidia T1000",
+      "bellek": "4GB GDDR6",
+      "vram_gb": 4,
+      "usd_saat": 0.15,
+      "onceki_usd": 0.15,
+      "degisim_pct": 0,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-t1000"
+    },
+    {
+      "model": "Nvidia RTX 4070 Ti",
+      "bellek": "12GB GDDR6X",
+      "vram_gb": 12,
+      "usd_saat": 0.17,
+      "onceki_usd": 0.1,
+      "degisim_pct": 70,
+      "saglayici": 3,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-4070-ti"
+    },
+    {
+      "model": "Nvidia RTX 2000 Ada",
+      "bellek": "16GB GDDR6",
+      "vram_gb": 16,
+      "usd_saat": 0.24,
+      "onceki_usd": 0.24,
+      "degisim_pct": 0,
+      "saglayici": 2,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-2000-ada"
+    },
+    {
+      "model": "Nvidia RTX 4070 Ti Super",
+      "bellek": "16GB GDDR6X",
+      "vram_gb": 16,
+      "usd_saat": 0.21,
+      "onceki_usd": 0.18,
+      "degisim_pct": 16.7,
+      "saglayici": 3,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-4070-ti-super"
+    },
+    {
+      "model": "Nvidia GTX 1060",
+      "bellek": "6GB GDDR5",
+      "vram_gb": 6,
+      "usd_saat": 0.03,
+      "onceki_usd": 0.07,
+      "degisim_pct": -57.1,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-gtx-1060"
+    },
+    {
+      "model": "Nvidia RTX 3070 Ti",
+      "bellek": "8GB GDDR6X",
+      "vram_gb": 8,
+      "usd_saat": 0.14,
+      "onceki_usd": 0.08,
+      "degisim_pct": 75,
+      "saglayici": 2,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-3070-ti"
+    },
+    {
+      "model": "Nvidia P6000",
+      "bellek": "24GB GDDR5X",
+      "vram_gb": 24,
+      "usd_saat": 1.1,
+      "onceki_usd": 1.1,
+      "degisim_pct": 0,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-p6000"
+    },
+    {
+      "model": "Nvidia RTX 2080 Ti",
+      "bellek": "11GB GDDR6",
+      "vram_gb": 11,
+      "usd_saat": 0.1,
+      "onceki_usd": 0.08,
+      "degisim_pct": 25,
+      "saglayici": 2,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-2080-ti"
+    },
+    {
+      "model": "Nvidia GTX 1070 Ti",
+      "bellek": "8GB GDDR5",
+      "vram_gb": 8,
+      "usd_saat": 0.06,
+      "onceki_usd": 0.05,
+      "degisim_pct": 20,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-gtx-1070-ti"
+    },
+    {
+      "model": "Nvidia A4500",
+      "bellek": "20GB GDDR6",
+      "vram_gb": 20,
+      "usd_saat": 0.25,
+      "onceki_usd": 0.25,
+      "degisim_pct": 0,
+      "saglayici": 2,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-a4500"
+    },
+    {
+      "model": "Nvidia RTX 2060",
+      "bellek": "6GB GDDR6",
+      "vram_gb": 6,
+      "usd_saat": 0.08,
+      "onceki_usd": 0.06,
+      "degisim_pct": 33.3,
+      "saglayici": 3,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-2060"
+    },
+    {
+      "model": "Nvidia GTX 1660",
+      "bellek": "6GB GDDR5",
+      "vram_gb": 6,
+      "usd_saat": 0.36,
+      "onceki_usd": 0.36,
+      "degisim_pct": 0,
+      "saglayici": 3,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-gtx-1660"
+    },
+    {
+      "model": "Nvidia RTX 4500 Ada",
+      "bellek": "24GB GDDR6",
+      "vram_gb": 24,
+      "usd_saat": 0.38,
+      "onceki_usd": 0.28,
+      "degisim_pct": 35.7,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-4500-ada"
+    },
+    {
+      "model": "AMD Radeon Pro V520",
+      "bellek": "8GB HBM2",
+      "vram_gb": 8,
+      "usd_saat": 0.87,
+      "onceki_usd": 0.87,
+      "degisim_pct": 0,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/amd-radeon-pro-v520"
+    },
+    {
+      "model": "Nvidia P600",
+      "bellek": "2GB GDDR5",
+      "vram_gb": 2,
+      "usd_saat": 0.07,
+      "onceki_usd": 0.07,
+      "degisim_pct": 0,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-p600"
+    },
+    {
+      "model": "Nvidia GTX 1650",
+      "bellek": "4GB GDDR5",
+      "vram_gb": 4,
+      "usd_saat": 0.02,
+      "onceki_usd": 0.04,
+      "degisim_pct": -50,
+      "saglayici": 2,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-gtx-1650"
+    },
+    {
+      "model": "Nvidia RTX 2070",
+      "bellek": "8GB GDDR6",
+      "vram_gb": 8,
+      "usd_saat": 0.06,
+      "onceki_usd": 0.06,
+      "degisim_pct": 0,
+      "saglayici": 2,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-2070"
+    },
+    {
+      "model": "Nvidia V100S",
+      "bellek": "32GB HBM2",
+      "vram_gb": 32,
+      "usd_saat": 0.88,
+      "onceki_usd": 0.88,
+      "degisim_pct": 0,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-v100s"
+    },
+    {
+      "model": "Nvidia T4G",
+      "bellek": "16GB GDDR6",
+      "vram_gb": 16,
+      "usd_saat": 1.1,
+      "onceki_usd": 1.1,
+      "degisim_pct": 0,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-t4g"
+    },
+    {
+      "model": "Nvidia GTX 1080",
+      "bellek": "8GB GDDR5X",
+      "vram_gb": 8,
+      "usd_saat": 0.05,
+      "onceki_usd": 0.05,
+      "degisim_pct": 0,
+      "saglayici": 2,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-gtx-1080"
+    },
+    {
+      "model": "Nvidia GTX 1660 Super",
+      "bellek": "6GB GDDR6",
+      "vram_gb": 6,
+      "usd_saat": 0.06,
+      "onceki_usd": 0.06,
+      "degisim_pct": 0,
+      "saglayici": 3,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-gtx-1660-super"
+    },
+    {
+      "model": "Nvidia P1000",
+      "bellek": "4GB GDDR5",
+      "vram_gb": 4,
+      "usd_saat": 0.07,
+      "onceki_usd": 0.1,
+      "degisim_pct": -30,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-p1000"
+    },
+    {
+      "model": "Nvidia K80",
+      "bellek": "12GB GDDR5 per GPU (24GB per board)",
+      "vram_gb": 12,
+      "usd_saat": 0.9,
+      "onceki_usd": 0.9,
+      "degisim_pct": 0,
+      "saglayici": 2,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-k80"
+    },
+    {
+      "model": "Nvidia P4000",
+      "bellek": "8GB GDDR5",
+      "vram_gb": 8,
+      "usd_saat": 0.29,
+      "onceki_usd": 0.28,
+      "degisim_pct": 3.6,
+      "saglayici": 2,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-p4000"
+    },
+    {
+      "model": "Nvidia RTX PRO 2000",
+      "bellek": "16GB GDDR7",
+      "vram_gb": 16,
+      "usd_saat": 0.19,
+      "onceki_usd": 0.23,
+      "degisim_pct": -17.4,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-pro-2000"
+    },
+    {
+      "model": "Nvidia RTX 2060 Super",
+      "bellek": "8GB GDDR6",
+      "vram_gb": 8,
+      "usd_saat": 0.08,
+      "onceki_usd": 0.07,
+      "degisim_pct": 14.3,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-2060-super"
+    },
+    {
+      "model": "AMD MI210",
+      "bellek": "64GB HBM2e",
+      "vram_gb": 64,
+      "usd_saat": 0.93,
+      "onceki_usd": 0.96,
+      "degisim_pct": -3.1,
+      "saglayici": 1,
+      "chip_id": "amd-cdna2-instinct-mi210",
+      "url": "https://getdeploying.com/gpus/amd-mi210"
+    },
+    {
+      "model": "Nvidia RTX 2080",
+      "bellek": "8GB GDDR6",
+      "vram_gb": 8,
+      "usd_saat": 0.08,
+      "onceki_usd": 0.41,
+      "degisim_pct": -80.5,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-2080"
+    },
+    {
+      "model": "Nvidia M4000",
+      "bellek": "8GB GDDR5",
+      "vram_gb": 8,
+      "usd_saat": 0.45,
+      "onceki_usd": 0.45,
+      "degisim_pct": 0,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-m4000"
+    },
+    {
+      "model": "Nvidia M60",
+      "bellek": "8GB GDDR5 per GPU (16GB per board)",
+      "vram_gb": 8,
+      "usd_saat": 1.14,
+      "onceki_usd": 1.14,
+      "degisim_pct": 0,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-m60"
+    },
+    {
+      "model": "Nvidia P5000",
+      "bellek": "16GB GDDR5X",
+      "vram_gb": 16,
+      "usd_saat": 0.78,
+      "onceki_usd": 0.78,
+      "degisim_pct": 0,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-p5000"
+    },
+    {
+      "model": "AMD MI350X",
+      "bellek": "288GB HBM3E",
+      "vram_gb": 288,
+      "usd_saat": 3.61,
+      "onceki_usd": 4.38,
+      "degisim_pct": -17.6,
+      "saglayici": 1,
+      "chip_id": "amd-cdna4-instinct-mi350x",
+      "url": "https://getdeploying.com/gpus/amd-mi350x"
+    },
+    {
+      "model": "Nvidia RTX 4000 SFF Ada",
+      "bellek": "20GB GDDR6",
+      "vram_gb": 20,
+      "usd_saat": 0.46,
+      "onceki_usd": 0.46,
+      "degisim_pct": 0,
+      "saglayici": 3,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-4000-sff-ada"
+    },
+    {
+      "model": "Nvidia RTX 4000",
+      "bellek": "8GB GDDR6",
+      "vram_gb": 8,
+      "usd_saat": 0.56,
+      "onceki_usd": 0.56,
+      "degisim_pct": 0,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-4000"
+    },
+    {
+      "model": "Nvidia H20",
+      "bellek": "96GB HBM3",
+      "vram_gb": 96,
+      "usd_saat": null,
+      "onceki_usd": null,
+      "degisim_pct": null,
+      "saglayici": null,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-h20"
+    },
+    {
+      "model": "Nvidia H800",
+      "bellek": "80GB HBM2e",
+      "vram_gb": 80,
+      "usd_saat": null,
+      "onceki_usd": null,
+      "degisim_pct": null,
+      "saglayici": null,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-h800"
+    },
+    {
+      "model": "Nvidia B100",
+      "bellek": "Up to 192GB HBM3e",
+      "vram_gb": 192,
+      "usd_saat": null,
+      "onceki_usd": null,
+      "degisim_pct": null,
+      "saglayici": null,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-b100"
+    },
+    {
+      "model": "Nvidia P40",
+      "bellek": "24GB GDDR5",
+      "vram_gb": 24,
+      "usd_saat": 0.11,
+      "onceki_usd": null,
+      "degisim_pct": 0,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-p40"
+    },
+    {
+      "model": "Nvidia GT 730",
+      "bellek": "2GB DDR3",
+      "vram_gb": 2,
+      "usd_saat": null,
+      "onceki_usd": null,
+      "degisim_pct": null,
+      "saglayici": null,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-gt730"
+    },
+    {
+      "model": "Nvidia P620",
+      "bellek": "2GB GDDR5",
+      "vram_gb": 2,
+      "usd_saat": null,
+      "onceki_usd": null,
+      "degisim_pct": null,
+      "saglayici": null,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-p620"
+    },
+    {
+      "model": "Nvidia K620",
+      "bellek": "2GB DDR3",
+      "vram_gb": 2,
+      "usd_saat": null,
+      "onceki_usd": null,
+      "degisim_pct": null,
+      "saglayici": null,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-k620"
+    },
+    {
+      "model": "Nvidia GT 710",
+      "bellek": "2GB DDR3",
+      "vram_gb": 2,
+      "usd_saat": null,
+      "onceki_usd": null,
+      "degisim_pct": null,
+      "saglayici": null,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-gt710"
+    },
+    {
+      "model": "Nvidia RTX 3070",
+      "bellek": "—",
+      "vram_gb": null,
+      "usd_saat": 0.1,
+      "onceki_usd": null,
+      "degisim_pct": 0,
+      "saglayici": 4,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-rtx-3070"
+    },
+    {
+      "model": "Nvidia A10G",
+      "bellek": "—",
+      "vram_gb": null,
+      "usd_saat": 1.6,
+      "onceki_usd": null,
+      "degisim_pct": 0,
+      "saglayici": 2,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-a10g"
+    },
+    {
+      "model": "Nvidia P2000",
+      "bellek": "—",
+      "vram_gb": null,
+      "usd_saat": 0.03,
+      "onceki_usd": null,
+      "degisim_pct": 0,
+      "saglayici": 1,
+      "chip_id": null,
+      "url": "https://getdeploying.com/gpus/nvidia-p2000"
+    }
+  ]
+}

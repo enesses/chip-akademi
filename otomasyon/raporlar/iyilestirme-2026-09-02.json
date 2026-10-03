@@ -1,0 +1,62 @@
+{
+  "ajan": "iyilestirme",
+  "tarih": "2026-09-02",
+  "zaman": "2026-09-02T09:56:08.070Z",
+  "durum": "tamam",
+  "olcumler": {
+    "veri": {
+      "chipSayisi": 56,
+      "fiyatSayisi": 104
+    },
+    "egitim": {
+      "dersSayisi": 13
+    },
+    "erisim": {
+      "altsiz": 0,
+      "etiketsizDugme": 0
+    },
+    "kod": {
+      "dosyaSayisi": 10,
+      "toplamSatir": 7203,
+      "boyutKB": null
+    }
+  },
+  "bulgular": [
+    {
+      "alan": "veri",
+      "baslik": "7 veri merkezi GPU'su katalogda yok",
+      "etki": "düşük",
+      "otomatik": false,
+      "detay": [
+        "Nvidia L40S",
+        "Nvidia L4",
+        "Nvidia GB300",
+        "AMD MI325X",
+        "Nvidia V100",
+        "Nvidia T4",
+        "Nvidia A10"
+      ],
+      "aciklama": "Kiralama listesinde yaygın olan bu modeller katalogda bulunmadığı için fiyat tablosundan chip sayfasına bağlantı verilemiyor."
+    },
+    {
+      "alan": "kod",
+      "baslik": "12 export hiçbir yerde kullanılmıyor",
+      "etki": "düşük",
+      "otomatik": false,
+      "detay": [
+        "GRID_COLS (src/data/blocks.js)",
+        "GRID_ROWS (src/data/blocks.js)",
+        "getBlock (src/data/blocks.js)",
+        "blocksForType (src/data/blocks.js)",
+        "getChipById (src/data/chips.js)",
+        "chipsByCategory (src/data/chips.js)",
+        "getLessonById (src/data/lessons.js)",
+        "categoryLabels (src/lib/utils.js)",
+        "manufacturerColors (src/lib/utils.js)",
+        "imageUrl (src/lib/utils.js)",
+        "formatSpecLabel (src/lib/utils.js)",
+        "formatCompareValue (src/lib/utils.js)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "ajan": "guvenlik",
+  "tarih": "2026-09-02",
+  "zaman": "2026-09-02T09:53:03.980Z",
+  "durum": "dikkat",
+  "bagimlilik": {
+    "kritik": 0,
+    "yuksek": 1,
+    "orta": 1,
+    "dusuk": 0,
+    "toplam": 2
+  },
+  "butunluk": {
+    "yerel": null,
+    "yayin": {
+      "durum": "atlandı",
+      "neden": "YAYIN_URL tanımlı değil"
+    },
+    "oncekiGun": null
+  },
+  "kodBulgulari": [],
+  "uyarilar": [
+    "1 yüksek seviye bağımlılık açığı var."
+  ],
+  "notlar": [],
+  "kapsamNotu": "Uygulama statik olduğu için sunucu tarafı saldırı tespiti kapsam dışıdır. Ölçülen şeyler: bağımlılık açıkları, dosya bütünlüğü, riskli kod desenleri ve HTTP güvenlik başlıkları."
+}

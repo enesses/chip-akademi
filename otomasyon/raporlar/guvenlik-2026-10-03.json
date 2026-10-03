@@ -1,0 +1,34 @@
+{
+  "ajan": "guvenlik",
+  "tarih": "2026-10-03",
+  "zaman": "2026-10-03T09:00:48.080Z",
+  "durum": "dikkat",
+  "bagimlilik": {
+    "kritik": 0,
+    "yuksek": 7,
+    "orta": 1,
+    "dusuk": 0,
+    "toplam": 8
+  },
+  "butunluk": {
+    "yerel": null,
+    "yayin": {
+      "durum": "atlandı",
+      "neden": "YAYIN_URL tanımlı değil"
+    },
+    "oncekiGun": null
+  },
+  "kodBulgulari": [
+    {
+      "dosya": "src/components/DiePreview.jsx",
+      "desen": "http:// (şifresiz) kaynak",
+      "seviye": "düşük",
+      "adet": 1
+    }
+  ],
+  "uyarilar": [
+    "7 yüksek seviye bağımlılık açığı var."
+  ],
+  "notlar": [],
+  "kapsamNotu": "Uygulama statik olduğu için sunucu tarafı saldırı tespiti kapsam dışıdır. Ölçülen şeyler: bağımlılık açıkları, dosya bütünlüğü, riskli kod desenleri ve HTTP güvenlik başlıkları."
+}

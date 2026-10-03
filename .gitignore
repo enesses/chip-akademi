@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.vite/
+/chip-akademi.html
+otomasyon/gelen/*.json
+!otomasyon/gelen/.gitkeep
