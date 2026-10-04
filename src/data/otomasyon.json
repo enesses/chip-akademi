@@ -1,7 +1,7 @@
 {
-  "guncelleme": "2026-10-03T09:30:41.325Z",
-  "tarih": "2026-10-03",
-  "durum": "temiz",
+  "guncelleme": "2026-10-04T07:08:27.125Z",
+  "tarih": "2026-10-04",
+  "durum": "kritik",
   "ajanlar": [
     {
       "id": "guvenlik",
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-10-03T09:30:30.064Z"
+      "zaman": "2026-10-04T07:07:11.958Z"
     },
     {
       "id": "iyilestirme",
@@ -17,15 +17,15 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-03T09:30:30.170Z"
+      "zaman": "2026-10-04T07:07:12.058Z"
     },
     {
       "id": "yenileme",
       "ad": "Yenileme",
       "saat": "10:00",
       "calisti": true,
-      "durum": "ok",
-      "zaman": "2026-10-03T09:30:29.177Z"
+      "durum": "kısmi",
+      "zaman": "2026-10-04T07:07:10.782Z"
     },
     {
       "id": "gelistirme",
@@ -33,46 +33,51 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-03T09:30:41.243Z"
+      "zaman": "2026-10-04T07:07:25.818Z"
     }
   ],
-  "dikkat": [],
+  "dikkat": [
+    {
+      "seviye": "kritik",
+      "metin": "Yenileme · Fiyat verisi: güncellenmedi — son veri 2026-10-03. otomasyon/gelen/fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)"
+    }
+  ],
   "oneriler": [
     {
-      "baslik": "Uygulamayı GitHub Pages'te yayına al",
-      "neden": "Otomasyon her gün docs/index.html'i güncelliyor ama depo ayarlarında Pages kapalı (has_pages: false). Settings → Pages → main / docs seçilince site her sabah kendiliğinden güncellenir.",
-      "etki": "yüksek",
-      "alan": "yayın"
-    },
-    {
-      "baslik": "Yarın sabah fiyat adımının izin engeline takılıp takılmadığını izle",
-      "neden": "Bugünkü doğrulama çalıştırmasında getdeploying.com/gpus WebFetch tarafından izin gerektiği için okunamadı. Görev istemine tam URL'ler eklendi; engel sürerse rapor 'Fiyat verisi: güncellenmedi' diye kırmızı gösterecek.",
+      "baslik": "Fiyat kaynağı ikinci gündür izin engeline takılıyor",
+      "neden": "4 Ekim çalıştırmasında getdeploying.com/gpus ve /gpu-price-index WebFetch tarafından 'izin gerekli (PROVENANCE)' diye reddedildi; trendforce.com/presscenter de aynı engele takıldı. Fiyat verisi 2026-10-03'te kaldı. Zamanlanmış görevin bu alan adlarına izinli erişimi olmadan fiyat adımı her gün kırmızı kalacak.",
       "etki": "yüksek",
       "alan": "otomasyon"
     },
     {
-      "baslik": "Karşılaştır'da tasarım için 'nerede geride kaldın' analizi",
-      "neden": "advisor.js'teki findGaps ve beatsAfter hiçbir yerde kullanılmıyor (iyileştirme taraması: 21 kullanılmayan export). Tasarım bir gerçek çiple yan yana konduğunda hangi ölçütte ne kadar geride olduğunu ve hangi danışmanın bunu kapatabileceğini göstermek için hazırlar.",
+      "baslik": "'Nerede geride kaldın' paneli kaynak kodda yok",
+      "neden": "ec60896 'feat(compare): nerede geride kaldın analiz paneli ekle' commit'i yalnızca derlenmiş docs/index.html'i değiştiriyor; src/pages/Compare.jsx'te panel yok ve advisor.js'teki findGaps/beatsAfter hâlâ kullanılmıyor (iyileştirme taraması: 22 kullanılmayan export). Her derleme docs/index.html'i yeniden ürettiği için özellik kayboluyor; panel Compare.jsx'e findGaps ile eklenmeli.",
       "etki": "orta",
       "alan": "özellik"
     },
     {
-      "baslik": "Atölyede yerleşik blokları klavyeyle taşıma",
-      "neden": "Sürükle-bırak fare ile çalışıyor; dokunmatik ekranda ve klavyede blok taşımak için önce silip yeniden yerleştirmek gerekiyor. Ok tuşlarıyla seçili bloğu bir hücre kaydırmak erişilebilirliği tamamlar.",
-      "etki": "düşük",
-      "alan": "erişilebilirlik"
+      "baslik": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
+      "neden": "veri-isle.mjs ve rapor ajanı eksik fiyat dosyasını yalnızca 'fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)' diye gösteriyor; otomasyon/*.mjs içinde izin engeli için bir alan yok. gelen/engeller.json gibi bir dosyayla nedeni (izin engeli / az satır / site hatası) rapora ve Otomasyon sayfasına taşımak teşhisi hızlandırır.",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Maliyet puanını daha çok çipe yay",
+      "neden": "Yeni üç boyutlu puanlamada (chipScore.js maliyetPuani) maliyet yalnızca chip_id'si eşlenmiş kiralama satırlarında hesaplanıyor: gpu_kiralama.json'daki 107 satırın 26'sında chip_id var. Katalogdaki fiyatı olan diğer GPU'lar için eşleme eklemek, genel puanın daha çok çipte üç boyuttan hesaplanmasını sağlar.",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Uygulamayı GitHub Pages'te yayına al",
+      "neden": "Otomasyon her gün docs/index.html'i güncelliyor; dünkü kontrolde depo ayarlarında Pages kapalıydı (has_pages: false). Bugün bu ortamdan doğrulanamadı. Settings → Pages → main / docs seçilince site her sabah kendiliğinden güncellenir.",
+      "etki": "orta",
+      "alan": "yayın"
     },
     {
       "baslik": "Tailwind 4'e geçiş",
-      "neden": "Kalan tek bağımlılık uyarısı (braces, GHSA-vfj7-8cjw-p6xm) Tailwind 3'ten geliyor; yamalı sürüm yok. Risk derleme zamanıyla sınırlı olduğu için 15 Ocak 2027'ye kadar kabul listesinde; geçiş yapılırsa liste boşalır.",
+      "neden": "Kabul edilen tek bağımlılık riski (braces) Tailwind 3'ten geliyor; 15 Ocak 2027'ye kadar kabul listesinde. Geçiş yapılırsa liste boşalır.",
       "etki": "düşük",
       "alan": "güvenlik"
-    },
-    {
-      "baslik": "Kullanılmayan dışa aktarımları temizle",
-      "neden": "İyileştirme taraması 21 export'un hiçbir yerde kullanılmadığını gösteriyor (ör. ui/select.jsx bileşenleri, progress.js'teki sıfırlama fonksiyonları). Bir kısmı Hesap/Eğitim sayfalarına 'ilerlemeyi sıfırla' gibi özellik olarak bağlanabilir, gerisi silinebilir.",
-      "etki": "düşük",
-      "alan": "kod"
     }
   ],
   "guvenlik": {
@@ -111,15 +116,15 @@
         "etiketsizDugme": 0
       },
       "kod": {
-        "dosyaSayisi": 44,
-        "toplamSatir": 10606,
+        "dosyaSayisi": 45,
+        "toplamSatir": 11838,
         "boyutKB": null
       }
     },
     "bulgular": [
       {
         "alan": "kod",
-        "baslik": "21 export hiçbir yerde kullanılmıyor",
+        "baslik": "22 export hiçbir yerde kullanılmıyor",
         "etki": "düşük",
         "otomatik": false,
         "detay": [
@@ -131,6 +136,7 @@
           "SelectItem (src/components/ui/select.jsx)",
           "findGaps (src/lib/advisor.js)",
           "beatsAfter (src/lib/advisor.js)",
+          "fiyatBilgisi (src/lib/chipScore.js)",
           "designCount (src/lib/designs.js)",
           "togglePin (src/lib/notes.js)",
           "searchNotes (src/lib/notes.js)",
@@ -149,17 +155,17 @@
     ]
   },
   "yenileme": {
-    "durum": "ok",
+    "durum": "kısmi",
     "adimlar": [
       {
         "ad": "Fiyat verisi",
-        "durum": "atlandı",
-        "detay": "bu çalıştırmada fiyat girdisi gelmedi; mevcut veri bugün daha önce işlenmiş"
+        "durum": "hata",
+        "detay": "güncellenmedi — son veri 2026-10-03. otomasyon/gelen/fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)"
       },
       {
         "ad": "Bugün sayfası",
-        "durum": "atlandı",
-        "detay": "bu çalıştırmada girdi gelmedi; bugünün verisi daha önce işlenmiş (12 madde, puan 71)"
+        "durum": "ok",
+        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 65"
       },
       {
         "ad": "Derleme",
@@ -169,7 +175,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 1568 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 1904 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -203,7 +209,12 @@
     },
     {
       "tarih": "2026-10-03",
-      "durum": "dikkat",
+      "durum": "temiz",
+      "dikkat": 0
+    },
+    {
+      "tarih": "2026-10-04",
+      "durum": "kritik",
       "dikkat": 1
     }
   ]
