@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-04T07:08:27.125Z",
-  "tarih": "2026-10-04",
+  "guncelleme": "2026-10-05T06:58:01.778Z",
+  "tarih": "2026-10-05",
   "durum": "kritik",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-10-04T07:07:11.958Z"
+      "zaman": "2026-10-05T06:57:08.886Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-04T07:07:12.058Z"
+      "zaman": "2026-10-05T06:57:08.986Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "kısmi",
-      "zaman": "2026-10-04T07:07:10.782Z"
+      "zaman": "2026-10-05T06:57:07.787Z"
     },
     {
       "id": "gelistirme",
@@ -33,7 +33,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-04T07:07:25.818Z"
+      "zaman": "2026-10-05T06:57:22.335Z"
     }
   ],
   "dikkat": [
@@ -44,38 +44,38 @@
   ],
   "oneriler": [
     {
-      "baslik": "Fiyat kaynağı ikinci gündür izin engeline takılıyor",
-      "neden": "4 Ekim çalıştırmasında getdeploying.com/gpus ve /gpu-price-index WebFetch tarafından 'izin gerekli (PROVENANCE)' diye reddedildi; trendforce.com/presscenter de aynı engele takıldı. Fiyat verisi 2026-10-03'te kaldı. Zamanlanmış görevin bu alan adlarına izinli erişimi olmadan fiyat adımı her gün kırmızı kalacak.",
+      "baslik": "Fiyat ve bellek kaynakları üçüncü gündür izin engeline takılıyor",
+      "neden": "5 Ekim çalıştırmasında getdeploying.com/gpus, /gpu-price-index ve trendforce.com/presscenter WebFetch tarafından yine 'PROVENANCE_REQUIRED' (izin isteği yanıtlanmadı) ile reddedildi. Fiyat verisi 2026-10-03'te kaldı; bugün pazartesi olduğu halde bellek sözleşme fiyatları da güncellenemedi. Zamanlanmış görev için bu alan adlarına kalıcı izin verilmeden fiyat adımı her gün kırmızı kalacak.",
       "etki": "yüksek",
       "alan": "otomasyon"
     },
     {
-      "baslik": "'Nerede geride kaldın' paneli kaynak kodda yok",
-      "neden": "ec60896 'feat(compare): nerede geride kaldın analiz paneli ekle' commit'i yalnızca derlenmiş docs/index.html'i değiştiriyor; src/pages/Compare.jsx'te panel yok ve advisor.js'teki findGaps/beatsAfter hâlâ kullanılmıyor (iyileştirme taraması: 22 kullanılmayan export). Her derleme docs/index.html'i yeniden ürettiği için özellik kayboluyor; panel Compare.jsx'e findGaps ile eklenmeli.",
-      "etki": "orta",
-      "alan": "özellik"
-    },
-    {
       "baslik": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
-      "neden": "veri-isle.mjs ve rapor ajanı eksik fiyat dosyasını yalnızca 'fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)' diye gösteriyor; otomasyon/*.mjs içinde izin engeli için bir alan yok. gelen/engeller.json gibi bir dosyayla nedeni (izin engeli / az satır / site hatası) rapora ve Otomasyon sayfasına taşımak teşhisi hızlandırır.",
+      "neden": "veri-isle.mjs ve otomasyon/ajanlar/*.mjs içinde 'izin' veya 'engel' geçen hiçbir alan yok; eksik fiyat dosyası hâlâ yalnızca 'fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)' diye gösteriliyor. gelen/engeller.json gibi bir dosyayla nedeni rapora ve Otomasyon sayfasına taşımak teşhisi hızlandırır.",
       "etki": "orta",
       "alan": "otomasyon"
     },
     {
+      "baslik": "'Nerede geride kaldın' panelini kaynağa taşı",
+      "neden": "src/pages/Compare.jsx'te findGaps hiç geçmiyor; advisor.js'teki findGaps ve beatsAfter iyileştirme taramasında hâlâ 'kullanılmayan export' listesinde (bugün 22 export). Panel yalnızca derlenmiş docs/index.html'e eklenmişti ve her derlemede kayboluyor.",
+      "etki": "orta",
+      "alan": "özellik"
+    },
+    {
       "baslik": "Maliyet puanını daha çok çipe yay",
-      "neden": "Yeni üç boyutlu puanlamada (chipScore.js maliyetPuani) maliyet yalnızca chip_id'si eşlenmiş kiralama satırlarında hesaplanıyor: gpu_kiralama.json'daki 107 satırın 26'sında chip_id var. Katalogdaki fiyatı olan diğer GPU'lar için eşleme eklemek, genel puanın daha çok çipte üç boyuttan hesaplanmasını sağlar.",
+      "neden": "gpu_kiralama.json'daki 107 fiyat satırının yalnızca 26'sında chip_id var; chipScore.js maliyet puanı yalnızca bu satırlarda hesaplanıyor. Katalogdaki 58 çipten fiyatı olanlar için eşleme eklemek üç boyutlu puanın kapsamını artırır.",
       "etki": "orta",
       "alan": "veri"
     },
     {
-      "baslik": "Uygulamayı GitHub Pages'te yayına al",
-      "neden": "Otomasyon her gün docs/index.html'i güncelliyor; dünkü kontrolde depo ayarlarında Pages kapalıydı (has_pages: false). Bugün bu ortamdan doğrulanamadı. Settings → Pages → main / docs seçilince site her sabah kendiliğinden güncellenir.",
-      "etki": "orta",
-      "alan": "yayın"
+      "baslik": "Bugün sayfasına 'yaklaşan olaylar' kutusu",
+      "neden": "Bugünkü haberlerde 8 Ekim'deki Samsung ön 3. çeyrek sonuçları gibi tarihli olaylar var, ancak src/data/bugun.json şemasında (tarih, derlenme, ozet, puan, yontem, maddeler) ileri tarihli olay alanı yok. İsteğe bağlı bir 'takvim' dizisi, okuyucunun ertesi günlerdeki önemli açıklamaları görmesini sağlar.",
+      "etki": "düşük",
+      "alan": "özellik"
     },
     {
       "baslik": "Tailwind 4'e geçiş",
-      "neden": "Kabul edilen tek bağımlılık riski (braces) Tailwind 3'ten geliyor; 15 Ocak 2027'ye kadar kabul listesinde. Geçiş yapılırsa liste boşalır.",
+      "neden": "package.json'da tailwindcss hâlâ ^3.4.14; kabul edilen tek bağımlılık riski (braces) Tailwind 3'ten geliyor ve 15 Ocak 2027'ye kadar kabul listesinde.",
       "etki": "düşük",
       "alan": "güvenlik"
     }
@@ -165,7 +165,7 @@
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 65"
+        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 69"
       },
       {
         "ad": "Derleme",
@@ -175,7 +175,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 1904 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 1905 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -214,6 +214,11 @@
     },
     {
       "tarih": "2026-10-04",
+      "durum": "kritik",
+      "dikkat": 1
+    },
+    {
+      "tarih": "2026-10-05",
       "durum": "kritik",
       "dikkat": 1
     }
