@@ -57,6 +57,12 @@ const DUZELTMELER = {
       const b = JSON.parse(fs.readFileSync(path.join(KOK, "src/data/bugun.json"), "utf-8")).tarih;
       return `${f}|${b}`;
     };
+    // gelen/ boşsa yenilemeyi yeniden çalıştırmanın anlamı yok; üstelik 3. ajan
+    // günün yenileme raporunu boş bir sonuçla ezer ("Bugün: güncellendi" →
+    // "girdi gelmedi") ve gereksiz ikinci bir derleme yapar.
+    const GIRDILER = ["fiyatlar.json", "bugun.json", "bellek.json", "oneriler.json"];
+    if (!GIRDILER.some((f) => fs.existsSync(path.join(KOK, "otomasyon", "gelen", f))))
+      throw new Error("otomasyon/gelen/ altında işlenecek girdi yok — yenileme yeniden çalıştırılmadı (günün yenileme raporu korunur)");
     const once = tarihler();
     calistir("node otomasyon/ajanlar/3-yenileme.mjs");
     const sonra = tarihler();
