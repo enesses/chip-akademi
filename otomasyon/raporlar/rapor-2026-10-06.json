@@ -1,0 +1,37 @@
+{
+  "ajan": "rapor",
+  "tarih": "2026-10-06",
+  "zaman": "2026-10-06T07:10:15.267Z",
+  "durum": "kritik",
+  "gunTamam": true,
+  "tazelik": [
+    {
+      "ad": "Bugün sayfası",
+      "tarih": "2026-10-06",
+      "gun": 0
+    },
+    {
+      "ad": "Fiyat verisi",
+      "tarih": "2026-10-03",
+      "gun": 3
+    }
+  ],
+  "otomatikTamamlanan": [],
+  "calisan": [
+    "guvenlik",
+    "iyilestirme",
+    "yenileme",
+    "gelistirme"
+  ],
+  "calismayan": [],
+  "dikkat": [
+    {
+      "seviye": "uyarı",
+      "metin": "Güvenlik: 2 yüksek seviye bağımlılık açığı var."
+    },
+    {
+      "seviye": "kritik",
+      "metin": "Yenileme · Fiyat verisi: güncellenmedi — son veri 2026-10-03. otomasyon/gelen/fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)"
+    }
+  ]
+}

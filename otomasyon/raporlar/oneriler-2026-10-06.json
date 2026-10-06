@@ -1,0 +1,47 @@
+{
+  "oneriler": [
+    {
+      "baslik": "Fiyat ve bellek kaynakları dördüncü gündür izin engeline takılıyor",
+      "alan": "otomasyon",
+      "etki": "yüksek",
+      "neden": "6 Ekim çalıştırmasında getdeploying.com/gpus, /gpu-price-index ve trendforce.com/presscenter WebFetch'te yine 'PROVENANCE_REQUIRED' ile reddedildi. src/data/gpu_kiralama.json cekildigi_tarih hâlâ 2026-10-03. Zamanlanmış görevin istemine bu üç URL'yi doğrudan eklemek ya da kaynakları sabit bir izin listesine almak gerekiyor; yoksa fiyatlar her gün biraz daha eskiyecek."
+    },
+    {
+      "baslik": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
+      "alan": "otomasyon",
+      "etki": "orta",
+      "neden": "otomasyon/*.mjs ve otomasyon/ajanlar/ içinde 'izin engeli' ya da 'PROVENANCE' geçen alan yok; eksik fiyat dosyası hâlâ 'fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)' diye gösteriliyor. gelen/ altına isteğe bağlı bir durum.json (ör. {fiyat:'izin-engeli'}) yazılıp 3-yenileme.mjs'de gösterilirse sorun sayfa yapısı değişikliğinden ayırt edilir."
+    },
+    {
+      "baslik": "'Nerede geride kaldın' panelini kaynağa taşı",
+      "alan": "özellik",
+      "etki": "orta",
+      "neden": "src/pages/Compare.jsx'te findGaps 0 kez geçiyor; advisor.js'teki findGaps ve beatsAfter iyileştirme taramasında hâlâ 'kullanılmayan export' (bugün 22 export). Panel kaynakta bağlanmazsa bir sonraki derlemede kaybolma riski var."
+    },
+    {
+      "baslik": "Maliyet puanını daha çok çipe yay",
+      "alan": "veri",
+      "etki": "orta",
+      "neden": "gpu_kiralama.json'daki 107 fiyat satırının yalnızca 26'sında chip_id var; chipScore.js maliyet puanı yalnızca bu satırlarda hesaplanıyor."
+    },
+    {
+      "baslik": "Bugün sayfasına 'yaklaşan olaylar' kutusu",
+      "alan": "özellik",
+      "etki": "düşük",
+      "neden": "Bugünkü özette 8 Ekim'deki Samsung öncü 3. çeyrek sonuçları geçiyor ama src/data/bugun.json şemasında ileri tarihli olay alanı yok; olay yalnızca düz metinde kalıyor."
+    },
+    {
+      "baslik": "Bellek göstergelerinden birinin tarihi 3 aydan eski",
+      "alan": "veri",
+      "etki": "düşük",
+      "neden": "src/data/bellek_fiyat.json'daki 5 göstergeden biri 2026-07-09 tarihli (diğerleri 29–30 Eylül). TrendForce bugün de izin engeline takıldı; erişim açılınca bu gösterge yenilenmeli ya da sayfada 'eski' diye işaretlenmeli."
+    },
+    {
+      "baslik": "Tailwind 4'e geçiş",
+      "alan": "güvenlik",
+      "etki": "düşük",
+      "neden": "package.json'da tailwindcss ^3.4.14; güvenlik raporundaki 2 yüksek açığın kabul gerekçesi (braces) Tailwind 3'e bağlı ve kabul 15 Ocak 2027'de doluyor."
+    }
+  ],
+  "tarih": "2026-10-06"
+}

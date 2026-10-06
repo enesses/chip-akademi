@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-05T06:58:01.778Z",
-  "tarih": "2026-10-05",
+  "guncelleme": "2026-10-06T07:10:15.265Z",
+  "tarih": "2026-10-06",
   "durum": "kritik",
   "ajanlar": [
     {
@@ -8,8 +8,8 @@
       "ad": "Güvenlik",
       "saat": "10:00",
       "calisti": true,
-      "durum": "temiz",
-      "zaman": "2026-10-05T06:57:08.886Z"
+      "durum": "dikkat",
+      "zaman": "2026-10-06T07:08:56.542Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-05T06:57:08.986Z"
+      "zaman": "2026-10-06T07:08:56.686Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "kısmi",
-      "zaman": "2026-10-05T06:57:07.787Z"
+      "zaman": "2026-10-06T07:08:55.126Z"
     },
     {
       "id": "gelistirme",
@@ -33,10 +33,14 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-05T06:57:22.335Z"
+      "zaman": "2026-10-06T07:09:11.979Z"
     }
   ],
   "dikkat": [
+    {
+      "seviye": "uyarı",
+      "metin": "Güvenlik: 2 yüksek seviye bağımlılık açığı var."
+    },
     {
       "seviye": "kritik",
       "metin": "Yenileme · Fiyat verisi: güncellenmedi — son veri 2026-10-03. otomasyon/gelen/fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)"
@@ -44,56 +48,61 @@
   ],
   "oneriler": [
     {
-      "baslik": "Fiyat ve bellek kaynakları üçüncü gündür izin engeline takılıyor",
-      "neden": "5 Ekim çalıştırmasında getdeploying.com/gpus, /gpu-price-index ve trendforce.com/presscenter WebFetch tarafından yine 'PROVENANCE_REQUIRED' (izin isteği yanıtlanmadı) ile reddedildi. Fiyat verisi 2026-10-03'te kaldı; bugün pazartesi olduğu halde bellek sözleşme fiyatları da güncellenemedi. Zamanlanmış görev için bu alan adlarına kalıcı izin verilmeden fiyat adımı her gün kırmızı kalacak.",
+      "baslik": "Fiyat ve bellek kaynakları dördüncü gündür izin engeline takılıyor",
+      "alan": "otomasyon",
       "etki": "yüksek",
-      "alan": "otomasyon"
+      "neden": "6 Ekim çalıştırmasında getdeploying.com/gpus, /gpu-price-index ve trendforce.com/presscenter WebFetch'te yine 'PROVENANCE_REQUIRED' ile reddedildi. src/data/gpu_kiralama.json cekildigi_tarih hâlâ 2026-10-03. Zamanlanmış görevin istemine bu üç URL'yi doğrudan eklemek ya da kaynakları sabit bir izin listesine almak gerekiyor; yoksa fiyatlar her gün biraz daha eskiyecek."
     },
     {
       "baslik": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
-      "neden": "veri-isle.mjs ve otomasyon/ajanlar/*.mjs içinde 'izin' veya 'engel' geçen hiçbir alan yok; eksik fiyat dosyası hâlâ yalnızca 'fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)' diye gösteriliyor. gelen/engeller.json gibi bir dosyayla nedeni rapora ve Otomasyon sayfasına taşımak teşhisi hızlandırır.",
+      "alan": "otomasyon",
       "etki": "orta",
-      "alan": "otomasyon"
+      "neden": "otomasyon/*.mjs ve otomasyon/ajanlar/ içinde 'izin engeli' ya da 'PROVENANCE' geçen alan yok; eksik fiyat dosyası hâlâ 'fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)' diye gösteriliyor. gelen/ altına isteğe bağlı bir durum.json (ör. {fiyat:'izin-engeli'}) yazılıp 3-yenileme.mjs'de gösterilirse sorun sayfa yapısı değişikliğinden ayırt edilir."
     },
     {
       "baslik": "'Nerede geride kaldın' panelini kaynağa taşı",
-      "neden": "src/pages/Compare.jsx'te findGaps hiç geçmiyor; advisor.js'teki findGaps ve beatsAfter iyileştirme taramasında hâlâ 'kullanılmayan export' listesinde (bugün 22 export). Panel yalnızca derlenmiş docs/index.html'e eklenmişti ve her derlemede kayboluyor.",
+      "alan": "özellik",
       "etki": "orta",
-      "alan": "özellik"
+      "neden": "src/pages/Compare.jsx'te findGaps 0 kez geçiyor; advisor.js'teki findGaps ve beatsAfter iyileştirme taramasında hâlâ 'kullanılmayan export' (bugün 22 export). Panel kaynakta bağlanmazsa bir sonraki derlemede kaybolma riski var."
     },
     {
       "baslik": "Maliyet puanını daha çok çipe yay",
-      "neden": "gpu_kiralama.json'daki 107 fiyat satırının yalnızca 26'sında chip_id var; chipScore.js maliyet puanı yalnızca bu satırlarda hesaplanıyor. Katalogdaki 58 çipten fiyatı olanlar için eşleme eklemek üç boyutlu puanın kapsamını artırır.",
+      "alan": "veri",
       "etki": "orta",
-      "alan": "veri"
+      "neden": "gpu_kiralama.json'daki 107 fiyat satırının yalnızca 26'sında chip_id var; chipScore.js maliyet puanı yalnızca bu satırlarda hesaplanıyor."
     },
     {
       "baslik": "Bugün sayfasına 'yaklaşan olaylar' kutusu",
-      "neden": "Bugünkü haberlerde 8 Ekim'deki Samsung ön 3. çeyrek sonuçları gibi tarihli olaylar var, ancak src/data/bugun.json şemasında (tarih, derlenme, ozet, puan, yontem, maddeler) ileri tarihli olay alanı yok. İsteğe bağlı bir 'takvim' dizisi, okuyucunun ertesi günlerdeki önemli açıklamaları görmesini sağlar.",
+      "alan": "özellik",
       "etki": "düşük",
-      "alan": "özellik"
+      "neden": "Bugünkü özette 8 Ekim'deki Samsung öncü 3. çeyrek sonuçları geçiyor ama src/data/bugun.json şemasında ileri tarihli olay alanı yok; olay yalnızca düz metinde kalıyor."
+    },
+    {
+      "baslik": "Bellek göstergelerinden birinin tarihi 3 aydan eski",
+      "alan": "veri",
+      "etki": "düşük",
+      "neden": "src/data/bellek_fiyat.json'daki 5 göstergeden biri 2026-07-09 tarihli (diğerleri 29–30 Eylül). TrendForce bugün de izin engeline takıldı; erişim açılınca bu gösterge yenilenmeli ya da sayfada 'eski' diye işaretlenmeli."
     },
     {
       "baslik": "Tailwind 4'e geçiş",
-      "neden": "package.json'da tailwindcss hâlâ ^3.4.14; kabul edilen tek bağımlılık riski (braces) Tailwind 3'ten geliyor ve 15 Ocak 2027'ye kadar kabul listesinde.",
+      "alan": "güvenlik",
       "etki": "düşük",
-      "alan": "güvenlik"
+      "neden": "package.json'da tailwindcss ^3.4.14; güvenlik raporundaki 2 yüksek açığın kabul gerekçesi (braces) Tailwind 3'e bağlı ve kabul 15 Ocak 2027'de doluyor."
     }
   ],
   "guvenlik": {
-    "durum": "temiz",
+    "durum": "dikkat",
     "bagimlilik": {
       "kritik": 0,
-      "yuksek": 0,
-      "orta": 0,
+      "yuksek": 2,
+      "orta": 2,
       "dusuk": 0,
-      "toplam": 0,
+      "toplam": 4,
       "kabulEdilen": [
         "braces",
         "chokidar",
         "fast-glob",
-        "micromatch",
-        "tailwindcss"
+        "micromatch"
       ],
       "kabulNedenleri": [
         "braces (GHSA-vfj7-8cjw-p6xm): Yalnızca derleme sırasında Tailwind 3'ün dosya taramasında kullanılıyor; açık, saldırganın glob deseni verebilmesini gerektiriyor ve desenler bizim tailwind.config.js dosyamızdan geliyor. Yayınlanan HTML'de bu kod yok. Yamalı braces sürümü yok; tek çözüm Tailwind 4'e geçiş (ayrı bir iş). — gözden geçirme 2027-01-15"
@@ -122,6 +131,14 @@
       }
     },
     "bulgular": [
+      {
+        "alan": "veri",
+        "baslik": "Fiyat verisi 3 gün önce çekilmiş",
+        "etki": "orta",
+        "otomatik": true,
+        "eylem": "yenileme-calistir",
+        "aciklama": "3. ajan (yenileme) çalıştırılarak güncellenebilir."
+      },
       {
         "alan": "kod",
         "baslik": "22 export hiçbir yerde kullanılmıyor",
@@ -165,7 +182,7 @@
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 69"
+        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 63"
       },
       {
         "ad": "Derleme",
@@ -175,14 +192,14 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 1905 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 1904 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
   "gelistirme": {
     "durum": "degisiklik-yok",
     "uygulanan": 0,
-    "atlanan": 0,
+    "atlanan": 1,
     "testler": [
       {
         "ad": "Derleme",
@@ -221,6 +238,11 @@
       "tarih": "2026-10-05",
       "durum": "kritik",
       "dikkat": 1
+    },
+    {
+      "tarih": "2026-10-06",
+      "durum": "kritik",
+      "dikkat": 2
     }
   ]
 }
