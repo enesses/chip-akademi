@@ -3,17 +3,13 @@ import { Link } from "@/components/Nav";
 import { Layers, Wrench, Cpu, ShieldAlert } from "lucide-react";
 import icyapi from "@/data/icyapi.json";
 import KatmanYigini from "@/components/KatmanYigini";
+import { puanRengi } from "@/components/IcPuanlar";
+import { cihazPuani, anaIslemci } from "@/lib/icPuan";
+import { genelPuan } from "@/lib/chipScore";
 import { cn } from "@/lib/utils";
 
 const { cihazlar, kategoriler } = icyapi;
 
-function onarimRengi(puan) {
-  if (puan == null) return "text-muted-foreground border-card-border";
-  if (puan >= 8) return "text-emerald-400 border-emerald-400/30";
-  if (puan >= 6) return "text-yellow-400 border-yellow-400/30";
-  if (puan >= 4) return "text-orange-400 border-orange-400/30";
-  return "text-rose-400 border-rose-400/30";
-}
 
 export default function Ic() {
   const [kat, setKat] = useState("hepsi");
@@ -77,9 +73,13 @@ export default function Ic() {
           {liste.map((c) => {
             const k = kategoriler.find((x) => x.id === c.kategori);
             const chipSayisi = c.parcalar.filter((p) => p.rol === "islemci").length;
+            const puan = cihazPuani(c);
+            const ana = anaIslemci(c);
+            const anaPuan = ana ? genelPuan(ana).puan : null;
+            const anaAd = ana ? ana.name : c.parcalar.find((p) => p.rol === "islemci")?.ad;
             return (
               <Link key={c.id} href={`/ic/${c.id}`} asChild>
-                <a className="group rounded-xl border border-card-border bg-card p-5 hover-elevate flex flex-col">
+                <a className="group min-w-0 rounded-xl border border-card-border bg-card p-5 hover-elevate flex flex-col">
                   <div className="flex items-start justify-between gap-3 mb-3">
                     <div className="min-w-0">
                       <p className="font-mono text-[10px] uppercase tracking-wider mb-1" style={{ color: k?.renk }}>
@@ -89,17 +89,18 @@ export default function Ic() {
                         {c.ad}
                       </h3>
                     </div>
-                    {c.onarim?.puan != null && (
-                      <span
-                        className={cn(
-                          "shrink-0 font-mono text-[11px] font-bold px-2 py-1 rounded border",
-                          onarimRengi(c.onarim.puan)
-                        )}
-                        title={`iFixit onarılabilirlik: ${c.onarim.puan}/${c.onarim.max}`}
-                      >
-                        {c.onarim.puan}/{c.onarim.max}
+                    <span
+                      className={cn(
+                        "shrink-0 text-center rounded-lg border border-card-border px-2 py-1",
+                        puanRengi(puan.genel)
+                      )}
+                      title={puan.genel != null ? "Cihaz puanı (100 üzerinden)" : puan.genelNeden}
+                    >
+                      <span className="block font-display font-bold text-base leading-none">{puan.genel ?? "—"}</span>
+                      <span className="block font-mono text-[8px] text-muted-foreground mt-0.5">
+                        {puan.genel != null ? "/100" : "veri az"}
                       </span>
-                    )}
+                    </span>
                   </div>
 
                   <div className="flex items-center gap-4 mb-3">
@@ -123,7 +124,29 @@ export default function Ic() {
                     </div>
                   </div>
 
-                  <p className="text-xs text-muted-foreground leading-relaxed line-clamp-4 mt-auto">{c.ozet}</p>
+                  {/* Ana işlemci ve bileşen puanları */}
+                  {anaAd && (
+                    <div className="rounded-lg border border-card-border bg-background/40 px-3 py-2 mb-3">
+                      <div className="flex items-center justify-between gap-2 min-w-0">
+                        <p className="text-[11px] truncate min-w-0">
+                          <span className="text-muted-foreground">İşlemci: </span>
+                          {anaAd}
+                        </p>
+                        <span className={cn("font-mono text-[11px] font-bold shrink-0", puanRengi(anaPuan))}>
+                          {anaPuan != null ? `${anaPuan}/100` : "puan yok"}
+                        </span>
+                      </div>
+                      <div className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1.5">
+                        {puan.bilesenler.filter((b) => b.key !== "islemci").map((b) => (
+                          <span key={b.key} className="text-[10px] text-muted-foreground">
+                            {b.ad} <span className={cn("font-mono font-bold", puanRengi(b.puan))}>{b.puan ?? "—"}</span>
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  <p className="text-xs text-muted-foreground leading-relaxed line-clamp-3 mt-auto">{c.ozet}</p>
                 </a>
               </Link>
             );
@@ -136,6 +159,10 @@ export default function Ic() {
             <Wrench className="h-3 w-3" />Yöntem
           </p>
           <p className="text-xs text-muted-foreground leading-relaxed">
+            Kartlardaki cihaz puanı 100 üzerinden ve üç bileşenden hesaplanır: onarılabilirlik
+            (iFixit × 10), şeffaflık (üreticisi bilinen parça oranı; açıklanmayan her bilgi
+            paydayı büyütür) ve işlemci (ana chip'in katalogdaki genel puanı). En az iki bileşeni
+            hesaplanamayan cihaza genel puan verilmez.
             Parça numaraları yalnızca bir teardown'da fiilen okunduğunda yazıldı; üretici
             açıklamadıysa ya da teardown okuyamadıysa boş bırakılıp cihaz sayfasındaki
             <span className="text-foreground"> eksik veri </span>

@@ -7,6 +7,8 @@ import {
 } from "lucide-react";
 import icyapi from "@/data/icyapi.json";
 import KatmanYigini from "@/components/KatmanYigini";
+import { CihazPuanPaneli, IslemciKarti, EksiklerKutusu, puanRengi } from "@/components/IcPuanlar";
+import { cihazPuani, anaIslemci } from "@/lib/icPuan";
 import { cn } from "@/lib/utils";
 
 const { cihazlar, kategoriler, roller } = icyapi;
@@ -65,6 +67,8 @@ export default function IcDetail() {
   }
 
   const kat = kategoriler.find((k) => k.id === cihaz.kategori);
+  const puan = cihazPuani(cihaz);
+  const chip = anaIslemci(cihaz);
 
   return (
     <div className="container mx-auto px-4 py-10">
@@ -82,20 +86,14 @@ export default function IcDetail() {
           </p>
           <h1 className="font-display text-3xl font-bold">{cihaz.ad}</h1>
         </div>
-        {cihaz.onarim?.puan != null && (
-          <div className={cn("rounded-xl border px-4 py-3 text-center", onarimRengi(cihaz.onarim.puan))}>
-            <p className="font-mono text-[9px] uppercase tracking-wider text-muted-foreground mb-0.5">
-              iFixit onarım
-            </p>
-            <p className="font-display font-bold text-2xl leading-none">
-              {cihaz.onarim.puan}
-              <span className="text-sm text-muted-foreground">/{cihaz.onarim.max}</span>
-            </p>
-            {cihaz.onarim.gecici && (
-              <p className="font-mono text-[9px] text-muted-foreground mt-1">geçici puan</p>
-            )}
-          </div>
-        )}
+        <div className="rounded-xl border border-card-border bg-card px-4 py-3 text-center min-w-[7rem]">
+          <p className="font-mono text-[9px] uppercase tracking-wider text-muted-foreground mb-1">Cihaz puanı</p>
+          <p className={cn("font-display font-bold text-3xl leading-none", puanRengi(puan.genel))}>
+            {puan.genel ?? "—"}
+            {puan.genel != null && <span className="text-sm text-muted-foreground font-normal">/100</span>}
+          </p>
+          {puan.genel == null && <p className="font-mono text-[9px] text-muted-foreground mt-1">yetersiz veri</p>}
+        </div>
       </div>
 
       <p className="text-muted-foreground leading-relaxed max-w-3xl mb-6">{cihaz.ozet}</p>
@@ -109,6 +107,18 @@ export default function IcDetail() {
           <p className="text-sm leading-relaxed">{cihaz.ic_fikir}</p>
         </div>
       )}
+
+      {/* Puanlar + işlemci künyesi */}
+      <h2 className="font-display text-lg font-bold mb-4">Puanlar</h2>
+      <div className="mb-4">
+        <CihazPuanPaneli puan={puan} />
+      </div>
+      <div className="mb-6">
+        <IslemciKarti cihaz={cihaz} chip={chip} />
+      </div>
+      <div className="mb-10">
+        <EksiklerKutusu eksikler={cihaz.eksikler} />
+      </div>
 
       {/* Patlatılmış görünüm */}
       <h2 className="font-display text-lg font-bold mb-1 inline-flex items-center gap-2">

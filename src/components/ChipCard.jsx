@@ -45,7 +45,13 @@ export default function ChipCard({ chip }) {
     <Link href={`/chip/${chip.id}`} asChild>
       <a className="group block rounded-xl border border-card-border bg-card overflow-hidden hover-elevate" data-testid={`chip-card-${chip.id}`}>
         <div className="relative aspect-[4/3] bg-muted overflow-hidden">
-          <img src={imageUrl(chip.image)} alt={chip.name} className="w-full h-full object-cover" />
+          {chip.image ? (
+            <img src={imageUrl(chip.image)} alt={chip.name} className="w-full h-full object-cover" />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center bg-silicon-grid">
+              <span className="font-display font-bold text-sm px-4 text-center" style={{ color }}>{chip.name}</span>
+            </div>
+          )}
 
           {/* Genel puan rozeti */}
           <div className="absolute bottom-3 right-3 flex items-center gap-1.5">
