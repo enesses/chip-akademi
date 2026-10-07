@@ -28,6 +28,9 @@ Tarih her yerde UTC günüdür (`new Date().toISOString().slice(0,10)`); 10:00
 - WebFetch uzun tablolarda satır düşürebiliyor. Gelen modelleri `src/data/gpu_kiralama.json` içindeki `fiyatlar[].model` listesiyle karşılaştır; eksik kalan **fiyatı olan** modeller için aynı sayfaya ikinci, hedefli bir WebFetch yap (yalnızca o modelleri sor).
 - WebFetch bir siteyi "izin / kaynak doğrulaması gerekiyor" (PROVENANCE) diye reddederse bunu rapora **açıkça "izin engeli"** olarak yaz ve o adımı atla; curl, ayna site ya da önbellek gibi başka yollar deneme. Fiyat verisi o gün güncellenmez, rapor kırmızı gösterir — bu doğru davranıştır.
 - **Medyan** sütununu kullan (uygulamadaki fiyatlar medyandır). En ucuz sütununu medyan yerine koymak sahte "fiyat düştü" hareketi üretir.
+- Kayıtlı fiyata göre **%50'den büyük** oynayan, en az 10 sağlayıcılı bir model varsa betik onu "şüpheli" sayıp yazmaz. Önce aynı sayfaya **hedefli ikinci bir WebFetch** yap: yalnızca o modelleri ve tablonun sütun başlıklarını iste. İki okuma aynı medyanı veriyorsa modeli girdiye ekle:
+  `"dogrulanan": [{ "model": "Nvidia A4000", "not": "ikinci okuma: medyan 0.49, en düşük 0.08" }]`.
+  Okumalar farklıysa ekleme; rapor şüpheliyi gösterir. Bu liste olmadan gerçek bir fiyat sıçraması her gün yeniden reddedilir.
 - Dosya:
   ```json
   { "tarih": "YYYY-MM-DD", "kaynak_url": "https://getdeploying.com/gpus",
