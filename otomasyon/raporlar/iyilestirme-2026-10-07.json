@@ -1,11 +1,11 @@
 {
   "ajan": "iyilestirme",
   "tarih": "2026-10-07",
-  "zaman": "2026-10-07T07:06:33.161Z",
+  "zaman": "2026-10-07T11:18:25.561Z",
   "durum": "tamam",
   "olcumler": {
     "veri": {
-      "chipSayisi": 58,
+      "chipSayisi": 64,
       "fiyatSayisi": 107
     },
     "egitim": {
@@ -16,20 +16,12 @@
       "etiketsizDugme": 0
     },
     "kod": {
-      "dosyaSayisi": 45,
-      "toplamSatir": 11838,
+      "dosyaSayisi": 51,
+      "toplamSatir": 13357,
       "boyutKB": null
     }
   },
   "bulgular": [
-    {
-      "alan": "veri",
-      "baslik": "Fiyat verisi 4 gün önce çekilmiş",
-      "etki": "orta",
-      "otomatik": true,
-      "eylem": "yenileme-calistir",
-      "aciklama": "3. ajan (yenileme) çalıştırılarak güncellenebilir."
-    },
     {
       "alan": "kod",
       "baslik": "22 export hiçbir yerde kullanılmıyor",
