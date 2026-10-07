@@ -16,6 +16,7 @@ import { getCompleted } from "@/lib/progress";
 import { listDesigns } from "@/lib/designs";
 import { profilDegisimineAbone } from "@/lib/hesap";
 import { cn } from "@/lib/utils";
+import BolumRehberi, { AramaGirisi } from "@/components/nav/BolumRehberi";
 
 const KATEGORILER = [
   { id: "GPU", ad: "GPU", alt: "Grafik ve AI hızlandırıcılar", ikon: Zap,
@@ -103,6 +104,7 @@ export default function Home() {
               <LinkDugme href="/egitim" size="lg" variant="outline"><GraduationCap className="h-4 w-4" />Sıfırdan öğren</LinkDugme>
               <LinkDugme href="/tasarla" size="lg" variant="outline"><PenTool className="h-4 w-4" />Çip tasarla</LinkDugme>
             </div>
+            <AramaGirisi />
           </div>
           <HeroDie className="w-full max-w-[420px] mx-auto lg:mx-0 lg:ml-auto" />
         </div>
@@ -149,6 +151,9 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      {/* ------------------------------------------------------------------ bölüm rehberi */}
+      <BolumRehberi />
 
       {/* ------------------------------------------------------------------ kategoriler */}
       <section className="container mx-auto px-4 py-10">

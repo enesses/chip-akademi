@@ -56,3 +56,56 @@ body {
   .hero-die-sm, .hero-die-tarama { animation: none; }
   .hero-die-tarama { display: none; }
 }
+
+/* ── Gezinme kabuğu ─────────────────────────────────────────────────────── */
+
+/* Yapışkan üst çubuk telefonda çentiğin altına girmesin. */
+.ust-cubuk { top: env(safe-area-inset-top, 0px); }
+
+/* Klavye kısayolu etiketi */
+.kbd {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 1.4em; padding: 0.05rem 0.35rem;
+  border: 1px solid hsl(var(--card-border)); border-bottom-width: 2px; border-radius: 5px;
+  background: hsl(var(--muted) / 0.6);
+  font-family: theme("fontFamily.mono"); font-size: 10.5px; line-height: 1.5;
+  color: hsl(var(--muted-foreground));
+}
+
+/* Devre izi: etkin bölümün altında, ucunda lehim pedi olan ince bir iz.
+   Uygulamanın tek imza ayrıntısı; başka yerde kullanılmıyor. */
+.iz::after {
+  content: ""; position: absolute; left: 0.85rem; right: 0.6rem; bottom: -0.38rem;
+  height: 2px; border-radius: 2px; background: hsl(var(--primary));
+}
+.iz::before {
+  content: ""; position: absolute; left: 0.55rem; bottom: calc(-0.38rem - 2px);
+  width: 6px; height: 6px; border-radius: 1.5px; background: hsl(var(--primary));
+  box-shadow: 0 0 0 2px hsl(var(--background));
+}
+/* Masaüstü grup düğmesi: grup etkinken altında küçük ped */
+.iz-ped {
+  position: absolute; left: 50%; bottom: -1px; width: 6px; height: 6px; margin-left: -3px;
+  border-radius: 1.5px; background: hsl(var(--primary));
+}
+
+/* Konum şeridi: kaydırma çubuğu gizli, kenarlar yumuşak solar */
+.serit-kaydir { scrollbar-width: none; padding-bottom: 0.55rem; padding-top: 0.45rem;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 12px, #000 calc(100% - 20px), transparent 100%);
+          mask-image: linear-gradient(90deg, transparent 0, #000 12px, #000 calc(100% - 20px), transparent 100%); }
+.serit-kaydir::-webkit-scrollbar { display: none; }
+
+/* Açılış hareketleri: neyin açıldığını göstersin, kısa olsun */
+.menu-panel { transform-origin: top left; animation: panel-ac 140ms ease-out; }
+.arama-panel { animation: panel-ac 160ms ease-out; }
+.alt-sayfa { animation: alt-sayfa-ac 200ms cubic-bezier(0.2, 0.8, 0.2, 1); }
+@keyframes panel-ac { from { opacity: 0; transform: translateY(-4px) scale(0.985); } to { opacity: 1; transform: none; } }
+@keyframes alt-sayfa-ac { from { transform: translateY(100%); } to { transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .menu-panel, .arama-panel, .alt-sayfa { animation: none; }
+}
+
+/* Mobilde alt çubuk sayfanın sonunu örtmesin */
+@media (max-width: 767.98px) {
+  .alt-bosluk { padding-bottom: calc(4.25rem + env(safe-area-inset-bottom, 0px)); }
+}

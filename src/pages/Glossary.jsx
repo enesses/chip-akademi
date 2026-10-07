@@ -1,10 +1,19 @@
 import { useState } from "react";
+import { SOZLUK_ANAHTARI } from "@/lib/aramaIndeksi";
+
+function gelenTerim() {
+  try {
+    const t = window.sessionStorage.getItem(SOZLUK_ANAHTARI);
+    if (t) window.sessionStorage.removeItem(SOZLUK_ANAHTARI);
+    return t || "";
+  } catch { return ""; }
+}
 import { BookOpen, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { searchGlossary } from "@/data/glossary";
 
 export default function Glossary() {
-  const [q, setQ] = useState("");
+  const [q, setQ] = useState(gelenTerim);
   const list = searchGlossary(q);
   return (
     <div className="bg-silicon-grid min-h-[80vh]">
