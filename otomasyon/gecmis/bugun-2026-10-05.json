@@ -1,0 +1,105 @@
+{
+  "tarih": "2026-10-05",
+  "derlenme": "5 Ekim 2026",
+  "ozet": [
+    "Günün ana teması Asya'nın AI çip yatırımında yeni bir rekor dalgası: Tayvan'ın TAIEX endeksi pazartesi ilk kez 49.000'i aşıp 49.666 puandan rekor kapanış yaptı; TSMC %3, MediaTek %4,3 yükseldi. Samsung ise Yongin'deki ~360 trilyon wonluk çip kümesinin ilk fabrikasını planlanandan bir yıl önce, Ekim 2029'da çalıştırmayı hedeflediğini açıkladı.",
+    "Gözler 8 Ekim'de: Samsung'un ön 3. çeyrek sonuçlarında 200 trilyon wonu aşan gelir ve 110 trilyon wonun üzerinde faaliyet kârı bekleniyor — ikisi de çeyreklik rekor olur. ABD'de AMD hissesi 633,91 dolarla rekor kapanış yaptı ve yılbaşından bu yana ~%180 yükseldi; çip ekipmanı tarafında Axcelis haftayı %14,8 primle kapattı.",
+    "Rekorların bir maliyeti de var: Micron'un CFO'su prim ve üretim artışı maliyetlerinin gelecek çeyreğe ~1 milyar dolar ek gider getireceğini söyledi, Citi Samsung'un 3. çeyrek kâr tahminini prim maliyeti nedeniyle 104,1 trilyon wona indirdi. Yabancı yatırımcılar 1 Eylül'den bu yana Kore hisselerinde 20,3 trilyon wonluk net satış yaptı. Bellek kıtlığının 2028'e kadar sürmesi ve maliyetin tüketici elektroniğine yansıması bekleniyor.",
+    "Jeopolitik tarafta Huawei, 5G'yi de kapsayan ilk çok yıllı patent lisans anlaşmasını Qualcomm ile imzaladı; Qualcomm bazı Huawei bilişim/AI patentlerini de satın alıyor. Genel tablo iyimser: talep ve sermaye güçlü, ama çalışan primleri, yabancı satışı ve tüketiciye yansıyan bellek fiyatları kâr marjları ve talep üzerinde baskı unsuru."
+  ],
+  "puan": {
+    "etiket": "İyimser, maliyet baskısı izleniyor",
+    "yorum": "Tayvan'da endeks rekoru, AMD'nin rekor kapanışı ve Samsung'un hem rekor çeyrek beklentisi hem de Yongin'i öne çekmesi AI çip talebinin güçlü kaldığını gösteriyor. Buna karşılık rekor kârların bir kısmı çalışan primlerine gidiyor, yabancı yatırımcı Kore çip hisselerinden çıkıyor ve bellek kıtlığı tüketici fiyatlarını yukarı itiyor.",
+    "deger": 69
+  },
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = +7 · Σ ağırlık = 18 · Puan = 50 + 50 × 0.39 = 69"
+  },
+  "maddeler": [
+    {
+      "baslik": "TAIEX ilk kez 49.000'i aştı: 49.666 ile rekor",
+      "detay": "Tayvan endeksi pazartesi 1.191 puan (~%2,5) yükselerek 49.666'dan kapandı; elektronik sektörü ~%2,7 arttı. TSMC %3,0 artışla 2.575, MediaTek %4,34 artışla 5.165, Delta Electronics %6,37 artışla 2.005 TWD. Endeksin üst üste dördüncü yükseliş günü.",
+      "kategori": "pozitif",
+      "agirlik": 3,
+      "neden": "Çip ağırlıklı Tayvan borsasındaki rekor, AI yatırımına dair iyimserliğin sürdüğünü doğrudan fiyatlarla gösteriyor.",
+      "kaynak": "The Sunday Guardian",
+      "url": "https://sundayguardianlive.com/business/taiwan-stock-market-today-taiex-surpasses-49000-for-first-time-hits-record-49666-as-ai-stocks-rally-check-why-taiex-is-rising-tsmc-mediatek-delta-electronics-hon-hai-performance-299090/"
+    },
+    {
+      "baslik": "Samsung'dan rekor çeyrek beklentisi: 110 trilyon won+ faaliyet kârı",
+      "detay": "Samsung ön 3. çeyrek sonuçlarını 8 Ekim'de açıklayacak. Analistler 200 trilyon wonu aşan gelir ve 110 trilyon wonun üzerinde faaliyet kârı bekliyor; 2. çeyrekte gelir 171,4, faaliyet kârı 89,4 trilyon wondu.",
+      "kategori": "pozitif",
+      "agirlik": 3,
+      "neden": "Bellek fiyatlarındaki artışın üreticinin kârına rekor düzeyde yansıdığını gösteriyor; AI bellek talebi hâlâ güçlü.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/10/04/samsung-electronics-reports-q3-earnings-as-fed-releases"
+    },
+    {
+      "baslik": "Samsung Yongin'i bir yıl öne çekti: ilk fab Ekim 2029'da",
+      "detay": "Samsung, Yongin ileri sistem yarı iletken kümesine yaklaşık 360 trilyon won yatırım planlıyor. İlk fabrikanın inşaatı 2028'de, üretimi Ekim 2029'da başlayacak (önceki hedef 2030). Bölgeye malzeme, ekipman ve fabless alanında ~70 şirketin yerleşmesi bekleniyor.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "İleri mantık çip kapasitesine uzun vadeli dev yatırım; takvimin öne çekilmesi talep beklentisinin güçlü olduğunu gösteriyor.",
+      "kaynak": "Sammy Fans",
+      "url": "https://sammyfans.com/2026/10/05/samsung-reveals-massive-yongin-semiconductor-vision"
+    },
+    {
+      "baslik": "AMD rekor kapanış: 633,91 $, yılbaşından beri ~%180",
+      "detay": "AMD hissesi 2 Ekim'de 18,18 $ (%2,95) artışla 633,91 $'dan rekor kapanış yaptı; piyasa değeri 1 trilyon dolara yaklaşıyor. Oracle'ın 50.000 MI450 GPU'luk dağıtımı gibi imzalı anlaşmalar AMD'yi Nvidia'nın yanında ikinci tedarikçi konumuna taşıyor.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "AI hızlandırıcı pazarında rekabetin arttığını ve alıcıların ikinci tedarikçiye somut sözleşmelerle yöneldiğini gösteriyor.",
+      "kaynak": "Startup Fortune",
+      "url": "https://startupfortune.com/amd-stock-closes-at-a-record-63391-as-its-nvidia-challenge-gets-real"
+    },
+    {
+      "baslik": "Çip ekipmanı: Axcelis haftada %14,8 yükseldi",
+      "detay": "İyon implantasyon ekipmanı üreticisi Axcelis (ACLS) haftayı %14,83 primle kapattı. Son çeyrekte hisse başı kâr 1,06 $ ile beklentiyi (0,89 $) %19,1 aştı; satış sonrası hizmet geliri yıllık %35 arttı.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Fab yatırımlarının ekipman tedarikçilerine yansıdığını gösteren küçük ama somut bir sinyal.",
+      "kaynak": "Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/what-did-our-models-see-in-this-chip-equipment-name-before-its-1483-week-4931000"
+    },
+    {
+      "baslik": "Huawei ile Qualcomm 5G dahil patent lisansı imzaladı",
+      "detay": "Huawei, Qualcomm ile AI, 5G, bilişim ve ağ teknolojilerini kapsayan çok yıllı bir patent lisans anlaşması duyurdu; Qualcomm bazı Huawei patentlerini de satın alıyor. 5G'yi kapsayan ilk Huawei–Qualcomm anlaşması; Huawei'nin lisans anlaşmalarının toplam değerinin 6,9 milyar doları aşması bekleniyor.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "ABD kısıtlamalarına rağmen Çinli bir şirketin patent portföyünün ABD'li çip devine lisanslandığını gösteriyor; piyasa etkisi sınırlı, jeopolitik açıdan dikkat çekici.",
+      "kaynak": "Reuters / Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/huawei-agrees-to-a-multiyear-patent-licensing-deal-with-qualcomm-4931052"
+    },
+    {
+      "baslik": "Nvidia CEO'su AI 'kıyamet' söylemine karşı; ajan güvenlik platformu",
+      "detay": "Jensen Huang, 2030'da 'dünyanın sonu' gelme ihtimaline '%0' dedi ve teorik değil pratik zararların düzenlenmesini savundu. Nvidia, AI ajanlarını izole eden OpenShell ve DPU ile ajan etkinliğini izleyen Sentry'den oluşan Open Agent Safety Platform'u tanıttı.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Düzenleme tartışmasında en büyük çip üreticisinin tutumunu gösteriyor; kısa vadeli talebe doğrudan etkisi yok.",
+      "kaynak": "Fortune",
+      "url": "https://fortune.com/2026/10/04/nvidia-jensen-huang-ai-doomerism-foil-risk"
+    },
+    {
+      "baslik": "Rekor kârın faturası: primler ve yabancı satışı",
+      "detay": "Micron CFO'su prim ve üretim artışının gelecek çeyreğe ~1 milyar $ ek maliyet getireceğini, brüt marjın %87'den ~%86,3'e ineceğini söyledi. Citi, ~5 trilyon wonluk ek prim maliyeti nedeniyle Samsung'un 3. çeyrek kâr tahminini 104,1 trilyon wona indirdi. Yabancılar 1 Eylül'den bu yana Kore hisselerinde 20,3 trilyon won net sattı.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Rekor kârların bir kısmı çalışan primlerine gidiyor ve yabancı yatırımcı Kore çip hisselerinden çıkıyor; marj ve hisse performansı için baskı unsuru.",
+      "kaynak": "BigGo Finance",
+      "url": "https://finance.biggo.com/news/6ba5abe9-73ef-4d66-8cd2-8547b7d6ec9d"
+    },
+    {
+      "baslik": "Bellek kıtlığı elektroniği pahalılaştırıyor; 2028'e kadar sürebilir",
+      "detay": "Micron mali 4. çeyrekte 54,23 milyar $ gelir (yıllık +%379) ve %87 brüt marj açıkladı; veri merkezi segmenti 18 milyar $'a çıktı. Bellek fiyatlarındaki artış Apple ve Samsung gibi üreticilerce tüketiciye yansıtılıyor; kıtlığın 2028'e kadar sürmesi bekleniyor.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Üretici için olumlu, ancak bellek maliyetinin tüketici cihazlarına ve GPU kiralama maliyetlerine yansıması talebi baskılayabilir.",
+      "kaynak": "TheStreet",
+      "url": "https://thestreet.com/investing/micron-mu-boom-memory-chip-shortage-raising-price-of-electronics"
+    }
+  ]
+}

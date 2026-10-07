@@ -18,7 +18,7 @@ Tarih her yerde UTC günüdür (`new Date().toISOString().slice(0,10)`); 10:00
 ## 0. Hazırlık
 
 1. `enesses/chip-akademi` deposunu **push** erişimiyle oturuma ekle (`add_repo`), tek seferde klonla, klasöre geç.
-2. `npm ci` ve ardından `npm i --no-save playwright` (arayüz testi için; Chromium ortamda kurulu).
+2. `npm ci` (arayüz testi için playwright geliştirme bağımlılığı olarak gelir; Chromium ortamda kurulu, `playwright install` çalıştırma).
 3. `otomasyon/gelen/` boş olmalı (önceki günden kalan dosya varsa sil).
 
 ## 1. Fiyatlar → `otomasyon/gelen/fiyatlar.json`
@@ -26,6 +26,7 @@ Tarih her yerde UTC günüdür (`new Date().toISOString().slice(0,10)`); 10:00
 - WebFetch ile `https://getdeploying.com/gpus` sayfasını iste. İstem:
   *"Tablodaki HER satırı `["model", medyan_usd_veya_null, en_ucuz_usd_veya_null, saglayici]` biçiminde ver; satır atlama, yorum ekleme."*
 - WebFetch uzun tablolarda satır düşürebiliyor. Gelen modelleri `src/data/gpu_kiralama.json` içindeki `fiyatlar[].model` listesiyle karşılaştır; eksik kalan **fiyatı olan** modeller için aynı sayfaya ikinci, hedefli bir WebFetch yap (yalnızca o modelleri sor).
+- WebFetch bir siteyi "izin / kaynak doğrulaması gerekiyor" (PROVENANCE) diye reddederse bunu rapora **açıkça "izin engeli"** olarak yaz ve o adımı atla; curl, ayna site ya da önbellek gibi başka yollar deneme. Fiyat verisi o gün güncellenmez, rapor kırmızı gösterir — bu doğru davranıştır.
 - **Medyan** sütununu kullan (uygulamadaki fiyatlar medyandır). En ucuz sütununu medyan yerine koymak sahte "fiyat düştü" hareketi üretir.
 - Dosya:
   ```json
@@ -33,6 +34,9 @@ Tarih her yerde UTC günüdür (`new Date().toISOString().slice(0,10)`); 10:00
     "satirlar": [["Nvidia H100", 3.38, 1.30, 57], ...] }
   ```
 - En az 30 satır yoksa dosyayı yazma; rapora "fiyat sayfası okunamadı" diye not düş.
+- İsteğe bağlı: `https://getdeploying.com/gpu-price-index` sayfasından endeksin son ölçüm tarihini, 4 haftalık ve 12 aylık değişimini oku ve aynı dosyaya ekle:
+  `"endeks": { "olcum_tarihi": "YYYY-MM-DD", "degisim_4_hafta_pct": -3.2, "degisim_12_ay_pct": 1.7 }`.
+  Okuyamazsan alanı hiç yazma (eski endeks kalır, sayfada ölçüm tarihi görünür).
 
 ## 2. Bugün → `otomasyon/gelen/bugun.json`
 
@@ -43,6 +47,12 @@ Tarih her yerde UTC günüdür (`new Date().toISOString().slice(0,10)`); 10:00
 - Şema için mevcut `src/data/bugun.json` dosyasına bak. `tarih` bugünün tarihi, `derlenme` Türkçe uzun tarih ("3 Ekim 2026").
 - Türkçe yaz. Uydurma yok: doğrulayamadığın haberi alma. Doğrulanmış 5 maddeye ulaşamazsan dosyayı yazma — eski içerik kalır, rapor bunu kırmızıyla gösterir.
 - Kendi geliştiricin (Anthropic) hakkındaki bir haberi de diğerleri gibi tarafsız aktar.
+
+## 2b. Bellek fiyatları → `otomasyon/gelen/bellek.json` (yalnızca pazartesi, ya da yeni bir açıklama gördüysen)
+
+- TrendForce basın merkezi (`trendforce.com/presscenter`) ve haberlerden DRAM / NAND / HBM **sözleşme fiyatı** tahminlerini ara.
+- Şema `src/data/bellek_fiyat.json` ile aynı: `gostergeler[]` (`urun`, `donem`, `olcu`: `çeyreklik|yıllık`, `alt`, `ust` yüzde, `kaynak`, `tarih`, `url`), isteğe bağlı `yigin` ve `notlar`.
+- Her rakamı açtığın kaynaktan doğrula; ikincil kaynaksa `kaynak` alanına bunu yaz ("X (TrendForce verisi)"). Yeni veri yoksa dosya yazma — iyileştirme ajanı 10 günü geçince hatırlatır.
 
 ## 3. Ajanları çalıştır
 

@@ -1,11 +1,11 @@
 {
   "ajan": "iyilestirme",
   "tarih": "2026-10-03",
-  "zaman": "2026-10-03T09:18:57.450Z",
+  "zaman": "2026-10-03T09:30:30.170Z",
   "durum": "tamam",
   "olcumler": {
     "veri": {
-      "chipSayisi": 56,
+      "chipSayisi": 58,
       "fiyatSayisi": 107
     },
     "egitim": {
@@ -13,28 +13,18 @@
     },
     "erisim": {
       "altsiz": 0,
-      "etiketsizDugme": 15
+      "etiketsizDugme": 0
     },
     "kod": {
-      "dosyaSayisi": 43,
-      "toplamSatir": 10086,
+      "dosyaSayisi": 44,
+      "toplamSatir": 10606,
       "boyutKB": null
     }
   },
   "bulgular": [
     {
-      "alan": "veri",
-      "baslik": "1 veri merkezi GPU'su katalogda yok",
-      "etki": "düşük",
-      "otomatik": false,
-      "detay": [
-        "Nvidia GB300"
-      ],
-      "aciklama": "Kiralama listesinde yaygın olan bu modeller katalogda bulunmadığı için fiyat tablosundan chip sayfasına bağlantı verilemiyor."
-    },
-    {
       "alan": "kod",
-      "baslik": "22 export hiçbir yerde kullanılmıyor",
+      "baslik": "21 export hiçbir yerde kullanılmıyor",
       "etki": "düşük",
       "otomatik": false,
       "detay": [
@@ -44,7 +34,6 @@
         "SelectValue (src/components/ui/select.jsx)",
         "SelectContent (src/components/ui/select.jsx)",
         "SelectItem (src/components/ui/select.jsx)",
-        "metricsFrom (src/lib/advisor.js)",
         "findGaps (src/lib/advisor.js)",
         "beatsAfter (src/lib/advisor.js)",
         "designCount (src/lib/designs.js)",

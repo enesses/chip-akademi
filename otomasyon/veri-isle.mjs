@@ -7,6 +7,7 @@
  *   fiyatlar.json  → { "tarih": "YYYY-MM-DD", "kaynak_url": "...",
  *                      "satirlar": [["Nvidia H100", medyan_usd|null, en_ucuz_usd|null, saglayici], ...] }
  *   bugun.json     → src/data/bugun.json ile aynı şema (tarih, derlenme, ozet, puan, yontem, maddeler)
+ *   bellek.json    → src/data/bellek_fiyat.json ile aynı şema (gostergeler, yigin, notlar) — haftalık
  *   oneriler.json  → { "tarih": "...", "oneriler": [{ "baslik", "neden", "etki": "yüksek|orta|düşük", "alan" }] }
  *
  * Bu dosyaları her sabah Claude'un günlük görevi web'den toplayıp yazar
@@ -39,7 +40,7 @@ const GECMIS = path.join(KOK, "otomasyon", "gecmis");
 const DATA = path.join(KOK, "src", "data");
 const BUGUN = bugunTarih();
 
-const sonuc = { fiyat: null, bugun: null, oneriler: null };
+const sonuc = { fiyat: null, bugun: null, bellek: null, oneriler: null };
 const oku = (f) => JSON.parse(fs.readFileSync(f, "utf-8"));
 const yaz = (f, v) => fs.writeFileSync(f, JSON.stringify(v, null, 2) + "\n", "utf-8");
 function arsivle(ad, veri) {
@@ -115,6 +116,12 @@ if (fs.existsSync(fiyatGirdi)) {
       artanlar: hareketli.filter((f) => f.degisim_pct > 0).sort((a, b) => b.degisim_pct - a.degisim_pct).slice(0, 5),
       dusenler: hareketli.filter((f) => f.degisim_pct < 0).sort((a, b) => a.degisim_pct - b.degisim_pct).slice(0, 5),
     };
+    // İsteğe bağlı: getdeploying.com/gpu-price-index'ten endeks özeti
+    const e = g.endeks;
+    if (e && /^\d{4}-\d{2}-\d{2}$/.test(e.olcum_tarihi || "") && Number.isFinite(e.degisim_4_hafta_pct) && Number.isFinite(e.degisim_12_ay_pct)) {
+      veri.endeks = { ...veri.endeks, degisim_4_hafta_pct: e.degisim_4_hafta_pct, degisim_12_ay_pct: e.degisim_12_ay_pct };
+      veri.kaynak.olcum_tarihi = e.olcum_tarihi;
+    }
     veri.kaynak.onceki_olcum = tabanTarih;
     veri.kaynak.cekildigi_tarih = BUGUN;
     veri.kaynak.kapsam = { ...veri.kaynak.kapsam, model: veri.fiyatlar.length };
@@ -127,6 +134,19 @@ if (fs.existsSync(fiyatGirdi)) {
   } catch (e) {
     sonuc.fiyat = { ok: false, detay: e.message };
   }
+}
+
+/* ------------------------------------------------------------ katalog bağlantısı
+ * Fiyat girdisi gelmese bile her çalıştırmada: kataloğa yeni bir çip eklendiyse
+ * o modelin fiyat satırı ertesi gün değil hemen bağlansın.
+ */
+{
+  const dosya = path.join(DATA, "gpu_kiralama.json");
+  const veri = oku(dosya);
+  let baglanan = 0;
+  for (const liste of [veri.fiyatlar, veri.iki_gun?.artanlar, veri.iki_gun?.dusenler, veri.detay])
+    for (const f of liste || []) if (f.model && !f.chip_id) { const id = katalogEslesmesi(f.model); if (id) { f.chip_id = id; baglanan++; } }
+  if (baglanan) { yaz(dosya, veri); console.log(`  ✓ katalog: ${baglanan} fiyat satırı çip sayfasına bağlandı`); }
 }
 
 /* ------------------------------------------------------------ bugün */
@@ -158,6 +178,31 @@ if (fs.existsSync(bugunGirdi)) {
     sonuc.bugun = { ok: true, detay: `${v.maddeler.length} madde, puan ${deger}` };
   } catch (e) {
     sonuc.bugun = { ok: false, detay: e.message };
+  }
+}
+
+/* ------------------------------------------------------------ bellek fiyatları */
+const bellekGirdi = path.join(GELEN, "bellek.json");
+if (fs.existsSync(bellekGirdi)) {
+  try {
+    const b = oku(bellekGirdi);
+    if (!Array.isArray(b.gostergeler) || b.gostergeler.length < 2) throw new Error("gösterge sayısı yetersiz");
+    for (const x of b.gostergeler) {
+      if (!x.urun || !x.donem || !x.kaynak) throw new Error(`eksik alanlı gösterge: ${x.urun ?? "?"}`);
+      if (!["çeyreklik", "yıllık"].includes(x.olcu)) throw new Error(`geçersiz ölçü: ${x.olcu}`);
+      if (!Number.isFinite(x.alt) || !Number.isFinite(x.ust) || x.alt > x.ust) throw new Error(`geçersiz aralık: ${x.urun}`);
+      if (!/^https?:\/\//.test(x.url || "")) throw new Error(`kaynaksız gösterge: ${x.urun}`);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(x.tarih || "")) throw new Error(`tarihsiz gösterge: ${x.urun}`);
+    }
+    const dosya = path.join(DATA, "bellek_fiyat.json");
+    const eski = oku(dosya);
+    const yeni = { ...eski, ...b, guncelleme: BUGUN };
+    yaz(dosya, yeni);
+    arsivle("bellek", b);
+    fs.rmSync(bellekGirdi);
+    sonuc.bellek = { ok: true, detay: `${b.gostergeler.length} gösterge` };
+  } catch (e) {
+    sonuc.bellek = { ok: false, detay: e.message };
   }
 }
 

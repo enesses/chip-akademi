@@ -40,23 +40,34 @@ const fiyatDosya = path.join(KOK, "src", "data", "gpu_kiralama.json");
 const isle = calistir("node otomasyon/veri-isle.mjs");
 for (const satir of isle.cikti.split("\n").filter((s) => s.trim())) console.log("  " + satir.trim());
 
-try {
-  const son = JSON.parse(fs.readFileSync(path.join(KOK, "otomasyon", "gelen", ".son-isleme.json"), "utf-8"));
-  const sup = son.sonuc?.fiyat?.supheli || [];
-  if (sup.length) not("Şüpheli fiyat", "uyari", `${sup.join("; ")} — tek seferde >%50 oynama, yazılmadı; elle kontrol et`);
-} catch {}
+/*
+ * "Tarih bugün" ile "bu çalıştırmada yeni veri işlendi" aynı şey değil: gün içinde
+ * ikinci kez çalışınca tarih zaten bugündür ama sayfa hiç okunmamış olabilir.
+ * Bu yüzden veri-isle'nin bu çalıştırmadaki sonucuna da bakılır.
+ */
+let son = {};
+try { son = JSON.parse(fs.readFileSync(path.join(KOK, "otomasyon", "gelen", ".son-isleme.json"), "utf-8")).sonuc || {}; } catch {}
 const bugunStr = new Date().toISOString().slice(0, 10);
 const fiyatTarih = JSON.parse(fs.readFileSync(fiyatDosya, "utf-8")).kaynak.cekildigi_tarih;
-if (fiyatTarih === bugunStr) not("Fiyat verisi", "ok", `bugün güncellendi (${fiyatTarih})`);
-else not("Fiyat verisi", "hata", `güncellenmedi — son veri ${fiyatTarih}. otomasyon/gelen/fiyatlar.json gelmedi ya da doğrulamayı geçemedi`);
+if (son.fiyat?.ok) not("Fiyat verisi", "ok", `bu çalıştırmada güncellendi — ${son.fiyat.detay}`);
+else if (son.fiyat && !son.fiyat.ok) not("Fiyat verisi", "hata", `gelen veri reddedildi: ${son.fiyat.detay} (mevcut veri ${fiyatTarih})`);
+else if (fiyatTarih === bugunStr) not("Fiyat verisi", "atlandı", "bu çalıştırmada fiyat girdisi gelmedi; mevcut veri bugün daha önce işlenmiş");
+else not("Fiyat verisi", "hata", `güncellenmedi — son veri ${fiyatTarih}. otomasyon/gelen/fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)`);
+if (son.fiyat?.supheli?.length) not("Şüpheli fiyat", "uyari", `${son.fiyat.supheli.join("; ")} — tek seferde >%50 oynama, yazılmadı; elle kontrol et`);
+if (son.bellek) not("Bellek fiyatları", son.bellek.ok ? "ok" : "hata", son.bellek.detay);
+const bugunGeldi = son.bugun;
 
 /* ---------------------------------------------- bugün */
 const bugunDosya = path.join(KOK, "src", "data", "bugun.json");
 const bugunVeri = JSON.parse(fs.readFileSync(bugunDosya, "utf-8"));
 const bugunTarih = new Date().toISOString().slice(0, 10);
 
-if (bugunVeri.tarih === bugunTarih) {
-  not("Bugün sayfası", "ok", `bugün güncellendi (${bugunVeri.maddeler.length} madde, puan ${bugunVeri.puan.deger})`);
+if (bugunGeldi && !bugunGeldi.ok) {
+  not("Bugün sayfası", "hata", `gelen veri reddedildi: ${bugunGeldi.detay}`);
+} else if (bugunGeldi?.ok) {
+  not("Bugün sayfası", "ok", `bu çalıştırmada güncellendi — ${bugunGeldi.detay}`);
+} else if (bugunVeri.tarih === bugunTarih) {
+  not("Bugün sayfası", "atlandı", `bu çalıştırmada girdi gelmedi; bugünün verisi daha önce işlenmiş (${bugunVeri.maddeler.length} madde, puan ${bugunVeri.puan.deger})`);
 } else {
   const haber = await haberleriCek();
 

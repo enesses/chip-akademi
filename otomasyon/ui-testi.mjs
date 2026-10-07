@@ -88,20 +88,38 @@ async function akis(ad, fn) {
 await akis("Atölye akışı", async () => {
   await page.goto(`${url}#/tasarla`, { waitUntil: "load" });
   await page.click("text=İşlemci (CPU)", { timeout: 3000 });
-  const palet = await page.$$("div.max-h-\\[600px\\] button");
-  if (palet.length < 5) throw new Error(`palette ${palet.length} blok var`);
-  for (let i = 0; i < 4; i++) {
-    await palet[i].click();
-    const hucre = await page.$$("div.grid.gap-0\\.5 > button");
-    await hucre[i * 12]?.click();
+  const palet = page.locator('[data-testid="palet-blok"]');
+  if ((await palet.count()) < 5) throw new Error(`palette ${await palet.count()} blok var`);
+  // tıkla-yerleştir
+  for (let i = 0; i < 3; i++) {
+    await palet.nth(i).click();
+    await page.locator('[data-testid="hucre"]').nth(i * 14).click();
   }
+  const sayKutu = () => page.locator('[data-testid="izgara"] > div[role="button"]').count();
+  const tikSonrasi = await sayKutu();
+  if (tikSonrasi < 2) throw new Error(`tıklayarak yerleştirme çalışmadı (${tikSonrasi} blok)`);
+  // sürükle-bırak: paletten ızgaraya
+  await palet.nth(3).dragTo(page.locator('[aria-label="Boş hücre, sütun 9 satır 7"]'));
+  const surukSonrasi = await sayKutu();
+  if (surukSonrasi !== tikSonrasi + 1) throw new Error(`sürükle-bırak yerleştirmedi (${tikSonrasi} → ${surukSonrasi})`);
+  // danışman
   await page.click("text=Tasarım Danışmanı", { timeout: 3000 });
   await page.waitForTimeout(300);
+  // kaydet
+  await page.fill('input[aria-label="Tasarım adı"]', "UI testi tasarımı");
+  await page.click("button:has-text('Kaydet')", { timeout: 3000 });
+});
+await akis("Tasarım karşılaştırma akışı", async () => {
+  await page.goto(`${url}#/atolye`, { waitUntil: "load" });
+  await page.locator('[data-testid="tasarim-karsilastir"]').first().click({ timeout: 3000 });
+  await page.waitForTimeout(300);
+  const basliklar = await page.locator("h2").allTextContents();
+  if (!basliklar.some((b) => b.includes("Fiziksel"))) throw new Error(`tasarım karşılaştırması açılmadı (${basliklar.join(", ")})`);
 });
 await akis("Karşılaştır akışı", async () => {
   await page.goto(`${url}#/karsilastir`, { waitUntil: "load" });
-  await page.click("text=Çip ekle", { timeout: 3000 });
-  await page.click("div.absolute.z-20 button >> nth=0", { timeout: 3000 });
+  await page.click("button[aria-expanded]", { timeout: 3000 });
+  await page.locator('[data-testid="secici-cip"]').first().click({ timeout: 3000 });
   const satir = await page.locator("table tbody tr").count();
   if (satir === 0) throw new Error("karşılaştırma tablosu boş");
 });

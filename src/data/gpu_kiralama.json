@@ -393,7 +393,7 @@
       "onceki_usd": 0.42,
       "degisim_pct": 11.9,
       "saglayici": 22,
-      "chip_id": null,
+      "chip_id": "nvidia-ada-rtx-4090",
       "url": "https://getdeploying.com/gpus/nvidia-rtx-4090"
     },
     {
@@ -481,7 +481,7 @@
       "onceki_usd": 18,
       "degisim_pct": 0,
       "saglayici": 7,
-      "chip_id": null,
+      "chip_id": "nvidia-grace-blackwell-ultra-gb300",
       "url": "https://getdeploying.com/gpus/nvidia-gb300"
     },
     {

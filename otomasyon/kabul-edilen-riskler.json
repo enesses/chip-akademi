@@ -1,0 +1,11 @@
+{
+  "aciklama": "Bilerek kabul edilen bağımlılık uyarıları. Güvenlik ajanı bunları listeler ama durumu sarıya çekmez. Her kaydın bir gözden geçirme tarihi vardır; o tarih geçince uyarı yeniden açılır.",
+  "kayitlar": [
+    {
+      "danisma": "GHSA-vfj7-8cjw-p6xm",
+      "paket": "braces",
+      "neden": "Yalnızca derleme sırasında Tailwind 3'ün dosya taramasında kullanılıyor; açık, saldırganın glob deseni verebilmesini gerektiriyor ve desenler bizim tailwind.config.js dosyamızdan geliyor. Yayınlanan HTML'de bu kod yok. Yamalı braces sürümü yok; tek çözüm Tailwind 4'e geçiş (ayrı bir iş).",
+      "gozden_gecir": "2027-01-15"
+    }
+  ]
+}

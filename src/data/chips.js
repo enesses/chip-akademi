@@ -3169,7 +3169,7 @@ export const chips = [
       "İlk tüketici GDDR7 GPU'su: 28 Gbps hızlı bellek, 512-bit arayüzle 1792 GB/s bant genişliği",
       "DLSS 4 Multi Frame Generation: tek bir gerçek kare yerine 3'e kadar yapay kare üretimi",
       "PCIe 5.0 x16 arayüzü ve DisplayPort 2.1b desteği (8K@165Hz)",
-      "98 MB L2 cache (RTX 4090'ın 73 MB L2'sine kıyasla %34 artış); bellek gecikmesini önemli ölçüde azaltır"
+      "98 MB L2 cache (RTX 4090'ın 72 MB L2'sine kıyasla %36 artış); bellek gecikmesini önemli ölçüde azaltır"
     ],
     "die_regions": [
       {
@@ -3229,7 +3229,7 @@ export const chips = [
       "AI destekli yerel çıkarım: 32 GB VRAM ile orta büyüklükte LLM modellerini doğrudan iş istasyonunda çalıştırma",
       "VR/AR geliştirme: yüksek kare hızı ve düşük gecikme gerektiren gerçek zamanlı render iş yükleri"
     ],
-    "comparison_notes": "RTX 4090'a kıyasla CUDA core sayısı %18 artmış (18.432'den 21.760'a), bellek bant genişliği 1.008 GB/s'den 1.792 GB/s'ye yükselmiş. GDDR7, GDDR6X'e göre aynı bus genişliğinde ~%77 daha fazla bant genişliği sunar. Rasterizasyon performansı yaklaşık %30, AI/tensor iş yüklerinde ise çok daha büyük artışlar rapor ediliyor.",
+    "comparison_notes": "RTX 4090'a kıyasla CUDA core sayısı %33 artmış (16.384'ten 21.760'a), bellek bant genişliği 1.008 GB/s'den 1.792 GB/s'ye yükselmiş. GDDR7, GDDR6X'e göre aynı bus genişliğinde ~%77 daha fazla bant genişliği sunar. Rasterizasyon performansı yaklaşık %30, AI/tensor iş yüklerinde ise çok daha büyük artışlar rapor ediliyor.",
     "is_announced": null,
     "rumored": null,
     "tagline": "Tüketici GPU'ları için ilk GDDR7 ve FP4 destekli amiral gemisi"
@@ -4553,6 +4553,173 @@ export const chips = [
     "is_announced": null,
     "rumored": null,
     "tagline": "Yeni nesil oyun ve workstation GPU'ları için PAM3 modülasyonlu bellek"
+  },
+  {
+    "id": "nvidia-ada-rtx-4090",
+    "name": "NVIDIA GeForce RTX 4090",
+    "manufacturer": "NVIDIA",
+    "category": "GPU",
+    "release_year": 2022,
+    "process_node": "TSMC 4N (özel 5nm sınıfı)",
+    "transistor_count": "76.3 milyar (AD102)",
+    "die_size": "608.5 mm²",
+    "image": "rtx-5090.png",
+    "image_credit": "Temsilî görsel — GeForce ailesi",
+    "key_specs": {
+      "architecture": "Ada Lovelace (AD102-300)",
+      "cuda_cores": 16384,
+      "tensor_cores": "512 adet (4. nesil)",
+      "ray_tracing_cores": "128 adet (3. nesil)",
+      "vram": "24 GB GDDR6X",
+      "vram_speed": "21 Gbps",
+      "memory_interface": "384-bit",
+      "memory_bandwidth": "1008 GB/s",
+      "boost_clock": "2520 MHz",
+      "base_clock": "2230 MHz",
+      "l2_cache": "72 MB",
+      "tdp": "450W",
+      "pcie": "PCIe 4.0 x16",
+      "fp32_tflops": "~82.6 TFLOPS"
+    },
+    "architecture_highlights": [
+      "AD102 die'ının tam sürümü 144 SM içerir; RTX 4090'da 128 SM açık — kalanlar üretim verimi için kapalı tutuluyor",
+      "L2 cache'i bir önceki nesle (RTX 3090: 6 MB) göre 12 kat büyüterek 72 MB'a çıkardı; bellek bant genişliği neredeyse aynı kalırken performans bu sayede arttı",
+      "4. nesil Tensor Core'larla FP8 desteği ve DLSS 3 Frame Generation tüketici kartlarına geldi",
+      "Kiralama piyasasında hâlâ en çok listelenen tüketici GPU'larından biri: 24 GB VRAM, orta boy modellerde çıkarım için yeterli"
+    ],
+    "die_regions": [
+      {
+        "name": "GPC Kümeleri / SM'ler",
+        "description": "128 açık SM, 16.384 CUDA core; die'ın büyük bölümü",
+        "position": {
+          "x_pct": 5,
+          "y_pct": 5,
+          "width_pct": 65,
+          "height_pct": 70
+        }
+      },
+      {
+        "name": "L2 Cache",
+        "description": "72 MB L2 — Ada'nın bant genişliği yerine cache ile hızlanma stratejisi",
+        "position": {
+          "x_pct": 70,
+          "y_pct": 5,
+          "width_pct": 25,
+          "height_pct": 45
+        }
+      },
+      {
+        "name": "Bellek Denetleyicileri",
+        "description": "12 adet 32-bit GDDR6X denetleyici (384-bit)",
+        "position": {
+          "x_pct": 5,
+          "y_pct": 78,
+          "width_pct": 90,
+          "height_pct": 12
+        }
+      },
+      {
+        "name": "NVENC / NVDEC ve PCIe",
+        "description": "Çift AV1 kodlayıcı, PCIe 4.0 arayüzü",
+        "position": {
+          "x_pct": 70,
+          "y_pct": 55,
+          "width_pct": 25,
+          "height_pct": 20
+        }
+      }
+    ],
+    "use_cases": [
+      "4K oyun ve DLSS 3 ile yüksek kare hızı",
+      "Yerel AI çıkarımı ve ince ayar: 24 GB VRAM ile 7–13 milyar parametreli modeller",
+      "3D render ve video kodlama (çift AV1 NVENC)",
+      "Bulutta ucuz GPU kiralama: veri merkezi kartlarına göre saatlik fiyatı çok düşük"
+    ],
+    "comparison_notes": "RTX 5090'a göre CUDA core sayısı %25 daha az (16.384'e karşı 21.760), bellek bant genişliği 1.008 GB/s'ye karşı 1.792 GB/s. Veri merkezi kartı L40S ile aynı AD102 die'ını kullanır; fark ECC'siz bellek, daha yüksek saat hızı ve tüketici lisansı.",
+    "is_announced": null,
+    "rumored": null,
+    "tagline": "Cache'i 12 kat büyüterek hızlanan Ada amiral gemisi"
+  },
+  {
+    "id": "nvidia-grace-blackwell-ultra-gb300",
+    "name": "NVIDIA GB300 Grace Blackwell Ultra",
+    "manufacturer": "NVIDIA",
+    "category": "GPU",
+    "release_year": 2025,
+    "process_node": "TSMC 4NP (GPU) + TSMC 4N (CPU)",
+    "transistor_count": "208 milyar (B300 GPU başına, çift die)",
+    "die_size": "Çoklu die paketi — Grace CPU + Blackwell Ultra GPU'lar",
+    "image": "blackwell-b200.png",
+    "image_credit": "Temsilî görsel — Blackwell ailesi",
+    "key_specs": {
+      "architecture": "Grace Blackwell Ultra (Grace CPU + B300 GPU'lar)",
+      "cpu": "72 çekirdekli Arm Neoverse V2 (Grace)",
+      "vram": "288 GB HBM3e (GPU başına)",
+      "memory_bandwidth": "8 TB/s (GPU başına)",
+      "fp4_tflops": "15 PFLOPS (yoğun NVFP4, GPU başına)",
+      "nvlink": "NVLink 5, 1.8 TB/s GPU-GPU",
+      "compute_tray": "1 hesap tepsisi: 2 Grace + 4 B300, 1.15 TB HBM3e, 960 GB LPDDR5X",
+      "form_factor": "GB300 NVL72 rafı: 72 GPU + 36 Grace CPU",
+      "rack_memory": "Raf başına ~21 TB HBM3e + 17.28 TB LPDDR5X",
+      "rack_power": "Raf başına 132–140 kW"
+    },
+    "architecture_highlights": [
+      "GB200'ün halefi: her GPU'daki HBM3e 192 GB'tan 288 GB'a çıktı (12 katmanlı yığınlar); bant genişliği 8 TB/s'de kaldı",
+      "Yoğun FP4 hesabı GPU başına 15 PFLOPS'a yükseldi; FP8 ve FP16 performansı bir önceki nesille aynı kaldı — tasarım bilinçli olarak düşük hassasiyetli çıkarıma yöneldi",
+      "NVL72 rafında 72 GPU tek bir NVLink alanında; raf başına yaklaşık 21 TB HBM3e tek bir dev hızlandırıcı gibi adreslenebiliyor",
+      "Raf başına 130 kW'ın üzerindeki güç tüketimi sıvı soğutmayı ve veri merkezinde yeni elektrik altyapısını zorunlu kılıyor"
+    ],
+    "die_regions": [
+      {
+        "name": "Blackwell Ultra GPU #1",
+        "description": "İki retikül die, 288 GB HBM3e, 8 TB/s",
+        "position": {
+          "x_pct": 4,
+          "y_pct": 6,
+          "width_pct": 44,
+          "height_pct": 40
+        }
+      },
+      {
+        "name": "Blackwell Ultra GPU #2",
+        "description": "İkinci B300 paketi",
+        "position": {
+          "x_pct": 52,
+          "y_pct": 6,
+          "width_pct": 44,
+          "height_pct": 40
+        }
+      },
+      {
+        "name": "Grace CPU",
+        "description": "72 Arm Neoverse V2 çekirdeği ve LPDDR5X bellek",
+        "position": {
+          "x_pct": 20,
+          "y_pct": 52,
+          "width_pct": 60,
+          "height_pct": 24
+        }
+      },
+      {
+        "name": "NVLink-C2C ve NVLink 5",
+        "description": "CPU–GPU ve GPU–GPU bağlantıları",
+        "position": {
+          "x_pct": 10,
+          "y_pct": 80,
+          "width_pct": 80,
+          "height_pct": 12
+        }
+      }
+    ],
+    "use_cases": [
+      "Akıl yürüten (reasoning) modellerde büyük ölçekli çıkarım — uzun yanıtlar çok fazla FP4 hesabı ve KV önbelleği ister",
+      "Trilyon parametreli modellerin eğitimi ve ince ayarı",
+      "Büyük bağlamlı çıkarım: GPU başına 288 GB HBM3e daha uzun KV önbelleği demek"
+    ],
+    "comparison_notes": "GB200'e göre fark hesap mimarisinde değil bellekte ve FP4'te: GPU başına %50 daha fazla HBM3e ve daha yüksek FP4 hesabı. Kiralama piyasasında GPU başına saatlik en pahalı model; tek B300'e göre fiyat farkı CPU, NVLink alanı ve raf altyapısının bedeli.",
+    "is_announced": true,
+    "rumored": null,
+    "tagline": "Daha fazla bellek, daha çok FP4: akıl yürüten modeller için raf ölçeğinde sistem"
   }
 ];
 

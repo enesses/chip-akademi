@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "@/components/Nav";
-import { Trash2, FolderOpen, Copy } from "lucide-react";
+import { Trash2, FolderOpen, Copy, Scale } from "lucide-react";
+import { useLocation } from "wouter";
+import { BEKLEYEN_ANAHTAR } from "@/pages/Compare";
 import { Button } from "@/components/ui/button";
 import DiePreview from "@/components/DiePreview";
 import { getChipType, getNode } from "@/data/blocks";
@@ -9,6 +11,11 @@ import { deleteDesign, duplicateDesign, listDesigns } from "@/lib/designs";
 
 export default function Designs() {
   const [designs, setDesigns] = useState([]);
+  const [, navigate] = useLocation();
+  function karsilastir(id) {
+    try { window.sessionStorage.setItem(BEKLEYEN_ANAHTAR, id); } catch {}
+    navigate("/karsilastir");
+  }
   function refresh() { setDesigns(listDesigns()); }
   useEffect(refresh, []);
 
@@ -32,8 +39,9 @@ export default function Designs() {
                 </div>
                 <div className="px-4 py-3 border-t border-card-border flex gap-1.5">
                   <Link href={`/tasarla/${d.id}`}><Button size="sm" className="gap-1.5"><FolderOpen className="h-3.5 w-3.5" />Aç</Button></Link>
-                  <Button size="sm" variant="ghost" onClick={() => { duplicateDesign(d.id); refresh(); }}><Copy className="h-3.5 w-3.5" /></Button>
-                  <Button size="sm" variant="ghost" onClick={() => { deleteDesign(d.id); refresh(); }}><Trash2 className="h-3.5 w-3.5" /></Button>
+                  <Button size="sm" variant="outline" className="gap-1.5" onClick={() => karsilastir(d.id)} data-testid="tasarim-karsilastir"><Scale className="h-3.5 w-3.5" />Karşılaştır</Button>
+                  <Button size="sm" variant="ghost" aria-label={`${d.name} tasarımını kopyala`} title="Kopyala" onClick={() => { duplicateDesign(d.id); refresh(); }}><Copy className="h-3.5 w-3.5" /></Button>
+                  <Button size="sm" variant="ghost" aria-label={`${d.name} tasarımını sil`} title="Sil" onClick={() => { deleteDesign(d.id); refresh(); }}><Trash2 className="h-3.5 w-3.5" /></Button>
                 </div>
               </div>
             );

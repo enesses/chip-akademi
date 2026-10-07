@@ -199,8 +199,8 @@ export default function Hesap() {
                             <Button size="sm" onClick={() => giris(p.id)}>Gir</Button>
                           </div>
                         ) : <Button size="sm" className="gap-1.5" onClick={() => (p.ozet ? setSecili(p.id) : giris(p.id))} data-testid={`giris-${p.id}`}><LogIn className="h-3.5 w-3.5" />Giriş</Button>)}
-                        <Button size="sm" variant="ghost" onClick={() => indir(p.id)}><Download className="h-3.5 w-3.5" /></Button>
-                        <Button size="sm" variant="ghost" className="text-muted-foreground hover:text-red-400" onClick={() => setSilOnay(p.id)}><Trash2 className="h-3.5 w-3.5" /></Button>
+                        <Button size="sm" variant="ghost" aria-label={`${p.ad} profilinin yedeğini indir`} title="Yedeği indir" onClick={() => indir(p.id)}><Download className="h-3.5 w-3.5" /></Button>
+                        <Button size="sm" variant="ghost" aria-label={`${p.ad} profilini sil`} title="Profili sil" className="text-muted-foreground hover:text-red-400" onClick={() => setSilOnay(p.id)}><Trash2 className="h-3.5 w-3.5" /></Button>
                       </div>
                     </div>
                   </div>

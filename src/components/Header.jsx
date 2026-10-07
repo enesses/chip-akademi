@@ -39,9 +39,12 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-2 shrink-0">
-          <Cpu className="h-5 w-5 text-primary" />
-          <span className="font-display font-bold">Chip Akademi</span>
+        <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label="Chip Akademi anasayfa">
+          <span className="w-8 h-8 rounded-lg border border-primary/40 bg-primary/10 flex items-center justify-center"><Cpu className="h-[18px] w-[18px] text-primary" aria-hidden="true" /></span>
+          <span className="leading-none">
+            <span className="block font-display font-bold tracking-tight">Chip Akademi</span>
+            <span className="block font-mono text-[9px] tracking-[0.2em] text-muted-foreground mt-1">V.2026</span>
+          </span>
         </Link>
         <nav className="hidden md:flex items-center gap-1 overflow-x-auto">
           {navItems.map((item) => {

@@ -14,10 +14,17 @@
   --primary-foreground: 220 26% 6%;
 }
 
+html { -webkit-text-size-adjust: 100%; }
 body {
   background: hsl(var(--background));
   color: hsl(var(--foreground));
+  font-family: theme("fontFamily.sans");
+  font-feature-settings: "cv11", "ss01";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+::selection { background: hsl(var(--primary) / 0.3); }
+:focus-visible { outline: 2px solid hsl(var(--primary)); outline-offset: 2px; border-radius: 4px; }
 
 .bg-silicon-grid {
   background-image: linear-gradient(hsl(var(--border) / 0.15) 1px, transparent 1px),
@@ -35,3 +42,17 @@ body {
 }
 .hover-elevate:hover { filter: brightness(1.08); }
 .active-elevate-2:active { filter: brightness(0.94); }
+
+/* ---------- anasayfa die görseli ---------- */
+.hero-die-etiket { font-family: theme("fontFamily.mono"); font-size: 9px; letter-spacing: 0.12em; fill: hsl(var(--muted-foreground)); }
+.hero-die-sm { fill-opacity: 0.35; animation: hero-die-nabiz 2.4s ease-in-out infinite; }
+@keyframes hero-die-nabiz { 0%, 100% { fill-opacity: 0.22; } 50% { fill-opacity: 0.6; } }
+.hero-die-tarama { opacity: 0.5; animation: hero-die-tara 4.5s linear infinite; }
+@keyframes hero-die-tara { from { transform: translateY(0); opacity: 0; } 10% { opacity: 0.5; } 90% { opacity: 0.5; } to { transform: translateY(236px); opacity: 0; } }
+.hero-die-bolge { transition: opacity 0.2s ease; }
+.hero-die-bolge[data-aktif="0"] { opacity: 0.3; }
+.hero-die-bolge[data-aktif="1"] .hero-die-dolgu { filter: brightness(1.6); }
+@media (prefers-reduced-motion: reduce) {
+  .hero-die-sm, .hero-die-tarama { animation: none; }
+  .hero-die-tarama { display: none; }
+}

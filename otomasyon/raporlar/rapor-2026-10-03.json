@@ -1,8 +1,8 @@
 {
   "ajan": "rapor",
   "tarih": "2026-10-03",
-  "zaman": "2026-10-03T09:19:44.150Z",
-  "durum": "dikkat",
+  "zaman": "2026-10-03T09:30:41.326Z",
+  "durum": "temiz",
   "gunTamam": true,
   "tazelik": [
     {
@@ -24,10 +24,5 @@
     "gelistirme"
   ],
   "calismayan": [],
-  "dikkat": [
-    {
-      "seviye": "uyarı",
-      "metin": "Güvenlik: 7 yüksek seviye bağımlılık açığı var."
-    }
-  ]
+  "dikkat": []
 }
