@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-07T11:19:02.520Z",
+  "guncelleme": "2026-10-07T11:29:27.631Z",
   "tarih": "2026-10-07",
   "durum": "temiz",
   "ajanlar": [
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-10-07T11:18:25.450Z"
+      "zaman": "2026-10-07T11:28:53.556Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-07T11:18:25.561Z"
+      "zaman": "2026-10-07T11:28:53.686Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-07T11:18:24.406Z"
+      "zaman": "2026-10-07T11:28:52.416Z"
     },
     {
       "id": "gelistirme",
@@ -33,20 +33,20 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-07T11:18:38.412Z"
+      "zaman": "2026-10-07T11:29:07.146Z"
     }
   ],
   "dikkat": [],
   "oneriler": [
     {
       "baslik": "Zamanlanmış görevde fiyat sayfası neden izin engeline takılıyor — kök nedeni bul",
-      "neden": "4–7 Ekim sabah çalıştırmalarında getdeploying.com/gpus ve /gpu-price-index WebFetch'te PROVENANCE_REQUIRED ile reddedildi; URL'ler zaten görev isteminde yazılı. Aynı gün (7 Ekim, 14:20) etkileşimli bir oturumdan aynı sayfalar sorunsuz okundu ve 98 model güncellendi. Fark oturum türünde olabilir; yarınki çalıştırma yine reddedilirse rapor bunu ayrıca göstermeli.",
+      "neden": "7 Ekim'de iki ayrı zamanlanmış çalıştırma (sabah ve 14:22 sonrası bu çalıştırma) getdeploying.com/gpus, /gpu-price-index ve trendforce.com/presscenter için WebFetch'te PROVENANCE_REQUIRED aldı; aynı gün etkileşimli oturum sayfaları okuyabildi. Haber siteleri (srnnews.com, aiweekly.co, kucoin.com) bu çalıştırmada açıldı — engel yalnızca bu alan adlarına onay istemesinden kaynaklanıyor. Zamanlanmış görevde bu alan adlarına kalıcı izin verilirse fiyatlar her sabah güncellenir.",
       "etki": "yüksek",
       "alan": "veri"
     },
     {
       "baslik": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
-      "neden": "otomasyon/*.mjs içinde 'izin engeli' ya da 'PROVENANCE' geçmiyor; eksik fiyat dosyası bugün de 'fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)' diye gösterildi. gelen/ altına isteğe bağlı bir durum dosyası (ör. {fiyat:'izin-engeli'}) okunursa rapor nedeni doğru gösterir.",
+      "neden": "otomasyon/*.mjs içinde 'izin engeli' ya da 'PROVENANCE' geçmiyor; eksik fiyat dosyası bugün yine 'fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)' diye gösterildi. gelen/ altına isteğe bağlı bir durum dosyası (ör. {fiyat:'izin-engeli'}) okunursa rapor nedeni doğru gösterir.",
       "etki": "orta",
       "alan": "otomasyon"
     },
@@ -57,15 +57,15 @@
       "alan": "arayüz"
     },
     {
-      "baslik": "Maliyet puanını daha çok çipe yay",
-      "neden": "gpu_kiralama.json'daki 107 fiyat satırının yalnızca 26'sında chip_id var; chipScore.js maliyet puanı yalnızca bu satırlarda hesaplanıyor. Bugünkü haberlerde öne çıkan GB300 ve Grace Blackwell gibi raf sistemleri için eşleme kontrol edilmeli.",
-      "etki": "orta",
-      "alan": "veri"
+      "baslik": "Bugün maddelerine 'tedarik riski' etiketi",
+      "neden": "Bugünkü 12 maddeden 3'ü (HBM4 fiyatı, Micron Tayvan grev onayı, ucuz telefon sevkiyatı) bellek arzıyla ilgili; bugun.json'da yalnızca pozitif/notr/negatif kategori var, konu etiketi yok. Bellek sayfasıyla (bellek_fiyat.json) çapraz bağlantı kurulabilir.",
+      "etki": "düşük",
+      "alan": "arayüz"
     },
     {
-      "baslik": "Bellek sayfasında HBM için 2027 beklentisini ekle, eski göstergeyi işaretle",
-      "neden": "src/data/bellek_fiyat.json'daki 5 göstergeden biri 2026-07-09 tarihli. Bugün Sammy Fans haberinde TrendForce'un 2027 için ortalama %121 HBM fiyat artışı öngördüğü geçti; birincil kaynak (trendforce.com) doğrulanınca yıllık gösterge olarak eklenebilir.",
-      "etki": "düşük",
+      "baslik": "Maliyet puanını daha çok çipe yay",
+      "neden": "gpu_kiralama.json'daki 107 fiyat satırının yalnızca 26'sında chip_id var; chipScore.js maliyet puanı yalnızca bu satırlarda hesaplanıyor. RTX PRO 6000, RTX 6000 Ada, RTX A6000 gibi yaygın kiralanan kartlarda chip_id null.",
+      "etki": "orta",
       "alan": "veri"
     },
     {
@@ -154,18 +154,13 @@
     "adimlar": [
       {
         "ad": "Fiyat verisi",
-        "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 98 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 9 gelmedi (eski fiyat korundu), 1 büyük oynama elle doğrulandı"
-      },
-      {
-        "ad": "Elle doğrulanan fiyat",
-        "durum": "ok",
-        "detay": "Nvidia A4000: 0.19 → 0.49 (ikinci, hedefli okuma (sütun başlıklarıyla): medyan 0.49, en düşük 0.08, 12+ sağlayıcı) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
+        "durum": "atlandı",
+        "detay": "bu çalıştırmada fiyat girdisi gelmedi; mevcut veri bugün daha önce işlenmiş"
       },
       {
         "ad": "Bugün sayfası",
-        "durum": "atlandı",
-        "detay": "bu çalıştırmada girdi gelmedi; bugünün verisi daha önce işlenmiş (11 madde, puan 60)"
+        "durum": "ok",
+        "detay": "bu çalıştırmada güncellendi — 12 madde, puan 57"
       },
       {
         "ad": "Derleme",
