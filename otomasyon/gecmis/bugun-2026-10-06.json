@@ -1,0 +1,96 @@
+{
+  "tarih": "2026-10-06",
+  "derlenme": "6 Ekim 2026",
+  "ozet": [
+    "Günün ana teması AI donanım zincirinde rekorların sürmesi: Nvidia 238,90 $ ile rekor kapanış yaparak piyasa değerini 5,78 trilyon $'a taşıdı ve 6 trilyon $'a ~%3,8 uzaklıkta. TSMC Tayvan'da 2.580 TWD ile rekor kırarken 2 nm kapasite tahmini ayda ~120.000 levhaya yükseldi; büyük müşteriler siparişlerini %10–20 artırdı. Raf ve sunucu tarafında Foxconn'un üçüncü çeyrek geliri %47 artışla 3,03 trilyon TWD'ye çıktı.",
+    "Rekorların gölgesinde maliyet ve yoğunlaşma soruları var. TSMC'nin hızlı genişlemesi brüt marjda 3–4 puanlık seyrelme getirecek; şirketin 2027'de dökümhane fiyatlarını %10'a kadar artırması bekleniyor. Musk'ın TSMC'nin Terafab'a katılımı için görüşme yapıldığını doğrulaması Intel'i %4 düşürdü; Intel'in CPU payı da Susquehanna verisine göre %68,1'e geriledi.",
+    "Model tarafında Nvidia destekli Reflection, 501 milyar parametreli açık ağırlıklı Beam modelini 3–4 kat daha az çıkarım hesabı iddiasıyla tanıttı — verimli modeller GPU başına maliyeti düşürebilir, ama şirket aynı zamanda 7 milyar $'ı aşan GB300 kapasitesi satın alıyor.",
+    "Makro tarafta ABD 10 yıllık faizinin %5,347 ile 2002'den beri en yüksek seviyeye çıkması ve zayıf istihdam verisi, borçla finanse edilen veri merkezi yatırımları ve yüksek çip değerlemeleri için izlenmesi gereken risk. Samsung'un 8 Ekim'deki öncü çeyrek sonuçları bellek tarafındaki bir sonraki kontrol noktası."
+  ],
+  "puan": {
+    "etiket": "İyimser, faiz ve maliyet riski artıyor",
+    "yorum": "Nvidia ve TSMC rekorları, TSMC'nin 2 nm kapasite artışı ve Foxconn'un %47'lik gelir büyümesi AI donanım talebinin sürdüğünü gösteriyor. Buna karşılık 2002'den beri en yüksek ABD faizi, TSMC'nin 2027 fiyat artışı planı ve Intel'in Terafab'da TSMC rekabetiyle karşılaşması temkin gerektiriyor.",
+    "deger": 63
+  },
+  "maddeler": [
+    {
+      "baslik": "Nvidia rekor tazeledi: piyasa değeri 5,78 trilyon $",
+      "detay": "Nvidia hissesi %2,12 artışla 238,90 $'dan kapandı; gün içi zirve 240,10 $ ile tüm zamanların rekoru. 6 trilyon $'a ulaşmak için ~%3,8'lik artış yetiyor. 28 Eylül'de 150 milyar $'lık rekor geri alım yetkisi verilmişti; Morgan Stanley 300 $ hedef ve 'Overweight' ile Nvidia'yı sektördeki ilk tercihi yaptı.",
+      "kategori": "pozitif",
+      "agirlik": 3,
+      "neden": "AI hızlandırıcı pazarının lideri rekor değerlemeye ulaştı; yatırımcılar AI altyapı harcamasının süreceğini fiyatlıyor.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/international/2026/10/06/nvidia-hits-record-high-nears-6-trillion-market-value"
+    },
+    {
+      "baslik": "TSMC hissesi rekorda; 2 nm kapasitesi ayda ~120.000 levhaya çıkıyor",
+      "detay": "TSMC Tayvan'da %3,2 artışla 2.580 TWD'ye yükseldi, piyasa değeri 66,9 trilyon TWD. 2 nm kapasitesinin 2026 sonunda ayda ~120.000 levhaya (önceki tahmin 90–100 bin) çıkması bekleniyor; Apple, Nvidia, AMD, Qualcomm ve MediaTek siparişlerini %10–20 artırdı. Yatırım bütçesi 60–64 milyar $.",
+      "kategori": "pozitif",
+      "agirlik": 3,
+      "neden": "En ileri üretim düğümünde talep, kapasite tahminlerini yukarı çektirecek kadar güçlü.",
+      "kaynak": "Invezz",
+      "url": "https://invezz.com/en-ae/news/2026/10/05/tsmc-hits-another-record-but-nvidia-and-apple-demand-may-become-its-next-problem/"
+    },
+    {
+      "baslik": "TSMC'de marj baskısı ve 2027 için %10'a varan fiyat artışı",
+      "detay": "Aynı analizde TSMC'nin hızlı kapasite genişlemesi nedeniyle 2026'nın ikinci yarısında brüt marjda 3–4 puanlık seyrelme ve 2027'de dökümhane fiyatlarında %10'a varan artış planlandığı belirtiliyor. Analistlere göre tartışma talep değil, kısa vadeli marjın kalıcılığı.",
+      "kategori": "negatif",
+      "agirlik": 1,
+      "neden": "Fiyat artışı çip tasarımcılarının, dolayısıyla GPU ve bulut müşterilerinin maliyetini yükseltir.",
+      "kaynak": "Invezz",
+      "url": "https://invezz.com/en-ae/news/2026/10/05/tsmc-hits-another-record-but-nvidia-and-apple-demand-may-become-its-next-problem/"
+    },
+    {
+      "baslik": "Musk: TSMC Terafab'a katılmak için görüşüyor; Intel %4 düştü",
+      "detay": "Elon Musk, TSMC'nin Teksas'taki Terafab projesine katılımı için görüşme yapıldığını doğruladı ('şimdilik görüşme'). Nisan'dan beri tek üretim ortağı olan Intel'in hissesi işlem öncesi %4'ün üzerinde düştü. Susquehanna'ya göre Intel'in CPU model payı çeyreklik 3,9 puan düşüşle %68,1'e geriledi, AMD %29,3'e çıktı. Projenin ilk taahhüdü 16,8 milyar $, toplam maliyet 119 milyar $'a kadar çıkabilir.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Intel'in dökümhane geri dönüşü için önemli bir müşteri riski ve ABD'de üretimin tek tedarikçiye (TSMC) daha da yoğunlaşması.",
+      "kaynak": "Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/intel-stock-slides-as-tsmc-explores-terafab-tieup-analyst-flags-share-losses-4931558"
+    },
+    {
+      "baslik": "Foxconn'un 3. çeyrek geliri %47 arttı: 3,03 trilyon TWD",
+      "detay": "Foxconn'un üçüncü çeyrek geliri yıllık %47 artışla 3,03 trilyon TWD'ye (~95,4 milyar $) ulaştı ve LSEG tahmini olan 2,83 trilyonu aştı. Yalnız eylül geliri %38,4 artışla 1,16 trilyon TWD. Şirket artışı AI sunucu talebine bağlıyor ve yoğun sezonda gücün süreceğini öngörüyor.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "AI sunucu raflarını toplayan en büyük üreticinin gelirleri, GPU sevkiyatlarının gerçek talebe dönüştüğünü gösteriyor.",
+      "kaynak": "GuruFocus",
+      "url": "https://www.gurufocus.com/news/9109148/foxconn-fxcof-reports-47-q3-revenue-surge-driven-by-ai-demand"
+    },
+    {
+      "baslik": "Nvidia destekli Reflection, açık ağırlıklı Beam modelini tanıttı",
+      "detay": "Reflection'ın Beam modeli 501 milyar toplam, 23 milyar aktif parametreli bir uzman karışımı (MoE) modeli; 1 milyon token bağlam, 23,8 trilyon token ile eğitildi. Şirket, Z.ai GLM-5.2 ile benzer akıl yürütme başarısını 3–4 kat daha az çıkarım hesabıyla sağladığını iddia ediyor. Reflection, SpaceX ve Nebius ile 2029'a kadar Nvidia GB300 için 7 milyar $'ı aşan hesaplama anlaşması yaptı.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Aynı işi daha az hesapla yapan açık modeller çıkarım maliyetini düşürür; şirketin GB300 anlaşmaları da GPU talebini destekliyor. Verimlilik iddiası şirkete ait, bağımsız doğrulanmadı.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/"
+    },
+    {
+      "baslik": "ABD 10 yıllık faizi 2002'den beri en yüksekte: %5,347",
+      "detay": "ABD 10 yıllık tahvil faizi %5,347'ye çıkarak Nisan 2002'den bu yana en yüksek seviyeyi gördü. Eylül tarım dışı istihdamı 29 bin ile 90 binlik beklentinin çok altında kaldı.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Yüksek faiz, borçla finanse edilen veri merkezi yatırımlarının maliyetini ve yüksek değerlemeli çip hisseleri üzerindeki baskıyı artırır.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/international/2026/10/06/nvidia-hits-record-high-nears-6-trillion-market-value"
+    },
+    {
+      "baslik": "Arizona, Tayvan ile yeni ofis açtı; TSMC'nin Phoenix yatırımı sürüyor",
+      "detay": "Arizona Valisi Katie Hobbs, Tayvanlı yetkililerle birlikte yeni bir ekonomi ve kültür ofisi açtı. TSMC'nin Phoenix'teki genişleme taahhüdü 100 milyar $, bölgesel toplam yatırım planı 265 milyar $; tesiste yaklaşık 500 Tayvanlı mühendis çalışıyor. Haber, Pekin'in diplomatik baskısı bağlamında aktarılıyor.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Tedarik zincirinin ABD'ye çeşitlenmesi sürüyor ama yeni bir yatırım rakamı yok; jeopolitik gerilim de artı yazıyor.",
+      "kaynak": "GuruFocus",
+      "url": "https://gurufocus.com/news/9110811/arizona-boosts-tsmc-expansion-with-265-billion-investment-amid-beijing-pressure-tsm"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = +4 · Σ ağırlık = 15 · Puan = 50 + 50 × 0.27 = 63"
+  }
+}

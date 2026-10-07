@@ -1,0 +1,114 @@
+{
+  "tarih": "2026-10-04",
+  "derlenme": "4 Ekim 2026",
+  "ozet": [
+    "Günün ana teması AI altyapısının artık borçla finanse edilmesi: Broadcom, Anthropic başta olmak üzere AI şirketlerinin çip ve altyapı alımlarını fonlamak için Blackstone ve bankalarla 60 milyar dolarlık bir finansman paketi topluyor. Aynı gün Nvidia'nın piyasa değeri ~5,7 trilyon dolarla rekor kırdı, çip endeksi SOXX %2,18 yükseldi.",
+    "Bellek kıtlığının faturası tüketiciye ulaşmaya başladı: Nvidia, yedi yıllık Shield TV Pro'nun fiyatını bileşen (özellikle bellek) maliyetleri gerekçesiyle 199,99 dolardan 299,99 dolara çıkardı. Kore tarafında analistler Samsung'un 3. çeyrekte DRAM fiyatlarında çeyreklik ~%22 artışla rekor kâr açıklamasını bekliyor.",
+    "Depolama cephesinde ters yönlü bir sinyal var: Toshiba'nın HDD kapasitesini ikiye katlama planı Seagate ve Western Digital hisselerini ~%10 düşürdü — arz artışı, kıtlıktan beslenen fiyatlama gücünü tehdit ediyor. Üretim tarafında Intel, High-NA EUV'yi Panther Lake'in seçili katmanlarında üretime aldığını duyurdu.",
+    "Gölge tarafı yine ihracat kontrolleri: ABD'de bir şirket sahibi, Malezya ve Singapur üzerinden Çin'e 300 milyon doları aşan Nvidia sunucusu kaçırmakla suçlandı. Talep güçlü, ama finansmanın borca kayması, tüketici fiyatlarındaki artış ve kaçakçılık davaları iyimserliği sınırlıyor."
+  ],
+  "puan": {
+    "etiket": "İyimser, borç ve maliyet uyarılı",
+    "yorum": "Sermaye ve talep akışı çok güçlü; Nvidia rekor kırdı, Broadcom'un 60 milyar dolarlık paketi AI çip alımlarının sürdüğünü gösteriyor. Ancak bu büyüme giderek borçla finanse ediliyor, bellek kıtlığı tüketici ürünlerinin fiyatına yansıyor ve ihracat kontrolü ihlalleri sürüyor.",
+    "deger": 65
+  },
+  "maddeler": [
+    {
+      "baslik": "Broadcom, AI çipleri için 60 milyar $'lık finansman topluyor",
+      "detay": "Paket 42 milyar $'lık bankalar liderliğinde kıdemli teminatlı (Class A) ve 18 milyar $'lık Blackstone liderliğinde ast (Class B) borçtan oluşuyor; Blackstone kendi fonlarından 9 milyar $ taahhüt etti. Amaç Anthropic dahil AI şirketlerinin çip ve altyapı erişimini finanse etmek.",
+      "kategori": "pozitif",
+      "agirlik": 3,
+      "neden": "Özel AI çiplerine (ASIC) talebin büyük ve finanse edilebilir olduğunu gösteriyor. Öte yandan alımların giderek borçla yapılması, talebin bir kısmının kredi koşullarına bağlı olduğu anlamına geliyor.",
+      "kaynak": "Bloomberg / Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-starts-amassing-60-billion-041233805.html"
+    },
+    {
+      "baslik": "Nvidia rekor kırdı: piyasa değeri ~5,7 trilyon $",
+      "detay": "Nvidia hissesi mayıstan bu yana ilk kez tüm zamanların zirvesine çıktı; şirket yılbaşından bu yana ~%27 değer kazandı ve 6 trilyon $ eşiğine ~300 milyar $ kaldı.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Piyasa, AI hızlandırıcı talebinin sürdüğüne güveniyor; tarihin en değerli şirketi seviyesine çıkış, sektördeki yatırım iştahını yansıtıyor.",
+      "kaynak": "Quartz",
+      "url": "https://qz.com/nvidia-stock-record-high-market-cap-6-trillion-100226"
+    },
+    {
+      "baslik": "Çip hisseleri yükseldi: SOXX %2,18 arttı",
+      "detay": "2 Ekim'de yarı iletken fonu SOXX %2,18 yükseldi; Broadcom %3,35, AMD %2,95, Nvidia %1,34 kazandı. Synaptics %14, ON Semiconductor %6 yükseldi.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Sektör genelinde alım var; tek bir şirkete bağlı olmayan geniş tabanlı bir yükseliş.",
+      "kaynak": "Dispersion Brief (Substack)",
+      "url": "https://currentlogic.substack.com/p/dispersion-brief-oct-2-2026"
+    },
+    {
+      "baslik": "onsemi, Synaptics alımını 5,7 milyar $ nakde indirdi",
+      "detay": "Revize anlaşmada hisse başına 123 $ nakit ödenecek; toplam değer ~5,7 milyar $ (25 Haziran'daki ilk anlaşma ~7 milyar $ idi). Finansman eldeki nakit ve Morgan Stanley'nin taahhüt ettiği borçla.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Sektörde konsolidasyon sürüyor ama değerlemenin ~1,3 milyar $ düşürülmesi analog/uç cihaz tarafında AI kadar iştah olmadığını da gösteriyor.",
+      "kaynak": "onsemi basın bülteni",
+      "url": "https://www.onsemi.com/company/newsroom/news-and-insights/onsemi-and-synaptics-announce-revised-merger-agreement"
+    },
+    {
+      "baslik": "Toshiba HDD kapasitesini ikiye katlıyor; Seagate ve WD %10 düştü",
+      "detay": "Toshiba, Filipinler'deki tesisi merkezli genişlemeyle HDD üretim kapasitesini iki katına çıkarmayı ve kapasite bazında %30 pazar payını hedefliyor. Haberle Seagate %10,21, Western Digital %10,22 değer kaybetti.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "AI veri merkezi depolama alıcıları için arz artışı iyi haber; mevcut üreticilerin kıtlıktan gelen fiyatlama gücü için kötü haber. Net etkisi tarafa göre değişiyor.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/seagate-tumbles-10-western-digital-125250923.html"
+    },
+    {
+      "baslik": "Bellek kıtlığı tüketiciye yansıdı: Shield TV Pro %50 zamlandı",
+      "detay": "Nvidia, yedi yıldır donanımı değişmeyen Shield TV Pro'nun fiyatını 199,99 $'dan 299,99 $'a çıkardı ve standart Shield TV'yi üretimden kaldırdı. Şirket gerekçe olarak bellek dahil bileşen maliyetlerindeki artışı gösterdi.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "AI kaynaklı bellek kıtlığının tüketici elektroniği fiyatlarına doğrudan yansıdığının somut örneği.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/service-providers/streaming/7-year-old-nvidia-shield-tv-pro-gets-shocking-50-percent-price-hike-driven-by-ai-memory-shortage-chipmaker-axes-entry-level-shield-tv-as-component-prices-soar"
+    },
+    {
+      "baslik": "300 milyon $'lık Nvidia sunucu kaçakçılığı davası",
+      "detay": "Earthmade Computer'ın sahibi Greg Lui (38), Nvidia AI çipli sunucuları sahte belgelerle Malezya ve Singapur üzerinden Çin'e kaçırmakla suçlandı. İhracat kontrolü ihlali, kaçakçılık ve kara para aklama dahil üç suçlama var.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "İhracat kontrollerinin üçüncü ülkeler üzerinden delindiğini gösteriyor; Nvidia ve dağıtım zinciri için daha sıkı denetim ve düzenleme riski demek.",
+      "kaynak": "Transport Topics",
+      "url": "https://ttnews.com/articles/calif-man-charged-nvidia-chips"
+    },
+    {
+      "baslik": "Intel: High-NA EUV üretime girdi",
+      "detay": "Intel, High-NA EUV litografinin Panther Lake işlemcilerinin seçili katmanlarında üretime girdiğini, test/araştırma/üretimde bir milyondan fazla wafer işlendiğini açıkladı. Hisse %2,1 yükseldi; maliyet ve dış müşteri hacmi açıklanmadı.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Yeni nesil litografinin üretimde kullanılmaya başlanması ABD'deki ileri üretim kapasitesi için olumlu; ancak kârlılığa dönüşüp dönüşmeyeceği belirsiz.",
+      "kaynak": "GuruFocus",
+      "url": "https://gurufocus.com/news/9107892/intel-stocks-gain-21-as-highna-enters-production"
+    },
+    {
+      "baslik": "Samsung'dan rekor çeyrek bekleniyor: DRAM fiyatı çeyreklik ~%22 artış",
+      "detay": "Micron'un güçlü sonuçlarının ardından analistler Samsung'un 3. çeyrekte 217,7 trilyon won gelir ve 104,9 trilyon won faaliyet kârı açıklamasını, DRAM fiyatlarının çeyreklik %22 artmasını bekliyor. SK hynix için DRAM'de %15, NAND'da %18 fiyat artışı öngörülüyor.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Bellek üreticilerinin AI talebinden güçlü pay aldığını gösteriyor; ancak bunlar henüz açıklanmış sonuç değil, analist beklentisi.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/10/04/after-microns-earnings-beat-eyes-turn-to-samsung-and-sk"
+    },
+    {
+      "baslik": "AI ile çip tasarımı: OpenAI'nin Jalapeño ASIC'i",
+      "detay": "Tom's Hardware'in AI çip tasarımı haftasında OpenAI donanım başkan yardımcısı Richard Ho, Broadcom ile birlikte geliştirilen ve Hot Chips 2026'da tanıtılan Jalapeño ASIC'in tasarımında AI'ın nasıl kullanıldığını anlattı. Synopsys, Cadence ve Siemens'in AI destekli araçları da ele alındı.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "AI destekli tasarım çip geliştirme süresini kısaltabilir; ama patent ihlali ve doğrulama riskleri de tartışılıyor.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/this-week-on-toms-hardware-premium-october-3-2026-ai-chip-design-week-openai-interview-and-ai-agent-safety"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = +5 · Σ ağırlık = 17 · Puan = 50 + 50 × 0.29 = 65"
+  }
+}

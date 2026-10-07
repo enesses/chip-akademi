@@ -1,0 +1,41 @@
+{
+  "tarih": "2026-10-05",
+  "oneriler": [
+    {
+      "baslik": "Fiyat ve bellek kaynakları üçüncü gündür izin engeline takılıyor",
+      "neden": "5 Ekim çalıştırmasında getdeploying.com/gpus, /gpu-price-index ve trendforce.com/presscenter WebFetch tarafından yine 'PROVENANCE_REQUIRED' (izin isteği yanıtlanmadı) ile reddedildi. Fiyat verisi 2026-10-03'te kaldı; bugün pazartesi olduğu halde bellek sözleşme fiyatları da güncellenemedi. Zamanlanmış görev için bu alan adlarına kalıcı izin verilmeden fiyat adımı her gün kırmızı kalacak.",
+      "etki": "yüksek",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
+      "neden": "veri-isle.mjs ve otomasyon/ajanlar/*.mjs içinde 'izin' veya 'engel' geçen hiçbir alan yok; eksik fiyat dosyası hâlâ yalnızca 'fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)' diye gösteriliyor. gelen/engeller.json gibi bir dosyayla nedeni rapora ve Otomasyon sayfasına taşımak teşhisi hızlandırır.",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "'Nerede geride kaldın' panelini kaynağa taşı",
+      "neden": "src/pages/Compare.jsx'te findGaps hiç geçmiyor; advisor.js'teki findGaps ve beatsAfter iyileştirme taramasında hâlâ 'kullanılmayan export' listesinde (bugün 22 export). Panel yalnızca derlenmiş docs/index.html'e eklenmişti ve her derlemede kayboluyor.",
+      "etki": "orta",
+      "alan": "özellik"
+    },
+    {
+      "baslik": "Maliyet puanını daha çok çipe yay",
+      "neden": "gpu_kiralama.json'daki 107 fiyat satırının yalnızca 26'sında chip_id var; chipScore.js maliyet puanı yalnızca bu satırlarda hesaplanıyor. Katalogdaki 58 çipten fiyatı olanlar için eşleme eklemek üç boyutlu puanın kapsamını artırır.",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Bugün sayfasına 'yaklaşan olaylar' kutusu",
+      "neden": "Bugünkü haberlerde 8 Ekim'deki Samsung ön 3. çeyrek sonuçları gibi tarihli olaylar var, ancak src/data/bugun.json şemasında (tarih, derlenme, ozet, puan, yontem, maddeler) ileri tarihli olay alanı yok. İsteğe bağlı bir 'takvim' dizisi, okuyucunun ertesi günlerdeki önemli açıklamaları görmesini sağlar.",
+      "etki": "düşük",
+      "alan": "özellik"
+    },
+    {
+      "baslik": "Tailwind 4'e geçiş",
+      "neden": "package.json'da tailwindcss hâlâ ^3.4.14; kabul edilen tek bağımlılık riski (braces) Tailwind 3'ten geliyor ve 15 Ocak 2027'ye kadar kabul listesinde.",
+      "etki": "düşük",
+      "alan": "güvenlik"
+    }
+  ]
+}

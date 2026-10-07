@@ -47,6 +47,7 @@ const SAYFALAR = [
   ["/chip/nvidia-hopper-h100", "Çip detayı"], ["/egitim", "Eğitim"], ["/sinav", "Sınav"], ["/bugun", "Bugün"],
   ["/fiyatlar", "Fiyatlar"], ["/sozluk", "Sözlük"], ["/notlar", "Notlar"], ["/hesap", "Hesap"],
   ["/atolye", "Tasarımlarım"], ["/tasarla", "Tasarım Atölyesi"], ["/karsilastir", "Karşılaştır"], ["/otomasyon", "Otomasyon"],
+  ["/ic", "İç"], ["/ic/iphone-17-pro", "İç: cihaz detayı"], ["/chip/apple-a19-pro", "Mobil SoC detayı"],
 ];
 
 let browser;

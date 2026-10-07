@@ -1,0 +1,33 @@
+{
+  "ajan": "rapor",
+  "tarih": "2026-10-04",
+  "zaman": "2026-10-04T07:08:27.126Z",
+  "durum": "kritik",
+  "gunTamam": true,
+  "tazelik": [
+    {
+      "ad": "Bugün sayfası",
+      "tarih": "2026-10-04",
+      "gun": 0
+    },
+    {
+      "ad": "Fiyat verisi",
+      "tarih": "2026-10-03",
+      "gun": 1
+    }
+  ],
+  "otomatikTamamlanan": [],
+  "calisan": [
+    "guvenlik",
+    "iyilestirme",
+    "yenileme",
+    "gelistirme"
+  ],
+  "calismayan": [],
+  "dikkat": [
+    {
+      "seviye": "kritik",
+      "metin": "Yenileme · Fiyat verisi: güncellenmedi — son veri 2026-10-03. otomasyon/gelen/fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)"
+    }
+  ]
+}
