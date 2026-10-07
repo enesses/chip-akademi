@@ -5,12 +5,12 @@
     "Günün ana teması AI altyapısına akan sermayenin hızlanması: GPU bulutu Lambda, Blackstone ve Coatue liderliğinde 14,5 milyar $ ön değerlemeyle 4 milyar $'a kadar fon topluyor ve sipariş birikimi haziranda 15 milyar $'dan eylülde ~50 milyar $'a çıktı. Çıkarım çipi girişimi Etched, eylüldeki 21 milyar $'lık turdan birkaç hafta sonra 40–50 milyar $ değerlemeli teklifler alıyor; Çin'de DeepSeek en az 80 milyar yuanlık (~12 milyar $) bir tur kapatıyor.",
     "Üretim tarafında TSMC rekor tazeledi (Tayvan'da 2.580 TWD); 2 nm kapasite hedefinin yıl sonunda ayda ~120.000 levhaya çıktığı, Apple, Nvidia, AMD, Qualcomm ve MediaTek'in 2 nm siparişlerini %10–20 artırdığı bildiriliyor. Enerji cephesinde Google, Constellation ile 3,59 GW'lık nükleer ve doğalgaz ağırlıklı anlaşma imzaladı. Model tarafında Reflection'ın Beam'i 10.500 GB300 ile, Mistral Large 4 ise 4.000 Grace Blackwell GPU ile eğitildi — Nvidia'nın en yeni raf sistemlerine talep sürüyor.",
     "Bedelin bir kısmını bellek ödüyor. Samsung'un 2027 HBM4 fiyatlarında Nvidia ve Broadcom ile son aşamaya geldiği, fiyatların mevcut seviyenin iki katından fazlasına çıkabileceği konuşuluyor; TrendForce ortalama %121 HBM fiyat artışı öngörüyor. Bellek kapasitesinin veri merkezlerine kayması 100 $ altı telefon sevkiyatlarını 2. çeyrekte yıllık ~%60 düşürdü.",
-    "Finansman da gerilim kaynağı: teknoloji sektörünün yılbaşından beri borçlanması ~500 milyar $'a ulaştı, veri merkezi uzmanları %9'u aşan getiriyle tahvil satıyor. Kore'nin çip ihracatı eylülde %262,8 artarken Samsung ve SK Hynix hisselerinin yabancı satışıyla düşmesi, talebin güçlü ama değerlemelerin hassas olduğunu gösteriyor. Tablo iyimser; ancak bellek maliyeti ve borçla finanse edilen kapasite yarışı temkin gerektiriyor."
+    "Finansman da gerilim kaynağı: teknoloji sektörünün yılbaşından beri borçlanması ~500 milyar $'a ulaştı, veri merkezi uzmanları %9'u aşan getiriyle tahvil satıyor. Kore'nin çip ihracatı eylülde %262,8 artarken Samsung ve SK Hynix hisselerinin yabancı satışıyla düşmesi, talebin güçlü ama değerlemelerin hassas olduğunu gösteriyor. Micron'un Tayvan'daki Taoyuan sendikasının %99 oyla grev yetkisi alması, bellek arzının zaten sıkışık olduğu bir anda yeni bir risk ekliyor. Tablo iyimser; ancak bellek maliyeti ve borçla finanse edilen kapasite yarışı temkin gerektiriyor."
   ],
   "puan": {
     "etiket": "İyimser, bellek ve borç maliyeti gölgesinde",
     "yorum": "Lambda, Etched ve DeepSeek'e akan fonlar, TSMC'nin 2 nm kapasite artışı ve Google'ın 3,59 GW enerji anlaşması AI altyapı talebinin sürdüğünü gösteriyor. Buna karşılık HBM fiyatlarında iki kata varan artış beklentisi, ucuz telefon pazarındaki çöküş ve sektörün hızla artan borçlanması maliyet riskini büyütüyor.",
-    "deger": 60
+    "deger": 57
   },
   "maddeler": [
     {
@@ -95,21 +95,30 @@
       "url": "https://aiweekly.co/alerts/deepseek-nears-12b-round-with-tencent-catl-before-2027-ipo"
     },
     {
-      "baslik": "Reflection Beam 10.500 GB300 ile eğitildi",
-      "detay": "Reflection, 501 milyar parametreli (23 milyar aktif) seyrek MoE modeli Beam'i tanıttı; 23,8 trilyon token üzerinde, 10.500 Nvidia GB300 GPU ile dört haftada eğitildi. Ağırlıklar bu ay yayımlanacak.",
-      "kategori": "pozitif",
-      "agirlik": 1,
-      "neden": "Yeni nesil Nvidia raf sistemlerinin büyük eğitim işlerinde fiilen kullanıldığını gösteriyor.",
-      "kaynak": "AI Weekly (Reflection blog)",
-      "url": "https://aiweekly.co/ai-news-today/edition/2026-10-06"
-    },
-    {
       "baslik": "Mistral Large 4: 4.000 Grace Blackwell GPU ile eğitilen 1T parametreli model",
       "detay": "Mistral, 1 trilyon parametreli (49 milyar aktif), çok kipli MoE modeli Large 4'ü duyurdu; Avrupa veri merkezlerinde 4.000 Nvidia Grace Blackwell GPU ile iki ayda eğitildi. API fiyatı milyon girdi tokenı için 1,36 $, çıktı için 4,18 $; ağırlıklar ekim sonunda.",
       "kategori": "notr",
       "agirlik": 1,
       "neden": "Avrupa'da büyük ölçekli eğitim kapasitesinin kullanıldığını gösteriyor; çip pazarına doğrudan etkisi sınırlı.",
       "kaynak": "AI Weekly (mistral.ai)",
+      "url": "https://aiweekly.co/ai-news-today"
+    },
+    {
+      "baslik": "Micron'un Tayvan'daki Taoyuan sendikası greve onay aldı",
+      "detay": "Oy kullananların %99'u (1.994 üye) grev yetkisi verdi. Micron Tayvan'da ~15.000 kişi çalıştırıyor; sendikalar iş gücünün %80'inden fazlasını temsil ediyor. Çalışanlar kalıcı kâr paylaşımı istiyor; şirketin kişi başı 1 milyon TWD (~31.400 $) ikramiyesi yetmedi. 19 Ekim'de Taipei'de miting planlanıyor (resmi grev değil).",
+      "kategori": "negatif",
+      "agirlik": 1,
+      "neden": "HBM ve DRAM'in sıkışık olduğu bir dönemde Micron'un en büyük üretim üssünde iş gücü gerilimi arz riskini artırıyor; henüz grev başlamadığı için ağırlık düşük.",
+      "kaynak": "SRN News (Reuters)",
+      "url": "https://srnnews.com/microns-taoyuan-union-in-taiwan-secures-authorisation-to-strike/"
+    },
+    {
+      "baslik": "Rapidus 2 nm müşteri arayışında 17 tasarım firmasıyla ortaklık kurdu",
+      "detay": "Japonya'nın devlet destekli dökümhanesi Rapidus, Synopsys ve Cadence dahil 17 çip tasarım şirketiyle ortaklık duyurdu; amaç gelecek mali yılın ikinci yarısında başlayacak 2 nm üretimine müşteri kazanmak.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "TSMC dışında ikinci bir 2 nm kaynağının ekosistem kurması uzun vadede arz çeşitliliğini artırır; müşteri henüz kesinleşmediği için etkisi sınırlı.",
+      "kaynak": "AI Weekly (Nikkei Asia)",
       "url": "https://aiweekly.co/ai-news-today"
     }
   ],
@@ -118,6 +127,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = +4 · Σ ağırlık = 20 · Puan = 50 + 50 × 0.20 = 60"
+    "hesap": "Σ ağırlık×işaret = +3 · Σ ağırlık = 21 · Puan = 50 + 50 × 0.14 = 57"
   }
 }
