@@ -5,7 +5,10 @@
  *
  * Girdiler (otomasyon/gelen/ altında, hepsi isteğe bağlı):
  *   fiyatlar.json  → { "tarih": "YYYY-MM-DD", "kaynak_url": "...",
- *                      "satirlar": [["Nvidia H100", medyan_usd|null, en_ucuz_usd|null, saglayici], ...] }
+ *                      "satirlar": [["Nvidia H100", medyan_usd|null, en_ucuz_usd|null, saglayici], ...],
+ *                      "dogrulanan": [{ "model": "Nvidia A4000", "not": "ikinci okuma: medyan 0.49" }] }
+ *                    "dogrulanan" isteğe bağlı: >%50 oynaması ikinci, hedefli bir okumayla
+ *                    elle doğrulanmış modeller. Yalnızca bunlar şüpheli eşiğine rağmen yazılır.
  *   bugun.json     → src/data/bugun.json ile aynı şema (tarih, derlenme, ozet, puan, yontem, maddeler)
  *   bellek.json    → src/data/bellek_fiyat.json ile aynı şema (gostergeler, yigin, notlar) — haftalık
  *   oneriler.json  → { "tarih": "...", "oneriler": [{ "baslik", "neden", "etki": "yüksek|orta|düşük", "alan" }] }
@@ -71,8 +74,16 @@ if (fs.existsSync(fiyatGirdi)) {
       if (typeof model === "string" && typeof medyan === "number" && medyan > 0) yeni.set(anahtar(model), { model: model.trim(), medyan, saglayici });
     }
 
+    // Şüpheli eşiğine takılan ama ikinci, hedefli bir okumayla doğrulanmış modeller.
+    // Bu liste olmadan eşik bir modeli kalıcı olarak dondurur: kıyas hep son yazılan
+    // değere karşı yapıldığından gerçek bir fiyat sıçraması her gün yeniden reddedilir.
+    const dogrulanan = new Map(
+      (Array.isArray(g.dogrulanan) ? g.dogrulanan : [])
+        .filter((d) => d && typeof d.model === "string" && typeof d.not === "string" && d.not.trim())
+        .map((d) => [anahtar(d.model), d.not.trim()])
+    );
     let guncellenen = 0, eklenen = 0;
-    const supheli = [], gelmeyen = [];
+    const supheli = [], gelmeyen = [], elleDogrulanan = [];
     for (const f of veri.fiyatlar) {
       const n = yeni.get(anahtar(f.model));
       if (!n) { gelmeyen.push(f.model); continue; }
@@ -83,8 +94,12 @@ if (fs.existsSync(fiyatGirdi)) {
       // okuma hatasıdır (yanlış sütun, kayan satır). Yazma, raporla.
       const sonOynama = f.usd_saat > 0 ? ((n.medyan - f.usd_saat) / f.usd_saat) * 100 : 0;
       if (Math.abs(sonOynama) > 50 && (n.saglayici ?? 0) >= 10) {
-        supheli.push(`${f.model}: ${f.usd_saat} → ${n.medyan}`);
-        continue;
+        const not = dogrulanan.get(anahtar(f.model));
+        if (!not) {
+          supheli.push(`${f.model}: ${f.usd_saat} → ${n.medyan}`);
+          continue;
+        }
+        elleDogrulanan.push(`${f.model}: ${f.usd_saat} → ${n.medyan} (${not})`);
       }
       f.onceki_usd = taban;
       f.usd_saat = n.medyan;
@@ -130,7 +145,7 @@ if (fs.existsSync(fiyatGirdi)) {
     yaz(dosya, veri);
     arsivle("fiyatlar", g);
     fs.rmSync(fiyatGirdi);
-    sonuc.fiyat = { ok: true, detay: `${guncellenen} model güncellendi, ${eklenen} yeni, ${baglanan} kataloğa bağlandı, ${gelmeyen.length} gelmedi (eski fiyat korundu)`, supheli, gelmeyen };
+    sonuc.fiyat = { ok: true, detay: `${guncellenen} model güncellendi, ${eklenen} yeni, ${baglanan} kataloğa bağlandı, ${gelmeyen.length} gelmedi (eski fiyat korundu)${elleDogrulanan.length ? `, ${elleDogrulanan.length} büyük oynama elle doğrulandı` : ""}`, supheli, gelmeyen, elleDogrulanan };
   } catch (e) {
     sonuc.fiyat = { ok: false, detay: e.message };
   }
@@ -226,6 +241,7 @@ if (fs.existsSync(oneriGirdi)) {
 for (const [ad, s] of Object.entries(sonuc)) {
   if (s) console.log(`  ${s.ok ? "✓" : "✗"} ${ad}: ${s.detay}`);
   if (s?.supheli?.length) console.log(`      şüpheli (yazılmadı): ${s.supheli.join("; ")}`);
+  if (s?.elleDogrulanan?.length) console.log(`      elle doğrulandı (yazıldı): ${s.elleDogrulanan.join("; ")}`);
 }
 if (!Object.values(sonuc).some(Boolean)) console.log(`  – ${rel(GELEN)} altında işlenecek girdi yok`);
 

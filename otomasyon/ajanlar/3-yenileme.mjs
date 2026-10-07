@@ -53,7 +53,8 @@ if (son.fiyat?.ok) not("Fiyat verisi", "ok", `bu çalıştırmada güncellendi �
 else if (son.fiyat && !son.fiyat.ok) not("Fiyat verisi", "hata", `gelen veri reddedildi: ${son.fiyat.detay} (mevcut veri ${fiyatTarih})`);
 else if (fiyatTarih === bugunStr) not("Fiyat verisi", "atlandı", "bu çalıştırmada fiyat girdisi gelmedi; mevcut veri bugün daha önce işlenmiş");
 else not("Fiyat verisi", "hata", `güncellenmedi — son veri ${fiyatTarih}. otomasyon/gelen/fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)`);
-if (son.fiyat?.supheli?.length) not("Şüpheli fiyat", "uyari", `${son.fiyat.supheli.join("; ")} — tek seferde >%50 oynama, yazılmadı; elle kontrol et`);
+if (son.fiyat?.supheli?.length) not("Şüpheli fiyat", "uyari", `${son.fiyat.supheli.join("; ")} — tek seferde >%50 oynama, yazılmadı; elle kontrol et, doğruysa gelen/fiyatlar.json'daki "dogrulanan" listesine ekle`);
+if (son.fiyat?.elleDogrulanan?.length) not("Elle doğrulanan fiyat", "ok", `${son.fiyat.elleDogrulanan.join("; ")} — >%50 oynama ikinci okumayla doğrulandı, yazıldı`);
 if (son.bellek) not("Bellek fiyatları", son.bellek.ok ? "ok" : "hata", son.bellek.detay);
 const bugunGeldi = son.bugun;
 
