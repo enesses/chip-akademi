@@ -2,22 +2,23 @@ import { useEffect, useState } from "react";
 import { Download, Plus, StickyNote, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { autoTitle, createNote, deleteNote, exportMarkdown, listNotes, updateNote } from "@/lib/notes";
+import { dosyaKaydet } from "@/lib/dosyaKaydet";
 
 export default function Notes() {
   const [notes, setNotes] = useState([]);
   const [activeId, setActiveId] = useState(null);
+  const [kayitMesaji, setKayitMesaji] = useState("");
   function refresh() { const l = listNotes(); setNotes(l); if (!activeId && l.length) setActiveId(l[0].id); }
   useEffect(() => { refresh(); }, []);
   const active = notes.find((n) => n.id === activeId) || null;
 
   function yeni() { const n = createNote({}); refresh(); setActiveId(n.id); }
   function guncelle(patch) { if (!active) return; updateNote(active.id, patch); refresh(); }
-  function indir() {
+  async function indir() {
     const md = exportMarkdown(); if (!md) return;
-    const blob = new Blob([md], { type: "text/markdown" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a"); a.href = url; a.download = "notlarim.md"; a.click();
-    URL.revokeObjectURL(url);
+    setKayitMesaji("");
+    const sonuc = await dosyaKaydet("notlarim.md", md, "text/markdown");
+    if (sonuc.durum === "hata") setKayitMesaji(sonuc.mesaj);
   }
 
   return (
@@ -31,6 +32,7 @@ export default function Notes() {
           <div className="flex gap-2">
             <Button className="gap-1.5" onClick={yeni}><Plus className="h-4 w-4" />Yeni not</Button>
             {notes.length > 0 && <Button variant="outline" className="gap-1.5" onClick={indir}><Download className="h-4 w-4" />İndir</Button>}
+            {kayitMesaji && <p role="status" className="text-xs text-rose-400 w-full">{kayitMesaji}</p>}
           </div>
         </div>
       </section>

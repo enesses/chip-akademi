@@ -94,9 +94,33 @@ git fetch origin main && git rebase origin/main
 git push origin HEAD:main
 ```
 
-`.gitignore` `node_modules`, `dist` ve kök `chip-akademi.html`'i dışarıda
-bırakır; yayın kopyası `docs/index.html`'dir (GitHub Pages açıksa site
+`.gitignore` `node_modules`, `dist`, `artifact/` ve kök `chip-akademi.html`'i
+dışarıda bırakır; yayın kopyası `docs/index.html`'dir (GitHub Pages açıksa site
 kendiliğinden güncellenir).
+
+## 6b. claude.ai yayınını güncelle
+
+Kullanıcı uygulamayı claude.ai'daki kalıcı bağlantıdan açıyor; her sohbetten
+erişilen tek güncel kopya budur. Adres:
+
+    https://claude.ai/artifact/UAjf8W7P2C9KuwZjB5Fu34
+
+Push'tan sonra (yayınlanan sürüm `main` ile aynı olsun):
+
+1. `python3 otomasyon/artifact-hazirla.py` → `artifact/chip-akademi.html`
+   (başlığı başa alır, iskelet etiketlerini kaldırır, kök dili Türkçe yapar;
+   bunlar olmadan yayında Türkçe büyük harfler bozulur: "EKİM" → "EKIM").
+2. `Artifact` aracıyla önce **oku**: `action: "read"`, `url` yukarıdaki adres.
+   Yeni bir oturum okumadığı bir yayına yazamaz; okuma bunu açar.
+3. Sonra **yayınla**: `file_path: "artifact/chip-akademi.html"`, `url` aynı
+   adres. `icon` ve `capabilities` **verme** — ikisi de saklı değerle korunur
+   (`downloads` yeteneği; verilirse üzerine yazılır). `url`'siz yayınlama
+   **yeni** bir bağlantı açar; bunu yapma.
+4. Sonuçtaki sürüm numarasını rapora yaz ("Yayın: sürüm N").
+
+Artifact aracı yoksa ya da yayın reddedilirse adımı atla, nedenini rapora
+**açıkça** yaz ("claude.ai yayını güncellenemedi: …") ve 7. adımdaki dosyayı
+yine gönder. Uygulama o gün dünkü sürümüyle açılır.
 
 ## 7. Kullanıcıya rapor
 
@@ -104,6 +128,7 @@ Son mesajı Türkçe, kısa yaz:
 - Yenilenen veriler (fiyat: kaç model güncellendi, en çok artan/düşen; Bugün: puan ve günün teması).
 - Bulunan hatalar ve ne yapıldığı (düzeltildi + PR bağlantısı / yalnızca raporlandı).
 - Geliştirme önerileri (başlıklar).
+- claude.ai yayınının durumu: güncellendiyse sürüm numarası, güncellenemediyse nedeni.
 - Güncel `chip-akademi.html` dosyasını gönder (`SendUserFile`; dosya kökte, derleme üretir).
 
 Bir adım başarısız olursa sonraki adımlara devam et; neyin yapılamadığını

@@ -8,6 +8,7 @@ import {
   parolaDegistir, parolasizProfiller, profilOlustur, profilSil, profilleriListele,
 } from "@/lib/hesap";
 import { cn } from "@/lib/utils";
+import { dosyaKaydet } from "@/lib/dosyaKaydet";
 
 export default function Hesap() {
   const [profiller, setProfiller] = useState([]);
@@ -45,13 +46,13 @@ export default function Hesap() {
     try { await girisYap(id, parola); setParola(""); setSecili(null); yenile(); setBilgi("Giriş yapıldı."); }
     catch (e) { setHata(e.message); }
   }
-  function indir(id) {
+  async function indir(id) {
     const paket = disaAktar(id); if (!paket) return;
-    const blob = new Blob([JSON.stringify(paket, null, 2)], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a"); a.href = url;
-    a.download = `chip-akademi-${paket.profil.ad.replace(/\s+/g, "-").toLowerCase()}.json`;
-    a.click(); URL.revokeObjectURL(url);
+    setHata("");
+    const ad = `chip-akademi-${paket.profil.ad.replace(/\s+/g, "-").toLowerCase()}.json`;
+    const sonuc = await dosyaKaydet(ad, JSON.stringify(paket, null, 2), "application/json");
+    if (sonuc.durum === "kaydedildi") setBilgi("Profil dışa aktarıldı.");
+    else if (sonuc.durum === "hata") setHata(sonuc.mesaj);
   }
   async function dosyaSecildi(e) {
     const dosya = e.target.files?.[0]; if (!dosya) return;
