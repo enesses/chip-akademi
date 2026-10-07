@@ -59,6 +59,10 @@ if (fs.existsSync(fiyatGirdi)) {
     const dosya = path.join(DATA, "gpu_kiralama.json");
     const veri = oku(dosya);
     const eskiTarih = veri.kaynak.cekildigi_tarih;
+    // Aynı gün ikinci çalıştırma: sabahki ölçüm "önceki" sayılırsa önceki günle
+    // karşılaştırma silinir (değişimler ~0, iki_gun bugün→bugün olur). Tabanı koru.
+    const ayniGun = eskiTarih === BUGUN;
+    const tabanTarih = ayniGun ? (veri.kaynak.onceki_olcum ?? eskiTarih) : eskiTarih;
     // "Intel Gaudi 2" ile "Intel Gaudi2" aynı model: boşluk ve büyük/küçük harf yok sayılır.
     const anahtar = (m) => m.toLowerCase().replace(/[\s-]+/g, "");
     const yeni = new Map();
@@ -73,14 +77,16 @@ if (fs.existsSync(fiyatGirdi)) {
       const n = yeni.get(anahtar(f.model));
       if (!n) { gelmeyen.push(f.model); continue; }
       yeni.delete(anahtar(f.model));
-      const degisim = f.usd_saat > 0 ? ((n.medyan - f.usd_saat) / f.usd_saat) * 100 : 0;
-      // Çok sağlayıcılı bir modelde bir günde %50'den büyük oynama büyük ihtimalle
+      const taban = ayniGun && f.onceki_usd != null ? f.onceki_usd : f.usd_saat;
+      const degisim = taban > 0 ? ((n.medyan - taban) / taban) * 100 : 0;
+      // Çok sağlayıcılı bir modelde son ölçüme göre %50'den büyük oynama büyük ihtimalle
       // okuma hatasıdır (yanlış sütun, kayan satır). Yazma, raporla.
-      if (Math.abs(degisim) > 50 && (n.saglayici ?? 0) >= 10) {
+      const sonOynama = f.usd_saat > 0 ? ((n.medyan - f.usd_saat) / f.usd_saat) * 100 : 0;
+      if (Math.abs(sonOynama) > 50 && (n.saglayici ?? 0) >= 10) {
         supheli.push(`${f.model}: ${f.usd_saat} → ${n.medyan}`);
         continue;
       }
-      f.onceki_usd = f.usd_saat;
+      f.onceki_usd = taban;
       f.usd_saat = n.medyan;
       f.degisim_pct = Math.round(degisim * 10) / 10;
       if (typeof n.saglayici === "number") f.saglayici = n.saglayici;
@@ -104,9 +110,9 @@ if (fs.existsSync(fiyatGirdi)) {
 
     const hareketli = veri.fiyatlar.filter((f) => f.onceki_usd != null && (f.saglayici ?? 0) >= 3 && f.degisim_pct !== 0);
     veri.iki_gun = {
-      baslangic: eskiTarih,
+      baslangic: tabanTarih,
       bitis: BUGUN,
-      not: `${eskiTarih} ile ${BUGUN} ölçümleri arasındaki fark. Yalnızca en az 3 sağlayıcının listelediği modeller.`,
+      not: `${tabanTarih} ile ${BUGUN} ölçümleri arasındaki fark. Yalnızca en az 3 sağlayıcının listelediği modeller.`,
       artanlar: hareketli.filter((f) => f.degisim_pct > 0).sort((a, b) => b.degisim_pct - a.degisim_pct).slice(0, 5),
       dusenler: hareketli.filter((f) => f.degisim_pct < 0).sort((a, b) => a.degisim_pct - b.degisim_pct).slice(0, 5),
     };
@@ -116,10 +122,10 @@ if (fs.existsSync(fiyatGirdi)) {
       veri.endeks = { ...veri.endeks, degisim_4_hafta_pct: e.degisim_4_hafta_pct, degisim_12_ay_pct: e.degisim_12_ay_pct };
       veri.kaynak.olcum_tarihi = e.olcum_tarihi;
     }
-    veri.kaynak.onceki_olcum = eskiTarih;
+    veri.kaynak.onceki_olcum = tabanTarih;
     veri.kaynak.cekildigi_tarih = BUGUN;
     veri.kaynak.kapsam = { ...veri.kaynak.kapsam, model: veri.fiyatlar.length };
-    veri.kaynak.liste_notu = `Tablodaki fiyatlar getdeploying.com/gpus sayfasının ${BUGUN} tarihli sağlayıcılar arası medyanlarıdır. Değişim sütunu ${eskiTarih} tarihli bir önceki ölçüme göredir.`;
+    veri.kaynak.liste_notu = `Tablodaki fiyatlar getdeploying.com/gpus sayfasının ${BUGUN} tarihli sağlayıcılar arası medyanlarıdır. Değişim sütunu ${tabanTarih} tarihli bir önceki ölçüme göredir.`;
 
     yaz(dosya, veri);
     arsivle("fiyatlar", g);
