@@ -19,6 +19,8 @@ import Designs from "@/pages/Designs";
 import Compare from "@/pages/Compare";
 import Ic from "@/pages/Ic";
 import IcDetail from "@/pages/IcDetail";
+import AramaPaleti from "@/components/nav/AramaPaleti";
+import MobilMenu from "@/components/nav/MobilMenu";
 
 /*
  * Uygulama tek dosyalık statik HTML olarak dağıtılıyor ve file:// ile
@@ -29,9 +31,10 @@ import IcDetail from "@/pages/IcDetail";
 export default function App() {
   return (
     <Router hook={useHashLocation}>
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col alt-bosluk">
+        <a href="#icerik" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-3 focus:z-[70] focus:rounded-md focus:bg-primary focus:px-3 focus:py-2 focus:text-primary-foreground" onClick={(e) => { e.preventDefault(); document.getElementById("icerik")?.focus(); }}>İçeriğe geç</a>
         <Header />
-        <main className="flex-1">
+        <main id="icerik" tabIndex={-1} className="flex-1 outline-none">
           <Switch>
             <Route path="/" component={Home} />
             <Route path="/kategori/:cat" component={Category} />
@@ -59,6 +62,8 @@ export default function App() {
           </Switch>
         </main>
         <Footer />
+        <MobilMenu />
+        <AramaPaleti />
       </div>
     </Router>
   );

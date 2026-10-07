@@ -119,7 +119,8 @@ await akis("Tasarım karşılaştırma akışı", async () => {
 });
 await akis("Karşılaştır akışı", async () => {
   await page.goto(`${url}#/karsilastir`, { waitUntil: "load" });
-  await page.click("button[aria-expanded]", { timeout: 3000 });
+  // Sayfa içindeki seçici; üst menünün grup düğmeleri de aria-expanded taşıyor.
+  await page.click("main button[aria-expanded]", { timeout: 3000 });
   await page.locator('[data-testid="secici-cip"]').first().click({ timeout: 3000 });
   const satir = await page.locator("table tbody tr").count();
   if (satir === 0) throw new Error("karşılaştırma tablosu boş");
