@@ -1,0 +1,28 @@
+{
+  "ajan": "yenileme",
+  "tarih": "2026-10-07",
+  "zaman": "2026-10-07T07:06:37.930Z",
+  "durum": "kısmi",
+  "adimlar": [
+    {
+      "ad": "Fiyat verisi",
+      "durum": "hata",
+      "detay": "güncellenmedi — son veri 2026-10-03. otomasyon/gelen/fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)"
+    },
+    {
+      "ad": "Bugün sayfası",
+      "durum": "atlandı",
+      "detay": "bu çalıştırmada girdi gelmedi; bugünün verisi daha önce işlenmiş (11 madde, puan 60)"
+    },
+    {
+      "ad": "Derleme",
+      "durum": "ok",
+      "detay": "başarılı"
+    },
+    {
+      "ad": "Tek dosya",
+      "durum": "ok",
+      "detay": "17 görsel, HTML: 1906 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+    }
+  ]
+}

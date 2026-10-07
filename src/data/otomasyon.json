@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-06T07:10:15.265Z",
-  "tarih": "2026-10-06",
+  "guncelleme": "2026-10-07T07:08:45.254Z",
+  "tarih": "2026-10-07",
   "durum": "kritik",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "dikkat",
-      "zaman": "2026-10-06T07:08:56.542Z"
+      "zaman": "2026-10-07T07:06:33.059Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-06T07:08:56.686Z"
+      "zaman": "2026-10-07T07:06:33.161Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "kısmi",
-      "zaman": "2026-10-06T07:08:55.126Z"
+      "zaman": "2026-10-07T07:06:37.930Z"
     },
     {
       "id": "gelistirme",
@@ -33,10 +33,14 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-06T07:09:11.979Z"
+      "zaman": "2026-10-07T07:06:50.195Z"
     }
   ],
   "dikkat": [
+    {
+      "seviye": "uyarı",
+      "metin": "Fiyat verisi 4 gün eski (eşik 3 gün)."
+    },
     {
       "seviye": "uyarı",
       "metin": "Güvenlik: 2 yüksek seviye bağımlılık açığı var."
@@ -48,46 +52,46 @@
   ],
   "oneriler": [
     {
-      "baslik": "Fiyat ve bellek kaynakları dördüncü gündür izin engeline takılıyor",
-      "alan": "otomasyon",
+      "baslik": "Fiyat kaynakları beşinci gündür izin engelinde — URL'leri görev istemine ekle",
+      "neden": "7 Ekim çalıştırmasında getdeploying.com/gpus ve /gpu-price-index WebFetch'te yine PROVENANCE_REQUIRED ile reddedildi (bazı haber makaleleri de: datacenterdynamics, reflection.ai). src/data/gpu_kiralama.json cekildigi_tarih hâlâ 2026-10-03; iyileştirme ajanı 'Fiyat verisi 4 gün önce çekilmiş' diyor. Zamanlanmış görevin istemine bu URL'leri açıkça yazmak izin isteğini ortadan kaldırabilir.",
       "etki": "yüksek",
-      "neden": "6 Ekim çalıştırmasında getdeploying.com/gpus, /gpu-price-index ve trendforce.com/presscenter WebFetch'te yine 'PROVENANCE_REQUIRED' ile reddedildi. src/data/gpu_kiralama.json cekildigi_tarih hâlâ 2026-10-03. Zamanlanmış görevin istemine bu üç URL'yi doğrudan eklemek ya da kaynakları sabit bir izin listesine almak gerekiyor; yoksa fiyatlar her gün biraz daha eskiyecek."
+      "alan": "veri"
+    },
+    {
+      "baslik": "Açık otomasyon PR'larını (#1, #3, #4) birleştir ya da kapat",
+      "neden": "PR #3 (gelen/ boşken yenilemeyi yeniden çalıştırma) bugünkü '✗ yenileme çalıştı ama veri tarihi değişmedi' satırını hedefliyor ve hâlâ açık; PR #1 3 Ekim'den beri bekliyor. Bugün açılan PR #4 source-map-js yüksek açığını kapatıyor; birleşince güvenlik ajanındaki yüksek açık sayısı 2'den 1'e iner.",
+      "etki": "orta",
+      "alan": "otomasyon"
     },
     {
       "baslik": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
-      "alan": "otomasyon",
+      "neden": "otomasyon/*.mjs içinde 'izin engeli' ya da 'PROVENANCE' geçmiyor; eksik fiyat dosyası bugün de 'fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)' diye gösterildi. gelen/ altına isteğe bağlı bir durum dosyası (ör. {fiyat:'izin-engeli'}) okunursa rapor nedeni doğru gösterir.",
       "etki": "orta",
-      "neden": "otomasyon/*.mjs ve otomasyon/ajanlar/ içinde 'izin engeli' ya da 'PROVENANCE' geçen alan yok; eksik fiyat dosyası hâlâ 'fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)' diye gösteriliyor. gelen/ altına isteğe bağlı bir durum.json (ör. {fiyat:'izin-engeli'}) yazılıp 3-yenileme.mjs'de gösterilirse sorun sayfa yapısı değişikliğinden ayırt edilir."
-    },
-    {
-      "baslik": "'Nerede geride kaldın' panelini kaynağa taşı",
-      "alan": "özellik",
-      "etki": "orta",
-      "neden": "src/pages/Compare.jsx'te findGaps 0 kez geçiyor; advisor.js'teki findGaps ve beatsAfter iyileştirme taramasında hâlâ 'kullanılmayan export' (bugün 22 export). Panel kaynakta bağlanmazsa bir sonraki derlemede kaybolma riski var."
-    },
-    {
-      "baslik": "Maliyet puanını daha çok çipe yay",
-      "alan": "veri",
-      "etki": "orta",
-      "neden": "gpu_kiralama.json'daki 107 fiyat satırının yalnızca 26'sında chip_id var; chipScore.js maliyet puanı yalnızca bu satırlarda hesaplanıyor."
+      "alan": "otomasyon"
     },
     {
       "baslik": "Bugün sayfasına 'yaklaşan olaylar' kutusu",
-      "alan": "özellik",
+      "neden": "Bugünkü haberlerde Samsung'un 8 Ekim'deki 3. çeyrek sonuçları geçiyor; src/data/bugun.json şemasında ileri tarihli olay alanı yok (src/pages altında 'yaklasan' araması boş). Olay yalnızca madde metninde kalıyor.",
       "etki": "düşük",
-      "neden": "Bugünkü özette 8 Ekim'deki Samsung öncü 3. çeyrek sonuçları geçiyor ama src/data/bugun.json şemasında ileri tarihli olay alanı yok; olay yalnızca düz metinde kalıyor."
+      "alan": "arayüz"
     },
     {
-      "baslik": "Bellek göstergelerinden birinin tarihi 3 aydan eski",
-      "alan": "veri",
-      "etki": "düşük",
-      "neden": "src/data/bellek_fiyat.json'daki 5 göstergeden biri 2026-07-09 tarihli (diğerleri 29–30 Eylül). TrendForce bugün de izin engeline takıldı; erişim açılınca bu gösterge yenilenmeli ya da sayfada 'eski' diye işaretlenmeli."
+      "baslik": "Maliyet puanını daha çok çipe yay",
+      "neden": "gpu_kiralama.json'daki 107 fiyat satırının yalnızca 26'sında chip_id var; chipScore.js maliyet puanı yalnızca bu satırlarda hesaplanıyor. Bugünkü haberlerde öne çıkan GB300 ve Grace Blackwell gibi raf sistemleri için eşleme kontrol edilmeli.",
+      "etki": "orta",
+      "alan": "veri"
     },
     {
-      "baslik": "Tailwind 4'e geçiş",
-      "alan": "güvenlik",
+      "baslik": "Bellek sayfasında HBM için 2027 beklentisini ekle, eski göstergeyi işaretle",
+      "neden": "src/data/bellek_fiyat.json'daki 5 göstergeden biri 2026-07-09 tarihli. Bugün Sammy Fans haberinde TrendForce'un 2027 için ortalama %121 HBM fiyat artışı öngördüğü geçti; birincil kaynak (trendforce.com) doğrulanınca yıllık gösterge olarak eklenebilir.",
       "etki": "düşük",
-      "neden": "package.json'da tailwindcss ^3.4.14; güvenlik raporundaki 2 yüksek açığın kabul gerekçesi (braces) Tailwind 3'e bağlı ve kabul 15 Ocak 2027'de doluyor."
+      "alan": "veri"
+    },
+    {
+      "baslik": "'Nerede geride kaldın' panelini kaynağa bağla",
+      "neden": "advisor.js'teki findGaps ve beatsAfter bugünkü iyileştirme taramasında da 'kullanılmayan export' (toplam 22) listesinde; src/pages/Compare.jsx bunları içe aktarmıyor.",
+      "etki": "düşük",
+      "alan": "kod"
     }
   ],
   "guvenlik": {
@@ -133,7 +137,7 @@
     "bulgular": [
       {
         "alan": "veri",
-        "baslik": "Fiyat verisi 3 gün önce çekilmiş",
+        "baslik": "Fiyat verisi 4 gün önce çekilmiş",
         "etki": "orta",
         "otomatik": true,
         "eylem": "yenileme-calistir",
@@ -181,8 +185,8 @@
       },
       {
         "ad": "Bugün sayfası",
-        "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 63"
+        "durum": "atlandı",
+        "detay": "bu çalıştırmada girdi gelmedi; bugünün verisi daha önce işlenmiş (11 madde, puan 60)"
       },
       {
         "ad": "Derleme",
@@ -192,7 +196,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 1904 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 1906 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -243,6 +247,11 @@
       "tarih": "2026-10-06",
       "durum": "kritik",
       "dikkat": 2
+    },
+    {
+      "tarih": "2026-10-07",
+      "durum": "kritik",
+      "dikkat": 3
     }
   ]
 }
