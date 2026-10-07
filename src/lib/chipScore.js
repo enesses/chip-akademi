@@ -218,18 +218,74 @@ function gpuEffGet(chip) {
 
 // ─── VRAM getter — "max_unified_memory" dahil ─────────────────────────────────
 
+/** Değerden "x GB/s" / "x TB/s" bant genişliği ifadelerini siler; geriye kalan
+ *  "x GB" gerçek kapasitedir. "LPDDR5X, 228 GB/s" → kapasite yok;
+ *  "Paket üstü LPDDR5X-8533, 32 GB" → 32 GB. */
+function kapasiteMetni(value) {
+  return String(value).replace(/[\d.,]+\s*[GT]B\s*\/\s*s/gi, " ");
+}
+
+/** Yedek taramalarda söylenti/hedef değerlerini dışarıda bırak. pick() yalnızca
+ *  anahtarı kontrol ediyor; yedek okuyucular hem anahtara hem değere bakar —
+ *  "boost_clock_rumored": "6.0–6.5 GHz (beklenen)" gerçek chiplerin saat
+ *  ölçeğini belirlememeli. */
+function spekulatif(key, value) {
+  return ASPIRATIONAL.test(key) || ASPIRATIONAL.test(String(value));
+}
+
 function vramGet(chip) {
-  // Önce standart pattern
+  // Önce standart pattern ("vram", "unified_memory", "max_unified_memory"...)
   const v = pick(chip, P.vram, gb);
   if (v !== null) return v;
-  // Apple M-serisi: key "max_unified_memory" yerine değer içinde geçebilir
+  // Yedek tarama: kapasite bazen "memory_speed" ya da "capacity" gibi
+  // standart olmayan alanlarda duruyor. Eskiden "memory_bandwidth": "84.8 GB/s"
+  // 84.8 GB bellek diye okunuyordu — artık GB/s ifadeleri önce siliniyor,
+  // bant genişliği alanları hiç taranmıyor.
+  let best = null;
   for (const [key, value] of Object.entries(chip.key_specs || {})) {
-    if (/unified|memory/i.test(key) && /\d+\s*GB/i.test(String(value))) {
-      const r = gb(value);
-      if (r !== null) return r;
+    if (!/unified|memory|capacity/i.test(key)) continue;
+    if (spekulatif(key, value)) continue;
+    if (/bandwidth|per_device|per_stack|per_module|per_die/i.test(key)) continue;
+    const temiz = kapasiteMetni(value);
+    if (!/\d+\s*GB/i.test(temiz)) continue;
+    const r = gb(temiz);
+    if (r !== null && (best === null || r > best)) best = r;
+  }
+  return best;
+}
+
+/** Bellek bant genişliği: önce "bandwidth" alanı, yoksa bellek alanlarının
+ *  değerindeki "x GB/s" ifadesi ("memory_speed": "LPDDR5X, 228 GB/s"). */
+function bwGet(chip) {
+  const v = pick(chip, P.bandwidth, parseBandwidth);
+  if (v !== null) return v;
+  let best = null;
+  for (const [key, value] of Object.entries(chip.key_specs || {})) {
+    if (!/memory/i.test(key)) continue;
+    if (spekulatif(key, value)) continue;
+    if (!/[GT]B\s*\/\s*s/i.test(String(value))) continue;
+    const r = parseBandwidth(value);
+    if (r !== null && (best === null || r > best)) best = r;
+  }
+  return best;
+}
+
+/** CPU tepe saati: önce "boost_clock"/"clock", yoksa performans çekirdeği ve
+ *  tek çekirdek boost alanlarındaki en yüksek GHz. GPU / bellek saatleri hariç. */
+function clockGet(chip) {
+  const v = pick(chip, P.clock, ghz);
+  if (v !== null) return v;
+  let best = null;
+  for (const [key, value] of Object.entries(chip.key_specs || {})) {
+    if (!/boost|p_cores?|prime|single_core|turbo|max_.*clock/i.test(key)) continue;
+    if (/gpu|memory|igpu|ram/i.test(key)) continue;
+    if (spekulatif(key, value)) continue;
+    for (const m of String(value).matchAll(/([\d.,]+)\s*GHz/gi)) {
+      const g = parseFloat(m[1].replace(",", "."));
+      if (Number.isFinite(g) && g < 10 && (best === null || g > best)) best = g;
     }
   }
-  return null;
+  return best;
 }
 
 // ─── AI compute getter ────────────────────────────────────────────────────────
@@ -261,7 +317,7 @@ const RUBRICS = {
     },
     {
       key: "bw", label: "Bellek bant genişliği", weight: 0.24,
-      get: (c) => pick(c, P.bandwidth, parseBandwidth),
+      get: (c) => bwGet(c),
     },
     {
       key: "vram", label: "VRAM / Unified Memory", weight: 0.18,
@@ -284,7 +340,7 @@ const RUBRICS = {
   AI: [
     {
       key: "bw", label: "Bellek bant genişliği", weight: 0.28,
-      get: (c) => pick(c, P.bandwidth, parseBandwidth),
+      get: (c) => bwGet(c),
     },
     {
       key: "vram", label: "Bellek kapasitesi", weight: 0.24,
@@ -297,7 +353,7 @@ const RUBRICS = {
     {
       key: "eff", label: "Verimlilik (GB/s/W)", weight: 0.14,
       get: (c) => {
-        const b = pick(c, P.bandwidth, parseBandwidth);
+        const b = bwGet(c);
         const w = tdpOf(c);
         return b && w ? b / w : null;
       },
@@ -319,7 +375,7 @@ const RUBRICS = {
     },
     {
       key: "clock", label: "Boost saat hızı", weight: 0.16,
-      get: (c) => pick(c, P.clock, ghz),
+      get: (c) => clockGet(c),
     },
     {
       key: "l3", label: "L3 cache", weight: 0.18,
@@ -334,7 +390,7 @@ const RUBRICS = {
       key: "eff", label: "Verimlilik (çekirdek×GHz/W)", weight: 0.16,
       get: (c) => {
         const n = pick(c, P.cores, num);
-        const g = pick(c, P.clock, ghz);
+        const g = clockGet(c);
         const w = tdpOf(c);
         return n && g && w ? (n * g) / w : null;
       },
@@ -352,7 +408,7 @@ const RUBRICS = {
     },
     {
       key: "clock", label: "Boost saat hızı", weight: 0.10,
-      get: (c) => pick(c, P.clock, ghz),
+      get: (c) => clockGet(c),
     },
     {
       key: "npu", label: "NPU (TOPS)", weight: 0.22,
@@ -360,7 +416,7 @@ const RUBRICS = {
     },
     {
       key: "bw", label: "Bellek bant genişliği", weight: 0.20,
-      get: (c) => pick(c, P.bandwidth, parseBandwidth),
+      get: (c) => bwGet(c),
     },
     {
       key: "vram", label: "Unified Memory", weight: 0.14,
@@ -370,7 +426,7 @@ const RUBRICS = {
       key: "eff", label: "Verimlilik (çekirdek×GHz/W)", weight: 0.18,
       get: (c) => {
         const n = pick(c, P.cores, num);
-        const g = pick(c, P.clock, ghz);
+        const g = clockGet(c);
         const w = tdpOf(c);
         return n && g && w ? (n * g) / w : null;
       },
@@ -387,7 +443,7 @@ const RUBRICS = {
         const w = pick(c, P.width, bits);
         const r = pick(c, P.memRate, rate);
         if (w && r) return (w * r) / 8;
-        return pick(c, P.bandwidth, parseBandwidth);
+        return bwGet(c);
       },
     },
     {
@@ -515,7 +571,7 @@ function hammVerimlilikhesapla(chip) {
     const tf = aiComputeGet(chip);
     if (tf) return tf / w;
     // Fallback: bant genişliği verimi (GB/s/W)
-    const bw = pick(chip, P.bandwidth, parseBandwidth);
+    const bw = bwGet(chip);
     if (bw) return bw / w;
     // GPU: shader/W
     const sh = shaderGet(chip);
@@ -525,7 +581,7 @@ function hammVerimlilikhesapla(chip) {
 
   if (cls === "CPU" || cls === "SOC") {
     const n = pick(chip, P.cores, num);
-    const g = pick(chip, P.clock, ghz);
+    const g = clockGet(chip);
     if (n && g) return (n * g) / w;
     // SOC: NPU TOPS/W
     const npu = pick(chip, P.npu, num);
@@ -534,7 +590,7 @@ function hammVerimlilikhesapla(chip) {
   }
 
   if (cls === "RAM") {
-    const bw = pick(chip, P.bandwidth, parseBandwidth);
+    const bw = bwGet(chip);
     return bw ? bw / 1 : null; // RAM'de TDP yok; bant genişliği doğrudan kullanılır
   }
 
@@ -600,7 +656,7 @@ function hammMaliyetHesapla(chip) {
     const tf = aiComputeGet(chip);
     if (tf && tf > 0) return usd / tf;
     // Fallback: bant genişliği başına ($/GB/s/h)
-    const bw = pick(chip, P.bandwidth, parseBandwidth);
+    const bw = bwGet(chip);
     if (bw && bw > 0) return usd / bw;
     // Fallback 2: VRAM başına ($/GB/h)
     const vr = vramGet(chip) ?? fiyat.vramGb;
@@ -609,7 +665,7 @@ function hammMaliyetHesapla(chip) {
 
   if (cls === "CPU" || cls === "SOC") {
     const n = pick(chip, P.cores, num);
-    const g = pick(chip, P.clock, ghz);
+    const g = clockGet(chip);
     if (n && g) return usd / (n * g);
   }
 

@@ -158,7 +158,7 @@ export default function Compare() {
         {entries.map((e) => (
           <div key={e.key} className="flex items-center gap-2 rounded-full border border-card-border bg-card pl-1.5 pr-2 py-1">
             {e.kind === "chip"
-              ? <img src={imageUrl(e.chip.image)} alt="" className="w-6 h-6 rounded-full object-cover bg-muted" />
+              ? (e.chip.image ? <img src={imageUrl(e.chip.image)} alt="" className="w-6 h-6 rounded-full object-cover bg-muted" /> : <span className="w-6 h-6 rounded-full bg-muted inline-block" />)
               : <span className="w-6 h-6 rounded-full flex items-center justify-center" style={{ background: `${e.renk}25`, color: e.renk }}><PenTool className="h-3 w-3" /></span>}
             <span className="text-xs font-medium whitespace-nowrap max-w-[9rem] truncate">{e.name}</span>
             <button onClick={() => cikar(e.key)} aria-label={`${e.name} karşılaştırmadan çıkar`} className="text-muted-foreground hover:text-foreground">
@@ -195,7 +195,7 @@ export default function Compare() {
                   {uygunCipler.map((c) => (
                     <button key={c.id} onClick={() => ekle("chip", c.id)} data-testid="secici-cip"
                       className="w-full text-left flex items-center gap-2 px-2 py-1.5 rounded-md hover-elevate text-sm">
-                      <img src={imageUrl(c.image)} alt="" className="w-6 h-6 rounded object-cover bg-muted" />
+                      {c.image ? <img src={imageUrl(c.image)} alt="" className="w-6 h-6 rounded object-cover bg-muted" /> : <span className="w-6 h-6 rounded bg-muted inline-block" />}
                       <span className="truncate flex-1">{c.name}</span>
                       <span className="font-mono text-[10px] text-muted-foreground">{categoryLabels[c.category] || c.category}</span>
                     </button>

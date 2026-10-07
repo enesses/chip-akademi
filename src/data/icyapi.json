@@ -1,0 +1,1440 @@
+{
+  "guncelleme": "2026-10-03",
+  "aciklama": "Cihazların iç yapısı: hangi chip nerede yaşıyor. Her kayıt yayımlanmış bir teardown ya da üreticinin kendi teknik belgesine dayanır. Doğrulanamayan hiçbir değer yazılmadı; eksik kalanlar 'bilinmeyen' alanında açıkça listelenir.",
+  "kategoriler": [
+    {
+      "id": "giyilebilir",
+      "ad": "Giyilebilir / AI cihaz",
+      "renk": "#f472b6"
+    },
+    {
+      "id": "telefon",
+      "ad": "Telefon",
+      "renk": "#60a5fa"
+    },
+    {
+      "id": "dizustu",
+      "ad": "Dizüstü",
+      "renk": "#34d399"
+    },
+    {
+      "id": "masaustu",
+      "ad": "Masaüstü",
+      "renk": "#fbbf24"
+    },
+    {
+      "id": "konsol",
+      "ad": "El konsolu",
+      "renk": "#a78bfa"
+    }
+  ],
+  "roller": {
+    "islemci": {
+      "ad": "İşlemci",
+      "renk": "#60a5fa"
+    },
+    "bellek": {
+      "ad": "Bellek",
+      "renk": "#34d399"
+    },
+    "depolama": {
+      "ad": "Depolama",
+      "renk": "#22d3ee"
+    },
+    "modem": {
+      "ad": "Modem / radyo",
+      "renk": "#f472b6"
+    },
+    "guc": {
+      "ad": "Güç",
+      "renk": "#fbbf24"
+    },
+    "sogutma": {
+      "ad": "Soğutma",
+      "renk": "#fb923c"
+    },
+    "sensor": {
+      "ad": "Sensör",
+      "renk": "#a78bfa"
+    },
+    "ekran": {
+      "ad": "Ekran / çıkış",
+      "renk": "#e879f9"
+    },
+    "govde": {
+      "ad": "Gövde",
+      "renk": "#94a3b8"
+    }
+  },
+  "cihazlar": [
+    {
+      "id": "humane-ai-pin",
+      "ad": "Humane AI Pin",
+      "uretici": "Humane",
+      "yil": 2024,
+      "kategori": "giyilebilir",
+      "ozet": "Ekranı olmayan, yakaya takılan bir bilgisayar. İçinde telefonun bütün temel bileşenleri var — SoC, LTE modem, kamera, pil — ama ekran yerine avucunuza yazı yansıtan bir lazer projektör oturuyor. Cihaz kapandıktan yaklaşık bir yıl sonra (Şubat 2025) bulut servisleri kapatıldı ve donanım büyük ölçüde işlevsiz kaldı.",
+      "ic_fikir": "Hesaplamanın büyük kısmı cihazda değil bulutta. İçindeki SoC dil modelini çalıştırmıyor; sesi ve görüntüyü toplayıp ağa gönderiyor. Bu yüzden sunucu kapandığında donanım da sustu — 'iç yapı' bir cihazın kaderini tek başına belirlemiyor.",
+      "govde": "Alüminyum gövde, arka kapak yapıştırıcıyla sabitlenmiş; mıknatısla kıyafete tutunuyor",
+      "katmanlar": [
+        {
+          "ad": "Ön yüz: kamera + lazer penceresi",
+          "aciklama": "Kamera, derinlik ve ToF sensörleri ile lazer projektörün çıkış penceresi; üstünde dokunmatik yüzey",
+          "renk": "#e879f9"
+        },
+        {
+          "ad": "Lazer projektör modülü",
+          "aciklama": "İki piezoelektrik MEMS aynası: 'Castor' (dairesel, rezonanslı) ve 'Pollux' (dikdörtgen, yarı-statik). Görüntü satır satır taranarak avuca çiziliyor",
+          "renk": "#a78bfa"
+        },
+        {
+          "ad": "Anakart",
+          "aciklama": "Snapdragon SoC, bellek, depolama ve LTE radyosu tek kart üzerinde",
+          "renk": "#60a5fa"
+        },
+        {
+          "ad": "Pil",
+          "aciklama": "Dahili pil yaklaşık 4 saat; mıknatısla takılan harici 'booster' pil toplamı ~9 saate çıkarıyor",
+          "renk": "#fbbf24"
+        },
+        {
+          "ad": "Arka kapak",
+          "aciklama": "Yapıştırıcıyla tutturulmuş; sökmek için ısı ve ayırma gerekiyor",
+          "renk": "#94a3b8"
+        }
+      ],
+      "parcalar": [
+        {
+          "ad": "Qualcomm Snapdragon (8 çekirdek)",
+          "rol": "islemci",
+          "deger": "8 çekirdekli Snapdragon",
+          "uretici": "Qualcomm",
+          "chip_id": null,
+          "not": "Humane tam model numarasını açıklamadı; teardown'da da okunabilir bir parça numarası paylaşılmadı"
+        },
+        {
+          "ad": "RAM",
+          "rol": "bellek",
+          "deger": "4 GB",
+          "uretici": null,
+          "chip_id": null,
+          "not": "Üretici ve tip açıklanmadı"
+        },
+        {
+          "ad": "Depolama",
+          "rol": "depolama",
+          "deger": "32 GB eMMC",
+          "uretici": null,
+          "chip_id": null,
+          "not": "eMMC — telefonlardaki UFS'ten yavaş, maliyeti düşük sınıf"
+        },
+        {
+          "ad": "Castor — rezonanslı MEMS ayna",
+          "rol": "ekran",
+          "deger": "Dairesel, piezoelektrik",
+          "uretici": "STMicroelectronics",
+          "chip_id": null,
+          "not": "Hızlı eksen: ışını yatayda süpürür"
+        },
+        {
+          "ad": "Pollux — yarı-statik MEMS ayna",
+          "rol": "ekran",
+          "deger": "Dikdörtgen, piezoelektrik",
+          "uretici": "STMicroelectronics",
+          "chip_id": null,
+          "not": "Yavaş eksen: satırı aşağı kaydırır. İkisi birlikte tek lazer noktasından görüntü kuruyor"
+        },
+        {
+          "ad": "Kamera",
+          "rol": "sensor",
+          "deger": "120° görüş, f/2.4, 5 elemanlı sabit odak lens",
+          "uretici": null,
+          "chip_id": null,
+          "not": "Sensör modeli açıklanmadı"
+        },
+        {
+          "ad": "Hareket ve derinlik sensörleri",
+          "rol": "sensor",
+          "deger": "İvmeölçer, jiroskop, derinlik sensörü, uçuş süresi (ToF) sensörü",
+          "uretici": null,
+          "chip_id": null,
+          "not": "ToF sensörü el jestlerini ve avuç mesafesini ölçüyor"
+        },
+        {
+          "ad": "Hücresel radyo",
+          "rol": "modem",
+          "deger": "LTE / 3G (T-Mobile şebekesi)",
+          "uretici": null,
+          "chip_id": null,
+          "not": "5G yok; cihaz bulut bağımlı olduğu için bağlantı kesildiğinde işlevi de kesiliyor"
+        },
+        {
+          "ad": "Kablosuz",
+          "rol": "modem",
+          "deger": "Wi-Fi 5, Bluetooth 5.1",
+          "uretici": null,
+          "chip_id": null,
+          "not": "2024 çıkışlı bir cihaz için geride kalmış bir nesil"
+        }
+      ],
+      "pil": {
+        "kapasite": "Dahili pil: ~4 saat kullanım; harici booster ile toplam ~9 saat",
+        "not": "Teardown'da mAh/Wh değeri paylaşılmadı"
+      },
+      "onarim": null,
+      "bilinmeyen": [
+        "Snapdragon'un tam model numarası",
+        "Pil kapasitesi (mAh / Wh)",
+        "Kamera sensörü modeli",
+        "RAM ve eMMC üreticileri",
+        "iFixit onarılabilirlik puanı verilmedi"
+      ],
+      "kaynaklar": [
+        {
+          "ad": "iFixit — Rabbit R1 and Humane AI Pin: A Quick Look at the Hardware",
+          "url": "https://www.ifixit.com/News/95474/rabbit-r1-and-humane-ai-pin-teardown-the-beginning-of-a-new-device-category"
+        },
+        {
+          "ad": "All About Circuits — Humane Lifts the Curtain on Ai Pin",
+          "url": "https://www.allaboutcircuits.com/news/humane-lifts-curtain-ai-pin-openai-powered-wearable/"
+        }
+      ],
+      "engelli_kaynaklar": [
+        {
+          "ad": "E&T (IET) — Teardown: Humane AI Pin and Rabbit R1",
+          "url": "https://eandt.theiet.org/2024/07/10/teardown-humane-ai-pin-and-rabbit-r1",
+          "neden": "izin engeli — site robots.txt ile okumayı reddetti, içeriği kullanılmadı"
+        }
+      ],
+      "ana_islemci": {
+        "chip_id": null,
+        "not": "Humane 8 çekirdekli bir Qualcomm Snapdragon kullandığını söyledi ama model numarasını açıklamadı; teardown'da da okunabilir bir parça numarası çıkmadı. Model bilinmeden katalog kaydı açılamaz — bu yüzden işlemci puanı hesaplanmıyor."
+      },
+      "eksikler": [
+        "Gerçek ekran yok: lazer projektör tek renkli ve yalnızca avuç gibi küçük yüzeylere yansıtıyor",
+        "Yerelde yapay zekâ yok — her istek buluta gidiyor; sunucular kapanınca (Şubat 2025) cihaz büyük ölçüde işlevsiz kaldı",
+        "5G yok, yalnızca LTE / 3G",
+        "Kablosuz bir nesil geride: Wi-Fi 5, Bluetooth 5.1",
+        "Depolama eMMC — telefonlardaki UFS'ten yavaş sınıf",
+        "Dahili pil yalnızca ~4 saat; harici pil olmadan gün çıkarmıyor"
+      ]
+    },
+    {
+      "id": "rabbit-r1",
+      "ad": "Rabbit R1",
+      "uretici": "Rabbit",
+      "yil": 2024,
+      "kategori": "giyilebilir",
+      "ozet": "Turuncu, avuç içi boyutunda bir AI cihazı. Humane ile aynı dönemde çıktı ve aynı mimari tercihi yaptı: yerelde neredeyse hiç hesaplama yok, her şey bulutta. İçinde döner kameranın mekanizması cihazın en dikkat çekici parçası.",
+      "ic_fikir": "Donanımın pahalı kısmı her zaman chip değil. Buradaki en karmaşık bileşen bir yarı iletken değil, kamerayı döndüren motor-dişli grubu ve tekerleğin konumunu okuyan Hall etkisi sensörü.",
+      "govde": "Plastik gövde; arka plaka sökülerek içine giriliyor",
+      "katmanlar": [
+        {
+          "ad": "Ön yüz: ekran + döner kamera",
+          "aciklama": "2.88 inç dokunmatik LCD ve 360° dönebilen kamera",
+          "renk": "#e879f9"
+        },
+        {
+          "ad": "Döner mekanizma",
+          "aciklama": "Motor + dişli grubu kamerayı çeviriyor; kaydırma tekerleğinin konumu mıknatıs ve Hall etkisi sensörüyle okunuyor",
+          "renk": "#a78bfa"
+        },
+        {
+          "ad": "Anakart",
+          "aciklama": "Kamera, LCD ve küçük bileşenleri yönetiyor. Yapay zekâ işlemlerinin tamamı bulutta",
+          "renk": "#60a5fa"
+        },
+        {
+          "ad": "Pil",
+          "aciklama": "3.45 Wh lityum-polimer — iFixit gövdede daha büyük bir pile yer olduğunu not etti",
+          "renk": "#fbbf24"
+        },
+        {
+          "ad": "Arka plaka",
+          "aciklama": "Sökülebilir; cihazın içine giriş noktası",
+          "renk": "#94a3b8"
+        }
+      ],
+      "parcalar": [
+        {
+          "ad": "Anakart",
+          "rol": "islemci",
+          "deger": "Yerel işler: kamera, LCD, küçük bileşenler",
+          "uretici": null,
+          "chip_id": null,
+          "not": "iFixit teardown'ında SoC parça numarası okunmadı. Yapay zekâ işlemleri cihazda değil bulutta koşuyor"
+        },
+        {
+          "ad": "Pil",
+          "rol": "guc",
+          "deger": "3.45 Wh Li-Po",
+          "uretici": null,
+          "chip_id": null,
+          "not": "iFixit: gövdede daha büyük bir pil için yer var"
+        },
+        {
+          "ad": "Döner kamera motoru + dişli",
+          "rol": "sensor",
+          "deger": "Motor ve dişli grubu",
+          "uretici": null,
+          "chip_id": null,
+          "not": "Kamerayı öne/arkaya çeviriyor"
+        },
+        {
+          "ad": "Hall etkisi sensörü",
+          "rol": "sensor",
+          "deger": "Mıknatıs + Hall sensörü",
+          "uretici": null,
+          "chip_id": null,
+          "not": "Kaydırma tekerleğinin açısal konumunu temassız okuyor"
+        },
+        {
+          "ad": "Dokunmatik LCD",
+          "rol": "ekran",
+          "deger": "2.88 inç dokunmatik",
+          "uretici": null,
+          "chip_id": null,
+          "not": "Panel modeli açıklanmadı"
+        }
+      ],
+      "pil": {
+        "kapasite": "3.45 Wh (Li-Po)",
+        "not": "mAh karşılığı teardown'da verilmedi"
+      },
+      "onarim": null,
+      "bilinmeyen": [
+        "SoC modeli ve parça numarası",
+        "RAM ve depolama miktarı",
+        "Kamera sensörü modeli",
+        "iFixit onarılabilirlik puanı verilmedi"
+      ],
+      "kaynaklar": [
+        {
+          "ad": "iFixit — Rabbit R1 and Humane AI Pin: A Quick Look at the Hardware",
+          "url": "https://www.ifixit.com/News/95474/rabbit-r1-and-humane-ai-pin-teardown-the-beginning-of-a-new-device-category"
+        }
+      ],
+      "engelli_kaynaklar": [],
+      "ana_islemci": {
+        "chip_id": null,
+        "not": "iFixit teardown'ında SoC'un parça numarası okunmadı ve Rabbit açıklamadı. Model bilinmediği için katalog kaydı yok, işlemci puanı hesaplanmıyor."
+      },
+      "eksikler": [
+        "Yerelde yapay zekâ yok — her işlem bulutta",
+        "Pil 3.45 Wh ile küçük; iFixit gövdede daha büyük bir pile yer olduğunu not etti"
+      ]
+    },
+    {
+      "id": "iphone-17-pro",
+      "ad": "iPhone 17 Pro",
+      "uretici": "Apple",
+      "yil": 2025,
+      "kategori": "telefon",
+      "ozet": "Apple'ın ilk buhar odalı iPhone'u. Titanyumdan dövme alüminyum unibody gövdeye dönüldü, pil 14 Torx Plus vidayla tutturulan bir tepsiye oturdu ve elektrikle çözülen yapıştırıcı kullanıldı — pil değişimi iPhone tarihinde ilk kez kaldıraç ve çözücü gerektirmiyor.",
+      "ic_fikir": "Chip hızlandıkça darboğaz silikondan ısıya kayıyor. A19 Pro'nun performansını belirleyen şey artık transistör sayısı kadar, üstündeki bakır buhar odasının ısıyı gövdeye ne kadar hızlı dağıttığı.",
+      "govde": "Havacılık sınıfı dövme alüminyum unibody, anodize kaplama",
+      "katmanlar": [
+        {
+          "ad": "Ön cam + OLED panel",
+          "aciklama": "6.3 inç, 2622 × 1206, 3000 nit'e kadar parlaklık",
+          "renk": "#e879f9"
+        },
+        {
+          "ad": "Şasi / orta çerçeve",
+          "aciklama": "Dövme alüminyum unibody; hem gövde hem ısı yolu",
+          "renk": "#94a3b8"
+        },
+        {
+          "ad": "Buhar odası",
+          "aciklama": "İçi su dolu bakır kese. A19 Pro'nun ısısı suyu buharlaştırıyor, bakır kafes ve girintilerde yoğuşup geri dönüyor. Testte 17 Pro 34.8°C'de kalırken 16 Pro Max 37.8°C'ye çıktı",
+          "renk": "#fb923c"
+        },
+        {
+          "ad": "Anakart",
+          "aciklama": "A19 Pro, bellek, modem ve N1 kablosuz chip'i. Kart pilin üstünde, kamera platosunun kenarına kadar uzanıyor",
+          "renk": "#60a5fa"
+        },
+        {
+          "ad": "Pil (vidalı tepside)",
+          "aciklama": "14 Torx Plus vidayla sabitlenen tepsi + metal pil kabuğu. 12 V uygulanınca yapıştırıcı elektrikle çözülüyor",
+          "renk": "#fbbf24"
+        },
+        {
+          "ad": "Arka gövde + kamera platosu",
+          "aciklama": "Üç 48 MP sensör; anodize kaplama keskin kenarlarda pul pul dökülebiliyor ('scratchgate')",
+          "renk": "#a78bfa"
+        }
+      ],
+      "parcalar": [
+        {
+          "ad": "Apple A19 Pro",
+          "rol": "islemci",
+          "deger": "2P @ 4.26 GHz + 4E @ 2.60 GHz, 6 çekirdek GPU, 16 çekirdek Neural Engine (35 TOPS) — TSMC N3P",
+          "uretici": "Apple",
+          "chip_id": "apple-a19-pro",
+          "not": "A18 Pro ile aynı çekirdek düzeni; kazanç düğümde (N3E → N3P), saatte ve önbellekte. Katalog kaydında tam künye ve puan var."
+        },
+        {
+          "ad": "RAM",
+          "rol": "bellek",
+          "deger": "12 GB LPDDR5X",
+          "uretici": null,
+          "chip_id": "ram-lpddr5x",
+          "not": "16 Pro'daki 8 GB'tan 12 GB'a çıktı — cihaz üstü dil modelleri için"
+        },
+        {
+          "ad": "Depolama",
+          "rol": "depolama",
+          "deger": "256 GB / 512 GB / 1 TB (Pro Max'te 2 TB)",
+          "uretici": null,
+          "chip_id": null,
+          "not": "NAND üreticisi modele göre değişiyor"
+        },
+        {
+          "ad": "Qualcomm Snapdragon X80 modem",
+          "rol": "modem",
+          "deger": "5G modem",
+          "uretici": "Qualcomm",
+          "chip_id": null,
+          "not": "Apple'ın kendi C1X modemi bu modelde kullanılmadı"
+        },
+        {
+          "ad": "Apple N1",
+          "rol": "modem",
+          "deger": "Wi-Fi / Bluetooth / Thread",
+          "uretici": "Apple",
+          "chip_id": null,
+          "not": "Apple'ın kendi kablosuz chip'i — Broadcom bağımlılığını azaltıyor"
+        },
+        {
+          "ad": "Buhar odası",
+          "rol": "sogutma",
+          "deger": "Su dolu bakır kese",
+          "uretici": "Apple",
+          "chip_id": null,
+          "not": "iPhone'da ilk. Apple sürekli performansta %40'a kadar iyileşme bildiriyor"
+        },
+        {
+          "ad": "Pil",
+          "rol": "guc",
+          "deger": "3.988 mAh / 15.53 Wh (fiziksel SIM), 4.252 mAh / 16.56 Wh (eSIM)",
+          "uretici": null,
+          "chip_id": null,
+          "not": "eSIM modelinde SIM yuvasından boşalan yer pile veriliyor"
+        },
+        {
+          "ad": "Arka kameralar",
+          "rol": "sensor",
+          "deger": "3 × 48 MP (geniş, ultra geniş, 4× telefoto)",
+          "uretici": null,
+          "chip_id": null,
+          "not": "Sensör parça numaraları açıklanmadı"
+        }
+      ],
+      "pil": {
+        "kapasite": "3.988 mAh / 15.53 Wh (fiziksel SIM) — eSIM modelinde 4.252 mAh / 16.56 Wh",
+        "not": "Vidalı tepsi + elektrikle çözülen yapıştırıcı: 12 V uygulanıyor, kaldıraç veya çözücü gerekmiyor"
+      },
+      "onarim": {
+        "puan": 7,
+        "max": 10,
+        "gecici": true,
+        "not": "iFixit geçici puan. Pil değişimi kolaylaştı; ekran ve anakart eşleştirme (parts pairing) kilitleri sürüyor"
+      },
+      "bilinmeyen": [
+        "A19 Pro'nun transistör sayısı ve die alanı Apple tarafından açıklanmadı",
+        "NAND ve DRAM tedarikçileri",
+        "Kamera sensörü parça numaraları",
+        "Buhar odasının tam iç hacmi / sıvı miktarı"
+      ],
+      "kaynaklar": [
+        {
+          "ad": "iFixit — iPhone 17 Pro Teardown (Scratchgate ve buhar odası)",
+          "url": "https://www.ifixit.com/News/113388/iphone-17-pro-teardown"
+        },
+        {
+          "ad": "Wikipedia — iPhone 17 Pro teknik özellikleri",
+          "url": "https://en.wikipedia.org/wiki/IPhone_17_Pro"
+        },
+        {
+          "ad": "9to5Mac — iPhone 17 Pro teardown: vapor chamber, scratchgate",
+          "url": "https://9to5mac.com/2025/09/23/iphone-17-pro-teardown-reveals-vapor-chamber-internals-scratchgate-details-more/"
+        },
+        {
+          "ad": "Wikipedia — Apple A19",
+          "url": "https://en.wikipedia.org/wiki/Apple_A19"
+        }
+      ],
+      "engelli_kaynaklar": [],
+      "ana_islemci": {
+        "chip_id": "apple-a19-pro",
+        "not": null
+      },
+      "eksikler": [
+        "Kendi modemi yok: Qualcomm Snapdragon X80 kullanıyor, Apple'ın C1X modemi bu modelde yok",
+        "Anodize alüminyum keskin kenarlarda, özellikle kamera platosunda pul pul dökülebiliyor (\"scratchgate\")",
+        "Ekran ve anakart parça eşleştirme (parts pairing) kilitleri sürüyor"
+      ]
+    },
+    {
+      "id": "iphone-16-pro",
+      "ad": "iPhone 16 Pro",
+      "uretici": "Apple",
+      "yil": 2024,
+      "kategori": "telefon",
+      "ozet": "iFixit'in o güne kadar bir iPhone'a verdiği en yüksek puanı alan model. Önden ve arkadan açılabilen çift girişli tasarım, çoğu tamiri ekranı sökmeden mümkün kıldı; anakart yalnızca üst hoparlör çıkarılarak alınabiliyor. Pil ilk kez alüminyum kabuk içinde.",
+      "ic_fikir": "Onarılabilirlik bir malzeme değil, montaj sırası meselesi. iPhone 16 Pro'nun içindeki chip'ler 15 Pro'dakilerle aynı mantıkta; değişen şey parçaların hangi sırayla üst üste konduğu.",
+      "govde": "Titanyum çerçeve, önden ve arkadan açılabilen çift girişli yapı",
+      "katmanlar": [
+        {
+          "ad": "Ön cam + OLED panel",
+          "aciklama": "6.3 inç, 2622 × 1206, 120 Hz'e kadar",
+          "renk": "#e879f9"
+        },
+        {
+          "ad": "Şasi (çift girişli)",
+          "aciklama": "Hem önden hem arkadan açılabiliyor — çoğu tamirde ekranı sökmek gerekmiyor",
+          "renk": "#94a3b8"
+        },
+        {
+          "ad": "Anakart",
+          "aciklama": "A18 Pro, 8 GB LPDDR5, Kioxia NAND ve Qualcomm SDX71M modem. Üst hoparlör çıkarılınca kart sökülebiliyor",
+          "renk": "#60a5fa"
+        },
+        {
+          "ad": "Pil (alüminyum kabuklu)",
+          "aciklama": "Metal kabuğa alınmış ilk iPhone pili; germe-çekme şeritleriyle tutturulmuş. Basınç tahliye valfi olabileceği not edildi",
+          "renk": "#fbbf24"
+        },
+        {
+          "ad": "Arka cam + kamera + LiDAR",
+          "aciklama": "LiDAR modülü bağımsız değiştirilebiliyor ve Pro ile Pro Max arasında takas edilebiliyor",
+          "renk": "#a78bfa"
+        }
+      ],
+      "parcalar": [
+        {
+          "ad": "Apple A18 Pro",
+          "rol": "islemci",
+          "deger": "2P @ 4.04 GHz + 4E @ 2.42 GHz, 6 çekirdek GPU, 16 çekirdek Neural Engine (35 TOPS) — TSMC N3E, 20 milyar transistör, 105 mm²",
+          "uretici": "Apple",
+          "chip_id": "apple-a18-pro",
+          "not": "Aynı yılın A18'inden 4.8 milyar transistör ve 15 mm² büyük; farkın çoğu önbellekte"
+        },
+        {
+          "ad": "RAM",
+          "rol": "bellek",
+          "deger": "8 GB LPDDR5",
+          "uretici": null,
+          "chip_id": "ram-lpddr5x",
+          "not": "iFixit LPDDR5 okudu; Apple ve Wikipedia LPDDR5X olarak veriyor. Katalog bağlantısı LPDDR5X kaydına gidiyor"
+        },
+        {
+          "ad": "NAND flash",
+          "rol": "depolama",
+          "deger": "128 GB (taban model)",
+          "uretici": "Kioxia",
+          "chip_id": null,
+          "not": "iFixit teardown'ında Kioxia işaretli parça okundu"
+        },
+        {
+          "ad": "Qualcomm SDX71M modem",
+          "rol": "modem",
+          "deger": "5G modem",
+          "uretici": "Qualcomm",
+          "chip_id": null,
+          "not": "Beklenen X75 değil, X71 sınıfı bir parça çıktı — iFixit bunu sürpriz olarak kaydetti"
+        },
+        {
+          "ad": "Pil",
+          "rol": "guc",
+          "deger": "3.582 mAh / 13.94 Wh",
+          "uretici": null,
+          "chip_id": null,
+          "not": "Pro Max: 4.685 mAh / 18.17 Wh. Pro'daki alüminyum kabuk Pro Max'te yok"
+        },
+        {
+          "ad": "LiDAR tarayıcı",
+          "rol": "sensor",
+          "deger": "ToF 3D LiDAR",
+          "uretici": null,
+          "chip_id": null,
+          "not": "Bağımsız değiştirilebilir modül; Pro ↔ Pro Max takası mümkün"
+        },
+        {
+          "ad": "USB-C portu",
+          "rol": "govde",
+          "deger": "Modüler port kartı",
+          "uretici": "Apple",
+          "chip_id": null,
+          "not": "iFixit 'çok basitleştirilmiş tasarım' olarak niteledi"
+        }
+      ],
+      "pil": {
+        "kapasite": "3.582 mAh / 13.94 Wh (Pro) — 4.685 mAh / 18.17 Wh (Pro Max)",
+        "not": "Pro'da alüminyum kabuk + germe-çekme şerit; elektrikle çözülen yapıştırıcı bu nesilde yok"
+      },
+      "onarim": {
+        "puan": 7,
+        "max": 10,
+        "gecici": true,
+        "not": "iFixit geçici puan; o tarihte bir iPhone'a verilen en yüksek puan"
+      },
+      "bilinmeyen": [
+        "Güç yönetimi ve RF ön uç chip'lerinin parça numaraları",
+        "Kamera sensörü modelleri",
+        "DRAM tedarikçisi",
+        "Pil basınç tahliye valfinin varlığı kesinleşmedi (iFixit 'olabilir' dedi)"
+      ],
+      "kaynaklar": [
+        {
+          "ad": "iFixit — More Modular Than Ever Before: iPhone 16 Pro and Pro Max Teardown",
+          "url": "https://www.ifixit.com/News/100693/more-modular-than-ever-before-iphone-16-pro-and-pro-max-teardown"
+        },
+        {
+          "ad": "Wccftech — iFixit teardown: iPhone 16 Pro, Qualcomm SDX71M modem",
+          "url": "https://wccftech.com/ifixit-iphone-16-pro-models-teardown/"
+        },
+        {
+          "ad": "Wikipedia — iPhone 16 Pro teknik özellikleri",
+          "url": "https://en.wikipedia.org/wiki/IPhone_16_Pro"
+        },
+        {
+          "ad": "Wikipedia — Apple A18",
+          "url": "https://en.wikipedia.org/wiki/Apple_A18"
+        }
+      ],
+      "engelli_kaynaklar": [],
+      "ana_islemci": {
+        "chip_id": "apple-a18-pro",
+        "not": null
+      },
+      "eksikler": [
+        "Modem beklenen X75 değil, bir önceki sınıftan X71 (SDX71M)",
+        "Pro'daki metal pil kabuğu ve yeni pil düzeni Pro Max'te yok",
+        "Kamera muhafazaları tek bir vida konumu yüzünden Pro ile Pro Max arasında takas edilemiyor"
+      ]
+    },
+    {
+      "id": "galaxy-s25-ultra",
+      "ad": "Samsung Galaxy S25 Ultra",
+      "uretici": "Samsung",
+      "yil": 2025,
+      "kategori": "telefon",
+      "ozet": "iFixit'in on yılda bir Samsung amiral gemisine verdiği en yüksek puan. Pil artık yapıştırıcı yerine dört çekme şeridiyle tutuluyor ve arka kameraların her biri bağımsız modül — biri bozulursa yalnızca o değişiyor. Buna karşın ön kamera epoksiyle sabitlenmiş.",
+      "ic_fikir": "Modülerlik parça parça kazanılıyor. Aynı cihazın içinde hem tek vidayla çıkan kamera modülleri hem de epoksiyle gömülmüş bir ön kamera olabiliyor — tasarım kararı her bileşen için ayrı veriliyor.",
+      "govde": "Titanyum çerçeve; arka cam yapıştırıcıyla sabit",
+      "katmanlar": [
+        {
+          "ad": "Ön cam + düz OLED panel",
+          "aciklama": "S24 Ultra'dan devam eden düz panel — kavisli panelden hem ucuz hem teorik olarak daha kolay değişiyor",
+          "renk": "#e879f9"
+        },
+        {
+          "ad": "Şasi",
+          "aciklama": "Titanyum çerçeve; ön kamera buraya epoksiyle sabitlenmiş",
+          "renk": "#94a3b8"
+        },
+        {
+          "ad": "Buhar odası",
+          "aciklama": "Snapdragon 8 Elite'in ısısını dağıtıyor",
+          "renk": "#fb923c"
+        },
+        {
+          "ad": "Anakart",
+          "aciklama": "Snapdragon 8 Elite ve çevresi",
+          "renk": "#60a5fa"
+        },
+        {
+          "ad": "Pil",
+          "aciklama": "Dört çekme şeridi hücreyi kavrıyor; ekstra tutkal olmadan kolay kalkıyor",
+          "renk": "#fbbf24"
+        },
+        {
+          "ad": "Arka cam + modüler kameralar",
+          "aciklama": "Her arka kamera modülü bağımsız sökülebiliyor; ultra geniş 50 MP'ye yükseltildi",
+          "renk": "#a78bfa"
+        }
+      ],
+      "parcalar": [
+        {
+          "ad": "Qualcomm Snapdragon 8 Elite",
+          "rol": "islemci",
+          "deger": "2× Oryon Prime + 6× Oryon Performance, Adreno 830, entegre X80 5G modem — TSMC N3E, 124.1 mm²",
+          "uretici": "Qualcomm",
+          "chip_id": "qualcomm-snapdragon-8-elite",
+          "not": "Verim çekirdeği yok — sekizi de Oryon. Modem SoC'un içinde"
+        },
+        {
+          "ad": "Buhar odası",
+          "rol": "sogutma",
+          "deger": "Buhar odası soğutma",
+          "uretici": "Samsung",
+          "chip_id": null,
+          "not": "iFixit yazısında oda boyutundaki değişim rakamla verilmedi"
+        },
+        {
+          "ad": "Pil",
+          "rol": "guc",
+          "deger": "Dört çekme şeridiyle sabitlenmiş hücre",
+          "uretici": null,
+          "chip_id": null,
+          "not": "iFixit yazısında mAh değeri paylaşılmadı"
+        },
+        {
+          "ad": "Arka kamera modülleri",
+          "rol": "sensor",
+          "deger": "Bağımsız modüller; ultra geniş 50 MP",
+          "uretici": null,
+          "chip_id": null,
+          "not": "Her modül ayrı sökülüp değiştirilebiliyor"
+        },
+        {
+          "ad": "Ön kamera",
+          "rol": "sensor",
+          "deger": "Epoksiyle sabit",
+          "uretici": null,
+          "chip_id": null,
+          "not": "Sökmesi zor — cihazın en kötü onarılabilirlik noktası"
+        },
+        {
+          "ad": "Düz OLED panel",
+          "rol": "ekran",
+          "deger": "Düz OLED",
+          "uretici": "Samsung Display",
+          "chip_id": null,
+          "not": "Değişimde yeni yapıştırıcı gerekiyor"
+        }
+      ],
+      "pil": {
+        "kapasite": "iFixit yazısında mAh değeri verilmedi",
+        "not": "Dört çekme şeridi; ekstra tutkal yok, hızlı değişim"
+      },
+      "onarim": {
+        "puan": 5,
+        "max": 10,
+        "gecici": false,
+        "not": "iFixit: on yıldır çıkan Samsung amiral gemilerinin en iyisi ama hâlâ ideal değil. Resmî onarım kılavuzları 'yetersiz ve karmaşık' bulundu"
+      },
+      "bilinmeyen": [
+        "Pil kapasitesi (iFixit yazısında yok)",
+        "Buhar odası boyut değişimi",
+        "RAM / depolama parça numaraları",
+        "Kamera sensörü modelleri"
+      ],
+      "kaynaklar": [
+        {
+          "ad": "iFixit — Galaxy S25 Ultra Teardown: Quick Battery Fix, Slow Progress on Repairability",
+          "url": "https://www.ifixit.com/News/108201/galaxy-s25-ultra-teardown-quick-battery-fix-slow-progress-on-repairability"
+        },
+        {
+          "ad": "Notebookcheck — Galaxy S25 Ultra nets Samsung's highest iFixit score in ten years",
+          "url": "https://www.notebookcheck.net/Galaxy-S25-Ultra-nets-Samsung-s-highest-iFixit-score-in-ten-years.960195.0.html"
+        },
+        {
+          "ad": "Wikipedia — Qualcomm Snapdragon SoC listesi (SM8750)",
+          "url": "https://en.wikipedia.org/wiki/List_of_Qualcomm_Snapdragon_systems_on_chips"
+        }
+      ],
+      "engelli_kaynaklar": [],
+      "ana_islemci": {
+        "chip_id": "qualcomm-snapdragon-8-elite",
+        "not": "S25 Ultra'daki sürüm Samsung'a özel \"for Galaxy\" varyantı; katalogdaki değerler standart SM8750'ye ait, saatler farklı olabilir."
+      },
+      "eksikler": [
+        "Ön kamera epoksiyle gömülü — sökmesi zor",
+        "Arka cam ve OLED değişiminde yeni yapıştırıcı gerekiyor",
+        "Resmî onarım kılavuzları iFixit'e göre \"yetersiz, sezgisel değil ve karmaşık\"; onarım puanı 5/10"
+      ]
+    },
+    {
+      "id": "pixel-9-pro",
+      "ad": "Google Pixel 9 Pro",
+      "uretici": "Google",
+      "yil": 2024,
+      "kategori": "telefon",
+      "ozet": "Google'ın kendi tasarladığı Tensor G4 SoC'u ile çalışıyor; yanında Titan M2 güvenlik yardımcı işlemcisi var. 16 GB LPDDR5X bellek, telefon üzerinde dil modeli çalıştırma hedefinin doğrudan bir sonucu. iFixit'in incelediği XL sürümünde çift girişli tasarım var ama pil çıkarma süreci zahmetli.",
+      "ic_fikir": "Bir güvenlik chip'i ana işlemciden ayrı yaşar. Titan M2, Tensor G4 ele geçse bile anahtarları korumak için fiziksel olarak başka bir silikon parçasında duruyor — güvenlik bir yazılım katmanı değil, ayrı bir chip.",
+      "govde": "Alüminyum çerçeve, cam arka yüz; XL modelinde önden ve arkadan açılabilen çift girişli yapı",
+      "katmanlar": [
+        {
+          "ad": "Ön cam + OLED panel",
+          "aciklama": "6.3 inç, 2856 × 1280, 1–120 Hz değişken yenileme",
+          "renk": "#e879f9"
+        },
+        {
+          "ad": "Şasi",
+          "aciklama": "Alüminyum çerçeve; XL'de çift girişli açılma",
+          "renk": "#94a3b8"
+        },
+        {
+          "ad": "Anakart",
+          "aciklama": "Tensor G4 + Titan M2 güvenlik chip'i + 16 GB LPDDR5X",
+          "renk": "#60a5fa"
+        },
+        {
+          "ad": "Pil",
+          "aciklama": "4.700 mAh (Pro) / 5.060 mAh (Pro XL). iFixit çıkarma işlemini 'zahmetli' buldu",
+          "renk": "#fbbf24"
+        },
+        {
+          "ad": "Arka cam + kamera adası",
+          "aciklama": "50 MP geniş, 48 MP ultra geniş, 48 MP 5× telefoto",
+          "renk": "#a78bfa"
+        }
+      ],
+      "parcalar": [
+        {
+          "ad": "Google Tensor G4",
+          "rol": "islemci",
+          "deger": "1× Cortex-X4 @ 3.1 GHz + 3× A720 @ 2.6 GHz + 4× A520 @ 1.92 GHz, Mali-G715 @ 940 MHz, 3. nesil TPU — Samsung 4 nm",
+          "uretici": "Google (Samsung Foundry üretimi)",
+          "chip_id": "google-tensor-g4",
+          "not": "Google çekirdek yapısını resmî ayrıntılandırmadı; bu düzen cihaz incelemeleriyle tespit edildi. Üretim düğümünün 4LPP+ olduğu bildiriliyor ama doğrulanmadı"
+        },
+        {
+          "ad": "Titan M2",
+          "rol": "islemci",
+          "deger": "Güvenlik yardımcı işlemcisi",
+          "uretici": "Google",
+          "chip_id": null,
+          "not": "Anahtarları ve güvenli önyüklemeyi ana SoC'tan fiziksel olarak ayrı tutuyor"
+        },
+        {
+          "ad": "RAM",
+          "rol": "bellek",
+          "deger": "16 GB LPDDR5X",
+          "uretici": null,
+          "chip_id": "ram-lpddr5x",
+          "not": "Cihaz üstü Gemini Nano için ayrılan belleğin karşılığı"
+        },
+        {
+          "ad": "Samsung Exynos 5400 modem",
+          "rol": "modem",
+          "deger": "5G sub-6 GHz + mmWave, uydu bağlantısı desteği",
+          "uretici": "Samsung",
+          "chip_id": null,
+          "not": "SoC'un içinde değil, ayrı chip — Snapdragon 8 Elite'in entegre modeminin aksine"
+        },
+        {
+          "ad": "Depolama",
+          "rol": "depolama",
+          "deger": "128 GB – 1 TB UFS 3.1",
+          "uretici": null,
+          "chip_id": null,
+          "not": "UFS 3.1 — 2024 amiral gemileri için bir nesil geride"
+        },
+        {
+          "ad": "Pil",
+          "rol": "guc",
+          "deger": "4.700 mAh (Pro) / 5.060 mAh (Pro XL)",
+          "uretici": null,
+          "chip_id": null,
+          "not": "iFixit XL teardown'ında çıkarma süreci zahmetli bulundu"
+        },
+        {
+          "ad": "Kablosuz",
+          "rol": "modem",
+          "deger": "Wi-Fi 7, Bluetooth 5.3",
+          "uretici": null,
+          "chip_id": null,
+          "not": "Chip üreticisi açıklanmadı"
+        },
+        {
+          "ad": "Arka kameralar",
+          "rol": "sensor",
+          "deger": "50 MP geniş (f/1.68), 48 MP ultra geniş (f/1.7), 48 MP 5× telefoto (f/2.8)",
+          "uretici": null,
+          "chip_id": null,
+          "not": "Sensör parça numaraları açıklanmadı"
+        }
+      ],
+      "pil": {
+        "kapasite": "4.700 mAh (Pro) / 5.060 mAh (Pro XL)",
+        "not": "iFixit: çift girişli tasarım iyi, pil çıkarma zahmetli"
+      },
+      "onarim": {
+        "puan": null,
+        "max": 10,
+        "gecici": false,
+        "not": "iFixit bu modele sayısal puan yayımlamadı; teardown yorumu yedi yıllık yazılım desteği iddiasıyla onarım pratiğinin örtüşmediği yönünde"
+      },
+      "bilinmeyen": [
+        "Tensor G4'ün üretim düğümü Google tarafından doğrulanmadı (4LPP+ olduğu bildiriliyor); transistör sayısı açıklanmadı",
+        "Wi-Fi / Bluetooth chip üreticisi",
+        "iFixit sayısal onarılabilirlik puanı",
+        "Kamera sensörü modelleri"
+      ],
+      "kaynaklar": [
+        {
+          "ad": "Wikipedia — Pixel 9 Pro teknik özellikleri",
+          "url": "https://en.wikipedia.org/wiki/Pixel_9_Pro"
+        },
+        {
+          "ad": "GSMArena — Pixel 9 Pro XL teardown: dual-entry design, fiddly battery removal",
+          "url": "https://www.gsmarena.com/google_pixel_9_pro_xl_teardown_reveals_dualentry_design_and_fiddly_battery_removal_process_-news-64309.php"
+        },
+        {
+          "ad": "iFixit — Google Pixel 9 Pro cihaz sayfası",
+          "url": "https://www.ifixit.com/Device/Google_Pixel_9_Pro"
+        },
+        {
+          "ad": "Android Authority — Google Tensor G4 explained",
+          "url": "https://www.androidauthority.com/google-tensor-g4-explained-everything-you-need-to-know-about-the-pixel-9-processor-3466184/"
+        }
+      ],
+      "engelli_kaynaklar": [],
+      "ana_islemci": {
+        "chip_id": "google-tensor-g4",
+        "not": null
+      },
+      "eksikler": [
+        "Depolama UFS 3.1 — 2024 amiral gemileri için bir nesil geride",
+        "Pil çıkarma süreci iFixit'e göre zahmetli",
+        "TPU bir önceki nesille (Tensor G3) aynı; yapay zekâ hızlandırıcısı bu yıl değişmedi",
+        "Google işlemcinin çekirdek yapısını ve üretim düğümünü resmî olarak açıklamadı"
+      ]
+    },
+    {
+      "id": "macbook-pro-14-m4-pro",
+      "ad": "MacBook Pro 14\" (M4 Pro)",
+      "uretici": "Apple",
+      "yil": 2024,
+      "kategori": "dizustu",
+      "ozet": "İçi telefondan çok bir tablete benziyor: bellek ve SSD doğrudan anakarta lehimli, SoC ile birleşik bellek aynı paket üzerinde. Portların çoğu ayrı ayrı değiştirilebiliyor ama MagSafe ve kart okuyucu ileri seviye lehimleme gerektiriyor. Ekran ve anakart yazılım kilitleriyle eşleştirilmiş.",
+      "ic_fikir": "Birleşik bellek bir pazarlama sözü değil, fiziksel bir yerleşim kararı. Bellek yongaları SoC paketinin üstünde oturduğu için 273 GB/s bant genişliği mümkün oluyor — ve tam bu yüzden belleği sonradan yükseltmek mümkün değil.",
+      "govde": "Alüminyum unibody",
+      "katmanlar": [
+        {
+          "ad": "Ekran paneli",
+          "aciklama": "Mini-LED XDR, kuantum nokta katmanı; nano doku seçeneği. Yazılım kilitleriyle eşleştirilmiş",
+          "renk": "#e879f9"
+        },
+        {
+          "ad": "Üst kasa + klavye/trackpad",
+          "aciklama": "Alüminyum unibody",
+          "renk": "#94a3b8"
+        },
+        {
+          "ad": "Soğutma: ısı emici + fanlar",
+          "aciklama": "M4 Pro için büyütülmüş ısı emici",
+          "renk": "#fb923c"
+        },
+        {
+          "ad": "Anakart",
+          "aciklama": "M4 Pro SoC; birleşik bellek paket üzerinde, NAND karta lehimli. Kart yeniden tasarlandı",
+          "renk": "#60a5fa"
+        },
+        {
+          "ad": "Pil",
+          "aciklama": "72.4 Wh (14 inç). Germe-çekme yapıştırıcı şeritleriyle sabit",
+          "renk": "#fbbf24"
+        },
+        {
+          "ad": "Alt kapak + portlar",
+          "aciklama": "Üç Thunderbolt 5 portu çoğunlukla ayrı değiştirilebiliyor; MagSafe ve kart okuyucu lehimli",
+          "renk": "#22d3ee"
+        }
+      ],
+      "parcalar": [
+        {
+          "ad": "Apple M4 Pro",
+          "rol": "islemci",
+          "deger": "12 çekirdek CPU (8 performans + 4 verim), 16–20 çekirdek GPU",
+          "uretici": "Apple",
+          "chip_id": "apple-m4-pro-max",
+          "not": "Katalogdaki M4 Pro/Max kaydı bu chip'in ayrıntılarını taşıyor"
+        },
+        {
+          "ad": "Birleşik bellek",
+          "rol": "bellek",
+          "deger": "24 GB – 48 GB, 273 GB/s (256-bit veri yolu)",
+          "uretici": "Apple paketi",
+          "chip_id": null,
+          "not": "SoC paketi üzerinde — yükseltilemez"
+        },
+        {
+          "ad": "SSD (NAND)",
+          "rol": "depolama",
+          "deger": "Anakarta lehimli NAND",
+          "uretici": null,
+          "chip_id": null,
+          "not": "Mac mini'nin aksine modül değil; kullanıcı yükseltmesi yok"
+        },
+        {
+          "ad": "Pil",
+          "rol": "guc",
+          "deger": "72.4 Wh (14 inç) — 16 inç modelde 99.6 Wh / 8.693 mAh @ 11.45 V",
+          "uretici": null,
+          "chip_id": null,
+          "not": "Germe-çekme yapıştırıcı; iFixit hâlâ ideal bulmuyor"
+        },
+        {
+          "ad": "Thunderbolt 5 portları",
+          "rol": "govde",
+          "deger": "3 × Thunderbolt 5, 120 Gbit/s'e kadar",
+          "uretici": null,
+          "chip_id": null,
+          "not": "Çoğu port ayrı ayrı değiştirilebiliyor"
+        },
+        {
+          "ad": "MagSafe + SD kart okuyucu",
+          "rol": "govde",
+          "deger": "Anakarta lehimli",
+          "uretici": "Apple",
+          "chip_id": null,
+          "not": "Değişim için ileri seviye lehimleme gerekiyor"
+        },
+        {
+          "ad": "Mini-LED XDR panel",
+          "rol": "ekran",
+          "deger": "Mini-LED, kuantum nokta; nano doku opsiyonu",
+          "uretici": null,
+          "chip_id": null,
+          "not": "Ekran değişimi yazılım kilidine takılıyor (parts pairing)"
+        }
+      ],
+      "pil": {
+        "kapasite": "72.4 Wh (14 inç)",
+        "not": "16 inç modelde 99.6 Wh / 8.693 mAh @ 11.45 V"
+      },
+      "onarim": {
+        "puan": null,
+        "max": 10,
+        "gecici": false,
+        "not": "iFixit bu teardown'da sayısal puan yayımlamadı. Tespit: modüler portlar ve ilk günden onarım kılavuzları olumlu, ama eşleştirme ve kalibrasyon kilitleri 'büyük bir onarılabilirlik başarısızlığı'"
+      },
+      "bilinmeyen": [
+        "NAND ve DRAM tedarikçileri",
+        "iFixit sayısal onarılabilirlik puanı",
+        "Isı emici ve fan parça numaraları",
+        "M4 Pro'nun transistör sayısı Apple tarafından açıklanmadı"
+      ],
+      "kaynaklar": [
+        {
+          "ad": "iFixit — MacBook Pro M4 Pro Teardown: New Model, Same Repair Situation",
+          "url": "https://www.ifixit.com/News/106300/macbook-pro-m4-pro-teardown-new-model-same-repair-situation"
+        },
+        {
+          "ad": "Wikipedia — MacBook Pro (Apple silicon) teknik özellikleri",
+          "url": "https://en.wikipedia.org/wiki/MacBook_Pro_(Apple_silicon)"
+        }
+      ],
+      "engelli_kaynaklar": [],
+      "ana_islemci": {
+        "chip_id": "apple-m4-pro-max",
+        "not": "Katalog kaydı M4 Pro ve M4 Max'i birlikte tutuyor; puan ailenin en üst yapılandırmasına göre hesaplanıyor, 14 inç M4 Pro'dan yüksek olabilir."
+      },
+      "eksikler": [
+        "Bellek ve SSD anakarta lehimli — sonradan yükseltilemez",
+        "MagSafe ve SD kart okuyucu lehimli; değişim ileri seviye lehimleme istiyor",
+        "Ekran ve anakart yazılım eşleştirme kilitlerine bağlı",
+        "Pil hâlâ germe-çekme yapıştırıcıyla"
+      ]
+    },
+    {
+      "id": "framework-laptop-13",
+      "ad": "Framework Laptop 13",
+      "uretici": "Framework",
+      "yil": 2021,
+      "kategori": "dizustu",
+      "ozet": "iFixit'ten tam 10/10 almış bir dizüstü — son derece nadir bir puan. Anakart beş vidayla çıkıyor, RAM SO-DIMM yuvasında, SSD M.2, pil üç tutsak vidayla beş dakikada sökülüyor ve hiç yapıştırıcı yok. Portlar bile takılıp çıkarılan genişletme kartları.",
+      "ic_fikir": "Aynı sınıftaki iki dizüstü tamamen zıt iç mimari seçebiliyor. MacBook Pro'nun bant genişliği için her şeyi pakete yaklaştırdığı yerde Framework her şeyi yuvaya alıyor: iç yapı bir mühendislik zorunluluğu değil, bir değer tercihi.",
+      "govde": "Alüminyum; her yerde tutsak Torx vidalar — vida kaybolmuyor",
+      "katmanlar": [
+        {
+          "ad": "Ekran + mıknatıslı çerçeve",
+          "aciklama": "Çerçeve mıknatısla tutunuyor; alet gerekmeden değişiyor ya da renk değiştiriliyor",
+          "renk": "#e879f9"
+        },
+        {
+          "ad": "Klavye + trackpad",
+          "aciklama": "Klavye grubu ~50 vidayla, trackpad yalnızca 4 vidayla ayrı sökülüyor",
+          "renk": "#94a3b8"
+        },
+        {
+          "ad": "Anakart",
+          "aciklama": "Beş vidayla çıkıyor; komple değiştirilerek işlemci yükseltmesi yapılabiliyor",
+          "renk": "#60a5fa"
+        },
+        {
+          "ad": "RAM yuvaları + M.2 SSD",
+          "aciklama": "SO-DIMM yuvaları ve M.2 NVMe — yapıştırıcı ya da özel işlem yok",
+          "renk": "#34d399"
+        },
+        {
+          "ad": "Pil",
+          "aciklama": "Üç tutsak vida, yapıştırıcı yok; beş dakikanın altında sökülüyor",
+          "renk": "#fbbf24"
+        },
+        {
+          "ad": "Genişletme kartları",
+          "aciklama": "Dört USB-C yuvasına takılan modüller: HDMI, DisplayPort, USB-A, microSD ya da ek depolama",
+          "renk": "#22d3ee"
+        }
+      ],
+      "parcalar": [
+        {
+          "ad": "Anakart (değiştirilebilir)",
+          "rol": "islemci",
+          "deger": "Beş vidayla sökülebilen komple kart",
+          "uretici": "Framework",
+          "chip_id": null,
+          "not": "Kart değiştirilerek işlemci nesli yükseltilebiliyor — iFixit incelemesi i5'ten i7'ye geçişi örnek verdi"
+        },
+        {
+          "ad": "RAM (SO-DIMM)",
+          "rol": "bellek",
+          "deger": "İki SO-DIMM yuvası",
+          "uretici": null,
+          "chip_id": null,
+          "not": "iFixit incelediği ünitede 2 × 8 GB vardı. Bellek tipi anakart nesline göre değişiyor (DDR4 ya da DDR5) — bu yüzden tek bir katalog kaydına bağlanmadı"
+        },
+        {
+          "ad": "SSD",
+          "rol": "depolama",
+          "deger": "M.2 NVMe yuvası",
+          "uretici": null,
+          "chip_id": null,
+          "not": "Standart M.2 — herhangi bir marka takılabiliyor"
+        },
+        {
+          "ad": "Pil",
+          "rol": "guc",
+          "deger": "Üç tutsak vidayla sabit, yapıştırıcısız",
+          "uretici": "Framework",
+          "chip_id": null,
+          "not": "iFixit yazısında Wh değeri verilmedi"
+        },
+        {
+          "ad": "Genişletme kartları",
+          "rol": "govde",
+          "deger": "4 modül yuvası: HDMI / DisplayPort / USB-A / microSD / depolama",
+          "uretici": "Framework",
+          "chip_id": null,
+          "not": "Port düzenini kullanıcı belirliyor"
+        },
+        {
+          "ad": "USB-C lehimleri",
+          "rol": "govde",
+          "deger": "Anakarttaki USB-C portları lehimli",
+          "uretici": "Framework",
+          "chip_id": null,
+          "not": "iFixit'in tek eleştirisi — genişletme kartları sürekli takılı kaldığı için etkisi sınırlı bulundu"
+        },
+        {
+          "ad": "Parça QR kodları",
+          "rol": "govde",
+          "deger": "Her bileşende QR etiketi",
+          "uretici": "Framework",
+          "chip_id": null,
+          "not": "Kod doğrudan yedek parça sayfasına götürüyor"
+        }
+      ],
+      "pil": {
+        "kapasite": "iFixit yazısında Wh değeri verilmedi",
+        "not": "Üç tutsak vida, yapıştırıcı yok — beş dakikanın altında sökülüyor"
+      },
+      "onarim": {
+        "puan": 10,
+        "max": 10,
+        "gecici": false,
+        "not": "iFixit: 'son derece nadir' bir tam puan"
+      },
+      "bilinmeyen": [
+        "İncelenen ünitenin pil kapasitesi (Wh)",
+        "Hangi anakart neslinin incelendiğine göre değişen işlemci ve bellek tipi",
+        "Ekran panelinin üreticisi ve modeli"
+      ],
+      "kaynaklar": [
+        {
+          "ad": "iFixit — Framework Laptop Teardown: 10/10, But is it Perfect?",
+          "url": "https://www.ifixit.com/News/51614/framework-laptop-teardown-10-10-but-is-it-perfect"
+        },
+        {
+          "ad": "iFixit — Framework Laptop 13 cihaz sayfası",
+          "url": "https://www.ifixit.com/Device/Framework_Laptop"
+        }
+      ],
+      "engelli_kaynaklar": [],
+      "ana_islemci": {
+        "chip_id": null,
+        "not": "Framework 13 tek bir işlemciye bağlı değil: anakart değiştirilerek Intel ve AMD'nin farklı nesilleri takılabiliyor. iFixit'in incelediği ilk sürüm Intel 11. nesildi. Sabit bir işlemci olmadığı için puan verilmiyor — bu cihazın asıl fikri de bu."
+      },
+      "eksikler": [
+        "Anakarttaki USB-C portları lehimli — iFixit'in tek eleştirisi"
+      ]
+    },
+    {
+      "id": "mac-mini-m4",
+      "ad": "Mac mini (M4)",
+      "uretici": "Apple",
+      "yil": 2024,
+      "kategori": "masaustu",
+      "ozet": "13 × 13 cm'ye küçülmüş bir masaüstü — Apple TV 4K'dan biraz büyük. İçindeki en ilginç ayrıntı: SSD artık anakarta lehimli değil, çıkarılabilir bir modülde. Birleşik bellek ise her Apple Silicon makinede olduğu gibi SoC paketinin üstünde, yükseltilemez.",
+      "ic_fikir": "Aynı üretici aynı yıl içinde iki farklı karar verebiliyor: MacBook Pro'da SSD lehimli, Mac mini'de modüler. Masaüstünde hacim ve ısı baskısı daha az olduğu için tasarımcının eli serbest kalıyor.",
+      "govde": "Alüminyum gövde, 130 × 130 mm taban",
+      "katmanlar": [
+        {
+          "ad": "Üst kapak",
+          "aciklama": "Alüminyum gövde; 13 × 13 cm'lik yeni tasarım",
+          "renk": "#94a3b8"
+        },
+        {
+          "ad": "Soğutma",
+          "aciklama": "Fan ve hava kanalı; masaüstü olduğu için dizüstünden rahat",
+          "renk": "#fb923c"
+        },
+        {
+          "ad": "Anakart",
+          "aciklama": "M4 ya da M4 Pro SoC; birleşik bellek paket üzerinde",
+          "renk": "#60a5fa"
+        },
+        {
+          "ad": "SSD modülü",
+          "aciklama": "Çıkarılabilir depolama modülü — Apple masaüstünde ilk. Bağlayıcı özel ve Apple tek başına modül satmıyor",
+          "renk": "#22d3ee"
+        },
+        {
+          "ad": "Güç kaynağı",
+          "aciklama": "Dahili güç kaynağı — harici adaptör yok",
+          "renk": "#fbbf24"
+        },
+        {
+          "ad": "Portlar",
+          "aciklama": "Arkada 3 × Thunderbolt (M4'te TB4, M4 Pro'da TB5) + Ethernet + HDMI; önde 2 × USB-C ve kulaklık girişi",
+          "renk": "#e879f9"
+        }
+      ],
+      "parcalar": [
+        {
+          "ad": "Apple M4",
+          "rol": "islemci",
+          "deger": "10 çekirdek CPU (4P + 6E) @ 4.4 GHz, 10 çekirdek GPU, 16 çekirdek Neural Engine (38 TOPS), 120 GB/s — TSMC N3E, 28 milyar transistör",
+          "uretici": "Apple",
+          "chip_id": "apple-m4",
+          "not": "Taban yapılandırma"
+        },
+        {
+          "ad": "Apple M4 Pro (seçenek)",
+          "rol": "islemci",
+          "deger": "12 çekirdek CPU / 16 çekirdek GPU — 14 CPU / 20 GPU'ya kadar",
+          "uretici": "Apple",
+          "chip_id": "apple-m4-pro-max",
+          "not": "Katalogdaki M4 Pro/Max kaydına bağlı"
+        },
+        {
+          "ad": "Birleşik bellek",
+          "rol": "bellek",
+          "deger": "M4: 16–32 GB LPDDR5X-7500 · M4 Pro: 24–64 GB",
+          "uretici": "Apple paketi",
+          "chip_id": null,
+          "not": "SoC paketi üzerinde; kullanıcı tarafından yükseltilemez. Önceki kayıtta temel M4 için 64 GB yazıyordu — yanlıştı, 64 GB yalnızca M4 Pro'da"
+        },
+        {
+          "ad": "SSD modülü",
+          "rol": "depolama",
+          "deger": "Çıkarılabilir depolama modülü",
+          "uretici": "Apple",
+          "chip_id": null,
+          "not": "Apple masaüstü hattında ilk kez modüler. Bağlayıcı özel; Apple tek başına yükseltme modülü satmıyor, üçüncü taraf alternatifler çıktı"
+        },
+        {
+          "ad": "Thunderbolt portları",
+          "rol": "govde",
+          "deger": "3 × Thunderbolt 4 (M4) / Thunderbolt 5 (M4 Pro)",
+          "uretici": null,
+          "chip_id": null,
+          "not": "Arka panelde"
+        },
+        {
+          "ad": "Dahili güç kaynağı",
+          "rol": "guc",
+          "deger": "En fazla 155 W",
+          "uretici": "Apple",
+          "chip_id": null,
+          "not": "100–240 V giriş; harici adaptör yok"
+        }
+      ],
+      "pil": null,
+      "onarim": {
+        "puan": null,
+        "max": 10,
+        "gecici": false,
+        "not": "Bu kaynakta iFixit puanı yok. Modüler SSD olumlu bir adım; özel bağlayıcı ve modülün ayrı satılmaması sınırlayıcı"
+      },
+      "bilinmeyen": [
+        "Soğutma çözümünün ayrıntıları (fan modeli, hava akışı)",
+        "iFixit onarılabilirlik puanı",
+        "NAND tedarikçisi"
+      ],
+      "kaynaklar": [
+        {
+          "ad": "Wikipedia — Mac mini (2024, M4)",
+          "url": "https://en.wikipedia.org/wiki/Mac_mini"
+        },
+        {
+          "ad": "EveryMac — Mac mini M4 10 CPU/10 GPU 2024 Specs",
+          "url": "https://everymac.com/systems/apple/mac_mini/specs/mac-mini-m4-10-core-cpu-10-core-gpu-2024-specs.html"
+        },
+        {
+          "ad": "Wikipedia — Apple M4",
+          "url": "https://en.wikipedia.org/wiki/Apple_M4"
+        }
+      ],
+      "engelli_kaynaklar": [],
+      "ana_islemci": {
+        "chip_id": "apple-m4",
+        "not": "Taban model M4; M4 Pro seçeneği için katalogdaki M4 Pro/Max kaydına bakın."
+      },
+      "eksikler": [
+        "Birleşik bellek yükseltilemez; temel M4 en fazla 32 GB",
+        "SSD modülü çıkarılabilir ama bağlayıcı özel ve Apple modülü ayrı satmıyor"
+      ]
+    },
+    {
+      "id": "steam-deck-oled",
+      "ad": "Steam Deck OLED",
+      "uretici": "Valve",
+      "yil": 2023,
+      "kategori": "konsol",
+      "ozet": "Valve ilk nesli OLED'e geçirirken yalnızca ekranı değiştirmedi: APU'yu 7 nm'den 6 nm'ye taşıdı, pili 40 Wh'tan 50 Wh'a çıkardı ve kablosuzu Wi-Fi 5'ten 6E'ye yükseltti. Aynı CPU/GPU çekirdek sayısıyla hem daha uzun pil ömrü hem daha parlak ekran elde edildi.",
+      "ic_fikir": "Düğüm küçültmek tek başına performans getirmeyebilir — verim getirir. Sephiroth, Aerith ile aynı 4 Zen 2 çekirdeği ve 8 RDNA 2 hesaplama birimine sahip; 6 nm'nin kazancı aynı işi daha az watt ile yapmak ve o bütçeyi pile ve ekrana aktarmak.",
+      "govde": "Plastik gövde; arka kapak vidalarla sökülüyor",
+      "katmanlar": [
+        {
+          "ad": "Ekran: 7.4\" OLED",
+          "aciklama": "1280 × 800, 90 Hz, 1000 nit HDR. LCD modelde 7 inç, 60 Hz, 400 nit'ti",
+          "renk": "#e879f9"
+        },
+        {
+          "ad": "Ön kabuk + kontroller",
+          "aciklama": "Çubuklar, trackpad'ler, tuşlar ve tetikler",
+          "renk": "#94a3b8"
+        },
+        {
+          "ad": "Soğutma",
+          "aciklama": "Fan ve ısı borusu; APU 3–15 W TDP aralığında çalışıyor",
+          "renk": "#fb923c"
+        },
+        {
+          "ad": "Anakart",
+          "aciklama": "'Sephiroth' APU (TSMC N6) ve çevresinde 16 GB birleşik LPDDR5X",
+          "renk": "#60a5fa"
+        },
+        {
+          "ad": "Pil",
+          "aciklama": "50 Wh — LCD modelin 40 Wh'ından büyük",
+          "renk": "#fbbf24"
+        },
+        {
+          "ad": "M.2 SSD + arka kapak",
+          "aciklama": "512 GB / 1 TB NVMe (PCIe 3.0 ×4) — değiştirilebilir M.2 2230",
+          "renk": "#22d3ee"
+        }
+      ],
+      "parcalar": [
+        {
+          "ad": "AMD \"Sephiroth\" APU",
+          "rol": "islemci",
+          "deger": "TSMC N6 (6 nm)",
+          "uretici": "AMD",
+          "chip_id": "amd-sephiroth-steam-deck",
+          "not": "LCD modelin 'Aerith' (Van Gogh, TSMC N7) APU'sunun küçültülmüş hâli"
+        },
+        {
+          "ad": "CPU",
+          "rol": "islemci",
+          "deger": "4 çekirdek / 8 iş parçacığı Zen 2 @ 2.4–3.5 GHz",
+          "uretici": "AMD",
+          "chip_id": "amd-sephiroth-steam-deck",
+          "not": "LCD modelle aynı çekirdek yapısı ve frekansı"
+        },
+        {
+          "ad": "GPU",
+          "rol": "islemci",
+          "deger": "RDNA 2, 8 hesaplama birimi @ 1–1.6 GHz",
+          "uretici": "AMD",
+          "chip_id": "amd-sephiroth-steam-deck",
+          "not": "Çekirdek sayısı değişmedi; kazanç verimden geliyor"
+        },
+        {
+          "ad": "Birleşik bellek",
+          "rol": "bellek",
+          "deger": "16 GB LPDDR5X-8533, 6400 MT/s'te çalışıyor (102.4 GB/s)",
+          "uretici": null,
+          "chip_id": "ram-lpddr5x",
+          "not": "LCD modelde LPDDR5-5500 (88 GB/s) vardı"
+        },
+        {
+          "ad": "SSD",
+          "rol": "depolama",
+          "deger": "512 GB / 1 TB NVMe, PCIe 3.0 ×4",
+          "uretici": null,
+          "chip_id": null,
+          "not": "M.2 2230 formatı — kullanıcı değiştirebiliyor"
+        },
+        {
+          "ad": "Pil",
+          "rol": "guc",
+          "deger": "50 Wh",
+          "uretici": null,
+          "chip_id": null,
+          "not": "LCD modelde 40 Wh"
+        },
+        {
+          "ad": "OLED panel",
+          "rol": "ekran",
+          "deger": "7.4 inç, 1280 × 800, 90 Hz, 1000 nit HDR",
+          "uretici": null,
+          "chip_id": null,
+          "not": "LCD modelde 7 inç IPS, 60 Hz, 400 nit"
+        },
+        {
+          "ad": "Kablosuz",
+          "rol": "modem",
+          "deger": "Wi-Fi 6E, Bluetooth 5.3",
+          "uretici": null,
+          "chip_id": null,
+          "not": "LCD modelde Wi-Fi 5 / BT 5.0"
+        }
+      ],
+      "pil": {
+        "kapasite": "50 Wh",
+        "not": "LCD modelin 40 Wh'ına göre %25 artış; APU'nun 6 nm'ye geçişiyle birlikte pil ömrü belirgin arttı"
+      },
+      "onarim": null,
+      "bilinmeyen": [
+        "Sephiroth'un transistör sayısı ve die alanı AMD/Valve tarafından açıklanmadı",
+        "iFixit sayısal onarılabilirlik puanı",
+        "OLED panel üreticisi ve model numarası",
+        "Kablosuz chip'in modeli"
+      ],
+      "kaynaklar": [
+        {
+          "ad": "Wikipedia — Steam Deck (OLED ve LCD modellerin karşılaştırmalı teknik özellikleri)",
+          "url": "https://en.wikipedia.org/wiki/Steam_Deck"
+        },
+        {
+          "ad": "Tom's Hardware — Steam Deck OLED Teardown Reveals a Complete Overhaul",
+          "url": "https://www.tomshardware.com/news/steam-deck-oled-teardown-complete-overhaul"
+        },
+        {
+          "ad": "iFixit — Steam Deck OLED cihaz sayfası",
+          "url": "https://www.ifixit.com/Device/Steam_Deck_OLED"
+        }
+      ],
+      "engelli_kaynaklar": [],
+      "ana_islemci": {
+        "chip_id": "amd-sephiroth-steam-deck",
+        "not": null
+      },
+      "eksikler": [
+        "CPU Zen 2 — 2019 mimarisi; bu listedeki en eski çekirdekler",
+        "NPU yok",
+        "CPU ve GPU çekirdek sayısı LCD modelle aynı: OLED sürümü daha hızlı değil, daha verimli",
+        "SSD arayüzü PCIe 3.0 ×4"
+      ]
+    }
+  ]
+}

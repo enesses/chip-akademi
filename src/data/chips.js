@@ -4720,6 +4720,288 @@ export const chips = [
     "is_announced": true,
     "rumored": null,
     "tagline": "Daha fazla bellek, daha çok FP4: akıl yürüten modeller için raf ölçeğinde sistem"
+  },
+  {
+    "id": "apple-a19-pro",
+    "name": "Apple A19 Pro",
+    "manufacturer": "Apple",
+    "category": "CPU",
+    "release_year": 2025,
+    "process_node": "TSMC N3P (3 nm sınıfı)",
+    "transistor_count": "Bilgi yok",
+    "die_size": "Bilgi yok",
+    "image": "apple-m4-pro-max.png",
+    "image_credit": "Temsilî görsel — Apple Silicon ailesi (M4 Pro/Max). A19 Pro'nun kendi fotoğrafı değil.",
+    "description": "iPhone 17 Pro ve 17 Pro Max'in SoC'u. A18 Pro ile aynı 2+4 çekirdek düzenini koruyor; kazanç TSMC N3P düğümünden, daha yüksek saatten, 12 GB belleğe çıkıştan ve büyütülmüş önbelleklerden geliyor. Telefonun ilk buhar odası bu chip'in ısısını taşımak için eklendi.",
+    "key_specs": {
+      "architecture": "Apple Silicon — 2 performans (P) + 4 verimlilik (E) çekirdeği",
+      "cores": 6,
+      "boost_clock": "4.26 GHz (P çekirdekleri)",
+      "e_core_clock": "2.60 GHz",
+      "gpu": "6 çekirdek Apple GPU (iPhone 17 Pro); A19 Pro cihaza göre 5 ya da 6 çekirdekli",
+      "neural_engine": "16 çekirdek",
+      "npu_tops": "35 TOPS",
+      "unified_memory": "12 GB LPDDR5X",
+      "memory_bandwidth": "76.8 GB/s",
+      "l2_cache": "16 MB (P) + 6 MB (E)",
+      "l3_cache": "32 MB",
+      "guc": "TDP Apple tarafından açıklanmıyor"
+    },
+    "architecture_highlights": [
+      "Düğüm N3E'den N3P'ye geçti: aynı 3 nm sınıfında üçüncü nesil süreç",
+      "P çekirdek saati 4.04 GHz'ten (A18 Pro) 4.26 GHz'e çıktı",
+      "Bellek 8 GB'tan 12 GB LPDDR5X'e çıktı; bant genişliği 76.8 GB/s (A19: 68.3 GB/s)",
+      "Önbellekler büyüdü: P kümesi L2 16 MB, E kümesi L2 4 MB'tan 6 MB'a, sistem önbelleği 24 MB'tan 32 MB'a",
+      "Neural Engine 16 çekirdek, 35 TOPS — A18 Pro ile aynı tepe değer"
+    ],
+    "die_regions": [],
+    "use_cases": [
+      "iPhone 17 Pro ve iPhone 17 Pro Max'in ana işlemcisi",
+      "Cihaz üstü Apple Intelligence modelleri — 12 GB bellek bu iş için artırıldı"
+    ],
+    "comparison_notes": "A18 Pro'ya göre çekirdek sayısı aynı; fark düğüm (N3E → N3P), saat (4.04 → 4.26 GHz), bellek (8 → 12 GB) ve önbellekte. Transistör sayısı ve die alanı Apple tarafından açıklanmadı.",
+    "is_announced": true,
+    "rumored": null,
+    "tagline": "Aynı altı çekirdek, daha fazla bellek ve önbellek — ve ilk kez buhar odasıyla soğutulan bir iPhone chip'i",
+    "kaynaklar": [
+      {
+        "ad": "Wikipedia — Apple A19",
+        "url": "https://en.wikipedia.org/wiki/Apple_A19"
+      }
+    ]
+  },
+  {
+    "id": "apple-a18-pro",
+    "name": "Apple A18 Pro",
+    "manufacturer": "Apple",
+    "category": "CPU",
+    "release_year": 2024,
+    "process_node": "TSMC N3E (3 nm sınıfı)",
+    "transistor_count": "20 milyar",
+    "die_size": "105 mm²",
+    "image": "apple-m4-pro-max.png",
+    "image_credit": "Temsilî görsel — Apple Silicon ailesi (M4 Pro/Max). A18 Pro'nun kendi fotoğrafı değil.",
+    "description": "iPhone 16 Pro ve 16 Pro Max'in SoC'u. Aynı yılın A18'inden 4.8 milyar transistör ve 15 mm² daha büyük: farkın büyük kısmı daha geniş önbelleklere ve 6 çekirdekli GPU'ya gidiyor.",
+    "key_specs": {
+      "architecture": "Apple Silicon — 2 performans (P) + 4 verimlilik (E) çekirdeği",
+      "cores": 6,
+      "boost_clock": "4.04 GHz (P çekirdekleri)",
+      "e_core_clock": "2.42 GHz",
+      "gpu": "6 çekirdek Apple GPU",
+      "neural_engine": "16 çekirdek",
+      "npu_tops": "35 TOPS",
+      "unified_memory": "8 GB LPDDR5X",
+      "l2_cache": "16 MB (P) + 4 MB (E)",
+      "l3_cache": "24 MB",
+      "guc": "TDP Apple tarafından açıklanmıyor"
+    },
+    "architecture_highlights": [
+      "A18 (15.2 milyar transistör, 90 mm²) ile aynı CPU düzeni; Pro sürüm 20 milyar transistör ve 105 mm²",
+      "Farkın büyük kısmı önbellekte: P kümesi L2 8 MB → 16 MB, sistem önbelleği 12 MB → 24 MB",
+      "GPU her iPhone 16 Pro'da 6 çekirdek (A18'de cihaza göre 4–6)",
+      "iFixit teardown'ı bellek paketini LPDDR5 olarak okudu; Apple ve Wikipedia LPDDR5X veriyor"
+    ],
+    "die_regions": [],
+    "use_cases": [
+      "iPhone 16 Pro ve iPhone 16 Pro Max'in ana işlemcisi"
+    ],
+    "comparison_notes": "Bellek bant genişliği kaynakta açıklanmadığı için puana girmedi. A19 Pro'ya göre bir nesil önceki düğüm (N3E) ve 4 GB daha az bellek.",
+    "is_announced": true,
+    "rumored": null,
+    "tagline": "A18 ile aynı çekirdekler, iki kat önbellek",
+    "kaynaklar": [
+      {
+        "ad": "Wikipedia — Apple A18",
+        "url": "https://en.wikipedia.org/wiki/Apple_A18"
+      }
+    ]
+  },
+  {
+    "id": "google-tensor-g4",
+    "name": "Google Tensor G4",
+    "manufacturer": "Google",
+    "category": "CPU",
+    "release_year": 2024,
+    "process_node": "Samsung Foundry 4 nm (4LPP+ olduğu bildiriliyor; Google doğrulamadı)",
+    "transistor_count": "Bilgi yok",
+    "die_size": "Bilgi yok",
+    "image": null,
+    "image_credit": null,
+    "description": "Pixel 9 serisinin SoC'u. Google çekirdek yapısını resmî olarak ayrıntılandırmadı; aşağıdaki çekirdek düzeni cihaz üzerinde yapılan incelemelerle tespit edildi. Modem SoC'un içinde değil: ayrı bir Samsung Exynos 5400 chip'i.",
+    "key_specs": {
+      "architecture": "1× Arm Cortex-X4 @ 3.1 GHz + 3× Cortex-A720 @ 2.6 GHz + 4× Cortex-A520 @ 1.92 GHz (ARMv9.2-A)",
+      "cores": 8,
+      "boost_clock": "3.1 GHz (Cortex-X4)",
+      "gpu": "Arm Mali-G715 (7 çekirdek olduğu düşünülüyor) @ 940 MHz",
+      "tpu": "3. nesil Google TPU (Tensor G3 ile aynı) — TOPS açıklanmadı",
+      "unified_memory": "16 GB LPDDR5X (Pixel 9 Pro); standart modellerde 12 GB",
+      "modem": "Ayrı chip: Samsung Exynos 5400",
+      "guc": "TDP Google tarafından açıklanmıyor"
+    },
+    "architecture_highlights": [
+      "Üç kümeli düzen: tek bir Cortex-X4 tepe çekirdeği, üç A720 orta çekirdek, dört A520 verim çekirdeği",
+      "TPU bir önceki nesille (G3) aynı; Google bu nesilde yapay zekâ hızlandırıcısını değiştirmedi",
+      "Modem SoC'a gömülü değil — Snapdragon 8 Elite'in aksine ayrı bir Exynos 5400 chip'i kullanılıyor",
+      "Üretim düğümü Samsung 4 nm; 4LPP+ varyantı olduğu bildiriliyor ama Google bunu doğrulamadı"
+    ],
+    "die_regions": [],
+    "use_cases": [
+      "Pixel 9, 9 Pro, 9 Pro XL ve 9 Pro Fold'un ana işlemcisi",
+      "Cihaz üstü Gemini Nano — Pro modellerdeki 16 GB bellek bu iş için"
+    ],
+    "comparison_notes": "Bellek bant genişliği ve NPU TOPS değeri açıklanmadı; puan çekirdek sayısı, saat ve bellek kapasitesine dayanıyor ve bu yüzden kapsamı düşük (%40 — puanlanabilir alt sınır).",
+    "is_announced": true,
+    "rumored": null,
+    "tagline": "Google'ın kendi SoC'u — ama ayrıntılarını en az açıklayanı",
+    "kaynaklar": [
+      {
+        "ad": "Wikipedia — Google Tensor",
+        "url": "https://en.wikipedia.org/wiki/Google_Tensor"
+      },
+      {
+        "ad": "Android Authority — Google Tensor G4 explained",
+        "url": "https://www.androidauthority.com/google-tensor-g4-explained-everything-you-need-to-know-about-the-pixel-9-processor-3466184/"
+      }
+    ]
+  },
+  {
+    "id": "qualcomm-snapdragon-8-elite",
+    "name": "Qualcomm Snapdragon 8 Elite",
+    "manufacturer": "Qualcomm",
+    "category": "CPU",
+    "release_year": 2024,
+    "process_node": "TSMC N3E (3 nm sınıfı)",
+    "transistor_count": "Bilgi yok",
+    "die_size": "124.1 mm²",
+    "image": "snapdragon-x-elite.png",
+    "image_credit": "Temsilî görsel — Qualcomm Oryon ailesi (Snapdragon X Elite). Snapdragon 8 Elite'in kendi fotoğrafı değil.",
+    "description": "Qualcomm'un dizüstü Snapdragon X Elite için geliştirdiği Oryon çekirdeklerini telefona taşıyan ilk amiral gemisi SoC'u. Klasik 'büyük-orta-küçük' düzen yerine yalnızca iki tür Oryon çekirdeği var; verim çekirdeği hiç yok. 5G modem chip'in içine gömülü.",
+    "key_specs": {
+      "architecture": "2× Oryon Prime @ 4.32 GHz + 6× Oryon Performance @ 3.53 GHz (SM8750)",
+      "cores": 8,
+      "boost_clock": "4.32 GHz (Prime çekirdekler)",
+      "gpu": "Adreno 830 @ 1100 MHz (~3.38 TFLOPS FP32)",
+      "npu": "Hexagon — TOPS açıklanmadı",
+      "memory_type": "LPDDR5X, 4 kanal × 16 bit (64 bit)",
+      "memory_bandwidth": "84.8 GB/s",
+      "modem": "Entegre Snapdragon X80 5G",
+      "guc": "TDP Qualcomm tarafından açıklanmıyor"
+    },
+    "architecture_highlights": [
+      "Verim çekirdeği yok: sekiz çekirdeğin hepsi Oryon — ikisi 4.32 GHz Prime, altısı 3.53 GHz Performance",
+      "Oryon, Qualcomm'un Nuvia satın alımıyla gelen kendi ARM çekirdeği; Snapdragon X Elite ile aynı soydan",
+      "Modem SoC'un içinde (X80) — Tensor G4 ve iPhone'larda modem ayrı bir chip",
+      "Die alanı 124.1 mm², A18 Pro'dan (105 mm²) büyük"
+    ],
+    "die_regions": [],
+    "use_cases": [
+      "Samsung Galaxy S25 Ultra (\"Galaxy için\" özel sürümü) ve 2025 Android amiral gemileri"
+    ],
+    "comparison_notes": "Galaxy S25 Ultra'daki \"for Galaxy\" sürümünün saatleri standart SM8750'den farklı olabilir; buradaki değerler standart sürüme ait. NPU TOPS açıklanmadığı için puana girmedi.",
+    "is_announced": true,
+    "rumored": null,
+    "tagline": "Dizüstü çekirdekleriyle çalışan telefon chip'i — ve hiç verim çekirdeği yok",
+    "kaynaklar": [
+      {
+        "ad": "Wikipedia — List of Qualcomm Snapdragon systems on chips (SM8750)",
+        "url": "https://en.wikipedia.org/wiki/List_of_Qualcomm_Snapdragon_systems_on_chips"
+      }
+    ]
+  },
+  {
+    "id": "amd-sephiroth-steam-deck",
+    "name": "AMD \"Sephiroth\" (Steam Deck OLED APU)",
+    "manufacturer": "AMD",
+    "category": "CPU",
+    "release_year": 2023,
+    "process_node": "TSMC N6 (6 nm)",
+    "transistor_count": "Bilgi yok",
+    "die_size": "Bilgi yok",
+    "image": "ryzen-9950x.png",
+    "image_credit": "Temsilî görsel — AMD Ryzen ailesi. Sephiroth'un kendi fotoğrafı değil.",
+    "description": "Valve için özel üretilmiş APU. İlk Steam Deck'teki 'Aerith' (Van Gogh, TSMC N7) ile aynı CPU ve GPU yapısına sahip; yalnızca 6 nm'ye küçültüldü ve daha hızlı belleğe bağlandı. Kazanç performans değil verim: aynı iş daha az enerjiyle yapılıyor.",
+    "key_specs": {
+      "architecture": "4 çekirdek / 8 iş parçacığı Zen 2 + RDNA 2 GPU (özel APU)",
+      "cores": 4,
+      "threads": 8,
+      "base_clock": "2.4 GHz",
+      "boost_clock": "3.5 GHz",
+      "gpu": "RDNA 2, 8 hesaplama birimi @ 1.0–1.6 GHz",
+      "unified_memory": "16 GB LPDDR5X (6400 MT/s'te)",
+      "memory_bandwidth": "102.4 GB/s",
+      "tdp": "15 W",
+      "tdp_araligi": "3–15 W"
+    },
+    "architecture_highlights": [
+      "Aerith (TSMC N7) → Sephiroth (TSMC N6): çekirdek sayısı ve saatler aynı kaldı",
+      "Bellek LPDDR5-5500'den (88 GB/s) LPDDR5X'e (6400 MT/s, 102.4 GB/s) geçti",
+      "TDP aralığı 3–15 W ile aynı; düğüm küçülmesinin getirisi pil ömrüne gitti",
+      "NPU yok — bu chip yapay zekâ çıkarımı için değil, oyun için tasarlandı"
+    ],
+    "die_regions": [],
+    "use_cases": [
+      "Steam Deck OLED'in ana işlemcisi (LCD Steam Deck'te selefi Aerith var)"
+    ],
+    "comparison_notes": "Zen 2 çekirdekleri 2019 mimarisi; buradaki diğer SoC'lara göre eski. Sınıfta NPU ölçütü olmadığı için puan çekirdek, saat, bant genişliği, bellek ve verimlilikten geliyor.",
+    "is_announced": true,
+    "rumored": null,
+    "tagline": "Aynı chip, daha küçük düğüm: performansı değil pil ömrünü artıran küçültme",
+    "kaynaklar": [
+      {
+        "ad": "Wikipedia — Steam Deck",
+        "url": "https://en.wikipedia.org/wiki/Steam_Deck"
+      }
+    ]
+  },
+  {
+    "id": "apple-m4",
+    "name": "Apple M4",
+    "manufacturer": "Apple",
+    "category": "CPU",
+    "release_year": 2024,
+    "process_node": "TSMC N3E (3 nm sınıfı)",
+    "transistor_count": "28 milyar",
+    "die_size": "Bilgi yok",
+    "image": "apple-m4-pro-max.png",
+    "image_credit": "Temsilî görsel — Apple M4 ailesi (M4 Pro/Max). Temel M4'ün kendi fotoğrafı değil.",
+    "description": "M4 ailesinin temel üyesi; Mac mini, MacBook Air ve iPad Pro'da kullanılıyor. Buradaki değerler Mac mini'deki tam yapılandırmaya ait: 10 CPU ve 10 GPU çekirdeği.",
+    "key_specs": {
+      "architecture": "4 performans (P) + 6 verimlilik (E) çekirdeği (10 çekirdekli yapılandırma)",
+      "cores": 10,
+      "boost_clock": "4.4 GHz",
+      "gpu": "10 çekirdek Apple GPU (bazı cihazlarda 8 ya da 9)",
+      "neural_engine": "16 çekirdek",
+      "npu_tops": "38 TOPS",
+      "memory_type": "LPDDR5X-7500",
+      "max_unified_memory": "32 GB",
+      "memory_bandwidth": "120 GB/s",
+      "guc": "TDP Apple tarafından açıklanmıyor; Mac mini güç kaynağı en fazla 155 W"
+    },
+    "architecture_highlights": [
+      "28 milyar transistör, TSMC N3E",
+      "Neural Engine 38 TOPS — A18 Pro ve A19 Pro'nun 35 TOPS'unun üzerinde",
+      "Bellek en fazla 32 GB; 64 GB'a kadar çıkmak için M4 Pro gerekiyor",
+      "120 GB/s bant genişliği: A19 Pro'nun (76.8 GB/s) yaklaşık 1.6 katı"
+    ],
+    "die_regions": [],
+    "use_cases": [
+      "Mac mini (2024) taban modeli",
+      "MacBook Air ve iPad Pro"
+    ],
+    "comparison_notes": "M4 Pro'ya göre daha az çekirdek (10'a karşı 12–14) ve daha dar bellek veri yolu (120 GB/s'ye karşı 273 GB/s).",
+    "is_announced": true,
+    "rumored": null,
+    "tagline": "M4 ailesinin temeli: Mac mini'den iPad'e",
+    "kaynaklar": [
+      {
+        "ad": "Wikipedia — Apple M4",
+        "url": "https://en.wikipedia.org/wiki/Apple_M4"
+      },
+      {
+        "ad": "EveryMac — Mac mini M4 10 CPU/10 GPU 2024 Specs",
+        "url": "https://everymac.com/systems/apple/mac_mini/specs/mac-mini-m4-10-core-cpu-10-core-gpu-2024-specs.html"
+      }
+    ]
   }
 ];
 

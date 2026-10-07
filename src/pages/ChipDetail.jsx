@@ -1,6 +1,8 @@
 import { useParams } from "wouter";
 import { Link } from "@/components/Nav";
-import { ArrowLeft, Zap, DollarSign, Cpu } from "lucide-react";
+import { ArrowLeft, Zap, DollarSign, Cpu, Sparkles, Target, Scale, ExternalLink, Smartphone, ArrowRight } from "lucide-react";
+import icyapi from "@/data/icyapi.json";
+import { chipiKullananCihazlar } from "@/lib/icPuan";
 import { getChipById } from "@/data/chips";
 import { imageUrl, manufacturerColors, formatSpecLabel } from "@/lib/utils";
 import { scoreChip, rankInClass, verimlilikPuani, maliyetPuani, genelPuan } from "@/lib/chipScore";
@@ -61,6 +63,7 @@ export default function ChipDetail() {
   const g = genelPuan(chip);
   const rank = rankInClass(chip);
   const color = manufacturerColors[chip.manufacturer] || "#94a3b8";
+  const cihazlar = chipiKullananCihazlar(icyapi.cihazlar, chip.id);
 
   return (
     <div className="container mx-auto px-4 py-10">
@@ -71,13 +74,27 @@ export default function ChipDetail() {
       </Link>
 
       <div className="grid lg:grid-cols-2 gap-8 mb-10">
-        <div className="rounded-2xl overflow-hidden border border-card-border bg-card">
-          <img src={imageUrl(chip.image)} alt={chip.name} className="w-full aspect-[4/3] object-cover" />
+        <div>
+          <div className="rounded-2xl overflow-hidden border border-card-border bg-card">
+            {chip.image ? (
+              <img src={imageUrl(chip.image)} alt={chip.name} className="w-full aspect-[4/3] object-cover" />
+            ) : (
+              <div className="w-full aspect-[4/3] flex flex-col items-center justify-center gap-2 bg-silicon-grid">
+                <Cpu className="h-10 w-10" style={{ color }} aria-hidden="true" />
+                <p className="font-display font-bold text-lg" style={{ color }}>{chip.name}</p>
+                <p className="font-mono text-[10px] text-muted-foreground">Görsel yok</p>
+              </div>
+            )}
+          </div>
+          {chip.image_credit && (
+            <p className="text-[11px] text-muted-foreground mt-2">{chip.image_credit}</p>
+          )}
         </div>
         <div>
           <p className="font-mono text-xs uppercase tracking-wider mb-2" style={{ color }}>{chip.manufacturer}</p>
           <h1 className="font-display text-3xl font-bold mb-3">{chip.name}</h1>
-          <p className="text-muted-foreground leading-relaxed">{chip.description || chip.use_cases}</p>
+          {chip.tagline && <p className="text-sm font-medium text-foreground/90 mb-2">{chip.tagline}</p>}
+          {chip.description && <p className="text-muted-foreground leading-relaxed">{chip.description}</p>}
           <div className="grid grid-cols-2 gap-3 mt-6 text-sm">
             <div><span className="text-muted-foreground text-xs">Süreç düğümü</span><p className="font-medium">{chip.process_node}</p></div>
             <div><span className="text-muted-foreground text-xs">Yıl</span><p className="font-medium">{chip.release_year}</p></div>
@@ -192,6 +209,68 @@ export default function ChipDetail() {
         </PuanKarti>
       </div>
 
+      {/* Mimari öne çıkanlar + kullanım alanları */}
+      {(chip.architecture_highlights?.length > 0 || chip.use_cases?.length > 0) && (
+        <div className="grid lg:grid-cols-2 gap-4 mb-8">
+          {chip.architecture_highlights?.length > 0 && (
+            <div className="rounded-xl border border-card-border bg-card p-5">
+              <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground mb-3 inline-flex items-center gap-1.5">
+                <Sparkles className="h-3 w-3" />Mimaride öne çıkanlar
+              </p>
+              <ul className="space-y-2.5">
+                {chip.architecture_highlights.map((h, i) => (
+                  <li key={i} className="text-sm leading-relaxed flex gap-2">
+                    <span className="text-primary/60 shrink-0 font-mono text-xs mt-0.5">{String(i + 1).padStart(2, "0")}</span>
+                    {h}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {chip.use_cases?.length > 0 && (
+            <div className="rounded-xl border border-card-border bg-card p-5">
+              <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground mb-3 inline-flex items-center gap-1.5">
+                <Target className="h-3 w-3" />Kullanım alanları
+              </p>
+              <ul className="space-y-2.5">
+                {chip.use_cases.map((u, i) => (
+                  <li key={i} className="text-sm text-foreground/85 leading-relaxed flex gap-2">
+                    <span className="text-muted-foreground shrink-0 font-mono text-xs mt-0.5">—</span>
+                    {u}
+                  </li>
+                ))}
+              </ul>
+              {chip.comparison_notes && (
+                <div className="mt-4 pt-4 border-t border-card-border">
+                  <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground mb-2 inline-flex items-center gap-1.5">
+                    <Scale className="h-3 w-3" />Kıyas notu
+                  </p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{chip.comparison_notes}</p>
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Bu chip hangi cihazlarda? (İç bölümüyle ters bağlantı) */}
+      {cihazlar.length > 0 && (
+        <div className="rounded-xl border border-card-border bg-card p-5 mb-8">
+          <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground mb-3 inline-flex items-center gap-1.5">
+            <Smartphone className="h-3 w-3" />Bu chip'i içeren cihazlar
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {cihazlar.map((c) => (
+              <Link key={c.id} href={`/ic/${c.id}`} asChild>
+                <a className="inline-flex items-center gap-1.5 rounded-lg border border-card-border px-3 py-1.5 text-sm hover-elevate">
+                  {c.ad} <ArrowRight className="h-3 w-3 text-muted-foreground" />
+                </a>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Ham spesifikasyonlar */}
       <h2 className="font-display text-lg font-bold mb-3">Tüm Spesifikasyonlar</h2>
       <div className="rounded-2xl border border-card-border bg-card overflow-hidden">
@@ -206,6 +285,21 @@ export default function ChipDetail() {
           </tbody>
         </table>
       </div>
+
+      {chip.kaynaklar?.length > 0 && (
+        <div className="mt-6">
+          <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground mb-2">Kaynaklar</p>
+          <ul className="space-y-1.5">
+            {chip.kaynaklar.map((k, i) => (
+              <li key={i}>
+                <a href={k.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline">
+                  {k.ad} <ExternalLink className="h-3 w-3" />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }

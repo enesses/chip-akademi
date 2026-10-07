@@ -16,6 +16,7 @@ const navItems = [
   { href: "/kategori/GPU", label: "GPU" },
   { href: "/kategori/CPU", label: "CPU" },
   { href: "/kategori/RAM", label: "Bellek" },
+  { href: "/ic", label: "İç" },
   { href: "/egitim", label: "Eğitim" },
   { href: "/sinav", label: "Sınav" },
   { href: "/atolye", label: "Atölye" },
