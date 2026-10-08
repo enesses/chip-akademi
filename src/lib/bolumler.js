@@ -11,7 +11,7 @@ import {
   Microchip, Cpu, MemoryStick, Smartphone, GitCompareArrows, BadgeDollarSign,
   GraduationCap, ListChecks, Library, NotebookPen,
   PencilRuler, LayoutGrid, Newspaper, Workflow, CalendarRange,
-  MessageSquareText, Puzzle, BookMarked,
+  MessageSquareText, Puzzle,
 } from "lucide-react";
 
 export const GRUPLAR = [
@@ -48,9 +48,6 @@ export const GRUPLAR = [
       { id: "egitim", ad: "Dersler", yol: "/egitim", eslesen: ["/egitim/"], ikon: GraduationCap,
         aciklama: "Chip nedir'den başlayıp adım adım ilerleyen dersler",
         anahtar: "eğitim ders öğren başla" },
-      { id: "egitimler", ad: "Eğitimler", yol: "/egitimler", ikon: BookMarked,
-        aciklama: "Dışarıdaki ücretli ve ücretsiz kurslar; nereden başlanır",
-        anahtar: "kurs eğitim ücretsiz ücretli sertifika coursera udemy btk akademi nvidia cuda verilog" },
       { id: "sinav", ad: "Sınav", yol: "/sinav", ikon: ListChecks,
         aciklama: "Öğrendiklerini sorularla sına",
         anahtar: "test quiz soru" },
