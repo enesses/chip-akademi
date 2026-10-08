@@ -107,6 +107,14 @@ try {
   oneriler = JSON.parse(fs.readFileSync(path.join(RAPOR_DIZINI, `oneriler-${TARIH}.json`), "utf-8")).oneriler || [];
 } catch {}
 
+/* Otomasyonun bugün kendi uyguladığı öneriler (oneri-uygula.mjs günlüğü) */
+let uygulanan = [];
+try {
+  uygulanan = (JSON.parse(fs.readFileSync(path.join(KOK, "otomasyon", "uygulanan.json"), "utf-8")).kayitlar || []).filter((k) => k.tarih === TARIH);
+} catch {}
+for (const k of uygulanan.filter((k) => k.durum === "acik"))
+  dikkat.push({ seviye: "dikkat", metin: `Öneri onay bekliyor: ${k.oneri}${k.pr ? ` (PR #${k.pr})` : ""} — ${k.neden || "korunan dosyaya dokunuyor"}` });
+
 const gunTamam = raporlar.every((r) => r.veri);
 
 /* ---------------------------------------------- terminal */
@@ -143,6 +151,10 @@ else {
 if (oneriler.length) {
   console.log(`\nGELİŞTİRME ÖNERİLERİ (${oneriler.length})`);
   for (const o of oneriler) console.log(`  • [${o.etki ?? "orta"}] ${o.baslik} — ${o.neden}`);
+}
+if (uygulanan.length) {
+  console.log(`\nUYGULANAN ÖNERİLER (${uygulanan.length})`);
+  for (const k of uygulanan) console.log(`  • [${k.durum}] ${k.oneri}${k.pr ? ` — PR #${k.pr}` : ""}${k.neden ? ` (${k.neden})` : ""}`);
 }
 
 /* ---------------------------------------------- HTML arşiv */
@@ -230,6 +242,7 @@ const uygulamaVerisi = {
   }),
   dikkat,
   oneriler,
+  uygulanan,
   guvenlik: g
     ? {
         durum: g.durum,
