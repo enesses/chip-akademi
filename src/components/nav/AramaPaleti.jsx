@@ -3,6 +3,7 @@ import { useLocation } from "wouter";
 import { Search, CornerDownLeft } from "lucide-react";
 import { GRUPLAR } from "@/lib/bolumler";
 import { ara, SOZLUK_ANAHTARI } from "@/lib/aramaIndeksi";
+import { acilacak, ACILACAK_OLAY } from "@/lib/panoyaKopyala";
 import { cn } from "@/lib/utils";
 
 const OLAY = "chip-akademi:arama";
@@ -90,12 +91,14 @@ export default function AramaPaleti() {
 
   function git(oge) {
     if (!oge) return;
+    if (oge.acilacak) Object.assign(acilacak, oge.acilacak);
     if (oge.sozlukTerimi) {
       try { window.sessionStorage.setItem(SOZLUK_ANAHTARI, oge.sozlukTerimi); } catch {}
     }
     setAcik(false);
     navigate(oge.yol);
     window.scrollTo({ top: 0 });
+    if (oge.acilacak) setTimeout(() => window.dispatchEvent(new Event(ACILACAK_OLAY)), 0);
   }
 
   function tusGirdi(e) {

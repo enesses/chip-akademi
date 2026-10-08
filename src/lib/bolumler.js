@@ -11,6 +11,7 @@ import {
   Microchip, Cpu, MemoryStick, Smartphone, GitCompareArrows, BadgeDollarSign,
   GraduationCap, ListChecks, Library, NotebookPen,
   PencilRuler, LayoutGrid, Newspaper, Workflow, CalendarRange,
+  MessageSquareText, Puzzle,
 } from "lucide-react";
 
 export const GRUPLAR = [
@@ -85,6 +86,20 @@ export const GRUPLAR = [
       { id: "haftalik", ad: "Haftalık rapor", yol: "/haftalik", ikon: CalendarRange,
         aciklama: "Haftanın yenilikleri, uygulanan öneriler, fiyat hareketi",
         anahtar: "hafta özet yenilik değişiklik rapor pazartesi" },
+    ],
+  },
+  {
+    id: "ai",
+    ad: "AI Araçları",
+    kisaAd: "AI",
+    ozet: "Hazır prompt'lar ve Claude'a yüklenebilen skill'ler.",
+    bolumler: [
+      { id: "promptlar", ad: "Promptlar", yol: "/ai/promptlar", ikon: MessageSquareText,
+        aciklama: "Oyun, görsel, kod, yazı ve ders için doldur-kopyala prompt'lar",
+        anahtar: "prompt istem yapay zeka chatgpt claude midjourney görsel oyun şablon" },
+      { id: "skiller", ad: "Claude skill'leri", yol: "/ai/skiller", ikon: Puzzle,
+        aciklama: "Claude'a yüklenen hazır talimat paketleri, zip olarak indir",
+        anahtar: "skill beceri claude paket indir zip talimat" },
     ],
   },
 ];
