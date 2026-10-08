@@ -22,6 +22,7 @@ import IcDetail from "@/pages/IcDetail";
 import Haftalik from "@/pages/Haftalik";
 import Promptlar from "@/pages/Promptlar";
 import Skiller from "@/pages/Skiller";
+import Egitimler from "@/pages/Egitimler";
 import AramaPaleti from "@/components/nav/AramaPaleti";
 import MobilMenu from "@/components/nav/MobilMenu";
 
@@ -49,6 +50,7 @@ export default function App() {
             <Route path="/bugun" component={Bugun} />
             <Route path="/otomasyon" component={Otomasyon} />
             <Route path="/haftalik" component={Haftalik} />
+            <Route path="/egitimler" component={Egitimler} />
             <Route path="/ai/promptlar" component={Promptlar} />
             <Route path="/ai/skiller" component={Skiller} />
             <Route path="/ai" component={Promptlar} />
