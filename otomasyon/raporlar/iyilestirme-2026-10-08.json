@@ -1,0 +1,56 @@
+{
+  "ajan": "iyilestirme",
+  "tarih": "2026-10-08",
+  "zaman": "2026-10-08T07:04:18.733Z",
+  "durum": "tamam",
+  "olcumler": {
+    "veri": {
+      "chipSayisi": 64,
+      "fiyatSayisi": 107
+    },
+    "egitim": {
+      "dersSayisi": 13
+    },
+    "erisim": {
+      "altsiz": 0,
+      "etiketsizDugme": 0
+    },
+    "kod": {
+      "dosyaSayisi": 56,
+      "toplamSatir": 14161,
+      "boyutKB": null
+    }
+  },
+  "bulgular": [
+    {
+      "alan": "kod",
+      "baslik": "22 export hiçbir yerde kullanılmıyor",
+      "etki": "düşük",
+      "otomatik": false,
+      "detay": [
+        "Badge (src/components/ui/badge.jsx)",
+        "Select (src/components/ui/select.jsx)",
+        "SelectTrigger (src/components/ui/select.jsx)",
+        "SelectValue (src/components/ui/select.jsx)",
+        "SelectContent (src/components/ui/select.jsx)",
+        "SelectItem (src/components/ui/select.jsx)",
+        "findGaps (src/lib/advisor.js)",
+        "beatsAfter (src/lib/advisor.js)",
+        "fiyatBilgisi (src/lib/chipScore.js)",
+        "designCount (src/lib/designs.js)",
+        "togglePin (src/lib/notes.js)",
+        "searchNotes (src/lib/notes.js)",
+        "contextFromPath (src/lib/notes.js)",
+        "unmarkCompleted (src/lib/progress.js)",
+        "getAllQuizResults (src/lib/progress.js)",
+        "resetQuizResult (src/lib/progress.js)",
+        "resetAllQuizzes (src/lib/progress.js)",
+        "resetProgress (src/lib/progress.js)",
+        "getSummary (src/lib/progress.js)",
+        "getBestExam (src/lib/progress.js)",
+        "resetExam (src/lib/progress.js)",
+        "formatCompareValue (src/lib/utils.js)"
+      ]
+    }
+  ]
+}

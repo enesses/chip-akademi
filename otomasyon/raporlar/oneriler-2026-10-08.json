@@ -1,0 +1,41 @@
+{
+  "tarih": "2026-10-08",
+  "oneriler": [
+    {
+      "baslik": "Zamanlanmış görevde getdeploying.com izin engelini kalıcı çöz",
+      "neden": "8 Ekim'de de getdeploying.com/gpus ve /gpu-price-index WebFetch'te PROVENANCE_REQUIRED (izin isteği yanıtlanmadı) verdi; fiyat verisi 2026-10-07'de kaldı (otomasyon/gecmis'te son dosya fiyatlar-2026-10-07.json). Haber siteleri aynı çalıştırmada açıldı. Zamanlanmış görevin istemine bu URL'ler eklenirse ya da alan adı izinli listeye alınırsa her gün kırmızı fiyat satırı ortadan kalkar.",
+      "etki": "yüksek",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
+      "neden": "otomasyon/*.mjs ve otomasyon/ajanlar içinde 'PROVENANCE' ya da 'izin engeli' hâlâ geçmiyor; bugünkü rapor yine 'fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)' diyor. gelen/ altında isteğe bağlı bir durum dosyası ({\"fiyat\": \"izin-engeli\"}) okunursa rapor nedeni doğru gösterir.",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Bugün maddelerinde dünkü haberleri tekrar etmeyi engelle",
+      "neden": "Bugünkü aramalarda Lambda, DeepSeek ve Google–Constellation haberleri yeniden çıktı; üçü de dünkü otomasyon/gecmis/bugun-2026-10-07.json'da var. veri-isle.mjs (satır ~180) yalnızca URL biçimini denetliyor, önceki günün URL/başlıklarıyla karşılaştırmıyor. Tekrar eden maddeyi uyarıyla işaretlemek puanın aynı habere iki gün oy vermesini önler.",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Maliyet puanını daha çok çipe yay",
+      "neden": "src/data/gpu_kiralama.json'daki 107 fiyat satırının hâlâ yalnızca 26'sında chip_id var; RTX PRO 6000, RTX 6000 Ada, RTX A6000 gibi yaygın kartlarda null olduğu için chipScore.js maliyet puanı bunlarda hesaplanmıyor.",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Bugün sayfasına 'yaklaşan olaylar' kutusu",
+      "neden": "Bugünkü maddelerde SK Hynix'in yaklaşan 3. çeyrek sonuçları ve Qualcomm–Arm davasının süren duruşmaları geçiyor; src/data/bugun.json şemasında ve src/pages/Bugun.jsx'te ileri tarihli olay alanı yok.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Kullanılmayan 22 export'u temizle ya da bağla",
+      "neden": "İyileştirme taraması (iyilestirme-2026-10-08.json) 22 kullanılmayan export buluyor; advisor.js'teki findGaps/beatsAfter src/pages altında hiçbir sayfada içe aktarılmıyor. Ya Karşılaştır sayfasına 'nerede geride kaldın' paneli olarak bağlanmalı ya da silinmeli.",
+      "etki": "düşük",
+      "alan": "kod"
+    }
+  ]
+}
