@@ -162,11 +162,12 @@ güvenlik taraması. Çıktıdaki `nedenler` listesine bak.
   ```bash
   git add -A && git commit -m "Öneri: <başlık>"
   git push -u origin HEAD
-  gh pr create --base main --title "Öneri: <başlık>" --body "<neden + denetim sonucu>"
-  gh pr merge --squash --delete-branch
-  ```
-  `gh` yoksa aynı işi GitHub API'siyle yap (`PUT /repos/{o}/{r}/pulls/{n}/merge`,
-  `merge_method: squash`). Birleşmeden önce `git show --stat HEAD` ile commit'in
+  # gh pr … GraphQL kullanır ve bu oturumlarda kapalı; REST API kullan:
+  gh api repos/enesses/chip-akademi/pulls -f base=main -f head=<dal> \
+     -f title="Öneri: <başlık>" -f body="<neden + denetim sonucu>" --jq .number
+  gh api -X PUT repos/enesses/chip-akademi/pulls/<no>/merge -f merge_method=squash
+  git push origin --delete <dal>
+  ``` Birleşmeden önce `git show --stat HEAD` ile commit'in
   gerçekten değişikliği içerdiğini kontrol et.
 - **Yalnızca korunan dosya ya da sınır yüzünden uygun değil, testler geçiyor:**
   PR'ı aç ama **birleştirme**; kullanıcı onaylar.
