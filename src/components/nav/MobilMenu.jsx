@@ -1,15 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation } from "wouter";
 import { Link } from "@/components/Nav";
-import { Microchip, GraduationCap, PencilRuler, Newspaper, Search, X } from "lucide-react";
+import { Microchip, GraduationCap, PencilRuler, Newspaper, Sparkles, Search, X } from "lucide-react";
 import { GRUPLAR, bolumBul, grupBul } from "@/lib/bolumler";
 import { aramayiAc } from "@/components/nav/AramaPaleti";
 import { cn } from "@/lib/utils";
 
-const GRUP_IKON = { cipler: Microchip, ogren: GraduationCap, tasarla: PencilRuler, gundem: Newspaper };
+const GRUP_IKON = { cipler: Microchip, ogren: GraduationCap, tasarla: PencilRuler, gundem: Newspaper, ai: Sparkles };
 
 /**
- * Telefonda başparmakla ulaşılan alt çubuk: dört grup + arama.
+ * Telefonda başparmakla ulaşılan alt çubuk: her grup + arama.
  * Bir gruba dokununca o grubun bölümleri açıklamalarıyla alttan açılır.
  */
 export default function MobilMenu() {
@@ -95,7 +95,7 @@ export default function MobilMenu() {
         className="fixed inset-x-0 bottom-0 z-[55] border-t border-border bg-background/90 backdrop-blur-md"
         style={{ paddingBottom: "env(safe-area-inset-bottom, 0px)" }}
       >
-        <div className="grid grid-cols-5">
+        <div className="grid" style={{ gridTemplateColumns: `repeat(${GRUPLAR.length + 1}, minmax(0, 1fr))` }}>
           {GRUPLAR.map((g) => {
             const Ikon = GRUP_IKON[g.id];
             const etkin = acikGrup ? acikGrup === g.id : aktifGrup?.id === g.id;
@@ -112,7 +112,7 @@ export default function MobilMenu() {
               >
                 {etkin && <span className="absolute top-0 left-1/2 -translate-x-1/2 h-0.5 w-8 rounded-full bg-primary" aria-hidden="true" />}
                 <Ikon className="h-5 w-5" aria-hidden="true" />
-                {g.ad}
+                {g.kisaAd ? <><span aria-hidden="true">{g.kisaAd}</span><span className="sr-only">{g.ad}</span></> : g.ad}
               </button>
             );
           })}

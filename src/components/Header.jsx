@@ -62,12 +62,17 @@ function GrupMenusu({ grup, acik, ac, kapat, aktifGrup, aktifBolum, menuAcikMi }
         aria-expanded={acik}
         aria-haspopup="menu"
         className={cn(
-          "grup-dugme relative inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium transition-colors",
+          "grup-dugme relative inline-flex items-center gap-1 rounded-md px-2 lg:px-3 py-2 text-sm font-medium transition-colors",
           etkin ? "text-foreground" : "text-muted-foreground hover:text-foreground",
           acik && "bg-muted/50 text-foreground"
         )}
       >
-        {grup.ad}
+        {grup.kisaAd ? (
+          <>
+            <span className="lg:hidden" aria-hidden="true">{grup.kisaAd}</span>
+            <span className="sr-only lg:not-sr-only">{grup.ad}</span>
+          </>
+        ) : grup.ad}
         <ChevronDown className={cn("h-3.5 w-3.5 opacity-60 transition-transform", acik && "rotate-180")} aria-hidden="true" />
         {etkin && <span className="iz-ped" aria-hidden="true" />}
       </button>
@@ -180,7 +185,7 @@ export default function Header() {
           <span className="w-8 h-8 rounded-lg border border-primary/40 bg-primary/10 flex items-center justify-center">
             <Cpu className="h-[18px] w-[18px] text-primary" aria-hidden="true" />
           </span>
-          <span className="font-display font-bold tracking-tight">Chip Akademi</span>
+          <span className="font-display font-bold tracking-tight md:hidden lg:inline">Chip Akademi</span>
         </Link>
 
         <nav aria-label="Ana menü" className="hidden md:flex items-center gap-0.5">

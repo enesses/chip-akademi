@@ -8,6 +8,7 @@ const SORU = {
   ogren: "Sıfırdan öğrenmek",
   tasarla: "Kendi çipimi tasarlamak",
   gundem: "Gündemi takip etmek",
+  ai: "Yapay zekâyı kullanmak",
 };
 
 /** Anasayfadaki arama girişi: kutuya benzer, dokununca hızlı aramayı açar. */
@@ -51,15 +52,15 @@ export default function BolumRehberi() {
           Sitedeki her bölüm burada. Üst menüdeki gruplar da aynı sırada.
         </p>
       </div>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 rounded-2xl border border-card-border bg-card/40 divide-y sm:divide-y-0 divide-card-border overflow-hidden">
+      {/* Hücre çizgileri: 1px aralıktan görünen kap rengi. Grup sayısı değişince
+          kenarlık hesabı gerekmez; tek kalan son hücre iki sütuna yayılır. */}
+      <div className="grid gap-px sm:grid-cols-2 lg:grid-cols-5 rounded-2xl border border-card-border bg-card-border overflow-hidden">
         {GRUPLAR.map((g, i) => (
           <div
             key={g.id}
             className={
-              "p-4 sm:p-5 " +
-              (i % 2 === 1 ? "sm:border-l sm:border-card-border " : "") +
-              (i >= 2 ? "sm:border-t lg:border-t-0 " : "") +
-              (i === 2 ? "lg:border-l lg:border-card-border" : "")
+              "p-4 sm:p-5 bg-card " +
+              (GRUPLAR.length % 2 === 1 && i === GRUPLAR.length - 1 ? "sm:col-span-2 lg:col-span-1" : "")
             }
           >
             <p className="text-xs text-muted-foreground">{g.ad}</p>

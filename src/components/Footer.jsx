@@ -12,7 +12,7 @@ export default function Footer() {
             GPU, CPU ve bellek teknolojilerini görsellerle, mimarisiyle ve gerçek dünya kullanımıyla anlatan Türkçe eğitim sitesi.
           </p>
         </div>
-        <nav aria-label="Tüm bölümler" className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-6 content-start">
+        <nav aria-label="Tüm bölümler" className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-6 content-start">
           {GRUPLAR.map((g) => (
             <div key={g.id}>
               <p className="font-medium text-foreground mb-2">{g.ad}</p>

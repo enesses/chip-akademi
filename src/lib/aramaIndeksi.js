@@ -2,12 +2,14 @@
  * Hızlı arama dizini: bölümler, chipler, cihazlar, dersler, sözlük terimleri.
  * Hepsi derleme anında uygulamaya gömülü veriden; ağ isteği yok.
  */
-import { Microchip, Smartphone, GraduationCap, Library } from "lucide-react";
+import { Microchip, Smartphone, GraduationCap, Library, MessageSquareText, Puzzle } from "lucide-react";
 import { chips } from "@/data/chips";
 import { lessons } from "@/data/lessons";
 import { glossary } from "@/data/glossary";
 import icyapi from "@/data/icyapi.json";
 import { TUM_BOLUMLER, sadelestir } from "@/lib/bolumler";
+import { PROMPTLAR, KATEGORILER } from "@/data/promptlar";
+import { SKILLER } from "@/data/skiller";
 
 export const TURLER = {
   bolum: { ad: "Bölümler", sira: 0, puan: 40 },
@@ -15,6 +17,8 @@ export const TURLER = {
   chip: { ad: "Çipler", sira: 2, puan: 20 },
   ders: { ad: "Dersler", sira: 3, puan: 15 },
   terim: { ad: "Sözlük", sira: 4, puan: 10 },
+  prompt: { ad: "Promptlar", sira: 5, puan: 12 },
+  skill: { ad: "Claude skill'leri", sira: 6, puan: 12 },
 };
 
 const KATEGORI_AD = { GPU: "GPU", CPU: "CPU", RAM: "Bellek" };
@@ -42,6 +46,15 @@ function dizin() {
   for (const g of glossary) {
     d.push({ tur: "terim", id: "t:" + g.term, baslik: g.term, alt: g.def, yol: "/sozluk", sozlukTerimi: g.term,
       ikon: Library, metin: sadelestir(`${g.term} ${g.def}`) });
+  }
+  for (const p of PROMPTLAR) {
+    const k = KATEGORILER.find((x) => x.id === p.kategori)?.ad || "";
+    d.push({ tur: "prompt", id: "p:" + p.id, baslik: p.baslik, alt: `${k} · ${p.aciklama}`, yol: "/ai/promptlar", acilacak: { prompt: p.id },
+      ikon: MessageSquareText, metin: sadelestir(`${p.baslik} ${k} ${p.aciklama} prompt`) });
+  }
+  for (const s of SKILLER) {
+    d.push({ tur: "skill", id: "s:" + s.id, baslik: s.baslik, alt: s.aciklama, yol: "/ai/skiller", acilacak: { skill: s.id },
+      ikon: Puzzle, metin: sadelestir(`${s.baslik} ${s.ad} ${s.kategori} ${s.aciklama} skill`) });
   }
   for (const x of d) x.basSade = sadelestir(x.baslik);
   _dizin = d;
