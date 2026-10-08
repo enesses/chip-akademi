@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-08T12:14:20.909Z",
+  "guncelleme": "2026-10-08T12:18:35.396Z",
   "tarih": "2026-10-08",
   "durum": "temiz",
   "ajanlar": [
@@ -75,7 +75,95 @@
       "alan": "kod"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-10-08",
+      "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
+      "durum": "birlesti",
+      "pr": 8,
+      "dal": null,
+      "ozet": "gelen/durum.json okunuyor; izin engeli sarı uyarı, okunamadı kırmızı hata",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-08",
+      "oneri": "Bugün maddelerinde dünkü haberleri tekrar etmeyi engelle",
+      "durum": "birlesti",
+      "pr": 8,
+      "dal": null,
+      "ozet": "son 2 günün arşiviyle karşılaştırılıyor; tekrar eden madde işaretlenip puana katılmıyor",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-08",
+      "oneri": "Bugün sayfasına 'yaklaşan olaylar' kutusu",
+      "durum": "birlesti",
+      "pr": 8,
+      "dal": null,
+      "ozet": "bugun.json'a yaklasan alanı ve sayfaya kutu eklendi",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-08",
+      "oneri": "Kullanılmayan 22 export'u temizle ya da bağla",
+      "durum": "birlesti",
+      "pr": 8,
+      "dal": null,
+      "ozet": "findGaps ve beatsAfter Karşılaştır ve Tasarla sayfalarına bağlandı; diğer kullanılmayan export'lar duruyor",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-08",
+      "oneri": "Maliyet puanını daha çok çipe yay",
+      "durum": "birlesti",
+      "pr": 11,
+      "dal": null,
+      "ozet": "RTX PRO 6000, RTX 6000 Ada ve RTX A6000 kataloğa eklendi ve fiyat satırlarına bağlandı (88 sağlayıcı satırı)",
+      "neden": null,
+      "kim": "elle"
+    }
+  ],
+  "uygulananSon": [
+    {
+      "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
+      "durum": "birlesti",
+      "pr": 8,
+      "tarih": "2026-10-08",
+      "kim": "elle"
+    },
+    {
+      "oneri": "Bugün maddelerinde dünkü haberleri tekrar etmeyi engelle",
+      "durum": "birlesti",
+      "pr": 8,
+      "tarih": "2026-10-08",
+      "kim": "elle"
+    },
+    {
+      "oneri": "Bugün sayfasına 'yaklaşan olaylar' kutusu",
+      "durum": "birlesti",
+      "pr": 8,
+      "tarih": "2026-10-08",
+      "kim": "elle"
+    },
+    {
+      "oneri": "Kullanılmayan 22 export'u temizle ya da bağla",
+      "durum": "birlesti",
+      "pr": 8,
+      "tarih": "2026-10-08",
+      "kim": "elle"
+    },
+    {
+      "oneri": "Maliyet puanını daha çok çipe yay",
+      "durum": "birlesti",
+      "pr": 11,
+      "tarih": "2026-10-08",
+      "kim": "elle"
+    }
+  ],
   "guvenlik": {
     "durum": "temiz",
     "bagimlilik": {
@@ -230,8 +318,8 @@
     },
     {
       "tarih": "2026-10-08",
-      "durum": "kritik",
-      "dikkat": 1
+      "durum": "temiz",
+      "dikkat": 0
     }
   ]
 }

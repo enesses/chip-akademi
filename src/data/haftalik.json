@@ -7,23 +7,25 @@
       "son": "2026-10-08",
       "kismi": true,
       "baslik": "5 Ekim – 8 Ekim (bugüne kadar)",
-      "olusturma": "2026-10-08T11:21:34.160Z",
+      "olusturma": "2026-10-08T12:18:41.009Z",
       "ozet": [
-        "Otomasyon 4 günlük dönemde 4 gün çalıştı: 1 gün temiz, 3 gün kritik uyarıyla bitti.",
-        "Uygulamaya 10 değişiklik girdi.",
+        "Otomasyon 4 günlük dönemde 4 gün çalıştı: 2 gün temiz, 2 gün kritik uyarıyla bitti.",
+        "Uygulamaya 12 değişiklik girdi.",
+        "5 geliştirme önerisi sohbette elle uygulandı.",
         "Hafta boyunca 14 farklı geliştirme önerisi yazıldı.",
         "H100 kiralama medyanı 3.38 → 3.49 $/saat (%+3.3).",
         "Bugün sayfasının ortalama pozitiflik puanı 61/100."
       ],
       "sayilar": {
         "calisanGun": 4,
-        "temizGun": 1,
-        "kritikGun": 3,
+        "temizGun": 2,
+        "kritikGun": 2,
         "oneri": 14,
         "uygulananBirlesen": 0,
+        "elleUygulanan": 5,
         "uygulananAcik": 0,
         "uygulananVazgecilen": 0,
-        "degisiklik": 10,
+        "degisiklik": 12,
         "bugunOrtalama": 61,
         "tekrarHaber": 0
       },
@@ -48,9 +50,9 @@
         },
         {
           "tarih": "2026-10-08",
-          "durum": "kritik",
-          "dikkat": 1,
-          "fiyat": "güncellenmedi"
+          "durum": "temiz",
+          "dikkat": 0,
+          "fiyat": "aynı gün"
         }
       ],
       "bugun": [
@@ -84,10 +86,10 @@
         }
       ],
       "fiyat": {
-        "olcumGunu": 1,
+        "olcumGunu": 2,
         "izinEngeliGunu": 0,
         "taban": "2026-10-03",
-        "son": "2026-10-07",
+        "son": "2026-10-08",
         "h100": {
           "model": "Nvidia H100",
           "once": 3.38,
@@ -96,38 +98,89 @@
         },
         "enCokOynayan": [
           {
-            "model": "Nvidia A4000",
-            "once": 0.19,
-            "sonra": 0.49,
-            "degisim": 157.9
-          },
-          {
             "model": "Nvidia A5000",
             "once": 1.31,
             "sonra": 0.75,
             "degisim": -42.7
           },
           {
-            "model": "Nvidia GH200",
-            "once": 3.87,
-            "sonra": 5.19,
-            "degisim": 34.1
-          },
-          {
             "model": "Nvidia RTX 6000 Ada",
             "once": 0.96,
-            "sonra": 0.86,
-            "degisim": -10.4
+            "sonra": 1.04,
+            "degisim": 8.3
           },
           {
-            "model": "Nvidia T4",
-            "once": 0.64,
-            "sonra": 0.69,
-            "degisim": 7.8
+            "model": "Nvidia L4",
+            "once": 0.87,
+            "sonra": 0.8,
+            "degisim": -8
+          },
+          {
+            "model": "Nvidia RTX 4090",
+            "once": 0.47,
+            "sonra": 0.44,
+            "degisim": -6.4
+          },
+          {
+            "model": "Nvidia RTX 5090",
+            "once": 0.66,
+            "sonra": 0.7,
+            "degisim": 6.1
           }
         ]
       },
-      "uygulanan": [],
+      "uygulanan": [
+        {
+          "tarih": "2026-10-08",
+          "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
+          "durum": "birlesti",
+          "pr": 8,
+          "dal": null,
+          "ozet": "gelen/durum.json okunuyor; izin engeli sarı uyarı, okunamadı kırmızı hata",
+          "neden": null,
+          "kim": "elle"
+        },
+        {
+          "tarih": "2026-10-08",
+          "oneri": "Bugün maddelerinde dünkü haberleri tekrar etmeyi engelle",
+          "durum": "birlesti",
+          "pr": 8,
+          "dal": null,
+          "ozet": "son 2 günün arşiviyle karşılaştırılıyor; tekrar eden madde işaretlenip puana katılmıyor",
+          "neden": null,
+          "kim": "elle"
+        },
+        {
+          "tarih": "2026-10-08",
+          "oneri": "Bugün sayfasına 'yaklaşan olaylar' kutusu",
+          "durum": "birlesti",
+          "pr": 8,
+          "dal": null,
+          "ozet": "bugun.json'a yaklasan alanı ve sayfaya kutu eklendi",
+          "neden": null,
+          "kim": "elle"
+        },
+        {
+          "tarih": "2026-10-08",
+          "oneri": "Kullanılmayan 22 export'u temizle ya da bağla",
+          "durum": "birlesti",
+          "pr": 8,
+          "dal": null,
+          "ozet": "findGaps ve beatsAfter Karşılaştır ve Tasarla sayfalarına bağlandı; diğer kullanılmayan export'lar duruyor",
+          "neden": null,
+          "kim": "elle"
+        },
+        {
+          "tarih": "2026-10-08",
+          "oneri": "Maliyet puanını daha çok çipe yay",
+          "durum": "birlesti",
+          "pr": 11,
+          "dal": null,
+          "ozet": "RTX PRO 6000, RTX 6000 Ada ve RTX A6000 kataloğa eklendi ve fiyat satırlarına bağlandı (88 sağlayıcı satırı)",
+          "neden": null,
+          "kim": "elle"
+        }
+      ],
       "degisiklikler": [
         {
           "tarih": "2026-10-07",
@@ -185,12 +238,24 @@
         },
         {
           "tarih": "2026-10-08",
+          "baslik": "Fiyatlar: 2026-10-08 (etkileşimli oturumdan; 96 model, A4000 iki okumayla doğrulandı)",
+          "pr": null,
+          "url": "https://github.com/enesses/chip-akademi/commit/f105a391da87aaa4965d8fd3af026b2b42bb1bc8"
+        },
+        {
+          "tarih": "2026-10-08",
+          "baslik": "GUNLUK 6a: dal silme adımını kaldır (oturumda 403)",
+          "pr": 10,
+          "url": "https://github.com/enesses/chip-akademi/pull/10"
+        },
+        {
+          "tarih": "2026-10-08",
           "baslik": "Geliştirme önerilerini uygula (7 öneri, 8 Ekim raporu)",
           "pr": 8,
           "url": "https://github.com/enesses/chip-akademi/pull/8"
         }
       ],
-      "gunlukCommit": 6
+      "gunlukCommit": 7
     },
     {
       "hafta": "2026-W40",

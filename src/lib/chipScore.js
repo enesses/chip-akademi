@@ -580,7 +580,19 @@ function hammVerimlilikhesapla(chip) {
   const w = tdpOf(chip);
   if (!w || w <= 0) return null;
 
-  if (cls === "AI" || cls === "GPU") {
+  if (cls === "GPU") {
+    // GDDR'lı kartlar: üreticiler hesap gücünü farklı hassasiyetlerde veriyor
+    // (bir kartta FP4, ötekinde yalnızca FP32). TFLOPS/W ile kıyaslamak FP4
+    // yazan kartı birkaç kat öne çıkarıyordu. Bant genişliği her kartta aynı
+    // birimle yazılı, bu sınıfta tek ölçü o.
+    const bw = bwGet(chip);
+    if (bw) return bw / w;
+    const sh = shaderGet(chip);
+    if (sh) return sh / w;
+    return null;
+  }
+
+  if (cls === "AI") {
     // Önce AI hesap verimi (TFLOPS/W)
     const tf = aiComputeGet(chip);
     if (tf) return tf / w;
@@ -644,7 +656,7 @@ export function verimlilikPuani(chip) {
   const kls = classOf(chip);
   let birim = "—";
   if (kls === "AI") birim = aiComputeGet(chip) ? "TFLOPS/W" : "GB/s/W";
-  else if (kls === "GPU") birim = shaderGet(chip) ? "shader/W" : "GB/s/W";
+  else if (kls === "GPU") birim = bwGet(chip) ? "GB/s/W" : "shader/W";
   else if (kls === "CPU" || kls === "SOC") birim = "çekirdek×GHz/W";
   else if (kls === "RAM") birim = "GB/s";
   const r = { puan, hammDeger: parseFloat(hammV.toFixed(3)), birim, neden: null };

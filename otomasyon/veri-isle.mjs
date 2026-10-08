@@ -113,7 +113,12 @@ if (fs.existsSync(fiyatGirdi)) {
       const n = yeni.get(anahtar(f.model));
       if (!n) { gelmeyen.push(f.model); continue; }
       yeni.delete(anahtar(f.model));
-      const taban = ayniGun && f.onceki_usd != null ? f.onceki_usd : f.usd_saat;
+      // Aynı gün ikinci işleme: yalnızca bugün zaten güncellenmiş modelde taban
+      // "onceki_usd"dir. Sabah şüpheli diye atlanan model güncellenmemiştir; onun
+      // tabanı hâlâ duran fiyatıdır (8 Ekim: A4000 0.49 → 0.19, tabanı 0.19 çıkıyordu).
+      // olcum_tarihi alanı olmayan eski kayıtlar eski kurala göre işlenir.
+      const bugunOlculdu = f.olcum_tarihi ? f.olcum_tarihi === BUGUN : true;
+      const taban = ayniGun && bugunOlculdu && f.onceki_usd != null ? f.onceki_usd : f.usd_saat;
       const degisim = taban > 0 ? ((n.medyan - taban) / taban) * 100 : 0;
       // Çok sağlayıcılı bir modelde son ölçüme göre %50'den büyük oynama büyük ihtimalle
       // okuma hatasıdır (yanlış sütun, kayan satır). Yazma, raporla.
@@ -129,6 +134,7 @@ if (fs.existsSync(fiyatGirdi)) {
       f.onceki_usd = taban;
       f.usd_saat = n.medyan;
       f.degisim_pct = Math.round(degisim * 10) / 10;
+      f.olcum_tarihi = BUGUN;
       if (typeof n.saglayici === "number") f.saglayici = n.saglayici;
       guncellenen++;
     }

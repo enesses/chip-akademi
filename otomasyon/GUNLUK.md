@@ -115,6 +115,9 @@ rapor → son derleme (`docs/index.html` dahil).
 - 3–7 somut öneri yaz. Her biri: `baslik`, `neden` (kodda/veride gördüğün kanıtla — dosya adı, sayı), `etki` (`yüksek|orta|düşük`), `alan`.
 - Önerdiğin şeyin gerçekten eksik olduğunu kodda kontrol et (ör. "X özelliği yok" demeden önce ara).
 - Dünkü önerilerden hâlâ geçerli olanı tekrar yazabilirsin; uygulanmış olanı yazma.
+  Uygulananların listesi `otomasyon/uygulanan.json`'da (`kim: "elle"` = sohbette
+  kullanıcıyla uygulandı). Oradaki bir başlığı ancak kodda hâlâ eksik bir kısmı
+  varsa ve bunu `neden`'de açıkça söyleyerek yeniden yazabilirsin.
 - Sonra öneriyi rapora işle:
   ```bash
   node otomasyon/veri-isle.mjs && node otomasyon/orkestrator.mjs rapor

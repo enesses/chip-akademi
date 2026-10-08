@@ -10,7 +10,7 @@
  *       uygun=true ise görev PR'ı kendisi birleştirebilir.
  *
  *   node otomasyon/oneri-uygula.mjs kaydet --oneri "<başlık>" --durum birlesti|acik|vazgecildi
- *        [--pr 12] [--dal otomasyon/oneri-…] [--neden "…"] [--ozet "ne değişti"]
+ *        [--pr 12] [--dal otomasyon/oneri-…] [--neden "…"] [--ozet "ne değişti"] [--elle]
  *     → otomasyon/uygulanan.json günlüğüne bir kayıt ekler (haftalık rapor buradan okur).
  *
  * Kendiliğinden birleştirme kuralı (kullanıcının 8 Ekim 2026 kararı):
@@ -106,6 +106,8 @@ function kaydet() {
     dal: arg("dal"),
     ozet: arg("ozet"),
     neden: arg("neden"),
+    // --elle: öneriyi otomasyon değil, kullanıcıyla bir oturum uyguladı.
+    kim: process.argv.includes("--elle") ? "elle" : "otomasyon",
   });
   fs.writeFileSync(GUNLUK, JSON.stringify(g, null, 2) + "\n", "utf-8");
   return g.kayitlar.at(-1);

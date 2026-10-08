@@ -28,6 +28,9 @@ export default function Otomasyon() {
   const bulgular = data.iyilestirme?.bulgular || [];
   const oneriler = data.oneriler || [];
   const uygulanan = data.uygulanan || [];
+  // Önerinin uygulanıp uygulanmadığı: son 14 günün kayıtlarında başlık eşleşmesi.
+  const sade = (s) => String(s).toLocaleLowerCase("tr").replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+  const uygulamaKaydi = new Map((data.uygulananSon || []).filter((k) => k.durum !== "vazgecildi").map((k) => [sade(k.oneri), k]));
   const gecmis = data.gecmis || [];
 
   return (
@@ -126,7 +129,18 @@ export default function Otomasyon() {
                   <div>
                     <p className="font-semibold text-sm">{o.baslik}</p>
                     <p className="text-xs text-muted-foreground mt-1 leading-relaxed">{o.neden}</p>
-                    <div className="flex gap-2 mt-2">
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {(() => {
+                        const k = uygulamaKaydi.get(sade(o.baslik));
+                        if (!k) return null;
+                        const bekliyor = k.durum === "acik";
+                        const renk = bekliyor ? "#f59e0b" : "#34d399";
+                        return (
+                          <span className="font-mono text-[9px] uppercase rounded px-1.5 py-0.5 border" style={{ color: renk, borderColor: `${renk}55`, background: `${renk}15` }}>
+                            {bekliyor ? "onay bekliyor" : "uygulandı"}{k.pr ? ` · PR #${k.pr}` : ""}
+                          </span>
+                        );
+                      })()}
                       {o.etki && <span className="font-mono text-[9px] uppercase rounded px-1.5 py-0.5 border" style={{ color: ETKI_RENK[o.etki], borderColor: `${ETKI_RENK[o.etki]}55` }}>{o.etki} etki</span>}
                       {o.alan && <span className="font-mono text-[9px] uppercase text-muted-foreground">{o.alan}</span>}
                     </div>
