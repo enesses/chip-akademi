@@ -1,0 +1,359 @@
+{
+  "aciklama": "Haftalık rapor — otomasyon/haftalik.mjs üretir.",
+  "haftalar": [
+    {
+      "hafta": "2026-W41",
+      "bas": "2026-10-05",
+      "son": "2026-10-08",
+      "kismi": true,
+      "baslik": "5 Ekim – 8 Ekim (bugüne kadar)",
+      "olusturma": "2026-10-08T11:21:34.160Z",
+      "ozet": [
+        "Otomasyon 4 günlük dönemde 4 gün çalıştı: 1 gün temiz, 3 gün kritik uyarıyla bitti.",
+        "Uygulamaya 10 değişiklik girdi.",
+        "Hafta boyunca 14 farklı geliştirme önerisi yazıldı.",
+        "H100 kiralama medyanı 3.38 → 3.49 $/saat (%+3.3).",
+        "Bugün sayfasının ortalama pozitiflik puanı 61/100."
+      ],
+      "sayilar": {
+        "calisanGun": 4,
+        "temizGun": 1,
+        "kritikGun": 3,
+        "oneri": 14,
+        "uygulananBirlesen": 0,
+        "uygulananAcik": 0,
+        "uygulananVazgecilen": 0,
+        "degisiklik": 10,
+        "bugunOrtalama": 61,
+        "tekrarHaber": 0
+      },
+      "gunler": [
+        {
+          "tarih": "2026-10-05",
+          "durum": "kritik",
+          "dikkat": 1,
+          "fiyat": "güncellenmedi"
+        },
+        {
+          "tarih": "2026-10-06",
+          "durum": "kritik",
+          "dikkat": 2,
+          "fiyat": "güncellenmedi"
+        },
+        {
+          "tarih": "2026-10-07",
+          "durum": "temiz",
+          "dikkat": 0,
+          "fiyat": "aynı gün"
+        },
+        {
+          "tarih": "2026-10-08",
+          "durum": "kritik",
+          "dikkat": 1,
+          "fiyat": "güncellenmedi"
+        }
+      ],
+      "bugun": [
+        {
+          "tarih": "2026-10-05",
+          "puan": 69,
+          "etiket": "İyimser, maliyet baskısı izleniyor",
+          "madde": 9,
+          "tekrar": 0
+        },
+        {
+          "tarih": "2026-10-06",
+          "puan": 63,
+          "etiket": "İyimser, faiz ve maliyet riski artıyor",
+          "madde": 8,
+          "tekrar": 0
+        },
+        {
+          "tarih": "2026-10-07",
+          "puan": 57,
+          "etiket": "İyimser, bellek ve borç maliyeti gölgesinde",
+          "madde": 12,
+          "tekrar": 0
+        },
+        {
+          "tarih": "2026-10-08",
+          "puan": 53,
+          "etiket": "Hafif iyimser, maliyet baskısı artıyor",
+          "madde": 8,
+          "tekrar": 0
+        }
+      ],
+      "fiyat": {
+        "olcumGunu": 1,
+        "izinEngeliGunu": 0,
+        "taban": "2026-10-03",
+        "son": "2026-10-07",
+        "h100": {
+          "model": "Nvidia H100",
+          "once": 3.38,
+          "sonra": 3.49,
+          "degisim": 3.3
+        },
+        "enCokOynayan": [
+          {
+            "model": "Nvidia A4000",
+            "once": 0.19,
+            "sonra": 0.49,
+            "degisim": 157.9
+          },
+          {
+            "model": "Nvidia A5000",
+            "once": 1.31,
+            "sonra": 0.75,
+            "degisim": -42.7
+          },
+          {
+            "model": "Nvidia GH200",
+            "once": 3.87,
+            "sonra": 5.19,
+            "degisim": 34.1
+          },
+          {
+            "model": "Nvidia RTX 6000 Ada",
+            "once": 0.96,
+            "sonra": 0.86,
+            "degisim": -10.4
+          },
+          {
+            "model": "Nvidia T4",
+            "once": 0.64,
+            "sonra": 0.69,
+            "degisim": 7.8
+          }
+        ]
+      },
+      "uygulanan": [],
+      "degisiklikler": [
+        {
+          "tarih": "2026-10-07",
+          "baslik": "Arayüz: gruplu gezinme, hızlı arama, mobil alt çubuk",
+          "pr": 7,
+          "url": "https://github.com/enesses/chip-akademi/pull/7"
+        },
+        {
+          "tarih": "2026-10-07",
+          "baslik": "otomasyon: elle doğrulanan fiyat yolu; postcss-selector-parser 7.1.6",
+          "pr": 6,
+          "url": "https://github.com/enesses/chip-akademi/pull/6"
+        },
+        {
+          "tarih": "2026-10-07",
+          "baslik": "claude.ai yayını: uygulamayı kalıcı bağlantıya bağla",
+          "pr": 5,
+          "url": "https://github.com/enesses/chip-akademi/pull/5"
+        },
+        {
+          "tarih": "2026-10-07",
+          "baslik": "İç bölümü: cihazların iç yapısı, mobil SoC'lar, 100 üzerinden puanlar",
+          "pr": 2,
+          "url": "https://github.com/enesses/chip-akademi/pull/2"
+        },
+        {
+          "tarih": "2026-10-07",
+          "baslik": "main'i birleştir; İç sayfalarını otomasyon arayüz testine ekle",
+          "pr": null,
+          "url": "https://github.com/enesses/chip-akademi/commit/3371589c859bedc45259b3da9cea4cd9251c9f07"
+        },
+        {
+          "tarih": "2026-10-07",
+          "baslik": "veri-isle: aynı gün ikinci fiyat işlemede önceki ölçüm tabanını koru",
+          "pr": 1,
+          "url": "https://github.com/enesses/chip-akademi/pull/1"
+        },
+        {
+          "tarih": "2026-10-07",
+          "baslik": "fix(gelistirme): gelen/ boşken yenileme ajanını yeniden çalıştırma",
+          "pr": 3,
+          "url": "https://github.com/enesses/chip-akademi/pull/3"
+        },
+        {
+          "tarih": "2026-10-07",
+          "baslik": "deps: source-map-js 1.2.1 → 1.2.2 (GHSA-68fv-2mgg-jv7q)",
+          "pr": 4,
+          "url": "https://github.com/enesses/chip-akademi/pull/4"
+        },
+        {
+          "tarih": "2026-10-07",
+          "baslik": "feat(ic): işlemci künyeleri, 100 üzerinden puanlar ve cihaz eksikleri",
+          "pr": null,
+          "url": "https://github.com/enesses/chip-akademi/commit/50234590915713ed38afa7eaab5bc63df6bc6549"
+        },
+        {
+          "tarih": "2026-10-08",
+          "baslik": "Geliştirme önerilerini uygula (7 öneri, 8 Ekim raporu)",
+          "pr": 8,
+          "url": "https://github.com/enesses/chip-akademi/pull/8"
+        }
+      ],
+      "gunlukCommit": 6
+    },
+    {
+      "hafta": "2026-W40",
+      "bas": "2026-09-28",
+      "son": "2026-10-04",
+      "kismi": false,
+      "baslik": "28 Eylül – 4 Ekim",
+      "olusturma": "2026-10-08T11:21:34.038Z",
+      "ozet": [
+        "Otomasyon 7 günlük dönemde 2 gün çalıştı: 1 gün temiz, 1 gün kritik uyarıyla bitti.",
+        "Uygulamaya 8 değişiklik girdi.",
+        "Hafta boyunca 10 farklı geliştirme önerisi yazıldı.",
+        "Bugün sayfasının ortalama pozitiflik puanı 68/100."
+      ],
+      "sayilar": {
+        "calisanGun": 2,
+        "temizGun": 1,
+        "kritikGun": 1,
+        "oneri": 10,
+        "uygulananBirlesen": 0,
+        "uygulananAcik": 0,
+        "uygulananVazgecilen": 0,
+        "degisiklik": 8,
+        "bugunOrtalama": 68,
+        "tekrarHaber": 0
+      },
+      "gunler": [
+        {
+          "tarih": "2026-09-28",
+          "durum": "calismadi",
+          "dikkat": 0,
+          "fiyat": null
+        },
+        {
+          "tarih": "2026-09-29",
+          "durum": "calismadi",
+          "dikkat": 0,
+          "fiyat": null
+        },
+        {
+          "tarih": "2026-09-30",
+          "durum": "calismadi",
+          "dikkat": 0,
+          "fiyat": null
+        },
+        {
+          "tarih": "2026-10-01",
+          "durum": "calismadi",
+          "dikkat": 0,
+          "fiyat": null
+        },
+        {
+          "tarih": "2026-10-02",
+          "durum": "calismadi",
+          "dikkat": 0,
+          "fiyat": null
+        },
+        {
+          "tarih": "2026-10-03",
+          "durum": "temiz",
+          "dikkat": 0,
+          "fiyat": "aynı gün"
+        },
+        {
+          "tarih": "2026-10-04",
+          "durum": "kritik",
+          "dikkat": 1,
+          "fiyat": "güncellenmedi"
+        }
+      ],
+      "bugun": [
+        {
+          "tarih": "2026-09-28",
+          "puan": null
+        },
+        {
+          "tarih": "2026-09-29",
+          "puan": null
+        },
+        {
+          "tarih": "2026-09-30",
+          "puan": null
+        },
+        {
+          "tarih": "2026-10-01",
+          "puan": null
+        },
+        {
+          "tarih": "2026-10-02",
+          "puan": null
+        },
+        {
+          "tarih": "2026-10-03",
+          "puan": 71,
+          "etiket": "İyimser, maliyet uyarılı",
+          "madde": 12,
+          "tekrar": 0
+        },
+        {
+          "tarih": "2026-10-04",
+          "puan": 65,
+          "etiket": "İyimser, borç ve maliyet uyarılı",
+          "madde": 10,
+          "tekrar": 0
+        }
+      ],
+      "fiyat": {
+        "olcumGunu": 1,
+        "izinEngeliGunu": 0
+      },
+      "uygulanan": [],
+      "degisiklikler": [
+        {
+          "tarih": "2026-10-03",
+          "baslik": "feat(ic): cihazların iç yapısı bölümü",
+          "pr": null,
+          "url": "https://github.com/enesses/chip-akademi/commit/8b339aef9f90d5bbf58a34cc5947a4d2230157e3"
+        },
+        {
+          "tarih": "2026-10-03",
+          "baslik": "feat: üç boyutlu puan sistemi — tasarım, verimlilik, maliyet",
+          "pr": null,
+          "url": "https://github.com/enesses/chip-akademi/commit/cfce0efe45993a835dde9b217656b0cf51376178"
+        },
+        {
+          "tarih": "2026-10-03",
+          "baslik": "fix(chipScore): puanlama parser hataları düzeltildi",
+          "pr": null,
+          "url": "https://github.com/enesses/chip-akademi/commit/63faa2d88ab8a9d2f0c4c4ee200eb579e992106c"
+        },
+        {
+          "tarih": "2026-10-03",
+          "baslik": "feat(compare): 'nerede geride kaldın' analiz paneli ekle",
+          "pr": null,
+          "url": "https://github.com/enesses/chip-akademi/commit/ec608966e01bd354f6f7e84752f6452cfa851008"
+        },
+        {
+          "tarih": "2026-10-03",
+          "baslik": "Anasayfayı yeniden tasarla, yazı tiplerini dosyaya göm",
+          "pr": null,
+          "url": "https://github.com/enesses/chip-akademi/commit/b7e580ae1af6830f5fdc0e647d837546f0606bcd"
+        },
+        {
+          "tarih": "2026-10-03",
+          "baslik": "Yenileme raporu: 'bu çalıştırmada işlendi' ile 'tarih bugün' ayrımı; izin engeli talimatı",
+          "pr": null,
+          "url": "https://github.com/enesses/chip-akademi/commit/21d1adc9a072f65ab71f60b3eb02bfd47f2f768d"
+        },
+        {
+          "tarih": "2026-10-03",
+          "baslik": "Geliştirme önerilerini uygula: erişilebilirlik, katalog, karşılaştırma, atölye, bellek fiyatları, bağımlılıklar",
+          "pr": null,
+          "url": "https://github.com/enesses/chip-akademi/commit/8fc858d691fbefa66cae112ac086600ce01edd0c"
+        },
+        {
+          "tarih": "2026-10-03",
+          "baslik": "Uygulama kaynağını ve çalışan günlük otomasyonu ekle",
+          "pr": null,
+          "url": "https://github.com/enesses/chip-akademi/commit/cb43887181b32fddd224f62dd839f032440559be"
+        }
+      ],
+      "gunlukCommit": 3
+    }
+  ],
+  "guncelleme": "2026-10-08"
+}

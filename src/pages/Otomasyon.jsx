@@ -1,4 +1,5 @@
-import { Bot, CheckCircle2, CircleAlert, Lightbulb, RefreshCw, Shield, TrendingUp, Wrench, XCircle } from "lucide-react";
+import { Link } from "@/components/Nav";
+import { Bot, CalendarRange, GitMerge, GitPullRequest, Ban, CheckCircle2, CircleAlert, Lightbulb, RefreshCw, Shield, TrendingUp, Wrench, XCircle } from "lucide-react";
 import data from "@/data/otomasyon.json";
 import { cn } from "@/lib/utils";
 
@@ -26,6 +27,7 @@ export default function Otomasyon() {
   const adimlar = data.yenileme?.adimlar || [];
   const bulgular = data.iyilestirme?.bulgular || [];
   const oneriler = data.oneriler || [];
+  const uygulanan = data.uygulanan || [];
   const gecmis = data.gecmis || [];
 
   return (
@@ -39,7 +41,13 @@ export default function Otomasyon() {
         </p>
         <p className="text-xs text-muted-foreground mt-2 max-w-2xl">
           Sıra: fiyatlar ve "Bugün" yenilenir → güvenlik taraması → iyileştirme taraması → derleme ve gerçek tarayıcıda arayüz testi → rapor.
+          Ardından en fazla iki geliştirme önerisi uygulanır; testler geçerse kendiliğinden birleşir.
         </p>
+        <Link href="/haftalik" asChild>
+          <a className="mt-3 inline-flex items-center gap-1.5 text-sm text-primary hover:underline">
+            <CalendarRange className="h-4 w-4" aria-hidden="true" /> Haftalık raporu aç
+          </a>
+        </Link>
       </section>
 
       <section className="container mx-auto px-4 pb-10">
@@ -80,6 +88,31 @@ export default function Otomasyon() {
               </div>
             ))}
           </div>
+        </Bolum>
+      )}
+
+      {uygulanan.length > 0 && (
+        <Bolum baslik="Bugün uygulanan öneriler">
+          <ul className="grid gap-2 max-w-5xl">
+            {uygulanan.map((k, i) => {
+              const Ikon = k.durum === "birlesti" ? GitMerge : k.durum === "acik" ? GitPullRequest : Ban;
+              const renk = k.durum === "birlesti" ? "#34d399" : k.durum === "acik" ? "#f59e0b" : "#94a3b8";
+              const ad = k.durum === "birlesti" ? "birleşti" : k.durum === "acik" ? "onay bekliyor" : "bırakıldı";
+              return (
+                <li key={i} className="rounded-xl border border-card-border bg-card p-3.5 flex items-start gap-2.5">
+                  <Ikon className="h-4 w-4 mt-0.5 shrink-0" style={{ color: renk }} aria-hidden="true" />
+                  <div className="min-w-0">
+                    <p className="text-sm font-medium">{k.oneri}</p>
+                    <p className="text-xs text-muted-foreground mt-0.5">
+                      <span style={{ color: renk }}>{ad}</span>
+                      {k.pr ? <> · PR #{k.pr}</> : null}
+                      {k.neden ? <> · {k.neden}</> : null}
+                    </p>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </Bolum>
       )}
 

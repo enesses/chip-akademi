@@ -133,6 +133,62 @@ git push origin HEAD:main
 dışarıda bırakır; yayın kopyası `docs/index.html`'dir (GitHub Pages açıksa site
 kendiliğinden güncellenir).
 
+## 6a. Önerileri uygula (en fazla 2)
+
+Kullanıcı istedi: öneriler bulunduktan sonra otomasyon bunları kendisi
+uygulasın; **bütün testler geçerse** kendisi birleştirsin. Kurallar:
+
+- Bugünkü önerilerden **en fazla 2** tane seç: küçük, kendi içinde tamam,
+  `src/` altında kalan ve veri uydurmayı gerektirmeyenler. Doğrulayamadığın
+  bir fiyatı/haberi/özelliği eklemeyi gerektiren öneriyi seçme.
+- Bağımlılık (`package.json`, `package-lock.json`), otomasyonun kendi
+  betikleri (`otomasyon/`), `.github/`, derleme ayarları ve `docs/` **korunur**:
+  bunlara dokunan değişiklik asla kendiliğinden birleştirilmez.
+
+Her öneri için ayrı ayrı:
+
+```bash
+git fetch origin main
+git checkout -b otomasyon/oneri-<tarih>-<n> origin/main
+# … öneriyi uygula (yalnızca gereken dosyalar) …
+node otomasyon/oneri-uygula.mjs denetle      # çıkış 0 = uygun, 2 = uygun değil
+```
+
+`denetle` sırayla: korunan dosya ve boyut sınırı (en çok 10 dosya / 400
+satır) → `vite build` → tek dosya derlemesi → gerçek Chromium arayüz testi →
+güvenlik taraması. Çıktıdaki `nedenler` listesine bak.
+
+- **Uygun (çıkış 0):** commit et, dalı it, PR aç, **squash** ile birleştir:
+  ```bash
+  git add -A && git commit -m "Öneri: <başlık>"
+  git push -u origin HEAD
+  gh pr create --base main --title "Öneri: <başlık>" --body "<neden + denetim sonucu>"
+  gh pr merge --squash --delete-branch
+  ```
+  `gh` yoksa aynı işi GitHub API'siyle yap (`PUT /repos/{o}/{r}/pulls/{n}/merge`,
+  `merge_method: squash`). Birleşmeden önce `git show --stat HEAD` ile commit'in
+  gerçekten değişikliği içerdiğini kontrol et.
+- **Yalnızca korunan dosya ya da sınır yüzünden uygun değil, testler geçiyor:**
+  PR'ı aç ama **birleştirme**; kullanıcı onaylar.
+- **Testler/derleme kırıldı:** dalı itme, değişikliği bırak.
+
+Her denemeden sonra **`main`'e dön** ve günlüğe yaz (dalda yazma):
+
+```bash
+git checkout main && git pull -q --rebase origin main
+node otomasyon/oneri-uygula.mjs kaydet --oneri "<başlık>" --durum birlesti|acik|vazgecildi \
+  [--pr <no>] [--dal <dal>] [--ozet "<ne değişti, tek cümle>"] [--neden "<neden bırakıldı/bekliyor>"]
+```
+
+Bitince raporu ve yayın kopyasını yenile, sonra kaydet:
+
+```bash
+node otomasyon/orkestrator.mjs rapor
+git add -A && git commit -m "Otomasyon: <tarih> — uygulanan öneriler" && git push origin HEAD:main
+```
+
+Uygun öneri yoksa adımı atla ve rapora "uygulanacak uygun öneri yoktu: <neden>" yaz.
+
 ## 6b. claude.ai yayınını güncelle
 
 Kullanıcı uygulamayı claude.ai'daki kalıcı bağlantıdan açıyor; her sohbetten
@@ -162,7 +218,7 @@ yine gönder. Uygulama o gün dünkü sürümüyle açılır.
 Son mesajı Türkçe, kısa yaz:
 - Yenilenen veriler (fiyat: kaç model güncellendi, en çok artan/düşen; Bugün: puan ve günün teması).
 - Bulunan hatalar ve ne yapıldığı (düzeltildi + PR bağlantısı / yalnızca raporlandı).
-- Geliştirme önerileri (başlıklar).
+- Geliştirme önerileri (başlıklar) ve 6a'da uygulananlar: birleşti (PR bağlantısı) / onay bekliyor / bırakıldı ve nedeni.
 - claude.ai yayınının durumu: güncellendiyse sürüm numarası, güncellenemediyse nedeni.
 - Güncel `chip-akademi.html` dosyasını gönder (`SendUserFile`; dosya kökte, derleme üretir).
 

@@ -10,7 +10,7 @@
 import {
   Microchip, Cpu, MemoryStick, Smartphone, GitCompareArrows, BadgeDollarSign,
   GraduationCap, ListChecks, Library, NotebookPen,
-  PencilRuler, LayoutGrid, Newspaper, Workflow,
+  PencilRuler, LayoutGrid, Newspaper, Workflow, CalendarRange,
 } from "lucide-react";
 
 export const GRUPLAR = [
@@ -82,6 +82,9 @@ export const GRUPLAR = [
       { id: "otomasyon", ad: "Otomasyon", yol: "/otomasyon", ikon: Workflow,
         aciklama: "Her sabahki veri güncellemesi ve raporu",
         anahtar: "rapor güncelleme güvenlik öneri" },
+      { id: "haftalik", ad: "Haftalık rapor", yol: "/haftalik", ikon: CalendarRange,
+        aciklama: "Haftanın yenilikleri, uygulanan öneriler, fiyat hareketi",
+        anahtar: "hafta özet yenilik değişiklik rapor pazartesi" },
     ],
   },
 ];

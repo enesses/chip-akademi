@@ -19,6 +19,7 @@ import Designs from "@/pages/Designs";
 import Compare from "@/pages/Compare";
 import Ic from "@/pages/Ic";
 import IcDetail from "@/pages/IcDetail";
+import Haftalik from "@/pages/Haftalik";
 import AramaPaleti from "@/components/nav/AramaPaleti";
 import MobilMenu from "@/components/nav/MobilMenu";
 
@@ -45,6 +46,7 @@ export default function App() {
             <Route path="/fiyatlar" component={Prices} />
             <Route path="/bugun" component={Bugun} />
             <Route path="/otomasyon" component={Otomasyon} />
+            <Route path="/haftalik" component={Haftalik} />
             <Route path="/sozluk" component={Glossary} />
             <Route path="/notlar" component={Notes} />
             <Route path="/sinav" component={Exam} />
