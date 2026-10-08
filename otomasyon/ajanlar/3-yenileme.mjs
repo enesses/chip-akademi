@@ -52,7 +52,17 @@ const fiyatTarih = JSON.parse(fs.readFileSync(fiyatDosya, "utf-8")).kaynak.cekil
 if (son.fiyat?.ok) not("Fiyat verisi", "ok", `bu çalıştırmada güncellendi — ${son.fiyat.detay}`);
 else if (son.fiyat && !son.fiyat.ok) not("Fiyat verisi", "hata", `gelen veri reddedildi: ${son.fiyat.detay} (mevcut veri ${fiyatTarih})`);
 else if (fiyatTarih === bugunStr) not("Fiyat verisi", "atlandı", "bu çalıştırmada fiyat girdisi gelmedi; mevcut veri bugün daha önce işlenmiş");
-else not("Fiyat verisi", "hata", `güncellenmedi — son veri ${fiyatTarih}. otomasyon/gelen/fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)`);
+else {
+  // Görev kaynağın neden okunamadığını gelen/durum.json ile bildirebilir. İzin
+  // engeli dış bir kısıttır (uygulama hatası değil): sarı uyarı, nedeniyle.
+  const kd = son.kaynak?.durum?.fiyat;
+  if (kd?.durum === "izin-engeli")
+    not("Fiyat verisi", "uyari", `izin engeli — kaynak sayfa okumaya izin vermedi, veri uydurulmadı (son veri ${fiyatTarih})${kd.not ? `. ${kd.not}` : ""}`);
+  else if (kd?.durum === "okunamadi" || kd?.durum === "yetersiz")
+    not("Fiyat verisi", "hata", `güncellenmedi — son veri ${fiyatTarih}. Kaynak ${kd.durum === "yetersiz" ? "eksik okundu (30 satırın altında)" : "okunamadı"}${kd.not ? `: ${kd.not}` : ""}`);
+  else
+    not("Fiyat verisi", "hata", `güncellenmedi — son veri ${fiyatTarih}. otomasyon/gelen/fiyatlar.json gelmedi ve neden bildirilmedi (gelen/durum.json yok)`);
+}
 if (son.fiyat?.supheli?.length) not("Şüpheli fiyat", "uyari", `${son.fiyat.supheli.join("; ")} — tek seferde >%50 oynama, yazılmadı; elle kontrol et, doğruysa gelen/fiyatlar.json'daki "dogrulanan" listesine ekle`);
 if (son.fiyat?.elleDogrulanan?.length) not("Elle doğrulanan fiyat", "ok", `${son.fiyat.elleDogrulanan.join("; ")} — >%50 oynama ikinci okumayla doğrulandı, yazıldı`);
 if (son.bellek) not("Bellek fiyatları", son.bellek.ok ? "ok" : "hata", son.bellek.detay);

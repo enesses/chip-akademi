@@ -6,7 +6,7 @@ import { chips } from "@/data/chips";
 import { getChipType } from "@/data/blocks";
 import { scoreChip, CLASS_LABELS, genelPuan, verimlilikPuani, maliyetPuani } from "@/lib/chipScore";
 import { analyze } from "@/lib/chipDesign";
-import { GAP_METRICS, metricsFrom } from "@/lib/advisor";
+import { GAP_METRICS, metricsFrom, findGaps } from "@/lib/advisor";
 import { listDesigns } from "@/lib/designs";
 import { isMultiDie, parseArea, parseTransistors, parseWatts } from "@/lib/specDecoder";
 import { categoryLabels, cn, imageUrl, manufacturerColors } from "@/lib/utils";
@@ -339,6 +339,8 @@ export default function Compare() {
             </>
           )}
 
+          {tasarimlar.length >= 2 && <GeriKalmaPaneli tasarimlar={tasarimlar} />}
+
           {cipler.length > 0 && (
             <>
               <h2 className="font-display text-lg font-bold mb-3">Tüm spesifikasyonlar</h2>
@@ -365,5 +367,54 @@ export default function Compare() {
         </>
       )}
     </div>
+  );
+}
+
+/**
+ * "Nerede geride kaldın?" — her tasarım için, karşılaştırmadaki diğer tasarımların
+ * en iyisine göre en büyük açıklar (advisor.findGaps). Açık yüzdesi rakibin
+ * değerine göre: %35 ve üstü kırmızı, %15 ve üstü sarı.
+ */
+function GeriKalmaPaneli({ tasarimlar }) {
+  const analiz = tasarimlar.map((t) => ({
+    t,
+    acik: findGaps(t, tasarimlar.filter((x) => x.key !== t.key)).slice(0, 4),
+  }));
+  const renk = (d) => (d >= 35 ? "bg-rose-400" : d >= 15 ? "bg-amber-400" : "bg-muted-foreground/50");
+  return (
+    <section className="mb-10" aria-labelledby="geri-kalma">
+      <h2 id="geri-kalma" className="font-display text-lg font-bold mb-1">Nerede geride kaldın?</h2>
+      <p className="text-xs text-muted-foreground mb-3">
+        Her tasarımın, bu karşılaştırmadaki en iyi rakibine göre en büyük dört açığı.
+      </p>
+      <div className="grid md:grid-cols-2 gap-3">
+        {analiz.map(({ t, acik }) => (
+          <div key={t.key} className="rounded-xl border border-card-border bg-card p-4 min-w-0">
+            <p className="font-medium text-sm truncate" style={{ color: t.renk }}>{t.name}</p>
+            <p className="text-[11px] text-muted-foreground mb-3">{t.alt}</p>
+            {acik.length === 0 ? (
+              <p className="text-sm text-emerald-400">Hiçbir ölçütte geride değil.</p>
+            ) : (
+              <ul className="space-y-2.5">
+                {acik.map((g) => (
+                  <li key={g.key}>
+                    <div className="flex items-baseline justify-between gap-2 text-xs">
+                      <span>{g.label}</span>
+                      <span className="tabular-nums text-muted-foreground whitespace-nowrap">%{g.deficit} geride</span>
+                    </div>
+                    <div className="h-1.5 rounded-full bg-muted/40 mt-1 overflow-hidden">
+                      <div className={cn("h-full rounded-full", renk(g.deficit))} style={{ width: `${Math.min(100, g.deficit)}%` }} />
+                    </div>
+                    <p className="text-[11px] text-muted-foreground mt-1">
+                      Sen: {g.mine} · {g.rivalName}: {g.rival}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }

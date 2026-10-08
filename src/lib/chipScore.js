@@ -539,11 +539,25 @@ export function rankInClass(chip) {
 // ─── Fiyat verisi ─────────────────────────────────────────────────────────────
 
 /** chip_id → { usdSaat, vramGb } — fiyatı bilinmeyen chipte null döner. */
+/*
+ * Kiralama fiyatı GPU başınadır (getdeploying "/GPU/hr"). Bazı katalog kayıtları
+ * birden çok GPU'yu tek birim olarak anlatır — GB200 süper chip = 2 Blackwell GPU
+ * + 1 Grace CPU ve spec'leri ("20 PFLOPS, 2 GPU toplamı") bu birime göredir.
+ * Fiyat birime çevrilmezse $/performans yarıya iner ve maliyet puanı şişer.
+ * Kayıttaki `kiralama_birimi.gpu_sayisi` bunu düzeltir (yoksa 1).
+ */
+const GPU_BIRIM = new Map(chips.map((c) => [c.id, c.kiralama_birimi?.gpu_sayisi ?? 1]));
 const FIYAT_MAP = (() => {
   const m = new Map();
   for (const row of kiralamaRaw.fiyatlar ?? []) {
     if (row.chip_id && row.usd_saat != null) {
-      m.set(row.chip_id, { usdSaat: row.usd_saat, vramGb: row.vram_gb ?? null });
+      const gpuSayisi = GPU_BIRIM.get(row.chip_id) ?? 1;
+      m.set(row.chip_id, {
+        usdSaat: parseFloat((row.usd_saat * gpuSayisi).toFixed(2)),
+        usdSaatGpu: row.usd_saat,
+        gpuSayisi,
+        vramGb: row.vram_gb ?? null,
+      });
     }
   }
   return m;
@@ -717,7 +731,7 @@ export function maliyetPuani(chip) {
   const puan = aralik > 0
     ? Math.round(Math.max(0, Math.min(1, (max - hammM) / aralik)) * 100)
     : 50;
-  const r = { puan, usdSaat: fiyat.usdSaat, hammMaliyet: parseFloat(hammM.toFixed(6)), neden: null };
+  const r = { puan, usdSaat: fiyat.usdSaat, usdSaatGpu: fiyat.usdSaatGpu, gpuSayisi: fiyat.gpuSayisi, hammMaliyet: parseFloat(hammM.toFixed(6)), neden: null };
   _maliyetCache.set(chip.id, r);
   return r;
 }
@@ -774,6 +788,7 @@ export function genelPuan(chip) {
     verimlilikPuan: verimlilik.puan,
     maliyetPuan: maliyet.puan,
     usdSaat: maliyet.usdSaat,
+    gpuSayisi: maliyet.gpuSayisi ?? 1,
     neden: puan == null ? "Yeterli veri yok — genel puan hesaplanamıyor." : null,
   };
   _genelCache.set(chip.id, r);

@@ -190,7 +190,7 @@ export default function ChipDetail() {
         <PuanKarti
           ikon={DollarSign}
           baslik="Maliyet puanı"
-          altyazi={m.usdSaat != null ? `$${m.usdSaat}/saat` : undefined}
+          altyazi={m.usdSaat != null ? (m.gpuSayisi > 1 ? `$${m.usdSaat}/saat (${m.gpuSayisi} GPU × $${m.usdSaatGpu})` : `$${m.usdSaat}/saat`) : undefined}
           puan={m.puan}
           aciklama={m.neden}
         >

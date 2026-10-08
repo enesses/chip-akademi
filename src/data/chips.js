@@ -2444,6 +2444,10 @@ export const chips = [
     "die_size": "Çoklu die paketi — 4 GPU die + 1 CPU die",
     "image": "blackwell-b200.png",
     "image_credit": "Temsilî görsel — Blackwell ailesi",
+    "kiralama_birimi": {
+      "gpu_sayisi": 2,
+      "not": "Kiralama fiyatları GPU başına; bu kayıt 2 Blackwell GPU'lu süper chip birimini anlatıyor."
+    },
     "key_specs": {
       "architecture": "Grace Blackwell (1 Grace CPU + 2 Blackwell GPU)",
       "cpu": "72 çekirdekli Arm Neoverse V2 (Grace)",

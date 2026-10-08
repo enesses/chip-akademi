@@ -1,7 +1,24 @@
-import { ExternalLink, MemoryStick } from "lucide-react";
+import { ExternalLink, MemoryStick, Clock } from "lucide-react";
 import bellek from "@/data/bellek_fiyat.json";
 
 const aralik = (g) => (g.alt === g.ust ? `+%${g.alt}` : `+%${g.alt}–${g.ust}`);
+/**
+ * Gösterge eskidi mi? Dönemi bitmiş bir çeyrek tahmini ("3Ç 2026", bugün 4Ç) ya da
+ * 60 günden eski bir açıklama sayfada işaretlenir; yeni tahmin yayımlanmadıysa
+ * eski değer gizlenmez ama güncel gibi de görünmez.
+ */
+function eskilik(g) {
+  const bugun = new Date();
+  const m = /^(\d)Ç (\d{4})$/.exec(g.donem || "");
+  if (g.olcu === "çeyreklik" && m) {
+    const ceyrekSonu = new Date(Date.UTC(Number(m[2]), Number(m[1]) * 3, 0, 23, 59));
+    if (ceyrekSonu < bugun) return `${g.donem} bitti; yeni tahmin yayımlanmadı`;
+  }
+  const gun = Math.floor((bugun - new Date(`${g.tarih}T12:00:00Z`)) / 86400000);
+  if (gun > 60) return `${gun} gün önce açıklandı`;
+  return null;
+}
+
 const tarihTR = (t) => new Date(`${t}T12:00:00Z`).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" });
 
 /** Çeyreklik göstergeleri aynı ölçekte (0–25%) çizer; yıllık HBM ayrı kartta, çünkü ölçeği bambaşka. */
@@ -24,10 +41,19 @@ export default function BellekFiyatlari() {
         <div className="rounded-2xl border border-card-border bg-card p-5">
           <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground mb-4">Sözleşme fiyatı, bir önceki çeyreğe göre</p>
           <div className="space-y-4">
-            {ceyreklik.map((g) => (
-              <div key={g.urun}>
+            {ceyreklik.map((g) => {
+              const eski = eskilik(g);
+              return (
+              <div key={g.urun} className={eski ? "opacity-70" : undefined}>
                 <div className="flex items-baseline justify-between gap-3 mb-1.5">
-                  <span className="text-sm">{g.urun} <span className="text-muted-foreground text-xs">· {g.donem}</span></span>
+                  <span className="text-sm">
+                    {g.urun} <span className="text-muted-foreground text-xs">· {g.donem}</span>
+                    {eski && (
+                      <span className="ml-2 inline-flex items-center gap-1 rounded-full border border-amber-400/40 px-1.5 py-0.5 text-[10px] text-amber-300 align-middle">
+                        <Clock className="h-2.5 w-2.5" aria-hidden="true" />Eski: {eski}
+                      </span>
+                    )}
+                  </span>
                   <span className="font-display font-bold text-red-300 whitespace-nowrap">{aralik(g)}</span>
                 </div>
                 <div className="relative h-2 rounded-full bg-muted/40" role="img" aria-label={`${g.urun}: ${aralik(g)}`}>
@@ -38,7 +64,8 @@ export default function BellekFiyatlari() {
                   {g.kaynak} · {tarihTR(g.tarih)}<ExternalLink className="h-2.5 w-2.5" />
                 </a>
               </div>
-            ))}
+              );
+            })}
           </div>
           <div className="flex justify-between font-mono text-[9px] text-muted-foreground mt-3 pt-2 border-t border-border/50">
             <span>%0</span><span>%{Math.round(olcek / 2)}</span><span>%{olcek}</span>
