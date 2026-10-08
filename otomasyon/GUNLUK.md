@@ -166,7 +166,7 @@ güvenlik taraması. Çıktıdaki `nedenler` listesine bak.
   gh api repos/enesses/chip-akademi/pulls -f base=main -f head=<dal> \
      -f title="Öneri: <başlık>" -f body="<neden + denetim sonucu>" --jq .number
   gh api -X PUT repos/enesses/chip-akademi/pulls/<no>/merge -f merge_method=squash
-  git push origin --delete <dal>
+  # Dal silme bu oturumlarda izinli değil (403); dal kalabilir, sorun değil.
   ``` Birleşmeden önce `git show --stat HEAD` ile commit'in
   gerçekten değişikliği içerdiğini kontrol et.
 - **Yalnızca korunan dosya ya da sınır yüzünden uygun değil, testler geçiyor:**
