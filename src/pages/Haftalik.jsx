@@ -102,9 +102,9 @@ export default function Haftalik() {
 
       <div className="container mx-auto px-4 pb-16 grid lg:grid-cols-5 gap-4">
         <div className="lg:col-span-3 grid gap-4 content-start">
-          <Kart baslik="Otomasyonun uyguladığı öneriler">
+          <Kart baslik="Uygulanan öneriler">
             {h.uygulanan.length === 0 ? (
-              <p className="text-sm text-muted-foreground">Bu hafta otomatik uygulanan öneri yok.</p>
+              <p className="text-sm text-muted-foreground">Bu hafta uygulanan öneri yok.</p>
             ) : (
               <ul className="grid gap-2">
                 {h.uygulanan.map((k, i) => {
@@ -115,7 +115,7 @@ export default function Haftalik() {
                       <div className="min-w-0 text-sm">
                         <p className="font-medium">{k.oneri}</p>
                         <p className="text-xs text-muted-foreground">
-                          {tarih(k.tarih)} · <span style={{ color: u.renk }}>{u.ad}</span>
+                          {tarih(k.tarih)} · <span style={{ color: u.renk }}>{u.ad}</span>{k.kim === "elle" ? " · sohbette elle" : " · otomasyon"}
                           {k.pr ? ` · PR #${k.pr}` : ""}{k.neden ? ` · ${k.neden}` : ""}
                         </p>
                       </div>

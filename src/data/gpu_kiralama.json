@@ -201,7 +201,7 @@
         "onceki_usd": 0.86,
         "degisim_pct": 20.9,
         "saglayici": 14,
-        "chip_id": null,
+        "chip_id": "nvidia-ada-rtx-6000",
         "url": "https://getdeploying.com/gpus/nvidia-rtx-6000-ada"
       },
       {
@@ -349,7 +349,7 @@
       "onceki_usd": 2.19,
       "degisim_pct": 0.5,
       "saglayici": 51,
-      "chip_id": null,
+      "chip_id": "nvidia-blackwell-rtx-pro-6000",
       "url": "https://getdeploying.com/gpus/nvidia-rtx-pro-6000"
     },
     {
@@ -437,7 +437,7 @@
       "onceki_usd": 0.86,
       "degisim_pct": 20.9,
       "saglayici": 14,
-      "chip_id": null,
+      "chip_id": "nvidia-ada-rtx-6000",
       "url": "https://getdeploying.com/gpus/nvidia-rtx-6000-ada"
     },
     {
@@ -459,7 +459,7 @@
       "onceki_usd": 0.57,
       "degisim_pct": 0,
       "saglayici": 22,
-      "chip_id": null,
+      "chip_id": "nvidia-ampere-rtx-a6000",
       "url": "https://getdeploying.com/gpus/nvidia-a6000"
     },
     {

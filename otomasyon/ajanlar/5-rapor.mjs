@@ -108,9 +108,12 @@ try {
 } catch {}
 
 /* Otomasyonun bugün kendi uyguladığı öneriler (oneri-uygula.mjs günlüğü) */
-let uygulanan = [];
+let uygulanan = [], uygulananSon = [];
 try {
-  uygulanan = (JSON.parse(fs.readFileSync(path.join(KOK, "otomasyon", "uygulanan.json"), "utf-8")).kayitlar || []).filter((k) => k.tarih === TARIH);
+  const kayitlar = JSON.parse(fs.readFileSync(path.join(KOK, "otomasyon", "uygulanan.json"), "utf-8")).kayitlar || [];
+  uygulanan = kayitlar.filter((k) => k.tarih === TARIH);
+  // Son 14 günün kayıtları: sayfa önerinin uygulanıp uygulanmadığını bunlardan işaretler.
+  uygulananSon = kayitlar.filter((k) => gunFarki(k.tarih) <= 14).map(({ oneri, durum, pr, tarih, kim }) => ({ oneri, durum, pr, tarih, kim }));
 } catch {}
 for (const k of uygulanan.filter((k) => k.durum === "acik"))
   dikkat.push({ seviye: "dikkat", metin: `Öneri onay bekliyor: ${k.oneri}${k.pr ? ` (PR #${k.pr})` : ""} — ${k.neden || "korunan dosyaya dokunuyor"}` });
@@ -243,6 +246,7 @@ const uygulamaVerisi = {
   dikkat,
   oneriler,
   uygulanan,
+  uygulananSon,
   guvenlik: g
     ? {
         durum: g.durum,

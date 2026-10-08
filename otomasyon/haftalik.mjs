@@ -135,7 +135,8 @@ const say = {
   temizGun: calisma.filter((c) => c.durum === "temiz").length,
   kritikGun: calisma.filter((c) => c.durum === "kritik").length,
   oneri: onerilenBasliklar.size,
-  uygulananBirlesen: uygulanan.filter((k) => k.durum === "birlesti").length,
+  uygulananBirlesen: uygulanan.filter((k) => k.durum === "birlesti" && k.kim !== "elle").length,
+  elleUygulanan: uygulanan.filter((k) => k.durum === "birlesti" && k.kim === "elle").length,
   uygulananAcik: uygulanan.filter((k) => k.durum === "acik").length,
   uygulananVazgecilen: uygulanan.filter((k) => k.durum === "vazgecildi").length,
   degisiklik: degisiklikler.length,
@@ -145,7 +146,9 @@ const say = {
 const ozet = [];
 ozet.push(`Otomasyon ${gunler.length} günlük dönemde ${say.calisanGun} gün çalıştı: ${say.temizGun} gün temiz${say.kritikGun ? `, ${say.kritikGun} gün kritik uyarıyla` : ""} bitti.`);
 if (say.degisiklik) ozet.push(`Uygulamaya ${say.degisiklik} değişiklik girdi${say.uygulananBirlesen ? `; bunların ${say.uygulananBirlesen} tanesi otomasyonun kendi uyguladığı geliştirme önerisi` : ""}.`);
-if (say.oneri) ozet.push(`Hafta boyunca ${say.oneri} farklı geliştirme önerisi yazıldı${uygulanan.length ? `, ${uygulanan.length} tanesi denendi (${say.uygulananBirlesen} birleşti, ${say.uygulananAcik} onay bekliyor, ${say.uygulananVazgecilen} bırakıldı)` : ""}.`);
+if (say.elleUygulanan) ozet.push(`${say.elleUygulanan} geliştirme önerisi sohbette elle uygulandı.`);
+const otoDenenen = uygulanan.filter((k) => k.kim !== "elle").length;
+if (say.oneri) ozet.push(`Hafta boyunca ${say.oneri} farklı geliştirme önerisi yazıldı${otoDenenen ? `; otomasyon ${otoDenenen} tanesini denedi (${say.uygulananBirlesen} birleşti, ${say.uygulananAcik} onay bekliyor, ${say.uygulananVazgecilen} bırakıldı)` : ""}.`);
 if (fiyat.h100) ozet.push(`H100 kiralama medyanı ${fiyat.h100.once} → ${fiyat.h100.sonra} $/saat (%${fiyat.h100.degisim > 0 ? "+" : ""}${fiyat.h100.degisim}).`);
 if (fiyat.izinEngeliGunu) ozet.push(`Fiyat sayfası ${fiyat.izinEngeliGunu} gün izin engeline takıldı; o günlerde fiyat uydurulmadı, eski veri korundu.`);
 if (say.bugunOrtalama != null) ozet.push(`Bugün sayfasının ortalama pozitiflik puanı ${say.bugunOrtalama}/100${say.tekrarHaber ? `; ${say.tekrarHaber} tekrar eden haber puana katılmadı` : ""}.`);
@@ -169,8 +172,8 @@ const md = [
   ...ozet.map((s) => `- ${s}`), "",
   "## Bu hafta uygulamaya girenler", "",
   ...(degisiklikler.length ? degisiklikler.map((d) => `- ${trTarih(d.tarih)}: ${d.baslik}${d.pr ? ` ([#${d.pr}](${d.url}))` : ""}`) : ["- Kod değişikliği yok."]), "",
-  "## Otomasyonun uyguladığı öneriler", "",
-  ...(uygulanan.length ? uygulanan.map((k) => `- ${trTarih(k.tarih)} · **${k.durum === "birlesti" ? "birleşti" : k.durum === "acik" ? "onay bekliyor" : "bırakıldı"}** · ${k.oneri}${k.pr ? ` ([#${k.pr}](${depo}/pull/${k.pr}))` : ""}${k.neden ? ` — ${k.neden}` : ""}`) : ["- Bu hafta otomatik uygulanan öneri yok."]), "",
+  "## Uygulanan öneriler", "",
+  ...(uygulanan.length ? uygulanan.map((k) => `- ${trTarih(k.tarih)} · **${k.durum === "birlesti" ? "birleşti" : k.durum === "acik" ? "onay bekliyor" : "bırakıldı"}**${k.kim === "elle" ? " (sohbette elle)" : ""} · ${k.oneri}${k.pr ? ` ([#${k.pr}](${depo}/pull/${k.pr}))` : ""}${k.neden ? ` — ${k.neden}` : ""}`) : ["- Bu hafta uygulanan öneri yok."]), "",
   "## Günler", "",
   "| Gün | Durum | Fiyat | Bugün puanı |", "|---|---|---|---|",
   ...gunler.map((d, i) => `| ${trTarih(d)} | ${calisma[i].durum} | ${calisma[i].fiyat ?? "—"} | ${bugunSerisi[i].puan ?? "—"} |`), "",

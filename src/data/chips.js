@@ -2205,6 +2205,148 @@ export const chips = [
     "tagline": "PAM4 denemesi — ve neden GDDR7 daha ölçülü bir yol seçti"
   },
   {
+    "id": "nvidia-blackwell-rtx-pro-6000",
+    "name": "NVIDIA RTX PRO 6000 Blackwell",
+    "manufacturer": "NVIDIA",
+    "category": "GPU",
+    "release_year": 2025,
+    "process_node": "TSMC 4N",
+    "transistor_count": "Kaynakta belirtilmemiş",
+    "die_size": "Kaynakta belirtilmemiş",
+    "image": "rtx-5090.png",
+    "image_credit": "Temsilî görsel — aynı GB202 yongasını kullanan RTX 5090",
+    "key_specs": {
+      "architecture": "Blackwell",
+      "cuda_cores": 24064,
+      "tensor_cores": "752 adet (5. nesil)",
+      "rt_cores": "188 adet (4. nesil)",
+      "vram": "96 GB GDDR7 ECC",
+      "memory_bandwidth": "1597 GB/s",
+      "memory_interface": "512-bit",
+      "fp32_tflops": "120 TFLOPS (tepe)",
+      "fp8_tflops": "2 PFLOPS (tepe)",
+      "fp4_tflops": "4 PFLOPS (tepe)",
+      "tdp": "600W (450W'a sınırlanabilir)",
+      "form_factor": "PCIe 5.0 x16, çift yuva",
+      "mig": "En fazla 4 bölüm × 24 GB"
+    },
+    "architecture_highlights": [
+      "96 GB GDDR7: tek kartta HBM'li H100'den (80 GB) fazla bellek, ama bant genişliği yarısından az",
+      "5. nesil Tensor çekirdekleri FP4 destekliyor; çıkarımda düşük hassasiyetle verim katlanıyor",
+      "MIG ile kart dört bağımsız 24 GB'lık GPU'ya bölünebiliyor — kiralamada birden çok küçük iş tek kartta",
+      "Kiralama sitelerinde en çok listelenen kartlardan: getdeploying'de 50'den fazla sağlayıcı"
+    ],
+    "use_cases": [
+      "Orta-büyük dil modeli çıkarımı (tek kartta 70B sınıfı, nicemlenmiş)",
+      "Görüntü/video üretimi",
+      "Render ve dijital ikiz iş yükleri"
+    ],
+    "die_regions": [],
+    "comparison_notes": "L40S'nin halefi gibi konumlanıyor: bellek iki katı (96 GB), bant genişliği ~1,8 katı. H100'e göre bant genişliği düşük, bellek fazla; büyük model sığdırmak önemliyse avantajlı.",
+    "is_announced": true,
+    "rumored": false,
+    "tagline": "96 GB GDDR7 — HBM'siz kartta en çok bellek",
+    "kaynaklar": [
+      {
+        "ad": "Lenovo Press — ThinkSystem NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "url": "https://lenovopress.lenovo.com/lp2263-thinksystem-nvidia-rtx-pro-6000-blackwell-server-edition-pcie-gen5-gpu"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-ada-rtx-6000",
+    "name": "NVIDIA RTX 6000 Ada Generation",
+    "manufacturer": "NVIDIA",
+    "category": "GPU",
+    "release_year": 2022,
+    "process_node": "TSMC 4N",
+    "transistor_count": "Kaynakta belirtilmemiş",
+    "die_size": "Kaynakta belirtilmemiş",
+    "image": null,
+    "image_credit": null,
+    "key_specs": {
+      "architecture": "Ada Lovelace",
+      "cuda_cores": 18176,
+      "tensor_cores": "568 adet (4. nesil)",
+      "rt_cores": "142 adet (3. nesil)",
+      "vram": "48 GB GDDR6 ECC",
+      "memory_bandwidth": "960 GB/s",
+      "memory_interface": "384-bit",
+      "fp32_tflops": "91.1 TFLOPS (tepe)",
+      "fp8_tflops": "1457 TFLOPS (tepe, seyrek)",
+      "tdp": "300W",
+      "form_factor": "PCIe 4.0 x16, çift yuva"
+    },
+    "architecture_highlights": [
+      "L40S ile aynı çekirdek sayısı (18.176 CUDA), ama iş istasyonu kartı olarak 300 W'a sınırlı",
+      "48 GB ECC'li GDDR6; 384-bit arayüzle 960 GB/s",
+      "FP8 destekli 4. nesil Tensor çekirdekleri — Ada'nın veri merkezi kartlarıyla aynı nesil"
+    ],
+    "use_cases": [
+      "İş istasyonunda model ince ayarı ve çıkarım",
+      "3B render ve görselleştirme",
+      "Bulutta uygun fiyatlı 48 GB'lık kart"
+    ],
+    "die_regions": [],
+    "comparison_notes": "L40S'nin iş istasyonu karşılığı: aynı çekirdek, daha düşük güç sınırı. Yerini Blackwell tabanlı RTX PRO 6000 aldı; Lenovo kartı pazarlamadan çekti.",
+    "is_announced": true,
+    "rumored": false,
+    "tagline": "Ada nesli iş istasyonu amiral gemisi, 48 GB",
+    "kaynaklar": [
+      {
+        "ad": "Lenovo Press — NVIDIA RTX 6000 Ada Generation (LP1940)",
+        "url": "https://lenovopress.lenovo.com/LP1940"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-ampere-rtx-a6000",
+    "name": "NVIDIA RTX A6000",
+    "manufacturer": "NVIDIA",
+    "category": "GPU",
+    "release_year": 2020,
+    "process_node": "Samsung 8nm",
+    "transistor_count": "Kaynakta belirtilmemiş",
+    "die_size": "Kaynakta belirtilmemiş",
+    "image": null,
+    "image_credit": null,
+    "key_specs": {
+      "architecture": "Ampere",
+      "cuda_cores": 10752,
+      "tensor_cores": "336 adet (3. nesil)",
+      "rt_cores": "84 adet (2. nesil)",
+      "vram": "48 GB GDDR6 ECC",
+      "memory_bandwidth": "768 GB/s",
+      "memory_interface": "384-bit",
+      "fp32_tflops": "38.7 TFLOPS (tepe)",
+      "tensor_perf": "309.7 TFLOPS (seyrek; hassasiyet belirtilmemiş)",
+      "tdp": "300W",
+      "form_factor": "PCIe çift yuva",
+      "nvlink": "2 kart, 112,5 GB/s, birleşik 96 GB"
+    },
+    "architecture_highlights": [
+      "48 GB'lık ilk yaygın iş istasyonu kartlarından; NVLink köprüsüyle iki kart 96 GB'lık bellek havuzu oluşturuyor",
+      "FP8 desteği yok (Ampere): yeni nesil çıkarım hassasiyetlerinden yararlanamıyor",
+      "Ucuz kiralanabilen 48 GB: bellek gerektiren ama hız kritik olmayan işler için hâlâ popüler"
+    ],
+    "use_cases": [
+      "Bütçe dostu büyük bellekli deneyler",
+      "Render ve CAD",
+      "Küçük model eğitimi"
+    ],
+    "die_regions": [],
+    "comparison_notes": "Saatlik kirası RTX 6000 Ada'nın yaklaşık yarısı; bant genişliği %20 düşük, FP8 yok. Bellek sığdırmak için ucuz seçenek.",
+    "is_announced": true,
+    "rumored": false,
+    "tagline": "Ampere nesli 48 GB — hâlâ en ucuz 48 GB'lık kiralık kart",
+    "kaynaklar": [
+      {
+        "ad": "NVIDIA RTX A6000 veri sayfası",
+        "url": "https://www.nvidia.com/content/dam/en-zz/Solutions/products/workstations/nvidia-rtx-a6000-datasheet.pdf"
+      }
+    ]
+  },
+  {
     "id": "nvidia-ada-l40s",
     "name": "NVIDIA L40S",
     "manufacturer": "NVIDIA",
