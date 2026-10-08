@@ -12,6 +12,10 @@
  *   bugun.json     → src/data/bugun.json ile aynı şema (tarih, derlenme, ozet, puan, yontem, maddeler)
  *   bellek.json    → src/data/bellek_fiyat.json ile aynı şema (gostergeler, yigin, notlar) — haftalık
  *   oneriler.json  → { "tarih": "...", "oneriler": [{ "baslik", "neden", "etki": "yüksek|orta|düşük", "alan" }] }
+ *   durum.json     → { "fiyat": { "durum": "izin-engeli|okunamadi|yetersiz|ok", "not": "..." }, "endeks": …, "bellek": …, "bugun": … }
+ *                    Bir kaynak okunamadığında NEDENİNİ bildirir; rapor "izin engeli"ni "okunamadı"dan ayırır.
+ *   bugun.json'da isteğe bağlı "yaklasan": [{ "tarih": "YYYY-MM-DD", "baslik", "kaynak", "url" }] — doğrulanmış
+ *                    ileri tarihli olaylar (bilanço, lansman, konferans). Geçmiş tarihli olanlar atılır.
  *
  * Bu dosyaları her sabah Claude'un günlük görevi web'den toplayıp yazar
  * (bkz. otomasyon/GUNLUK.md). Ağ erişimi olan bir makinede başka bir bot da
@@ -49,6 +53,27 @@ const yaz = (f, v) => fs.writeFileSync(f, JSON.stringify(v, null, 2) + "\n", "ut
 function arsivle(ad, veri) {
   fs.mkdirSync(GECMIS, { recursive: true });
   yaz(path.join(GECMIS, `${ad}-${BUGUN}.json`), veri);
+}
+
+/* ------------------------------------------------------------ kaynak durumu */
+const durumGirdi = path.join(GELEN, "durum.json");
+if (fs.existsSync(durumGirdi)) {
+  try {
+    const d = oku(durumGirdi);
+    const GECERLI = ["izin-engeli", "okunamadi", "yetersiz", "ok"];
+    const temiz = {};
+    for (const k of ["fiyat", "endeks", "bellek", "bugun"]) {
+      const x = d[k];
+      if (!x) continue;
+      if (!GECERLI.includes(x.durum)) throw new Error(`geçersiz durum (${k}): ${x.durum}`);
+      temiz[k] = { durum: x.durum, not: String(x.not || "").slice(0, 300) };
+    }
+    arsivle("durum", d);
+    fs.rmSync(durumGirdi);
+    sonuc.kaynak = { ok: true, detay: Object.entries(temiz).map(([k, v]) => `${k}: ${v.durum}`).join(", ") || "boş", durum: temiz };
+  } catch (e) {
+    sonuc.kaynak = { ok: false, detay: e.message };
+  }
 }
 
 /* ------------------------------------------------------------ fiyatlar */
@@ -179,18 +204,52 @@ if (fs.existsSync(bugunGirdi)) {
       if (!(Number.isInteger(m.agirlik) && m.agirlik >= 1 && m.agirlik <= 3)) throw new Error(`geçersiz ağırlık: ${m.baslik}`);
       if (!/^https?:\/\//.test(m.url || "")) throw new Error(`kaynaksız madde: ${m.baslik}`);
     }
+    // Önceki iki günün arşiviyle karşılaştır: aynı bağlantı ya da aynı başlık
+    // tekrar geldiyse madde "tekrar" işaretlenir ve puana katılmaz — aynı haber
+    // iki gün üst üste oy vermesin.
+    const sade = (x) => String(x || "").toLocaleLowerCase("tr").replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+    const urlAnahtar = (u) => String(u || "").replace(/^https?:\/\/(www\.)?/, "").replace(/[?#].*$/, "").replace(/\/$/, "");
+    const onceki = fs.existsSync(GECMIS)
+      ? fs.readdirSync(GECMIS).filter((f) => /^bugun-\d{4}-\d{2}-\d{2}\.json$/.test(f) && f.slice(6, 16) < BUGUN).sort().slice(-2)
+      : [];
+    const eskiUrl = new Map(), eskiBaslik = new Map();
+    for (const f of onceki) {
+      try {
+        const g = oku(path.join(GECMIS, f));
+        for (const m of g.maddeler || []) { eskiUrl.set(urlAnahtar(m.url), g.tarih); eskiBaslik.set(sade(m.baslik), g.tarih); }
+      } catch {}
+    }
+    for (const m of v.maddeler) {
+      const t = eskiUrl.get(urlAnahtar(m.url)) || eskiBaslik.get(sade(m.baslik));
+      if (t) m.tekrar = t; else delete m.tekrar;
+    }
+    const yeniMaddeler = v.maddeler.filter((m) => !m.tekrar);
+    if (yeniMaddeler.length === 0) throw new Error("bütün maddeler önceki günlerin tekrarı");
+    const tekrarSayisi = v.maddeler.length - yeniMaddeler.length;
+
+    // Yaklaşan olaylar: isteğe bağlı; geçmiş tarihliler atılır, en fazla 8.
+    if (v.yaklasan != null) {
+      if (!Array.isArray(v.yaklasan)) throw new Error("yaklasan bir liste olmalı");
+      for (const o of v.yaklasan) {
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(o.tarih || "")) throw new Error(`tarihsiz olay: ${o.baslik ?? "?"}`);
+        if (!o.baslik || !o.kaynak) throw new Error(`eksik alanlı olay: ${o.baslik ?? "?"}`);
+        if (!/^https?:\/\//.test(o.url || "")) throw new Error(`kaynaksız olay: ${o.baslik}`);
+      }
+      v.yaklasan = v.yaklasan.filter((o) => o.tarih >= BUGUN).sort((a, b) => a.tarih.localeCompare(b.tarih)).slice(0, 8);
+    }
+
     // Puan formülden hesaplanır; girdideki sayı ne olursa olsun formül esastır.
-    const ta = v.maddeler.reduce((t, m) => t + m.agirlik, 0);
-    const ti = v.maddeler.reduce((t, m) => t + m.agirlik * isaret[m.kategori], 0);
+    const ta = yeniMaddeler.reduce((t, m) => t + m.agirlik, 0);
+    const ti = yeniMaddeler.reduce((t, m) => t + m.agirlik * isaret[m.kategori], 0);
     const deger = Math.round(50 + 50 * (ti / ta));
     v.puan = { ...v.puan, deger };
     const eski = oku(path.join(DATA, "bugun.json"));
     v.yontem = { ...eski.yontem, ...(v.yontem || {}),
-      hesap: `Σ ağırlık×işaret = ${ti >= 0 ? "+" : ""}${ti} · Σ ağırlık = ${ta} · Puan = 50 + 50 × ${(ti / ta).toFixed(2)} = ${deger}` };
+      hesap: `Σ ağırlık×işaret = ${ti >= 0 ? "+" : ""}${ti} · Σ ağırlık = ${ta} · Puan = 50 + 50 × ${(ti / ta).toFixed(2)} = ${deger}${tekrarSayisi ? ` (önceki günlerden tekrar eden ${tekrarSayisi} madde puana katılmadı)` : ""}` };
     yaz(path.join(DATA, "bugun.json"), v);
     arsivle("bugun", v);
     fs.rmSync(bugunGirdi);
-    sonuc.bugun = { ok: true, detay: `${v.maddeler.length} madde, puan ${deger}` };
+    sonuc.bugun = { ok: true, detay: `${v.maddeler.length} madde${tekrarSayisi ? ` (${tekrarSayisi} tekrar, puana katılmadı)` : ""}, puan ${deger}${v.yaklasan?.length ? `, ${v.yaklasan.length} yaklaşan olay` : ""}` };
   } catch (e) {
     sonuc.bugun = { ok: false, detay: e.message };
   }

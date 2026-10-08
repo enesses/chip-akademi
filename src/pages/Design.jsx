@@ -7,8 +7,8 @@ import DiePreview from "@/components/DiePreview";
 import { CHIP_TYPES, GRID_COLS, GRID_ROWS, NODES, getBlock, blocksForType } from "@/data/blocks";
 import { analyze, blockAt, canPlace } from "@/lib/chipDesign";
 import { FLOORPLAN_PARTS, placementHints } from "@/lib/floorplan";
-import { getDesign, saveDesign, updateDesign } from "@/lib/designs";
-import { ADVISORS, runAdvisor } from "@/lib/advisor";
+import { getDesign, saveDesign, updateDesign, listDesigns } from "@/lib/designs";
+import { ADVISORS, runAdvisor, beatsAfter } from "@/lib/advisor";
 import { cn } from "@/lib/utils";
 import { Wand2 } from "lucide-react";
 
@@ -300,6 +300,7 @@ export default function Design() {
                       ))}
                     </div>
                     <p className="text-xs">Puan: <span className="font-semibold">{advisorResult.startScore}</span> → <span className="font-semibold text-primary">{advisorResult.finalScore}</span></p>
+                    <GecilenTasarimlar sonuc={advisorResult} typeId={typeId} haricId={params?.id} />
                     <Button size="sm" className="w-full" onClick={applyAdvisor}>Öneriyi uygula</Button>
                   </>
                 )}
@@ -309,6 +310,26 @@ export default function Design() {
         </div>
       </section>
     </div>
+  );
+}
+/** Danışmanın önerisi uygulanırsa aynı türdeki kayıtlı tasarımlardan hangileri geçilir. */
+function GecilenTasarimlar({ sonuc, typeId, haricId }) {
+  const liste = useMemo(() => {
+    const rakipler = listDesigns()
+      .filter((d) => d.typeId === typeId && d.id !== haricId)
+      .map((d) => ({ name: d.name, metrics: { score: analyze({ typeId: d.typeId, nodeId: d.nodeId, placed: d.placed }).score } }));
+    return beatsAfter(sonuc.startScore, sonuc.finalScore, rakipler);
+  }, [sonuc, typeId, haricId]);
+  if (!liste.length) return null;
+  const gecilen = liste.filter((r) => !r.before && r.after);
+  const onde = liste.filter((r) => r.before).length;
+  return (
+    <p className="text-[11px] text-muted-foreground leading-relaxed">
+      {gecilen.length > 0
+        ? <>Bu öneriyle geçeceğin tasarımların: <span className="text-foreground">{gecilen.map((r) => r.name).join(", ")}</span>.</>
+        : "Bu öneri kayıtlı tasarımların arasındaki sıranı değiştirmiyor."}
+      {onde > 0 && ` Zaten önünde olduğun ${onde} tasarım var.`}
+    </p>
   );
 }
 function getAdvisorDesc(id) { const a = ADVISORS.find((x) => x.id === id); return a ? a.aciklama : ""; }

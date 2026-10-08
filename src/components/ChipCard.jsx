@@ -90,7 +90,7 @@ export default function ChipCard({ chip }) {
             </div>
             {g.usdSaat != null && (
               <p className="text-[10px] font-mono text-muted-foreground">
-                ${g.usdSaat}<span className="text-[9px]">/s</span>
+                ${g.usdSaat}<span className="text-[9px]">/s{g.gpuSayisi > 1 ? ` · ${g.gpuSayisi} GPU` : ""}</span>
               </p>
             )}
           </div>

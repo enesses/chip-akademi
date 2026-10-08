@@ -23,6 +23,16 @@ Tarih her yerde UTC günüdür (`new Date().toISOString().slice(0,10)`); 10:00
 
 ## 1. Fiyatlar → `otomasyon/gelen/fiyatlar.json`
 
+- **Kaynağa arama üzerinden ulaş.** Zamanlanmış görevde istemdeki adresler kaynağı
+  doğrulanmış sayılmıyor: 4–8 Ekim'de getdeploying.com her sabah `PROVENANCE_REQUIRED`
+  ile reddedildi, aynı çalıştırmalarda WebSearch'ten gelen haber bağlantıları açıldı;
+  7 Ekim'de etkileşimli bir oturumdan aynı sayfa sorunsuz okundu. Bu yüzden önce
+  **WebSearch** ile `getdeploying GPU cloud prices` ara ve sonuçlarda çıkan
+  `https://getdeploying.com/gpus` bağlantısını WebFetch'e ver. Endeks için
+  `getdeploying GPU price index` araması → `https://getdeploying.com/gpu-price-index`.
+  Sonuçlarda tam bu adres yoksa ya da WebFetch yine reddederse adımı atla ve
+  `gelen/durum.json`'a `izin-engeli` yaz (bkz. 1b). Bu, aracın kaynak doğrulamasını
+  öngörülen yoldan sağlamaktır; curl, ayna site ya da önbellek gibi başka yollar deneme.
 - WebFetch ile `https://getdeploying.com/gpus` sayfasını iste. İstem:
   *"Tablodaki HER satırı `["model", medyan_usd_veya_null, en_ucuz_usd_veya_null, saglayici]` biçiminde ver; satır atlama, yorum ekleme."*
 - WebFetch uzun tablolarda satır düşürebiliyor. Gelen modelleri `src/data/gpu_kiralama.json` içindeki `fiyatlar[].model` listesiyle karşılaştır; eksik kalan **fiyatı olan** modeller için aynı sayfaya ikinci, hedefli bir WebFetch yap (yalnızca o modelleri sor).
@@ -41,12 +51,34 @@ Tarih her yerde UTC günüdür (`new Date().toISOString().slice(0,10)`); 10:00
   `"endeks": { "olcum_tarihi": "YYYY-MM-DD", "degisim_4_hafta_pct": -3.2, "degisim_12_ay_pct": 1.7 }`.
   Okuyamazsan alanı hiç yazma (eski endeks kalır, sayfada ölçüm tarihi görünür).
 
+## 1b. Kaynak durumu → `otomasyon/gelen/durum.json`
+
+Okuyamadığın her kaynak için nedenini yaz; rapor böylece "izin engeli"ni
+(dış kısıt, sarı) "okunamadı"dan (hata, kırmızı) ayırır:
+
+```json
+{ "fiyat":  { "durum": "izin-engeli", "not": "WebFetch PROVENANCE_REQUIRED (arama üzerinden de)" },
+  "endeks": { "durum": "ok" },
+  "bellek": { "durum": "okunamadi", "not": "sayfa zaman aşımı" } }
+```
+
+`durum`: `izin-engeli` | `okunamadi` | `yetersiz` (30 satırın altında) | `ok`.
+Hepsi okunduysa dosyayı yazmana gerek yok.
+
 ## 2. Bugün → `otomasyon/gelen/bugun.json`
 
 - Son 24–48 saatin AI / çip / yarı iletken / veri merkezi haberlerini WebSearch ile en az 3 farklı sorguyla ara (ör. "AI chip news <ay gün yıl>", "semiconductor week in review", "Nvidia AMD TSMC news <tarih>").
 - Kullanacağın her haberi WebFetch ile aç ve yayın tarihini, rakamları doğrula. Tarihi eski olanı (ör. bir ay önceki borsa haberi) alma. robots.txt engelli siteyi atla.
+- **Dünkü haberleri tekrar etme.** Önce `otomasyon/gecmis/bugun-<dün>.json`'a bak; orada
+  olan bir haberi ancak gerçekten yeni bir gelişme varsa (yeni rakam, yeni karar) yeni
+  bağlantıyla yaz. Betik aynı bağlantıyı ya da aynı başlığı önceki iki günle karşılaştırır,
+  tekrarı işaretler ve **puana katmaz**.
 - 8–12 madde. Her madde: `baslik`, `detay` (somut isim/rakam), `kategori` (`pozitif|notr|negatif`), `agirlik` (1–3 tam sayı), `neden` (neden bu kategori), `kaynak`, `url` (gerçek, açılan bağlantı).
 - `ozet`: 3–4 paragraf, günün ana temasını bağlayan anlatı. `puan.etiket` ve `puan.yorum` yaz; `puan.deger` yazmana gerek yok — betik formülle hesaplar.
+- İsteğe bağlı `yaklasan`: haberlerde geçen ve tarihi kaynağında doğrulanmış **ileri
+  tarihli** olaylar (bilanço açıklaması, ürün lansmanı, konferans), en fazla 8:
+  `"yaklasan": [{ "tarih": "YYYY-MM-DD", "baslik": "Samsung 3. çeyrek sonuçları", "kaynak": "Reuters", "url": "https://…" }]`.
+  Tarihi tahmin etme; kaynakta yazmıyorsa ekleme. Geçmiş tarihliler betikçe atılır.
 - Şema için mevcut `src/data/bugun.json` dosyasına bak. `tarih` bugünün tarihi, `derlenme` Türkçe uzun tarih ("3 Ekim 2026").
 - Türkçe yaz. Uydurma yok: doğrulayamadığın haberi alma. Doğrulanmış 5 maddeye ulaşamazsan dosyayı yazma — eski içerik kalır, rapor bunu kırmızıyla gösterir.
 - Kendi geliştiricin (Anthropic) hakkındaki bir haberi de diğerleri gibi tarafsız aktar.
