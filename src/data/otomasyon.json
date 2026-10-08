@@ -1,7 +1,7 @@
 {
-  "guncelleme": "2026-10-08T07:05:13.615Z",
+  "guncelleme": "2026-10-08T12:14:20.909Z",
   "tarih": "2026-10-08",
-  "durum": "kritik",
+  "durum": "temiz",
   "ajanlar": [
     {
       "id": "guvenlik",
@@ -24,8 +24,8 @@
       "ad": "Yenileme",
       "saat": "10:00",
       "calisti": true,
-      "durum": "kısmi",
-      "zaman": "2026-10-08T07:04:17.608Z"
+      "durum": "ok",
+      "zaman": "2026-10-08T12:14:20.805Z"
     },
     {
       "id": "gelistirme",
@@ -36,12 +36,7 @@
       "zaman": "2026-10-08T07:04:32.313Z"
     }
   ],
-  "dikkat": [
-    {
-      "seviye": "kritik",
-      "metin": "Yenileme · Fiyat verisi: güncellenmedi — son veri 2026-10-07. otomasyon/gelen/fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)"
-    }
-  ],
+  "dikkat": [],
   "oneriler": [
     {
       "baslik": "Zamanlanmış görevde getdeploying.com izin engelini kalıcı çöz",
@@ -80,6 +75,7 @@
       "alan": "kod"
     }
   ],
+  "uygulanan": [],
   "guvenlik": {
     "durum": "temiz",
     "bagimlilik": {
@@ -155,17 +151,17 @@
     ]
   },
   "yenileme": {
-    "durum": "kısmi",
+    "durum": "ok",
     "adimlar": [
       {
         "ad": "Fiyat verisi",
-        "durum": "hata",
-        "detay": "güncellenmedi — son veri 2026-10-07. otomasyon/gelen/fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)"
+        "durum": "atlandı",
+        "detay": "bu çalıştırmada fiyat girdisi gelmedi; mevcut veri bugün daha önce işlenmiş"
       },
       {
         "ad": "Bugün sayfası",
-        "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 53"
+        "durum": "atlandı",
+        "detay": "bu çalıştırmada girdi gelmedi; bugünün verisi daha önce işlenmiş (8 madde, puan 53)"
       },
       {
         "ad": "Derleme",
@@ -175,7 +171,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2026 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2050 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },

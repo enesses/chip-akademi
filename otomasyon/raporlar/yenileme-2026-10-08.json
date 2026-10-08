@@ -1,18 +1,18 @@
 {
   "ajan": "yenileme",
   "tarih": "2026-10-08",
-  "zaman": "2026-10-08T07:04:17.608Z",
-  "durum": "kısmi",
+  "zaman": "2026-10-08T12:14:20.805Z",
+  "durum": "ok",
   "adimlar": [
     {
       "ad": "Fiyat verisi",
-      "durum": "hata",
-      "detay": "güncellenmedi — son veri 2026-10-07. otomasyon/gelen/fiyatlar.json gelmedi (fiyat sayfası okunamadı mı?)"
+      "durum": "atlandı",
+      "detay": "bu çalıştırmada fiyat girdisi gelmedi; mevcut veri bugün daha önce işlenmiş"
     },
     {
       "ad": "Bugün sayfası",
-      "durum": "ok",
-      "detay": "bu çalıştırmada güncellendi — 8 madde, puan 53"
+      "durum": "atlandı",
+      "detay": "bu çalıştırmada girdi gelmedi; bugünün verisi daha önce işlenmiş (8 madde, puan 53)"
     },
     {
       "ad": "Derleme",
@@ -22,7 +22,7 @@
     {
       "ad": "Tek dosya",
       "durum": "ok",
-      "detay": "17 görsel, HTML: 2026 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+      "detay": "17 görsel, HTML: 2050 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
     }
   ]
 }
