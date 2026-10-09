@@ -8,19 +8,23 @@ import { cn } from "@/lib/utils";
 import BellekFiyatlari from "@/components/BellekFiyatlari";
 
 const usd = (v) => (v == null ? "—" : `$${v.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`);
+// "Yaygın" filtresi: en az bu kadar sağlayıcının listelediği modeller.
+const MIN_SAGLAYICI = 5;
 const pct = (v) => `${v > 0 ? "+" : ""}%${Math.abs(v).toLocaleString("tr-TR")}`;
 
 export default function Prices() {
   const [q, setQ] = useState("");
   const [sort, setSort] = useState("fiyat");
+  const [cokSaglayici, setCokSaglayici] = useState(false);
 
   const rows = useMemo(() => {
     let liste = data.fiyatlar.filter((f) => !q || f.model.toLocaleLowerCase("tr").includes(q.toLocaleLowerCase("tr")));
+    if (cokSaglayici) liste = liste.filter((f) => (f.saglayici ?? 0) >= MIN_SAGLAYICI);
     if (sort === "fiyat") liste = [...liste].sort((a, b) => (b.usd_saat ?? -1) - (a.usd_saat ?? -1));
     if (sort === "gb") liste = [...liste].sort((a, b) => (a.usd_saat && a.vram_gb ? a.usd_saat/a.vram_gb : 1e9) - (b.usd_saat && b.vram_gb ? b.usd_saat/b.vram_gb : 1e9));
     if (sort === "degisim") liste = [...liste].sort((a, b) => (b.degisim_pct ?? -999) - (a.degisim_pct ?? -999));
     return liste;
-  }, [q, sort]);
+  }, [q, sort, cokSaglayici]);
 
   return (
     <div className="bg-silicon-grid min-h-[80vh]">
@@ -92,6 +96,10 @@ export default function Prices() {
               <button key={id} onClick={() => setSort(id)} className={cn("px-2.5 py-1 rounded-md text-xs font-medium border", sort===id ? "bg-primary text-primary-foreground border-primary" : "bg-card text-muted-foreground border-border")}>{label}</button>
             ))}
           </div>
+          <button type="button" onClick={() => setCokSaglayici((v) => !v)} aria-pressed={cokSaglayici} data-testid="fiyat-saglayici-filtre" title={`Yalnızca en az ${MIN_SAGLAYICI} sağlayıcının listelediği modeller`} className={cn("px-2.5 py-1 rounded-md text-xs font-medium border", cokSaglayici ? "bg-primary text-primary-foreground border-primary" : "bg-card text-muted-foreground border-border")}>
+            En az {MIN_SAGLAYICI} sağlayıcı
+          </button>
+          <span className="text-xs text-muted-foreground font-mono">{rows.length} model</span>
         </div>
         <div className="rounded-2xl border border-card-border bg-card overflow-hidden">
           <div className="overflow-x-auto max-h-[36rem]">
