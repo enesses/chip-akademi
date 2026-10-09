@@ -1,8 +1,8 @@
 {
   "ajan": "rapor",
   "tarih": "2026-10-09",
-  "zaman": "2026-10-09T07:11:54.597Z",
-  "durum": "temiz",
+  "zaman": "2026-10-09T07:15:10.825Z",
+  "durum": "dikkat",
   "gunTamam": true,
   "tazelik": [
     {
@@ -24,5 +24,14 @@
     "gelistirme"
   ],
   "calismayan": [],
-  "dikkat": []
+  "dikkat": [
+    {
+      "seviye": "dikkat",
+      "metin": "Öneri onay bekliyor: Fiyat hareketi kartlarında sağlayıcı sayısını göster (PR #15) — Denetim geçti (26/26); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor"
+    },
+    {
+      "seviye": "dikkat",
+      "metin": "Öneri onay bekliyor: Fiyat tablosuna 'en az 5 sağlayıcı' filtresi (PR #16) — Denetim geçti (26/26); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor; #15 ile aynı dosyada, ikincisi birleşirken çakışma çıkabilir"
+    }
+  ]
 }

@@ -50,6 +50,26 @@
       "ozet": "RTX PRO 6000, RTX 6000 Ada ve RTX A6000 kataloğa eklendi ve fiyat satırlarına bağlandı (88 sağlayıcı satırı)",
       "neden": null,
       "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-09",
+      "oneri": "Fiyat hareketi kartlarında sağlayıcı sayısını göster",
+      "durum": "acik",
+      "pr": 15,
+      "dal": "otomasyon/oneri-2026-10-09-1",
+      "ozet": "Hareket kartlarında sağlayıcı sayısı, 5'ten az sağlayıcılı satırlar soluk",
+      "neden": "Denetim geçti (26/26); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-09",
+      "oneri": "Fiyat tablosuna 'en az 5 sağlayıcı' filtresi",
+      "durum": "acik",
+      "pr": 16,
+      "dal": "otomasyon/oneri-2026-10-09-2",
+      "ozet": "Tabloya en az 5 sağlayıcı aç/kapa filtresi ve model sayısı",
+      "neden": "Denetim geçti (26/26); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor; #15 ile aynı dosyada, ikincisi birleşirken çakışma çıkabilir",
+      "kim": "otomasyon"
     }
   ]
 }

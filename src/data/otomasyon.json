@@ -1,7 +1,7 @@
 {
-  "guncelleme": "2026-10-09T07:11:54.595Z",
+  "guncelleme": "2026-10-09T07:15:10.823Z",
   "tarih": "2026-10-09",
-  "durum": "temiz",
+  "durum": "dikkat",
   "ajanlar": [
     {
       "id": "guvenlik",
@@ -36,7 +36,16 @@
       "zaman": "2026-10-09T07:10:29.092Z"
     }
   ],
-  "dikkat": [],
+  "dikkat": [
+    {
+      "seviye": "dikkat",
+      "metin": "Öneri onay bekliyor: Fiyat hareketi kartlarında sağlayıcı sayısını göster (PR #15) — Denetim geçti (26/26); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor"
+    },
+    {
+      "seviye": "dikkat",
+      "metin": "Öneri onay bekliyor: Fiyat tablosuna 'en az 5 sağlayıcı' filtresi (PR #16) — Denetim geçti (26/26); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor; #15 ile aynı dosyada, ikincisi birleşirken çakışma çıkabilir"
+    }
+  ],
   "oneriler": [
     {
       "baslik": "Fiyat hareketi kartlarında sağlayıcı sayısını göster",
@@ -75,7 +84,28 @@
       "alan": "veri"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-10-09",
+      "oneri": "Fiyat hareketi kartlarında sağlayıcı sayısını göster",
+      "durum": "acik",
+      "pr": 15,
+      "dal": "otomasyon/oneri-2026-10-09-1",
+      "ozet": "Hareket kartlarında sağlayıcı sayısı, 5'ten az sağlayıcılı satırlar soluk",
+      "neden": "Denetim geçti (26/26); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-09",
+      "oneri": "Fiyat tablosuna 'en az 5 sağlayıcı' filtresi",
+      "durum": "acik",
+      "pr": 16,
+      "dal": "otomasyon/oneri-2026-10-09-2",
+      "ozet": "Tabloya en az 5 sağlayıcı aç/kapa filtresi ve model sayısı",
+      "neden": "Denetim geçti (26/26); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor; #15 ile aynı dosyada, ikincisi birleşirken çakışma çıkabilir",
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
@@ -111,6 +141,20 @@
       "pr": 11,
       "tarih": "2026-10-08",
       "kim": "elle"
+    },
+    {
+      "oneri": "Fiyat hareketi kartlarında sağlayıcı sayısını göster",
+      "durum": "acik",
+      "pr": 15,
+      "tarih": "2026-10-09",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyat tablosuna 'en az 5 sağlayıcı' filtresi",
+      "durum": "acik",
+      "pr": 16,
+      "tarih": "2026-10-09",
+      "kim": "otomasyon"
     }
   ],
   "guvenlik": {
