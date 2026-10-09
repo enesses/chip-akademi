@@ -1,0 +1,41 @@
+{
+  "tarih": "2026-10-09",
+  "oneriler": [
+    {
+      "baslik": "Fiyat hareketi kartlarında sağlayıcı sayısını göster",
+      "neden": "Bugünkü 'Artanlar' kartının ilk iki sırası Nvidia GTX 1660 (+%800) ve RTX A2000 (+%320); ikisinin de yalnızca 3 sağlayıcısı var ve medyanları tek bir listelemeyle oynuyor. 11 sağlayıcılı AMD MI300X (+%46,8) üçüncü sırada kalıyor. src/pages/Prices.jsx kartlarda yalnızca model ve yüzdeyi gösteriyor; veri (src/data/gpu_kiralama.json → iki_gun.*.saglayici) zaten mevcut.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Fiyat tablosuna 'en az 5 sağlayıcı' filtresi",
+      "neden": "src/pages/Prices.jsx yalnızca arama ve üç sıralama sunuyor. 107 modelin büyük kısmı 1–3 sağlayıcıyla listeleniyor (ör. GTX 1050 Ti, P40, M60 tek sağlayıcı); bu modellerin 'Değişim' sıralamasında en üste çıkması güvenilir piyasa fiyatını gölgeliyor.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bugün sayfasına son 7 günün puan geçmişi",
+      "neden": "otomasyon/gecmis/ altında 3–9 Ekim arası bugun-*.json dosyaları var (puanlar: 7 Ekim 57, 8 Ekim 53, bugün 33) ama src/pages/Bugun.jsx yalnızca bugünün puanını gösteriyor. Geçmişi src/data'ya yazmak otomasyon/veri-isle.mjs değişikliği gerektirir (korunan dosya, elle onay gerekir).",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Şüpheli fiyat eşiğini çok sağlayıcılı modellerde %30'a indir",
+      "neden": "AMD MI300X bugün 11 sağlayıcıyla %46,8 arttı (2,99 → 4,39 $) ve %50 eşiğinin hemen altında kaldığı için ikinci okuma istenmeden yazıldı (iki okuma bu kez aynı medyanı verdi). Geniş kapsamlı modellerde %30'u aşan sıçramada ikinci okuma zorunlu olsun. otomasyon/veri-isle.mjs değişikliği — korunan dosya.",
+      "etki": "düşük",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Kalan 20 kullanılmayan export'u temizle",
+      "neden": "8 Ekim'de 22 export elle temizlendi ama iyilestirme-2026-10-09 raporu hâlâ 20 kullanılmayan export buluyor (ör. resetProgress, getSummary, getBestExam — src/lib/progress.js; togglePin, searchNotes — src/lib/notes.js; Select* — src/components/ui/select.jsx).",
+      "etki": "düşük",
+      "alan": "kod"
+    },
+    {
+      "baslik": "Sunucu DRAM göstergesini güncelle",
+      "neden": "src/data/bellek_fiyat.json içinde 'Sunucu DRAM' göstergesinin tarihi 2026-07-09; diğer göstergeler 29–30 Eylül tarihli. Pazartesi TrendForce taramasında bu satır öncelikli yenilenmeli.",
+      "etki": "düşük",
+      "alan": "veri"
+    }
+  ]
+}
