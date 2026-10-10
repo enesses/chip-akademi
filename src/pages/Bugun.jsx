@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { CalendarDays, CalendarClock, ExternalLink, Minus, Repeat, ThumbsDown, ThumbsUp } from "lucide-react";
 import data from "@/data/bugun.json";
+import { Link } from "@/components/Nav";
 import { cn } from "@/lib/utils";
 
 const AY = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
@@ -122,6 +123,9 @@ export default function Bugun() {
             );
           })}
         </div>
+        <Link href="/haberler" className="mt-5 inline-flex items-center gap-1.5 text-sm text-primary hover:underline">
+          Önceki günlerin haberleri ve konuya göre süzme → Haberler
+        </Link>
       </section>
     </div>
   );

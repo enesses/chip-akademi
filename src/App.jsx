@@ -21,6 +21,7 @@ import Ic from "@/pages/Ic";
 import IcDetail from "@/pages/IcDetail";
 import Haftalik from "@/pages/Haftalik";
 import Promptlar from "@/pages/Promptlar";
+import Haberler from "@/pages/Haberler";
 import Skiller from "@/pages/Skiller";
 import AramaPaleti from "@/components/nav/AramaPaleti";
 import MobilMenu from "@/components/nav/MobilMenu";
@@ -47,6 +48,7 @@ export default function App() {
             <Route path="/egitim/:id" component={Lesson} />
             <Route path="/fiyatlar" component={Prices} />
             <Route path="/bugun" component={Bugun} />
+            <Route path="/haberler" component={Haberler} />
             <Route path="/otomasyon" component={Otomasyon} />
             <Route path="/haftalik" component={Haftalik} />
             <Route path="/ai/promptlar" component={Promptlar} />

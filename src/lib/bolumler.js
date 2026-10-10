@@ -11,7 +11,7 @@ import {
   Microchip, Cpu, MemoryStick, Smartphone, GitCompareArrows, BadgeDollarSign,
   GraduationCap, ListChecks, Library, NotebookPen,
   PencilRuler, LayoutGrid, Newspaper, Workflow, CalendarRange,
-  MessageSquareText, Puzzle,
+  MessageSquareText, Puzzle, Rss,
 } from "lucide-react";
 
 export const GRUPLAR = [
@@ -80,6 +80,9 @@ export const GRUPLAR = [
       { id: "bugun", ad: "Bugün", yol: "/bugun", ikon: Newspaper,
         aciklama: "Son 48 saatin AI ve çip haberleri, günün puanı",
         anahtar: "haber gündem günlük" },
+      { id: "haberler", ad: "Haberler", yol: "/haberler", ikon: Rss,
+        aciklama: "Her sabah yenilenen çip ve yapay zekâ haberleri, son 30 gün",
+        anahtar: "haber akış nvidia tsmc hbm openai gündem son dakika" },
       { id: "otomasyon", ad: "Otomasyon", yol: "/otomasyon", ikon: Workflow,
         aciklama: "Her sabahki veri güncellemesi ve raporu",
         anahtar: "rapor güncelleme güvenlik öneri" },

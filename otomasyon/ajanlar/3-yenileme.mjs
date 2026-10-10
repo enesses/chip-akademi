@@ -113,6 +113,18 @@ if (bugunGeldi && !bugunGeldi.ok) {
   }
 }
 
+/* ---------------------------------------------- haber akışı */
+// Bugün'ün maddeleri akışa kendiliğinden girer; ek haberler gelen/haberler.json'dan.
+{
+  let akis = null;
+  try { akis = JSON.parse(fs.readFileSync(path.join(KOK, "src", "data", "haberler.json"), "utf-8")); } catch {}
+  const bugunku = akis?.haberler?.filter((h) => h.tarih === bugunTarih).length ?? 0;
+  if (son.haberler && !son.haberler.ok) not("Haber akışı", "hata", `ek haberler reddedildi: ${son.haberler.detay}`);
+  else if (son.haberler?.ok) not("Haber akışı", "ok", `${son.haberler.detay}; bugün toplam ${bugunku}`);
+  else if (bugunku > 0) not("Haber akışı", "ok", `bugün ${bugunku} haber (yalnızca Bugün maddeleri; gelen/haberler.json gelmedi)`);
+  else not("Haber akışı", "hata", `bugün akışa haber eklenmedi${akis?.guncelleme ? ` (son: ${akis.guncelleme})` : ""}`);
+}
+
 /* ---------------------------------------------- derleme */
 const derleme = calistir("npx vite build");
 not("Derleme", derleme.ok ? "ok" : "hata", derleme.ok ? "başarılı" : "vite build başarısız");
