@@ -14,6 +14,10 @@
  *   oneriler.json  → { "tarih": "...", "oneriler": [{ "baslik", "neden", "etki": "yüksek|orta|düşük", "alan" }] }
  *   durum.json     → { "fiyat": { "durum": "izin-engeli|okunamadi|yetersiz|ok", "not": "..." }, "endeks": …, "bellek": …, "bugun": … }
  *                    Bir kaynak okunamadığında NEDENİNİ bildirir; rapor "izin engeli"ni "okunamadı"dan ayırır.
+ *   haberler.json  → { "tarih": "YYYY-MM-DD", "haberler": [{ "baslik", "detay", "kaynak", "url", "yayin": "YYYY-MM-DD",
+ *                      "konular": ["yapay-zeka"|"cip"|"bellek"|"veri-merkezi"|"pazar"|"politika"], "kategori"? }] }
+ *                    Bugün'ün dışındaki ek haberler; birikimli akışa (src/data/haberler.json) eklenir.
+ *                    Bugün'ün maddeleri de her gün akışa kendiliğinden girer.
  *   bugun.json'da isteğe bağlı "yaklasan": [{ "tarih": "YYYY-MM-DD", "baslik", "kaynak", "url" }] — doğrulanmış
  *                    ileri tarihli olaylar (bilanço, lansman, konferans). Geçmiş tarihli olanlar atılır.
  *
@@ -28,6 +32,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { KOK, bugunTarih, rel } from "./ortak.mjs";
+import { haberEkle } from "./haberler.mjs";
 
 const { chips } = await import(pathToFileURL(path.join(KOK, "src", "data", "chips.js")).href);
 const kelimeler = (s) => s.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
@@ -47,7 +52,7 @@ const GECMIS = path.join(KOK, "otomasyon", "gecmis");
 const DATA = path.join(KOK, "src", "data");
 const BUGUN = bugunTarih();
 
-const sonuc = { fiyat: null, bugun: null, bellek: null, oneriler: null };
+const sonuc = { fiyat: null, bugun: null, haberler: null, bellek: null, oneriler: null };
 const oku = (f) => JSON.parse(fs.readFileSync(f, "utf-8"));
 const yaz = (f, v) => fs.writeFileSync(f, JSON.stringify(v, null, 2) + "\n", "utf-8");
 function arsivle(ad, veri) {
@@ -255,9 +260,30 @@ if (fs.existsSync(bugunGirdi)) {
     yaz(path.join(DATA, "bugun.json"), v);
     arsivle("bugun", v);
     fs.rmSync(bugunGirdi);
-    sonuc.bugun = { ok: true, detay: `${v.maddeler.length} madde${tekrarSayisi ? ` (${tekrarSayisi} tekrar, puana katılmadı)` : ""}, puan ${deger}${v.yaklasan?.length ? `, ${v.yaklasan.length} yaklaşan olay` : ""}` };
+    // Haberler sayfası birikir: Bugün'ün tekrar olmayan maddeleri akışa girer.
+    const akis = haberEkle(v.maddeler.filter((m) => !m.tekrar), { tarih: BUGUN, kaynakTuru: "bugun" });
+    sonuc.bugun = { ok: true, detay: `${v.maddeler.length} madde${tekrarSayisi ? ` (${tekrarSayisi} tekrar, puana katılmadı)` : ""}, puan ${deger}${v.yaklasan?.length ? `, ${v.yaklasan.length} yaklaşan olay` : ""}; haber akışına +${akis.eklenen}` };
   } catch (e) {
     sonuc.bugun = { ok: false, detay: e.message };
+  }
+}
+
+/* ------------------------------------------------------------ ek haberler */
+const haberGirdi = path.join(GELEN, "haberler.json");
+if (fs.existsSync(haberGirdi)) {
+  try {
+    const h = oku(haberGirdi);
+    if (!Array.isArray(h.haberler) || h.haberler.length === 0) throw new Error("haber listesi boş");
+    for (const m of h.haberler) {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(m.yayin || "")) throw new Error(`yayın tarihi yok: ${m.baslik ?? "?"}`);
+    }
+    const r = haberEkle(h.haberler, { tarih: BUGUN, kaynakTuru: "ek" });
+    arsivle("haberler", h);
+    fs.rmSync(haberGirdi);
+    const nedenler = [...new Set(r.atlanan.map((a) => a.neden))];
+    sonuc.haberler = { ok: r.eklenen > 0, detay: `+${r.eklenen} haber (akışta ${r.toplam})${r.atlanan.length ? `, ${r.atlanan.length} atlandı: ${nedenler.join("; ")}` : ""}` };
+  } catch (e) {
+    sonuc.haberler = { ok: false, detay: e.message };
   }
 }
 

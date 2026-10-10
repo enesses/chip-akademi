@@ -83,6 +83,31 @@ Hepsi okunduysa dosyayı yazmana gerek yok.
 - Türkçe yaz. Uydurma yok: doğrulayamadığın haberi alma. Doğrulanmış 5 maddeye ulaşamazsan dosyayı yazma — eski içerik kalır, rapor bunu kırmızıyla gösterir.
 - Kendi geliştiricin (Anthropic) hakkındaki bir haberi de diğerleri gibi tarafsız aktar.
 
+## 2c. Haberler → `otomasyon/gelen/haberler.json`
+
+Haberler sayfası (`/haberler`) birikimli bir akış: Bugün'ün maddeleri oraya
+kendiliğinden girer. Bu adım ona **ek** haberler katar, böylece akış Bugün'ün
+8–12 maddesinden daha geniş olur.
+
+- 2. adımdaki aramalardan çıkan ama Bugün'e girmeyen, ayrıca bu konulara bakan
+  en az 2 sorgu daha yap: bellek (HBM/DRAM), veri merkezi ve enerji, çip
+  politikası (ihracat kontrolleri, teşvikler), yapay zekâ modelleri ve şirketleri.
+- 6–12 haber. Her biri Bugün'deki maddelerden **farklı** olsun (aynı bağlantı ya da
+  aynı başlık betikçe atılır).
+- Her haberi WebFetch ile aç; **yayın tarihini** sayfadan oku. Son 3 günün dışındaki
+  haber betikçe atılır.
+- Alanlar: `baslik`, `detay` (somut isim/rakam, 1–2 cümle, Türkçe), `kaynak`,
+  `url`, `yayin` (`YYYY-MM-DD`), `konular` (bir ya da birkaç:
+  `yapay-zeka|cip|bellek|veri-merkezi|pazar|politika`), `kategori`
+  (`pozitif|notr|negatif`, sektör için ton).
+  ```json
+  { "tarih": "YYYY-MM-DD",
+    "haberler": [{ "baslik": "…", "detay": "…", "kaynak": "Reuters", "url": "https://…",
+                   "yayin": "2026-10-11", "konular": ["bellek", "pazar"], "kategori": "notr" }] }
+  ```
+- Uydurma yok: açamadığın haberi alma. Doğrulanmış 3 habere ulaşamazsan dosyayı
+  yazma; akış o gün yalnızca Bugün maddeleriyle güncellenir ve rapor bunu gösterir.
+
 ## 2b. Bellek fiyatları → `otomasyon/gelen/bellek.json` (yalnızca pazartesi, ya da yeni bir açıklama gördüysen)
 
 - TrendForce basın merkezi (`trendforce.com/presscenter`) ve haberlerden DRAM / NAND / HBM **sözleşme fiyatı** tahminlerini ara.
