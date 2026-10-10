@@ -1,0 +1,27 @@
+{
+  "ajan": "gelistirme",
+  "tarih": "2026-10-10",
+  "zaman": "2026-10-10T07:14:42.032Z",
+  "durum": "degisiklik-yok",
+  "uygulanan": [],
+  "atlanan": [],
+  "testler": [
+    {
+      "ad": "Derleme",
+      "gecti": true,
+      "detay": null
+    },
+    {
+      "ad": "Tek dosya",
+      "gecti": true,
+      "detay": null
+    },
+    {
+      "ad": "Arayüz duman testi",
+      "gecti": true,
+      "detay": null
+    }
+  ],
+  "degisenDosyalar": [],
+  "geriAlindi": false
+}

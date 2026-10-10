@@ -1,0 +1,28 @@
+{
+  "ajan": "rapor",
+  "tarih": "2026-10-10",
+  "zaman": "2026-10-10T07:16:15.243Z",
+  "durum": "temiz",
+  "gunTamam": true,
+  "tazelik": [
+    {
+      "ad": "Bugün sayfası",
+      "tarih": "2026-10-10",
+      "gun": 0
+    },
+    {
+      "ad": "Fiyat verisi",
+      "tarih": "2026-10-10",
+      "gun": 0
+    }
+  ],
+  "otomatikTamamlanan": [],
+  "calisan": [
+    "guvenlik",
+    "iyilestirme",
+    "yenileme",
+    "gelistirme"
+  ],
+  "calismayan": [],
+  "dikkat": []
+}

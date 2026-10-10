@@ -1,0 +1,28 @@
+{
+  "ajan": "yenileme",
+  "tarih": "2026-10-10",
+  "zaman": "2026-10-10T07:14:26.419Z",
+  "durum": "ok",
+  "adimlar": [
+    {
+      "ad": "Fiyat verisi",
+      "durum": "ok",
+      "detay": "bu çalıştırmada güncellendi — 98 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 9 gelmedi (eski fiyat korundu)"
+    },
+    {
+      "ad": "Bugün sayfası",
+      "durum": "ok",
+      "detay": "bu çalıştırmada güncellendi — 7 madde, puan 75"
+    },
+    {
+      "ad": "Derleme",
+      "durum": "ok",
+      "detay": "başarılı"
+    },
+    {
+      "ad": "Tek dosya",
+      "durum": "ok",
+      "detay": "17 görsel, HTML: 2147 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+    }
+  ]
+}

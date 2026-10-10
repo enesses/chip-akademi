@@ -1,7 +1,7 @@
 {
-  "guncelleme": "2026-10-09T07:15:10.823Z",
-  "tarih": "2026-10-09",
-  "durum": "dikkat",
+  "guncelleme": "2026-10-10T07:16:15.241Z",
+  "tarih": "2026-10-10",
+  "durum": "temiz",
   "ajanlar": [
     {
       "id": "guvenlik",
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-10-09T07:10:15.174Z"
+      "zaman": "2026-10-10T07:14:27.425Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-09T07:10:15.323Z"
+      "zaman": "2026-10-10T07:14:27.558Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-09T07:10:12.539Z"
+      "zaman": "2026-10-10T07:14:26.419Z"
     },
     {
       "id": "gelistirme",
@@ -33,79 +33,49 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-09T07:10:29.092Z"
+      "zaman": "2026-10-10T07:14:42.032Z"
     }
   ],
-  "dikkat": [
-    {
-      "seviye": "dikkat",
-      "metin": "Öneri onay bekliyor: Fiyat hareketi kartlarında sağlayıcı sayısını göster (PR #15) — Denetim geçti (26/26); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor"
-    },
-    {
-      "seviye": "dikkat",
-      "metin": "Öneri onay bekliyor: Fiyat tablosuna 'en az 5 sağlayıcı' filtresi (PR #16) — Denetim geçti (26/26); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor; #15 ile aynı dosyada, ikincisi birleşirken çakışma çıkabilir"
-    }
-  ],
+  "dikkat": [],
   "oneriler": [
     {
-      "baslik": "Fiyat hareketi kartlarında sağlayıcı sayısını göster",
-      "neden": "Bugünkü 'Artanlar' kartının ilk iki sırası Nvidia GTX 1660 (+%800) ve RTX A2000 (+%320); ikisinin de yalnızca 3 sağlayıcısı var ve medyanları tek bir listelemeyle oynuyor. 11 sağlayıcılı AMD MI300X (+%46,8) üçüncü sırada kalıyor. src/pages/Prices.jsx kartlarda yalnızca model ve yüzdeyi gösteriyor; veri (src/data/gpu_kiralama.json → iki_gun.*.saglayici) zaten mevcut.",
+      "baslik": "Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
+      "neden": "Bugün 'Artanlar' kartının ilk sırasında Nvidia GTX 1650 var: 0,02 $ → 0,03 $ (+%50). Değişim yalnızca iki ondalığa yuvarlanmış fiyatın 1 sent oynamasından geliyor. src/pages/Prices.jsx data.iki_gun.artanlar/dusenler listesini olduğu gibi basıyor; mutlak değişimi 0,02 $'ın altında kalan satırlar kartlarda gösterilmemeli (tablo değişmez).",
       "etki": "orta",
       "alan": "arayüz"
     },
     {
-      "baslik": "Fiyat tablosuna 'en az 5 sağlayıcı' filtresi",
-      "neden": "src/pages/Prices.jsx yalnızca arama ve üç sıralama sunuyor. 107 modelin büyük kısmı 1–3 sağlayıcıyla listeleniyor (ör. GTX 1050 Ti, P40, M60 tek sağlayıcı); bu modellerin 'Değişim' sıralamasında en üste çıkması güvenilir piyasa fiyatını gölgeliyor.",
-      "etki": "orta",
+      "baslik": "Hareket kartlarında önceki → yeni fiyatı göster",
+      "neden": "AMD MI300X bugün 4,39 $ → 2,89 $ (−%34,2, 11 sağlayıcı) düştü ama kart yalnızca yüzdeyi gösteriyor; onceki_usd ve usd_saat src/data/gpu_kiralama.json → iki_gun.* içinde zaten var. Açık PR #15 aynı kart satırlarını değiştirdiği için onunla birlikte ele alınmalı.",
+      "etki": "düşük",
       "alan": "arayüz"
+    },
+    {
+      "baslik": "Şüpheli fiyat eşiğini çok sağlayıcılı modellerde %30'a indir",
+      "neden": "Dünkü öneri hâlâ geçerli ve bugün yeni bir örnek var: AMD MI300X 11 sağlayıcıyla −%34,2 (4,39 → 2,89 $) değişti ve %50 eşiğinin altında kaldığı için ikinci okuma istenmeden yazıldı; dün aynı model +%46,8 yükselmişti. Bu iki günlük salınım tek okumanın güvenilirliğini sorgulatıyor. otomasyon/veri-isle.mjs değişikliği — korunan dosya.",
+      "etki": "orta",
+      "alan": "otomasyon"
     },
     {
       "baslik": "Bugün sayfasına son 7 günün puan geçmişi",
-      "neden": "otomasyon/gecmis/ altında 3–9 Ekim arası bugun-*.json dosyaları var (puanlar: 7 Ekim 57, 8 Ekim 53, bugün 33) ama src/pages/Bugun.jsx yalnızca bugünün puanını gösteriyor. Geçmişi src/data'ya yazmak otomasyon/veri-isle.mjs değişikliği gerektirir (korunan dosya, elle onay gerekir).",
+      "neden": "otomasyon/gecmis/ altında 3–10 Ekim arası bugun-*.json var (8 Ekim 53, 9 Ekim 33, bugün 75) ama src/pages/Bugun.jsx yalnızca bugünün puanını gösteriyor; 9→10 Ekim arasındaki 42 puanlık sıçrama bağlamsız kalıyor. Geçmişi src/data'ya yazmak otomasyon/veri-isle.mjs değişikliği gerektirir (korunan dosya).",
       "etki": "orta",
       "alan": "veri"
     },
     {
-      "baslik": "Şüpheli fiyat eşiğini çok sağlayıcılı modellerde %30'a indir",
-      "neden": "AMD MI300X bugün 11 sağlayıcıyla %46,8 arttı (2,99 → 4,39 $) ve %50 eşiğinin hemen altında kaldığı için ikinci okuma istenmeden yazıldı (iki okuma bu kez aynı medyanı verdi). Geniş kapsamlı modellerde %30'u aşan sıçramada ikinci okuma zorunlu olsun. otomasyon/veri-isle.mjs değişikliği — korunan dosya.",
-      "etki": "düşük",
-      "alan": "otomasyon"
-    },
-    {
       "baslik": "Kalan 20 kullanılmayan export'u temizle",
-      "neden": "8 Ekim'de 22 export elle temizlendi ama iyilestirme-2026-10-09 raporu hâlâ 20 kullanılmayan export buluyor (ör. resetProgress, getSummary, getBestExam — src/lib/progress.js; togglePin, searchNotes — src/lib/notes.js; Select* — src/components/ui/select.jsx).",
+      "neden": "iyilestirme-2026-10-10 raporu hâlâ 20 kullanılmayan export buluyor (Badge, Select* — src/components/ui; resetProgress, getSummary, getBestExam — src/lib/progress.js; togglePin, searchNotes — src/lib/notes.js; formatCompareValue — src/lib/utils.js).",
       "etki": "düşük",
       "alan": "kod"
     },
     {
       "baslik": "Sunucu DRAM göstergesini güncelle",
-      "neden": "src/data/bellek_fiyat.json içinde 'Sunucu DRAM' göstergesinin tarihi 2026-07-09; diğer göstergeler 29–30 Eylül tarihli. Pazartesi TrendForce taramasında bu satır öncelikli yenilenmeli.",
+      "neden": "src/data/bellek_fiyat.json içindeki 'Sunucu DRAM' göstergesi hâlâ 2026-07-09 tarihli; diğerleri 29–30 Eylül. 12 Ekim pazartesi TrendForce taramasında öncelikli.",
       "etki": "düşük",
       "alan": "veri"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-10-09",
-      "oneri": "Fiyat hareketi kartlarında sağlayıcı sayısını göster",
-      "durum": "acik",
-      "pr": 15,
-      "dal": "otomasyon/oneri-2026-10-09-1",
-      "ozet": "Hareket kartlarında sağlayıcı sayısı, 5'ten az sağlayıcılı satırlar soluk",
-      "neden": "Denetim geçti (26/26); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-09",
-      "oneri": "Fiyat tablosuna 'en az 5 sağlayıcı' filtresi",
-      "durum": "acik",
-      "pr": 16,
-      "dal": "otomasyon/oneri-2026-10-09-2",
-      "ozet": "Tabloya en az 5 sağlayıcı aç/kapa filtresi ve model sayısı",
-      "neden": "Denetim geçti (26/26); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor; #15 ile aynı dosyada, ikincisi birleşirken çakışma çıkabilir",
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
     {
       "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
@@ -240,7 +210,7 @@
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 33, 3 yaklaşan olay"
+        "detay": "bu çalıştırmada güncellendi — 7 madde, puan 75"
       },
       {
         "ad": "Derleme",
@@ -250,7 +220,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2149 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2147 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -314,6 +284,11 @@
     },
     {
       "tarih": "2026-10-09",
+      "durum": "dikkat",
+      "dikkat": 2
+    },
+    {
+      "tarih": "2026-10-10",
       "durum": "temiz",
       "dikkat": 0
     }

@@ -1,0 +1,13 @@
+{
+  "fiyat": {
+    "durum": "ok",
+    "not": "WebFetch doğrudan okundu; arama sonucunda https://getdeploying.com/gpus çıktı"
+  },
+  "endeks": {
+    "durum": "ok"
+  },
+  "bugun": {
+    "durum": "ok",
+    "not": "7 doğrulanmış madde; bazı siteler (digitimes, 404k, hpcwire) okunamadı, a16z/mistral izin engeli"
+  }
+}

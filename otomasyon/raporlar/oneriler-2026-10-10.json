@@ -1,0 +1,41 @@
+{
+  "tarih": "2026-10-10",
+  "oneriler": [
+    {
+      "baslik": "Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
+      "neden": "Bugün 'Artanlar' kartının ilk sırasında Nvidia GTX 1650 var: 0,02 $ → 0,03 $ (+%50). Değişim yalnızca iki ondalığa yuvarlanmış fiyatın 1 sent oynamasından geliyor. src/pages/Prices.jsx data.iki_gun.artanlar/dusenler listesini olduğu gibi basıyor; mutlak değişimi 0,02 $'ın altında kalan satırlar kartlarda gösterilmemeli (tablo değişmez).",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Hareket kartlarında önceki → yeni fiyatı göster",
+      "neden": "AMD MI300X bugün 4,39 $ → 2,89 $ (−%34,2, 11 sağlayıcı) düştü ama kart yalnızca yüzdeyi gösteriyor; onceki_usd ve usd_saat src/data/gpu_kiralama.json → iki_gun.* içinde zaten var. Açık PR #15 aynı kart satırlarını değiştirdiği için onunla birlikte ele alınmalı.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Şüpheli fiyat eşiğini çok sağlayıcılı modellerde %30'a indir",
+      "neden": "Dünkü öneri hâlâ geçerli ve bugün yeni bir örnek var: AMD MI300X 11 sağlayıcıyla −%34,2 (4,39 → 2,89 $) değişti ve %50 eşiğinin altında kaldığı için ikinci okuma istenmeden yazıldı; dün aynı model +%46,8 yükselmişti. Bu iki günlük salınım tek okumanın güvenilirliğini sorgulatıyor. otomasyon/veri-isle.mjs değişikliği — korunan dosya.",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Bugün sayfasına son 7 günün puan geçmişi",
+      "neden": "otomasyon/gecmis/ altında 3–10 Ekim arası bugun-*.json var (8 Ekim 53, 9 Ekim 33, bugün 75) ama src/pages/Bugun.jsx yalnızca bugünün puanını gösteriyor; 9→10 Ekim arasındaki 42 puanlık sıçrama bağlamsız kalıyor. Geçmişi src/data'ya yazmak otomasyon/veri-isle.mjs değişikliği gerektirir (korunan dosya).",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Kalan 20 kullanılmayan export'u temizle",
+      "neden": "iyilestirme-2026-10-10 raporu hâlâ 20 kullanılmayan export buluyor (Badge, Select* — src/components/ui; resetProgress, getSummary, getBestExam — src/lib/progress.js; togglePin, searchNotes — src/lib/notes.js; formatCompareValue — src/lib/utils.js).",
+      "etki": "düşük",
+      "alan": "kod"
+    },
+    {
+      "baslik": "Sunucu DRAM göstergesini güncelle",
+      "neden": "src/data/bellek_fiyat.json içindeki 'Sunucu DRAM' göstergesi hâlâ 2026-07-09 tarihli; diğerleri 29–30 Eylül. 12 Ekim pazartesi TrendForce taramasında öncelikli.",
+      "etki": "düşük",
+      "alan": "veri"
+    }
+  ]
+}
