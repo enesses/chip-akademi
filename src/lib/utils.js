@@ -34,7 +34,3 @@ export function formatSpecLabel(key) {
   return map[key] || key.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
-export function formatCompareValue(v) {
-  if (v === null || v === undefined) return "—";
-  return String(v);
-}

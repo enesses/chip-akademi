@@ -32,11 +32,6 @@ export function updateNote(id, patch) {
 }
 export function deleteNote(id) { write(read().filter((n) => n.id !== id)); }
 export function togglePin(id) { const n = getNote(id); return n ? updateNote(id, { pinned: !n.pinned }) : null; }
-export function searchNotes(q) {
-  const query = (q || "").trim().toLocaleLowerCase("tr");
-  if (!query) return listNotes();
-  return listNotes().filter((n) => `${n.title} ${n.body}`.toLocaleLowerCase("tr").includes(query));
-}
 export function autoTitle(body) {
   const first = (body || "").split("\n").find((l) => l.trim().length > 0);
   return first ? first.trim().slice(0, 60) : "";
@@ -51,14 +46,4 @@ export function exportMarkdown() {
     lines.push("", n.body || "", "", "---", "");
   }
   return lines.join("\n");
-}
-export function contextFromPath(path, helpers = {}) {
-  if (!path || path === "/") return { path: "/", label: "Ana sayfa" };
-  const [, section, param] = path.split("/");
-  const map = { egitim: "Eğitim", chip: "Chip", kategori: "Kategori", karsilastir: "Karşılaştırma",
-    "mimari-karsilastirma": "Mimari", sozluk: "Sözlük", atolye: "Atölye", tasarla: "Tasarım Atölyesi", sinav: "Seviye Sınavı" };
-  const base = map[section] || "Sayfa";
-  if (!param) return { path, label: base };
-  const named = helpers.resolve?.(section, param);
-  return { path, label: named ? `${base} · ${named}` : `${base} · ${param}` };
 }
