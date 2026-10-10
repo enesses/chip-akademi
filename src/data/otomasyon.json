@@ -1,7 +1,7 @@
 {
-  "guncelleme": "2026-10-10T07:16:15.241Z",
+  "guncelleme": "2026-10-10T07:19:47.066Z",
   "tarih": "2026-10-10",
-  "durum": "temiz",
+  "durum": "dikkat",
   "ajanlar": [
     {
       "id": "guvenlik",
@@ -36,7 +36,16 @@
       "zaman": "2026-10-10T07:14:42.032Z"
     }
   ],
-  "dikkat": [],
+  "dikkat": [
+    {
+      "seviye": "dikkat",
+      "metin": "Öneri onay bekliyor: Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele (PR #17) — Denetim geçti (26/26); PR açıldı, otomatik birleştirme bu oturumda izin denetimince reddedildi, kullanıcı onayı bekliyor"
+    },
+    {
+      "seviye": "dikkat",
+      "metin": "Öneri onay bekliyor: Kalan 20 kullanılmayan export'u temizle (PR #18) — Denetim geçti (26/26); PR açıldı, otomatik birleştirme bu oturumda izin denetimince reddedildi, kullanıcı onayı bekliyor"
+    }
+  ],
   "oneriler": [
     {
       "baslik": "Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
@@ -75,7 +84,28 @@
       "alan": "veri"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-10-10",
+      "oneri": "Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
+      "durum": "acik",
+      "pr": 17,
+      "dal": "otomasyon/oneri-2026-10-10-1",
+      "ozet": "Hareket kartlarında mutlak değişimi 2 sentin altındaki satırlar gizleniyor (GTX 1650 artık listede değil)",
+      "neden": "Denetim geçti (26/26); PR açıldı, otomatik birleştirme bu oturumda izin denetimince reddedildi, kullanıcı onayı bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-10",
+      "oneri": "Kalan 20 kullanılmayan export'u temizle",
+      "durum": "acik",
+      "pr": 18,
+      "dal": "otomasyon/oneri-2026-10-10-2",
+      "ozet": "17 kullanılmayan export kaldırıldı (badge.jsx, select.jsx dahil); togglePin, resetProgress, fiyatBilgisi bağlanmak üzere bırakıldı",
+      "neden": "Denetim geçti (26/26); PR açıldı, otomatik birleştirme bu oturumda izin denetimince reddedildi, kullanıcı onayı bekliyor",
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
@@ -124,6 +154,20 @@
       "durum": "acik",
       "pr": 16,
       "tarih": "2026-10-09",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
+      "durum": "acik",
+      "pr": 17,
+      "tarih": "2026-10-10",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Kalan 20 kullanılmayan export'u temizle",
+      "durum": "acik",
+      "pr": 18,
+      "tarih": "2026-10-10",
       "kim": "otomasyon"
     }
   ],

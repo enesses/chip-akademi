@@ -1,8 +1,8 @@
 {
   "ajan": "rapor",
   "tarih": "2026-10-10",
-  "zaman": "2026-10-10T07:16:15.243Z",
-  "durum": "temiz",
+  "zaman": "2026-10-10T07:19:47.068Z",
+  "durum": "dikkat",
   "gunTamam": true,
   "tazelik": [
     {
@@ -24,5 +24,14 @@
     "gelistirme"
   ],
   "calismayan": [],
-  "dikkat": []
+  "dikkat": [
+    {
+      "seviye": "dikkat",
+      "metin": "Öneri onay bekliyor: Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele (PR #17) — Denetim geçti (26/26); PR açıldı, otomatik birleştirme bu oturumda izin denetimince reddedildi, kullanıcı onayı bekliyor"
+    },
+    {
+      "seviye": "dikkat",
+      "metin": "Öneri onay bekliyor: Kalan 20 kullanılmayan export'u temizle (PR #18) — Denetim geçti (26/26); PR açıldı, otomatik birleştirme bu oturumda izin denetimince reddedildi, kullanıcı onayı bekliyor"
+    }
+  ]
 }

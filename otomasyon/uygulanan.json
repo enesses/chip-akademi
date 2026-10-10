@@ -70,6 +70,26 @@
       "ozet": "Tabloya en az 5 sağlayıcı aç/kapa filtresi ve model sayısı",
       "neden": "Denetim geçti (26/26); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor; #15 ile aynı dosyada, ikincisi birleşirken çakışma çıkabilir",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-10",
+      "oneri": "Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
+      "durum": "acik",
+      "pr": 17,
+      "dal": "otomasyon/oneri-2026-10-10-1",
+      "ozet": "Hareket kartlarında mutlak değişimi 2 sentin altındaki satırlar gizleniyor (GTX 1650 artık listede değil)",
+      "neden": "Denetim geçti (26/26); PR açıldı, otomatik birleştirme bu oturumda izin denetimince reddedildi, kullanıcı onayı bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-10",
+      "oneri": "Kalan 20 kullanılmayan export'u temizle",
+      "durum": "acik",
+      "pr": 18,
+      "dal": "otomasyon/oneri-2026-10-10-2",
+      "ozet": "17 kullanılmayan export kaldırıldı (badge.jsx, select.jsx dahil); togglePin, resetProgress, fiyatBilgisi bağlanmak üzere bırakıldı",
+      "neden": "Denetim geçti (26/26); PR açıldı, otomatik birleştirme bu oturumda izin denetimince reddedildi, kullanıcı onayı bekliyor",
+      "kim": "otomasyon"
     }
   ]
 }
