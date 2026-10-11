@@ -1,7 +1,7 @@
 {
-  "guncelleme": "2026-10-11T07:09:13.200Z",
+  "guncelleme": "2026-10-11T07:14:21.693Z",
   "tarih": "2026-10-11",
-  "durum": "temiz",
+  "durum": "dikkat",
   "ajanlar": [
     {
       "id": "guvenlik",
@@ -36,7 +36,16 @@
       "zaman": "2026-10-11T07:08:07.785Z"
     }
   ],
-  "dikkat": [],
+  "dikkat": [
+    {
+      "seviye": "dikkat",
+      "metin": "Öneri onay bekliyor: Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster (PR #21) — Denetim geçti (27/27); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor"
+    },
+    {
+      "seviye": "dikkat",
+      "metin": "Öneri onay bekliyor: Ana sayfa hareket satırında önceki → yeni fiyatı göster (PR #22) — Denetim geçti (27/27); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor"
+    }
+  ],
   "oneriler": [
     {
       "baslik": "Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
@@ -75,7 +84,28 @@
       "alan": "veri"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-10-11",
+      "oneri": "Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
+      "durum": "acik",
+      "pr": 21,
+      "dal": "otomasyon/oneri-2026-10-11-1",
+      "ozet": "Ana sayfa kartı en az 5 sağlayıcılı ilk artış/düşüşü gösteriyor (bugün GTX 1660 -%83 yerine; düşen satırı gizlendi)",
+      "neden": "Denetim geçti (27/27); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-11",
+      "oneri": "Ana sayfa hareket satırında önceki → yeni fiyatı göster",
+      "durum": "acik",
+      "pr": 22,
+      "dal": "otomasyon/oneri-2026-10-11-2",
+      "ozet": "Kiralama kartında yüzdenin yanında önceki → yeni fiyat (geniş ekranda)",
+      "neden": "Denetim geçti (27/27); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor",
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
@@ -138,6 +168,20 @@
       "durum": "acik",
       "pr": 18,
       "tarih": "2026-10-10",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
+      "durum": "acik",
+      "pr": 21,
+      "tarih": "2026-10-11",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Ana sayfa hareket satırında önceki → yeni fiyatı göster",
+      "durum": "acik",
+      "pr": 22,
+      "tarih": "2026-10-11",
       "kim": "otomasyon"
     }
   ],

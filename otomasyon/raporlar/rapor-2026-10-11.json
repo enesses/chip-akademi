@@ -1,8 +1,8 @@
 {
   "ajan": "rapor",
   "tarih": "2026-10-11",
-  "zaman": "2026-10-11T07:09:13.203Z",
-  "durum": "temiz",
+  "zaman": "2026-10-11T07:14:21.694Z",
+  "durum": "dikkat",
   "gunTamam": true,
   "tazelik": [
     {
@@ -24,5 +24,14 @@
     "gelistirme"
   ],
   "calismayan": [],
-  "dikkat": []
+  "dikkat": [
+    {
+      "seviye": "dikkat",
+      "metin": "Öneri onay bekliyor: Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster (PR #21) — Denetim geçti (27/27); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor"
+    },
+    {
+      "seviye": "dikkat",
+      "metin": "Öneri onay bekliyor: Ana sayfa hareket satırında önceki → yeni fiyatı göster (PR #22) — Denetim geçti (27/27); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor"
+    }
+  ]
 }
