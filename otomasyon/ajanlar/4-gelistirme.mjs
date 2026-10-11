@@ -61,8 +61,17 @@ const DUZELTMELER = {
     // günün yenileme raporunu boş bir sonuçla ezer ("Bugün: güncellendi" →
     // "girdi gelmedi") ve gereksiz ikinci bir derleme yapar.
     const GIRDILER = ["fiyatlar.json", "bugun.json", "bellek.json", "oneriler.json"];
-    if (!GIRDILER.some((f) => fs.existsSync(path.join(KOK, "otomasyon", "gelen", f))))
+    const gelen = path.join(KOK, "otomasyon", "gelen");
+    const kalan = GIRDILER.filter((f) => fs.existsSync(path.join(gelen, f)));
+    if (!kalan.length)
       throw new Error("otomasyon/gelen/ altında işlenecek girdi yok — yenileme yeniden çalıştırılmadı (günün yenileme raporu korunur)");
+    // Kalan girdiler son işlemeden beri değişmediyse bunlar az önce reddedilmiş
+    // dosyalardır: yeniden çalıştırmak yine reddeder ve üstelik günün yenileme
+    // raporunu (o sabah işlenen fiyat/haber sonuçlarını) boş bir sonuçla ezer.
+    let sonIsleme = 0;
+    try { sonIsleme = Date.parse(JSON.parse(fs.readFileSync(path.join(gelen, ".son-isleme.json"), "utf-8")).zaman) || 0; } catch {}
+    if (sonIsleme && kalan.every((f) => fs.statSync(path.join(gelen, f)).mtimeMs <= sonIsleme))
+      throw new Error(`gelen/ altındaki ${kalan.join(", ")} son işlemede reddedildi ve o zamandan beri değişmedi — yenileme yeniden çalıştırılmadı (günün yenileme raporu korunur)`);
     const once = tarihler();
     calistir("node otomasyon/ajanlar/3-yenileme.mjs");
     const sonra = tarihler();
