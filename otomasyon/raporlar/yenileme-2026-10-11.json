@@ -1,0 +1,33 @@
+{
+  "ajan": "yenileme",
+  "tarih": "2026-10-11",
+  "zaman": "2026-10-11T07:07:53.015Z",
+  "durum": "tamam",
+  "adimlar": [
+    {
+      "ad": "Fiyat verisi",
+      "durum": "ok",
+      "detay": "bugün 07:06'da güncellendi — 97 model (getdeploying.com/gpus medyan), A5000 +%65 ikinci okumayla elle doğrulandı; endeks 5 Ekim haftası (4 hafta +%1,3, 12 ay +%8). Not: rapor, geliştirme ajanının yenilemeyi yeniden çalıştırmasıyla ezilmişti, elle düzeltildi."
+    },
+    {
+      "ad": "Bugün sayfası",
+      "durum": "ok",
+      "detay": "bu çalıştırmada güncellendi — 8 madde, puan 38; haber akışına +8"
+    },
+    {
+      "ad": "Haber akışı",
+      "durum": "ok",
+      "detay": "bugün 14 haber: 8 Bugün maddesi + 6 ek haber (gelen/haberler.json 07:06'da işlendi)"
+    },
+    {
+      "ad": "Derleme",
+      "durum": "ok",
+      "detay": "başarılı"
+    },
+    {
+      "ad": "Tek dosya",
+      "durum": "ok",
+      "detay": "17 görsel, HTML: 2206 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+    }
+  ]
+}

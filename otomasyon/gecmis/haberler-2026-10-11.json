@@ -1,0 +1,75 @@
+{
+  "tarih": "2026-10-11",
+  "haberler": [
+    {
+      "baslik": "Samsung HBM4 fiyatlarının gelecek yıl ikiye katlanması bekleniyor",
+      "detay": "Seoul Economic Daily'ye göre sektör, Samsung HBM4 fiyatının 2027'de iki katına çıkmasını bekliyor; TrendForce küresel HBM ortalama fiyatında %121 artış öngörüyor. DDR4 8Gb sözleşme fiyatı bir yılda 6,3 $'dan 26 $'a çıktı (DRAMeXchange).",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/10/08/hbm-prices-to-double-as-memory-shortage-drives-samsung",
+      "yayin": "2026-10-08",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "TSMC'nin eylül geliri yıllık %54,6 arttı, aylık bazda %0,6 geriledi",
+      "detay": "SEC'e sunulan bildirime göre TSMC'nin eylül geliri 511,9 milyar NT$; ocak–eylül toplamı 3,90 trilyon NT$ ile %41,1 artışta. Aylık hafif düşüş, dört aylık rekor serisini sonlandırdı.",
+      "kaynak": "TSMC (SEC 6-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000680/tsm-revenue20261008.htm",
+      "yayin": "2026-10-08",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Bitdeer AI, Malezya'da 67 MW'lık GB300 kampüsü için 10 yıllık anlaşma imzaladı",
+      "detay": "A901 tesisi sıvı soğutmalı Nvidia GB300 NVL72 sistemleri için tasarlanacak; teslim 2027'nin ilk yarısında. Bitdeer'in sözleşmeli kapasitesi 273,5 MW'a çıktı (2028 hedefi 350 MW).",
+      "kaynak": "DCD",
+      "url": "https://datacenterdynamics.com/en/news/bitdeer-ai-signs-67mw-ai-cloud-agreement-in-malaysia",
+      "yayin": "2026-10-09",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "İtalya'da belediye 80 MW'lık veri merkezini oybirliğiyle reddetti",
+      "detay": "Lombardiya'daki Cologno Monzese meclisi, Officine Mak ve 2C Sviluppo'nun iki binalı 80 MW projesini yoğun su ve elektrik tüketimi ile arazi kullanımı gerekçesiyle reddetti; 12 milyon € belediye geliri bekleniyordu.",
+      "kaynak": "DCD",
+      "url": "https://datacenterdynamics.com/en/news/council-rejects-80mw-data-center-in-northern-italy",
+      "yayin": "2026-10-09",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Microsoft, karar odaklı küçük modeli Decision-1'i Foundry'de yayımladı",
+      "detay": "Qwen3.5-9B üzerine eğitilen model metin üretmek yerine sabit seçeneklerden birini olasılıkla seçiyor; girdi milyon token başına 0,042 $'dan, çıktı ücretsiz. Microsoft 36 kıyaslamada en yüksek doğruluğu iddia ediyor.",
+      "kaynak": "TestingCatalog",
+      "url": "https://www.testingcatalog.com/microsoft-launches-decision-1-model-in-foundry/",
+      "yayin": "2026-10-09",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "AI gelir soruları yarı iletken hisselerini ekim zirvesinden indirdi",
+      "detay": "iShares Semiconductor ETF ekim başında beş seans üst üste yükseldikten sonra hafta boyunca geri çekildi; PHLX endeksi haftayı düşüşle kapattı. Endeks eylül sonunda yılbaşından beri %73 yukarıdaydı.",
+      "kaynak": "PR Newswire (Stock Preachers)",
+      "url": "https://www.prnewswire.com/news-releases/ai-revenue-questions-pull-semiconductor-stocks-off-october-highs-302905067.html",
+      "yayin": "2026-10-10",
+      "konular": [
+        "pazar",
+        "cip"
+      ],
+      "kategori": "negatif"
+    }
+  ]
+}

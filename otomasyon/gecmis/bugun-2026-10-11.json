@@ -1,0 +1,96 @@
+{
+  "tarih": "2026-10-11",
+  "derlenme": "11 Ekim 2026",
+  "ozet": [
+    "Hafta sonu gündemi, yapay zekâ altyapısının artık çipten çok enerji, izin ve maliyetle sınandığını gösteriyor. Oracle, New Mexico'daki 2,45 GW'lık Project Jupiter kampüsü için gaz boru hattı gecikmesi nedeniyle geliştiriciye force majeure bildirimi gönderdi; İtalya'da da bir belediye su ve elektrik tüketimi gerekçesiyle 80 MW'lık projeyi reddetti. Güç ve izin, sipariş defterlerinin önüne geçen darboğaz olmaya devam ediyor.",
+    "Bellek cephesinde iki zıt sinyal var. Bir yanda bellek maliyetleri tüketici elektroniğini sıkıştırıyor: Nikkei'ye göre Apple, iPhone 18 Pro bileşen siparişlerini ekimde %15–20 azalttı. Öte yanda Çinli CXMT, 4F² hücre mimarili DDR5 RDIMM'i yıl sonuna kadar çıkarmayı ve Samsung'un önüne yaklaşık iki yıl geçmeyi hedefliyor; bu, uzun vadede Koreli üreticilerin fiyatlama gücü için bir soru işareti.",
+    "Çip ekosisteminde Nvidia, The Information'a göre çıkarım çipi rakibi d-Matrix'e yatırım yapmaya hazırlanıyor; Google'ın altyapı başkan yardımcısı Bikash Koley ise Google–Blackstone ortaklığı TPU bulutu Crux AI'a geçti. Anthropic ile ilişkilendirilen 490 MW BT kapasiteli bir Teksas kampüsü için başvuru yapıldı.",
+    "Denetim ve güvenlik tarafında Super Micro'nun eski taşeronu, 2,5 milyar $'lık Nvidia sunucusunu Çin'e yönlendirme davasında suçunu kabul etti; Nvidia'nın GPU izleme aracı DCGM Exporter'da 2.000'den fazla açık sunucuyu etkileyen yüksek önemli bir açık duyuruldu."
+  ],
+  "puan": {
+    "etiket": "Altyapıda sürtünme",
+    "yorum": "Nvidia'nın d-Matrix hamlesi ve yeni kampüs projeleri talebin sürdüğünü gösterse de Oracle'ın force majeure uyarısı, Apple'ın sipariş kesintisi ve yerel izin retleri enerji ve maliyet darboğazını öne çıkarıyor; hafta sonu tonu nötrün biraz altında.",
+    "deger": 38
+  },
+  "maddeler": [
+    {
+      "baslik": "Oracle, 2,45 GW'lık New Mexico kampüsü için force majeure bildirdi",
+      "detay": "Oracle, Project Jupiter kampüsünün geliştiricisine (Blue Owl birimi) force majeure bildirimi gönderdi. Gaz boru hattının geçiş izni reddedildi, hat yeniden rotalandı ve başlangıç 1 Şubat 2027'ye kaydı. 18 milyar $'lık inşaat kredisi dolar başına 90 sentin altında işlem görüyor.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "Büyük bir AI veri merkezinin enerji bağlantısı yüzünden gecikmesi, GPU kurulumlarının takvimini ve finansmanını doğrudan riske atıyor.",
+      "kaynak": "TheStreet",
+      "url": "https://thestreet.com/technology/oracle-force-majeure-ai-data-center-power-bottleneck"
+    },
+    {
+      "baslik": "Apple, bellek maliyetleri nedeniyle iPhone 18 Pro siparişlerini %15–20 kıstı",
+      "detay": "Nikkei Asia'ya göre Apple, ekim ayı iPhone 18 Pro ve Pro Max bileşen siparişlerini orijinal plana göre %15–20 azalttı. Haberde bellek maliyetlerinin fiyat artışına, bunun da talebe yansıdığı belirtiliyor; Almanya'da Pro modeller 150 € pahalandı.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Bellek fiyatlarındaki artışın tüketici cihaz talebini kemirmeye başlaması, çip talebinin AI dışı ayağını zayıflatıyor.",
+      "kaynak": "Notebookcheck (Nikkei Asia)",
+      "url": "https://www.notebookcheck.net/iPhone-18-Pro-Apple-reportedly-cuts-orders-by-up-to-20-percent.1420431.0.html"
+    },
+    {
+      "baslik": "CXMT, 4F² mimarili DDR5'i Samsung'dan ~2 yıl önce çıkarmayı hedefliyor",
+      "detay": "CXMT Başkanı Cao Kanyu'ya göre şirket 4F² hücreli DDR5 RDIMM'i 2026 sonuna kadar piyasaya sürecek; Samsung'un bu mimari için planı 2028. CXMT yıl sonunda 300.000 wafer/ay DRAM ve ~50.000 wafer/ay HBM kapasitesi hedefliyor.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Bellek arzına yeni rakip kapasite eklenmesi fiyat baskısını gevşetebilir ama Koreli üreticilerin marjları için risk oluşturuyor.",
+      "kaynak": "Wccftech (ITHome)",
+      "url": "https://wccftech.com/cxmt-to-leapfrog-samsung-by-2-years-as-it-gears-up-to-introduce-a-ddr5-rdimm-product-that-leverages-the-4f%C2%B2-memory-cell-architecture-before-year-end/amp"
+    },
+    {
+      "baslik": "Nvidia, çıkarım çipi girişimi d-Matrix'e yatırım yapmaya hazırlanıyor",
+      "detay": "The Information'ın üç kaynağa dayanan haberine göre Nvidia, rakip çıkarım çipi geliştiren d-Matrix'e yatırım planlıyor. d-Matrix, Kasım 2025'te 2 milyar $ değerlemeyle 275 milyon $ toplamıştı; tutar açıklanmadı.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Çıkarım donanımına yatırımın büyümesi talebin genişlediğini gösteriyor; Nvidia rakip mimarileri de ekosistemine çekiyor.",
+      "kaynak": "DCD (The Information)",
+      "url": "https://datacenterdynamics.com/en/news/report-nvidia-plans-to-invest-in-inference-chip-startup-d-matrix"
+    },
+    {
+      "baslik": "Anthropic'le ilişkilendirilen 366 milyon $'lık Teksas veri merkezi için başvuru",
+      "detay": "Bastrop County, Cedar Creek'te 'Project Longhorn' için TDLR'ye başvuru yapıldı: tam kapasitede 710 MW gaz türbini gücü ve 490 MW BT kapasitesi; inşaat 30 Kasım 2026'da başlayıp Ocak 2028'de bitecek. Anthropic'in kiralama görüşmesinde olduğu bildiriliyor, şirket yorum yapmadı.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Yeni yüzlerce MW'lık kampüs planları hızlandırıcı talebinin 2027–28'e uzandığını gösteriyor.",
+      "kaynak": "DCD",
+      "url": "https://datacenterdynamics.com/en/news/anthropic-linked-366m-data-center-project-filed-for-in-cedar-creek-texas"
+    },
+    {
+      "baslik": "Google'ın altyapı başkan yardımcısı TPU bulutu Crux AI'a geçti",
+      "detay": "Google'ın küresel altyapı ve kapasite başkan yardımcısı Bikash Koley, Google–Blackstone ortaklığı Crux AI'a teknoloji ve ürün direktörü olarak katıldı. Crux, 2027'de 500 MW, ardından 2 GW TPU kapasitesi hedefliyor.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "TPU tabanlı bağımsız bulutun kadrolaşması, Nvidia dışı hızlandırıcı arzının ciddileştiğini gösteriyor.",
+      "kaynak": "DCD",
+      "url": "https://datacenterdynamics.com/en/news/googles-vp-of-global-infrastructure-and-capacity-bikash-koley-heads-to-tpu-neocloud-crux-ai"
+    },
+    {
+      "baslik": "Super Micro'nun eski taşeronu Nvidia sunucusu kaçakçılığında suçunu kabul etti",
+      "detay": "Ting-Wei 'Willy' Sun, yaklaşık 2,5 milyar $'lık Supermicro sunucusunun Güneydoğu Asya üzerinden Çin'e yönlendirilmesi davasında 9 Ekim'de New York federal mahkemesinde suçunu kabul etti. Kurucu ortak Wally Liaw tutuklu, bir sanık firari.",
+      "kategori": "negatif",
+      "agirlik": 1,
+      "neden": "İhracat kontrolü ihlallerinin yargıya taşınması, sunucu üreticileri ve Çin satışları üzerindeki denetim baskısını artırıyor.",
+      "kaynak": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/super-micro-contractor-pleads-guilty-nvidia-chips/"
+    },
+    {
+      "baslik": "Nvidia DCGM Exporter'da yüksek önemli açık: 2.000+ GPU sunucusu açıkta",
+      "detay": "CVE-2026-47483 (CVSS 8,2), kimlik doğrulaması olmayan saldırganların GPU izlemeyi çökertmesine izin veriyor. Lava araştırmacılarına göre ~300 kuruluşa ait, yaklaşık 100 milyon $ değerinde 2.000'den fazla sunucu internete açık; Nvidia düzeltme yayımladı.",
+      "kategori": "negatif",
+      "agirlik": 1,
+      "neden": "AI kümelerinin operasyonel güvenliğindeki açıklar kesinti riski taşıyor; etkisi yamayla sınırlı.",
+      "kaynak": "Cybernews",
+      "url": "https://cybernews.com/security/nvidia-high-severity-vulnerability/"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = -3 · Σ ağırlık = 13 · Puan = 50 + 50 × -0.23 = 38"
+  }
+}

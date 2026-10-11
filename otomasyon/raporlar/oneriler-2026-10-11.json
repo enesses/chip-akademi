@@ -1,0 +1,41 @@
+{
+  "oneriler": [
+    {
+      "baslik": "Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
+      "neden": "src/pages/Home.jsx iki_gun.artanlar[0] ve dusenler[0]'ı sağlayıcı sayısına bakmadan alıyor. Bugün 'en çok düşen' 3 sağlayıcılı GTX 1660 (-%83,3, 0,36→0,06 $) çıktı; ana sayfadaki tek hareket satırı ince bir pazarın gürültüsünü gösteriyor. #15/#16 Prices.jsx'i ele alıyor, Home.jsx'e dokunmuyor.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Ana sayfa hareket satırında önceki → yeni fiyatı göster",
+      "neden": "Home.jsx kiralama kartı yalnızca yüzdeyi gösteriyor (ör. A5000 +%65,3); gpu_kiralama.json'da onceki_usd ve usd_saat hazır. Mutlak fiyat olmadan +%65'in 0,49 $ mı 0,0x $ mı olduğu anlaşılmıyor.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Geliştirme ajanı reddedilmiş girdi yüzünden yenilemeyi yeniden çalıştırıp günün raporunu ezmesin",
+      "neden": "11 Ekim'de bugun.json 'özet eksik' ile reddedilip gelen/'de kaldı; 4-gelistirme.mjs bunu 'girdi var' sayıp 3-yenileme.mjs'yi yeniden çalıştırdı, .son-isleme.json ve yenileme raporu ezildi: fiyat (97 model güncellendi) 'atlandı', 6 ek haber 'gelen/haberler.json gelmedi' göründü. Düzeltme PR olarak açıldı.",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "3–9 sağlayıcılı modellerde de >%50 oynamayı şüpheli say",
+      "neden": "veri-isle.mjs şüpheli kontrolünü yalnızca ≥10 sağlayıcıda yapıyor; GTX 1660 (3 sağlayıcı, -%83) ve RTX 4070 Ti Super (3 sağlayıcı, -%35) doğrulama olmadan yazıldı ve hareket listesinin başına geçti.",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Fiyat girdisinde sağlayıcı sayısını ayrı bir hedefli okumayla doğrula",
+      "neden": "Bugünkü ikinci WebFetch'te 'Providers' sayıları tutarsız geldi (H100 52, arama başlığında 57); kayıtlı sayılar korundu. A5000'in hedefli okuması '+7 providers' biçimini gösterdi; GUNLUK.md sayıyı bu metinden türetmeyi tarif etmeli.",
+      "etki": "düşük",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Bugün sayfasına son 7 günün puan geçmişi",
+      "neden": "otomasyon/gecmis/bugun-2026-10-04…11.json sekiz günlük puan içeriyor ama Bugun.jsx yalnızca günün puanını gösteriyor (bugün 38, dün 75); düşüşün bağlamı kayboluyor. Veri yolu otomasyon/ altından geçtiği için korunan dosyaya dokunur.",
+      "etki": "orta",
+      "alan": "veri"
+    }
+  ],
+  "tarih": "2026-10-11"
+}

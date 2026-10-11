@@ -1,0 +1,13 @@
+{
+  "fiyat": {
+    "durum": "ok",
+    "not": "getdeploying.com/gpus WebSearch sonucunda tam adres yoktu ama WebFetch sayfayı okudu; sağlayıcı sayıları ikinci okumada tutarsız çıktığı için kayıtlı değerler korundu"
+  },
+  "endeks": {
+    "durum": "ok"
+  },
+  "bellek": {
+    "durum": "ok",
+    "not": "pazar günü; TrendForce adımı atlandı (yalnızca pazartesi)"
+  }
+}

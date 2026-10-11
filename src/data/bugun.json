@@ -1,80 +1,89 @@
 {
-  "tarih": "2026-10-10",
-  "derlenme": "10 Ekim 2026",
+  "tarih": "2026-10-11",
+  "derlenme": "11 Ekim 2026",
   "ozet": [
-    "Günün ana teması, perşembe günkü sert satışın ardından gelen kırılgan toparlanma denemesi. Bloomberg'in haberine göre OpenAI yatırımcılarına yıllıklandırılmış gelirinin 2026 sonunda en az 70 milyar $'a ulaşmasını beklediğini söyledi. Bu, bir gün önce FT'nin duyurduğu yaklaşık 50 milyar $'lık eylül rakamının yarattığı kaygıyı kısmen yumuşattı.",
-    "Cuma sabahı ABD'de yarı iletken endeksi %1,5, Nasdaq 100 %0,6 yükseldi; piyasa öncesinde SK Hynix, Micron ve SanDisk %2'nin üzerinde toparlandı. Ancak gün sonu piyasa özetleri çip hisselerinin S&P 500'ün gerisinde kalmayı sürdürdüğünü yazıyor; yani toparlanma genele yayılmadı. AMD gün içinde %0,8 gerilese de Citi hedef fiyatını 800 $'a, Mizuho 705 $'a yükseltti.",
-    "Tedarik zincirinde maliyet ve pazarlık gücü öne çıkıyor: TheElec'e göre ASML, Samsung ve SK Hynix'e EUV/DUV yedek parçalarında ocaktan itibaren %10'luk toplu zam uyguluyor. Samsung'un ise HBM4 tedarikindeki konumunu AMD ile 2 nm (SF2P) dökümhane görüşmelerinde koz olarak kullandığı bildiriliyor; henüz bir sözleşme açıklanmadı.",
-    "Kısacası bellek ve ekipman tarafında fiyatlama gücü üreticilerde kalırken, piyasa AI gelirlerinin bu yatırımları taşıyıp taşımayacağına dair her yeni veri noktasına sert tepki veriyor. Nvidia'nın ABD bilimine beş yılda 1 milyar $'lık taahhüdü de devlet destekli altyapı talebinin sürdüğünü gösteriyor."
+    "Hafta sonu gündemi, yapay zekâ altyapısının artık çipten çok enerji, izin ve maliyetle sınandığını gösteriyor. Oracle, New Mexico'daki 2,45 GW'lık Project Jupiter kampüsü için gaz boru hattı gecikmesi nedeniyle geliştiriciye force majeure bildirimi gönderdi; İtalya'da da bir belediye su ve elektrik tüketimi gerekçesiyle 80 MW'lık projeyi reddetti. Güç ve izin, sipariş defterlerinin önüne geçen darboğaz olmaya devam ediyor.",
+    "Bellek cephesinde iki zıt sinyal var. Bir yanda bellek maliyetleri tüketici elektroniğini sıkıştırıyor: Nikkei'ye göre Apple, iPhone 18 Pro bileşen siparişlerini ekimde %15–20 azalttı. Öte yanda Çinli CXMT, 4F² hücre mimarili DDR5 RDIMM'i yıl sonuna kadar çıkarmayı ve Samsung'un önüne yaklaşık iki yıl geçmeyi hedefliyor; bu, uzun vadede Koreli üreticilerin fiyatlama gücü için bir soru işareti.",
+    "Çip ekosisteminde Nvidia, The Information'a göre çıkarım çipi rakibi d-Matrix'e yatırım yapmaya hazırlanıyor; Google'ın altyapı başkan yardımcısı Bikash Koley ise Google–Blackstone ortaklığı TPU bulutu Crux AI'a geçti. Anthropic ile ilişkilendirilen 490 MW BT kapasiteli bir Teksas kampüsü için başvuru yapıldı.",
+    "Denetim ve güvenlik tarafında Super Micro'nun eski taşeronu, 2,5 milyar $'lık Nvidia sunucusunu Çin'e yönlendirme davasında suçunu kabul etti; Nvidia'nın GPU izleme aracı DCGM Exporter'da 2.000'den fazla açık sunucuyu etkileyen yüksek önemli bir açık duyuruldu."
   ],
   "puan": {
-    "etiket": "Temkinli toparlanma",
-    "yorum": "OpenAI'ın 70 milyar $'lık yıl sonu hedefi ve analist hedef artışları sabah alımlarını getirdi; ancak çip hisselerinin gün sonunda geride kalması ve ekipman/bellek maliyetlerindeki artış dengeyi nötrün biraz üzerinde tutuyor.",
-    "deger": 75
+    "etiket": "Altyapıda sürtünme",
+    "yorum": "Nvidia'nın d-Matrix hamlesi ve yeni kampüs projeleri talebin sürdüğünü gösterse de Oracle'ın force majeure uyarısı, Apple'ın sipariş kesintisi ve yerel izin retleri enerji ve maliyet darboğazını öne çıkarıyor; hafta sonu tonu nötrün biraz altında.",
+    "deger": 38
   },
   "maddeler": [
     {
-      "baslik": "OpenAI yatırımcılara yıl sonu için en az 70 milyar $ gelir hızı hedefi verdi",
-      "detay": "Quartz'ın Bloomberg'e dayandırdığı habere göre OpenAI, yıllıklandırılmış gelirinin 2026 sonunda 70 milyar $'a ulaşmasını ya da aşmasını bekliyor. Haber, FT'nin bir gün önce duyurduğu yaklaşık 50 milyar $'lık eylül rakamının ardından geldi ve Nvidia ile Micron'da cuma sabahı alım getirdi.",
-      "kategori": "pozitif",
+      "baslik": "Oracle, 2,45 GW'lık New Mexico kampüsü için force majeure bildirdi",
+      "detay": "Oracle, Project Jupiter kampüsünün geliştiricisine (Blue Owl birimi) force majeure bildirimi gönderdi. Gaz boru hattının geçiş izni reddedildi, hat yeniden rotalandı ve başlangıç 1 Şubat 2027'ye kaydı. 18 milyar $'lık inşaat kredisi dolar başına 90 sentin altında işlem görüyor.",
+      "kategori": "negatif",
       "agirlik": 3,
-      "neden": "AI çip siparişlerinin en büyük alıcılarından birinin gelir görünümü, harcamaların finanse edilebilirliğine dair kaygıyı azaltıyor.",
-      "kaynak": "Quartz (Bloomberg)",
-      "url": "https://qz.com/nvidia-micron-stocks-openai-70-billion-revenue-2026-100926"
+      "neden": "Büyük bir AI veri merkezinin enerji bağlantısı yüzünden gecikmesi, GPU kurulumlarının takvimini ve finansmanını doğrudan riske atıyor.",
+      "kaynak": "TheStreet",
+      "url": "https://thestreet.com/technology/oracle-force-majeure-ai-data-center-power-bottleneck"
     },
     {
-      "baslik": "Çip hisseleri sabah toparlandı, gün sonunda geride kaldı",
-      "detay": "9 Ekim sabahı yarı iletken endeksi %1,5, Nasdaq 100 %0,6, S&P 500 %0,3 yükseldi. Gün sonu ABD piyasa özeti ise S&P 500 rekora yaklaşırken çip hisselerinin geride kalmayı sürdürdüğünü, OpenAI gelir haberlerinin AI harcama kaygısını canlı tuttuğunu yazdı.",
+      "baslik": "Apple, bellek maliyetleri nedeniyle iPhone 18 Pro siparişlerini %15–20 kıstı",
+      "detay": "Nikkei Asia'ya göre Apple, ekim ayı iPhone 18 Pro ve Pro Max bileşen siparişlerini orijinal plana göre %15–20 azalttı. Haberde bellek maliyetlerinin fiyat artışına, bunun da talebe yansıdığı belirtiliyor; Almanya'da Pro modeller 150 € pahalandı.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Bellek fiyatlarındaki artışın tüketici cihaz talebini kemirmeye başlaması, çip talebinin AI dışı ayağını zayıflatıyor.",
+      "kaynak": "Notebookcheck (Nikkei Asia)",
+      "url": "https://www.notebookcheck.net/iPhone-18-Pro-Apple-reportedly-cuts-orders-by-up-to-20-percent.1420431.0.html"
+    },
+    {
+      "baslik": "CXMT, 4F² mimarili DDR5'i Samsung'dan ~2 yıl önce çıkarmayı hedefliyor",
+      "detay": "CXMT Başkanı Cao Kanyu'ya göre şirket 4F² hücreli DDR5 RDIMM'i 2026 sonuna kadar piyasaya sürecek; Samsung'un bu mimari için planı 2028. CXMT yıl sonunda 300.000 wafer/ay DRAM ve ~50.000 wafer/ay HBM kapasitesi hedefliyor.",
       "kategori": "notr",
       "agirlik": 2,
-      "neden": "Sabahki toparlanma kalıcı olmadı; perşembenin %3,4'lük düşüşünden sonra dengelenme var ama güven geri gelmiş değil.",
-      "kaynak": "GuruFocus; FinancialJuice",
-      "url": "https://www.gurufocus.com/news/9117382/us-stocks-rise-as-chip-stocks-rebound-amid-ai-optimism"
+      "neden": "Bellek arzına yeni rakip kapasite eklenmesi fiyat baskısını gevşetebilir ama Koreli üreticilerin marjları için risk oluşturuyor.",
+      "kaynak": "Wccftech (ITHome)",
+      "url": "https://wccftech.com/cxmt-to-leapfrog-samsung-by-2-years-as-it-gears-up-to-introduce-a-ddr5-rdimm-product-that-leverages-the-4f%C2%B2-memory-cell-architecture-before-year-end/amp"
     },
     {
-      "baslik": "Bellek hisseleri piyasa öncesi %2'nin üzerinde toparlandı",
-      "detay": "9 Ekim piyasa öncesinde SK Hynix %2,35, Micron %2,14, SanDisk %2,08, Western Digital %1,73, Seagate %1,46 yükseldi. Cantor Fitzgerald ve Mirae Asset, Kioxia'nın kapasite genişlemesinden kaynaklanan arz fazlası ve HBM fiyat indirimi endişelerinin abartıldığını belirtti.",
+      "baslik": "Nvidia, çıkarım çipi girişimi d-Matrix'e yatırım yapmaya hazırlanıyor",
+      "detay": "The Information'ın üç kaynağa dayanan haberine göre Nvidia, rakip çıkarım çipi geliştiren d-Matrix'e yatırım planlıyor. d-Matrix, Kasım 2025'te 2 milyar $ değerlemeyle 275 milyon $ toplamıştı; tutar açıklanmadı.",
       "kategori": "pozitif",
       "agirlik": 2,
-      "neden": "Aracı kurumların arz fazlası korkusunu abartılı bulması, HBM ve kurumsal SSD talebinin güçlü kaldığı görüşünü destekliyor.",
-      "kaynak": "TradingKey",
-      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262208203-stock-micron-sandisk-skhynix-mu-skhy-sndk-wdc-stx-dram-nand-ssd-hbm-tradingkey"
+      "neden": "Çıkarım donanımına yatırımın büyümesi talebin genişlediğini gösteriyor; Nvidia rakip mimarileri de ekosistemine çekiyor.",
+      "kaynak": "DCD (The Information)",
+      "url": "https://datacenterdynamics.com/en/news/report-nvidia-plans-to-invest-in-inference-chip-startup-d-matrix"
     },
     {
-      "baslik": "ASML, Samsung ve SK Hynix'e yedek parçada %10 zam yapıyor",
-      "detay": "TheElec'e dayanan habere göre ASML, EUV ve DUV sistemlerinin yedek parçalarına ocak teslimatlarından itibaren %10'luk toplu zam uygulayacak. ASML'nin kurulu taban (servis, parça, yükseltme) geliri geçen yıl 8,19 milyar € ile toplam 32,67 milyar €'luk gelirin yaklaşık dörtte biriydi. TSMC'nin zamlara direndiği bildiriliyor.",
+      "baslik": "Anthropic'le ilişkilendirilen 366 milyon $'lık Teksas veri merkezi için başvuru",
+      "detay": "Bastrop County, Cedar Creek'te 'Project Longhorn' için TDLR'ye başvuru yapıldı: tam kapasitede 710 MW gaz türbini gücü ve 490 MW BT kapasitesi; inşaat 30 Kasım 2026'da başlayıp Ocak 2028'de bitecek. Anthropic'in kiralama görüşmesinde olduğu bildiriliyor, şirket yorum yapmadı.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Yeni yüzlerce MW'lık kampüs planları hızlandırıcı talebinin 2027–28'e uzandığını gösteriyor.",
+      "kaynak": "DCD",
+      "url": "https://datacenterdynamics.com/en/news/anthropic-linked-366m-data-center-project-filed-for-in-cedar-creek-texas"
+    },
+    {
+      "baslik": "Google'ın altyapı başkan yardımcısı TPU bulutu Crux AI'a geçti",
+      "detay": "Google'ın küresel altyapı ve kapasite başkan yardımcısı Bikash Koley, Google–Blackstone ortaklığı Crux AI'a teknoloji ve ürün direktörü olarak katıldı. Crux, 2027'de 500 MW, ardından 2 GW TPU kapasitesi hedefliyor.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "TPU tabanlı bağımsız bulutun kadrolaşması, Nvidia dışı hızlandırıcı arzının ciddileştiğini gösteriyor.",
+      "kaynak": "DCD",
+      "url": "https://datacenterdynamics.com/en/news/googles-vp-of-global-infrastructure-and-capacity-bikash-koley-heads-to-tpu-neocloud-crux-ai"
+    },
+    {
+      "baslik": "Super Micro'nun eski taşeronu Nvidia sunucusu kaçakçılığında suçunu kabul etti",
+      "detay": "Ting-Wei 'Willy' Sun, yaklaşık 2,5 milyar $'lık Supermicro sunucusunun Güneydoğu Asya üzerinden Çin'e yönlendirilmesi davasında 9 Ekim'de New York federal mahkemesinde suçunu kabul etti. Kurucu ortak Wally Liaw tutuklu, bir sanık firari.",
       "kategori": "negatif",
       "agirlik": 1,
-      "neden": "Bellek üreticilerinin fab işletme maliyetini artırıyor; etkisi sınırlı ama maliyet baskısı yönünde.",
-      "kaynak": "Sammy Fans (TheElec)",
-      "url": "https://sammyfans.com/2026/10/09/samsung-and-sk-hynix-face-higher-asml-costs"
+      "neden": "İhracat kontrolü ihlallerinin yargıya taşınması, sunucu üreticileri ve Çin satışları üzerindeki denetim baskısını artırıyor.",
+      "kaynak": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/super-micro-contractor-pleads-guilty-nvidia-chips/"
     },
     {
-      "baslik": "Samsung HBM4 kozunu AMD ile 2 nm dökümhane görüşmelerinde kullanıyor",
-      "detay": "Tech Times'a göre Nvidia'nın SK Hynix'in 2026 HBM4 kapasitesinin büyük kısmını alması AMD'yi Samsung'a bağımlı bıraktı; Samsung bunu AMD çiplerinin SF2P (2 nm) sürecinde üretilmesi görüşmelerinde koz olarak kullandı. Helios rafı sistem başına 31 TB HBM4 gerektiriyor; MI455X 12 HBM4 yığını kullanıyor. Şartlar açıklanmadı, sözleşme duyurulmadı; iddiaların bir kısmı isimsiz kaynaklara dayanıyor.",
-      "kategori": "notr",
-      "agirlik": 2,
-      "neden": "HBM4 kıtlığının dökümhane tercihlerini etkilediğini gösteriyor; ancak doğrulanmış bir anlaşma yok.",
-      "kaynak": "Tech Times",
-      "url": "https://techtimes.com/articles/328853/20261009/samsung-used-hbm4-memory-supply-monopoly-force-amd-foundry-talks.htm"
-    },
-    {
-      "baslik": "Citi AMD hedef fiyatını 800 $'a yükseltti",
-      "detay": "Citi'nin AMD hedefini 800 $'a, Mizuho'nun 580 $'dan 705 $'a çıkardığı bildirildi. Hisse 9 Ekim sabahı %0,78 düşüşle 615,86 $'dan işlem görüyordu. AMD'nin 2. çeyrek veri merkezi geliri %107 artışla 6,7 milyar $ olmuştu.",
-      "kategori": "pozitif",
+      "baslik": "Nvidia DCGM Exporter'da yüksek önemli açık: 2.000+ GPU sunucusu açıkta",
+      "detay": "CVE-2026-47483 (CVSS 8,2), kimlik doğrulaması olmayan saldırganların GPU izlemeyi çökertmesine izin veriyor. Lava araştırmacılarına göre ~300 kuruluşa ait, yaklaşık 100 milyon $ değerinde 2.000'den fazla sunucu internete açık; Nvidia düzeltme yayımladı.",
+      "kategori": "negatif",
       "agirlik": 1,
-      "neden": "Analistlerin veri merkezi büyümesine dair beklentileri yükseliyor; hisse tepkisi ise sınırlı kaldı.",
-      "kaynak": "GuruFocus (Investing.com)",
-      "url": "https://www.gurufocus.com/news/9117432/amd-stocks-slide-lower-despite-streethigh-800-ai-target"
-    },
-    {
-      "baslik": "Nvidia ABD bilimine beş yılda 1 milyar $ taahhüt etti",
-      "detay": "Nvidia, Washington'daki \"Science: A New Golden Age\" etkinliğinde yükseköğretim araştırmaları, kuantum bilişim ve ABD hükümeti görevlerine hizmet eden bulut sağlayıcılarına beş yılda 1 milyar $ katkı açıkladı. Şirket Genesis Misyonu kapsamında Argonne'daki en büyük DOE bilim süper bilgisayarı üzerinde çalışıyor.",
-      "kategori": "pozitif",
-      "agirlik": 1,
-      "neden": "Kamu destekli bilimsel hesaplama talebinin sürdüğünü ve Nvidia'nın bu alandaki konumunu güçlendirdiğini gösteriyor.",
-      "kaynak": "NVIDIA Newsroom",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-commits-1-billion-to-advance-us-science-over-the-next-five-years"
+      "neden": "AI kümelerinin operasyonel güvenliğindeki açıklar kesinti riski taşıyor; etkisi yamayla sınırlı.",
+      "kaynak": "Cybernews",
+      "url": "https://cybernews.com/security/nvidia-high-severity-vulnerability/"
     }
   ],
   "yontem": {
@@ -82,6 +91,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = +6 · Σ ağırlık = 12 · Puan = 50 + 50 × 0.50 = 75"
+    "hesap": "Σ ağırlık×işaret = -3 · Σ ağırlık = 13 · Puan = 50 + 50 × -0.23 = 38"
   }
 }

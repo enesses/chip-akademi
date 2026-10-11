@@ -2,6 +2,217 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-10-11-ices-to-double-as-memory-shortage-drives-samsung",
+      "tarih": "2026-10-11",
+      "yayin": "2026-10-08",
+      "baslik": "Samsung HBM4 fiyatlarının gelecek yıl ikiye katlanması bekleniyor",
+      "detay": "Seoul Economic Daily'ye göre sektör, Samsung HBM4 fiyatının 2027'de iki katına çıkmasını bekliyor; TrendForce küresel HBM ortalama fiyatında %121 artış öngörüyor. DDR4 8Gb sözleşme fiyatı bir yılda 6,3 $'dan 26 $'a çıktı (DRAMeXchange).",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/10/08/hbm-prices-to-double-as-memory-shortage-drives-samsung",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-11-46179-000104617926000680-tsm-revenue20261008-htm",
+      "tarih": "2026-10-11",
+      "yayin": "2026-10-08",
+      "baslik": "TSMC'nin eylül geliri yıllık %54,6 arttı, aylık bazda %0,6 geriledi",
+      "detay": "SEC'e sunulan bildirime göre TSMC'nin eylül geliri 511,9 milyar NT$; ocak–eylül toplamı 3,90 trilyon NT$ ile %41,1 artışta. Aylık hafif düşüş, dört aylık rekor serisini sonlandırdı.",
+      "kaynak": "TSMC (SEC 6-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000680/tsm-revenue20261008.htm",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-11-eer-ai-signs-67mw-ai-cloud-agreement-in-malaysia",
+      "tarih": "2026-10-11",
+      "yayin": "2026-10-09",
+      "baslik": "Bitdeer AI, Malezya'da 67 MW'lık GB300 kampüsü için 10 yıllık anlaşma imzaladı",
+      "detay": "A901 tesisi sıvı soğutmalı Nvidia GB300 NVL72 sistemleri için tasarlanacak; teslim 2027'nin ilk yarısında. Bitdeer'in sözleşmeli kapasitesi 273,5 MW'a çıktı (2028 hedefi 350 MW).",
+      "kaynak": "DCD",
+      "url": "https://datacenterdynamics.com/en/news/bitdeer-ai-signs-67mw-ai-cloud-agreement-in-malaysia",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-11-uncil-rejects-80mw-data-center-in-northern-italy",
+      "tarih": "2026-10-11",
+      "yayin": "2026-10-09",
+      "baslik": "İtalya'da belediye 80 MW'lık veri merkezini oybirliğiyle reddetti",
+      "detay": "Lombardiya'daki Cologno Monzese meclisi, Officine Mak ve 2C Sviluppo'nun iki binalı 80 MW projesini yoğun su ve elektrik tüketimi ile arazi kullanımı gerekçesiyle reddetti; 12 milyon € belediye geliri bekleniyordu.",
+      "kaynak": "DCD",
+      "url": "https://datacenterdynamics.com/en/news/council-rejects-80mw-data-center-in-northern-italy",
+      "ton": "negatif",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-11-m-microsoft-launches-decision-1-model-in-foundry",
+      "tarih": "2026-10-11",
+      "yayin": "2026-10-09",
+      "baslik": "Microsoft, karar odaklı küçük modeli Decision-1'i Foundry'de yayımladı",
+      "detay": "Qwen3.5-9B üzerine eğitilen model metin üretmek yerine sabit seçeneklerden birini olasılıkla seçiyor; girdi milyon token başına 0,042 $'dan, çıktı ücretsiz. Microsoft 36 kıyaslamada en yüksek doğruluğu iddia ediyor.",
+      "kaynak": "TestingCatalog",
+      "url": "https://www.testingcatalog.com/microsoft-launches-decision-1-model-in-foundry/",
+      "ton": "notr",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-11-onductor-stocks-off-october-highs-302905067-html",
+      "tarih": "2026-10-11",
+      "yayin": "2026-10-10",
+      "baslik": "AI gelir soruları yarı iletken hisselerini ekim zirvesinden indirdi",
+      "detay": "iShares Semiconductor ETF ekim başında beş seans üst üste yükseldikten sonra hafta boyunca geri çekildi; PHLX endeksi haftayı düşüşle kapattı. Endeks eylül sonunda yılbaşından beri %73 yukarıdaydı.",
+      "kaynak": "PR Newswire (Stock Preachers)",
+      "url": "https://www.prnewswire.com/news-releases/ai-revenue-questions-pull-semiconductor-stocks-off-october-highs-302905067.html",
+      "ton": "negatif",
+      "konular": [
+        "pazar",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-11-le-force-majeure-ai-data-center-power-bottleneck",
+      "tarih": "2026-10-11",
+      "yayin": null,
+      "baslik": "Oracle, 2,45 GW'lık New Mexico kampüsü için force majeure bildirdi",
+      "detay": "Oracle, Project Jupiter kampüsünün geliştiricisine (Blue Owl birimi) force majeure bildirimi gönderdi. Gaz boru hattının geçiş izni reddedildi, hat yeniden rotalandı ve başlangıç 1 Şubat 2027'ye kaydı. 18 milyar $'lık inşaat kredisi dolar başına 90 sentin altında işlem görüyor.",
+      "kaynak": "TheStreet",
+      "url": "https://thestreet.com/technology/oracle-force-majeure-ai-data-center-power-bottleneck",
+      "ton": "negatif",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-11-y-cuts-orders-by-up-to-20-percent-1420431-0-html",
+      "tarih": "2026-10-11",
+      "yayin": null,
+      "baslik": "Apple, bellek maliyetleri nedeniyle iPhone 18 Pro siparişlerini %15–20 kıstı",
+      "detay": "Nikkei Asia'ya göre Apple, ekim ayı iPhone 18 Pro ve Pro Max bileşen siparişlerini orijinal plana göre %15–20 azalttı. Haberde bellek maliyetlerinin fiyat artışına, bunun da talebe yansıdığı belirtiliyor; Almanya'da Pro modeller 150 € pahalandı.",
+      "kaynak": "Notebookcheck (Nikkei Asia)",
+      "url": "https://www.notebookcheck.net/iPhone-18-Pro-Apple-reportedly-cuts-orders-by-up-to-20-percent.1420431.0.html",
+      "ton": "negatif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-11--b2-memory-cell-architecture-before-year-end-amp",
+      "tarih": "2026-10-11",
+      "yayin": null,
+      "baslik": "CXMT, 4F² mimarili DDR5'i Samsung'dan ~2 yıl önce çıkarmayı hedefliyor",
+      "detay": "CXMT Başkanı Cao Kanyu'ya göre şirket 4F² hücreli DDR5 RDIMM'i 2026 sonuna kadar piyasaya sürecek; Samsung'un bu mimari için planı 2028. CXMT yıl sonunda 300.000 wafer/ay DRAM ve ~50.000 wafer/ay HBM kapasitesi hedefliyor.",
+      "kaynak": "Wccftech (ITHome)",
+      "url": "https://wccftech.com/cxmt-to-leapfrog-samsung-by-2-years-as-it-gears-up-to-introduce-a-ddr5-rdimm-product-that-leverages-the-4f%C2%B2-memory-cell-architecture-before-year-end/amp",
+      "ton": "notr",
+      "konular": [
+        "bellek",
+        "cip"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-11-ans-to-invest-in-inference-chip-startup-d-matrix",
+      "tarih": "2026-10-11",
+      "yayin": null,
+      "baslik": "Nvidia, çıkarım çipi girişimi d-Matrix'e yatırım yapmaya hazırlanıyor",
+      "detay": "The Information'ın üç kaynağa dayanan haberine göre Nvidia, rakip çıkarım çipi geliştiren d-Matrix'e yatırım planlıyor. d-Matrix, Kasım 2025'te 2 milyar $ değerlemeyle 275 milyon $ toplamıştı; tutar açıklanmadı.",
+      "kaynak": "DCD (The Information)",
+      "url": "https://datacenterdynamics.com/en/news/report-nvidia-plans-to-invest-in-inference-chip-startup-d-matrix",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-11-ta-center-project-filed-for-in-cedar-creek-texas",
+      "tarih": "2026-10-11",
+      "yayin": null,
+      "baslik": "Anthropic'le ilişkilendirilen 366 milyon $'lık Teksas veri merkezi için başvuru",
+      "detay": "Bastrop County, Cedar Creek'te 'Project Longhorn' için TDLR'ye başvuru yapıldı: tam kapasitede 710 MW gaz türbini gücü ve 490 MW BT kapasitesi; inşaat 30 Kasım 2026'da başlayıp Ocak 2028'de bitecek. Anthropic'in kiralama görüşmesinde olduğu bildiriliyor, şirket yorum yapmadı.",
+      "kaynak": "DCD",
+      "url": "https://datacenterdynamics.com/en/news/anthropic-linked-366m-data-center-project-filed-for-in-cedar-creek-texas",
+      "ton": "pozitif",
+      "konular": [
+        "yapay-zeka",
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-11-acity-bikash-koley-heads-to-tpu-neocloud-crux-ai",
+      "tarih": "2026-10-11",
+      "yayin": null,
+      "baslik": "Google'ın altyapı başkan yardımcısı TPU bulutu Crux AI'a geçti",
+      "detay": "Google'ın küresel altyapı ve kapasite başkan yardımcısı Bikash Koley, Google–Blackstone ortaklığı Crux AI'a teknoloji ve ürün direktörü olarak katıldı. Crux, 2027'de 500 MW, ardından 2 GW TPU kapasitesi hedefliyor.",
+      "kaynak": "DCD",
+      "url": "https://datacenterdynamics.com/en/news/googles-vp-of-global-infrastructure-and-capacity-bikash-koley-heads-to-tpu-neocloud-crux-ai",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "yapay-zeka",
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-11-uper-micro-contractor-pleads-guilty-nvidia-chips",
+      "tarih": "2026-10-11",
+      "yayin": null,
+      "baslik": "Super Micro'nun eski taşeronu Nvidia sunucusu kaçakçılığında suçunu kabul etti",
+      "detay": "Ting-Wei 'Willy' Sun, yaklaşık 2,5 milyar $'lık Supermicro sunucusunun Güneydoğu Asya üzerinden Çin'e yönlendirilmesi davasında 9 Ekim'de New York federal mahkemesinde suçunu kabul etti. Kurucu ortak Wally Liaw tutuklu, bir sanık firari.",
+      "kaynak": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/super-micro-contractor-pleads-guilty-nvidia-chips/",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-11--com-security-nvidia-high-severity-vulnerability",
+      "tarih": "2026-10-11",
+      "yayin": null,
+      "baslik": "Nvidia DCGM Exporter'da yüksek önemli açık: 2.000+ GPU sunucusu açıkta",
+      "detay": "CVE-2026-47483 (CVSS 8,2), kimlik doğrulaması olmayan saldırganların GPU izlemeyi çökertmesine izin veriyor. Lava araştırmacılarına göre ~300 kuruluşa ait, yaklaşık 100 milyon $ değerinde 2.000'den fazla sunucu internete açık; Nvidia düzeltme yayımladı.",
+      "kaynak": "Cybernews",
+      "url": "https://cybernews.com/security/nvidia-high-severity-vulnerability/",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
       "id": "2026-10-10-ron-stocks-openai-70-billion-revenue-2026-100926",
       "tarih": "2026-10-10",
       "yayin": null,
@@ -1014,7 +1225,7 @@
       "kaynakTuru": "bugun"
     }
   ],
-  "guncelleme": "2026-10-10",
+  "guncelleme": "2026-10-11",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",

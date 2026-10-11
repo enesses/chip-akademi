@@ -1,7 +1,7 @@
 {
-  "guncelleme": "2026-10-10T07:19:47.066Z",
-  "tarih": "2026-10-10",
-  "durum": "dikkat",
+  "guncelleme": "2026-10-11T07:09:13.200Z",
+  "tarih": "2026-10-11",
+  "durum": "temiz",
   "ajanlar": [
     {
       "id": "guvenlik",
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-10-10T07:14:27.425Z"
+      "zaman": "2026-10-11T07:07:53.937Z"
     },
     {
       "id": "iyilestirme",
@@ -17,15 +17,15 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-10T07:14:27.558Z"
+      "zaman": "2026-10-11T07:07:54.079Z"
     },
     {
       "id": "yenileme",
       "ad": "Yenileme",
       "saat": "10:00",
       "calisti": true,
-      "durum": "ok",
-      "zaman": "2026-10-10T07:14:26.419Z"
+      "durum": "tamam",
+      "zaman": "2026-10-11T07:07:53.015Z"
     },
     {
       "id": "gelistirme",
@@ -33,79 +33,49 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-10T07:14:42.032Z"
+      "zaman": "2026-10-11T07:08:07.785Z"
     }
   ],
-  "dikkat": [
-    {
-      "seviye": "dikkat",
-      "metin": "Öneri onay bekliyor: Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele (PR #17) — Denetim geçti (26/26); PR açıldı, otomatik birleştirme bu oturumda izin denetimince reddedildi, kullanıcı onayı bekliyor"
-    },
-    {
-      "seviye": "dikkat",
-      "metin": "Öneri onay bekliyor: Kalan 20 kullanılmayan export'u temizle (PR #18) — Denetim geçti (26/26); PR açıldı, otomatik birleştirme bu oturumda izin denetimince reddedildi, kullanıcı onayı bekliyor"
-    }
-  ],
+  "dikkat": [],
   "oneriler": [
     {
-      "baslik": "Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
-      "neden": "Bugün 'Artanlar' kartının ilk sırasında Nvidia GTX 1650 var: 0,02 $ → 0,03 $ (+%50). Değişim yalnızca iki ondalığa yuvarlanmış fiyatın 1 sent oynamasından geliyor. src/pages/Prices.jsx data.iki_gun.artanlar/dusenler listesini olduğu gibi basıyor; mutlak değişimi 0,02 $'ın altında kalan satırlar kartlarda gösterilmemeli (tablo değişmez).",
+      "baslik": "Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
+      "neden": "src/pages/Home.jsx iki_gun.artanlar[0] ve dusenler[0]'ı sağlayıcı sayısına bakmadan alıyor. Bugün 'en çok düşen' 3 sağlayıcılı GTX 1660 (-%83,3, 0,36→0,06 $) çıktı; ana sayfadaki tek hareket satırı ince bir pazarın gürültüsünü gösteriyor. #15/#16 Prices.jsx'i ele alıyor, Home.jsx'e dokunmuyor.",
       "etki": "orta",
       "alan": "arayüz"
     },
     {
-      "baslik": "Hareket kartlarında önceki → yeni fiyatı göster",
-      "neden": "AMD MI300X bugün 4,39 $ → 2,89 $ (−%34,2, 11 sağlayıcı) düştü ama kart yalnızca yüzdeyi gösteriyor; onceki_usd ve usd_saat src/data/gpu_kiralama.json → iki_gun.* içinde zaten var. Açık PR #15 aynı kart satırlarını değiştirdiği için onunla birlikte ele alınmalı.",
+      "baslik": "Ana sayfa hareket satırında önceki → yeni fiyatı göster",
+      "neden": "Home.jsx kiralama kartı yalnızca yüzdeyi gösteriyor (ör. A5000 +%65,3); gpu_kiralama.json'da onceki_usd ve usd_saat hazır. Mutlak fiyat olmadan +%65'in 0,49 $ mı 0,0x $ mı olduğu anlaşılmıyor.",
       "etki": "düşük",
       "alan": "arayüz"
     },
     {
-      "baslik": "Şüpheli fiyat eşiğini çok sağlayıcılı modellerde %30'a indir",
-      "neden": "Dünkü öneri hâlâ geçerli ve bugün yeni bir örnek var: AMD MI300X 11 sağlayıcıyla −%34,2 (4,39 → 2,89 $) değişti ve %50 eşiğinin altında kaldığı için ikinci okuma istenmeden yazıldı; dün aynı model +%46,8 yükselmişti. Bu iki günlük salınım tek okumanın güvenilirliğini sorgulatıyor. otomasyon/veri-isle.mjs değişikliği — korunan dosya.",
+      "baslik": "Geliştirme ajanı reddedilmiş girdi yüzünden yenilemeyi yeniden çalıştırıp günün raporunu ezmesin",
+      "neden": "11 Ekim'de bugun.json 'özet eksik' ile reddedilip gelen/'de kaldı; 4-gelistirme.mjs bunu 'girdi var' sayıp 3-yenileme.mjs'yi yeniden çalıştırdı, .son-isleme.json ve yenileme raporu ezildi: fiyat (97 model güncellendi) 'atlandı', 6 ek haber 'gelen/haberler.json gelmedi' göründü. Düzeltme PR olarak açıldı.",
       "etki": "orta",
       "alan": "otomasyon"
     },
     {
+      "baslik": "3–9 sağlayıcılı modellerde de >%50 oynamayı şüpheli say",
+      "neden": "veri-isle.mjs şüpheli kontrolünü yalnızca ≥10 sağlayıcıda yapıyor; GTX 1660 (3 sağlayıcı, -%83) ve RTX 4070 Ti Super (3 sağlayıcı, -%35) doğrulama olmadan yazıldı ve hareket listesinin başına geçti.",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Fiyat girdisinde sağlayıcı sayısını ayrı bir hedefli okumayla doğrula",
+      "neden": "Bugünkü ikinci WebFetch'te 'Providers' sayıları tutarsız geldi (H100 52, arama başlığında 57); kayıtlı sayılar korundu. A5000'in hedefli okuması '+7 providers' biçimini gösterdi; GUNLUK.md sayıyı bu metinden türetmeyi tarif etmeli.",
+      "etki": "düşük",
+      "alan": "otomasyon"
+    },
+    {
       "baslik": "Bugün sayfasına son 7 günün puan geçmişi",
-      "neden": "otomasyon/gecmis/ altında 3–10 Ekim arası bugun-*.json var (8 Ekim 53, 9 Ekim 33, bugün 75) ama src/pages/Bugun.jsx yalnızca bugünün puanını gösteriyor; 9→10 Ekim arasındaki 42 puanlık sıçrama bağlamsız kalıyor. Geçmişi src/data'ya yazmak otomasyon/veri-isle.mjs değişikliği gerektirir (korunan dosya).",
+      "neden": "otomasyon/gecmis/bugun-2026-10-04…11.json sekiz günlük puan içeriyor ama Bugun.jsx yalnızca günün puanını gösteriyor (bugün 38, dün 75); düşüşün bağlamı kayboluyor. Veri yolu otomasyon/ altından geçtiği için korunan dosyaya dokunur.",
       "etki": "orta",
       "alan": "veri"
-    },
-    {
-      "baslik": "Kalan 20 kullanılmayan export'u temizle",
-      "neden": "iyilestirme-2026-10-10 raporu hâlâ 20 kullanılmayan export buluyor (Badge, Select* — src/components/ui; resetProgress, getSummary, getBestExam — src/lib/progress.js; togglePin, searchNotes — src/lib/notes.js; formatCompareValue — src/lib/utils.js).",
-      "etki": "düşük",
-      "alan": "kod"
-    },
-    {
-      "baslik": "Sunucu DRAM göstergesini güncelle",
-      "neden": "src/data/bellek_fiyat.json içindeki 'Sunucu DRAM' göstergesi hâlâ 2026-07-09 tarihli; diğerleri 29–30 Eylül. 12 Ekim pazartesi TrendForce taramasında öncelikli.",
-      "etki": "düşük",
-      "alan": "veri"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-10-10",
-      "oneri": "Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
-      "durum": "acik",
-      "pr": 17,
-      "dal": "otomasyon/oneri-2026-10-10-1",
-      "ozet": "Hareket kartlarında mutlak değişimi 2 sentin altındaki satırlar gizleniyor (GTX 1650 artık listede değil)",
-      "neden": "Denetim geçti (26/26); PR açıldı, otomatik birleştirme bu oturumda izin denetimince reddedildi, kullanıcı onayı bekliyor",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-10",
-      "oneri": "Kalan 20 kullanılmayan export'u temizle",
-      "durum": "acik",
-      "pr": 18,
-      "dal": "otomasyon/oneri-2026-10-10-2",
-      "ozet": "17 kullanılmayan export kaldırıldı (badge.jsx, select.jsx dahil); togglePin, resetProgress, fiyatBilgisi bağlanmak üzere bırakıldı",
-      "neden": "Denetim geçti (26/26); PR açıldı, otomatik birleştirme bu oturumda izin denetimince reddedildi, kullanıcı onayı bekliyor",
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
     {
       "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
@@ -207,8 +177,8 @@
         "etiketsizDugme": 0
       },
       "kod": {
-        "dosyaSayisi": 63,
-        "toplamSatir": 16405,
+        "dosyaSayisi": 64,
+        "toplamSatir": 16604,
         "boyutKB": null
       }
     },
@@ -244,17 +214,22 @@
     ]
   },
   "yenileme": {
-    "durum": "ok",
+    "durum": "tamam",
     "adimlar": [
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 98 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 9 gelmedi (eski fiyat korundu)"
+        "detay": "bugün 07:06'da güncellendi — 97 model (getdeploying.com/gpus medyan), A5000 +%65 ikinci okumayla elle doğrulandı; endeks 5 Ekim haftası (4 hafta +%1,3, 12 ay +%8). Not: rapor, geliştirme ajanının yenilemeyi yeniden çalıştırmasıyla ezilmişti, elle düzeltildi."
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 7 madde, puan 75"
+        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 38; haber akışına +8"
+      },
+      {
+        "ad": "Haber akışı",
+        "durum": "ok",
+        "detay": "bugün 14 haber: 8 Bugün maddesi + 6 ek haber (gelen/haberler.json 07:06'da işlendi)"
       },
       {
         "ad": "Derleme",
@@ -264,7 +239,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2147 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2206 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -333,6 +308,11 @@
     },
     {
       "tarih": "2026-10-10",
+      "durum": "dikkat",
+      "dikkat": 2
+    },
+    {
+      "tarih": "2026-10-11",
       "durum": "temiz",
       "dikkat": 0
     }
