@@ -28,6 +28,28 @@ Ekrana basılan özet cümlelerini oku. Bir sayı tuhaf görünürse (ör. 0 ça
 günü) kaynağını `otomasyon/raporlar/rapor-<gün>.json` dosyalarında kontrol et;
 düzeltme yapma, gördüğünü rapora yaz.
 
+## 2b. Modeller liderlik tablosu (AI Araçları → En iyi modeller)
+
+```bash
+node otomasyon/modeller.mjs
+```
+
+Veri **yalnızca** Artificial Analysis'in resmi ücretsiz API'sinden gelir
+(`AA_API_KEY` ortam değişkeni). Sitenin kullanım şartları sayfanın
+kopyalanmasını/kazınmasını yasaklıyor; bu yüzden
+`artificialanalysis.ai/leaderboards/models` sayfasını WebFetch ya da başka bir
+yolla okuyup tabloya **aktarma** — betik çalışmazsa tablo eski haliyle kalır.
+
+Çıkış koduna göre rapora yaz:
+- `0` → "Modeller: N model, ilk üç …" (betiğin cümlesi).
+- `2` → "Modeller: yenilenmedi — API anahtarı (AA_API_KEY) tanımlı değil".
+- `3` → "Modeller: **izin engeli** — artificialanalysis.ai bu ortamdan erişilemiyor".
+  Başka komutla (curl, ayna, önbellek) deneme.
+- `4`/`5` → "Modeller: API hatası — <betiğin mesajı>".
+
+GitHub Actions kuruluysa (`otomasyon/workflows/modeller.yml`) aynı iş orada da
+haftalık çalışır; bu adım o zaman yalnızca sonucu raporlar.
+
 ## 3. Derle ve kaydet
 
 ```bash

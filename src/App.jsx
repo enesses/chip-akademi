@@ -23,6 +23,7 @@ import Haftalik from "@/pages/Haftalik";
 import Promptlar from "@/pages/Promptlar";
 import Haberler from "@/pages/Haberler";
 import Skiller from "@/pages/Skiller";
+import Modeller from "@/pages/Modeller";
 import AramaPaleti from "@/components/nav/AramaPaleti";
 import MobilMenu from "@/components/nav/MobilMenu";
 
@@ -53,6 +54,7 @@ export default function App() {
             <Route path="/haftalik" component={Haftalik} />
             <Route path="/ai/promptlar" component={Promptlar} />
             <Route path="/ai/skiller" component={Skiller} />
+            <Route path="/ai/modeller" component={Modeller} />
             <Route path="/ai" component={Promptlar} />
             <Route path="/sozluk" component={Glossary} />
             <Route path="/notlar" component={Notes} />
