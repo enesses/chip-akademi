@@ -1,0 +1,33 @@
+name: Modeller liderlik tablosu
+
+# Her Pazartesi 06:20 TRT (03:20 UTC). Veri Artificial Analysis'in resmi
+# ücretsiz API'sinden gelir; depo ayarlarında AA_API_KEY gizli değişkeni
+# (Settings → Secrets and variables → Actions) tanımlı olmalı.
+# Kurmak için bu dosyayı .github/workflows/ altına kopyala.
+on:
+  schedule:
+    - cron: "20 3 * * 1"
+  workflow_dispatch:
+
+jobs:
+  yenile:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: API'den çek
+        env:
+          AA_API_KEY: ${{ secrets.AA_API_KEY }}
+        run: node otomasyon/modeller.mjs
+      - name: Değiştiyse kaydet
+        run: |
+          git diff --quiet src/data/modeller.json && { echo "Değişiklik yok"; exit 0; }
+          git config user.name "chip-akademi-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add src/data/modeller.json
+          git commit -m "Modeller: haftalık liderlik tablosu ($(date -u +%F))"
+          git push

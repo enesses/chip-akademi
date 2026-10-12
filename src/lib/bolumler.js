@@ -11,7 +11,7 @@ import {
   Microchip, Cpu, MemoryStick, Smartphone, GitCompareArrows, BadgeDollarSign,
   GraduationCap, ListChecks, Library, NotebookPen,
   PencilRuler, LayoutGrid, Newspaper, Workflow, CalendarRange,
-  MessageSquareText, Puzzle, Rss,
+  MessageSquareText, Puzzle, Rss, Trophy,
 } from "lucide-react";
 
 export const GRUPLAR = [
@@ -95,7 +95,7 @@ export const GRUPLAR = [
     id: "ai",
     ad: "AI Araçları",
     kisaAd: "AI",
-    ozet: "Hazır prompt'lar ve Claude'a yüklenebilen skill'ler.",
+    ozet: "Hazır prompt'lar, Claude skill'leri ve en iyi modellerin sıralaması.",
     bolumler: [
       { id: "promptlar", ad: "Promptlar", yol: "/ai/promptlar", ikon: MessageSquareText,
         aciklama: "Oyun, görsel, kod, yazı ve ders için doldur-kopyala prompt'lar",
@@ -103,6 +103,9 @@ export const GRUPLAR = [
       { id: "skiller", ad: "Claude skill'leri", yol: "/ai/skiller", ikon: Puzzle,
         aciklama: "Claude'a yüklenen hazır talimat paketleri, zip olarak indir",
         anahtar: "skill beceri claude paket indir zip talimat" },
+      { id: "modeller", ad: "En iyi modeller", yol: "/ai/modeller", ikon: Trophy,
+        aciklama: "Yapay zekâ modellerinin haftalık liderlik tablosu",
+        anahtar: "model sıralama liderlik tablo leaderboard gpt claude gemini llm zeka fiyat hız benchmark" },
     ],
   },
 ];
