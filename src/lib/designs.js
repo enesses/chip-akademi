@@ -36,4 +36,3 @@ export function duplicateDesign(id) {
   if (!src) return null;
   return saveDesign({ name: `${src.name} (kopya)`, typeId: src.typeId, nodeId: src.nodeId, placed: src.placed, summary: src.summary });
 }
-export function designCount() { return read().length; }
