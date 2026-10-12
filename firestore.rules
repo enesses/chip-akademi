@@ -1,0 +1,54 @@
+rules_version = '2';
+// Chip Akademi — Firestore güvenlik kuralları.
+// Firebase konsolu → Firestore Database → Rules sekmesine olduğu gibi yapıştır.
+//
+// - Herkes yalnızca KENDİ profilini okuyabilir ve oluşturabilir.
+// - Kullanıcı kaydı "aktif", girişimci kaydı "bekliyor" durumuyla başlamak ZORUNDA;
+//   kimse kendini onaylayamaz.
+// - Yalnızca admin (aşağıdaki e-posta, doğrulanmış) başvuruları görür ve
+//   durumu "onaylandi" / "reddedildi" yapabilir.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function girisli() { return request.auth != null; }
+    function admin() {
+      return girisli()
+        && request.auth.token.email == 'yucelkemalnuri@gmail.com'
+        && request.auth.token.email_verified == true;
+    }
+
+    match /kullanicilar/{uid} {
+      allow get: if girisli() && (request.auth.uid == uid || admin());
+      allow list: if admin();
+
+      allow create: if girisli() && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['ad', 'eposta', 'rol', 'durum', 'aciklama', 'olusturma'])
+        && request.resource.data.ad is string
+        && request.resource.data.ad.size() >= 2 && request.resource.data.ad.size() <= 80
+        && request.resource.data.eposta == request.auth.token.email
+        && request.resource.data.olusturma == request.time
+        && (
+          (request.resource.data.rol == 'kullanici' && request.resource.data.durum == 'aktif'
+            && !('aciklama' in request.resource.data))
+          ||
+          (request.resource.data.rol == 'girisimci' && request.resource.data.durum == 'bekliyor'
+            && (!('aciklama' in request.resource.data)
+                || (request.resource.data.aciklama is string && request.resource.data.aciklama.size() <= 600)))
+        );
+
+      allow update: if admin()
+        && resource.data.rol == 'girisimci'
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['durum', 'karar'])
+        && request.resource.data.durum in ['onaylandi', 'reddedildi', 'bekliyor']
+        && request.resource.data.karar.admin == request.auth.uid
+        && request.resource.data.karar.tarih == request.time;
+
+      allow delete: if admin() || (girisli() && request.auth.uid == uid);
+    }
+
+    // Diğer her şey kapalı.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

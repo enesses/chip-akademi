@@ -28,7 +28,7 @@ function dizin() {
   if (_dizin) return _dizin;
   const d = [];
   for (const b of TUM_BOLUMLER) {
-    d.push({ tur: "bolum", id: "b:" + b.id, baslik: b.ad, alt: b.aciklama, yol: b.yol, ikon: b.ikon,
+    d.push({ tur: "bolum", id: "b:" + b.id, baslik: b.ad, alt: b.aciklama, yol: b.yol, ikon: b.ikon, yalnizAdmin: !!b.yalnizAdmin,
       grup: b.grup.ad, metin: sadelestir(`${b.ad} ${b.grup.ad} ${b.aciklama} ${b.anahtar || ""}`) });
   }
   for (const c of icyapi.cihazlar) {
@@ -62,13 +62,14 @@ function dizin() {
 }
 
 /** Sorgudaki her kelime metinde geçmeli. Başlıkta başta geçen önce gelir. */
-export function ara(sorgu, { tur = null, sinir = 6 } = {}) {
+export function ara(sorgu, { tur = null, sinir = 6, admin = false } = {}) {
   const q = sadelestir(sorgu);
   if (!q) return [];
   const kelimeler = q.split(" ");
   const sonuc = [];
   for (const x of dizin()) {
     if (tur && x.tur !== tur) continue;
+    if (x.yalnizAdmin && !admin) continue;
     if (!kelimeler.every((k) => x.metin.includes(k) || x.basSade.includes(k))) continue;
     let puan = TURLER[x.tur].puan;
     if (x.basSade === q) puan += 100;

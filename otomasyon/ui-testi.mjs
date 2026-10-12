@@ -46,7 +46,7 @@ const SAYFALAR = [
   ["/", "Anasayfa"], ["/kategori/GPU", "GPU kataloğu"], ["/kategori/CPU", "CPU kataloğu"], ["/kategori/RAM", "Bellek kataloğu"],
   ["/chip/nvidia-hopper-h100", "Çip detayı"], ["/egitim", "Eğitim"], ["/sinav", "Sınav"], ["/bugun", "Bugün"],
   ["/fiyatlar", "Fiyatlar"], ["/sozluk", "Sözlük"], ["/notlar", "Notlar"], ["/hesap", "Hesap"],
-  ["/atolye", "Tasarımlarım"], ["/tasarla", "Tasarım Atölyesi"], ["/karsilastir", "Karşılaştır"], ["/otomasyon", "Otomasyon"],
+  ["/atolye", "Tasarımlarım"], ["/tasarla", "Tasarım Atölyesi"], ["/karsilastir", "Karşılaştır"], ["/otomasyon", "Otomasyon"], ["/giris", "Giriş"], ["/kayit", "Kayıt"], ["/hesabim", "Hesabım"], ["/yonetim", "Yönetim"],
   ["/ic", "İç"], ["/ic/iphone-17-pro", "İç: cihaz detayı"], ["/chip/apple-a19-pro", "Mobil SoC detayı"], ["/haftalik", "Haftalık rapor"], ["/haberler", "Haberler"], ["/ai/promptlar", "Promptlar"], ["/ai/skiller", "Claude skill'leri"], ["/ai/modeller", "En iyi modeller"],
 ];
 
@@ -58,6 +58,11 @@ try {
 }
 
 const page = await browser.newPage();
+// Otomasyon sayfası yalnızca admine açık. Testte claude.ai sahibi gibi görün ki
+// sayfanın kendisi de denensin (yalnızca bu test sekmesinde; uygulamaya dokunmaz).
+await page.addInitScript(() => {
+  window.claude = { use: async (ad) => (ad === "user" ? { isOwner: async () => true } : null) };
+});
 const url = pathToFileURL(html).href;
 const hatalar = [];
 let aktif = "";

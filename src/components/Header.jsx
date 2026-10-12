@@ -4,30 +4,32 @@ import { Link } from "@/components/Nav";
 import { Cpu, UserRound, ChevronDown, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { aktifProfil, profilDegisimineAbone } from "@/lib/hesap";
-import { GRUPLAR, bolumBul, grupBul } from "@/lib/bolumler";
+import { gorunurGruplar, bolumBul, grupBul } from "@/lib/bolumler";
+import { useOturum } from "@/lib/oturum";
 import { aramayiAc } from "@/components/nav/AramaPaleti";
 
-function ProfilDugmesi({ profil, aktif }) {
+function ProfilDugmesi({ profil, oturum, location }) {
+  // Gerçek hesap sistemi kuruluysa: Giriş / Hesabım. Değilse eski yerel profiller.
+  const gercek = oturum.kurulu && !oturum.baglanamadi;
+  const k = oturum.kullanici;
+  const hedef = gercek ? (k ? "/hesabim" : "/giris") : "/hesap";
+  const aktif = location === hedef || (gercek && ["/giris", "/kayit", "/hesabim"].includes(location));
+  const ad = gercek ? (k ? (oturum.profil?.ad || k.ad || k.eposta) : null) : profil?.ad;
   return (
-    <Link href="/hesap" asChild>
+    <Link href={hedef} asChild>
       <a
         className={cn(
           "inline-flex items-center gap-2 rounded-full border px-2.5 py-1.5 text-sm hover-elevate",
           aktif ? "border-primary/50 text-primary" : "border-card-border text-muted-foreground hover:text-foreground"
         )}
-        aria-label={profil ? `Hesap: ${profil.ad}` : "Giriş yap"}
+        aria-label={ad ? `Hesap: ${ad}` : "Giriş yap"}
       >
-        {profil ? (
-          <>
-            <span className="text-sm leading-none" aria-hidden="true">{profil.avatar}</span>
-            <span className="max-w-[7rem] truncate">{profil.ad}</span>
-          </>
+        {!gercek && profil ? (
+          <span className="text-sm leading-none" aria-hidden="true">{profil.avatar}</span>
         ) : (
-          <>
-            <UserRound className="h-4 w-4" aria-hidden="true" />
-            <span>Giriş</span>
-          </>
+          <UserRound className="h-4 w-4" aria-hidden="true" />
         )}
+        <span className="max-w-[7rem] truncate">{ad || "Giriş"}</span>
       </a>
     </Link>
   );
@@ -174,7 +176,10 @@ export default function Header() {
     return () => document.removeEventListener("pointerdown", disari);
   }, [acikGrup]);
 
-  const aktifGrup = grupBul(location);
+  const oturum = useOturum();
+  const GRUPLAR = gorunurGruplar(oturum.admin);
+  const hamGrup = grupBul(location);
+  const aktifGrup = hamGrup && GRUPLAR.find((g) => g.id === hamGrup.id);
   const aktifBolum = bolumBul(location);
   const mac = typeof navigator !== "undefined" && /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
 
@@ -223,7 +228,7 @@ export default function Header() {
           >
             <Search className="h-4 w-4" aria-hidden="true" />
           </button>
-          <ProfilDugmesi profil={profil} aktif={location === "/hesap"} />
+          <ProfilDugmesi profil={profil} oturum={oturum} location={location} />
         </div>
       </div>
       <KonumSeridi grup={aktifGrup} aktifBolum={aktifBolum} />

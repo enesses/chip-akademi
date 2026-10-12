@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocation } from "wouter";
 import { Search, CornerDownLeft } from "lucide-react";
-import { GRUPLAR } from "@/lib/bolumler";
+import { gorunurGruplar } from "@/lib/bolumler";
+import { useOturum } from "@/lib/oturum";
 import { ara, SOZLUK_ANAHTARI } from "@/lib/aramaIndeksi";
 import { acilacak, ACILACAK_OLAY } from "@/lib/panoyaKopyala";
 import { cn } from "@/lib/utils";
@@ -20,8 +21,8 @@ function yazmaAlaninda(el) {
 }
 
 /** Sorgu boşken: tüm bölümlerin haritası (aramanın kendisi bir harita olur). */
-function haritaSonuclari() {
-  return GRUPLAR.map((g) => ({
+function haritaSonuclari(admin) {
+  return gorunurGruplar(admin).map((g) => ({
     tur: "grup-" + g.id,
     ad: g.ad,
     ogeler: g.bolumler.map((b) => ({
@@ -79,7 +80,8 @@ export default function AramaPaleti() {
     setSorgu("");
   }, [acik]);
 
-  const gruplar = useMemo(() => (sorgu.trim() ? ara(sorgu) : haritaSonuclari()), [sorgu]);
+  const { admin } = useOturum();
+  const gruplar = useMemo(() => (sorgu.trim() ? ara(sorgu, { admin }) : haritaSonuclari(admin)), [sorgu, admin]);
   const duz = useMemo(() => gruplar.flatMap((g) => g.ogeler), [gruplar]);
 
   useEffect(() => setSecili(0), [sorgu]);
