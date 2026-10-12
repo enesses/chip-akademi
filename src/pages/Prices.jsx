@@ -36,6 +36,11 @@ export default function Prices() {
           <div className="rounded-xl border border-card-border bg-card p-4">
             <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground" title={`GetDeploying fiyat endeksi, ölçüm: ${data.kaynak.olcum_tarihi}`}>Endeks · 4 hafta</p>
             <p className="font-display font-bold text-xl mt-1" style={{ color: data.endeks.degisim_4_hafta_pct < 0 ? "#34d399" : "#f87171" }}>{pct(data.endeks.degisim_4_hafta_pct)}</p>
+            {typeof data.endeks.degisim_12_ay_pct === "number" && (
+              <p className="text-xs text-muted-foreground mt-0.5" data-testid="endeks-12-ay">
+                12 ay: <span className="font-medium tabular-nums" style={{ color: data.endeks.degisim_12_ay_pct < 0 ? "#34d399" : "#f87171" }}>{pct(data.endeks.degisim_12_ay_pct)}</span>
+              </p>
+            )}
             <p className="font-mono text-[9px] text-muted-foreground mt-0.5">ölçüm {data.kaynak.olcum_tarihi}</p>
           </div>
           <div className="rounded-xl border border-card-border bg-card p-4">
