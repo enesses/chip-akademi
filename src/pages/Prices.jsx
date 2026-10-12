@@ -8,6 +8,8 @@ import { cn } from "@/lib/utils";
 import BellekFiyatlari from "@/components/BellekFiyatlari";
 
 const usd = (v) => (v == null ? "—" : `$${v.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`);
+// Bu sayının altında sağlayıcısı olan modellerde medyan gürültülü olabilir.
+const AZ_SAGLAYICI = 5;
 const pct = (v) => `${v > 0 ? "+" : ""}%${Math.abs(v).toLocaleString("tr-TR")}`;
 
 export default function Prices() {
@@ -56,12 +58,13 @@ export default function Prices() {
       {data.iki_gun && (
         <section className="container mx-auto px-4 pb-8">
           <h2 className="font-display font-bold text-xl mb-4">Son ölçümler arası hareketler</h2>
+          <p className="text-xs text-muted-foreground mb-3">Soluk satırlar {AZ_SAGLAYICI}'ten az sağlayıcıyla listeleniyor; bu modellerde medyan tek bir ilanla büyük oynayabilir.</p>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="rounded-2xl border border-red-500/40 bg-red-500/5 p-5">
               <div className="flex items-center gap-2 mb-3"><TrendingUp className="h-4 w-4 text-red-400" /><h3 className="font-display font-bold text-red-300">Artanlar</h3></div>
               {data.iki_gun.artanlar.map((it) => (
-                <div key={it.model} className="flex items-center justify-between text-sm py-1.5">
-                  <span>{it.model}</span>
+                <div key={it.model} className={cn("flex items-center justify-between text-sm py-1.5", it.saglayici != null && it.saglayici < AZ_SAGLAYICI && "opacity-60")} title={it.saglayici != null && it.saglayici < AZ_SAGLAYICI ? "Az sağlayıcı: medyan tek bir listelemeyle oynayabilir" : undefined}>
+                  <span>{it.model}{it.saglayici != null && <span className="ml-2 font-mono text-[10px] text-muted-foreground" data-testid="hareket-saglayici">{it.saglayici} sağlayıcı</span>}</span>
                   <span className="font-mono text-red-400 flex items-center gap-1"><ArrowUpRight className="h-3 w-3" />{pct(it.degisim_pct)}</span>
                 </div>
               ))}
@@ -69,8 +72,8 @@ export default function Prices() {
             <div className="rounded-2xl border border-emerald-500/40 bg-emerald-500/5 p-5">
               <div className="flex items-center gap-2 mb-3"><TrendingDown className="h-4 w-4 text-emerald-400" /><h3 className="font-display font-bold text-emerald-300">Düşenler</h3></div>
               {data.iki_gun.dusenler.map((it) => (
-                <div key={it.model} className="flex items-center justify-between text-sm py-1.5">
-                  <span>{it.model}</span>
+                <div key={it.model} className={cn("flex items-center justify-between text-sm py-1.5", it.saglayici != null && it.saglayici < AZ_SAGLAYICI && "opacity-60")} title={it.saglayici != null && it.saglayici < AZ_SAGLAYICI ? "Az sağlayıcı: medyan tek bir listelemeyle oynayabilir" : undefined}>
+                  <span>{it.model}{it.saglayici != null && <span className="ml-2 font-mono text-[10px] text-muted-foreground" data-testid="hareket-saglayici">{it.saglayici} sağlayıcı</span>}</span>
                   <span className="font-mono text-emerald-400 flex items-center gap-1"><ArrowDownRight className="h-3 w-3" />{pct(it.degisim_pct)}</span>
                 </div>
               ))}
