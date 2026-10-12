@@ -4,29 +4,29 @@
     {
       "hafta": "2026-W41",
       "bas": "2026-10-05",
-      "son": "2026-10-08",
-      "kismi": true,
-      "baslik": "5 Ekim – 8 Ekim (bugüne kadar)",
-      "olusturma": "2026-10-08T12:18:41.009Z",
+      "son": "2026-10-11",
+      "kismi": false,
+      "baslik": "5 Ekim – 11 Ekim",
+      "olusturma": "2026-10-12T07:45:09.253Z",
       "ozet": [
-        "Otomasyon 4 günlük dönemde 4 gün çalıştı: 2 gün temiz, 2 gün kritik uyarıyla bitti.",
-        "Uygulamaya 12 değişiklik girdi.",
+        "Otomasyon 7 günlük dönemde 7 gün çalıştı: 2 gün temiz, 2 gün kritik uyarıyla bitti.",
+        "Uygulamaya 17 değişiklik girdi.",
         "5 geliştirme önerisi sohbette elle uygulandı.",
-        "Hafta boyunca 14 farklı geliştirme önerisi yazıldı.",
-        "H100 kiralama medyanı 3.38 → 3.49 $/saat (%+3.3).",
-        "Bugün sayfasının ortalama pozitiflik puanı 61/100."
+        "Hafta boyunca 27 farklı geliştirme önerisi yazıldı; otomasyon 6 tanesini denedi (0 birleşti, 6 onay bekliyor, 0 bırakıldı).",
+        "H100 kiralama medyanı 3.38 → 3.5 $/saat (%+3.6).",
+        "Bugün sayfasının ortalama pozitiflik puanı 55/100."
       ],
       "sayilar": {
-        "calisanGun": 4,
+        "calisanGun": 7,
         "temizGun": 2,
         "kritikGun": 2,
-        "oneri": 14,
+        "oneri": 27,
         "uygulananBirlesen": 0,
         "elleUygulanan": 5,
-        "uygulananAcik": 0,
+        "uygulananAcik": 6,
         "uygulananVazgecilen": 0,
-        "degisiklik": 12,
-        "bugunOrtalama": 61,
+        "degisiklik": 17,
+        "bugunOrtalama": 55,
         "tekrarHaber": 0
       },
       "gunler": [
@@ -53,6 +53,24 @@
           "durum": "temiz",
           "dikkat": 0,
           "fiyat": "aynı gün"
+        },
+        {
+          "tarih": "2026-10-09",
+          "durum": "dikkat",
+          "dikkat": 2,
+          "fiyat": "güncellendi"
+        },
+        {
+          "tarih": "2026-10-10",
+          "durum": "dikkat",
+          "dikkat": 2,
+          "fiyat": "güncellendi"
+        },
+        {
+          "tarih": "2026-10-11",
+          "durum": "dikkat",
+          "dikkat": 2,
+          "fiyat": "güncellendi"
         }
       ],
       "bugun": [
@@ -83,49 +101,70 @@
           "etiket": "Hafif iyimser, maliyet baskısı artıyor",
           "madde": 8,
           "tekrar": 0
+        },
+        {
+          "tarih": "2026-10-09",
+          "puan": 33,
+          "etiket": "Temkinli, gelir şüphesi ağır basıyor",
+          "madde": 8,
+          "tekrar": 0
+        },
+        {
+          "tarih": "2026-10-10",
+          "puan": 75,
+          "etiket": "Temkinli toparlanma",
+          "madde": 7,
+          "tekrar": 0
+        },
+        {
+          "tarih": "2026-10-11",
+          "puan": 38,
+          "etiket": "Altyapıda sürtünme",
+          "madde": 8,
+          "tekrar": 0
         }
       ],
       "fiyat": {
-        "olcumGunu": 2,
+        "olcumGunu": 5,
         "izinEngeliGunu": 0,
         "taban": "2026-10-03",
-        "son": "2026-10-08",
+        "son": "2026-10-11",
         "h100": {
           "model": "Nvidia H100",
           "once": 3.38,
-          "sonra": 3.49,
-          "degisim": 3.3
+          "sonra": 3.5,
+          "degisim": 3.6
         },
         "enCokOynayan": [
           {
-            "model": "Nvidia A5000",
-            "once": 1.31,
-            "sonra": 0.75,
-            "degisim": -42.7
-          },
-          {
-            "model": "Nvidia RTX 6000 Ada",
-            "once": 0.96,
-            "sonra": 1.04,
-            "degisim": 8.3
-          },
-          {
-            "model": "Nvidia L4",
-            "once": 0.87,
-            "sonra": 0.8,
-            "degisim": -8
-          },
-          {
-            "model": "Nvidia RTX 4090",
-            "once": 0.47,
-            "sonra": 0.44,
-            "degisim": -6.4
+            "model": "Nvidia B200",
+            "once": 6.79,
+            "sonra": 7.42,
+            "degisim": 9.3
           },
           {
             "model": "Nvidia RTX 5090",
             "once": 0.66,
-            "sonra": 0.7,
-            "degisim": 6.1
+            "sonra": 0.72,
+            "degisim": 9.1
+          },
+          {
+            "model": "Nvidia RTX 3090",
+            "once": 0.23,
+            "sonra": 0.21,
+            "degisim": -8.7
+          },
+          {
+            "model": "Nvidia B300",
+            "once": 8.5,
+            "sonra": 8.99,
+            "degisim": 5.8
+          },
+          {
+            "model": "Nvidia A4000",
+            "once": 0.19,
+            "sonra": 0.2,
+            "degisim": 5.3
           }
         ]
       },
@@ -179,6 +218,66 @@
           "ozet": "RTX PRO 6000, RTX 6000 Ada ve RTX A6000 kataloğa eklendi ve fiyat satırlarına bağlandı (88 sağlayıcı satırı)",
           "neden": null,
           "kim": "elle"
+        },
+        {
+          "tarih": "2026-10-09",
+          "oneri": "Fiyat hareketi kartlarında sağlayıcı sayısını göster",
+          "durum": "acik",
+          "pr": 15,
+          "dal": "otomasyon/oneri-2026-10-09-1",
+          "ozet": "Hareket kartlarında sağlayıcı sayısı, 5'ten az sağlayıcılı satırlar soluk",
+          "neden": "Denetim geçti (26/26); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-09",
+          "oneri": "Fiyat tablosuna 'en az 5 sağlayıcı' filtresi",
+          "durum": "acik",
+          "pr": 16,
+          "dal": "otomasyon/oneri-2026-10-09-2",
+          "ozet": "Tabloya en az 5 sağlayıcı aç/kapa filtresi ve model sayısı",
+          "neden": "Denetim geçti (26/26); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor; #15 ile aynı dosyada, ikincisi birleşirken çakışma çıkabilir",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-10",
+          "oneri": "Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
+          "durum": "acik",
+          "pr": 17,
+          "dal": "otomasyon/oneri-2026-10-10-1",
+          "ozet": "Hareket kartlarında mutlak değişimi 2 sentin altındaki satırlar gizleniyor (GTX 1650 artık listede değil)",
+          "neden": "Denetim geçti (26/26); PR açıldı, otomatik birleştirme bu oturumda izin denetimince reddedildi, kullanıcı onayı bekliyor",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-10",
+          "oneri": "Kalan 20 kullanılmayan export'u temizle",
+          "durum": "acik",
+          "pr": 18,
+          "dal": "otomasyon/oneri-2026-10-10-2",
+          "ozet": "17 kullanılmayan export kaldırıldı (badge.jsx, select.jsx dahil); togglePin, resetProgress, fiyatBilgisi bağlanmak üzere bırakıldı",
+          "neden": "Denetim geçti (26/26); PR açıldı, otomatik birleştirme bu oturumda izin denetimince reddedildi, kullanıcı onayı bekliyor",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-11",
+          "oneri": "Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
+          "durum": "acik",
+          "pr": 21,
+          "dal": "otomasyon/oneri-2026-10-11-1",
+          "ozet": "Ana sayfa kartı en az 5 sağlayıcılı ilk artış/düşüşü gösteriyor (bugün GTX 1660 -%83 yerine; düşen satırı gizlendi)",
+          "neden": "Denetim geçti (27/27); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-11",
+          "oneri": "Ana sayfa hareket satırında önceki → yeni fiyatı göster",
+          "durum": "acik",
+          "pr": 22,
+          "dal": "otomasyon/oneri-2026-10-11-2",
+          "ozet": "Kiralama kartında yüzdenin yanında önceki → yeni fiyat (geniş ekranda)",
+          "neden": "Denetim geçti (27/27); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor",
+          "kim": "otomasyon"
         }
       ],
       "degisiklikler": [
@@ -238,6 +337,30 @@
         },
         {
           "tarih": "2026-10-08",
+          "baslik": "Eğitimler bölümünü kaldır (#13'ü geri al)",
+          "pr": 14,
+          "url": "https://github.com/enesses/chip-akademi/pull/14"
+        },
+        {
+          "tarih": "2026-10-08",
+          "baslik": "Eğitimler: 36 ücretli ve ücretsiz kurs, öğrenme yolları",
+          "pr": 13,
+          "url": "https://github.com/enesses/chip-akademi/pull/13"
+        },
+        {
+          "tarih": "2026-10-08",
+          "baslik": "AI Araçları: prompt kütüphanesi ve indirilebilir Claude skill'leri",
+          "pr": 12,
+          "url": "https://github.com/enesses/chip-akademi/pull/12"
+        },
+        {
+          "tarih": "2026-10-08",
+          "baslik": "Öneriler: kiralık kartlar kataloğa, verimlilik birimi, uygulandı rozeti",
+          "pr": 11,
+          "url": "https://github.com/enesses/chip-akademi/pull/11"
+        },
+        {
+          "tarih": "2026-10-08",
           "baslik": "Fiyatlar: 2026-10-08 (etkileşimli oturumdan; 96 model, A4000 iki okumayla doğrulandı)",
           "pr": null,
           "url": "https://github.com/enesses/chip-akademi/commit/f105a391da87aaa4965d8fd3af026b2b42bb1bc8"
@@ -253,9 +376,15 @@
           "baslik": "Geliştirme önerilerini uygula (7 öneri, 8 Ekim raporu)",
           "pr": 8,
           "url": "https://github.com/enesses/chip-akademi/pull/8"
+        },
+        {
+          "tarih": "2026-10-10",
+          "baslik": "Haberler: her gün büyüyen çip ve yapay zekâ haber akışı",
+          "pr": 19,
+          "url": "https://github.com/enesses/chip-akademi/pull/19"
         }
       ],
-      "gunlukCommit": 7
+      "gunlukCommit": 13
     },
     {
       "hafta": "2026-W40",
@@ -420,5 +549,5 @@
       "gunlukCommit": 3
     }
   ],
-  "guncelleme": "2026-10-08"
+  "guncelleme": "2026-10-12"
 }

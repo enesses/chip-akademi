@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-12T07:29:38.592Z",
+  "guncelleme": "2026-10-12T07:45:46.834Z",
   "tarih": "2026-10-12",
   "durum": "dikkat",
   "ajanlar": [
@@ -376,8 +376,8 @@
     },
     {
       "tarih": "2026-10-12",
-      "durum": "temiz",
-      "dikkat": 0
+      "durum": "dikkat",
+      "dikkat": 2
     }
   ]
 }
