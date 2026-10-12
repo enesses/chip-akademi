@@ -1,0 +1,12 @@
+{
+  "fiyat": {
+    "durum": "ok"
+  },
+  "endeks": {
+    "durum": "ok"
+  },
+  "bellek": {
+    "durum": "izin-engeli",
+    "not": "trendforce.com/presscenter WebFetch PROVENANCE_REQUIRED; aramada 30 Eylül'den yeni TrendForce sözleşme fiyatı açıklaması yok (mevcut veride zaten var)"
+  }
+}

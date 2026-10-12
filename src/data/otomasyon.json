@@ -1,7 +1,7 @@
 {
-  "guncelleme": "2026-10-11T07:14:21.693Z",
-  "tarih": "2026-10-11",
-  "durum": "dikkat",
+  "guncelleme": "2026-10-12T07:25:52.805Z",
+  "tarih": "2026-10-12",
+  "durum": "temiz",
   "ajanlar": [
     {
       "id": "guvenlik",
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-10-11T07:07:53.937Z"
+      "zaman": "2026-10-12T07:24:26.305Z"
     },
     {
       "id": "iyilestirme",
@@ -17,15 +17,15 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-11T07:07:54.079Z"
+      "zaman": "2026-10-12T07:24:26.445Z"
     },
     {
       "id": "yenileme",
       "ad": "Yenileme",
       "saat": "10:00",
       "calisti": true,
-      "durum": "tamam",
-      "zaman": "2026-10-11T07:07:53.015Z"
+      "durum": "ok",
+      "zaman": "2026-10-12T07:24:25.107Z"
     },
     {
       "id": "gelistirme",
@@ -33,79 +33,49 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-11T07:08:07.785Z"
+      "zaman": "2026-10-12T07:24:42.059Z"
     }
   ],
-  "dikkat": [
-    {
-      "seviye": "dikkat",
-      "metin": "Öneri onay bekliyor: Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster (PR #21) — Denetim geçti (27/27); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor"
-    },
-    {
-      "seviye": "dikkat",
-      "metin": "Öneri onay bekliyor: Ana sayfa hareket satırında önceki → yeni fiyatı göster (PR #22) — Denetim geçti (27/27); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor"
-    }
-  ],
+  "dikkat": [],
   "oneriler": [
     {
-      "baslik": "Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
-      "neden": "src/pages/Home.jsx iki_gun.artanlar[0] ve dusenler[0]'ı sağlayıcı sayısına bakmadan alıyor. Bugün 'en çok düşen' 3 sağlayıcılı GTX 1660 (-%83,3, 0,36→0,06 $) çıktı; ana sayfadaki tek hareket satırı ince bir pazarın gürültüsünü gösteriyor. #15/#16 Prices.jsx'i ele alıyor, Home.jsx'e dokunmuyor.",
-      "etki": "orta",
-      "alan": "arayüz"
-    },
-    {
-      "baslik": "Ana sayfa hareket satırında önceki → yeni fiyatı göster",
-      "neden": "Home.jsx kiralama kartı yalnızca yüzdeyi gösteriyor (ör. A5000 +%65,3); gpu_kiralama.json'da onceki_usd ve usd_saat hazır. Mutlak fiyat olmadan +%65'in 0,49 $ mı 0,0x $ mı olduğu anlaşılmıyor.",
+      "baslik": "Fiyat sayfasında endeksin 12 aylık değişimini de göster",
+      "neden": "gpu_kiralama.json'da endeks.degisim_12_ay_pct (bugün +%8) her gün yazılıyor ama src/ altında hiçbir sayfa okumuyor (grep '12_ay' sonuçsuz); Prices.jsx yalnızca 4 haftalık değişimi (+%1,4) gösteriyor. Kısa vadeli hareketi uzun vadeli eğilimle yan yana görmek yorumu değiştiriyor.",
       "etki": "düşük",
       "alan": "arayüz"
     },
     {
-      "baslik": "Geliştirme ajanı reddedilmiş girdi yüzünden yenilemeyi yeniden çalıştırıp günün raporunu ezmesin",
-      "neden": "11 Ekim'de bugun.json 'özet eksik' ile reddedilip gelen/'de kaldı; 4-gelistirme.mjs bunu 'girdi var' sayıp 3-yenileme.mjs'yi yeniden çalıştırdı, .son-isleme.json ve yenileme raporu ezildi: fiyat (97 model güncellendi) 'atlandı', 6 ek haber 'gelen/haberler.json gelmedi' göründü. Düzeltme PR olarak açıldı.",
+      "baslik": "Ana sayfaya Haberler akışından son 3 haberi gösteren kart",
+      "neden": "Home.jsx Bugün'ü (ozet-bugun kartı) ve fiyatları özetliyor ama haberler.json'u hiç içe aktarmıyor; akışta 94 haber var ve bugün +14 eklendi. Haberler sayfasına ana sayfadan doğrudan bir giriş yok.",
       "etki": "orta",
-      "alan": "otomasyon"
+      "alan": "arayüz"
     },
     {
       "baslik": "3–9 sağlayıcılı modellerde de >%50 oynamayı şüpheli say",
-      "neden": "veri-isle.mjs şüpheli kontrolünü yalnızca ≥10 sağlayıcıda yapıyor; GTX 1660 (3 sağlayıcı, -%83) ve RTX 4070 Ti Super (3 sağlayıcı, -%35) doğrulama olmadan yazıldı ve hareket listesinin başına geçti.",
+      "neden": "veri-isle.mjs hâlâ yalnızca ≥10 sağlayıcıda kontrol ediyor. Bugün GTX 1650 (3 sağlayıcı) 0,03→0,35 $ (+%1067) ve Quadro RTX 6000 (3 sağlayıcı) 1,50→0,83 $ betikçe sorgusuz yazıldı; ikinci okumayla elle doğrulandı. Dünkü öneri, kodda hâlâ eksik.",
       "etki": "orta",
       "alan": "otomasyon"
     },
     {
-      "baslik": "Fiyat girdisinde sağlayıcı sayısını ayrı bir hedefli okumayla doğrula",
-      "neden": "Bugünkü ikinci WebFetch'te 'Providers' sayıları tutarsız geldi (H100 52, arama başlığında 57); kayıtlı sayılar korundu. A5000'in hedefli okuması '+7 providers' biçimini gösterdi; GUNLUK.md sayıyı bu metinden türetmeyi tarif etmeli.",
-      "etki": "düşük",
-      "alan": "otomasyon"
+      "baslik": "Günlük fiyat hareketinde gidip gelen modelleri işaretle",
+      "neden": "A5000 (12 sağlayıcı) 10→11 Ekim 0,75→1,24 $ (+%65), 11→12 Ekim 1,24→0,75 $ (-%40) oldu; her iki gün de hareket listesine girdi. Önceki 2 ölçümün ortalamasına göre değişim ya da 'geri döndü' etiketi, sağlayıcı listesindeki geçici değişimden doğan gürültüyü ayırır.",
+      "etki": "orta",
+      "alan": "veri"
     },
     {
       "baslik": "Bugün sayfasına son 7 günün puan geçmişi",
-      "neden": "otomasyon/gecmis/bugun-2026-10-04…11.json sekiz günlük puan içeriyor ama Bugun.jsx yalnızca günün puanını gösteriyor (bugün 38, dün 75); düşüşün bağlamı kayboluyor. Veri yolu otomasyon/ altından geçtiği için korunan dosyaya dokunur.",
+      "neden": "otomasyon/gecmis/ altında 10 günlük bugun-*.json var (puan.deger dahil; bugün 46, dün 38) ama Bugun.jsx yalnızca günün puanını gösteriyor. Geçmişin src/data'ya taşınması otomasyon betiğine dokunduğu için onay gerekir.",
       "etki": "orta",
-      "alan": "veri"
-    }
-  ],
-  "uygulanan": [
-    {
-      "tarih": "2026-10-11",
-      "oneri": "Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
-      "durum": "acik",
-      "pr": 21,
-      "dal": "otomasyon/oneri-2026-10-11-1",
-      "ozet": "Ana sayfa kartı en az 5 sağlayıcılı ilk artış/düşüşü gösteriyor (bugün GTX 1660 -%83 yerine; düşen satırı gizlendi)",
-      "neden": "Denetim geçti (27/27); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor",
-      "kim": "otomasyon"
+      "alan": "arayüz"
     },
     {
-      "tarih": "2026-10-11",
-      "oneri": "Ana sayfa hareket satırında önceki → yeni fiyatı göster",
-      "durum": "acik",
-      "pr": 22,
-      "dal": "otomasyon/oneri-2026-10-11-2",
-      "ozet": "Kiralama kartında yüzdenin yanında önceki → yeni fiyat (geniş ekranda)",
-      "neden": "Denetim geçti (27/27); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor",
-      "kim": "otomasyon"
+      "baslik": "Onay bekleyen öneri PR'larını birleştir ya da kapat",
+      "neden": "#15, #16, #17, #18, #21, #22 (ve düzeltme #20) denetimi geçmiş ama açık bekliyor; #15/#16 ve #21/#22 aynı dosyalara dokunuyor, biri birleşince diğerinde çakışma çıkacak. Yeni öneriler bu dosyalara dokundukça çakışma riski artıyor.",
+      "etki": "orta",
+      "alan": "süreç"
     }
   ],
+  "uygulanan": [],
   "uygulananSon": [
     {
       "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
@@ -258,22 +228,22 @@
     ]
   },
   "yenileme": {
-    "durum": "tamam",
+    "durum": "ok",
     "adimlar": [
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bugün 07:06'da güncellendi — 97 model (getdeploying.com/gpus medyan), A5000 +%65 ikinci okumayla elle doğrulandı; endeks 5 Ekim haftası (4 hafta +%1,3, 12 ay +%8). Not: rapor, geliştirme ajanının yenilemeyi yeniden çalıştırmasıyla ezilmişti, elle düzeltildi."
+        "detay": "bu çalıştırmada güncellendi — 97 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 10 gelmedi (eski fiyat korundu)"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 38; haber akışına +8"
+        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 46, 4 yaklaşan olay; haber akışına +8"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "bugün 14 haber: 8 Bugün maddesi + 6 ek haber (gelen/haberler.json 07:06'da işlendi)"
+        "detay": "+6 haber (akışta 94); bugün toplam 14"
       },
       {
         "ad": "Derleme",
@@ -283,7 +253,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2206 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2220 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -357,6 +327,11 @@
     },
     {
       "tarih": "2026-10-11",
+      "durum": "dikkat",
+      "dikkat": 2
+    },
+    {
+      "tarih": "2026-10-12",
       "durum": "temiz",
       "dikkat": 0
     }

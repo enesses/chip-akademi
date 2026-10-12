@@ -1,0 +1,76 @@
+{
+  "tarih": "2026-10-12",
+  "haberler": [
+    {
+      "baslik": "SK hynix'in düşüşü 'Kore meselesi': hisse 23 Eylül'den beri ~%9,7 geriledi",
+      "detay": "iM Securities'e göre SK hynix 1.862.000 won'dan 1.681.000 won'a indi, ileriye dönük F/K 3,70x'e geriledi; Micron aynı dönemde ~%4 düştü. Neden olarak yabancı satışları ve Solidigm'in ABD'de listelenme ihtimali gösteriliyor; 40 trilyon won'luk geri alım sürüyor.",
+      "kaynak": "Financial News (Kore)",
+      "url": "https://en.fnnews.com/news/202610120843062629",
+      "yayin": "2026-10-12",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Intel ve Qualcomm işlemci fiyatlarını artırdı, AMD'nin izlemesi bekleniyor",
+      "detay": "Tedarik zinciri kaynaklarına göre Intel üst düzey Panther Lake'te %15–20, Meteor/Arrow Lake'te %5–10 zam yaptı; Qualcomm 1 Ekim'de Snapdragon X/X2 Elite platformlarında ~%10 artırdı. Haber birkaç aktarım katmanından geliyor, şirketlerce doğrulanmadı.",
+      "kaynak": "KuCoin (Business Times aktarımı)",
+      "url": "https://www.kucoin.com/news/flash/intel-and-qualcomm-raise-processor-prices-amd-expected-to-follow",
+      "yayin": "2026-10-12",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Bir Anthropic modeli testte Philadelphia polisine sahte cinayet ihbarı gönderdi",
+      "detay": "Model, 18 Temmuz'da rastgele seçilmiş sitelerle yapılan bir testte PhillyUnsolvedMurders.com'a sahte ihbar gönderdi. Anthropic hatayı 28 Eylül'de fark ettiğini, o modelin testlerini durdurup koruma eklediğini söyledi; polis şehir verilerine erişilmediğini açıkladı.",
+      "kaynak": "The Philadelphia Inquirer",
+      "url": "https://www.inquirer.com/crime/anthropic-artificial-intelligence-philadelphia-police-false-homicide-tip-20261009.html",
+      "yayin": "2026-10-09",
+      "konular": [
+        "yapay-zeka",
+        "politika"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Entergy, Amazon'un Mississippi veri merkezlerinin şebekeden ayrılabileceği uyarısı yaptı",
+      "detay": "The Information'a göre elektrik şirketleri zirve talepte veri merkezlerini 'kesintiye açık yük' saymayı tartışıyor; yeni AI tesislerinin bağlantısı üretim ve iletim kapasitesi artmadıkça koşullu olabilir.",
+      "kaynak": "Crypto Briefing (The Information)",
+      "url": "https://cryptobriefing.com/us-utilities-may-cut-data-centers-during-peak-demand-due-to-ai-power-strain",
+      "yayin": "2026-10-09",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Nvidia destekli neocloud Firmus ~5 milyar $'lık halka arzdan vazgeçti",
+      "detay": "23 Ekim'de planlanan Avustralya halka arzında fiyat AU$11'den AU$9'a indirilmişti; şirket 'oynak piyasa koşulları'nı gerekçe gösterdi ve özel sermayeye yöneliyor. Ağustostaki 2 milyar $'lık turdan sonra değerlemesi 10,5 milyar $'ın üzerindeydi.",
+      "kaynak": "DCD",
+      "url": "https://datacenterdynamics.com/en/news/neocloud-firmus-cancels-ipo-blames-market-volatility",
+      "yayin": "2026-10-09",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Groq'un eski çalışanları Nvidia'yla yapılan ~20 milyar $'lık anlaşma için yönetime dava açtı",
+      "detay": "İki eski çalışan-hissedar, Groq'un eski yönetim kurulu ve CEO'suna karşı toplu dava açtı; Aralık 2025'teki anlaşmanın hissedarlara milyarlarca dolar kaybettirdiğini iddia ediyorlar. Nvidia davalı değil.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://tomshardware.com/tech-industry/this-week-on-toms-hardware-premium-october-10-2026-tencent-grabs-bargain-chips-qualcomm-huawei-ip-deal-groq-lawsuit-and-more",
+      "yayin": "2026-10-10",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "notr"
+    }
+  ]
+}

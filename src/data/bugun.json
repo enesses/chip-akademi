@@ -1,89 +1,115 @@
 {
-  "tarih": "2026-10-11",
-  "derlenme": "11 Ekim 2026",
+  "tarih": "2026-10-12",
+  "derlenme": "12 Ekim 2026",
   "ozet": [
-    "Hafta sonu gündemi, yapay zekâ altyapısının artık çipten çok enerji, izin ve maliyetle sınandığını gösteriyor. Oracle, New Mexico'daki 2,45 GW'lık Project Jupiter kampüsü için gaz boru hattı gecikmesi nedeniyle geliştiriciye force majeure bildirimi gönderdi; İtalya'da da bir belediye su ve elektrik tüketimi gerekçesiyle 80 MW'lık projeyi reddetti. Güç ve izin, sipariş defterlerinin önüne geçen darboğaz olmaya devam ediyor.",
-    "Bellek cephesinde iki zıt sinyal var. Bir yanda bellek maliyetleri tüketici elektroniğini sıkıştırıyor: Nikkei'ye göre Apple, iPhone 18 Pro bileşen siparişlerini ekimde %15–20 azalttı. Öte yanda Çinli CXMT, 4F² hücre mimarili DDR5 RDIMM'i yıl sonuna kadar çıkarmayı ve Samsung'un önüne yaklaşık iki yıl geçmeyi hedefliyor; bu, uzun vadede Koreli üreticilerin fiyatlama gücü için bir soru işareti.",
-    "Çip ekosisteminde Nvidia, The Information'a göre çıkarım çipi rakibi d-Matrix'e yatırım yapmaya hazırlanıyor; Google'ın altyapı başkan yardımcısı Bikash Koley ise Google–Blackstone ortaklığı TPU bulutu Crux AI'a geçti. Anthropic ile ilişkilendirilen 490 MW BT kapasiteli bir Teksas kampüsü için başvuru yapıldı.",
-    "Denetim ve güvenlik tarafında Super Micro'nun eski taşeronu, 2,5 milyar $'lık Nvidia sunucusunu Çin'e yönlendirme davasında suçunu kabul etti; Nvidia'nın GPU izleme aracı DCGM Exporter'da 2.000'den fazla açık sunucuyu etkileyen yüksek önemli bir açık duyuruldu."
+    "Haftaya girerken gündemin merkezinde TSMC var: şirket 15 Ekim'de üçüncü çeyrek sonuçlarını açıklayacak ve LSEG analist ortalamasına göre net kârın yıllık %65 artışla yaklaşık 746 milyar T$'a (~23 milyar $) çıkması bekleniyor. Gelirin zaten %50 büyüdüğü açıklandığı için piyasa artık rakamdan çok dördüncü çeyrek rehberliğine ve 2027 AI çipi talebine bakacak. Bir gün önce, 14 Ekim'de ASML de sonuçlarını duyuracak.",
+    "Bellek tarafında iki zıt sinyal yan yana duruyor. Pazartesi Samsung %3,6, SK hynix %3,4 düştü; tetikleyici, Çinli CXMT'nin 4F² hücre yapısında ilerleme kaydettiğini ve yıl sonuna kadar yeni nesil sunucu DDR5 RDIMM çıkaracağını söylemesi. Öte yandan Samsung ve SK hynix 14–16 Ekim'deki SEDEX fuarında HBM4E için ısı yönetimi çözümlerini (hibrit bakır bağlama, iHBM) sergileyecek; yani yüksek bant genişlikli bellekte rekabet teknolojiyle sürüyor.",
+    "Geçen hafta yarı iletken endeksi SOXX %5,1 geriledi; Intel %12,3, ARM %13,4 kaybetti. Hafta sonu haberleri işlem gücü kıtlığının şirketler arası ilişkileri de şekillendirdiğini gösteriyor: WSJ'ye göre Meta, Anthropic'e işlem gücü kiralama planını askıya aldı; Nvidia ise 800 milyon $ yatırdığı açık modelci Reflection AI'ı satın almayı ya da payını artırmayı görüşüyor.",
+    "Veri merkezlerinin enerji ve kamuoyu sorunu da sürüyor. Amazon, yerel yönetimlerle veri merkezi görüşmelerinde artık gizlilik sözleşmesi (NDA) kullanmayacağını açıkladı; New York ve San Francisco'daki moratoryumlar baskının boyutunu gösteriyor. AP'nin derlediği verilere göre AI rafları 40–100 kW çekiyor ve hiperölçekleyiciler 2031'e kadar 7,6 trilyon $ harcamayı planlıyor; bu talep doğal gaz ve güneşe yatırımı hızlandırırken şebekeyi zorluyor."
   ],
   "puan": {
-    "etiket": "Altyapıda sürtünme",
-    "yorum": "Nvidia'nın d-Matrix hamlesi ve yeni kampüs projeleri talebin sürdüğünü gösterse de Oracle'ın force majeure uyarısı, Apple'ın sipariş kesintisi ve yerel izin retleri enerji ve maliyet darboğazını öne çıkarıyor; hafta sonu tonu nötrün biraz altında.",
-    "deger": 38
+    "etiket": "Bilanço haftası öncesi temkin",
+    "yorum": "TSMC'den rekor kâr beklentisi ve HBM4E rekabeti talebin güçlü kaldığını gösteriyor; ama geçen haftaki çip satışları, CXMT kaynaklı bellek hisselerindeki düşüş ve işlem gücü/enerji darboğazı tonu nötre yakın tutuyor.",
+    "deger": 46
   },
   "maddeler": [
     {
-      "baslik": "Oracle, 2,45 GW'lık New Mexico kampüsü için force majeure bildirdi",
-      "detay": "Oracle, Project Jupiter kampüsünün geliştiricisine (Blue Owl birimi) force majeure bildirimi gönderdi. Gaz boru hattının geçiş izni reddedildi, hat yeniden rotalandı ve başlangıç 1 Şubat 2027'ye kaydı. 18 milyar $'lık inşaat kredisi dolar başına 90 sentin altında işlem görüyor.",
-      "kategori": "negatif",
+      "baslik": "TSMC'den altıncı rekor çeyrek bekleniyor: net kârda %65 artış",
+      "detay": "LSEG'in 16 analistlik tahminine göre 3. çeyrek net kârı ~746 milyar T$ (~23 milyar $) olacak; 707 milyar T$'ın üzeri şirket rekoru. Sonuçlar 15 Ekim'de açıklanıyor; Morgan Stanley yıllık büyüme rehberliğinin düşük-orta %40'lara çıkmasını bekliyor.",
+      "kategori": "pozitif",
       "agirlik": 3,
-      "neden": "Büyük bir AI veri merkezinin enerji bağlantısı yüzünden gecikmesi, GPU kurulumlarının takvimini ve finansmanını doğrudan riske atıyor.",
-      "kaynak": "TheStreet",
-      "url": "https://thestreet.com/technology/oracle-force-majeure-ai-data-center-power-bottleneck"
+      "neden": "AI çipi üretiminin tek büyük dökümhanesinin kârının hızla büyümesi talebin sürdüğünün en doğrudan göstergesi.",
+      "kaynak": "investingLive",
+      "url": "https://investinglive.com/stocks/preview-tsmc-tipped-for-sixth-straight-record-quarter-with-profit-seen-up-65-on-ai-demand"
     },
     {
-      "baslik": "Apple, bellek maliyetleri nedeniyle iPhone 18 Pro siparişlerini %15–20 kıstı",
-      "detay": "Nikkei Asia'ya göre Apple, ekim ayı iPhone 18 Pro ve Pro Max bileşen siparişlerini orijinal plana göre %15–20 azalttı. Haberde bellek maliyetlerinin fiyat artışına, bunun da talebe yansıdığı belirtiliyor; Almanya'da Pro modeller 150 € pahalandı.",
+      "baslik": "CXMT'nin 4F² ilerlemesi Samsung ve SK hynix hisselerini düşürdü",
+      "detay": "12 Ekim'de Samsung %3,6 düşüşle 252.500 won'a, SK hynix %3,4 düşüşle 1.624.000 won'a geriledi. CXMT, 4F² hücre yapısında kilit ilerleme kaydettiğini ve 2026 sonuna kadar yeni nesil sunucu DDR5 RDIMM çıkaracağını açıkladı.",
       "kategori": "negatif",
       "agirlik": 2,
-      "neden": "Bellek fiyatlarındaki artışın tüketici cihaz talebini kemirmeye başlaması, çip talebinin AI dışı ayağını zayıflatıyor.",
-      "kaynak": "Notebookcheck (Nikkei Asia)",
-      "url": "https://www.notebookcheck.net/iPhone-18-Pro-Apple-reportedly-cuts-orders-by-up-to-20-percent.1420431.0.html"
+      "neden": "Çinli rakibin teknoloji açığını kapatması Kore bellek üreticilerinin fiyatlama gücüne dair kaygı yaratıyor.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-sk-hynix-shares-drop-053408695.html"
     },
     {
-      "baslik": "CXMT, 4F² mimarili DDR5'i Samsung'dan ~2 yıl önce çıkarmayı hedefliyor",
-      "detay": "CXMT Başkanı Cao Kanyu'ya göre şirket 4F² hücreli DDR5 RDIMM'i 2026 sonuna kadar piyasaya sürecek; Samsung'un bu mimari için planı 2028. CXMT yıl sonunda 300.000 wafer/ay DRAM ve ~50.000 wafer/ay HBM kapasitesi hedefliyor.",
+      "baslik": "SEDEX'te HBM4E ısı savaşı: Samsung hibrit bağlama, SK hynix iHBM",
+      "detay": "14–16 Ekim'de Seul COEX'te 300 şirket ve 888 standla düzenlenecek fuarda Samsung bakır-bakır hibrit bağlamayı (HCB) ve Heat Path Block'u, SK hynix ise ısıl direnci ~%30 düşürmeyi hedefleyen iHBM'i sergileyecek.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "HBM'deki ısı sınırının aşılması daha yoğun AI hızlandırıcılarının önünü açıyor.",
+      "kaynak": "BigGo Finance",
+      "url": "https://finance.biggo.com/news/6f80a886-0bd7-4220-ab76-de009a0c9ae6"
+    },
+    {
+      "baslik": "Amazon, veri merkezi görüşmelerinde gizlilik sözleşmelerini bırakıyor",
+      "detay": "Amazon, yerel yönetimlerle veri merkezi müzakerelerinde artık NDA kullanmayacağını açıkladı; Microsoft benzer kararı yıl başında almıştı. New York eyaleti büyük projelere yaklaşık bir yıllık izin moratoryumu uyguluyor, San Francisco da moratoryum onayladı.",
       "kategori": "notr",
-      "agirlik": 2,
-      "neden": "Bellek arzına yeni rakip kapasite eklenmesi fiyat baskısını gevşetebilir ama Koreli üreticilerin marjları için risk oluşturuyor.",
-      "kaynak": "Wccftech (ITHome)",
-      "url": "https://wccftech.com/cxmt-to-leapfrog-samsung-by-2-years-as-it-gears-up-to-introduce-a-ddr5-rdimm-product-that-leverages-the-4f%C2%B2-memory-cell-architecture-before-year-end/amp"
-    },
-    {
-      "baslik": "Nvidia, çıkarım çipi girişimi d-Matrix'e yatırım yapmaya hazırlanıyor",
-      "detay": "The Information'ın üç kaynağa dayanan haberine göre Nvidia, rakip çıkarım çipi geliştiren d-Matrix'e yatırım planlıyor. d-Matrix, Kasım 2025'te 2 milyar $ değerlemeyle 275 milyon $ toplamıştı; tutar açıklanmadı.",
-      "kategori": "pozitif",
-      "agirlik": 2,
-      "neden": "Çıkarım donanımına yatırımın büyümesi talebin genişlediğini gösteriyor; Nvidia rakip mimarileri de ekosistemine çekiyor.",
-      "kaynak": "DCD (The Information)",
-      "url": "https://datacenterdynamics.com/en/news/report-nvidia-plans-to-invest-in-inference-chip-startup-d-matrix"
-    },
-    {
-      "baslik": "Anthropic'le ilişkilendirilen 366 milyon $'lık Teksas veri merkezi için başvuru",
-      "detay": "Bastrop County, Cedar Creek'te 'Project Longhorn' için TDLR'ye başvuru yapıldı: tam kapasitede 710 MW gaz türbini gücü ve 490 MW BT kapasitesi; inşaat 30 Kasım 2026'da başlayıp Ocak 2028'de bitecek. Anthropic'in kiralama görüşmesinde olduğu bildiriliyor, şirket yorum yapmadı.",
-      "kategori": "pozitif",
       "agirlik": 1,
-      "neden": "Yeni yüzlerce MW'lık kampüs planları hızlandırıcı talebinin 2027–28'e uzandığını gösteriyor.",
-      "kaynak": "DCD",
-      "url": "https://datacenterdynamics.com/en/news/anthropic-linked-366m-data-center-project-filed-for-in-cedar-creek-texas"
+      "neden": "Şeffaflık adımı kamu direncini azaltabilir ama moratoryumlar yeni kapasitenin önündeki engelin sürdüğünü gösteriyor.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/"
     },
     {
-      "baslik": "Google'ın altyapı başkan yardımcısı TPU bulutu Crux AI'a geçti",
-      "detay": "Google'ın küresel altyapı ve kapasite başkan yardımcısı Bikash Koley, Google–Blackstone ortaklığı Crux AI'a teknoloji ve ürün direktörü olarak katıldı. Crux, 2027'de 500 MW, ardından 2 GW TPU kapasitesi hedefliyor.",
-      "kategori": "pozitif",
-      "agirlik": 1,
-      "neden": "TPU tabanlı bağımsız bulutun kadrolaşması, Nvidia dışı hızlandırıcı arzının ciddileştiğini gösteriyor.",
-      "kaynak": "DCD",
-      "url": "https://datacenterdynamics.com/en/news/googles-vp-of-global-infrastructure-and-capacity-bikash-koley-heads-to-tpu-neocloud-crux-ai"
+      "baslik": "Çip hisseleri geçen hafta %5,1 geriledi; Intel ve ARM öncülük etti",
+      "detay": "SOXX haftayı %5,1 düşüşle kapattı; Nasdaq-100'de en çok kaybedenler ARM (−%13,4) ve Intel (−%12,3) oldu. Bu hafta ASML (14 Ekim, gelirde ~%56 artış beklentisi) ve TSMC (15 Ekim) sonuç açıklıyor.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Sert ekim rallisinin ardından gelen satış, değerlemelerin bilançolara karşı hassaslaştığını gösteriyor.",
+      "kaynak": "Stocktwits / Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/articles/stocktwits-tech-watch-asml-tsmc-050342095.html"
     },
     {
-      "baslik": "Super Micro'nun eski taşeronu Nvidia sunucusu kaçakçılığında suçunu kabul etti",
-      "detay": "Ting-Wei 'Willy' Sun, yaklaşık 2,5 milyar $'lık Supermicro sunucusunun Güneydoğu Asya üzerinden Çin'e yönlendirilmesi davasında 9 Ekim'de New York federal mahkemesinde suçunu kabul etti. Kurucu ortak Wally Liaw tutuklu, bir sanık firari.",
+      "baslik": "WSJ: Meta, Anthropic'e işlem gücü kiralama planını askıya aldı",
+      "detay": "Haberde Anthropic CEO'su Dario Amodei'nin yıl başında Meta'dan AI çipi kiralamak istediği, Meta'nın kendi Muse modellerinin talebi ve rakibi güçlendirme kaygısıyla vazgeçtiği aktarılıyor.",
       "kategori": "negatif",
       "agirlik": 1,
-      "neden": "İhracat kontrolü ihlallerinin yargıya taşınması, sunucu üreticileri ve Çin satışları üzerindeki denetim baskısını artırıyor.",
-      "kaynak": "Crypto Briefing",
-      "url": "https://cryptobriefing.com/super-micro-contractor-pleads-guilty-nvidia-chips/"
+      "neden": "İşlem gücünün rakipler arasında paylaşılmaması kıtlığın derinleştiğini gösteriyor.",
+      "kaynak": "KuCoin (WSJ haberi aktarımı)",
+      "url": "https://kucoin.com/news/flash/meta-halts-plan-to-lease-ai-compute-power-to-anthropic"
     },
     {
-      "baslik": "Nvidia DCGM Exporter'da yüksek önemli açık: 2.000+ GPU sunucusu açıkta",
-      "detay": "CVE-2026-47483 (CVSS 8,2), kimlik doğrulaması olmayan saldırganların GPU izlemeyi çökertmesine izin veriyor. Lava araştırmacılarına göre ~300 kuruluşa ait, yaklaşık 100 milyon $ değerinde 2.000'den fazla sunucu internete açık; Nvidia düzeltme yayımladı.",
-      "kategori": "negatif",
+      "baslik": "FT: Nvidia, Reflection AI'ı satın almayı ya da payını artırmayı görüşüyor",
+      "detay": "Nvidia'nın 800 milyon $ yatırdığı açık ağırlıklı model girişimiyle görüşmeler erken aşamada; anlaşma, uzun düzenleyici incelemeden kaçınmak için ekip alımı ve lisans biçiminde olabilir. Reuters bilgiyi bağımsız doğrulayamadı.",
+      "kategori": "notr",
       "agirlik": 1,
-      "neden": "AI kümelerinin operasyonel güvenliğindeki açıklar kesinti riski taşıyor; etkisi yamayla sınırlı.",
-      "kaynak": "Cybernews",
-      "url": "https://cybernews.com/security/nvidia-high-severity-vulnerability/"
+      "neden": "Nvidia'nın model katmanına uzanması ekosistemi güçlendirir ama henüz kesinleşmiş bir anlaşma yok.",
+      "kaynak": "The Star (Reuters/FT)",
+      "url": "https://www.thestar.com.my/tech/tech-news/2026/10/11/nvidia-in-talks-to-invest-further-in-reflection-ai-or-buy-it-ft-reports"
+    },
+    {
+      "baslik": "AI veri merkezleri doğal gaz ve güneşi hızlandırıyor, şebekeyi zorluyor",
+      "detay": "AI rafları 40–100 kW çekiyor (klasik raf 5–10 kW). Goldman Sachs'a göre 2031'e kadar AI veri merkezlerine 7,6 trilyon $ harcanacak; RBC, veri merkezlerinin doğal gaz talebinin 2030'a kadar ~%20 artabileceğini öngörüyor.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Talep büyük ama enerji ve şebeke kapasitesi kurulum hızını sınırlayan ana etken olmaya devam ediyor.",
+      "kaynak": "Politixia (AP)",
+      "url": "https://politixia.com/2026/10/11/electric-avenues-ai-data-centers-spur-natural-gas-solar-challenge-power-grids-local-news"
+    }
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2026-10-12",
+      "baslik": "OCP Global Summit (San Jose, 12–15 Ekim)",
+      "kaynak": "Open Compute Project",
+      "url": "https://www.opencompute.org/events/ocp-summit/2026-ocp-global-summit/"
+    },
+    {
+      "tarih": "2026-10-14",
+      "baslik": "ASML 3. çeyrek sonuçları",
+      "kaynak": "Stocktwits / Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/articles/stocktwits-tech-watch-asml-tsmc-050342095.html"
+    },
+    {
+      "tarih": "2026-10-14",
+      "baslik": "SEDEX 2026 (Seul, 14–16 Ekim)",
+      "kaynak": "BigGo Finance",
+      "url": "https://finance.biggo.com/news/6f80a886-0bd7-4220-ab76-de009a0c9ae6"
+    },
+    {
+      "tarih": "2026-10-15",
+      "baslik": "TSMC 3. çeyrek sonuçları",
+      "kaynak": "Stocktwits / Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/articles/stocktwits-tech-watch-asml-tsmc-050342095.html"
     }
   ],
   "yontem": {
@@ -91,6 +117,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = -3 · Σ ağırlık = 13 · Puan = 50 + 50 × -0.23 = 38"
+    "hesap": "Σ ağırlık×işaret = -1 · Σ ağırlık = 12 · Puan = 50 + 50 × -0.08 = 46"
   }
 }

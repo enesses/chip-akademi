@@ -1,0 +1,41 @@
+{
+  "tarih": "2026-10-12",
+  "oneriler": [
+    {
+      "baslik": "Fiyat sayfasında endeksin 12 aylık değişimini de göster",
+      "neden": "gpu_kiralama.json'da endeks.degisim_12_ay_pct (bugün +%8) her gün yazılıyor ama src/ altında hiçbir sayfa okumuyor (grep '12_ay' sonuçsuz); Prices.jsx yalnızca 4 haftalık değişimi (+%1,4) gösteriyor. Kısa vadeli hareketi uzun vadeli eğilimle yan yana görmek yorumu değiştiriyor.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Ana sayfaya Haberler akışından son 3 haberi gösteren kart",
+      "neden": "Home.jsx Bugün'ü (ozet-bugun kartı) ve fiyatları özetliyor ama haberler.json'u hiç içe aktarmıyor; akışta 94 haber var ve bugün +14 eklendi. Haberler sayfasına ana sayfadan doğrudan bir giriş yok.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "3–9 sağlayıcılı modellerde de >%50 oynamayı şüpheli say",
+      "neden": "veri-isle.mjs hâlâ yalnızca ≥10 sağlayıcıda kontrol ediyor. Bugün GTX 1650 (3 sağlayıcı) 0,03→0,35 $ (+%1067) ve Quadro RTX 6000 (3 sağlayıcı) 1,50→0,83 $ betikçe sorgusuz yazıldı; ikinci okumayla elle doğrulandı. Dünkü öneri, kodda hâlâ eksik.",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Günlük fiyat hareketinde gidip gelen modelleri işaretle",
+      "neden": "A5000 (12 sağlayıcı) 10→11 Ekim 0,75→1,24 $ (+%65), 11→12 Ekim 1,24→0,75 $ (-%40) oldu; her iki gün de hareket listesine girdi. Önceki 2 ölçümün ortalamasına göre değişim ya da 'geri döndü' etiketi, sağlayıcı listesindeki geçici değişimden doğan gürültüyü ayırır.",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Bugün sayfasına son 7 günün puan geçmişi",
+      "neden": "otomasyon/gecmis/ altında 10 günlük bugun-*.json var (puan.deger dahil; bugün 46, dün 38) ama Bugun.jsx yalnızca günün puanını gösteriyor. Geçmişin src/data'ya taşınması otomasyon betiğine dokunduğu için onay gerekir.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Onay bekleyen öneri PR'larını birleştir ya da kapat",
+      "neden": "#15, #16, #17, #18, #21, #22 (ve düzeltme #20) denetimi geçmiş ama açık bekliyor; #15/#16 ve #21/#22 aynı dosyalara dokunuyor, biri birleşince diğerinde çakışma çıkacak. Yeni öneriler bu dosyalara dokundukça çakışma riski artıyor.",
+      "etki": "orta",
+      "alan": "süreç"
+    }
+  ]
+}

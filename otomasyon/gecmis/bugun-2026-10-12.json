@@ -1,0 +1,122 @@
+{
+  "tarih": "2026-10-12",
+  "derlenme": "12 Ekim 2026",
+  "ozet": [
+    "Haftaya girerken gündemin merkezinde TSMC var: şirket 15 Ekim'de üçüncü çeyrek sonuçlarını açıklayacak ve LSEG analist ortalamasına göre net kârın yıllık %65 artışla yaklaşık 746 milyar T$'a (~23 milyar $) çıkması bekleniyor. Gelirin zaten %50 büyüdüğü açıklandığı için piyasa artık rakamdan çok dördüncü çeyrek rehberliğine ve 2027 AI çipi talebine bakacak. Bir gün önce, 14 Ekim'de ASML de sonuçlarını duyuracak.",
+    "Bellek tarafında iki zıt sinyal yan yana duruyor. Pazartesi Samsung %3,6, SK hynix %3,4 düştü; tetikleyici, Çinli CXMT'nin 4F² hücre yapısında ilerleme kaydettiğini ve yıl sonuna kadar yeni nesil sunucu DDR5 RDIMM çıkaracağını söylemesi. Öte yandan Samsung ve SK hynix 14–16 Ekim'deki SEDEX fuarında HBM4E için ısı yönetimi çözümlerini (hibrit bakır bağlama, iHBM) sergileyecek; yani yüksek bant genişlikli bellekte rekabet teknolojiyle sürüyor.",
+    "Geçen hafta yarı iletken endeksi SOXX %5,1 geriledi; Intel %12,3, ARM %13,4 kaybetti. Hafta sonu haberleri işlem gücü kıtlığının şirketler arası ilişkileri de şekillendirdiğini gösteriyor: WSJ'ye göre Meta, Anthropic'e işlem gücü kiralama planını askıya aldı; Nvidia ise 800 milyon $ yatırdığı açık modelci Reflection AI'ı satın almayı ya da payını artırmayı görüşüyor.",
+    "Veri merkezlerinin enerji ve kamuoyu sorunu da sürüyor. Amazon, yerel yönetimlerle veri merkezi görüşmelerinde artık gizlilik sözleşmesi (NDA) kullanmayacağını açıkladı; New York ve San Francisco'daki moratoryumlar baskının boyutunu gösteriyor. AP'nin derlediği verilere göre AI rafları 40–100 kW çekiyor ve hiperölçekleyiciler 2031'e kadar 7,6 trilyon $ harcamayı planlıyor; bu talep doğal gaz ve güneşe yatırımı hızlandırırken şebekeyi zorluyor."
+  ],
+  "puan": {
+    "etiket": "Bilanço haftası öncesi temkin",
+    "yorum": "TSMC'den rekor kâr beklentisi ve HBM4E rekabeti talebin güçlü kaldığını gösteriyor; ama geçen haftaki çip satışları, CXMT kaynaklı bellek hisselerindeki düşüş ve işlem gücü/enerji darboğazı tonu nötre yakın tutuyor.",
+    "deger": 46
+  },
+  "maddeler": [
+    {
+      "baslik": "TSMC'den altıncı rekor çeyrek bekleniyor: net kârda %65 artış",
+      "detay": "LSEG'in 16 analistlik tahminine göre 3. çeyrek net kârı ~746 milyar T$ (~23 milyar $) olacak; 707 milyar T$'ın üzeri şirket rekoru. Sonuçlar 15 Ekim'de açıklanıyor; Morgan Stanley yıllık büyüme rehberliğinin düşük-orta %40'lara çıkmasını bekliyor.",
+      "kategori": "pozitif",
+      "agirlik": 3,
+      "neden": "AI çipi üretiminin tek büyük dökümhanesinin kârının hızla büyümesi talebin sürdüğünün en doğrudan göstergesi.",
+      "kaynak": "investingLive",
+      "url": "https://investinglive.com/stocks/preview-tsmc-tipped-for-sixth-straight-record-quarter-with-profit-seen-up-65-on-ai-demand"
+    },
+    {
+      "baslik": "CXMT'nin 4F² ilerlemesi Samsung ve SK hynix hisselerini düşürdü",
+      "detay": "12 Ekim'de Samsung %3,6 düşüşle 252.500 won'a, SK hynix %3,4 düşüşle 1.624.000 won'a geriledi. CXMT, 4F² hücre yapısında kilit ilerleme kaydettiğini ve 2026 sonuna kadar yeni nesil sunucu DDR5 RDIMM çıkaracağını açıkladı.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Çinli rakibin teknoloji açığını kapatması Kore bellek üreticilerinin fiyatlama gücüne dair kaygı yaratıyor.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-sk-hynix-shares-drop-053408695.html"
+    },
+    {
+      "baslik": "SEDEX'te HBM4E ısı savaşı: Samsung hibrit bağlama, SK hynix iHBM",
+      "detay": "14–16 Ekim'de Seul COEX'te 300 şirket ve 888 standla düzenlenecek fuarda Samsung bakır-bakır hibrit bağlamayı (HCB) ve Heat Path Block'u, SK hynix ise ısıl direnci ~%30 düşürmeyi hedefleyen iHBM'i sergileyecek.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "HBM'deki ısı sınırının aşılması daha yoğun AI hızlandırıcılarının önünü açıyor.",
+      "kaynak": "BigGo Finance",
+      "url": "https://finance.biggo.com/news/6f80a886-0bd7-4220-ab76-de009a0c9ae6"
+    },
+    {
+      "baslik": "Amazon, veri merkezi görüşmelerinde gizlilik sözleşmelerini bırakıyor",
+      "detay": "Amazon, yerel yönetimlerle veri merkezi müzakerelerinde artık NDA kullanmayacağını açıkladı; Microsoft benzer kararı yıl başında almıştı. New York eyaleti büyük projelere yaklaşık bir yıllık izin moratoryumu uyguluyor, San Francisco da moratoryum onayladı.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Şeffaflık adımı kamu direncini azaltabilir ama moratoryumlar yeni kapasitenin önündeki engelin sürdüğünü gösteriyor.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/"
+    },
+    {
+      "baslik": "Çip hisseleri geçen hafta %5,1 geriledi; Intel ve ARM öncülük etti",
+      "detay": "SOXX haftayı %5,1 düşüşle kapattı; Nasdaq-100'de en çok kaybedenler ARM (−%13,4) ve Intel (−%12,3) oldu. Bu hafta ASML (14 Ekim, gelirde ~%56 artış beklentisi) ve TSMC (15 Ekim) sonuç açıklıyor.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Sert ekim rallisinin ardından gelen satış, değerlemelerin bilançolara karşı hassaslaştığını gösteriyor.",
+      "kaynak": "Stocktwits / Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/articles/stocktwits-tech-watch-asml-tsmc-050342095.html"
+    },
+    {
+      "baslik": "WSJ: Meta, Anthropic'e işlem gücü kiralama planını askıya aldı",
+      "detay": "Haberde Anthropic CEO'su Dario Amodei'nin yıl başında Meta'dan AI çipi kiralamak istediği, Meta'nın kendi Muse modellerinin talebi ve rakibi güçlendirme kaygısıyla vazgeçtiği aktarılıyor.",
+      "kategori": "negatif",
+      "agirlik": 1,
+      "neden": "İşlem gücünün rakipler arasında paylaşılmaması kıtlığın derinleştiğini gösteriyor.",
+      "kaynak": "KuCoin (WSJ haberi aktarımı)",
+      "url": "https://kucoin.com/news/flash/meta-halts-plan-to-lease-ai-compute-power-to-anthropic"
+    },
+    {
+      "baslik": "FT: Nvidia, Reflection AI'ı satın almayı ya da payını artırmayı görüşüyor",
+      "detay": "Nvidia'nın 800 milyon $ yatırdığı açık ağırlıklı model girişimiyle görüşmeler erken aşamada; anlaşma, uzun düzenleyici incelemeden kaçınmak için ekip alımı ve lisans biçiminde olabilir. Reuters bilgiyi bağımsız doğrulayamadı.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Nvidia'nın model katmanına uzanması ekosistemi güçlendirir ama henüz kesinleşmiş bir anlaşma yok.",
+      "kaynak": "The Star (Reuters/FT)",
+      "url": "https://www.thestar.com.my/tech/tech-news/2026/10/11/nvidia-in-talks-to-invest-further-in-reflection-ai-or-buy-it-ft-reports"
+    },
+    {
+      "baslik": "AI veri merkezleri doğal gaz ve güneşi hızlandırıyor, şebekeyi zorluyor",
+      "detay": "AI rafları 40–100 kW çekiyor (klasik raf 5–10 kW). Goldman Sachs'a göre 2031'e kadar AI veri merkezlerine 7,6 trilyon $ harcanacak; RBC, veri merkezlerinin doğal gaz talebinin 2030'a kadar ~%20 artabileceğini öngörüyor.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Talep büyük ama enerji ve şebeke kapasitesi kurulum hızını sınırlayan ana etken olmaya devam ediyor.",
+      "kaynak": "Politixia (AP)",
+      "url": "https://politixia.com/2026/10/11/electric-avenues-ai-data-centers-spur-natural-gas-solar-challenge-power-grids-local-news"
+    }
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2026-10-12",
+      "baslik": "OCP Global Summit (San Jose, 12–15 Ekim)",
+      "kaynak": "Open Compute Project",
+      "url": "https://www.opencompute.org/events/ocp-summit/2026-ocp-global-summit/"
+    },
+    {
+      "tarih": "2026-10-14",
+      "baslik": "ASML 3. çeyrek sonuçları",
+      "kaynak": "Stocktwits / Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/articles/stocktwits-tech-watch-asml-tsmc-050342095.html"
+    },
+    {
+      "tarih": "2026-10-14",
+      "baslik": "SEDEX 2026 (Seul, 14–16 Ekim)",
+      "kaynak": "BigGo Finance",
+      "url": "https://finance.biggo.com/news/6f80a886-0bd7-4220-ab76-de009a0c9ae6"
+    },
+    {
+      "tarih": "2026-10-15",
+      "baslik": "TSMC 3. çeyrek sonuçları",
+      "kaynak": "Stocktwits / Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/articles/stocktwits-tech-watch-asml-tsmc-050342095.html"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = -1 · Σ ağırlık = 12 · Puan = 50 + 50 × -0.08 = 46"
+  }
+}
