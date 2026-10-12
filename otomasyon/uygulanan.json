@@ -150,6 +150,76 @@
       "ozet": "Ana sayfada en yeni 3 ek haber kartı",
       "neden": "Kullanıcı onayıyla birleştirildi",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-12",
+      "oneri": "Fiyat hareketi kartlarında sağlayıcı sayısını göster",
+      "durum": "birlesti",
+      "pr": 15,
+      "dal": "otomasyon/oneri-2026-10-09-1",
+      "ozet": null,
+      "neden": "Kullanıcı onayıyla birleştirildi",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-12",
+      "oneri": "Fiyat tablosuna 'en az 5 sağlayıcı' filtresi",
+      "durum": "birlesti",
+      "pr": 16,
+      "dal": "otomasyon/oneri-2026-10-09-2",
+      "ozet": null,
+      "neden": "Kullanıcı onayıyla birleştirildi",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-12",
+      "oneri": "Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
+      "durum": "birlesti",
+      "pr": 17,
+      "dal": "otomasyon/oneri-2026-10-10-1",
+      "ozet": null,
+      "neden": "Kullanıcı onayıyla birleştirildi",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-12",
+      "oneri": "Kalan 20 kullanılmayan export'u temizle",
+      "durum": "birlesti",
+      "pr": 18,
+      "dal": "otomasyon/oneri-2026-10-10-2",
+      "ozet": null,
+      "neden": "Kullanıcı onayıyla birleştirildi",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-12",
+      "oneri": "Geliştirme ajanı reddedilmiş girdi yüzünden yenilemeyi yeniden çalıştırıp günün raporunu ezmesin",
+      "durum": "birlesti",
+      "pr": 20,
+      "dal": "otomasyon/duzeltme-2026-10-11",
+      "ozet": null,
+      "neden": "Kullanıcı onayıyla birleştirildi",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-12",
+      "oneri": "Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
+      "durum": "birlesti",
+      "pr": 21,
+      "dal": "otomasyon/oneri-2026-10-11-1",
+      "ozet": null,
+      "neden": "Kullanıcı onayıyla birleştirildi",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-12",
+      "oneri": "Ana sayfa hareket satırında önceki → yeni fiyatı göster",
+      "durum": "birlesti",
+      "pr": 22,
+      "dal": "otomasyon/oneri-2026-10-11-2",
+      "ozet": null,
+      "neden": "Kullanıcı onayıyla birleştirildi",
+      "kim": "otomasyon"
     }
   ]
 }

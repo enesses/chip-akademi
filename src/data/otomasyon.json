@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-12T09:15:22.230Z",
+  "guncelleme": "2026-10-12T09:16:09.610Z",
   "tarih": "2026-10-12",
   "durum": "dikkat",
   "ajanlar": [
@@ -124,6 +124,76 @@
       "ozet": "Ana sayfada en yeni 3 ek haber kartı",
       "neden": "Kullanıcı onayıyla birleştirildi",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-12",
+      "oneri": "Fiyat hareketi kartlarında sağlayıcı sayısını göster",
+      "durum": "birlesti",
+      "pr": 15,
+      "dal": "otomasyon/oneri-2026-10-09-1",
+      "ozet": null,
+      "neden": "Kullanıcı onayıyla birleştirildi",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-12",
+      "oneri": "Fiyat tablosuna 'en az 5 sağlayıcı' filtresi",
+      "durum": "birlesti",
+      "pr": 16,
+      "dal": "otomasyon/oneri-2026-10-09-2",
+      "ozet": null,
+      "neden": "Kullanıcı onayıyla birleştirildi",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-12",
+      "oneri": "Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
+      "durum": "birlesti",
+      "pr": 17,
+      "dal": "otomasyon/oneri-2026-10-10-1",
+      "ozet": null,
+      "neden": "Kullanıcı onayıyla birleştirildi",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-12",
+      "oneri": "Kalan 20 kullanılmayan export'u temizle",
+      "durum": "birlesti",
+      "pr": 18,
+      "dal": "otomasyon/oneri-2026-10-10-2",
+      "ozet": null,
+      "neden": "Kullanıcı onayıyla birleştirildi",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-12",
+      "oneri": "Geliştirme ajanı reddedilmiş girdi yüzünden yenilemeyi yeniden çalıştırıp günün raporunu ezmesin",
+      "durum": "birlesti",
+      "pr": 20,
+      "dal": "otomasyon/duzeltme-2026-10-11",
+      "ozet": null,
+      "neden": "Kullanıcı onayıyla birleştirildi",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-12",
+      "oneri": "Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
+      "durum": "birlesti",
+      "pr": 21,
+      "dal": "otomasyon/oneri-2026-10-11-1",
+      "ozet": null,
+      "neden": "Kullanıcı onayıyla birleştirildi",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-12",
+      "oneri": "Ana sayfa hareket satırında önceki → yeni fiyatı göster",
+      "durum": "birlesti",
+      "pr": 22,
+      "dal": "otomasyon/oneri-2026-10-11-2",
+      "ozet": null,
+      "neden": "Kullanıcı onayıyla birleştirildi",
+      "kim": "otomasyon"
     }
   ],
   "uygulananSon": [
@@ -229,6 +299,55 @@
       "oneri": "Ana sayfaya Haberler akışından son 3 haberi gösteren kart",
       "durum": "birlesti",
       "pr": 24,
+      "tarih": "2026-10-12",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyat hareketi kartlarında sağlayıcı sayısını göster",
+      "durum": "birlesti",
+      "pr": 15,
+      "tarih": "2026-10-12",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyat tablosuna 'en az 5 sağlayıcı' filtresi",
+      "durum": "birlesti",
+      "pr": 16,
+      "tarih": "2026-10-12",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
+      "durum": "birlesti",
+      "pr": 17,
+      "tarih": "2026-10-12",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Kalan 20 kullanılmayan export'u temizle",
+      "durum": "birlesti",
+      "pr": 18,
+      "tarih": "2026-10-12",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Geliştirme ajanı reddedilmiş girdi yüzünden yenilemeyi yeniden çalıştırıp günün raporunu ezmesin",
+      "durum": "birlesti",
+      "pr": 20,
+      "tarih": "2026-10-12",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
+      "durum": "birlesti",
+      "pr": 21,
+      "tarih": "2026-10-12",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Ana sayfa hareket satırında önceki → yeni fiyatı göster",
+      "durum": "birlesti",
+      "pr": 22,
       "tarih": "2026-10-12",
       "kim": "otomasyon"
     }
