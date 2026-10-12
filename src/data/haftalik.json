@@ -7,11 +7,11 @@
       "son": "2026-10-12",
       "kismi": true,
       "baslik": "12 Ekim – 12 Ekim (bugüne kadar)",
-      "olusturma": "2026-10-12T09:13:28.395Z",
+      "olusturma": "2026-10-12T09:17:39.664Z",
       "ozet": [
         "Otomasyon 1 günlük dönemde 1 gün çalıştı: 1 gün temiz bitti.",
-        "Uygulamaya 9 değişiklik girdi; bunların 8 tanesi otomasyonun kendi uyguladığı geliştirme önerisi.",
-        "Hafta boyunca 6 farklı geliştirme önerisi yazıldı; otomasyon 8 tanesini denedi (8 birleşti, 0 onay bekliyor, 0 bırakıldı).",
+        "Uygulamaya 9 değişiklik girdi; bunların 9 tanesi otomasyonun kendi uyguladığı geliştirme önerisi.",
+        "Hafta boyunca 6 farklı geliştirme önerisi yazıldı; otomasyon 9 tanesini denedi (9 birleşti, 0 onay bekliyor, 0 bırakıldı).",
         "H100 kiralama medyanı 3.5 → 3.4 $/saat (%-2.9).",
         "Bugün sayfasının ortalama pozitiflik puanı 46/100."
       ],
@@ -20,7 +20,7 @@
         "temizGun": 1,
         "kritikGun": 0,
         "oneri": 6,
-        "uygulananBirlesen": 8,
+        "uygulananBirlesen": 9,
         "elleUygulanan": 0,
         "uygulananAcik": 0,
         "uygulananVazgecilen": 0,
@@ -95,9 +95,9 @@
           "oneri": "Fiyat sayfasında endeksin 12 aylık değişimini de göster",
           "durum": "birlesti",
           "pr": 23,
-          "dal": null,
-          "ozet": "kullanıcı onayıyla birleşti (12 Ekim, sohbetten)",
-          "neden": null,
+          "dal": "otomasyon/oneri-2026-10-12-1",
+          "ozet": "Endeks kartına 12 aylık değişim satırı eklendi",
+          "neden": "Kullanıcı onayıyla birleştirildi",
           "kim": "otomasyon"
         },
         {
@@ -105,9 +105,9 @@
           "oneri": "Ana sayfaya Haberler akışından son 3 haberi gösteren kart",
           "durum": "birlesti",
           "pr": 24,
-          "dal": null,
-          "ozet": "kullanıcı onayıyla birleşti (12 Ekim, sohbetten)",
-          "neden": null,
+          "dal": "otomasyon/oneri-2026-10-12-2",
+          "ozet": "Ana sayfada en yeni 3 ek haber kartı",
+          "neden": "Kullanıcı onayıyla birleştirildi",
           "kim": "otomasyon"
         },
         {
@@ -115,9 +115,9 @@
           "oneri": "Fiyat hareketi kartlarında sağlayıcı sayısını göster",
           "durum": "birlesti",
           "pr": 15,
-          "dal": null,
-          "ozet": "kullanıcı onayıyla birleşti (12 Ekim, sohbetten)",
-          "neden": null,
+          "dal": "otomasyon/oneri-2026-10-09-1",
+          "ozet": null,
+          "neden": "Kullanıcı onayıyla birleştirildi",
           "kim": "otomasyon"
         },
         {
@@ -125,9 +125,9 @@
           "oneri": "Fiyat tablosuna 'en az 5 sağlayıcı' filtresi",
           "durum": "birlesti",
           "pr": 16,
-          "dal": null,
-          "ozet": "kullanıcı onayıyla birleşti (12 Ekim, sohbetten)",
-          "neden": null,
+          "dal": "otomasyon/oneri-2026-10-09-2",
+          "ozet": null,
+          "neden": "Kullanıcı onayıyla birleştirildi",
           "kim": "otomasyon"
         },
         {
@@ -135,19 +135,29 @@
           "oneri": "Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
           "durum": "birlesti",
           "pr": 17,
-          "dal": null,
-          "ozet": "kullanıcı onayıyla birleşti (12 Ekim, sohbetten)",
-          "neden": null,
+          "dal": "otomasyon/oneri-2026-10-10-1",
+          "ozet": null,
+          "neden": "Kullanıcı onayıyla birleştirildi",
           "kim": "otomasyon"
         },
         {
           "tarih": "2026-10-12",
-          "oneri": "Kalan kullanılmayan export'ları temizle",
+          "oneri": "Kalan 20 kullanılmayan export'u temizle",
           "durum": "birlesti",
           "pr": 18,
-          "dal": null,
-          "ozet": "kullanıcı onayıyla birleşti (12 Ekim, sohbetten)",
-          "neden": null,
+          "dal": "otomasyon/oneri-2026-10-10-2",
+          "ozet": null,
+          "neden": "Kullanıcı onayıyla birleştirildi",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-12",
+          "oneri": "Geliştirme ajanı reddedilmiş girdi yüzünden yenilemeyi yeniden çalıştırıp günün raporunu ezmesin",
+          "durum": "birlesti",
+          "pr": 20,
+          "dal": "otomasyon/duzeltme-2026-10-11",
+          "ozet": null,
+          "neden": "Kullanıcı onayıyla birleştirildi",
           "kim": "otomasyon"
         },
         {
@@ -155,9 +165,9 @@
           "oneri": "Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
           "durum": "birlesti",
           "pr": 21,
-          "dal": null,
-          "ozet": "kullanıcı onayıyla birleşti (12 Ekim, sohbetten)",
-          "neden": null,
+          "dal": "otomasyon/oneri-2026-10-11-1",
+          "ozet": null,
+          "neden": "Kullanıcı onayıyla birleştirildi",
           "kim": "otomasyon"
         },
         {
@@ -165,9 +175,9 @@
           "oneri": "Ana sayfa hareket satırında önceki → yeni fiyatı göster",
           "durum": "birlesti",
           "pr": 22,
-          "dal": null,
-          "ozet": "kullanıcı onayıyla birleşti (12 Ekim, sohbetten)",
-          "neden": null,
+          "dal": "otomasyon/oneri-2026-10-11-2",
+          "ozet": null,
+          "neden": "Kullanıcı onayıyla birleştirildi",
           "kim": "otomasyon"
         }
       ],
@@ -227,7 +237,7 @@
           "url": "https://github.com/enesses/chip-akademi/pull/15"
         }
       ],
-      "gunlukCommit": 4
+      "gunlukCommit": 7
     },
     {
       "hafta": "2026-W41",
