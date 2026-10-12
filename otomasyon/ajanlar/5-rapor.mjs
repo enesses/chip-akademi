@@ -108,15 +108,25 @@ try {
 } catch {}
 
 /* Otomasyonun bugün kendi uyguladığı öneriler (oneri-uygula.mjs günlüğü) */
-let uygulanan = [], uygulananSon = [];
+let uygulanan = [], uygulananSon = [], onayBekleyen = [];
 try {
   const kayitlar = JSON.parse(fs.readFileSync(path.join(KOK, "otomasyon", "uygulanan.json"), "utf-8")).kayitlar || [];
-  uygulanan = kayitlar.filter((k) => k.tarih === TARIH);
+  // Aynı PR için bugün birden çok kayıt olabilir ("acik", sonra onayla "birlesti"): sonuncusu geçerli.
+  const bugunku = new Map();
+  kayitlar.filter((k) => k.tarih === TARIH).forEach((k, i) => bugunku.set(k.pr ? `pr${k.pr}` : `i${i}`, k));
+  uygulanan = [...bugunku.values()];
   // Son 14 günün kayıtları: sayfa önerinin uygulanıp uygulanmadığını bunlardan işaretler.
   uygulananSon = kayitlar.filter((k) => gunFarki(k.tarih) <= 14).map(({ oneri, durum, pr, tarih, kim }) => ({ oneri, durum, pr, tarih, kim }));
+  // Onay bekleyenler: her PR'ın SON kaydı "acik" olanlar (kullanıcı onaylayınca
+  // onay oturumu "birlesti" kaydı ekler, PR listeden düşer). Gün sınırı yok.
+  const son = new Map();
+  for (const k of kayitlar) if (k.pr) son.set(k.pr, k);
+  onayBekleyen = [...son.values()].filter((k) => k.durum === "acik")
+    .map(({ pr, oneri, tarih, neden, dal }) => ({ pr, oneri, tarih, neden: neden || null, dal: dal || null }))
+    .sort((a, b) => a.pr - b.pr);
 } catch {}
-for (const k of uygulanan.filter((k) => k.durum === "acik"))
-  dikkat.push({ seviye: "dikkat", metin: `Öneri onay bekliyor: ${k.oneri}${k.pr ? ` (PR #${k.pr})` : ""} — ${k.neden || "korunan dosyaya dokunuyor"}` });
+if (onayBekleyen.length)
+  dikkat.push({ seviye: "dikkat", tur: "onay", metin: `${onayBekleyen.length} öneri onay bekliyor (${onayBekleyen.map((k) => `PR #${k.pr}`).join(", ")}) — Otomasyon sayfasındaki "Onay bekleyen öneriler" bölümünden onaylanabilir.` });
 
 const gunTamam = raporlar.every((r) => r.veri);
 
@@ -247,6 +257,7 @@ const uygulamaVerisi = {
   oneriler,
   uygulanan,
   uygulananSon,
+  onayBekleyen,
   guvenlik: g
     ? {
         durum: g.durum,

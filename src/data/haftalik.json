@@ -2,6 +2,234 @@
   "aciklama": "Haftalık rapor — otomasyon/haftalik.mjs üretir.",
   "haftalar": [
     {
+      "hafta": "2026-W42",
+      "bas": "2026-10-12",
+      "son": "2026-10-12",
+      "kismi": true,
+      "baslik": "12 Ekim – 12 Ekim (bugüne kadar)",
+      "olusturma": "2026-10-12T09:13:28.395Z",
+      "ozet": [
+        "Otomasyon 1 günlük dönemde 1 gün çalıştı: 1 gün temiz bitti.",
+        "Uygulamaya 9 değişiklik girdi; bunların 8 tanesi otomasyonun kendi uyguladığı geliştirme önerisi.",
+        "Hafta boyunca 6 farklı geliştirme önerisi yazıldı; otomasyon 8 tanesini denedi (8 birleşti, 0 onay bekliyor, 0 bırakıldı).",
+        "H100 kiralama medyanı 3.5 → 3.4 $/saat (%-2.9).",
+        "Bugün sayfasının ortalama pozitiflik puanı 46/100."
+      ],
+      "sayilar": {
+        "calisanGun": 1,
+        "temizGun": 1,
+        "kritikGun": 0,
+        "oneri": 6,
+        "uygulananBirlesen": 8,
+        "elleUygulanan": 0,
+        "uygulananAcik": 0,
+        "uygulananVazgecilen": 0,
+        "degisiklik": 9,
+        "bugunOrtalama": 46,
+        "tekrarHaber": 0
+      },
+      "gunler": [
+        {
+          "tarih": "2026-10-12",
+          "durum": "temiz",
+          "dikkat": 0,
+          "fiyat": "güncellendi"
+        }
+      ],
+      "bugun": [
+        {
+          "tarih": "2026-10-12",
+          "puan": 46,
+          "etiket": "Bilanço haftası öncesi temkin",
+          "madde": 8,
+          "tekrar": 0
+        }
+      ],
+      "fiyat": {
+        "olcumGunu": 1,
+        "izinEngeliGunu": 0,
+        "taban": "2026-10-11",
+        "son": "2026-10-12",
+        "h100": {
+          "model": "Nvidia H100",
+          "once": 3.5,
+          "sonra": 3.4,
+          "degisim": -2.9
+        },
+        "enCokOynayan": [
+          {
+            "model": "Nvidia A5000",
+            "once": 1.24,
+            "sonra": 0.75,
+            "degisim": -39.5
+          },
+          {
+            "model": "Nvidia A4000",
+            "once": 0.2,
+            "sonra": 0.18,
+            "degisim": -10
+          },
+          {
+            "model": "Nvidia RTX 4090",
+            "once": 0.45,
+            "sonra": 0.49,
+            "degisim": 8.9
+          },
+          {
+            "model": "Nvidia RTX 3090",
+            "once": 0.21,
+            "sonra": 0.2,
+            "degisim": -4.8
+          },
+          {
+            "model": "Nvidia L40S",
+            "once": 1.57,
+            "sonra": 1.64,
+            "degisim": 4.5
+          }
+        ]
+      },
+      "uygulanan": [
+        {
+          "tarih": "2026-10-12",
+          "oneri": "Fiyat sayfasında endeksin 12 aylık değişimini de göster",
+          "durum": "birlesti",
+          "pr": 23,
+          "dal": null,
+          "ozet": "kullanıcı onayıyla birleşti (12 Ekim, sohbetten)",
+          "neden": null,
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-12",
+          "oneri": "Ana sayfaya Haberler akışından son 3 haberi gösteren kart",
+          "durum": "birlesti",
+          "pr": 24,
+          "dal": null,
+          "ozet": "kullanıcı onayıyla birleşti (12 Ekim, sohbetten)",
+          "neden": null,
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-12",
+          "oneri": "Fiyat hareketi kartlarında sağlayıcı sayısını göster",
+          "durum": "birlesti",
+          "pr": 15,
+          "dal": null,
+          "ozet": "kullanıcı onayıyla birleşti (12 Ekim, sohbetten)",
+          "neden": null,
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-12",
+          "oneri": "Fiyat tablosuna 'en az 5 sağlayıcı' filtresi",
+          "durum": "birlesti",
+          "pr": 16,
+          "dal": null,
+          "ozet": "kullanıcı onayıyla birleşti (12 Ekim, sohbetten)",
+          "neden": null,
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-12",
+          "oneri": "Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
+          "durum": "birlesti",
+          "pr": 17,
+          "dal": null,
+          "ozet": "kullanıcı onayıyla birleşti (12 Ekim, sohbetten)",
+          "neden": null,
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-12",
+          "oneri": "Kalan kullanılmayan export'ları temizle",
+          "durum": "birlesti",
+          "pr": 18,
+          "dal": null,
+          "ozet": "kullanıcı onayıyla birleşti (12 Ekim, sohbetten)",
+          "neden": null,
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-12",
+          "oneri": "Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
+          "durum": "birlesti",
+          "pr": 21,
+          "dal": null,
+          "ozet": "kullanıcı onayıyla birleşti (12 Ekim, sohbetten)",
+          "neden": null,
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-12",
+          "oneri": "Ana sayfa hareket satırında önceki → yeni fiyatı göster",
+          "durum": "birlesti",
+          "pr": 22,
+          "dal": null,
+          "ozet": "kullanıcı onayıyla birleşti (12 Ekim, sohbetten)",
+          "neden": null,
+          "kim": "otomasyon"
+        }
+      ],
+      "degisiklikler": [
+        {
+          "tarih": "2026-10-12",
+          "baslik": "Öneri: Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
+          "pr": 17,
+          "url": "https://github.com/enesses/chip-akademi/pull/17"
+        },
+        {
+          "tarih": "2026-10-12",
+          "baslik": "Öneri: Fiyat tablosuna 'en az 5 sağlayıcı' filtresi",
+          "pr": 16,
+          "url": "https://github.com/enesses/chip-akademi/pull/16"
+        },
+        {
+          "tarih": "2026-10-12",
+          "baslik": "Öneri: Ana sayfaya Haberler akışından son 3 haberi gösteren kart",
+          "pr": 24,
+          "url": "https://github.com/enesses/chip-akademi/pull/24"
+        },
+        {
+          "tarih": "2026-10-12",
+          "baslik": "Öneri: Fiyat sayfasında endeksin 12 aylık değişimini de göster",
+          "pr": 23,
+          "url": "https://github.com/enesses/chip-akademi/pull/23"
+        },
+        {
+          "tarih": "2026-10-12",
+          "baslik": "Öneri: Ana sayfa hareket satırında önceki → yeni fiyatı göster",
+          "pr": 22,
+          "url": "https://github.com/enesses/chip-akademi/pull/22"
+        },
+        {
+          "tarih": "2026-10-12",
+          "baslik": "Öneri: Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
+          "pr": 21,
+          "url": "https://github.com/enesses/chip-akademi/pull/21"
+        },
+        {
+          "tarih": "2026-10-12",
+          "baslik": "Geliştirme ajanı: reddedilmiş girdi için yenilemeyi yeniden çalıştırma",
+          "pr": 20,
+          "url": "https://github.com/enesses/chip-akademi/pull/20"
+        },
+        {
+          "tarih": "2026-10-12",
+          "baslik": "Öneri: Kalan kullanılmayan export'ları temizle",
+          "pr": 18,
+          "url": "https://github.com/enesses/chip-akademi/pull/18"
+        },
+        {
+          "tarih": "2026-10-12",
+          "baslik": "Öneri: Fiyat hareketi kartlarında sağlayıcı sayısını göster",
+          "pr": 15,
+          "url": "https://github.com/enesses/chip-akademi/pull/15"
+        }
+      ],
+      "gunlukCommit": 4
+    },
+    {
       "hafta": "2026-W41",
       "bas": "2026-10-05",
       "son": "2026-10-11",

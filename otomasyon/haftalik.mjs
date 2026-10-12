@@ -109,7 +109,13 @@ if (fiyatGunleri.length) {
 /* ── öneriler ve uygulananlar ─────────────────────────────────────────── */
 const onerilenBasliklar = new Set();
 for (const d of gunler) for (const o of okuJson(path.join(RAPOR, `oneriler-${d}.json`))?.oneriler || []) onerilenBasliklar.add(o.baslik);
-const uygulanan = (okuJson(path.join(KOK, "otomasyon", "uygulanan.json"))?.kayitlar || []).filter((k) => k.tarih >= bas && k.tarih <= son);
+// Aynı PR'ın sonraki kaydı (ör. "acik" → kullanıcı onayıyla "birlesti") öncekinin yerini alır.
+const uygulanan = (() => {
+  const kayitlar = (okuJson(path.join(KOK, "otomasyon", "uygulanan.json"))?.kayitlar || []).filter((k) => k.tarih >= bas && k.tarih <= son);
+  const sonKayit = new Map();
+  kayitlar.forEach((k, i) => sonKayit.set(k.pr ? `pr${k.pr}` : `i${i}`, k));
+  return [...sonKayit.values()];
+})();
 
 /* ── git: haftanın kod değişiklikleri ─────────────────────────────────── */
 if (calistir("git rev-parse --is-shallow-repository").cikti?.trim() === "true") {

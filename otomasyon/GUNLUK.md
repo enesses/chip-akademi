@@ -198,7 +198,11 @@ güvenlik taraması. Çıktıdaki `nedenler` listesine bak.
   ``` Birleşmeden önce `git show --stat HEAD` ile commit'in
   gerçekten değişikliği içerdiğini kontrol et.
 - **Yalnızca korunan dosya ya da sınır yüzünden uygun değil, testler geçiyor:**
-  PR'ı aç ama **birleştirme**; kullanıcı onaylar.
+  PR'ı aç ama **birleştirme**; kullanıcı onaylar. `kaydet --durum acik` ile
+  günlüğe yaz: PR, Otomasyon sayfasındaki "Onay bekleyen öneriler" bölümünde
+  bir **Onayla** düğmesiyle görünür. Kullanıcı basınca "Chip Akademi öneri onayı"
+  görevi başlar ve PR'ı birleştirir (otomasyon/ONAY.md). Otomatik birleştirme
+  bu oturumda bir izin denetimince engellenirse de aynısını yap.
 - **Testler/derleme kırıldı:** dalı itme, değişikliği bırak.
 
 Her denemeden sonra **`main`'e dön** ve günlüğe yaz (dalda yazma):
