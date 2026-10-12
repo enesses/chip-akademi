@@ -72,8 +72,11 @@ export default function Home() {
   const oneCikanlar = ONE_CIKAN.map((id) => chips.find((c) => c.id === id)).filter(Boolean);
 
   const h100 = fiyat.fiyatlar.find((f) => f.model === "Nvidia H100");
-  const artan = fiyat.iki_gun?.artanlar?.[0];
-  const dusen = fiyat.iki_gun?.dusenler?.[0];
+  // Ana sayfada tek satır var: 3–4 sağlayıcılı ince pazarların gürültüsü
+  // (ör. 0,36 → 0,06 $) yerine en az 5 sağlayıcılı ilk hareketi göster.
+  const gucluHareket = (liste) => (liste || []).find((f) => (f.saglayici ?? 0) >= 5);
+  const artan = gucluHareket(fiyat.iki_gun?.artanlar);
+  const dusen = gucluHareket(fiyat.iki_gun?.dusenler);
   const puan = bugun.puan?.deger;
   const bitenSayi = ilerleme.bitti.length;
   const hepsiBitti = bitenSayi >= lessons.length;
