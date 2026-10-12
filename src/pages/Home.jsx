@@ -137,8 +137,8 @@ export default function Home() {
                 <p className="text-sm text-muted-foreground">H100 saati <span className="font-display font-bold text-xl text-foreground ml-1">{usd(h100.usd_saat)}</span></p>
               )}
               <div className="mt-3 space-y-1.5 text-xs">
-                {artan && <p className="flex items-center gap-1.5"><ArrowUpRight className="h-3.5 w-3.5 text-red-400 shrink-0" /><span className="truncate">{artan.model}</span><span className="ml-auto font-mono text-red-300">{pct(artan.degisim_pct)}</span></p>}
-                {dusen && <p className="flex items-center gap-1.5"><ArrowDownRight className="h-3.5 w-3.5 text-emerald-400 shrink-0" /><span className="truncate">{dusen.model}</span><span className="ml-auto font-mono text-emerald-300">{pct(dusen.degisim_pct)}</span></p>}
+                {artan && <p className="flex items-center gap-1.5"><ArrowUpRight className="h-3.5 w-3.5 text-red-400 shrink-0" /><span className="truncate">{artan.model}</span><span className="ml-auto font-mono text-muted-foreground hidden sm:inline">{artan.onceki_usd != null && `${usd(artan.onceki_usd)} → ${usd(artan.usd_saat)}`}</span><span className="ml-auto sm:ml-0 font-mono text-red-300">{pct(artan.degisim_pct)}</span></p>}
+                {dusen && <p className="flex items-center gap-1.5"><ArrowDownRight className="h-3.5 w-3.5 text-emerald-400 shrink-0" /><span className="truncate">{dusen.model}</span><span className="ml-auto font-mono text-muted-foreground hidden sm:inline">{dusen.onceki_usd != null && `${usd(dusen.onceki_usd)} → ${usd(dusen.usd_saat)}`}</span><span className="ml-auto sm:ml-0 font-mono text-emerald-300">{pct(dusen.degisim_pct)}</span></p>}
               </div>
             </a>
           </Link>
