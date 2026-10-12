@@ -1,3 +1,4 @@
+import { useOturum } from "@/lib/oturum";
 import { useEffect, useState } from "react";
 import { Link } from "@/components/Nav";
 import {
@@ -68,6 +69,7 @@ const SON_HABERLER = (() => {
 })();
 
 export default function Home() {
+  const { admin } = useOturum();
   const [ilerleme, setIlerleme] = useState({ bitti: [], tasarim: 0 });
   useEffect(() => {
     const yenile = () => setIlerleme({ bitti: getCompleted(), tasarim: listDesigns().length });
@@ -123,7 +125,7 @@ export default function Home() {
 
       {/* ------------------------------------------------------------------ günün özeti */}
       <section className="container mx-auto px-4 py-10" aria-label="Günün özeti">
-        <div className="grid md:grid-cols-[1.4fr_1fr_1fr] gap-4">
+        <div className={cn("grid gap-4", admin ? "md:grid-cols-[1.4fr_1fr_1fr]" : "md:grid-cols-[1.4fr_1fr]")}>
           <Link href="/bugun" asChild>
             <a className="group rounded-2xl border border-card-border bg-card p-5 hover-elevate flex gap-5 items-start" data-testid="ozet-bugun">
               <div className="shrink-0 w-20 h-20 rounded-xl flex flex-col items-center justify-center border" style={{ borderColor: `${puanRengi(puan)}55`, background: `${puanRengi(puan)}12` }}>
@@ -150,16 +152,18 @@ export default function Home() {
               </div>
             </a>
           </Link>
+          {admin && (
           <Link href="/otomasyon" asChild>
-            <a className="group rounded-2xl border border-card-border bg-card p-5 hover-elevate block">
-              <Etiket ikon={Bot}>Otomasyon · {otomasyon.tarih}</Etiket>
-              <p className="text-sm">Her sabah 10:00'da veriler yenilenir, uygulama gerçek bir tarayıcıda test edilir.</p>
-              <p className="text-xs text-muted-foreground mt-2">
-                Durum: <span style={{ color: otomasyon.durum === "temiz" ? "#34d399" : otomasyon.durum === "kritik" ? "#f87171" : "#f59e0b" }}>{DURUM_AD[otomasyon.durum] ?? otomasyon.durum}</span>
-                {otomasyon.oneriler?.length ? ` · ${otomasyon.oneriler.length} geliştirme önerisi` : ""}
-              </p>
-            </a>
-          </Link>
+              <a className="group rounded-2xl border border-card-border bg-card p-5 hover-elevate block">
+                <Etiket ikon={Bot}>Otomasyon · {otomasyon.tarih}</Etiket>
+                <p className="text-sm">Her sabah 10:00'da veriler yenilenir, uygulama gerçek bir tarayıcıda test edilir.</p>
+                <p className="text-xs text-muted-foreground mt-2">
+                  Durum: <span style={{ color: otomasyon.durum === "temiz" ? "#34d399" : otomasyon.durum === "kritik" ? "#f87171" : "#f59e0b" }}>{DURUM_AD[otomasyon.durum] ?? otomasyon.durum}</span>
+                  {otomasyon.oneriler?.length ? ` · ${otomasyon.oneriler.length} geliştirme önerisi` : ""}
+                </p>
+              </a>
+            </Link>
+          )}
         </div>
       </section>
 

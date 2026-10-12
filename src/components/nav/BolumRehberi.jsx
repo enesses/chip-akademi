@@ -1,6 +1,7 @@
 import { Link } from "@/components/Nav";
 import { Search } from "lucide-react";
-import { GRUPLAR } from "@/lib/bolumler";
+import { gorunurGruplar } from "@/lib/bolumler";
+import { useOturum } from "@/lib/oturum";
 import { aramayiAc } from "@/components/nav/AramaPaleti";
 
 const SORU = {
@@ -44,6 +45,7 @@ export function AramaGirisi() {
 
 /** Tüm bölümlerin haritası: dört amaç, her birinin altında bölümleri. */
 export default function BolumRehberi() {
+  const GRUPLAR = gorunurGruplar(useOturum().admin);
   return (
     <section className="container mx-auto px-4 py-10" aria-labelledby="bolum-rehberi">
       <div className="mb-5">

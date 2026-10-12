@@ -1,8 +1,10 @@
 import { Cpu } from "lucide-react";
 import { Link } from "@/components/Nav";
-import { GRUPLAR } from "@/lib/bolumler";
+import { gorunurGruplar } from "@/lib/bolumler";
+import { useOturum } from "@/lib/oturum";
 
 export default function Footer() {
+  const GRUPLAR = gorunurGruplar(useOturum().admin);
   return (
     <footer className="border-t border-border mt-16">
       <div className="container mx-auto px-4 py-10 grid md:grid-cols-[1.1fr_2fr] lg:grid-cols-[1fr_2.2fr_1fr] gap-8 text-sm">

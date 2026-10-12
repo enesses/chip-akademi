@@ -2,7 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { useLocation } from "wouter";
 import { Link } from "@/components/Nav";
 import { Microchip, GraduationCap, PencilRuler, Newspaper, Sparkles, Search, X } from "lucide-react";
-import { GRUPLAR, bolumBul, grupBul } from "@/lib/bolumler";
+import { gorunurGruplar, bolumBul, grupBul } from "@/lib/bolumler";
+import { useOturum } from "@/lib/oturum";
 import { aramayiAc } from "@/components/nav/AramaPaleti";
 import { cn } from "@/lib/utils";
 
@@ -13,10 +14,12 @@ const GRUP_IKON = { cipler: Microchip, ogren: GraduationCap, tasarla: PencilRule
  * Bir gruba dokununca o grubun bölümleri açıklamalarıyla alttan açılır.
  */
 export default function MobilMenu() {
+  const GRUPLAR = gorunurGruplar(useOturum().admin);
   const [location] = useLocation();
   const [acikGrup, setAcikGrup] = useState(null);
   const sayfa = useRef(null);
-  const aktifGrup = grupBul(location);
+  const hamGrup = grupBul(location);
+  const aktifGrup = hamGrup && GRUPLAR.find((g) => g.id === hamGrup.id);
   const aktifBolum = bolumBul(location);
   const grup = GRUPLAR.find((g) => g.id === acikGrup);
 

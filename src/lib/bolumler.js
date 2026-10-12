@@ -83,7 +83,7 @@ export const GRUPLAR = [
       { id: "haberler", ad: "Haberler", yol: "/haberler", ikon: Rss,
         aciklama: "Her sabah yenilenen çip ve yapay zekâ haberleri, son 30 gün",
         anahtar: "haber akış nvidia tsmc hbm openai gündem son dakika" },
-      { id: "otomasyon", ad: "Otomasyon", yol: "/otomasyon", ikon: Workflow,
+      { id: "otomasyon", ad: "Otomasyon", yol: "/otomasyon", ikon: Workflow, yalnizAdmin: true,
         aciklama: "Her sabahki veri güncellemesi ve raporu",
         anahtar: "rapor güncelleme güvenlik öneri" },
       { id: "haftalik", ad: "Haftalık rapor", yol: "/haftalik", ikon: CalendarRange,
@@ -109,6 +109,14 @@ export const GRUPLAR = [
     ],
   },
 ];
+
+/** Menülerde görünen gruplar: yönetici olmayanlardan `yalnizAdmin` bölümler gizlenir. */
+const suz = (admin) => GRUPLAR
+  .map((g) => ({ ...g, bolumler: g.bolumler.filter((b) => admin || !b.yalnizAdmin) }))
+  .filter((g) => g.bolumler.length);
+const HERKES = suz(false);
+const ADMIN = suz(true);
+export const gorunurGruplar = (admin) => (admin ? ADMIN : HERKES);
 
 export const TUM_BOLUMLER = GRUPLAR.flatMap((g) => g.bolumler.map((b) => ({ ...b, grup: g })));
 

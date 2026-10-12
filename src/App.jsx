@@ -24,6 +24,13 @@ import Promptlar from "@/pages/Promptlar";
 import Haberler from "@/pages/Haberler";
 import Skiller from "@/pages/Skiller";
 import Modeller from "@/pages/Modeller";
+import Giris from "@/pages/Giris";
+import Kayit from "@/pages/Kayit";
+import Hesabim from "@/pages/Hesabim";
+import Yonetim from "@/pages/Yonetim";
+import YalnizAdmin from "@/components/hesap/YalnizAdmin";
+
+const AdminOtomasyon = () => <YalnizAdmin><Otomasyon /></YalnizAdmin>;
 import AramaPaleti from "@/components/nav/AramaPaleti";
 import MobilMenu from "@/components/nav/MobilMenu";
 
@@ -45,12 +52,16 @@ export default function App() {
             <Route path="/kategori/:cat" component={Category} />
             <Route path="/chip/:id" component={ChipDetail} />
             <Route path="/hesap" component={Hesap} />
+            <Route path="/giris" component={Giris} />
+            <Route path="/kayit" component={Kayit} />
+            <Route path="/hesabim" component={Hesabim} />
+            <Route path="/yonetim" component={Yonetim} />
             <Route path="/egitim" component={Learn} />
             <Route path="/egitim/:id" component={Lesson} />
             <Route path="/fiyatlar" component={Prices} />
             <Route path="/bugun" component={Bugun} />
             <Route path="/haberler" component={Haberler} />
-            <Route path="/otomasyon" component={Otomasyon} />
+            <Route path="/otomasyon" component={AdminOtomasyon} />
             <Route path="/haftalik" component={Haftalik} />
             <Route path="/ai/promptlar" component={Promptlar} />
             <Route path="/ai/skiller" component={Skiller} />
