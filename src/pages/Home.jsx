@@ -10,6 +10,7 @@ import { chips } from "@/data/chips";
 import { lessons } from "@/data/lessons";
 import { BLOCKS, CHIP_TYPES, NODES } from "@/data/blocks";
 import bugun from "@/data/bugun.json";
+import haberAkisi from "@/data/haberler.json";
 import fiyat from "@/data/gpu_kiralama.json";
 import otomasyon from "@/data/otomasyon.json";
 import { getCompleted } from "@/lib/progress";
@@ -58,6 +59,13 @@ function LinkDugme({ href, children, ...p }) {
     </Link>
   );
 }
+
+// Bugün kartı günün maddelerini zaten özetliyor; burada akışın ek haberlerinden en yeni 3'ü
+const SON_HABERLER = (() => {
+  const tum = haberAkisi.haberler || [];
+  const ek = tum.filter((h) => h.kaynakTuru !== "bugun");
+  return (ek.length >= 3 ? ek : tum).slice(0, 3);
+})();
 
 export default function Home() {
   const [ilerleme, setIlerleme] = useState({ bitti: [], tasarim: 0 });
@@ -151,6 +159,24 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      {/* ------------------------------------------------------------------ son haberler */}
+      {SON_HABERLER.length > 0 && (
+        <section className="container mx-auto px-4 pb-6" aria-labelledby="son-haberler-baslik" data-testid="son-haberler">
+          <div className="flex items-baseline justify-between gap-3 mb-3">
+            <h2 id="son-haberler-baslik" className="font-display font-semibold text-lg inline-flex items-center gap-2"><Newspaper className="h-4 w-4 text-primary" aria-hidden="true" />Son haberler</h2>
+            <Link href="/haberler" className="text-xs text-primary hover:underline inline-flex items-center gap-1">Tüm haberler ({haberAkisi.haberler.length}) <ArrowRight className="h-3 w-3" /></Link>
+          </div>
+          <ul className="grid md:grid-cols-3 gap-3">
+            {SON_HABERLER.map((h) => (
+              <li key={h.id} className="rounded-xl border border-card-border bg-card p-4 min-w-0">
+                <p className="font-mono text-[10px] text-muted-foreground">{h.yayin || h.tarih} · {h.kaynak}</p>
+                <a href={h.url} target="_blank" rel="noopener noreferrer" className="block text-sm font-medium leading-snug mt-1.5 hover:text-primary line-clamp-3">{h.baslik}</a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {/* ------------------------------------------------------------------ bölüm rehberi */}
       <BolumRehberi />
