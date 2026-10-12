@@ -1,4 +1,5 @@
 import { Link } from "@/components/Nav";
+import OnayBekleyenler from "@/components/OnayBekleyenler";
 import { Bot, CalendarRange, GitMerge, GitPullRequest, Ban, CheckCircle2, CircleAlert, Lightbulb, RefreshCw, Shield, TrendingUp, Wrench, XCircle } from "lucide-react";
 import data from "@/data/otomasyon.json";
 import { cn } from "@/lib/utils";
@@ -80,6 +81,8 @@ export default function Otomasyon() {
           </div>
         )}
       </section>
+
+      {data.onayBekleyen?.length > 0 && <OnayBekleyenler liste={data.onayBekleyen} />}
 
       {data.dikkat?.length > 0 && (
         <Bolum baslik="Bulunan hatalar ve uyarılar">

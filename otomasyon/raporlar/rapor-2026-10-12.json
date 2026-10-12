@@ -1,8 +1,8 @@
 {
   "ajan": "rapor",
   "tarih": "2026-10-12",
-  "zaman": "2026-10-12T09:16:09.611Z",
-  "durum": "dikkat",
+  "zaman": "2026-10-12T09:17:33.555Z",
+  "durum": "temiz",
   "gunTamam": true,
   "tazelik": [
     {
@@ -24,14 +24,5 @@
     "gelistirme"
   ],
   "calismayan": [],
-  "dikkat": [
-    {
-      "seviye": "dikkat",
-      "metin": "Öneri onay bekliyor: Fiyat sayfasında endeksin 12 aylık değişimini de göster (PR #23) — Denetim geçti (27/27); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor"
-    },
-    {
-      "seviye": "dikkat",
-      "metin": "Öneri onay bekliyor: Ana sayfaya Haberler akışından son 3 haberi gösteren kart (PR #24) — Denetim geçti (27/27); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor"
-    }
-  ]
+  "dikkat": []
 }
