@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-12T07:45:46.834Z",
+  "guncelleme": "2026-10-12T09:10:11.743Z",
   "tarih": "2026-10-12",
   "durum": "dikkat",
   "ajanlar": [
@@ -104,6 +104,26 @@
       "ozet": "Ana sayfada Bugün kartında olmayan en yeni 3 ek haber ve Tüm haberler bağlantısı",
       "neden": "Denetim geçti (27/27); otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-12",
+      "oneri": "Fiyat sayfasında endeksin 12 aylık değişimini de göster",
+      "durum": "birlesti",
+      "pr": 23,
+      "dal": "otomasyon/oneri-2026-10-12-1",
+      "ozet": "Endeks kartına 12 aylık değişim satırı eklendi",
+      "neden": "Kullanıcı onayıyla birleştirildi",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-12",
+      "oneri": "Ana sayfaya Haberler akışından son 3 haberi gösteren kart",
+      "durum": "birlesti",
+      "pr": 24,
+      "dal": "otomasyon/oneri-2026-10-12-2",
+      "ozet": "Ana sayfada en yeni 3 ek haber kartı",
+      "neden": "Kullanıcı onayıyla birleştirildi",
+      "kim": "otomasyon"
     }
   ],
   "uygulananSon": [
@@ -194,6 +214,20 @@
     {
       "oneri": "Ana sayfaya Haberler akışından son 3 haberi gösteren kart",
       "durum": "acik",
+      "pr": 24,
+      "tarih": "2026-10-12",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyat sayfasında endeksin 12 aylık değişimini de göster",
+      "durum": "birlesti",
+      "pr": 23,
+      "tarih": "2026-10-12",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Ana sayfaya Haberler akışından son 3 haberi gösteren kart",
+      "durum": "birlesti",
       "pr": 24,
       "tarih": "2026-10-12",
       "kim": "otomasyon"
