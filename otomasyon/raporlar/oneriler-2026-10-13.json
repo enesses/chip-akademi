@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-10-13",
+  "oneriler": [
+    {
+      "baslik": "Notlar sayfasına sabitleme (pin) düğmesi",
+      "neden": "src/lib/notes.js'te togglePin ve sabitlenenleri üste alan sortNotes var, ama src/pages/Notes.jsx bunları hiç kullanmıyor; iyileştirme ajanı togglePin'i kullanılmayan export olarak raporladı (iyilestirme-2026-10-13).",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Seviye sınavında önceki sonuçları göster",
+      "neden": "progress.js saveExamResult her sınavı (son 10) kaydediyor ama getExamResults hiçbir yerde okunmuyor (iyilestirme-2026-10-13: kullanılmayan export); kullanıcı ilerlemesini göremiyor. Exam.jsx giriş ekranına son denemeler listesi eklenebilir.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "@grpc/grpc-js açığını package.json overrides ile kapat",
+      "neden": "Güvenlik ajanı 4 yüksek açık raporladı (guvenlik-2026-10-13): firebase@11.10.0 → @firebase/firestore@4.8.0 → @grpc/grpc-js@1.9.16 (GHSA-m9gg-hp2v-232j, GHSA-f596-whhp-79r4). npm audit fix yalnızca firebase'i 9.14'e düşürmeyi öneriyor; \"overrides\": {\"@grpc/grpc-js\": \"^1.14.6\"} daha güvenli yol. package.json korunduğu için elle onay gerekir.",
+      "etki": "orta",
+      "alan": "güvenlik"
+    },
+    {
+      "baslik": "Kiralama tablosunda elle doğrulanmış büyük sıçramaları işaretle",
+      "neden": "Bugün AMD MI300X medyanı 2.89 → 4.41 (+%52,6) üç okumayla doğrulanıp yazıldı; gpu_kiralama.json'da bu bilgi tutulmuyor, kullanıcı sıçramanın veri hatası mı gerçek mi olduğunu ayırt edemiyor. veri-isle.mjs (korunan) satıra 'dogrulandi' bayrağı yazmalı, Prices.jsx rozet göstermeli.",
+      "etki": "düşük",
+      "alan": "veri"
+    },
+    {
+      "baslik": "progress.js'te kullanılmayan resetProgress için Hesabım'a 'ilerlemeyi sıfırla' düğmesi",
+      "neden": "resetProgress (src/lib/progress.js:42) hiçbir yerde çağrılmıyor; Hesabim.jsx'te ilerleme sıfırlama seçeneği yok. Onay iletişim kutusuyla eklenebilir ya da export kaldırılabilir.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    }
+  ]
+}

@@ -1,15 +1,15 @@
 {
-  "guncelleme": "2026-10-12T09:17:33.554Z",
-  "tarih": "2026-10-12",
-  "durum": "temiz",
+  "guncelleme": "2026-10-13T07:10:10.897Z",
+  "tarih": "2026-10-13",
+  "durum": "dikkat",
   "ajanlar": [
     {
       "id": "guvenlik",
       "ad": "Güvenlik",
       "saat": "10:00",
       "calisti": true,
-      "durum": "temiz",
-      "zaman": "2026-10-12T07:24:26.305Z"
+      "durum": "dikkat",
+      "zaman": "2026-10-13T07:06:55.754Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-12T07:24:26.445Z"
+      "zaman": "2026-10-13T07:06:55.928Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-12T07:24:25.107Z"
+      "zaman": "2026-10-13T07:10:10.802Z"
     },
     {
       "id": "gelistirme",
@@ -33,140 +33,48 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-12T07:24:42.059Z"
+      "zaman": "2026-10-13T07:07:12.513Z"
     }
   ],
-  "dikkat": [],
+  "dikkat": [
+    {
+      "seviye": "uyarı",
+      "metin": "Güvenlik: 4 yüksek seviye bağımlılık açığı var."
+    }
+  ],
   "oneriler": [
     {
-      "baslik": "Fiyat sayfasında endeksin 12 aylık değişimini de göster",
-      "neden": "gpu_kiralama.json'da endeks.degisim_12_ay_pct (bugün +%8) her gün yazılıyor ama src/ altında hiçbir sayfa okumuyor (grep '12_ay' sonuçsuz); Prices.jsx yalnızca 4 haftalık değişimi (+%1,4) gösteriyor. Kısa vadeli hareketi uzun vadeli eğilimle yan yana görmek yorumu değiştiriyor.",
+      "baslik": "Notlar sayfasına sabitleme (pin) düğmesi",
+      "neden": "src/lib/notes.js'te togglePin ve sabitlenenleri üste alan sortNotes var, ama src/pages/Notes.jsx bunları hiç kullanmıyor; iyileştirme ajanı togglePin'i kullanılmayan export olarak raporladı (iyilestirme-2026-10-13).",
       "etki": "düşük",
       "alan": "arayüz"
     },
     {
-      "baslik": "Ana sayfaya Haberler akışından son 3 haberi gösteren kart",
-      "neden": "Home.jsx Bugün'ü (ozet-bugun kartı) ve fiyatları özetliyor ama haberler.json'u hiç içe aktarmıyor; akışta 94 haber var ve bugün +14 eklendi. Haberler sayfasına ana sayfadan doğrudan bir giriş yok.",
+      "baslik": "Seviye sınavında önceki sonuçları göster",
+      "neden": "progress.js saveExamResult her sınavı (son 10) kaydediyor ama getExamResults hiçbir yerde okunmuyor (iyilestirme-2026-10-13: kullanılmayan export); kullanıcı ilerlemesini göremiyor. Exam.jsx giriş ekranına son denemeler listesi eklenebilir.",
       "etki": "orta",
       "alan": "arayüz"
     },
     {
-      "baslik": "3–9 sağlayıcılı modellerde de >%50 oynamayı şüpheli say",
-      "neden": "veri-isle.mjs hâlâ yalnızca ≥10 sağlayıcıda kontrol ediyor. Bugün GTX 1650 (3 sağlayıcı) 0,03→0,35 $ (+%1067) ve Quadro RTX 6000 (3 sağlayıcı) 1,50→0,83 $ betikçe sorgusuz yazıldı; ikinci okumayla elle doğrulandı. Dünkü öneri, kodda hâlâ eksik.",
+      "baslik": "@grpc/grpc-js açığını package.json overrides ile kapat",
+      "neden": "Güvenlik ajanı 4 yüksek açık raporladı (guvenlik-2026-10-13): firebase@11.10.0 → @firebase/firestore@4.8.0 → @grpc/grpc-js@1.9.16 (GHSA-m9gg-hp2v-232j, GHSA-f596-whhp-79r4). npm audit fix yalnızca firebase'i 9.14'e düşürmeyi öneriyor; \"overrides\": {\"@grpc/grpc-js\": \"^1.14.6\"} daha güvenli yol. package.json korunduğu için elle onay gerekir.",
       "etki": "orta",
-      "alan": "otomasyon"
+      "alan": "güvenlik"
     },
     {
-      "baslik": "Günlük fiyat hareketinde gidip gelen modelleri işaretle",
-      "neden": "A5000 (12 sağlayıcı) 10→11 Ekim 0,75→1,24 $ (+%65), 11→12 Ekim 1,24→0,75 $ (-%40) oldu; her iki gün de hareket listesine girdi. Önceki 2 ölçümün ortalamasına göre değişim ya da 'geri döndü' etiketi, sağlayıcı listesindeki geçici değişimden doğan gürültüyü ayırır.",
-      "etki": "orta",
+      "baslik": "Kiralama tablosunda elle doğrulanmış büyük sıçramaları işaretle",
+      "neden": "Bugün AMD MI300X medyanı 2.89 → 4.41 (+%52,6) üç okumayla doğrulanıp yazıldı; gpu_kiralama.json'da bu bilgi tutulmuyor, kullanıcı sıçramanın veri hatası mı gerçek mi olduğunu ayırt edemiyor. veri-isle.mjs (korunan) satıra 'dogrulandi' bayrağı yazmalı, Prices.jsx rozet göstermeli.",
+      "etki": "düşük",
       "alan": "veri"
     },
     {
-      "baslik": "Bugün sayfasına son 7 günün puan geçmişi",
-      "neden": "otomasyon/gecmis/ altında 10 günlük bugun-*.json var (puan.deger dahil; bugün 46, dün 38) ama Bugun.jsx yalnızca günün puanını gösteriyor. Geçmişin src/data'ya taşınması otomasyon betiğine dokunduğu için onay gerekir.",
-      "etki": "orta",
+      "baslik": "progress.js'te kullanılmayan resetProgress için Hesabım'a 'ilerlemeyi sıfırla' düğmesi",
+      "neden": "resetProgress (src/lib/progress.js:42) hiçbir yerde çağrılmıyor; Hesabim.jsx'te ilerleme sıfırlama seçeneği yok. Onay iletişim kutusuyla eklenebilir ya da export kaldırılabilir.",
+      "etki": "düşük",
       "alan": "arayüz"
-    },
-    {
-      "baslik": "Onay bekleyen öneri PR'larını birleştir ya da kapat",
-      "neden": "#15, #16, #17, #18, #21, #22 (ve düzeltme #20) denetimi geçmiş ama açık bekliyor; #15/#16 ve #21/#22 aynı dosyalara dokunuyor, biri birleşince diğerinde çakışma çıkacak. Yeni öneriler bu dosyalara dokundukça çakışma riski artıyor.",
-      "etki": "orta",
-      "alan": "süreç"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-10-12",
-      "oneri": "Fiyat sayfasında endeksin 12 aylık değişimini de göster",
-      "durum": "birlesti",
-      "pr": 23,
-      "dal": "otomasyon/oneri-2026-10-12-1",
-      "ozet": "Endeks kartına 12 aylık değişim satırı eklendi",
-      "neden": "Kullanıcı onayıyla birleştirildi",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-12",
-      "oneri": "Ana sayfaya Haberler akışından son 3 haberi gösteren kart",
-      "durum": "birlesti",
-      "pr": 24,
-      "dal": "otomasyon/oneri-2026-10-12-2",
-      "ozet": "Ana sayfada en yeni 3 ek haber kartı",
-      "neden": "Kullanıcı onayıyla birleştirildi",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-12",
-      "oneri": "Fiyat hareketi kartlarında sağlayıcı sayısını göster",
-      "durum": "birlesti",
-      "pr": 15,
-      "dal": "otomasyon/oneri-2026-10-09-1",
-      "ozet": null,
-      "neden": "Kullanıcı onayıyla birleştirildi",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-12",
-      "oneri": "Fiyat tablosuna 'en az 5 sağlayıcı' filtresi",
-      "durum": "birlesti",
-      "pr": 16,
-      "dal": "otomasyon/oneri-2026-10-09-2",
-      "ozet": null,
-      "neden": "Kullanıcı onayıyla birleştirildi",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-12",
-      "oneri": "Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
-      "durum": "birlesti",
-      "pr": 17,
-      "dal": "otomasyon/oneri-2026-10-10-1",
-      "ozet": null,
-      "neden": "Kullanıcı onayıyla birleştirildi",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-12",
-      "oneri": "Kalan 20 kullanılmayan export'u temizle",
-      "durum": "birlesti",
-      "pr": 18,
-      "dal": "otomasyon/oneri-2026-10-10-2",
-      "ozet": null,
-      "neden": "Kullanıcı onayıyla birleştirildi",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-12",
-      "oneri": "Geliştirme ajanı reddedilmiş girdi yüzünden yenilemeyi yeniden çalıştırıp günün raporunu ezmesin",
-      "durum": "birlesti",
-      "pr": 20,
-      "dal": "otomasyon/duzeltme-2026-10-11",
-      "ozet": null,
-      "neden": "Kullanıcı onayıyla birleştirildi",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-12",
-      "oneri": "Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
-      "durum": "birlesti",
-      "pr": 21,
-      "dal": "otomasyon/oneri-2026-10-11-1",
-      "ozet": null,
-      "neden": "Kullanıcı onayıyla birleştirildi",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-12",
-      "oneri": "Ana sayfa hareket satırında önceki → yeni fiyatı göster",
-      "durum": "birlesti",
-      "pr": 22,
-      "dal": "otomasyon/oneri-2026-10-11-2",
-      "ozet": null,
-      "neden": "Kullanıcı onayıyla birleştirildi",
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
     {
       "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
@@ -325,13 +233,13 @@
   ],
   "onayBekleyen": [],
   "guvenlik": {
-    "durum": "temiz",
+    "durum": "dikkat",
     "bagimlilik": {
       "kritik": 0,
-      "yuksek": 0,
+      "yuksek": 4,
       "orta": 0,
       "dusuk": 0,
-      "toplam": 0,
+      "toplam": 4,
       "kabulEdilen": [
         "braces",
         "chokidar",
@@ -360,38 +268,22 @@
         "etiketsizDugme": 0
       },
       "kod": {
-        "dosyaSayisi": 64,
-        "toplamSatir": 16604,
+        "dosyaSayisi": 74,
+        "toplamSatir": 17808,
         "boyutKB": null
       }
     },
     "bulgular": [
       {
         "alan": "kod",
-        "baslik": "20 export hiçbir yerde kullanılmıyor",
+        "baslik": "4 export hiçbir yerde kullanılmıyor",
         "etki": "düşük",
         "otomatik": false,
         "detay": [
-          "Badge (src/components/ui/badge.jsx)",
-          "Select (src/components/ui/select.jsx)",
-          "SelectTrigger (src/components/ui/select.jsx)",
-          "SelectValue (src/components/ui/select.jsx)",
-          "SelectContent (src/components/ui/select.jsx)",
-          "SelectItem (src/components/ui/select.jsx)",
           "fiyatBilgisi (src/lib/chipScore.js)",
-          "designCount (src/lib/designs.js)",
           "togglePin (src/lib/notes.js)",
-          "searchNotes (src/lib/notes.js)",
-          "contextFromPath (src/lib/notes.js)",
-          "unmarkCompleted (src/lib/progress.js)",
-          "getAllQuizResults (src/lib/progress.js)",
-          "resetQuizResult (src/lib/progress.js)",
-          "resetAllQuizzes (src/lib/progress.js)",
           "resetProgress (src/lib/progress.js)",
-          "getSummary (src/lib/progress.js)",
-          "getBestExam (src/lib/progress.js)",
-          "resetExam (src/lib/progress.js)",
-          "formatCompareValue (src/lib/utils.js)"
+          "getExamResults (src/lib/progress.js)"
         ]
       }
     ]
@@ -402,17 +294,22 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 97 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 10 gelmedi (eski fiyat korundu)"
+        "detay": "bu çalıştırmada güncellendi — 92 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu), 1 büyük oynama elle doğrulandı"
+      },
+      {
+        "ad": "Elle doğrulanan fiyat",
+        "durum": "ok",
+        "detay": "AMD MI300X: 2.89 → 4.41 (üç ayrı okuma: medyan 4.41, en düşük 2.59 (DigitalOcean), 11 sağlayıcı) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 46, 4 yaklaşan olay; haber akışına +8"
+        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 41, 3 yaklaşan olay; haber akışına +9"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+6 haber (akışta 94); bugün toplam 14"
+        "detay": "+6 haber (akışta 109); bugün toplam 15"
       },
       {
         "ad": "Derleme",
@@ -422,7 +319,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2220 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2284 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -503,6 +400,11 @@
       "tarih": "2026-10-12",
       "durum": "temiz",
       "dikkat": 0
+    },
+    {
+      "tarih": "2026-10-13",
+      "durum": "dikkat",
+      "dikkat": 1
     }
   ]
 }

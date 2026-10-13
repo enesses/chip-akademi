@@ -1,98 +1,101 @@
 {
-  "tarih": "2026-10-12",
-  "derlenme": "12 Ekim 2026",
+  "tarih": "2026-10-13",
+  "derlenme": "13 Ekim 2026",
   "ozet": [
-    "Haftaya girerken gündemin merkezinde TSMC var: şirket 15 Ekim'de üçüncü çeyrek sonuçlarını açıklayacak ve LSEG analist ortalamasına göre net kârın yıllık %65 artışla yaklaşık 746 milyar T$'a (~23 milyar $) çıkması bekleniyor. Gelirin zaten %50 büyüdüğü açıklandığı için piyasa artık rakamdan çok dördüncü çeyrek rehberliğine ve 2027 AI çipi talebine bakacak. Bir gün önce, 14 Ekim'de ASML de sonuçlarını duyuracak.",
-    "Bellek tarafında iki zıt sinyal yan yana duruyor. Pazartesi Samsung %3,6, SK hynix %3,4 düştü; tetikleyici, Çinli CXMT'nin 4F² hücre yapısında ilerleme kaydettiğini ve yıl sonuna kadar yeni nesil sunucu DDR5 RDIMM çıkaracağını söylemesi. Öte yandan Samsung ve SK hynix 14–16 Ekim'deki SEDEX fuarında HBM4E için ısı yönetimi çözümlerini (hibrit bakır bağlama, iHBM) sergileyecek; yani yüksek bant genişlikli bellekte rekabet teknolojiyle sürüyor.",
-    "Geçen hafta yarı iletken endeksi SOXX %5,1 geriledi; Intel %12,3, ARM %13,4 kaybetti. Hafta sonu haberleri işlem gücü kıtlığının şirketler arası ilişkileri de şekillendirdiğini gösteriyor: WSJ'ye göre Meta, Anthropic'e işlem gücü kiralama planını askıya aldı; Nvidia ise 800 milyon $ yatırdığı açık modelci Reflection AI'ı satın almayı ya da payını artırmayı görüşüyor.",
-    "Veri merkezlerinin enerji ve kamuoyu sorunu da sürüyor. Amazon, yerel yönetimlerle veri merkezi görüşmelerinde artık gizlilik sözleşmesi (NDA) kullanmayacağını açıkladı; New York ve San Francisco'daki moratoryumlar baskının boyutunu gösteriyor. AP'nin derlediği verilere göre AI rafları 40–100 kW çekiyor ve hiperölçekleyiciler 2031'e kadar 7,6 trilyon $ harcamayı planlıyor; bu talep doğal gaz ve güneşe yatırımı hızlandırırken şebekeyi zorluyor."
+    "Güne Seul'den sert bir haberle başlandı: Kospi endeksi salı günü %7,4 düşerek 5.914'e indi ve temmuz sonundan bu yana en düşük seviyesini gördü. Endeksin yarısından fazlasını oluşturan Samsung %7,7, SK hynix %8,8 geriledi. Satışın arkasında AI yatırım döngüsünün sürdürülebilirliğine dair kuşku, Çinli CXMT'nin bellek mimarisindeki ilerlemesi ve yabancı yatırımcı çıkışı var; Broadcom CEO'su Hock Tan'ın pek çok AI yatırımcısını kumarbaza benzeten sözleri de risk iştahını zayıflattı.",
+    "ABD'de pazartesi tablo daha sakindi ama teknoloji yine en zayıf sektördü: Nasdaq %0,44 düştü, Sandisk %6'nın, Lumentum ise %10'a yakın değer kaybetti. Aynı gün büyük oyuncular kendi çiplerini öne çıkardı: Microsoft üçüncü nesil Maia 300'ü tanıttı ve bir milyonun üzerinde birim konuşlandırabileceği, büyük ölçekli kurulumların 2027'de başlayacağı bildirildi. Intel de eski adı Crescent Island olan, PCIe kartlarla çalışan çıkarım GPU'su D-Serisi'yle Nvidia'nın alanına girdi.",
+    "Çin cephesinde IDC verileri dengenin değiştiğini gösteriyor: 2026'nın ilk yarısında Nvidia'nın Çin veri merkezi AI çipi payı %34'e indi, sevkiyatı yıllık %44 düştü; Huawei 572 bin birimle %28'e yükseldi. Pekin aynı zamanda AI veri merkezlerini beslemek için büyük bir şebeke yatırımına hazırlanıyor: BloombergNEF'e göre 2049'a kadar 3,9 trilyon $, State Grid'in önümüzdeki beş yıllık planı ise 574 milyar $.",
+    "Bellek tarafında kapasite yatırımları sürüyor: Samsung'un Vietnam ve Kore'de toplam ~9,15 milyar $'lık çip yatırımı planladığı, Vietnam'daki test tesisinin Kore'de HBM üretimine yer açacağı bildirildi. Veri merkezi altyapısının jeopolitik riski de görünür oldu: Yandex'in Vladimir'deki veri merkezi bir hafta içindeki üçüncü drone saldırısının ardından tamamen durdu. Hafta içinde gözler 15 Ekim'deki TSMC sonuçlarında."
   ],
   "puan": {
-    "etiket": "Bilanço haftası öncesi temkin",
-    "yorum": "TSMC'den rekor kâr beklentisi ve HBM4E rekabeti talebin güçlü kaldığını gösteriyor; ama geçen haftaki çip satışları, CXMT kaynaklı bellek hisselerindeki düşüş ve işlem gücü/enerji darboğazı tonu nötre yakın tutuyor.",
-    "deger": 46
+    "etiket": "Kore'de çip çöküşü, temkin derinleşiyor",
+    "yorum": "Kospi'deki %7'lik düşüş, Broadcom CEO'sunun uyarısı ve Nvidia'nın Çin'de pay kaybı tonu olumsuza çekiyor; Microsoft ve Intel'in yeni çipleri, Samsung'un yatırımı ve Çin'in şebeke planı ise talebin ve yatırımın sürdüğünü gösteriyor.",
+    "deger": 41
   },
   "maddeler": [
     {
-      "baslik": "TSMC'den altıncı rekor çeyrek bekleniyor: net kârda %65 artış",
-      "detay": "LSEG'in 16 analistlik tahminine göre 3. çeyrek net kârı ~746 milyar T$ (~23 milyar $) olacak; 707 milyar T$'ın üzeri şirket rekoru. Sonuçlar 15 Ekim'de açıklanıyor; Morgan Stanley yıllık büyüme rehberliğinin düşük-orta %40'lara çıkmasını bekliyor.",
-      "kategori": "pozitif",
+      "baslik": "Kospi %7,4 çöktü: Samsung %7,7, SK hynix %8,8 düştü",
+      "detay": "Güney Kore endeksi 13 Ekim'de 5.914,35'e indi, temmuz sonundan bu yana en düşük seviye (haziranda 9.000'in üzerindeydi). Satışın nedenleri AI patlamasına dair kaygı ve CXMT'nin Samsung, SK hynix ve Micron'a rakip olabilecek ilerlemesi.",
+      "kategori": "negatif",
       "agirlik": 3,
-      "neden": "AI çipi üretiminin tek büyük dökümhanesinin kârının hızla büyümesi talebin sürdüğünün en doğrudan göstergesi.",
-      "kaynak": "investingLive",
-      "url": "https://investinglive.com/stocks/preview-tsmc-tipped-for-sixth-straight-record-quarter-with-profit-seen-up-65-on-ai-demand"
+      "neden": "Dünyanın iki büyük HBM/DRAM üreticisinde tek günde %8'e varan kayıp, AI bellek döngüsüne güvenin sarsıldığını gösteriyor.",
+      "kaynak": "AP (ClickOnDetroit)",
+      "url": "https://clickondetroit.com/news/2026/10/13/south-koreas-kospi-index-sinks-more-than-7-on-sell-off-of-semiconductor-shares-over-ai-boom-worries"
     },
     {
-      "baslik": "CXMT'nin 4F² ilerlemesi Samsung ve SK hynix hisselerini düşürdü",
-      "detay": "12 Ekim'de Samsung %3,6 düşüşle 252.500 won'a, SK hynix %3,4 düşüşle 1.624.000 won'a geriledi. CXMT, 4F² hücre yapısında kilit ilerleme kaydettiğini ve 2026 sonuna kadar yeni nesil sunucu DDR5 RDIMM çıkaracağını açıkladı.",
+      "baslik": "Broadcom CEO'su: Pek çok AI yatırımcısı kumarbaz gibi",
+      "detay": "Hock Tan, şirketlerin AI token'larına para harcayıp bir şey öğrenmediğini söyledi (\"Ailen sana 10 $'lık token verir, 10 dakikada bitirirsin\"). Aynı haberde OpenAI'ın eylülde 50 milyar $ yıllık gelir hızına ulaştığı ama zarar ettiği belirtiliyor.",
       "kategori": "negatif",
       "agirlik": 2,
-      "neden": "Çinli rakibin teknoloji açığını kapatması Kore bellek üreticilerinin fiyatlama gücüne dair kaygı yaratıyor.",
-      "kaynak": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-sk-hynix-shares-drop-053408695.html"
+      "neden": "AI çipi tedarikçilerinden birinin patronunun spekülasyon uyarısı risk iştahını azaltıyor; Kore'deki satışın nedenlerinden biri olarak da anılıyor.",
+      "kaynak": "Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/broadcom-ceo-says-many-ai-investors-are-gamblers-4943815"
     },
     {
-      "baslik": "SEDEX'te HBM4E ısı savaşı: Samsung hibrit bağlama, SK hynix iHBM",
-      "detay": "14–16 Ekim'de Seul COEX'te 300 şirket ve 888 standla düzenlenecek fuarda Samsung bakır-bakır hibrit bağlamayı (HCB) ve Heat Path Block'u, SK hynix ise ısıl direnci ~%30 düşürmeyi hedefleyen iHBM'i sergileyecek.",
+      "baslik": "Microsoft Maia 300'ü tanıttı: 1 milyonun üzerinde birim hedefi",
+      "detay": "Üçüncü nesil özel AI çipi 12 Ekim'de duyuruldu; Microsoft'un bir milyondan fazla birim konuşlandırabileceği, büyük ölçekli kurulumların 2027'de başlayacağı bildirildi. Amaç maliyet tasarrufu.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Dökümhane ve HBM talebi için olumlu, ama hiper ölçekleyicilerin kendi çipine yönelmesi Nvidia'nın payına baskı.",
+      "kaynak": "The Spokesman-Review",
+      "url": "https://www.spokesman.com/stories/2026/oct/12/microsoft-plans-huge-deployment-of-its-own-ai-chip/"
+    },
+    {
+      "baslik": "Intel, çıkarım için D-Serisi GPU'larla Nvidia'ya rakip oluyor",
+      "detay": "Eski adı Crescent Island olan Intel GPU D-Serisi PCIe kartlarla çalışıyor; ASUS, HPE, Dell ve Supermicro sistemleri sunacak. Intel hissesi yılbaşından bu yana %183 yukarıda.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Çıkarım donanımında yeni bir tedarikçi kıt GPU arzını genişletebilir ve fiyat rekabetini artırır.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/article/intel-aims-to-boost-ai-turnaround-with-new-gpu-chips-to-take-on-nvidia-192916083.html"
+    },
+    {
+      "baslik": "IDC: Nvidia'nın Çin'deki AI çipi payı %34'e indi, Huawei %28",
+      "detay": "2026'nın ilk yarısında Nvidia 678 bin hızlandırıcı sevk etti (yıllık -%44); Huawei 572 bine çıktı. Toplam 2,008 milyon birim; GPU dışı hızlandırıcılar ~%80 artışla 1,016 milyona ulaştı.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "İhracat kısıtları Nvidia'nın Çin payını eritiyor; yerli çiplerin yükselişi pazarı ikiye bölüyor.",
+      "kaynak": "Reuters (Investing.com)",
+      "url": "https://investing.com/news/stock-market-news/nvidias-china-aichip-share-falls-as-huawei-closes-gap-report-finds-4945333"
+    },
+    {
+      "baslik": "Samsung, Vietnam ve Kore'de ~9,15 milyar $'lık çip yatırımı planlıyor",
+      "detay": "Samsung Electronics Vietnam Thai Nguyen'de 4,09 milyar $'lık DRAM/NAND test tesisi kuracak (2027 sonu); bu Kore'de HBM üretimine yer açacak. Samsung Electro-Mechanics 6,78 trilyon won'luk FC-BGA alt tabaka kapasitesi ekleyecek.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "HBM ve alt tabaka darboğazına yönelik kapasite yatırımı arz sıkışıklığını orta vadede hafifletebilir.",
+      "kaynak": "Sammy Fans",
+      "url": "https://sammyfans.com/2026/10/13/samsung-plans-9-15-billion-chip-investment-across-vietnam-and-korea"
+    },
+    {
+      "baslik": "Pazartesi bellek ve AI hisseleri düştü: Sandisk -%6, Lumentum -%10",
+      "detay": "12 Ekim'de Nasdaq %0,44 geriledi, teknoloji en zayıf sektördü; Sandisk bellek rekabeti kaygısıyla %6'dan fazla, Lumentum %10'a yakın düştü, Marvell ve Semtech de geriledi.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Yatırımcılar AI bağlantılı hisselerden savunma sektörlerine kayıyor; değerleme kaygısı sürüyor.",
+      "kaynak": "The Motley Fool (Yahoo Finance)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-12-212311190.html"
+    },
+    {
+      "baslik": "Çin, AI veri merkezleri için 3,9 trilyon $'lık şebeke yatırımına hazırlanıyor",
+      "detay": "BloombergNEF projeksiyonuna göre 2049'a kadar ~3,9 trilyon $; State Grid önümüzdeki beş yılda 574 milyar $ (2021–2025'e göre %40 fazla) harcayacak. 2026 ilk yarısında rüzgâr ve güneş üretiminin ~%9'u boşa gitti.",
       "kategori": "pozitif",
       "agirlik": 1,
-      "neden": "HBM'deki ısı sınırının aşılması daha yoğun AI hızlandırıcılarının önünü açıyor.",
-      "kaynak": "BigGo Finance",
-      "url": "https://finance.biggo.com/news/6f80a886-0bd7-4220-ab76-de009a0c9ae6"
+      "neden": "Enerji darboğazına doğrudan yatırım, Çin'de AI işlem kapasitesinin büyümesini destekler.",
+      "kaynak": "AI Weekly (Bloomberg)",
+      "url": "https://aiweekly.co/alerts/bloomberg-china-plots-39t-grid-buildout-through-2049-to-convert-wasted"
     },
     {
-      "baslik": "Amazon, veri merkezi görüşmelerinde gizlilik sözleşmelerini bırakıyor",
-      "detay": "Amazon, yerel yönetimlerle veri merkezi müzakerelerinde artık NDA kullanmayacağını açıkladı; Microsoft benzer kararı yıl başında almıştı. New York eyaleti büyük projelere yaklaşık bir yıllık izin moratoryumu uyguluyor, San Francisco da moratoryum onayladı.",
-      "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Şeffaflık adımı kamu direncini azaltabilir ama moratoryumlar yeni kapasitenin önündeki engelin sürdüğünü gösteriyor.",
-      "kaynak": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/"
-    },
-    {
-      "baslik": "Çip hisseleri geçen hafta %5,1 geriledi; Intel ve ARM öncülük etti",
-      "detay": "SOXX haftayı %5,1 düşüşle kapattı; Nasdaq-100'de en çok kaybedenler ARM (−%13,4) ve Intel (−%12,3) oldu. Bu hafta ASML (14 Ekim, gelirde ~%56 artış beklentisi) ve TSMC (15 Ekim) sonuç açıklıyor.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "Sert ekim rallisinin ardından gelen satış, değerlemelerin bilançolara karşı hassaslaştığını gösteriyor.",
-      "kaynak": "Stocktwits / Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/articles/stocktwits-tech-watch-asml-tsmc-050342095.html"
-    },
-    {
-      "baslik": "WSJ: Meta, Anthropic'e işlem gücü kiralama planını askıya aldı",
-      "detay": "Haberde Anthropic CEO'su Dario Amodei'nin yıl başında Meta'dan AI çipi kiralamak istediği, Meta'nın kendi Muse modellerinin talebi ve rakibi güçlendirme kaygısıyla vazgeçtiği aktarılıyor.",
+      "baslik": "Yandex'in Vladimir veri merkezi drone saldırısıyla durdu",
+      "detay": "Bir haftada üçüncü saldırı: daha önce Kaluga ve AI modelini eğiten üç süper bilgisayardan ikisinin bulunduğu Sasovo hedef alındı. Yandex acil durum modunda çalışıyor.",
       "kategori": "negatif",
       "agirlik": 1,
-      "neden": "İşlem gücünün rakipler arasında paylaşılmaması kıtlığın derinleştiğini gösteriyor.",
-      "kaynak": "KuCoin (WSJ haberi aktarımı)",
-      "url": "https://kucoin.com/news/flash/meta-halts-plan-to-lease-ai-compute-power-to-anthropic"
-    },
-    {
-      "baslik": "FT: Nvidia, Reflection AI'ı satın almayı ya da payını artırmayı görüşüyor",
-      "detay": "Nvidia'nın 800 milyon $ yatırdığı açık ağırlıklı model girişimiyle görüşmeler erken aşamada; anlaşma, uzun düzenleyici incelemeden kaçınmak için ekip alımı ve lisans biçiminde olabilir. Reuters bilgiyi bağımsız doğrulayamadı.",
-      "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Nvidia'nın model katmanına uzanması ekosistemi güçlendirir ama henüz kesinleşmiş bir anlaşma yok.",
-      "kaynak": "The Star (Reuters/FT)",
-      "url": "https://www.thestar.com.my/tech/tech-news/2026/10/11/nvidia-in-talks-to-invest-further-in-reflection-ai-or-buy-it-ft-reports"
-    },
-    {
-      "baslik": "AI veri merkezleri doğal gaz ve güneşi hızlandırıyor, şebekeyi zorluyor",
-      "detay": "AI rafları 40–100 kW çekiyor (klasik raf 5–10 kW). Goldman Sachs'a göre 2031'e kadar AI veri merkezlerine 7,6 trilyon $ harcanacak; RBC, veri merkezlerinin doğal gaz talebinin 2030'a kadar ~%20 artabileceğini öngörüyor.",
-      "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Talep büyük ama enerji ve şebeke kapasitesi kurulum hızını sınırlayan ana etken olmaya devam ediyor.",
-      "kaynak": "Politixia (AP)",
-      "url": "https://politixia.com/2026/10/11/electric-avenues-ai-data-centers-spur-natural-gas-solar-challenge-power-grids-local-news"
+      "neden": "Veri merkezlerinin savaşta hedef haline gelmesi AI altyapısı için yeni bir fiziksel risk.",
+      "kaynak": "Al Jazeera",
+      "url": "https://www.aljazeera.com/amp/news/2026/10/11/russias-yandex-says-data-centre-in-vladimir-shut-down-after-drone-attack"
     }
   ],
   "yaklasan": [
-    {
-      "tarih": "2026-10-12",
-      "baslik": "OCP Global Summit (San Jose, 12–15 Ekim)",
-      "kaynak": "Open Compute Project",
-      "url": "https://www.opencompute.org/events/ocp-summit/2026-ocp-global-summit/"
-    },
     {
       "tarih": "2026-10-14",
       "baslik": "ASML 3. çeyrek sonuçları",
@@ -100,16 +103,16 @@
       "url": "https://finance.yahoo.com/technology/articles/stocktwits-tech-watch-asml-tsmc-050342095.html"
     },
     {
-      "tarih": "2026-10-14",
-      "baslik": "SEDEX 2026 (Seul, 14–16 Ekim)",
-      "kaynak": "BigGo Finance",
-      "url": "https://finance.biggo.com/news/6f80a886-0bd7-4220-ab76-de009a0c9ae6"
+      "tarih": "2026-10-15",
+      "baslik": "TSMC 3. çeyrek sonuçları (beklenti: net kâr ~746 milyar T$, +%65)",
+      "kaynak": "China Money Network",
+      "url": "https://chinamoneynetwork.com/2026/10/13/tsmc-to-announce-third-quarter-financial-results-analysts-expect-record-profits"
     },
     {
-      "tarih": "2026-10-15",
-      "baslik": "TSMC 3. çeyrek sonuçları",
-      "kaynak": "Stocktwits / Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/articles/stocktwits-tech-watch-asml-tsmc-050342095.html"
+      "tarih": "2026-10-20",
+      "baslik": "Memphis Belediye Meclisi 12 aylık veri merkezi moratoryumu oylaması",
+      "kaynak": "Fox News",
+      "url": "https://www.foxnews.com/politics/memphis-city-council-devolves-chaos-data-center-moratorium-vote-postponed"
     }
   ],
   "yontem": {
@@ -117,6 +120,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = -1 · Σ ağırlık = 12 · Puan = 50 + 50 × -0.08 = 46"
+    "hesap": "Σ ağırlık×işaret = -3 · Σ ağırlık = 17 · Puan = 50 + 50 × -0.18 = 41"
   }
 }

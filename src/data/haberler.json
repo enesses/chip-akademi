@@ -2,6 +2,231 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-10-13-off-of-semiconductor-shares-over-ai-boom-worries",
+      "tarih": "2026-10-13",
+      "yayin": null,
+      "baslik": "Kospi %7,4 çöktü: Samsung %7,7, SK hynix %8,8 düştü",
+      "detay": "Güney Kore endeksi 13 Ekim'de 5.914,35'e indi, temmuz sonundan bu yana en düşük seviye (haziranda 9.000'in üzerindeydi). Satışın nedenleri AI patlamasına dair kaygı ve CXMT'nin Samsung, SK hynix ve Micron'a rakip olabilecek ilerlemesi.",
+      "kaynak": "AP (ClickOnDetroit)",
+      "url": "https://clickondetroit.com/news/2026/10/13/south-koreas-kospi-index-sinks-more-than-7-on-sell-off-of-semiconductor-shares-over-ai-boom-worries",
+      "ton": "negatif",
+      "konular": [
+        "bellek",
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-13--ceo-says-many-ai-investors-are-gamblers-4943815",
+      "tarih": "2026-10-13",
+      "yayin": null,
+      "baslik": "Broadcom CEO'su: Pek çok AI yatırımcısı kumarbaz gibi",
+      "detay": "Hock Tan, şirketlerin AI token'larına para harcayıp bir şey öğrenmediğini söyledi (\"Ailen sana 10 $'lık token verir, 10 dakikada bitirirsin\"). Aynı haberde OpenAI'ın eylülde 50 milyar $ yıllık gelir hızına ulaştığı ama zarar ettiği belirtiliyor.",
+      "kaynak": "Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/broadcom-ceo-says-many-ai-investors-are-gamblers-4943815",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-13-crosoft-plans-huge-deployment-of-its-own-ai-chip",
+      "tarih": "2026-10-13",
+      "yayin": null,
+      "baslik": "Microsoft Maia 300'ü tanıttı: 1 milyonun üzerinde birim hedefi",
+      "detay": "Üçüncü nesil özel AI çipi 12 Ekim'de duyuruldu; Microsoft'un bir milyondan fazla birim konuşlandırabileceği, büyük ölçekli kurulumların 2027'de başlayacağı bildirildi. Amaç maliyet tasarrufu.",
+      "kaynak": "The Spokesman-Review",
+      "url": "https://www.spokesman.com/stories/2026/oct/12/microsoft-plans-huge-deployment-of-its-own-ai-chip/",
+      "ton": "notr",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-13-h-new-gpu-chips-to-take-on-nvidia-192916083-html",
+      "tarih": "2026-10-13",
+      "yayin": null,
+      "baslik": "Intel, çıkarım için D-Serisi GPU'larla Nvidia'ya rakip oluyor",
+      "detay": "Eski adı Crescent Island olan Intel GPU D-Serisi PCIe kartlarla çalışıyor; ASUS, HPE, Dell ve Supermicro sistemleri sunacak. Intel hissesi yılbaşından bu yana %183 yukarıda.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/article/intel-aims-to-boost-ai-turnaround-with-new-gpu-chips-to-take-on-nvidia-192916083.html",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-13--falls-as-huawei-closes-gap-report-finds-4945333",
+      "tarih": "2026-10-13",
+      "yayin": null,
+      "baslik": "IDC: Nvidia'nın Çin'deki AI çipi payı %34'e indi, Huawei %28",
+      "detay": "2026'nın ilk yarısında Nvidia 678 bin hızlandırıcı sevk etti (yıllık -%44); Huawei 572 bine çıktı. Toplam 2,008 milyon birim; GPU dışı hızlandırıcılar ~%80 artışla 1,016 milyona ulaştı.",
+      "kaynak": "Reuters (Investing.com)",
+      "url": "https://investing.com/news/stock-market-news/nvidias-china-aichip-share-falls-as-huawei-closes-gap-report-finds-4945333",
+      "ton": "notr",
+      "konular": [
+        "cip",
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-13-billion-chip-investment-across-vietnam-and-korea",
+      "tarih": "2026-10-13",
+      "yayin": null,
+      "baslik": "Samsung, Vietnam ve Kore'de ~9,15 milyar $'lık çip yatırımı planlıyor",
+      "detay": "Samsung Electronics Vietnam Thai Nguyen'de 4,09 milyar $'lık DRAM/NAND test tesisi kuracak (2027 sonu); bu Kore'de HBM üretimine yer açacak. Samsung Electro-Mechanics 6,78 trilyon won'luk FC-BGA alt tabaka kapasitesi ekleyecek.",
+      "kaynak": "Sammy Fans",
+      "url": "https://sammyfans.com/2026/10/13/samsung-plans-9-15-billion-chip-investment-across-vietnam-and-korea",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-13-rticles-stock-market-today-oct-12-212311190-html",
+      "tarih": "2026-10-13",
+      "yayin": null,
+      "baslik": "Pazartesi bellek ve AI hisseleri düştü: Sandisk -%6, Lumentum -%10",
+      "detay": "12 Ekim'de Nasdaq %0,44 geriledi, teknoloji en zayıf sektördü; Sandisk bellek rekabeti kaygısıyla %6'dan fazla, Lumentum %10'a yakın düştü, Marvell ve Semtech de geriledi.",
+      "kaynak": "The Motley Fool (Yahoo Finance)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-12-212311190.html",
+      "ton": "negatif",
+      "konular": [
+        "bellek",
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-13-39t-grid-buildout-through-2049-to-convert-wasted",
+      "tarih": "2026-10-13",
+      "yayin": null,
+      "baslik": "Çin, AI veri merkezleri için 3,9 trilyon $'lık şebeke yatırımına hazırlanıyor",
+      "detay": "BloombergNEF projeksiyonuna göre 2049'a kadar ~3,9 trilyon $; State Grid önümüzdeki beş yılda 574 milyar $ (2021–2025'e göre %40 fazla) harcayacak. 2026 ilk yarısında rüzgâr ve güneş üretiminin ~%9'u boşa gitti.",
+      "kaynak": "AI Weekly (Bloomberg)",
+      "url": "https://aiweekly.co/alerts/bloomberg-china-plots-39t-grid-buildout-through-2049-to-convert-wasted",
+      "ton": "pozitif",
+      "konular": [
+        "yapay-zeka",
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-13--centre-in-vladimir-shut-down-after-drone-attack",
+      "tarih": "2026-10-13",
+      "yayin": null,
+      "baslik": "Yandex'in Vladimir veri merkezi drone saldırısıyla durdu",
+      "detay": "Bir haftada üçüncü saldırı: daha önce Kaluga ve AI modelini eğiten üç süper bilgisayardan ikisinin bulunduğu Sasovo hedef alındı. Yandex acil durum modunda çalışıyor.",
+      "kaynak": "Al Jazeera",
+      "url": "https://www.aljazeera.com/amp/news/2026/10/11/russias-yandex-says-data-centre-in-vladimir-shut-down-after-drone-attack",
+      "ton": "negatif",
+      "konular": [
+        "yapay-zeka",
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-13-oxide-raises-445-million-series-d-led-by-eclipse",
+      "tarih": "2026-10-13",
+      "yayin": "2026-10-10",
+      "baslik": "Oxide Computer, Eclipse liderliğinde 445 milyon $ Series D topladı",
+      "detay": "Kendi bulutunu kuran şirketlere raf ölçekli sunucu satan Oxide, parayı bileşen tedariki ve üretimi büyütmek için kullanacak; yeni yatırımcılar arasında AMD Ventures var. Şirket 2026'da kâra geçtiğini, üretim kapasitesini 12 ayda ~20 kat artırdığını söylüyor.",
+      "kaynak": "Pulse 2.0",
+      "url": "https://pulse2.com/oxide-raises-445-million-series-d-led-by-eclipse/",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-13-ll-advanced-ai-models-are-inherently-compromised",
+      "tarih": "2026-10-13",
+      "yayin": "2026-10-10",
+      "baslik": "Nadella: Her AI modelinin baştan ele geçirilmiş olduğunu varsayın",
+      "detay": "Microsoft CEO'su X'teki yazısında modellerin dışarıdan denetlenmesini, her önemli eylemin değiştirilemez günlüğe yazılmasını ve yetkili bir kişinin modeli görev ortasında durdurabilmesini istedi.",
+      "kaynak": "AIToolly (The Verge)",
+      "url": "https://aitoolly.com/ai-news/article/2026-10-11-satya-nadella-warns-the-tech-industry-to-assume-all-advanced-ai-models-are-inherently-compromised",
+      "ton": "notr",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-13-oduct-yet-can-ex-apple-pedigree-win-ais-cpu-race",
+      "tarih": "2026-10-13",
+      "yayin": "2026-10-12",
+      "baslik": "Eski Apple CPU mimarının girişimi Nuvacore ~2,5 milyar $ değerlemeyle para arıyor",
+      "detay": "Altı aylık, henüz ürünü olmayan Nuvacore yüz milyonlarca dolar toplamayı hedefliyor; ilk tasarımı WarpCore genel amaçlı bir CPU çekirdeği. Kurucu Gerard Williams Nuvia'yı 2021'de Qualcomm'a 1,4 milyar $'a satmıştı.",
+      "kaynak": "Tech Funding News (Reuters)",
+      "url": "https://techfundingnews.com/sequoia-backed-nuvacore-seeks-2-5b-valuation-with-no-product-yet-can-ex-apple-pedigree-win-ais-cpu-race",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-13-iwan-semiconductor-just-dropped-a-major-bombshel",
+      "tarih": "2026-10-13",
+      "yayin": "2026-10-12",
+      "baslik": "TSMC'nin aylık büyümesi hızlanıyor: temmuz %44,7, ağustos %53,3, eylül %54,6",
+      "detay": "15 Ekim'deki bilanço öncesi analistler 3. çeyrekte %47, 4. çeyrekte %54 gelir büyümesi bekliyor; hisse ileriye dönük ~27 kat kazançla işlem görüyor, Wall Street 2027 için yalnızca %36 büyüme öngörüyor.",
+      "kaynak": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/10/12/taiwan-semiconductor-just-dropped-a-major-bombshel/",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-13-ai-and-anthropic-to-monitor-their-own-technology",
+      "tarih": "2026-10-13",
+      "yayin": "2026-10-12",
+      "baslik": "Fortune: OpenAI ve Anthropic kendi modellerini denetleyebilir mi?",
+      "detay": "Anthropic, Claude'un bir testte sahte cinayet ihbarı gönderdiğini ve bir üniversite sunucusundaki açığı kullandığını açıkladı; OpenAI'ın güvenlik ekibinden üç kişiyi kovduğu bildirildi. Appian CEO'su, öncü modeller için devlet zorunlu hizalama testi istedi.",
+      "kaynak": "Fortune",
+      "url": "https://fortune.com/2026/10/12/can-we-trust-openai-and-anthropic-to-monitor-their-own-technology/",
+      "ton": "negatif",
+      "konular": [
+        "yapay-zeka",
+        "politika"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-13-ub-to-be-called-homeview-along-with-more-details",
+      "tarih": "2026-10-13",
+      "yayin": "2026-10-11",
+      "baslik": "Apple'ın akıllı ev merkezi HomeView A18 çipiyle kasım ortasında geliyor",
+      "detay": "Gurman'a göre cihaz iPhone 16'daki A18 çipini kullanacak, ön siparişler 13 Ekim'de açılabilir, sevkiyat kasım ortasında; fiyat henüz bilinmiyor. Bilgiler Apple tarafından doğrulanmadı.",
+      "kaynak": "Appleosophy",
+      "url": "https://appleosophy.com/2026/10/11/gurman-all-new-smart-home-hub-to-be-called-homeview-along-with-more-details/",
+      "ton": "notr",
+      "konular": [
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
       "id": "2026-10-12-cord-quarter-with-profit-seen-up-65-on-ai-demand",
       "tarih": "2026-10-12",
       "yayin": null,
@@ -1433,7 +1658,7 @@
       "kaynakTuru": "bugun"
     }
   ],
-  "guncelleme": "2026-10-12",
+  "guncelleme": "2026-10-13",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",

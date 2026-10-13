@@ -1,0 +1,33 @@
+{
+  "ajan": "rapor",
+  "tarih": "2026-10-13",
+  "zaman": "2026-10-13T07:10:10.899Z",
+  "durum": "dikkat",
+  "gunTamam": true,
+  "tazelik": [
+    {
+      "ad": "Bugün sayfası",
+      "tarih": "2026-10-13",
+      "gun": 0
+    },
+    {
+      "ad": "Fiyat verisi",
+      "tarih": "2026-10-13",
+      "gun": 0
+    }
+  ],
+  "otomatikTamamlanan": [],
+  "calisan": [
+    "guvenlik",
+    "iyilestirme",
+    "yenileme",
+    "gelistirme"
+  ],
+  "calismayan": [],
+  "dikkat": [
+    {
+      "seviye": "uyarı",
+      "metin": "Güvenlik: 4 yüksek seviye bağımlılık açığı var."
+    }
+  ]
+}

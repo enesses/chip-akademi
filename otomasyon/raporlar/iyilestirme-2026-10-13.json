@@ -1,0 +1,38 @@
+{
+  "ajan": "iyilestirme",
+  "tarih": "2026-10-13",
+  "zaman": "2026-10-13T07:06:55.928Z",
+  "durum": "tamam",
+  "olcumler": {
+    "veri": {
+      "chipSayisi": 67,
+      "fiyatSayisi": 107
+    },
+    "egitim": {
+      "dersSayisi": 13
+    },
+    "erisim": {
+      "altsiz": 0,
+      "etiketsizDugme": 0
+    },
+    "kod": {
+      "dosyaSayisi": 74,
+      "toplamSatir": 17808,
+      "boyutKB": null
+    }
+  },
+  "bulgular": [
+    {
+      "alan": "kod",
+      "baslik": "4 export hiçbir yerde kullanılmıyor",
+      "etki": "düşük",
+      "otomatik": false,
+      "detay": [
+        "fiyatBilgisi (src/lib/chipScore.js)",
+        "togglePin (src/lib/notes.js)",
+        "resetProgress (src/lib/progress.js)",
+        "getExamResults (src/lib/progress.js)"
+      ]
+    }
+  ]
+}

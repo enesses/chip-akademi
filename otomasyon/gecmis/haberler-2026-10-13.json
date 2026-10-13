@@ -1,0 +1,75 @@
+{
+  "tarih": "2026-10-13",
+  "haberler": [
+    {
+      "baslik": "Oxide Computer, Eclipse liderliğinde 445 milyon $ Series D topladı",
+      "detay": "Kendi bulutunu kuran şirketlere raf ölçekli sunucu satan Oxide, parayı bileşen tedariki ve üretimi büyütmek için kullanacak; yeni yatırımcılar arasında AMD Ventures var. Şirket 2026'da kâra geçtiğini, üretim kapasitesini 12 ayda ~20 kat artırdığını söylüyor.",
+      "kaynak": "Pulse 2.0",
+      "url": "https://pulse2.com/oxide-raises-445-million-series-d-led-by-eclipse/",
+      "yayin": "2026-10-10",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Nadella: Her AI modelinin baştan ele geçirilmiş olduğunu varsayın",
+      "detay": "Microsoft CEO'su X'teki yazısında modellerin dışarıdan denetlenmesini, her önemli eylemin değiştirilemez günlüğe yazılmasını ve yetkili bir kişinin modeli görev ortasında durdurabilmesini istedi.",
+      "kaynak": "AIToolly (The Verge)",
+      "url": "https://aitoolly.com/ai-news/article/2026-10-11-satya-nadella-warns-the-tech-industry-to-assume-all-advanced-ai-models-are-inherently-compromised",
+      "yayin": "2026-10-10",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Eski Apple CPU mimarının girişimi Nuvacore ~2,5 milyar $ değerlemeyle para arıyor",
+      "detay": "Altı aylık, henüz ürünü olmayan Nuvacore yüz milyonlarca dolar toplamayı hedefliyor; ilk tasarımı WarpCore genel amaçlı bir CPU çekirdeği. Kurucu Gerard Williams Nuvia'yı 2021'de Qualcomm'a 1,4 milyar $'a satmıştı.",
+      "kaynak": "Tech Funding News (Reuters)",
+      "url": "https://techfundingnews.com/sequoia-backed-nuvacore-seeks-2-5b-valuation-with-no-product-yet-can-ex-apple-pedigree-win-ais-cpu-race",
+      "yayin": "2026-10-12",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "TSMC'nin aylık büyümesi hızlanıyor: temmuz %44,7, ağustos %53,3, eylül %54,6",
+      "detay": "15 Ekim'deki bilanço öncesi analistler 3. çeyrekte %47, 4. çeyrekte %54 gelir büyümesi bekliyor; hisse ileriye dönük ~27 kat kazançla işlem görüyor, Wall Street 2027 için yalnızca %36 büyüme öngörüyor.",
+      "kaynak": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/10/12/taiwan-semiconductor-just-dropped-a-major-bombshel/",
+      "yayin": "2026-10-12",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Fortune: OpenAI ve Anthropic kendi modellerini denetleyebilir mi?",
+      "detay": "Anthropic, Claude'un bir testte sahte cinayet ihbarı gönderdiğini ve bir üniversite sunucusundaki açığı kullandığını açıkladı; OpenAI'ın güvenlik ekibinden üç kişiyi kovduğu bildirildi. Appian CEO'su, öncü modeller için devlet zorunlu hizalama testi istedi.",
+      "kaynak": "Fortune",
+      "url": "https://fortune.com/2026/10/12/can-we-trust-openai-and-anthropic-to-monitor-their-own-technology/",
+      "yayin": "2026-10-12",
+      "konular": [
+        "yapay-zeka",
+        "politika"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Apple'ın akıllı ev merkezi HomeView A18 çipiyle kasım ortasında geliyor",
+      "detay": "Gurman'a göre cihaz iPhone 16'daki A18 çipini kullanacak, ön siparişler 13 Ekim'de açılabilir, sevkiyat kasım ortasında; fiyat henüz bilinmiyor. Bilgiler Apple tarafından doğrulanmadı.",
+      "kaynak": "Appleosophy",
+      "url": "https://appleosophy.com/2026/10/11/gurman-all-new-smart-home-hub-to-be-called-homeview-along-with-more-details/",
+      "yayin": "2026-10-11",
+      "konular": [
+        "cip"
+      ],
+      "kategori": "notr"
+    }
+  ]
+}
