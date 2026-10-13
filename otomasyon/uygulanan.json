@@ -220,6 +220,26 @@
       "ozet": null,
       "neden": "Kullanıcı onayıyla birleştirildi",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-13",
+      "oneri": "Notlar sayfasına sabitleme (pin) düğmesi",
+      "durum": "acik",
+      "pr": 29,
+      "dal": "otomasyon/oneri-2026-10-13-1",
+      "ozet": "Notlarda Sabitle düğmesi ve listede iğne simgesi; sabitlenenler üstte",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki firebase/grpc-js açıkları yüzünden 'dikkat', onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-13",
+      "oneri": "Seviye sınavında önceki sonuçları göster",
+      "durum": "acik",
+      "pr": 30,
+      "dal": "otomasyon/oneri-2026-10-13-2",
+      "ozet": "Sınav giriş ekranında son 5 deneme: tarih, doğru sayısı, yüzde, seviye",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki firebase/grpc-js açıkları yüzünden 'dikkat', onay bekliyor",
+      "kim": "otomasyon"
     }
   ]
 }

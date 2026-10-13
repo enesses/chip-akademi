@@ -1,7 +1,7 @@
 {
   "ajan": "rapor",
   "tarih": "2026-10-13",
-  "zaman": "2026-10-13T07:10:10.899Z",
+  "zaman": "2026-10-13T07:13:14.177Z",
   "durum": "dikkat",
   "gunTamam": true,
   "tazelik": [
@@ -28,6 +28,11 @@
     {
       "seviye": "uyarı",
       "metin": "Güvenlik: 4 yüksek seviye bağımlılık açığı var."
+    },
+    {
+      "seviye": "dikkat",
+      "tur": "onay",
+      "metin": "2 öneri onay bekliyor (PR #29, PR #30) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ]
 }
