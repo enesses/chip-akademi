@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { Download, Plus, StickyNote, Trash2 } from "lucide-react";
+import { Download, Pin, PinOff, Plus, StickyNote, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { autoTitle, createNote, deleteNote, exportMarkdown, listNotes, updateNote } from "@/lib/notes";
+import { autoTitle, createNote, deleteNote, exportMarkdown, listNotes, togglePin, updateNote } from "@/lib/notes";
 import { dosyaKaydet } from "@/lib/dosyaKaydet";
 
 export default function Notes() {
@@ -45,7 +45,10 @@ export default function Notes() {
               {notes.map((n) => (
                 <button key={n.id} onClick={() => setActiveId(n.id)}
                   className={`w-full text-left rounded-lg px-3 py-2 text-sm ${activeId===n.id ? "bg-primary/10 text-primary" : "hover-elevate"}`}>
-                  {n.title || autoTitle(n.body) || "Başlıksız not"}
+                  <span className="inline-flex items-center gap-1.5">
+                    {n.pinned && <Pin className="h-3 w-3 shrink-0 text-primary" aria-label="Sabitlendi" />}
+                    {n.title || autoTitle(n.body) || "Başlıksız not"}
+                  </span>
                 </button>
               ))}
             </div>
@@ -55,8 +58,14 @@ export default function Notes() {
                   className="bg-transparent font-display font-bold text-lg outline-none mb-3" />
                 <textarea value={active.body} onChange={(e) => guncelle({ body: e.target.value })} placeholder="Yaz…"
                   className="flex-1 min-h-[16rem] bg-transparent outline-none text-sm resize-none" />
-                <Button variant="ghost" className="self-end mt-3 gap-1.5 text-muted-foreground hover:text-red-400"
-                  onClick={() => { deleteNote(active.id); setActiveId(null); refresh(); }}><Trash2 className="h-3.5 w-3.5" />Sil</Button>
+                <div className="self-end mt-3 flex gap-2">
+                  <Button variant="ghost" className="gap-1.5 text-muted-foreground" aria-pressed={!!active.pinned}
+                    onClick={() => { togglePin(active.id); refresh(); }}>
+                    {active.pinned ? <><PinOff className="h-3.5 w-3.5" />Sabitlemeyi kaldır</> : <><Pin className="h-3.5 w-3.5" />Sabitle</>}
+                  </Button>
+                  <Button variant="ghost" className="gap-1.5 text-muted-foreground hover:text-red-400"
+                    onClick={() => { deleteNote(active.id); setActiveId(null); refresh(); }}><Trash2 className="h-3.5 w-3.5" />Sil</Button>
+                </div>
               </div>
             )}
           </div>
