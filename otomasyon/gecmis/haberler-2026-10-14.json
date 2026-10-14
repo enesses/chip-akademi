@@ -1,0 +1,87 @@
+{
+  "tarih": "2026-10-14",
+  "haberler": [
+    {
+      "baslik": "Mirae'nin en başarılı %1'lik yatırımcıları SK hynix'i geri alıyor",
+      "detay": "Kospi 13 Ekim'i %5,46 düşüşle 6.035,35'te kapattı. 14 Ekim sabahı SK hynix %2,08 artıyla 1,473 milyon won'dan işlem görürken en çok net alım yapılan hisse oldu.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/10/14/koreas-top-1-percent-traders-buy-back-sk-hynix-despite",
+      "yayin": "2026-10-14",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Musk: Micron bellek fiyatında makul, diğerleri 'fahiş' davrandı",
+      "detay": "Elon Musk X'te Micron'un gelecekteki DRAM/HBM fiyatlamasını uzun vadeli müşteri sadakati için akıllıca buldu; diğer tedarikçileri adını vermeden eleştirdi. Micron mali 2027 üretiminin %75'inden fazlasını 26 uzun vadeli anlaşmayla bağlamış durumda.",
+      "kaynak": "SammyFans",
+      "url": "https://sammyfans.com/2026/10/13/elon-musk-warning-samsung-and-sk-hynix-over-dram-and-hbm-pricing",
+      "yayin": "2026-10-13",
+      "konular": [
+        "bellek"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "TrendForce: DRAM piyasası 'çok sıkı', bit arzı sunuculara kayıyor",
+      "detay": "TrendForce'un haftalık raporuna göre DRAM sıkılığı 20 haftadır sürüyor (dengeli piyasada 8 hafta); HDD teslim süresi 50 hafta. Samsung'un 3. çeyrek ön işletme kârı 107,4 trilyon won (yıllık +%782,5).",
+      "kaynak": "TrendForce Insights",
+      "url": "https://insights.trendforce.com/p/weekly-radar-005",
+      "yayin": "2026-10-12",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Enerflex bir veri merkezine 1 GW'ın üzerinde gaz santrali sağlayacak",
+      "detay": "Kuzey Amerika'daki büyük bir veri merkezi için sayaç arkası doğal gaz santrali; şirketin veri merkezi gücü siparişleri 1,75 GW'ı aştı, teslimatlar 2028'e kadar sürecek.",
+      "kaynak": "TipRanks",
+      "url": "https://tipranks.com/news/company-announcements/enerflex-wins-gigawatt-scale-data-center-power-deal-lifts-backlog-beyond-1-75-gw",
+      "yayin": "2026-10-13",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Malezya: ABD'ye çip ihracatı tarifeden muaf kalıyor",
+      "detay": "Ticaret Bakanı Johari Abdul Ghani, Washington'dan Malezya yarı iletkenlerine tarife işareti gelmediğini söyledi. Section 301 görüşmelerinde 'aşırı kapasite' başlığı henüz kapanmadı.",
+      "kaynak": "Malay Mail (Bernama)",
+      "url": "https://malaymail.com/news/malaysia/2026/10/13/malaysias-semiconductor-exports-remain-exempt-from-us-tariffs-says-johari-ghani/238938",
+      "yayin": "2026-10-13",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "İngiltere AI Güvenlik Enstitüsü öncü modelleri yayından önce test etmeye devam edecek",
+      "detay": "AI bakanı Kanishka Narayan, ABD ile çalışarak OpenAI ve Anthropic modellerine erişimin korunduğunu söyledi; geçen ay Beyaz Saray bu şirketlerden yeni modelleri önce ABD'ye göstermelerini istemişti.",
+      "kaynak": "The Next Web",
+      "url": "https://thenextweb.com/news/uk-ai-security-institute-pre-release-access-openai-anthropic",
+      "yayin": "2026-10-12",
+      "konular": [
+        "yapay-zeka",
+        "politika"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Character.AI Chapter 11 iflas başvurusu yaptı",
+      "detay": "Şirketin varlık ve borçları 50–100 milyon $ aralığında gösterildi; Disney 20 milyon $'lık teklif verdi. Aynı gün IMF, AI yatırımlarında gerileme olursa küresel çıktının 2028'de temel senaryonun %1,1 altına inebileceği uyarısında bulundu.",
+      "kaynak": "Fox News",
+      "url": "https://foxnews.com/live-news/ai-news-anthropic-frontier-models-safety-10-13",
+      "yayin": "2026-10-13",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    }
+  ]
+}

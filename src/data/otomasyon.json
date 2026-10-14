@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-13T07:13:14.176Z",
-  "tarih": "2026-10-13",
+  "guncelleme": "2026-10-14T07:02:04.759Z",
+  "tarih": "2026-10-14",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "dikkat",
-      "zaman": "2026-10-13T07:06:55.754Z"
+      "zaman": "2026-10-14T07:00:24.194Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-13T07:06:55.928Z"
+      "zaman": "2026-10-14T07:00:24.359Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-13T07:10:10.802Z"
+      "zaman": "2026-10-14T07:00:22.083Z"
     },
     {
       "id": "gelistirme",
@@ -33,7 +33,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-13T07:07:12.513Z"
+      "zaman": "2026-10-14T07:00:40.921Z"
     }
   ],
   "dikkat": [
@@ -49,58 +49,37 @@
   ],
   "oneriler": [
     {
-      "baslik": "Notlar sayfasına sabitleme (pin) düğmesi",
-      "neden": "src/lib/notes.js'te togglePin ve sabitlenenleri üste alan sortNotes var, ama src/pages/Notes.jsx bunları hiç kullanmıyor; iyileştirme ajanı togglePin'i kullanılmayan export olarak raporladı (iyilestirme-2026-10-13).",
-      "etki": "düşük",
-      "alan": "arayüz"
-    },
-    {
-      "baslik": "Seviye sınavında önceki sonuçları göster",
-      "neden": "progress.js saveExamResult her sınavı (son 10) kaydediyor ama getExamResults hiçbir yerde okunmuyor (iyilestirme-2026-10-13: kullanılmayan export); kullanıcı ilerlemesini göremiyor. Exam.jsx giriş ekranına son denemeler listesi eklenebilir.",
-      "etki": "orta",
-      "alan": "arayüz"
-    },
-    {
-      "baslik": "@grpc/grpc-js açığını package.json overrides ile kapat",
-      "neden": "Güvenlik ajanı 4 yüksek açık raporladı (guvenlik-2026-10-13): firebase@11.10.0 → @firebase/firestore@4.8.0 → @grpc/grpc-js@1.9.16 (GHSA-m9gg-hp2v-232j, GHSA-f596-whhp-79r4). npm audit fix yalnızca firebase'i 9.14'e düşürmeyi öneriyor; \"overrides\": {\"@grpc/grpc-js\": \"^1.14.6\"} daha güvenli yol. package.json korunduğu için elle onay gerekir.",
-      "etki": "orta",
+      "baslik": "@grpc/grpc-js'i npm overrides ile ≥1.13.6'ya yükselt",
+      "neden": "guvenlik-2026-10-14.json: 4 yüksek açık; firebase@11.10.0 → @firebase/firestore@4.8.0 → @grpc/grpc-js@1.9.16 (GHSA-m9gg-hp2v-232j, <1.13.6). Firestore'un en son sürümü de ~1.9.0 sabitliyor, bu yüzden firebase yükseltmesi çözmüyor. Bu açık 13 Ekim'de iki önerinin (PR #29, #30) otomatik birleşmesini engelledi.",
+      "etki": "yüksek",
       "alan": "güvenlik"
     },
     {
-      "baslik": "Kiralama tablosunda elle doğrulanmış büyük sıçramaları işaretle",
-      "neden": "Bugün AMD MI300X medyanı 2.89 → 4.41 (+%52,6) üç okumayla doğrulanıp yazıldı; gpu_kiralama.json'da bu bilgi tutulmuyor, kullanıcı sıçramanın veri hatası mı gerçek mi olduğunu ayırt edemiyor. veri-isle.mjs (korunan) satıra 'dogrulandi' bayrağı yazmalı, Prices.jsx rozet göstermeli.",
-      "etki": "düşük",
-      "alan": "veri"
-    },
-    {
-      "baslik": "progress.js'te kullanılmayan resetProgress için Hesabım'a 'ilerlemeyi sıfırla' düğmesi",
-      "neden": "resetProgress (src/lib/progress.js:42) hiçbir yerde çağrılmıyor; Hesabim.jsx'te ilerleme sıfırlama seçeneği yok. Onay iletişim kutusuyla eklenebilir ya da export kaldırılabilir.",
+      "baslik": "Eğitim sayfasına 'ilerlemeyi sıfırla' düğmesi",
+      "neden": "iyilestirme-2026-10-14.json: resetProgress (src/lib/progress.js:42) hiçbir yerde kullanılmıyor; Learn.jsx ilerlemeyi gösteriyor ama sıfırlama yolu yok.",
       "etki": "düşük",
       "alan": "arayüz"
-    }
-  ],
-  "uygulanan": [
-    {
-      "tarih": "2026-10-13",
-      "oneri": "Notlar sayfasına sabitleme (pin) düğmesi",
-      "durum": "acik",
-      "pr": 29,
-      "dal": "otomasyon/oneri-2026-10-13-1",
-      "ozet": "Notlarda Sabitle düğmesi ve listede iğne simgesi; sabitlenenler üstte",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki firebase/grpc-js açıkları yüzünden 'dikkat', onay bekliyor",
-      "kim": "otomasyon"
     },
     {
-      "tarih": "2026-10-13",
-      "oneri": "Seviye sınavında önceki sonuçları göster",
-      "durum": "acik",
-      "pr": 30,
-      "dal": "otomasyon/oneri-2026-10-13-2",
-      "ozet": "Sınav giriş ekranında son 5 deneme: tarih, doğru sayısı, yüzde, seviye",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki firebase/grpc-js açıkları yüzünden 'dikkat', onay bekliyor",
-      "kim": "otomasyon"
+      "baslik": "Çip detayında kiralama fiyatının son değişimini göster",
+      "neden": "gpu_kiralama.json'da kataloğa bağlı 29 satırın degisim_pct değeri var (bugün V100 +%116, A40 +%37) ama ChipDetail.jsx:193 yalnızca $/saat gösteriyor; değişim yalnızca Fiyatlar sayfasında görünüyor.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Kullanılmayan fiyatBilgisi export'unu kaldır",
+      "neden": "src/lib/chipScore.js:566 fiyatBilgisi hiçbir yerde içe aktarılmıyor; ChipDetail fiyatı maliyet puanı üzerinden alıyor. iyilestirme raporundaki 4 kullanılmayan export'tan biri (togglePin ve getExamResults açık PR #29/#30'da bağlanıyor).",
+      "etki": "düşük",
+      "alan": "kod"
+    },
+    {
+      "baslik": "Bellek fiyatları için TrendForce'a ikincil kaynak yolu",
+      "neden": "Bellek verisi 11 gündür güncel değil (iyilestirme raporu); trendforce.com/presscenter zamanlanmış görevde PROVENANCE_REQUIRED ile reddediliyor (durum-2026-10-13/14). GUNLUK.md 2b ikincil kaynağa izin veriyor ama arama üzerinden ulaşma yolu (1. adımdaki gibi) tarif edilmemiş.",
+      "etki": "orta",
+      "alan": "veri"
     }
   ],
+  "uygulanan": [],
   "uygulananSon": [
     {
       "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
@@ -330,6 +309,13 @@
     },
     "bulgular": [
       {
+        "alan": "veri",
+        "baslik": "Bellek fiyatları 11 gündür güncellenmedi",
+        "etki": "düşük",
+        "otomatik": false,
+        "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
+      },
+      {
         "alan": "kod",
         "baslik": "4 export hiçbir yerde kullanılmıyor",
         "etki": "düşük",
@@ -349,22 +335,22 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 92 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu), 1 büyük oynama elle doğrulandı"
+        "detay": "bu çalıştırmada güncellendi — 92 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu), 3 büyük oynama elle doğrulandı"
       },
       {
         "ad": "Elle doğrulanan fiyat",
         "durum": "ok",
-        "detay": "AMD MI300X: 2.89 → 4.41 (üç ayrı okuma: medyan 4.41, en düşük 2.59 (DigitalOcean), 11 sağlayıcı) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
+        "detay": "Nvidia V100: 0.99 → 2.14 (üç okuma: medyan 2.14, en düşük 0.14, 19 sağlayıcı); Nvidia A5000: 0.75 → 1.31 (üç okuma: medyan 1.31, en düşük 0.16, 11 sağlayıcı); Nvidia A4000: 0.21 → 0.76 (üç okuma: medyan 0.76, en düşük 0.11, 11 sağlayıcı) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 41, 3 yaklaşan olay; haber akışına +9"
+        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 63, 1 yaklaşan olay; haber akışına +8"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+6 haber (akışta 109); bugün toplam 15"
+        "detay": "+7 haber (akışta 124); bugün toplam 15"
       },
       {
         "ad": "Derleme",
@@ -374,7 +360,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2284 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2293 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -459,7 +445,12 @@
     {
       "tarih": "2026-10-13",
       "durum": "dikkat",
-      "dikkat": 1
+      "dikkat": 2
+    },
+    {
+      "tarih": "2026-10-14",
+      "durum": "dikkat",
+      "dikkat": 2
     }
   ]
 }

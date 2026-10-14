@@ -1,0 +1,38 @@
+{
+  "ajan": "yenileme",
+  "tarih": "2026-10-14",
+  "zaman": "2026-10-14T07:00:22.083Z",
+  "durum": "ok",
+  "adimlar": [
+    {
+      "ad": "Fiyat verisi",
+      "durum": "ok",
+      "detay": "bu çalıştırmada güncellendi — 92 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu), 3 büyük oynama elle doğrulandı"
+    },
+    {
+      "ad": "Elle doğrulanan fiyat",
+      "durum": "ok",
+      "detay": "Nvidia V100: 0.99 → 2.14 (üç okuma: medyan 2.14, en düşük 0.14, 19 sağlayıcı); Nvidia A5000: 0.75 → 1.31 (üç okuma: medyan 1.31, en düşük 0.16, 11 sağlayıcı); Nvidia A4000: 0.21 → 0.76 (üç okuma: medyan 0.76, en düşük 0.11, 11 sağlayıcı) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
+    },
+    {
+      "ad": "Bugün sayfası",
+      "durum": "ok",
+      "detay": "bu çalıştırmada güncellendi — 8 madde, puan 63, 1 yaklaşan olay; haber akışına +8"
+    },
+    {
+      "ad": "Haber akışı",
+      "durum": "ok",
+      "detay": "+7 haber (akışta 124); bugün toplam 15"
+    },
+    {
+      "ad": "Derleme",
+      "durum": "ok",
+      "detay": "başarılı"
+    },
+    {
+      "ad": "Tek dosya",
+      "durum": "ok",
+      "detay": "17 görsel, HTML: 2293 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+    }
+  ]
+}

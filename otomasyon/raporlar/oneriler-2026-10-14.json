@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-10-14",
+  "oneriler": [
+    {
+      "baslik": "@grpc/grpc-js'i npm overrides ile ≥1.13.6'ya yükselt",
+      "neden": "guvenlik-2026-10-14.json: 4 yüksek açık; firebase@11.10.0 → @firebase/firestore@4.8.0 → @grpc/grpc-js@1.9.16 (GHSA-m9gg-hp2v-232j, <1.13.6). Firestore'un en son sürümü de ~1.9.0 sabitliyor, bu yüzden firebase yükseltmesi çözmüyor. Bu açık 13 Ekim'de iki önerinin (PR #29, #30) otomatik birleşmesini engelledi.",
+      "etki": "yüksek",
+      "alan": "güvenlik"
+    },
+    {
+      "baslik": "Eğitim sayfasına 'ilerlemeyi sıfırla' düğmesi",
+      "neden": "iyilestirme-2026-10-14.json: resetProgress (src/lib/progress.js:42) hiçbir yerde kullanılmıyor; Learn.jsx ilerlemeyi gösteriyor ama sıfırlama yolu yok.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Çip detayında kiralama fiyatının son değişimini göster",
+      "neden": "gpu_kiralama.json'da kataloğa bağlı 29 satırın degisim_pct değeri var (bugün V100 +%116, A40 +%37) ama ChipDetail.jsx:193 yalnızca $/saat gösteriyor; değişim yalnızca Fiyatlar sayfasında görünüyor.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Kullanılmayan fiyatBilgisi export'unu kaldır",
+      "neden": "src/lib/chipScore.js:566 fiyatBilgisi hiçbir yerde içe aktarılmıyor; ChipDetail fiyatı maliyet puanı üzerinden alıyor. iyilestirme raporundaki 4 kullanılmayan export'tan biri (togglePin ve getExamResults açık PR #29/#30'da bağlanıyor).",
+      "etki": "düşük",
+      "alan": "kod"
+    },
+    {
+      "baslik": "Bellek fiyatları için TrendForce'a ikincil kaynak yolu",
+      "neden": "Bellek verisi 11 gündür güncel değil (iyilestirme raporu); trendforce.com/presscenter zamanlanmış görevde PROVENANCE_REQUIRED ile reddediliyor (durum-2026-10-13/14). GUNLUK.md 2b ikincil kaynağa izin veriyor ama arama üzerinden ulaşma yolu (1. adımdaki gibi) tarif edilmemiş.",
+      "etki": "orta",
+      "alan": "veri"
+    }
+  ]
+}
