@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-14T07:02:04.759Z",
+  "guncelleme": "2026-10-14T07:05:10.603Z",
   "tarih": "2026-10-14",
   "durum": "dikkat",
   "ajanlar": [
@@ -44,7 +44,7 @@
     {
       "seviye": "dikkat",
       "tur": "onay",
-      "metin": "2 öneri onay bekliyor (PR #29, PR #30) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+      "metin": "5 öneri onay bekliyor (PR #29, PR #30, PR #31, PR #32, PR #33) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
   "oneriler": [
@@ -79,7 +79,38 @@
       "alan": "veri"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-10-14",
+      "oneri": "@grpc/grpc-js'i npm overrides ile ≥1.13.6'ya yükselt",
+      "durum": "acik",
+      "pr": 31,
+      "dal": "otomasyon/duzeltme-2026-10-14",
+      "ozet": "package.json'a overrides eklendi; grpc-js 1.9.16 → 1.14.6, güvenlik taraması temiz",
+      "neden": "Korunan dosya (package.json, package-lock.json); testler 32/32 geçti, kullanıcı onayı gerekiyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-14",
+      "oneri": "Eğitim sayfasına 'ilerlemeyi sıfırla' düğmesi",
+      "durum": "acik",
+      "pr": 32,
+      "dal": "otomasyon/oneri-2026-10-14-1",
+      "ozet": "Learn.jsx'e onaylı 'İlerlemeyi sıfırla' düğmesi; resetProgress bağlandı",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-14",
+      "oneri": "Çip detayında kiralama fiyatının son değişimini göster",
+      "durum": "acik",
+      "pr": 33,
+      "dal": "otomasyon/oneri-2026-10-14-2",
+      "ozet": "Maliyet kartı alt yazısında önceki ölçüme göre değişim (≥3 sağlayıcı)",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
@@ -248,6 +279,27 @@
       "pr": 30,
       "tarih": "2026-10-13",
       "kim": "otomasyon"
+    },
+    {
+      "oneri": "@grpc/grpc-js'i npm overrides ile ≥1.13.6'ya yükselt",
+      "durum": "acik",
+      "pr": 31,
+      "tarih": "2026-10-14",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Eğitim sayfasına 'ilerlemeyi sıfırla' düğmesi",
+      "durum": "acik",
+      "pr": 32,
+      "tarih": "2026-10-14",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Çip detayında kiralama fiyatının son değişimini göster",
+      "durum": "acik",
+      "pr": 33,
+      "tarih": "2026-10-14",
+      "kim": "otomasyon"
     }
   ],
   "onayBekleyen": [
@@ -264,6 +316,27 @@
       "tarih": "2026-10-13",
       "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki firebase/grpc-js açıkları yüzünden 'dikkat', onay bekliyor",
       "dal": "otomasyon/oneri-2026-10-13-2"
+    },
+    {
+      "pr": 31,
+      "oneri": "@grpc/grpc-js'i npm overrides ile ≥1.13.6'ya yükselt",
+      "tarih": "2026-10-14",
+      "neden": "Korunan dosya (package.json, package-lock.json); testler 32/32 geçti, kullanıcı onayı gerekiyor",
+      "dal": "otomasyon/duzeltme-2026-10-14"
+    },
+    {
+      "pr": 32,
+      "oneri": "Eğitim sayfasına 'ilerlemeyi sıfırla' düğmesi",
+      "tarih": "2026-10-14",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "dal": "otomasyon/oneri-2026-10-14-1"
+    },
+    {
+      "pr": 33,
+      "oneri": "Çip detayında kiralama fiyatının son değişimini göster",
+      "tarih": "2026-10-14",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "dal": "otomasyon/oneri-2026-10-14-2"
     }
   ],
   "guvenlik": {

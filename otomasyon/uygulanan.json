@@ -240,6 +240,36 @@
       "ozet": "Sınav giriş ekranında son 5 deneme: tarih, doğru sayısı, yüzde, seviye",
       "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki firebase/grpc-js açıkları yüzünden 'dikkat', onay bekliyor",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-14",
+      "oneri": "@grpc/grpc-js'i npm overrides ile ≥1.13.6'ya yükselt",
+      "durum": "acik",
+      "pr": 31,
+      "dal": "otomasyon/duzeltme-2026-10-14",
+      "ozet": "package.json'a overrides eklendi; grpc-js 1.9.16 → 1.14.6, güvenlik taraması temiz",
+      "neden": "Korunan dosya (package.json, package-lock.json); testler 32/32 geçti, kullanıcı onayı gerekiyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-14",
+      "oneri": "Eğitim sayfasına 'ilerlemeyi sıfırla' düğmesi",
+      "durum": "acik",
+      "pr": 32,
+      "dal": "otomasyon/oneri-2026-10-14-1",
+      "ozet": "Learn.jsx'e onaylı 'İlerlemeyi sıfırla' düğmesi; resetProgress bağlandı",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-14",
+      "oneri": "Çip detayında kiralama fiyatının son değişimini göster",
+      "durum": "acik",
+      "pr": 33,
+      "dal": "otomasyon/oneri-2026-10-14-2",
+      "ozet": "Maliyet kartı alt yazısında önceki ölçüme göre değişim (≥3 sağlayıcı)",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "kim": "otomasyon"
     }
   ]
 }
