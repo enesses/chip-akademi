@@ -1,97 +1,109 @@
 {
-  "tarih": "2026-10-14",
-  "derlenme": "14 Ekim 2026",
+  "tarih": "2026-10-18",
+  "derlenme": "18 Ekim 2026",
   "ozet": [
-    "Günün ana teması, Kore'deki çip çöküşünün ertesinde talebin hâlâ güçlü olduğunu gösteren veriler. ASML 3. çeyrekte 11,7 milyar € satış ve 5,0 milyar € net kâr açıkladı, 4. çeyrek için 14,2–15,2 milyar € satış öngördü. Litografi tarafındaki bu tablo, yapay zekâ çiplerine yönelik fabrika yatırımlarının yavaşlamadığını gösteriyor.",
-    "Öte yandan satışın kaynağı netleşti: Çinli CXMT'nin yoğunluğu artıran 4F² DRAM hücre tasarımında ilerleme bildirmesi SK hynix'i %10, Samsung'u %7,4 düşürdü, Micron'u da açılış öncesinde %3,7 geriletti. Counterpoint'e göre CXMT'nin küresel DRAM payı bir yılda %4'ten %10'a çıktı. Analistler bunu fiyatlama gücüne orta vadeli bir risk olarak görüyor, ani bir kâr şoku olarak değil.",
-    "ABD'de Philadelphia Yarı İletken Endeksi gün içinde %2'nin üzerinde düştü; Intel ve AMD de geriledi. Yükselen tahvil faizleri veri merkezi finansmanını pahalılaştırıyor; Intel CEO'su Lip-Bu Tan da en büyük zorluğun sermaye ve sermayenin maliyeti olduğunu söyledi. Buna karşın Nvidia günü %0,97 artıda kapattı ve Kore hisseleri çarşamba sabahı toparlanmaya başladı.",
-    "Kapasite tarafında haberler olumlu: TSMC'nin 2nm kapasitesinin 2026 sonunda ayda ~120 bin wafer'a ulaşarak 2027 hedefini bir yıl erken yakalayabileceği bildiriliyor. AMD'nin Fermi'nin 222 MW'lık Teksas kampüsüne kredi desteği vermesi de çip tedarikçilerinin veri merkezi finansmanına doğrudan girdiğini gösteriyor. Yarın TSMC'nin 3. çeyrek sonuçları sektör için bir sonraki sınav olacak."
+    "Haftanın son iki günü yarı iletken hisselerinde sert bir satışla geçti. Philadelphia Yarı İletken Endeksi (SOX) Cuma günü %3,83 düştü ve endeksteki 30 hissenin tamamı ekside kapandı; endeks 6 Ekim'den bu yana yaklaşık %14 geriledi. AMD %5,95, Arm %6,94, Intel %5,79 kaybetti; Nvidia %1,43 ile görece sınırlı düştü.",
+    "Satışın merkezinde talep değil finansman var. Borçla büyüyen bulut sağlayıcısı CoreWeave'in hissesi haftada yaklaşık %25 kaybetti, 2031 vadeli tahvilinin getirisi %16'yı aştı ve borç sigortası maliyeti rekor kırdı. Beklenenden yüksek enflasyon faiz artışı korkusunu büyüttü; yatırımcılar yapay zekâ altyapısının borçla finanse edilmesinin sürdürülebilirliğini sorguluyor.",
+    "Öte yandan sektörün temel verileri güçlü kalmaya devam ediyor. TSMC CEO'su C.C. Wei yapay zekâ çip talebinin hâlâ şirketin arz kapasitesinin 'çok üstünde' olduğunu ve yavaşlama işareti görmediklerini söyledi; dördüncü çeyrek için 52,3–54,3 milyar dolar gelir öngördü. Microsoft'un Indiana'da 1,1 GW'lık 20 yıllık güç anlaşması ve Digital Realty'nin 1 GW'lık yeni kampüs planı, veri merkezi yatırımlarının sürdüğünü gösteriyor.",
+    "Politika cephesinde Çin, açık ağırlıklı yapay zekâ modelleri dahil yaklaşık 40 teknolojiyi ihracat kısıt kataloğuna eklemeyi önerdi. Bellek tarafında Samsung'un, Nvidia'nın yeni nesil özel HBM'inin taban yongasını TSMC'nin 3 nm sürecinde ürettireceği bildiriliyor."
   ],
   "puan": {
-    "etiket": "Satış sonrası temkinli toparlanma",
-    "yorum": "ASML'nin güçlü çeyreği, TSMC'nin 2nm kapasite artışı ve Kore'deki toparlanma talebin sürdüğünü gösteriyor; CXMT'nin bellek ilerlemesi ve finansman maliyetine dair kaygılar ise tonu dengeliyor.",
-    "deger": 63
+    "etiket": "Finansman kaygısı güçlü talebi gölgeledi",
+    "yorum": "TSMC'nin talep yorumu ve yeni güç/veri merkezi anlaşmaları temeli destekliyor; ancak CoreWeave'in borç sıkıntısı ve faiz korkusu çip hisselerinde haftayı geniş çaplı bir satışla kapattırdı.",
+    "deger": 44
   },
   "maddeler": [
     {
-      "baslik": "ASML 3. çeyrekte 11,7 milyar € satış, 5,0 milyar € net kâr açıkladı",
-      "detay": "Brüt marj %57,5. Şirket 4. çeyrek için 14,2–15,2 milyar € satış ve ~%57 brüt marj, 2026 tamamı için 44–45 milyar € satış öngörüyor.",
-      "kategori": "pozitif",
-      "agirlik": 3,
-      "neden": "Çip üretim ekipmanının tek EUV tedarikçisinde güçlü çeyrek ve yüksek 4. çeyrek beklentisi, fabrika yatırımlarının hızlandığını gösteriyor.",
-      "kaynak": "ASML (GlobeNewswire)",
-      "url": "https://www.globenewswire.com/news-release/2026/10/14/3380319/0/en/asml-reports-11-7-billion-total-net-sales-and-5-0-billion-net-income-in-q3-2026.html"
-    },
-    {
-      "baslik": "CXMT'nin 4F² DRAM ilerlemesi bellek hisselerini vurdu",
-      "detay": "Çinli CXMT'nin daha küçük alanda daha çok veri saklayan 4F² hücre tasarımında ilerleme bildirmesiyle SK hynix %10, Samsung %7,4 düştü; Micron ABD'de açılış öncesinde %3,7 geriledi.",
+      "baslik": "SOX Cuma günü %3,83 düştü, endeksin 30 hissesi de ekside",
+      "detay": "16 Ekim'de AMD %5,95 düşüşle 528,75 $'a indi (6 Ekim zirvesinin ~%20 altında); Arm %6,94, Intel %5,79, Micron %5,63, Marvell %5,56 geriledi. Nvidia %1,43 ile 214,13 $. Nasdaq haftayı ~%4,5 kayıpla kapattı.",
       "kategori": "negatif",
       "agirlik": 3,
-      "neden": "Yerleşik bellek üreticilerinin teknoloji üstünlüğüne ve fiyatlama gücüne doğrudan meydan okuma.",
-      "kaynak": "Digital Today",
-      "url": "https://www.digitaltoday.co.kr/en/view/114466/chinas-cxmt-advances-next-generation-dram-design-sending-global-memory-stocks-lower"
+      "neden": "Sektör geneline yayılan, tek tek şirket haberine dayanmayan geniş satış; yatırımcı risk iştahında belirgin düşüş.",
+      "kaynak": "FinanceFeeds",
+      "url": "https://financefeeds.com/amd-stock-falls-as-every-stock-in-the-chip-index-drops-is-the-ai-debt-scare-now-a-chip-problem/"
     },
     {
-      "baslik": "ABD'de çip satışı: SOX %2'nin üzerinde düştü, Intel ve AMD geriledi",
-      "detay": "Intel ~%1,4, AMD ~%1 düştü. Counterpoint'e göre CXMT'nin DRAM payı 2. çeyrekte %10'a çıktı (bir yıl önce %4). Yükselen tahvil faizleri veri merkezi finansmanını pahalılaştırıyor; BlackRock ABD hisse görünümünü nötre indirdi.",
+      "baslik": "Çip endeksi 6 Ekim'den bu yana ~%14 geriledi",
+      "detay": "Endeks 16 Ekim'de sekizinci günlük kaybına yöneldi. Makale, Nvidia'nın Ocak 2029'a kadar 250 milyar $'ı aşan tedarik taahhüdünü ve Micron'un 2030'a kadar 32 milyar $'lık 'al ya da öde' sözleşmelerini, riskin tedarikçiden müşteriye kaydığına örnek gösteriyor.",
       "kategori": "negatif",
       "agirlik": 2,
-      "neden": "Satış Kore'den ABD'ye yayıldı; sermaye maliyeti AI yatırımları için yeni bir fren olarak öne çıkıyor.",
-      "kaynak": "Invezz",
-      "url": "https://invezz.com/news/2026/10/13/why-are-intel-and-amd-stocks-falling-on-tuesday/"
+      "neden": "Uzun vadeli sözleşmelerin talep düşüşünde müşteriyi zora sokabileceği endişesi, yatırım döngüsünün dayanıklılığını sorgulatıyor.",
+      "kaynak": "TokenPost",
+      "url": "https://www.tokenpost.com/news/investing/33948"
     },
     {
-      "baslik": "Kore çip hisseleri toparlanıyor: Samsung ~%3, SK hynix ~%2 yukarıda",
-      "detay": "Yabancılar 13 Ekim'de iki hisseden toplam 3,72 trilyon won sattı. KB Securities'e göre hisseler ~3 kat kâr ve 1,4 kat defter değeriyle aşırı karamsarlık dönemlerine yakın fiyatlanıyor.",
+      "baslik": "CoreWeave'in hissesi haftada ~%25 düştü, tahvil getirisi %16'yı aştı",
+      "detay": "Hisse Cuma %11'den fazla, Çarşamba %15,5 düştü. Ekim 2031 vadeli tahvilin getirisi Perşembe kısa süre %16'nın üzerine çıktı; borç sigortası maliyeti 1.000 baz puanı aşarak rekor kırdı. Nebius %10, Applied Digital ve IREN %9 geriledi. Şirketin borcu ~50 milyar $.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "GPU bulutlarının borçla finansmanında zorlanma, sunucu ve çip alımlarının yavaşlayabileceği riskini doğuruyor.",
+      "kaynak": "Reuters (KSL)",
+      "url": "https://www.ksl.com/article/51637172/coreweave-shares-bonds-headed-for-steep-weekly-losses-as-ai-borrowing-concerns-mount"
+    },
+    {
+      "baslik": "TSMC: yapay zekâ çip talebi arzımızın 'çok üstünde'",
+      "detay": "3. çeyrek geliri 46,7 milyar $ (beklenti 44,6–45,8). Yüksek performanslı hesaplama gelirin %68'i. 4. çeyrek rehberi 52,3–54,3 milyar $; 2026 dolar bazlı büyüme tahmini ~%44'e yükseltildi. CEO C.C. Wei: 'yavaşlama işareti görmedik'.",
       "kategori": "pozitif",
-      "agirlik": 1,
-      "neden": "Satışın iş zayıflığından çok yabancı satışından kaynaklandığı görüşü ve hızlı alım ilgisi.",
-      "kaynak": "Invezz",
-      "url": "https://invezz.com/news/2026/10/14/samsung-sk-hynix-snap-back-after-3-7t-won-sell-off-why-buyers-are-rushing-back/"
+      "agirlik": 3,
+      "neden": "Dünyanın en büyük dökümhanesinin talep yorumu ve yükseltilen rehberi, satışa rağmen siparişlerin güçlü olduğunu gösteriyor.",
+      "kaynak": "The Motley Fool",
+      "url": "https://fool.com/investing/2026/10/16/tsmc-says-ai-chip-demand-is-still-far-above-what-it-can-supply-that-s-why-i-d-buy-nvidia-stock"
     },
     {
-      "baslik": "TSMC 2nm kapasitesi 2026 sonunda ayda ~120 bin wafer'a çıkabilir",
-      "detay": "UDN'ye dayanan habere göre bu, önceki 100 bin tahmininin ~%20 üzerinde ve 2027 hedefini bir yıl erken yakalamak anlamına geliyor. Talebi Nvidia, AMD, Apple ve Qualcomm siparişleri sürüklüyor.",
+      "baslik": "Microsoft, NiSource ile 1.100 MW'lık 20 yıllık güç anlaşması imzaladı",
+      "detay": "Indiana'daki veri merkezi kampüsü için; enerji 2028'de başlıyor, anlaşma 2048'e kadar sürüyor. Üretim ve iletim altyapısının tamamını Microsoft ödüyor. NiSource'un Alphabet ve Amazon ile de anlaşmaları var.",
       "kategori": "pozitif",
       "agirlik": 2,
-      "neden": "En ileri üretim düğümünde talep ve kapasitenin beklenenden hızlı büyümesi.",
-      "kaynak": "Wccftech (UDN)",
-      "url": "https://wccftech.com/tsmc-could-hit-its-2027-2nm-capacity-goals-a-year-early-as-nvidia-amd-and-apple-pile-on-orders-for-latest-chipmaking-tech/"
+      "neden": "Hiperölçekli bir bulut şirketinin uzun vadeli enerji taahhüdü, veri merkezi yatırımlarının sürdüğünü gösteriyor.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/energy/articles/microsoft-signs-1-100-mw-163619326.html"
     },
     {
-      "baslik": "AMD, Fermi'nin 222 MW'lık Teksas kampüsüne kredi desteği verdi",
-      "detay": "Project Matador 1. fazında kiracı TensorWave; 15 yıllık kira ~6,5 milyar $ gelir öngörüyor, teslimat 2027'nin ikinci yarısında. Ortaklık 650 MW'a kadar ek kapasite içeriyor; Fermi hissesi ~%11 yükseldi.",
+      "baslik": "Digital Realty Indiana'da ~1 GW'lık veri merkezi kampüsü planlıyor",
+      "detay": "Kokomo'da 476 dönümlük arazide üç binalı, ~3 milyon fit karelik kampüs; 2033'e kadar tamamlanması öngörülüyor. Kapalı devre soğutma kullanılacak, vergi muafiyeti verilmeyecek.",
       "kategori": "pozitif",
       "agirlik": 1,
-      "neden": "Çip tedarikçisinin müşterisinin veri merkezini finansal olarak desteklemesi talebi güvenceye alıyor; ancak kapanış henüz doğrulanmadı.",
-      "kaynak": "Blockspace",
-      "url": "https://blockspace.media/insight/amd-backs-fermi-project-matador-lease"
+      "neden": "Gigawatt ölçekli yeni kapasite, uzun vadeli hızlandırıcı ve bellek talebine işaret ediyor.",
+      "kaynak": "DCD",
+      "url": "https://www.datacenterdynamics.com/en/news/digital-realty-eyes-gigawatt-scale-data-center-site-outside-indianapolis-indiana/"
     },
     {
-      "baslik": "Nvidia satış gününde %0,97 artıyla 228,52 $'dan kapandı",
-      "detay": "Nasdaq %0,15 gerilerken Nvidia yükseldi. Reuters'a göre şirket Fransız sağlık yazılımı Doctolib'de azınlık hissesi almayı kabul etti; piyasa değeri 5,45 trilyon $.",
+      "baslik": "Çin, yapay zekâ modelleri dahil ~40 teknolojiye ihracat kısıtı önerdi",
+      "detay": "Ticaret ile Bilim ve Teknoloji bakanlıkları yapay zekâ, biyofarma ve güneş enerjisi ihracatçılarına kayıt zorunluluğu getirdi; Qwen, DeepSeek gibi açık ağırlıklı modellerin yurt dışına indirilmesi kısıtlanabilir. Görüş süresi 15 Kasım 2026'ya kadar.",
       "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Sektördeki satışa rağmen lider hissenin dayanıklılığı; tek başına yön değiştirici değil.",
-      "kaynak": "Gotrade",
-      "url": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-14-2026/"
+      "agirlik": 2,
+      "neden": "Teknoloji ayrışmasını derinleştiren bir adım; açık model ekosistemini etkileyebilir ama çiplere doğrudan bir madde içermiyor.",
+      "kaynak": "Startup Fortune (Financial Times'a dayanarak)",
+      "url": "https://startupfortune.com/china-moves-to-restrict-exports-of-its-own-ai-models-chips-and-agents/"
     },
     {
-      "baslik": "Kore'nin ekim ilk 10 gün çip ihracatı %170,9 arttı",
-      "detay": "1–10 Ekim'de çip ihracatı 12,1 milyar $'a çıktı; toplam ihracat 26,1 milyar $ ile dönem rekoru kırdı. Çin'e ihracat %167, ABD'ye %159,9 arttı.",
-      "kategori": "pozitif",
+      "baslik": "Samsung, Nvidia'nın özel HBM taban yongasını TSMC 3 nm'de ürettirecek",
+      "detay": "Nvidia, Samsung, SK hynix ve Micron'dan yeni nesil özel HBM'in taban yongası (base die) için TSMC 3 nm, bellek katmanları için 1c DRAM sürecini istiyor. Samsung ilk kez HBM üretiminde baştan TSMC ile çalışacak.",
+      "kategori": "notr",
       "agirlik": 2,
-      "neden": "Hisse satışının aksine gerçek ticaret verisi bellek ve çip talebinin çok güçlü sürdüğünü gösteriyor.",
-      "kaynak": "The Korea Times (Yonhap)",
-      "url": "https://koreatimes.co.kr/economy/20261012/exports-double-in-first-10-days-of-october-on-chips"
+      "neden": "HBM tedarik zincirinde TSMC'nin rolünü büyüten, Samsung'un dökümhane stratejisini değiştiren bir gelişme; ikincil kaynaktan aktarılıyor.",
+      "kaynak": "TechFlow (Seoul Economic Daily'ye dayanarak)",
+      "url": "https://www.techflowpost.com/en-US/newsletter/140392"
     }
   ],
   "yaklasan": [
     {
-      "tarih": "2026-10-15",
-      "baslik": "TSMC 3. çeyrek sonuçları (şirket tahmini 44,6–45,8 milyar $)",
-      "kaynak": "AOL (Motley Fool)",
-      "url": "https://aol.com/articles/tsmc-reports-oct-15-best-075802000.html"
+      "tarih": "2026-10-28",
+      "baslik": "NiSource 3. çeyrek kazanç çağrısı (Microsoft anlaşmasının ayrıntıları)",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/energy/articles/microsoft-signs-1-100-mw-163619326.html"
+    },
+    {
+      "tarih": "2026-11-03",
+      "baslik": "AMD 3. çeyrek sonuçları",
+      "kaynak": "FinanceFeeds",
+      "url": "https://financefeeds.com/amd-stock-falls-as-every-stock-in-the-chip-index-drops-is-the-ai-debt-scare-now-a-chip-problem/"
+    },
+    {
+      "tarih": "2026-11-15",
+      "baslik": "Çin'in yapay zekâ ihracat kısıtı taslağında görüş süresinin sonu",
+      "kaynak": "Startup Fortune",
+      "url": "https://startupfortune.com/china-moves-to-restrict-exports-of-its-own-ai-models-chips-and-agents/"
     }
   ],
   "yontem": {
@@ -99,6 +111,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = +4 · Σ ağırlık = 15 · Puan = 50 + 50 × 0.27 = 63"
+    "hesap": "Σ ağırlık×işaret = -2 · Σ ağırlık = 18 · Puan = 50 + 50 × -0.11 = 44"
   }
 }

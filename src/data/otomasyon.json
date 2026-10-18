@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-14T07:05:10.603Z",
-  "tarih": "2026-10-14",
+  "guncelleme": "2026-10-18T11:47:18.569Z",
+  "tarih": "2026-10-18",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "dikkat",
-      "zaman": "2026-10-14T07:00:24.194Z"
+      "zaman": "2026-10-18T11:46:21.075Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-14T07:00:24.359Z"
+      "zaman": "2026-10-18T11:46:21.218Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-14T07:00:22.083Z"
+      "zaman": "2026-10-18T11:46:19.090Z"
     },
     {
       "id": "gelistirme",
@@ -33,13 +33,21 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-14T07:00:40.921Z"
+      "zaman": "2026-10-18T11:46:37.313Z"
     }
   ],
   "dikkat": [
     {
       "seviye": "uyarı",
+      "metin": "Fiyat verisi 4 gün eski (eşik 3 gün)."
+    },
+    {
+      "seviye": "uyarı",
       "metin": "Güvenlik: 4 yüksek seviye bağımlılık açığı var."
+    },
+    {
+      "seviye": "uyarı",
+      "metin": "Yenileme · Fiyat verisi: izin engeli — kaynak sayfa okumaya izin vermedi, veri uydurulmadı (son veri 2026-10-14). WebFetch PROVENANCE_REQUIRED: getdeploying.com/gpus için izin isteği yanıtlanmadı; arama sonuçlarında adres çıkmadı"
     },
     {
       "seviye": "dikkat",
@@ -49,68 +57,31 @@
   ],
   "oneriler": [
     {
-      "baslik": "@grpc/grpc-js'i npm overrides ile ≥1.13.6'ya yükselt",
-      "neden": "guvenlik-2026-10-14.json: 4 yüksek açık; firebase@11.10.0 → @firebase/firestore@4.8.0 → @grpc/grpc-js@1.9.16 (GHSA-m9gg-hp2v-232j, <1.13.6). Firestore'un en son sürümü de ~1.9.0 sabitliyor, bu yüzden firebase yükseltmesi çözmüyor. Bu açık 13 Ekim'de iki önerinin (PR #29, #30) otomatik birleşmesini engelledi.",
+      "baslik": "Firebase'in getirdiği @grpc/grpc-js açığını kapatan PR #31'i birleştir",
+      "neden": "Güvenlik raporu 4 yüksek seviye bağımlılık açığı gösteriyor (guvenlik-2026-10-18.json); kaynağı firebase@11 ile gelen grpc-js 1.9.x. Bu 'dikkat' durumu öneri denetimini de geçirmediği için PR #32 ve #33 de onay kuyruğunda bekliyor.",
       "etki": "yüksek",
       "alan": "güvenlik"
     },
     {
-      "baslik": "Eğitim sayfasına 'ilerlemeyi sıfırla' düğmesi",
-      "neden": "iyilestirme-2026-10-14.json: resetProgress (src/lib/progress.js:42) hiçbir yerde kullanılmıyor; Learn.jsx ilerlemeyi gösteriyor ama sıfırlama yolu yok.",
+      "baslik": "Notlar sayfasına sabitleme (iğne) düğmesi ekle",
+      "neden": "src/lib/notes.js'te togglePin ve pinned alanına göre sıralama hazır, ama Notes.jsx'te bunu kullanan bir düğme yok; iyileştirme ajanı togglePin'i kullanılmayan export olarak bildiriyor.",
       "etki": "düşük",
-      "alan": "arayüz"
+      "alan": "özellik"
     },
     {
-      "baslik": "Çip detayında kiralama fiyatının son değişimini göster",
-      "neden": "gpu_kiralama.json'da kataloğa bağlı 29 satırın degisim_pct değeri var (bugün V100 +%116, A40 +%37) ama ChipDetail.jsx:193 yalnızca $/saat gösteriyor; değişim yalnızca Fiyatlar sayfasında görünüyor.",
+      "baslik": "Sınav sayfasında önceki denemelerin kısa geçmişini göster",
+      "neden": "Exam.jsx her denemeyi saveExamResult ile kaydediyor, fakat getExamResults hiçbir yerde okunmuyor (iyileştirme-2026-10-18.json); kullanıcı ilerlemesini göremiyor.",
       "etki": "orta",
-      "alan": "arayüz"
+      "alan": "özellik"
     },
     {
-      "baslik": "Kullanılmayan fiyatBilgisi export'unu kaldır",
-      "neden": "src/lib/chipScore.js:566 fiyatBilgisi hiçbir yerde içe aktarılmıyor; ChipDetail fiyatı maliyet puanı üzerinden alıyor. iyilestirme raporundaki 4 kullanılmayan export'tan biri (togglePin ve getExamResults açık PR #29/#30'da bağlanıyor).",
-      "etki": "düşük",
-      "alan": "kod"
-    },
-    {
-      "baslik": "Bellek fiyatları için TrendForce'a ikincil kaynak yolu",
-      "neden": "Bellek verisi 11 gündür güncel değil (iyilestirme raporu); trendforce.com/presscenter zamanlanmış görevde PROVENANCE_REQUIRED ile reddediliyor (durum-2026-10-13/14). GUNLUK.md 2b ikincil kaynağa izin veriyor ama arama üzerinden ulaşma yolu (1. adımdaki gibi) tarif edilmemiş.",
+      "baslik": "Fiyat kaynağı için izin engelini kalıcı çöz",
+      "neden": "getdeploying.com 15–18 Ekim'de okunamadı (PROVENANCE_REQUIRED); fiyat verisi 4 gündür 2026-10-14'te. Zamanlanmış görev bu adrese izin isteğini yanıtlayacak kimse bulamıyor; adres kullanıcı tarafından bir kez onaylanmalı ya da GitHub Actions ile çekilmeli.",
       "etki": "orta",
       "alan": "veri"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-10-14",
-      "oneri": "@grpc/grpc-js'i npm overrides ile ≥1.13.6'ya yükselt",
-      "durum": "acik",
-      "pr": 31,
-      "dal": "otomasyon/duzeltme-2026-10-14",
-      "ozet": "package.json'a overrides eklendi; grpc-js 1.9.16 → 1.14.6, güvenlik taraması temiz",
-      "neden": "Korunan dosya (package.json, package-lock.json); testler 32/32 geçti, kullanıcı onayı gerekiyor",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-14",
-      "oneri": "Eğitim sayfasına 'ilerlemeyi sıfırla' düğmesi",
-      "durum": "acik",
-      "pr": 32,
-      "dal": "otomasyon/oneri-2026-10-14-1",
-      "ozet": "Learn.jsx'e onaylı 'İlerlemeyi sıfırla' düğmesi; resetProgress bağlandı",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-14",
-      "oneri": "Çip detayında kiralama fiyatının son değişimini göster",
-      "durum": "acik",
-      "pr": 33,
-      "dal": "otomasyon/oneri-2026-10-14-2",
-      "ozet": "Maliyet kartı alt yazısında önceki ölçüme göre değişim (≥3 sağlayıcı)",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
     {
       "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
@@ -383,7 +354,15 @@
     "bulgular": [
       {
         "alan": "veri",
-        "baslik": "Bellek fiyatları 11 gündür güncellenmedi",
+        "baslik": "Fiyat verisi 4 gün önce çekilmiş",
+        "etki": "orta",
+        "otomatik": true,
+        "eylem": "yenileme-calistir",
+        "aciklama": "3. ajan (yenileme) çalıştırılarak güncellenebilir."
+      },
+      {
+        "alan": "veri",
+        "baslik": "Bellek fiyatları 15 gündür güncellenmedi",
         "etki": "düşük",
         "otomatik": false,
         "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
@@ -407,23 +386,18 @@
     "adimlar": [
       {
         "ad": "Fiyat verisi",
-        "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 92 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu), 3 büyük oynama elle doğrulandı"
-      },
-      {
-        "ad": "Elle doğrulanan fiyat",
-        "durum": "ok",
-        "detay": "Nvidia V100: 0.99 → 2.14 (üç okuma: medyan 2.14, en düşük 0.14, 19 sağlayıcı); Nvidia A5000: 0.75 → 1.31 (üç okuma: medyan 1.31, en düşük 0.16, 11 sağlayıcı); Nvidia A4000: 0.21 → 0.76 (üç okuma: medyan 0.76, en düşük 0.11, 11 sağlayıcı) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
+        "durum": "uyari",
+        "detay": "izin engeli — kaynak sayfa okumaya izin vermedi, veri uydurulmadı (son veri 2026-10-14). WebFetch PROVENANCE_REQUIRED: getdeploying.com/gpus için izin isteği yanıtlanmadı; arama sonuçlarında adres çıkmadı"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 63, 1 yaklaşan olay; haber akışına +8"
+        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 44, 3 yaklaşan olay; haber akışına +8"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+7 haber (akışta 124); bugün toplam 15"
+        "detay": "+5 haber (akışta 137); bugün toplam 13"
       },
       {
         "ad": "Derleme",
@@ -433,14 +407,14 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2293 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2304 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
   "gelistirme": {
     "durum": "degisiklik-yok",
     "uygulanan": 0,
-    "atlanan": 0,
+    "atlanan": 1,
     "testler": [
       {
         "ad": "Derleme",
@@ -524,6 +498,11 @@
       "tarih": "2026-10-14",
       "durum": "dikkat",
       "dikkat": 2
+    },
+    {
+      "tarih": "2026-10-18",
+      "durum": "dikkat",
+      "dikkat": 4
     }
   ]
 }

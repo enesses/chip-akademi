@@ -1,0 +1,37 @@
+{
+  "ajan": "gelistirme",
+  "tarih": "2026-10-18",
+  "zaman": "2026-10-18T11:46:37.313Z",
+  "durum": "degisiklik-yok",
+  "uygulanan": [],
+  "atlanan": [
+    {
+      "alan": "veri",
+      "baslik": "Fiyat verisi 4 gün önce çekilmiş",
+      "etki": "orta",
+      "otomatik": true,
+      "eylem": "yenileme-calistir",
+      "aciklama": "3. ajan (yenileme) çalıştırılarak güncellenebilir.",
+      "neden": "otomasyon/gelen/ altında işlenecek girdi yok — yenileme yeniden çalıştırılmadı (günün yenileme raporu korunur)"
+    }
+  ],
+  "testler": [
+    {
+      "ad": "Derleme",
+      "gecti": true,
+      "detay": null
+    },
+    {
+      "ad": "Tek dosya",
+      "gecti": true,
+      "detay": null
+    },
+    {
+      "ad": "Arayüz duman testi",
+      "gecti": true,
+      "detay": null
+    }
+  ],
+  "degisenDosyalar": [],
+  "geriAlindi": false
+}

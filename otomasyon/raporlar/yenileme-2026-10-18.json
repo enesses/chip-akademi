@@ -1,0 +1,33 @@
+{
+  "ajan": "yenileme",
+  "tarih": "2026-10-18",
+  "zaman": "2026-10-18T11:46:19.090Z",
+  "durum": "ok",
+  "adimlar": [
+    {
+      "ad": "Fiyat verisi",
+      "durum": "uyari",
+      "detay": "izin engeli — kaynak sayfa okumaya izin vermedi, veri uydurulmadı (son veri 2026-10-14). WebFetch PROVENANCE_REQUIRED: getdeploying.com/gpus için izin isteği yanıtlanmadı; arama sonuçlarında adres çıkmadı"
+    },
+    {
+      "ad": "Bugün sayfası",
+      "durum": "ok",
+      "detay": "bu çalıştırmada güncellendi — 8 madde, puan 44, 3 yaklaşan olay; haber akışına +8"
+    },
+    {
+      "ad": "Haber akışı",
+      "durum": "ok",
+      "detay": "+5 haber (akışta 137); bugün toplam 13"
+    },
+    {
+      "ad": "Derleme",
+      "durum": "ok",
+      "detay": "başarılı"
+    },
+    {
+      "ad": "Tek dosya",
+      "durum": "ok",
+      "detay": "17 görsel, HTML: 2304 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+    }
+  ]
+}

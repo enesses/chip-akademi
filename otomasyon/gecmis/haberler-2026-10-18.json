@@ -1,0 +1,64 @@
+{
+  "tarih": "2026-10-18",
+  "haberler": [
+    {
+      "baslik": "Samsung %9,3, SK hynix %11 düştü; KOSPI %7'den fazla geriledi",
+      "detay": "15 Ekim'deki satışta yapay zekâ müşterilerinin veri merkezi harcamalarını karşılayacak geliri elde edip edemeyeceği sorgulandı; ABD'de yüksek enflasyon (Eylül TÜFE %3,7) ve CoreWeave, Nebius, Dell, Oracle'daki düşüşler tonu belirledi.",
+      "kaynak": "Invezz",
+      "url": "https://invezz.com/news/2026/10/15/samsung-sk-hynix-stocks-crash-9-11-as-risk-shifts-from-chips-to-customers/",
+      "yayin": "2026-10-15",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "ASML ve TSMC sonuçları: çip yatırım dalgası sürüyor",
+      "detay": "TSMC 3. çeyrekte rekor 763 milyar NT$ net kâr açıkladı, 2026 yatırım bütçesini 60–64 milyar $'da tuttu; brüt marj 2 nm ilk üretim maliyetiyle %66,4'e indi. ASML CEO'su müşterilerin 2029–2030 ekipman siparişlerini görüştüğünü söyledi.",
+      "kaynak": "Aju Press",
+      "url": "https://www.ajupress.com/view/20261015171710125",
+      "yayin": "2026-10-15",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Analist hedefleri Samsung ve SK hynix fiyatlarının iki katı",
+      "detay": "Samsung'un ortalama hedefi 495.227 won (14 Ekim kapanışının %113 üstü), SK hynix'inki 3,26 milyon won (%130 üstü). Yabancılar 23 Eylül'den beri 23 trilyon won net satış yaptı, %79'u bu iki hisseden.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/10/15/analysts-targets-for-samsung-sk-hynix-double-current-prices",
+      "yayin": "2026-10-15",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Yapay zekâ veri merkezlerinde darboğaz çipten elektriğe kayıyor",
+      "detay": "DIGITIMES'a göre şebeke kısıtları nedeniyle büyük yapay zekâ veri merkezi projelerinde kendi elektriğini üretmek artık bir gereklilik olarak görülüyor.",
+      "kaynak": "DIGITIMES",
+      "url": "https://digitimes.com/news/a20261015PD230/aidc-capacity-equipment-chips-electricity.html",
+      "yayin": "2026-10-16",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Rakesh Kumar: ABD ihracat kontrolleri Çin'in çip atılımını hızlandırdı",
+      "detay": "Illinois Üniversitesi'nden Kumar'a göre kısıtlar Çin'i kendi ekosistemine yöneltti; Huawei 2023'ten beri 100 milyondan fazla Kirin'li cihaz sattı, Nvidia'nın Çin veri merkezi payı 2026 ilk yarıda %34'e düştü. Yine de maliyet ve performansta Nvidia ile AMD önde.",
+      "kaynak": "Fortune",
+      "url": "https://fortune.com/2026/10/16/china-chip-export-controls-failed-rakesh-kumar/",
+      "yayin": "2026-10-16",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kategori": "notr"
+    }
+  ]
+}

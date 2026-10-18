@@ -1,0 +1,10 @@
+{
+  "fiyat": {
+    "durum": "izin-engeli",
+    "not": "WebFetch PROVENANCE_REQUIRED: getdeploying.com/gpus için izin isteği yanıtlanmadı; arama sonuçlarında adres çıkmadı"
+  },
+  "endeks": {
+    "durum": "izin-engeli",
+    "not": "WebFetch PROVENANCE_REQUIRED: getdeploying.com/gpu-price-index"
+  }
+}

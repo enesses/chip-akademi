@@ -2,6 +2,200 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-10-18-ex-drops-is-the-ai-debt-scare-now-a-chip-problem",
+      "tarih": "2026-10-18",
+      "yayin": null,
+      "baslik": "SOX Cuma günü %3,83 düştü, endeksin 30 hissesi de ekside",
+      "detay": "16 Ekim'de AMD %5,95 düşüşle 528,75 $'a indi (6 Ekim zirvesinin ~%20 altında); Arm %6,94, Intel %5,79, Micron %5,63, Marvell %5,56 geriledi. Nvidia %1,43 ile 214,13 $. Nasdaq haftayı ~%4,5 kayıpla kapattı.",
+      "kaynak": "FinanceFeeds",
+      "url": "https://financefeeds.com/amd-stock-falls-as-every-stock-in-the-chip-index-drops-is-the-ai-debt-scare-now-a-chip-problem/",
+      "ton": "negatif",
+      "konular": [
+        "bellek",
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-18-tokenpost-com-news-investing-33948",
+      "tarih": "2026-10-18",
+      "yayin": null,
+      "baslik": "Çip endeksi 6 Ekim'den bu yana ~%14 geriledi",
+      "detay": "Endeks 16 Ekim'de sekizinci günlük kaybına yöneldi. Makale, Nvidia'nın Ocak 2029'a kadar 250 milyar $'ı aşan tedarik taahhüdünü ve Micron'un 2030'a kadar 32 milyar $'lık 'al ya da öde' sözleşmelerini, riskin tedarikçiden müşteriye kaydığına örnek gösteriyor.",
+      "kaynak": "TokenPost",
+      "url": "https://www.tokenpost.com/news/investing/33948",
+      "ton": "negatif",
+      "konular": [
+        "bellek",
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-18-eep-weekly-losses-as-ai-borrowing-concerns-mount",
+      "tarih": "2026-10-18",
+      "yayin": null,
+      "baslik": "CoreWeave'in hissesi haftada ~%25 düştü, tahvil getirisi %16'yı aştı",
+      "detay": "Hisse Cuma %11'den fazla, Çarşamba %15,5 düştü. Ekim 2031 vadeli tahvilin getirisi Perşembe kısa süre %16'nın üzerine çıktı; borç sigortası maliyeti 1.000 baz puanı aşarak rekor kırdı. Nebius %10, Applied Digital ve IREN %9 geriledi. Şirketin borcu ~50 milyar $.",
+      "kaynak": "Reuters (KSL)",
+      "url": "https://www.ksl.com/article/51637172/coreweave-shares-bonds-headed-for-steep-weekly-losses-as-ai-borrowing-concerns-mount",
+      "ton": "negatif",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-18-at-it-can-supply-that-s-why-i-d-buy-nvidia-stock",
+      "tarih": "2026-10-18",
+      "yayin": null,
+      "baslik": "TSMC: yapay zekâ çip talebi arzımızın 'çok üstünde'",
+      "detay": "3. çeyrek geliri 46,7 milyar $ (beklenti 44,6–45,8). Yüksek performanslı hesaplama gelirin %68'i. 4. çeyrek rehberi 52,3–54,3 milyar $; 2026 dolar bazlı büyüme tahmini ~%44'e yükseltildi. CEO C.C. Wei: 'yavaşlama işareti görmedik'.",
+      "kaynak": "The Motley Fool",
+      "url": "https://fool.com/investing/2026/10/16/tsmc-says-ai-chip-demand-is-still-far-above-what-it-can-supply-that-s-why-i-d-buy-nvidia-stock",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-18-articles-microsoft-signs-1-100-mw-163619326-html",
+      "tarih": "2026-10-18",
+      "yayin": null,
+      "baslik": "Microsoft, NiSource ile 1.100 MW'lık 20 yıllık güç anlaşması imzaladı",
+      "detay": "Indiana'daki veri merkezi kampüsü için; enerji 2028'de başlıyor, anlaşma 2048'e kadar sürüyor. Üretim ve iletim altyapısının tamamını Microsoft ödüyor. NiSource'un Alphabet ve Amazon ile de anlaşmaları var.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/energy/articles/microsoft-signs-1-100-mw-163619326.html",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-18-le-data-center-site-outside-indianapolis-indiana",
+      "tarih": "2026-10-18",
+      "yayin": null,
+      "baslik": "Digital Realty Indiana'da ~1 GW'lık veri merkezi kampüsü planlıyor",
+      "detay": "Kokomo'da 476 dönümlük arazide üç binalı, ~3 milyon fit karelik kampüs; 2033'e kadar tamamlanması öngörülüyor. Kapalı devre soğutma kullanılacak, vergi muafiyeti verilmeyecek.",
+      "kaynak": "DCD",
+      "url": "https://www.datacenterdynamics.com/en/news/digital-realty-eyes-gigawatt-scale-data-center-site-outside-indianapolis-indiana/",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-18-ct-exports-of-its-own-ai-models-chips-and-agents",
+      "tarih": "2026-10-18",
+      "yayin": null,
+      "baslik": "Çin, yapay zekâ modelleri dahil ~40 teknolojiye ihracat kısıtı önerdi",
+      "detay": "Ticaret ile Bilim ve Teknoloji bakanlıkları yapay zekâ, biyofarma ve güneş enerjisi ihracatçılarına kayıt zorunluluğu getirdi; Qwen, DeepSeek gibi açık ağırlıklı modellerin yurt dışına indirilmesi kısıtlanabilir. Görüş süresi 15 Kasım 2026'ya kadar.",
+      "kaynak": "Startup Fortune (Financial Times'a dayanarak)",
+      "url": "https://startupfortune.com/china-moves-to-restrict-exports-of-its-own-ai-models-chips-and-agents/",
+      "ton": "notr",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-18-techflowpost-com-en-us-newsletter-140392",
+      "tarih": "2026-10-18",
+      "yayin": null,
+      "baslik": "Samsung, Nvidia'nın özel HBM taban yongasını TSMC 3 nm'de ürettirecek",
+      "detay": "Nvidia, Samsung, SK hynix ve Micron'dan yeni nesil özel HBM'in taban yongası (base die) için TSMC 3 nm, bellek katmanları için 1c DRAM sürecini istiyor. Samsung ilk kez HBM üretiminde baştan TSMC ile çalışacak.",
+      "kaynak": "TechFlow (Seoul Economic Daily'ye dayanarak)",
+      "url": "https://www.techflowpost.com/en-US/newsletter/140392",
+      "ton": "notr",
+      "konular": [
+        "bellek",
+        "cip"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-18-rash-9-11-as-risk-shifts-from-chips-to-customers",
+      "tarih": "2026-10-18",
+      "yayin": "2026-10-15",
+      "baslik": "Samsung %9,3, SK hynix %11 düştü; KOSPI %7'den fazla geriledi",
+      "detay": "15 Ekim'deki satışta yapay zekâ müşterilerinin veri merkezi harcamalarını karşılayacak geliri elde edip edemeyeceği sorgulandı; ABD'de yüksek enflasyon (Eylül TÜFE %3,7) ve CoreWeave, Nebius, Dell, Oracle'daki düşüşler tonu belirledi.",
+      "kaynak": "Invezz",
+      "url": "https://invezz.com/news/2026/10/15/samsung-sk-hynix-stocks-crash-9-11-as-risk-shifts-from-chips-to-customers/",
+      "ton": "negatif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-18-ajupress-com-view-20261015171710125",
+      "tarih": "2026-10-18",
+      "yayin": "2026-10-15",
+      "baslik": "ASML ve TSMC sonuçları: çip yatırım dalgası sürüyor",
+      "detay": "TSMC 3. çeyrekte rekor 763 milyar NT$ net kâr açıkladı, 2026 yatırım bütçesini 60–64 milyar $'da tuttu; brüt marj 2 nm ilk üretim maliyetiyle %66,4'e indi. ASML CEO'su müşterilerin 2029–2030 ekipman siparişlerini görüştüğünü söyledi.",
+      "kaynak": "Aju Press",
+      "url": "https://www.ajupress.com/view/20261015171710125",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-18-rgets-for-samsung-sk-hynix-double-current-prices",
+      "tarih": "2026-10-18",
+      "yayin": "2026-10-15",
+      "baslik": "Analist hedefleri Samsung ve SK hynix fiyatlarının iki katı",
+      "detay": "Samsung'un ortalama hedefi 495.227 won (14 Ekim kapanışının %113 üstü), SK hynix'inki 3,26 milyon won (%130 üstü). Yabancılar 23 Eylül'den beri 23 trilyon won net satış yaptı, %79'u bu iki hisseden.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/10/15/analysts-targets-for-samsung-sk-hynix-double-current-prices",
+      "ton": "notr",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-18-0-aidc-capacity-equipment-chips-electricity-html",
+      "tarih": "2026-10-18",
+      "yayin": "2026-10-16",
+      "baslik": "Yapay zekâ veri merkezlerinde darboğaz çipten elektriğe kayıyor",
+      "detay": "DIGITIMES'a göre şebeke kısıtları nedeniyle büyük yapay zekâ veri merkezi projelerinde kendi elektriğini üretmek artık bir gereklilik olarak görülüyor.",
+      "kaynak": "DIGITIMES",
+      "url": "https://digitimes.com/news/a20261015PD230/aidc-capacity-equipment-chips-electricity.html",
+      "ton": "notr",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-18-6-china-chip-export-controls-failed-rakesh-kumar",
+      "tarih": "2026-10-18",
+      "yayin": "2026-10-16",
+      "baslik": "Rakesh Kumar: ABD ihracat kontrolleri Çin'in çip atılımını hızlandırdı",
+      "detay": "Illinois Üniversitesi'nden Kumar'a göre kısıtlar Çin'i kendi ekosistemine yöneltti; Huawei 2023'ten beri 100 milyondan fazla Kirin'li cihaz sattı, Nvidia'nın Çin veri merkezi payı 2026 ilk yarıda %34'e düştü. Yine de maliyet ve performansta Nvidia ile AMD önde.",
+      "kaynak": "Fortune",
+      "url": "https://fortune.com/2026/10/16/china-chip-export-controls-failed-rakesh-kumar/",
+      "ton": "notr",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
       "id": "2026-10-14-sales-and-5-0-billion-net-income-in-q3-2026-html",
       "tarih": "2026-10-14",
       "yayin": null,
@@ -1882,7 +2076,7 @@
       "kaynakTuru": "bugun"
     }
   ],
-  "guncelleme": "2026-10-14",
+  "guncelleme": "2026-10-18",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",

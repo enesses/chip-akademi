@@ -1,0 +1,46 @@
+{
+  "ajan": "rapor",
+  "tarih": "2026-10-18",
+  "zaman": "2026-10-18T11:47:18.570Z",
+  "durum": "dikkat",
+  "gunTamam": true,
+  "tazelik": [
+    {
+      "ad": "Bugün sayfası",
+      "tarih": "2026-10-18",
+      "gun": 0
+    },
+    {
+      "ad": "Fiyat verisi",
+      "tarih": "2026-10-14",
+      "gun": 4
+    }
+  ],
+  "otomatikTamamlanan": [],
+  "calisan": [
+    "guvenlik",
+    "iyilestirme",
+    "yenileme",
+    "gelistirme"
+  ],
+  "calismayan": [],
+  "dikkat": [
+    {
+      "seviye": "uyarı",
+      "metin": "Fiyat verisi 4 gün eski (eşik 3 gün)."
+    },
+    {
+      "seviye": "uyarı",
+      "metin": "Güvenlik: 4 yüksek seviye bağımlılık açığı var."
+    },
+    {
+      "seviye": "uyarı",
+      "metin": "Yenileme · Fiyat verisi: izin engeli — kaynak sayfa okumaya izin vermedi, veri uydurulmadı (son veri 2026-10-14). WebFetch PROVENANCE_REQUIRED: getdeploying.com/gpus için izin isteği yanıtlanmadı; arama sonuçlarında adres çıkmadı"
+    },
+    {
+      "seviye": "dikkat",
+      "tur": "onay",
+      "metin": "5 öneri onay bekliyor (PR #29, PR #30, PR #31, PR #32, PR #33) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+    }
+  ]
+}
