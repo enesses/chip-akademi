@@ -3,27 +3,21 @@
   "oneriler": [
     {
       "baslik": "Firebase'in getirdiği @grpc/grpc-js açığını kapatan PR #31'i birleştir",
-      "neden": "Güvenlik raporu 4 yüksek seviye bağımlılık açığı gösteriyor (guvenlik-2026-10-18.json); kaynağı firebase@11 ile gelen grpc-js 1.9.x. Bu 'dikkat' durumu öneri denetimini de geçirmediği için PR #32 ve #33 de onay kuyruğunda bekliyor.",
+      "neden": "Güvenlik raporu 4 yüksek seviye bağımlılık açığı gösteriyor (guvenlik-2026-10-18.json); kaynağı firebase@11 ile gelen grpc-js 1.9.x. Bu 'dikkat' durumu öneri denetimini de geçirmediği için #29, #30, #32 ve #33 onay kuyruğunda bekliyor.",
       "etki": "yüksek",
       "alan": "güvenlik"
     },
     {
-      "baslik": "Notlar sayfasına sabitleme (iğne) düğmesi ekle",
-      "neden": "src/lib/notes.js'te togglePin ve pinned alanına göre sıralama hazır, ama Notes.jsx'te bunu kullanan bir düğme yok; iyileştirme ajanı togglePin'i kullanılmayan export olarak bildiriyor.",
-      "etki": "düşük",
-      "alan": "özellik"
-    },
-    {
-      "baslik": "Sınav sayfasında önceki denemelerin kısa geçmişini göster",
-      "neden": "Exam.jsx her denemeyi saveExamResult ile kaydediyor, fakat getExamResults hiçbir yerde okunmuyor (iyileştirme-2026-10-18.json); kullanıcı ilerlemesini göremiyor.",
-      "etki": "orta",
-      "alan": "özellik"
-    },
-    {
       "baslik": "Fiyat kaynağı için izin engelini kalıcı çöz",
-      "neden": "getdeploying.com 15–18 Ekim'de okunamadı (PROVENANCE_REQUIRED); fiyat verisi 4 gündür 2026-10-14'te. Zamanlanmış görev bu adrese izin isteğini yanıtlayacak kimse bulamıyor; adres kullanıcı tarafından bir kez onaylanmalı ya da GitHub Actions ile çekilmeli.",
+      "neden": "getdeploying.com 15–18 Ekim'de okunamadı (PROVENANCE_REQUIRED); fiyat verisi 4 gündür 2026-10-14'te. Zamanlanmış görev izin isteğini yanıtlayacak kimseyi bulamıyor; adres bir kez kullanıcı tarafından onaylanmalı ya da başka bir yoldan (GitHub Actions) çekilmeli.",
       "etki": "orta",
       "alan": "veri"
+    },
+    {
+      "baslik": "Günlük otomasyon görevinin 'erişim reddedildi' hatasını gider",
+      "neden": "Zamanlanmış görev 18 Ekim'de 9 saniyede ROUTINE_RUN_FAILURE_REASON_ACCESS_DENIED ile durdu; depoda 15–17 Ekim'e ait günlük commit yok (son: 2026-10-14). Görevin depo erişimi/izinleri yenilenmeli.",
+      "etki": "yüksek",
+      "alan": "otomasyon"
     }
   ]
 }
