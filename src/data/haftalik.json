@@ -4,28 +4,29 @@
     {
       "hafta": "2026-W42",
       "bas": "2026-10-12",
-      "son": "2026-10-12",
-      "kismi": true,
-      "baslik": "12 Ekim – 12 Ekim (bugüne kadar)",
-      "olusturma": "2026-10-12T09:17:39.664Z",
+      "son": "2026-10-18",
+      "kismi": false,
+      "baslik": "12 Ekim – 18 Ekim",
+      "olusturma": "2026-10-19T07:44:47.847Z",
       "ozet": [
-        "Otomasyon 1 günlük dönemde 1 gün çalıştı: 1 gün temiz bitti.",
-        "Uygulamaya 9 değişiklik girdi; bunların 9 tanesi otomasyonun kendi uyguladığı geliştirme önerisi.",
-        "Hafta boyunca 6 farklı geliştirme önerisi yazıldı; otomasyon 9 tanesini denedi (9 birleşti, 0 onay bekliyor, 0 bırakıldı).",
-        "H100 kiralama medyanı 3.5 → 3.4 $/saat (%-2.9).",
-        "Bugün sayfasının ortalama pozitiflik puanı 46/100."
+        "Otomasyon 7 günlük dönemde 4 gün çalıştı: 1 gün temiz bitti.",
+        "Uygulamaya 12 değişiklik girdi; bunların 9 tanesi otomasyonun kendi uyguladığı geliştirme önerisi.",
+        "Hafta boyunca 19 farklı geliştirme önerisi yazıldı; otomasyon 14 tanesini denedi (9 birleşti, 5 onay bekliyor, 0 bırakıldı).",
+        "H100 kiralama medyanı 3.5 → 3.5 $/saat (%0).",
+        "Fiyat sayfası 1 gün izin engeline takıldı; o günlerde fiyat uydurulmadı, eski veri korundu.",
+        "Bugün sayfasının ortalama pozitiflik puanı 49/100."
       ],
       "sayilar": {
-        "calisanGun": 1,
+        "calisanGun": 4,
         "temizGun": 1,
         "kritikGun": 0,
-        "oneri": 6,
+        "oneri": 19,
         "uygulananBirlesen": 9,
         "elleUygulanan": 0,
-        "uygulananAcik": 0,
+        "uygulananAcik": 5,
         "uygulananVazgecilen": 0,
-        "degisiklik": 9,
-        "bugunOrtalama": 46,
+        "degisiklik": 12,
+        "bugunOrtalama": 49,
         "tekrarHaber": 0
       },
       "gunler": [
@@ -34,6 +35,42 @@
           "durum": "temiz",
           "dikkat": 0,
           "fiyat": "güncellendi"
+        },
+        {
+          "tarih": "2026-10-13",
+          "durum": "dikkat",
+          "dikkat": 2,
+          "fiyat": "güncellendi"
+        },
+        {
+          "tarih": "2026-10-14",
+          "durum": "dikkat",
+          "dikkat": 2,
+          "fiyat": "güncellendi"
+        },
+        {
+          "tarih": "2026-10-15",
+          "durum": "calismadi",
+          "dikkat": 0,
+          "fiyat": null
+        },
+        {
+          "tarih": "2026-10-16",
+          "durum": "calismadi",
+          "dikkat": 0,
+          "fiyat": null
+        },
+        {
+          "tarih": "2026-10-17",
+          "durum": "calismadi",
+          "dikkat": 0,
+          "fiyat": null
+        },
+        {
+          "tarih": "2026-10-18",
+          "durum": "dikkat",
+          "dikkat": 4,
+          "fiyat": "izin engeli"
         }
       ],
       "bugun": [
@@ -43,49 +80,82 @@
           "etiket": "Bilanço haftası öncesi temkin",
           "madde": 8,
           "tekrar": 0
+        },
+        {
+          "tarih": "2026-10-13",
+          "puan": 41,
+          "etiket": "Kore'de çip çöküşü, temkin derinleşiyor",
+          "madde": 9,
+          "tekrar": 0
+        },
+        {
+          "tarih": "2026-10-14",
+          "puan": 63,
+          "etiket": "Satış sonrası temkinli toparlanma",
+          "madde": 8,
+          "tekrar": 0
+        },
+        {
+          "tarih": "2026-10-15",
+          "puan": null
+        },
+        {
+          "tarih": "2026-10-16",
+          "puan": null
+        },
+        {
+          "tarih": "2026-10-17",
+          "puan": null
+        },
+        {
+          "tarih": "2026-10-18",
+          "puan": 44,
+          "etiket": "Finansman kaygısı güçlü talebi gölgeledi",
+          "madde": 8,
+          "tekrar": 0
         }
       ],
       "fiyat": {
-        "olcumGunu": 1,
-        "izinEngeliGunu": 0,
+        "olcumGunu": 3,
+        "izinEngeliGunu": 1,
         "taban": "2026-10-11",
-        "son": "2026-10-12",
+        "son": "2026-10-14",
         "h100": {
           "model": "Nvidia H100",
           "once": 3.5,
-          "sonra": 3.4,
-          "degisim": -2.9
+          "sonra": 3.5,
+          "degisim": 0
         },
         "enCokOynayan": [
           {
-            "model": "Nvidia A5000",
-            "once": 1.24,
-            "sonra": 0.75,
-            "degisim": -39.5
-          },
-          {
             "model": "Nvidia A4000",
             "once": 0.2,
-            "sonra": 0.18,
-            "degisim": -10
+            "sonra": 0.76,
+            "degisim": 280
           },
           {
-            "model": "Nvidia RTX 4090",
-            "once": 0.45,
-            "sonra": 0.49,
-            "degisim": 8.9
+            "model": "Nvidia V100",
+            "once": 0.95,
+            "sonra": 2.14,
+            "degisim": 125.3
           },
           {
-            "model": "Nvidia RTX 3090",
-            "once": 0.21,
-            "sonra": 0.2,
-            "degisim": -4.8
+            "model": "AMD MI300X",
+            "once": 2.89,
+            "sonra": 4.42,
+            "degisim": 52.9
           },
           {
-            "model": "Nvidia L40S",
-            "once": 1.57,
-            "sonra": 1.64,
-            "degisim": 4.5
+            "model": "Nvidia T4",
+            "once": 0.64,
+            "sonra": 0.69,
+            "degisim": 7.8
+          },
+          {
+            "model": "Nvidia RTX A6000",
+            "once": 0.57,
+            "sonra": 0.61,
+            "degisim": 7
           }
         ]
       },
@@ -179,9 +249,77 @@
           "ozet": null,
           "neden": "Kullanıcı onayıyla birleştirildi",
           "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-13",
+          "oneri": "Notlar sayfasına sabitleme (pin) düğmesi",
+          "durum": "acik",
+          "pr": 29,
+          "dal": "otomasyon/oneri-2026-10-13-1",
+          "ozet": "Notlarda Sabitle düğmesi ve listede iğne simgesi; sabitlenenler üstte",
+          "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki firebase/grpc-js açıkları yüzünden 'dikkat', onay bekliyor",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-13",
+          "oneri": "Seviye sınavında önceki sonuçları göster",
+          "durum": "acik",
+          "pr": 30,
+          "dal": "otomasyon/oneri-2026-10-13-2",
+          "ozet": "Sınav giriş ekranında son 5 deneme: tarih, doğru sayısı, yüzde, seviye",
+          "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki firebase/grpc-js açıkları yüzünden 'dikkat', onay bekliyor",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-14",
+          "oneri": "@grpc/grpc-js'i npm overrides ile ≥1.13.6'ya yükselt",
+          "durum": "acik",
+          "pr": 31,
+          "dal": "otomasyon/duzeltme-2026-10-14",
+          "ozet": "package.json'a overrides eklendi; grpc-js 1.9.16 → 1.14.6, güvenlik taraması temiz",
+          "neden": "Korunan dosya (package.json, package-lock.json); testler 32/32 geçti, kullanıcı onayı gerekiyor",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-14",
+          "oneri": "Eğitim sayfasına 'ilerlemeyi sıfırla' düğmesi",
+          "durum": "acik",
+          "pr": 32,
+          "dal": "otomasyon/oneri-2026-10-14-1",
+          "ozet": "Learn.jsx'e onaylı 'İlerlemeyi sıfırla' düğmesi; resetProgress bağlandı",
+          "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-14",
+          "oneri": "Çip detayında kiralama fiyatının son değişimini göster",
+          "durum": "acik",
+          "pr": 33,
+          "dal": "otomasyon/oneri-2026-10-14-2",
+          "ozet": "Maliyet kartı alt yazısında önceki ölçüme göre değişim (≥3 sağlayıcı)",
+          "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+          "kim": "otomasyon"
         }
       ],
       "degisiklikler": [
+        {
+          "tarih": "2026-10-12",
+          "baslik": "Gerçek hesap sistemi: Firebase ile giriş/kayıt, girişimci onayı, admin",
+          "pr": 27,
+          "url": "https://github.com/enesses/chip-akademi/pull/27"
+        },
+        {
+          "tarih": "2026-10-12",
+          "baslik": "AI Araçları: En iyi modeller liderlik tablosu (haftalık, Artificial Analysis API)",
+          "pr": 26,
+          "url": "https://github.com/enesses/chip-akademi/pull/26"
+        },
+        {
+          "tarih": "2026-10-12",
+          "baslik": "Onay düğmesi: bekleyen öneriler sayfadan tek tıkla onaylanır",
+          "pr": 25,
+          "url": "https://github.com/enesses/chip-akademi/pull/25"
+        },
         {
           "tarih": "2026-10-12",
           "baslik": "Öneri: Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
@@ -237,7 +375,7 @@
           "url": "https://github.com/enesses/chip-akademi/pull/15"
         }
       ],
-      "gunlukCommit": 7
+      "gunlukCommit": 13
     },
     {
       "hafta": "2026-W41",
@@ -787,5 +925,5 @@
       "gunlukCommit": 3
     }
   ],
-  "guncelleme": "2026-10-12"
+  "guncelleme": "2026-10-19"
 }
