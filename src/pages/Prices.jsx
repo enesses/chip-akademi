@@ -16,6 +16,8 @@ const pct = (v) => `${v > 0 ? "+" : ""}%${Math.abs(v).toLocaleString("tr-TR")}`;
 // Fiyatlar iki ondalığa yuvarlı geliyor: 0,02 $ → 0,03 $ gibi 1 sentlik oynama
 // %50 "hareket" gibi görünür. Kartlarda yalnızca en az 2 sentlik değişimi göster.
 const ESIK_USD = 0.02;
+const tarihKisa = (t) => new Date(`${t}T12:00:00Z`).toLocaleDateString("tr-TR", { day: "numeric", month: "long" });
+const gunFarki = (a, b) => Math.round((new Date(`${b}T12:00:00Z`) - new Date(`${a}T12:00:00Z`)) / 86400000);
 const anlamli = (it) => it.usd_saat == null || it.onceki_usd == null || Math.abs(it.usd_saat - it.onceki_usd) >= ESIK_USD - 1e-9;
 
 export default function Prices() {
@@ -70,7 +72,12 @@ export default function Prices() {
 
       {data.iki_gun && (
         <section className="container mx-auto px-4 pb-8">
-          <h2 className="font-display font-bold text-xl mb-4">Son ölçümler arası hareketler</h2>
+          <h2 className="font-display font-bold text-xl mb-1">Son ölçümler arası hareketler</h2>
+          {data.iki_gun.baslangic && data.iki_gun.bitis && (
+            <p className="font-mono text-[11px] text-muted-foreground mb-3" data-testid="hareket-araligi">
+              {tarihKisa(data.iki_gun.baslangic)} → {tarihKisa(data.iki_gun.bitis)} ({gunFarki(data.iki_gun.baslangic, data.iki_gun.bitis)} gün)
+            </p>
+          )}
           <p className="text-xs text-muted-foreground mb-3">Soluk satırlar {AZ_SAGLAYICI}'ten az sağlayıcıyla listeleniyor; bu modellerde medyan tek bir ilanla büyük oynayabilir.</p>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="rounded-2xl border border-red-500/40 bg-red-500/5 p-5">
