@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-19T07:16:23.034Z",
+  "guncelleme": "2026-10-19T07:16:47.317Z",
   "tarih": "2026-10-19",
   "durum": "dikkat",
   "ajanlar": [
@@ -44,7 +44,7 @@
     {
       "seviye": "dikkat",
       "tur": "onay",
-      "metin": "7 öneri onay bekliyor (PR #29, PR #30, PR #31, PR #32, PR #33, PR #35, PR #36) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+      "metin": "8 öneri onay bekliyor (PR #29, PR #30, PR #31, PR #32, PR #33, PR #34, PR #35, PR #36) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
   "oneriler": [
@@ -92,6 +92,16 @@
       "dal": "otomasyon/oneri-2026-10-19-2",
       "ozet": "Endeks ölçümü 14 günden eskiyse kartta sarı 'Eski' rozeti",
       "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-19",
+      "oneri": "veri-isle kayıtlıdan eski endeks ölçümünü yazmasın",
+      "durum": "acik",
+      "pr": 34,
+      "dal": "otomasyon/duzeltme-2026-10-19",
+      "ozet": "Gelen endeks ölçümü kayıtlıdan eskiyse atlanır (14 Eylül okuması 12 Ekim'in üzerine yazılmasın)",
+      "neden": "Korunan dosya (otomasyon/veri-isle.mjs); eski tarihli endeksle elle test edildi, kullanıcı onayı gerekiyor",
       "kim": "otomasyon"
     }
   ],
@@ -298,6 +308,13 @@
       "pr": 36,
       "tarih": "2026-10-19",
       "kim": "otomasyon"
+    },
+    {
+      "oneri": "veri-isle kayıtlıdan eski endeks ölçümünü yazmasın",
+      "durum": "acik",
+      "pr": 34,
+      "tarih": "2026-10-19",
+      "kim": "otomasyon"
     }
   ],
   "onayBekleyen": [
@@ -335,6 +352,13 @@
       "tarih": "2026-10-14",
       "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
       "dal": "otomasyon/oneri-2026-10-14-2"
+    },
+    {
+      "pr": 34,
+      "oneri": "veri-isle kayıtlıdan eski endeks ölçümünü yazmasın",
+      "tarih": "2026-10-19",
+      "neden": "Korunan dosya (otomasyon/veri-isle.mjs); eski tarihli endeksle elle test edildi, kullanıcı onayı gerekiyor",
+      "dal": "otomasyon/duzeltme-2026-10-19"
     },
     {
       "pr": 35,

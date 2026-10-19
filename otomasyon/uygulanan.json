@@ -290,6 +290,16 @@
       "ozet": "Endeks ölçümü 14 günden eskiyse kartta sarı 'Eski' rozeti",
       "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-19",
+      "oneri": "veri-isle kayıtlıdan eski endeks ölçümünü yazmasın",
+      "durum": "acik",
+      "pr": 34,
+      "dal": "otomasyon/duzeltme-2026-10-19",
+      "ozet": "Gelen endeks ölçümü kayıtlıdan eskiyse atlanır (14 Eylül okuması 12 Ekim'in üzerine yazılmasın)",
+      "neden": "Korunan dosya (otomasyon/veri-isle.mjs); eski tarihli endeksle elle test edildi, kullanıcı onayı gerekiyor",
+      "kim": "otomasyon"
     }
   ]
 }
