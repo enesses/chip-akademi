@@ -1,0 +1,13 @@
+{
+  "fiyat": {
+    "durum": "ok"
+  },
+  "endeks": {
+    "durum": "okunamadi",
+    "not": "Endeks sayfası 14 Eylül ölçümünü gösterdi (kayıtlıdan eski); endeks yazılmadı"
+  },
+  "bellek": {
+    "durum": "ok",
+    "not": "TrendForce basın merkezinde 30 Eylül'den sonra yeni sözleşme fiyatı açıklaması yok; dosya yazılmadı"
+  }
+}

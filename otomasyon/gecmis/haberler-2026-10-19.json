@@ -1,0 +1,89 @@
+{
+  "tarih": "2026-10-19",
+  "haberler": [
+    {
+      "baslik": "Hanmi Semiconductor, San Jose'de ABD birimini açtı",
+      "detay": "HBM için termal sıkıştırmalı bağlayıcıda dünya lideri Hanmi, 16 Ekim'de Hanmi USA'yı açtı. Adım, SK hynix'in Indiana'daki 4 milyar $'lık HBM paketleme tesisi ve Amkor'un Arizona'daki 12 milyar $'lık yatırımı gibi ABD projelerine hizmet için.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/10/19/hanmi-semiconductor-opens-silicon-valley-unit-to-serve-us",
+      "yayin": "2026-10-19",
+      "konular": [
+        "cip",
+        "bellek"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "CXMT'nin satış patlaması Kore'de kredili işlem baskısını artırdı",
+      "detay": "CXMT 1–2 milyar yuanlık hisse geri alımı önerdi. Kore'de kredili işlem bakiyesi 15 Ekim'de 32,75 trilyon wona çıktı (temmuz sonuna göre +%13,2); zorunlu satışlar bir haftada ~12,7 kat artarak 80,4 milyar wona ulaştı.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/10/19/cxmt-sales-jump-sevenfold-as-china-shakes-up-dram-market",
+      "yayin": "2026-10-19",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Goldman: Çin'in bellek yetişme hızı abartılıyor",
+      "detay": "Goldman Sachs, SK hynix ve Samsung için risk/getirinin cazip olduğunu ve piyasanın CXMT'nin ileri bellekteki farkı kapatma hızını abarttığını söyledi. Aynı gün SK hynix (ABD), SanDisk ve Micron ~%3 düştü.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/10/16/sk-hynix-sandisk-and-micron-drop-3-despite-goldman-sachs-calling-china-chip-fears-overdone/",
+      "yayin": "2026-10-16",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Samsung ve SK hynix bellek darboğazına yeni mimarilerle yanıt arıyor",
+      "detay": "Samsung, HBM'i doğrudan grafik işlemcinin üzerine istifleyen bir tasarımı inceliyor; SK hynix ise yapay zekâ çıkarımında kapasiteyi artırmak için yüksek bant genişlikli flash (HBF) geliştiriyor.",
+      "kaynak": "DIGITIMES",
+      "url": "https://www.digitimes.com/news/a20261016PD214/samsung-sk-hynix-hbm-data-capacity.html",
+      "yayin": "2026-10-16",
+      "konular": [
+        "bellek"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "CoreWeave'in borç sigortası 1.000 baz puanı aştı",
+      "detay": "CoreWeave'in 5 yıllık CDS primi ekim ortasında 1.000 baz puanın üzerine çıktı, 2031 vadeli %9,75 kuponlu tahvilinin getirisi %15,78'e kadar yükseldi; şirketin 51 milyar $'ı aşan borç ve kira yükümlülüğü var. Aynı dönemde Anthropic'in halka arz hazırlığı sürüyor.",
+      "kaynak": "Startup Fortune",
+      "url": "https://startupfortune.com/anthropic-pushes-toward-an-ipo-while-coreweaves-debt-spooks-wall-street/",
+      "yayin": "2026-10-16",
+      "konular": [
+        "veri-merkezi",
+        "pazar",
+        "yapay-zeka"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Cisco ve Nvidia yapay zekâ veri merkezleri için yeni optik modül geliştiriyor",
+      "detay": "Ultra yoğun USFP modülü, Ethernet yapay zekâ ağlarında şerit başına 200 Gb/sn'den 400 Gb/sn'ye geçişi mevcut altyapıyı değiştirmeden sağlıyor.",
+      "kaynak": "Data Centre Magazine",
+      "url": "https://datacentremagazine.com/news/this-weeks-top-five-stories-in-the-data-centre-industry-17-october-2026",
+      "yayin": "2026-10-17",
+      "konular": [
+        "veri-merkezi",
+        "cip"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Micron ve TSMC, Tayvan ve Japonya'da yapay zekâ kapasitesini genişletiyor",
+      "detay": "DIGITIMES'ın 12–18 Ekim haftalık özetine göre Micron ve TSMC iki ülkede yapay zekâ kapasitesini büyütüyor; Hindistan'da Tata'nın Dholera fabrikası ilk müşteri taahhütlerini düzenli üretime çevirme sınavında.",
+      "kaynak": "DIGITIMES",
+      "url": "https://www.digitimes.com/news/a20261019VL200/2026-capacity-fab-production-intel.html",
+      "yayin": "2026-10-19",
+      "konular": [
+        "cip",
+        "bellek"
+      ],
+      "kategori": "notr"
+    }
+  ]
+}

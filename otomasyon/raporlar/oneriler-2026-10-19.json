@@ -1,0 +1,29 @@
+{
+  "tarih": "2026-10-19",
+  "oneriler": [
+    {
+      "baslik": "Firebase'in getirdiği @grpc/grpc-js açığını kapatan PR #31'i birleştir",
+      "neden": "guvenlik-2026-10-19.json hâlâ 4 yüksek seviye bağımlılık açığı gösteriyor (firebase → @firebase/firestore → @grpc/grpc-js). Bu 'dikkat' durumu öneri denetiminin güvenlik adımını kırmızıda tuttuğu için #29, #30, #32 ve #33 onay kuyruğunda bekliyor; bugünkü öneriler de aynı nedenle kendiliğinden birleşemeyebilir.",
+      "etki": "yüksek",
+      "alan": "güvenlik"
+    },
+    {
+      "baslik": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
+      "neden": "src/pages/Prices.jsx başlığı tarih göstermiyor; oysa gpu_kiralama.json iki_gun.baslangic/bitis alanlarını taşıyor. Bugünkü karşılaştırma 14 → 19 Ekim (5 gün) arası: RTX 4090'ın %39'luk artışı tek günlük hareket gibi okunuyor.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Fiyat endeksi kartında ölçüm tarihi eskiyse uyarı göster",
+      "neden": "Prices.jsx endeks kartı 'ölçüm 2026-10-12' yazıyor ama eskilik işareti yok; bugün kaynak sayfa 14 Eylül ölçümünü gösterdi, yani endeks düzensiz güncelleniyor. BellekFiyatlari.jsx'teki eskilik() deseni (60 gün → 'Eski' rozeti) endeks için de kullanılabilir.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bellek göstergelerinde yüzdesiz (yalnızca yön) tahminleri destekle",
+      "neden": "bellek_fiyat.json'daki 'Sunucu DRAM 3Ç 2026' göstergesinin dönemi bitti; TrendForce'un 30 Eylül açıklaması 4Ç26 için sunucu, PC ve mobil DRAM'de yüzde vermiyor, yalnızca yön bildiriyor ('arz açığı sürecek'). Şema alt/ust zorunlu tuttuğu için bu bilgi uygulamaya giremiyor.",
+      "etki": "orta",
+      "alan": "veri"
+    }
+  ]
+}

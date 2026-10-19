@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-18T11:47:46.264Z",
-  "tarih": "2026-10-18",
+  "guncelleme": "2026-10-19T07:13:20.350Z",
+  "tarih": "2026-10-19",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "dikkat",
-      "zaman": "2026-10-18T11:46:21.075Z"
+      "zaman": "2026-10-19T07:10:55.088Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-18T11:46:21.218Z"
+      "zaman": "2026-10-19T07:10:55.321Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-18T11:46:19.090Z"
+      "zaman": "2026-10-19T07:10:51.688Z"
     },
     {
       "id": "gelistirme",
@@ -33,21 +33,13 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-18T11:46:37.313Z"
+      "zaman": "2026-10-19T07:11:18.176Z"
     }
   ],
   "dikkat": [
     {
       "seviye": "uyarı",
-      "metin": "Fiyat verisi 4 gün eski (eşik 3 gün)."
-    },
-    {
-      "seviye": "uyarı",
       "metin": "Güvenlik: 4 yüksek seviye bağımlılık açığı var."
-    },
-    {
-      "seviye": "uyarı",
-      "metin": "Yenileme · Fiyat verisi: izin engeli — kaynak sayfa okumaya izin vermedi, veri uydurulmadı (son veri 2026-10-14). WebFetch PROVENANCE_REQUIRED: getdeploying.com/gpus için izin isteği yanıtlanmadı; arama sonuçlarında adres çıkmadı"
     },
     {
       "seviye": "dikkat",
@@ -58,21 +50,27 @@
   "oneriler": [
     {
       "baslik": "Firebase'in getirdiği @grpc/grpc-js açığını kapatan PR #31'i birleştir",
-      "neden": "Güvenlik raporu 4 yüksek seviye bağımlılık açığı gösteriyor (guvenlik-2026-10-18.json); kaynağı firebase@11 ile gelen grpc-js 1.9.x. Bu 'dikkat' durumu öneri denetimini de geçirmediği için #29, #30, #32 ve #33 onay kuyruğunda bekliyor.",
+      "neden": "guvenlik-2026-10-19.json hâlâ 4 yüksek seviye bağımlılık açığı gösteriyor (firebase → @firebase/firestore → @grpc/grpc-js). Bu 'dikkat' durumu öneri denetiminin güvenlik adımını kırmızıda tuttuğu için #29, #30, #32 ve #33 onay kuyruğunda bekliyor; bugünkü öneriler de aynı nedenle kendiliğinden birleşemeyebilir.",
       "etki": "yüksek",
       "alan": "güvenlik"
     },
     {
-      "baslik": "Fiyat kaynağı için izin engelini kalıcı çöz",
-      "neden": "getdeploying.com 15–18 Ekim'de okunamadı (PROVENANCE_REQUIRED); fiyat verisi 4 gündür 2026-10-14'te. Zamanlanmış görev izin isteğini yanıtlayacak kimseyi bulamıyor; adres bir kez kullanıcı tarafından onaylanmalı ya da başka bir yoldan (GitHub Actions) çekilmeli.",
+      "baslik": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
+      "neden": "src/pages/Prices.jsx başlığı tarih göstermiyor; oysa gpu_kiralama.json iki_gun.baslangic/bitis alanlarını taşıyor. Bugünkü karşılaştırma 14 → 19 Ekim (5 gün) arası: RTX 4090'ın %39'luk artışı tek günlük hareket gibi okunuyor.",
       "etki": "orta",
-      "alan": "veri"
+      "alan": "arayüz"
     },
     {
-      "baslik": "Günlük otomasyon görevinin 'erişim reddedildi' hatasını gider",
-      "neden": "Zamanlanmış görev 18 Ekim'de 9 saniyede ROUTINE_RUN_FAILURE_REASON_ACCESS_DENIED ile durdu; depoda 15–17 Ekim'e ait günlük commit yok (son: 2026-10-14). Görevin depo erişimi/izinleri yenilenmeli.",
-      "etki": "yüksek",
-      "alan": "otomasyon"
+      "baslik": "Fiyat endeksi kartında ölçüm tarihi eskiyse uyarı göster",
+      "neden": "Prices.jsx endeks kartı 'ölçüm 2026-10-12' yazıyor ama eskilik işareti yok; bugün kaynak sayfa 14 Eylül ölçümünü gösterdi, yani endeks düzensiz güncelleniyor. BellekFiyatlari.jsx'teki eskilik() deseni (60 gün → 'Eski' rozeti) endeks için de kullanılabilir.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bellek göstergelerinde yüzdesiz (yalnızca yön) tahminleri destekle",
+      "neden": "bellek_fiyat.json'daki 'Sunucu DRAM 3Ç 2026' göstergesinin dönemi bitti; TrendForce'un 30 Eylül açıklaması 4Ç26 için sunucu, PC ve mobil DRAM'de yüzde vermiyor, yalnızca yön bildiriyor ('arz açığı sürecek'). Şema alt/ust zorunlu tuttuğu için bu bilgi uygulamaya giremiyor.",
+      "etki": "orta",
+      "alan": "veri"
     }
   ],
   "uygulanan": [],
@@ -348,15 +346,7 @@
     "bulgular": [
       {
         "alan": "veri",
-        "baslik": "Fiyat verisi 4 gün önce çekilmiş",
-        "etki": "orta",
-        "otomatik": true,
-        "eylem": "yenileme-calistir",
-        "aciklama": "3. ajan (yenileme) çalıştırılarak güncellenebilir."
-      },
-      {
-        "alan": "veri",
-        "baslik": "Bellek fiyatları 15 gündür güncellenmedi",
+        "baslik": "Bellek fiyatları 16 gündür güncellenmedi",
         "etki": "düşük",
         "otomatik": false,
         "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
@@ -380,18 +370,18 @@
     "adimlar": [
       {
         "ad": "Fiyat verisi",
-        "durum": "uyari",
-        "detay": "izin engeli — kaynak sayfa okumaya izin vermedi, veri uydurulmadı (son veri 2026-10-14). WebFetch PROVENANCE_REQUIRED: getdeploying.com/gpus için izin isteği yanıtlanmadı; arama sonuçlarında adres çıkmadı"
+        "durum": "ok",
+        "detay": "bu çalıştırmada güncellendi — 92 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu)"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 44, 3 yaklaşan olay; haber akışına +8"
+        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 44, 5 yaklaşan olay; haber akışına +9"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+5 haber (akışta 137); bugün toplam 13"
+        "detay": "+7 haber (akışta 153); bugün toplam 16"
       },
       {
         "ad": "Derleme",
@@ -401,14 +391,14 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2304 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2314 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
   "gelistirme": {
     "durum": "degisiklik-yok",
     "uygulanan": 0,
-    "atlanan": 1,
+    "atlanan": 0,
     "testler": [
       {
         "ad": "Derleme",
@@ -428,11 +418,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-09-02",
-      "durum": "dikkat",
-      "dikkat": 1
-    },
     {
       "tarih": "2026-10-03",
       "durum": "temiz",
@@ -497,6 +482,11 @@
       "tarih": "2026-10-18",
       "durum": "dikkat",
       "dikkat": 4
+    },
+    {
+      "tarih": "2026-10-19",
+      "durum": "dikkat",
+      "dikkat": 2
     }
   ]
 }
