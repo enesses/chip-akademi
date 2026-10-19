@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { Link } from "@/components/Nav";
-import { ArrowDownRight, ArrowUpRight, DollarSign, ExternalLink, Search, TrendingDown, TrendingUp } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight, Clock, DollarSign, ExternalLink, Search, TrendingDown, TrendingUp } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import data from "@/data/gpu_kiralama.json";
 import { getChipById } from "@/data/chips";
@@ -16,6 +16,9 @@ const pct = (v) => `${v > 0 ? "+" : ""}%${Math.abs(v).toLocaleString("tr-TR")}`;
 // Fiyatlar iki ondalığa yuvarlı geliyor: 0,02 $ → 0,03 $ gibi 1 sentlik oynama
 // %50 "hareket" gibi görünür. Kartlarda yalnızca en az 2 sentlik değişimi göster.
 const ESIK_USD = 0.02;
+// Endeks haftalık ölçülür; kaynak bazen haftalarca güncellenmiyor. 14 günden eski ölçüm işaretlenir.
+const ENDEKS_ESKI_GUN = 14;
+const endeksYasi = (t) => (/^\d{4}-\d{2}-\d{2}$/.test(t || "") ? Math.floor((Date.now() - new Date(`${t}T12:00:00Z`)) / 86400000) : null);
 const anlamli = (it) => it.usd_saat == null || it.onceki_usd == null || Math.abs(it.usd_saat - it.onceki_usd) >= ESIK_USD - 1e-9;
 
 export default function Prices() {
@@ -52,6 +55,11 @@ export default function Prices() {
               </p>
             )}
             <p className="font-mono text-[9px] text-muted-foreground mt-0.5">ölçüm {data.kaynak.olcum_tarihi}</p>
+            {endeksYasi(data.kaynak.olcum_tarihi) > ENDEKS_ESKI_GUN && (
+              <p className="inline-flex items-center gap-1 mt-1 rounded-full border border-amber-500/40 bg-amber-500/10 px-1.5 py-0.5 font-mono text-[9px] text-amber-300" data-testid="endeks-eski">
+                <Clock className="h-2.5 w-2.5" aria-hidden="true" />Eski: {endeksYasi(data.kaynak.olcum_tarihi)} gün önce ölçüldü
+              </p>
+            )}
           </div>
           <div className="rounded-xl border border-card-border bg-card p-4">
             <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">Model</p>
