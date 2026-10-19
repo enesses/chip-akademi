@@ -270,6 +270,26 @@
       "ozet": "Maliyet kartı alt yazısında önceki ölçüme göre değişim (≥3 sağlayıcı)",
       "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-19",
+      "oneri": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
+      "durum": "acik",
+      "pr": 35,
+      "dal": "otomasyon/oneri-2026-10-19-1",
+      "ozet": "Hareketler başlığının altına '14 Ekim → 19 Ekim (5 gün)' aralık satırı",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-19",
+      "oneri": "Fiyat endeksi kartında ölçüm tarihi eskiyse uyarı göster",
+      "durum": "acik",
+      "pr": 36,
+      "dal": "otomasyon/oneri-2026-10-19-2",
+      "ozet": "Endeks ölçümü 14 günden eskiyse kartta sarı 'Eski' rozeti",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "kim": "otomasyon"
     }
   ]
 }

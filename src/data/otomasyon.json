@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-19T07:13:20.350Z",
+  "guncelleme": "2026-10-19T07:16:23.034Z",
   "tarih": "2026-10-19",
   "durum": "dikkat",
   "ajanlar": [
@@ -44,7 +44,7 @@
     {
       "seviye": "dikkat",
       "tur": "onay",
-      "metin": "5 öneri onay bekliyor (PR #29, PR #30, PR #31, PR #32, PR #33) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+      "metin": "7 öneri onay bekliyor (PR #29, PR #30, PR #31, PR #32, PR #33, PR #35, PR #36) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
   "oneriler": [
@@ -73,7 +73,28 @@
       "alan": "veri"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-10-19",
+      "oneri": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
+      "durum": "acik",
+      "pr": 35,
+      "dal": "otomasyon/oneri-2026-10-19-1",
+      "ozet": "Hareketler başlığının altına '14 Ekim → 19 Ekim (5 gün)' aralık satırı",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-19",
+      "oneri": "Fiyat endeksi kartında ölçüm tarihi eskiyse uyarı göster",
+      "durum": "acik",
+      "pr": 36,
+      "dal": "otomasyon/oneri-2026-10-19-2",
+      "ozet": "Endeks ölçümü 14 günden eskiyse kartta sarı 'Eski' rozeti",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
@@ -263,6 +284,20 @@
       "pr": 33,
       "tarih": "2026-10-14",
       "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
+      "durum": "acik",
+      "pr": 35,
+      "tarih": "2026-10-19",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyat endeksi kartında ölçüm tarihi eskiyse uyarı göster",
+      "durum": "acik",
+      "pr": 36,
+      "tarih": "2026-10-19",
+      "kim": "otomasyon"
     }
   ],
   "onayBekleyen": [
@@ -300,6 +335,20 @@
       "tarih": "2026-10-14",
       "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
       "dal": "otomasyon/oneri-2026-10-14-2"
+    },
+    {
+      "pr": 35,
+      "oneri": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
+      "tarih": "2026-10-19",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "dal": "otomasyon/oneri-2026-10-19-1"
+    },
+    {
+      "pr": 36,
+      "oneri": "Fiyat endeksi kartında ölçüm tarihi eskiyse uyarı göster",
+      "tarih": "2026-10-19",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "dal": "otomasyon/oneri-2026-10-19-2"
     }
   ],
   "guvenlik": {
