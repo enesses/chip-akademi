@@ -1,7 +1,7 @@
 {
   "ajan": "rapor",
   "tarih": "2026-10-20",
-  "zaman": "2026-10-20T07:02:48.742Z",
+  "zaman": "2026-10-20T07:05:17.815Z",
   "durum": "dikkat",
   "gunTamam": true,
   "tazelik": [
@@ -36,7 +36,7 @@
     {
       "seviye": "dikkat",
       "tur": "onay",
-      "metin": "8 öneri onay bekliyor (PR #29, PR #30, PR #31, PR #32, PR #33, PR #34, PR #35, PR #36) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+      "metin": "10 öneri onay bekliyor (PR #29, PR #30, PR #31, PR #32, PR #33, PR #34, PR #35, PR #36, PR #37, PR #38) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ]
 }

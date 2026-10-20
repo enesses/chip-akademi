@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-20T07:02:48.741Z",
+  "guncelleme": "2026-10-20T07:05:17.814Z",
   "tarih": "2026-10-20",
   "durum": "dikkat",
   "ajanlar": [
@@ -48,7 +48,7 @@
     {
       "seviye": "dikkat",
       "tur": "onay",
-      "metin": "8 öneri onay bekliyor (PR #29, PR #30, PR #31, PR #32, PR #33, PR #34, PR #35, PR #36) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+      "metin": "10 öneri onay bekliyor (PR #29, PR #30, PR #31, PR #32, PR #33, PR #34, PR #35, PR #36, PR #37, PR #38) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
   "oneriler": [
@@ -83,7 +83,28 @@
       "alan": "kod"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-10-20",
+      "oneri": "Haberler'de yayın tarihini eklenme gününden farklıysa göster",
+      "durum": "acik",
+      "pr": 37,
+      "dal": "otomasyon/oneri-2026-10-20-1",
+      "ozet": "Haber satırında kaynak yanında 'Yayın: 18 Ekim' (yalnızca eklenme gününden farklıysa)",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-20",
+      "oneri": "Bugün puanında tüm maddeler tekrar ise sıfıra bölmeyi önle",
+      "durum": "acik",
+      "pr": 38,
+      "dal": "otomasyon/oneri-2026-10-20-2",
+      "ozet": "Ağırlık toplamı 0 iken puan NaN yerine nötr 50",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
@@ -294,6 +315,20 @@
       "pr": 34,
       "tarih": "2026-10-19",
       "kim": "otomasyon"
+    },
+    {
+      "oneri": "Haberler'de yayın tarihini eklenme gününden farklıysa göster",
+      "durum": "acik",
+      "pr": 37,
+      "tarih": "2026-10-20",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Bugün puanında tüm maddeler tekrar ise sıfıra bölmeyi önle",
+      "durum": "acik",
+      "pr": 38,
+      "tarih": "2026-10-20",
+      "kim": "otomasyon"
     }
   ],
   "onayBekleyen": [
@@ -352,6 +387,20 @@
       "tarih": "2026-10-19",
       "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
       "dal": "otomasyon/oneri-2026-10-19-2"
+    },
+    {
+      "pr": 37,
+      "oneri": "Haberler'de yayın tarihini eklenme gününden farklıysa göster",
+      "tarih": "2026-10-20",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "dal": "otomasyon/oneri-2026-10-20-1"
+    },
+    {
+      "pr": 38,
+      "oneri": "Bugün puanında tüm maddeler tekrar ise sıfıra bölmeyi önle",
+      "tarih": "2026-10-20",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "dal": "otomasyon/oneri-2026-10-20-2"
     }
   ],
   "guvenlik": {

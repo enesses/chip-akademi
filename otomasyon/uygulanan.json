@@ -300,6 +300,26 @@
       "ozet": "Gelen endeks ölçümü kayıtlıdan eskiyse atlanır (14 Eylül okuması 12 Ekim'in üzerine yazılmasın)",
       "neden": "Korunan dosya (otomasyon/veri-isle.mjs); eski tarihli endeksle elle test edildi, kullanıcı onayı gerekiyor",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-20",
+      "oneri": "Haberler'de yayın tarihini eklenme gününden farklıysa göster",
+      "durum": "acik",
+      "pr": 37,
+      "dal": "otomasyon/oneri-2026-10-20-1",
+      "ozet": "Haber satırında kaynak yanında 'Yayın: 18 Ekim' (yalnızca eklenme gününden farklıysa)",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-20",
+      "oneri": "Bugün puanında tüm maddeler tekrar ise sıfıra bölmeyi önle",
+      "durum": "acik",
+      "pr": 38,
+      "dal": "otomasyon/oneri-2026-10-20-2",
+      "ozet": "Ağırlık toplamı 0 iken puan NaN yerine nötr 50",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "kim": "otomasyon"
     }
   ]
 }
