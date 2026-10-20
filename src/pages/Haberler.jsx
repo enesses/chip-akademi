@@ -25,6 +25,12 @@ function gunBasligi(iso) {
   return { kisa: uzun, uzun: null };
 }
 
+/** Kaynağın yayın tarihi ("18 Ekim"); haber akışa daha sonraki bir gün eklendiyse gösterilir. */
+function yayinYaz(iso) {
+  const [, a, g] = iso.split("-").map(Number);
+  return a && g ? `${g} ${AY[a - 1]}` : iso;
+}
+
 const ILK_GUN = 3;
 
 export default function Haberler() {
@@ -150,6 +156,9 @@ export default function Haberler() {
                             <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{h.detay}</p>
                             <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] text-muted-foreground">
                               <span className="text-foreground/80">{h.kaynak}</span>
+                              {h.yayin && h.yayin !== h.tarih && (
+                                <><span aria-hidden="true">·</span><span title="Kaynağın yayın tarihi">Yayın: {yayinYaz(h.yayin)}</span></>
+                              )}
                               {h.ton && <><span aria-hidden="true">·</span><span style={{ color: TON[h.ton].renk }}>{TON[h.ton].ad}</span></>}
                               <span aria-hidden="true">·</span>
                               {h.konular.map((k) => (
