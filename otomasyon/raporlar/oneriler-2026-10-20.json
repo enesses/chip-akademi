@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-10-20",
+  "oneriler": [
+    {
+      "baslik": "Haberler'de yayın tarihini eklenme gününden farklıysa göster",
+      "neden": "src/data/haberler.json'daki 168 haberin 43'ünde 'yayin' alanı var ve 37'sinde eklenme günü (tarih) ile farklı; Haberler.jsx haberleri yalnızca 'tarih'e göre gruplayıp 'yayin'ı hiç göstermiyor, bu yüzden 18 Ekim'de yayımlanan bir haber 'Bugün' başlığı altında yeni gibi görünüyor.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bugün puanında tüm maddeler tekrar ise sıfıra bölmeyi önle",
+      "neden": "src/pages/Bugun.jsx satır 31: tüm maddeler 'tekrar' işaretliyse ta=0 olur ve puan Math.round(50+50*(0/0)) = NaN olarak ekrana basılır; renk eşikleri de NaN'la çalışmaz.",
+      "etki": "düşük",
+      "alan": "kod"
+    },
+    {
+      "baslik": "PR #31'i (grpc-js overrides) onayla — onay kuyruğunu açar",
+      "neden": "npm audit'teki 4 yüksek açığın kaynağı firebase → @grpc/grpc-js zinciri; oneri-uygula.mjs denetle güvenlik durumu 'temiz' olmadıkça hiçbir öneriyi birleştirmiyor, bu yüzden 13 Ekim'den beri 8 PR (#29–#36) onay bekliyor. PR #31 package.json'a dokunduğu için yalnızca kullanıcı birleştirebilir.",
+      "etki": "yüksek",
+      "alan": "güvenlik"
+    },
+    {
+      "baslik": "Bellek kaynağına arama üzerinden ulaşma talimatı ekle (GUNLUK 2b)",
+      "neden": "trendforce.com/presscenter bugün de WebFetch'te PROVENANCE_REQUIRED ile reddedildi; src/data/bellek_fiyat.json 17 gündür güncellenmedi (iyileştirme raporu). Fiyat adımındaki gibi önce WebSearch ile TrendForce bülten bağlantısını bulup onu açma talimatı 2b'de yok.",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Kullanılmayan fiyatBilgisi export'unu kaldır",
+      "neden": "src/lib/chipScore.js:566 fiyatBilgisi hiçbir yerde içe aktarılmıyor (iyileştirme raporu); onay bekleyen PR #33 de fiyat değişimini maliyetPuani üzerinden taşıyor, bu fonksiyonu kullanmıyor. togglePin/resetProgress/getExamResults ise açık PR #29/#30/#32'de bağlanıyor, onlara dokunulmamalı.",
+      "etki": "düşük",
+      "alan": "kod"
+    }
+  ]
+}

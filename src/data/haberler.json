@@ -2,6 +2,228 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-10-20-all-street-falls-chart-of-the-day-144315957-html",
+      "tarih": "2026-10-20",
+      "yayin": null,
+      "baslik": "ABD çip hisseleri en kötü haftanın ardından toparlandı",
+      "detay": "Yahoo Finance'in 60 hisselik çip sepeti 19 Ekim'de yaklaşık 250 milyar dolar değer geri kazandı; sepetin ~%90'ı yükselirken S&P 500 hisselerinin ~%70'i düştü. Micron geçen hafta ~%15, Sandisk ~%18 değer kaybetmişti.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/micron-intel-lead-chip-recovery-adding-nearly-250b-as-most-of-wall-street-falls-chart-of-the-day-144315957.html",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-20-micron-climbs-4-sandisk-jumps-7-sk-hynix-rises-5",
+      "tarih": "2026-10-20",
+      "yayin": null,
+      "baslik": "Bellek hisseleri yükseldi: Micron %4, Sandisk %7, SK hynix %5",
+      "detay": "19 Ekim sabahı Micron 916 dolara (~%4), Sandisk ~%7, SK hynix ~%5, Roundhill Memory ETF ~%5 yükseldi. Micron mali 4. çeyrekte 54,23 milyar dolar gelir açıklamış, 1. çeyrek için 61,5 milyar dolar öngörmüştü.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/10/19/memory-stocks-rally-as-tech-selloff-unwinds-micron-climbs-4-sandisk-jumps-7-sk-hynix-rises-5/",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-20-m-en-news-nvidia-nvda-stock-news-october-20-2026",
+      "tarih": "2026-10-20",
+      "yayin": null,
+      "baslik": "Nvidia %1,4, Intel %2,4 yükselişle kapattı",
+      "detay": "Nvidia 19 Ekim'i 217,09 dolardan (+%1,38, piyasa değeri 5,16 trilyon dolar), AMD 538,05 dolardan (+%1,76), Intel 92,03 dolardan (+%2,43) kapattı. Nasdaq %1,11 yükselirken 10 yıllık ABD tahvil getirisi %5,14'e çıktı.",
+      "kaynak": "Gotrade",
+      "url": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-20-2026/",
+      "ton": "pozitif",
+      "konular": [
+        "cip"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-20-ket-movers-262223895-market-movers-intc-20261019",
+      "tarih": "2026-10-20",
+      "yayin": null,
+      "baslik": "Intel, analist yükseltmeleriyle güç kazandı",
+      "detay": "Intel 19 Ekim'de güne %5,66 yükselişle başladı; analistler dökümhane takvimindeki istikrarı, 18A'nın olgunlaşmasını ve sunucu talebini gerekçe gösterdi. Konsensüs yine de 'Tut', ortalama hedef 116,57 dolar.",
+      "kaynak": "TradingKey",
+      "url": "https://tradingkey.com/news/market-movers/262223895-market-movers-intc-20261019",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-20-theedgemalaysia-com-node-822280",
+      "tarih": "2026-10-20",
+      "yayin": null,
+      "baslik": "Kore emeklilik fonu çip çöküşünde 137 milyar dolar kaybetti",
+      "detay": "Ulusal Emeklilik Fonu'nun %5 üzeri paylarının değeri 15 Ekim'e kadar 515,93'ten 333,53 trilyon wona indi (~182 trilyon won). Kaybın ~%72'si SK hynix (74,2 trilyon won) ve Samsung'dan (56,9 trilyon won); Kospi haziran rekorundan ~%39 geriledi.",
+      "kaynak": "The Edge Malaysia (Bloomberg)",
+      "url": "https://theedgemalaysia.com/node/822280",
+      "ton": "negatif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-20-raises-1-5b-to-expand-its-open-compute-ecosystem",
+      "tarih": "2026-10-20",
+      "yayin": null,
+      "baslik": "Tenstorrent 6,2 milyar dolar değerlemeyle 1,5 milyar dolar topladı",
+      "detay": "Jim Keller'ın yönettiği çip girişiminin E serisi turuna Trace Capital ve Innovation X öncülük etti; Morgan Stanley, Fidelity, ARK Invest ve T. Rowe Price katıldı. Para Galaxy sunucu üretimine ve RISC-V araştırmasına gidecek.",
+      "kaynak": "SiliconANGLE",
+      "url": "https://siliconangle.com/2026/10/19/chip-legend-jim-kellers-tenstorrent-raises-1-5b-to-expand-its-open-compute-ecosystem/",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-20-side-prometheus-meta-gigawatt-scale-supercluster",
+      "tarih": "2026-10-20",
+      "yayin": null,
+      "baslik": "Meta'nın Prometheus kümesi 1 milyon GPU'ya doğru",
+      "detay": "Meta, Ohio New Albany'deki gigavat ölçekli Prometheus'un bugün yüz binlerce GPU içerdiğini, tam ölçekte ~1 milyon GPU'ya ulaşacağını açıkladı. GB200 ve GB300 NVL72 raflarından sonra raf başına 170 kW'ı aşan Vera Rubin NVL72 gelecek.",
+      "kaynak": "Engineering at Meta",
+      "url": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-20-center-deal-amid-power-delays-1rnjxwrkgvm-p-html",
+      "tarih": "2026-10-20",
+      "yayin": null,
+      "baslik": "Microsoft, elektrik gecikmesi yüzünden İngiltere'deki Nscale anlaşmasından çekildi",
+      "detay": "Essex Loughton'daki veri merkezi projesine şebeke enerjisinin 2030'lara kadar gelmeyebileceği bildirildi. Eylül 2025'te duyurulan projeye Nvidia çiplerinin 2027 başında teslimi planlanıyordu; Nscale başka enerji kaynakları araştırdığını söyledi.",
+      "kaynak": "CGTN (Reuters/Telegraph aktarımı)",
+      "url": "https://news.cgtn.com/news/2026-10-19/Microsoft-exits-UK-data-center-deal-amid-power-delays-1RnjxWrKGvm/p.html",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-20-blogs-nvidia-com-gtc-berlin-2026-news",
+      "tarih": "2026-10-20",
+      "yayin": null,
+      "baslik": "Nvidia GTC Berlin öncesi Avrupa ortaklıklarını duyurdu",
+      "detay": "Nvidia İngiltere'de ajan güvenliği araştırmalarına 5 yıllık 250 milyon dolarlık hesaplama bağışı açıkladı (Avrupa'ya ~10 milyar dolarlık taahhüdün parçası). Siemens Erlangen kampüsüne 500 milyon euro yatırım yapacak; İsveç'te Sferical One süper bilgisayarı tanıtıldı.",
+      "kaynak": "NVIDIA Blog",
+      "url": "https://blogs.nvidia.com/gtc-berlin-2026-news/",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-20-eo-warns-the-memory-crisis-could-last-until-2030",
+      "tarih": "2026-10-20",
+      "yayin": "2026-10-19",
+      "baslik": "CXMT'nin DRAM kapasitesi 2028'de ikiye katlanabilir",
+      "detay": "Counterpoint ve TrendForce tahminlerine göre CXMT'nin DRAM gofret üretimi bu yılki ~320 binden 2027'de 420 bine, 2028'de 500–600 bine çıkabilir. Dell CEO'su Michael Dell bellek sıkıntısının 2030'a kadar sürebileceğini söyledi.",
+      "kaynak": "TechRadar",
+      "url": "https://techradar.com/computing/memory/analysts-forecast-chinese-ram-surge-through-2028-but-its-not-likely-to-help-the-average-consumer-as-dell-ceo-warns-the-memory-crisis-could-last-until-2030",
+      "ton": "notr",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-20-ements-for-bulk-of-2027-dram-nand-and-hbm-supply",
+      "tarih": "2026-10-20",
+      "yayin": "2026-10-19",
+      "baslik": "Samsung 2027 HBM arzının tamamını sözleşmeye bağladı",
+      "detay": "KB Securities analizine göre Samsung'un 2027 DRAM ve NAND hacminin %70'i uzun vadeli anlaşmalarla ayrıldı, HBM'nin tamamı sözleşmeli. HBM ortalama fiyatının 2027'de %100–150 artması bekleniyor.",
+      "kaynak": "Sammy Fans (KB Securities/Yonhap aktarımı)",
+      "url": "https://sammyfans.com/2026/10/19/samsung-secures-long-term-agreements-for-bulk-of-2027-dram-nand-and-hbm-supply",
+      "ton": "pozitif",
+      "konular": [
+        "bellek"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-20-m-article-10-18-2026-china-mulls-ai-export-rules",
+      "tarih": "2026-10-20",
+      "yayin": "2026-10-18",
+      "baslik": "ABD'de muhafazakâr grup yapay zekâ ihracat kontrolü istiyor",
+      "detay": "Çin'in yapay zekâ modelleri ve çipleri için ihracat kontrolleri hazırladığı haberinin ardından ABD'deki Humans First grubu 'Amerika Önce Yapay Zekâ Politikası' platformunda ABD teknolojisine de ihracat kontrolü çağrısı yaptı.",
+      "kaynak": "Semafor",
+      "url": "https://www.semafor.com/article/10/18/2026/china-mulls-ai-export-rules",
+      "ton": "notr",
+      "konular": [
+        "politika",
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-20--running-pytorch-workloads-on-aws-trainium-chips",
+      "tarih": "2026-10-20",
+      "yayin": "2026-10-19",
+      "baslik": "Amazon, Trainium için PyTorch araç seti TorchNeuron'u tanıttı",
+      "detay": "Açık kaynak TorchNeuron, PyTorch iş yüklerini büyük kod değişikliği olmadan Trainium2 ve Trainium3'te çalıştırıyor. Trainium3 154 GB çip üstü belleğe sahip; sunucu başına 144 hızlandırıcıya kadar çıkılıyor.",
+      "kaynak": "SiliconANGLE",
+      "url": "https://siliconangle.com/2026/10/19/amazon-introduces-toolkit-for-running-pytorch-workloads-on-aws-trainium-chips/",
+      "ton": "notr",
+      "konular": [
+        "cip",
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-20-mitting-5-of-its-shares-to-a-public-benefit-fund",
+      "tarih": "2026-10-20",
+      "yayin": "2026-10-18",
+      "baslik": "Anthropic hisselerinin %5'ini kamu yararı fonuna ayırıyor",
+      "detay": "Anthropic, şirket değeri her %50 arttığında ek %2 katkı seçeneğiyle hisselerinin %5'ini yeni bir kamu yararı fonuna ayıracağını duyurdu. Fonun yönetişimi önümüzdeki aylarda açıklanacak.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+      "ton": "notr",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-20-re-new-ai-models-the-information-reports-4957891",
+      "tarih": "2026-10-20",
+      "yayin": "2026-10-19",
+      "baslik": "Anthropic, Google ve OpenAI yeni modeller hazırlıyor",
+      "detay": "The Information'a göre Google, Gemini 4 Argon'un yerini alacak Gemini 4 Carbon üzerinde çalışıyor; OpenAI'ın Terra ailesinden daha ucuz bir model önümüzdeki haftalarda çıkabilir; Anthropic daha güçlü akıl yürüten bir model geliştiriyor.",
+      "kaynak": "Investing.com (The Information aktarımı)",
+      "url": "https://www.investing.com/news/stock-market-news/anthropic-google-and-openai-prepare-new-ai-models-the-information-reports-4957891",
+      "ton": "notr",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
       "id": "2026-10-19-id-ai-funding-concerns-and-deepseek-model-update",
       "tarih": "2026-10-19",
       "yayin": null,
@@ -2316,7 +2538,7 @@
       "kaynakTuru": "bugun"
     }
   ],
-  "guncelleme": "2026-10-19",
+  "guncelleme": "2026-10-20",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",

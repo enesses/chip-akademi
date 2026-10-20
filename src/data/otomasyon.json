@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-19T07:44:57.673Z",
-  "tarih": "2026-10-19",
+  "guncelleme": "2026-10-20T07:02:48.741Z",
+  "tarih": "2026-10-20",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "dikkat",
-      "zaman": "2026-10-19T07:10:55.088Z"
+      "zaman": "2026-10-20T07:00:39.088Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-19T07:10:55.321Z"
+      "zaman": "2026-10-20T07:00:39.255Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-19T07:10:51.688Z"
+      "zaman": "2026-10-20T07:00:37.192Z"
     },
     {
       "id": "gelistirme",
@@ -33,13 +33,17 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-19T07:11:18.176Z"
+      "zaman": "2026-10-20T07:00:56.554Z"
     }
   ],
   "dikkat": [
     {
       "seviye": "uyarı",
       "metin": "Güvenlik: 4 yüksek seviye bağımlılık açığı var."
+    },
+    {
+      "seviye": "uyarı",
+      "metin": "Yenileme · Şüpheli fiyat: Nvidia A4000: 0.82 → 0.21 — tek seferde >%50 oynama, yazılmadı; elle kontrol et, doğruysa gelen/fiyatlar.json'daki \"dogrulanan\" listesine ekle"
     },
     {
       "seviye": "dikkat",
@@ -49,62 +53,37 @@
   ],
   "oneriler": [
     {
-      "baslik": "Firebase'in getirdiği @grpc/grpc-js açığını kapatan PR #31'i birleştir",
-      "neden": "guvenlik-2026-10-19.json hâlâ 4 yüksek seviye bağımlılık açığı gösteriyor (firebase → @firebase/firestore → @grpc/grpc-js). Bu 'dikkat' durumu öneri denetiminin güvenlik adımını kırmızıda tuttuğu için #29, #30, #32 ve #33 onay kuyruğunda bekliyor; bugünkü öneriler de aynı nedenle kendiliğinden birleşemeyebilir.",
+      "baslik": "Haberler'de yayın tarihini eklenme gününden farklıysa göster",
+      "neden": "src/data/haberler.json'daki 168 haberin 43'ünde 'yayin' alanı var ve 37'sinde eklenme günü (tarih) ile farklı; Haberler.jsx haberleri yalnızca 'tarih'e göre gruplayıp 'yayin'ı hiç göstermiyor, bu yüzden 18 Ekim'de yayımlanan bir haber 'Bugün' başlığı altında yeni gibi görünüyor.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bugün puanında tüm maddeler tekrar ise sıfıra bölmeyi önle",
+      "neden": "src/pages/Bugun.jsx satır 31: tüm maddeler 'tekrar' işaretliyse ta=0 olur ve puan Math.round(50+50*(0/0)) = NaN olarak ekrana basılır; renk eşikleri de NaN'la çalışmaz.",
+      "etki": "düşük",
+      "alan": "kod"
+    },
+    {
+      "baslik": "PR #31'i (grpc-js overrides) onayla — onay kuyruğunu açar",
+      "neden": "npm audit'teki 4 yüksek açığın kaynağı firebase → @grpc/grpc-js zinciri; oneri-uygula.mjs denetle güvenlik durumu 'temiz' olmadıkça hiçbir öneriyi birleştirmiyor, bu yüzden 13 Ekim'den beri 8 PR (#29–#36) onay bekliyor. PR #31 package.json'a dokunduğu için yalnızca kullanıcı birleştirebilir.",
       "etki": "yüksek",
       "alan": "güvenlik"
     },
     {
-      "baslik": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
-      "neden": "src/pages/Prices.jsx başlığı tarih göstermiyor; oysa gpu_kiralama.json iki_gun.baslangic/bitis alanlarını taşıyor. Bugünkü karşılaştırma 14 → 19 Ekim (5 gün) arası: RTX 4090'ın %39'luk artışı tek günlük hareket gibi okunuyor.",
+      "baslik": "Bellek kaynağına arama üzerinden ulaşma talimatı ekle (GUNLUK 2b)",
+      "neden": "trendforce.com/presscenter bugün de WebFetch'te PROVENANCE_REQUIRED ile reddedildi; src/data/bellek_fiyat.json 17 gündür güncellenmedi (iyileştirme raporu). Fiyat adımındaki gibi önce WebSearch ile TrendForce bülten bağlantısını bulup onu açma talimatı 2b'de yok.",
       "etki": "orta",
-      "alan": "arayüz"
+      "alan": "otomasyon"
     },
     {
-      "baslik": "Fiyat endeksi kartında ölçüm tarihi eskiyse uyarı göster",
-      "neden": "Prices.jsx endeks kartı 'ölçüm 2026-10-12' yazıyor ama eskilik işareti yok; bugün kaynak sayfa 14 Eylül ölçümünü gösterdi, yani endeks düzensiz güncelleniyor. BellekFiyatlari.jsx'teki eskilik() deseni (60 gün → 'Eski' rozeti) endeks için de kullanılabilir.",
+      "baslik": "Kullanılmayan fiyatBilgisi export'unu kaldır",
+      "neden": "src/lib/chipScore.js:566 fiyatBilgisi hiçbir yerde içe aktarılmıyor (iyileştirme raporu); onay bekleyen PR #33 de fiyat değişimini maliyetPuani üzerinden taşıyor, bu fonksiyonu kullanmıyor. togglePin/resetProgress/getExamResults ise açık PR #29/#30/#32'de bağlanıyor, onlara dokunulmamalı.",
       "etki": "düşük",
-      "alan": "arayüz"
-    },
-    {
-      "baslik": "Bellek göstergelerinde yüzdesiz (yalnızca yön) tahminleri destekle",
-      "neden": "bellek_fiyat.json'daki 'Sunucu DRAM 3Ç 2026' göstergesinin dönemi bitti; TrendForce'un 30 Eylül açıklaması 4Ç26 için sunucu, PC ve mobil DRAM'de yüzde vermiyor, yalnızca yön bildiriyor ('arz açığı sürecek'). Şema alt/ust zorunlu tuttuğu için bu bilgi uygulamaya giremiyor.",
-      "etki": "orta",
-      "alan": "veri"
+      "alan": "kod"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-10-19",
-      "oneri": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
-      "durum": "acik",
-      "pr": 35,
-      "dal": "otomasyon/oneri-2026-10-19-1",
-      "ozet": "Hareketler başlığının altına '14 Ekim → 19 Ekim (5 gün)' aralık satırı",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-19",
-      "oneri": "Fiyat endeksi kartında ölçüm tarihi eskiyse uyarı göster",
-      "durum": "acik",
-      "pr": 36,
-      "dal": "otomasyon/oneri-2026-10-19-2",
-      "ozet": "Endeks ölçümü 14 günden eskiyse kartta sarı 'Eski' rozeti",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-19",
-      "oneri": "veri-isle kayıtlıdan eski endeks ölçümünü yazmasın",
-      "durum": "acik",
-      "pr": 34,
-      "dal": "otomasyon/duzeltme-2026-10-19",
-      "ozet": "Gelen endeks ölçümü kayıtlıdan eskiyse atlanır (14 Eylül okuması 12 Ekim'in üzerine yazılmasın)",
-      "neden": "Korunan dosya (otomasyon/veri-isle.mjs); eski tarihli endeksle elle test edildi, kullanıcı onayı gerekiyor",
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
     {
       "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
@@ -419,7 +398,7 @@
     "bulgular": [
       {
         "alan": "veri",
-        "baslik": "Bellek fiyatları 16 gündür güncellenmedi",
+        "baslik": "Bellek fiyatları 17 gündür güncellenmedi",
         "etki": "düşük",
         "otomatik": false,
         "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
@@ -444,17 +423,22 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 92 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu)"
+        "detay": "bu çalıştırmada güncellendi — 92 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 14 gelmedi (eski fiyat korundu)"
+      },
+      {
+        "ad": "Şüpheli fiyat",
+        "durum": "uyari",
+        "detay": "Nvidia A4000: 0.82 → 0.21 — tek seferde >%50 oynama, yazılmadı; elle kontrol et, doğruysa gelen/fiyatlar.json'daki \"dogrulanan\" listesine ekle"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 44, 5 yaklaşan olay; haber akışına +9"
+        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 75, 2 yaklaşan olay; haber akışına +9"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+7 haber (akışta 153); bugün toplam 16"
+        "detay": "+6 haber (akışta 168); bugün toplam 15"
       },
       {
         "ad": "Derleme",
@@ -464,7 +448,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2314 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2328 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -491,11 +475,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-10-03",
-      "durum": "temiz",
-      "dikkat": 0
-    },
     {
       "tarih": "2026-10-04",
       "durum": "kritik",
@@ -560,6 +539,11 @@
       "tarih": "2026-10-19",
       "durum": "dikkat",
       "dikkat": 2
+    },
+    {
+      "tarih": "2026-10-20",
+      "durum": "dikkat",
+      "dikkat": 3
     }
   ]
 }

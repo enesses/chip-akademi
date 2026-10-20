@@ -1,0 +1,42 @@
+{
+  "ajan": "rapor",
+  "tarih": "2026-10-20",
+  "zaman": "2026-10-20T07:02:48.742Z",
+  "durum": "dikkat",
+  "gunTamam": true,
+  "tazelik": [
+    {
+      "ad": "Bugün sayfası",
+      "tarih": "2026-10-20",
+      "gun": 0
+    },
+    {
+      "ad": "Fiyat verisi",
+      "tarih": "2026-10-20",
+      "gun": 0
+    }
+  ],
+  "otomatikTamamlanan": [],
+  "calisan": [
+    "guvenlik",
+    "iyilestirme",
+    "yenileme",
+    "gelistirme"
+  ],
+  "calismayan": [],
+  "dikkat": [
+    {
+      "seviye": "uyarı",
+      "metin": "Güvenlik: 4 yüksek seviye bağımlılık açığı var."
+    },
+    {
+      "seviye": "uyarı",
+      "metin": "Yenileme · Şüpheli fiyat: Nvidia A4000: 0.82 → 0.21 — tek seferde >%50 oynama, yazılmadı; elle kontrol et, doğruysa gelen/fiyatlar.json'daki \"dogrulanan\" listesine ekle"
+    },
+    {
+      "seviye": "dikkat",
+      "tur": "onay",
+      "metin": "8 öneri onay bekliyor (PR #29, PR #30, PR #31, PR #32, PR #33, PR #34, PR #35, PR #36) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+    }
+  ]
+}

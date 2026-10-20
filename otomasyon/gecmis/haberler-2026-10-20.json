@@ -1,0 +1,74 @@
+{
+  "tarih": "2026-10-20",
+  "haberler": [
+    {
+      "baslik": "CXMT'nin DRAM kapasitesi 2028'de ikiye katlanabilir",
+      "detay": "Counterpoint ve TrendForce tahminlerine göre CXMT'nin DRAM gofret üretimi bu yılki ~320 binden 2027'de 420 bine, 2028'de 500–600 bine çıkabilir. Dell CEO'su Michael Dell bellek sıkıntısının 2030'a kadar sürebileceğini söyledi.",
+      "kaynak": "TechRadar",
+      "url": "https://techradar.com/computing/memory/analysts-forecast-chinese-ram-surge-through-2028-but-its-not-likely-to-help-the-average-consumer-as-dell-ceo-warns-the-memory-crisis-could-last-until-2030",
+      "yayin": "2026-10-19",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Samsung 2027 HBM arzının tamamını sözleşmeye bağladı",
+      "detay": "KB Securities analizine göre Samsung'un 2027 DRAM ve NAND hacminin %70'i uzun vadeli anlaşmalarla ayrıldı, HBM'nin tamamı sözleşmeli. HBM ortalama fiyatının 2027'de %100–150 artması bekleniyor.",
+      "kaynak": "Sammy Fans (KB Securities/Yonhap aktarımı)",
+      "url": "https://sammyfans.com/2026/10/19/samsung-secures-long-term-agreements-for-bulk-of-2027-dram-nand-and-hbm-supply",
+      "yayin": "2026-10-19",
+      "konular": [
+        "bellek"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "ABD'de muhafazakâr grup yapay zekâ ihracat kontrolü istiyor",
+      "detay": "Çin'in yapay zekâ modelleri ve çipleri için ihracat kontrolleri hazırladığı haberinin ardından ABD'deki Humans First grubu 'Amerika Önce Yapay Zekâ Politikası' platformunda ABD teknolojisine de ihracat kontrolü çağrısı yaptı.",
+      "kaynak": "Semafor",
+      "url": "https://www.semafor.com/article/10/18/2026/china-mulls-ai-export-rules",
+      "yayin": "2026-10-18",
+      "konular": [
+        "politika",
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Amazon, Trainium için PyTorch araç seti TorchNeuron'u tanıttı",
+      "detay": "Açık kaynak TorchNeuron, PyTorch iş yüklerini büyük kod değişikliği olmadan Trainium2 ve Trainium3'te çalıştırıyor. Trainium3 154 GB çip üstü belleğe sahip; sunucu başına 144 hızlandırıcıya kadar çıkılıyor.",
+      "kaynak": "SiliconANGLE",
+      "url": "https://siliconangle.com/2026/10/19/amazon-introduces-toolkit-for-running-pytorch-workloads-on-aws-trainium-chips/",
+      "yayin": "2026-10-19",
+      "konular": [
+        "cip",
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Anthropic hisselerinin %5'ini kamu yararı fonuna ayırıyor",
+      "detay": "Anthropic, şirket değeri her %50 arttığında ek %2 katkı seçeneğiyle hisselerinin %5'ini yeni bir kamu yararı fonuna ayıracağını duyurdu. Fonun yönetişimi önümüzdeki aylarda açıklanacak.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+      "yayin": "2026-10-18",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Anthropic, Google ve OpenAI yeni modeller hazırlıyor",
+      "detay": "The Information'a göre Google, Gemini 4 Argon'un yerini alacak Gemini 4 Carbon üzerinde çalışıyor; OpenAI'ın Terra ailesinden daha ucuz bir model önümüzdeki haftalarda çıkabilir; Anthropic daha güçlü akıl yürüten bir model geliştiriyor.",
+      "kaynak": "Investing.com (The Information aktarımı)",
+      "url": "https://www.investing.com/news/stock-market-news/anthropic-google-and-openai-prepare-new-ai-models-the-information-reports-4957891",
+      "yayin": "2026-10-19",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    }
+  ]
+}

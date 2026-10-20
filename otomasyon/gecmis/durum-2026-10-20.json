@@ -1,0 +1,12 @@
+{
+  "fiyat": {
+    "durum": "ok"
+  },
+  "endeks": {
+    "durum": "ok"
+  },
+  "bellek": {
+    "durum": "izin-engeli",
+    "not": "trendforce.com/presscenter WebFetch PROVENANCE_REQUIRED; bugün pazartesi değil, yeni sözleşme fiyatı açıklaması doğrulanamadı, dosya yazılmadı"
+  }
+}
