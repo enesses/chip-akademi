@@ -28,7 +28,8 @@ export default function Bugun() {
     let ta = 0, ti = 0;
     // Önceki günlerden tekrar eden maddeler puana katılmaz (otomasyon/veri-isle.mjs ile aynı kural).
     for (const m of data.maddeler) { if (m.tekrar) continue; ta += m.agirlik; ti += m.agirlik * KATEGORI[m.kategori].isaret; }
-    return { puan: Math.round(50 + 50 * (ti/ta)), ta, ti };
+    // Bütün maddeler tekrarsa ağırlık toplamı 0 olur; NaN yerine nötr 50 göster.
+    return { puan: ta > 0 ? Math.round(50 + 50 * (ti / ta)) : 50, ta, ti };
   }, []);
   // Geçmişte kalan olayları sayfanın açıldığı güne göre gizle
   const yaklasan = (data.yaklasan || []).filter((o) => kalanGun(o.tarih) >= 0);
