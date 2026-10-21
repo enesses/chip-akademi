@@ -129,7 +129,7 @@ export default function Prices() {
                 {rows.map((r, i) => {
                   const chip = r.chip_id ? getChipById(r.chip_id) : null;
                   return (
-                    <tr key={r.model} className={i % 2 ? "bg-muted/20" : ""}>
+                    <tr key={r.model} className={cn(i % 2 && "bg-muted/20", r.saglayici != null && r.saglayici < AZ_SAGLAYICI && "opacity-60")} title={r.saglayici != null && r.saglayici < AZ_SAGLAYICI ? "Az sağlayıcı: medyan tek bir listelemeyle oynayabilir" : undefined} data-az-saglayici={r.saglayici != null && r.saglayici < AZ_SAGLAYICI ? "1" : undefined}>
                       <td className="px-4 py-2.5 font-medium">
                         {chip ? <Link href={`/chip/${chip.id}`} asChild><a className="text-primary hover:underline">{r.model}</a></Link> : r.model}
                       </td>
