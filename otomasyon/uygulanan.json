@@ -320,6 +320,26 @@
       "ozet": "Ağırlık toplamı 0 iken puan NaN yerine nötr 50",
       "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-21",
+      "oneri": "Fiyat tablosunda eski ölçümlü satırları işaretle",
+      "durum": "acik",
+      "pr": 39,
+      "dal": "otomasyon/oneri-2026-10-21-1",
+      "ozet": "Son çekimde gelmeyen modellerin fiyatının altına eski ölçüm tarihi yazılıyor",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-21",
+      "oneri": "Fiyat tablosunda az sağlayıcılı satırları soluk göster",
+      "durum": "acik",
+      "pr": 40,
+      "dal": "otomasyon/oneri-2026-10-21-2",
+      "ozet": "Tablo satırları 5'ten az sağlayıcıda kartlardaki gibi soluklaşıyor",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
+      "kim": "otomasyon"
     }
   ]
 }
