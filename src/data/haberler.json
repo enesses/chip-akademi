@@ -2,6 +2,231 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-10-21-tokenpost-com-news-investing-35599",
+      "tarih": "2026-10-21",
+      "yayin": null,
+      "baslik": "Kore borsası çip satışıyla %3,73 düştü",
+      "detay": "Kospi 20 Ekim'de 214,93 puan kaybedip 5.553 puandan kapandı; SK hynix %4,22, Samsung Electronics %2,98 değer kaybetti. Endeks Ekim başından bu yana yaklaşık %19 geriledi.",
+      "kaynak": "TokenPost",
+      "url": "https://www.tokenpost.com/news/investing/35599",
+      "ton": "negatif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-21-ajupress-com-view-20261021102326568",
+      "tarih": "2026-10-21",
+      "yayin": null,
+      "baslik": "Kospi ertesi sabah %3'ün üzerinde toparlandı",
+      "detay": "21 Ekim sabahı Kospi %3,28 yükselerek 5.735 puana çıktı; SK hynix %7,11 artışla 1.310.000 won'a, Samsung %5,56 artışla 223.250 won'a ulaştı. Nomura iki hisse için 'al' görüşünü korudu, bellek talebinin en az 2028'e kadar arzı aşacağını öngörüyor.",
+      "kaynak": "Aju Press",
+      "url": "https://www.ajupress.com/view/20261021102326568",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-21-articles-markets-news-oct-20-2026-103252254-html",
+      "tarih": "2026-10-21",
+      "yayin": null,
+      "baslik": "ABD'de çip hisseleri günü düşüşle kapattı",
+      "detay": "20 Ekim'de Dow yaklaşık %1 (500 puandan fazla) ve S&P 500 %0,3 yükselirken Nasdaq hafif geriledi; çip hisseleri düşüşle kapandı, Magnificent Seven ETF'i %0,4 kaybetti. 10 yıllık tahvil faizi %5,12'nin altına indi.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/markets-news-oct-20-2026-103252254.html",
+      "ton": "negatif",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-21-e-acquisition-amid-data-center-power-constraints",
+      "tarih": "2026-10-21",
+      "yayin": null,
+      "baslik": "Amazon, güç kısıtına rağmen GB300 raflarını erken alıyor",
+      "detay": "AWS, ABD'deki sahalarda kurulumdan önce yaklaşık 5 milyar dolarlık Nvidia GB300 sunucu rafı almayı, ardından ayda yaklaşık 3 milyar dolarlık ek raf girişini planlıyor; elektrik altyapısı bitene kadar ekipman depoda bekleyecek.",
+      "kaynak": "GuruFocus",
+      "url": "https://www.gurufocus.com/news/9132456/amazon-amzn-accelerates-ai-hardware-acquisition-amid-data-center-power-constraints",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-21-not-to-overthink-ai-rules-or-risk-falling-behind",
+      "tarih": "2026-10-21",
+      "yayin": null,
+      "baslik": "Huang Berlin'de Merz ile görüştü, Avrupa'ya çağrı yaptı",
+      "detay": "Jensen Huang 19 Ekim'de Başbakan Friedrich Merz ile görüştü; SOOFI açık model girişimi ve Deutsche Telekom'un Endüstriyel AI Bulutu'na destek verildi. Nvidia'nın son bir yılda Avrupa'ya yaklaşık 8 milyar dolar yatırım yaptığı bildiriliyor; GTC Berlin açılış konuşması 21 Ekim'de.",
+      "kaynak": "Startup Fortune",
+      "url": "https://startupfortune.com/jensen-huang-warns-europe-not-to-overthink-ai-rules-or-risk-falling-behind/",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-21-d-of-anthropic-ipo-sources-say-reuters-exclusive",
+      "tarih": "2026-10-21",
+      "yayin": null,
+      "baslik": "OpenAI, Anthropic halka arzından önce 30 milyar dolar arıyor",
+      "detay": "Reuters'a göre OpenAI, değerlemesini 1,4 trilyon doların üzerine taşıyabilecek yaklaşık 30 milyar dolarlık hızlı bir tur için SoftBank ve MGX ile görüşüyor. Anthropic'in kasım ortasında halka arz edilmesi bekleniyor; 3. çeyrek geliri 16,8 milyar dolar.",
+      "kaynak": "Reuters (CP24)",
+      "url": "https://www.cp24.com/news/money/2026/10/20/openai-seeks-to-accelerate-fundraising-ahead-of-anthropic-ipo-sources-say-reuters-exclusive/",
+      "ton": "pozitif",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-21-openai-china-chip-export-controls-retreat-nvidia",
+      "tarih": "2026-10-21",
+      "yayin": null,
+      "baslik": "OpenAI, Çin'e çip kısıtlaması çağrısından geri çekildi",
+      "detay": "Politico'ya dayanan habere göre OpenAI, Çin'e gelişmiş çip satışına sıkı sınır çağrısını bıraktı; Çin şahinleri yeni kısıtlamaları savunma bütçesi yasasına eklemeyi hedefliyor. Anthropic ise çip yasa tasarılarını desteklemeye devam ediyor.",
+      "kaynak": "The Next Web",
+      "url": "https://thenextweb.com/news/openai-china-chip-export-controls-retreat-nvidia",
+      "ton": "notr",
+      "konular": [
+        "yapay-zeka",
+        "politika"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-21-co-kr-en-industry-2026-10-19-2026101913371799572",
+      "tarih": "2026-10-21",
+      "yayin": null,
+      "baslik": "SK hynix'ten altıncı rekor çeyrek bekleniyor",
+      "detay": "FnGuide konsensüsüne göre SK hynix'in 3. çeyrek faaliyet kârı 76,96 trilyon won olacak; HBM4 gelirleri bu çeyrekten itibaren tam yansıyor. 4. çeyrek konsensüsü 87,27 trilyon won.",
+      "kaynak": "MoneyToday",
+      "url": "https://www.mt.co.kr/en/industry/2026/10/19/2026101913371799572",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-21-ic-platform-expansion-flexera-ai-cost-management",
+      "tarih": "2026-10-21",
+      "yayin": "2026-10-20",
+      "baslik": "AMD ve Intel, PyTorch'ta x86 hızlandırma için oneDNN'de birleşti",
+      "detay": "İki şirket oneDNN'i PyTorch'ta x86 hızlandırmanın varsayılan açık kaynak kütüphanesi yaptı; AMD ZenDNN optimizasyonlarını oneDNN'e taşıyor ve UXL Foundation'a yönlendirici üye oldu. Matris çarpımı için yeni AI Compute Extensions (ACE) komut seti üzerinde de çalışıyorlar.",
+      "kaynak": "SD Times",
+      "url": "https://sdtimes.com/sd-times-news/sd-times-news-roundup-oct-20-2026-amd-intel-collaboration-snaplogic-platform-expansion-flexera-ai-cost-management",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-21-se-ai-deepseek-from-government-agency-it-systems",
+      "tarih": "2026-10-21",
+      "yayin": "2026-10-19",
+      "baslik": "ABD, DeepSeek'i sivil federal sistemlerden kaldırıyor",
+      "detay": "ABD İç Güvenlik Bakanlığı, Çinli DeepSeek'e ait ürünlerin ve üçüncü taraf hizmetlerinin sivil kurumların BT sistemlerinden kaldırılmasını emretti.",
+      "kaynak": "Reuters (CTV News)",
+      "url": "https://www.ctvnews.ca/world/article/us-banning-chinese-ai-deepseek-from-government-agency-it-systems/",
+      "ton": "notr",
+      "konular": [
+        "politika",
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-21--45044-exports-fuel-45-boost-to-chinas-gdp-in-q3",
+      "tarih": "2026-10-21",
+      "yayin": "2026-10-19",
+      "baslik": "Çin ekonomisi 3. çeyrekte %4,5 büyüdü, yapay zekâ ekipmanı ihracatı destekledi",
+      "detay": "Çin'in GSYH'si temmuz-eylülde yıllık %4,5 büyüyerek %4,3'lük beklentiyi aştı; eylülde sanayi üretimi elektronik ve yapay zekâ ekipmanı ihracatıyla %5,5 arttı. Gayrimenkul yatırımı ise ilk dokuz ayda %20,6 düştü.",
+      "kaynak": "SupplyChainBrain",
+      "url": "https://www.supplychainbrain.com/articles/45044-exports-fuel-45-boost-to-chinas-gdp-in-q3",
+      "ton": "notr",
+      "konular": [
+        "pazar",
+        "politika"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-21--com-p-datacenters-2027-the-year-of-acceleration",
+      "tarih": "2026-10-21",
+      "yayin": "2026-10-19",
+      "baslik": "SemiAnalysis: 2027'de 43–50 GW yeni veri merkezi kapasitesi",
+      "detay": "SemiAnalysis, 2027'de tek yılda +43 GW'ın üzerinde veri merkezi kapasitesi eklenebileceğini savunuyor; elektrik sorununun şebeke dışı üretimle büyük ölçüde aşıldığını, 2027-28'de asıl kısıtın bellek ve mantık çipleri olabileceğini yazıyor.",
+      "kaynak": "SemiAnalysis",
+      "url": "https://newsletter.semianalysis.com/p/datacenters-2027-the-year-of-acceleration",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi",
+        "bellek"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-21-ration-for-an-unnamed-north-american-data-center",
+      "tarih": "2026-10-21",
+      "yayin": "2026-10-19",
+      "baslik": "Enerflex, bir veri merkezi için 1 GW'ı aşan gaz üretimi siparişi aldı",
+      "detay": "Enerflex, adı açıklanmayan bir Kuzey Amerika veri merkezi için 1 GW'ı aşan şebeke dışı gaz üretimi kazandı; bu alandaki sipariş defteri 1,75 GW'ı geçti, teslimatlar 2028'e kadar sürecek.",
+      "kaynak": "MGRID",
+      "url": "https://mgrid.org/2026/10/19/enerflex-books-over-one-gigawatt-of-behind-the-meter-gas-generation-for-an-unnamed-north-american-data-center/",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-21-h-visit-to-samsung-massive-new-semiconductor-hub",
+      "tarih": "2026-10-21",
+      "yayin": "2026-10-20",
+      "baslik": "Samsung'un Pyeongtaek kampüsünde beşinci fab inşaatı yeniden başladı",
+      "detay": "MIT Technology Review'un ziyaret ettiği Pyeongtaek kampüsünde üç fab sürekli çalışıyor, dördüncüsü devreye girmek üzere; 2024'te durdurulan beşinci fabın inşaatı yapay zekâ talebiyle yeniden başladı. Samsung bellek talebinin 2028'e kadar artacağını öngörüyor.",
+      "kaynak": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-21--earnings-ai-equipment-boom-meets-analog-rebound",
+      "tarih": "2026-10-21",
+      "yayin": "2026-10-20",
+      "baslik": "Texas Instruments ve Lam Research bugün bilanço açıklıyor",
+      "detay": "İki şirket de 21 Ekim'de kapanış sonrası sonuç açıklayacak. Texas Instruments için konsensüs 2,42 dolar hisse başı kâr ve 5,9 milyar dolar gelir, Lam Research için 8,1 milyar dolar gelir bekleniyor.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/10/20/texas-instruments-and-lam-research-report-earnings-ai-equipment-boom-meets-analog-rebound/",
+      "ton": "notr",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
       "id": "2026-10-20-all-street-falls-chart-of-the-day-144315957-html",
       "tarih": "2026-10-20",
       "yayin": null,
@@ -2538,7 +2763,7 @@
       "kaynakTuru": "bugun"
     }
   ],
-  "guncelleme": "2026-10-20",
+  "guncelleme": "2026-10-21",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",

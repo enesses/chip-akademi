@@ -1,0 +1,29 @@
+{
+  "tarih": "2026-10-21",
+  "oneriler": [
+    {
+      "baslik": "Fiyat tablosunda eski ölçümlü satırları işaretle",
+      "neden": "Bugün getdeploying'den 15 model gelmedi; src/data/gpu_kiralama.json'da örneğin Nvidia RTX 5880 Ada, P40, GTX 1070 Ti ve RTX 4500 Ada'nın olcum_tarihi 2026-10-12, A4500'ün 2026-10-20. src/pages/Prices.jsx tablosu olcum_tarihi'ni hiç okumuyor; 9 günlük fiyat bugünkülerle aynı görünüyor.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Fiyat tablosunda az sağlayıcılı satırları soluk göster",
+      "neden": "Prices.jsx'te 'Son ölçümler arası hareketler' kartları 5'ten az sağlayıcılı satırları opacity-60 ile soluklaştırıyor, ama ana tablo yapmıyor. 'Değişim' sıralamasında bugün Nvidia RTX 2070 (2 sağlayıcı, 0,06 → 0,10 $, +%67) ve RTX 2000 Ada (2 sağlayıcı, +%50) en üstte, 57 sağlayıcılı H100 ile aynı ağırlıkta görünüyor.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Elle doğrulanan büyük fiyat oynamasını uygulamada göster",
+      "neden": "Bugün AMD MI300X medyanı 2,92 → 4,42 $ (+%51, 11 sağlayıcı) üç okumayla doğrulanıp yazıldı; ama gelen/fiyatlar.json'daki 'dogrulanan' notu src/data/gpu_kiralama.json'a taşınmıyor (grep 0 sonuç). Kullanıcı bu sıçramanın doğrulandığını göremiyor. otomasyon/veri-isle.mjs'in (korunan) bu notu ilgili satıra yazması gerekiyor.",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Bellek fiyatlarını yeni TrendForce açıklamasıyla güncelle",
+      "neden": "İyileştirme ajanı: bellek fiyatları 18 gündür güncellenmedi (src/data/bellek_fiyat.json). Bugünkü haberlerde Nomura bellek talebinin 2028'e kadar arzı aşacağını, SK hynix'in HBM4 ile rekor çeyrek beklediğini yazıyor; 26 Ekim pazartesi çalıştırmasında 4Ç sözleşme fiyatı tahminleri öncelikle aranmalı.",
+      "etki": "düşük",
+      "alan": "veri"
+    }
+  ]
+}

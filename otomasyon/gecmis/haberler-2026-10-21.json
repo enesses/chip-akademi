@@ -1,0 +1,88 @@
+{
+  "tarih": "2026-10-21",
+  "haberler": [
+    {
+      "baslik": "AMD ve Intel, PyTorch'ta x86 hızlandırma için oneDNN'de birleşti",
+      "detay": "İki şirket oneDNN'i PyTorch'ta x86 hızlandırmanın varsayılan açık kaynak kütüphanesi yaptı; AMD ZenDNN optimizasyonlarını oneDNN'e taşıyor ve UXL Foundation'a yönlendirici üye oldu. Matris çarpımı için yeni AI Compute Extensions (ACE) komut seti üzerinde de çalışıyorlar.",
+      "kaynak": "SD Times",
+      "url": "https://sdtimes.com/sd-times-news/sd-times-news-roundup-oct-20-2026-amd-intel-collaboration-snaplogic-platform-expansion-flexera-ai-cost-management",
+      "yayin": "2026-10-20",
+      "konular": [
+        "cip",
+        "yapay-zeka"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "ABD, DeepSeek'i sivil federal sistemlerden kaldırıyor",
+      "detay": "ABD İç Güvenlik Bakanlığı, Çinli DeepSeek'e ait ürünlerin ve üçüncü taraf hizmetlerinin sivil kurumların BT sistemlerinden kaldırılmasını emretti.",
+      "kaynak": "Reuters (CTV News)",
+      "url": "https://www.ctvnews.ca/world/article/us-banning-chinese-ai-deepseek-from-government-agency-it-systems/",
+      "yayin": "2026-10-19",
+      "konular": [
+        "politika",
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Çin ekonomisi 3. çeyrekte %4,5 büyüdü, yapay zekâ ekipmanı ihracatı destekledi",
+      "detay": "Çin'in GSYH'si temmuz-eylülde yıllık %4,5 büyüyerek %4,3'lük beklentiyi aştı; eylülde sanayi üretimi elektronik ve yapay zekâ ekipmanı ihracatıyla %5,5 arttı. Gayrimenkul yatırımı ise ilk dokuz ayda %20,6 düştü.",
+      "kaynak": "SupplyChainBrain",
+      "url": "https://www.supplychainbrain.com/articles/45044-exports-fuel-45-boost-to-chinas-gdp-in-q3",
+      "yayin": "2026-10-19",
+      "konular": [
+        "pazar",
+        "politika"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "SemiAnalysis: 2027'de 43–50 GW yeni veri merkezi kapasitesi",
+      "detay": "SemiAnalysis, 2027'de tek yılda +43 GW'ın üzerinde veri merkezi kapasitesi eklenebileceğini savunuyor; elektrik sorununun şebeke dışı üretimle büyük ölçüde aşıldığını, 2027-28'de asıl kısıtın bellek ve mantık çipleri olabileceğini yazıyor.",
+      "kaynak": "SemiAnalysis",
+      "url": "https://newsletter.semianalysis.com/p/datacenters-2027-the-year-of-acceleration",
+      "yayin": "2026-10-19",
+      "konular": [
+        "veri-merkezi",
+        "bellek"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Enerflex, bir veri merkezi için 1 GW'ı aşan gaz üretimi siparişi aldı",
+      "detay": "Enerflex, adı açıklanmayan bir Kuzey Amerika veri merkezi için 1 GW'ı aşan şebeke dışı gaz üretimi kazandı; bu alandaki sipariş defteri 1,75 GW'ı geçti, teslimatlar 2028'e kadar sürecek.",
+      "kaynak": "MGRID",
+      "url": "https://mgrid.org/2026/10/19/enerflex-books-over-one-gigawatt-of-behind-the-meter-gas-generation-for-an-unnamed-north-american-data-center/",
+      "yayin": "2026-10-19",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Samsung'un Pyeongtaek kampüsünde beşinci fab inşaatı yeniden başladı",
+      "detay": "MIT Technology Review'un ziyaret ettiği Pyeongtaek kampüsünde üç fab sürekli çalışıyor, dördüncüsü devreye girmek üzere; 2024'te durdurulan beşinci fabın inşaatı yapay zekâ talebiyle yeniden başladı. Samsung bellek talebinin 2028'e kadar artacağını öngörüyor.",
+      "kaynak": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/",
+      "yayin": "2026-10-20",
+      "konular": [
+        "bellek",
+        "cip"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Texas Instruments ve Lam Research bugün bilanço açıklıyor",
+      "detay": "İki şirket de 21 Ekim'de kapanış sonrası sonuç açıklayacak. Texas Instruments için konsensüs 2,42 dolar hisse başı kâr ve 5,9 milyar dolar gelir, Lam Research için 8,1 milyar dolar gelir bekleniyor.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/10/20/texas-instruments-and-lam-research-report-earnings-ai-equipment-boom-meets-analog-rebound/",
+      "yayin": "2026-10-20",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "notr"
+    }
+  ]
+}
