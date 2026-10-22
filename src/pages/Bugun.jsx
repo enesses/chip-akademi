@@ -58,6 +58,20 @@ export default function Bugun() {
                 Önceki günlerden tekrar eden {tekrarSayisi} haber puana katılmadı.
               </p>
             )}
+            {data.yontem && (
+              <details className="text-left mt-3 pt-3 border-t border-card-border">
+                <summary className="cursor-pointer text-[11px] text-muted-foreground hover:text-foreground">Puan nasıl hesaplandı?</summary>
+                <div className="mt-2 space-y-1.5 text-[11px] text-muted-foreground leading-relaxed">
+                  {data.yontem.aciklama && <p>{data.yontem.aciklama}</p>}
+                  {data.yontem.formul && <p className="font-mono text-foreground/80">{data.yontem.formul}</p>}
+                  {data.yontem.isaretler && <p className="font-mono">{data.yontem.isaretler}</p>}
+                  <p className="font-mono text-foreground/80 tabular-nums">
+                    Σ ağırlık×işaret = {hesap.ti > 0 ? "+" : ""}{hesap.ti} · Σ ağırlık = {hesap.ta} · Puan = {hesap.puan}
+                  </p>
+                  {data.yontem.uyari && <p className="italic">{data.yontem.uyari}</p>}
+                </div>
+              </details>
+            )}
           </div>
           <div className="space-y-4">
             {data.ozet.map((p, i) => (
