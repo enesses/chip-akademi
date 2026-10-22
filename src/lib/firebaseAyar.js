@@ -20,6 +20,7 @@ export const FIREBASE = {
   storageBucket: "chip-akademi.firebasestorage.app",
   messagingSenderId: "752817378052",
   appId: "1:752817378052:web:c0251070bc8f3b611d7651",
+  measurementId: "G-KEQ6XM8JHB",
 };
 // Örnek:
 // export const FIREBASE = {

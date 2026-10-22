@@ -8,6 +8,9 @@ yapılır (bu ortamdan Google ve GitHub ayarlarına erişilemediği için elle).
 
 1. https://console.firebase.google.com → **Proje ekle** (Analytics gerekmez).
 2. **Authentication → Başlayın → Sign-in method → E-posta/Şifre → Etkinleştir.**
+   Aynı sekmede **Google → Etkinleştir** → destek e-postasını seç → Kaydet
+   ("Google ile giriş/kayıt" düğmesi bunu ister; açılmazsa düğme
+   "Firebase'de açılmamış" hatası verir, e-posta/şifre yine çalışır).
 3. **Authentication → Settings → Yetkili alan adları → Alan ekle:** `enesses.github.io`
 4. **Firestore Database → Veritabanı oluştur** → üretim modu → konum `eur3` (Avrupa).
 5. **Firestore → Rules** sekmesine depodaki `firestore.rules` dosyasını olduğu gibi
