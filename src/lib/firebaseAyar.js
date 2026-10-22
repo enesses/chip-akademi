@@ -13,7 +13,14 @@
  */
 export const ADMIN_EPOSTA = "yucelkemalnuri@gmail.com";
 
-export const FIREBASE = null;
+export const FIREBASE = {
+  apiKey: "AIzaSyA9DZKwTp7ZXmQmpQFNljE_pFAvYgKpYg4",
+  authDomain: "chip-akademi.firebaseapp.com",
+  projectId: "chip-akademi",
+  storageBucket: "chip-akademi.firebasestorage.app",
+  messagingSenderId: "752817378052",
+  appId: "1:752817378052:web:c0251070bc8f3b611d7651",
+};
 // Örnek:
 // export const FIREBASE = {
 //   apiKey: "...", authDomain: "proje.firebaseapp.com", projectId: "proje",
