@@ -70,7 +70,7 @@ function Quiz({ lesson }) {
 
   return (
     <div className="rounded-2xl border border-card-border bg-card p-6 mt-8">
-      <h2 className="font-display font-bold text-lg mb-1">Testi çöz</h2>
+      <h2 className="font-display font-semibold text-lg mb-1">Testi çöz</h2>
       {onceki && <p className="text-xs text-muted-foreground mb-4">En iyi skorun: {onceki.best}/{onceki.total}</p>}
       <div className="space-y-6">
         {lesson.quiz.map((q, qi) => (
@@ -99,7 +99,7 @@ function Quiz({ lesson }) {
       {!submitted ? (
         <Button className="mt-6" onClick={submit} disabled={Object.keys(answers).length < lesson.quiz.length}>Testi bitir</Button>
       ) : (
-        <p className="mt-6 font-display font-bold text-lg">
+        <p className="mt-6 font-display font-semibold text-lg">
           Sonuç: {lesson.quiz.reduce((t, q, i) => t + (answers[i] === q.answer ? 1 : 0), 0)} / {lesson.quiz.length}
         </p>
       )}
@@ -125,7 +125,7 @@ export default function Lesson() {
         <a className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground mb-6"><ArrowLeft className="h-4 w-4" />Derslere dön</a>
       </Link>
       <p className="font-mono text-xs uppercase tracking-wider text-primary mb-2">{lesson.level} · {lesson.duration}</p>
-      <h1 className="font-display text-3xl font-bold mb-2">{lesson.title}</h1>
+      <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em] mb-2">{lesson.title}</h1>
       <p className="text-muted-foreground mb-8">{lesson.subtitle}</p>
 
       {lesson.sections.map((s, i) => <Section key={i} s={s} />)}

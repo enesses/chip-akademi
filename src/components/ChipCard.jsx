@@ -17,7 +17,7 @@ function MiniBar({ tasarim, verimlilik, maliyet }) {
   const barlar = [
     { etiket: "T", deger: tasarim, renk: "bg-primary" },
     { etiket: "V", deger: verimlilik, renk: "bg-emerald-400" },
-    { etiket: "M", deger: maliyet, renk: "bg-violet-400" },
+    { etiket: "M", deger: maliyet, renk: "bg-foreground/60" },
   ];
   return (
     <div className="flex items-end gap-1 h-5">
@@ -25,12 +25,12 @@ function MiniBar({ tasarim, verimlilik, maliyet }) {
         deger != null ? (
           <div key={etiket} className="flex flex-col items-center gap-0.5" title={`${etiket}: ${deger}`}>
             <div
-              className={cn("w-3.5 rounded-sm opacity-80", renk)}
+              className={cn("w-2.5", renk)}
               style={{ height: `${Math.max(2, Math.round(deger / 100 * 16))}px` }}
             />
           </div>
         ) : (
-          <div key={etiket} className="w-3.5 h-0.5 bg-muted rounded-sm opacity-40" title={`${etiket}: —`} />
+          <div key={etiket} className="w-2.5 h-0.5 bg-border" title={`${etiket}: —`} />
         )
       )}
     </div>
@@ -43,50 +43,47 @@ export default function ChipCard({ chip }) {
 
   return (
     <Link href={`/chip/${chip.id}`} asChild>
-      <a className="group block rounded-xl border border-card-border bg-card overflow-hidden hover-elevate" data-testid={`chip-card-${chip.id}`}>
-        <div className="relative aspect-[4/3] bg-muted overflow-hidden">
+      <a className="group block rounded-lg border border-card-border bg-card overflow-hidden transition-colors hover:border-foreground/30" data-testid={`chip-card-${chip.id}`}>
+        <div className="relative aspect-[4/3] bg-muted overflow-hidden border-b border-card-border">
           {chip.image ? (
-            <img src={imageUrl(chip.image)} alt={chip.name} className="w-full h-full object-cover" />
+            <img src={imageUrl(chip.image)} alt={chip.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" />
           ) : (
             <div className="w-full h-full flex items-center justify-center bg-silicon-grid">
-              <span className="font-display font-bold text-sm px-4 text-center" style={{ color }}>{chip.name}</span>
+              <span className="font-display font-semibold text-sm px-4 text-center" style={{ color }}>{chip.name}</span>
             </div>
           )}
 
-          {/* Genel puan rozeti */}
-          <div className="absolute bottom-3 right-3 flex items-center gap-1.5">
-            {g.puan != null && (
-              <span className={cn(
-                "font-mono text-[11px] font-bold bg-background/80 backdrop-blur px-2 py-1 rounded border border-white/10",
-                puanRengi(g.puan)
-              )}>
-                {g.puan}
-              </span>
-            )}
-            <span className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground bg-background/70 backdrop-blur px-2 py-1 rounded">
-              {chip.release_year}
-            </span>
-          </div>
         </div>
 
         <div className="p-4">
-          <p className="font-mono text-[10px] uppercase tracking-wider mb-1" style={{ color }}>
-            {chip.manufacturer}
-          </p>
-          <h3 className="font-display font-bold text-sm leading-snug group-hover:text-primary transition-colors">
+          <div className="flex items-center justify-between gap-2 font-mono text-[10.5px] uppercase tracking-[0.06em] text-muted-foreground">
+            <span className="inline-flex items-center gap-1.5 min-w-0">
+              <span className="h-2 w-2 shrink-0" style={{ background: color }} aria-hidden="true" />
+              <span className="truncate">{chip.manufacturer}</span>
+            </span>
+            <span className="rakam">{chip.release_year}</span>
+          </div>
+          <h3 className="font-display font-semibold text-[15px] leading-snug mt-2 group-hover:text-primary transition-colors">
             {chip.name}
           </h3>
-          <p className="text-xs text-muted-foreground mt-1">{chip.process_node}</p>
+          <div className="mt-1 flex items-baseline justify-between gap-2">
+            <p className="text-xs text-muted-foreground">{chip.process_node}</p>
+            {g.puan != null && (
+              <p className="font-mono text-[11px] rakam" title="Genel puan">
+                <span className={cn("font-semibold", puanRengi(g.puan))}>{g.puan}</span><span className="text-muted-foreground">/100</span>
+              </p>
+            )}
+          </div>
 
           {/* Alt satır: mini bar + fiyat */}
-          <div className="mt-3 flex items-end justify-between">
+          <div className="mt-3 pt-3 border-t border-dashed border-card-border flex items-end justify-between">
             <div className="flex flex-col gap-1">
               <MiniBar
                 tasarim={g.tasarimPuan}
                 verimlilik={g.verimlilikPuan}
                 maliyet={g.maliyetPuan}
               />
-              <p className="text-[9px] text-muted-foreground/60 tracking-wider">T · V · M</p>
+              <p className="font-mono text-[9px] text-muted-foreground tracking-wider">T · V · M</p>
             </div>
             {g.usdSaat != null && (
               <p className="text-[10px] font-mono text-muted-foreground">

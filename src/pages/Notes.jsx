@@ -22,12 +22,12 @@ export default function Notes() {
   }
 
   return (
-    <div className="bg-silicon-grid min-h-[80vh]">
+    <div className="min-h-[80vh]">
       <section className="container mx-auto px-4 py-12">
         <div className="flex items-center justify-between gap-4 flex-wrap">
           <div>
             <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-primary mb-3"><StickyNote className="h-3.5 w-3.5" />Not Defteri</div>
-            <h1 className="font-display text-3xl font-bold">Notlarım</h1>
+            <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em]">Notlarım</h1>
           </div>
           <div className="flex gap-2">
             <Button className="gap-1.5" onClick={yeni}><Plus className="h-4 w-4" />Yeni not</Button>
@@ -52,7 +52,7 @@ export default function Notes() {
             {active && (
               <div className="rounded-2xl border border-card-border bg-card p-5 flex flex-col">
                 <input value={active.title} onChange={(e) => guncelle({ title: e.target.value })} placeholder="Başlık…"
-                  className="bg-transparent font-display font-bold text-lg outline-none mb-3" />
+                  className="bg-transparent font-display font-semibold text-lg outline-none mb-3" />
                 <textarea value={active.body} onChange={(e) => guncelle({ body: e.target.value })} placeholder="Yaz…"
                   className="flex-1 min-h-[16rem] bg-transparent outline-none text-sm resize-none" />
                 <Button variant="ghost" className="self-end mt-3 gap-1.5 text-muted-foreground hover:text-red-400"

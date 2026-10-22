@@ -21,7 +21,7 @@ export default function Designs() {
 
   return (
     <div className="container mx-auto px-4 py-12">
-      <h1 className="font-display text-3xl font-bold mb-2">Tasarımlarım</h1>
+      <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em] mb-2">Tasarımlarım</h1>
       <p className="text-muted-foreground mb-8">{designs.length} kayıtlı tasarım</p>
       {designs.length === 0 ? (
         <Link href="/tasarla"><Button>Tasarım Atölyesi'ne git</Button></Link>
@@ -34,7 +34,7 @@ export default function Designs() {
               <div key={d.id} className="rounded-2xl border border-card-border bg-card overflow-hidden">
                 <div className="p-4" style={{ background: `${type.color}0d` }}><DiePreview placed={d.placed} className="w-full h-auto" /></div>
                 <div className="p-4">
-                  <div className="flex justify-between"><h3 className="font-bold text-sm">{d.name}</h3><span className="font-bold text-primary">{r.score}</span></div>
+                  <div className="flex justify-between"><h3 className="font-semibold text-sm">{d.name}</h3><span className="font-semibold text-primary">{r.score}</span></div>
                   <p className="font-mono text-[10px] text-muted-foreground mt-1">{type.short} · {d.nodeId}</p>
                 </div>
                 <div className="px-4 py-3 border-t border-card-border flex gap-1.5">

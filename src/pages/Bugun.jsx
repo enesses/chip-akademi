@@ -18,9 +18,9 @@ function kalanGun(iso) {
 }
 
 const KATEGORI = {
-  pozitif: { ad: "Pozitif", renk: "#34d399", isaret: 1, Icon: ThumbsUp },
-  notr: { ad: "Nötr", renk: "#94a3b8", isaret: 0, Icon: Minus },
-  negatif: { ad: "Negatif", renk: "#f87171", isaret: -1, Icon: ThumbsDown },
+  pozitif: { ad: "Pozitif", renk: "rgb(var(--t-emerald-400))", isaret: 1, Icon: ThumbsUp },
+  notr: { ad: "Nötr", renk: "hsl(var(--muted-foreground))", isaret: 0, Icon: Minus },
+  negatif: { ad: "Negatif", renk: "rgb(var(--t-red-400))", isaret: -1, Icon: ThumbsDown },
 };
 
 export default function Bugun() {
@@ -33,15 +33,14 @@ export default function Bugun() {
   // Geçmişte kalan olayları sayfanın açıldığı güne göre gizle
   const yaklasan = (data.yaklasan || []).filter((o) => kalanGun(o.tarih) >= 0);
   const tekrarSayisi = data.maddeler.filter((m) => m.tekrar).length;
-  const renk = hesap.puan >= 75 ? "#34d399" : hesap.puan >= 60 ? "#22d3ee" : hesap.puan >= 45 ? "#f59e0b" : "#f87171";
+  const renk = hesap.puan >= 75 ? "rgb(var(--t-emerald-400))" : hesap.puan >= 60 ? "rgb(var(--t-lime-400))" : hesap.puan >= 45 ? "rgb(var(--t-amber-400))" : "rgb(var(--t-red-400))";
 
   return (
-    <div className="bg-silicon-grid min-h-[80vh]">
+    <div className="min-h-[80vh]">
       <section className="relative overflow-hidden border-b border-border">
-        <div className="absolute inset-0 bg-chip-glow" />
         <div className="relative container mx-auto px-4 py-12">
           <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-primary mb-3"><CalendarDays className="h-3.5 w-3.5" />{data.derlenme}</div>
-          <h1 className="font-display text-3xl font-bold mb-2">Bugün AI dünyası ne konuşuyor?</h1>
+          <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em] mb-2">Bugün AI dünyası ne konuşuyor?</h1>
         </div>
       </section>
 
@@ -49,9 +48,9 @@ export default function Bugun() {
         <div className="grid lg:grid-cols-[16rem_1fr] gap-6 items-start">
           <div className="rounded-2xl border border-card-border bg-card p-6 text-center">
             <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">Pozitiflik seviyesi</p>
-            <p className="font-display font-bold text-5xl mt-3" style={{ color: renk }}>{hesap.puan}</p>
+            <p className="font-display font-semibold text-5xl mt-3" style={{ color: renk }}>{hesap.puan}</p>
             <p className="font-mono text-[10px] text-muted-foreground">/ 100</p>
-            <p className="font-display font-bold mt-3" style={{ color: renk }}>{data.puan.etiket}</p>
+            <p className="font-display font-semibold mt-3" style={{ color: renk }}>{data.puan.etiket}</p>
             <p className="text-xs text-muted-foreground leading-relaxed mt-2">{data.puan.yorum}</p>
             {tekrarSayisi > 0 && (
               <p className="text-[11px] text-muted-foreground/80 mt-3 pt-3 border-t border-card-border">
@@ -69,7 +68,7 @@ export default function Bugun() {
 
       {yaklasan.length > 0 && (
         <section className="container mx-auto px-4 pb-10" aria-labelledby="yaklasan-baslik">
-          <h2 id="yaklasan-baslik" className="font-display font-bold text-xl mb-4 inline-flex items-center gap-2">
+          <h2 id="yaklasan-baslik" className="font-display font-semibold text-xl mb-4 inline-flex items-center gap-2">
             <CalendarClock className="h-5 w-5 text-primary" aria-hidden="true" />Yaklaşan olaylar
           </h2>
           <ol className="rounded-xl border border-card-border bg-card divide-y divide-card-border">
@@ -97,16 +96,16 @@ export default function Bugun() {
       )}
 
       <section className="container mx-auto px-4 pb-16">
-        <h2 className="font-display font-bold text-xl mb-4">Günün gelişmeleri</h2>
+        <h2 className="font-display font-semibold text-xl mb-4">Günün gelişmeleri</h2>
         <div className="space-y-3">
           {data.maddeler.map((m, i) => {
             const k = KATEGORI[m.kategori];
             return (
               <div key={i} className={cn("rounded-xl border border-card-border bg-card p-5", m.tekrar && "opacity-75")}>
                 <div className="flex items-start gap-3 mb-2">
-                  <span className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0" style={{ background: `${k.renk}20`, color: k.renk }}><k.Icon className="h-3.5 w-3.5" /></span>
+                  <span className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0" style={{ background: `color-mix(in srgb, ${k.renk} 12%, transparent)`, color: k.renk }}><k.Icon className="h-3.5 w-3.5" /></span>
                   <div className="min-w-0">
-                    <h3 className="font-display font-bold text-base">{m.baslik}</h3>
+                    <h3 className="font-display font-semibold text-base">{m.baslik}</h3>
                     {m.tekrar && (
                       <p className="inline-flex items-center gap-1 text-[11px] text-muted-foreground mt-1">
                         <Repeat className="h-3 w-3" aria-hidden="true" />

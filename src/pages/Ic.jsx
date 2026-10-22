@@ -26,12 +26,12 @@ export default function Ic() {
   }, []);
 
   return (
-    <div className="bg-silicon-grid min-h-[80vh]">
+    <div className="min-h-[80vh]">
       <section className="container mx-auto px-4 py-12">
         <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-primary mb-3">
           <Layers className="h-3.5 w-3.5" />İç
         </div>
-        <h1 className="font-display text-3xl font-bold mb-4">Cihazların iç kısmı</h1>
+        <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em] mb-4">Cihazların iç kısmı</h1>
         <p className="text-muted-foreground leading-relaxed max-w-3xl">
           Katalogdaki chip'ler bir yerde yaşıyor. Bu bölüm onları içine koyan cihazları açıyor:
           Humane AI Pin'in lazer projektöründen iPhone'un buhar odasına, Framework'ün vidalı
@@ -61,7 +61,7 @@ export default function Ic() {
               )}
               style={kat === k.id ? { borderColor: k.renk, color: k.renk } : undefined}
             >
-              <span className="w-1.5 h-1.5 rounded-full" style={{ background: k.renk }} />
+              <span className="w-1.5 h-1.5" style={{ background: k.renk }} />
               {k.ad} <span className="font-mono opacity-60">{sayim[k.id] || 0}</span>
             </button>
           ))}
@@ -85,7 +85,7 @@ export default function Ic() {
                       <p className="font-mono text-[10px] uppercase tracking-wider mb-1" style={{ color: k?.renk }}>
                         {c.uretici} · {c.yil}
                       </p>
-                      <h3 className="font-display font-bold text-sm leading-snug group-hover:text-primary transition-colors">
+                      <h3 className="font-display font-semibold text-sm leading-snug group-hover:text-primary transition-colors">
                         {c.ad}
                       </h3>
                     </div>
@@ -96,7 +96,7 @@ export default function Ic() {
                       )}
                       title={puan.genel != null ? "Cihaz puanı (100 üzerinden)" : puan.genelNeden}
                     >
-                      <span className="block font-display font-bold text-base leading-none">{puan.genel ?? "—"}</span>
+                      <span className="block font-display font-semibold text-base leading-none">{puan.genel ?? "—"}</span>
                       <span className="block font-mono text-[8px] text-muted-foreground mt-0.5">
                         {puan.genel != null ? "/100" : "veri az"}
                       </span>
@@ -132,14 +132,14 @@ export default function Ic() {
                           <span className="text-muted-foreground">İşlemci: </span>
                           {anaAd}
                         </p>
-                        <span className={cn("font-mono text-[11px] font-bold shrink-0", puanRengi(anaPuan))}>
+                        <span className={cn("font-mono text-[11px] font-semibold shrink-0", puanRengi(anaPuan))}>
                           {anaPuan != null ? `${anaPuan}/100` : "puan yok"}
                         </span>
                       </div>
                       <div className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1.5">
                         {puan.bilesenler.filter((b) => b.key !== "islemci").map((b) => (
                           <span key={b.key} className="text-[10px] text-muted-foreground">
-                            {b.ad} <span className={cn("font-mono font-bold", puanRengi(b.puan))}>{b.puan ?? "—"}</span>
+                            {b.ad} <span className={cn("font-mono font-semibold", puanRengi(b.puan))}>{b.puan ?? "—"}</span>
                           </span>
                         ))}
                       </div>

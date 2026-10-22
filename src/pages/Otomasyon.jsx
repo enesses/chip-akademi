@@ -5,18 +5,18 @@ import data from "@/data/otomasyon.json";
 import { cn } from "@/lib/utils";
 
 const AJAN_IKON = { guvenlik: Shield, iyilestirme: TrendingUp, yenileme: RefreshCw, gelistirme: Wrench };
-const DURUM_RENK = { temiz: "#34d399", tamam: "#34d399", ok: "#34d399", uygulandi: "#34d399", "degisiklik-yok": "#94a3b8",
-  dikkat: "#f59e0b", kismi: "#f59e0b", kritik: "#f87171", "test-hatasi": "#f87171", "geri-alindi": "#f87171" };
+const DURUM_RENK = { temiz: "rgb(var(--t-emerald-400))", tamam: "rgb(var(--t-emerald-400))", ok: "rgb(var(--t-emerald-400))", uygulandi: "rgb(var(--t-emerald-400))", "degisiklik-yok": "hsl(var(--muted-foreground))",
+  dikkat: "rgb(var(--t-amber-400))", kismi: "rgb(var(--t-amber-400))", kritik: "rgb(var(--t-red-400))", "test-hatasi": "rgb(var(--t-red-400))", "geri-alindi": "rgb(var(--t-red-400))" };
 const DURUM_AD = { temiz: "temiz", tamam: "tamam", ok: "tamam", uygulandi: "uygulandı", "degisiklik-yok": "değişiklik yok",
   dikkat: "dikkat", kismi: "kısmi", kritik: "kritik", "test-hatasi": "test hatası", "geri-alindi": "geri alındı", kuru: "deneme" };
-const ETKI_RENK = { yüksek: "#f87171", orta: "#f59e0b", düşük: "#94a3b8" };
-const renkAl = (d) => DURUM_RENK[d] ?? "#94a3b8";
+const ETKI_RENK = { yüksek: "rgb(var(--t-red-400))", orta: "rgb(var(--t-amber-400))", düşük: "hsl(var(--muted-foreground))" };
+const renkAl = (d) => DURUM_RENK[d] ?? "hsl(var(--muted-foreground))";
 const adAl = (d) => DURUM_AD[d] ?? d ?? "tamam";
 
 function Bolum({ baslik, children }) {
   return (
     <section className="container mx-auto px-4 pb-10">
-      <h2 className="font-display font-bold text-xl mb-4">{baslik}</h2>
+      <h2 className="font-display font-semibold text-xl mb-4">{baslik}</h2>
       {children}
     </section>
   );
@@ -35,10 +35,10 @@ export default function Otomasyon() {
   const gecmis = data.gecmis || [];
 
   return (
-    <div className="bg-silicon-grid min-h-[80vh]">
+    <div className="min-h-[80vh]">
       <section className="container mx-auto px-4 py-12">
         <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-primary mb-3"><Bot className="h-3.5 w-3.5" />Otomasyon</div>
-        <h1 className="font-display text-3xl font-bold mb-2">Ajanlar bu uygulamayı her gün 10:00'da denetliyor.</h1>
+        <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em] mb-2">Ajanlar bu uygulamayı her gün 10:00'da denetliyor.</h1>
         <p className="text-muted-foreground">
           Son çalışma: <span className="text-foreground">{data.tarih}</span> · Genel durum:{" "}
           <span style={{ color: genelRenk }}>{adAl(data.durum)}</span>
@@ -58,14 +58,14 @@ export default function Otomasyon() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {data.ajanlar.map((a) => {
             const Icon = AJAN_IKON[a.id] ?? Bot;
-            const renk = a.calisti ? renkAl(a.durum) : "#94a3b8";
+            const renk = a.calisti ? renkAl(a.durum) : "hsl(var(--muted-foreground))";
             return (
               <div key={a.id} className="rounded-xl border border-card-border bg-card p-4">
                 <div className="flex items-center gap-2.5 mb-2">
-                  <span className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: `${renk}20`, color: renk }}><Icon className="h-4 w-4" /></span>
-                  <p className="font-display font-bold text-sm">{a.ad}</p>
+                  <span className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: `color-mix(in srgb, ${renk} 12%, transparent)`, color: renk }}><Icon className="h-4 w-4" /></span>
+                  <p className="font-display font-semibold text-sm">{a.ad}</p>
                 </div>
-                <span className="font-mono text-[9px] uppercase tracking-wider rounded px-1.5 py-0.5 border" style={{ color: renk, borderColor: `${renk}55`, background: `${renk}15` }}>
+                <span className="font-mono text-[9px] uppercase tracking-wider rounded px-1.5 py-0.5 border" style={{ color: renk, borderColor: `color-mix(in srgb, ${renk} 33%, transparent)`, background: `color-mix(in srgb, ${renk} 8%, transparent)` }}>
                   {a.calisti ? adAl(a.durum) : "çalışmadı"}
                 </span>
               </div>
@@ -102,7 +102,7 @@ export default function Otomasyon() {
           <ul className="grid gap-2 max-w-5xl">
             {uygulanan.map((k, i) => {
               const Ikon = k.durum === "birlesti" ? GitMerge : k.durum === "acik" ? GitPullRequest : Ban;
-              const renk = k.durum === "birlesti" ? "#34d399" : k.durum === "acik" ? "#f59e0b" : "#94a3b8";
+              const renk = k.durum === "birlesti" ? "rgb(var(--t-emerald-400))" : k.durum === "acik" ? "rgb(var(--t-amber-400))" : "hsl(var(--muted-foreground))";
               const ad = k.durum === "birlesti" ? "birleşti" : k.durum === "acik" ? "onay bekliyor" : "bırakıldı";
               return (
                 <li key={i} className="rounded-xl border border-card-border bg-card p-3.5 flex items-start gap-2.5">
@@ -137,14 +137,14 @@ export default function Otomasyon() {
                         const k = uygulamaKaydi.get(sade(o.baslik));
                         if (!k) return null;
                         const bekliyor = k.durum === "acik";
-                        const renk = bekliyor ? "#f59e0b" : "#34d399";
+                        const renk = bekliyor ? "rgb(var(--t-amber-400))" : "rgb(var(--t-emerald-400))";
                         return (
-                          <span className="font-mono text-[9px] uppercase rounded px-1.5 py-0.5 border" style={{ color: renk, borderColor: `${renk}55`, background: `${renk}15` }}>
+                          <span className="font-mono text-[9px] uppercase rounded px-1.5 py-0.5 border" style={{ color: renk, borderColor: `color-mix(in srgb, ${renk} 33%, transparent)`, background: `color-mix(in srgb, ${renk} 8%, transparent)` }}>
                             {bekliyor ? "onay bekliyor" : "uygulandı"}{k.pr ? ` · PR #${k.pr}` : ""}
                           </span>
                         );
                       })()}
-                      {o.etki && <span className="font-mono text-[9px] uppercase rounded px-1.5 py-0.5 border" style={{ color: ETKI_RENK[o.etki], borderColor: `${ETKI_RENK[o.etki]}55` }}>{o.etki} etki</span>}
+                      {o.etki && <span className="font-mono text-[9px] uppercase rounded px-1.5 py-0.5 border" style={{ color: ETKI_RENK[o.etki], borderColor: `color-mix(in srgb, ${ETKI_RENK[o.etki]} 33%, transparent)` }}>{o.etki} etki</span>}
                       {o.alan && <span className="font-mono text-[9px] uppercase text-muted-foreground">{o.alan}</span>}
                     </div>
                   </div>
@@ -181,7 +181,7 @@ export default function Otomasyon() {
           {bulgular.length === 0 && <p className="text-xs text-muted-foreground">Bulgu yok.</p>}
           {bulgular.map((b, i) => (
             <div key={i} className="text-xs mb-2 flex gap-2">
-              <span className="w-1.5 h-1.5 rounded-full mt-1.5 shrink-0" style={{ background: ETKI_RENK[b.etki] ?? "#94a3b8" }} />
+              <span className="w-1.5 h-1.5 mt-1.5 shrink-0" style={{ background: ETKI_RENK[b.etki] ?? "hsl(var(--muted-foreground))" }} />
               <span>{b.baslik}</span>
             </div>
           ))}

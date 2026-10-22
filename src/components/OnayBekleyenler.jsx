@@ -48,7 +48,7 @@ export default function OnayBekleyenler({ liste }) {
     <section className="container mx-auto px-4 pb-10" aria-labelledby="onay-bekleyen">
       <div className="flex flex-wrap items-end justify-between gap-3 mb-4 max-w-5xl">
         <div>
-          <h2 id="onay-bekleyen" className="font-display font-bold text-xl">Onay bekleyen öneriler</h2>
+          <h2 id="onay-bekleyen" className="font-display font-semibold text-xl">Onay bekleyen öneriler</h2>
           <p className="text-xs text-muted-foreground mt-1 max-w-2xl">
             Otomasyon bunları uyguladı ve testleri geçti, ama birleştirmek için senin onayın gerekiyor.
             Onaylayınca Claude birkaç dakika içinde birleştirir, uygulamayı yeniden yayınlar ve sana bildirim gönderir.

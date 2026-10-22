@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { useLocation } from "wouter";
 import { AnimatePresence, motion } from "framer-motion";
 import {
-  ArrowLeft, ArrowRight, BookOpen, Check, Cpu, Eye, EyeOff, KeyRound, Loader2, Lock, Mail, Rocket, ShieldCheck,
-  UserRound, Wrench,
+  ArrowLeft, ArrowRight, Check, Eye, EyeOff, KeyRound, Loader2, Lock, Mail, Rocket, UserRound,
 } from "lucide-react";
+import Logo from "@/components/Logo";
 import { Link } from "@/components/Nav";
 import { Kullanilamaz, Mesaj, Yukleniyor } from "@/components/hesap/Ortak";
 import {
@@ -18,9 +18,9 @@ const ROLLER = [
 ];
 
 const ARTILAR = [
-  { Ikon: BookOpen, baslik: "İlerlemen seninle", metin: "Dersler, sınavlar ve notların hesabına bağlı kalır." },
-  { Ikon: Wrench, baslik: "Kendi çipini tasarla", metin: "CPU, GPU ve hızlandırıcı tasarımların kaybolmaz." },
-  { Ikon: ShieldCheck, baslik: "Güvenli giriş", metin: "Google altyapısıyla şifreli oturum, e-posta doğrulama." },
+  ["İlerlemen seninle", "Dersler, sınavlar ve notların hesabına bağlı kalır."],
+  ["Kendi çipini tasarla", "CPU, GPU ve hızlandırıcı tasarımların kaybolmaz."],
+  ["Güvenli giriş", "Firebase altyapısı, şifreli oturum ve e-posta doğrulama."],
 ];
 
 /** 0–4 arası kaba şifre gücü. */
@@ -34,7 +34,7 @@ function sifreGucu(s) {
   return s.length < MIN_SIFRE ? Math.min(p, 1) : Math.max(p, 1);
 }
 const GUC = [
-  { ad: "", renk: "bg-card-border" },
+  { ad: "", renk: "bg-border" },
   { ad: "Zayıf", renk: "bg-red-400" },
   { ad: "Orta", renk: "bg-amber-400" },
   { ad: "İyi", renk: "bg-lime-400" },
@@ -56,15 +56,15 @@ function GoogleLogo() {
 function Alan({ id, etiket, Ikon, sag, hata, children, ...props }) {
   return (
     <div>
-      <label htmlFor={id} className="block text-[13px] font-medium text-foreground/90 mb-1.5">{etiket}</label>
+      <label htmlFor={id} className="block text-[13px] font-medium mb-1.5">{etiket}</label>
       <div className={cn(
-        "group relative flex items-center rounded-xl border bg-background/60 transition-all",
-        "focus-within:border-primary/70 focus-within:ring-4 focus-within:ring-primary/10",
-        hata ? "border-red-500/60" : "border-card-border hover:border-foreground/20"
+        "group relative flex items-center rounded-md border bg-card transition-colors",
+        "focus-within:border-primary focus-within:shadow-[0_0_0_3px_hsl(var(--primary)/0.15)]",
+        hata ? "border-red-500/60" : "border-card-border hover:border-foreground/30"
       )}>
-        <Ikon className="absolute left-3.5 h-4 w-4 text-muted-foreground group-focus-within:text-primary transition-colors" aria-hidden="true" />
+        <Ikon className="absolute left-3.5 h-4 w-4 text-muted-foreground group-focus-within:text-foreground transition-colors" aria-hidden="true" />
         {children || (
-          <input id={id} className="h-12 w-full bg-transparent pl-10 pr-11 text-[15px] outline-none placeholder:text-muted-foreground/60 rounded-xl" {...props} />
+          <input id={id} className="alan-ic h-11 w-full bg-transparent pl-10 pr-11 text-[15px] placeholder:text-muted-foreground/70 rounded-md" {...props} />
         )}
         {sag && <div className="absolute right-1.5">{sag}</div>}
       </div>
@@ -81,7 +81,7 @@ function SifreAlani({ id, etiket, deger, setDeger, autoComplete, placeholder, gu
         placeholder={placeholder} value={deger} onChange={(e) => setDeger(e.target.value)} required
         sag={(
           <button type="button" onClick={() => setGoster((g) => !g)} aria-label={goster ? "Şifreyi gizle" : "Şifreyi göster"}
-            className="h-9 w-9 inline-flex items-center justify-center rounded-lg text-muted-foreground hover:text-foreground hover:bg-foreground/5">
+            className="h-8 w-8 inline-flex items-center justify-center rounded text-muted-foreground hover:text-foreground hover:bg-muted">
             {goster ? <EyeOff className="h-4 w-4" aria-hidden="true" /> : <Eye className="h-4 w-4" aria-hidden="true" />}
           </button>
         )} />
@@ -89,10 +89,10 @@ function SifreAlani({ id, etiket, deger, setDeger, autoComplete, placeholder, gu
         <div className="mt-2 flex items-center gap-3" aria-live="polite">
           <div className="flex flex-1 gap-1">
             {[1, 2, 3, 4].map((i) => (
-              <span key={i} className={cn("h-1 flex-1 rounded-full transition-colors duration-300", i <= guc ? GUC[guc].renk : "bg-card-border")} />
+              <span key={i} className={cn("h-1 flex-1 transition-colors duration-300", i <= guc ? GUC[guc].renk : "bg-border")} />
             ))}
           </div>
-          <span className="text-[11px] text-muted-foreground w-12 text-right">{GUC[guc].ad}</span>
+          <span className="font-mono text-[10.5px] uppercase tracking-wider text-muted-foreground w-14 text-right">{GUC[guc].ad}</span>
         </div>
       )}
     </div>
@@ -102,11 +102,11 @@ function SifreAlani({ id, etiket, deger, setDeger, autoComplete, placeholder, gu
 function Onay({ secili, setSecili, children }) {
   return (
     <label className="flex items-center gap-2.5 text-[13px] text-muted-foreground cursor-pointer select-none">
-      <span className={cn("h-[18px] w-[18px] rounded-md border flex items-center justify-center transition-colors",
-        secili ? "bg-primary border-primary" : "border-card-border bg-background/60")}>
-        {secili && <Check className="h-3 w-3 text-primary-foreground" strokeWidth={3} aria-hidden="true" />}
+      <span className={cn("h-4 w-4 shrink-0 rounded-sm border flex items-center justify-center transition-colors",
+        secili ? "bg-foreground border-foreground" : "border-foreground/40 bg-card")}>
+        {secili && <Check className="h-3 w-3 text-background" strokeWidth={3} aria-hidden="true" />}
       </span>
-      <input type="checkbox" className="sr-only" checked={secili} onChange={(e) => setSecili(e.target.checked)} />
+      <input type="checkbox" className="sr-only peer" checked={secili} onChange={(e) => setSecili(e.target.checked)} />
       {children}
     </label>
   );
@@ -116,10 +116,8 @@ function AnaDugme({ mesgul, children, ...props }) {
   return (
     <button type="submit" disabled={mesgul}
       className={cn(
-        "group relative w-full h-12 rounded-xl font-semibold text-[15px] text-primary-foreground overflow-hidden",
-        "bg-gradient-to-r from-primary to-[#7c8cff] shadow-[0_8px_30px_-8px_hsl(var(--primary)/0.6)]",
-        "transition-all hover:shadow-[0_10px_40px_-6px_hsl(var(--primary)/0.75)] hover:brightness-110 active:scale-[0.99]",
-        "disabled:opacity-60 disabled:pointer-events-none"
+        "group relative w-full h-11 rounded-md font-medium text-[15px] bg-foreground text-background",
+        "transition-colors hover:bg-foreground/85 active:translate-y-px disabled:opacity-60 disabled:pointer-events-none"
       )} {...props}>
       <span className="relative inline-flex items-center justify-center gap-2">
         {mesgul ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> : null}
@@ -133,7 +131,7 @@ function AnaDugme({ mesgul, children, ...props }) {
 function GoogleDugmesi({ onClick, mesgul, metin }) {
   return (
     <button type="button" onClick={onClick} disabled={mesgul}
-      className="w-full h-12 rounded-xl border border-card-border bg-foreground/[0.03] hover:bg-foreground/[0.07] hover:border-foreground/20 transition-colors inline-flex items-center justify-center gap-3 text-[15px] font-medium disabled:opacity-60">
+      className="w-full h-11 rounded-md border border-card-border bg-card hover:border-foreground/35 transition-colors inline-flex items-center justify-center gap-3 text-[15px] font-medium disabled:opacity-60">
       {mesgul ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> : <GoogleLogo />}
       {metin}
     </button>
@@ -142,86 +140,79 @@ function GoogleDugmesi({ onClick, mesgul, metin }) {
 
 function Ayrac() {
   return (
-    <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.14em] text-muted-foreground/70">
-      <span className="h-px flex-1 bg-card-border" />ya da e-posta ile<span className="h-px flex-1 bg-card-border" />
+    <div className="etiket flex items-center gap-3 !text-[10.5px]">
+      <span className="h-px flex-1 bg-border" />ya da e-posta ile<span className="h-px flex-1 bg-border" />
     </div>
   );
 }
 
-/** Sol panel: marka, kısa tanıtım, dekoratif kalıp (die) ızgarası. */
+/** Sol panel: datasheet kapağı gibi — logo, başlık, çizim ve madde listesi. */
 function MarkaPaneli() {
   return (
-    <div className="relative hidden lg:flex flex-col justify-between overflow-hidden rounded-[28px] border border-card-border bg-gradient-to-br from-[#0b1424] via-[#0a0f1c] to-[#120b24] p-10">
-      <div className="absolute inset-0 opacity-[0.35]" aria-hidden="true"
-        style={{ backgroundImage: "linear-gradient(hsl(var(--primary)/0.10) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--primary)/0.10) 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
-      <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-primary/25 blur-[90px]" aria-hidden="true" />
-      <div className="absolute -bottom-28 -right-16 h-80 w-80 rounded-full bg-purple-500/25 blur-[100px]" aria-hidden="true" />
-
-      <div className="relative flex items-center gap-2.5">
-        <span className="h-9 w-9 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center">
-          <Cpu className="h-5 w-5 text-primary" aria-hidden="true" />
-        </span>
-        <span className="font-display font-bold text-lg tracking-tight">Chip Akademi</span>
+    <div className="relative hidden lg:flex flex-col justify-between rounded-lg border border-border bg-card bg-silicon-grid p-10">
+      <div className="flex items-center justify-between">
+        <Logo />
+        <span className="etiket">Üyelik</span>
       </div>
 
-      <KalipIzgarasi />
+      <KalipCizimi />
 
-      <div className="relative">
-        <h2 className="font-display text-[34px] leading-[1.1] font-bold tracking-tight">
-          Silikonun içini<br />
-          <span className="bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">katman katman öğren.</span>
+      <div>
+        <h2 className="font-display text-[34px] leading-[1.08] font-semibold tracking-[-0.025em] max-w-[16ch]">
+          Silikonun içini katman katman öğren.
         </h2>
-        <ul className="mt-8 space-y-5">
-          {ARTILAR.map(({ Ikon, baslik, metin }) => (
-            <li key={baslik} className="flex items-start gap-3.5">
-              <span className="h-9 w-9 shrink-0 rounded-lg border border-card-border bg-background/40 flex items-center justify-center">
-                <Ikon className="h-4 w-4 text-primary" aria-hidden="true" />
-              </span>
+        <ol className="mt-8 border-t border-border">
+          {ARTILAR.map(([baslik, metin], i) => (
+            <li key={baslik} className="grid grid-cols-[2.25rem_1fr] py-3.5 border-b border-border">
+              <span className="font-mono text-xs text-primary pt-0.5 rakam">{String(i + 1).padStart(2, "0")}</span>
               <div>
-                <p className="font-semibold text-[15px]">{baslik}</p>
+                <p className="font-medium text-[15px]">{baslik}</p>
                 <p className="text-sm text-muted-foreground leading-relaxed">{metin}</p>
               </div>
             </li>
           ))}
-        </ul>
+        </ol>
       </div>
     </div>
   );
 }
 
-function KalipIzgarasi() {
-  // Çekirdek, önbellek ve G/Ç bloklarından oluşan stilize bir kalıp.
-  const hucreler = ["c", "c", "l", "c", "c", "c", "c", "l", "c", "c", "g", "g", "l", "g", "g", "g", "g", "l", "g", "g", "c", "c", "l", "c", "c"];
-  const renk = { c: "bg-primary/25 border-primary/40", l: "bg-purple-400/20 border-purple-400/40", g: "bg-emerald-400/15 border-emerald-400/30" };
+function KalipCizimi() {
+  // Çekirdek (c), önbellek (l) ve G/Ç (g) bloklarından stilize bir kalıp — çizgi çizim.
+  const hucreler = ["c", "c", "l", "c", "c", "c", "c", "l", "c", "c", "g", "g", "l", "g", "g", "c", "c", "l", "c", "c", "c", "c", "l", "c", "c"];
   return (
-    <div className="relative my-10 mx-auto w-56 rotate-[-8deg]" aria-hidden="true">
-      <div className="rounded-2xl border border-primary/30 bg-background/40 p-3 shadow-[0_0_60px_-10px_hsl(var(--primary)/0.5)] backdrop-blur">
+    <div className="relative my-10 mx-auto w-52" aria-hidden="true">
+      <div className="border-[1.5px] border-foreground bg-card p-2.5">
         <div className="grid grid-cols-5 gap-1.5">
           {hucreler.map((t, i) => (
-            <motion.span key={i} className={cn("aspect-square rounded-[4px] border", renk[t])}
-              animate={{ opacity: [0.55, 1, 0.55] }} transition={{ duration: 3, repeat: Infinity, delay: (i % 7) * 0.35 }} />
+            <motion.span key={i}
+              className={cn("aspect-square border border-foreground/70",
+                t === "c" ? "bg-primary border-primary" : t === "l" ? "kalip-tarama" : "bg-card")}
+              animate={t === "c" ? { opacity: [1, 0.6, 1] } : undefined}
+              transition={t === "c" ? { duration: 3.2, repeat: Infinity, delay: (i % 7) * 0.4 } : undefined} />
           ))}
         </div>
       </div>
-      {[0, 1, 2, 3, 4, 5].map((i) => (
-        <span key={i} className="absolute -left-3 h-[2px] w-3 bg-primary/40 rounded" style={{ top: `${14 + i * 14}%` }} />
+      {[0, 1, 2, 3, 4, 5, 6].map((i) => (
+        <span key={`s${i}`} className="absolute -left-2.5 h-px w-2.5 bg-foreground" style={{ top: `${10 + i * 13.3}%` }} />
       ))}
-      {[0, 1, 2, 3, 4, 5].map((i) => (
-        <span key={i} className="absolute -right-3 h-[2px] w-3 bg-primary/40 rounded" style={{ top: `${14 + i * 14}%` }} />
+      {[0, 1, 2, 3, 4, 5, 6].map((i) => (
+        <span key={`d${i}`} className="absolute -right-2.5 h-px w-2.5 bg-foreground" style={{ top: `${10 + i * 13.3}%` }} />
       ))}
+      <p className="etiket text-center mt-4 !text-[10px]">Şekil — 5×5 kalıp, çekirdek · önbellek · G/Ç</p>
     </div>
   );
 }
 
 function SekmeSecici({ mod, sec }) {
   return (
-    <div className="relative grid grid-cols-2 rounded-xl border border-card-border bg-background/60 p-1" role="tablist" aria-label="Giriş ya da kayıt">
+    <div className="relative grid grid-cols-2 border-b border-border" role="tablist" aria-label="Giriş ya da kayıt">
       {[["giris", "Giriş yap"], ["kayit", "Kayıt ol"]].map(([id, ad]) => (
         <button key={id} type="button" role="tab" aria-selected={mod === id} onClick={() => sec(id)}
-          className={cn("relative z-10 h-10 rounded-lg text-sm font-semibold transition-colors", mod === id ? "text-foreground" : "text-muted-foreground hover:text-foreground")}>
+          className={cn("relative h-11 text-sm font-medium transition-colors", mod === id ? "text-foreground" : "text-muted-foreground hover:text-foreground")}>
           {mod === id && (
-            <motion.span layoutId="sekme-isaret" className="absolute inset-0 -z-10 rounded-lg bg-card border border-card-border shadow-sm"
-              transition={{ type: "spring", stiffness: 500, damping: 38 }} />
+            <motion.span layoutId="sekme-isaret" className="absolute left-0 right-0 -bottom-px h-0.5 bg-primary"
+              transition={{ type: "spring", stiffness: 500, damping: 40 }} />
           )}
           {ad}
         </button>
@@ -260,7 +251,7 @@ function GirisFormu({ sifreUnuttum }) {
       <SifreAlani id="g-parola" etiket="Şifre" deger={parola} setDeger={setParola} autoComplete="current-password" placeholder="Şifren" />
       <div className="flex items-center justify-between -mt-1">
         <Onay secili={hatirla} setSecili={setHatirla}>Beni hatırla</Onay>
-        <button type="button" onClick={() => sifreUnuttum(eposta)} className="text-[13px] font-medium text-primary hover:underline underline-offset-4">
+        <button type="button" onClick={() => sifreUnuttum(eposta)} className="text-[13px] text-muted-foreground hover:text-foreground underline decoration-border underline-offset-4">
           Şifremi unuttum
         </button>
       </div>
@@ -307,20 +298,20 @@ function KayitFormu() {
   return (
     <form onSubmit={gonder} className="space-y-5" noValidate>
       <fieldset>
-        <legend className="block text-[13px] font-medium text-foreground/90 mb-1.5">Hesap türü</legend>
+        <legend className="block text-[13px] font-medium mb-1.5">Hesap türü</legend>
         <div className="grid grid-cols-2 gap-2.5" role="radiogroup">
           {ROLLER.map(({ id, ad, aciklama: a, Ikon }) => {
             const secili = rol === id;
             return (
               <button key={id} type="button" role="radio" aria-checked={secili} onClick={() => setRol(id)}
-                className={cn("relative rounded-xl border p-3.5 text-left transition-all",
-                  secili ? "border-primary/70 bg-primary/[0.08] ring-4 ring-primary/10" : "border-card-border bg-background/60 hover:border-foreground/20")}>
+                className={cn("relative rounded-md border p-3.5 text-left transition-colors",
+                  secili ? "border-foreground bg-card shadow-[inset_0_0_0_1px_hsl(var(--foreground))]" : "border-card-border bg-card hover:border-foreground/35")}>
                 <div className="flex items-center gap-2">
-                  <Ikon className={cn("h-4 w-4", secili ? "text-primary" : "text-muted-foreground")} aria-hidden="true" />
-                  <span className="font-semibold text-sm">{ad}</span>
+                  <Ikon className={cn("h-4 w-4", secili ? "text-foreground" : "text-muted-foreground")} aria-hidden="true" />
+                  <span className="font-medium text-sm">{ad}</span>
                 </div>
                 <p className="text-[11.5px] text-muted-foreground mt-1 leading-snug">{a}</p>
-                {secili && <Check className="absolute top-2.5 right-2.5 h-3.5 w-3.5 text-primary" aria-hidden="true" />}
+                <span className={cn("absolute top-3 right-3 h-3.5 w-3.5 rounded-full border", secili ? "border-foreground bg-foreground shadow-[inset_0_0_0_2.5px_hsl(var(--card))]" : "border-foreground/40")} aria-hidden="true" />
               </button>
             );
           })}
@@ -348,11 +339,11 @@ function KayitFormu() {
             <div className="space-y-3 pt-0.5">
               <Mesaj tur="uyari">Girişimci hesapları yönetici onayından sonra açılır; o zamana kadar öğrenci gibi kullanırsın.</Mesaj>
               <div>
-                <label htmlFor="aciklama" className="block text-[13px] font-medium text-foreground/90 mb-1.5">
+                <label htmlFor="aciklama" className="block text-[13px] font-medium mb-1.5">
                   Ne sunmak istiyorsun? <span className="text-muted-foreground font-normal">(isteğe bağlı)</span>
                 </label>
                 <textarea id="aciklama" rows={3} maxLength={600} placeholder="Ör. gömülü sistemler kursu, FPGA proje dosyaları…"
-                  className="w-full rounded-xl border border-card-border bg-background/60 px-3.5 py-3 text-sm placeholder:text-muted-foreground/60 outline-none transition-all focus:border-primary/70 focus:ring-4 focus:ring-primary/10"
+                  className="w-full rounded-md border border-card-border bg-card px-3.5 py-3 text-sm placeholder:text-muted-foreground/70 transition-colors hover:border-foreground/30"
                   {...alan("aciklama")} />
               </div>
             </div>
@@ -395,17 +386,15 @@ function SifreSifirlama({ ilkEposta, geri }) {
       <button type="button" onClick={geri} className="inline-flex items-center gap-1.5 text-[13px] text-muted-foreground hover:text-foreground">
         <ArrowLeft className="h-3.5 w-3.5" aria-hidden="true" /> Girişe dön
       </button>
-      <span className="mt-6 h-12 w-12 rounded-2xl bg-primary/10 border border-primary/30 flex items-center justify-center">
-        <KeyRound className="h-5 w-5 text-primary" aria-hidden="true" />
-      </span>
-      <h2 className="font-display text-2xl font-bold tracking-tight mt-4">Şifreni sıfırla</h2>
+      <KeyRound className="mt-8 h-6 w-6" aria-hidden="true" />
+      <h2 className="font-display text-[26px] font-semibold tracking-[-0.015em] mt-3">Şifreni sıfırla</h2>
       {gonderildi ? (
         <div className="mt-4 space-y-5">
           <p className="text-sm text-muted-foreground leading-relaxed">
             <span className="text-foreground font-medium">{eposta.trim()}</span> adresinde bir hesap varsa sıfırlama bağlantısı yolda.
             Gelen kutunu (ve spam klasörünü) kontrol et.
           </p>
-          <button type="button" onClick={geri} className="w-full h-12 rounded-xl border border-card-border hover:bg-foreground/[0.05] text-[15px] font-medium">
+          <button type="button" onClick={geri} className="w-full h-11 rounded-md border border-card-border bg-card hover:border-foreground/35 text-[15px] font-medium">
             Giriş ekranına dön
           </button>
         </div>
@@ -440,12 +429,12 @@ export default function GirisKayit({ mod }) {
   else if (oturum.kullanici) {
     govde = (
       <div className="text-center py-6">
-        <span className="mx-auto h-14 w-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center">
-          <Check className="h-6 w-6 text-emerald-300" aria-hidden="true" />
+        <span className="mx-auto h-12 w-12 rounded-sm border border-emerald-500/40 flex items-center justify-center">
+          <Check className="h-5 w-5 text-emerald-400" aria-hidden="true" />
         </span>
-        <h2 className="font-display text-2xl font-bold mt-4">Giriş yaptın</h2>
+        <h2 className="font-display text-2xl font-semibold mt-4">Giriş yaptın</h2>
         <p className="text-sm text-muted-foreground mt-1">{oturum.kullanici.eposta}</p>
-        <Link href="/hesabim" className="mt-6 inline-flex h-11 items-center gap-2 rounded-xl bg-primary px-5 text-sm font-semibold text-primary-foreground hover:brightness-110">
+        <Link href="/hesabim" className="mt-6 inline-flex h-11 items-center gap-2 rounded-md bg-foreground px-5 text-sm font-medium text-background hover:bg-foreground/85">
           Hesabına git <ArrowRight className="h-4 w-4" aria-hidden="true" />
         </Link>
       </div>
@@ -457,7 +446,7 @@ export default function GirisKayit({ mod }) {
       <>
         <SekmeSecici mod={mod} sec={(m) => git(m === "giris" ? "/giris" : "/kayit", { replace: true })} />
         <div className="mt-7">
-          <h1 className="font-display text-[28px] font-bold tracking-tight leading-tight">{baslik}</h1>
+          <h1 className="font-display text-[28px] font-semibold tracking-[-0.02em] leading-tight">{baslik}</h1>
           <p className="text-sm text-muted-foreground mt-1.5">{alt}</p>
         </div>
         <AnimatePresence mode="wait" initial={false}>
@@ -469,7 +458,7 @@ export default function GirisKayit({ mod }) {
         </AnimatePresence>
         <p className="text-sm text-muted-foreground text-center mt-7">
           {mod === "giris" ? "Hesabın yok mu? " : "Zaten hesabın var mı? "}
-          <Link href={mod === "giris" ? "/kayit" : "/giris"} className="font-semibold text-primary hover:underline underline-offset-4">
+          <Link href={mod === "giris" ? "/kayit" : "/giris"} className="font-medium text-foreground underline decoration-border underline-offset-4 hover:decoration-foreground">
             {mod === "giris" ? "Ücretsiz kayıt ol" : "Giriş yap"}
           </Link>
         </p>
@@ -478,24 +467,15 @@ export default function GirisKayit({ mod }) {
   }
 
   return (
-    <div className="relative min-h-[calc(100vh-4rem)] overflow-hidden">
-      <div className="pointer-events-none absolute inset-0 bg-silicon-grid opacity-60" aria-hidden="true" />
-      <div className="pointer-events-none absolute top-[-10%] right-[-10%] h-[420px] w-[420px] rounded-full bg-primary/10 blur-[120px] lg:hidden" aria-hidden="true" />
-      <div className="relative container mx-auto max-w-6xl px-4 py-8 md:py-12">
-        <div className="grid lg:grid-cols-[1.05fr_1fr] gap-6 lg:gap-10 items-stretch">
-          <MarkaPaneli />
-          <div className="flex items-center justify-center">
-            <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}
-              className="w-full max-w-[460px] rounded-[24px] border border-card-border bg-card/80 backdrop-blur-xl p-6 sm:p-8 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.7)]">
-              <div className="lg:hidden flex items-center gap-2 mb-6">
-                <span className="h-8 w-8 rounded-lg bg-primary/15 border border-primary/30 flex items-center justify-center">
-                  <Cpu className="h-4 w-4 text-primary" aria-hidden="true" />
-                </span>
-                <span className="font-display font-bold tracking-tight">Chip Akademi</span>
-              </div>
-              {govde}
-            </motion.div>
-          </div>
+    <div className="container mx-auto max-w-6xl px-4 py-8 md:py-12">
+      <div className="grid lg:grid-cols-[1.05fr_1fr] gap-6 lg:gap-12 items-stretch">
+        <MarkaPaneli />
+        <div className="flex items-center justify-center">
+          <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.25 }}
+            className="w-full max-w-[440px] py-2 sm:py-6">
+            <div className="lg:hidden mb-8"><Logo /></div>
+            {govde}
+          </motion.div>
         </div>
       </div>
     </div>

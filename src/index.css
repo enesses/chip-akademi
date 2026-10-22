@@ -3,15 +3,121 @@
 @tailwind utilities;
 
 :root {
-  --background: 220 26% 6%;
-  --foreground: 210 20% 92%;
-  --card: 220 22% 9%;
-  --card-border: 220 15% 18%;
-  --muted: 220 15% 14%;
-  --muted-foreground: 215 12% 62%;
-  --border: 220 15% 18%;
-  --primary: 189 94% 55%;
-  --primary-foreground: 220 26% 6%;
+  /* Açık tema: kâğıt zemin, mürekkep metin, tek vurgu rengi (bakır). */
+  color-scheme: light;
+  --background: 40 22% 96%;
+  --foreground: 220 12% 10%;
+  --ink: 220 12% 10%;
+  --card: 0 0% 100%;
+  --card-border: 40 9% 84%;
+  --muted: 40 16% 91%;
+  --muted-foreground: 220 6% 38%;
+  --border: 40 9% 84%;
+  --primary: 16 80% 43%;
+  --primary-foreground: 0 0% 100%;
+  --t-red-200: 153 27 27;
+  --t-red-300: 185 28 28;
+  --t-red-400: 220 38 38;
+  --t-red-500: 239 68 68;
+  --t-red-950: 255 255 255;
+  --t-amber-200: 146 64 14;
+  --t-amber-300: 146 64 14;
+  --t-amber-400: 180 83 9;
+  --t-amber-500: 217 119 6;
+  --t-amber-950: 255 255 255;
+  --t-emerald-200: 6 95 70;
+  --t-emerald-300: 4 120 87;
+  --t-emerald-400: 5 150 105;
+  --t-emerald-500: 16 185 129;
+  --t-emerald-950: 255 255 255;
+  --t-lime-200: 63 98 18;
+  --t-lime-300: 63 98 18;
+  --t-lime-400: 77 124 15;
+  --t-lime-500: 101 163 13;
+  --t-lime-950: 255 255 255;
+  --t-orange-200: 154 52 18;
+  --t-orange-300: 194 65 12;
+  --t-orange-400: 234 88 12;
+  --t-orange-500: 249 115 22;
+  --t-orange-950: 255 255 255;
+  --t-purple-200: 107 33 168;
+  --t-purple-300: 126 34 206;
+  --t-purple-400: 147 51 234;
+  --t-purple-500: 168 85 247;
+  --t-purple-950: 255 255 255;
+  --t-rose-200: 159 18 57;
+  --t-rose-300: 190 18 60;
+  --t-rose-400: 225 29 72;
+  --t-rose-500: 244 63 94;
+  --t-rose-950: 255 255 255;
+  --t-violet-200: 91 33 182;
+  --t-violet-300: 109 40 217;
+  --t-violet-400: 124 58 237;
+  --t-violet-500: 139 92 246;
+  --t-violet-950: 255 255 255;
+  --t-yellow-200: 133 77 14;
+  --t-yellow-300: 133 77 14;
+  --t-yellow-400: 161 98 7;
+  --t-yellow-500: 202 138 4;
+  --t-yellow-950: 255 255 255;
+}
+.dark {
+  color-scheme: dark;
+  --background: 220 6% 7%;
+  --foreground: 40 12% 90%;
+  --ink: 40 12% 90%;
+  --card: 220 5% 10%;
+  --card-border: 220 4% 19%;
+  --muted: 220 4% 14%;
+  --muted-foreground: 40 5% 62%;
+  --border: 220 4% 19%;
+  --primary: 18 90% 58%;
+  --primary-foreground: 220 6% 7%;
+  --t-red-200: 254 202 202;
+  --t-red-300: 252 165 165;
+  --t-red-400: 248 113 113;
+  --t-red-500: 239 68 68;
+  --t-red-950: 69 10 10;
+  --t-amber-200: 253 230 138;
+  --t-amber-300: 252 211 77;
+  --t-amber-400: 251 191 36;
+  --t-amber-500: 245 158 11;
+  --t-amber-950: 69 26 3;
+  --t-emerald-200: 167 243 208;
+  --t-emerald-300: 110 231 183;
+  --t-emerald-400: 52 211 153;
+  --t-emerald-500: 16 185 129;
+  --t-emerald-950: 2 44 34;
+  --t-lime-200: 217 249 157;
+  --t-lime-300: 190 242 100;
+  --t-lime-400: 163 230 53;
+  --t-lime-500: 132 204 22;
+  --t-lime-950: 26 46 5;
+  --t-orange-200: 254 215 170;
+  --t-orange-300: 253 186 116;
+  --t-orange-400: 251 146 60;
+  --t-orange-500: 249 115 22;
+  --t-orange-950: 67 20 7;
+  --t-purple-200: 233 213 255;
+  --t-purple-300: 216 180 254;
+  --t-purple-400: 192 132 252;
+  --t-purple-500: 168 85 247;
+  --t-purple-950: 59 7 100;
+  --t-rose-200: 254 205 211;
+  --t-rose-300: 253 164 175;
+  --t-rose-400: 251 113 133;
+  --t-rose-500: 244 63 94;
+  --t-rose-950: 76 5 25;
+  --t-violet-200: 221 214 254;
+  --t-violet-300: 196 181 253;
+  --t-violet-400: 167 139 250;
+  --t-violet-500: 139 92 246;
+  --t-violet-950: 46 16 101;
+  --t-yellow-200: 254 240 138;
+  --t-yellow-300: 253 224 71;
+  --t-yellow-400: 250 204 21;
+  --t-yellow-500: 234 179 8;
+  --t-yellow-950: 66 32 6;
 }
 
 html { -webkit-text-size-adjust: 100%; }
@@ -19,42 +125,40 @@ body {
   background: hsl(var(--background));
   color: hsl(var(--foreground));
   font-family: theme("fontFamily.sans");
-  font-feature-settings: "cv11", "ss01";
+  font-feature-settings: "ss02";
+  transition: background-color 150ms ease;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-::selection { background: hsl(var(--primary) / 0.3); }
+::selection { background: hsl(var(--primary) / 0.22); }
 :focus-visible { outline: 2px solid hsl(var(--primary)); outline-offset: 2px; border-radius: 4px; }
+/* Metin alanlarında dış halka yerine kenar + yumuşak halka. */
+input:not([type="checkbox"]):not([type="radio"]):focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: none; border-color: hsl(var(--primary)); box-shadow: 0 0 0 3px hsl(var(--primary) / 0.15);
+}
 
+/* Milimetrik kâğıt: datasheet hissi veren çok soluk ızgara. */
 .bg-silicon-grid {
-  background-image: linear-gradient(hsl(var(--border) / 0.15) 1px, transparent 1px),
-    linear-gradient(90deg, hsl(var(--border) / 0.15) 1px, transparent 1px);
-  background-size: 32px 32px;
+  background-image: linear-gradient(hsl(var(--foreground) / 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--foreground) / 0.045) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
-.bg-chip-glow {
-  background: radial-gradient(circle at 30% 20%, hsl(var(--primary) / 0.12), transparent 60%);
-}
-.text-gradient-cyan {
-  background: linear-gradient(90deg, hsl(var(--primary)), #a855f7);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-.hover-elevate:hover { filter: brightness(1.08); }
+.bg-chip-glow { background: none; }
+.text-gradient-cyan { color: hsl(var(--primary)); }
+/* Üzerine gelince zemin bir ton koyulaşır/açılır (açık ve koyu temada aynı çalışır). */
+.hover-elevate { transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease; }
+.hover-elevate:hover { background-image: linear-gradient(hsl(var(--foreground) / 0.045), hsl(var(--foreground) / 0.045)); }
 .active-elevate-2:active { filter: brightness(0.94); }
 
 /* ---------- anasayfa die görseli ---------- */
-.hero-die-etiket { font-family: theme("fontFamily.mono"); font-size: 9px; letter-spacing: 0.12em; fill: hsl(var(--muted-foreground)); }
-.hero-die-sm { fill-opacity: 0.35; animation: hero-die-nabiz 2.4s ease-in-out infinite; }
-@keyframes hero-die-nabiz { 0%, 100% { fill-opacity: 0.22; } 50% { fill-opacity: 0.6; } }
-.hero-die-tarama { opacity: 0.5; animation: hero-die-tara 4.5s linear infinite; }
-@keyframes hero-die-tara { from { transform: translateY(0); opacity: 0; } 10% { opacity: 0.5; } 90% { opacity: 0.5; } to { transform: translateY(236px); opacity: 0; } }
-.hero-die-bolge { transition: opacity 0.2s ease; }
-.hero-die-bolge[data-aktif="0"] { opacity: 0.3; }
-.hero-die-bolge[data-aktif="1"] .hero-die-dolgu { filter: brightness(1.6); }
+.hero-die-etiket { font-family: theme("fontFamily.mono"); font-size: 9px; letter-spacing: 0.1em; fill: hsl(var(--muted-foreground)); }
+.hero-die-harf { font-family: theme("fontFamily.mono"); font-size: 10px; font-weight: 600; }
+.hero-die-sm { fill-opacity: 0.85; animation: hero-die-nabiz 3.2s ease-in-out infinite; }
+@keyframes hero-die-nabiz { 0%, 100% { fill-opacity: 0.85; } 50% { fill-opacity: 0.55; } }
+.hero-die-bolge, .hero-die-cagri { transition: opacity 0.2s ease; }
+.hero-die-bolge[data-aktif="0"], .hero-die-cagri[data-aktif="0"] { opacity: 0.25; }
 @media (prefers-reduced-motion: reduce) {
-  .hero-die-sm, .hero-die-tarama { animation: none; }
-  .hero-die-tarama { display: none; }
+  .hero-die-sm { animation: none; }
 }
 
 /* ── Gezinme kabuğu ─────────────────────────────────────────────────────── */
@@ -109,3 +213,14 @@ body {
 @media (max-width: 767.98px) {
   .alt-bosluk { padding-bottom: calc(4.25rem + env(safe-area-inset-bottom, 0px)); }
 }
+
+/* ── Datasheet yardımcıları ─────────────────────────────────────────────── */
+
+/* Küçük, büyük harfli mono etiket (bölüm numaraları, veri başlıkları). */
+.etiket { font-family: theme("fontFamily.mono"); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: hsl(var(--muted-foreground)); }
+/* Rakamlar hizalı dursun. */
+.rakam { font-variant-numeric: tabular-nums; }
+/* Çizimlerde önbellek blokları için çapraz tarama. */
+.kalip-tarama { background-image: repeating-linear-gradient(45deg, hsl(var(--foreground) / 0.55) 0 1px, transparent 1px 4px); }
+/* Simgeli alanların iç input'u: kenar/halka kapsayıcıda. */
+.alan-ic, .alan-ic:focus-visible { outline: none !important; box-shadow: none !important; border: 0 !important; }

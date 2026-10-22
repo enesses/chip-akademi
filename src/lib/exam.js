@@ -15,10 +15,10 @@ export function buildExam({ count = 20 } = {}) {
   });
 }
 export const LEVELS = [
-  { min: 90, name: "Uzman", color: "#34d399" },
-  { min: 75, name: "İleri", color: "#22d3ee" },
-  { min: 55, name: "Orta", color: "#f59e0b" },
+  { min: 90, name: "Uzman", color: "rgb(var(--t-emerald-400))" },
+  { min: 75, name: "İleri", color: "rgb(var(--t-lime-400))" },
+  { min: 55, name: "Orta", color: "rgb(var(--t-amber-400))" },
   { min: 35, name: "Başlangıç", color: "#fb923c" },
-  { min: 0, name: "Hazırlık", color: "#f87171" },
+  { min: 0, name: "Hazırlık", color: "rgb(var(--t-red-400))" },
 ];
 export function levelFor(pct) { return LEVELS.find((l) => pct >= l.min) || LEVELS[LEVELS.length-1]; }

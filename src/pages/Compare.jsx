@@ -149,14 +149,14 @@ export default function Compare() {
 
   return (
     <div className="container mx-auto px-4 py-12">
-      <h1 className="font-display text-3xl font-bold mb-2">Karşılaştır</h1>
+      <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em] mb-2">Karşılaştır</h1>
       <p className="text-muted-foreground mb-6 max-w-2xl">
         2–7 öğe: gerçek çipler ve Atölye'de kaydettiğin tasarımlar. Her satırda en iyi değer işaretlenir.
       </p>
 
       <div className="flex flex-wrap items-center gap-2 mb-8">
         {entries.map((e) => (
-          <div key={e.key} className="flex items-center gap-2 rounded-full border border-card-border bg-card pl-1.5 pr-2 py-1">
+          <div key={e.key} className="flex items-center gap-2 rounded-sm border border-card-border bg-card pl-1.5 pr-2 py-1">
             {e.kind === "chip"
               ? (e.chip.image ? <img src={imageUrl(e.chip.image)} alt="" className="w-6 h-6 rounded-full object-cover bg-muted" /> : <span className="w-6 h-6 rounded-full bg-muted inline-block" />)
               : <span className="w-6 h-6 rounded-full flex items-center justify-center" style={{ background: `${e.renk}25`, color: e.renk }}><PenTool className="h-3 w-3" /></span>}
@@ -235,7 +235,7 @@ export default function Compare() {
                   {e.kind === "design" && <DiePreview placed={e.design.placed} className="w-full h-auto mb-2 rounded" />}
                   <p className="text-xs font-medium truncate" style={{ color: e.renk }}>{e.alt}</p>
                   {/* Genel puan büyük */}
-                  <p className="font-display font-bold text-2xl mt-1">{gosterPuan ?? "—"}</p>
+                  <p className="font-display font-semibold text-2xl mt-1">{gosterPuan ?? "—"}</p>
                   <p className="text-[10px] text-muted-foreground mt-0.5">{g?.puan != null ? "genel puan" : e.sinifAd}</p>
                   {/* Üç bileşen küçük çubuklar */}
                   {g != null && (
@@ -247,8 +247,8 @@ export default function Compare() {
                       ].map(({ ad, puan, renk }) => puan != null && (
                         <div key={ad} className="flex items-center gap-1.5">
                           <span className="text-[9px] text-muted-foreground w-12 shrink-0">{ad}</span>
-                          <div className="flex-1 h-1 rounded-full bg-muted overflow-hidden">
-                            <div className={cn("h-full rounded-full", renk)} style={{ width: `${puan}%` }} />
+                          <div className="flex-1 h-1 bg-muted overflow-hidden">
+                            <div className={cn("h-full", renk)} style={{ width: `${puan}%` }} />
                           </div>
                           <span className="font-mono text-[9px] text-muted-foreground w-5 text-right">{puan}</span>
                         </div>
@@ -269,7 +269,7 @@ export default function Compare() {
 
           {rubrikSatirlari.length > 0 && (
             <>
-              <h2 className="font-display text-lg font-bold mb-3">{entries[0].sinifAd} ölçütleri</h2>
+              <h2 className="font-display text-lg font-semibold mb-3">{entries[0].sinifAd} ölçütleri</h2>
               <div className="rounded-xl border border-card-border bg-card mb-10 overflow-x-auto">
                 <table className="w-full text-sm">
                   <Baslik />
@@ -294,7 +294,7 @@ export default function Compare() {
 
           {fizikselSatirlar.length > 0 && (
             <>
-              <h2 className="font-display text-lg font-bold mb-1">Fiziksel ölçütler</h2>
+              <h2 className="font-display text-lg font-semibold mb-1">Fiziksel ölçütler</h2>
               <p className="text-xs text-muted-foreground mb-3">Gerçek çiplerle kendi tasarımların arasında ortak ölçü. Çok die'lı paketlerde alan ve yoğunluk tek die'a indirgenemediği için boş bırakılır.</p>
               <div className="rounded-xl border border-card-border bg-card mb-10 overflow-x-auto">
                 <table className="w-full text-sm">
@@ -316,7 +316,7 @@ export default function Compare() {
 
           {tasarimlar.length >= 2 && (
             <>
-              <h2 className="font-display text-lg font-bold mb-3">Tasarım ölçütleri</h2>
+              <h2 className="font-display text-lg font-semibold mb-3">Tasarım ölçütleri</h2>
               <div className="rounded-xl border border-card-border bg-card mb-10 overflow-x-auto">
                 <table className="w-full text-sm">
                   <Baslik />
@@ -343,7 +343,7 @@ export default function Compare() {
 
           {cipler.length > 0 && (
             <>
-              <h2 className="font-display text-lg font-bold mb-3">Tüm spesifikasyonlar</h2>
+              <h2 className="font-display text-lg font-semibold mb-3">Tüm spesifikasyonlar</h2>
               <div className="rounded-xl border border-card-border bg-card overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
@@ -383,7 +383,7 @@ function GeriKalmaPaneli({ tasarimlar }) {
   const renk = (d) => (d >= 35 ? "bg-rose-400" : d >= 15 ? "bg-amber-400" : "bg-muted-foreground/50");
   return (
     <section className="mb-10" aria-labelledby="geri-kalma">
-      <h2 id="geri-kalma" className="font-display text-lg font-bold mb-1">Nerede geride kaldın?</h2>
+      <h2 id="geri-kalma" className="font-display text-lg font-semibold mb-1">Nerede geride kaldın?</h2>
       <p className="text-xs text-muted-foreground mb-3">
         Her tasarımın, bu karşılaştırmadaki en iyi rakibine göre en büyük dört açığı.
       </p>
@@ -402,8 +402,8 @@ function GeriKalmaPaneli({ tasarimlar }) {
                       <span>{g.label}</span>
                       <span className="tabular-nums text-muted-foreground whitespace-nowrap">%{g.deficit} geride</span>
                     </div>
-                    <div className="h-1.5 rounded-full bg-muted/40 mt-1 overflow-hidden">
-                      <div className={cn("h-full rounded-full", renk(g.deficit))} style={{ width: `${Math.min(100, g.deficit)}%` }} />
+                    <div className="h-1.5 bg-muted/40 mt-1 overflow-hidden">
+                      <div className={cn("h-full", renk(g.deficit))} style={{ width: `${Math.min(100, g.deficit)}%` }} />
                     </div>
                     <p className="text-[11px] text-muted-foreground mt-1">
                       Sen: {g.mine} · {g.rivalName}: {g.rival}

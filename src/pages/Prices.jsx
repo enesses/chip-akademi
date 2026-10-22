@@ -33,10 +33,10 @@ export default function Prices() {
   }, [q, sort, cokSaglayici]);
 
   return (
-    <div className="bg-silicon-grid min-h-[80vh]">
+    <div className="min-h-[80vh]">
       <section className="container mx-auto px-4 py-12">
         <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-primary mb-3"><DollarSign className="h-3.5 w-3.5" />Kiralama Fiyatları</div>
-        <h1 className="font-display text-3xl font-bold mb-2">AI çipleri bulutta saatlik kaça kiralanıyor?</h1>
+        <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em] mb-2">AI çipleri bulutta saatlik kaça kiralanıyor?</h1>
         <p className="text-muted-foreground max-w-2xl">{data.kaynak.liste_notu}</p>
         <a href="#bellek" onClick={(e) => { e.preventDefault(); document.getElementById("bellek")?.scrollIntoView({ behavior: "smooth" }); }} className="inline-block mt-3 text-xs text-primary hover:underline">Bellek (DRAM / HBM) fiyatları ↓</a>
       </section>
@@ -45,36 +45,36 @@ export default function Prices() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
           <div className="rounded-xl border border-card-border bg-card p-4">
             <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground" title={`GetDeploying fiyat endeksi, ölçüm: ${data.kaynak.olcum_tarihi}`}>Endeks · 4 hafta</p>
-            <p className="font-display font-bold text-xl mt-1" style={{ color: data.endeks.degisim_4_hafta_pct < 0 ? "#34d399" : "#f87171" }}>{pct(data.endeks.degisim_4_hafta_pct)}</p>
+            <p className="font-display font-semibold text-xl mt-1" style={{ color: data.endeks.degisim_4_hafta_pct < 0 ? "rgb(var(--t-emerald-400))" : "rgb(var(--t-red-400))" }}>{pct(data.endeks.degisim_4_hafta_pct)}</p>
             {typeof data.endeks.degisim_12_ay_pct === "number" && (
               <p className="text-xs text-muted-foreground mt-0.5" data-testid="endeks-12-ay">
-                12 ay: <span className="font-medium tabular-nums" style={{ color: data.endeks.degisim_12_ay_pct < 0 ? "#34d399" : "#f87171" }}>{pct(data.endeks.degisim_12_ay_pct)}</span>
+                12 ay: <span className="font-medium tabular-nums" style={{ color: data.endeks.degisim_12_ay_pct < 0 ? "rgb(var(--t-emerald-400))" : "rgb(var(--t-red-400))" }}>{pct(data.endeks.degisim_12_ay_pct)}</span>
               </p>
             )}
             <p className="font-mono text-[9px] text-muted-foreground mt-0.5">ölçüm {data.kaynak.olcum_tarihi}</p>
           </div>
           <div className="rounded-xl border border-card-border bg-card p-4">
             <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">Model</p>
-            <p className="font-display font-bold text-xl mt-1">{data.fiyatlar.length}</p>
+            <p className="font-display font-semibold text-xl mt-1">{data.fiyatlar.length}</p>
           </div>
           <div className="rounded-xl border border-card-border bg-card p-4">
             <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">Sağlayıcı</p>
-            <p className="font-display font-bold text-xl mt-1">{data.kaynak.kapsam?.saglayici ?? "—"}</p>
+            <p className="font-display font-semibold text-xl mt-1">{data.kaynak.kapsam?.saglayici ?? "—"}</p>
           </div>
           <div className="rounded-xl border border-card-border bg-card p-4">
             <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">Çekildiği tarih</p>
-            <p className="font-display font-bold text-sm mt-1">{data.kaynak.cekildigi_tarih}</p>
+            <p className="font-display font-semibold text-sm mt-1">{data.kaynak.cekildigi_tarih}</p>
           </div>
         </div>
       </section>
 
       {data.iki_gun && (
         <section className="container mx-auto px-4 pb-8">
-          <h2 className="font-display font-bold text-xl mb-4">Son ölçümler arası hareketler</h2>
+          <h2 className="font-display font-semibold text-xl mb-4">Son ölçümler arası hareketler</h2>
           <p className="text-xs text-muted-foreground mb-3">Soluk satırlar {AZ_SAGLAYICI}'ten az sağlayıcıyla listeleniyor; bu modellerde medyan tek bir ilanla büyük oynayabilir.</p>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="rounded-2xl border border-red-500/40 bg-red-500/5 p-5">
-              <div className="flex items-center gap-2 mb-3"><TrendingUp className="h-4 w-4 text-red-400" /><h3 className="font-display font-bold text-red-300">Artanlar</h3></div>
+              <div className="flex items-center gap-2 mb-3"><TrendingUp className="h-4 w-4 text-red-400" /><h3 className="font-display font-semibold text-red-300">Artanlar</h3></div>
               {data.iki_gun.artanlar.filter(anlamli).map((it) => (
                 <div key={it.model} className={cn("flex items-center justify-between text-sm py-1.5", it.saglayici != null && it.saglayici < AZ_SAGLAYICI && "opacity-60")} title={it.saglayici != null && it.saglayici < AZ_SAGLAYICI ? "Az sağlayıcı: medyan tek bir listelemeyle oynayabilir" : undefined}>
                   <span>{it.model}{it.saglayici != null && <span className="ml-2 font-mono text-[10px] text-muted-foreground" data-testid="hareket-saglayici">{it.saglayici} sağlayıcı</span>}</span>
@@ -83,7 +83,7 @@ export default function Prices() {
               ))}
             </div>
             <div className="rounded-2xl border border-emerald-500/40 bg-emerald-500/5 p-5">
-              <div className="flex items-center gap-2 mb-3"><TrendingDown className="h-4 w-4 text-emerald-400" /><h3 className="font-display font-bold text-emerald-300">Düşenler</h3></div>
+              <div className="flex items-center gap-2 mb-3"><TrendingDown className="h-4 w-4 text-emerald-400" /><h3 className="font-display font-semibold text-emerald-300">Düşenler</h3></div>
               {data.iki_gun.dusenler.filter(anlamli).map((it) => (
                 <div key={it.model} className={cn("flex items-center justify-between text-sm py-1.5", it.saglayici != null && it.saglayici < AZ_SAGLAYICI && "opacity-60")} title={it.saglayici != null && it.saglayici < AZ_SAGLAYICI ? "Az sağlayıcı: medyan tek bir listelemeyle oynayabilir" : undefined}>
                   <span>{it.model}{it.saglayici != null && <span className="ml-2 font-mono text-[10px] text-muted-foreground" data-testid="hareket-saglayici">{it.saglayici} sağlayıcı</span>}</span>
@@ -116,7 +116,7 @@ export default function Prices() {
         <div className="rounded-2xl border border-card-border bg-card overflow-hidden">
           <div className="overflow-x-auto max-h-[36rem]">
             <table className="w-full text-sm">
-              <thead className="sticky top-0 bg-muted/95 backdrop-blur">
+              <thead className="sticky top-0 bg-muted">
                 <tr>
                   <th className="px-4 py-3 text-left font-mono text-[10px] uppercase text-muted-foreground">Model</th>
                   <th className="px-4 py-3 text-left font-mono text-[10px] uppercase text-muted-foreground">Bellek</th>

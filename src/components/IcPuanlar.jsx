@@ -22,7 +22,7 @@ function cubukRengi(p) {
 /** "73/100" ya da "—" */
 function Puan({ deger, buyuk = false }) {
   return (
-    <span className={cn("font-display font-bold leading-none", buyuk ? "text-4xl" : "text-2xl", puanRengi(deger))}>
+    <span className={cn("font-display font-semibold leading-none", buyuk ? "text-4xl" : "text-2xl", puanRengi(deger))}>
       {deger ?? "—"}
       {deger != null && <span className="text-xs text-muted-foreground font-normal">/100</span>}
     </span>
@@ -31,9 +31,9 @@ function Puan({ deger, buyuk = false }) {
 
 function Cubuk({ deger }) {
   return (
-    <div className="h-1.5 rounded-full bg-muted overflow-hidden">
+    <div className="h-1.5 bg-muted overflow-hidden">
       {deger != null && (
-        <div className={cn("h-full rounded-full", cubukRengi(deger))} style={{ width: `${deger}%` }} />
+        <div className={cn("h-full", cubukRengi(deger))} style={{ width: `${deger}%` }} />
       )}
     </div>
   );
@@ -142,7 +142,7 @@ export function IslemciKarti({ cihaz, chip }) {
           {["Tasarım", "Verimlilik", "Maliyet", "Genel"].map((ad) => (
             <div key={ad} className="rounded-lg border border-card-border p-2.5 text-center">
               <p className="text-[10px] text-muted-foreground mb-1">{ad}</p>
-              <p className="font-display font-bold text-lg text-muted-foreground">—</p>
+              <p className="font-display font-semibold text-lg text-muted-foreground">—</p>
             </div>
           ))}
         </div>
@@ -182,7 +182,7 @@ export function IslemciKarti({ cihaz, chip }) {
           <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground mb-2 inline-flex items-center gap-1.5">
             <Cpu className="h-3 w-3" />Ana işlemci · {s.clsLabel}
           </p>
-          <p className="font-display font-bold text-lg leading-snug">{chip.name}</p>
+          <p className="font-display font-semibold text-lg leading-snug">{chip.name}</p>
           {chip.tagline && <p className="text-xs text-muted-foreground mt-1">{chip.tagline}</p>}
         </div>
         <Link href={`/chip/${chip.id}`} asChild>
@@ -223,7 +223,7 @@ export function IslemciKarti({ cihaz, chip }) {
                 title={d.puan == null ? d.neden || "" : undefined}
               >
                 <p className="text-[10px] text-muted-foreground mb-1">{d.ad}</p>
-                <p className={cn("font-display font-bold text-xl leading-none", puanRengi(d.puan))}>{d.puan ?? "—"}</p>
+                <p className={cn("font-display font-semibold text-xl leading-none", puanRengi(d.puan))}>{d.puan ?? "—"}</p>
                 <p className="text-[9px] text-muted-foreground mt-1">{d.puan != null ? "/100" : "yok"}</p>
               </div>
             ))}
@@ -258,8 +258,8 @@ export function IslemciKarti({ cihaz, chip }) {
                         {sayi(p.raw)} {BIRIM[p.key] || ""} → %{Math.round(p.norm * 100)}
                       </span>
                     </div>
-                    <div className="h-1 rounded-full bg-muted overflow-hidden">
-                      <div className="h-full rounded-full bg-primary" style={{ width: `${Math.round(p.norm * 100)}%` }} />
+                    <div className="h-1 bg-muted overflow-hidden">
+                      <div className="h-full bg-primary" style={{ width: `${Math.round(p.norm * 100)}%` }} />
                     </div>
                   </div>
                 ))}

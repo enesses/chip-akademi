@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation } from "wouter";
 import { Link } from "@/components/Nav";
-import { Cpu, UserRound, ChevronDown, Search } from "lucide-react";
+import { UserRound, ChevronDown, Search, Sun, Moon } from "lucide-react";
+import Logo from "@/components/Logo";
+import { useTema } from "@/lib/tema";
 import { cn } from "@/lib/utils";
 import { aktifProfil, profilDegisimineAbone } from "@/lib/hesap";
 import { gorunurGruplar, bolumBul, grupBul } from "@/lib/bolumler";
@@ -19,8 +21,8 @@ function ProfilDugmesi({ profil, oturum, location }) {
     <Link href={hedef} asChild>
       <a
         className={cn(
-          "inline-flex items-center gap-2 rounded-full border px-2.5 py-1.5 text-sm hover-elevate",
-          aktif ? "border-primary/50 text-primary" : "border-card-border text-muted-foreground hover:text-foreground"
+          "inline-flex h-9 items-center gap-2 rounded-md border px-3 text-sm font-medium hover-elevate",
+          aktif ? "border-foreground/30 text-foreground bg-card" : "border-card-border bg-card text-muted-foreground hover:text-foreground"
         )}
         aria-label={ad ? `Hesap: ${ad}` : "Giriş yap"}
       >
@@ -32,6 +34,17 @@ function ProfilDugmesi({ profil, oturum, location }) {
         <span className="max-w-[7rem] truncate">{ad || "Giriş"}</span>
       </a>
     </Link>
+  );
+}
+
+function TemaDugmesi() {
+  const [tema, degistir] = useTema();
+  const koyu = tema === "koyu";
+  return (
+    <button type="button" onClick={degistir} aria-label={koyu ? "Açık temaya geç" : "Koyu temaya geç"} title={koyu ? "Açık tema" : "Koyu tema"}
+      className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-card-border bg-card text-muted-foreground hover:text-foreground transition-colors">
+      {koyu ? <Sun className="h-4 w-4" aria-hidden="true" /> : <Moon className="h-4 w-4" aria-hidden="true" />}
+    </button>
   );
 }
 
@@ -64,9 +77,9 @@ function GrupMenusu({ grup, acik, ac, kapat, aktifGrup, aktifBolum, menuAcikMi }
         aria-expanded={acik}
         aria-haspopup="menu"
         className={cn(
-          "grup-dugme relative inline-flex items-center gap-1 rounded-md px-2 lg:px-3 py-2 text-sm font-medium transition-colors",
-          etkin ? "text-foreground" : "text-muted-foreground hover:text-foreground",
-          acik && "bg-muted/50 text-foreground"
+          "grup-dugme relative inline-flex items-center gap-1 rounded-md px-2 lg:px-3 py-2 text-[14px] transition-colors",
+          etkin ? "text-foreground font-medium" : "text-muted-foreground hover:text-foreground",
+          acik && "bg-muted text-foreground"
         )}
       >
         {grup.kisaAd ? (
@@ -85,7 +98,7 @@ function GrupMenusu({ grup, acik, ac, kapat, aktifGrup, aktifBolum, menuAcikMi }
           role="menu"
           aria-label={grup.ad}
           onKeyDown={tusPanel}
-          className="menu-panel absolute left-0 top-full mt-2 w-[22rem] rounded-xl border border-card-border bg-card p-2 shadow-2xl shadow-black/40"
+          className="menu-panel absolute left-0 top-full mt-2 w-[22rem] rounded-lg border border-card-border bg-card p-1.5 shadow-[0_12px_32px_-12px_rgba(0,0,0,0.25)]"
         >
           <p className="px-3 pt-2 pb-2.5 text-xs text-muted-foreground border-b border-card-border mb-1.5">{grup.ozet}</p>
           {grup.bolumler.map((b) => {
@@ -97,18 +110,18 @@ function GrupMenusu({ grup, acik, ac, kapat, aktifGrup, aktifBolum, menuAcikMi }
                   role="menuitem"
                   aria-current={secili ? "page" : undefined}
                   className={cn(
-                    "group flex items-start gap-3 rounded-lg px-3 py-2.5",
-                    secili ? "bg-primary/10" : "hover:bg-muted/50 focus-visible:bg-muted/50"
+                    "group flex items-start gap-3 rounded-md px-3 py-2.5",
+                    secili ? "bg-muted" : "hover:bg-muted focus-visible:bg-muted"
                   )}
                 >
                   <span className={cn(
                     "mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md border transition-colors",
-                    secili ? "border-primary/50 text-primary" : "border-card-border text-muted-foreground group-hover:text-foreground"
+                    secili ? "border-primary/50 text-primary bg-card" : "border-card-border bg-card text-muted-foreground group-hover:text-foreground"
                   )}>
                     <Ikon className="h-4 w-4" aria-hidden="true" />
                   </span>
                   <span className="min-w-0">
-                    <span className={cn("block text-sm font-medium", secili && "text-primary")}>{b.ad}</span>
+                    <span className="block text-sm font-medium">{b.ad}</span>
                     <span className="block text-xs text-muted-foreground leading-snug mt-0.5">{b.aciklama}</span>
                   </span>
                 </a>
@@ -140,7 +153,7 @@ function KonumSeridi({ grup, aktifBolum }) {
                   aria-current={secili ? "page" : undefined}
                   className={cn(
                     "relative inline-flex items-center gap-1.5 whitespace-nowrap rounded-md px-2.5 py-1.5 text-[13px] transition-colors",
-                    secili ? "text-primary iz" : "text-muted-foreground hover:text-foreground hover:bg-muted/40"
+                    secili ? "text-foreground font-medium iz" : "text-muted-foreground hover:text-foreground hover:bg-muted"
                   )}
                 >
                   <Ikon className="h-3.5 w-3.5" aria-hidden="true" />
@@ -184,13 +197,11 @@ export default function Header() {
   const mac = typeof navigator !== "undefined" && /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
 
   return (
-    <header className="ust-cubuk sticky z-40 border-b border-border bg-background/85 backdrop-blur-md">
+    <header className="ust-cubuk sticky z-40 border-b border-border bg-background">
       <div ref={kapsayici} className="relative z-20 container mx-auto px-4 h-14 md:h-16 flex items-center gap-3 md:gap-6">
         <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label="Chip Akademi anasayfa">
-          <span className="w-8 h-8 rounded-lg border border-primary/40 bg-primary/10 flex items-center justify-center">
-            <Cpu className="h-[18px] w-[18px] text-primary" aria-hidden="true" />
-          </span>
-          <span className="font-display font-bold tracking-tight md:hidden lg:inline">Chip Akademi</span>
+          <span className="md:hidden lg:inline"><Logo /></span>
+          <span className="hidden md:inline lg:hidden"><Logo kisa /></span>
         </Link>
 
         <nav aria-label="Ana menü" className="hidden md:flex items-center gap-0.5">
@@ -212,7 +223,7 @@ export default function Header() {
           <button
             type="button"
             onClick={() => aramayiAc()}
-            className="hidden sm:inline-flex items-center gap-2 rounded-lg border border-card-border bg-card/60 pl-3 pr-1.5 py-1.5 text-sm text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors lg:w-64"
+            className="hidden sm:inline-flex items-center gap-2 h-9 rounded-md border border-card-border bg-card pl-3 pr-1.5 text-sm text-muted-foreground hover:text-foreground hover:border-foreground/25 transition-colors lg:w-60"
             aria-label="Hızlı arama"
             aria-keyshortcuts={mac ? "Meta+K /" : "Control+K /"}
           >
@@ -223,11 +234,12 @@ export default function Header() {
           <button
             type="button"
             onClick={() => aramayiAc()}
-            className="sm:hidden inline-flex h-9 w-9 items-center justify-center rounded-lg border border-card-border text-muted-foreground"
+            className="sm:hidden inline-flex h-9 w-9 items-center justify-center rounded-md border border-card-border bg-card text-muted-foreground"
             aria-label="Hızlı arama"
           >
             <Search className="h-4 w-4" aria-hidden="true" />
           </button>
+          <TemaDugmesi />
           <ProfilDugmesi profil={profil} oturum={oturum} location={location} />
         </div>
       </div>

@@ -33,7 +33,7 @@ export default function BellekFiyatlari() {
     <section className="container mx-auto px-4 pb-10 scroll-mt-20" id="bellek" aria-labelledby="bellek-baslik">
       <div className="flex items-center gap-2 mb-1">
         <MemoryStick className="h-4 w-4 text-primary" />
-        <h2 id="bellek-baslik" className="font-display font-bold text-xl">Bellek fiyatları: DRAM, NAND ve HBM</h2>
+        <h2 id="bellek-baslik" className="font-display font-semibold text-xl">Bellek fiyatları: DRAM, NAND ve HBM</h2>
       </div>
       <p className="text-sm text-muted-foreground max-w-3xl mb-5">{bellek.not}</p>
 
@@ -49,16 +49,16 @@ export default function BellekFiyatlari() {
                   <span className="text-sm">
                     {g.urun} <span className="text-muted-foreground text-xs">· {g.donem}</span>
                     {eski && (
-                      <span className="ml-2 inline-flex items-center gap-1 rounded-full border border-amber-400/40 px-1.5 py-0.5 text-[10px] text-amber-300 align-middle">
+                      <span className="ml-2 inline-flex items-center gap-1 rounded-sm border border-amber-400/40 px-1.5 py-0.5 text-[10px] text-amber-300 align-middle">
                         <Clock className="h-2.5 w-2.5" aria-hidden="true" />Eski: {eski}
                       </span>
                     )}
                   </span>
-                  <span className="font-display font-bold text-red-300 whitespace-nowrap">{aralik(g)}</span>
+                  <span className="font-display font-semibold text-red-300 whitespace-nowrap">{aralik(g)}</span>
                 </div>
-                <div className="relative h-2 rounded-full bg-muted/40" role="img" aria-label={`${g.urun}: ${aralik(g)}`}>
-                  <div className="absolute inset-y-0 rounded-full bg-red-400/30" style={{ left: 0, width: `${(g.alt / olcek) * 100}%` }} />
-                  <div className="absolute inset-y-0 rounded-full bg-red-400" style={{ left: `${(g.alt / olcek) * 100}%`, width: `${Math.max(1.5, ((g.ust - g.alt) / olcek) * 100)}%` }} />
+                <div className="relative h-2 bg-muted/40" role="img" aria-label={`${g.urun}: ${aralik(g)}`}>
+                  <div className="absolute inset-y-0 bg-red-400/30" style={{ left: 0, width: `${(g.alt / olcek) * 100}%` }} />
+                  <div className="absolute inset-y-0 bg-red-400" style={{ left: `${(g.alt / olcek) * 100}%`, width: `${Math.max(1.5, ((g.ust - g.alt) / olcek) * 100)}%` }} />
                 </div>
                 <a href={g.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 mt-1 font-mono text-[10px] text-muted-foreground hover:text-primary">
                   {g.kaynak} · {tarihTR(g.tarih)}<ExternalLink className="h-2.5 w-2.5" />
@@ -76,7 +76,7 @@ export default function BellekFiyatlari() {
           {yillik.map((g) => (
             <div key={g.urun} className="rounded-2xl border border-red-500/40 bg-red-500/5 p-5">
               <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">{g.urun} · {g.donem}, yıllık</p>
-              <p className="font-display font-bold text-4xl text-red-300 mt-1">{aralik(g)}</p>
+              <p className="font-display font-semibold text-4xl text-red-300 mt-1">{aralik(g)}</p>
               <a href={g.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 mt-2 font-mono text-[10px] text-muted-foreground hover:text-primary">
                 {g.kaynak} · {tarihTR(g.tarih)}<ExternalLink className="h-2.5 w-2.5" />
               </a>
@@ -88,7 +88,7 @@ export default function BellekFiyatlari() {
               {[y.once, y.sonra].map((n, i) => (
                 <div key={n.etiket} className="mb-2">
                   <div className="flex justify-between text-xs mb-1"><span className="text-muted-foreground">{n.etiket}</span><span className="font-semibold">~${n.usd.toLocaleString("tr-TR")}</span></div>
-                  <div className="h-2 rounded-full bg-muted/40"><div className="h-full rounded-full" style={{ width: `${(n.usd / yMax) * 100}%`, background: i ? "#f87171" : "#64748b" }} /></div>
+                  <div className="h-2 bg-muted/40"><div className="h-full" style={{ width: `${(n.usd / yMax) * 100}%`, background: i ? "rgb(var(--t-red-400))" : "#64748b" }} /></div>
                 </div>
               ))}
               <a href={y.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 mt-1 font-mono text-[10px] text-muted-foreground hover:text-primary">

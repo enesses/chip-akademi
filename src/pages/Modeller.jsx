@@ -74,12 +74,12 @@ export default function Modeller() {
   const basligaTikla = (s) => setSirala((o) => o.id === s.id ? { id: s.id, yon: o.yon === "azalan" ? "artan" : "azalan" } : { id: s.id, yon: s.yon });
 
   return (
-    <div className="bg-silicon-grid min-h-[80vh]">
+    <div className="min-h-[80vh]">
       <section className="container mx-auto px-4 pt-12 pb-6">
         <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-primary mb-3">
           <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />AI Araçları
         </div>
-        <h1 className="font-display text-3xl sm:text-4xl font-bold tracking-tight">En iyi yapay zekâ modelleri</h1>
+        <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em]">En iyi yapay zekâ modelleri</h1>
         <p className="text-muted-foreground mt-2 max-w-2xl">
           Dil modellerinin zekâ, kodlama ve ajan puanları; fiyatları ve hızları tek tabloda. Başlığa tıklayarak
           istediğin ölçüte göre sırala. Tablo her hafta yenilenir.

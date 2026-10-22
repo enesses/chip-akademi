@@ -20,9 +20,9 @@ export function AramaGirisi() {
       <button
         type="button"
         onClick={() => aramayiAc()}
-        className="group flex w-full items-center gap-3 rounded-xl border border-card-border bg-card/70 backdrop-blur px-4 py-3 text-left transition-colors hover:border-primary/50"
+        className="group flex w-full items-center gap-3 rounded-md border border-card-border bg-card px-4 h-12 text-left transition-colors hover:border-foreground/30"
       >
-        <Search className="h-4 w-4 text-primary shrink-0" aria-hidden="true" />
+        <Search className="h-4 w-4 text-muted-foreground shrink-0" aria-hidden="true" />
         <span className="flex-1 text-muted-foreground group-hover:text-foreground/80">Çip, cihaz, ders ya da terim ara</span>
         <kbd className="kbd hidden sm:inline">/</kbd>
       </button>
@@ -33,7 +33,7 @@ export function AramaGirisi() {
             key={o}
             type="button"
             onClick={() => aramayiAc(o)}
-            className="rounded-full border border-card-border px-2.5 py-1 hover:text-foreground hover:border-primary/40 transition-colors"
+            className="font-mono rounded-sm border border-card-border bg-card px-2 py-0.5 hover:text-foreground hover:border-foreground/30 transition-colors"
           >
             {o}
           </button>
@@ -44,19 +44,19 @@ export function AramaGirisi() {
 }
 
 /** Tüm bölümlerin haritası: dört amaç, her birinin altında bölümleri. */
-export default function BolumRehberi() {
+export default function BolumRehberi({ no }) {
   const GRUPLAR = gorunurGruplar(useOturum().admin);
   return (
     <section className="container mx-auto px-4 py-10" aria-labelledby="bolum-rehberi">
-      <div className="mb-5">
-        <h2 id="bolum-rehberi" className="font-display font-bold text-2xl tracking-tight">Ne yapmak istiyorsun?</h2>
-        <p className="text-sm text-muted-foreground mt-1">
-          Sitedeki her bölüm burada. Üst menüdeki gruplar da aynı sırada.
-        </p>
+      <div className="mb-6 pb-3 border-b border-border flex flex-wrap items-end justify-between gap-x-6 gap-y-1">
+        <h2 id="bolum-rehberi" className="font-display font-semibold text-[22px] tracking-[-0.01em] flex items-baseline gap-3">
+          {no && <span className="font-mono text-xs text-primary font-medium">{no}</span>}Ne yapmak istiyorsun?
+        </h2>
+        <p className="text-sm text-muted-foreground">Sitedeki her bölüm burada; üst menüdeki gruplar da aynı sırada.</p>
       </div>
       {/* Hücre çizgileri: 1px aralıktan görünen kap rengi. Grup sayısı değişince
           kenarlık hesabı gerekmez; tek kalan son hücre iki sütuna yayılır. */}
-      <div className="grid gap-px sm:grid-cols-2 lg:grid-cols-5 rounded-2xl border border-card-border bg-card-border overflow-hidden">
+      <div className="grid gap-px sm:grid-cols-2 lg:grid-cols-5 rounded-lg border border-card-border bg-card-border overflow-hidden">
         {GRUPLAR.map((g, i) => (
           <div
             key={g.id}
@@ -65,15 +65,15 @@ export default function BolumRehberi() {
               (GRUPLAR.length % 2 === 1 && i === GRUPLAR.length - 1 ? "sm:col-span-2 lg:col-span-1" : "")
             }
           >
-            <p className="text-xs text-muted-foreground">{g.ad}</p>
-            <h3 className="font-display font-semibold text-[17px] mt-0.5 mb-3">{SORU[g.id]}</h3>
+            <p className="etiket">{g.ad}</p>
+            <h3 className="font-display font-semibold text-[17px] mt-1 mb-3">{SORU[g.id]}</h3>
             <ul className="grid gap-0.5 -mx-2">
               {g.bolumler.map((b) => {
                 const Ikon = b.ikon;
                 return (
                   <li key={b.id}>
                     <Link href={b.yol} asChild>
-                      <a className="group flex items-start gap-2.5 rounded-lg px-2 py-2 hover:bg-muted/40 transition-colors">
+                      <a className="group flex items-start gap-2.5 rounded-md px-2 py-2 hover:bg-muted transition-colors">
                         <Ikon className="h-4 w-4 mt-0.5 shrink-0 text-muted-foreground group-hover:text-primary transition-colors" aria-hidden="true" />
                         <span className="min-w-0">
                           <span className="block text-sm font-medium">{b.ad}</span>

@@ -63,14 +63,13 @@ export default function Hesap() {
   }
 
   return (
-    <div className="bg-silicon-grid min-h-[80vh]">
+    <div className="min-h-[80vh]">
       <section className="relative overflow-hidden border-b border-border">
-        <div className="absolute inset-0 bg-chip-glow" />
         <div className="relative container mx-auto px-4 py-12 md:py-14">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-primary mb-3"><UserPlus className="h-3.5 w-3.5" />Profiller</div>
-            <h1 className="font-display text-3xl md:text-4xl font-bold leading-tight tracking-tight mb-3">
-              {aktif ? <>Merhaba, <span className="text-gradient-cyan">{aktif.ad}</span>.</> : <>Kendi <span className="text-gradient-cyan">profilini</span> oluştur.</>}
+            <h1 className="font-display text-3xl sm:text-[2.5rem] font-semibold leading-tight tracking-[-0.015em] mb-3">
+              {aktif ? <>Merhaba, {aktif.ad}.</> : <>Kendi profilini oluştur.</>}
             </h1>
             <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
               Ders ilerlemen, sınav sonuçların, tasarımların ve notların profiline bağlanır. Aynı tarayıcıyı kullanan birden fazla kişi birbirinin verisini karıştırmaz.
@@ -121,7 +120,7 @@ export default function Hesap() {
             <div className="flex items-center gap-3">
               <span className="text-3xl">{aktif.avatar}</span>
               <div>
-                <p className="font-display font-bold text-lg">{aktif.ad}</p>
+                <p className="font-display font-semibold text-lg">{aktif.ad}</p>
                 <p className="font-mono text-[10px] text-muted-foreground">{aktif.ozet ? "parolalı" : "parolasız"} · son giriş {new Date(aktif.sonGiris).toLocaleString("tr-TR", { dateStyle: "short", timeStyle: "short" })}</p>
               </div>
             </div>
@@ -137,7 +136,7 @@ export default function Hesap() {
       <section className="container mx-auto px-4 pb-16">
         <div className="max-w-3xl">
           <div className="flex items-baseline justify-between gap-4 flex-wrap mb-4">
-            <h2 className="font-display font-bold text-xl">{mod === "olustur" ? "Yeni profil" : `Profiller (${profiller.length})`}</h2>
+            <h2 className="font-display font-semibold text-xl">{mod === "olustur" ? "Yeni profil" : `Profiller (${profiller.length})`}</h2>
             <div className="flex gap-2">
               {mod === "liste" ? (
                 <>
@@ -175,7 +174,7 @@ export default function Hesap() {
           ) : profiller.length === 0 ? (
             <div className="rounded-2xl border border-dashed border-border p-10 text-center">
               <UserPlus className="h-8 w-8 text-muted-foreground/50 mx-auto mb-4" />
-              <h3 className="font-display font-bold text-lg mb-2">Henüz profil yok</h3>
+              <h3 className="font-display font-semibold text-lg mb-2">Henüz profil yok</h3>
               <p className="text-sm text-muted-foreground leading-relaxed max-w-md mx-auto">Profil oluşturmadan da uygulamayı kullanabilirsin; verilerin ortak alanda tutulur.</p>
               <Button className="mt-5 gap-1.5" onClick={() => setMod("olustur")}><UserPlus className="h-4 w-4" />İlk profili oluştur</Button>
             </div>
@@ -213,9 +212,9 @@ export default function Hesap() {
       </section>
 
       {parolaDegis && (
-        <div className="fixed inset-0 z-[70] flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm">
+        <div className="fixed inset-0 z-[70] flex items-center justify-center p-4 bg-black/40">
           <div className="w-full max-w-sm rounded-2xl border border-card-border bg-card p-6">
-            <h3 className="font-display font-bold text-base mb-1">{aktif?.ozet ? "Parolayı değiştir" : "Parola belirle"}</h3>
+            <h3 className="font-display font-semibold text-base mb-1">{aktif?.ozet ? "Parolayı değiştir" : "Parola belirle"}</h3>
             <p className="text-xs text-muted-foreground leading-relaxed mb-4">Parola kurtarma yok — unutursan bu profile arayüzden ulaşamazsın.</p>
             {aktif?.ozet && <Input type="password" autoFocus value={parolaDegis.eski} onChange={(e) => setParolaDegis({ ...parolaDegis, eski: e.target.value })} placeholder="Mevcut parola" className="mb-2" />}
             <Input type="password" value={parolaDegis.yeni} onChange={(e) => setParolaDegis({ ...parolaDegis, yeni: e.target.value })} placeholder={`Yeni parola (en az ${MIN_PAROLA} karakter)`} className="mb-2" data-testid="yeni-parola" />
@@ -235,9 +234,9 @@ export default function Hesap() {
       )}
 
       {silOnay && (
-        <div className="fixed inset-0 z-[70] flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm">
+        <div className="fixed inset-0 z-[70] flex items-center justify-center p-4 bg-black/40">
           <div className="w-full max-w-sm rounded-2xl border border-card-border bg-card p-6">
-            <h3 className="font-display font-bold text-base mb-2">Profil silinsin mi?</h3>
+            <h3 className="font-display font-semibold text-base mb-2">Profil silinsin mi?</h3>
             <p className="text-sm text-muted-foreground leading-relaxed mb-5">Bu profile ait tüm veriler silinir. Geri alınamaz.</p>
             <div className="flex gap-2 justify-end">
               <Button variant="ghost" onClick={() => setSilOnay(null)}>Vazgeç</Button>
