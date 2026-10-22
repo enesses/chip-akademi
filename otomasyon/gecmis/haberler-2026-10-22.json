@@ -1,0 +1,109 @@
+{
+  "tarih": "2026-10-22",
+  "haberler": [
+    {
+      "baslik": "Crusoe, sıvı soğutmalı modüler yapay zekâ fabrikası Spark Liquid'i tanıttı",
+      "detay": "Modül başına 3,5 MW'a kadar işlem gücü sunan sistem GB300 NVL72 ve Vera Rubin NVL72 raflarına göre tasarlandı; şirket önceki nesle göre 5 kat yoğunluk iddia ediyor.",
+      "kaynak": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/10/21/3385415/0/en/crusoe-introduces-crusoe-spark-liquid-its-next-generation-modular-ai-factory-to-power-crusoe-cloud.html",
+      "yayin": "2026-10-21",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Vantage, Heron ile 1 GW'lık 800 VDC güç anlaşması yaptı",
+      "detay": "Vantage Data Centers, orta gerilimi doğrudan 800 VDC'ye çeviren Heron Link katı hal trafoları için 1 GW'ın üzerinde üretim kapasitesi ayırttı; hedef verim %98,5'in üzerinde.",
+      "kaynak": "Business Wire (Yahoo Finance)",
+      "url": "https://finance.yahoo.com/technology/ai/articles/vantage-heron-power-electronics-announce-120000900.html",
+      "yayin": "2026-10-21",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Avustralya'da güç hattı gecikmesi NextDC'nin işlemini durdurdu",
+      "detay": "Melbourne'deki M3 veri merkezine enerji taşıyacak 66 kV hat çalışması yerel itirazlarla askıya alındı; 165 MW'lık genişleme etkilenirken Citi, 2027 mali yılı FAVÖK etkisini 25 milyon A$'a kadar tahmin ediyor.",
+      "kaynak": "Bloomberg (Energy Connects)",
+      "url": "https://www.energyconnects.com/news/utilities/2026/october/australian-data-center-power-delay-exposes-ai-bottleneck/",
+      "yayin": "2026-10-19",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Micron 4F² DRAM hücresinden vazgeçti",
+      "detay": "Micron CTO'su Scott DeBoer 4F²'nin yoğunluk avantajını 'biraz efsane' diye niteledi; şirket 6F²'de kalıp wafer birleştirme ve 3D istiflemeye yöneliyor, 1-delta düğümünü 2027'nin ikinci yarısında Boise'da üretecek.",
+      "kaynak": "Sammy Fans",
+      "url": "https://sammyfans.com/2026/10/21/micron-skips-4f2-dram-scaling",
+      "yayin": "2026-10-21",
+      "konular": [
+        "bellek",
+        "cip"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Tayvan'ın Çin'e yapay zekâ çipi ihracat kısıtı netleşmeyi bekliyor",
+      "detay": "Tayvan gelişmiş yapay zekâ sunucularını ve yarı iletkenleri kontrollü ihracat listesine eklemeyi planlıyor; izinsiz sevkiyat suç sayılabilecek, ancak yürürlük tarihi ve teknik eşikler henüz açıklanmadı.",
+      "kaynak": "CommonWealth Magazine",
+      "url": "https://english.cw.com.tw/article/article.action?id=5070",
+      "yayin": "2026-10-20",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "SK hynix için HBM4 geçişi kâr tahminlerini aşağı çekiyor",
+      "detay": "3. çeyrek faaliyet kârı tahmini 76,96 trilyon won'a indi, üç ay önceki tahminin %5,6 altında; HBM'in gelir payı 1. çeyrekteki %58'den 2. çeyrekte %50'ye geriledi.",
+      "kaynak": "ad-hoc-news",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/sk-hynix-hbm4-outlook-weakens-as-ds-investment-cuts-target-for-sk-hynix-stock/70380928",
+      "yayin": "2026-10-21",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Tenstorrent 6,2 milyar dolar değerlemeyle 1,5 milyar dolar topladı",
+      "detay": "Seri E turuna Trace Capital ve Innovation X liderlik etti; Fidelity, ARK Invest, Morgan Stanley ve T. Rowe Price da katıldı. Para Galaxy sunucularının yaygınlaştırılmasına gidecek.",
+      "kaynak": "Medianet",
+      "url": "https://newshub.medianet.com.au/2026/10/tenstorrent-announces-a-1-5b-series-e-at-a-6-2b-valuation/177312/",
+      "yayin": "2026-10-19",
+      "konular": [
+        "cip",
+        "yapay-zeka"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Samsung: Bellek arzında 2028'e kadar anlamlı artış yok",
+      "detay": "Samsung bellek satış ve pazarlama sorumlusu Jaejune Kim, DRAM ve HBM sıkıntısının 2027 boyunca derinleşeceğini ve 2028'e kadar sıkı kalacağını söyledi.",
+      "kaynak": "Startup Fortune",
+      "url": "https://startupfortune.com/samsungs-own-memory-chief-says-the-ram-shortage-wont-peak-until-2028/",
+      "yayin": "2026-10-19",
+      "konular": [
+        "bellek"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Çip ETF'lerinde değerlemeler kazançların gerisinde kaldı",
+      "detay": "SMH son 12 ayda %58 getiri sağlarken bileşenlerinin kârı %104 arttı; fonun geçmiş F/K oranı 39'dan 30'a indi. Bellek şirketlerinin F/K'sı Haziran'daki ~32'den 7,7'ye geriledi.",
+      "kaynak": "Benzinga",
+      "url": "https://www.benzinga.com/opinion/26/10/62507341/the-earnings-twist-in-the-ai-chip-bubble-debate",
+      "yayin": "2026-10-21",
+      "konular": [
+        "pazar",
+        "cip"
+      ],
+      "kategori": "notr"
+    }
+  ]
+}

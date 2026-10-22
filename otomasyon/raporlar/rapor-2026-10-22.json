@@ -1,0 +1,38 @@
+{
+  "ajan": "rapor",
+  "tarih": "2026-10-22",
+  "zaman": "2026-10-22T06:59:03.205Z",
+  "durum": "dikkat",
+  "gunTamam": true,
+  "tazelik": [
+    {
+      "ad": "Bugün sayfası",
+      "tarih": "2026-10-22",
+      "gun": 0
+    },
+    {
+      "ad": "Fiyat verisi",
+      "tarih": "2026-10-22",
+      "gun": 0
+    }
+  ],
+  "otomatikTamamlanan": [],
+  "calisan": [
+    "guvenlik",
+    "iyilestirme",
+    "yenileme",
+    "gelistirme"
+  ],
+  "calismayan": [],
+  "dikkat": [
+    {
+      "seviye": "uyarı",
+      "metin": "Güvenlik: 5 yüksek seviye bağımlılık açığı var."
+    },
+    {
+      "seviye": "dikkat",
+      "tur": "onay",
+      "metin": "12 öneri onay bekliyor (PR #29, PR #30, PR #31, PR #32, PR #33, PR #34, PR #35, PR #36, PR #37, PR #38, PR #39, PR #40) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+    }
+  ]
+}

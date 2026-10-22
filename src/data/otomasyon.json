@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-21T07:00:18.450Z",
-  "tarih": "2026-10-21",
+  "guncelleme": "2026-10-22T06:59:03.204Z",
+  "tarih": "2026-10-22",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "dikkat",
-      "zaman": "2026-10-21T06:56:38.053Z"
+      "zaman": "2026-10-22T06:57:22.605Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-21T06:56:38.192Z"
+      "zaman": "2026-10-22T06:57:22.738Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-21T06:56:35.796Z"
+      "zaman": "2026-10-22T06:57:20.678Z"
     },
     {
       "id": "gelistirme",
@@ -33,7 +33,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-21T06:56:55.191Z"
+      "zaman": "2026-10-22T06:57:38.611Z"
     }
   ],
   "dikkat": [
@@ -49,52 +49,37 @@
   ],
   "oneriler": [
     {
-      "baslik": "Fiyat tablosunda eski ölçümlü satırları işaretle",
-      "neden": "Bugün getdeploying'den 15 model gelmedi; src/data/gpu_kiralama.json'da örneğin Nvidia RTX 5880 Ada, P40, GTX 1070 Ti ve RTX 4500 Ada'nın olcum_tarihi 2026-10-12, A4500'ün 2026-10-20. src/pages/Prices.jsx tablosu olcum_tarihi'ni hiç okumuyor; 9 günlük fiyat bugünkülerle aynı görünüyor.",
+      "baslik": "Bugün maddelerinde sınıflandırma gerekçesini ve ağırlığını göster",
+      "neden": "src/data/bugun.json'daki her maddede 'neden' ve 'agirlik' (1–3) alanı var, ama src/pages/Bugun.jsx ikisini de göstermiyor (src altında '.neden' yalnızca IcPuanlar/OnayBekleyenler'de geçiyor). Okur, bir haberin neden olumlu sayıldığını ve puana ne kadar etki ettiğini göremiyor.",
       "etki": "orta",
       "alan": "arayüz"
     },
     {
-      "baslik": "Fiyat tablosunda az sağlayıcılı satırları soluk göster",
-      "neden": "Prices.jsx'te 'Son ölçümler arası hareketler' kartları 5'ten az sağlayıcılı satırları opacity-60 ile soluklaştırıyor, ama ana tablo yapmıyor. 'Değişim' sıralamasında bugün Nvidia RTX 2070 (2 sağlayıcı, 0,06 → 0,10 $, +%67) ve RTX 2000 Ada (2 sağlayıcı, +%50) en üstte, 57 sağlayıcılı H100 ile aynı ağırlıkta görünüyor.",
-      "etki": "düşük",
+      "baslik": "Bugün puan kartına hesap yöntemini (formül ve Σ) ekle",
+      "neden": "bugun.json'da 'yontem' (aciklama, formul, isaretler, uyari, hesap) her gün yazılıyor ama Bugun.jsx bu alanı hiç okumuyor; puan 81 gibi bir sayının nasıl çıktığı sayfada görünmüyor.",
+      "etki": "orta",
       "alan": "arayüz"
     },
     {
-      "baslik": "Elle doğrulanan büyük fiyat oynamasını uygulamada göster",
-      "neden": "Bugün AMD MI300X medyanı 2,92 → 4,42 $ (+%51, 11 sağlayıcı) üç okumayla doğrulanıp yazıldı; ama gelen/fiyatlar.json'daki 'dogrulanan' notu src/data/gpu_kiralama.json'a taşınmıyor (grep 0 sonuç). Kullanıcı bu sıçramanın doğrulandığını göremiyor. otomasyon/veri-isle.mjs'in (korunan) bu notu ilgili satıra yazması gerekiyor.",
+      "baslik": "Vite'i 7.3.6'dan yamalı 7.3.x sürümüne güncelle",
+      "neden": "npm audit bugün vite 7.0.0–7.3.6 için 5 yeni danışma gösteriyor (launch-editor komut yürütme, server.fs.allow atlatma vb.); düzeltme ^7.3.6 aralığında, yalnızca package-lock değişir. Güvenlik ajanı bu yüzden 'dikkat' durumunda.",
+      "etki": "yüksek",
+      "alan": "güvenlik"
+    },
+    {
+      "baslik": "oneri-uygula denetimi güvenliği main'e göre fark olarak değerlendirsin",
+      "neden": "denetle(), güvenlik ajanının genel durumu 'temiz' değilse her öneriyi reddediyor; main'deki @grpc/grpc-js (PR #31 bekliyor) ve vite açıkları yüzünden 13 Ekim'den beri 12 öneri PR'ı (#29–#40) onay bekliyor. Yalnızca dalın yeni eklediği açıklar sayılırsa otomatik birleştirme yeniden çalışır.",
+      "etki": "yüksek",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Bellek göstergelerine TrendForce'un yeni 4Ç DRAM tahminini işle",
+      "neden": "src/data/bellek_fiyat.json 3 Ekim'den beri değişmedi (iyileştirme ajanı: 19 gün). TrendForce News 20 Ekim'de 4Ç 2026 DRAM sözleşme fiyatlarında ~%20 çeyreklik artış aktardı; kayıtlı değer %10–15. Pazartesi presscenter kontrolünde birincil açıklama doğrulanıp güncellenmeli.",
       "etki": "orta",
       "alan": "veri"
-    },
-    {
-      "baslik": "Bellek fiyatlarını yeni TrendForce açıklamasıyla güncelle",
-      "neden": "İyileştirme ajanı: bellek fiyatları 18 gündür güncellenmedi (src/data/bellek_fiyat.json). Bugünkü haberlerde Nomura bellek talebinin 2028'e kadar arzı aşacağını, SK hynix'in HBM4 ile rekor çeyrek beklediğini yazıyor; 26 Ekim pazartesi çalıştırmasında 4Ç sözleşme fiyatı tahminleri öncelikle aranmalı.",
-      "etki": "düşük",
-      "alan": "veri"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-10-21",
-      "oneri": "Fiyat tablosunda eski ölçümlü satırları işaretle",
-      "durum": "acik",
-      "pr": 39,
-      "dal": "otomasyon/oneri-2026-10-21-1",
-      "ozet": "Son çekimde gelmeyen modellerin fiyatının altına eski ölçüm tarihi yazılıyor",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-21",
-      "oneri": "Fiyat tablosunda az sağlayıcılı satırları soluk göster",
-      "durum": "acik",
-      "pr": 40,
-      "dal": "otomasyon/oneri-2026-10-21-2",
-      "ozet": "Tablo satırları 5'ten az sağlayıcıda kartlardaki gibi soluklaşıyor",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
     {
       "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
@@ -465,7 +450,7 @@
     "bulgular": [
       {
         "alan": "veri",
-        "baslik": "Bellek fiyatları 18 gündür güncellenmedi",
+        "baslik": "Bellek fiyatları 19 gündür güncellenmedi",
         "etki": "düşük",
         "otomatik": false,
         "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
@@ -490,22 +475,17 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 92 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu), 1 büyük oynama elle doğrulandı"
-      },
-      {
-        "ad": "Elle doğrulanan fiyat",
-        "durum": "ok",
-        "detay": "AMD MI300X: 2.92 → 4.42 (üç okuma (biri yalnızca bu satır ve sütun başlıklarıyla hedefli): medyan 4.42, en düşük 2.59 (DigitalOcean), 11 sağlayıcı) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
+        "detay": "bu çalıştırmada güncellendi — 91 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 16 gelmedi (eski fiyat korundu)"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 66, 3 yaklaşan olay; haber akışına +8"
+        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 81, 1 yaklaşan olay; haber akışına +10"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+7 haber (akışta 183); bugün toplam 15"
+        "detay": "+8 haber (akışta 201), 1 atlandı: akışta zaten var; bugün toplam 18"
       },
       {
         "ad": "Derleme",
@@ -515,7 +495,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2337 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2349 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -542,11 +522,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-10-05",
-      "durum": "kritik",
-      "dikkat": 1
-    },
     {
       "tarih": "2026-10-06",
       "durum": "kritik",
@@ -609,6 +584,11 @@
     },
     {
       "tarih": "2026-10-21",
+      "durum": "dikkat",
+      "dikkat": 2
+    },
+    {
+      "tarih": "2026-10-22",
       "durum": "dikkat",
       "dikkat": 2
     }

@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-10-22",
+  "oneriler": [
+    {
+      "baslik": "Bugün maddelerinde sınıflandırma gerekçesini ve ağırlığını göster",
+      "neden": "src/data/bugun.json'daki her maddede 'neden' ve 'agirlik' (1–3) alanı var, ama src/pages/Bugun.jsx ikisini de göstermiyor (src altında '.neden' yalnızca IcPuanlar/OnayBekleyenler'de geçiyor). Okur, bir haberin neden olumlu sayıldığını ve puana ne kadar etki ettiğini göremiyor.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bugün puan kartına hesap yöntemini (formül ve Σ) ekle",
+      "neden": "bugun.json'da 'yontem' (aciklama, formul, isaretler, uyari, hesap) her gün yazılıyor ama Bugun.jsx bu alanı hiç okumuyor; puan 81 gibi bir sayının nasıl çıktığı sayfada görünmüyor.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Vite'i 7.3.6'dan yamalı 7.3.x sürümüne güncelle",
+      "neden": "npm audit bugün vite 7.0.0–7.3.6 için 5 yeni danışma gösteriyor (launch-editor komut yürütme, server.fs.allow atlatma vb.); düzeltme ^7.3.6 aralığında, yalnızca package-lock değişir. Güvenlik ajanı bu yüzden 'dikkat' durumunda.",
+      "etki": "yüksek",
+      "alan": "güvenlik"
+    },
+    {
+      "baslik": "oneri-uygula denetimi güvenliği main'e göre fark olarak değerlendirsin",
+      "neden": "denetle(), güvenlik ajanının genel durumu 'temiz' değilse her öneriyi reddediyor; main'deki @grpc/grpc-js (PR #31 bekliyor) ve vite açıkları yüzünden 13 Ekim'den beri 12 öneri PR'ı (#29–#40) onay bekliyor. Yalnızca dalın yeni eklediği açıklar sayılırsa otomatik birleştirme yeniden çalışır.",
+      "etki": "yüksek",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Bellek göstergelerine TrendForce'un yeni 4Ç DRAM tahminini işle",
+      "neden": "src/data/bellek_fiyat.json 3 Ekim'den beri değişmedi (iyileştirme ajanı: 19 gün). TrendForce News 20 Ekim'de 4Ç 2026 DRAM sözleşme fiyatlarında ~%20 çeyreklik artış aktardı; kayıtlı değer %10–15. Pazartesi presscenter kontrolünde birincil açıklama doğrulanıp güncellenmeli.",
+      "etki": "orta",
+      "alan": "veri"
+    }
+  ]
+}

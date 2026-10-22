@@ -2,6 +2,264 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-10-22-substack-com-p-closing-look-wednesday-october-21",
+      "tarih": "2026-10-22",
+      "yayin": null,
+      "baslik": "Çip endeksi %1,97 yükseldi, Super Micro %9,55 sıçradı",
+      "detay": "Philadelphia Yarı İletken Endeksi 21 Ekim'de %1,97 artışla 11.505,56'dan, Nasdaq %1,05 artışla kapandı. Çeyrek gelir beklentisini 18,5–19,5 milyar dolara yükselten Super Micro %9,55, Dell %5,27 yükseldi.",
+      "kaynak": "Capp Notes",
+      "url": "https://cappnotes.substack.com/p/closing-look-wednesday-october-21",
+      "ton": "pozitif",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-22--earnings-chip-stocks-rally-super-micro-sk-hynix",
+      "tarih": "2026-10-22",
+      "yayin": null,
+      "baslik": "SpaceX'in yapay zekâ birimi 7,56 milyar dolar gelirle kâra geçti",
+      "detay": "SpaceX'in 3. çeyrek geliri %161 artışla 14,6 milyar dolar oldu. Anthropic gibi şirketlere işlem gücü kiralayan 'superintelligence' birimi gelirini yaklaşık üçe katlayıp 431 milyon dolar faaliyet kârına geçti.",
+      "kaynak": "Benzinga",
+      "url": "https://www.benzinga.com/markets/tech/26/10/62494484/spacex-earnings-chip-stocks-rally-super-micro-sk-hynix",
+      "ton": "pozitif",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-22--reports-third-quarter-2026-results-default-aspx",
+      "tarih": "2026-10-22",
+      "yayin": null,
+      "baslik": "Meta 2026 yatırım harcaması aralığını 135–145 milyar dolara çekti",
+      "detay": "Meta 3. çeyrekte geliri %26 artırarak 64,6 milyar dolara çıkardı; çeyreklik yatırım harcaması 34,9 milyar dolar oldu. Yıllık harcama aralığının alt ucu 130 milyardan 135 milyar dolara yükseltildi.",
+      "kaynak": "Meta Investor Relations",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+      "ton": "pozitif",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-22--000070754926000052-lrcx-exhibitx991xq1x2027-htm",
+      "tarih": "2026-10-22",
+      "yayin": null,
+      "baslik": "Lam Research rekor marjla çeyreği kapattı",
+      "detay": "Lam'ın Eylül çeyreği geliri 8,22 milyar dolar, GAAP dışı faaliyet marjı %40,2 oldu. Aralık çeyreği için 8,6 milyar dolar ± 400 milyon dolar gelir bekliyor. Hisse buna rağmen kapanış sonrası yaklaşık %6 düştü.",
+      "kaynak": "Lam Research (SEC 8-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000707549/000070754926000052/lrcx_exhibitx991xq1x2027.htm",
+      "ton": "pozitif",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-22-476-000009747626000165-q32026txnex99-eredgar-htm",
+      "tarih": "2026-10-22",
+      "yayin": null,
+      "baslik": "Texas Instruments geliri %28 arttı",
+      "detay": "TI 3. çeyrekte 6,06 milyar dolar gelir ve 2,62 dolar hisse başı kâr açıkladı. 4. çeyrek için 5,80–6,30 milyar dolar gelir bekliyor; büyüme sanayi, otomotiv ve veri merkezine yayılıyor.",
+      "kaynak": "Texas Instruments (SEC 8-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000097476/000009747626000165/q32026txnex99-eredgar.htm",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-22-mprove-as-capex-doubles-for-ai-push-93ch-4964383",
+      "tarih": "2026-10-22",
+      "yayin": null,
+      "baslik": "Tesla yatırımını ikiye katladı, 400 MW eğitim gücü hedefliyor",
+      "detay": "Tesla'nın 3. çeyrek geliri 28,05 milyar dolarla yatay kaldı, yatırım harcaması %110 artışla 4,7 milyar dolara çıktı. Şirket yıl sonuna 400 MW eğitim kapasitesi ve 2027 ortasında ilk test çipini hedefliyor.",
+      "kaynak": "Investing.com",
+      "url": "https://www.investing.com/news/company-news/tesla-q3-2026-slides-margins-improve-as-capex-doubles-for-ai-push-93CH-4964383",
+      "ton": "notr",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-22-eks-further-10-20-price-hikes-oue-reit-q3-npi-46",
+      "tarih": "2026-10-22",
+      "yayin": null,
+      "baslik": "TSMC ölümcül kaza sonrası yeni fab şantiyelerinde çelik işini durdurdu",
+      "detay": "Kaohsiung'daki Fab 22 inşaatında yaşanan kazada ölü sayısı dörde çıktı. TSMC, Tayvan'daki yeni fab şantiyelerinde çelik yapı işlerini yüklenicinin iyileştirme planı onaylanana kadar askıya aldı.",
+      "kaynak": "Newsquawk (Focus Taiwan/Taipei Times)",
+      "url": "https://newsquawk.com/headlines/pre-market-taiwanese-and-singaporean-stock-news-tsmc-halts-steel-structure-work-at-new-fab-sites-after-fatal-accident-moodys-upgrades-tsmc-to-aa2-powerchip-seeks-further-10-20-price-hikes-oue-reit-q3-npi-46",
+      "ton": "negatif",
+      "konular": [
+        "cip"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-22-wer-gains-ai-demand-tight-supply-support-outlook",
+      "tarih": "2026-10-22",
+      "yayin": null,
+      "baslik": "DRAM sözleşme fiyatlarında artış 4. çeyrekte %20'ye yavaşlıyor",
+      "detay": "TrendForce'a göre 4. çeyrek DRAM sözleşme fiyatlarının çeyreklik %20 artması bekleniyor; bu oran 3. çeyrekte yaklaşık %40, 2. çeyrekte yaklaşık %80'di.",
+      "kaynak": "TrendForce",
+      "url": "https://www.trendforce.com/news/2026/10/20/news-dram-prices-seen-rising-20-qoq-in-4q26-despite-slower-gains-ai-demand-tight-supply-support-outlook/",
+      "ton": "notr",
+      "konular": [
+        "bellek"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-22-nces-2030-rejects-chinese-density-workaround-htm",
+      "tarih": "2026-10-22",
+      "yayin": null,
+      "baslik": "Micron 2030'a kadar her yıl yeni HBM nesli vaat etti",
+      "detay": "Micron 21 Ekim'deki web seminerinde HBM4 (2026), HBM4E (2027), HBM5 (2028), HBM5E (2029) ve HBM6 (2030) yol haritasını paylaştı; 2026 sonunda yaklaşık %20 HBM pazar payı hedefliyor.",
+      "kaynak": "Tech Times",
+      "url": "https://techtimes.com/articles/329350/20261022/micron-maps-annual-hbm-advances-2030-rejects-chinese-density-workaround.htm",
+      "ton": "pozitif",
+      "konular": [
+        "bellek"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-22-kkei-softbank-sk-hynix-samsung-kioxia-tradingkey",
+      "tarih": "2026-10-22",
+      "yayin": null,
+      "baslik": "Kospi %3,29 toparlandı; SK hynix ve Samsung %5'in üzerinde yükseldi",
+      "detay": "Bir gün önce %3,73 düşen Kospi 21 Ekim'de 5.735,67'den kapandı. SK hynix %5,81, Samsung Electronics %5,67, Japonya'da Kioxia %2,82 değer kazandı.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/more/262228327-japan-south-korea-stocks-kospi-nikkei-softbank-sk-hynix-samsung-kioxia-tradingkey",
+      "ton": "pozitif",
+      "konular": [
+        "bellek"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-22-on-modular-ai-factory-to-power-crusoe-cloud-html",
+      "tarih": "2026-10-22",
+      "yayin": "2026-10-21",
+      "baslik": "Crusoe, sıvı soğutmalı modüler yapay zekâ fabrikası Spark Liquid'i tanıttı",
+      "detay": "Modül başına 3,5 MW'a kadar işlem gücü sunan sistem GB300 NVL72 ve Vera Rubin NVL72 raflarına göre tasarlandı; şirket önceki nesle göre 5 kat yoğunluk iddia ediyor.",
+      "kaynak": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/10/21/3385415/0/en/crusoe-introduces-crusoe-spark-liquid-its-next-generation-modular-ai-factory-to-power-crusoe-cloud.html",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-22--heron-power-electronics-announce-120000900-html",
+      "tarih": "2026-10-22",
+      "yayin": "2026-10-21",
+      "baslik": "Vantage, Heron ile 1 GW'lık 800 VDC güç anlaşması yaptı",
+      "detay": "Vantage Data Centers, orta gerilimi doğrudan 800 VDC'ye çeviren Heron Link katı hal trafoları için 1 GW'ın üzerinde üretim kapasitesi ayırttı; hedef verim %98,5'in üzerinde.",
+      "kaynak": "Business Wire (Yahoo Finance)",
+      "url": "https://finance.yahoo.com/technology/ai/articles/vantage-heron-power-electronics-announce-120000900.html",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-22-an-data-center-power-delay-exposes-ai-bottleneck",
+      "tarih": "2026-10-22",
+      "yayin": "2026-10-19",
+      "baslik": "Avustralya'da güç hattı gecikmesi NextDC'nin işlemini durdurdu",
+      "detay": "Melbourne'deki M3 veri merkezine enerji taşıyacak 66 kV hat çalışması yerel itirazlarla askıya alındı; 165 MW'lık genişleme etkilenirken Citi, 2027 mali yılı FAVÖK etkisini 25 milyon A$'a kadar tahmin ediyor.",
+      "kaynak": "Bloomberg (Energy Connects)",
+      "url": "https://www.energyconnects.com/news/utilities/2026/october/australian-data-center-power-delay-exposes-ai-bottleneck/",
+      "ton": "negatif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-22-ans-com-2026-10-21-micron-skips-4f2-dram-scaling",
+      "tarih": "2026-10-22",
+      "yayin": "2026-10-21",
+      "baslik": "Micron 4F² DRAM hücresinden vazgeçti",
+      "detay": "Micron CTO'su Scott DeBoer 4F²'nin yoğunluk avantajını 'biraz efsane' diye niteledi; şirket 6F²'de kalıp wafer birleştirme ve 3D istiflemeye yöneliyor, 1-delta düğümünü 2027'nin ikinci yarısında Boise'da üretecek.",
+      "kaynak": "Sammy Fans",
+      "url": "https://sammyfans.com/2026/10/21/micron-skips-4f2-dram-scaling",
+      "ton": "notr",
+      "konular": [
+        "bellek",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-22-english-cw-com-tw-article-article-action-id-5070",
+      "tarih": "2026-10-22",
+      "yayin": "2026-10-20",
+      "baslik": "Tayvan'ın Çin'e yapay zekâ çipi ihracat kısıtı netleşmeyi bekliyor",
+      "detay": "Tayvan gelişmiş yapay zekâ sunucularını ve yarı iletkenleri kontrollü ihracat listesine eklemeyi planlıyor; izinsiz sevkiyat suç sayılabilecek, ancak yürürlük tarihi ve teknik eşikler henüz açıklanmadı.",
+      "kaynak": "CommonWealth Magazine",
+      "url": "https://english.cw.com.tw/article/article.action?id=5070",
+      "ton": "notr",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-22-vestment-cuts-target-for-sk-hynix-stock-70380928",
+      "tarih": "2026-10-22",
+      "yayin": "2026-10-21",
+      "baslik": "SK hynix için HBM4 geçişi kâr tahminlerini aşağı çekiyor",
+      "detay": "3. çeyrek faaliyet kârı tahmini 76,96 trilyon won'a indi, üç ay önceki tahminin %5,6 altında; HBM'in gelir payı 1. çeyrekteki %58'den 2. çeyrekte %50'ye geriledi.",
+      "kaynak": "ad-hoc-news",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/sk-hynix-hbm4-outlook-weakens-as-ds-investment-cuts-target-for-sk-hynix-stock/70380928",
+      "ton": "negatif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-22-chief-says-the-ram-shortage-wont-peak-until-2028",
+      "tarih": "2026-10-22",
+      "yayin": "2026-10-19",
+      "baslik": "Samsung: Bellek arzında 2028'e kadar anlamlı artış yok",
+      "detay": "Samsung bellek satış ve pazarlama sorumlusu Jaejune Kim, DRAM ve HBM sıkıntısının 2027 boyunca derinleşeceğini ve 2028'e kadar sıkı kalacağını söyledi.",
+      "kaynak": "Startup Fortune",
+      "url": "https://startupfortune.com/samsungs-own-memory-chief-says-the-ram-shortage-wont-peak-until-2028/",
+      "ton": "notr",
+      "konular": [
+        "bellek"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-22--the-earnings-twist-in-the-ai-chip-bubble-debate",
+      "tarih": "2026-10-22",
+      "yayin": "2026-10-21",
+      "baslik": "Çip ETF'lerinde değerlemeler kazançların gerisinde kaldı",
+      "detay": "SMH son 12 ayda %58 getiri sağlarken bileşenlerinin kârı %104 arttı; fonun geçmiş F/K oranı 39'dan 30'a indi. Bellek şirketlerinin F/K'sı Haziran'daki ~32'den 7,7'ye geriledi.",
+      "kaynak": "Benzinga",
+      "url": "https://www.benzinga.com/opinion/26/10/62507341/the-earnings-twist-in-the-ai-chip-bubble-debate",
+      "ton": "notr",
+      "konular": [
+        "pazar",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
       "id": "2026-10-21-tokenpost-com-news-investing-35599",
       "tarih": "2026-10-21",
       "yayin": null,
@@ -2763,7 +3021,7 @@
       "kaynakTuru": "bugun"
     }
   ],
-  "guncelleme": "2026-10-21",
+  "guncelleme": "2026-10-22",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",

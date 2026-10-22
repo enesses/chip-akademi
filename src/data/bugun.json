@@ -1,35 +1,115 @@
 {
-  "tarih": "2026-10-21",
-  "derlenme": "21 Ekim 2026",
-  "ozet": [
-    "Kore borsası salı günü yine sert sarsıldı: Kospi %3,73 düşüşle 5.553 puana indi, SK hynix %4,22, Samsung %2,98 kaybetti. Endeks Ekim başından bu yana yaklaşık %19 geriledi. Ancak çarşamba sabahı yabancı alımıyla tablo tersine döndü; Kospi %3'ün üzerinde yükseldi, SK hynix %7, Samsung %5,6 kazandı ve Nomura bellek talebinin en az 2028'e kadar arzı aşacağı görüşünü yineledi.",
-    "ABD'de pazartesi gelen toparlanma ikinci güne taşınmadı. Dow 500 puandan fazla yükselirken çip hisseleri düşüşle kapandı, Nasdaq hafif geriledi. Yüzde 5'in üzerindeki tahvil faizi ve 100 doları aşan petrol, yapay zekâ hisselerinde değerleme baskısını sürdürüyor.",
-    "Talep tarafındaki sinyaller ise güçlü. Amazon, elektrik altyapısı hazır olmadan yaklaşık 5 milyar dolarlık Nvidia GB300 rafı almaya hazırlanıyor; SK hynix'ten HBM4 sayesinde altıncı rekor çeyrek bekleniyor. Jensen Huang Berlin'de Başbakan Merz'le görüşüp Almanya'nın açık model ve endüstriyel bulut projelerine destek verdi.",
-    "Sermaye cephesinde OpenAI, Anthropic'in kasım ortası beklenen halka arzından önce 1,4 trilyon dolar değerlemeyle 30 milyar dolar toplamaya çalışıyor. Bugün gözler GTC Berlin açılışında, akşam ise Texas Instruments ve Lam Research bilançolarında: ikisi de çip talebinin altta yatan gücünü gösterecek."
-  ],
+  "tarih": "2026-10-22",
+  "derlenme": "22 Ekim 2026",
   "puan": {
-    "etiket": "Kore'de dalgalı seyir, talep sinyalleri güçlü",
-    "yorum": "Kospi'deki sert düşüş ve ABD'de çip hisselerinin geri çekilmesi piyasa kırılganlığını gösterdi; Amazon'un erken GB300 alımı, SK hynix'in rekor beklentisi ve yapay zekâ laboratuvarlarına sermaye akışı ise talebin sürdüğünü işaret ediyor.",
-    "deger": 66
+    "etiket": "Çipler toparlandı, yatırım iştahı sürüyor",
+    "yorum": "SOX'un %2'lik toparlanması, Meta'nın harcama aralığını yukarı çekmesi ve Lam ile TI'ın güçlü çeyrekleri talebin sürdüğünü gösteriyor; TSMC'deki ölümcül kaza ve bellek fiyat artışlarının yavaşlaması ise dengeleyici riskler.",
+    "deger": 81
   },
+  "ozet": [
+    "21 Ekim, sekiz seanslık kayıp serisinin ardından çip hisselerinde toparlanma günü oldu. Philadelphia Yarı İletken Endeksi %1,97 yükselirken Super Micro'nun yükselttiği gelir beklentisi sunucu üreticilerini, Seul'de de Samsung ve SK hynix'i %5'in üzerinde yukarı taşıdı.",
+    "Toparlanmanın arkasında harcamaların sürdüğüne dair somut veriler var. SpaceX'in yapay zekâ birimi çeyrekte 7,56 milyar dolar gelirle kâra geçti; Meta 2026 yatırım harcaması aralığının alt ucunu 135 milyar dolara çekti. Tesla da çeyreklik yatırımını iki katına çıkararak yıl sonuna 400 MW eğitim kapasitesi hedefliyor.",
+    "Ekipman ve analog tarafında Lam Research %40,2 faaliyet marjıyla rekor kırdı, Texas Instruments geliri %28 artırdı. Buna karşın Lam hissesi beklentilerin çok yüksek olduğu bir ortamda kapanış sonrası düştü; piyasa iyi sonuçtan çok daha fazlasını fiyatlıyor.",
+    "Riskler de masada: TSMC, Kaohsiung'daki Fab 22 inşaatında ölü sayısının dörde çıkmasıyla yeni fab şantiyelerinde çelik işlerini durdurdu. Bellekte DRAM sözleşme fiyat artışının 4. çeyrekte %20'ye yavaşlaması bekleniyor; Micron ise HBM'de 2030'a kadar her yıl yeni nesil vaat ediyor."
+  ],
+  "maddeler": [
+    {
+      "baslik": "Çip endeksi %1,97 yükseldi, Super Micro %9,55 sıçradı",
+      "detay": "Philadelphia Yarı İletken Endeksi 21 Ekim'de %1,97 artışla 11.505,56'dan, Nasdaq %1,05 artışla kapandı. Çeyrek gelir beklentisini 18,5–19,5 milyar dolara yükselten Super Micro %9,55, Dell %5,27 yükseldi.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Sekiz seanslık satış serisinin ardından talep sinyalleriyle gelen toparlanma.",
+      "kaynak": "Capp Notes",
+      "url": "https://cappnotes.substack.com/p/closing-look-wednesday-october-21"
+    },
+    {
+      "baslik": "SpaceX'in yapay zekâ birimi 7,56 milyar dolar gelirle kâra geçti",
+      "detay": "SpaceX'in 3. çeyrek geliri %161 artışla 14,6 milyar dolar oldu. Anthropic gibi şirketlere işlem gücü kiralayan 'superintelligence' birimi gelirini yaklaşık üçe katlayıp 431 milyon dolar faaliyet kârına geçti.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Yapay zekâ altyapısına yapılan yatırımın gelire dönüştüğünü gösteren somut bir örnek.",
+      "kaynak": "Benzinga",
+      "url": "https://www.benzinga.com/markets/tech/26/10/62494484/spacex-earnings-chip-stocks-rally-super-micro-sk-hynix"
+    },
+    {
+      "baslik": "Meta 2026 yatırım harcaması aralığını 135–145 milyar dolara çekti",
+      "detay": "Meta 3. çeyrekte geliri %26 artırarak 64,6 milyar dolara çıkardı; çeyreklik yatırım harcaması 34,9 milyar dolar oldu. Yıllık harcama aralığının alt ucu 130 milyardan 135 milyar dolara yükseltildi.",
+      "kategori": "pozitif",
+      "agirlik": 3,
+      "neden": "En büyük alıcılardan birinin yapay zekâ altyapısı harcamasını artırması çip talebini destekler.",
+      "kaynak": "Meta Investor Relations",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx"
+    },
+    {
+      "baslik": "Lam Research rekor marjla çeyreği kapattı",
+      "detay": "Lam'ın Eylül çeyreği geliri 8,22 milyar dolar, GAAP dışı faaliyet marjı %40,2 oldu. Aralık çeyreği için 8,6 milyar dolar ± 400 milyon dolar gelir bekliyor. Hisse buna rağmen kapanış sonrası yaklaşık %6 düştü.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Çip ekipmanına talep güçlü sürüyor; düşüş, beklentilerin yüksekliğini yansıtıyor.",
+      "kaynak": "Lam Research (SEC 8-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000707549/000070754926000052/lrcx_exhibitx991xq1x2027.htm"
+    },
+    {
+      "baslik": "Texas Instruments geliri %28 arttı",
+      "detay": "TI 3. çeyrekte 6,06 milyar dolar gelir ve 2,62 dolar hisse başı kâr açıkladı. 4. çeyrek için 5,80–6,30 milyar dolar gelir bekliyor; büyüme sanayi, otomotiv ve veri merkezine yayılıyor.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Analog çiplerde toparlanma yapay zekâ dışındaki talebin de güçlendiğini gösteriyor.",
+      "kaynak": "Texas Instruments (SEC 8-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000097476/000009747626000165/q32026txnex99-eredgar.htm"
+    },
+    {
+      "baslik": "Tesla yatırımını ikiye katladı, 400 MW eğitim gücü hedefliyor",
+      "detay": "Tesla'nın 3. çeyrek geliri 28,05 milyar dolarla yatay kaldı, yatırım harcaması %110 artışla 4,7 milyar dolara çıktı. Şirket yıl sonuna 400 MW eğitim kapasitesi ve 2027 ortasında ilk test çipini hedefliyor.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "İşlem gücü talebi artıyor ama şirketin kendi çipini yapma planı henüz erken aşamada.",
+      "kaynak": "Investing.com",
+      "url": "https://www.investing.com/news/company-news/tesla-q3-2026-slides-margins-improve-as-capex-doubles-for-ai-push-93CH-4964383"
+    },
+    {
+      "baslik": "TSMC ölümcül kaza sonrası yeni fab şantiyelerinde çelik işini durdurdu",
+      "detay": "Kaohsiung'daki Fab 22 inşaatında yaşanan kazada ölü sayısı dörde çıktı. TSMC, Tayvan'daki yeni fab şantiyelerinde çelik yapı işlerini yüklenicinin iyileştirme planı onaylanana kadar askıya aldı.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Can kaybı ve kapasite genişlemesinde olası gecikme riski.",
+      "kaynak": "Newsquawk (Focus Taiwan/Taipei Times)",
+      "url": "https://newsquawk.com/headlines/pre-market-taiwanese-and-singaporean-stock-news-tsmc-halts-steel-structure-work-at-new-fab-sites-after-fatal-accident-moodys-upgrades-tsmc-to-aa2-powerchip-seeks-further-10-20-price-hikes-oue-reit-q3-npi-46"
+    },
+    {
+      "baslik": "DRAM sözleşme fiyatlarında artış 4. çeyrekte %20'ye yavaşlıyor",
+      "detay": "TrendForce'a göre 4. çeyrek DRAM sözleşme fiyatlarının çeyreklik %20 artması bekleniyor; bu oran 3. çeyrekte yaklaşık %40, 2. çeyrekte yaklaşık %80'di.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Fiyatlar yükselmeye devam ediyor ama ivme azalıyor.",
+      "kaynak": "TrendForce",
+      "url": "https://www.trendforce.com/news/2026/10/20/news-dram-prices-seen-rising-20-qoq-in-4q26-despite-slower-gains-ai-demand-tight-supply-support-outlook/"
+    },
+    {
+      "baslik": "Micron 2030'a kadar her yıl yeni HBM nesli vaat etti",
+      "detay": "Micron 21 Ekim'deki web seminerinde HBM4 (2026), HBM4E (2027), HBM5 (2028), HBM5E (2029) ve HBM6 (2030) yol haritasını paylaştı; 2026 sonunda yaklaşık %20 HBM pazar payı hedefliyor.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Bellek bant genişliği darboğazına daha hızlı bir yanıt.",
+      "kaynak": "Tech Times",
+      "url": "https://techtimes.com/articles/329350/20261022/micron-maps-annual-hbm-advances-2030-rejects-chinese-density-workaround.htm"
+    },
+    {
+      "baslik": "Kospi %3,29 toparlandı; SK hynix ve Samsung %5'in üzerinde yükseldi",
+      "detay": "Bir gün önce %3,73 düşen Kospi 21 Ekim'de 5.735,67'den kapandı. SK hynix %5,81, Samsung Electronics %5,67, Japonya'da Kioxia %2,82 değer kazandı.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Bellek devlerindeki satışın en azından bir gün için tersine dönmesi.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/more/262228327-japan-south-korea-stocks-kospi-nikkei-softbank-sk-hynix-samsung-kioxia-tradingkey"
+    }
+  ],
   "yaklasan": [
     {
-      "tarih": "2026-10-21",
-      "baslik": "Texas Instruments ve Lam Research 3. çeyrek sonuçları (kapanış sonrası)",
-      "kaynak": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/10/20/texas-instruments-and-lam-research-report-earnings-ai-equipment-boom-meets-analog-rebound/"
-    },
-    {
-      "tarih": "2026-10-21",
-      "baslik": "Jensen Huang GTC Berlin açılış konuşması (Tempodrom)",
-      "kaynak": "Startup Fortune",
-      "url": "https://startupfortune.com/jensen-huang-warns-europe-not-to-overthink-ai-rules-or-risk-falling-behind/"
-    },
-    {
-      "tarih": "2026-11-03",
-      "baslik": "AMD 3. çeyrek sonuçları (kapanış sonrası)",
-      "kaynak": "Gotrade",
-      "url": "https://www.heygotrade.com/en/news/amd-amd-stock-news-october-20-2026/"
+      "tarih": "2026-10-28",
+      "baslik": "SK hynix 3. çeyrek sonuçları (Seul saatiyle 09:00 öncesi)",
+      "kaynak": "ad-hoc-news",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/sk-hynix-hbm4-outlook-weakens-as-ds-investment-cuts-target-for-sk-hynix-stock/70380928"
     }
   ],
   "yontem": {
@@ -37,80 +117,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = +5 · Σ ağırlık = 16 · Puan = 50 + 50 × 0.31 = 66"
-  },
-  "maddeler": [
-    {
-      "baslik": "Kore borsası çip satışıyla %3,73 düştü",
-      "detay": "Kospi 20 Ekim'de 214,93 puan kaybedip 5.553 puandan kapandı; SK hynix %4,22, Samsung Electronics %2,98 değer kaybetti. Endeks Ekim başından bu yana yaklaşık %19 geriledi.",
-      "kategori": "negatif",
-      "agirlik": 3,
-      "neden": "Yabancı satışları ve yapay zekâ harcamalarına dair finansman kaygıları bellek devlerini yeniden aşağı çekti.",
-      "kaynak": "TokenPost",
-      "url": "https://www.tokenpost.com/news/investing/35599"
-    },
-    {
-      "baslik": "Kospi ertesi sabah %3'ün üzerinde toparlandı",
-      "detay": "21 Ekim sabahı Kospi %3,28 yükselerek 5.735 puana çıktı; SK hynix %7,11 artışla 1.310.000 won'a, Samsung %5,56 artışla 223.250 won'a ulaştı. Nomura iki hisse için 'al' görüşünü korudu, bellek talebinin en az 2028'e kadar arzı aşacağını öngörüyor.",
-      "kategori": "pozitif",
-      "agirlik": 2,
-      "neden": "Yabancı alımı geri döndü; analistler bellek döngüsünün güçlü kaldığını yineledi.",
-      "kaynak": "Aju Press",
-      "url": "https://www.ajupress.com/view/20261021102326568"
-    },
-    {
-      "baslik": "ABD'de çip hisseleri günü düşüşle kapattı",
-      "detay": "20 Ekim'de Dow yaklaşık %1 (500 puandan fazla) ve S&P 500 %0,3 yükselirken Nasdaq hafif geriledi; çip hisseleri düşüşle kapandı, Magnificent Seven ETF'i %0,4 kaybetti. 10 yıllık tahvil faizi %5,12'nin altına indi.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "Pazartesi gelen toparlanma ikinci güne taşınmadı; yüksek faiz ve 100 doları aşan petrol baskı yarattı.",
-      "kaynak": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/markets-news-oct-20-2026-103252254.html"
-    },
-    {
-      "baslik": "Amazon, güç kısıtına rağmen GB300 raflarını erken alıyor",
-      "detay": "AWS, ABD'deki sahalarda kurulumdan önce yaklaşık 5 milyar dolarlık Nvidia GB300 sunucu rafı almayı, ardından ayda yaklaşık 3 milyar dolarlık ek raf girişini planlıyor; elektrik altyapısı bitene kadar ekipman depoda bekleyecek.",
-      "kategori": "pozitif",
-      "agirlik": 2,
-      "neden": "Hiper ölçekli talebin sürdüğünü gösteriyor; ancak darboğazın elektrik olduğunu da hatırlatıyor.",
-      "kaynak": "GuruFocus",
-      "url": "https://www.gurufocus.com/news/9132456/amazon-amzn-accelerates-ai-hardware-acquisition-amid-data-center-power-constraints"
-    },
-    {
-      "baslik": "Huang Berlin'de Merz ile görüştü, Avrupa'ya çağrı yaptı",
-      "detay": "Jensen Huang 19 Ekim'de Başbakan Friedrich Merz ile görüştü; SOOFI açık model girişimi ve Deutsche Telekom'un Endüstriyel AI Bulutu'na destek verildi. Nvidia'nın son bir yılda Avrupa'ya yaklaşık 8 milyar dolar yatırım yaptığı bildiriliyor; GTC Berlin açılış konuşması 21 Ekim'de.",
-      "kategori": "pozitif",
-      "agirlik": 2,
-      "neden": "Avrupa'daki egemen yapay zekâ altyapısı Nvidia için yeni bir talep kaynağı.",
-      "kaynak": "Startup Fortune",
-      "url": "https://startupfortune.com/jensen-huang-warns-europe-not-to-overthink-ai-rules-or-risk-falling-behind/"
-    },
-    {
-      "baslik": "OpenAI, Anthropic halka arzından önce 30 milyar dolar arıyor",
-      "detay": "Reuters'a göre OpenAI, değerlemesini 1,4 trilyon doların üzerine taşıyabilecek yaklaşık 30 milyar dolarlık hızlı bir tur için SoftBank ve MGX ile görüşüyor. Anthropic'in kasım ortasında halka arz edilmesi bekleniyor; 3. çeyrek geliri 16,8 milyar dolar.",
-      "kategori": "pozitif",
-      "agirlik": 2,
-      "neden": "Yapay zekâ laboratuvarlarına sermaye akışı, çip ve veri merkezi siparişlerinin finansmanını destekliyor.",
-      "kaynak": "Reuters (CP24)",
-      "url": "https://www.cp24.com/news/money/2026/10/20/openai-seeks-to-accelerate-fundraising-ahead-of-anthropic-ipo-sources-say-reuters-exclusive/"
-    },
-    {
-      "baslik": "OpenAI, Çin'e çip kısıtlaması çağrısından geri çekildi",
-      "detay": "Politico'ya dayanan habere göre OpenAI, Çin'e gelişmiş çip satışına sıkı sınır çağrısını bıraktı; Çin şahinleri yeni kısıtlamaları savunma bütçesi yasasına eklemeyi hedefliyor. Anthropic ise çip yasa tasarılarını desteklemeye devam ediyor.",
-      "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Nvidia'nın Çin satışları için politik baskıyı azaltabilir, ancak yasa süreci belirsiz.",
-      "kaynak": "The Next Web",
-      "url": "https://thenextweb.com/news/openai-china-chip-export-controls-retreat-nvidia"
-    },
-    {
-      "baslik": "SK hynix'ten altıncı rekor çeyrek bekleniyor",
-      "detay": "FnGuide konsensüsüne göre SK hynix'in 3. çeyrek faaliyet kârı 76,96 trilyon won olacak; HBM4 gelirleri bu çeyrekten itibaren tam yansıyor. 4. çeyrek konsensüsü 87,27 trilyon won.",
-      "kategori": "pozitif",
-      "agirlik": 2,
-      "neden": "HBM4 ve bellek fiyat artışı kârları rekor seviyede tutuyor.",
-      "kaynak": "MoneyToday",
-      "url": "https://www.mt.co.kr/en/industry/2026/10/19/2026101913371799572"
-    }
-  ]
+    "hesap": "Σ ağırlık×işaret = +10 · Σ ağırlık = 16 · Puan = 50 + 50 × 0.63 = 81"
+  }
 }
