@@ -114,6 +114,13 @@ export default function Bugun() {
                       </p>
                     )}
                     <p className="text-sm text-muted-foreground leading-relaxed mt-1.5">{m.detay}</p>
+                    {(m.neden || m.agirlik) && (
+                      <p className="text-xs text-muted-foreground/80 leading-relaxed mt-2">
+                        <span className="font-medium" style={{ color: k.renk }}>{k.ad}</span>
+                        {m.agirlik ? <span className="tabular-nums"> · ağırlık {m.agirlik}/3</span> : null}
+                        {m.neden ? <> — {m.neden}</> : null}
+                      </p>
+                    )}
                   </div>
                 </div>
                 <a href={m.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-wider text-muted-foreground hover:text-foreground ml-10">
