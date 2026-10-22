@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-22T06:59:03.204Z",
+  "guncelleme": "2026-10-22T07:01:47.766Z",
   "tarih": "2026-10-22",
   "durum": "dikkat",
   "ajanlar": [
@@ -44,7 +44,7 @@
     {
       "seviye": "dikkat",
       "tur": "onay",
-      "metin": "12 öneri onay bekliyor (PR #29, PR #30, PR #31, PR #32, PR #33, PR #34, PR #35, PR #36, PR #37, PR #38, PR #39, PR #40) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+      "metin": "15 öneri onay bekliyor (PR #29, PR #30, PR #31, PR #32, PR #33, PR #34, PR #35, PR #36, PR #37, PR #38, PR #39, PR #40, PR #41, PR #42, PR #43) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
   "oneriler": [
@@ -79,7 +79,38 @@
       "alan": "veri"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-10-22",
+      "oneri": "Vite'i 7.3.6'dan yamalı 7.3.x sürümüne güncelle",
+      "durum": "acik",
+      "pr": 41,
+      "dal": "otomasyon/duzeltme-2026-10-22",
+      "ozet": "npm update vite: package-lock'ta 7.3.6 → 7.3.7, 5 danışma kapandı",
+      "neden": "Korunan dosya (package-lock.json); derleme, tek dosya, arayüz 32/32 geçti, onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-22",
+      "oneri": "Bugün maddelerinde sınıflandırma gerekçesini ve ağırlığını göster",
+      "durum": "acik",
+      "pr": 42,
+      "dal": "otomasyon/oneri-2026-10-22-1",
+      "ozet": "Her maddenin altında kategori, ağırlık (x/3) ve gerekçe satırı",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js ve vite açıkları yüzünden 'dikkat' (düzeltmeler PR #31, #41), onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-22",
+      "oneri": "Bugün puan kartına hesap yöntemini (formül ve Σ) ekle",
+      "durum": "acik",
+      "pr": 43,
+      "dal": "otomasyon/oneri-2026-10-22-2",
+      "ozet": "Puan kartında açılır 'Puan nasıl hesaplandı?' bölümü",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js ve vite açıkları yüzünden 'dikkat' (düzeltmeler PR #31, #41), onay bekliyor",
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
@@ -318,6 +349,27 @@
       "pr": 40,
       "tarih": "2026-10-21",
       "kim": "otomasyon"
+    },
+    {
+      "oneri": "Vite'i 7.3.6'dan yamalı 7.3.x sürümüne güncelle",
+      "durum": "acik",
+      "pr": 41,
+      "tarih": "2026-10-22",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Bugün maddelerinde sınıflandırma gerekçesini ve ağırlığını göster",
+      "durum": "acik",
+      "pr": 42,
+      "tarih": "2026-10-22",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Bugün puan kartına hesap yöntemini (formül ve Σ) ekle",
+      "durum": "acik",
+      "pr": 43,
+      "tarih": "2026-10-22",
+      "kim": "otomasyon"
     }
   ],
   "onayBekleyen": [
@@ -404,6 +456,27 @@
       "tarih": "2026-10-21",
       "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
       "dal": "otomasyon/oneri-2026-10-21-2"
+    },
+    {
+      "pr": 41,
+      "oneri": "Vite'i 7.3.6'dan yamalı 7.3.x sürümüne güncelle",
+      "tarih": "2026-10-22",
+      "neden": "Korunan dosya (package-lock.json); derleme, tek dosya, arayüz 32/32 geçti, onay bekliyor",
+      "dal": "otomasyon/duzeltme-2026-10-22"
+    },
+    {
+      "pr": 42,
+      "oneri": "Bugün maddelerinde sınıflandırma gerekçesini ve ağırlığını göster",
+      "tarih": "2026-10-22",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js ve vite açıkları yüzünden 'dikkat' (düzeltmeler PR #31, #41), onay bekliyor",
+      "dal": "otomasyon/oneri-2026-10-22-1"
+    },
+    {
+      "pr": 43,
+      "oneri": "Bugün puan kartına hesap yöntemini (formül ve Σ) ekle",
+      "tarih": "2026-10-22",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js ve vite açıkları yüzünden 'dikkat' (düzeltmeler PR #31, #41), onay bekliyor",
+      "dal": "otomasyon/oneri-2026-10-22-2"
     }
   ],
   "guvenlik": {

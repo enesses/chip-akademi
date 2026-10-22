@@ -340,6 +340,36 @@
       "ozet": "Tablo satırları 5'ten az sağlayıcıda kartlardaki gibi soluklaşıyor",
       "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-22",
+      "oneri": "Vite'i 7.3.6'dan yamalı 7.3.x sürümüne güncelle",
+      "durum": "acik",
+      "pr": 41,
+      "dal": "otomasyon/duzeltme-2026-10-22",
+      "ozet": "npm update vite: package-lock'ta 7.3.6 → 7.3.7, 5 danışma kapandı",
+      "neden": "Korunan dosya (package-lock.json); derleme, tek dosya, arayüz 32/32 geçti, onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-22",
+      "oneri": "Bugün maddelerinde sınıflandırma gerekçesini ve ağırlığını göster",
+      "durum": "acik",
+      "pr": 42,
+      "dal": "otomasyon/oneri-2026-10-22-1",
+      "ozet": "Her maddenin altında kategori, ağırlık (x/3) ve gerekçe satırı",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js ve vite açıkları yüzünden 'dikkat' (düzeltmeler PR #31, #41), onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-22",
+      "oneri": "Bugün puan kartına hesap yöntemini (formül ve Σ) ekle",
+      "durum": "acik",
+      "pr": 43,
+      "dal": "otomasyon/oneri-2026-10-22-2",
+      "ozet": "Puan kartında açılır 'Puan nasıl hesaplandı?' bölümü",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js ve vite açıkları yüzünden 'dikkat' (düzeltmeler PR #31, #41), onay bekliyor",
+      "kim": "otomasyon"
     }
   ]
 }
