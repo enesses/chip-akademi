@@ -610,6 +610,16 @@
       "ozet": "Kullanıcıyla oturumda uygulandı",
       "neden": null,
       "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": "veri-isle aynı gün ikinci çalıştırmada son işleme sonucunu silmesin",
+      "durum": "birlesti",
+      "pr": 28,
+      "dal": null,
+      "ozet": "Kullanıcıyla oturumda uygulandı",
+      "neden": null,
+      "kim": "elle"
     }
   ]
 }

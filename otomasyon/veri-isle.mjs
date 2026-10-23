@@ -348,4 +348,14 @@ if (!Object.values(sonuc).some(Boolean)) console.log(`  – ${rel(GELEN)} altın
 
 export default sonuc;
 fs.mkdirSync(GELEN, { recursive: true });
-yaz(path.join(GELEN, ".son-isleme.json"), { zaman: new Date().toISOString(), sonuc });
+// Aynı gün içinde ikinci bir çalıştırma (ör. "dogrulanan" listesiyle yeniden
+// işleme ya da 5. adımdaki öneri işleme) önceki sonuçları silmesin: yenileme
+// ajanı bu dosyayı okur, üzerine yazılırsa rapor eski/eksik durumu gösterir.
+let oncekiSonuc = {};
+try {
+  const o = oku(path.join(GELEN, ".son-isleme.json"));
+  if (String(o.zaman || "").slice(0, 10) === BUGUN) oncekiSonuc = o.sonuc || {};
+} catch {}
+const birlesik = { ...oncekiSonuc };
+for (const [ad, s] of Object.entries(sonuc)) if (s || !(ad in birlesik)) birlesik[ad] = s;
+yaz(path.join(GELEN, ".son-isleme.json"), { zaman: new Date().toISOString(), sonuc: birlesik });
