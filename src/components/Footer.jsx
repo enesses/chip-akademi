@@ -30,7 +30,7 @@ export default function Footer() {
           <p className="etiket mb-3">Kaynaklar</p>
           <p>Çip verileri: üretici belgeleri ve teknik basın.</p>
           <p>Kiralama fiyatları: getdeploying.com. Bellek fiyatları: TrendForce.</p>
-          <p>Görsellerin bir kısmı temsilîdir; her çip sayfasında belirtilir.</p>
+          <p>Çip fotoğrafları: Wikimedia Commons, serbest lisanslı; yazar ve lisans her çip sayfasında.</p>
         </div>
       </div>
     </footer>

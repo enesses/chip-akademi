@@ -1,4 +1,5 @@
 import { Link } from "@/components/Nav";
+import ChipYerTutucu from "@/components/ChipYerTutucu";
 import { manufacturerColors, imageUrl } from "@/lib/utils";
 import { genelPuan } from "@/lib/chipScore";
 import { cn } from "@/lib/utils";
@@ -48,9 +49,7 @@ export default function ChipCard({ chip }) {
           {chip.image ? (
             <img src={imageUrl(chip.image)} alt={chip.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" />
           ) : (
-            <div className="w-full h-full flex items-center justify-center bg-silicon-grid">
-              <span className="font-display font-semibold text-sm px-4 text-center" style={{ color }}>{chip.name}</span>
-            </div>
+            <ChipYerTutucu chip={chip} renk={color} />
           )}
 
         </div>
