@@ -8,6 +8,8 @@ export const chips = [
     "process_node": "TSMC 4NP (4nm sınıfı)",
     "transistor_count": "208 milyar (çift die)",
     "die_size": "~1600 mm² (toplam çift die)",
+    "image": "blackwell-b200.png",
+    "image_credit": "Temsilî görsel — Blackwell ailesi",
     "key_specs": {
       "architecture": "Blackwell Ultra (iki reticle boyutlu die, NV-HBI ile bağlı)",
       "cuda_cores": 20480,
@@ -114,9 +116,8 @@ export const chips = [
     "process_node": "TSMC 4N (özel 4nm)",
     "transistor_count": "45.6 milyar (GB203)",
     "die_size": "378 mm²",
-    "image": "foto-nvidia-blackwell-rtx-5080-0.jpg",
-    "image_credit": "RTX 5080 ve RTX 5090 Founders Edition devre kartları. Fotoğraf: 极客湾Geekerwan, CC BY 3.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Nvidia_RTX_5080_5090_FE_PCB.png",
+    "image": "rtx-5090.png",
+    "image_credit": "Temsilî görsel — GeForce RTX 50 serisi",
     "key_specs": {
       "architecture": "Blackwell (GB203)",
       "cuda_cores": 10752,
@@ -212,6 +213,8 @@ export const chips = [
     "process_node": "TSMC 4N (özel 4nm)",
     "transistor_count": "80 milyar (GH100)",
     "die_size": "814 mm²",
+    "image": "h100.png",
+    "image_credit": "Temsilî görsel — Hopper ailesi",
     "key_specs": {
       "architecture": "Hopper (GH100 — H100 ile aynı die)",
       "cuda_cores": 16896,
@@ -298,6 +301,8 @@ export const chips = [
     "process_node": "TSMC N3P (hesap die'ları) + N6 (I/O die'ları)",
     "transistor_count": "185 milyar (8 XCD + 2 IOD)",
     "die_size": "Çoklu die paketi (chiplet)",
+    "image": "mi300x.png",
+    "image_credit": "Temsilî görsel — Instinct ailesi",
     "key_specs": {
       "architecture": "CDNA 4 (8 Accelerator Complex Die + 2 I/O Die)",
       "compute_units": "256 CU (XCD başına 32)",
@@ -396,6 +401,8 @@ export const chips = [
     "process_node": "TSMC N4P (4nm)",
     "transistor_count": "~29.7 milyar (Navi 44)",
     "die_size": "199 mm²",
+    "image": "rx-9070xt.png",
+    "image_credit": "Temsilî görsel — Radeon RX 9000 serisi",
     "key_specs": {
       "architecture": "RDNA 4 (Navi 44)",
       "compute_units": "32 CU",
@@ -479,6 +486,8 @@ export const chips = [
     "process_node": "TSMC N4P (CCD) + N6 (IOD)",
     "transistor_count": "~8.6 milyar (CCD) + IOD",
     "die_size": "70.6 mm² (CCD) + 122 mm² (IOD)",
+    "image": "ryzen-9950x.png",
+    "image_credit": "Temsilî görsel — Ryzen 9000 serisi",
     "key_specs": {
       "architecture": "Zen 5 + 2. nesil 3D V-Cache",
       "cores": 8,
@@ -573,9 +582,8 @@ export const chips = [
     "process_node": "Intel 18A (hesap tile) + TSMC N3E (GPU tile)",
     "transistor_count": "Açıklanmadı (çoklu tile)",
     "die_size": "Foveros 3D paket, çoklu tile",
-    "image": "foto-intel-panther-lake-x9-388h-4.jpg",
-    "image_credit": "Panther Lake paketleri, Intel tanıtımı. Fotoğraf: 极客湾Geekerwan, CC BY 3.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:%E4%B8%8A%E6%89%8B%E4%BD%93%E9%AA%8C%E8%8B%B1%E7%89%B9%E5%B0%94%E4%B8%8B%E4%B8%80%E4%BB%A3%E8%8A%AF%E7%89%87%EF%BC%8C%E8%BF%98%E5%8F%82%E8%A7%82%E4%BA%86%E6%99%B6%E5%9C%86%E5%8E%82%EF%BC%81-00.11.55.095.png",
+    "image": "core-ultra-285k.png",
+    "image_credit": "Temsilî görsel — Intel Core Ultra ailesi",
     "key_specs": {
       "architecture": "Panther Lake (Cougar Cove P-core + Darkmont E-core)",
       "cores": "16 (4 P + 8 E + 4 LP-E)",
@@ -669,9 +677,8 @@ export const chips = [
     "process_node": "TSMC N3B (hesap tile) + N6 (platform tile)",
     "transistor_count": "~17.8 milyar (paket toplamı)",
     "die_size": "~140 mm² (hesap + platform tile)",
-    "image": "foto-intel-lunar-lake-288v-6.jpg",
-    "image_credit": "Lunar Lake kalıbı (Core Ultra 200V). Fotoğraf: FritzchensFritz, CC0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Intel@TSMC_N3_N6@LunarLake@LNL(4P%2B4LPE)@CoreUltra200Series@DSCx01_poly@5xExt.jpg",
+    "image": "core-ultra-285k.png",
+    "image_credit": "Temsilî görsel — Intel Core Ultra ailesi",
     "key_specs": {
       "architecture": "Lunar Lake (Lion Cove P-core + Skymont E-core)",
       "cores": "8 (4 P + 4 E)",
@@ -765,6 +772,8 @@ export const chips = [
     "process_node": "TSMC N3 (3nm)",
     "transistor_count": "Açıklanmadı",
     "die_size": "Açıklanmadı",
+    "image": "snapdragon-x-elite.png",
+    "image_credit": "Temsilî görsel — Snapdragon X ailesi",
     "key_specs": {
       "architecture": "3. nesil Oryon (ARM), 12 Prime + 6 Performance",
       "cores": 18,
@@ -858,6 +867,8 @@ export const chips = [
     "process_node": "TSMC 3. nesil 3nm (N3P sınıfı)",
     "transistor_count": "Açıklanmadı",
     "die_size": "İki die'lı 'Fusion' paketi (SoIC-mH sınıfı paketleme)",
+    "image": "apple-m4-pro-max.png",
+    "image_credit": "Temsilî görsel — Apple M serisi",
     "key_specs": {
       "architecture": "Apple Fusion Architecture — ayrı hesap ve grafik die'ları tek pakette",
       "cores": "18 (M5 Max: 6 S-core + 12 P-core)",
@@ -949,6 +960,8 @@ export const chips = [
     "process_node": "Intel 3 (hesap die'ları) + Intel 7 (I/O die'ları)",
     "transistor_count": "Açıklanmadı (5 die'lı paket)",
     "die_size": "3 hesap + 2 I/O die",
+    "image": "epyc-9965.png",
+    "image_credit": "Temsilî görsel — sunucu işlemcisi",
     "key_specs": {
       "architecture": "Granite Rapids (Redwood Cove P-core), 3 hesap + 2 I/O die",
       "cores": 128,
@@ -1031,9 +1044,8 @@ export const chips = [
     "process_node": "1b/1c nm sınıfı DRAM + mantık taban die'ı (ör. TSMC 12nm)",
     "transistor_count": "Yığın başına yüz milyarlarca hücre",
     "die_size": "16 katmana kadar dikey istifleme, 775 µm yükseklik sınırı",
-    "image": "foto-ram-hbm3e-0.jpg",
-    "image_credit": "Temsilî: HBM yığınlı GPU paketi — AMD Fiji, ilk nesil HBM (2015). Fotoğraf: C. Spille/pcgameshardware.de, CC BY-SA 4.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:AMD_Fiji_GPU_package_with_GPU,_HBM_memory_and_interposer.jpg",
+    "image": "hbm3e.png",
+    "image_credit": "Temsilî görsel — HBM ailesi",
     "key_specs": {
       "standard": "JEDEC JESD270-4 (Nisan 2025)",
       "memory_interface": "Yığın başına 2048-bit (HBM3E'nin iki katı)",
@@ -1123,6 +1135,8 @@ export const chips = [
     "process_node": "1x/1y nm sınıfı DRAM",
     "transistor_count": "Chip başına milyarlarca hücre",
     "die_size": "Chip başına ~8-16 Gb yoğunluk",
+    "image": "gddr7.png",
+    "image_credit": "Temsilî görsel — GDDR ailesi",
     "key_specs": {
       "standard": "JEDEC JESD250",
       "data_rate": "14-20 Gbps/pin",
@@ -1202,9 +1216,8 @@ export const chips = [
     "process_node": "2x/1x nm sınıfı DRAM",
     "transistor_count": "Modül başına on milyarlarca hücre",
     "die_size": "Chip başına 4-16 Gb yoğunluk",
-    "image": "foto-ram-ddr4-0.jpg",
-    "image_credit": "16 GB DDR4 bellek modülü. Fotoğraf: PantheraLeo1359531, CC BY 4.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:16_GiB-DDR4-RAM-Riegel_RAM019FIX_Small_Crop_90_PCNT.png",
+    "image": "ddr5.png",
+    "image_credit": "Temsilî görsel — DDR ailesi",
     "key_specs": {
       "standard": "JEDEC JESD79-4",
       "data_rate": "1600-3200 MT/s (JEDEC) — XMP ile 4000+ MT/s",
@@ -1284,6 +1297,8 @@ export const chips = [
     "process_node": "TSMC N3 sınıfı (3nm)",
     "transistor_count": "~336 milyar (çift chiplet)",
     "die_size": "İki reticle boyutlu chiplet, tek GPU soketi",
+    "image": "blackwell-b200.png",
+    "image_credit": "Temsilî görsel — NVIDIA veri merkezi GPU'su",
     "key_specs": {
       "architecture": "Rubin (çift chiplet, tek GPU olarak görünür)",
       "vram": "288 GB HBM4 (8 yığın)",
@@ -1364,9 +1379,8 @@ export const chips = [
     "process_node": "TSMC N7 (7nm)",
     "transistor_count": "54.2 milyar (GA100)",
     "die_size": "826 mm²",
-    "image": "foto-f-ga100-0.jpg",
-    "image_credit": "GA100 kalıbı (A100'ün işlemcisi). Fotoğraf: bilinmeyen yazar, CC BY 3.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:GA100_Die_Shot.jpg",
+    "image": "h100.png",
+    "image_credit": "Temsilî görsel — NVIDIA veri merkezi GPU'su",
     "key_specs": {
       "architecture": "Ampere (GA100)",
       "cuda_cores": 6912,
@@ -1452,9 +1466,8 @@ export const chips = [
     "process_node": "TSMC 4N (özel 4nm)",
     "transistor_count": "31.1 milyar (GB205)",
     "die_size": "263 mm²",
-    "image": "foto-nvidia-blackwell-rtx-5070-3.jpg",
-    "image_credit": "RTX 5070 Founders Edition takılı küçük kasa. Fotoğraf: Daniel Lu (User:dllu), CC BY-SA 4.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:KXRORS_S300_SFF_PC_with_GeForce_RTX_5070_Founders_Edition_next_to_NVIDIA_DGX_Spark_2026_dllu.jpg",
+    "image": "rtx-5090.png",
+    "image_credit": "Temsilî görsel — GeForce RTX 50 serisi",
     "key_specs": {
       "architecture": "Blackwell (GB205)",
       "cuda_cores": 6144,
@@ -1538,9 +1551,8 @@ export const chips = [
     "process_node": "TSMC N5 (GCD) + N6 (MCD'ler)",
     "transistor_count": "57.7 milyar (1 GCD + 6 MCD)",
     "die_size": "300 mm² (GCD) + 6 × 37 mm² (MCD)",
-    "image": "foto-amd-rdna3-rx-7900xtx-11.jpg",
-    "image_credit": "Sapphire Radeon RX 7900 XTX. Fotoğraf: Geni, CC BY-SA 4.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Sapphire_AMD_Radeon_RX_7900_XTX.jpg",
+    "image": "rx-9070xt.png",
+    "image_credit": "Temsilî görsel — Radeon ailesi",
     "key_specs": {
       "architecture": "RDNA 3 (Navi 31 — chiplet tabanlı)",
       "compute_units": "96 CU",
@@ -1624,6 +1636,8 @@ export const chips = [
     "process_node": "TSMC N5 (5nm)",
     "transistor_count": "~19.6 milyar (BMG-G21)",
     "die_size": "272 mm²",
+    "image": "arc-b580.png",
+    "image_credit": "Temsilî görsel — Intel Arc B serisi",
     "key_specs": {
       "architecture": "Xe2 (Battlemage, BMG-G21)",
       "compute_units": "18 Xe2 çekirdeği",
@@ -1706,9 +1720,8 @@ export const chips = [
     "process_node": "TSMC N4P (CCD'ler) + N6 (IOD)",
     "transistor_count": "~2 × 8.6 milyar (CCD) + IOD",
     "die_size": "2 × 70.6 mm² (CCD) + 122 mm² (IOD)",
-    "image": "foto-amd-zen5-ryzen-9-9950x3d-0.jpg",
-    "image_credit": "AMD Ryzen 9 9950X3D (inceleme videosundan kare). Fotoğraf: MoreThanTech, CC BY 3.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:AMD_RYZEN_9_9950X3D_-_DOVRESTI_COMPRARLO%C2%BF_(1920p_30fps_VP9_LQ-128kbit_AAC)-00.00.04.000.png",
+    "image": "ryzen-9950x.png",
+    "image_credit": "Temsilî görsel — Ryzen 9000 serisi",
     "key_specs": {
       "architecture": "Zen 5, iki CCD — biri 3D V-Cache'li",
       "cores": 16,
@@ -1792,6 +1805,8 @@ export const chips = [
     "process_node": "TSMC N4 (hesap die'ları) + N6 (I/O die)",
     "transistor_count": "Açıklanmadı (çoklu die)",
     "die_size": "Büyük APU paketi, chiplet tabanlı",
+    "image": "ryzen-9950x.png",
+    "image_credit": "Temsilî görsel — AMD APU",
     "key_specs": {
       "architecture": "Zen 5 CPU + RDNA 3.5 GPU + XDNA 2 NPU, birleşik bellek",
       "cores": 16,
@@ -1876,6 +1891,8 @@ export const chips = [
     "process_node": "TSMC 4N (4nm)",
     "transistor_count": "Açıklanmadı",
     "die_size": "Tek die + paket üstü LPDDR5X",
+    "image": "epyc-9965.png",
+    "image_credit": "Temsilî görsel — sunucu işlemcisi",
     "key_specs": {
       "architecture": "72 × ARM Neoverse V2",
       "cores": 72,
@@ -1956,9 +1973,8 @@ export const chips = [
     "process_node": "Chip ile aynı süreçte, die üzerinde üretilir",
     "transistor_count": "Bit başına 6 transistör (6T hücre)",
     "die_size": "Modern chip'lerde die alanının %30-50'si",
-    "image": "foto-ram-sram-14.jpg",
-    "image_credit": "ZMD U6264 SRAM yongası (1999). Fotoğraf: Procolotor, CC BY-SA 3.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:ZMD_U6264_SRAM_1999.jpg",
+    "image": "ryzen-9950x.png",
+    "image_credit": "Temsilî görsel — SRAM chip üzerinde yer alır",
     "key_specs": {
       "standard": "Standart bir modül değil — işlemci die'ının parçası",
       "architecture": "6 transistörlü hücre (6T), geri beslemeli kilitleyici",
@@ -2037,9 +2053,8 @@ export const chips = [
     "process_node": "1a/1b nm sınıfı DRAM",
     "transistor_count": "Yığın başına milyarlarca hücre",
     "die_size": "8-12 katman dikey istifleme",
-    "image": "foto-ram-hbm3e-0.jpg",
-    "image_credit": "Temsilî: HBM yığınlı GPU paketi — AMD Fiji, ilk nesil HBM (2015). Fotoğraf: C. Spille/pcgameshardware.de, CC BY-SA 4.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:AMD_Fiji_GPU_package_with_GPU,_HBM_memory_and_interposer.jpg",
+    "image": "hbm3e.png",
+    "image_credit": "Temsilî görsel — HBM ailesi",
     "key_specs": {
       "standard": "JEDEC JESD238 (2022)",
       "memory_interface": "Yığın başına 1024-bit",
@@ -2118,6 +2133,8 @@ export const chips = [
     "process_node": "1x nm sınıfı DRAM",
     "transistor_count": "Chip başına milyarlarca hücre",
     "die_size": "Chip başına 8-16 Gb yoğunluk",
+    "image": "gddr7.png",
+    "image_credit": "Temsilî görsel — GDDR ailesi",
     "key_specs": {
       "standard": "JEDEC standardı değil — Micron ve NVIDIA ortak geliştirmesi",
       "data_rate": "19-24 Gbps/pin",
@@ -2196,6 +2213,8 @@ export const chips = [
     "process_node": "TSMC 4N",
     "transistor_count": "Kaynakta belirtilmemiş",
     "die_size": "Kaynakta belirtilmemiş",
+    "image": "rtx-5090.png",
+    "image_credit": "Temsilî görsel — aynı GB202 yongasını kullanan RTX 5090",
     "key_specs": {
       "architecture": "Blackwell",
       "cuda_cores": 24064,
@@ -2243,6 +2262,8 @@ export const chips = [
     "process_node": "TSMC 4N",
     "transistor_count": "Kaynakta belirtilmemiş",
     "die_size": "Kaynakta belirtilmemiş",
+    "image": null,
+    "image_credit": null,
     "key_specs": {
       "architecture": "Ada Lovelace",
       "cuda_cores": 18176,
@@ -2287,6 +2308,8 @@ export const chips = [
     "process_node": "Samsung 8nm",
     "transistor_count": "Kaynakta belirtilmemiş",
     "die_size": "Kaynakta belirtilmemiş",
+    "image": null,
+    "image_credit": null,
     "key_specs": {
       "architecture": "Ampere",
       "cuda_cores": 10752,
@@ -2332,6 +2355,8 @@ export const chips = [
     "process_node": "TSMC 4N (özel 4nm)",
     "transistor_count": "76.3 milyar (AD102)",
     "die_size": "609 mm²",
+    "image": "rtx-5090.png",
+    "image_credit": "Temsilî görsel — NVIDIA veri merkezi kartı",
     "key_specs": {
       "architecture": "Ada Lovelace (AD102)",
       "cuda_cores": 18176,
@@ -2370,6 +2395,8 @@ export const chips = [
     "process_node": "TSMC 4N (özel 4nm)",
     "transistor_count": "35.8 milyar (AD104)",
     "die_size": "294 mm²",
+    "image": "rtx-5090.png",
+    "image_credit": "Temsilî görsel — NVIDIA veri merkezi kartı",
     "key_specs": {
       "architecture": "Ada Lovelace (AD104)",
       "cuda_cores": 7680,
@@ -2405,6 +2432,8 @@ export const chips = [
     "process_node": "Samsung 8N (8nm)",
     "transistor_count": "28.3 milyar (GA102)",
     "die_size": "628 mm²",
+    "image": "rtx-5090.png",
+    "image_credit": "Temsilî görsel — NVIDIA veri merkezi kartı",
     "key_specs": {
       "architecture": "Ampere (GA102)",
       "cuda_cores": 9216,
@@ -2439,6 +2468,8 @@ export const chips = [
     "process_node": "TSMC 12nm FFN",
     "transistor_count": "13.6 milyar (TU104)",
     "die_size": "545 mm²",
+    "image": "rtx-5090.png",
+    "image_credit": "Temsilî görsel — NVIDIA veri merkezi kartı",
     "key_specs": {
       "architecture": "Turing (TU104)",
       "cuda_cores": 2560,
@@ -2474,6 +2505,8 @@ export const chips = [
     "process_node": "TSMC 12nm FFN",
     "transistor_count": "21.1 milyar (GV100)",
     "die_size": "815 mm²",
+    "image": "h100.png",
+    "image_credit": "Temsilî görsel — NVIDIA veri merkezi ailesi",
     "key_specs": {
       "architecture": "Volta (GV100)",
       "cuda_cores": 5120,
@@ -2512,6 +2545,8 @@ export const chips = [
     "process_node": "TSMC N5 + N6 (chiplet)",
     "transistor_count": "153 milyar (toplam, çoklu die)",
     "die_size": "8 XCD + 4 IOD (çoklu die paket)",
+    "image": "mi300x.png",
+    "image_credit": "Temsilî görsel — AMD Instinct ailesi",
     "key_specs": {
       "architecture": "CDNA 3",
       "compute_units": "304 CU",
@@ -2549,9 +2584,8 @@ export const chips = [
     "process_node": "TSMC 4NP (GPU) + TSMC 4N (CPU)",
     "transistor_count": "416 milyar (2 × 208 milyar GPU) + Grace CPU",
     "die_size": "Çoklu die paketi — 4 GPU die + 1 CPU die",
-    "image": "foto-nvidia-grace-blackwell-gb200-0.jpg",
-    "image_credit": "GB200 süper çip kartı, Computex 2024. Fotoğraf: 极客湾Geekerwan, CC BY 3.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:AI%E5%8A%A9%E6%89%8B%E8%83%BD%E5%B8%AE%E6%88%91%E8%B6%85%E9%A2%91%EF%BC%9FCOMPUTEX_NV%E5%B1%95%E5%8C%BA%E4%BD%93%E9%AA%8C_(%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan)_07.png",
+    "image": "blackwell-b200.png",
+    "image_credit": "Temsilî görsel — Blackwell ailesi",
     "kiralama_birimi": {
       "gpu_sayisi": 2,
       "not": "Kiralama fiyatları GPU başına; bu kayıt 2 Blackwell GPU'lu süper chip birimini anlatıyor."
@@ -2634,6 +2668,8 @@ export const chips = [
     "process_node": "TSMC 4N",
     "transistor_count": "80 milyar (H100 die) + Grace CPU",
     "die_size": "814 mm² (GH100) + Grace die",
+    "image": "h100.png",
+    "image_credit": "Temsilî görsel — Hopper ailesi",
     "key_specs": {
       "architecture": "Grace Hopper (1 Grace CPU + 1 H100 GPU)",
       "cpu": "72 çekirdekli Arm Neoverse V2 (Grace)",
@@ -2701,6 +2737,8 @@ export const chips = [
     "process_node": "Samsung 8N (8nm)",
     "transistor_count": "28.3 milyar (GA102)",
     "die_size": "628 mm²",
+    "image": "rtx-5090.png",
+    "image_credit": "Temsilî görsel — NVIDIA profesyonel GPU",
     "key_specs": {
       "architecture": "Ampere (GA102)",
       "cuda_cores": 10752,
@@ -2771,6 +2809,8 @@ export const chips = [
     "process_node": "TSMC 4N (5nm sınıfı)",
     "transistor_count": "76.3 milyar (AD102)",
     "die_size": "609 mm²",
+    "image": "rtx-5090.png",
+    "image_credit": "Temsilî görsel — NVIDIA profesyonel GPU",
     "key_specs": {
       "architecture": "Ada Lovelace (AD102)",
       "cuda_cores": 18176,
@@ -2851,6 +2891,8 @@ export const chips = [
     "process_node": "TSMC N7 (7nm)",
     "transistor_count": "54.2 milyar (GA100)",
     "die_size": "826 mm²",
+    "image": "h100.png",
+    "image_credit": "Temsilî görsel — NVIDIA veri merkezi GPU'su",
     "key_specs": {
       "architecture": "Ampere (GA100, kırpılmış)",
       "cuda_cores": 3804,
@@ -2922,6 +2964,8 @@ export const chips = [
     "process_node": "TSMC N6 (6nm)",
     "transistor_count": "58.2 milyar (2 × 29.1 milyar)",
     "die_size": "Çoklu die — 2 × 724 mm²",
+    "image": "mi300x.png",
+    "image_credit": "Temsilî görsel — AMD Instinct ailesi",
     "key_specs": {
       "architecture": "CDNA 2 (Aldebaran, çift die)",
       "compute_units": "208 CU (2 × 104)",
@@ -3002,6 +3046,8 @@ export const chips = [
     "process_node": "TSMC N6 (6nm)",
     "transistor_count": "29.1 milyar",
     "die_size": "724 mm²",
+    "image": "mi300x.png",
+    "image_credit": "Temsilî görsel — AMD Instinct ailesi",
     "key_specs": {
       "architecture": "CDNA 2 (Aldebaran, tek die)",
       "compute_units": "104 CU",
@@ -3072,6 +3118,8 @@ export const chips = [
     "process_node": "TSMC N3P + N6 (chiplet)",
     "transistor_count": "185 milyar",
     "die_size": "Çoklu die — 8 XCD + 2 IOD",
+    "image": "mi300x.png",
+    "image_credit": "Temsilî görsel — AMD Instinct ailesi",
     "key_specs": {
       "architecture": "CDNA 4",
       "compute_units": "256 CU",
@@ -3140,9 +3188,7 @@ export const chips = [
     "process_node": "TSMC N4P (4nm)",
     "transistor_count": "208 milyar (çift die, iki GB100)",
     "die_size": "~1600 mm² (toplam çift die)",
-    "image": "foto-nvidia-blackwell-b200-1.jpg",
-    "image_credit": "HGX B200 kartı, Computex 2024. Fotoğraf: 极客湾Geekerwan, CC BY 3.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:AI%E5%8A%A9%E6%89%8B%E8%83%BD%E5%B8%AE%E6%88%91%E8%B6%85%E9%A2%91%EF%BC%9FCOMPUTEX_NV%E5%B1%95%E5%8C%BA%E4%BD%93%E9%AA%8C_(%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan)_03.png",
+    "image": "blackwell-b200.png",
     "key_specs": {
       "architecture": "Blackwell (GB100 çift die)",
       "vram": "192 GB HBM3E (180 GB kullanılabilir)",
@@ -3246,9 +3292,7 @@ export const chips = [
     "process_node": "TSMC N4 (özel 4nm, '4N' adlandırması)",
     "transistor_count": "92.2 milyar (GB202)",
     "die_size": "750 mm²",
-    "image": "foto-nvidia-blackwell-rtx-5090-1.jpg",
-    "image_credit": "Palit GeForce RTX 5090 GameRock. Fotoğraf: PantheraLeo1359531, CC BY 4.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Palit_GeForce_RTX_5090_Gamerock_20250530_HOF3879_RAW-Export.png",
+    "image": "rtx-5090.png",
     "key_specs": {
       "architecture": "Blackwell (GB202)",
       "cuda_cores": 21760,
@@ -3345,9 +3389,7 @@ export const chips = [
     "process_node": "TSMC N4 (4nm özel)",
     "transistor_count": "80 milyar",
     "die_size": "814 mm²",
-    "image": "foto-nvidia-hopper-h100-3.jpg",
-    "image_credit": "NVIDIA H100 PCIe kartı. Fotoğraf: 极客湾Geekerwan, CC BY 3.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:NVIDIA_H100_(%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan)_014.png",
+    "image": "h100.png",
     "key_specs": {
       "architecture": "Hopper (GH100)",
       "cuda_cores": 16896,
@@ -3446,9 +3488,7 @@ export const chips = [
     "process_node": "TSMC N4P (4nm)",
     "transistor_count": "53.9 milyar",
     "die_size": "356.5 mm²",
-    "image": "foto-amd-rdna4-rx-9070xt-9.jpg",
-    "image_credit": "Sapphire Pulse Radeon RX 9070 XT. Fotoğraf: Chaddy, CC BY-SA 4.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Sapphire_Pulse_Radeon_RX_9070_XT_-_Seitenansicht.jpg",
+    "image": "rx-9070xt.png",
     "key_specs": {
       "architecture": "RDNA 4 (Navi 48)",
       "compute_units": 64,
@@ -3535,6 +3575,7 @@ export const chips = [
     "process_node": "TSMC N5 + N6 FinFET (çok die)",
     "transistor_count": "153 milyar (toplam paket)",
     "die_size": "Bilgi yok (çok chiplet paketi)",
+    "image": "mi300x.png",
     "key_specs": {
       "architecture": "CDNA 3 (MI300X)",
       "xcd_count": "8 adet GPU XCD (her biri 38 CU)",
@@ -3620,9 +3661,7 @@ export const chips = [
     "process_node": "TSMC N5 (5nm)",
     "transistor_count": "19.6 milyar",
     "die_size": "272 mm²",
-    "image": "foto-intel-battlemage-arc-b580-6.jpg",
-    "image_credit": "Intel Arc B580 Limited Edition. Fotoğraf: Jiahwang, CC0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Intel_Arc_Battlemage_B580_Limited_Edition.jpg",
+    "image": "arc-b580.png",
     "key_specs": {
       "architecture": "Xe2 (Battlemage, BGM-G21)",
       "xe2_cores": 20,
@@ -3708,9 +3747,7 @@ export const chips = [
     "process_node": "TSMC N3E (3nm 2. nesil)",
     "transistor_count": "Bilgi yok (M4 Max SoC'un parçası; yaklaşık 90+ milyar SoC geneli)",
     "die_size": "Bilgi yok",
-    "image": "foto-apple-m4-pro-max-1.jpg",
-    "image_credit": "M4 Max'li MacBook Pro ve M4 Pro'lu Mac mini. Fotoğraf: 极客湾Geekerwan, CC BY 3.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Review_zu_Apple_Hardware_mit_Apple_M4-CPUs_(Geekerwan)_01.png",
+    "image": "m4-max.png",
     "key_specs": {
       "architecture": "Apple GPU (entegre, unified memory)",
       "gpu_cores": 40,
@@ -3801,9 +3838,7 @@ export const chips = [
     "process_node": "TSMC N4 (4nm, CCD'ler) + TSMC N6 (6nm, IOD)",
     "transistor_count": "~19.6 milyar (2 CCD: 2×8.16B + IOD: 3.37B)",
     "die_size": "2× 70.6 mm² (CCD) + 118 mm² (IOD)",
-    "image": "foto-amd-zen5-ryzen-9-9950x-1.jpg",
-    "image_credit": "AMD Ryzen 9 9950X. Fotoğraf: 4300streetcar, CC BY 4.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:AMD_Ryzen_9_9950X_2.jpg",
+    "image": "ryzen-9950x.png",
     "key_specs": {
       "architecture": "Zen 5 (Granite Ridge, AM5)",
       "cores": 16,
@@ -3889,6 +3924,7 @@ export const chips = [
     "process_node": "TSMC N2 (2nm) — CCD'ler için; IOD için TSMC N3P (3nm) bekleniyor",
     "transistor_count": "TBD",
     "die_size": "TBD",
+    "image": "ryzen-10000-zen6.png",
     "key_specs": {
       "architecture": "Zen 6 (Medusa / Olympic Ridge)",
       "cores_per_ccd": "12 (Zen 5'in 8'inden artış — beklenen)",
@@ -3959,6 +3995,7 @@ export const chips = [
     "process_node": "TSMC N3B (hesaplama tile) + TSMC N5P (GPU tile) + TSMC N6 (I/O tile)",
     "transistor_count": "TBD (toplam paket; Intel açıklamamıştır)",
     "die_size": "~257 mm² (toplam paket yaklaşık)",
+    "image": "core-ultra-285k.png",
     "key_specs": {
       "architecture": "Arrow Lake (Lion Cove P-core + Skymont E-core)",
       "p_cores": 8,
@@ -4057,9 +4094,7 @@ export const chips = [
     "process_node": "TSMC N3E (3nm 2. nesil)",
     "transistor_count": "M4 Pro: ~28 milyar / M4 Max: ~92 milyar (tahmini)",
     "die_size": "TBD",
-    "image": "foto-apple-m4-pro-max-1.jpg",
-    "image_credit": "M4 Max'li MacBook Pro ve M4 Pro'lu Mac mini. Fotoğraf: 极客湾Geekerwan, CC BY 3.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Review_zu_Apple_Hardware_mit_Apple_M4-CPUs_(Geekerwan)_01.png",
+    "image": "apple-m4-pro-max.png",
     "key_specs": {
       "m4_pro_cpu_cores": "14 çekirdek (10P + 4E) veya 12 çekirdek varyant",
       "m4_max_cpu_cores": "14 çekirdek (10P + 4E) veya 16 çekirdek (12P + 4E)",
@@ -4154,6 +4189,7 @@ export const chips = [
     "process_node": "TSMC N4P (4nm)",
     "transistor_count": "Bilgi yok",
     "die_size": "Bilgi yok",
+    "image": "snapdragon-x-elite.png",
     "key_specs": {
       "architecture": "Qualcomm Oryon v1 (ARM tabanlı, Nuvia tasarımı)",
       "cores": 12,
@@ -4250,6 +4286,7 @@ export const chips = [
     "process_node": "TSMC N3 (3nm, Zen5c CCD'ler) + TSMC N6 (6nm, IOD)",
     "transistor_count": "TBD (EPYC Turin serisi toplam; çok die paket)",
     "die_size": "TBD",
+    "image": "epyc-9965.png",
     "key_specs": {
       "architecture": "Zen 5c — yüksek yoğunluklu kompakt varyant (Turin Dense)",
       "cores": 192,
@@ -4339,9 +4376,7 @@ export const chips = [
     "process_node": "Üreticiye göre değişir: Samsung 12nm, SK Hynix 10nm, Micron 1β (10nm sınıfı)",
     "transistor_count": "Bilgi yok",
     "die_size": "Bilgi yok",
-    "image": "foto-ram-ddr5-8.jpg",
-    "image_credit": "Micron 32 GB DDR5-5600 SO-DIMM. Fotoğraf: ITEagle Europe - Sebastiaan Broekhoven, CC BY-SA 4.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Micron_32_GB_DDR5-5600_SO-DIMM_-_front_view.jpg",
+    "image": "ddr5.png",
     "key_specs": {
       "jedec_standard": "JESD79-5 (DDR5)",
       "speed_range": "4800–8400 MT/s (JEDEC; overlock ile daha yüksek)",
@@ -4424,9 +4459,7 @@ export const chips = [
     "process_node": "Samsung: 12nm, SK Hynix: 10nm, Micron: 1β/1γ",
     "transistor_count": "Bilgi yok",
     "die_size": "Bilgi yok",
-    "image": "foto-ram-lpddr5x-1.jpg",
-    "image_credit": "LPDDR5X yongalı LPCAMM2 modülü, Computex 2025. Fotoğraf: 4300streetcar, CC BY 4.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Essencore_LPCAMM2_module_on_display_at_Computex_2025.jpg",
+    "image": "lpddr5x.png",
     "key_specs": {
       "jedec_standard": "JESD209-5B (LPDDR5X)",
       "max_speed_jedec": "8533 MT/s",
@@ -4508,9 +4541,7 @@ export const chips = [
     "process_node": "SK Hynix: 1α; Samsung: HBM3E Shinebolt; Micron: 1β — tüm HBM3E üreticileri 10nm altı süreç",
     "transistor_count": "Bilgi yok",
     "die_size": "Bilgi yok",
-    "image": "foto-ram-hbm3e-0.jpg",
-    "image_credit": "Temsilî: HBM yığınlı GPU paketi — AMD Fiji, ilk nesil HBM (2015). Fotoğraf: C. Spille/pcgameshardware.de, CC BY-SA 4.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:AMD_Fiji_GPU_package_with_GPU,_HBM_memory_and_interposer.jpg",
+    "image": "hbm3e.png",
     "key_specs": {
       "jedec_standard": "JESD235 HBM3E",
       "pin_speed_typical": "9.2–9.8 Gbps/pin",
@@ -4594,9 +4625,7 @@ export const chips = [
     "process_node": "Samsung: 12nm, SK Hynix: 1β, Micron: 1β",
     "transistor_count": "Bilgi yok",
     "die_size": "Bilgi yok",
-    "image": "foto-ram-gddr7-6.jpg",
-    "image_credit": "RTX 5090 kartında GDDR7 yongaları (çerçeveli). Fotoğraf: 极客湾Geekerwan (işaretler: PantheraLeo1359531), CC BY 3.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:RTX5090%E2%81%84DLSS4%E6%B7%B1%E5%BA%A6%E8%AF%84%E6%B5%8B%EF%BC%9A%E5%85%A8%E9%9D%A0%E7%A7%91%E6%8A%80%E4%B8%8E%E7%8B%A0%E6%B4%BB%EF%BC%81_(2160p_60fps_VP9-128kbit_AAC)-00.31.23.387_(GDDR7_markings).png",
+    "image": "gddr7.png",
     "key_specs": {
       "jedec_standard": "JESD232 GDDR7",
       "pin_speed_initial": "28–32 Gbps/pin",
@@ -4680,9 +4709,8 @@ export const chips = [
     "process_node": "TSMC 4N (özel 5nm sınıfı)",
     "transistor_count": "76.3 milyar (AD102)",
     "die_size": "608.5 mm²",
-    "image": "foto-nvidia-ada-rtx-4090-2.jpg",
-    "image_credit": "AD102 grafik işlemcisi (RTX 4090). Fotoğraf: Fritzchens Fritz, CC0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Nvidia@5nm@AdaLovelace@AD102@GeForce_RTX_4090@S_TW_2324A1_U2F028.MOW_AD102-301-A1_DSC05020-DSC05082.jpg",
+    "image": "rtx-5090.png",
+    "image_credit": "Temsilî görsel — GeForce ailesi",
     "key_specs": {
       "architecture": "Ada Lovelace (AD102-300)",
       "cuda_cores": 16384,
@@ -4767,6 +4795,8 @@ export const chips = [
     "process_node": "TSMC 4NP (GPU) + TSMC 4N (CPU)",
     "transistor_count": "208 milyar (B300 GPU başına, çift die)",
     "die_size": "Çoklu die paketi — Grace CPU + Blackwell Ultra GPU'lar",
+    "image": "blackwell-b200.png",
+    "image_credit": "Temsilî görsel — Blackwell ailesi",
     "key_specs": {
       "architecture": "Grace Blackwell Ultra (Grace CPU + B300 GPU'lar)",
       "cpu": "72 çekirdekli Arm Neoverse V2 (Grace)",
@@ -4846,9 +4876,8 @@ export const chips = [
     "process_node": "TSMC N3P (3 nm sınıfı)",
     "transistor_count": "Bilgi yok",
     "die_size": "Bilgi yok",
-    "image": "foto-apple-a19-pro-1.jpg",
-    "image_credit": "A19 Pro kullanan iPhone 17 Pro ve Pro Max. Fotoğraf: P1898, CC BY 4.0 — Wikimedia Commons",
-    "image_source": "https://commons.wikimedia.org/wiki/File:Cosmic_Orange_iPhone_17_Pro_Max_2026-08-09_Apple_01.jpg",
+    "image": "apple-m4-pro-max.png",
+    "image_credit": "Temsilî görsel — Apple Silicon ailesi (M4 Pro/Max). A19 Pro'nun kendi fotoğrafı değil.",
     "description": "iPhone 17 Pro ve 17 Pro Max'in SoC'u. A18 Pro ile aynı 2+4 çekirdek düzenini koruyor; kazanç TSMC N3P düğümünden, daha yüksek saatten, 12 GB belleğe çıkıştan ve büyütülmüş önbelleklerden geliyor. Telefonun ilk buhar odası bu chip'in ısısını taşımak için eklendi.",
     "key_specs": {
       "architecture": "Apple Silicon — 2 performans (P) + 4 verimlilik (E) çekirdeği",
@@ -4896,6 +4925,8 @@ export const chips = [
     "process_node": "TSMC N3E (3 nm sınıfı)",
     "transistor_count": "20 milyar",
     "die_size": "105 mm²",
+    "image": "apple-m4-pro-max.png",
+    "image_credit": "Temsilî görsel — Apple Silicon ailesi (M4 Pro/Max). A18 Pro'nun kendi fotoğrafı değil.",
     "description": "iPhone 16 Pro ve 16 Pro Max'in SoC'u. Aynı yılın A18'inden 4.8 milyar transistör ve 15 mm² daha büyük: farkın büyük kısmı daha geniş önbelleklere ve 6 çekirdekli GPU'ya gidiyor.",
     "key_specs": {
       "architecture": "Apple Silicon — 2 performans (P) + 4 verimlilik (E) çekirdeği",
@@ -4940,6 +4971,8 @@ export const chips = [
     "process_node": "Samsung Foundry 4 nm (4LPP+ olduğu bildiriliyor; Google doğrulamadı)",
     "transistor_count": "Bilgi yok",
     "die_size": "Bilgi yok",
+    "image": null,
+    "image_credit": null,
     "description": "Pixel 9 serisinin SoC'u. Google çekirdek yapısını resmî olarak ayrıntılandırmadı; aşağıdaki çekirdek düzeni cihaz üzerinde yapılan incelemelerle tespit edildi. Modem SoC'un içinde değil: ayrı bir Samsung Exynos 5400 chip'i.",
     "key_specs": {
       "architecture": "1× Arm Cortex-X4 @ 3.1 GHz + 3× Cortex-A720 @ 2.6 GHz + 4× Cortex-A520 @ 1.92 GHz (ARMv9.2-A)",
@@ -4986,6 +5019,8 @@ export const chips = [
     "process_node": "TSMC N3E (3 nm sınıfı)",
     "transistor_count": "Bilgi yok",
     "die_size": "124.1 mm²",
+    "image": "snapdragon-x-elite.png",
+    "image_credit": "Temsilî görsel — Qualcomm Oryon ailesi (Snapdragon X Elite). Snapdragon 8 Elite'in kendi fotoğrafı değil.",
     "description": "Qualcomm'un dizüstü Snapdragon X Elite için geliştirdiği Oryon çekirdeklerini telefona taşıyan ilk amiral gemisi SoC'u. Klasik 'büyük-orta-küçük' düzen yerine yalnızca iki tür Oryon çekirdeği var; verim çekirdeği hiç yok. 5G modem chip'in içine gömülü.",
     "key_specs": {
       "architecture": "2× Oryon Prime @ 4.32 GHz + 6× Oryon Performance @ 3.53 GHz (SM8750)",
@@ -5028,6 +5063,8 @@ export const chips = [
     "process_node": "TSMC N6 (6 nm)",
     "transistor_count": "Bilgi yok",
     "die_size": "Bilgi yok",
+    "image": "ryzen-9950x.png",
+    "image_credit": "Temsilî görsel — AMD Ryzen ailesi. Sephiroth'un kendi fotoğrafı değil.",
     "description": "Valve için özel üretilmiş APU. İlk Steam Deck'teki 'Aerith' (Van Gogh, TSMC N7) ile aynı CPU ve GPU yapısına sahip; yalnızca 6 nm'ye küçültüldü ve daha hızlı belleğe bağlandı. Kazanç performans değil verim: aynı iş daha az enerjiyle yapılıyor.",
     "key_specs": {
       "architecture": "4 çekirdek / 8 iş parçacığı Zen 2 + RDNA 2 GPU (özel APU)",
@@ -5071,6 +5108,8 @@ export const chips = [
     "process_node": "TSMC N3E (3 nm sınıfı)",
     "transistor_count": "28 milyar",
     "die_size": "Bilgi yok",
+    "image": "apple-m4-pro-max.png",
+    "image_credit": "Temsilî görsel — Apple M4 ailesi (M4 Pro/Max). Temel M4'ün kendi fotoğrafı değil.",
     "description": "M4 ailesinin temel üyesi; Mac mini, MacBook Air ve iPad Pro'da kullanılıyor. Buradaki değerler Mac mini'deki tam yapılandırmaya ait: 10 CPU ve 10 GPU çekirdeği.",
     "key_specs": {
       "architecture": "4 performans (P) + 6 verimlilik (E) çekirdeği (10 çekirdekli yapılandırma)",
