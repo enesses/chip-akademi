@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-22T07:01:47.766Z",
-  "tarih": "2026-10-22",
+  "guncelleme": "2026-10-23T07:09:08.077Z",
+  "tarih": "2026-10-23",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "dikkat",
-      "zaman": "2026-10-22T06:57:22.605Z"
+      "zaman": "2026-10-23T07:06:58.279Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-22T06:57:22.738Z"
+      "zaman": "2026-10-23T07:06:58.395Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-22T06:57:20.678Z"
+      "zaman": "2026-10-23T07:06:56.589Z"
     },
     {
       "id": "gelistirme",
@@ -33,13 +33,17 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-22T06:57:38.611Z"
+      "zaman": "2026-10-23T07:07:15.091Z"
     }
   ],
   "dikkat": [
     {
       "seviye": "uyarı",
       "metin": "Güvenlik: 5 yüksek seviye bağımlılık açığı var."
+    },
+    {
+      "seviye": "uyarı",
+      "metin": "Güvenlik: src/lib/firebaseAyar.js: gömülü API anahtarı olabilir (1)"
     },
     {
       "seviye": "dikkat",
@@ -49,104 +53,50 @@
   ],
   "oneriler": [
     {
-      "baslik": "Bugün maddelerinde sınıflandırma gerekçesini ve ağırlığını göster",
-      "neden": "src/data/bugun.json'daki her maddede 'neden' ve 'agirlik' (1–3) alanı var, ama src/pages/Bugun.jsx ikisini de göstermiyor (src altında '.neden' yalnızca IcPuanlar/OnayBekleyenler'de geçiyor). Okur, bir haberin neden olumlu sayıldığını ve puana ne kadar etki ettiğini göremiyor.",
-      "etki": "orta",
-      "alan": "arayüz"
-    },
-    {
-      "baslik": "Bugün puan kartına hesap yöntemini (formül ve Σ) ekle",
-      "neden": "bugun.json'da 'yontem' (aciklama, formul, isaretler, uyari, hesap) her gün yazılıyor ama Bugun.jsx bu alanı hiç okumuyor; puan 81 gibi bir sayının nasıl çıktığı sayfada görünmüyor.",
-      "etki": "orta",
-      "alan": "arayüz"
-    },
-    {
-      "baslik": "Vite'i 7.3.6'dan yamalı 7.3.x sürümüne güncelle",
-      "neden": "npm audit bugün vite 7.0.0–7.3.6 için 5 yeni danışma gösteriyor (launch-editor komut yürütme, server.fs.allow atlatma vb.); düzeltme ^7.3.6 aralığında, yalnızca package-lock değişir. Güvenlik ajanı bu yüzden 'dikkat' durumunda.",
-      "etki": "yüksek",
-      "alan": "güvenlik"
-    },
-    {
-      "baslik": "oneri-uygula denetimi güvenliği main'e göre fark olarak değerlendirsin",
-      "neden": "denetle(), güvenlik ajanının genel durumu 'temiz' değilse her öneriyi reddediyor; main'deki @grpc/grpc-js (PR #31 bekliyor) ve vite açıkları yüzünden 13 Ekim'den beri 12 öneri PR'ı (#29–#40) onay bekliyor. Yalnızca dalın yeni eklediği açıklar sayılırsa otomatik birleştirme yeniden çalışır.",
+      "baslik": "Arayüz testi Chromium'u sürüm klasöründen bağımsız bulsun",
+      "neden": "Ortamın Chromium'u 1194'ten 1243'e (chrome-linux64) güncellendi; otomasyon/ui-testi.mjs satır 38'deki sabit chromium-1194 yolu yüzünden test bugün çıkış 2 ('Executable doesn't exist … headless_shell-1194') verdi ve geliştirme raporu test-hatasi gösterdi. Düzeltme PR #45'te; o birleşene kadar her çalıştırma elle geçici bağlantı istiyor.",
       "etki": "yüksek",
       "alan": "otomasyon"
     },
     {
-      "baslik": "Bellek göstergelerine TrendForce'un yeni 4Ç DRAM tahminini işle",
-      "neden": "src/data/bellek_fiyat.json 3 Ekim'den beri değişmedi (iyileştirme ajanı: 19 gün). TrendForce News 20 Ekim'de 4Ç 2026 DRAM sözleşme fiyatlarında ~%20 çeyreklik artış aktardı; kayıtlı değer %10–15. Pazartesi presscenter kontrolünde birincil açıklama doğrulanıp güncellenmeli.",
+      "baslik": "veri-isle sağlayıcı sütunu sayı değilse fiyat girdisini reddetsin",
+      "neden": "otomasyon/veri-isle.mjs:131 şüpheli kontrolü (n.saglayici ?? 0) >= 10 ile yapılıyor. Bugün ilk WebFetch okuması 4. sütuna sağlayıcı sayısı yerine en ucuz sağlayıcının adını ('HyperAI') verdi; 'HyperAI' >= 10 false olduğu için V100 (+%116) ve A4000 (+%290) gibi oynamalar şüpheli kontrolünden sessizce geçerdi. Satırların çoğunda saglayici string ise girdi 'yanlış sütun' diye reddedilmeli.",
+      "etki": "yüksek",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "oneri-uygula denetimi güvenliği main'e göre fark olarak değerlendirsin",
+      "neden": "Hâlâ geçerli: güvenlik ajanı bugün de 5 yüksek bağımlılık açığı ve firebaseAyar.js uyarısıyla 'dikkat' durumunda; bu yüzden 15 öneri PR'ı (#29–#43) onay bekliyor. Yalnızca dalın yeni eklediği açıklar sayılırsa otomatik birleştirme yeniden çalışır.",
+      "etki": "yüksek",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Fiyat tablosunda $/GB sıralamasında $/GB değerini göster",
+      "neden": "src/pages/Prices.jsx'te '$/GB' sıralama düğmesi usd_saat/vram_gb'ye göre sıralıyor ama tabloda bu değer hiçbir sütunda yok; kullanıcı sıranın nedenini göremiyor.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Fiyat aramasında sonuç yoksa boş tablo yerine mesaj göster",
+      "neden": "Prices.jsx'te arama ya da 'En az 5 sağlayıcı' filtresi hiçbir modelle eşleşmezse yalnızca başlık satırı kalan boş tablo görünüyor; rows.length === 0 durumu ele alınmıyor.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Hyperscaler farkı, taahhüt ve spot indirimi verisini tazeleyip Fiyatlar'da göster",
+      "neden": "src/data/gpu_kiralama.json'daki hyperscaler_farki, taahhut_indirimi ve spot_indirimi alanları 8 Ekim'den (#9) beri değişmedi ve hiçbir .jsx dosyasında okunmuyor. Önce getdeploying.com'dan tarihli olarak yeniden okunmalı, sonra ölçüm tarihiyle gösterilmeli.",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Bellek göstergelerine TrendForce'un 4Ç DRAM tahminini işle",
+      "neden": "İyileştirme ajanı: bellek_fiyat.json 20 gündür güncellenmedi. 26 Ekim pazartesi presscenter kontrolünde birincil açıklama doğrulanıp yazılmalı.",
       "etki": "orta",
       "alan": "veri"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-10-22",
-      "oneri": "Vite'i 7.3.6'dan yamalı 7.3.x sürümüne güncelle",
-      "durum": "acik",
-      "pr": 41,
-      "dal": "otomasyon/duzeltme-2026-10-22",
-      "ozet": "npm update vite: package-lock'ta 7.3.6 → 7.3.7, 5 danışma kapandı",
-      "neden": "Korunan dosya (package-lock.json); derleme, tek dosya, arayüz 32/32 geçti, onay bekliyor",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-22",
-      "oneri": "Bugün maddelerinde sınıflandırma gerekçesini ve ağırlığını göster",
-      "durum": "acik",
-      "pr": 42,
-      "dal": "otomasyon/oneri-2026-10-22-1",
-      "ozet": "Her maddenin altında kategori, ağırlık (x/3) ve gerekçe satırı",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js ve vite açıkları yüzünden 'dikkat' (düzeltmeler PR #31, #41), onay bekliyor",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-22",
-      "oneri": "Bugün puan kartına hesap yöntemini (formül ve Σ) ekle",
-      "durum": "acik",
-      "pr": 43,
-      "dal": "otomasyon/oneri-2026-10-22-2",
-      "ozet": "Puan kartında açılır 'Puan nasıl hesaplandı?' bölümü",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js ve vite açıkları yüzünden 'dikkat' (düzeltmeler PR #31, #41), onay bekliyor",
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "Raporda 'izin engeli'ni 'sayfa okunamadı'dan ayır",
-      "durum": "birlesti",
-      "pr": 8,
-      "tarih": "2026-10-08",
-      "kim": "elle"
-    },
-    {
-      "oneri": "Bugün maddelerinde dünkü haberleri tekrar etmeyi engelle",
-      "durum": "birlesti",
-      "pr": 8,
-      "tarih": "2026-10-08",
-      "kim": "elle"
-    },
-    {
-      "oneri": "Bugün sayfasına 'yaklaşan olaylar' kutusu",
-      "durum": "birlesti",
-      "pr": 8,
-      "tarih": "2026-10-08",
-      "kim": "elle"
-    },
-    {
-      "oneri": "Kullanılmayan 22 export'u temizle ya da bağla",
-      "durum": "birlesti",
-      "pr": 8,
-      "tarih": "2026-10-08",
-      "kim": "elle"
-    },
-    {
-      "oneri": "Maliyet puanını daha çok çipe yay",
-      "durum": "birlesti",
-      "pr": 11,
-      "tarih": "2026-10-08",
-      "kim": "elle"
-    },
     {
       "oneri": "Fiyat hareketi kartlarında sağlayıcı sayısını göster",
       "durum": "acik",
@@ -498,7 +448,7 @@
         "braces (GHSA-vfj7-8cjw-p6xm): Yalnızca derleme sırasında Tailwind 3'ün dosya taramasında kullanılıyor; açık, saldırganın glob deseni verebilmesini gerektiriyor ve desenler bizim tailwind.config.js dosyamızdan geliyor. Yayınlanan HTML'de bu kod yok. Yamalı braces sürümü yok; tek çözüm Tailwind 4'e geçiş (ayrı bir iş). — gözden geçirme 2027-01-15"
       ]
     },
-    "kodBulgusu": 0,
+    "kodBulgusu": 1,
     "kapsamNotu": "Uygulama statik olduğu için sunucu tarafı saldırı tespiti kapsam dışıdır. Ölçülen şeyler: bağımlılık açıkları, dosya bütünlüğü, riskli kod desenleri ve HTTP güvenlik başlıkları."
   },
   "iyilestirme": {
@@ -516,14 +466,14 @@
       },
       "kod": {
         "dosyaSayisi": 74,
-        "toplamSatir": 17808,
+        "toplamSatir": 17815,
         "boyutKB": null
       }
     },
     "bulgular": [
       {
         "alan": "veri",
-        "baslik": "Bellek fiyatları 19 gündür güncellenmedi",
+        "baslik": "Bellek fiyatları 20 gündür güncellenmedi",
         "etki": "düşük",
         "otomatik": false,
         "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
@@ -547,18 +497,18 @@
     "adimlar": [
       {
         "ad": "Fiyat verisi",
-        "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 91 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 16 gelmedi (eski fiyat korundu)"
+        "durum": "atlandı",
+        "detay": "bu çalıştırmada fiyat girdisi gelmedi; mevcut veri bugün daha önce işlenmiş"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 81, 1 yaklaşan olay; haber akışına +10"
+        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 33, 1 yaklaşan olay; haber akışına +10"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+8 haber (akışta 201), 1 atlandı: akışta zaten var; bugün toplam 18"
+        "detay": "bugün 16 haber (yalnızca Bugün maddeleri; gelen/haberler.json gelmedi)"
       },
       {
         "ad": "Derleme",
@@ -568,7 +518,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2349 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2702 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -595,11 +545,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-10-06",
-      "durum": "kritik",
-      "dikkat": 2
-    },
     {
       "tarih": "2026-10-07",
       "durum": "temiz",
@@ -664,6 +609,11 @@
       "tarih": "2026-10-22",
       "durum": "dikkat",
       "dikkat": 2
+    },
+    {
+      "tarih": "2026-10-23",
+      "durum": "dikkat",
+      "dikkat": 3
     }
   ]
 }

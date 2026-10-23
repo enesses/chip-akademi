@@ -1,115 +1,115 @@
 {
-  "tarih": "2026-10-22",
-  "derlenme": "22 Ekim 2026",
+  "tarih": "2026-10-23",
+  "derlenme": "23 Ekim 2026",
   "puan": {
-    "etiket": "Çipler toparlandı, yatırım iştahı sürüyor",
-    "yorum": "SOX'un %2'lik toparlanması, Meta'nın harcama aralığını yukarı çekmesi ve Lam ile TI'ın güçlü çeyrekleri talebin sürdüğünü gösteriyor; TSMC'deki ölümcül kaza ve bellek fiyat artışlarının yavaşlaması ise dengeleyici riskler.",
-    "deger": 81
+    "etiket": "Yapay zekâ finansmanı kaygısı çipleri sarstı",
+    "yorum": "SOX'un %6,7'lik çöküşü, Lam Research'ün 2027'ye uzanan tedarik uyarısı ve Meta'nın nakit açığı yatırımcıların yapay zekâ harcamasının nasıl finanse edileceğini sorgulamaya başladığını gösteriyor; Western Digital ve Disco'nun rekor çeyrekleri ise talebin henüz kırılmadığını hatırlatıyor.",
+    "deger": 33
   },
   "ozet": [
-    "21 Ekim, sekiz seanslık kayıp serisinin ardından çip hisselerinde toparlanma günü oldu. Philadelphia Yarı İletken Endeksi %1,97 yükselirken Super Micro'nun yükselttiği gelir beklentisi sunucu üreticilerini, Seul'de de Samsung ve SK hynix'i %5'in üzerinde yukarı taşıdı.",
-    "Toparlanmanın arkasında harcamaların sürdüğüne dair somut veriler var. SpaceX'in yapay zekâ birimi çeyrekte 7,56 milyar dolar gelirle kâra geçti; Meta 2026 yatırım harcaması aralığının alt ucunu 135 milyar dolara çekti. Tesla da çeyreklik yatırımını iki katına çıkararak yıl sonuna 400 MW eğitim kapasitesi hedefliyor.",
-    "Ekipman ve analog tarafında Lam Research %40,2 faaliyet marjıyla rekor kırdı, Texas Instruments geliri %28 artırdı. Buna karşın Lam hissesi beklentilerin çok yüksek olduğu bir ortamda kapanış sonrası düştü; piyasa iyi sonuçtan çok daha fazlasını fiyatlıyor.",
-    "Riskler de masada: TSMC, Kaohsiung'daki Fab 22 inşaatında ölü sayısının dörde çıkmasıyla yeni fab şantiyelerinde çelik işlerini durdurdu. Bellekte DRAM sözleşme fiyat artışının 4. çeyrekte %20'ye yavaşlaması bekleniyor; Micron ise HBM'de 2030'a kadar her yıl yeni nesil vaat ediyor."
-  ],
-  "maddeler": [
-    {
-      "baslik": "Çip endeksi %1,97 yükseldi, Super Micro %9,55 sıçradı",
-      "detay": "Philadelphia Yarı İletken Endeksi 21 Ekim'de %1,97 artışla 11.505,56'dan, Nasdaq %1,05 artışla kapandı. Çeyrek gelir beklentisini 18,5–19,5 milyar dolara yükselten Super Micro %9,55, Dell %5,27 yükseldi.",
-      "kategori": "pozitif",
-      "agirlik": 2,
-      "neden": "Sekiz seanslık satış serisinin ardından talep sinyalleriyle gelen toparlanma.",
-      "kaynak": "Capp Notes",
-      "url": "https://cappnotes.substack.com/p/closing-look-wednesday-october-21"
-    },
-    {
-      "baslik": "SpaceX'in yapay zekâ birimi 7,56 milyar dolar gelirle kâra geçti",
-      "detay": "SpaceX'in 3. çeyrek geliri %161 artışla 14,6 milyar dolar oldu. Anthropic gibi şirketlere işlem gücü kiralayan 'superintelligence' birimi gelirini yaklaşık üçe katlayıp 431 milyon dolar faaliyet kârına geçti.",
-      "kategori": "pozitif",
-      "agirlik": 2,
-      "neden": "Yapay zekâ altyapısına yapılan yatırımın gelire dönüştüğünü gösteren somut bir örnek.",
-      "kaynak": "Benzinga",
-      "url": "https://www.benzinga.com/markets/tech/26/10/62494484/spacex-earnings-chip-stocks-rally-super-micro-sk-hynix"
-    },
-    {
-      "baslik": "Meta 2026 yatırım harcaması aralığını 135–145 milyar dolara çekti",
-      "detay": "Meta 3. çeyrekte geliri %26 artırarak 64,6 milyar dolara çıkardı; çeyreklik yatırım harcaması 34,9 milyar dolar oldu. Yıllık harcama aralığının alt ucu 130 milyardan 135 milyar dolara yükseltildi.",
-      "kategori": "pozitif",
-      "agirlik": 3,
-      "neden": "En büyük alıcılardan birinin yapay zekâ altyapısı harcamasını artırması çip talebini destekler.",
-      "kaynak": "Meta Investor Relations",
-      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx"
-    },
-    {
-      "baslik": "Lam Research rekor marjla çeyreği kapattı",
-      "detay": "Lam'ın Eylül çeyreği geliri 8,22 milyar dolar, GAAP dışı faaliyet marjı %40,2 oldu. Aralık çeyreği için 8,6 milyar dolar ± 400 milyon dolar gelir bekliyor. Hisse buna rağmen kapanış sonrası yaklaşık %6 düştü.",
-      "kategori": "pozitif",
-      "agirlik": 2,
-      "neden": "Çip ekipmanına talep güçlü sürüyor; düşüş, beklentilerin yüksekliğini yansıtıyor.",
-      "kaynak": "Lam Research (SEC 8-K)",
-      "url": "https://www.sec.gov/Archives/edgar/data/0000707549/000070754926000052/lrcx_exhibitx991xq1x2027.htm"
-    },
-    {
-      "baslik": "Texas Instruments geliri %28 arttı",
-      "detay": "TI 3. çeyrekte 6,06 milyar dolar gelir ve 2,62 dolar hisse başı kâr açıkladı. 4. çeyrek için 5,80–6,30 milyar dolar gelir bekliyor; büyüme sanayi, otomotiv ve veri merkezine yayılıyor.",
-      "kategori": "pozitif",
-      "agirlik": 1,
-      "neden": "Analog çiplerde toparlanma yapay zekâ dışındaki talebin de güçlendiğini gösteriyor.",
-      "kaynak": "Texas Instruments (SEC 8-K)",
-      "url": "https://www.sec.gov/Archives/edgar/data/0000097476/000009747626000165/q32026txnex99-eredgar.htm"
-    },
-    {
-      "baslik": "Tesla yatırımını ikiye katladı, 400 MW eğitim gücü hedefliyor",
-      "detay": "Tesla'nın 3. çeyrek geliri 28,05 milyar dolarla yatay kaldı, yatırım harcaması %110 artışla 4,7 milyar dolara çıktı. Şirket yıl sonuna 400 MW eğitim kapasitesi ve 2027 ortasında ilk test çipini hedefliyor.",
-      "kategori": "notr",
-      "agirlik": 1,
-      "neden": "İşlem gücü talebi artıyor ama şirketin kendi çipini yapma planı henüz erken aşamada.",
-      "kaynak": "Investing.com",
-      "url": "https://www.investing.com/news/company-news/tesla-q3-2026-slides-margins-improve-as-capex-doubles-for-ai-push-93CH-4964383"
-    },
-    {
-      "baslik": "TSMC ölümcül kaza sonrası yeni fab şantiyelerinde çelik işini durdurdu",
-      "detay": "Kaohsiung'daki Fab 22 inşaatında yaşanan kazada ölü sayısı dörde çıktı. TSMC, Tayvan'daki yeni fab şantiyelerinde çelik yapı işlerini yüklenicinin iyileştirme planı onaylanana kadar askıya aldı.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "Can kaybı ve kapasite genişlemesinde olası gecikme riski.",
-      "kaynak": "Newsquawk (Focus Taiwan/Taipei Times)",
-      "url": "https://newsquawk.com/headlines/pre-market-taiwanese-and-singaporean-stock-news-tsmc-halts-steel-structure-work-at-new-fab-sites-after-fatal-accident-moodys-upgrades-tsmc-to-aa2-powerchip-seeks-further-10-20-price-hikes-oue-reit-q3-npi-46"
-    },
-    {
-      "baslik": "DRAM sözleşme fiyatlarında artış 4. çeyrekte %20'ye yavaşlıyor",
-      "detay": "TrendForce'a göre 4. çeyrek DRAM sözleşme fiyatlarının çeyreklik %20 artması bekleniyor; bu oran 3. çeyrekte yaklaşık %40, 2. çeyrekte yaklaşık %80'di.",
-      "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Fiyatlar yükselmeye devam ediyor ama ivme azalıyor.",
-      "kaynak": "TrendForce",
-      "url": "https://www.trendforce.com/news/2026/10/20/news-dram-prices-seen-rising-20-qoq-in-4q26-despite-slower-gains-ai-demand-tight-supply-support-outlook/"
-    },
-    {
-      "baslik": "Micron 2030'a kadar her yıl yeni HBM nesli vaat etti",
-      "detay": "Micron 21 Ekim'deki web seminerinde HBM4 (2026), HBM4E (2027), HBM5 (2028), HBM5E (2029) ve HBM6 (2030) yol haritasını paylaştı; 2026 sonunda yaklaşık %20 HBM pazar payı hedefliyor.",
-      "kategori": "pozitif",
-      "agirlik": 1,
-      "neden": "Bellek bant genişliği darboğazına daha hızlı bir yanıt.",
-      "kaynak": "Tech Times",
-      "url": "https://techtimes.com/articles/329350/20261022/micron-maps-annual-hbm-advances-2030-rejects-chinese-density-workaround.htm"
-    },
-    {
-      "baslik": "Kospi %3,29 toparlandı; SK hynix ve Samsung %5'in üzerinde yükseldi",
-      "detay": "Bir gün önce %3,73 düşen Kospi 21 Ekim'de 5.735,67'den kapandı. SK hynix %5,81, Samsung Electronics %5,67, Japonya'da Kioxia %2,82 değer kazandı.",
-      "kategori": "pozitif",
-      "agirlik": 1,
-      "neden": "Bellek devlerindeki satışın en azından bir gün için tersine dönmesi.",
-      "kaynak": "TradingKey",
-      "url": "https://www.tradingkey.com/analysis/stocks/more/262228327-japan-south-korea-stocks-kospi-nikkei-softbank-sk-hynix-samsung-kioxia-tradingkey"
-    }
+    "22 Ekim, yılın en sert çip satışlarından birine sahne oldu. Philadelphia Yarı İletken Endeksi %6,72 düşerek 10.731,98'e indi ve 30 üyesinin tamamı geriledi. Nasdaq %2,60 kaybetti; Nasdaq-100'deki 22 çip ve depolama şirketinin piyasa değeri bir günde yaklaşık 726 milyar dolar eridi, bunun 235 milyar doları Nvidia'dan geldi.",
+    "Tetik iki yerden geldi. Lam Research, bir gün önceki bilanço görüşmesinde tedarik zinciri ve temiz oda kısıtlarının 2027'de de çip üreticilerinin talebi karşılamasını sınırlayabileceğini söyledi; hisse %11,76 düştü ve AMD ile Marvell'i %8'in üzerinde aşağı çekti. Aynı gün Meta, rekor gelire rağmen üçüncü çeyrekte 2,12 milyar dolarlık negatif serbest nakit akışı açıklamasının ardından %7 geriledi; piyasa, yapay zekâ altyapısının borçla ve yeni hisseyle finanse edilmesinin sürdürülebilirliğini sorgulamaya başladı. CoreWeave gibi neocloud şirketlerinin %10'u aşan düşüşü de bu kaygının uzantısıydı.",
+    "Satış 23 Ekim'de Asya'ya taşındı: Kospi %2,4, Nikkei %1,7 düştü; Brent petrolün İran gerginliğiyle 113 doları aşması baskıyı artırdı. SK hynix, Solidigm'in halka arzını durdurduğunu açıklayınca Samsung'dan daha az değer kaybetti.",
+    "Tablonun öbür yüzünde talep sinyalleri hâlâ güçlü: Western Digital gelirini %55 artırıp beklentinin üzerinde rehber verdi, Disco rekor çeyrek kârı açıkladı, DeepSeek 15 milyar dolarlık tur topluyor. Günün sorusu talebin varlığı değil, bu talebin bedelinin kim tarafından ve nasıl ödeneceği."
   ],
   "yaklasan": [
     {
-      "tarih": "2026-10-28",
-      "baslik": "SK hynix 3. çeyrek sonuçları (Seul saatiyle 09:00 öncesi)",
-      "kaynak": "ad-hoc-news",
-      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/sk-hynix-hbm4-outlook-weakens-as-ds-investment-cuts-target-for-sk-hynix-stock/70380928"
+      "tarih": "2026-10-29",
+      "baslik": "Intel 3. çeyrek 2026 sonuçları (piyasa kapanışından sonra)",
+      "kaynak": "Intel",
+      "url": "https://www.intel.com/content/www/us/en/newsroom/news/corporate/intel-reports-third-quarter-2026-financial-results.html"
+    }
+  ],
+  "maddeler": [
+    {
+      "baslik": "Çip endeksi %6,72 çöktü, 30 üyenin tamamı düştü",
+      "detay": "Philadelphia Yarı İletken Endeksi 22 Ekim'de %6,72 düşüşle 10.731,98'e indi; 29 Temmuz'dan beri en düşük seviye. Nvidia %4,40, AMD %8,10, Marvell %8,70, Broadcom %4,31, CoreWeave %10,06 geriledi.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "Sektörün tamamını kapsayan, aylardır görülmemiş büyüklükte bir değer kaybı.",
+      "kaynak": "Capp Notes",
+      "url": "https://cappnotes.substack.com/p/closing-look-thursday-october-22"
+    },
+    {
+      "baslik": "Lam Research'ün tedarik uyarısı çip hisselerini aşağı çekti",
+      "detay": "CFO Doug Bettinger gelirin tedarik kısıtları olmasa daha yüksek olabileceğini, CEO Tim Archer kısıtların 2027'de de sürebileceğini söyledi. LRCX %11, Marvell ve AMD %8, Intel %7 düştü.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Ekipman darboğazı, fab kapasitesinin 2027'ye kadar talebin gerisinde kalabileceğine işaret ediyor.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/10/22/chip-stocks-fall-as-supply-warning-deepens-ai-selloff-marvell-and-amd-sink-8-intel-drops-7/"
+    },
+    {
+      "baslik": "Nasdaq-100'deki çip şirketleri bir günde 726 milyar dolar kaybetti",
+      "detay": "Nasdaq %2,60 düşüşle 26.008,86'ya indi. 22 çip ve depolama şirketinin tamamı düştü; Nvidia tek başına yaklaşık 235 milyar dolar piyasa değeri kaybetti. Meta %6,98, Amazon %4,57 geriledi.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Kayıpların büyük kısmı yapay zekâ ve çip hisselerinde toplandı.",
+      "kaynak": "StockTitan",
+      "url": "https://www.stocktitan.net/articles/why-is-nasdaq-down-today-october-22-2026-ai-chip-stocks"
+    },
+    {
+      "baslik": "Meta'nın nakit açığı yapay zekâ finansmanı kaygısını büyüttü",
+      "detay": "Meta 3. çeyrekte 64,6 milyar dolar gelire karşın 34,91 milyar dolar yatırım harcamasıyla -2,12 milyar dolar serbest nakit akışı açıkladı; 19 Ocak 2027'den itibaren oy hakkı olmayan C sınıfı hisse çıkaracak.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "En büyük alıcılardan birinin harcamasını nakitle karşılayamaması, çip talebinin finansmanını sorgulatıyor.",
+      "kaynak": "XTB",
+      "url": "https://www.xtb.com/en/market-analysis/record-breaking-meta-though-with-a-cash-loss-investors-for-now-are-buying-zuckerberg-s-plan-anyway"
+    },
+    {
+      "baslik": "Satış Asya'ya yayıldı: Kospi %2,4, Nikkei %1,7 düştü",
+      "detay": "23 Ekim'de Kospi 5.403,32'ye, Nikkei 225 61.825,26'ya geriledi. Brent petrol İran gerginliğiyle 113,73 dolara çıktı; ABD 10 yıllık faizi %4,97'ye indi.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Bellek ve ekipman ağırlıklı Asya borsalarına sıçrayan satış ve yükselen enerji maliyeti.",
+      "kaynak": "AP",
+      "url": "https://www.wsls.com/business/2026/10/23/asian-shares-slip-as-sharp-drops-for-ai-stocks-overwhelm-markets-worldwide-and-oil-prices-jump/"
+    },
+    {
+      "baslik": "SK hynix, Solidigm'in halka arzını durdurdu",
+      "detay": "SK hynix, sermaye piyasası koşulları nedeniyle Solidigm'in Nasdaq halka arz sürecini durdurdu. Açılış öncesi SK hynix %1,72, Samsung Electronics %3,73 düştü.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Çifte listeleme belirsizliğini kaldırıyor ama kararın gerekçesi zayıf piyasa koşulları.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/10/23/sk-hynix-falls-less-than-samsung-after-halting-solidigm"
+    },
+    {
+      "baslik": "Western Digital geliri %55 arttı, rehberi 5,1 milyar dolar",
+      "detay": "Western Digital mali 2027'nin ilk çeyreğinde 4,381 milyar dolar gelir, %58,1 non-GAAP brüt marj ve 4,64 dolar hisse başı kâr açıkladı; ikinci çeyrek için 5,1 ± 0,1 milyar dolar gelir bekliyor.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Yapay zekâ veri merkezlerinin depolama talebi gelir ve marja yansıyor.",
+      "kaynak": "Western Digital (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000106040/000162828026066882/a4ex991-pressreleaseq127.htm"
+    },
+    {
+      "baslik": "Disco rekor çeyrek satış ve kâr açıkladı",
+      "detay": "Japon dilimleme/taşlama ekipmanı üreticisi Disco, Temmuz–Eylül'de ¥142,75 milyar satış (%36,4 artış) ve ¥67,61 milyar faaliyet kârı (%52,3 artış) bildirdi; faaliyet marjı %47,4.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "HBM ve gelişmiş paketleme ekipmanına talep güçlü sürüyor.",
+      "kaynak": "TAI Semicon (Disco finansal raporu)",
+      "url": "https://tai-semicon.medium.com/disco-hits-record-quarterly-sales-and-profit-on-ai-chip-demand-oct-23-2026-semiconductor-news-b503a13137c3"
+    },
+    {
+      "baslik": "DeepSeek yaklaşık 15 milyar dolarlık tur topluyor",
+      "detay": "Reuters'a göre DeepSeek, 500 milyar yuan ön değerlemeyle yaklaşık 100 milyar yuan (14,98 milyar dolar) topluyor; CATL ve Tencent en büyük yatırımcılar, 15'ten fazla katılımcı var.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Çin'de yapay zekâ yatırımı hızlanıyor; ABD çipleri için hem talep hem rekabet anlamına geliyor.",
+      "kaynak": "The Star (Reuters)",
+      "url": "https://www.thestar.com.my/business/business-news/2026/10/22/deepseek-wrapping-up-us15bil-fundraising-to-fuel-ai-race"
+    },
+    {
+      "baslik": "Google, Voltus ile 1 GW'lık sanal güç santrali kuruyor",
+      "detay": "Google, PJM bölgesinde Voltus ile yaklaşık üç yıllık bir anlaşmayla 1 GW'lık dağıtık kapasite portföyü oluşturuyor; Haziran'daki 100 MW'lık anlaşmanın genişletilmesi.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Veri merkezlerinin güç darboğazına şebekeye yük bindirmeyen bir çözüm.",
+      "kaynak": "DCD",
+      "url": "https://www.datacenterdynamics.com/en/news/google-signs-1gw-virtual-power-plant-deal-with-voltus/"
     }
   ],
   "yontem": {
@@ -117,6 +117,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = +10 · Σ ağırlık = 16 · Puan = 50 + 50 × 0.63 = 81"
+    "hesap": "Σ ağırlık×işaret = -6 · Σ ağırlık = 18 · Puan = 50 + 50 × -0.33 = 33"
   }
 }

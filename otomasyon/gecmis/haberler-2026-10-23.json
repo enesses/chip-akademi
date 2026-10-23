@@ -1,0 +1,76 @@
+{
+  "tarih": "2026-10-23",
+  "haberler": [
+    {
+      "baslik": "TSMC, Çin mıknatısı içermeyen fab ekipmanı istiyor",
+      "detay": "TSMC tedarikçilerinden nadir toprak mıknatısı içermeyen motorlu otomasyon ekipmanı istedi. Çin, kalıcı mıknatıs üretiminin yaklaşık %95'ini kontrol ediyor; genişletilmiş ihracat kontrolleri 10 Kasım 2026'ya kadar askıda.",
+      "kaynak": "Tom's Hardware (Reuters)",
+      "url": "https://tomshardware.com/tech-industry/semiconductors/tsmc-is-seeking-chipmaking-equipment-that-doesnt-contain-chinese-rare-earth-magnets-asks-suppliers-to-provide-alternative-motors-as-export-controls-threaten-fab-operations",
+      "yayin": "2026-10-22",
+      "konular": [
+        "cip",
+        "politika"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Samsung Electro-Mechanics, Nvidia'nın alt tabaka tedarikçisi oldu",
+      "detay": "Samsung Electro-Mechanics, Nvidia ile yapay zekâ çipleri için paket alt tabaka ortaklığı kurdu; Sejong ve Busan'da Nvidia'ya özel hatlar kurulacak, hacmin yılda %10'un üzerinde büyümesi bekleniyor.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/10/21/nvidia-becomes-key-buyer-of-samsung-electro-mechanics",
+      "yayin": "2026-10-21",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Nscale ve Anthropic ikinci 45 milyar dolarlık anlaşmayı görüşüyor",
+      "detay": "Bloomberg'e göre Nscale, West Virginia'daki Monarch kampüsünün Vera Rubin için planlanan 460 MW'lık ikinci binası için Anthropic'le yaklaşık 45 milyar dolarlık yeni bir anlaşma görüşüyor; Microsoft ana kiracılıktan çekildi.",
+      "kaynak": "The Next Web (Bloomberg)",
+      "url": "https://thenextweb.com/news/nscale-and-anthropic-reportedly-in-talks-over-second-45bn-deal",
+      "yayin": "2026-10-20",
+      "konular": [
+        "veri-merkezi",
+        "yapay-zeka"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Blackstone 8,7 milyar dolarlık enerji geçişi fonunu kapattı",
+      "detay": "Blackstone Energy Transition Partners V, öncekinden yaklaşık %50 büyük 8,7 milyar dolarla kapandı; fon veri merkezi sıvı soğutma bileşenleri üreten Flow Control'ü satın aldı.",
+      "kaynak": "BeBeez",
+      "url": "https://bebeez.eu/2026/10/20/blackstone-closes-latest-energy-transition-fund-at-8-7bn-backs-several-data-center-focused-energy-firms/",
+      "yayin": "2026-10-20",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Kospi 5.400'ün altına indi, Samsung %3,26 düştü",
+      "detay": "23 Ekim öğleden önce Kospi %2,43 düşüşle 5.339,40'a geriledi, 29 Temmuz'dan beri ilk kez 5.400'ün altında. Samsung Electronics %3,26 düşerken SK hynix yalnızca %0,57 geriledi.",
+      "kaynak": "MoneyToday",
+      "url": "https://www.mt.co.kr/index.php/en/stock/2026/10/23/2026102310435318012",
+      "yayin": "2026-10-23",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Google, Arkansas veri merkezi için 440 MW'lık güç anlaşması imzaladı",
+      "detay": "Google, Entergy Arkansas ile West Memphis veri merkezi için 440 MW'lık güç alım anlaşması yaptı ve iki batarya depolama projesini destekleyecek.",
+      "kaynak": "Mission Critical News",
+      "url": "https://missioncriticalconnections.substack.com/p/mission-critical-news-october-22",
+      "yayin": "2026-10-22",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    }
+  ]
+}

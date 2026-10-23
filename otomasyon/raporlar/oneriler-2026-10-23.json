@@ -1,0 +1,47 @@
+{
+  "tarih": "2026-10-23",
+  "oneriler": [
+    {
+      "baslik": "Arayüz testi Chromium'u sürüm klasöründen bağımsız bulsun",
+      "neden": "Ortamın Chromium'u 1194'ten 1243'e (chrome-linux64) güncellendi; otomasyon/ui-testi.mjs satır 38'deki sabit chromium-1194 yolu yüzünden test bugün çıkış 2 ('Executable doesn't exist … headless_shell-1194') verdi ve geliştirme raporu test-hatasi gösterdi. Düzeltme PR #45'te; o birleşene kadar her çalıştırma elle geçici bağlantı istiyor.",
+      "etki": "yüksek",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "veri-isle sağlayıcı sütunu sayı değilse fiyat girdisini reddetsin",
+      "neden": "otomasyon/veri-isle.mjs:131 şüpheli kontrolü (n.saglayici ?? 0) >= 10 ile yapılıyor. Bugün ilk WebFetch okuması 4. sütuna sağlayıcı sayısı yerine en ucuz sağlayıcının adını ('HyperAI') verdi; 'HyperAI' >= 10 false olduğu için V100 (+%116) ve A4000 (+%290) gibi oynamalar şüpheli kontrolünden sessizce geçerdi. Satırların çoğunda saglayici string ise girdi 'yanlış sütun' diye reddedilmeli.",
+      "etki": "yüksek",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "oneri-uygula denetimi güvenliği main'e göre fark olarak değerlendirsin",
+      "neden": "Hâlâ geçerli: güvenlik ajanı bugün de 5 yüksek bağımlılık açığı ve firebaseAyar.js uyarısıyla 'dikkat' durumunda; bu yüzden 15 öneri PR'ı (#29–#43) onay bekliyor. Yalnızca dalın yeni eklediği açıklar sayılırsa otomatik birleştirme yeniden çalışır.",
+      "etki": "yüksek",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Fiyat tablosunda $/GB sıralamasında $/GB değerini göster",
+      "neden": "src/pages/Prices.jsx'te '$/GB' sıralama düğmesi usd_saat/vram_gb'ye göre sıralıyor ama tabloda bu değer hiçbir sütunda yok; kullanıcı sıranın nedenini göremiyor.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Fiyat aramasında sonuç yoksa boş tablo yerine mesaj göster",
+      "neden": "Prices.jsx'te arama ya da 'En az 5 sağlayıcı' filtresi hiçbir modelle eşleşmezse yalnızca başlık satırı kalan boş tablo görünüyor; rows.length === 0 durumu ele alınmıyor.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Hyperscaler farkı, taahhüt ve spot indirimi verisini tazeleyip Fiyatlar'da göster",
+      "neden": "src/data/gpu_kiralama.json'daki hyperscaler_farki, taahhut_indirimi ve spot_indirimi alanları 8 Ekim'den (#9) beri değişmedi ve hiçbir .jsx dosyasında okunmuyor. Önce getdeploying.com'dan tarihli olarak yeniden okunmalı, sonra ölçüm tarihiyle gösterilmeli.",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Bellek göstergelerine TrendForce'un 4Ç DRAM tahminini işle",
+      "neden": "İyileştirme ajanı: bellek_fiyat.json 20 gündür güncellenmedi. 26 Ekim pazartesi presscenter kontrolünde birincil açıklama doğrulanıp yazılmalı.",
+      "etki": "orta",
+      "alan": "veri"
+    }
+  ]
+}
