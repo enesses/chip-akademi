@@ -158,8 +158,9 @@ git push origin HEAD:main
 ```
 
 `.gitignore` `node_modules`, `dist`, `artifact/` ve kök `chip-akademi.html`'i
-dışarıda bırakır; yayın kopyası `docs/index.html`'dir (GitHub Pages açıksa site
-kendiliğinden güncellenir).
+dışarıda bırakır; yayın kopyası `docs/index.html`'dir. `main`'e itince
+`.github/workflows/firebase-yayin.yml` onu https://chip-akademi.web.app adresine
+kendiliğinden yükler; ayrıca bir şey yapma.
 
 ## 6a. Önerileri uygula (en fazla 2)
 

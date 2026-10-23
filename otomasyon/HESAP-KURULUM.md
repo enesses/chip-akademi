@@ -82,5 +82,19 @@ firebase deploy --only hosting
 
 Adres: https://chip-akademi.web.app (ve chip-akademi.firebaseapp.com). Bu iki
 alan Firebase Auth'ta kendiliğinden yetkilidir. Her güncellemede `main`'i çekip
-`firebase deploy --only hosting` yeniden çalıştırılır. Otomatik yayın için:
-`firebase init hosting:github` (GitHub sırrını ve iş akışını kendisi kurar).
+`firebase deploy --only hosting` yeniden çalıştırılır.
+
+### Otomatik yayın (günlük otomasyonla birlikte)
+
+`.github/workflows/firebase-yayin.yml`, `main`'deki `docs/` her değiştiğinde
+siteyi yeniden yükler. Bir kez şu sır eklenir:
+
+1. Firebase konsolu → ⚙ **Proje ayarları → Hizmet hesapları** →
+   **Yeni özel anahtar oluştur** → inen `.json` dosyasını Not Defteri'yle aç,
+   tamamını kopyala.
+2. GitHub → `enesses/chip-akademi` → **Settings → Secrets and variables →
+   Actions → New repository secret** → Ad: `FIREBASE_SERVICE_ACCOUNT`,
+   değer: kopyaladığın JSON → **Add secret**.
+3. Sonra JSON dosyasını bilgisayardan sil (bu anahtar projeye tam erişim verir).
+
+Sır yoksa iş hata vermez, yalnızca yayını atlar.

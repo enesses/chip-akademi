@@ -1,0 +1,37 @@
+# main'e gelen her değişiklikte (günlük otomasyon dahil) docs/ klasörünü
+# Firebase Hosting'e yükler: https://chip-akademi.web.app
+#
+# Tek seferlik kurulum: otomasyon/HESAP-KURULUM.md → "Otomatik yayın".
+# FIREBASE_SERVICE_ACCOUNT sırrı yoksa iş kırmızı yanmaz, yalnızca atlar.
+name: Firebase yayını
+
+on:
+  push:
+    branches: [main]
+    paths: ["docs/**", "firebase.json", ".github/workflows/firebase-yayin.yml"]
+  workflow_dispatch:
+
+concurrency:
+  group: firebase-yayin
+  cancel-in-progress: true
+
+jobs:
+  yayinla:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sır var mı?
+        id: sir
+        env:
+          SIR: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          if [ -n "$SIR" ]; then echo "var=1" >> "$GITHUB_OUTPUT"
+          else echo "::notice::FIREBASE_SERVICE_ACCOUNT sırrı yok; yayın atlandı."; fi
+      - uses: actions/checkout@v4
+        if: steps.sir.outputs.var == '1'
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        if: steps.sir.outputs.var == '1'
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          projectId: chip-akademi
+          channelId: live
