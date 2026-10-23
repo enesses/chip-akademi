@@ -68,3 +68,19 @@ E-posta ayarlanmasa da başvurular Yönetim sayfasında görünür.
   orada da çalışsın diye).
 - Otomasyon sayfasını gizlemek bir arayüz kararıdır: verisi herkese açık GitHub
   deposunda zaten duruyor. Gerçek koruma gereken iş (başvuru onayı) sunucudadır.
+
+## Firebase Hosting ile yayın
+
+Depoda `firebase.json` (yayın klasörü: `docs`) ve `.firebaserc` (proje:
+`chip-akademi`) hazır. Kendi bilgisayarında, deponun klasöründe:
+
+```bash
+npm install -g firebase-tools
+firebase login
+firebase deploy --only hosting
+```
+
+Adres: https://chip-akademi.web.app (ve chip-akademi.firebaseapp.com). Bu iki
+alan Firebase Auth'ta kendiliğinden yetkilidir. Her güncellemede `main`'i çekip
+`firebase deploy --only hosting` yeniden çalıştırılır. Otomatik yayın için:
+`firebase init hosting:github` (GitHub sırrını ve iş akışını kendisi kurar).

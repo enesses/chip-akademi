@@ -32,4 +32,4 @@ export const EMAILJS = null;
 // export const EMAILJS = { serviceId: "service_...", templateId: "template_...", publicKey: "..." };
 
 /** Girişin çalıştığı web adresi (claude.ai yayını dış sunuculara bağlanamaz). */
-export const WEB_ADRESI = "https://enesses.github.io/chip-akademi/";
+export const WEB_ADRESI = "https://chip-akademi.web.app/";
