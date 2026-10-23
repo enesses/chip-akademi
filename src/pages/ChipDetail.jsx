@@ -5,7 +5,6 @@ import icyapi from "@/data/icyapi.json";
 import { chipiKullananCihazlar } from "@/lib/icPuan";
 import { getChipById } from "@/data/chips";
 import { imageUrl, manufacturerColors, formatSpecLabel } from "@/lib/utils";
-import ChipYerTutucu from "@/components/ChipYerTutucu";
 import { scoreChip, rankInClass, verimlilikPuani, maliyetPuani, genelPuan } from "@/lib/chipScore";
 import { cn } from "@/lib/utils";
 
@@ -88,7 +87,11 @@ export default function ChipDetail() {
             {chip.image ? (
               <img src={imageUrl(chip.image)} alt={chip.name} className="w-full aspect-[4/3] object-contain bg-muted" />
             ) : (
-              <div className="w-full aspect-[4/3]"><ChipYerTutucu chip={chip} renk={color} ayrinti /></div>
+              <div className="w-full aspect-[4/3] flex flex-col items-center justify-center gap-2 bg-silicon-grid">
+                <Cpu className="h-10 w-10" style={{ color }} aria-hidden="true" />
+                <p className="font-display font-semibold text-lg" style={{ color }}>{chip.name}</p>
+                <p className="font-mono text-[10px] text-muted-foreground">Görsel yok</p>
+              </div>
             )}
           </div>
           {chip.image_credit && (
