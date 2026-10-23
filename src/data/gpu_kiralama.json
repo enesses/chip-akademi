@@ -95,87 +95,92 @@
     }
   ],
   "hyperscaler_farki": {
-    "not": "Hyperscaler (AWS, Azure, Google Cloud) ile özel GPU bulutlarının medyan on-demand fiyatları.",
+    "tarih": "2026-10-23",
+    "not": "AWS, Azure ve Google Cloud ile diğer GPU bulutlarının on-demand başlangıç fiyatlarının medyanı (sağlayıcı başına en düşük fiyat). Kaynak: getdeploying.com model sayfaları.",
     "satirlar": [
       {
         "model": "Nvidia H100",
-        "gpu_bulutu": 4.24,
-        "hyperscaler": 7.89,
-        "fark_pct": 86
+        "gpu_bulutu": 3.49,
+        "hyperscaler": 6.98,
+        "hyperscaler_sayisi": 3,
+        "fark_pct": 100
       },
       {
         "model": "Nvidia A100",
-        "gpu_bulutu": 2,
-        "hyperscaler": 3.67,
-        "fark_pct": 84
+        "gpu_bulutu": 1.67,
+        "hyperscaler": 3.4,
+        "hyperscaler_sayisi": 3,
+        "fark_pct": 104
       },
       {
         "model": "Nvidia H200",
-        "gpu_bulutu": 4.5,
-        "hyperscaler": 10.44,
+        "gpu_bulutu": 4.67,
+        "hyperscaler": 10.84,
+        "hyperscaler_sayisi": 2,
         "fark_pct": 132
       },
       {
         "model": "Nvidia B200",
-        "gpu_bulutu": 7.88,
-        "hyperscaler": 15.18,
-        "fark_pct": 93
-      }
-    ]
-  },
-  "taahhut_indirimi": {
-    "satirlar": [
-      {
-        "sure": "1 ay",
-        "indirim_pct": -10
+        "gpu_bulutu": 7.58,
+        "hyperscaler": 14.24,
+        "hyperscaler_sayisi": 1,
+        "fark_pct": 88
       },
       {
-        "sure": "3 ay",
-        "indirim_pct": -5
-      },
-      {
-        "sure": "6 ay",
-        "indirim_pct": -17
-      },
-      {
-        "sure": "1 yıl",
-        "indirim_pct": -24
-      },
-      {
-        "sure": "2 yıl",
-        "indirim_pct": -23
-      },
-      {
-        "sure": "3 yıl",
-        "indirim_pct": -45
+        "model": "Nvidia L40S",
+        "gpu_bulutu": 1.55,
+        "hyperscaler": 1.86,
+        "hyperscaler_sayisi": 1,
+        "fark_pct": 20
       }
     ]
   },
   "spot_indirimi": {
-    "not": "Spot fiyatın aynı modelin on-demand fiyatına oranı. Spot kapasitesi kısa sürede geri alınabilir; indirim bu kesinti riskinin bedelidir.",
-    "medyan_oran_pct": 52,
+    "tarih": "2026-10-23",
+    "not": "Spot fiyatın aynı sağlayıcının on-demand fiyatına oranı (sağlayıcılar arası medyan). Spot kapasitesi kısa sürede geri alınabilir; indirim bu kesinti riskinin bedelidir.",
     "satirlar": [
       {
         "model": "Nvidia H100",
-        "oran_pct": 50
+        "oran_pct": 50,
+        "saglayici": 12
       },
       {
         "model": "Nvidia A100",
-        "oran_pct": 50
+        "oran_pct": 71,
+        "saglayici": 10
       },
       {
         "model": "Nvidia H200",
-        "oran_pct": 58
+        "oran_pct": 57,
+        "saglayici": 9
+      },
+      {
+        "model": "Nvidia B200",
+        "oran_pct": 50,
+        "saglayici": 6
       },
       {
         "model": "Nvidia RTX A6000",
-        "oran_pct": 84
+        "oran_pct": 83,
+        "saglayici": 5
       },
       {
         "model": "Nvidia L40",
-        "oran_pct": 82
+        "oran_pct": 82,
+        "saglayici": 4
+      },
+      {
+        "model": "Nvidia L40S",
+        "oran_pct": 50,
+        "saglayici": 8
+      },
+      {
+        "model": "Nvidia RTX 4090",
+        "oran_pct": 52,
+        "saglayici": 3
       }
-    ]
+    ],
+    "medyan_oran_pct": 57
   },
   "iki_gun": {
     "baslangic": "2026-10-22",
@@ -1582,5 +1587,36 @@
       "chip_id": null,
       "url": "https://getdeploying.com/gpus/nvidia-p2000"
     }
-  ]
+  ],
+  "rezerve_indirimi": {
+    "tarih": "2026-10-23",
+    "not": "Rezerve (taahhütlü) fiyatın aynı sağlayıcının on-demand fiyatına oranı, sağlayıcılar arası medyan. Süreye göre ayrım kaynakta artık yayımlanmıyor.",
+    "satirlar": [
+      {
+        "model": "Nvidia H100",
+        "oran_pct": 74,
+        "saglayici": 14
+      },
+      {
+        "model": "Nvidia A100",
+        "oran_pct": 67,
+        "saglayici": 10
+      },
+      {
+        "model": "Nvidia H200",
+        "oran_pct": 75,
+        "saglayici": 7
+      },
+      {
+        "model": "Nvidia RTX A6000",
+        "oran_pct": 72,
+        "saglayici": 4
+      },
+      {
+        "model": "Nvidia L40S",
+        "oran_pct": 69,
+        "saglayici": 5
+      }
+    ]
+  }
 }

@@ -88,6 +88,12 @@ if (fs.existsSync(fiyatGirdi)) {
     const g = oku(fiyatGirdi);
     if (!Array.isArray(g.satirlar) || g.satirlar.length < 30) throw new Error(`satır sayısı yetersiz (${g.satirlar?.length ?? 0})`);
     if (g.tarih !== BUGUN) throw new Error(`girdi bugüne ait değil (${g.tarih})`);
+    // 4. sütun sağlayıcı SAYISI olmalı. Satırların çoğunda metin geliyorsa (ör. en
+    // ucuz sağlayıcının adı "HyperAI") okuma kaymış demektir; şüpheli kontrolü
+    // (saglayici >= 10) metinle sessizce devre dışı kalır, o yüzden girdi reddedilir.
+    const metinSaglayici = g.satirlar.filter((s) => Array.isArray(s) && s[3] != null && typeof s[3] !== "number").length;
+    if (metinSaglayici > g.satirlar.length / 2)
+      throw new Error(`yanlış sütun: ${metinSaglayici}/${g.satirlar.length} satırda sağlayıcı sayı değil (ör. ${JSON.stringify(g.satirlar.find((s) => typeof s?.[3] === "string")?.[3])})`);
 
     const dosya = path.join(DATA, "gpu_kiralama.json");
     const veri = oku(dosya);

@@ -565,10 +565,6 @@ const FIYAT_MAP = (() => {
   return m;
 })();
 
-export function fiyatBilgisi(chip) {
-  return FIYAT_MAP.get(chip.id) ?? null;
-}
-
 // ─── Verimlilik puanı (TFLOPS / W veya GB/s / W) ────────────────────────────
 
 /**

@@ -31,6 +31,7 @@ import Yonetim from "@/pages/Yonetim";
 import YalnizAdmin from "@/components/hesap/YalnizAdmin";
 
 const AdminOtomasyon = () => <YalnizAdmin><Otomasyon /></YalnizAdmin>;
+const AdminHaftalik = () => <YalnizAdmin><Haftalik /></YalnizAdmin>;
 import AramaPaleti from "@/components/nav/AramaPaleti";
 import MobilMenu from "@/components/nav/MobilMenu";
 
@@ -62,7 +63,7 @@ export default function App() {
             <Route path="/bugun" component={Bugun} />
             <Route path="/haberler" component={Haberler} />
             <Route path="/otomasyon" component={AdminOtomasyon} />
-            <Route path="/haftalik" component={Haftalik} />
+            <Route path="/haftalik" component={AdminHaftalik} />
             <Route path="/ai/promptlar" component={Promptlar} />
             <Route path="/ai/skiller" component={Skiller} />
             <Route path="/ai/modeller" component={Modeller} />

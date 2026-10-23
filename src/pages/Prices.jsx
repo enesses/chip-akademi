@@ -23,6 +23,72 @@ const ENDEKS_ESKI_GUN = 14;
 const endeksYasi = (t) => (/^\d{4}-\d{2}-\d{2}$/.test(t || "") ? Math.floor((Date.now() - new Date(`${t}T12:00:00Z`)) / 86400000) : null);
 const anlamli = (it) => it.usd_saat == null || it.onceki_usd == null || Math.abs(it.usd_saat - it.onceki_usd) >= ESIK_USD - 1e-9;
 
+/** Nereden ve nasıl kiralamalı: hyperscaler farkı, spot ve rezerve oranları. */
+function KiralamaTurleri() {
+  const h = data.hyperscaler_farki, sp = data.spot_indirimi, rz = data.rezerve_indirimi;
+  if (!h?.satirlar?.length && !sp?.satirlar?.length) return null;
+  const kisa = (m) => m.replace(/^Nvidia /, "");
+  const oranlar = (sp?.satirlar || []).map((x) => ({ ...x, rezerve: rz?.satirlar?.find((r) => r.model === x.model) }));
+  return (
+    <section className="container mx-auto px-4 pb-10" aria-labelledby="kiralama-turleri" data-testid="kiralama-turleri">
+      <h2 id="kiralama-turleri" className="font-display font-semibold text-xl mb-1">Nereden, nasıl kiralamalı?</h2>
+      <p className="text-sm text-muted-foreground mb-4 max-w-3xl">
+        Aynı GPU büyük bulutlarda (AWS, Azure, Google Cloud) çoğu zaman iki katına yakın; spot ve rezerve kiralama ise on-demand fiyatın altına iner.
+        Ölçüm: <span className="font-mono">{h?.tarih || sp?.tarih}</span>, sağlayıcıların başlangıç fiyatları üzerinden.
+      </p>
+      <div className="grid lg:grid-cols-2 gap-4">
+        {h?.satirlar?.length > 0 && (
+          <div className="rounded-lg border border-card-border bg-card overflow-hidden">
+            <table className="w-full text-sm">
+              <thead className="bg-muted">
+                <tr className="text-left">
+                  <th className="px-4 py-2.5 font-mono text-[10px] uppercase text-muted-foreground">Model</th>
+                  <th className="px-4 py-2.5 font-mono text-[10px] uppercase text-muted-foreground text-right">GPU bulutu</th>
+                  <th className="px-4 py-2.5 font-mono text-[10px] uppercase text-muted-foreground text-right">Hyperscaler</th>
+                  <th className="px-4 py-2.5 font-mono text-[10px] uppercase text-muted-foreground text-right">Fark</th>
+                </tr>
+              </thead>
+              <tbody>
+                {h.satirlar.map((r) => (
+                  <tr key={r.model} className="border-t border-card-border">
+                    <td className="px-4 py-2.5">{kisa(r.model)}</td>
+                    <td className="px-4 py-2.5 font-mono text-right rakam">{usd(r.gpu_bulutu)}</td>
+                    <td className="px-4 py-2.5 font-mono text-right rakam">
+                      {usd(r.hyperscaler)}
+                      {r.hyperscaler_sayisi < 3 && <span className="block font-sans text-[10px] text-muted-foreground">{r.hyperscaler_sayisi} büyük bulut</span>}
+                    </td>
+                    <td className="px-4 py-2.5 font-mono text-right text-red-400 rakam">+%{r.fark_pct}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+        {oranlar.length > 0 && (
+          <div className="rounded-lg border border-card-border bg-card p-4">
+            <div className="flex items-baseline justify-between text-[10px] font-mono uppercase text-muted-foreground mb-2">
+              <span>On-demand fiyatın yüzdesi</span>
+              <span className="inline-flex gap-3"><span className="inline-flex items-center gap-1"><span className="h-2 w-2 bg-primary" />spot</span><span className="inline-flex items-center gap-1"><span className="h-2 w-2 bg-foreground/50" />rezerve</span></span>
+            </div>
+            <ul className="space-y-2.5">
+              {oranlar.map((r) => (
+                <li key={r.model} className="grid grid-cols-[7rem_1fr] gap-3 items-center text-sm">
+                  <span className="truncate">{kisa(r.model)}</span>
+                  <span className="space-y-1">
+                    <span className="flex items-center gap-2"><span className="h-1.5 bg-primary" style={{ width: `${r.oran_pct * 0.8}%` }} /><span className="font-mono text-[11px] rakam">%{r.oran_pct}</span></span>
+                    {r.rezerve && <span className="flex items-center gap-2"><span className="h-1.5 bg-foreground/50" style={{ width: `${r.rezerve.oran_pct * 0.8}%` }} /><span className="font-mono text-[11px] text-muted-foreground rakam">%{r.rezerve.oran_pct}</span></span>}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-[11px] text-muted-foreground mt-3 leading-relaxed">{sp.not}</p>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
+
 export default function Prices() {
   const [q, setQ] = useState("");
   const [sort, setSort] = useState("fiyat");
@@ -110,6 +176,7 @@ export default function Prices() {
         </section>
       )}
 
+      <KiralamaTurleri />
       <BellekFiyatlari />
 
       <section className="container mx-auto px-4 pb-16">
