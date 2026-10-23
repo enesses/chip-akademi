@@ -77,7 +77,7 @@ export default function ChipDetail() {
         <div>
           <div className="rounded-2xl overflow-hidden border border-card-border bg-card">
             {chip.image ? (
-              <img src={imageUrl(chip.image)} alt={chip.name} className="w-full aspect-[4/3] object-cover" />
+              <img src={imageUrl(chip.image)} alt={chip.name} className="w-full aspect-[4/3] object-contain bg-muted" />
             ) : (
               <div className="w-full aspect-[4/3] flex flex-col items-center justify-center gap-2 bg-silicon-grid">
                 <Cpu className="h-10 w-10" style={{ color }} aria-hidden="true" />
@@ -87,7 +87,11 @@ export default function ChipDetail() {
             )}
           </div>
           {chip.image_credit && (
-            <p className="text-[11px] text-muted-foreground mt-2">{chip.image_credit}</p>
+            <p className="text-[11px] text-muted-foreground mt-2 leading-relaxed">
+              {chip.image_source
+                ? <a href={chip.image_source} target="_blank" rel="noopener noreferrer" className="underline decoration-border underline-offset-2 hover:text-foreground">{chip.image_credit}</a>
+                : chip.image_credit}
+            </p>
           )}
         </div>
         <div>
