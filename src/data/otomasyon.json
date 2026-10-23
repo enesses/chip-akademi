@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-23T07:09:08.077Z",
+  "guncelleme": "2026-10-23T07:11:06.522Z",
   "tarih": "2026-10-23",
   "durum": "dikkat",
   "ajanlar": [
@@ -48,7 +48,7 @@
     {
       "seviye": "dikkat",
       "tur": "onay",
-      "metin": "15 öneri onay bekliyor (PR #29, PR #30, PR #31, PR #32, PR #33, PR #34, PR #35, PR #36, PR #37, PR #38, PR #39, PR #40, PR #41, PR #42, PR #43) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+      "metin": "17 öneri onay bekliyor (PR #29, PR #30, PR #31, PR #32, PR #33, PR #34, PR #35, PR #36, PR #37, PR #38, PR #39, PR #40, PR #41, PR #42, PR #43, PR #46, PR #47) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
   "oneriler": [
@@ -95,7 +95,28 @@
       "alan": "veri"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-10-23",
+      "oneri": "Fiyat tablosunda $/GB sıralamasında $/GB değerini göster",
+      "durum": "acik",
+      "pr": 46,
+      "dal": "otomasyon/oneri-2026-10-23-1",
+      "ozet": "$/GB sıralamasında tabloya $/GB·saat sütunu ekleniyor",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki mevcut bağımlılık açıkları yüzünden 'dikkat', onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": "Fiyat aramasında sonuç yoksa boş tablo yerine mesaj göster",
+      "durum": "acik",
+      "pr": 47,
+      "dal": "otomasyon/oneri-2026-10-23-2",
+      "ozet": "Eşleşme yoksa tablonun altında 'Eşleşen model yok' mesajı",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki mevcut bağımlılık açıkları yüzünden 'dikkat', onay bekliyor",
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Fiyat hareketi kartlarında sağlayıcı sayısını göster",
@@ -320,6 +341,20 @@
       "pr": 43,
       "tarih": "2026-10-22",
       "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyat tablosunda $/GB sıralamasında $/GB değerini göster",
+      "durum": "acik",
+      "pr": 46,
+      "tarih": "2026-10-23",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyat aramasında sonuç yoksa boş tablo yerine mesaj göster",
+      "durum": "acik",
+      "pr": 47,
+      "tarih": "2026-10-23",
+      "kim": "otomasyon"
     }
   ],
   "onayBekleyen": [
@@ -427,6 +462,20 @@
       "tarih": "2026-10-22",
       "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js ve vite açıkları yüzünden 'dikkat' (düzeltmeler PR #31, #41), onay bekliyor",
       "dal": "otomasyon/oneri-2026-10-22-2"
+    },
+    {
+      "pr": 46,
+      "oneri": "Fiyat tablosunda $/GB sıralamasında $/GB değerini göster",
+      "tarih": "2026-10-23",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki mevcut bağımlılık açıkları yüzünden 'dikkat', onay bekliyor",
+      "dal": "otomasyon/oneri-2026-10-23-1"
+    },
+    {
+      "pr": 47,
+      "oneri": "Fiyat aramasında sonuç yoksa boş tablo yerine mesaj göster",
+      "tarih": "2026-10-23",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki mevcut bağımlılık açıkları yüzünden 'dikkat', onay bekliyor",
+      "dal": "otomasyon/oneri-2026-10-23-2"
     }
   ],
   "guvenlik": {
