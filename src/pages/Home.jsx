@@ -32,30 +32,43 @@ const ONE_CIKAN = ["nvidia-blackwell-b200", "nvidia-blackwell-rtx-5090", "amd-ze
 
 const usd = (v) => `$${v.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 const pct = (v) => `${v > 0 ? "+" : "−"}%${Math.abs(v).toLocaleString("tr-TR", { maximumFractionDigits: 1 })}`;
-const puanRengi = (p) => (p >= 65 ? "#34d399" : p >= 45 ? "#f59e0b" : "#f87171");
+const puanSinifi = (p) => (p >= 65 ? "text-emerald-400" : p >= 45 ? "text-amber-400" : "text-red-400");
 const DURUM_AD = { temiz: "temiz", dikkat: "dikkat", kritik: "kritik" };
+const DURUM_SINIF = { temiz: "text-emerald-400", dikkat: "text-amber-400", kritik: "text-red-400" };
 
-function BolumBaslik({ children, sag }) {
+/** Numaralı bölüm başlığı: "01 — Başlık" ve altında ince çizgi (datasheet usulü). */
+function BolumBaslik({ no, children, sag, id }) {
   return (
-    <div className="flex items-end justify-between gap-4 mb-6">
-      <h2 className="font-display font-bold text-2xl tracking-tight">{children}</h2>
+    <div className="flex items-end justify-between gap-4 mb-6 pb-3 border-b border-border">
+      <h2 id={id} className="font-display font-semibold text-[22px] tracking-[-0.01em] flex items-baseline gap-3">
+        {no && <span className="font-mono text-xs text-primary font-medium rakam">{no}</span>}
+        {children}
+      </h2>
       {sag}
     </div>
   );
 }
 
-function Etiket({ ikon: Ikon, children, renk = "text-primary" }) {
+function Etiket({ ikon: Ikon, children }) {
   return (
-    <div className={cn("inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.14em] mb-3", renk)}>
-      <Ikon className="h-3.5 w-3.5" aria-hidden="true" />{children}
+    <div className="etiket inline-flex items-center gap-1.5 mb-3">
+      {Ikon && <Ikon className="h-3.5 w-3.5" aria-hidden="true" />}{children}
     </div>
+  );
+}
+
+function OkBaglanti({ href, children }) {
+  return (
+    <Link href={href} className="text-sm font-medium text-foreground inline-flex items-center gap-1 hover:text-primary underline decoration-border underline-offset-4 hover:decoration-primary">
+      {children} <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
+    </Link>
   );
 }
 
 /** Link + Button: tek sekme durağı olsun diye düğme odak sırasından çıkarılır, odak Link'te kalır. */
 function LinkDugme({ href, children, ...p }) {
   return (
-    <Link href={href} className="inline-flex rounded-lg">
+    <Link href={href} className="inline-flex rounded-md">
       <Button tabIndex={-1} {...p}>{children}</Button>
     </Link>
   );
@@ -93,117 +106,139 @@ export default function Home() {
   const dersOrani = Math.round((bitenSayi / lessons.length) * 100);
   const sonraki = lessons.find((l) => !ilerleme.bitti.includes(l.id)) || lessons[0];
 
+  const OZELLIKLER = [
+    ["Çip", chips.length, `en yenisi ${Math.max(...yillar)}`],
+    ["Ders", lessons.length, "sıfırdan, testli"],
+    ["Tasarım bloğu", BLOCKS.length, `${CHIP_TYPES.length} çip tipi`],
+    ["Süreç düğümü", NODES.length, "atölyede seçilebilir"],
+  ];
+
   return (
     <div>
       {/* ------------------------------------------------------------------ hero */}
-      <section className="relative overflow-hidden border-b border-border">
-        <div className="absolute inset-0 bg-silicon-grid opacity-60" aria-hidden="true" />
-        <div className="absolute inset-0 bg-chip-glow" aria-hidden="true" />
-        <div className="relative container mx-auto px-4 py-14 md:py-20 grid lg:grid-cols-[1.15fr_0.85fr] gap-10 items-center">
+      <section className="border-b border-border">
+        <div className="container mx-auto px-4 pt-12 pb-10 md:pt-20 md:pb-14 grid lg:grid-cols-[1.2fr_0.8fr] gap-12 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 backdrop-blur px-3 py-1 font-mono text-[11px] uppercase tracking-[0.12em] text-muted-foreground mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" aria-hidden="true" />
-              {chips.length} çip · 3 kategori · en yenisi {Math.max(...yillar)}
-            </div>
-            <h1 className="font-display font-bold tracking-tight text-[2.6rem] leading-[1.05] sm:text-6xl">
-              Modern bir çipin<br /><span className="text-gradient-cyan">içinde neler var?</span>
+            <p className="etiket flex items-center gap-2 mb-6">
+              <span className="h-px w-6 bg-primary" aria-hidden="true" />
+              Türkçe yarı iletken rehberi
+            </p>
+            <h1 className="font-display font-semibold tracking-[-0.025em] text-[2.6rem] leading-[1.04] sm:text-[3.75rem] max-w-[14ch]">
+              Modern bir çipin içinde neler var?
             </h1>
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Blackwell, Zen 5, Apple M4, HBM3E… Günümüzün en güçlü işlemcilerinin mimarisini, die haritalarını ve teknik özelliklerini
-              Türkçe, görsellerle ve sıfırdan anlatan bir rehber. Okuyup geçmekle kalmayıp <span className="text-foreground">kendi çipini de tasarlayabilirsin</span>.
+            <p className="mt-6 text-[17px] text-muted-foreground leading-relaxed max-w-xl">
+              Blackwell, Zen 5, Apple M4, HBM3E… Günümüzün işlemcilerinin mimarisini, kalıp haritalarını ve teknik özelliklerini
+              Türkçe ve sıfırdan anlatan bir rehber. Okumakla kalmayıp <span className="text-foreground font-medium">kendi çipini de tasarlayabilirsin</span>.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <LinkDugme href="/kategori/GPU" size="lg">GPU'ları keşfet<ArrowRight className="h-4 w-4" /></LinkDugme>
+              <LinkDugme href="/kategori/GPU" size="lg">GPU'ları incele<ArrowRight className="h-4 w-4" /></LinkDugme>
               <LinkDugme href="/egitim" size="lg" variant="outline"><GraduationCap className="h-4 w-4" />Sıfırdan öğren</LinkDugme>
               <LinkDugme href="/tasarla" size="lg" variant="outline"><PenTool className="h-4 w-4" />Çip tasarla</LinkDugme>
             </div>
             <AramaGirisi />
           </div>
-          <HeroDie className="w-full max-w-[420px] mx-auto lg:mx-0 lg:ml-auto" />
+          <div className="relative border border-border bg-card p-4 sm:p-6 rounded-lg">
+            <span className="etiket absolute left-4 top-3">Şekil 1</span>
+            <HeroDie className="w-full max-w-[400px] mx-auto pt-4" />
+          </div>
+        </div>
+        {/* özellik şeridi */}
+        <div className="border-t border-border">
+          <dl className="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4">
+            {OZELLIKLER.map(([ad, deger, alt], i) => (
+              <div key={ad} className={cn("py-5 md:py-6 pr-4", i % 2 === 1 && "pl-4 border-l border-border", i >= 2 && "border-t md:border-t-0 border-border", i === 2 && "md:pl-4 md:border-l")}>
+                <dt className="etiket">{ad}</dt>
+                <dd className="mt-1.5 flex items-baseline gap-2">
+                  <span className="font-mono text-2xl font-medium rakam">{deger}</span>
+                  <span className="text-xs text-muted-foreground">{alt}</span>
+                </dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 
       {/* ------------------------------------------------------------------ günün özeti */}
-      <section className="container mx-auto px-4 py-10" aria-label="Günün özeti">
+      <section className="container mx-auto px-4 pt-14 pb-6" aria-labelledby="ozet-baslik">
+        <BolumBaslik no="01" id="ozet-baslik" sag={<OkBaglanti href="/bugun">Bugün</OkBaglanti>}>Günün özeti</BolumBaslik>
         <div className={cn("grid gap-4", admin ? "md:grid-cols-[1.4fr_1fr_1fr]" : "md:grid-cols-[1.4fr_1fr]")}>
           <Link href="/bugun" asChild>
-            <a className="group rounded-2xl border border-card-border bg-card p-5 hover-elevate flex gap-5 items-start" data-testid="ozet-bugun">
-              <div className="shrink-0 w-20 h-20 rounded-xl flex flex-col items-center justify-center border" style={{ borderColor: `${puanRengi(puan)}55`, background: `${puanRengi(puan)}12` }}>
-                <span className="font-display font-bold text-3xl leading-none" style={{ color: puanRengi(puan) }}>{puan}</span>
-                <span className="font-mono text-[9px] text-muted-foreground mt-1">/ 100</span>
+            <a className="group rounded-lg border border-card-border bg-card p-5 hover-elevate flex gap-5 items-start" data-testid="ozet-bugun">
+              <div className="shrink-0 w-20 h-20 rounded-md flex flex-col items-center justify-center border border-card-border bg-background">
+                <span className={cn("font-mono font-medium text-3xl leading-none rakam", puanSinifi(puan))}>{puan}</span>
+                <span className="font-mono text-[9px] text-muted-foreground mt-1.5">/ 100</span>
               </div>
               <div className="min-w-0">
                 <Etiket ikon={Newspaper}>Bugün · {bugun.derlenme}</Etiket>
                 <p className="font-display font-semibold leading-snug">{bugun.puan?.etiket}</p>
                 <p className="text-sm text-muted-foreground mt-1 line-clamp-2">{bugun.maddeler?.[0]?.baslik}</p>
-                <span className="inline-flex items-center gap-1 text-xs text-primary mt-2 group-hover:gap-2 transition-all">{bugun.maddeler?.length} gelişme <ArrowRight className="h-3 w-3" /></span>
+                <span className="inline-flex items-center gap-1 text-xs font-medium text-primary mt-2">{bugun.maddeler?.length} gelişme <ArrowRight className="h-3 w-3" /></span>
               </div>
             </a>
           </Link>
           <Link href="/fiyatlar" asChild>
-            <a className="group rounded-2xl border border-card-border bg-card p-5 hover-elevate block">
+            <a className="group rounded-lg border border-card-border bg-card p-5 hover-elevate block">
               <Etiket ikon={Layers}>Kiralama · {fiyat.kaynak.cekildigi_tarih}</Etiket>
               {h100 && (
-                <p className="text-sm text-muted-foreground">H100 saati <span className="font-display font-bold text-xl text-foreground ml-1">{usd(h100.usd_saat)}</span></p>
+                <p className="text-sm text-muted-foreground flex items-baseline justify-between">H100 / saat <span className="font-mono font-medium text-xl text-foreground rakam">{usd(h100.usd_saat)}</span></p>
               )}
-              <div className="mt-3 space-y-1.5 text-xs">
-                {artan && <p className="flex items-center gap-1.5"><ArrowUpRight className="h-3.5 w-3.5 text-red-400 shrink-0" /><span className="truncate">{artan.model}</span><span className="ml-auto font-mono text-muted-foreground hidden sm:inline">{artan.onceki_usd != null && `${usd(artan.onceki_usd)} → ${usd(artan.usd_saat)}`}</span><span className="ml-auto sm:ml-0 font-mono text-red-300">{pct(artan.degisim_pct)}</span></p>}
-                {dusen && <p className="flex items-center gap-1.5"><ArrowDownRight className="h-3.5 w-3.5 text-emerald-400 shrink-0" /><span className="truncate">{dusen.model}</span><span className="ml-auto font-mono text-muted-foreground hidden sm:inline">{dusen.onceki_usd != null && `${usd(dusen.onceki_usd)} → ${usd(dusen.usd_saat)}`}</span><span className="ml-auto sm:ml-0 font-mono text-emerald-300">{pct(dusen.degisim_pct)}</span></p>}
+              <div className="mt-3 pt-3 border-t border-dashed border-card-border space-y-1.5 text-xs">
+                {artan && <p className="flex items-center gap-1.5"><ArrowUpRight className="h-3.5 w-3.5 text-red-400 shrink-0" /><span className="truncate">{artan.model}</span><span className="ml-auto font-mono text-muted-foreground hidden sm:inline rakam">{artan.onceki_usd != null && `${usd(artan.onceki_usd)} → ${usd(artan.usd_saat)}`}</span><span className="ml-auto sm:ml-0 font-mono text-red-400 rakam">{pct(artan.degisim_pct)}</span></p>}
+                {dusen && <p className="flex items-center gap-1.5"><ArrowDownRight className="h-3.5 w-3.5 text-emerald-400 shrink-0" /><span className="truncate">{dusen.model}</span><span className="ml-auto font-mono text-muted-foreground hidden sm:inline rakam">{dusen.onceki_usd != null && `${usd(dusen.onceki_usd)} → ${usd(dusen.usd_saat)}`}</span><span className="ml-auto sm:ml-0 font-mono text-emerald-400 rakam">{pct(dusen.degisim_pct)}</span></p>}
               </div>
             </a>
           </Link>
           {admin && (
-          <Link href="/otomasyon" asChild>
-              <a className="group rounded-2xl border border-card-border bg-card p-5 hover-elevate block">
+            <Link href="/otomasyon" asChild>
+              <a className="group rounded-lg border border-card-border bg-card p-5 hover-elevate block">
                 <Etiket ikon={Bot}>Otomasyon · {otomasyon.tarih}</Etiket>
                 <p className="text-sm">Her sabah 10:00'da veriler yenilenir, uygulama gerçek bir tarayıcıda test edilir.</p>
                 <p className="text-xs text-muted-foreground mt-2">
-                  Durum: <span style={{ color: otomasyon.durum === "temiz" ? "#34d399" : otomasyon.durum === "kritik" ? "#f87171" : "#f59e0b" }}>{DURUM_AD[otomasyon.durum] ?? otomasyon.durum}</span>
+                  Durum: <span className={cn("font-medium", DURUM_SINIF[otomasyon.durum] || "text-amber-400")}>{DURUM_AD[otomasyon.durum] ?? otomasyon.durum}</span>
                   {otomasyon.oneriler?.length ? ` · ${otomasyon.oneriler.length} geliştirme önerisi` : ""}
                 </p>
               </a>
             </Link>
           )}
         </div>
+
+        {/* son haberler */}
+        {SON_HABERLER.length > 0 && (
+          <div className="mt-8" data-testid="son-haberler">
+            <div className="flex items-baseline justify-between gap-3 mb-1">
+              <h3 id="son-haberler-baslik" className="etiket">Son haberler</h3>
+              <Link href="/haberler" className="text-xs text-muted-foreground hover:text-foreground inline-flex items-center gap-1">Tüm haberler ({haberAkisi.haberler.length}) <ArrowRight className="h-3 w-3" /></Link>
+            </div>
+            <ul className="divide-y divide-border border-y border-border" aria-labelledby="son-haberler-baslik">
+              {SON_HABERLER.map((h) => (
+                <li key={h.id} className="py-3 grid sm:grid-cols-[9rem_1fr] gap-x-6 gap-y-1 min-w-0">
+                  <p className="font-mono text-[11px] text-muted-foreground pt-0.5 truncate">{h.yayin || h.tarih} · {h.kaynak}</p>
+                  <a href={h.url} target="_blank" rel="noopener noreferrer" className="text-[15px] leading-snug hover:text-primary line-clamp-2">{h.baslik}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </section>
 
-      {/* ------------------------------------------------------------------ son haberler */}
-      {SON_HABERLER.length > 0 && (
-        <section className="container mx-auto px-4 pb-6" aria-labelledby="son-haberler-baslik" data-testid="son-haberler">
-          <div className="flex items-baseline justify-between gap-3 mb-3">
-            <h2 id="son-haberler-baslik" className="font-display font-semibold text-lg inline-flex items-center gap-2"><Newspaper className="h-4 w-4 text-primary" aria-hidden="true" />Son haberler</h2>
-            <Link href="/haberler" className="text-xs text-primary hover:underline inline-flex items-center gap-1">Tüm haberler ({haberAkisi.haberler.length}) <ArrowRight className="h-3 w-3" /></Link>
-          </div>
-          <ul className="grid md:grid-cols-3 gap-3">
-            {SON_HABERLER.map((h) => (
-              <li key={h.id} className="rounded-xl border border-card-border bg-card p-4 min-w-0">
-                <p className="font-mono text-[10px] text-muted-foreground">{h.yayin || h.tarih} · {h.kaynak}</p>
-                <a href={h.url} target="_blank" rel="noopener noreferrer" className="block text-sm font-medium leading-snug mt-1.5 hover:text-primary line-clamp-3">{h.baslik}</a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
       {/* ------------------------------------------------------------------ bölüm rehberi */}
-      <BolumRehberi />
+      <BolumRehberi no="02" />
 
       {/* ------------------------------------------------------------------ kategoriler */}
       <section className="container mx-auto px-4 py-10">
-        <BolumBaslik>Kategoriye göre keşfet</BolumBaslik>
-        <div className="grid md:grid-cols-3 gap-4">
+        <BolumBaslik no="03">Kategoriye göre incele</BolumBaslik>
+        <div className="grid md:grid-cols-3 gap-px bg-border border border-border rounded-lg overflow-hidden">
           {KATEGORILER.map((k) => (
             <Link key={k.id} href={`/kategori/${k.id}`} asChild>
-              <a className="group relative rounded-2xl border border-card-border bg-card p-6 hover-elevate overflow-hidden block" data-testid={`kategori-${k.id}`}>
-                <div className="absolute -right-10 -top-10 w-40 h-40 rounded-full bg-primary/5 blur-2xl group-hover:bg-primary/10 transition-colors" aria-hidden="true" />
-                <div className="relative flex items-start justify-between">
-                  <span className="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center"><k.ikon className="h-5 w-5" aria-hidden="true" /></span>
-                  <span className="font-mono text-[11px] text-muted-foreground tracking-wider">{sayilar[k.id]} ÜRÜN</span>
+              <a className="group bg-card p-6 hover-elevate block" data-testid={`kategori-${k.id}`}>
+                <div className="flex items-start justify-between">
+                  <k.ikon className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" aria-hidden="true" />
+                  <span className="font-mono text-[11px] text-muted-foreground rakam">{String(sayilar[k.id]).padStart(2, "0")} ürün</span>
                 </div>
-                <h3 className="relative font-display font-bold text-xl mt-5">{k.ad}</h3>
-                <p className="relative font-mono text-[10px] uppercase tracking-[0.14em] text-muted-foreground mt-1">{k.alt}</p>
-                <p className="relative text-sm text-muted-foreground mt-3 leading-relaxed">{k.metin}</p>
-                <span className="relative inline-flex items-center gap-1 text-sm text-primary mt-4 group-hover:gap-2 transition-all">Keşfet <ArrowRight className="h-3.5 w-3.5" /></span>
+                <h3 className="font-display font-semibold text-2xl tracking-[-0.01em] mt-8">{k.ad}</h3>
+                <p className="etiket mt-1">{k.alt}</p>
+                <p className="text-sm text-muted-foreground mt-3 leading-relaxed">{k.metin}</p>
+                <span className="inline-flex items-center gap-1 text-sm font-medium mt-5 group-hover:text-primary transition-colors">İncele <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" /></span>
               </a>
             </Link>
           ))}
@@ -212,94 +247,93 @@ export default function Home() {
 
       {/* ------------------------------------------------------------------ öne çıkanlar */}
       <section className="container mx-auto px-4 py-10">
-        <BolumBaslik sag={<Link href="/karsilastir" className="text-sm text-primary inline-flex items-center gap-1 hover:gap-2 transition-all">Karşılaştır <ArrowRight className="h-3.5 w-3.5" /></Link>}>
-          Öne çıkanlar
-        </BolumBaslik>
+        <BolumBaslik no="04" sag={<OkBaglanti href="/karsilastir">Karşılaştır</OkBaglanti>}>Öne çıkanlar</BolumBaslik>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {oneCikanlar.map((c) => <ChipCard key={c.id} chip={c} />)}
         </div>
       </section>
 
       {/* ------------------------------------------------------------------ eğitim */}
-      <section className="container mx-auto px-4 py-6">
-        <div className="relative rounded-3xl border border-primary/25 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent" aria-hidden="true" />
-          <div className="relative p-7 md:p-10 grid md:grid-cols-[1fr_auto] gap-8 items-center">
-            <div>
-              <Etiket ikon={GraduationCap}>Eğitim</Etiket>
-              <h2 className="font-display font-bold text-2xl md:text-3xl tracking-tight">Hiç bilmiyorsan da olur — <span className="text-gradient-cyan">sıfırdan başla.</span></h2>
-              <p className="text-muted-foreground mt-3 max-w-2xl leading-relaxed">
-                Transistörden mantık kapılarına, litografiden chiplet'lere kadar {lessons.length} ders. Her dersin sonunda kısa bir test,
-                hepsinin sonunda da seviyeni ölçen 20 soruluk bir sınav.
-              </p>
-              <div className="flex flex-wrap gap-2 mt-5">
-                {lessons.slice(0, 6).map((l) => (
-                  <Link key={l.id} href={`/egitim/${l.id}`} className={cn("font-mono text-[11px] px-2.5 py-1 rounded-md border bg-background/40 hover:text-foreground hover:border-primary/40",
-                    ilerleme.bitti.includes(l.id) ? "border-emerald-500/40 text-emerald-300" : "border-border text-muted-foreground")}>
-                    {l.title.split(/[:?—]/)[0].trim()}
-                  </Link>
-                ))}
-              </div>
+      <section className="container mx-auto px-4 py-10">
+        <BolumBaslik no="05">Eğitim</BolumBaslik>
+        <div className="grid md:grid-cols-[1fr_20rem] gap-8 items-start">
+          <div>
+            <h3 className="font-display font-semibold text-2xl md:text-[28px] tracking-[-0.015em] leading-tight max-w-xl">Hiç bilmiyorsan da olur — sıfırdan başla.</h3>
+            <p className="text-muted-foreground mt-3 max-w-2xl leading-relaxed">
+              Transistörden mantık kapılarına, litografiden chiplet'lere kadar {lessons.length} ders. Her dersin sonunda kısa bir test,
+              hepsinin sonunda da seviyeni ölçen 20 soruluk bir sınav.
+            </p>
+            <ol className="mt-6 grid sm:grid-cols-2 gap-x-6 border-t border-border">
+              {lessons.slice(0, 6).map((l, i) => {
+                const bitti = ilerleme.bitti.includes(l.id);
+                return (
+                  <li key={l.id} className="border-b border-border">
+                    <Link href={`/egitim/${l.id}`} className="group flex items-baseline gap-3 py-2.5 text-sm">
+                      <span className="font-mono text-[11px] text-muted-foreground rakam w-5">{String(i + 1).padStart(2, "0")}</span>
+                      <span className={cn("flex-1 group-hover:text-primary", bitti && "text-muted-foreground line-through decoration-border")}>{l.title.split(/[:?—]/)[0].trim()}</span>
+                      {bitti && <span className="font-mono text-[10px] text-emerald-400">✓</span>}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
+          <div className="rounded-lg border border-card-border bg-card p-5">
+            <div className="flex items-baseline justify-between">
+              <p className="etiket">İlerlemen</p>
+              <p className="font-mono text-sm rakam">{bitenSayi}/{lessons.length}</p>
             </div>
-            <div className="rounded-2xl border border-card-border bg-card/80 p-5 w-full md:w-72">
-              <div className="flex items-baseline justify-between">
-                <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">İlerlemen</p>
-                <p className="font-display font-bold">{bitenSayi}/{lessons.length}</p>
-              </div>
-              <div className="h-2 rounded-full bg-muted/50 mt-2 overflow-hidden" role="progressbar" aria-valuenow={dersOrani} aria-valuemin={0} aria-valuemax={100} aria-label="Ders ilerlemesi">
-                <div className="h-full rounded-full bg-primary transition-all" style={{ width: `${dersOrani}%` }} />
-              </div>
-              <p className="text-xs text-muted-foreground mt-3">{hepsiBitti ? "Bütün dersler bitti" : "Sıradaki ders"}</p>
-              <p className="text-sm font-medium leading-snug mt-0.5">{hepsiBitti ? "Seviyeni ölçmenin zamanı geldi." : sonraki.title}</p>
-              <div className="mt-4 [&>span]:flex [&_button]:w-full">
-                <LinkDugme href={hepsiBitti ? "/sinav" : `/egitim/${sonraki.id}`}>
-                  {bitenSayi === 0 ? "Eğitime başla" : hepsiBitti ? "Seviye sınavına gir" : "Devam et"}<ArrowRight className="h-4 w-4" />
-                </LinkDugme>
-              </div>
+            <div className="h-1.5 bg-muted mt-3 overflow-hidden" role="progressbar" aria-valuenow={dersOrani} aria-valuemin={0} aria-valuemax={100} aria-label="Ders ilerlemesi">
+              <div className="h-full bg-primary transition-all" style={{ width: `${dersOrani}%` }} />
+            </div>
+            <p className="text-xs text-muted-foreground mt-4">{hepsiBitti ? "Bütün dersler bitti" : "Sıradaki ders"}</p>
+            <p className="text-sm font-medium leading-snug mt-0.5">{hepsiBitti ? "Seviyeni ölçmenin zamanı geldi." : sonraki.title}</p>
+            <div className="mt-4 [&>span]:flex [&_button]:w-full">
+              <LinkDugme href={hepsiBitti ? "/sinav" : `/egitim/${sonraki.id}`}>
+                {bitenSayi === 0 ? "Eğitime başla" : hepsiBitti ? "Seviye sınavına gir" : "Devam et"}<ArrowRight className="h-4 w-4" />
+              </LinkDugme>
             </div>
           </div>
         </div>
       </section>
 
       {/* ------------------------------------------------------------------ atölye + karşılaştır */}
-      <section className="container mx-auto px-4 py-6 grid lg:grid-cols-2 gap-4">
-        <div className="relative rounded-3xl border border-purple-500/25 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-transparent" aria-hidden="true" />
-          <div className="relative p-7 md:p-8 h-full flex flex-col">
-            <Etiket ikon={PenTool} renk="text-purple-300">Tasarım atölyesi</Etiket>
-            <h2 className="font-display font-bold text-2xl tracking-tight">Kendi çipini tasarla.</h2>
+      <section className="container mx-auto px-4 py-10">
+        <BolumBaslik no="06">Araçlar</BolumBaslik>
+        <div className="grid lg:grid-cols-2 gap-px bg-border border border-border rounded-lg overflow-hidden">
+          <div className="bg-card p-7 md:p-8 flex flex-col">
+            <Etiket ikon={PenTool}>Tasarım atölyesi</Etiket>
+            <h3 className="font-display font-semibold text-2xl tracking-[-0.01em]">Kendi çipini tasarla.</h3>
             <p className="text-muted-foreground mt-3 leading-relaxed">
-              CPU mu, GPU mu, mobil SoC mu yoksa AI hızlandırıcı mı? Tipini ve süreç düğümünü seç, blokları die ızgarasına sürükle.
+              CPU mu, GPU mu, mobil SoC mu yoksa AI hızlandırıcı mı? Tipini ve süreç düğümünü seç, blokları kalıp ızgarasına sürükle.
               Alan, güç, üretim verimi ve maliyet anında hesaplansın; beş danışman nerede iyileştirebileceğini söylesin.
             </p>
-            <div className="flex flex-wrap gap-2 mt-5">
-              {[`${CHIP_TYPES.length} çip tipi`, `${BLOCKS.length} blok`, `${NODES.length} süreç düğümü`, "5 danışman", "Isı haritası"].map((t) => (
-                <span key={t} className="font-mono text-[11px] px-2.5 py-1 rounded-md border border-border bg-background/40 text-muted-foreground">{t}</span>
+            <ul className="flex flex-wrap gap-x-4 gap-y-1 mt-5 font-mono text-[11px] text-muted-foreground">
+              {[`${CHIP_TYPES.length} çip tipi`, `${BLOCKS.length} blok`, `${NODES.length} süreç düğümü`, "5 danışman", "ısı haritası"].map((t) => (
+                <li key={t} className="before:content-['—'] before:mr-1.5 before:text-border">{t}</li>
               ))}
-            </div>
-            <div className="mt-auto pt-6 flex flex-wrap items-center gap-4">
+            </ul>
+            <div className="mt-auto pt-7 flex flex-wrap items-center gap-4">
               <LinkDugme href="/tasarla">Tasarlamaya başla<ArrowRight className="h-4 w-4" /></LinkDugme>
               {ilerleme.tasarim > 0 && <Link href="/atolye" className="text-sm text-muted-foreground hover:text-foreground">{ilerleme.tasarim} kayıtlı tasarımın →</Link>}
             </div>
           </div>
-        </div>
-        <div className="relative rounded-3xl border border-card-border bg-card overflow-hidden">
-          <div className="relative p-7 md:p-8 h-full flex flex-col">
+          <div className="bg-card p-7 md:p-8 flex flex-col">
             <Etiket ikon={Scale}>Karşılaştır</Etiket>
-            <h2 className="font-display font-bold text-2xl tracking-tight">Yan yana koy, farkı gör.</h2>
+            <h3 className="font-display font-semibold text-2xl tracking-[-0.01em]">Yan yana koy, farkı gör.</h3>
             <p className="text-muted-foreground mt-3 leading-relaxed">
               Yedi çipe kadar aynı tabloda; her ölçütte en iyisi işaretlenir. Kendi tasarımını da ekleyip gerçek bir H100 ya da Ryzen ile
               transistör, yoğunluk ve watt başına verim üzerinden kıyaslayabilirsin.
             </p>
-            <div className="mt-5 grid grid-cols-3 gap-2 text-center">
+            <dl className="mt-5 grid grid-cols-3 border-y border-border divide-x divide-border">
               {[["7", "çipe kadar"], ["5", "fiziksel ölçüt"], ["17", "tasarım ölçütü"]].map(([s, e]) => (
-                <div key={e} className="rounded-xl border border-border bg-background/40 py-3">
-                  <p className="font-display font-bold text-xl">{s}</p>
-                  <p className="font-mono text-[10px] text-muted-foreground uppercase tracking-wider">{e}</p>
+                <div key={e} className="py-3 px-3 first:pl-0">
+                  <dd className="font-mono text-xl font-medium rakam">{s}</dd>
+                  <dt className="text-[11px] text-muted-foreground">{e}</dt>
                 </div>
               ))}
-            </div>
-            <div className="mt-auto pt-6">
+            </dl>
+            <div className="mt-auto pt-7">
               <LinkDugme href="/karsilastir" variant="outline">Karşılaştırmayı aç<ArrowRight className="h-4 w-4" /></LinkDugme>
             </div>
           </div>
@@ -307,17 +341,17 @@ export default function Home() {
       </section>
 
       {/* ------------------------------------------------------------------ nasıl kullanılır */}
-      <section className="container mx-auto px-4 py-14">
-        <BolumBaslik>Site nasıl kullanılır?</BolumBaslik>
-        <ol className="grid md:grid-cols-3 gap-4">
+      <section className="container mx-auto px-4 py-10">
+        <BolumBaslik no="07">Site nasıl kullanılır?</BolumBaslik>
+        <ol className="grid md:grid-cols-3 gap-8">
           {[
             ["Kategori seç", "GPU, CPU ya da bellek — incelemek istediğin alanı seç ve listeden bir çip aç."],
-            ["Die haritasına tıkla", "Çip sayfasında görselin üzerindeki renkli bölgelere tıklayarak her bileşenin ne işe yaradığını öğren."],
+            ["Kalıp haritasına tıkla", "Çip sayfasında görselin üzerindeki renkli bölgelere tıklayarak her bileşenin ne işe yaradığını öğren."],
             ["Dene ve kıyasla", "Atölye'de kendi çipini kur, Karşılaştır'da gerçek çiplerle yan yana koy, bilmediğin terimi Sözlük'te ara."],
           ].map(([b, m], i) => (
-            <li key={b} className="rounded-2xl border border-card-border bg-card p-6">
-              <span className="font-mono text-xs text-primary">0{i + 1}</span>
-              <h3 className="font-display font-semibold text-lg mt-2">{b}</h3>
+            <li key={b} className="border-t-2 border-foreground pt-4">
+              <span className="font-mono text-xs text-muted-foreground rakam">Adım {i + 1}</span>
+              <h3 className="font-display font-semibold text-lg mt-1">{b}</h3>
               <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{m}</p>
             </li>
           ))}

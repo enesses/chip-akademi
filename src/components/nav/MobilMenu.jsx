@@ -41,7 +41,7 @@ export default function MobilMenu() {
     <div className="md:hidden">
       {grup && (
         <div className="fixed inset-0 z-50" role="dialog" aria-modal="true" aria-label={`${grup.ad} bölümleri`}>
-          <div className="absolute inset-0 bg-background/70 backdrop-blur-sm" onClick={() => setAcikGrup(null)} aria-hidden="true" />
+          <div className="absolute inset-0 bg-black/40" onClick={() => setAcikGrup(null)} aria-hidden="true" />
           <div
             ref={sayfa}
             className="alt-sayfa absolute inset-x-0 bottom-0 rounded-t-2xl border-t border-card-border bg-card px-4 pt-3"
@@ -50,7 +50,7 @@ export default function MobilMenu() {
             <div className="mx-auto mb-3 h-1 w-10 rounded-full bg-muted" aria-hidden="true" />
             <div className="flex items-start justify-between gap-3 mb-3">
               <div>
-                <p className="font-display font-bold text-lg">{grup.ad}</p>
+                <p className="font-display font-semibold text-lg">{grup.ad}</p>
                 <p className="text-xs text-muted-foreground mt-0.5">{grup.ozet}</p>
               </div>
               <button
@@ -95,7 +95,7 @@ export default function MobilMenu() {
 
       <nav
         aria-label="Bölümler"
-        className="fixed inset-x-0 bottom-0 z-[55] border-t border-border bg-background/90 backdrop-blur-md"
+        className="fixed inset-x-0 bottom-0 z-[55] border-t border-border bg-background"
         style={{ paddingBottom: "env(safe-area-inset-bottom, 0px)" }}
       >
         <div className="grid" style={{ gridTemplateColumns: `repeat(${GRUPLAR.length + 1}, minmax(0, 1fr))` }}>

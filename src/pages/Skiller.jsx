@@ -137,12 +137,12 @@ export default function Skiller() {
   }, []);
 
   return (
-    <div className="bg-silicon-grid min-h-[80vh]">
+    <div className="min-h-[80vh]">
       <section className="container mx-auto px-4 pt-12 pb-6">
         <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-primary mb-3">
           <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />AI Araçları
         </div>
-        <h1 className="font-display text-3xl sm:text-4xl font-bold tracking-tight">Claude skill'leri</h1>
+        <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em]">Claude skill'leri</h1>
         <p className="text-muted-foreground mt-2 max-w-2xl">
           Skill, Claude'a bir işi nasıl yapacağını öğreten bir talimat paketidir. Bir kez yüklersin; o işi istediğinde
           Claude talimatları kendisi açar ve her seferinde aynı kaliteyle yapar. Prompt'u her seferinde yapıştırmana gerek kalmaz.
@@ -163,7 +163,7 @@ export default function Skiller() {
           <ol className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {ADIMLAR.map((x, i) => (
               <li key={x.b} className="flex gap-3">
-                <span className="w-7 h-7 rounded-full border border-primary/50 text-primary text-sm font-semibold flex items-center justify-center shrink-0 tabular-nums">{i + 1}</span>
+                <span className="w-7 h-7 rounded-sm border border-primary/50 text-primary text-sm font-semibold flex items-center justify-center shrink-0 tabular-nums">{i + 1}</span>
                 <div>
                   <p className="text-sm font-medium">{x.b}</p>
                   <p className="text-xs text-muted-foreground mt-0.5 leading-relaxed">{x.a}</p>

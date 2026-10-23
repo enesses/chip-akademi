@@ -118,12 +118,12 @@ export default function AramaPaleti() {
       className="fixed inset-0 z-[60] flex items-start justify-center px-4 pt-[10vh] sm:pt-[14vh]"
       style={{ paddingTop: "max(10vh, env(safe-area-inset-top, 0px))" }}
     >
-      <div className="absolute inset-0 bg-background/70 backdrop-blur-sm" onClick={() => setAcik(false)} aria-hidden="true" />
+      <div className="absolute inset-0 bg-black/40" onClick={() => setAcik(false)} aria-hidden="true" />
       <div
         role="dialog"
         aria-modal="true"
         aria-label="Hızlı arama"
-        className="arama-panel relative w-full max-w-xl rounded-2xl border border-card-border bg-card shadow-2xl shadow-black/50 overflow-hidden"
+        className="arama-panel relative w-full max-w-xl rounded-2xl border border-card-border bg-card shadow-[0_24px_60px_-20px_rgba(0,0,0,0.35)] overflow-hidden"
       >
         <div className="flex items-center gap-3 px-4 border-b border-card-border">
           <Search className="h-4 w-4 text-primary shrink-0" aria-hidden="true" />

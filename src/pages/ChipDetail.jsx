@@ -32,7 +32,7 @@ function PuanKarti({ ikon: Ikon, baslik, altyazi, puan, renk, aciklama, children
         <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">{baslik}</p>
       </div>
       <div className="flex items-end gap-3 mb-1">
-        <span className={cn("font-display font-bold text-3xl", puan != null ? puanRengi(puan) : "text-muted-foreground")}>
+        <span className={cn("font-display font-semibold text-3xl", puan != null ? puanRengi(puan) : "text-muted-foreground")}>
           {puan ?? "—"}
         </span>
         {altyazi && <span className="text-xs text-muted-foreground mb-0.5">{altyazi}</span>}
@@ -46,8 +46,8 @@ function PuanKarti({ ikon: Ikon, baslik, altyazi, puan, renk, aciklama, children
 /** Normalize bar */
 function NormBar({ deger, renk = "bg-primary" }) {
   return (
-    <div className="h-1.5 rounded-full bg-muted overflow-hidden">
-      <div className={cn("h-full rounded-full", renk)} style={{ width: `${Math.round(deger * 100)}%` }} />
+    <div className="h-1.5 bg-muted overflow-hidden">
+      <div className={cn("h-full", renk)} style={{ width: `${Math.round(deger * 100)}%` }} />
     </div>
   );
 }
@@ -77,22 +77,26 @@ export default function ChipDetail() {
         <div>
           <div className="rounded-2xl overflow-hidden border border-card-border bg-card">
             {chip.image ? (
-              <img src={imageUrl(chip.image)} alt={chip.name} className="w-full aspect-[4/3] object-cover" />
+              <img src={imageUrl(chip.image)} alt={chip.name} className="w-full aspect-[4/3] object-contain bg-muted" />
             ) : (
               <div className="w-full aspect-[4/3] flex flex-col items-center justify-center gap-2 bg-silicon-grid">
                 <Cpu className="h-10 w-10" style={{ color }} aria-hidden="true" />
-                <p className="font-display font-bold text-lg" style={{ color }}>{chip.name}</p>
+                <p className="font-display font-semibold text-lg" style={{ color }}>{chip.name}</p>
                 <p className="font-mono text-[10px] text-muted-foreground">Görsel yok</p>
               </div>
             )}
           </div>
           {chip.image_credit && (
-            <p className="text-[11px] text-muted-foreground mt-2">{chip.image_credit}</p>
+            <p className="text-[11px] text-muted-foreground mt-2 leading-relaxed">
+              {chip.image_source
+                ? <a href={chip.image_source} target="_blank" rel="noopener noreferrer" className="underline decoration-border underline-offset-2 hover:text-foreground">{chip.image_credit}</a>
+                : chip.image_credit}
+            </p>
           )}
         </div>
         <div>
           <p className="font-mono text-xs uppercase tracking-wider mb-2" style={{ color }}>{chip.manufacturer}</p>
-          <h1 className="font-display text-3xl font-bold mb-3">{chip.name}</h1>
+          <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em] mb-3">{chip.name}</h1>
           {chip.tagline && <p className="text-sm font-medium text-foreground/90 mb-2">{chip.tagline}</p>}
           {chip.description && <p className="text-muted-foreground leading-relaxed">{chip.description}</p>}
           <div className="grid grid-cols-2 gap-3 mt-6 text-sm">
@@ -107,7 +111,7 @@ export default function ChipDetail() {
             <div className="mt-6 rounded-xl border border-primary/20 bg-primary/5 px-5 py-4">
               <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground mb-1">Genel puan · {s.clsLabel}</p>
               <div className="flex items-end gap-3">
-                <span className={cn("font-display font-bold text-5xl", puanRengi(g.puan))}>{g.puan}</span>
+                <span className={cn("font-display font-semibold text-5xl", puanRengi(g.puan))}>{g.puan}</span>
                 <span className="font-mono text-xs text-muted-foreground mb-1.5">sınıfında {rank.rank}. / {rank.total}</span>
               </div>
               {/* Üç bileşen çubukları */}
@@ -115,17 +119,17 @@ export default function ChipDetail() {
                 {g.bileskenler.map((b) => (
                   <div key={b.ad} className="flex items-center gap-3">
                     <span className="text-[10px] text-muted-foreground w-16 shrink-0">{b.ad}</span>
-                    <div className="flex-1 h-1 rounded-full bg-muted overflow-hidden">
+                    <div className="flex-1 h-1 bg-muted overflow-hidden">
                       <div
                         className={cn(
-                          "h-full rounded-full",
+                          "h-full",
                           b.ad === "Tasarım" ? "bg-primary" :
                           b.ad === "Verimlilik" ? "bg-emerald-400" : "bg-violet-400"
                         )}
                         style={{ width: `${b.puan}%` }}
                       />
                     </div>
-                    <span className={cn("font-mono text-[11px] font-bold w-8 text-right", puanRengi(b.puan))}>{b.puan}</span>
+                    <span className={cn("font-mono text-[11px] font-semibold w-8 text-right", puanRengi(b.puan))}>{b.puan}</span>
                   </div>
                 ))}
               </div>
@@ -272,7 +276,7 @@ export default function ChipDetail() {
       )}
 
       {/* Ham spesifikasyonlar */}
-      <h2 className="font-display text-lg font-bold mb-3">Tüm Spesifikasyonlar</h2>
+      <h2 className="font-display text-lg font-semibold mb-3">Tüm Spesifikasyonlar</h2>
       <div className="rounded-2xl border border-card-border bg-card overflow-hidden">
         <table className="w-full text-sm">
           <tbody>

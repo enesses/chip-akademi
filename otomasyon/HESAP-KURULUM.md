@@ -8,6 +8,9 @@ yapılır (bu ortamdan Google ve GitHub ayarlarına erişilemediği için elle).
 
 1. https://console.firebase.google.com → **Proje ekle** (Analytics gerekmez).
 2. **Authentication → Başlayın → Sign-in method → E-posta/Şifre → Etkinleştir.**
+   Aynı sekmede **Google → Etkinleştir** → destek e-postasını seç → Kaydet
+   ("Google ile giriş/kayıt" düğmesi bunu ister; açılmazsa düğme
+   "Firebase'de açılmamış" hatası verir, e-posta/şifre yine çalışır).
 3. **Authentication → Settings → Yetkili alan adları → Alan ekle:** `enesses.github.io`
 4. **Firestore Database → Veritabanı oluştur** → üretim modu → konum `eur3` (Avrupa).
 5. **Firestore → Rules** sekmesine depodaki `firestore.rules` dosyasını olduğu gibi
@@ -65,3 +68,33 @@ E-posta ayarlanmasa da başvurular Yönetim sayfasında görünür.
   orada da çalışsın diye).
 - Otomasyon sayfasını gizlemek bir arayüz kararıdır: verisi herkese açık GitHub
   deposunda zaten duruyor. Gerçek koruma gereken iş (başvuru onayı) sunucudadır.
+
+## Firebase Hosting ile yayın
+
+Depoda `firebase.json` (yayın klasörü: `docs`) ve `.firebaserc` (proje:
+`chip-akademi`) hazır. Kendi bilgisayarında, deponun klasöründe:
+
+```bash
+npm install -g firebase-tools
+firebase login
+firebase deploy --only hosting
+```
+
+Adres: https://chip-akademi.web.app (ve chip-akademi.firebaseapp.com). Bu iki
+alan Firebase Auth'ta kendiliğinden yetkilidir. Her güncellemede `main`'i çekip
+`firebase deploy --only hosting` yeniden çalıştırılır.
+
+### Otomatik yayın (günlük otomasyonla birlikte)
+
+`.github/workflows/firebase-yayin.yml`, `main`'deki `docs/` her değiştiğinde
+siteyi yeniden yükler. Bir kez şu sır eklenir:
+
+1. Firebase konsolu → ⚙ **Proje ayarları → Hizmet hesapları** →
+   **Yeni özel anahtar oluştur** → inen `.json` dosyasını Not Defteri'yle aç,
+   tamamını kopyala.
+2. GitHub → `enesses/chip-akademi` → **Settings → Secrets and variables →
+   Actions → New repository secret** → Ad: `FIREBASE_SERVICE_ACCOUNT`,
+   değer: kopyaladığın JSON → **Add secret**.
+3. Sonra JSON dosyasını bilgisayardan sil (bu anahtar projeye tam erişim verir).
+
+Sır yoksa iş hata vermez, yalnızca yayını atlar.

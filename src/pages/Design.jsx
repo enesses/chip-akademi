@@ -103,16 +103,21 @@ export default function Design() {
 
   if (!typeId) {
     return (
-      <div className="bg-silicon-grid min-h-[80vh]">
+      <div className="min-h-[80vh]">
         <section className="container mx-auto px-4 py-14">
-          <h1 className="font-display text-3xl font-bold mb-2">Tasarım Atölyesi</h1>
+          <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em] mb-2">Tasarım Atölyesi</h1>
           <p className="text-muted-foreground mb-8">Bir chip tipi seç ve blokları yerleştirmeye başla.</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {CHIP_TYPES.map((t) => (
-              <button key={t.id} onClick={() => chooseType(t.id)} className="rounded-xl border border-card-border bg-card p-5 text-left hover-elevate">
-                <span className="font-display font-bold text-lg" style={{ color: t.color }}>{t.short}</span>
+              <button key={t.id} onClick={() => chooseType(t.id)} className="group rounded-lg border border-card-border bg-card p-5 text-left transition-colors hover:border-foreground/35">
+                <span className="flex items-center justify-between">
+                  <span className="font-display font-semibold text-2xl">{t.short}</span>
+                  <span className="h-2.5 w-2.5" style={{ background: t.color }} aria-hidden="true" />
+                </span>
                 <p className="text-sm text-muted-foreground mt-1">{t.name}</p>
-                <p className="font-mono text-[10px] text-muted-foreground mt-3">{t.powerBudget}W bütçe</p>
+                <p className="mt-6 pt-3 border-t border-dashed border-card-border flex items-center justify-between font-mono text-[11px] text-muted-foreground">
+                  <span>{t.powerBudget} W bütçe</span><span className="group-hover:text-foreground">Başla →</span>
+                </p>
               </button>
             ))}
           </div>
@@ -124,7 +129,7 @@ export default function Design() {
   const palette = blocksForType(typeId);
 
   return (
-    <div className="bg-silicon-grid min-h-[80vh]">
+    <div className="min-h-[80vh]">
       <section className="container mx-auto px-4 py-6 border-b border-border">
         <div className="flex items-center gap-2 flex-wrap">
           <Input aria-label="Tasarım adı" value={designName} onChange={(e) => setDesignName(e.target.value)} placeholder="Tasarım adı…" className="h-8 w-40 text-xs" />
@@ -236,7 +241,7 @@ export default function Design() {
         <div className="space-y-4">
           <div className="rounded-xl border border-card-border bg-card p-4">
             <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">Tasarım puanı</p>
-            <p className="font-display font-bold text-4xl mt-1" style={{ color: result.score>=80?"#34d399":result.score>=62?"#22d3ee":result.score>=42?"#f59e0b":"#f87171" }}>{result.score}</p>
+            <p className="font-display font-semibold text-4xl mt-1" style={{ color: result.score>=80?"rgb(var(--t-emerald-400))":result.score>=62?"rgb(var(--t-lime-400))":result.score>=42?"rgb(var(--t-amber-400))":"rgb(var(--t-red-400))" }}>{result.score}</p>
             <p className="text-sm">{result.grade}</p>
             <div className="grid grid-cols-2 gap-2 mt-3 pt-3 border-t border-border/50 text-[11px]">
               <div><span className="text-muted-foreground">İşlevsel</span><p className="font-semibold">{result.functionalScore}</p></div>
@@ -253,7 +258,7 @@ export default function Design() {
                 return (
                   <div key={fp.key} className="mb-1.5" title={fp.hint}>
                     <div className="flex justify-between text-[11px]"><span className="text-muted-foreground">{fp.label}</span><span>{v}</span></div>
-                    <div className="h-1 rounded bg-muted/40 overflow-hidden"><div className="h-full rounded" style={{ width: `${v}%`, background: v >= 75 ? "#34d399" : v >= 45 ? "#f59e0b" : "#f87171" }} /></div>
+                    <div className="h-1 rounded bg-muted/40 overflow-hidden"><div className="h-full rounded" style={{ width: `${v}%`, background: v >= 75 ? "rgb(var(--t-emerald-400))" : v >= 45 ? "rgb(var(--t-amber-400))" : "rgb(var(--t-red-400))" }} /></div>
                   </div>
                 );
               })}

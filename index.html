@@ -1,9 +1,19 @@
 <!doctype html>
-<html lang="tr" class="dark">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f4ef" />
     <title>Chip Akademi</title>
+    <script>
+      // Tema ilk boyamadan önce uygulanır (yanıp sönme olmasın). Ayrıntı: src/lib/tema.js
+      (function () {
+        var t = null;
+        try { t = localStorage.getItem("chip-akademi:tema"); } catch (e) {}
+        if (t !== "acik" && t !== "koyu") t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "koyu" : "acik";
+        if (t === "koyu") document.documentElement.classList.add("dark");
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

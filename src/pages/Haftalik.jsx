@@ -9,17 +9,17 @@ const tarih = (iso) => { const [, a, g] = iso.split("-").map(Number); return `${
 const gunAdi = (iso) => { const [y, a, g] = iso.split("-").map(Number); return GUN[(new Date(Date.UTC(y, a - 1, g)).getUTCDay() + 6) % 7]; };
 
 const DURUM = {
-  temiz: { ad: "temiz", renk: "#34d399" },
-  dikkat: { ad: "dikkat", renk: "#f59e0b" },
-  kritik: { ad: "kritik", renk: "#f87171" },
+  temiz: { ad: "temiz", renk: "rgb(var(--t-emerald-400))" },
+  dikkat: { ad: "dikkat", renk: "rgb(var(--t-amber-400))" },
+  kritik: { ad: "kritik", renk: "rgb(var(--t-red-400))" },
   calismadi: { ad: "çalışmadı", renk: "#64748b" },
 };
 const UYG = {
-  birlesti: { ad: "birleşti", renk: "#34d399", Ikon: GitMerge },
-  acik: { ad: "onay bekliyor", renk: "#f59e0b", Ikon: GitPullRequest },
-  vazgecildi: { ad: "bırakıldı", renk: "#94a3b8", Ikon: Ban },
+  birlesti: { ad: "birleşti", renk: "rgb(var(--t-emerald-400))", Ikon: GitMerge },
+  acik: { ad: "onay bekliyor", renk: "rgb(var(--t-amber-400))", Ikon: GitPullRequest },
+  vazgecildi: { ad: "bırakıldı", renk: "hsl(var(--muted-foreground))", Ikon: Ban },
 };
-const puanRenk = (p) => (p >= 75 ? "#34d399" : p >= 60 ? "#22d3ee" : p >= 45 ? "#f59e0b" : "#f87171");
+const puanRenk = (p) => (p >= 75 ? "rgb(var(--t-emerald-400))" : p >= 60 ? "rgb(var(--t-lime-400))" : p >= 45 ? "rgb(var(--t-amber-400))" : "rgb(var(--t-red-400))");
 
 function Kart({ baslik, children, className }) {
   return (
@@ -44,12 +44,12 @@ export default function Haftalik() {
 
   const s = h.sayilar;
   return (
-    <div className="bg-silicon-grid min-h-[80vh]">
+    <div className="min-h-[80vh]">
       <section className="container mx-auto px-4 pt-12 pb-6">
         <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-primary mb-3">
           <CalendarRange className="h-3.5 w-3.5" aria-hidden="true" />Haftalık rapor
         </div>
-        <h1 className="font-display text-3xl font-bold tracking-tight">{h.baslik}</h1>
+        <h1 className="font-display text-3xl font-semibold tracking-[-0.02em]">{h.baslik}</h1>
         <p className="text-sm text-muted-foreground mt-1">
           {h.hafta.slice(0, 4)} yılının {Number(h.hafta.slice(6))}. haftası · Her Pazartesi sabahı bir önceki hafta için yazılır. Tüm sayılar otomasyonun kayıtlarından hesaplanır.
         </p>
@@ -64,7 +64,7 @@ export default function Haftalik() {
                 aria-selected={x.hafta === h.hafta}
                 onClick={() => setSecili(x.hafta)}
                 className={cn(
-                  "shrink-0 rounded-full border px-3 py-1.5 text-xs transition-colors",
+                  "shrink-0 rounded-sm border px-3 py-1.5 text-xs transition-colors",
                   x.hafta === h.hafta ? "border-primary/60 bg-primary/10 text-foreground" : "border-card-border text-muted-foreground hover:text-foreground",
                 )}
               >
@@ -95,7 +95,7 @@ export default function Haftalik() {
         ].map(([ad, deger]) => (
           <div key={ad} className="rounded-xl border border-card-border bg-card p-4">
             <p className="text-xs text-muted-foreground">{ad}</p>
-            <p className="font-display text-2xl font-bold mt-1 tabular-nums">{deger}</p>
+            <p className="font-display text-2xl font-semibold mt-1 tabular-nums">{deger}</p>
           </div>
         ))}
       </section>
@@ -167,7 +167,7 @@ export default function Haftalik() {
               Nokta: otomasyon durumu (yeşil temiz, sarı dikkat, kırmızı kritik, gri çalışmadı). Sayı: o günün Bugün puanı.
             </p>
             {h.gunler.some((g) => g.fiyat === "izin engeli") && (
-              <p className="text-xs mt-2" style={{ color: "#f59e0b" }}>
+              <p className="text-xs mt-2" style={{ color: "rgb(var(--t-amber-400))" }}>
                 Fiyat sayfası {h.gunler.filter((g) => g.fiyat === "izin engeli").map((g) => tarih(g.tarih)).join(", ")} günlerinde izin engeline takıldı; fiyat uydurulmadı.
               </p>
             )}
@@ -185,10 +185,10 @@ export default function Haftalik() {
                     const Ikon = yukari ? TrendingUp : TrendingDown;
                     return (
                       <li key={f.model} className="flex items-center gap-2 text-sm">
-                        <Ikon className="h-4 w-4 shrink-0" style={{ color: yukari ? "#f87171" : "#34d399" }} aria-hidden="true" />
+                        <Ikon className="h-4 w-4 shrink-0" style={{ color: yukari ? "rgb(var(--t-red-400))" : "rgb(var(--t-emerald-400))" }} aria-hidden="true" />
                         <span className="flex-1 min-w-0 truncate">{f.model}</span>
                         <span className="tabular-nums text-muted-foreground text-xs">${f.once} → ${f.sonra}</span>
-                        <span className="tabular-nums text-xs w-14 text-right" style={{ color: yukari ? "#f87171" : "#34d399" }}>
+                        <span className="tabular-nums text-xs w-14 text-right" style={{ color: yukari ? "rgb(var(--t-red-400))" : "rgb(var(--t-emerald-400))" }}>
                           {yukari ? "+" : ""}{f.degisim}%
                         </span>
                       </li>

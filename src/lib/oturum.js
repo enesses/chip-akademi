@@ -73,6 +73,12 @@ export function oturumuBaslat() {
       if (k) { try { profil = await a.profilGetir(k.uid); } catch { profil = null; } }
       guncelle({ hazir: true, baglanamadi: false, kullanici: k, profil });
     });
+    // Açılır pencere engellendiyse Google girişi yönlendirmeyle döner; profili burada tamamla.
+    a.yonlendirmeSonucu?.().then(async (k) => {
+      if (!k) return;
+      const profil = await a.profilGetir(k.uid).catch(() => null);
+      guncelle({ kullanici: k, profil });
+    }).catch(() => { /* hata giriş sayfasında yeniden denenebilir */ });
   }).catch(() => guncelle({ hazir: true, kurulu: !!FIREBASE, baglanamadi: true }));
 }
 
@@ -102,6 +108,10 @@ export function hataMetni(e) {
     "auth/network-request-failed": "Sunucuya ulaşılamadı. İnternet bağlantını kontrol et.",
     "auth/operation-not-allowed": "E-posta/şifre ile giriş Firebase'de açılmamış (kurulum adımı).",
     "auth/unauthorized-domain": "Bu adres Firebase'de yetkili alan olarak ekli değil (kurulum adımı).",
+    "auth/popup-closed-by-user": "Google penceresi kapatıldı. Yeniden dene.",
+    "auth/cancelled-popup-request": "Google penceresi kapatıldı. Yeniden dene.",
+    "auth/account-exists-with-different-credential": "Bu e-posta başka bir yöntemle kayıtlı. E-posta ve şifreyle giriş yap.",
+    "auth/missing-email": "Önce e-posta adresini yaz.",
     "permission-denied": "Bu işlem için yetkin yok.",
     "unavailable": "Sunucuya ulaşılamadı. Biraz sonra yeniden dene.",
   };
@@ -115,15 +125,26 @@ function hazirMi() {
 
 export const MIN_SIFRE = 8;
 
-export async function kayitOl({ ad, eposta, parola, rol, aciklama }) {
+export async function kayitOl({ ad, eposta, parola, rol, aciklama, hatirla = true }) {
   const a = hazirMi();
-  const k = await a.kayit({ ad: ad.trim(), eposta: eposta.trim(), parola, rol, aciklama: aciklama?.trim() || "" });
+  const k = await a.kayit({ ad: ad.trim(), eposta: eposta.trim(), parola, rol, aciklama: aciklama?.trim() || "", hatirla });
   const profil = await a.profilGetir(k.uid).catch(() => null);
   guncelle({ kullanici: k, profil });
   if (rol === "girisimci") basvuruBildir({ ad: ad.trim(), eposta: eposta.trim(), aciklama: aciklama?.trim() || "" });
   return k;
 }
-export const girisYap = (eposta, parola) => hazirMi().giris(eposta.trim(), parola);
+export const girisYap = (eposta, parola, hatirla = true) => hazirMi().giris(eposta.trim(), parola, hatirla);
+export const googleVar = () => typeof arka?.google === "function";
+/** Google ile giriş/kayıt. İlk kez gelen hesap seçilen rolle açılır. */
+export async function googleIleDevam({ rol = "kullanici", aciklama = "", hatirla = true } = {}) {
+  const a = hazirMi();
+  const s = await a.google({ rol, aciklama: aciklama.trim(), hatirla });
+  if (s.yonlendirildi) return s;
+  const profil = await a.profilGetir(s.kullanici.uid).catch(() => null);
+  guncelle({ kullanici: s.kullanici, profil });
+  if (s.yeni && profil?.rol === "girisimci") basvuruBildir({ ad: profil.ad, eposta: profil.eposta, aciklama: profil.aciklama || "" });
+  return s;
+}
 export const cikisYap = () => hazirMi().cikis();
 export const sifreSifirla = (eposta) => hazirMi().sifreSifirla(eposta.trim());
 export const dogrulamaGonder = () => hazirMi().dogrulamaGonder();

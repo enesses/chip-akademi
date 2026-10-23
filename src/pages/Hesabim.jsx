@@ -93,18 +93,18 @@ export default function Hesabim() {
             {rol === "girisimci" ? <Rocket className="h-5 w-5" aria-hidden="true" /> : <UserRound className="h-5 w-5" aria-hidden="true" />}
           </span>
           <div className="min-w-0 flex-1">
-            <p className="font-display font-bold text-lg leading-tight">{profil?.ad || k.ad || k.eposta}</p>
+            <p className="font-display font-semibold text-lg leading-tight">{profil?.ad || k.ad || k.eposta}</p>
             <p className="text-sm text-muted-foreground truncate">{k.eposta}</p>
             <div className="flex flex-wrap gap-1.5 mt-2">
-              <span className="rounded-full border border-card-border px-2 py-0.5 text-[11px]">{ROL_AD[rol]}</span>
+              <span className="rounded-sm border border-card-border px-2 py-0.5 text-[11px]">{ROL_AD[rol]}</span>
               {profil && rol === "girisimci" && (
-                <span className={cn("rounded-full border px-2 py-0.5 text-[11px]",
+                <span className={cn("rounded-sm border px-2 py-0.5 text-[11px]",
                   profil.durum === "onaylandi" ? "border-emerald-500/50 text-emerald-300" : profil.durum === "reddedildi" ? "border-red-500/50 text-red-300" : "border-amber-400/50 text-amber-200")}>
                   {DURUM_AD[profil.durum]}
                 </span>
               )}
-              {admin && <span className="rounded-full border border-primary/50 text-primary px-2 py-0.5 text-[11px] inline-flex items-center gap-1"><ShieldCheck className="h-3 w-3" aria-hidden="true" />Yönetici</span>}
-              {!k.dogrulandi && <span className="rounded-full border border-amber-400/50 text-amber-200 px-2 py-0.5 text-[11px]">E-posta doğrulanmadı</span>}
+              {admin && <span className="rounded-sm border border-primary/50 text-primary px-2 py-0.5 text-[11px] inline-flex items-center gap-1"><ShieldCheck className="h-3 w-3" aria-hidden="true" />Yönetici</span>}
+              {!k.dogrulandi && <span className="rounded-sm border border-amber-400/50 text-amber-200 px-2 py-0.5 text-[11px]">E-posta doğrulanmadı</span>}
             </div>
           </div>
           <Button variant="ghost" onClick={cik} className="gap-1.5"><LogOut className="h-4 w-4" aria-hidden="true" />Çıkış</Button>

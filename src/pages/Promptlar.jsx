@@ -6,7 +6,7 @@ import { dosyaKaydet } from "@/lib/dosyaKaydet";
 import { sadelestir } from "@/lib/bolumler";
 import { cn } from "@/lib/utils";
 
-const SEVIYE_RENK = { "başlangıç": "#34d399", orta: "#22d3ee", ileri: "#f59e0b" };
+const SEVIYE_RENK = { "başlangıç": "rgb(var(--t-emerald-400))", orta: "rgb(var(--t-lime-400))", ileri: "rgb(var(--t-amber-400))" };
 const katAd = (id) => KATEGORILER.find((k) => k.id === id)?.ad ?? id;
 
 /** Kopyala düğmesi: kısa süre "Kopyalandı" gösterir; olmazsa metni seçtirir. */
@@ -82,7 +82,7 @@ function PromptPaneli({ prompt, kapat }) {
 
   return (
     <div className="fixed inset-0 z-[60] flex items-end sm:items-center justify-center" role="dialog" aria-modal="true" aria-labelledby="prompt-baslik">
-      <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" onClick={kapat} />
+      <div className="absolute inset-0 bg-black/40" onClick={kapat} />
       <div className="relative w-full sm:max-w-4xl max-h-[92vh] sm:max-h-[86vh] overflow-hidden rounded-t-2xl sm:rounded-2xl border border-card-border bg-card shadow-2xl flex flex-col">
         <div className="flex items-start gap-3 p-4 sm:p-5 border-b border-card-border">
           <div className="min-w-0 flex-1">
@@ -229,12 +229,12 @@ export default function Promptlar() {
   };
 
   return (
-    <div className="bg-silicon-grid min-h-[80vh]">
+    <div className="min-h-[80vh]">
       <section className="container mx-auto px-4 pt-12 pb-6">
         <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-primary mb-3">
           <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />AI Araçları
         </div>
-        <h1 className="font-display text-3xl sm:text-4xl font-bold tracking-tight">Prompt kütüphanesi</h1>
+        <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em]">Prompt kütüphanesi</h1>
         <p className="text-muted-foreground mt-2 max-w-2xl">
           {PROMPTLAR.length} hazır prompt. Birini seç, kendi konuna göre boşlukları doldur, kopyala ve yapay zekâ aracına yapıştır.
           Görsel, video ve müzik prompt'ları İngilizce — bu araçlar İngilizceyi daha iyi anlıyor.
@@ -268,7 +268,7 @@ export default function Promptlar() {
               aria-selected={kat === k.id}
               onClick={() => setKat(k.id)}
               className={cn(
-                "shrink-0 rounded-full border px-3 py-1.5 text-xs transition-colors",
+                "shrink-0 rounded-sm border px-3 py-1.5 text-xs transition-colors",
                 kat === k.id ? "border-primary/60 bg-primary/10 text-foreground" : "border-card-border text-muted-foreground hover:text-foreground",
               )}
             >

@@ -84,11 +84,11 @@ export default function IcDetail() {
           <p className="font-mono text-xs uppercase tracking-wider mb-2" style={{ color: kat?.renk }}>
             {cihaz.uretici} · {cihaz.yil} · {kat?.ad}
           </p>
-          <h1 className="font-display text-3xl font-bold">{cihaz.ad}</h1>
+          <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em]">{cihaz.ad}</h1>
         </div>
         <div className="rounded-xl border border-card-border bg-card px-4 py-3 text-center min-w-[7rem]">
           <p className="font-mono text-[9px] uppercase tracking-wider text-muted-foreground mb-1">Cihaz puanı</p>
-          <p className={cn("font-display font-bold text-3xl leading-none", puanRengi(puan.genel))}>
+          <p className={cn("font-display font-semibold text-3xl leading-none", puanRengi(puan.genel))}>
             {puan.genel ?? "—"}
             {puan.genel != null && <span className="text-sm text-muted-foreground font-normal">/100</span>}
           </p>
@@ -109,7 +109,7 @@ export default function IcDetail() {
       )}
 
       {/* Puanlar + işlemci künyesi */}
-      <h2 className="font-display text-lg font-bold mb-4">Puanlar</h2>
+      <h2 className="font-display text-lg font-semibold mb-4">Puanlar</h2>
       <div className="mb-4">
         <CihazPuanPaneli puan={puan} />
       </div>
@@ -121,7 +121,7 @@ export default function IcDetail() {
       </div>
 
       {/* Patlatılmış görünüm */}
-      <h2 className="font-display text-lg font-bold mb-1 inline-flex items-center gap-2">
+      <h2 className="font-display text-lg font-semibold mb-1 inline-flex items-center gap-2">
         <Layers className="h-4 w-4 text-muted-foreground" />Patlatılmış görünüm
       </h2>
       <p className="text-xs text-muted-foreground mb-4">
@@ -181,12 +181,12 @@ export default function IcDetail() {
       </div>
 
       {/* Parçalar */}
-      <h2 className="font-display text-lg font-bold mb-4">Parçalar</h2>
+      <h2 className="font-display text-lg font-semibold mb-4">Parçalar</h2>
       <div className="space-y-4 mb-10">
         {gruplar.map((g) => (
           <div key={g.rol} className="rounded-xl border border-card-border bg-card overflow-hidden">
             <div className="px-4 py-2.5 border-b border-card-border flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full" style={{ background: g.renk }} aria-hidden="true" />
+              <span className="w-2 h-2" style={{ background: g.renk }} aria-hidden="true" />
               <p className="font-mono text-[10px] uppercase tracking-wider" style={{ color: g.renk }}>
                 {g.ad}
               </p>
@@ -243,7 +243,7 @@ export default function IcDetail() {
         {cihaz.onarim && (
           <Kutu ikon={Wrench} baslik="Onarılabilirlik">
             {cihaz.onarim.puan != null ? (
-              <p className={cn("font-display font-bold text-2xl", onarimRengi(cihaz.onarim.puan).split(" ")[0])}>
+              <p className={cn("font-display font-semibold text-2xl", onarimRengi(cihaz.onarim.puan).split(" ")[0])}>
                 {cihaz.onarim.puan}
                 <span className="text-sm text-muted-foreground font-normal">/{cihaz.onarim.max}</span>
               </p>
@@ -307,7 +307,7 @@ export default function IcDetail() {
       )}
 
       {/* Kaynaklar */}
-      <h2 className="font-display text-lg font-bold mb-3">Kaynaklar</h2>
+      <h2 className="font-display text-lg font-semibold mb-3">Kaynaklar</h2>
       <ul className="space-y-2 mb-4">
         {cihaz.kaynaklar.map((k, i) => (
           <li key={i}>

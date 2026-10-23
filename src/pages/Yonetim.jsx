@@ -69,7 +69,7 @@ function Liste() {
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between gap-3">
-        <h2 className="font-display font-bold text-xl">Onay bekleyenler ({bekleyen.length})</h2>
+        <h2 className="font-display font-semibold text-xl">Onay bekleyenler ({bekleyen.length})</h2>
         <Button size="sm" variant="ghost" onClick={yukle} className="gap-1.5"><RefreshCw className="h-3.5 w-3.5" aria-hidden="true" />Yenile</Button>
       </div>
       <Mesaj>{hata}</Mesaj>

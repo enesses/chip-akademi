@@ -9,9 +9,9 @@ const AY = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "A
 const GUN = ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"];
 const KONULAR = data.konular || {};
 const TON = {
-  pozitif: { ad: "Olumlu", renk: "#34d399" },
-  notr: { ad: "Nötr", renk: "#94a3b8" },
-  negatif: { ad: "Olumsuz", renk: "#f87171" },
+  pozitif: { ad: "Olumlu", renk: "rgb(var(--t-emerald-400))" },
+  notr: { ad: "Nötr", renk: "hsl(var(--muted-foreground))" },
+  negatif: { ad: "Olumsuz", renk: "rgb(var(--t-red-400))" },
 };
 
 function gunBasligi(iso) {
@@ -62,12 +62,12 @@ export default function Haberler() {
   const sonGuncelleme = data.guncelleme ? gunBasligi(data.guncelleme) : null;
 
   return (
-    <div className="bg-silicon-grid min-h-[80vh]">
+    <div className="min-h-[80vh]">
       <section className="container mx-auto px-4 pt-12 pb-6">
         <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-primary mb-3">
           <Newspaper className="h-3.5 w-3.5" aria-hidden="true" />Haberler
         </div>
-        <h1 className="font-display text-3xl sm:text-4xl font-bold tracking-tight">Çip ve yapay zekâ haberleri</h1>
+        <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em]">Çip ve yapay zekâ haberleri</h1>
         <p className="text-muted-foreground mt-2 max-w-2xl">
           Her sabah otomasyon yeni haberleri ekler; son 30 gün burada birikir. Her haber kaynağında açılıp kontrol edildikten sonra
           Türkçe özetlenir — başlığa tıklayınca kaynağa gidersin.
@@ -95,7 +95,7 @@ export default function Haberler() {
               {[["hepsi", "Hepsi"], ...Object.entries(TON).map(([k, v]) => [k, v.ad])].map(([k, ad]) => (
                 <button key={k} type="button" role="radio" aria-checked={ton === k} onClick={() => setTon(k)}
                   className={cn("inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-xs transition-colors", ton === k ? "bg-primary/15 text-foreground" : "text-muted-foreground hover:text-foreground")}>
-                  {TON[k] && <span className="w-1.5 h-1.5 rounded-full" style={{ background: TON[k].renk }} aria-hidden="true" />}
+                  {TON[k] && <span className="w-1.5 h-1.5" style={{ background: TON[k].renk }} aria-hidden="true" />}
                   {ad}
                 </button>
               ))}
@@ -104,7 +104,7 @@ export default function Haberler() {
           <div className="flex gap-1.5 overflow-x-auto serit-kaydir" role="tablist" aria-label="Konu">
             {[["hepsi", "Tüm konular"], ...Object.entries(KONULAR)].map(([k, ad]) => (
               <button key={k} type="button" role="tab" aria-selected={konu === k} onClick={() => setKonu(k)}
-                className={cn("shrink-0 rounded-full border px-3 py-1 text-xs transition-colors",
+                className={cn("shrink-0 rounded-sm border px-3 py-1 text-xs transition-colors",
                   konu === k ? "border-primary/60 bg-primary/10 text-foreground" : "border-card-border text-muted-foreground hover:text-foreground")}>
                 {ad} <span className="opacity-60 tabular-nums">{sayilar[k] || 0}</span>
               </button>
@@ -138,7 +138,7 @@ export default function Haberler() {
                     {liste.map((h) => (
                       <li key={h.id}>
                         <article className="py-4 grid grid-cols-[auto_minmax(0,1fr)] gap-x-3">
-                          <span className="mt-2 w-2 h-2 rounded-full" style={{ background: TON[h.ton]?.renk || "#64748b" }}
+                          <span className="mt-2 w-2 h-2" style={{ background: TON[h.ton]?.renk || "#64748b" }}
                             title={TON[h.ton]?.ad || "ton belirtilmemiş"} aria-hidden="true" />
                           <div className="min-w-0">
                             <h3 className="font-medium leading-snug">

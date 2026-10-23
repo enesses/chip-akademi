@@ -20,6 +20,7 @@ export const FIREBASE = {
   storageBucket: "chip-akademi.firebasestorage.app",
   messagingSenderId: "752817378052",
   appId: "1:752817378052:web:c0251070bc8f3b611d7651",
+  measurementId: "G-KEQ6XM8JHB",
 };
 // Örnek:
 // export const FIREBASE = {
@@ -31,4 +32,4 @@ export const EMAILJS = null;
 // export const EMAILJS = { serviceId: "service_...", templateId: "template_...", publicKey: "..." };
 
 /** Girişin çalıştığı web adresi (claude.ai yayını dış sunuculara bağlanamaz). */
-export const WEB_ADRESI = "https://enesses.github.io/chip-akademi/";
+export const WEB_ADRESI = "https://chip-akademi.web.app/";

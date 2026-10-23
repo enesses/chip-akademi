@@ -5,9 +5,9 @@ import { cn } from "@/lib/utils";
 /** Giriş/kayıt sayfalarının ortak iskeleti: ortalanmış dar sütun. */
 export function Kabuk({ baslik, alt, children, genis = false }) {
   return (
-    <div className="bg-silicon-grid min-h-[80vh]">
+    <div className="min-h-[80vh]">
       <section className={cn("container mx-auto px-4 pt-10 md:pt-14 pb-16", genis ? "max-w-4xl" : "max-w-xl")}>
-        <h1 className="font-display text-3xl md:text-4xl font-bold tracking-tight">{baslik}</h1>
+        <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em]">{baslik}</h1>
         {alt && <p className="text-muted-foreground mt-2">{alt}</p>}
         <div className="mt-8">{children}</div>
       </section>
