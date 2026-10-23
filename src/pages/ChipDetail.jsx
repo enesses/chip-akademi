@@ -5,6 +5,7 @@ import icyapi from "@/data/icyapi.json";
 import { chipiKullananCihazlar } from "@/lib/icPuan";
 import { getChipById } from "@/data/chips";
 import { imageUrl, manufacturerColors, formatSpecLabel } from "@/lib/utils";
+import ChipYerTutucu from "@/components/ChipYerTutucu";
 import { scoreChip, rankInClass, verimlilikPuani, maliyetPuani, genelPuan } from "@/lib/chipScore";
 import { cn } from "@/lib/utils";
 
@@ -52,6 +53,14 @@ function NormBar({ deger, renk = "bg-primary" }) {
   );
 }
 
+// Son ölçüme göre fiyat değişimi; 3'ten az sağlayıcılı satırlarda tek ilan
+// medyanı oynattığı için gösterilmez (Fiyatlar sayfasındaki hareket kartlarıyla aynı eşik).
+function fiyatDegisimMetni(m) {
+  if (m.degisimPct == null || m.degisimPct === 0 || (m.saglayici ?? 0) < 3) return "";
+  const isaret = m.degisimPct > 0 ? "+" : "−";
+  return ` · önceki ölçüme göre ${isaret}%${Math.abs(m.degisimPct).toLocaleString("tr-TR")}`;
+}
+
 export default function ChipDetail() {
   const { id } = useParams();
   const chip = getChipById(id);
@@ -79,11 +88,7 @@ export default function ChipDetail() {
             {chip.image ? (
               <img src={imageUrl(chip.image)} alt={chip.name} className="w-full aspect-[4/3] object-contain bg-muted" />
             ) : (
-              <div className="w-full aspect-[4/3] flex flex-col items-center justify-center gap-2 bg-silicon-grid">
-                <Cpu className="h-10 w-10" style={{ color }} aria-hidden="true" />
-                <p className="font-display font-semibold text-lg" style={{ color }}>{chip.name}</p>
-                <p className="font-mono text-[10px] text-muted-foreground">Görsel yok</p>
-              </div>
+              <div className="w-full aspect-[4/3]"><ChipYerTutucu chip={chip} renk={color} ayrinti /></div>
             )}
           </div>
           {chip.image_credit && (
@@ -194,7 +199,7 @@ export default function ChipDetail() {
         <PuanKarti
           ikon={DollarSign}
           baslik="Maliyet puanı"
-          altyazi={m.usdSaat != null ? (m.gpuSayisi > 1 ? `$${m.usdSaat}/saat (${m.gpuSayisi} GPU × $${m.usdSaatGpu})` : `$${m.usdSaat}/saat`) : undefined}
+          altyazi={m.usdSaat != null ? (m.gpuSayisi > 1 ? `$${m.usdSaat}/saat (${m.gpuSayisi} GPU × $${m.usdSaatGpu})` : `$${m.usdSaat}/saat`) + fiyatDegisimMetni(m) : undefined}
           puan={m.puan}
           aciklama={m.neden}
         >

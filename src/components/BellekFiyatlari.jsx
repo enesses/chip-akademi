@@ -108,7 +108,8 @@ export default function BellekFiyatlari() {
           ))}
         </ul>
       )}
-      <p className="font-mono text-[10px] text-muted-foreground mt-3">Son güncelleme: {tarihTR(bellek.guncelleme)}</p>
+      <p className="font-mono text-[10px] text-muted-foreground mt-3">Son kontrol: {tarihTR(bellek.guncelleme)}</p>
+      {bellek.kontrol_notu && <p className="text-[11px] text-muted-foreground mt-1">{bellek.kontrol_notu}</p>}
     </section>
   );
 }

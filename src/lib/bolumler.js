@@ -86,7 +86,7 @@ export const GRUPLAR = [
       { id: "otomasyon", ad: "Otomasyon", yol: "/otomasyon", ikon: Workflow, yalnizAdmin: true,
         aciklama: "Her sabahki veri güncellemesi ve raporu",
         anahtar: "rapor güncelleme güvenlik öneri" },
-      { id: "haftalik", ad: "Haftalık rapor", yol: "/haftalik", ikon: CalendarRange,
+      { id: "haftalik", ad: "Haftalık rapor", yol: "/haftalik", ikon: CalendarRange, yalnizAdmin: true,
         aciklama: "Haftanın yenilikleri, uygulanan öneriler, fiyat hareketi",
         anahtar: "hafta özet yenilik değişiklik rapor pazartesi" },
     ],

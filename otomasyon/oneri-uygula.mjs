@@ -81,11 +81,24 @@ function denetle() {
     }
   }
   // Güvenlik ajanı kendi raporunu diske yazar; denetim dalın farkına girmesin diye geri alınır.
+  // Dal, main'de zaten olan uyarılar yüzünden bekletilmez: yalnızca dalın YENİ getirdiği
+  // uyarılar sayılır (main'in bugünkü raporu yoksa eski kural: durum "temiz" olmalı).
   const guv = calistir("node otomasyon/ajanlar/1-guvenlik.mjs");
   const durum = /Durum:\s*(\S+)/.exec(guv.cikti || "")?.[1] || "okunamadı";
-  testler.guvenlik = durum;
+  const raporYolu = `otomasyon/raporlar/guvenlik-${bugunTarih()}.json`;
+  let dalUyari = null, mainUyari = null;
+  try { dalUyari = JSON.parse(fs.readFileSync(path.join(KOK, raporYolu), "utf-8")).uyarilar || []; } catch {}
+  const mainRapor = calistir(`git show origin/main:${raporYolu}`);
+  if (mainRapor.ok) { try { mainUyari = JSON.parse(mainRapor.cikti).uyarilar || []; } catch {} }
   calistir("git checkout -- otomasyon/raporlar");
-  if (durum !== "temiz") nedenler.push(`güvenlik taraması: ${durum}`);
+  if (dalUyari && mainUyari) {
+    const yeni = dalUyari.filter((u) => !mainUyari.includes(u));
+    testler.guvenlik = yeni.length ? `${durum} (dalın yeni uyarısı: ${yeni.length})` : `${durum} (main'e göre yeni uyarı yok)`;
+    if (yeni.length) nedenler.push(`güvenlik: dal yeni uyarı getiriyor — ${yeni.slice(0, 2).join("; ")}`);
+  } else {
+    testler.guvenlik = durum;
+    if (durum !== "temiz") nedenler.push(`güvenlik taraması: ${durum}`);
+  }
 
   return { uygun: nedenler.length === 0, nedenler, dosyalar, satir, testler, sinir: SINIR };
 }

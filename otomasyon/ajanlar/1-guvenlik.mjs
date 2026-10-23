@@ -98,6 +98,10 @@ const DESENLER = [
     ad: "gömülü API anahtarı olabilir",
     re: /(sk-[A-Za-z0-9]{16,}|api[_-]?key\s*[:=]\s*["'][A-Za-z0-9_\-]{16,})/gi,
     seviye: "kritik",
+    // Firebase web yapılandırması gizli değildir (her ziyaretçinin tarayıcısına
+    // gider); güvenliği firestore.rules sağlar. Yalnızca bu dosyadaki AIza… anahtarı
+    // muaf; başka dosyada ya da başka biçimde bir anahtar yine kritik sayılır.
+    muaf: { dosya: "src/lib/firebaseAyar.js", eslesme: /^apiKey:\s*"AIza[0-9A-Za-z_\-]{35}$/ },
   },
   { ad: "http:// (şifresiz) kaynak", re: /["']http:\/\/(?!localhost|www\.w3\.org)/g, seviye: "düşük" },
 ];
@@ -107,7 +111,11 @@ function kodTaramasi() {
   for (const dosya of kaynakDosyalari([".js", ".jsx", ".html"])) {
     const metin = oku(dosya);
     for (const d of DESENLER) {
-      const eslesme = metin.match(d.re);
+      let eslesme = metin.match(d.re);
+      if (eslesme && d.muaf && rel(dosya) === d.muaf.dosya) {
+        eslesme = eslesme.filter((e) => !d.muaf.eslesme.test(e));
+        if (!eslesme.length) eslesme = null;
+      }
       if (eslesme) {
         bulgular.push({
           dosya: rel(dosya),

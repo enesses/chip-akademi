@@ -390,6 +390,226 @@
       "ozet": "Eşleşme yoksa tablonun altında 'Eşleşen model yok' mesajı",
       "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki mevcut bağımlılık açıkları yüzünden 'dikkat', onay bekliyor",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": " Notlar sayfasına sabitleme (pin) düğmesi",
+      "durum": "birlesti",
+      "pr": 29,
+      "dal": null,
+      "ozet": "Yeni arayüze taşınıp toplu PR'la birleştirildi",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": " Seviye sınavında önceki sonuçları göster",
+      "durum": "birlesti",
+      "pr": 30,
+      "dal": null,
+      "ozet": "Yeni arayüze taşınıp toplu PR'la birleştirildi",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": " @grpc/grpc-js'i npm overrides ile ≥1.13.6'ya yükselt",
+      "durum": "birlesti",
+      "pr": 31,
+      "dal": null,
+      "ozet": "Yeni arayüze taşınıp toplu PR'la birleştirildi",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": " Eğitim sayfasına 'ilerlemeyi sıfırla' düğmesi",
+      "durum": "birlesti",
+      "pr": 32,
+      "dal": null,
+      "ozet": "Yeni arayüze taşınıp toplu PR'la birleştirildi",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": " Çip detayında kiralama fiyatının son değişimini göster",
+      "durum": "birlesti",
+      "pr": 33,
+      "dal": null,
+      "ozet": "Yeni arayüze taşınıp toplu PR'la birleştirildi",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": " veri-isle kayıtlıdan eski endeks ölçümünü yazmasın",
+      "durum": "birlesti",
+      "pr": 34,
+      "dal": null,
+      "ozet": "Yeni arayüze taşınıp toplu PR'la birleştirildi",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": " Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
+      "durum": "birlesti",
+      "pr": 35,
+      "dal": null,
+      "ozet": "Yeni arayüze taşınıp toplu PR'la birleştirildi",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": " Fiyat endeksi kartında ölçüm tarihi eskiyse uyarı göster",
+      "durum": "birlesti",
+      "pr": 36,
+      "dal": null,
+      "ozet": "Yeni arayüze taşınıp toplu PR'la birleştirildi",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": " Haberler'de yayın tarihini eklenme gününden farklıysa göster",
+      "durum": "birlesti",
+      "pr": 37,
+      "dal": null,
+      "ozet": "Yeni arayüze taşınıp toplu PR'la birleştirildi",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": " Bugün puanında tüm maddeler tekrar ise sıfıra bölmeyi önle",
+      "durum": "birlesti",
+      "pr": 38,
+      "dal": null,
+      "ozet": "Yeni arayüze taşınıp toplu PR'la birleştirildi",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": " Fiyat tablosunda eski ölçümlü satırları işaretle",
+      "durum": "birlesti",
+      "pr": 39,
+      "dal": null,
+      "ozet": "Yeni arayüze taşınıp toplu PR'la birleştirildi",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": " Fiyat tablosunda az sağlayıcılı satırları soluk göster",
+      "durum": "birlesti",
+      "pr": 40,
+      "dal": null,
+      "ozet": "Yeni arayüze taşınıp toplu PR'la birleştirildi",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": " Vite'i 7.3.6'dan yamalı 7.3.x sürümüne güncelle",
+      "durum": "birlesti",
+      "pr": 41,
+      "dal": null,
+      "ozet": "Yeni arayüze taşınıp toplu PR'la birleştirildi",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": " Bugün maddelerinde sınıflandırma gerekçesini ve ağırlığını göster",
+      "durum": "birlesti",
+      "pr": 42,
+      "dal": null,
+      "ozet": "Yeni arayüze taşınıp toplu PR'la birleştirildi",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": " Bugün puan kartına hesap yöntemini (formül ve Σ) ekle",
+      "durum": "birlesti",
+      "pr": 43,
+      "dal": null,
+      "ozet": "Yeni arayüze taşınıp toplu PR'la birleştirildi",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": " Fiyat tablosunda $/GB sıralamasında $/GB değerini göster",
+      "durum": "birlesti",
+      "pr": 46,
+      "dal": null,
+      "ozet": "Yeni arayüze taşınıp toplu PR'la birleştirildi",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": " Fiyat aramasında sonuç yoksa boş tablo yerine mesaj göster",
+      "durum": "birlesti",
+      "pr": 47,
+      "dal": null,
+      "ozet": "Yeni arayüze taşınıp toplu PR'la birleştirildi",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": "veri-isle sağlayıcı sütunu sayı değilse fiyat girdisini reddetsin",
+      "durum": "birlesti",
+      "pr": null,
+      "dal": null,
+      "ozet": "Kullanıcıyla oturumda uygulandı",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": "oneri-uygula denetimi güvenliği main'e göre fark olarak değerlendirsin",
+      "durum": "birlesti",
+      "pr": null,
+      "dal": null,
+      "ozet": "Kullanıcıyla oturumda uygulandı",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": "Hyperscaler farkı, taahhüt ve spot indirimi verisini tazeleyip Fiyatlar'da göster",
+      "durum": "birlesti",
+      "pr": null,
+      "dal": null,
+      "ozet": "Kullanıcıyla oturumda uygulandı",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": "Bellek göstergelerine TrendForce'un 4Ç DRAM tahminini işle",
+      "durum": "birlesti",
+      "pr": null,
+      "dal": null,
+      "ozet": "Kullanıcıyla oturumda uygulandı",
+      "neden": null,
+      "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": "Arayüz testi Chromium'u sürüm klasöründen bağımsız bulsun",
+      "durum": "birlesti",
+      "pr": null,
+      "dal": null,
+      "ozet": "Kullanıcıyla oturumda uygulandı",
+      "neden": null,
+      "kim": "elle"
     }
   ]
 }

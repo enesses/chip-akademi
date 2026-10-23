@@ -35,7 +35,13 @@ async function tarayici() {
     return await chromium.launch({ headless: true });
   } catch (e) {
     // Bazı ortamlarda Playwright'ın beklediği sürüm yerine başka bir Chromium kurulu olur.
-    for (const aday of ["/opt/pw-browsers/chromium-1194/chrome-linux/chrome", "/usr/bin/chromium", "/usr/bin/google-chrome"]) {
+    // /opt/pw-browsers/chromium ortamın kurulu sürümüne bağlı kalıcı bağlantı; sürüm
+    // klasörü (chromium-1194, chromium-1243 …) ortam güncellendikçe değişiyor.
+    const surumlu = fs.existsSync("/opt/pw-browsers")
+      ? fs.readdirSync("/opt/pw-browsers").filter((d) => /^chromium-\d+$/.test(d)).sort().reverse()
+          .flatMap((d) => ["chrome-linux64", "chrome-linux"].map((alt) => `/opt/pw-browsers/${d}/${alt}/chrome`))
+      : [];
+    for (const aday of ["/opt/pw-browsers/chromium", ...surumlu, "/usr/bin/chromium", "/usr/bin/google-chrome"]) {
       if (fs.existsSync(aday)) return chromium.launch({ headless: true, executablePath: aday });
     }
     throw e;

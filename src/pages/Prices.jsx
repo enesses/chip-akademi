@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { Link } from "@/components/Nav";
-import { ArrowDownRight, ArrowUpRight, DollarSign, ExternalLink, Search, TrendingDown, TrendingUp } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight, Clock, DollarSign, ExternalLink, Search, TrendingDown, TrendingUp } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import data from "@/data/gpu_kiralama.json";
 import { getChipById } from "@/data/chips";
@@ -16,7 +16,78 @@ const pct = (v) => `${v > 0 ? "+" : ""}%${Math.abs(v).toLocaleString("tr-TR")}`;
 // Fiyatlar iki ondalığa yuvarlı geliyor: 0,02 $ → 0,03 $ gibi 1 sentlik oynama
 // %50 "hareket" gibi görünür. Kartlarda yalnızca en az 2 sentlik değişimi göster.
 const ESIK_USD = 0.02;
+const tarihKisa = (t) => new Date(`${t}T12:00:00Z`).toLocaleDateString("tr-TR", { day: "numeric", month: "long" });
+const gunFarki = (a, b) => Math.round((new Date(`${b}T12:00:00Z`) - new Date(`${a}T12:00:00Z`)) / 86400000);
+// Endeks haftalık ölçülür; kaynak bazen haftalarca güncellenmiyor. 14 günden eski ölçüm işaretlenir.
+const ENDEKS_ESKI_GUN = 14;
+const endeksYasi = (t) => (/^\d{4}-\d{2}-\d{2}$/.test(t || "") ? Math.floor((Date.now() - new Date(`${t}T12:00:00Z`)) / 86400000) : null);
 const anlamli = (it) => it.usd_saat == null || it.onceki_usd == null || Math.abs(it.usd_saat - it.onceki_usd) >= ESIK_USD - 1e-9;
+
+/** Nereden ve nasıl kiralamalı: hyperscaler farkı, spot ve rezerve oranları. */
+function KiralamaTurleri() {
+  const h = data.hyperscaler_farki, sp = data.spot_indirimi, rz = data.rezerve_indirimi;
+  if (!h?.satirlar?.length && !sp?.satirlar?.length) return null;
+  const kisa = (m) => m.replace(/^Nvidia /, "");
+  const oranlar = (sp?.satirlar || []).map((x) => ({ ...x, rezerve: rz?.satirlar?.find((r) => r.model === x.model) }));
+  return (
+    <section className="container mx-auto px-4 pb-10" aria-labelledby="kiralama-turleri" data-testid="kiralama-turleri">
+      <h2 id="kiralama-turleri" className="font-display font-semibold text-xl mb-1">Nereden, nasıl kiralamalı?</h2>
+      <p className="text-sm text-muted-foreground mb-4 max-w-3xl">
+        Aynı GPU büyük bulutlarda (AWS, Azure, Google Cloud) çoğu zaman iki katına yakın; spot ve rezerve kiralama ise on-demand fiyatın altına iner.
+        Ölçüm: <span className="font-mono">{h?.tarih || sp?.tarih}</span>, sağlayıcıların başlangıç fiyatları üzerinden.
+      </p>
+      <div className="grid lg:grid-cols-2 gap-4">
+        {h?.satirlar?.length > 0 && (
+          <div className="rounded-lg border border-card-border bg-card overflow-hidden">
+            <table className="w-full text-sm">
+              <thead className="bg-muted">
+                <tr className="text-left">
+                  <th className="px-4 py-2.5 font-mono text-[10px] uppercase text-muted-foreground">Model</th>
+                  <th className="px-4 py-2.5 font-mono text-[10px] uppercase text-muted-foreground text-right">GPU bulutu</th>
+                  <th className="px-4 py-2.5 font-mono text-[10px] uppercase text-muted-foreground text-right">Hyperscaler</th>
+                  <th className="px-4 py-2.5 font-mono text-[10px] uppercase text-muted-foreground text-right">Fark</th>
+                </tr>
+              </thead>
+              <tbody>
+                {h.satirlar.map((r) => (
+                  <tr key={r.model} className="border-t border-card-border">
+                    <td className="px-4 py-2.5">{kisa(r.model)}</td>
+                    <td className="px-4 py-2.5 font-mono text-right rakam">{usd(r.gpu_bulutu)}</td>
+                    <td className="px-4 py-2.5 font-mono text-right rakam">
+                      {usd(r.hyperscaler)}
+                      {r.hyperscaler_sayisi < 3 && <span className="block font-sans text-[10px] text-muted-foreground">{r.hyperscaler_sayisi} büyük bulut</span>}
+                    </td>
+                    <td className="px-4 py-2.5 font-mono text-right text-red-400 rakam">+%{r.fark_pct}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+        {oranlar.length > 0 && (
+          <div className="rounded-lg border border-card-border bg-card p-4">
+            <div className="flex items-baseline justify-between text-[10px] font-mono uppercase text-muted-foreground mb-2">
+              <span>On-demand fiyatın yüzdesi</span>
+              <span className="inline-flex gap-3"><span className="inline-flex items-center gap-1"><span className="h-2 w-2 bg-primary" />spot</span><span className="inline-flex items-center gap-1"><span className="h-2 w-2 bg-foreground/50" />rezerve</span></span>
+            </div>
+            <ul className="space-y-2.5">
+              {oranlar.map((r) => (
+                <li key={r.model} className="grid grid-cols-[7rem_1fr] gap-3 items-center text-sm">
+                  <span className="truncate">{kisa(r.model)}</span>
+                  <span className="space-y-1">
+                    <span className="flex items-center gap-2"><span className="h-1.5 bg-primary" style={{ width: `${r.oran_pct * 0.8}%` }} /><span className="font-mono text-[11px] rakam">%{r.oran_pct}</span></span>
+                    {r.rezerve && <span className="flex items-center gap-2"><span className="h-1.5 bg-foreground/50" style={{ width: `${r.rezerve.oran_pct * 0.8}%` }} /><span className="font-mono text-[11px] text-muted-foreground rakam">%{r.rezerve.oran_pct}</span></span>}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-[11px] text-muted-foreground mt-3 leading-relaxed">{sp.not}</p>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
 
 export default function Prices() {
   const [q, setQ] = useState("");
@@ -52,6 +123,11 @@ export default function Prices() {
               </p>
             )}
             <p className="font-mono text-[9px] text-muted-foreground mt-0.5">ölçüm {data.kaynak.olcum_tarihi}</p>
+            {endeksYasi(data.kaynak.olcum_tarihi) > ENDEKS_ESKI_GUN && (
+              <p className="inline-flex items-center gap-1 mt-1 rounded-full border border-amber-500/40 bg-amber-500/10 px-1.5 py-0.5 font-mono text-[9px] text-amber-300" data-testid="endeks-eski">
+                <Clock className="h-2.5 w-2.5" aria-hidden="true" />Eski: {endeksYasi(data.kaynak.olcum_tarihi)} gün önce ölçüldü
+              </p>
+            )}
           </div>
           <div className="rounded-xl border border-card-border bg-card p-4">
             <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">Model</p>
@@ -70,7 +146,12 @@ export default function Prices() {
 
       {data.iki_gun && (
         <section className="container mx-auto px-4 pb-8">
-          <h2 className="font-display font-semibold text-xl mb-4">Son ölçümler arası hareketler</h2>
+          <h2 className="font-display font-semibold text-xl mb-1">Son ölçümler arası hareketler</h2>
+          {data.iki_gun.baslangic && data.iki_gun.bitis && (
+            <p className="font-mono text-[11px] text-muted-foreground mb-3" data-testid="hareket-araligi">
+              {tarihKisa(data.iki_gun.baslangic)} → {tarihKisa(data.iki_gun.bitis)} ({gunFarki(data.iki_gun.baslangic, data.iki_gun.bitis)} gün)
+            </p>
+          )}
           <p className="text-xs text-muted-foreground mb-3">Soluk satırlar {AZ_SAGLAYICI}'ten az sağlayıcıyla listeleniyor; bu modellerde medyan tek bir ilanla büyük oynayabilir.</p>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="rounded-2xl border border-red-500/40 bg-red-500/5 p-5">
@@ -95,6 +176,7 @@ export default function Prices() {
         </section>
       )}
 
+      <KiralamaTurleri />
       <BellekFiyatlari />
 
       <section className="container mx-auto px-4 pb-16">
@@ -121,6 +203,7 @@ export default function Prices() {
                   <th className="px-4 py-3 text-left font-mono text-[10px] uppercase text-muted-foreground">Model</th>
                   <th className="px-4 py-3 text-left font-mono text-[10px] uppercase text-muted-foreground">Bellek</th>
                   <th className="px-4 py-3 text-right font-mono text-[10px] uppercase text-muted-foreground">$/saat</th>
+                  {sort === "gb" && <th className="px-4 py-3 text-right font-mono text-[10px] uppercase text-muted-foreground" data-testid="fiyat-gb-baslik">$/GB·saat</th>}
                   <th className="px-4 py-3 text-right font-mono text-[10px] uppercase text-muted-foreground">Değişim</th>
                   <th className="px-4 py-3 text-right font-mono text-[10px] uppercase text-muted-foreground">Sağlayıcı</th>
                 </tr>
@@ -129,12 +212,24 @@ export default function Prices() {
                 {rows.map((r, i) => {
                   const chip = r.chip_id ? getChipById(r.chip_id) : null;
                   return (
-                    <tr key={r.model} className={i % 2 ? "bg-muted/20" : ""}>
+                    <tr key={r.model} className={cn(i % 2 && "bg-muted/20", r.saglayici != null && r.saglayici < AZ_SAGLAYICI && "opacity-60")} title={r.saglayici != null && r.saglayici < AZ_SAGLAYICI ? "Az sağlayıcı: medyan tek bir listelemeyle oynayabilir" : undefined} data-az-saglayici={r.saglayici != null && r.saglayici < AZ_SAGLAYICI ? "1" : undefined}>
                       <td className="px-4 py-2.5 font-medium">
                         {chip ? <Link href={`/chip/${chip.id}`} asChild><a className="text-primary hover:underline">{r.model}</a></Link> : r.model}
                       </td>
                       <td className="px-4 py-2.5 text-xs text-muted-foreground">{r.bellek ?? "—"}</td>
-                      <td className="px-4 py-2.5 font-mono text-right">{usd(r.usd_saat)}</td>
+                      <td className="px-4 py-2.5 font-mono text-right">
+                        {usd(r.usd_saat)}
+                        {r.usd_saat != null && r.olcum_tarihi && r.olcum_tarihi < data.kaynak.cekildigi_tarih && (
+                          <span className="block font-sans text-[10px] text-amber-300/90" data-testid="fiyat-eski" title="Bu model son çekimde gelmedi; gösterilen fiyat daha eski bir ölçüme ait">
+                            ölçüm {r.olcum_tarihi}
+                          </span>
+                        )}
+                      </td>
+                      {sort === "gb" && (
+                        <td className="px-4 py-2.5 font-mono text-right text-muted-foreground">
+                          {r.usd_saat && r.vram_gb ? `$${(r.usd_saat / r.vram_gb).toLocaleString("tr-TR", { minimumFractionDigits: 3, maximumFractionDigits: 3 })}` : "—"}
+                        </td>
+                      )}
                       <td className={cn("px-4 py-2.5 font-mono text-right", r.degisim_pct > 0 ? "text-red-400" : r.degisim_pct < 0 ? "text-emerald-400" : "text-muted-foreground")}>
                         {r.degisim_pct == null ? "—" : r.degisim_pct === 0 ? "sabit" : pct(r.degisim_pct)}
                       </td>
@@ -144,6 +239,11 @@ export default function Prices() {
                 })}
               </tbody>
             </table>
+            {rows.length === 0 && (
+              <p className="px-4 py-8 text-center text-sm text-muted-foreground" data-testid="fiyat-bos">
+                Eşleşen model yok{q ? ` ("${q}")` : ""}{cokSaglayici ? ` · en az ${MIN_SAGLAYICI} sağlayıcı filtresi açık` : ""}.
+              </p>
+            )}
           </div>
         </div>
       </section>

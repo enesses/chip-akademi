@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-03",
+  "guncelleme": "2026-10-23",
   "not": "Bellek, GPU kiralaması gibi saatlik bir piyasada fiyatlanmaz: üreticiler büyük alıcılarla çeyreklik sözleşme yapar. Aşağıdaki rakamlar bu sözleşme fiyatları için yayımlanmış tahminlerdir; gerçekleşen fiyat alıcıya göre değişir.",
   "gostergeler": [
     {
@@ -34,6 +34,16 @@
     },
     {
       "urun": "NAND Flash (tümü)",
+      "donem": "4Ç 2026",
+      "olcu": "çeyreklik",
+      "alt": 15,
+      "ust": 20,
+      "kaynak": "TrendForce",
+      "tarih": "2026-09-30",
+      "url": "https://www.trendforce.com/presscenter/news/20260930-13258.html"
+    },
+    {
+      "urun": "HBM (karma)",
       "donem": "4Ç 2026",
       "olcu": "çeyreklik",
       "alt": 15,
@@ -78,5 +88,6 @@
       "kaynak": "Semiconductor Engineering",
       "url": "https://semiengineering.com/chip-industry-week-in-review-158/"
     }
-  ]
+  ],
+  "kontrol_notu": "23 Ekim 2026: TrendForce basın merkezinde 30 Eylül'den sonra yeni DRAM/NAND fiyat tahmini yok. Sunucu DRAM için 4Ç'e ayrı rakam yayımlanmadı; 3Ç rakamı duruyor."
 }

@@ -3,7 +3,7 @@ import { Link } from "@/components/Nav";
 import { Award, Check, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { buildExam, levelFor } from "@/lib/exam";
-import { saveExamResult } from "@/lib/progress";
+import { getExamResults, saveExamResult } from "@/lib/progress";
 import { cn } from "@/lib/utils";
 
 export default function Exam() {
@@ -33,6 +33,7 @@ export default function Exam() {
       <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em] mb-4">Seviyeni ölç.</h1>
       <p className="text-muted-foreground mb-8">20 soruluk, tüm derslerin havuzundan rastgele seçilen bir sınav.</p>
       <Button size="lg" className="gap-2" onClick={start}><GraduationCap className="h-4 w-4" />Sınava başla</Button>
+      <OncekiSonuclar />
     </div>
   );
 
@@ -71,5 +72,25 @@ export default function Exam() {
         <Link href="/egitim"><Button variant="outline">Derslere git</Button></Link>
       </div>
     </div>
+  );
+}
+
+function OncekiSonuclar() {
+  const sonuclar = getExamResults().slice(0, 5);
+  if (!sonuclar.length) return null;
+  const tarih = (iso) => { try { return new Date(iso).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" }); } catch { return ""; } };
+  return (
+    <section className="mt-12" aria-labelledby="onceki-sinavlar">
+      <h2 id="onceki-sinavlar" className="font-display font-semibold text-lg mb-3">Önceki denemelerin</h2>
+      <ul className="rounded-2xl border border-card-border bg-card divide-y divide-border">
+        {sonuclar.map((r, i) => (
+          <li key={r.at || i} className="flex items-center justify-between gap-4 px-4 py-3 text-sm">
+            <span className="text-muted-foreground">{tarih(r.at)}</span>
+            <span className="font-mono">{r.score}/{r.total}</span>
+            <span className="font-semibold">%{r.pct} · {r.level}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }

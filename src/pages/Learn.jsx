@@ -1,14 +1,20 @@
 import { Link } from "@/components/Nav";
-import { BookOpen, CheckCircle2, Circle } from "lucide-react";
+import { useState } from "react";
+import { BookOpen, CheckCircle2, Circle, RotateCcw } from "lucide-react";
 import { lessons } from "@/data/lessons";
-import { getCompleted } from "@/lib/progress";
+import { getCompleted, resetProgress } from "@/lib/progress";
 import { cn } from "@/lib/utils";
 
 const TRACK_LABELS = { temeller: "Temeller", uretim: "Üretim ve Fizik", mimari: "Mimari", bellek: "Bellek", pratik: "Pratik" };
 const TRACK_COLORS = { temeller: "hsl(var(--primary))", uretim: "rgb(var(--t-violet-400))", mimari: "rgb(var(--t-amber-400))", bellek: "rgb(var(--t-emerald-400))", pratik: "rgb(var(--t-rose-400))" };
 
 export default function Learn() {
-  const completed = getCompleted();
+  const [completed, setCompleted] = useState(() => getCompleted());
+  const sifirla = () => {
+    if (!window.confirm("Tamamlanan dersler, quiz ve sınav sonuçların silinecek. Emin misin?")) return;
+    resetProgress();
+    setCompleted(getCompleted());
+  };
   const byTrack = {};
   for (const l of [...lessons].sort((a, b) => a.order - b.order)) (byTrack[l.track] = byTrack[l.track] || []).push(l);
 
@@ -21,6 +27,12 @@ export default function Learn() {
         <div className="h-1.5 bg-muted overflow-hidden max-w-md">
           <div className="h-full bg-primary transition-all" style={{ width: `${(completed.length / lessons.length) * 100}%` }} />
         </div>
+        {completed.length > 0 && (
+          <button type="button" onClick={sifirla} data-testid="ilerleme-sifirla"
+            className="mt-3 inline-flex items-center gap-1.5 text-xs font-mono text-muted-foreground hover:text-foreground transition-colors">
+            <RotateCcw className="h-3 w-3" />İlerlemeyi sıfırla
+          </button>
+        )}
       </section>
 
       {Object.entries(byTrack).map(([track, list]) => (
