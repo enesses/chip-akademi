@@ -2,7 +2,9 @@
 # Firebase Hosting'e yükler: https://chip-akademi.web.app
 #
 # Tek seferlik kurulum: otomasyon/HESAP-KURULUM.md → "Otomatik yayın".
-# FIREBASE_SERVICE_ACCOUNT sırrı yoksa iş kırmızı yanmaz, yalnızca atlar.
+# Sır: `firebase init hosting:github` komutunun kurduğu
+# FIREBASE_SERVICE_ACCOUNT_CHIP_AKADEMI (önerilen; izinleri doğru gelir) ya da
+# elle eklenen FIREBASE_SERVICE_ACCOUNT. İkisi de yoksa iş kırmızı yanmaz, atlar.
 name: Firebase yayını
 
 on:
@@ -22,16 +24,16 @@ jobs:
       - name: Sır var mı?
         id: sir
         env:
-          SIR: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          SIR: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CHIP_AKADEMI || secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: |
           if [ -n "$SIR" ]; then echo "var=1" >> "$GITHUB_OUTPUT"
-          else echo "::notice::FIREBASE_SERVICE_ACCOUNT sırrı yok; yayın atlandı."; fi
+          else echo "::notice::Firebase sırrı yok; yayın atlandı."; fi
       - uses: actions/checkout@v4
         if: steps.sir.outputs.var == '1'
       - uses: FirebaseExtended/action-hosting-deploy@v0
         if: steps.sir.outputs.var == '1'
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CHIP_AKADEMI || secrets.FIREBASE_SERVICE_ACCOUNT }}
           projectId: chip-akademi
           channelId: live
