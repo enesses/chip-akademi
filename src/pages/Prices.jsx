@@ -121,6 +121,7 @@ export default function Prices() {
                   <th className="px-4 py-3 text-left font-mono text-[10px] uppercase text-muted-foreground">Model</th>
                   <th className="px-4 py-3 text-left font-mono text-[10px] uppercase text-muted-foreground">Bellek</th>
                   <th className="px-4 py-3 text-right font-mono text-[10px] uppercase text-muted-foreground">$/saat</th>
+                  {sort === "gb" && <th className="px-4 py-3 text-right font-mono text-[10px] uppercase text-muted-foreground" data-testid="fiyat-gb-baslik">$/GB·saat</th>}
                   <th className="px-4 py-3 text-right font-mono text-[10px] uppercase text-muted-foreground">Değişim</th>
                   <th className="px-4 py-3 text-right font-mono text-[10px] uppercase text-muted-foreground">Sağlayıcı</th>
                 </tr>
@@ -135,6 +136,11 @@ export default function Prices() {
                       </td>
                       <td className="px-4 py-2.5 text-xs text-muted-foreground">{r.bellek ?? "—"}</td>
                       <td className="px-4 py-2.5 font-mono text-right">{usd(r.usd_saat)}</td>
+                      {sort === "gb" && (
+                        <td className="px-4 py-2.5 font-mono text-right text-muted-foreground">
+                          {r.usd_saat && r.vram_gb ? `$${(r.usd_saat / r.vram_gb).toLocaleString("tr-TR", { minimumFractionDigits: 3, maximumFractionDigits: 3 })}` : "—"}
+                        </td>
+                      )}
                       <td className={cn("px-4 py-2.5 font-mono text-right", r.degisim_pct > 0 ? "text-red-400" : r.degisim_pct < 0 ? "text-emerald-400" : "text-muted-foreground")}>
                         {r.degisim_pct == null ? "—" : r.degisim_pct === 0 ? "sabit" : pct(r.degisim_pct)}
                       </td>
