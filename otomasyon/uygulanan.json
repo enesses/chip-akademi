@@ -370,6 +370,26 @@
       "ozet": "Puan kartında açılır 'Puan nasıl hesaplandı?' bölümü",
       "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js ve vite açıkları yüzünden 'dikkat' (düzeltmeler PR #31, #41), onay bekliyor",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": "Fiyat tablosunda $/GB sıralamasında $/GB değerini göster",
+      "durum": "acik",
+      "pr": 46,
+      "dal": "otomasyon/oneri-2026-10-23-1",
+      "ozet": "$/GB sıralamasında tabloya $/GB·saat sütunu ekleniyor",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki mevcut bağımlılık açıkları yüzünden 'dikkat', onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-23",
+      "oneri": "Fiyat aramasında sonuç yoksa boş tablo yerine mesaj göster",
+      "durum": "acik",
+      "pr": 47,
+      "dal": "otomasyon/oneri-2026-10-23-2",
+      "ozet": "Eşleşme yoksa tablonun altında 'Eşleşen model yok' mesajı",
+      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki mevcut bağımlılık açıkları yüzünden 'dikkat', onay bekliyor",
+      "kim": "otomasyon"
     }
   ]
 }

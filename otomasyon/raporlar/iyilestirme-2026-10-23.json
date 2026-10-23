@@ -1,0 +1,45 @@
+{
+  "ajan": "iyilestirme",
+  "tarih": "2026-10-23",
+  "zaman": "2026-10-23T07:06:58.395Z",
+  "durum": "tamam",
+  "olcumler": {
+    "veri": {
+      "chipSayisi": 67,
+      "fiyatSayisi": 107
+    },
+    "egitim": {
+      "dersSayisi": 13
+    },
+    "erisim": {
+      "altsiz": 0,
+      "etiketsizDugme": 0
+    },
+    "kod": {
+      "dosyaSayisi": 74,
+      "toplamSatir": 17815,
+      "boyutKB": null
+    }
+  },
+  "bulgular": [
+    {
+      "alan": "veri",
+      "baslik": "Bellek fiyatları 20 gündür güncellenmedi",
+      "etki": "düşük",
+      "otomatik": false,
+      "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
+    },
+    {
+      "alan": "kod",
+      "baslik": "4 export hiçbir yerde kullanılmıyor",
+      "etki": "düşük",
+      "otomatik": false,
+      "detay": [
+        "fiyatBilgisi (src/lib/chipScore.js)",
+        "togglePin (src/lib/notes.js)",
+        "resetProgress (src/lib/progress.js)",
+        "getExamResults (src/lib/progress.js)"
+      ]
+    }
+  ]
+}

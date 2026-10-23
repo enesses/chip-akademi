@@ -2,6 +2,241 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-10-23-otors-as-export-controls-threaten-fab-operations",
+      "tarih": "2026-10-23",
+      "yayin": "2026-10-22",
+      "baslik": "TSMC, Çin mıknatısı içermeyen fab ekipmanı istiyor",
+      "detay": "TSMC tedarikçilerinden nadir toprak mıknatısı içermeyen motorlu otomasyon ekipmanı istedi. Çin, kalıcı mıknatıs üretiminin yaklaşık %95'ini kontrol ediyor; genişletilmiş ihracat kontrolleri 10 Kasım 2026'ya kadar askıda.",
+      "kaynak": "Tom's Hardware (Reuters)",
+      "url": "https://tomshardware.com/tech-industry/semiconductors/tsmc-is-seeking-chipmaking-equipment-that-doesnt-contain-chinese-rare-earth-magnets-asks-suppliers-to-provide-alternative-motors-as-export-controls-threaten-fab-operations",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "politika"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-23-a-becomes-key-buyer-of-samsung-electro-mechanics",
+      "tarih": "2026-10-23",
+      "yayin": "2026-10-21",
+      "baslik": "Samsung Electro-Mechanics, Nvidia'nın alt tabaka tedarikçisi oldu",
+      "detay": "Samsung Electro-Mechanics, Nvidia ile yapay zekâ çipleri için paket alt tabaka ortaklığı kurdu; Sejong ve Busan'da Nvidia'ya özel hatlar kurulacak, hacmin yılda %10'un üzerinde büyümesi bekleniyor.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/10/21/nvidia-becomes-key-buyer-of-samsung-electro-mechanics",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-23-hropic-reportedly-in-talks-over-second-45bn-deal",
+      "tarih": "2026-10-23",
+      "yayin": "2026-10-20",
+      "baslik": "Nscale ve Anthropic ikinci 45 milyar dolarlık anlaşmayı görüşüyor",
+      "detay": "Bloomberg'e göre Nscale, West Virginia'daki Monarch kampüsünün Vera Rubin için planlanan 460 MW'lık ikinci binası için Anthropic'le yaklaşık 45 milyar dolarlık yeni bir anlaşma görüşüyor; Microsoft ana kiracılıktan çekildi.",
+      "kaynak": "The Next Web (Bloomberg)",
+      "url": "https://thenextweb.com/news/nscale-and-anthropic-reportedly-in-talks-over-second-45bn-deal",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi",
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-23-n-backs-several-data-center-focused-energy-firms",
+      "tarih": "2026-10-23",
+      "yayin": "2026-10-20",
+      "baslik": "Blackstone 8,7 milyar dolarlık enerji geçişi fonunu kapattı",
+      "detay": "Blackstone Energy Transition Partners V, öncekinden yaklaşık %50 büyük 8,7 milyar dolarla kapandı; fon veri merkezi sıvı soğutma bileşenleri üreten Flow Control'ü satın aldı.",
+      "kaynak": "BeBeez",
+      "url": "https://bebeez.eu/2026/10/20/blackstone-closes-latest-energy-transition-fund-at-8-7bn-backs-several-data-center-focused-energy-firms/",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-23-ndex-php-en-stock-2026-10-23-2026102310435318012",
+      "tarih": "2026-10-23",
+      "yayin": "2026-10-23",
+      "baslik": "Kospi 5.400'ün altına indi, Samsung %3,26 düştü",
+      "detay": "23 Ekim öğleden önce Kospi %2,43 düşüşle 5.339,40'a geriledi, 29 Temmuz'dan beri ilk kez 5.400'ün altında. Samsung Electronics %3,26 düşerken SK hynix yalnızca %0,57 geriledi.",
+      "kaynak": "MoneyToday",
+      "url": "https://www.mt.co.kr/index.php/en/stock/2026/10/23/2026102310435318012",
+      "ton": "negatif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-23--substack-com-p-mission-critical-news-october-22",
+      "tarih": "2026-10-23",
+      "yayin": "2026-10-22",
+      "baslik": "Google, Arkansas veri merkezi için 440 MW'lık güç anlaşması imzaladı",
+      "detay": "Google, Entergy Arkansas ile West Memphis veri merkezi için 440 MW'lık güç alım anlaşması yaptı ve iki batarya depolama projesini destekleyecek.",
+      "kaynak": "Mission Critical News",
+      "url": "https://missioncriticalconnections.substack.com/p/mission-critical-news-october-22",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-23--substack-com-p-closing-look-thursday-october-22",
+      "tarih": "2026-10-23",
+      "yayin": null,
+      "baslik": "Çip endeksi %6,72 çöktü, 30 üyenin tamamı düştü",
+      "detay": "Philadelphia Yarı İletken Endeksi 22 Ekim'de %6,72 düşüşle 10.731,98'e indi; 29 Temmuz'dan beri en düşük seviye. Nvidia %4,40, AMD %8,10, Marvell %8,70, Broadcom %4,31, CoreWeave %10,06 geriledi.",
+      "kaynak": "Capp Notes",
+      "url": "https://cappnotes.substack.com/p/closing-look-thursday-october-22",
+      "ton": "negatif",
+      "konular": [
+        "cip"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-23--ai-selloff-marvell-and-amd-sink-8-intel-drops-7",
+      "tarih": "2026-10-23",
+      "yayin": null,
+      "baslik": "Lam Research'ün tedarik uyarısı çip hisselerini aşağı çekti",
+      "detay": "CFO Doug Bettinger gelirin tedarik kısıtları olmasa daha yüksek olabileceğini, CEO Tim Archer kısıtların 2027'de de sürebileceğini söyledi. LRCX %11, Marvell ve AMD %8, Intel %7 düştü.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/10/22/chip-stocks-fall-as-supply-warning-deepens-ai-selloff-marvell-and-amd-sink-8-intel-drops-7/",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-23-nasdaq-down-today-october-22-2026-ai-chip-stocks",
+      "tarih": "2026-10-23",
+      "yayin": null,
+      "baslik": "Nasdaq-100'deki çip şirketleri bir günde 726 milyar dolar kaybetti",
+      "detay": "Nasdaq %2,60 düşüşle 26.008,86'ya indi. 22 çip ve depolama şirketinin tamamı düştü; Nvidia tek başına yaklaşık 235 milyar dolar piyasa değeri kaybetti. Meta %6,98, Amazon %4,57 geriledi.",
+      "kaynak": "StockTitan",
+      "url": "https://www.stocktitan.net/articles/why-is-nasdaq-down-today-october-22-2026-ai-chip-stocks",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-23-tors-for-now-are-buying-zuckerberg-s-plan-anyway",
+      "tarih": "2026-10-23",
+      "yayin": null,
+      "baslik": "Meta'nın nakit açığı yapay zekâ finansmanı kaygısını büyüttü",
+      "detay": "Meta 3. çeyrekte 64,6 milyar dolar gelire karşın 34,91 milyar dolar yatırım harcamasıyla -2,12 milyar dolar serbest nakit akışı açıkladı; 19 Ocak 2027'den itibaren oy hakkı olmayan C sınıfı hisse çıkaracak.",
+      "kaynak": "XTB",
+      "url": "https://www.xtb.com/en/market-analysis/record-breaking-meta-though-with-a-cash-loss-investors-for-now-are-buying-zuckerberg-s-plan-anyway",
+      "ton": "negatif",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-23--overwhelm-markets-worldwide-and-oil-prices-jump",
+      "tarih": "2026-10-23",
+      "yayin": null,
+      "baslik": "Satış Asya'ya yayıldı: Kospi %2,4, Nikkei %1,7 düştü",
+      "detay": "23 Ekim'de Kospi 5.403,32'ye, Nikkei 225 61.825,26'ya geriledi. Brent petrol İran gerginliğiyle 113,73 dolara çıktı; ABD 10 yıllık faizi %4,97'ye indi.",
+      "kaynak": "AP",
+      "url": "https://www.wsls.com/business/2026/10/23/asian-shares-slip-as-sharp-drops-for-ai-stocks-overwhelm-markets-worldwide-and-oil-prices-jump/",
+      "ton": "negatif",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-23-x-falls-less-than-samsung-after-halting-solidigm",
+      "tarih": "2026-10-23",
+      "yayin": null,
+      "baslik": "SK hynix, Solidigm'in halka arzını durdurdu",
+      "detay": "SK hynix, sermaye piyasası koşulları nedeniyle Solidigm'in Nasdaq halka arz sürecini durdurdu. Açılış öncesi SK hynix %1,72, Samsung Electronics %3,73 düştü.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/10/23/sk-hynix-falls-less-than-samsung-after-halting-solidigm",
+      "ton": "notr",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-23--000162828026066882-a4ex991-pressreleaseq127-htm",
+      "tarih": "2026-10-23",
+      "yayin": null,
+      "baslik": "Western Digital geliri %55 arttı, rehberi 5,1 milyar dolar",
+      "detay": "Western Digital mali 2027'nin ilk çeyreğinde 4,381 milyar dolar gelir, %58,1 non-GAAP brüt marj ve 4,64 dolar hisse başı kâr açıkladı; ikinci çeyrek için 5,1 ± 0,1 milyar dolar gelir bekliyor.",
+      "kaynak": "Western Digital (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000106040/000162828026066882/a4ex991-pressreleaseq127.htm",
+      "ton": "pozitif",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-23-mand-oct-23-2026-semiconductor-news-b503a13137c3",
+      "tarih": "2026-10-23",
+      "yayin": null,
+      "baslik": "Disco rekor çeyrek satış ve kâr açıkladı",
+      "detay": "Japon dilimleme/taşlama ekipmanı üreticisi Disco, Temmuz–Eylül'de ¥142,75 milyar satış (%36,4 artış) ve ¥67,61 milyar faaliyet kârı (%52,3 artış) bildirdi; faaliyet marjı %47,4.",
+      "kaynak": "TAI Semicon (Disco finansal raporu)",
+      "url": "https://tai-semicon.medium.com/disco-hits-record-quarterly-sales-and-profit-on-ai-chip-demand-oct-23-2026-semiconductor-news-b503a13137c3",
+      "ton": "pozitif",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-23--wrapping-up-us15bil-fundraising-to-fuel-ai-race",
+      "tarih": "2026-10-23",
+      "yayin": null,
+      "baslik": "DeepSeek yaklaşık 15 milyar dolarlık tur topluyor",
+      "detay": "Reuters'a göre DeepSeek, 500 milyar yuan ön değerlemeyle yaklaşık 100 milyar yuan (14,98 milyar dolar) topluyor; CATL ve Tencent en büyük yatırımcılar, 15'ten fazla katılımcı var.",
+      "kaynak": "The Star (Reuters)",
+      "url": "https://www.thestar.com.my/business/business-news/2026/10/22/deepseek-wrapping-up-us15bil-fundraising-to-fuel-ai-race",
+      "ton": "notr",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-23-e-signs-1gw-virtual-power-plant-deal-with-voltus",
+      "tarih": "2026-10-23",
+      "yayin": null,
+      "baslik": "Google, Voltus ile 1 GW'lık sanal güç santrali kuruyor",
+      "detay": "Google, PJM bölgesinde Voltus ile yaklaşık üç yıllık bir anlaşmayla 1 GW'lık dağıtık kapasite portföyü oluşturuyor; Haziran'daki 100 MW'lık anlaşmanın genişletilmesi.",
+      "kaynak": "DCD",
+      "url": "https://www.datacenterdynamics.com/en/news/google-signs-1gw-virtual-power-plant-deal-with-voltus/",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
       "id": "2026-10-22-substack-com-p-closing-look-wednesday-october-21",
       "tarih": "2026-10-22",
       "yayin": null,
@@ -3021,7 +3256,7 @@
       "kaynakTuru": "bugun"
     }
   ],
-  "guncelleme": "2026-10-22",
+  "guncelleme": "2026-10-23",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",

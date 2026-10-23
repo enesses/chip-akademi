@@ -1,0 +1,33 @@
+{
+  "ajan": "yenileme",
+  "tarih": "2026-10-23",
+  "zaman": "2026-10-23T07:06:56.589Z",
+  "durum": "ok",
+  "adimlar": [
+    {
+      "ad": "Fiyat verisi",
+      "durum": "atlandı",
+      "detay": "bu çalıştırmada fiyat girdisi gelmedi; mevcut veri bugün daha önce işlenmiş"
+    },
+    {
+      "ad": "Bugün sayfası",
+      "durum": "ok",
+      "detay": "bu çalıştırmada güncellendi — 10 madde, puan 33, 1 yaklaşan olay; haber akışına +10"
+    },
+    {
+      "ad": "Haber akışı",
+      "durum": "ok",
+      "detay": "bugün 16 haber (yalnızca Bugün maddeleri; gelen/haberler.json gelmedi)"
+    },
+    {
+      "ad": "Derleme",
+      "durum": "ok",
+      "detay": "başarılı"
+    },
+    {
+      "ad": "Tek dosya",
+      "durum": "ok",
+      "detay": "17 görsel, HTML: 2702 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+    }
+  ]
+}
