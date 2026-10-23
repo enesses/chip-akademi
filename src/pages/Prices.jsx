@@ -144,6 +144,11 @@ export default function Prices() {
                 })}
               </tbody>
             </table>
+            {rows.length === 0 && (
+              <p className="px-4 py-8 text-center text-sm text-muted-foreground" data-testid="fiyat-bos">
+                Eşleşen model yok{q ? ` ("${q}")` : ""}{cokSaglayici ? ` · en az ${MIN_SAGLAYICI} sağlayıcı filtresi açık` : ""}.
+              </p>
+            )}
           </div>
         </div>
       </section>
