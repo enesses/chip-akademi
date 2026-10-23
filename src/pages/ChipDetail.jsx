@@ -52,6 +52,14 @@ function NormBar({ deger, renk = "bg-primary" }) {
   );
 }
 
+// Son ölçüme göre fiyat değişimi; 3'ten az sağlayıcılı satırlarda tek ilan
+// medyanı oynattığı için gösterilmez (Fiyatlar sayfasındaki hareket kartlarıyla aynı eşik).
+function fiyatDegisimMetni(m) {
+  if (m.degisimPct == null || m.degisimPct === 0 || (m.saglayici ?? 0) < 3) return "";
+  const isaret = m.degisimPct > 0 ? "+" : "−";
+  return ` · önceki ölçüme göre ${isaret}%${Math.abs(m.degisimPct).toLocaleString("tr-TR")}`;
+}
+
 export default function ChipDetail() {
   const { id } = useParams();
   const chip = getChipById(id);
@@ -194,7 +202,7 @@ export default function ChipDetail() {
         <PuanKarti
           ikon={DollarSign}
           baslik="Maliyet puanı"
-          altyazi={m.usdSaat != null ? (m.gpuSayisi > 1 ? `$${m.usdSaat}/saat (${m.gpuSayisi} GPU × $${m.usdSaatGpu})` : `$${m.usdSaat}/saat`) : undefined}
+          altyazi={m.usdSaat != null ? (m.gpuSayisi > 1 ? `$${m.usdSaat}/saat (${m.gpuSayisi} GPU × $${m.usdSaatGpu})` : `$${m.usdSaat}/saat`) + fiyatDegisimMetni(m) : undefined}
           puan={m.puan}
           aciklama={m.neden}
         >

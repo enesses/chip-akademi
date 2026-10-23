@@ -28,7 +28,8 @@ export default function Bugun() {
     let ta = 0, ti = 0;
     // Önceki günlerden tekrar eden maddeler puana katılmaz (otomasyon/veri-isle.mjs ile aynı kural).
     for (const m of data.maddeler) { if (m.tekrar) continue; ta += m.agirlik; ti += m.agirlik * KATEGORI[m.kategori].isaret; }
-    return { puan: Math.round(50 + 50 * (ti/ta)), ta, ti };
+    // Bütün maddeler tekrarsa ağırlık toplamı 0 olur; NaN yerine nötr 50 göster.
+    return { puan: ta > 0 ? Math.round(50 + 50 * (ti / ta)) : 50, ta, ti };
   }, []);
   // Geçmişte kalan olayları sayfanın açıldığı güne göre gizle
   const yaklasan = (data.yaklasan || []).filter((o) => kalanGun(o.tarih) >= 0);
@@ -56,6 +57,20 @@ export default function Bugun() {
               <p className="text-[11px] text-muted-foreground/80 mt-3 pt-3 border-t border-card-border">
                 Önceki günlerden tekrar eden {tekrarSayisi} haber puana katılmadı.
               </p>
+            )}
+            {data.yontem && (
+              <details className="text-left mt-3 pt-3 border-t border-card-border">
+                <summary className="cursor-pointer text-[11px] text-muted-foreground hover:text-foreground">Puan nasıl hesaplandı?</summary>
+                <div className="mt-2 space-y-1.5 text-[11px] text-muted-foreground leading-relaxed">
+                  {data.yontem.aciklama && <p>{data.yontem.aciklama}</p>}
+                  {data.yontem.formul && <p className="font-mono text-foreground/80">{data.yontem.formul}</p>}
+                  {data.yontem.isaretler && <p className="font-mono">{data.yontem.isaretler}</p>}
+                  <p className="font-mono text-foreground/80 tabular-nums">
+                    Σ ağırlık×işaret = {hesap.ti > 0 ? "+" : ""}{hesap.ti} · Σ ağırlık = {hesap.ta} · Puan = {hesap.puan}
+                  </p>
+                  {data.yontem.uyari && <p className="italic">{data.yontem.uyari}</p>}
+                </div>
+              </details>
             )}
           </div>
           <div className="space-y-4">
@@ -113,6 +128,13 @@ export default function Bugun() {
                       </p>
                     )}
                     <p className="text-sm text-muted-foreground leading-relaxed mt-1.5">{m.detay}</p>
+                    {(m.neden || m.agirlik) && (
+                      <p className="text-xs text-muted-foreground/80 leading-relaxed mt-2">
+                        <span className="font-medium" style={{ color: k.renk }}>{k.ad}</span>
+                        {m.agirlik ? <span className="tabular-nums"> · ağırlık {m.agirlik}/3</span> : null}
+                        {m.neden ? <> — {m.neden}</> : null}
+                      </p>
+                    )}
                   </div>
                 </div>
                 <a href={m.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-wider text-muted-foreground hover:text-foreground ml-10">

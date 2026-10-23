@@ -557,6 +557,8 @@ const FIYAT_MAP = (() => {
         usdSaatGpu: row.usd_saat,
         gpuSayisi,
         vramGb: row.vram_gb ?? null,
+        degisimPct: typeof row.degisim_pct === "number" ? row.degisim_pct : null,
+        saglayici: row.saglayici ?? null,
       });
     }
   }
@@ -734,7 +736,7 @@ export function maliyetPuani(chip) {
   const cls = classOf(chip);
   const hammM = hammMaliyetHesapla(chip);
   if (hammM == null) {
-    const r = { puan: null, neden: "Performans spec'i yetersiz — $/performans hesaplanamadı.", usdSaat: fiyat.usdSaat, hammMaliyet: null };
+    const r = { puan: null, neden: "Performans spec'i yetersiz — $/performans hesaplanamadı.", usdSaat: fiyat.usdSaat, degisimPct: fiyat.degisimPct, saglayici: fiyat.saglayici, hammMaliyet: null };
     _maliyetCache.set(chip.id, r);
     return r;
   }
@@ -743,7 +745,7 @@ export function maliyetPuani(chip) {
   const puan = aralik > 0
     ? Math.round(Math.max(0, Math.min(1, (max - hammM) / aralik)) * 100)
     : 50;
-  const r = { puan, usdSaat: fiyat.usdSaat, usdSaatGpu: fiyat.usdSaatGpu, gpuSayisi: fiyat.gpuSayisi, hammMaliyet: parseFloat(hammM.toFixed(6)), neden: null };
+  const r = { puan, usdSaat: fiyat.usdSaat, usdSaatGpu: fiyat.usdSaatGpu, gpuSayisi: fiyat.gpuSayisi, degisimPct: fiyat.degisimPct, saglayici: fiyat.saglayici, hammMaliyet: parseFloat(hammM.toFixed(6)), neden: null };
   _maliyetCache.set(chip.id, r);
   return r;
 }

@@ -169,7 +169,11 @@ if (fs.existsSync(fiyatGirdi)) {
     };
     // İsteğe bağlı: getdeploying.com/gpu-price-index'ten endeks özeti
     const e = g.endeks;
-    if (e && /^\d{4}-\d{2}-\d{2}$/.test(e.olcum_tarihi || "") && Number.isFinite(e.degisim_4_hafta_pct) && Number.isFinite(e.degisim_12_ay_pct)) {
+    // Kaynak sayfa bazen önbellekten eski bir ölçüm gösteriyor (19 Ekim'de 14 Eylül
+    // geldi, kayıtlı 12 Ekim'di): kayıtlıdan eski bir ölçüm yenisinin üzerine yazılmasın.
+    const endeksEski = e && (e.olcum_tarihi || "") < (veri.kaynak.olcum_tarihi || "");
+    if (endeksEski) console.log(`  · Endeks atlandı: gelen ölçüm ${e.olcum_tarihi}, kayıtlı ${veri.kaynak.olcum_tarihi} daha yeni`);
+    if (e && !endeksEski && /^\d{4}-\d{2}-\d{2}$/.test(e.olcum_tarihi || "") && Number.isFinite(e.degisim_4_hafta_pct) && Number.isFinite(e.degisim_12_ay_pct)) {
       veri.endeks = { ...veri.endeks, degisim_4_hafta_pct: e.degisim_4_hafta_pct, degisim_12_ay_pct: e.degisim_12_ay_pct };
       veri.kaynak.olcum_tarihi = e.olcum_tarihi;
     }
