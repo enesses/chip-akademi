@@ -1,15 +1,15 @@
 {
-  "guncelleme": "2026-10-23T07:11:06.522Z",
-  "tarih": "2026-10-23",
-  "durum": "dikkat",
+  "guncelleme": "2026-10-24T07:07:00.394Z",
+  "tarih": "2026-10-24",
+  "durum": "temiz",
   "ajanlar": [
     {
       "id": "guvenlik",
       "ad": "Güvenlik",
       "saat": "10:00",
       "calisti": true,
-      "durum": "dikkat",
-      "zaman": "2026-10-23T07:06:58.279Z"
+      "durum": "temiz",
+      "zaman": "2026-10-24T07:05:43.257Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-23T07:06:58.395Z"
+      "zaman": "2026-10-24T07:05:43.396Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-23T07:06:56.589Z"
+      "zaman": "2026-10-24T07:05:42.642Z"
     },
     {
       "id": "gelistirme",
@@ -33,105 +33,44 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-23T07:07:15.091Z"
+      "zaman": "2026-10-24T07:06:02.059Z"
     }
   ],
-  "dikkat": [
-    {
-      "seviye": "uyarı",
-      "metin": "Güvenlik: 5 yüksek seviye bağımlılık açığı var."
-    },
-    {
-      "seviye": "uyarı",
-      "metin": "Güvenlik: src/lib/firebaseAyar.js: gömülü API anahtarı olabilir (1)"
-    },
-    {
-      "seviye": "dikkat",
-      "tur": "onay",
-      "metin": "17 öneri onay bekliyor (PR #29, PR #30, PR #31, PR #32, PR #33, PR #34, PR #35, PR #36, PR #37, PR #38, PR #39, PR #40, PR #41, PR #42, PR #43, PR #46, PR #47) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
-    }
-  ],
+  "dikkat": [],
   "oneriler": [
     {
-      "baslik": "Arayüz testi Chromium'u sürüm klasöründen bağımsız bulsun",
-      "neden": "Ortamın Chromium'u 1194'ten 1243'e (chrome-linux64) güncellendi; otomasyon/ui-testi.mjs satır 38'deki sabit chromium-1194 yolu yüzünden test bugün çıkış 2 ('Executable doesn't exist … headless_shell-1194') verdi ve geliştirme raporu test-hatasi gösterdi. Düzeltme PR #45'te; o birleşene kadar her çalıştırma elle geçici bağlantı istiyor.",
-      "etki": "yüksek",
-      "alan": "otomasyon"
-    },
-    {
-      "baslik": "veri-isle sağlayıcı sütunu sayı değilse fiyat girdisini reddetsin",
-      "neden": "otomasyon/veri-isle.mjs:131 şüpheli kontrolü (n.saglayici ?? 0) >= 10 ile yapılıyor. Bugün ilk WebFetch okuması 4. sütuna sağlayıcı sayısı yerine en ucuz sağlayıcının adını ('HyperAI') verdi; 'HyperAI' >= 10 false olduğu için V100 (+%116) ve A4000 (+%290) gibi oynamalar şüpheli kontrolünden sessizce geçerdi. Satırların çoğunda saglayici string ise girdi 'yanlış sütun' diye reddedilmeli.",
-      "etki": "yüksek",
-      "alan": "otomasyon"
-    },
-    {
-      "baslik": "oneri-uygula denetimi güvenliği main'e göre fark olarak değerlendirsin",
-      "neden": "Hâlâ geçerli: güvenlik ajanı bugün de 5 yüksek bağımlılık açığı ve firebaseAyar.js uyarısıyla 'dikkat' durumunda; bu yüzden 15 öneri PR'ı (#29–#43) onay bekliyor. Yalnızca dalın yeni eklediği açıklar sayılırsa otomatik birleştirme yeniden çalışır.",
-      "etki": "yüksek",
-      "alan": "otomasyon"
-    },
-    {
-      "baslik": "Fiyat tablosunda $/GB sıralamasında $/GB değerini göster",
-      "neden": "src/pages/Prices.jsx'te '$/GB' sıralama düğmesi usd_saat/vram_gb'ye göre sıralıyor ama tabloda bu değer hiçbir sütunda yok; kullanıcı sıranın nedenini göremiyor.",
-      "etki": "düşük",
-      "alan": "arayüz"
-    },
-    {
-      "baslik": "Fiyat aramasında sonuç yoksa boş tablo yerine mesaj göster",
-      "neden": "Prices.jsx'te arama ya da 'En az 5 sağlayıcı' filtresi hiçbir modelle eşleşmezse yalnızca başlık satırı kalan boş tablo görünüyor; rows.length === 0 durumu ele alınmıyor.",
-      "etki": "düşük",
-      "alan": "arayüz"
-    },
-    {
-      "baslik": "Hyperscaler farkı, taahhüt ve spot indirimi verisini tazeleyip Fiyatlar'da göster",
-      "neden": "src/data/gpu_kiralama.json'daki hyperscaler_farki, taahhut_indirimi ve spot_indirimi alanları 8 Ekim'den (#9) beri değişmedi ve hiçbir .jsx dosyasında okunmuyor. Önce getdeploying.com'dan tarihli olarak yeniden okunmalı, sonra ölçüm tarihiyle gösterilmeli.",
+      "baslik": "Bugün puan kartında kategori dağılımını göster",
+      "neden": "src/pages/Bugun.jsx puan kartı yalnızca Σ ağırlık×işaret ve Σ ağırlık gösteriyor; bugünkü 8 maddenin 2'si pozitif, 3'ü nötr, 3'ü negatif ve puan 47 — okur bu dağılımı maddeleri tek tek sayarak bulmak zorunda.",
       "etki": "orta",
-      "alan": "veri"
+      "alan": "Bugün"
     },
     {
-      "baslik": "Bellek göstergelerine TrendForce'un 4Ç DRAM tahminini işle",
-      "neden": "İyileştirme ajanı: bellek_fiyat.json 20 gündür güncellenmedi. 26 Ekim pazartesi presscenter kontrolünde birincil açıklama doğrulanıp yazılmalı.",
+      "baslik": "Bugün maddelerini kategoriye göre süzme düğmeleri",
+      "neden": "Haberler.jsx'te ton filtresi (ton state'i) var ama Bugun.jsx'te 'Günün gelişmeleri' listesi süzülemiyor; 8–12 maddelik listede yalnızca olumsuz gelişmeleri görmek için Haberler sayfasına geçmek gerekiyor.",
+      "etki": "düşük",
+      "alan": "Bugün"
+    },
+    {
+      "baslik": "Fiyat tablosunda elle doğrulanmış büyük oynamaları işaretle",
+      "neden": "Bugün Nvidia A4000 medyanı 0.82 → 0.25 $ (-%70) ikinci okumayla doğrulanıp yazıldı (rapor: 'büyük oynama elle doğrulandı'), ama gpu_kiralama.json satırlarında bunu taşıyan bir alan yok ve Prices.jsx bu oynamayı sıradan bir değişim gibi gösteriyor. veri-isle.mjs'nin (korunan) satıra 'dogrulama_notu' yazması gerekir.",
       "etki": "orta",
-      "alan": "veri"
+      "alan": "Fiyatlar / otomasyon"
+    },
+    {
+      "baslik": "Sunucu DRAM göstergesini tazele",
+      "neden": "src/data/bellek_fiyat.json'da 'Sunucu DRAM' göstergesinin tarihi 2026-07-09; diğer göstergeler 2026-09-30. TrendForce basın merkezi bu sabah izin engeli verdi; bir sonraki pazartesi ya da etkileşimli bir oturumda 4Ç sunucu DRAM sözleşme tahmini işlenmeli.",
+      "etki": "orta",
+      "alan": "Bellek verisi"
+    },
+    {
+      "baslik": "Fiyatı gelmeyen 14 model için 'listelenmiyor' etiketi",
+      "neden": "Bu sabah getdeploying.com/gpus'ta 14 modelin medyanı boştu (H20, H800, B100, P40 vb.; sağlayıcı sayısı 0). Betik eski fiyatı koruyor; tabloda eski ölçüm tarihi görünse de modelin artık hiç listelenmediği anlaşılmıyor.",
+      "etki": "düşük",
+      "alan": "Fiyatlar"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-10-23",
-      "oneri": "Fiyat tablosunda $/GB sıralamasında $/GB değerini göster",
-      "durum": "acik",
-      "pr": 46,
-      "dal": "otomasyon/oneri-2026-10-23-1",
-      "ozet": "$/GB sıralamasında tabloya $/GB·saat sütunu ekleniyor",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki mevcut bağımlılık açıkları yüzünden 'dikkat', onay bekliyor",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-23",
-      "oneri": "Fiyat aramasında sonuç yoksa boş tablo yerine mesaj göster",
-      "durum": "acik",
-      "pr": 47,
-      "dal": "otomasyon/oneri-2026-10-23-2",
-      "ozet": "Eşleşme yoksa tablonun altında 'Eşleşen model yok' mesajı",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki mevcut bağımlılık açıkları yüzünden 'dikkat', onay bekliyor",
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "Fiyat hareketi kartlarında sağlayıcı sayısını göster",
-      "durum": "acik",
-      "pr": 15,
-      "tarih": "2026-10-09",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Fiyat tablosuna 'en az 5 sağlayıcı' filtresi",
-      "durum": "acik",
-      "pr": 16,
-      "tarih": "2026-10-09",
-      "kim": "otomasyon"
-    },
     {
       "oneri": "Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
       "durum": "acik",
@@ -355,149 +294,184 @@
       "pr": 47,
       "tarih": "2026-10-23",
       "kim": "otomasyon"
-    }
-  ],
-  "onayBekleyen": [
+    },
     {
+      "oneri": " Notlar sayfasına sabitleme (pin) düğmesi",
+      "durum": "birlesti",
       "pr": 29,
-      "oneri": "Notlar sayfasına sabitleme (pin) düğmesi",
-      "tarih": "2026-10-13",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki firebase/grpc-js açıkları yüzünden 'dikkat', onay bekliyor",
-      "dal": "otomasyon/oneri-2026-10-13-1"
+      "tarih": "2026-10-23",
+      "kim": "elle"
     },
     {
+      "oneri": " Seviye sınavında önceki sonuçları göster",
+      "durum": "birlesti",
       "pr": 30,
-      "oneri": "Seviye sınavında önceki sonuçları göster",
-      "tarih": "2026-10-13",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki firebase/grpc-js açıkları yüzünden 'dikkat', onay bekliyor",
-      "dal": "otomasyon/oneri-2026-10-13-2"
+      "tarih": "2026-10-23",
+      "kim": "elle"
     },
     {
+      "oneri": " @grpc/grpc-js'i npm overrides ile ≥1.13.6'ya yükselt",
+      "durum": "birlesti",
       "pr": 31,
-      "oneri": "@grpc/grpc-js'i npm overrides ile ≥1.13.6'ya yükselt",
-      "tarih": "2026-10-14",
-      "neden": "Korunan dosya (package.json, package-lock.json); testler 32/32 geçti, kullanıcı onayı gerekiyor",
-      "dal": "otomasyon/duzeltme-2026-10-14"
+      "tarih": "2026-10-23",
+      "kim": "elle"
     },
     {
+      "oneri": " Eğitim sayfasına 'ilerlemeyi sıfırla' düğmesi",
+      "durum": "birlesti",
       "pr": 32,
-      "oneri": "Eğitim sayfasına 'ilerlemeyi sıfırla' düğmesi",
-      "tarih": "2026-10-14",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
-      "dal": "otomasyon/oneri-2026-10-14-1"
+      "tarih": "2026-10-23",
+      "kim": "elle"
     },
     {
+      "oneri": " Çip detayında kiralama fiyatının son değişimini göster",
+      "durum": "birlesti",
       "pr": 33,
-      "oneri": "Çip detayında kiralama fiyatının son değişimini göster",
-      "tarih": "2026-10-14",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
-      "dal": "otomasyon/oneri-2026-10-14-2"
+      "tarih": "2026-10-23",
+      "kim": "elle"
     },
     {
+      "oneri": " veri-isle kayıtlıdan eski endeks ölçümünü yazmasın",
+      "durum": "birlesti",
       "pr": 34,
-      "oneri": "veri-isle kayıtlıdan eski endeks ölçümünü yazmasın",
-      "tarih": "2026-10-19",
-      "neden": "Korunan dosya (otomasyon/veri-isle.mjs); eski tarihli endeksle elle test edildi, kullanıcı onayı gerekiyor",
-      "dal": "otomasyon/duzeltme-2026-10-19"
+      "tarih": "2026-10-23",
+      "kim": "elle"
     },
     {
+      "oneri": " Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
+      "durum": "birlesti",
       "pr": 35,
-      "oneri": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
-      "tarih": "2026-10-19",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
-      "dal": "otomasyon/oneri-2026-10-19-1"
+      "tarih": "2026-10-23",
+      "kim": "elle"
     },
     {
+      "oneri": " Fiyat endeksi kartında ölçüm tarihi eskiyse uyarı göster",
+      "durum": "birlesti",
       "pr": 36,
-      "oneri": "Fiyat endeksi kartında ölçüm tarihi eskiyse uyarı göster",
-      "tarih": "2026-10-19",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
-      "dal": "otomasyon/oneri-2026-10-19-2"
+      "tarih": "2026-10-23",
+      "kim": "elle"
     },
     {
+      "oneri": " Haberler'de yayın tarihini eklenme gününden farklıysa göster",
+      "durum": "birlesti",
       "pr": 37,
-      "oneri": "Haberler'de yayın tarihini eklenme gününden farklıysa göster",
-      "tarih": "2026-10-20",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
-      "dal": "otomasyon/oneri-2026-10-20-1"
+      "tarih": "2026-10-23",
+      "kim": "elle"
     },
     {
+      "oneri": " Bugün puanında tüm maddeler tekrar ise sıfıra bölmeyi önle",
+      "durum": "birlesti",
       "pr": 38,
-      "oneri": "Bugün puanında tüm maddeler tekrar ise sıfıra bölmeyi önle",
-      "tarih": "2026-10-20",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
-      "dal": "otomasyon/oneri-2026-10-20-2"
+      "tarih": "2026-10-23",
+      "kim": "elle"
     },
     {
+      "oneri": " Fiyat tablosunda eski ölçümlü satırları işaretle",
+      "durum": "birlesti",
       "pr": 39,
-      "oneri": "Fiyat tablosunda eski ölçümlü satırları işaretle",
-      "tarih": "2026-10-21",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
-      "dal": "otomasyon/oneri-2026-10-21-1"
+      "tarih": "2026-10-23",
+      "kim": "elle"
     },
     {
+      "oneri": " Fiyat tablosunda az sağlayıcılı satırları soluk göster",
+      "durum": "birlesti",
       "pr": 40,
-      "oneri": "Fiyat tablosunda az sağlayıcılı satırları soluk göster",
-      "tarih": "2026-10-21",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js açığı yüzünden 'dikkat' (düzeltme PR #31), onay bekliyor",
-      "dal": "otomasyon/oneri-2026-10-21-2"
+      "tarih": "2026-10-23",
+      "kim": "elle"
     },
     {
+      "oneri": " Vite'i 7.3.6'dan yamalı 7.3.x sürümüne güncelle",
+      "durum": "birlesti",
       "pr": 41,
-      "oneri": "Vite'i 7.3.6'dan yamalı 7.3.x sürümüne güncelle",
-      "tarih": "2026-10-22",
-      "neden": "Korunan dosya (package-lock.json); derleme, tek dosya, arayüz 32/32 geçti, onay bekliyor",
-      "dal": "otomasyon/duzeltme-2026-10-22"
+      "tarih": "2026-10-23",
+      "kim": "elle"
     },
     {
+      "oneri": " Bugün maddelerinde sınıflandırma gerekçesini ve ağırlığını göster",
+      "durum": "birlesti",
       "pr": 42,
-      "oneri": "Bugün maddelerinde sınıflandırma gerekçesini ve ağırlığını göster",
-      "tarih": "2026-10-22",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js ve vite açıkları yüzünden 'dikkat' (düzeltmeler PR #31, #41), onay bekliyor",
-      "dal": "otomasyon/oneri-2026-10-22-1"
+      "tarih": "2026-10-23",
+      "kim": "elle"
     },
     {
+      "oneri": " Bugün puan kartına hesap yöntemini (formül ve Σ) ekle",
+      "durum": "birlesti",
       "pr": 43,
-      "oneri": "Bugün puan kartına hesap yöntemini (formül ve Σ) ekle",
-      "tarih": "2026-10-22",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki @grpc/grpc-js ve vite açıkları yüzünden 'dikkat' (düzeltmeler PR #31, #41), onay bekliyor",
-      "dal": "otomasyon/oneri-2026-10-22-2"
+      "tarih": "2026-10-23",
+      "kim": "elle"
     },
     {
+      "oneri": " Fiyat tablosunda $/GB sıralamasında $/GB değerini göster",
+      "durum": "birlesti",
       "pr": 46,
-      "oneri": "Fiyat tablosunda $/GB sıralamasında $/GB değerini göster",
       "tarih": "2026-10-23",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki mevcut bağımlılık açıkları yüzünden 'dikkat', onay bekliyor",
-      "dal": "otomasyon/oneri-2026-10-23-1"
+      "kim": "elle"
     },
     {
+      "oneri": " Fiyat aramasında sonuç yoksa boş tablo yerine mesaj göster",
+      "durum": "birlesti",
       "pr": 47,
-      "oneri": "Fiyat aramasında sonuç yoksa boş tablo yerine mesaj göster",
       "tarih": "2026-10-23",
-      "neden": "Denetim: derleme, tek dosya, arayüz 32/32 geçti; güvenlik taraması main'deki mevcut bağımlılık açıkları yüzünden 'dikkat', onay bekliyor",
-      "dal": "otomasyon/oneri-2026-10-23-2"
+      "kim": "elle"
+    },
+    {
+      "oneri": "veri-isle sağlayıcı sütunu sayı değilse fiyat girdisini reddetsin",
+      "durum": "birlesti",
+      "pr": null,
+      "tarih": "2026-10-23",
+      "kim": "elle"
+    },
+    {
+      "oneri": "oneri-uygula denetimi güvenliği main'e göre fark olarak değerlendirsin",
+      "durum": "birlesti",
+      "pr": null,
+      "tarih": "2026-10-23",
+      "kim": "elle"
+    },
+    {
+      "oneri": "Hyperscaler farkı, taahhüt ve spot indirimi verisini tazeleyip Fiyatlar'da göster",
+      "durum": "birlesti",
+      "pr": null,
+      "tarih": "2026-10-23",
+      "kim": "elle"
+    },
+    {
+      "oneri": "Bellek göstergelerine TrendForce'un 4Ç DRAM tahminini işle",
+      "durum": "birlesti",
+      "pr": null,
+      "tarih": "2026-10-23",
+      "kim": "elle"
+    },
+    {
+      "oneri": "Arayüz testi Chromium'u sürüm klasöründen bağımsız bulsun",
+      "durum": "birlesti",
+      "pr": null,
+      "tarih": "2026-10-23",
+      "kim": "elle"
+    },
+    {
+      "oneri": "veri-isle aynı gün ikinci çalıştırmada son işleme sonucunu silmesin",
+      "durum": "birlesti",
+      "pr": 28,
+      "tarih": "2026-10-23",
+      "kim": "elle"
     }
   ],
+  "onayBekleyen": [],
   "guvenlik": {
-    "durum": "dikkat",
+    "durum": "temiz",
     "bagimlilik": {
       "kritik": 0,
-      "yuksek": 5,
+      "yuksek": 0,
       "orta": 0,
       "dusuk": 0,
-      "toplam": 5,
-      "kabulEdilen": [
-        "braces",
-        "chokidar",
-        "fast-glob",
-        "micromatch",
-        "tailwindcss"
-      ],
+      "toplam": 0,
+      "kabulEdilen": [],
       "kabulNedenleri": [
         "braces (GHSA-vfj7-8cjw-p6xm): Yalnızca derleme sırasında Tailwind 3'ün dosya taramasında kullanılıyor; açık, saldırganın glob deseni verebilmesini gerektiriyor ve desenler bizim tailwind.config.js dosyamızdan geliyor. Yayınlanan HTML'de bu kod yok. Yamalı braces sürümü yok; tek çözüm Tailwind 4'e geçiş (ayrı bir iş). — gözden geçirme 2027-01-15"
       ]
     },
-    "kodBulgusu": 1,
+    "kodBulgusu": 0,
     "kapsamNotu": "Uygulama statik olduğu için sunucu tarafı saldırı tespiti kapsam dışıdır. Ölçülen şeyler: bağımlılık açıkları, dosya bütünlüğü, riskli kod desenleri ve HTTP güvenlik başlıkları."
   },
   "iyilestirme": {
@@ -514,50 +488,35 @@
         "etiketsizDugme": 0
       },
       "kod": {
-        "dosyaSayisi": 74,
-        "toplamSatir": 17815,
+        "dosyaSayisi": 77,
+        "toplamSatir": 18490,
         "boyutKB": null
       }
     },
-    "bulgular": [
-      {
-        "alan": "veri",
-        "baslik": "Bellek fiyatları 20 gündür güncellenmedi",
-        "etki": "düşük",
-        "otomatik": false,
-        "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
-      },
-      {
-        "alan": "kod",
-        "baslik": "4 export hiçbir yerde kullanılmıyor",
-        "etki": "düşük",
-        "otomatik": false,
-        "detay": [
-          "fiyatBilgisi (src/lib/chipScore.js)",
-          "togglePin (src/lib/notes.js)",
-          "resetProgress (src/lib/progress.js)",
-          "getExamResults (src/lib/progress.js)"
-        ]
-      }
-    ]
+    "bulgular": []
   },
   "yenileme": {
     "durum": "ok",
     "adimlar": [
       {
         "ad": "Fiyat verisi",
-        "durum": "atlandı",
-        "detay": "bu çalıştırmada fiyat girdisi gelmedi; mevcut veri bugün daha önce işlenmiş"
+        "durum": "ok",
+        "detay": "bu çalıştırmada güncellendi — 93 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 14 gelmedi (eski fiyat korundu), 1 büyük oynama elle doğrulandı"
+      },
+      {
+        "ad": "Elle doğrulanan fiyat",
+        "durum": "ok",
+        "detay": "Nvidia A4000: 0.82 → 0.25 (ikinci, hedefli okuma: medyan 0.25, en düşük 0.15 (Hyperstack), 11 sağlayıcı) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 33, 1 yaklaşan olay; haber akışına +10"
+        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 47, 3 yaklaşan olay; haber akışına +8"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "bugün 16 haber (yalnızca Bugün maddeleri; gelen/haberler.json gelmedi)"
+        "detay": "+7 haber (akışta 232); bugün toplam 15"
       },
       {
         "ad": "Derleme",
@@ -567,7 +526,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2702 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2779 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -594,11 +553,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-10-07",
-      "durum": "temiz",
-      "dikkat": 0
-    },
     {
       "tarih": "2026-10-08",
       "durum": "temiz",
@@ -663,6 +617,11 @@
       "tarih": "2026-10-23",
       "durum": "dikkat",
       "dikkat": 3
+    },
+    {
+      "tarih": "2026-10-24",
+      "durum": "temiz",
+      "dikkat": 0
     }
   ]
 }

@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-10-24",
+  "oneriler": [
+    {
+      "baslik": "Bugün puan kartında kategori dağılımını göster",
+      "neden": "src/pages/Bugun.jsx puan kartı yalnızca Σ ağırlık×işaret ve Σ ağırlık gösteriyor; bugünkü 8 maddenin 2'si pozitif, 3'ü nötr, 3'ü negatif ve puan 47 — okur bu dağılımı maddeleri tek tek sayarak bulmak zorunda.",
+      "etki": "orta",
+      "alan": "Bugün"
+    },
+    {
+      "baslik": "Bugün maddelerini kategoriye göre süzme düğmeleri",
+      "neden": "Haberler.jsx'te ton filtresi (ton state'i) var ama Bugun.jsx'te 'Günün gelişmeleri' listesi süzülemiyor; 8–12 maddelik listede yalnızca olumsuz gelişmeleri görmek için Haberler sayfasına geçmek gerekiyor.",
+      "etki": "düşük",
+      "alan": "Bugün"
+    },
+    {
+      "baslik": "Fiyat tablosunda elle doğrulanmış büyük oynamaları işaretle",
+      "neden": "Bugün Nvidia A4000 medyanı 0.82 → 0.25 $ (-%70) ikinci okumayla doğrulanıp yazıldı (rapor: 'büyük oynama elle doğrulandı'), ama gpu_kiralama.json satırlarında bunu taşıyan bir alan yok ve Prices.jsx bu oynamayı sıradan bir değişim gibi gösteriyor. veri-isle.mjs'nin (korunan) satıra 'dogrulama_notu' yazması gerekir.",
+      "etki": "orta",
+      "alan": "Fiyatlar / otomasyon"
+    },
+    {
+      "baslik": "Sunucu DRAM göstergesini tazele",
+      "neden": "src/data/bellek_fiyat.json'da 'Sunucu DRAM' göstergesinin tarihi 2026-07-09; diğer göstergeler 2026-09-30. TrendForce basın merkezi bu sabah izin engeli verdi; bir sonraki pazartesi ya da etkileşimli bir oturumda 4Ç sunucu DRAM sözleşme tahmini işlenmeli.",
+      "etki": "orta",
+      "alan": "Bellek verisi"
+    },
+    {
+      "baslik": "Fiyatı gelmeyen 14 model için 'listelenmiyor' etiketi",
+      "neden": "Bu sabah getdeploying.com/gpus'ta 14 modelin medyanı boştu (H20, H800, B100, P40 vb.; sağlayıcı sayısı 0). Betik eski fiyatı koruyor; tabloda eski ölçüm tarihi görünse de modelin artık hiç listelenmediği anlaşılmıyor.",
+      "etki": "düşük",
+      "alan": "Fiyatlar"
+    }
+  ]
+}

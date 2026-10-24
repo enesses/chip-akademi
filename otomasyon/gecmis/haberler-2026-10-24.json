@@ -1,0 +1,90 @@
+{
+  "tarih": "2026-10-24",
+  "haberler": [
+    {
+      "baslik": "SemiAnalysis: Huawei ve DeepSeek, Nvidia ile ekosistem farkını kapatıyor",
+      "detay": "SemiAnalysis'e göre DeepSeek, Nvidia için geliştirdiği altı yazılım modülünün Ascend karşılıklarını yayımladı ve 2027–2028'den itibaren ağırlıklı olarak Huawei'nin teknoloji yığınına dayanabilir.",
+      "kaynak": "South China Morning Post",
+      "url": "https://www.scmp.com/tech/tech-war/article/3371806/jensens-nightmare-huawei-deepseek-narrow-ai-chip-ecosystem-gap-nvidia-report",
+      "yayin": "2026-10-22",
+      "konular": [
+        "yapay-zeka",
+        "cip",
+        "politika"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Bernstein: Samsung 3. çeyrekte HBM gelirinde SK hynix'i geçti",
+      "detay": "İhracat verisine dayalı tahmine göre Samsung'un HBM geliri %33 artışla 8,7 milyar dolar, SK hynix'inki %11 artışla 7,6 milyar dolar. HBM ihracatı Eylül'de yıllık %131 arttı.",
+      "kaynak": "Investing.com",
+      "url": "https://uk.investing.com/news/stock-market-news/bernstein-says-samsung-overtook-sk-hynix-in-hbm-revenue-in-3q26-93CH-4924676",
+      "yayin": "2026-10-22",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "ABD, CHIPS fonu karşılığında dört şirketten hisse alacak",
+      "detay": "Ticaret Bakanlığı Helion, Commonwealth Fusion, Vertical Semiconductor ve Sibelco ile en fazla 389 milyon dolarlık Ar-Ge fonu için niyet mektubu imzaladı; hükümet karşılığında oy hakkı olmayan azınlık hissesi alacak.",
+      "kaynak": "Semiconductor Engineering",
+      "url": "https://semiengineering.com/chip-industry-week-in-review-161/",
+      "yayin": "2026-10-23",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Cambricon'un stoku bir çeyrekte satışlarına yakın büyüdü",
+      "detay": "Cambricon'un envanteri Eylül sonunda 11,66 milyar yuana çıktı; 3. çeyrekteki 3,42 milyar yuanlık artış çeyrek gelirinin %97'sine denk. Çeyrekte işletme nakit akışı eksi 84 milyon yuan.",
+      "kaynak": "China AI Dispatch",
+      "url": "https://chinaaidispatch.substack.com/p/cambricons-inventory-grew-34-billion",
+      "yayin": "2026-10-23",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Samsung ve SK hynix Çin'deki NAND fabrikalarını yükseltiyor",
+      "detay": "Reuters'a göre Samsung Xi'an'ı 286 katmanlı V9 NAND'e geçiriyor (Aralık 2027'de ayda 40.000 wafer hedefi), SK hynix Dalian'da 240+ katmana çıkıyor. YMTC, Çin NAND pazarındaki payını 2. çeyrekte %38,5'e yükseltti.",
+      "kaynak": "The Standard (Reuters)",
+      "url": "https://www.thestandard.com.hk/innovation/article/346071/Samsung-SK-Hynix-upgrading-China-plants-to-make-more-advanced-chips-people-say",
+      "yayin": "2026-10-21",
+      "konular": [
+        "bellek",
+        "politika"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Nvidia tedarik zincirinde kapasite anlaşmalarını genişletti",
+      "detay": "Nvidia KYEC'e ABD'de test tesisleri için 1,1 milyar dolarlık rezervasyon avansı verdi; alt tabaka kapasitesini üç yılda 2,5 katına çıkarmayı, test kapasitesini 2027'de ikiye katlamayı hedefliyor. SPIL ortak paketlemeli optik kapasitesini 2027 ortasına kadar 15 kat artıracak.",
+      "kaynak": "NVIDIA",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+      "yayin": "2026-10-21",
+      "konular": [
+        "cip",
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Infineon ve Nvidia 800 VDC veri merkezleri için GaN iş birliğini genişletti",
+      "detay": "Infineon, 800V'tan 50V, 12V ve 6V'a dönüşüm yapan GaN tabanlı ara bus dönüştürücülerle Nvidia'nın 800 VDC raflarını hedefliyor; anahtarlama frekansı 1 MHz'e kadar çıkıyor.",
+      "kaynak": "Semiconductor Today",
+      "url": "https://semiconductor-today.com/news_items/2026/oct/infineon-211026.shtml",
+      "yayin": "2026-10-21",
+      "konular": [
+        "veri-merkezi",
+        "cip"
+      ],
+      "kategori": "pozitif"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "tarih": "2026-10-24",
+  "derlenme": "24 Ekim 2026",
+  "puan": {
+    "etiket": "Çöküşün ardından nefes: talep güçlü, finansman ve makro baskı sürüyor",
+    "yorum": "SOX cuma günü %0,44 toparlandı ama haftayı kayıpla kapattı. Jensen Huang neocloud talebinin patladığını ancak sermayenin yetmediğini söyledi; Micron'un fiyat gücü ve Kazakistan gibi yeni egemen yapay zekâ projeleri talep tarafını desteklerken, 116 dolarlık Brent, %4,96'lık 10 yıllık faiz ve Çin'deki kaçak B300 bulgusu riskleri canlı tutuyor.",
+    "deger": 47
+  },
+  "ozet": [
+    "Perşembe günkü sert satışın ardından çip hisseleri 23 Ekim cuma günü yatay-pozitif bir duraklama yaşadı. Philadelphia Yarı İletken Endeksi %0,44 yükselerek 10.779,46'ya çıktı; Micron %2,46, AMD %1,74, Intel %1,72 toparlandı, Nvidia ise %0,59 geriledi. Geniş piyasa ise baskı altında kaldı: S&P 500 %0,52, Nasdaq %0,21 düştü ve Nasdaq üst üste ikinci haftalık kaybını yazdı.",
+    "Baskının kaynağı artık yalnızca yapay zekâ değil. Brent petrol 116,72 dolara çıktı, 10 yıllık ABD tahvil faizi %4,96'ya yaklaştı ve Michigan tüketici güveni 46,3 ile tarihi dibe indi. CME verilerine göre piyasa yıl sonuna kadar Fed'in faiz artırma olasılığını %84 olarak fiyatlıyor; bu, borçla finanse edilen yapay zekâ altyapısı için doğrudan bir maliyet sorunu.",
+    "Talep tarafında ise sinyaller hâlâ güçlü. Jensen Huang GTC Berlin'de neocloud talebinin 'patlayıcı' olduğunu ama sermaye talebinin mevcut sermayeyi çok aştığını söyledi; ertesi gün Kazakistan'da ülkeyi Avrupa'nın yapay zekâ fabrikası merkezi olarak tanımladı. Micron tarafında DRAM ortalama satış fiyatlarının bir çeyrekte %60'ın üzerinde arttığı ve bulut bellek biriminde %83 brüt marja ulaşıldığı hatırlatıldı.",
+    "Çin cephesi karışık. Cambricon'un net kârı %148 artarak 1,4 milyar yuana çıktı, ancak 3,53 milyar yuanlık gelir 6,26 milyar yuanlık beklentinin çok altında kaldı ve envanter bir çeyrekte gelire yakın 3,4 milyar yuan büyüdü. Aynı gün İsrailli Lava, devlete ait China Telecom ağında ihracı yasak 32 adet B300 tespit etti; Nvidia'nın Çin hızlandırıcı pazarındaki payının ise neredeyse sıfıra indiği değerlendiriliyor."
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2026-10-28",
+      "baslik": "FOMC faiz kararı; Microsoft ve Alphabet bilançoları",
+      "kaynak": "Charles Schwab",
+      "url": "https://www.schwab.com/learn/story/stock-market-update-open"
+    },
+    {
+      "tarih": "2026-10-29",
+      "baslik": "Amazon bilançosu; ABD 3. çeyrek GSYH ve Eylül PCE",
+      "kaynak": "Charles Schwab",
+      "url": "https://www.schwab.com/learn/story/stock-market-update-open"
+    },
+    {
+      "tarih": "2026-10-29",
+      "baslik": "Intel 3. çeyrek 2026 sonuçları (piyasa kapanışından sonra)",
+      "kaynak": "Intel",
+      "url": "https://www.intc.com/news-events/press-releases/detail/1782/intel-to-report-third-quarter-2026-financial-results"
+    }
+  ],
+  "maddeler": [
+    {
+      "baslik": "Çip endeksi çöküşün ardından %0,44 toparlandı",
+      "detay": "SOX 23 Ekim'de %0,44 artışla 10.779,46'ya çıktı. Micron %2,46, AMD %1,74, Intel %1,72 yükseldi; Nvidia %0,59 düştü. S&P 500 %0,52, Nasdaq %0,21 geriledi; Nasdaq üst üste ikinci haftalık kaybını yazdı.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Perşembe günkü %6,7'lik düşüşten sonra sınırlı bir tepki; yön değişimi sinyali değil.",
+      "kaynak": "Capp Notes",
+      "url": "https://cappnotes.substack.com/p/closing-look-friday-october-23-2026"
+    },
+    {
+      "baslik": "Huang: Neocloud talebi patlıyor ama sermaye yetmiyor",
+      "detay": "Jensen Huang GTC Berlin'de neocloud talebinin 'patlayıcı' olduğunu, ancak 'sermaye talebinin mevcut sermayeden çok daha büyük' olduğunu söyledi. Avrupa'da enerjiyi en büyük darboğaz olarak gösterdi; Nvidia bu ay yaklaşık 10 milyar dolarlık yatırım kararı aldı.",
+      "kategori": "notr",
+      "agirlik": 3,
+      "neden": "Talebin güçlü olduğu teyit edilirken finansman kısıtı, sektörün en büyük riskinin altını çiziyor.",
+      "kaynak": "Digital Today",
+      "url": "https://www.digitaltoday.co.kr/en/view/118613/jensen-huang-says-neocloud-demand-surging-but-lack-of-capital-hampers-growth"
+    },
+    {
+      "baslik": "Petrol, faiz ve tüketici güveni piyasayı baskılıyor",
+      "detay": "WTI 101,34 dolara çıktı, 10 yıllık Hazine faizi %4,96'da. Michigan tüketici güveni 46,3 ile tarihi dipte; CME verilerine göre yıl sonuna kadar Fed faiz artırımı olasılığı %84.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Yüksek faiz ve enflasyon, borçla finanse edilen yapay zekâ altyapısının maliyetini doğrudan artırıyor.",
+      "kaynak": "Charles Schwab",
+      "url": "https://www.schwab.com/learn/story/stock-market-update-open"
+    },
+    {
+      "baslik": "Micron'da fiyat gücü: DRAM ortalama fiyatı bir çeyrekte %60'tan fazla arttı",
+      "detay": "SiliconANGLE analizine göre Micron'un DRAM ortalama satış fiyatları bir çeyrekte düşük %60'lar oranında yükseldi, bulut bellek biriminin brüt marjı %83. HBM3E aynı bit için DDR5'in yaklaşık 3 katı wafer gerektiriyor; HBM4E'de bu oran 4'e çıkacak.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Bellek üreticilerinin fiyatlama gücü ve arz kıtlığının sürdüğünü gösteriyor.",
+      "kaynak": "SiliconANGLE",
+      "url": "https://siliconangle.com/2026/10/23/microns-memory-boom-is-the-cyclicality-really-ending"
+    },
+    {
+      "baslik": "Huang Kazakistan'ı Avrupa'nın yapay zekâ merkezi ilan etti",
+      "detay": "Ekibastuz'daki DC Valley'nin ilk 50 MW'lık tesisi Haziran 2027'de açılacak, saha 1 GW'a kadar büyüyebilecek ve ilk 215 MW'lık faz tamamen rezerve. Kazakhtelecom gelecek yıl 1.000'den fazla Vera Rubin GPU kurmayı planlıyor.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Egemen yapay zekâ projeleri Nvidia için yeni talep coğrafyaları açıyor.",
+      "kaynak": "Cyprus Mail",
+      "url": "https://cyprus-mail.com/2026/10/23/nvidia-chief-backs-kazakhstans-ambition-to-export-ai-computing"
+    },
+    {
+      "baslik": "Cambricon'un kârı %148 arttı, geliri beklentinin çok altında kaldı",
+      "detay": "Cambricon'un 3. çeyrek net kârı %147,7 artışla 1,4 milyar yuan, geliri %104,5 artışla 3,5 milyar yuan oldu. Bloomberg'e göre analist beklentisi yaklaşık 6,26 milyar yuandı; şirket en az 13,5 milyar yuanlık yıllık hedefini korudu.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Çin'in yerli yapay zekâ çipine geçişi büyüyor, ancak HBM ve üretim kısıtları satışları sınırlıyor.",
+      "kaynak": "South China Morning Post",
+      "url": "https://www.scmp.com/tech/tech-trends/article/3371959/cambricons-third-quarter-profit-surges-148-us210m-amid-push-replace-nvidia-chips"
+    },
+    {
+      "baslik": "China Telecom ağında ihracı yasak 32 adet B300 bulundu",
+      "detay": "İsrailli güvenlik firması Lava, Nvidia'nın DCGM Exporter aracıyla devlete ait China Telecom ağında 32 Blackwell Ultra B300 tespit etti. Nvidia bulguyu reddetmedi, kaçakçılığı 'kovada bir damla' olarak nitelendirdi.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "İhracat kontrollerinin delindiğine dair somut kanıt, daha sert kurallar için baskıyı artırabilir.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/illegal-nvidia-blackwell-ultra-b300-gpus-found-inside-state-owned-china-telecoms-network-nvidia-says-chip-smuggling-a-drop-in-the-bucket-insists-smuggling-remains-a-nonfactor"
+    },
+    {
+      "baslik": "Nvidia'nın Çin hızlandırıcı payı neredeyse sıfıra indi",
+      "detay": "UCLA Anderson'dan Christopher Tang'e göre Nvidia'nın Çin yapay zekâ hızlandırıcı payı sıfıra yakın. Applied Materials'ın gelirinde Çin'in payı bir yılda %35'ten %28'e geriledi; Pekin kapasite genişleten çip üreticilerinden en az %50 yerli ekipman istiyor.",
+      "kategori": "negatif",
+      "agirlik": 1,
+      "neden": "ABD'li çip ve ekipman şirketleri için Çin pazarı daralıyor, yerli rakipler güçleniyor.",
+      "kaynak": "Benzinga",
+      "url": "https://www.benzinga.com/markets/tech/26/10/62554065/nvidia-china-chip-curbs-domestic-rivals"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = -1 · Σ ağırlık = 16 · Puan = 50 + 50 × -0.06 = 47"
+  }
+}
