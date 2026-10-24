@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { CalendarDays, CalendarClock, ExternalLink, Minus, Repeat, ThumbsDown, ThumbsUp } from "lucide-react";
 import data from "@/data/bugun.json";
 import { Link } from "@/components/Nav";
@@ -34,6 +34,8 @@ export default function Bugun() {
   // Geçmişte kalan olayları sayfanın açıldığı güne göre gizle
   const yaklasan = (data.yaklasan || []).filter((o) => kalanGun(o.tarih) >= 0);
   const tekrarSayisi = data.maddeler.filter((m) => m.tekrar).length;
+  const [suzgec, setSuzgec] = useState("hepsi");
+  const gorunenMaddeler = suzgec === "hepsi" ? data.maddeler : data.maddeler.filter((m) => m.kategori === suzgec);
   // Puana katılan maddelerin kategoriye göre sayısı ve ağırlık toplamı
   const dagilim = useMemo(() => {
     const d = { pozitif: { n: 0, w: 0 }, notr: { n: 0, w: 0 }, negatif: { n: 0, w: 0 } };
@@ -127,9 +129,18 @@ export default function Bugun() {
       )}
 
       <section className="container mx-auto px-4 pb-16">
-        <h2 className="font-display font-semibold text-xl mb-4">Günün gelişmeleri</h2>
+        <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
+          <h2 className="font-display font-semibold text-xl">Günün gelişmeleri</h2>
+          <div className="flex flex-wrap gap-1.5" role="group" aria-label="Kategoriye göre süz" data-testid="bugun-suzgec">
+            {[["hepsi", "Tümü", data.maddeler.length], ...Object.entries(KATEGORI).map(([a, k]) => [a, k.ad, data.maddeler.filter((m) => m.kategori === a).length])].map(([a, ad, n]) => (
+              <button key={a} type="button" onClick={() => setSuzgec(a)} aria-pressed={suzgec === a} disabled={n === 0 && a !== "hepsi"} className={cn("px-2.5 py-1 rounded-md text-xs font-medium border disabled:opacity-40", suzgec === a ? "bg-primary text-primary-foreground border-primary" : "bg-card text-muted-foreground border-border hover:text-foreground")}>
+                {ad} <span className="tabular-nums opacity-80">{n}</span>
+              </button>
+            ))}
+          </div>
+        </div>
         <div className="space-y-3">
-          {data.maddeler.map((m, i) => {
+          {gorunenMaddeler.map((m, i) => {
             const k = KATEGORI[m.kategori];
             return (
               <div key={i} className={cn("rounded-xl border border-card-border bg-card p-5", m.tekrar && "opacity-75")}>
