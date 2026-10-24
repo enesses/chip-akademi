@@ -34,6 +34,12 @@ export default function Bugun() {
   // Geçmişte kalan olayları sayfanın açıldığı güne göre gizle
   const yaklasan = (data.yaklasan || []).filter((o) => kalanGun(o.tarih) >= 0);
   const tekrarSayisi = data.maddeler.filter((m) => m.tekrar).length;
+  // Puana katılan maddelerin kategoriye göre sayısı ve ağırlık toplamı
+  const dagilim = useMemo(() => {
+    const d = { pozitif: { n: 0, w: 0 }, notr: { n: 0, w: 0 }, negatif: { n: 0, w: 0 } };
+    for (const m of data.maddeler) { if (m.tekrar || !d[m.kategori]) continue; d[m.kategori].n += 1; d[m.kategori].w += m.agirlik || 0; }
+    return d;
+  }, []);
   const renk = hesap.puan >= 75 ? "rgb(var(--t-emerald-400))" : hesap.puan >= 60 ? "rgb(var(--t-lime-400))" : hesap.puan >= 45 ? "rgb(var(--t-amber-400))" : "rgb(var(--t-red-400))";
 
   return (
@@ -53,6 +59,16 @@ export default function Bugun() {
             <p className="font-mono text-[10px] text-muted-foreground">/ 100</p>
             <p className="font-display font-semibold mt-3" style={{ color: renk }}>{data.puan.etiket}</p>
             <p className="text-xs text-muted-foreground leading-relaxed mt-2">{data.puan.yorum}</p>
+            <ul className="mt-3 pt-3 border-t border-card-border grid grid-cols-3 gap-1" aria-label="Kategori dağılımı" data-testid="bugun-dagilim">
+              {Object.entries(KATEGORI).map(([anahtar, k]) => (
+                <li key={anahtar} className="flex flex-col items-center" title={`${k.ad}: ${dagilim[anahtar].n} madde, toplam ağırlık ${dagilim[anahtar].w}`}>
+                  <k.Icon className="h-3.5 w-3.5" style={{ color: k.renk }} aria-hidden="true" />
+                  <span className="font-display font-semibold text-lg tabular-nums leading-tight mt-1" style={{ color: k.renk }}>{dagilim[anahtar].n}</span>
+                  <span className="font-mono text-[9px] uppercase tracking-wider text-muted-foreground">{k.ad}</span>
+                  <span className="font-mono text-[9px] text-muted-foreground/80 tabular-nums">ağırlık {dagilim[anahtar].w}</span>
+                </li>
+              ))}
+            </ul>
             {tekrarSayisi > 0 && (
               <p className="text-[11px] text-muted-foreground/80 mt-3 pt-3 border-t border-card-border">
                 Önceki günlerden tekrar eden {tekrarSayisi} haber puana katılmadı.
