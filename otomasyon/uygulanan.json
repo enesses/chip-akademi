@@ -620,6 +620,26 @@
       "ozet": "Kullanıcıyla oturumda uygulandı",
       "neden": null,
       "kim": "elle"
+    },
+    {
+      "tarih": "2026-10-24",
+      "oneri": "Bugün puan kartında kategori dağılımını göster",
+      "durum": "birlesti",
+      "pr": 54,
+      "dal": "otomasyon/oneri-2026-10-24-1",
+      "ozet": "Puan kartında pozitif/nötr/negatif madde sayısı ve ağırlık toplamı",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-24",
+      "oneri": "Bugün maddelerini kategoriye göre süzme düğmeleri",
+      "durum": "birlesti",
+      "pr": 55,
+      "dal": "otomasyon/oneri-2026-10-24-2",
+      "ozet": "Günün gelişmeleri listesine Tümü/Pozitif/Nötr/Negatif süzgeci",
+      "neden": null,
+      "kim": "otomasyon"
     }
   ]
 }
