@@ -3,6 +3,7 @@ import { CalendarDays, CalendarClock, ExternalLink, Minus, Repeat, ThumbsDown, T
 import data from "@/data/bugun.json";
 import { Link } from "@/components/Nav";
 import { cn } from "@/lib/utils";
+import { dosyaKaydet } from "@/lib/dosyaKaydet";
 
 const AY = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
 const GUN = ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"];
@@ -15,6 +16,24 @@ function kalanGun(iso) {
   const bugun = new Date(); bugun.setHours(0, 0, 0, 0);
   const [y, a, g] = iso.split("-").map(Number);
   return Math.round((new Date(y, a - 1, g) - bugun) / 86400000);
+}
+
+/** Yaklaşan olayları tüm gün etkinlikleri olarak iCalendar (.ics) metnine çevirir. */
+function icsUret(olaylar) {
+  const kac = (t) => String(t).replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, " ");
+  const gun = (iso) => iso.replace(/-/g, "");
+  const ertesi = (iso) => {
+    const [y, a, g] = iso.split("-").map(Number);
+    return new Date(Date.UTC(y, a - 1, g + 1)).toISOString().slice(0, 10).replace(/-/g, "");
+  };
+  const satirlar = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Chip Akademi//Yaklasan olaylar//TR", "CALSCALE:GREGORIAN"];
+  olaylar.forEach((o, i) => {
+    satirlar.push("BEGIN:VEVENT", `UID:${gun(o.tarih)}-${i}@chip-akademi`, `DTSTAMP:${gun(data.tarih)}T000000Z`,
+      `DTSTART;VALUE=DATE:${gun(o.tarih)}`, `DTEND;VALUE=DATE:${ertesi(o.tarih)}`,
+      `SUMMARY:${kac(o.baslik)}`, `DESCRIPTION:${kac(`Kaynak: ${o.kaynak}`)}`, ...(o.url ? [`URL:${o.url}`] : []), "END:VEVENT");
+  });
+  satirlar.push("END:VCALENDAR");
+  return satirlar.join("\r\n") + "\r\n";
 }
 
 const KATEGORI = {
@@ -35,6 +54,11 @@ export default function Bugun() {
   const yaklasan = (data.yaklasan || []).filter((o) => kalanGun(o.tarih) >= 0);
   const tekrarSayisi = data.maddeler.filter((m) => m.tekrar).length;
   const [suzgec, setSuzgec] = useState("hepsi");
+  const [takvimDurum, setTakvimDurum] = useState(null);
+  async function takvimeEkle() {
+    const sonuc = await dosyaKaydet(`chip-akademi-yaklasan-${data.tarih}.ics`, icsUret(yaklasan), "text/calendar");
+    setTakvimDurum(sonuc.durum === "kaydedildi" ? "Takvim dosyası kaydedildi." : sonuc.durum === "iptal" ? null : sonuc.mesaj);
+  }
   const gorunenMaddeler = suzgec === "hepsi" ? data.maddeler : data.maddeler.filter((m) => m.kategori === suzgec);
   // Puana katılan maddelerin kategoriye göre sayısı ve ağırlık toplamı
   const dagilim = useMemo(() => {
@@ -101,9 +125,18 @@ export default function Bugun() {
 
       {yaklasan.length > 0 && (
         <section className="container mx-auto px-4 pb-10" aria-labelledby="yaklasan-baslik">
-          <h2 id="yaklasan-baslik" className="font-display font-semibold text-xl mb-4 inline-flex items-center gap-2">
-            <CalendarClock className="h-5 w-5 text-primary" aria-hidden="true" />Yaklaşan olaylar
-          </h2>
+          <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
+            <h2 id="yaklasan-baslik" className="font-display font-semibold text-xl inline-flex items-center gap-2">
+              <CalendarClock className="h-5 w-5 text-primary" aria-hidden="true" />Yaklaşan olaylar
+            </h2>
+            <div className="flex items-center gap-2">
+              {takvimDurum && <span className="text-xs text-muted-foreground" role="status">{takvimDurum}</span>}
+              <button type="button" onClick={takvimeEkle} data-testid="yaklasan-ics"
+                className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-2.5 py-1 text-xs font-medium text-muted-foreground hover:text-foreground">
+                <CalendarDays className="h-3.5 w-3.5" aria-hidden="true" />Takvime ekle (.ics)
+              </button>
+            </div>
+          </div>
           <ol className="rounded-xl border border-card-border bg-card divide-y divide-card-border">
             {yaklasan.map((o, i) => {
               const k = kalanGun(o.tarih);
