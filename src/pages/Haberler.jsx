@@ -156,6 +156,11 @@ export default function Haberler() {
                             <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{h.detay}</p>
                             <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] text-muted-foreground">
                               <span className="text-foreground/80">{h.kaynak}</span>
+                              {h.kaynakTuru === "bugun" && (
+                                <><span aria-hidden="true">·</span>
+                                <span data-testid="haber-bugun-rozet" title="Bu haber o günün Bugün sayfasında puana katılan maddelerden biri"
+                                  className="rounded bg-primary/10 text-primary px-1.5 py-0.5 font-medium">Bugün maddesi</span></>
+                              )}
                               {h.yayin && h.yayin !== h.tarih && (
                                 <><span aria-hidden="true">·</span><span title="Kaynağın yayın tarihi">Yayın: {yayinYaz(h.yayin)}</span></>
                               )}
@@ -190,6 +195,7 @@ export default function Haberler() {
 
         <p className="mt-10 text-[11px] text-muted-foreground max-w-2xl leading-relaxed">
           Renkli nokta haberin çip ve yapay zekâ sektörü için tonunu gösterir (olumlu / nötr / olumsuz) — yatırım tavsiyesi değildir.
+          "Bugün maddesi" rozeti, haberin o günün Bugün puanına katıldığını; rozetsiz haberler akışa eklenen ek haberleri gösterir.
           Konu etiketleri yeni haberlerde otomasyonca seçilir; 11 Ekim öncesindeki haberlerde anahtar kelimelerden çıkarıldı.
         </p>
       </section>
