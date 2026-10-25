@@ -1,22 +1,22 @@
 {
   "guvenlik": {
-    "sonCalisma": "2026-10-24T07:05:43.258Z",
-    "sonTarih": "2026-10-24",
+    "sonCalisma": "2026-10-25T07:03:16.535Z",
+    "sonTarih": "2026-10-25",
     "durum": "temiz"
   },
   "iyilestirme": {
-    "sonCalisma": "2026-10-24T07:05:43.396Z",
-    "sonTarih": "2026-10-24",
+    "sonCalisma": "2026-10-25T07:03:16.694Z",
+    "sonTarih": "2026-10-25",
     "durum": "tamam"
   },
   "gelistirme": {
-    "sonCalisma": "2026-10-24T07:06:02.060Z",
-    "sonTarih": "2026-10-24",
+    "sonCalisma": "2026-10-25T07:03:34.689Z",
+    "sonTarih": "2026-10-25",
     "durum": "degisiklik-yok"
   },
   "yenileme": {
-    "sonCalisma": "2026-10-24T07:05:42.642Z",
-    "sonTarih": "2026-10-24",
+    "sonCalisma": "2026-10-25T07:03:16.032Z",
+    "sonTarih": "2026-10-25",
     "durum": "ok"
   }
 }

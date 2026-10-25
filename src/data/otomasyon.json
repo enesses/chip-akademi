@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-24T07:09:04.049Z",
-  "tarih": "2026-10-24",
+  "guncelleme": "2026-10-25T07:04:43.997Z",
+  "tarih": "2026-10-25",
   "durum": "temiz",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-10-24T07:05:43.257Z"
+      "zaman": "2026-10-25T07:03:16.535Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-24T07:05:43.396Z"
+      "zaman": "2026-10-25T07:03:16.693Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-24T07:05:42.642Z"
+      "zaman": "2026-10-25T07:03:16.031Z"
     },
     {
       "id": "gelistirme",
@@ -33,79 +33,38 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-24T07:06:02.059Z"
+      "zaman": "2026-10-25T07:03:34.689Z"
     }
   ],
   "dikkat": [],
   "oneriler": [
     {
-      "baslik": "Bugün puan kartında kategori dağılımını göster",
-      "neden": "src/pages/Bugun.jsx puan kartı yalnızca Σ ağırlık×işaret ve Σ ağırlık gösteriyor; bugünkü 8 maddenin 2'si pozitif, 3'ü nötr, 3'ü negatif ve puan 47 — okur bu dağılımı maddeleri tek tek sayarak bulmak zorunda.",
+      "baslik": "Haberler kartlarında Bugün'den gelen haberleri rozetle işaretle",
+      "neden": "src/data/haberler.json her habere kaynakTuru alanı yazıyor (bugün 10 madde 'bugun'), ama src/ içinde bu alanı okuyan kod yok (grep kaynakTuru src/pages → 0). Okur, akıştaki haberin günün puanına katılan bir madde mi yoksa ek haber mi olduğunu göremiyor.",
       "etki": "orta",
-      "alan": "Bugün"
+      "alan": "arayüz"
     },
     {
-      "baslik": "Bugün maddelerini kategoriye göre süzme düğmeleri",
-      "neden": "Haberler.jsx'te ton filtresi (ton state'i) var ama Bugun.jsx'te 'Günün gelişmeleri' listesi süzülemiyor; 8–12 maddelik listede yalnızca olumsuz gelişmeleri görmek için Haberler sayfasına geçmek gerekiyor.",
+      "baslik": "Yaklaşan olayları takvime ekle (.ics) düğmesi",
+      "neden": "Bugün sayfasında bugün 7 yaklaşan olay var (Fed 28 Ekim, SK hynix 28 Ekim, Samsung 29 Ekim…). src/pages/Bugun.jsx yalnızca listeyi gösteriyor; takvime aktarma yolu yok (grep ics/takvim → 0).",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bugün maddeleri haber akışına yayın tarihiyle girsin",
+      "neden": "Bugün maddeleri src/data/haberler.json'a \"yayin\": null ile ekleniyor (bugünkü 10 madde); ek haberlerde ise yayin dolu. Bugün şemasına isteğe bağlı yayin alanı eklenip veri-isle.mjs bunu akışa aktarırsa Haberler'deki 'yayın tarihi farklıysa göster' özelliği Bugün maddelerinde de çalışır.",
       "etki": "düşük",
-      "alan": "Bugün"
+      "alan": "otomasyon"
     },
     {
-      "baslik": "Fiyat tablosunda elle doğrulanmış büyük oynamaları işaretle",
-      "neden": "Bugün Nvidia A4000 medyanı 0.82 → 0.25 $ (-%70) ikinci okumayla doğrulanıp yazıldı (rapor: 'büyük oynama elle doğrulandı'), ama gpu_kiralama.json satırlarında bunu taşıyan bir alan yok ve Prices.jsx bu oynamayı sıradan bir değişim gibi gösteriyor. veri-isle.mjs'nin (korunan) satıra 'dogrulama_notu' yazması gerekir.",
-      "etki": "orta",
-      "alan": "Fiyatlar / otomasyon"
-    },
-    {
-      "baslik": "Sunucu DRAM göstergesini tazele",
-      "neden": "src/data/bellek_fiyat.json'da 'Sunucu DRAM' göstergesinin tarihi 2026-07-09; diğer göstergeler 2026-09-30. TrendForce basın merkezi bu sabah izin engeli verdi; bir sonraki pazartesi ya da etkileşimli bir oturumda 4Ç sunucu DRAM sözleşme tahmini işlenmeli.",
-      "etki": "orta",
-      "alan": "Bellek verisi"
-    },
-    {
-      "baslik": "Fiyatı gelmeyen 14 model için 'listelenmiyor' etiketi",
-      "neden": "Bu sabah getdeploying.com/gpus'ta 14 modelin medyanı boştu (H20, H800, B100, P40 vb.; sağlayıcı sayısı 0). Betik eski fiyatı koruyor; tabloda eski ölçüm tarihi görünse de modelin artık hiç listelenmediği anlaşılmıyor.",
+      "baslik": "GUNLUK.md'ye haber doğrulamasında PROVENANCE_REQUIRED notu",
+      "neden": "Bu çalıştırmada WebFetch, başka bir sayfanın içinden çıkan 5 bağlantıyı (cnbc.com, kbtx.com, techcrunch.com…) PROVENANCE_REQUIRED ile reddetti; aynı haberler WebSearch'ten gelen bağlantıyla açıldı. Talimat fiyat sayfası için bunu söylüyor ama haber adımı (2, 2c) için söylemiyor; zaman kaybını önler.",
       "etki": "düşük",
-      "alan": "Fiyatlar"
+      "alan": "otomasyon"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-10-24",
-      "oneri": "Bugün puan kartında kategori dağılımını göster",
-      "durum": "birlesti",
-      "pr": 54,
-      "dal": "otomasyon/oneri-2026-10-24-1",
-      "ozet": "Puan kartında pozitif/nötr/negatif madde sayısı ve ağırlık toplamı",
-      "neden": null,
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-24",
-      "oneri": "Bugün maddelerini kategoriye göre süzme düğmeleri",
-      "durum": "birlesti",
-      "pr": 55,
-      "dal": "otomasyon/oneri-2026-10-24-2",
-      "ozet": "Günün gelişmeleri listesine Tümü/Pozitif/Nötr/Negatif süzgeci",
-      "neden": null,
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
-      "durum": "acik",
-      "pr": 17,
-      "tarih": "2026-10-10",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Kalan 20 kullanılmayan export'u temizle",
-      "durum": "acik",
-      "pr": 18,
-      "tarih": "2026-10-10",
-      "kim": "otomasyon"
-    },
     {
       "oneri": "Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
       "durum": "acik",
@@ -524,7 +483,7 @@
       },
       "kod": {
         "dosyaSayisi": 77,
-        "toplamSatir": 18490,
+        "toplamSatir": 18517,
         "boyutKB": null
       }
     },
@@ -536,22 +495,17 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 93 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 14 gelmedi (eski fiyat korundu), 1 büyük oynama elle doğrulandı"
-      },
-      {
-        "ad": "Elle doğrulanan fiyat",
-        "durum": "ok",
-        "detay": "Nvidia A4000: 0.82 → 0.25 (ikinci, hedefli okuma: medyan 0.25, en düşük 0.15 (Hyperstack), 11 sağlayıcı) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
+        "detay": "bu çalıştırmada güncellendi — 92 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu)"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 47, 3 yaklaşan olay; haber akışına +8"
+        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 38, 7 yaklaşan olay; haber akışına +10"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+7 haber (akışta 232); bugün toplam 15"
+        "detay": "+8 haber (akışta 250); bugün toplam 18"
       },
       {
         "ad": "Derleme",
@@ -561,7 +515,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2779 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2791 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -588,11 +542,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-10-08",
-      "durum": "temiz",
-      "dikkat": 0
-    },
     {
       "tarih": "2026-10-09",
       "durum": "dikkat",
@@ -655,6 +604,11 @@
     },
     {
       "tarih": "2026-10-24",
+      "durum": "temiz",
+      "dikkat": 0
+    },
+    {
+      "tarih": "2026-10-25",
       "durum": "temiz",
       "dikkat": 0
     }

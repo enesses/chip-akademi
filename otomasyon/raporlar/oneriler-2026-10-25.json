@@ -1,0 +1,29 @@
+{
+  "tarih": "2026-10-25",
+  "oneriler": [
+    {
+      "baslik": "Haberler kartlarında Bugün'den gelen haberleri rozetle işaretle",
+      "neden": "src/data/haberler.json her habere kaynakTuru alanı yazıyor (bugün 10 madde 'bugun'), ama src/ içinde bu alanı okuyan kod yok (grep kaynakTuru src/pages → 0). Okur, akıştaki haberin günün puanına katılan bir madde mi yoksa ek haber mi olduğunu göremiyor.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Yaklaşan olayları takvime ekle (.ics) düğmesi",
+      "neden": "Bugün sayfasında bugün 7 yaklaşan olay var (Fed 28 Ekim, SK hynix 28 Ekim, Samsung 29 Ekim…). src/pages/Bugun.jsx yalnızca listeyi gösteriyor; takvime aktarma yolu yok (grep ics/takvim → 0).",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bugün maddeleri haber akışına yayın tarihiyle girsin",
+      "neden": "Bugün maddeleri src/data/haberler.json'a \"yayin\": null ile ekleniyor (bugünkü 10 madde); ek haberlerde ise yayin dolu. Bugün şemasına isteğe bağlı yayin alanı eklenip veri-isle.mjs bunu akışa aktarırsa Haberler'deki 'yayın tarihi farklıysa göster' özelliği Bugün maddelerinde de çalışır.",
+      "etki": "düşük",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "GUNLUK.md'ye haber doğrulamasında PROVENANCE_REQUIRED notu",
+      "neden": "Bu çalıştırmada WebFetch, başka bir sayfanın içinden çıkan 5 bağlantıyı (cnbc.com, kbtx.com, techcrunch.com…) PROVENANCE_REQUIRED ile reddetti; aynı haberler WebSearch'ten gelen bağlantıyla açıldı. Talimat fiyat sayfası için bunu söylüyor ama haber adımı (2, 2c) için söylemiyor; zaman kaybını önler.",
+      "etki": "düşük",
+      "alan": "otomasyon"
+    }
+  ]
+}

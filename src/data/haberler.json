@@ -2,6 +2,272 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-10-25-b-neocloud-backstop-faces-first-real-market-test",
+      "tarih": "2026-10-25",
+      "yayin": null,
+      "baslik": "Nvidia'nın neocloud'lara toplam riski 171,5 milyar dolar",
+      "detay": "CNBC'nin derlediği verilere göre Nvidia'nın neocloud şirketlerine 7 milyar dolar doğrudan yatırımı ve 164,5 milyar dolar garanti/taahhüdü var; CoreWeave'in satamadığı kapasiteden 6,3 milyar dolara kadar alım sözü de bunun içinde. CoreWeave, Nebius ve IREN ekimde en az %30 düştü; CoreWeave'in 5 yıllık CDS primi 1.115 baz puana çıktı.",
+      "kaynak": "AI Weekly (CNBC özeti)",
+      "url": "https://aiweekly.co/alerts/nvidias-1715b-neocloud-backstop-faces-first-real-market-test",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-25-taiwan-workers-reject-bonus-proposal-2452756-amp",
+      "tarih": "2026-10-25",
+      "yayin": null,
+      "baslik": "Micron Taoyuan sendikası prim önerisini reddetti",
+      "detay": "Micron'un Taoyuan sendikasının 2.300'ü aşkın üyesinin yaklaşık %70'i, 2027 mali yılından itibaren çeyreklik kâr payı ekleyen öneriyi reddetti. Sendika 83 aylık maaş tutarında tek seferlik prim ve faaliyet kârının %15'ini istiyor; 23 Ekim'de küçük bir grev yapıldı, görüşmeler 27 Ekim'de sürecek.",
+      "kaynak": "Manila Times (AFP)",
+      "url": "https://www.manilatimes.net/2026/10/24/business/foreign-business/micron-taiwan-workers-reject-bonus-proposal/2452756/amp",
+      "ton": "negatif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-25-on-chatgpt-openai-lawsuit-texas-attorney-general",
+      "tarih": "2026-10-25",
+      "yayin": null,
+      "baslik": "Teksas, OpenAI ve Sam Altman'a dava açtı",
+      "detay": "Teksas Başsavcısı Ken Paxton, Collin County mahkemesinde açtığı davada ChatGPT'nin reşit olmayanlara erişiminin engellenmesini ve yeni modellerin mahkemece atanan bir değerlendiriciden onay almasını istiyor. OpenAI, uzmanlarla ek güvenlik önlemleri geliştirdiğini ve eyaletlerle çalışmaya hazır olduğunu söyledi.",
+      "kaynak": "The Texas Tribune",
+      "url": "https://www.texastribune.org/2026/10/23/ken-paxton-chatgpt-openai-lawsuit-texas-attorney-general/",
+      "ton": "negatif",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-25-availability-of-nvidia-vera-rubin-infrastructure",
+      "tarih": "2026-10-25",
+      "yayin": null,
+      "baslik": "Google Cloud Vera Rubin'li A5X'i kasımda genel kullanıma açıyor",
+      "detay": "Google Cloud'un Nvidia Vera Rubin NVL72 tabanlı A5X örnekleri kasımda genel kullanıma açılacak; Google mimariyi birden fazla sahada 960.000 Rubin GPU'ya kadar ölçeklemeyi hedefliyor. İlk müşteri David Silver'ın kurduğu Ineffable Intelligence.",
+      "kaynak": "StorageNewsletter",
+      "url": "https://www.storagenewsletter.com/2026/10/23/nvidia-gtc-berlin-2026-google-cloud-and-nvidia-announce-general-availability-of-nvidia-vera-rubin-infrastructure/",
+      "ton": "pozitif",
+      "konular": [
+        "cip"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-25-ontainer-ai-factory-neocloud-stocks-slide-102326",
+      "tarih": "2026-10-25",
+      "yayin": null,
+      "baslik": "Nvidia konteyner içinde yapay zekâ fabrikası: DSX POD",
+      "detay": "Nvidia'nın modüler konteyner referans tasarımı DSX POD, hazır bir sahada kurulum süresini altı aydan 14 güne kadar indirmeyi vaat ediyor; teslimatlar 2027 başında başlayacak.",
+      "kaynak": "Quartz",
+      "url": "https://qz.com/nvidia-container-ai-factory-neocloud-stocks-slide-102326",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-25-aiwan-semiconductor-posted-record-profit-and-the",
+      "tarih": "2026-10-25",
+      "yayin": null,
+      "baslik": "TSMC rekor kâra rağmen bir ayda %7 geriledi",
+      "detay": "TSMC'nin 3. çeyrek geliri %50, net kârı %69 artarak rekor kırdı; yüksek başarımlı hesaplama gelirin %68'ine ulaştı. Brüt marj ise %67,7'den %66,4'e indi ve 60–64 milyar dolarlık yatırım planı korunurken hisse son bir ayda yaklaşık %7 düştü.",
+      "kaynak": "The Motley Fool",
+      "url": "https://fool.com/investing/2026/10/23/taiwan-semiconductor-posted-record-profit-and-the",
+      "ton": "notr",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-25-dies-lower-yields-and-longer-manufacturing-times",
+      "tarih": "2026-10-25",
+      "yayin": null,
+      "baslik": "Çin EUV'siz ileri çip üretiyor ama maliyet artıyor",
+      "detay": "Fractilia'dan Chris Mack'e göre üç DUV pozlaması bir EUV pozlamasına denk maliyette; dördüncü maskeden sonra EUV daha ucuz. Morgan Stanley, CXMT'nin wafer başına Batılı rakiplerin yaklaşık üçte biri kadar DRAM biti ürettiğini, Çin'in yapay zekâ çipi öz yeterliliğinin ise 2025'teki %42'den 2030'da %70'e çıkacağını tahmin ediyor.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/china-can-make-advanced-chips-without-euv-but-the-bill-keeps-growing-duv-multiple-patterning-means-bigger-dies-lower-yields-and-longer-manufacturing-times",
+      "ton": "notr",
+      "konular": [
+        "bellek",
+        "cip",
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-25--rapidus-production-2nm-chairman-investment-html",
+      "tarih": "2026-10-25",
+      "yayin": null,
+      "baslik": "Rapidus 2 nm seri üretim için 2027'nin ikinci yarısında kararlı",
+      "detay": "Rapidus Başkanı Tetsuro Higashi, 2027'nin ikinci yarısında 2 nm seri üretime geçme planının 'genel olarak yolunda' olduğunu söyledi; ilk talebin çoğunlukla ABD'deki yapay zekâ müşterilerinden gelmesi bekleniyor. Müşteri kazanmak ana zorluk olarak duruyor.",
+      "kaynak": "DIGITIMES",
+      "url": "https://www.digitimes.com/news/a20261023PD228/rapidus-production-2nm-chairman-investment.html",
+      "ton": "notr",
+      "konular": [
+        "cip",
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-25-ed-microsoft-alphabet-amazon-earnings-tradingkey",
+      "tarih": "2026-10-25",
+      "yayin": null,
+      "baslik": "Haftanın sınavı: Fed kararı ve büyük teknoloji bilançoları",
+      "detay": "FOMC 27–28 Ekim'de toplanıyor; karar 28 Ekim'de açıklanacak. Alphabet ve Microsoft 28 Ekim'de, Amazon ve Intel 29 Ekim'de kapanıştan sonra sonuç açıklıyor; Cadence, Rambus ve Amkor 26 Ekim'de bilanço verecek.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262237761-weekly-fed-microsoft-alphabet-amazon-earnings-tradingkey",
+      "ton": "notr",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-25-en-edaily-co-kr-news-eda202610235867",
+      "tarih": "2026-10-25",
+      "yayin": null,
+      "baslik": "Kore piyasası SK hynix ve Samsung bilançolarını bekliyor",
+      "detay": "Kospi 23 Ekim'de %0,3 artışla 5.550,30'dan kapattı; SK hynix, Solidigm halka arzını askıya almasının ardından %4,41 yükseldi. SK hynix 28 Ekim'de, Samsung Electronics 29 Ekim'de sonuç açıklayacak; Brent'in 113 dolarda olması analistlere göre toparlanmanın önündeki ana engel.",
+      "kaynak": "EDAILY",
+      "url": "https://en.edaily.co.kr/news/eda202610235867/",
+      "ton": "notr",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-25-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo",
+      "tarih": "2026-10-25",
+      "yayin": "2026-10-22",
+      "baslik": "OpenAI, 1,25 trilyon dolar değerlemeyle 30 milyar dolar topluyor",
+      "detay": "TechCrunch'ın aktardığına göre OpenAI, Coatue ve BAE'li yatırımcıların öncülük etmesi beklenen turda 1,25 trilyon dolar (yatırım öncesi) değerlemeyle 30 milyar dolara kadar arıyor; bir ay önce konuşulan rakam 1,4 trilyon dolardı. Şartlar henüz kesinleşmedi.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+      "ton": "notr",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-25-und-investment-proposed-rule-ai-chips-china-2026",
+      "tarih": "2026-10-25",
+      "yayin": "2026-10-22",
+      "baslik": "ABD Hazinesi, Çin'e yönelik çip ve yapay zekâ yatırımlarına kural önerdi",
+      "detay": "Hazine, COINS Yasası'nı uygulayan taslak kuralda yarı iletken, yapay zekâ, kuantum, süper bilgisayar ve hipersonik teknolojilerine 'yabancı hasım' ülkelerde yapılan dış yatırımları kapsamaya aldı; biyoteknolojiyi de ekledi. Kural henüz öneri aşamasında.",
+      "kaynak": "ExplainX (ABD Hazinesi açıklaması)",
+      "url": "https://explainx.ai/blog/treasury-coins-act-outbound-investment-proposed-rule-ai-chips-china-2026",
+      "ton": "notr",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-25-s-intel-lobbying-lobbies-stop-stealing-our-chips",
+      "tarih": "2026-10-25",
+      "yayin": "2026-10-22",
+      "baslik": "Intel'in lobi harcaması 3. çeyrekte %45 arttı",
+      "detay": "Intel, ihracat kontrolü ihlallerini bildirenlere teşvik getiren Stop Stealing our Chips Act gündemdeyken 3. çeyrekte 1,2 milyon dolar lobi harcaması bildirdi; bu, 2. çeyreğe göre yaklaşık %44,6 artış. Tasarı Senato'dan mayısta oybirliğiyle geçmişti.",
+      "kaynak": "Legis1",
+      "url": "https://legis1.com/news/intel-lobbying-lobbies-stop-stealing-our-chips",
+      "ton": "notr",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-25-r-planned-for-former-steelworks-in-newport-wales",
+      "tarih": "2026-10-25",
+      "yayin": "2026-10-22",
+      "baslik": "Era4, Galler'deki eski çelik fabrikasında 1 GW'lık kampüs planlıyor",
+      "detay": "Era4'ün Newport'taki 230 dönümlük eski Liberty Steel sahasında kuracağı 'The Mill' kampüsü 2027'de devreye girmeye başlayacak; nihai hedef 1 GW ve 400.000'e kadar Nvidia Vera Rubin GPU.",
+      "kaynak": "DCD",
+      "url": "https://www.datacenterdynamics.com/en/news/era4-reveals-details-of-hyperscale-data-center-planned-for-former-steelworks-in-newport-wales/",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-25--data-center-proposed-for-steel-mill-in-illinois",
+      "tarih": "2026-10-25",
+      "yayin": "2026-10-23",
+      "baslik": "Illinois'de çelik fabrikasına 1 GW'lık veri merkezi önerisi",
+      "detay": "TerraWatt, Alton'daki 381 dönümlük eski Alton Steel sahasında 200 MW'lık bloklarla 1 GW'a ulaşacak Riverbend Technology Center'ı önerdi; satış imar onayı ve Ameren şebeke çalışmasına bağlı, ilk blok 2027 sonu–2029 arasında planlanıyor.",
+      "kaynak": "DCD",
+      "url": "https://www.datacenterdynamics.com/en/news/gigawatt-scale-data-center-proposed-for-steel-mill-in-illinois/",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-25-scrutiny-of-controversial-data-center-plans-html",
+      "tarih": "2026-10-25",
+      "yayin": "2026-10-23",
+      "baslik": "Hiperölçekleyiciler veri merkezi projelerinde gizlilik sözleşmelerini geri çekiyor",
+      "detay": "Amazon enerji ve su kullanımında daha fazla açıklama sözü verdi, Meta Louisiana'daki Hyperion projesi eleştirileri sonrası gizlilik sözleşmesi (NDA) kullanımını gözden geçiriyor; Microsoft ve Google NDA'ları bırakmıştı. Yerel protestolar projeleri geciktiriyor.",
+      "kaynak": "Network World",
+      "url": "https://networkworld.com/article/4239854/hyperscalers-allow-more-scrutiny-of-controversial-data-center-plans.html",
+      "ton": "notr",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-25-imes-com-news-biz-archives-2026-10-23-2003866445",
+      "tarih": "2026-10-25",
+      "yayin": "2026-10-23",
+      "baslik": "Micron küresel çapta çeyreklik kâr payı programı açıkladı",
+      "detay": "2027 mali yılından itibaren geçerli program, çeyreklik net kârdan bir sonraki çeyreğin öngörülen yatırımını düşerek hesaplanacak; ödeme yarı hisse yarı nakit. Tayvan'da emeklilik katkısı %8'den %10'a çıkıyor, Taichung sendikası anlaşmayı kabul etti.",
+      "kaynak": "Taipei Times",
+      "url": "https://taipeitimes.com/News/biz/archives/2026/10/23/2003866445",
+      "ton": "notr",
+      "konular": [
+        "bellek"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-25-t-com-cards-tsm-xpost-01m5qfftx0egyvdp4tchy7yx1c",
+      "tarih": "2026-10-25",
+      "yayin": "2026-10-24",
+      "baslik": "Samsung'un Nvidia'ya özel HBM taban kalıbı için TSMC 3 nm'yi düşündüğü bildirildi",
+      "detay": "Analist Beth Kindig'in paylaşımına göre Samsung, Nvidia'nın yeni nesil özel NVHBM yığınlarının mantık katmanı için TSMC'nin 3 nm sürecini kullanmayı değerlendiriyor; kendi dökümhanesi de seçenek olarak masada, karar kesin değil.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/cards/tsm-xpost-01m5qfftx0egyvdp4tchy7yx1c",
+      "ton": "notr",
+      "konular": [
+        "bellek",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
       "id": "2026-10-24-bstack-com-p-closing-look-friday-october-23-2026",
       "tarih": "2026-10-24",
       "yayin": null,
@@ -3481,7 +3747,7 @@
       "kaynakTuru": "bugun"
     }
   ],
-  "guncelleme": "2026-10-24",
+  "guncelleme": "2026-10-25",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",

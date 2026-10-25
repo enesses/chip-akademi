@@ -1,0 +1,98 @@
+{
+  "tarih": "2026-10-25",
+  "haberler": [
+    {
+      "baslik": "OpenAI, 1,25 trilyon dolar değerlemeyle 30 milyar dolar topluyor",
+      "detay": "TechCrunch'ın aktardığına göre OpenAI, Coatue ve BAE'li yatırımcıların öncülük etmesi beklenen turda 1,25 trilyon dolar (yatırım öncesi) değerlemeyle 30 milyar dolara kadar arıyor; bir ay önce konuşulan rakam 1,4 trilyon dolardı. Şartlar henüz kesinleşmedi.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+      "yayin": "2026-10-22",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "ABD Hazinesi, Çin'e yönelik çip ve yapay zekâ yatırımlarına kural önerdi",
+      "detay": "Hazine, COINS Yasası'nı uygulayan taslak kuralda yarı iletken, yapay zekâ, kuantum, süper bilgisayar ve hipersonik teknolojilerine 'yabancı hasım' ülkelerde yapılan dış yatırımları kapsamaya aldı; biyoteknolojiyi de ekledi. Kural henüz öneri aşamasında.",
+      "kaynak": "ExplainX (ABD Hazinesi açıklaması)",
+      "url": "https://explainx.ai/blog/treasury-coins-act-outbound-investment-proposed-rule-ai-chips-china-2026",
+      "yayin": "2026-10-22",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Intel'in lobi harcaması 3. çeyrekte %45 arttı",
+      "detay": "Intel, ihracat kontrolü ihlallerini bildirenlere teşvik getiren Stop Stealing our Chips Act gündemdeyken 3. çeyrekte 1,2 milyon dolar lobi harcaması bildirdi; bu, 2. çeyreğe göre yaklaşık %44,6 artış. Tasarı Senato'dan mayısta oybirliğiyle geçmişti.",
+      "kaynak": "Legis1",
+      "url": "https://legis1.com/news/intel-lobbying-lobbies-stop-stealing-our-chips",
+      "yayin": "2026-10-22",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Era4, Galler'deki eski çelik fabrikasında 1 GW'lık kampüs planlıyor",
+      "detay": "Era4'ün Newport'taki 230 dönümlük eski Liberty Steel sahasında kuracağı 'The Mill' kampüsü 2027'de devreye girmeye başlayacak; nihai hedef 1 GW ve 400.000'e kadar Nvidia Vera Rubin GPU.",
+      "kaynak": "DCD",
+      "url": "https://www.datacenterdynamics.com/en/news/era4-reveals-details-of-hyperscale-data-center-planned-for-former-steelworks-in-newport-wales/",
+      "yayin": "2026-10-22",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Illinois'de çelik fabrikasına 1 GW'lık veri merkezi önerisi",
+      "detay": "TerraWatt, Alton'daki 381 dönümlük eski Alton Steel sahasında 200 MW'lık bloklarla 1 GW'a ulaşacak Riverbend Technology Center'ı önerdi; satış imar onayı ve Ameren şebeke çalışmasına bağlı, ilk blok 2027 sonu–2029 arasında planlanıyor.",
+      "kaynak": "DCD",
+      "url": "https://www.datacenterdynamics.com/en/news/gigawatt-scale-data-center-proposed-for-steel-mill-in-illinois/",
+      "yayin": "2026-10-23",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Hiperölçekleyiciler veri merkezi projelerinde gizlilik sözleşmelerini geri çekiyor",
+      "detay": "Amazon enerji ve su kullanımında daha fazla açıklama sözü verdi, Meta Louisiana'daki Hyperion projesi eleştirileri sonrası gizlilik sözleşmesi (NDA) kullanımını gözden geçiriyor; Microsoft ve Google NDA'ları bırakmıştı. Yerel protestolar projeleri geciktiriyor.",
+      "kaynak": "Network World",
+      "url": "https://networkworld.com/article/4239854/hyperscalers-allow-more-scrutiny-of-controversial-data-center-plans.html",
+      "yayin": "2026-10-23",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Micron küresel çapta çeyreklik kâr payı programı açıkladı",
+      "detay": "2027 mali yılından itibaren geçerli program, çeyreklik net kârdan bir sonraki çeyreğin öngörülen yatırımını düşerek hesaplanacak; ödeme yarı hisse yarı nakit. Tayvan'da emeklilik katkısı %8'den %10'a çıkıyor, Taichung sendikası anlaşmayı kabul etti.",
+      "kaynak": "Taipei Times",
+      "url": "https://taipeitimes.com/News/biz/archives/2026/10/23/2003866445",
+      "yayin": "2026-10-23",
+      "konular": [
+        "bellek"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Samsung'un Nvidia'ya özel HBM taban kalıbı için TSMC 3 nm'yi düşündüğü bildirildi",
+      "detay": "Analist Beth Kindig'in paylaşımına göre Samsung, Nvidia'nın yeni nesil özel NVHBM yığınlarının mantık katmanı için TSMC'nin 3 nm sürecini kullanmayı değerlendiriyor; kendi dökümhanesi de seçenek olarak masada, karar kesin değil.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/cards/tsm-xpost-01m5qfftx0egyvdp4tchy7yx1c",
+      "yayin": "2026-10-24",
+      "konular": [
+        "bellek",
+        "cip"
+      ],
+      "kategori": "notr"
+    }
+  ]
+}
