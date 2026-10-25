@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-25T07:04:43.997Z",
+  "guncelleme": "2026-10-25T07:07:23.366Z",
   "tarih": "2026-10-25",
   "durum": "temiz",
   "ajanlar": [
@@ -63,7 +63,28 @@
       "alan": "otomasyon"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-10-25",
+      "oneri": "Haberler kartlarında Bugün'den gelen haberleri rozetle işaretle",
+      "durum": "birlesti",
+      "pr": 56,
+      "dal": "otomasyon/oneri-2026-10-25-1",
+      "ozet": "Bugün puanına katılan haberler akışta 'Bugün maddesi' rozetiyle gösteriliyor.",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-25",
+      "oneri": "Yaklaşan olayları takvime ekle (.ics) düğmesi",
+      "durum": "birlesti",
+      "pr": 57,
+      "dal": "otomasyon/oneri-2026-10-25-2",
+      "ozet": "Bugün sayfasındaki yaklaşan olaylar tek düğmeyle .ics takvim dosyası olarak kaydediliyor.",
+      "neden": null,
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
@@ -448,6 +469,20 @@
       "durum": "birlesti",
       "pr": 55,
       "tarih": "2026-10-24",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Haberler kartlarında Bugün'den gelen haberleri rozetle işaretle",
+      "durum": "birlesti",
+      "pr": 56,
+      "tarih": "2026-10-25",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Yaklaşan olayları takvime ekle (.ics) düğmesi",
+      "durum": "birlesti",
+      "pr": 57,
+      "tarih": "2026-10-25",
       "kim": "otomasyon"
     }
   ],

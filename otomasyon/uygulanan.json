@@ -640,6 +640,26 @@
       "ozet": "Günün gelişmeleri listesine Tümü/Pozitif/Nötr/Negatif süzgeci",
       "neden": null,
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-25",
+      "oneri": "Haberler kartlarında Bugün'den gelen haberleri rozetle işaretle",
+      "durum": "birlesti",
+      "pr": 56,
+      "dal": "otomasyon/oneri-2026-10-25-1",
+      "ozet": "Bugün puanına katılan haberler akışta 'Bugün maddesi' rozetiyle gösteriliyor.",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-25",
+      "oneri": "Yaklaşan olayları takvime ekle (.ics) düğmesi",
+      "durum": "birlesti",
+      "pr": 57,
+      "dal": "otomasyon/oneri-2026-10-25-2",
+      "ozet": "Bugün sayfasındaki yaklaşan olaylar tek düğmeyle .ics takvim dosyası olarak kaydediliyor.",
+      "neden": null,
+      "kim": "otomasyon"
     }
   ]
 }
