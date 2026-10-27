@@ -660,6 +660,26 @@
       "ozet": "Bugün sayfasındaki yaklaşan olaylar tek düğmeyle .ics takvim dosyası olarak kaydediliyor.",
       "neden": null,
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-27",
+      "oneri": "Fiyat tablosunu CSV olarak indir düğmesi",
+      "durum": "acik",
+      "pr": 58,
+      "dal": "otomasyon/oneri-2026-10-27-1",
+      "ozet": "Fiyatlar tablosu süzülmüş/sıralı hâliyle CSV indirilebiliyor",
+      "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-27",
+      "oneri": "Bugün maddelerini ağırlığa göre sıralama seçeneği",
+      "durum": "acik",
+      "pr": 59,
+      "dal": "otomasyon/oneri-2026-10-27-2",
+      "ozet": "Bugün'de 'Ağırlığa göre sırala' düğmesi",
+      "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
+      "kim": "otomasyon"
     }
   ]
 }
