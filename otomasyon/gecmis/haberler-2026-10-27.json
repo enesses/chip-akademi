@@ -1,0 +1,90 @@
+{
+  "tarih": "2026-10-27",
+  "haberler": [
+    {
+      "baslik": "Anthropic, TSMC ve Tayvan'a bağımlılığı risk olarak bildirdi",
+      "detay": "Kayıt beyanında gelişmiş çip üretiminin büyük bölümünün Tayvan'da, başta TSMC'de toplandığı; doğal afet, Tayvan-Çin gerilimi veya ambargonun arzı uzun süre bozabileceği belirtiliyor. ABD'deki alternatif kapasite 'erken aşamada'; TSMC'nin zaman zaman talebin tamamını karşılayamadığı da yazılı.",
+      "kaynak": "The Tribune",
+      "url": "https://www.tribuneindia.com/news/advanced-chips/anthropic-warns-tsmc-disruptions-could-hit-ai-chip-supply-threaten-business",
+      "yayin": "2026-10-27",
+      "konular": [
+        "cip",
+        "politika",
+        "yapay-zeka"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "SK hynix, Kioxia kazancından 12 milyar dolarlık özel temettü planlıyor",
+      "detay": "Bloomberg'e dayanan habere göre şirket yaklaşık 16 trilyon won özel temettüyü 28 Ekim bilançosuyla açıklayabilir; Kioxia hisse satışından gelen yaklaşık 40 trilyon wonluk kazancın %80'i hissedarlara aktarılacak.",
+      "kaynak": "Startup Fortune (Bloomberg)",
+      "url": "https://startupfortune.com/sk-hynix-plans-12-billion-dividend-from-its-kioxia-stake-windfall/",
+      "yayin": "2026-10-26",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Bellek üreticileri 2027 kapasitesini satmış durumda",
+      "detay": "TrendForce verilerine göre Samsung, SK hynix ve Micron'un 2027 DRAM ve HBM üretimi satıldı; Samsung gelecek yılın genel DRAM'inin %70'ini beş yıllık sözleşmelere bağladı. SK hynix hissesi %7,14 yükselerek 1.366.000 won'a çıktı.",
+      "kaynak": "Startup Fortune (TrendForce verisi)",
+      "url": "https://startupfortune.com/sk-hynix-jumps-on-dividend-report-as-memory-makers-sell-out-2027",
+      "yayin": "2026-10-27",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Samsung ve SK hynix'in çeyreklik kârı 184 trilyon won, F/K 3 kat",
+      "detay": "Samsung'un ön faaliyet kârı 107,4 trilyon won, SK hynix için beklenti yaklaşık 77 trilyon won. Gelecek yıl beklenen net kâra göre iki şirket yaklaşık 3 kat F/K ile işlem görüyor.",
+      "kaynak": "MoneyToday",
+      "url": "https://www.mt.co.kr/en/industry/2026/10/26/2026102614325991261",
+      "yayin": "2026-10-26",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Firebird'e Kazakistan için 45 bin Nvidia GPU ihracat lisansı",
+      "detay": "ABD lisansı 45.000 Grace Blackwell GPU'yu kapsıyor; ilk faz Ekibastuz'daki Data Center Valley'de Kazakhtelecom ile kuruluyor, ticari işletme hedefi 2027'nin üçüncü çeyreği. İkinci fazla toplam kapasite yaklaşık 500 MW olabilir.",
+      "kaynak": "Credence Research",
+      "url": "https://www.credenceresearch.com/news/firebird-us-export-license-45000-nvidia-gpus-kazakhstan",
+      "yayin": "2026-10-24",
+      "konular": [
+        "politika",
+        "veri-merkezi",
+        "cip"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "AMD ve Nvidia alt taban (substrate) kapasitesine yatırım yapıyor",
+      "detay": "İki şirket de alt taban, paketleme ve test kapasitesini genişletmek için tedarik zincirine ayrı ayrı yatırım yapıyor; başlıkta 4 kat genişleme kısıtına işaret ediliyor.",
+      "kaynak": "DIGITIMES",
+      "url": "https://www.digitimes.com/news/a20261027PD218/amd-nvidia-capacity-substrate-expansion.html",
+      "yayin": "2026-10-27",
+      "konular": [
+        "cip"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Wall Street Anthropic heyecanıyla yükseldi, gözler Fed'de",
+      "detay": "26 Ekim'de Dow %0,3 artışla 52.361,58'de, S&P 500 %0,7, Nasdaq %0,8 yükseldi. Fed'in iki günlük toplantısı 27 Ekim'de başlıyor, karar 28 Ekim'de; faizlerin sabit kalması bekleniyor. Alphabet ve Microsoft çarşamba açıklayacak.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-rally-as-investors-parse-anthropic-ipo-filing-busy-week-of-tech-earnings-153428995.html",
+      "yayin": "2026-10-26",
+      "konular": [
+        "pazar",
+        "yapay-zeka"
+      ],
+      "kategori": "pozitif"
+    }
+  ]
+}

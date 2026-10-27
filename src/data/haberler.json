@@ -2,6 +2,263 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-10-27-venue-growth-and-massive-spending-131807138-html",
+      "tarih": "2026-10-27",
+      "yayin": null,
+      "baslik": "Anthropic Nasdaq'ta halka arz için başvurdu",
+      "detay": "S-1'e göre ilk yarı geliri 16,3 milyar dolar (2025'in tamamı 4,6 milyar dolar), ilk yarı net zararı 80,7 milyar dolar; yapay zekâ altyapı harcaması ilk altı ayda 9 milyar dolar. Amazon, Google ve diğerleriyle kilitli bulut taahhütleri yaklaşık 430 milyar dolar, iptal edilebilirlerle 637 milyar dolar. Sembol: ANT.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/article/anthropic-publicly-files-ipo-prospectus-noting-strong-revenue-growth-and-massive-spending-131807138.html",
+      "ton": "pozitif",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-27--broadcom-63-billion-ai-chip-lease-financing-spv",
+      "tarih": "2026-10-27",
+      "yayin": null,
+      "baslik": "Anthropic'e Broadcom çipleri için 63 milyar dolarlık kiralama finansmanı",
+      "detay": "Bank of America, Citi ve Morgan Stanley birinci, Blackstone ikinci derece finansmanı sağlıyor. Yeni bir özel amaçlı şirket Broadcom XPU hızlandırıcıları ve ağ ürünlerini alıp Anthropic'e kiralayacak; teslimatlar 2027'de başlıyor, Broadcom kalıntı değer desteği veriyor.",
+      "kaynak": "Data Studios (resmî açıklama özeti)",
+      "url": "https://datastudios.org/post/anthropic-broadcom-63-billion-ai-chip-lease-financing-spv",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-27-eta-plans-95-billion-stock-offering-fuel-ai-html",
+      "tarih": "2026-10-27",
+      "yayin": null,
+      "baslik": "Meta 95 milyar dolara varan hisse satışı planlıyor",
+      "detay": "22,5 milyar dolar A sınıfı hisse ve 12,5 milyar dolar zorunlu dönüştürülebilir imtiyazlı hisseyle 35 milyar dolar; 2027 başında 60 milyar dolarlık ayrı bir satış programı. Yıllık yatırım bütçesi 135–145 milyar dolar; Nvidia, AMD ve Broadcom toplam 5 milyar dolara kadar hisse almak istiyor.",
+      "kaynak": "TechSpot",
+      "url": "https://www.techspot.com/news/114336-meta-plans-95-billion-stock-offering-fuel-ai.html",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-27-packaging-prices-by-up-to-20-report-says-4974101",
+      "tarih": "2026-10-27",
+      "yayin": null,
+      "baslik": "TSMC CoWoS paketleme fiyatlarını %20'ye kadar artırabilir",
+      "detay": "Commercial Times'ın sektör kaynaklarına göre dökümhaneler ve paketleme/test firmaları %10–20 zam hazırlığında. Ekipman teslim süreleri 3–6 aydan 6–8 aya uzadı; CoWoS aylık kapasitesinin 2026'da 130 bin, 2027'de 200 bin wafer'a ulaşması bekleniyor.",
+      "kaynak": "Investing.com",
+      "url": "https://investing.com/news/stock-market-news/tsmc-to-raise-advanced-chip-packaging-prices-by-up-to-20-report-says-4974101",
+      "ton": "notr",
+      "konular": [
+        "cip"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-27--78-operating-margin-hbm4-ltas-solidigm-in-focus",
+      "tarih": "2026-10-27",
+      "yayin": null,
+      "baslik": "SK hynix'ten %78 marjlı rekor çeyrek bekleniyor",
+      "detay": "Uzlaşıya göre 3. çeyrek geliri 98,23 trilyon won, faaliyet kârı 76,96 trilyon won (yıllık %576 artış), marj yaklaşık %78,4. Hana Securities DRAM fiyatlarında çeyreklik %21 artış bekliyor; HBM4 sevkiyatlarının Rubin gecikmesi nedeniyle beklentinin altında kalabileceği bildiriliyor. Sonuçlar 28 Ekim'de.",
+      "kaynak": "TrendForce",
+      "url": "https://www.trendforce.com/news/2026/10/26/news-sk-hynix-3q-earnings-preview-record-profit-at-78-operating-margin-hbm4-ltas-solidigm-in-focus/",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-27-tocks-rebound-on-anthropic-ipo-filing-samsung-sk",
+      "tarih": "2026-10-27",
+      "yayin": null,
+      "baslik": "Çip hisseleri Anthropic başvurusuyla toparlandı",
+      "detay": "Philadelphia yarı iletken endeksi 26 Ekim'de %2,82 yükseldi; Micron %3, AMD %2,8, Nvidia %2,4 arttı. 27 Ekim sabahı Kore'de SK hynix %3,45 artışla 1.319.000 won, Samsung %2,82 artışla 219.000 won oldu.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/10/27/chip-stocks-rebound-on-anthropic-ipo-filing-samsung-sk",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "cip",
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-27-n-memory-western-digital-rises-5-sandisk-gains-3",
+      "tarih": "2026-10-27",
+      "yayin": null,
+      "baslik": "BofA: bellek sözleşmeleri artık 3–5 yıllık",
+      "detay": "Bank of America'dan Vivek Arya, Micron yönetimiyle görüşmesinin ardından 'al' önerisini ve 1.550 dolarlık hedef fiyatı korudu; tedarik anlaşmalarının bir yıldan 3–5 yıla uzadığını belirtti. Micron %4, Western Digital %5, SanDisk %3 yükseldi.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/10/26/micron-climbs-4-as-bank-of-america-grows-more-positive-on-memory-western-digital-rises-5-sandisk-gains-3/",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-27--rally-unravels-as-unitree-halves-cxmt-slides-25",
+      "tarih": "2026-10-27",
+      "yayin": null,
+      "baslik": "Çin'in yapay zekâ ve çip hisselerinde 480 milyar dolarlık kayıp",
+      "detay": "STAR50 endeksi dört aydan kısa sürede yaklaşık %40 düştü, 26 Ekim'de %2,23 kayıpla 1.315,50'de kapandı. CXMT bir ayda %25'in üzerinde, MetaX ve Moore Threads temmuzdan beri yarı yarıya geriledi; endeksin F/K oranı hâlâ 100 civarında.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/international/2026/10/27/chinas-ai-rally-unravels-as-unitree-halves-cxmt-slides-25",
+      "ton": "negatif",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-27-813672-000081367226000116-cdns10262026ex9901-htm",
+      "tarih": "2026-10-27",
+      "yayin": null,
+      "baslik": "Cadence yıllık büyüme beklentisini %21'e yükseltti",
+      "detay": "3. çeyrek geliri 1,633 milyar dolarla yıllık yaklaşık %22 arttı; sipariş birikimi 8,2 milyar dolar. 2026 gelir beklentisi 6,387–6,417 milyar dolar.",
+      "kaynak": "Cadence (SEC 8-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000813672/000081367226000116/cdns10262026ex9901.htm",
+      "ton": "pozitif",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-27-47127-000104712726000049-amkr9302026erex-991-htm",
+      "tarih": "2026-10-27",
+      "yayin": null,
+      "baslik": "Amkor'da rekor bilgi işlem geliri, yatay dördüncü çeyrek",
+      "detay": "3. çeyrek net satışı 1,99 milyar dolar, hisse başına kâr 0,76 dolar, brüt marj %18,3. Bilgi işlem segmentinin payı %22'den %26'ya çıktı. 4. çeyrek satış beklentisi 1,9–2,0 milyar dolar; 2026 yatırım harcaması yaklaşık 2,5 milyar dolar.",
+      "kaynak": "Amkor (SEC 8-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001047127/000104712726000049/amkr9302026erex-991.htm",
+      "ton": "notr",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-27-tions-could-hit-ai-chip-supply-threaten-business",
+      "tarih": "2026-10-27",
+      "yayin": "2026-10-27",
+      "baslik": "Anthropic, TSMC ve Tayvan'a bağımlılığı risk olarak bildirdi",
+      "detay": "Kayıt beyanında gelişmiş çip üretiminin büyük bölümünün Tayvan'da, başta TSMC'de toplandığı; doğal afet, Tayvan-Çin gerilimi veya ambargonun arzı uzun süre bozabileceği belirtiliyor. ABD'deki alternatif kapasite 'erken aşamada'; TSMC'nin zaman zaman talebin tamamını karşılayamadığı da yazılı.",
+      "kaynak": "The Tribune",
+      "url": "https://www.tribuneindia.com/news/advanced-chips/anthropic-warns-tsmc-disruptions-could-hit-ai-chip-supply-threaten-business",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "politika",
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-27--billion-dividend-from-its-kioxia-stake-windfall",
+      "tarih": "2026-10-27",
+      "yayin": "2026-10-26",
+      "baslik": "SK hynix, Kioxia kazancından 12 milyar dolarlık özel temettü planlıyor",
+      "detay": "Bloomberg'e dayanan habere göre şirket yaklaşık 16 trilyon won özel temettüyü 28 Ekim bilançosuyla açıklayabilir; Kioxia hisse satışından gelen yaklaşık 40 trilyon wonluk kazancın %80'i hissedarlara aktarılacak.",
+      "kaynak": "Startup Fortune (Bloomberg)",
+      "url": "https://startupfortune.com/sk-hynix-plans-12-billion-dividend-from-its-kioxia-stake-windfall/",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-27-n-dividend-report-as-memory-makers-sell-out-2027",
+      "tarih": "2026-10-27",
+      "yayin": "2026-10-27",
+      "baslik": "Bellek üreticileri 2027 kapasitesini satmış durumda",
+      "detay": "TrendForce verilerine göre Samsung, SK hynix ve Micron'un 2027 DRAM ve HBM üretimi satıldı; Samsung gelecek yılın genel DRAM'inin %70'ini beş yıllık sözleşmelere bağladı. SK hynix hissesi %7,14 yükselerek 1.366.000 won'a çıktı.",
+      "kaynak": "Startup Fortune (TrendForce verisi)",
+      "url": "https://startupfortune.com/sk-hynix-jumps-on-dividend-report-as-memory-makers-sell-out-2027",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-27-co-kr-en-industry-2026-10-26-2026102614325991261",
+      "tarih": "2026-10-27",
+      "yayin": "2026-10-26",
+      "baslik": "Samsung ve SK hynix'in çeyreklik kârı 184 trilyon won, F/K 3 kat",
+      "detay": "Samsung'un ön faaliyet kârı 107,4 trilyon won, SK hynix için beklenti yaklaşık 77 trilyon won. Gelecek yıl beklenen net kâra göre iki şirket yaklaşık 3 kat F/K ile işlem görüyor.",
+      "kaynak": "MoneyToday",
+      "url": "https://www.mt.co.kr/en/industry/2026/10/26/2026102614325991261",
+      "ton": "notr",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-27-d-us-export-license-45000-nvidia-gpus-kazakhstan",
+      "tarih": "2026-10-27",
+      "yayin": "2026-10-24",
+      "baslik": "Firebird'e Kazakistan için 45 bin Nvidia GPU ihracat lisansı",
+      "detay": "ABD lisansı 45.000 Grace Blackwell GPU'yu kapsıyor; ilk faz Ekibastuz'daki Data Center Valley'de Kazakhtelecom ile kuruluyor, ticari işletme hedefi 2027'nin üçüncü çeyreği. İkinci fazla toplam kapasite yaklaşık 500 MW olabilir.",
+      "kaynak": "Credence Research",
+      "url": "https://www.credenceresearch.com/news/firebird-us-export-license-45000-nvidia-gpus-kazakhstan",
+      "ton": "pozitif",
+      "konular": [
+        "politika",
+        "veri-merkezi",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-27-218-amd-nvidia-capacity-substrate-expansion-html",
+      "tarih": "2026-10-27",
+      "yayin": "2026-10-27",
+      "baslik": "AMD ve Nvidia alt taban (substrate) kapasitesine yatırım yapıyor",
+      "detay": "İki şirket de alt taban, paketleme ve test kapasitesini genişletmek için tedarik zincirine ayrı ayrı yatırım yapıyor; başlıkta 4 kat genişleme kısıtına işaret ediliyor.",
+      "kaynak": "DIGITIMES",
+      "url": "https://www.digitimes.com/news/a20261027PD218/amd-nvidia-capacity-substrate-expansion.html",
+      "ton": "notr",
+      "konular": [
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-27-filing-busy-week-of-tech-earnings-153428995-html",
+      "tarih": "2026-10-27",
+      "yayin": "2026-10-26",
+      "baslik": "Wall Street Anthropic heyecanıyla yükseldi, gözler Fed'de",
+      "detay": "26 Ekim'de Dow %0,3 artışla 52.361,58'de, S&P 500 %0,7, Nasdaq %0,8 yükseldi. Fed'in iki günlük toplantısı 27 Ekim'de başlıyor, karar 28 Ekim'de; faizlerin sabit kalması bekleniyor. Alphabet ve Microsoft çarşamba açıklayacak.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-rally-as-investors-parse-anthropic-ipo-filing-busy-week-of-tech-earnings-153428995.html",
+      "ton": "pozitif",
+      "konular": [
+        "pazar",
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
       "id": "2026-10-25-b-neocloud-backstop-faces-first-real-market-test",
       "tarih": "2026-10-25",
       "yayin": null,
@@ -3747,7 +4004,7 @@
       "kaynakTuru": "bugun"
     }
   ],
-  "guncelleme": "2026-10-25",
+  "guncelleme": "2026-10-27",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",

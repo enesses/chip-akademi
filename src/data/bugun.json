@@ -1,151 +1,133 @@
 {
-  "tarih": "2026-10-25",
-  "derlenme": "25 Ekim 2026",
+  "tarih": "2026-10-27",
+  "derlenme": "27 Ekim 2026",
   "puan": {
-    "etiket": "Talep güçlü, finansman zinciri sorgulanıyor",
-    "yorum": "Nvidia'nın neocloud'lara 171,5 milyar dolarlık riski ve neocloud hisselerindeki %30'u aşan kayıplar finansman kaygısını öne çıkardı. Google'ın Vera Rubin örnekleri ve Nvidia'nın hızlı kurulum tasarımı talebin sürdüğünü gösterirken, Micron'daki iş anlaşmazlığı ve Teksas'ın OpenAI davası riskleri artırıyor; yeni haftada Fed ve büyük teknoloji bilançoları belirleyici.",
-    "deger": 38
+    "etiket": "Anthropic halka arzı yapay zekâ ticaretini yeniden ısıttı",
+    "yorum": "Anthropic'in S-1 başvurusu ve 63 milyar dolarlık Broadcom kiralama finansmanı, Meta'nın 95 milyar dolarlık hisse satışı planıyla birlikte hesaplama talebinin sürdüğünü gösterdi; Philadelphia yarı iletken endeksi %2,8 yükseldi. TSMC'nin paketleme zammı ve Çin'deki yapay zekâ hisselerinin %40'lık çöküşü ise maliyet ve değerleme riskini hatırlatıyor. Bu hafta Fed kararı, SK hynix ve Samsung bilançoları belirleyici.",
+    "deger": 79
   },
   "ozet": [
-    "Hafta sonuna girerken yapay zekâ altyapısında gündem talepten finansmana kaydı. CNBC'nin derlediği verilere göre Nvidia'nın neocloud şirketlerine toplam riski 171,5 milyar dolara ulaştı; bunun 164,5 milyar doları garanti ve taahhüt. CoreWeave, Nebius ve IREN'in ekimde en az %30 değer kaybetmesi ve CoreWeave'in kredi temerrüt primlerinin sıkıntı seviyesine çıkması, çip talebinin bir bölümünün kırılgan bir finansman zincirine dayandığını hatırlattı.",
-    "Talep tarafındaki sinyaller ise güçlü kalmaya devam ediyor. Google Cloud, Vera Rubin tabanlı A5X örneklerini kasımda genel kullanıma açıyor ve mimariyi 960.000 GPU'ya kadar ölçeklemeyi hedefliyor; Nvidia'nın konteyner tabanlı DSX POD tasarımı da kurulum süresini aylardan haftalara indirmeyi vaat ediyor. TSMC rekor kâr açıklamasına rağmen marj baskısı ve yüksek beklentiler nedeniyle bir ayda %7 geriledi.",
-    "Arz tarafında riskler belirginleşiyor. Micron'un Tayvan'daki Taoyuan sendikası kâr payı önerisini %70 oyla reddetti ve görüşmeler 27 Ekim'de sürecek; Çin ise EUV olmadan ileri çip üretmeyi sürdürüyor ama daha düşük verim ve daha yüksek maliyetle. Düzenleyici cephede Teksas'ın OpenAI'a açtığı dava, yeni model sürümlerini mahkeme onayına bağlamayı talep ederek yeni bir emsal riski doğurdu.",
-    "Yeni haftada gözler 28 Ekim'deki Fed kararında ve Microsoft, Alphabet, Amazon, Intel, SK hynix ile Samsung bilançolarında olacak. Hiperölçekleyicilerin yatırım rehberleri ve bellek devlerinin HBM yorumları, geçen haftaki sert satışın kalıcı bir eğilim mi yoksa konumlanma kaynaklı bir düzeltme mi olduğunu gösterecek."
+    "Günün ana olayı Anthropic'in 26 Ekim'de SEC'e sunduğu halka arz başvurusu oldu. Şirket Nasdaq'ta ANT sembolüyle işlem görmeyi planlıyor; ilk yarı geliri 16,3 milyar dolar, net zararı 80,7 milyar dolar ve bulut hesaplama taahhütleri yaklaşık 430 milyar dolar. Aynı gün Bank of America, Citi, Morgan Stanley ve Blackstone, Anthropic'e Broadcom XPU hızlandırıcılarını kiralayacak bir yapı için 63 milyar dolarlık finansman açıkladı.",
+    "Yatırımcılar bu haberleri hesaplama talebinin süreceğine işaret olarak okudu: Philadelphia yarı iletken endeksi 26 Ekim'de %2,82, Micron %3, AMD %2,8, Nvidia %2,4 yükseldi; 27 Ekim sabahı Kore'de SK hynix %3,45, Samsung %2,82 arttı. Meta da yıllık yatırım bütçesini 135–145 milyar dolara çekip 95 milyar dolara varan hisse satışı planladığını açıkladı; Nvidia, AMD ve Broadcom bu satıştan toplam 5 milyar dolara kadar hisse almak istiyor.",
+    "Tedarik tarafında darboğaz fiyatlara yansıyor. Commercial Times'a göre TSMC, CoWoS gelişmiş paketleme fiyatlarını %10–20 artırmaya hazırlanıyor; ekipman teslim süreleri 6–8 aya uzadı. Bellekte SK hynix'in 28 Ekim'de rekor bir çeyrek açıklaması bekleniyor: uzlaşı faaliyet kârı 76,96 trilyon won, marj yaklaşık %78. Bank of America ise bellek tedarik sözleşmelerinin artık 3–5 yıla uzadığını not etti.",
+    "Riskler de görünür: Çin'in STAR50 endeksi dört ayda yaklaşık %40 düşerek 480 milyar dolar değer kaybetti, CXMT bir ayda %25'in üzerinde geriledi. Amkor'un dördüncü çeyrek beklentisi üçüncü çeyrekle yatay kaldı. Bu hafta Fed'in 28 Ekim kararı, Alphabet ve Microsoft bilançoları ile SK hynix (28 Ekim) ve Samsung (29 Ekim) sonuçları yönü belirleyecek."
   ],
   "yaklasan": [
     {
-      "tarih": "2026-10-26",
-      "baslik": "Cadence, Rambus ve Amkor bilançoları (kapanış sonrası)",
-      "kaynak": "TradingKey",
-      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262237761-weekly-fed-microsoft-alphabet-amazon-earnings-tradingkey"
-    },
-    {
-      "tarih": "2026-10-27",
-      "baslik": "Micron ile Taoyuan sendikası arasında yeni görüşme",
-      "kaynak": "Manila Times (AFP)",
-      "url": "https://www.manilatimes.net/2026/10/24/business/foreign-business/micron-taiwan-workers-reject-bonus-proposal/2452756/amp"
+      "tarih": "2026-10-28",
+      "baslik": "Fed faiz kararı (iki günlük toplantının sonu)",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-rally-as-investors-parse-anthropic-ipo-filing-busy-week-of-tech-earnings-153428995.html"
     },
     {
       "tarih": "2026-10-28",
-      "baslik": "FOMC faiz kararı; Microsoft ve Alphabet bilançoları",
-      "kaynak": "TradingKey",
-      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262237761-weekly-fed-microsoft-alphabet-amazon-earnings-tradingkey"
+      "baslik": "Alphabet ve Microsoft bilançoları (kapanış sonrası)",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-rally-as-investors-parse-anthropic-ipo-filing-busy-week-of-tech-earnings-153428995.html"
     },
     {
       "tarih": "2026-10-28",
-      "baslik": "SK hynix 3. çeyrek sonuçları; KLA bilançosu",
-      "kaynak": "EDAILY / Stocktitan",
-      "url": "https://en.edaily.co.kr/news/eda202610235867/"
+      "baslik": "SK hynix 3. çeyrek sonuçları",
+      "kaynak": "TrendForce",
+      "url": "https://www.trendforce.com/news/2026/10/26/news-sk-hynix-3q-earnings-preview-record-profit-at-78-operating-margin-hbm4-ltas-solidigm-in-focus/"
     },
     {
       "tarih": "2026-10-29",
-      "baslik": "Samsung Electronics 3. çeyrek sonuçları",
-      "kaynak": "EDAILY",
-      "url": "https://en.edaily.co.kr/news/eda202610235867/"
-    },
-    {
-      "tarih": "2026-10-29",
-      "baslik": "Amazon, Intel ve Sandisk bilançoları (kapanış sonrası)",
-      "kaynak": "Stocktitan",
-      "url": "https://www.stocktitan.net/articles/earnings-calendar-week-of-october-26-2026"
-    },
-    {
-      "tarih": "2026-11-02",
-      "baslik": "Apple eylül çeyreği sonuçları",
-      "kaynak": "Stocktitan",
-      "url": "https://www.stocktitan.net/articles/earnings-calendar-week-of-october-26-2026"
+      "baslik": "Samsung Electronics 3. çeyrek kesin sonuçları",
+      "kaynak": "MoneyToday",
+      "url": "https://www.mt.co.kr/en/industry/2026/10/26/2026102614325991261"
     }
   ],
   "maddeler": [
     {
-      "baslik": "Nvidia'nın neocloud'lara toplam riski 171,5 milyar dolar",
-      "detay": "CNBC'nin derlediği verilere göre Nvidia'nın neocloud şirketlerine 7 milyar dolar doğrudan yatırımı ve 164,5 milyar dolar garanti/taahhüdü var; CoreWeave'in satamadığı kapasiteden 6,3 milyar dolara kadar alım sözü de bunun içinde. CoreWeave, Nebius ve IREN ekimde en az %30 düştü; CoreWeave'in 5 yıllık CDS primi 1.115 baz puana çıktı.",
-      "kategori": "negatif",
+      "baslik": "Anthropic Nasdaq'ta halka arz için başvurdu",
+      "detay": "S-1'e göre ilk yarı geliri 16,3 milyar dolar (2025'in tamamı 4,6 milyar dolar), ilk yarı net zararı 80,7 milyar dolar; yapay zekâ altyapı harcaması ilk altı ayda 9 milyar dolar. Amazon, Google ve diğerleriyle kilitli bulut taahhütleri yaklaşık 430 milyar dolar, iptal edilebilirlerle 637 milyar dolar. Sembol: ANT.",
+      "kategori": "pozitif",
       "agirlik": 3,
-      "neden": "Nvidia talebinin bir kısmı kendi finanse ettiği müşterilere dayanıyor; neocloud kredi stresi doğrudan çip talebi riskine dönüşebilir.",
-      "kaynak": "AI Weekly (CNBC özeti)",
-      "url": "https://aiweekly.co/alerts/nvidias-1715b-neocloud-backstop-faces-first-real-market-test"
+      "neden": "Yüz milyarlarca dolarlık hesaplama taahhüdü, çip ve bulut talebinin yıllara yayılan görünürlüğünü artırıyor; büyük zarar ise finansman riskini hatırlatıyor.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/article/anthropic-publicly-files-ipo-prospectus-noting-strong-revenue-growth-and-massive-spending-131807138.html"
     },
     {
-      "baslik": "Micron Taoyuan sendikası prim önerisini reddetti",
-      "detay": "Micron'un Taoyuan sendikasının 2.300'ü aşkın üyesinin yaklaşık %70'i, 2027 mali yılından itibaren çeyreklik kâr payı ekleyen öneriyi reddetti. Sendika 83 aylık maaş tutarında tek seferlik prim ve faaliyet kârının %15'ini istiyor; 23 Ekim'de küçük bir grev yapıldı, görüşmeler 27 Ekim'de sürecek.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "Tayvan, Micron'un DRAM/HBM üretiminde kritik; süren iş anlaşmazlığı zaten sıkışık bellek arzına ek risk.",
-      "kaynak": "Manila Times (AFP)",
-      "url": "https://www.manilatimes.net/2026/10/24/business/foreign-business/micron-taiwan-workers-reject-bonus-proposal/2452756/amp"
-    },
-    {
-      "baslik": "Teksas, OpenAI ve Sam Altman'a dava açtı",
-      "detay": "Teksas Başsavcısı Ken Paxton, Collin County mahkemesinde açtığı davada ChatGPT'nin reşit olmayanlara erişiminin engellenmesini ve yeni modellerin mahkemece atanan bir değerlendiriciden onay almasını istiyor. OpenAI, uzmanlarla ek güvenlik önlemleri geliştirdiğini ve eyaletlerle çalışmaya hazır olduğunu söyledi.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "Model sürümlerini mahkeme onayına bağlama talebi, sektör için yeni bir düzenleyici risk emsali olabilir.",
-      "kaynak": "The Texas Tribune",
-      "url": "https://www.texastribune.org/2026/10/23/ken-paxton-chatgpt-openai-lawsuit-texas-attorney-general/"
-    },
-    {
-      "baslik": "Google Cloud Vera Rubin'li A5X'i kasımda genel kullanıma açıyor",
-      "detay": "Google Cloud'un Nvidia Vera Rubin NVL72 tabanlı A5X örnekleri kasımda genel kullanıma açılacak; Google mimariyi birden fazla sahada 960.000 Rubin GPU'ya kadar ölçeklemeyi hedefliyor. İlk müşteri David Silver'ın kurduğu Ineffable Intelligence.",
+      "baslik": "Anthropic'e Broadcom çipleri için 63 milyar dolarlık kiralama finansmanı",
+      "detay": "Bank of America, Citi ve Morgan Stanley birinci, Blackstone ikinci derece finansmanı sağlıyor. Yeni bir özel amaçlı şirket Broadcom XPU hızlandırıcıları ve ağ ürünlerini alıp Anthropic'e kiralayacak; teslimatlar 2027'de başlıyor, Broadcom kalıntı değer desteği veriyor.",
       "kategori": "pozitif",
       "agirlik": 2,
-      "neden": "Rubin neslinin büyük bir hiperölçekleyicide takvimine uygun devreye girdiğini gösteriyor.",
-      "kaynak": "StorageNewsletter",
-      "url": "https://www.storagenewsletter.com/2026/10/23/nvidia-gtc-berlin-2026-google-cloud-and-nvidia-announce-general-availability-of-nvidia-vera-rubin-infrastructure/"
+      "neden": "Nvidia dışı özel hızlandırıcılara büyük ölçekli, finanse edilmiş talep Broadcom ve tedarik zinciri için olumlu.",
+      "kaynak": "Data Studios (resmî açıklama özeti)",
+      "url": "https://datastudios.org/post/anthropic-broadcom-63-billion-ai-chip-lease-financing-spv"
     },
     {
-      "baslik": "Nvidia konteyner içinde yapay zekâ fabrikası: DSX POD",
-      "detay": "Nvidia'nın modüler konteyner referans tasarımı DSX POD, hazır bir sahada kurulum süresini altı aydan 14 güne kadar indirmeyi vaat ediyor; teslimatlar 2027 başında başlayacak.",
+      "baslik": "Meta 95 milyar dolara varan hisse satışı planlıyor",
+      "detay": "22,5 milyar dolar A sınıfı hisse ve 12,5 milyar dolar zorunlu dönüştürülebilir imtiyazlı hisseyle 35 milyar dolar; 2027 başında 60 milyar dolarlık ayrı bir satış programı. Yıllık yatırım bütçesi 135–145 milyar dolar; Nvidia, AMD ve Broadcom toplam 5 milyar dolara kadar hisse almak istiyor.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Her biri 1 GW'ı aşan dört süper küme planı ve artan yatırım bütçesi hızlandırıcı talebini destekliyor.",
+      "kaynak": "TechSpot",
+      "url": "https://www.techspot.com/news/114336-meta-plans-95-billion-stock-offering-fuel-ai.html"
+    },
+    {
+      "baslik": "TSMC CoWoS paketleme fiyatlarını %20'ye kadar artırabilir",
+      "detay": "Commercial Times'ın sektör kaynaklarına göre dökümhaneler ve paketleme/test firmaları %10–20 zam hazırlığında. Ekipman teslim süreleri 3–6 aydan 6–8 aya uzadı; CoWoS aylık kapasitesinin 2026'da 130 bin, 2027'de 200 bin wafer'a ulaşması bekleniyor.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "TSMC'nin fiyatlama gücünü gösteriyor ama Nvidia, AMD gibi müşterilerin yapay zekâ çipi maliyetini artırıyor.",
+      "kaynak": "Investing.com",
+      "url": "https://investing.com/news/stock-market-news/tsmc-to-raise-advanced-chip-packaging-prices-by-up-to-20-report-says-4974101"
+    },
+    {
+      "baslik": "SK hynix'ten %78 marjlı rekor çeyrek bekleniyor",
+      "detay": "Uzlaşıya göre 3. çeyrek geliri 98,23 trilyon won, faaliyet kârı 76,96 trilyon won (yıllık %576 artış), marj yaklaşık %78,4. Hana Securities DRAM fiyatlarında çeyreklik %21 artış bekliyor; HBM4 sevkiyatlarının Rubin gecikmesi nedeniyle beklentinin altında kalabileceği bildiriliyor. Sonuçlar 28 Ekim'de.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Bellek fiyatlarındaki yükseliş üreticilerin kârlılığını tarihî seviyeye taşıyor; HBM4 gecikmesi tek pürüz.",
+      "kaynak": "TrendForce",
+      "url": "https://www.trendforce.com/news/2026/10/26/news-sk-hynix-3q-earnings-preview-record-profit-at-78-operating-margin-hbm4-ltas-solidigm-in-focus/"
+    },
+    {
+      "baslik": "Çip hisseleri Anthropic başvurusuyla toparlandı",
+      "detay": "Philadelphia yarı iletken endeksi 26 Ekim'de %2,82 yükseldi; Micron %3, AMD %2,8, Nvidia %2,4 arttı. 27 Ekim sabahı Kore'de SK hynix %3,45 artışla 1.319.000 won, Samsung %2,82 artışla 219.000 won oldu.",
       "kategori": "pozitif",
       "agirlik": 1,
-      "neden": "Kurulum süresini kısaltmak, enerji ve inşaat darboğazındaki talebin gelire daha hızlı dönmesini sağlayabilir.",
-      "kaynak": "Quartz",
-      "url": "https://qz.com/nvidia-container-ai-factory-neocloud-stocks-slide-102326"
+      "neden": "Halka arz haberi yapay zekâ talebine dair güveni tazeledi.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/10/27/chip-stocks-rebound-on-anthropic-ipo-filing-samsung-sk"
     },
     {
-      "baslik": "TSMC rekor kâra rağmen bir ayda %7 geriledi",
-      "detay": "TSMC'nin 3. çeyrek geliri %50, net kârı %69 artarak rekor kırdı; yüksek başarımlı hesaplama gelirin %68'ine ulaştı. Brüt marj ise %67,7'den %66,4'e indi ve 60–64 milyar dolarlık yatırım planı korunurken hisse son bir ayda yaklaşık %7 düştü.",
-      "kategori": "notr",
+      "baslik": "BofA: bellek sözleşmeleri artık 3–5 yıllık",
+      "detay": "Bank of America'dan Vivek Arya, Micron yönetimiyle görüşmesinin ardından 'al' önerisini ve 1.550 dolarlık hedef fiyatı korudu; tedarik anlaşmalarının bir yıldan 3–5 yıla uzadığını belirtti. Micron %4, Western Digital %5, SanDisk %3 yükseldi.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Uzun vadeli sözleşmeler bellek döngüsünün sertliğini azaltıp talep görünürlüğünü artırıyor.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/10/26/micron-climbs-4-as-bank-of-america-grows-more-positive-on-memory-western-digital-rises-5-sandisk-gains-3/"
+    },
+    {
+      "baslik": "Çin'in yapay zekâ ve çip hisselerinde 480 milyar dolarlık kayıp",
+      "detay": "STAR50 endeksi dört aydan kısa sürede yaklaşık %40 düştü, 26 Ekim'de %2,23 kayıpla 1.315,50'de kapandı. CXMT bir ayda %25'in üzerinde, MetaX ve Moore Threads temmuzdan beri yarı yarıya geriledi; endeksin F/K oranı hâlâ 100 civarında.",
+      "kategori": "negatif",
       "agirlik": 2,
-      "neden": "Temel veriler güçlü ama 2 nm geçişi ve yurt dışı fabların marj baskısı yatırımcıyı temkinli tutuyor.",
-      "kaynak": "The Motley Fool",
-      "url": "https://fool.com/investing/2026/10/23/taiwan-semiconductor-posted-record-profit-and-the"
+      "neden": "Çin'deki yerli çip ve yapay zekâ şirketlerinin değerlemesi sert düzeltmede; yatırımcı iştahı zayıflıyor.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/international/2026/10/27/chinas-ai-rally-unravels-as-unitree-halves-cxmt-slides-25"
     },
     {
-      "baslik": "Çin EUV'siz ileri çip üretiyor ama maliyet artıyor",
-      "detay": "Fractilia'dan Chris Mack'e göre üç DUV pozlaması bir EUV pozlamasına denk maliyette; dördüncü maskeden sonra EUV daha ucuz. Morgan Stanley, CXMT'nin wafer başına Batılı rakiplerin yaklaşık üçte biri kadar DRAM biti ürettiğini, Çin'in yapay zekâ çipi öz yeterliliğinin ise 2025'teki %42'den 2030'da %70'e çıkacağını tahmin ediyor.",
+      "baslik": "Cadence yıllık büyüme beklentisini %21'e yükseltti",
+      "detay": "3. çeyrek geliri 1,633 milyar dolarla yıllık yaklaşık %22 arttı; sipariş birikimi 8,2 milyar dolar. 2026 gelir beklentisi 6,387–6,417 milyar dolar.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Çip tasarım yazılımına talep, yeni yapay zekâ çipi projelerinin sürdüğünü gösteriyor.",
+      "kaynak": "Cadence (SEC 8-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000813672/000081367226000116/cdns10262026ex9901.htm"
+    },
+    {
+      "baslik": "Amkor'da rekor bilgi işlem geliri, yatay dördüncü çeyrek",
+      "detay": "3. çeyrek net satışı 1,99 milyar dolar, hisse başına kâr 0,76 dolar, brüt marj %18,3. Bilgi işlem segmentinin payı %22'den %26'ya çıktı. 4. çeyrek satış beklentisi 1,9–2,0 milyar dolar; 2026 yatırım harcaması yaklaşık 2,5 milyar dolar.",
       "kategori": "notr",
       "agirlik": 1,
-      "neden": "İhracat kısıtları Çin'i durdurmuyor ama verimini düşürüyor; rekabet uzun vadede artıyor.",
-      "kaynak": "Tom's Hardware",
-      "url": "https://www.tomshardware.com/tech-industry/semiconductors/china-can-make-advanced-chips-without-euv-but-the-bill-keeps-growing-duv-multiple-patterning-means-bigger-dies-lower-yields-and-longer-manufacturing-times"
-    },
-    {
-      "baslik": "Rapidus 2 nm seri üretim için 2027'nin ikinci yarısında kararlı",
-      "detay": "Rapidus Başkanı Tetsuro Higashi, 2027'nin ikinci yarısında 2 nm seri üretime geçme planının 'genel olarak yolunda' olduğunu söyledi; ilk talebin çoğunlukla ABD'deki yapay zekâ müşterilerinden gelmesi bekleniyor. Müşteri kazanmak ana zorluk olarak duruyor.",
-      "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Takvim korunuyor ama somut müşteri açıklanmadı.",
-      "kaynak": "DIGITIMES",
-      "url": "https://www.digitimes.com/news/a20261023PD228/rapidus-production-2nm-chairman-investment.html"
-    },
-    {
-      "baslik": "Haftanın sınavı: Fed kararı ve büyük teknoloji bilançoları",
-      "detay": "FOMC 27–28 Ekim'de toplanıyor; karar 28 Ekim'de açıklanacak. Alphabet ve Microsoft 28 Ekim'de, Amazon ve Intel 29 Ekim'de kapanıştan sonra sonuç açıklıyor; Cadence, Rambus ve Amkor 26 Ekim'de bilanço verecek.",
-      "kategori": "notr",
-      "agirlik": 2,
-      "neden": "Hiperölçekleyicilerin yatırım rehberleri, son haftadaki 'yapay zekâ harcaması sürer mi' kaygısının yönünü belirleyecek.",
-      "kaynak": "TradingKey",
-      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262237761-weekly-fed-microsoft-alphabet-amazon-earnings-tradingkey"
-    },
-    {
-      "baslik": "Kore piyasası SK hynix ve Samsung bilançolarını bekliyor",
-      "detay": "Kospi 23 Ekim'de %0,3 artışla 5.550,30'dan kapattı; SK hynix, Solidigm halka arzını askıya almasının ardından %4,41 yükseldi. SK hynix 28 Ekim'de, Samsung Electronics 29 Ekim'de sonuç açıklayacak; Brent'in 113 dolarda olması analistlere göre toparlanmanın önündeki ana engel.",
-      "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Bellek devlerinin sonuçları HBM talebini teyit edebilir, ancak petrol kaynaklı makro baskı sürüyor.",
-      "kaynak": "EDAILY",
-      "url": "https://en.edaily.co.kr/news/eda202610235867/"
+      "neden": "Gelişmiş paketleme talebi güçlü ama dördüncü çeyrek beklentisi büyüme göstermiyor.",
+      "kaynak": "Amkor (SEC 8-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001047127/000104712726000049/amkr9302026erex-991.htm"
     }
   ],
   "yontem": {
@@ -153,6 +135,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = -4 · Σ ağırlık = 17 · Puan = 50 + 50 × -0.24 = 38"
+    "hesap": "Σ ağırlık×işaret = +10 · Σ ağırlık = 17 · Puan = 50 + 50 × 0.59 = 79"
   }
 }

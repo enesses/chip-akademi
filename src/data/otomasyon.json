@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-25T07:07:23.366Z",
-  "tarih": "2026-10-25",
+  "guncelleme": "2026-10-27T07:04:44.152Z",
+  "tarih": "2026-10-27",
   "durum": "temiz",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-10-25T07:03:16.535Z"
+      "zaman": "2026-10-27T07:03:22.813Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-25T07:03:16.693Z"
+      "zaman": "2026-10-27T07:03:22.945Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-25T07:03:16.031Z"
+      "zaman": "2026-10-27T07:03:22.265Z"
     },
     {
       "id": "gelistirme",
@@ -33,150 +33,38 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-25T07:03:34.689Z"
+      "zaman": "2026-10-27T07:03:42.352Z"
     }
   ],
   "dikkat": [],
   "oneriler": [
     {
-      "baslik": "Haberler kartlarında Bugün'den gelen haberleri rozetle işaretle",
-      "neden": "src/data/haberler.json her habere kaynakTuru alanı yazıyor (bugün 10 madde 'bugun'), ama src/ içinde bu alanı okuyan kod yok (grep kaynakTuru src/pages → 0). Okur, akıştaki haberin günün puanına katılan bir madde mi yoksa ek haber mi olduğunu göremiyor.",
+      "baslik": "Fiyat tablosunu CSV olarak indir düğmesi",
+      "neden": "src/pages/Prices.jsx 107 modelli kiralama tablosunu yalnızca ekranda gösteriyor; sayfada CSV/indir kodu yok (grep 'csv' boş). src/lib/dosyaKaydet.js zaten Bugün'deki .ics için kullanılıyor, aynı yardımcıyla süzülmüş tablo indirilebilir.",
       "etki": "orta",
       "alan": "arayüz"
     },
     {
-      "baslik": "Yaklaşan olayları takvime ekle (.ics) düğmesi",
-      "neden": "Bugün sayfasında bugün 7 yaklaşan olay var (Fed 28 Ekim, SK hynix 28 Ekim, Samsung 29 Ekim…). src/pages/Bugun.jsx yalnızca listeyi gösteriyor; takvime aktarma yolu yok (grep ics/takvim → 0).",
-      "etki": "orta",
+      "baslik": "Bugün maddelerini ağırlığa göre sıralama seçeneği",
+      "neden": "src/pages/Bugun.jsx maddeleri yazıldıkları sırayla gösteriyor; bugün 10 maddenin ağırlıkları 1–3 arasında ve puanı en çok etkileyen (ağırlık 3) madde sıralamada kaybolabiliyor. Süzgecin yanına 'Ağırlığa göre' düğmesi eksik.",
+      "etki": "düşük",
       "alan": "arayüz"
     },
     {
-      "baslik": "Bugün maddeleri haber akışına yayın tarihiyle girsin",
-      "neden": "Bugün maddeleri src/data/haberler.json'a \"yayin\": null ile ekleniyor (bugünkü 10 madde); ek haberlerde ise yayin dolu. Bugün şemasına isteğe bağlı yayin alanı eklenip veri-isle.mjs bunu akışa aktarırsa Haberler'deki 'yayın tarihi farklıysa göster' özelliği Bugün maddelerinde de çalışır.",
-      "etki": "düşük",
+      "baslik": "Bugün puan kartında dünkü puanla farkı göster",
+      "neden": "src/data/bugun.json yalnızca günün puanını taşıyor (bugün 79, 25 Ekim 38); kullanıcı değişimi göremiyor. veri-isle.mjs önceki gecmis/bugun-<tarih>.json puanını 'onceki_puan' olarak yazmalı, Bugun.jsx farkı göstermeli. otomasyon/ dosyasına dokunduğu için onay gerekir.",
+      "etki": "orta",
       "alan": "otomasyon"
     },
     {
-      "baslik": "GUNLUK.md'ye haber doğrulamasında PROVENANCE_REQUIRED notu",
-      "neden": "Bu çalıştırmada WebFetch, başka bir sayfanın içinden çıkan 5 bağlantıyı (cnbc.com, kbtx.com, techcrunch.com…) PROVENANCE_REQUIRED ile reddetti; aynı haberler WebSearch'ten gelen bağlantıyla açıldı. Talimat fiyat sayfası için bunu söylüyor ama haber adımı (2, 2c) için söylemiyor; zaman kaybını önler.",
+      "baslik": "GUNLUK.md'ye: sayfa içinden çıkan bağlantılar PROVENANCE ile reddediliyor",
+      "neden": "27 Ekim'de bülten sayfalarından (substack) alınan DCD ve Reuters bağlantıları WebFetch'te PROVENANCE_REQUIRED ile reddedildi; aynı haberler WebSearch ile aranınca açıldı (Nebius, Memphis). Talimat haber bağlantısının WebSearch sonucundan gelmesini açıkça söylemeli.",
       "etki": "düşük",
       "alan": "otomasyon"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-10-25",
-      "oneri": "Haberler kartlarında Bugün'den gelen haberleri rozetle işaretle",
-      "durum": "birlesti",
-      "pr": 56,
-      "dal": "otomasyon/oneri-2026-10-25-1",
-      "ozet": "Bugün puanına katılan haberler akışta 'Bugün maddesi' rozetiyle gösteriliyor.",
-      "neden": null,
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-25",
-      "oneri": "Yaklaşan olayları takvime ekle (.ics) düğmesi",
-      "durum": "birlesti",
-      "pr": 57,
-      "dal": "otomasyon/oneri-2026-10-25-2",
-      "ozet": "Bugün sayfasındaki yaklaşan olaylar tek düğmeyle .ics takvim dosyası olarak kaydediliyor.",
-      "neden": null,
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
-      "durum": "acik",
-      "pr": 21,
-      "tarih": "2026-10-11",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Ana sayfa hareket satırında önceki → yeni fiyatı göster",
-      "durum": "acik",
-      "pr": 22,
-      "tarih": "2026-10-11",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Fiyat sayfasında endeksin 12 aylık değişimini de göster",
-      "durum": "acik",
-      "pr": 23,
-      "tarih": "2026-10-12",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Ana sayfaya Haberler akışından son 3 haberi gösteren kart",
-      "durum": "acik",
-      "pr": 24,
-      "tarih": "2026-10-12",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Fiyat sayfasında endeksin 12 aylık değişimini de göster",
-      "durum": "birlesti",
-      "pr": 23,
-      "tarih": "2026-10-12",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Ana sayfaya Haberler akışından son 3 haberi gösteren kart",
-      "durum": "birlesti",
-      "pr": 24,
-      "tarih": "2026-10-12",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Fiyat hareketi kartlarında sağlayıcı sayısını göster",
-      "durum": "birlesti",
-      "pr": 15,
-      "tarih": "2026-10-12",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Fiyat tablosuna 'en az 5 sağlayıcı' filtresi",
-      "durum": "birlesti",
-      "pr": 16,
-      "tarih": "2026-10-12",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Hareket kartlarında kuruş düzeyindeki yuvarlama gürültüsünü ele",
-      "durum": "birlesti",
-      "pr": 17,
-      "tarih": "2026-10-12",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Kalan 20 kullanılmayan export'u temizle",
-      "durum": "birlesti",
-      "pr": 18,
-      "tarih": "2026-10-12",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Geliştirme ajanı reddedilmiş girdi yüzünden yenilemeyi yeniden çalıştırıp günün raporunu ezmesin",
-      "durum": "birlesti",
-      "pr": 20,
-      "tarih": "2026-10-12",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Ana sayfa kiralama kartında yalnızca en az 5 sağlayıcılı hareketi göster",
-      "durum": "birlesti",
-      "pr": 21,
-      "tarih": "2026-10-12",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Ana sayfa hareket satırında önceki → yeni fiyatı göster",
-      "durum": "birlesti",
-      "pr": 22,
-      "tarih": "2026-10-12",
-      "kim": "otomasyon"
-    },
     {
       "oneri": "Notlar sayfasına sabitleme (pin) düğmesi",
       "durum": "acik",
@@ -518,7 +406,7 @@
       },
       "kod": {
         "dosyaSayisi": 77,
-        "toplamSatir": 18517,
+        "toplamSatir": 18556,
         "boyutKB": null
       }
     },
@@ -530,17 +418,22 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 92 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu)"
+        "detay": "bu çalıştırmada güncellendi — 93 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 14 gelmedi (eski fiyat korundu), 2 büyük oynama elle doğrulandı"
+      },
+      {
+        "ad": "Elle doğrulanan fiyat",
+        "durum": "ok",
+        "detay": "AMD MI300X: 2.92 → 4.42 (ikinci okuma: medyan 4.42, en düşük 2.59, 11 sağlayıcı); Nvidia A4000: 0.21 → 0.49 (ikinci okuma: medyan 0.49, en düşük 0.12, 12 sağlayıcı) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 38, 7 yaklaşan olay; haber akışına +10"
+        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 79, 4 yaklaşan olay; haber akışına +10"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+8 haber (akışta 250); bugün toplam 18"
+        "detay": "+7 haber (akışta 267); bugün toplam 17"
       },
       {
         "ad": "Derleme",
@@ -550,7 +443,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2791 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2803 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -577,11 +470,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-10-09",
-      "durum": "dikkat",
-      "dikkat": 2
-    },
     {
       "tarih": "2026-10-10",
       "durum": "dikkat",
@@ -644,6 +532,11 @@
     },
     {
       "tarih": "2026-10-25",
+      "durum": "temiz",
+      "dikkat": 0
+    },
+    {
+      "tarih": "2026-10-27",
       "durum": "temiz",
       "dikkat": 0
     }

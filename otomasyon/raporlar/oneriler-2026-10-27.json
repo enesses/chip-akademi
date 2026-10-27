@@ -1,0 +1,29 @@
+{
+  "tarih": "2026-10-27",
+  "oneriler": [
+    {
+      "baslik": "Fiyat tablosunu CSV olarak indir düğmesi",
+      "neden": "src/pages/Prices.jsx 107 modelli kiralama tablosunu yalnızca ekranda gösteriyor; sayfada CSV/indir kodu yok (grep 'csv' boş). src/lib/dosyaKaydet.js zaten Bugün'deki .ics için kullanılıyor, aynı yardımcıyla süzülmüş tablo indirilebilir.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bugün maddelerini ağırlığa göre sıralama seçeneği",
+      "neden": "src/pages/Bugun.jsx maddeleri yazıldıkları sırayla gösteriyor; bugün 10 maddenin ağırlıkları 1–3 arasında ve puanı en çok etkileyen (ağırlık 3) madde sıralamada kaybolabiliyor. Süzgecin yanına 'Ağırlığa göre' düğmesi eksik.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bugün puan kartında dünkü puanla farkı göster",
+      "neden": "src/data/bugun.json yalnızca günün puanını taşıyor (bugün 79, 25 Ekim 38); kullanıcı değişimi göremiyor. veri-isle.mjs önceki gecmis/bugun-<tarih>.json puanını 'onceki_puan' olarak yazmalı, Bugun.jsx farkı göstermeli. otomasyon/ dosyasına dokunduğu için onay gerekir.",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "GUNLUK.md'ye: sayfa içinden çıkan bağlantılar PROVENANCE ile reddediliyor",
+      "neden": "27 Ekim'de bülten sayfalarından (substack) alınan DCD ve Reuters bağlantıları WebFetch'te PROVENANCE_REQUIRED ile reddedildi; aynı haberler WebSearch ile aranınca açıldı (Nebius, Memphis). Talimat haber bağlantısının WebSearch sonucundan gelmesini açıkça söylemeli.",
+      "etki": "düşük",
+      "alan": "otomasyon"
+    }
+  ]
+}
