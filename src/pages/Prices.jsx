@@ -1,11 +1,12 @@
 import { useMemo, useState } from "react";
 import { Link } from "@/components/Nav";
-import { ArrowDownRight, ArrowUpRight, Clock, DollarSign, ExternalLink, Search, TrendingDown, TrendingUp } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight, Clock, DollarSign, Download, ExternalLink, Search, TrendingDown, TrendingUp } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import data from "@/data/gpu_kiralama.json";
 import { getChipById } from "@/data/chips";
 import { cn } from "@/lib/utils";
 import BellekFiyatlari from "@/components/BellekFiyatlari";
+import { dosyaKaydet } from "@/lib/dosyaKaydet";
 
 const usd = (v) => (v == null ? "—" : `$${v.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`);
 // Bu sayının altında sağlayıcısı olan modellerde medyan gürültülü olabilir.
@@ -21,6 +22,13 @@ const gunFarki = (a, b) => Math.round((new Date(`${b}T12:00:00Z`) - new Date(`${
 // Endeks haftalık ölçülür; kaynak bazen haftalarca güncellenmiyor. 14 günden eski ölçüm işaretlenir.
 const ENDEKS_ESKI_GUN = 14;
 const endeksYasi = (t) => (/^\d{4}-\d{2}-\d{2}$/.test(t || "") ? Math.floor((Date.now() - new Date(`${t}T12:00:00Z`)) / 86400000) : null);
+/** Tablodaki (süzülmüş, sıralı) satırları CSV metnine çevirir; ondalık ayırıcı nokta. */
+function csvUret(satirlar) {
+  const alan = (v) => (v == null ? "" : /[",\r\n;]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v));
+  const baslik = ["model", "bellek", "vram_gb", "usd_saat_medyan", "onceki_usd", "degisim_pct", "saglayici", "olcum_tarihi", "url"];
+  const govde = satirlar.map((f) => [f.model, f.bellek, f.vram_gb, f.usd_saat, f.onceki_usd, f.degisim_pct, f.saglayici, f.olcum_tarihi, f.url].map(alan).join(","));
+  return [baslik.join(","), ...govde].join("\r\n") + "\r\n";
+}
 const anlamli = (it) => it.usd_saat == null || it.onceki_usd == null || Math.abs(it.usd_saat - it.onceki_usd) >= ESIK_USD - 1e-9;
 
 /** Nereden ve nasıl kiralamalı: hyperscaler farkı, spot ve rezerve oranları. */
@@ -93,6 +101,7 @@ export default function Prices() {
   const [q, setQ] = useState("");
   const [sort, setSort] = useState("fiyat");
   const [cokSaglayici, setCokSaglayici] = useState(false);
+  const [csvDurum, setCsvDurum] = useState(null);
 
   const rows = useMemo(() => {
     let liste = data.fiyatlar.filter((f) => !q || f.model.toLocaleLowerCase("tr").includes(q.toLocaleLowerCase("tr")));
@@ -102,6 +111,11 @@ export default function Prices() {
     if (sort === "degisim") liste = [...liste].sort((a, b) => (b.degisim_pct ?? -999) - (a.degisim_pct ?? -999));
     return liste;
   }, [q, sort, cokSaglayici]);
+
+  async function csvIndir() {
+    const sonuc = await dosyaKaydet(`gpu-kiralama-${data.kaynak.cekildigi_tarih}.csv`, csvUret(rows), "text/csv");
+    setCsvDurum(sonuc.durum === "kaydedildi" ? "CSV kaydedildi." : sonuc.durum === "iptal" ? null : sonuc.mesaj);
+  }
 
   return (
     <div className="min-h-[80vh]">
@@ -194,6 +208,11 @@ export default function Prices() {
             En az {MIN_SAGLAYICI} sağlayıcı
           </button>
           <span className="text-xs text-muted-foreground font-mono">{rows.length} model</span>
+          <button type="button" onClick={csvIndir} disabled={rows.length === 0} data-testid="fiyat-csv"
+            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium border bg-card text-muted-foreground border-border hover:text-foreground disabled:opacity-40">
+            <Download className="h-3.5 w-3.5" aria-hidden="true" />CSV indir
+          </button>
+          {csvDurum && <span className="text-xs text-muted-foreground" role="status">{csvDurum}</span>}
         </div>
         <div className="rounded-2xl border border-card-border bg-card overflow-hidden">
           <div className="overflow-x-auto max-h-[36rem]">
