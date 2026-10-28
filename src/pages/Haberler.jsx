@@ -155,7 +155,9 @@ export default function Haberler() {
                             </h3>
                             <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{h.detay}</p>
                             <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] text-muted-foreground">
-                              <span className="text-foreground/80">{h.kaynak}</span>
+                              <button type="button" onClick={() => setSorgu(h.kaynak.split(/[(;]/)[0].trim())}
+                                title="Bu kaynağın haberlerini göster" data-testid="haber-kaynak-suz"
+                                className="text-foreground/80 hover:text-primary hover:underline">{h.kaynak}</button>
                               {h.kaynakTuru === "bugun" && (
                                 <><span aria-hidden="true">·</span>
                                 <span data-testid="haber-bugun-rozet" title="Bu haber o günün Bugün sayfasında puana katılan maddelerden biri"
