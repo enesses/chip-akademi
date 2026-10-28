@@ -138,7 +138,21 @@ export default function Haberler() {
                   <h2 id={`gun-${tarih}`} className="py-2 flex items-baseline gap-2 border-b border-border/60">
                     <span className="font-display font-semibold text-lg">{gb.kisa}</span>
                     {gb.uzun && <span className="text-xs text-muted-foreground">{gb.uzun}</span>}
-                    <span className="ml-auto text-xs text-muted-foreground tabular-nums">{liste.length} haber</span>
+                    <span className="ml-auto inline-flex items-baseline gap-2 text-xs text-muted-foreground tabular-nums">
+                      <span className="hidden sm:inline-flex items-baseline gap-2" data-testid="gun-ton-dagilimi"
+                        aria-label={Object.keys(TON).map((t) => `${liste.filter((h) => h.ton === t).length} ${TON[t].ad.toLocaleLowerCase("tr")}`).join(", ")}>
+                        {Object.keys(TON).map((t) => {
+                          const n = liste.filter((h) => h.ton === t).length;
+                          return n > 0 && (
+                            <span key={t} className="inline-flex items-center gap-1" title={`${n} ${TON[t].ad.toLocaleLowerCase("tr")} haber`}>
+                              <span className="w-1.5 h-1.5" style={{ background: TON[t].renk }} aria-hidden="true" />{n}
+                            </span>
+                          );
+                        })}
+                        <span aria-hidden="true">·</span>
+                      </span>
+                      {liste.length} haber
+                    </span>
                   </h2>
                   <ol className="mt-1 divide-y divide-card-border/70">
                     {liste.map((h) => (
