@@ -680,6 +680,26 @@
       "ozet": "Bugün'de 'Ağırlığa göre sırala' düğmesi",
       "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-28",
+      "oneri": "Haberler'de gün başlığına ton dağılımı ekle",
+      "durum": "acik",
+      "pr": 60,
+      "dal": "otomasyon/oneri-2026-10-28-1",
+      "ozet": "Haberler gün başlıklarında olumlu/nötr/olumsuz haber sayıları",
+      "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-28",
+      "oneri": "Haber kartında kaynağa tıklayınca o kaynağın haberlerini süz",
+      "durum": "acik",
+      "pr": 61,
+      "dal": "otomasyon/oneri-2026-10-28-2",
+      "ozet": "Haberler'de kaynak adına tıklayınca o kaynağın haberleri süzülüyor",
+      "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
+      "kim": "otomasyon"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-28T07:11:26.985Z",
+  "guncelleme": "2026-10-28T07:13:45.786Z",
   "tarih": "2026-10-28",
   "durum": "dikkat",
   "ajanlar": [
@@ -44,7 +44,7 @@
     {
       "seviye": "dikkat",
       "tur": "onay",
-      "metin": "2 öneri onay bekliyor (PR #58, PR #59) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+      "metin": "4 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
   "oneriler": [
@@ -79,7 +79,28 @@
       "alan": "otomasyon/GUNLUK.md"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-10-28",
+      "oneri": "Haberler'de gün başlığına ton dağılımı ekle",
+      "durum": "acik",
+      "pr": 60,
+      "dal": "otomasyon/oneri-2026-10-28-1",
+      "ozet": "Haberler gün başlıklarında olumlu/nötr/olumsuz haber sayıları",
+      "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-28",
+      "oneri": "Haber kartında kaynağa tıklayınca o kaynağın haberlerini süz",
+      "durum": "acik",
+      "pr": 61,
+      "dal": "otomasyon/oneri-2026-10-28-2",
+      "ozet": "Haberler'de kaynak adına tıklayınca o kaynağın haberleri süzülüyor",
+      "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "@grpc/grpc-js'i npm overrides ile ≥1.13.6'ya yükselt",
@@ -388,6 +409,20 @@
       "pr": 59,
       "tarih": "2026-10-27",
       "kim": "otomasyon"
+    },
+    {
+      "oneri": "Haberler'de gün başlığına ton dağılımı ekle",
+      "durum": "acik",
+      "pr": 60,
+      "tarih": "2026-10-28",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Haber kartında kaynağa tıklayınca o kaynağın haberlerini süz",
+      "durum": "acik",
+      "pr": 61,
+      "tarih": "2026-10-28",
+      "kim": "otomasyon"
     }
   ],
   "onayBekleyen": [
@@ -404,6 +439,20 @@
       "tarih": "2026-10-27",
       "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
       "dal": "otomasyon/oneri-2026-10-27-2"
+    },
+    {
+      "pr": 60,
+      "oneri": "Haberler'de gün başlığına ton dağılımı ekle",
+      "tarih": "2026-10-28",
+      "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
+      "dal": "otomasyon/oneri-2026-10-28-1"
+    },
+    {
+      "pr": 61,
+      "oneri": "Haber kartında kaynağa tıklayınca o kaynağın haberlerini süz",
+      "tarih": "2026-10-28",
+      "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
+      "dal": "otomasyon/oneri-2026-10-28-2"
     }
   ],
   "guvenlik": {
