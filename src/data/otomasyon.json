@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-27T07:07:42.481Z",
-  "tarih": "2026-10-27",
+  "guncelleme": "2026-10-28T07:11:26.985Z",
+  "tarih": "2026-10-28",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-10-27T07:03:22.813Z"
+      "zaman": "2026-10-28T07:10:15.642Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-27T07:03:22.945Z"
+      "zaman": "2026-10-28T07:10:15.771Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-27T07:03:22.265Z"
+      "zaman": "2026-10-28T07:10:15.022Z"
     },
     {
       "id": "gelistirme",
@@ -33,10 +33,14 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-27T07:03:42.352Z"
+      "zaman": "2026-10-28T07:10:34.180Z"
     }
   ],
   "dikkat": [
+    {
+      "seviye": "uyarı",
+      "metin": "Yenileme · Fiyat verisi: izin engeli — kaynak sayfa okumaya izin vermedi, veri uydurulmadı (son veri 2026-10-27). WebFetch PROVENANCE_REQUIRED: getdeploying.com/gpus; iki WebSearch sorgusunda da tam adres çıkmadı"
+    },
     {
       "seviye": "dikkat",
       "tur": "onay",
@@ -45,67 +49,38 @@
   ],
   "oneriler": [
     {
-      "baslik": "Fiyat tablosunu CSV olarak indir düğmesi",
-      "neden": "src/pages/Prices.jsx 107 modelli kiralama tablosunu yalnızca ekranda gösteriyor; sayfada CSV/indir kodu yok (grep 'csv' boş). src/lib/dosyaKaydet.js zaten Bugün'deki .ics için kullanılıyor, aynı yardımcıyla süzülmüş tablo indirilebilir.",
-      "etki": "orta",
-      "alan": "arayüz"
+      "baslik": "Haberler'de gün başlığına ton dağılımı ekle",
+      "neden": "src/pages/Haberler.jsx gün başlığında yalnızca '{n} haber' sayısı var (satır 141); bugün akışa 16 haber eklendi ve günün olumlu/nötr/olumsuz dengesini görmek için tek tek noktalara bakmak gerekiyor. Başlığa her tonun renkli sayısı (ör. 11 olumlu · 5 nötr) eklenebilir; veri zaten h.ton alanında.",
+      "etki": "düşük",
+      "alan": "src/pages/Haberler.jsx"
     },
     {
-      "baslik": "Bugün maddelerini ağırlığa göre sıralama seçeneği",
-      "neden": "src/pages/Bugun.jsx maddeleri yazıldıkları sırayla gösteriyor; bugün 10 maddenin ağırlıkları 1–3 arasında ve puanı en çok etkileyen (ağırlık 3) madde sıralamada kaybolabiliyor. Süzgecin yanına 'Ağırlığa göre' düğmesi eksik.",
+      "baslik": "Haber kartında kaynağa tıklayınca o kaynağın haberlerini süz",
+      "neden": "Haberler.jsx kaynak adını düz metin olarak gösteriyor (satır 158) ve akışta 283 haber var; konu etiketleri tıklanabilir ama kaynak değil. Kaynak adı düğme yapılıp arama kutusuna yazılırsa (mevcut sorgu süzgeci kaynak alanını zaten arıyor, satır 55) aynı yayıncının haberleri tek tıkla listelenir.",
       "etki": "düşük",
-      "alan": "arayüz"
+      "alan": "src/pages/Haberler.jsx"
+    },
+    {
+      "baslik": "Endeks verisi fiyat tablosu okunamasa da işlensin",
+      "neden": "otomasyon/veri-isle.mjs endeksi yalnızca fiyatlar.json içinde işliyor (satır 176–183) ve fiyatlar.json 30 satırsız yazılamıyor. 28 Ekim'de /gpus sayfası izin engeline takıldı ama /gpu-price-index okundu (26 Ekim haftası: 4 hafta +%8, 12 ay +%24; kayıtlı +%7/+%17) ve güncellenemedi. Endeks ayrı bir gelen/endeks.json'dan da kabul edilmeli (korunan dosya, onay gerekir).",
+      "etki": "orta",
+      "alan": "otomasyon/veri-isle.mjs"
     },
     {
       "baslik": "Bugün puan kartında dünkü puanla farkı göster",
-      "neden": "src/data/bugun.json yalnızca günün puanını taşıyor (bugün 79, 25 Ekim 38); kullanıcı değişimi göremiyor. veri-isle.mjs önceki gecmis/bugun-<tarih>.json puanını 'onceki_puan' olarak yazmalı, Bugun.jsx farkı göstermeli. otomasyon/ dosyasına dokunduğu için onay gerekir.",
+      "neden": "Hâlâ eksik: src ve otomasyon altında 'onceki_puan' yok (grep boş). Puan 27 Ekim'de 79, bugün 88; kullanıcı değişimi göremiyor. veri-isle.mjs gecmis/bugun-<önceki gün>.json'daki puanı yazmalı, Bugun.jsx +9 gibi bir rozet göstermeli (otomasyon kısmı korunan dosya).",
       "etki": "orta",
-      "alan": "otomasyon"
+      "alan": "otomasyon/veri-isle.mjs, src/pages/Bugun.jsx"
     },
     {
-      "baslik": "GUNLUK.md'ye: sayfa içinden çıkan bağlantılar PROVENANCE ile reddediliyor",
-      "neden": "27 Ekim'de bülten sayfalarından (substack) alınan DCD ve Reuters bağlantıları WebFetch'te PROVENANCE_REQUIRED ile reddedildi; aynı haberler WebSearch ile aranınca açıldı (Nebius, Memphis). Talimat haber bağlantısının WebSearch sonucundan gelmesini açıkça söylemeli.",
-      "etki": "düşük",
-      "alan": "otomasyon"
+      "baslik": "GUNLUK.md: getdeploying /gpus için ek arama sorgusu",
+      "neden": "28 Ekim'de 'getdeploying GPU cloud prices' ve iki ek sorgu /gpus adresini sonuçlarda göstermedi (yalnızca /compare-gpus, /dataset/gpu-prices, /gpu-price-index çıktı); doğrudan WebFetch PROVENANCE_REQUIRED verdi ve fiyatlar güncellenemedi. Talimata sonuçlarda /gpus'u çıkaran başka sorgular (ör. 'getdeploying GPU pricing H100 B200 providers') ya da /gpu-price-index sayfasından /gpus'a bağlantı izleme yolu eklenmeli.",
+      "etki": "orta",
+      "alan": "otomasyon/GUNLUK.md"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-10-27",
-      "oneri": "Fiyat tablosunu CSV olarak indir düğmesi",
-      "durum": "acik",
-      "pr": 58,
-      "dal": "otomasyon/oneri-2026-10-27-1",
-      "ozet": "Fiyatlar tablosu süzülmüş/sıralı hâliyle CSV indirilebiliyor",
-      "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-27",
-      "oneri": "Bugün maddelerini ağırlığa göre sıralama seçeneği",
-      "durum": "acik",
-      "pr": 59,
-      "dal": "otomasyon/oneri-2026-10-27-2",
-      "ozet": "Bugün'de 'Ağırlığa göre sırala' düğmesi",
-      "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "Notlar sayfasına sabitleme (pin) düğmesi",
-      "durum": "acik",
-      "pr": 29,
-      "tarih": "2026-10-13",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Seviye sınavında önceki sonuçları göster",
-      "durum": "acik",
-      "pr": 30,
-      "tarih": "2026-10-13",
-      "kim": "otomasyon"
-    },
     {
       "oneri": "@grpc/grpc-js'i npm overrides ile ≥1.13.6'ya yükselt",
       "durum": "acik",
@@ -473,23 +448,18 @@
     "adimlar": [
       {
         "ad": "Fiyat verisi",
-        "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 93 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 14 gelmedi (eski fiyat korundu), 2 büyük oynama elle doğrulandı"
-      },
-      {
-        "ad": "Elle doğrulanan fiyat",
-        "durum": "ok",
-        "detay": "AMD MI300X: 2.92 → 4.42 (ikinci okuma: medyan 4.42, en düşük 2.59, 11 sağlayıcı); Nvidia A4000: 0.21 → 0.49 (ikinci okuma: medyan 0.49, en düşük 0.12, 12 sağlayıcı) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
+        "durum": "uyari",
+        "detay": "izin engeli — kaynak sayfa okumaya izin vermedi, veri uydurulmadı (son veri 2026-10-27). WebFetch PROVENANCE_REQUIRED: getdeploying.com/gpus; iki WebSearch sorgusunda da tam adres çıkmadı"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 79, 4 yaklaşan olay; haber akışına +10"
+        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 88, 2 yaklaşan olay; haber akışına +9"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+7 haber (akışta 267); bugün toplam 17"
+        "detay": "+7 haber (akışta 283); bugün toplam 16"
       },
       {
         "ad": "Derleme",
@@ -499,7 +469,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2803 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2811 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -526,11 +496,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-10-10",
-      "durum": "dikkat",
-      "dikkat": 2
-    },
     {
       "tarih": "2026-10-11",
       "durum": "dikkat",
@@ -593,8 +558,13 @@
     },
     {
       "tarih": "2026-10-27",
-      "durum": "temiz",
-      "dikkat": 0
+      "durum": "dikkat",
+      "dikkat": 1
+    },
+    {
+      "tarih": "2026-10-28",
+      "durum": "dikkat",
+      "dikkat": 2
     }
   ]
 }

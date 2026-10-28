@@ -1,0 +1,119 @@
+{
+  "tarih": "2026-10-28",
+  "derlenme": "28 Ekim 2026",
+  "puan": {
+    "etiket": "Bellek rekor kâr yazdı, finansman akmaya devam ediyor",
+    "yorum": "SK hynix'in %80 marjlı rekor çeyreği ve HBM4 geçişi, Seagate ile Corning'in güçlü sonuçlarıyla birleşince altyapı talebinin sürdüğünü gösterdi; Meta'nın 97,5 milyar dolarlık finansmanı ve Naver'in 1 GW'lık projesi yeni talep ekledi. OpenAI'nin Google TPU planı Nvidia için rekabeti artırıyor. Fed kararı ve bulut bilançoları kısa vadeli yönü belirleyecek.",
+    "deger": 88
+  },
+  "ozet": [
+    "Günün ana teması belleğin rekor kârlılığı. SK hynix tarihinde ilk kez çeyreklik 100 trilyon won gelir aştı ve %80 faaliyet marjı yazdı; HBM4 sevkiyatları başladı ve şirket yeni ürünün dördüncü çeyrekte ana akım olmasını bekliyor. Seagate'in %57,8'lik brüt marjı, fiyatlama gücünün DRAM'den sabit diske kadar yayıldığını gösteriyor.",
+    "Finansman tarafında Meta'nın hisse satışı beş kat talep görünce 97,5 milyar dolara büyütüldü; Nvidia ve AMD toplam 4 milyar dolarla müşterilerine ortak oluyor. Benzer bir model Kore'de de görülüyor: Naver, Brookfield ile 9 milyar dolarlık anlaşma ve 1 GW'lık bir yapay zekâ fabrikası planlarken Nvidia ortaklar arasına giriyor.",
+    "Rekabet cephesinde OpenAI'nin Google TPU'ları almayı planladığı haberi, büyük model geliştiricilerinin Nvidia dışı seçenekleri çoğalttığını gösteriyor; anlaşmanın şartları henüz belli değil. Piyasa ise salı günü çip hisselerini yeniden yukarı taşıdı: SOX %3'ün üzerinde, TSMC ve Micron %3 civarında yükseldi.",
+    "Bugün Fed kararı ile Alphabet ve Microsoft bilançoları, yarın Samsung'un ayrıntılı sonuçları ve Amazon bilançosu var. Bulut sağlayıcılarının yatırım rehberi, bellek ve hızlandırıcı talebinin 2027'ye nasıl taşınacağını belirleyecek."
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2026-10-29",
+      "baslik": "Samsung Electronics 3. çeyrek ayrıntılı sonuçları",
+      "kaynak": "SBS News",
+      "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008818605"
+    },
+    {
+      "tarih": "2026-10-29",
+      "baslik": "Amazon 3. çeyrek bilançosu",
+      "kaynak": "The Motley Fool",
+      "url": "https://fool.com/investing/2026/10/27/prediction-this-artificial-intelligence-ai-memory"
+    }
+  ],
+  "maddeler": [
+    {
+      "baslik": "SK hynix'ten 104,6 trilyon wonluk rekor çeyrek ve %80 marj",
+      "detay": "3. çeyrek geliri 104,6 trilyon won (yıllık +%328), faaliyet kârı 83,3 trilyon won (+%632), faaliyet marjı %80. HBM4 sevkiyatları başladı; şirket HBM4'ün 4. çeyrekte HBM3E'yi geçmesini bekliyor. 2026 için yaklaşık 100 trilyon wonluk hissedar getirisi planlandı.",
+      "kategori": "pozitif",
+      "agirlik": 3,
+      "neden": "Bellekte fiyat ve hacim aynı anda yükseliyor; HBM4 geçişi yapay zekâ hızlandırıcı talebinin sürdüğünü teyit ediyor.",
+      "kaynak": "SK hynix Newsroom",
+      "url": "https://news.skhynix.com/en/q3-2026-business-results/"
+    },
+    {
+      "baslik": "Meta'nın hisse satışı 97,5 milyar dolara büyüdü; Nvidia 3, AMD 1 milyar dolar alıyor",
+      "detay": "Hisse başına 625 dolardan 25 milyar dolarlık adi hisse satışına beş kat talep geldi; toplam plan 95'ten 97,5 milyar dolara çıkarıldı. Nvidia 3 milyar, AMD 1 milyar dolar taahhüt etti. Meta 3. çeyrekte 2,12 milyar dolar serbest nakit açığı verdi.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Altyapı harcamasının finansmanı sağlandı ve çip tedarikçileri doğrudan ortak oldu; nakit açığı ise harcamanın borç/hisse ile döndüğünü gösteriyor.",
+      "kaynak": "The Herald Business",
+      "url": "https://biz.heraldcorp.com/article/10916885"
+    },
+    {
+      "baslik": "OpenAI, Google'ın TPU çiplerini satın almayı planlıyor",
+      "detay": "The Information'ın haberine göre OpenAI Google TPU'ları almayı planlıyor; şartlar ve hacim kesinleşmedi. Alphabet, TPU satış gelirinin 2026 sonundan önce başlamasını, çoğunun 2027'de gelmesini bekliyor. OpenAI ayrıca Broadcom ile 'Jalapeno' kod adlı özel işlemcisini bu yıl devreye almayı planlıyor.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Toplam hesaplama talebini artırıyor ama Nvidia'nın payı açısından rekabeti büyütüyor; sektör için net etki karışık.",
+      "kaynak": "TradingKey (The Information'a dayanarak)",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262245456-openai-plans-purchase-google-ai-chips-nvidia-competition-tradingkey"
+    },
+    {
+      "baslik": "Naver, Brookfield ve Nvidia ile 1 GW'lık yapay zekâ fabrikası kuruyor",
+      "detay": "Naver, Brookfield ile 9 milyar dolarlık bilişim altyapısı anlaşması imzaladı ve 1 gigavat ölçekli küresel 'AI fabrikası' projesi açıkladı. Nvidia, bedelli sermaye artırımı tamamlanınca Naver'in üçüncü büyük ortağı olacak.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Asya'da yeni bir gigavat ölçekli GPU talebi kaynağı ve Nvidia'nın müşterisine doğrudan ortak olduğu bir model daha.",
+      "kaynak": "The Asia Business Daily",
+      "url": "https://view.asiae.co.kr/en/article/2026102810070496357"
+    },
+    {
+      "baslik": "Çip hisseleri ikinci gün yükseldi: SOX %3'ün üzerinde",
+      "detay": "27 Ekim'de Philadelphia yarı iletken endeksi %3'ten fazla, TSMC (TSM) %3,04, Micron %3,11, Nvidia %0,78 yükseldi; Nasdaq %1,18 arttı. CoreWeave yaklaşık %8 kazandı.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Anthropic ve Meta finansman haberleri sonrası yatırımcı iştahı geri döndü; TSMC'nin CoWoS zam ihtimali fiyatlama gücü olarak okundu.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/news/market-movers/262242907-market-movers-tsm-20261027"
+    },
+    {
+      "baslik": "Seagate'in geliri %61 arttı, brüt marj %57,8'e çıktı",
+      "detay": "Mali 1. çeyrek geliri 4,23 milyar dolar (geçen yıl 2,63 milyar), düzeltilmiş hisse başı kâr 7,68 dolar (2,61 dolar), düzeltilmiş brüt marj %57,8. 2. çeyrek beklentisi 4,8 milyar dolar gelir ve 9,20 dolar hisse başı kâr.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Depolama talebinin bulut sağlayıcılarıyla birlikte büyüdüğünü ve fiyatlama gücünün bellekten diske yayıldığını gösteriyor.",
+      "kaynak": "Seagate (SEC 8-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001137789/000113778926000300/stxq12027pressreleasefinan.htm"
+    },
+    {
+      "baslik": "Corning'in optik iletişim satışları %44 arttı",
+      "detay": "3. çeyrek çekirdek satışları 5,08 milyar dolar (+%19), optik iletişim 2,38 milyar dolar (+%44). 4. çeyrek için 5,2–5,3 milyar dolar satış ve 0,96–1,00 dolar hisse başı kâr bekleniyor.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Veri merkezi içi fiber bağlantı talebi güçlü; yapay zekâ altyapısının çip dışı halkası da büyüyor.",
+      "kaynak": "Corning (SEC 8-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm"
+    },
+    {
+      "baslik": "Samsung yarın ayrıntılı sonuç açıklıyor; bellek kârı ~110 trilyon won bekleniyor",
+      "detay": "Öncü verilere göre 3. çeyrek geliri 195 trilyon, faaliyet kârı 107,4 trilyon won. Analistler bellek işinin yaklaşık 110 trilyon won (DRAM ~80, NAND ~30) kâr yazdığını, hazır ürün tarafının ise 1 trilyon wonun üzerinde zarar ettiğini tahmin ediyor.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Rakamlar tahmin; asıl yön 29 Ekim'deki bölüm ayrıntılarına ve HBM4 yorumlarına bağlı.",
+      "kaynak": "SBS News",
+      "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008818605"
+    },
+    {
+      "baslik": "Fed kararı ve Alphabet–Microsoft bilançoları bugün",
+      "detay": "Fed'in iki günlük toplantısı 28 Ekim'de sona eriyor; CME fiyatlaması faiz artırımı ihtimalini yaklaşık %10 gösteriyordu. Alphabet ve Microsoft sonuçlarını bugün kapanıştan sonra açıklayacak.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Faiz ve iki büyük bulut sağlayıcının yatırım rehberi çip hisselerinin kısa vadeli yönünü belirleyecek; sonuç henüz belli değil.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-27-dow-sp-500-nasdaq-tech-sector-160557664.html"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = +12 · Σ ağırlık = 16 · Puan = 50 + 50 × 0.75 = 88"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ajan": "rapor",
+  "tarih": "2026-10-28",
+  "zaman": "2026-10-28T07:11:26.986Z",
+  "durum": "dikkat",
+  "gunTamam": true,
+  "tazelik": [
+    {
+      "ad": "Bugün sayfası",
+      "tarih": "2026-10-28",
+      "gun": 0
+    },
+    {
+      "ad": "Fiyat verisi",
+      "tarih": "2026-10-27",
+      "gun": 1
+    }
+  ],
+  "otomatikTamamlanan": [],
+  "calisan": [
+    "guvenlik",
+    "iyilestirme",
+    "yenileme",
+    "gelistirme"
+  ],
+  "calismayan": [],
+  "dikkat": [
+    {
+      "seviye": "uyarı",
+      "metin": "Yenileme · Fiyat verisi: izin engeli — kaynak sayfa okumaya izin vermedi, veri uydurulmadı (son veri 2026-10-27). WebFetch PROVENANCE_REQUIRED: getdeploying.com/gpus; iki WebSearch sorgusunda da tam adres çıkmadı"
+    },
+    {
+      "seviye": "dikkat",
+      "tur": "onay",
+      "metin": "2 öneri onay bekliyor (PR #58, PR #59) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+    }
+  ]
+}

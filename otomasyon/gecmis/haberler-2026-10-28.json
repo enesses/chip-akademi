@@ -1,0 +1,85 @@
+{
+  "tarih": "2026-10-28",
+  "haberler": [
+    {
+      "baslik": "Hindistan 7–8 yılda 200 milyar dolarlık veri merkezi yatırımı bekliyor",
+      "detay": "Ticaret Bakanı Piyush Goyal, Lahey'deki iş forumunda yaklaşık 200 milyar dolarlık yatırım öngördü; 2026'nın ilk yarısında veri merkezi kapasitesinin %80'inden fazlasını hiper ölçekli şirketler aldı.",
+      "kaynak": "IAM (Channel IAM)",
+      "url": "https://en.channeliam.com/2026/10/27/india-data-centre-investment/",
+      "yayin": "2026-10-27",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Malezya: SoftBank 50 milyar dolarlık yapay zekâ yatırımı için ülkeyi seçti",
+      "detay": "Başbakan Enver İbrahim 24 Ekim'de SoftBank'ın 50 milyar dolarlık yapay zekâ ve veri merkezi yatırımı için Malezya'yı seçtiğini söyledi; SoftBank rakamı doğrulamadı. Ülkede veri merkezleri için 12,3 GW güç onaylandı.",
+      "kaynak": "APAC Signal",
+      "url": "https://apacsignal.substack.com/p/softbank-discusses-us50bn-ai-and",
+      "yayin": "2026-10-27",
+      "konular": [
+        "veri-merkezi",
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Nvidia, Meta ile Muse modelleri üzerindeki iş birliğini genişletiyor",
+      "detay": "Nvidia, Meta'nın hisse satışına 3 milyar dolar yatırırken Muse model ailesinde çıkarım ve eğitim performansı için birlikte çalışacak. AMD ve Broadcom da toplam 5 milyar dolara kadar hisse almaya ilgi gösterdi.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/nvidia-to-invest-3-billion-in-meta-expand-partnership-on-muse-125249944.html",
+      "yayin": "2026-10-27",
+      "konular": [
+        "yapay-zeka",
+        "cip"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Amazon bellek maliyetleri yüzünden 2026 yatırımını 220 milyar dolara çıkardı",
+      "detay": "Amazon 2026 sermaye harcaması bütçesini 200'den 220 milyar dolara yükseltti ve gerekçe olarak artan bellek maliyetlerini gösterdi. Micron hissesi 27 Ekim'de %2,77 artışla 928,76 dolardan kapandı.",
+      "kaynak": "The Motley Fool",
+      "url": "https://fool.com/investing/2026/10/27/prediction-this-artificial-intelligence-ai-memory",
+      "yayin": "2026-10-27",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Otto Group, Nvidia destekli Sereact robotlarıyla iade işleyecek",
+      "detay": "Otto Group, Polonya'daki lojistik merkezinde önce 10, olumlu sonuçla toplam 25 çift kollu Sereact robotu kullanacak; robotlar Nvidia Isaac Sim, Isaac Lab ve Cosmos ile eğitiliyor.",
+      "kaynak": "GlobeNewswire",
+      "url": "https://globenewswire.com/news-release/2026/10/28/3389884/0/en/otto-group-and-sereact-bring-nvidia-powered-physical-ai-to-returns-processing.html",
+      "yayin": "2026-10-28",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Verizon ile AWS arasında 2 milyar doları aşan fiber anlaşması",
+      "detay": "Verizon, dağıtık hesaplama ve yapay zekâ iş yükleri için AWS'ye yüksek kapasiteli fiber sağlayacak; anlaşma değeri 2 milyar doları aşıyor. Google ile ayrı bir veri merkezi bağlantı anlaşması da var.",
+      "kaynak": "Tech Current (Verizon açıklaması)",
+      "url": "https://teccurrent.com/articles/daily-brief-2026-10-27/",
+      "yayin": "2026-10-27",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Unimicron uzun teslimatlı ekipman için 50,9 milyar TWD onayladı",
+      "detay": "Taiwanlı alt taban üreticisi Unimicron 27 Ekim'de 50,9 milyar TWD'lik uzun teslim süreli ekipman alımına onay verdi (önceki onay 1,76 milyar TWD); takım teslim süreleri 18–24 ay.",
+      "kaynak": "456X Evening Brief (404K Research)",
+      "url": "https://404kresearch.substack.com/p/456x-evening-brief-october-27-2026",
+      "yayin": "2026-10-27",
+      "konular": [
+        "cip"
+      ],
+      "kategori": "pozitif"
+    }
+  ]
+}

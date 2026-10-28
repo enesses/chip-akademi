@@ -1,0 +1,9 @@
+{
+  "fiyat": {
+    "durum": "izin-engeli",
+    "not": "WebFetch PROVENANCE_REQUIRED: getdeploying.com/gpus; iki WebSearch sorgusunda da tam adres çıkmadı"
+  },
+  "endeks": {
+    "durum": "ok"
+  }
+}

@@ -2,6 +2,243 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-10-28-news-skhynix-com-en-q3-2026-business-results",
+      "tarih": "2026-10-28",
+      "yayin": null,
+      "baslik": "SK hynix'ten 104,6 trilyon wonluk rekor çeyrek ve %80 marj",
+      "detay": "3. çeyrek geliri 104,6 trilyon won (yıllık +%328), faaliyet kârı 83,3 trilyon won (+%632), faaliyet marjı %80. HBM4 sevkiyatları başladı; şirket HBM4'ün 4. çeyrekte HBM3E'yi geçmesini bekliyor. 2026 için yaklaşık 100 trilyon wonluk hissedar getirisi planlandı.",
+      "kaynak": "SK hynix Newsroom",
+      "url": "https://news.skhynix.com/en/q3-2026-business-results/",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-28-biz-heraldcorp-com-article-10916885",
+      "tarih": "2026-10-28",
+      "yayin": null,
+      "baslik": "Meta'nın hisse satışı 97,5 milyar dolara büyüdü; Nvidia 3, AMD 1 milyar dolar alıyor",
+      "detay": "Hisse başına 625 dolardan 25 milyar dolarlık adi hisse satışına beş kat talep geldi; toplam plan 95'ten 97,5 milyar dolara çıkarıldı. Nvidia 3 milyar, AMD 1 milyar dolar taahhüt etti. Meta 3. çeyrekte 2,12 milyar dolar serbest nakit açığı verdi.",
+      "kaynak": "The Herald Business",
+      "url": "https://biz.heraldcorp.com/article/10916885",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-28-se-google-ai-chips-nvidia-competition-tradingkey",
+      "tarih": "2026-10-28",
+      "yayin": null,
+      "baslik": "OpenAI, Google'ın TPU çiplerini satın almayı planlıyor",
+      "detay": "The Information'ın haberine göre OpenAI Google TPU'ları almayı planlıyor; şartlar ve hacim kesinleşmedi. Alphabet, TPU satış gelirinin 2026 sonundan önce başlamasını, çoğunun 2027'de gelmesini bekliyor. OpenAI ayrıca Broadcom ile 'Jalapeno' kod adlı özel işlemcisini bu yıl devreye almayı planlıyor.",
+      "kaynak": "TradingKey (The Information'a dayanarak)",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262245456-openai-plans-purchase-google-ai-chips-nvidia-competition-tradingkey",
+      "ton": "notr",
+      "konular": [
+        "cip",
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-28-view-asiae-co-kr-en-article-2026102810070496357",
+      "tarih": "2026-10-28",
+      "yayin": null,
+      "baslik": "Naver, Brookfield ve Nvidia ile 1 GW'lık yapay zekâ fabrikası kuruyor",
+      "detay": "Naver, Brookfield ile 9 milyar dolarlık bilişim altyapısı anlaşması imzaladı ve 1 gigavat ölçekli küresel 'AI fabrikası' projesi açıkladı. Nvidia, bedelli sermaye artırımı tamamlanınca Naver'in üçüncü büyük ortağı olacak.",
+      "kaynak": "The Asia Business Daily",
+      "url": "https://view.asiae.co.kr/en/article/2026102810070496357",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "yapay-zeka",
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-28-rket-movers-262242907-market-movers-tsm-20261027",
+      "tarih": "2026-10-28",
+      "yayin": null,
+      "baslik": "Çip hisseleri ikinci gün yükseldi: SOX %3'ün üzerinde",
+      "detay": "27 Ekim'de Philadelphia yarı iletken endeksi %3'ten fazla, TSMC (TSM) %3,04, Micron %3,11, Nvidia %0,78 yükseldi; Nasdaq %1,18 arttı. CoreWeave yaklaşık %8 kazandı.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/news/market-movers/262242907-market-movers-tsm-20261027",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-28-00113778926000300-stxq12027pressreleasefinan-htm",
+      "tarih": "2026-10-28",
+      "yayin": null,
+      "baslik": "Seagate'in geliri %61 arttı, brüt marj %57,8'e çıktı",
+      "detay": "Mali 1. çeyrek geliri 4,23 milyar dolar (geçen yıl 2,63 milyar), düzeltilmiş hisse başı kâr 7,68 dolar (2,61 dolar), düzeltilmiş brüt marj %57,8. 2. çeyrek beklentisi 4,8 milyar dolar gelir ve 9,20 dolar hisse başı kâr.",
+      "kaynak": "Seagate (SEC 8-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001137789/000113778926000300/stxq12027pressreleasefinan.htm",
+      "ton": "pozitif",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-28--000002474126000273-glw-20261027xex99xq32026-htm",
+      "tarih": "2026-10-28",
+      "yayin": null,
+      "baslik": "Corning'in optik iletişim satışları %44 arttı",
+      "detay": "3. çeyrek çekirdek satışları 5,08 milyar dolar (+%19), optik iletişim 2,38 milyar dolar (+%44). 4. çeyrek için 5,2–5,3 milyar dolar satış ve 0,96–1,00 dolar hisse başı kâr bekleniyor.",
+      "kaynak": "Corning (SEC 8-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000273/glw-20261027xex99xq32026.htm",
+      "ton": "pozitif",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-28-sbs-co-kr-english-article-do-news-id-n1008818605",
+      "tarih": "2026-10-28",
+      "yayin": null,
+      "baslik": "Samsung yarın ayrıntılı sonuç açıklıyor; bellek kârı ~110 trilyon won bekleniyor",
+      "detay": "Öncü verilere göre 3. çeyrek geliri 195 trilyon, faaliyet kârı 107,4 trilyon won. Analistler bellek işinin yaklaşık 110 trilyon won (DRAM ~80, NAND ~30) kâr yazdığını, hazır ürün tarafının ise 1 trilyon wonun üzerinde zarar ettiğini tahmin ediyor.",
+      "kaynak": "SBS News",
+      "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008818605",
+      "ton": "notr",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-28--27-dow-sp-500-nasdaq-tech-sector-160557664-html",
+      "tarih": "2026-10-28",
+      "yayin": null,
+      "baslik": "Fed kararı ve Alphabet–Microsoft bilançoları bugün",
+      "detay": "Fed'in iki günlük toplantısı 28 Ekim'de sona eriyor; CME fiyatlaması faiz artırımı ihtimalini yaklaşık %10 gösteriyordu. Alphabet ve Microsoft sonuçlarını bugün kapanıştan sonra açıklayacak.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-27-dow-sp-500-nasdaq-tech-sector-160557664.html",
+      "ton": "notr",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-28-liam-com-2026-10-27-india-data-centre-investment",
+      "tarih": "2026-10-28",
+      "yayin": "2026-10-27",
+      "baslik": "Hindistan 7–8 yılda 200 milyar dolarlık veri merkezi yatırımı bekliyor",
+      "detay": "Ticaret Bakanı Piyush Goyal, Lahey'deki iş forumunda yaklaşık 200 milyar dolarlık yatırım öngördü; 2026'nın ilk yarısında veri merkezi kapasitesinin %80'inden fazlasını hiper ölçekli şirketler aldı.",
+      "kaynak": "IAM (Channel IAM)",
+      "url": "https://en.channeliam.com/2026/10/27/india-data-centre-investment/",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-28--substack-com-p-softbank-discusses-us50bn-ai-and",
+      "tarih": "2026-10-28",
+      "yayin": "2026-10-27",
+      "baslik": "Malezya: SoftBank 50 milyar dolarlık yapay zekâ yatırımı için ülkeyi seçti",
+      "detay": "Başbakan Enver İbrahim 24 Ekim'de SoftBank'ın 50 milyar dolarlık yapay zekâ ve veri merkezi yatırımı için Malezya'yı seçtiğini söyledi; SoftBank rakamı doğrulamadı. Ülkede veri merkezleri için 12,3 GW güç onaylandı.",
+      "kaynak": "APAC Signal",
+      "url": "https://apacsignal.substack.com/p/softbank-discusses-us50bn-ai-and",
+      "ton": "notr",
+      "konular": [
+        "veri-merkezi",
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-28-n-meta-expand-partnership-on-muse-125249944-html",
+      "tarih": "2026-10-28",
+      "yayin": "2026-10-27",
+      "baslik": "Nvidia, Meta ile Muse modelleri üzerindeki iş birliğini genişletiyor",
+      "detay": "Nvidia, Meta'nın hisse satışına 3 milyar dolar yatırırken Muse model ailesinde çıkarım ve eğitim performansı için birlikte çalışacak. AMD ve Broadcom da toplam 5 milyar dolara kadar hisse almaya ilgi gösterdi.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/nvidia-to-invest-3-billion-in-meta-expand-partnership-on-muse-125249944.html",
+      "ton": "pozitif",
+      "konular": [
+        "yapay-zeka",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-28-rediction-this-artificial-intelligence-ai-memory",
+      "tarih": "2026-10-28",
+      "yayin": "2026-10-27",
+      "baslik": "Amazon bellek maliyetleri yüzünden 2026 yatırımını 220 milyar dolara çıkardı",
+      "detay": "Amazon 2026 sermaye harcaması bütçesini 200'den 220 milyar dolara yükseltti ve gerekçe olarak artan bellek maliyetlerini gösterdi. Micron hissesi 27 Ekim'de %2,77 artışla 928,76 dolardan kapandı.",
+      "kaynak": "The Motley Fool",
+      "url": "https://fool.com/investing/2026/10/27/prediction-this-artificial-intelligence-ai-memory",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-28-a-powered-physical-ai-to-returns-processing-html",
+      "tarih": "2026-10-28",
+      "yayin": "2026-10-28",
+      "baslik": "Otto Group, Nvidia destekli Sereact robotlarıyla iade işleyecek",
+      "detay": "Otto Group, Polonya'daki lojistik merkezinde önce 10, olumlu sonuçla toplam 25 çift kollu Sereact robotu kullanacak; robotlar Nvidia Isaac Sim, Isaac Lab ve Cosmos ile eğitiliyor.",
+      "kaynak": "GlobeNewswire",
+      "url": "https://globenewswire.com/news-release/2026/10/28/3389884/0/en/otto-group-and-sereact-bring-nvidia-powered-physical-ai-to-returns-processing.html",
+      "ton": "notr",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-28-teccurrent-com-articles-daily-brief-2026-10-27",
+      "tarih": "2026-10-28",
+      "yayin": "2026-10-27",
+      "baslik": "Verizon ile AWS arasında 2 milyar doları aşan fiber anlaşması",
+      "detay": "Verizon, dağıtık hesaplama ve yapay zekâ iş yükleri için AWS'ye yüksek kapasiteli fiber sağlayacak; anlaşma değeri 2 milyar doları aşıyor. Google ile ayrı bir veri merkezi bağlantı anlaşması da var.",
+      "kaynak": "Tech Current (Verizon açıklaması)",
+      "url": "https://teccurrent.com/articles/daily-brief-2026-10-27/",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-28-ubstack-com-p-456x-evening-brief-october-27-2026",
+      "tarih": "2026-10-28",
+      "yayin": "2026-10-27",
+      "baslik": "Unimicron uzun teslimatlı ekipman için 50,9 milyar TWD onayladı",
+      "detay": "Taiwanlı alt taban üreticisi Unimicron 27 Ekim'de 50,9 milyar TWD'lik uzun teslim süreli ekipman alımına onay verdi (önceki onay 1,76 milyar TWD); takım teslim süreleri 18–24 ay.",
+      "kaynak": "456X Evening Brief (404K Research)",
+      "url": "https://404kresearch.substack.com/p/456x-evening-brief-october-27-2026",
+      "ton": "pozitif",
+      "konular": [
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
       "id": "2026-10-27-venue-growth-and-massive-spending-131807138-html",
       "tarih": "2026-10-27",
       "yayin": null,
@@ -4004,7 +4241,7 @@
       "kaynakTuru": "bugun"
     }
   ],
-  "guncelleme": "2026-10-27",
+  "guncelleme": "2026-10-28",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",
