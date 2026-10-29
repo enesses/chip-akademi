@@ -700,6 +700,16 @@
       "ozet": "Haberler'de kaynak adına tıklayınca o kaynağın haberleri süzülüyor",
       "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-29",
+      "oneri": "Fiyat tablosuna üretici süzgeci (Nvidia / AMD / Intel)",
+      "durum": "birlesti",
+      "pr": 62,
+      "dal": "otomasyon/oneri-2026-10-29-1",
+      "ozet": "Fiyatlar tablosunda Tümü/Nvidia/AMD/Intel düğmeleriyle üreticiye göre süzme",
+      "neden": null,
+      "kim": "otomasyon"
     }
   ]
 }
