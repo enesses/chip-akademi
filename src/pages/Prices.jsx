@@ -14,6 +14,7 @@ const AZ_SAGLAYICI = 5;
 const MIN_SAGLAYICI = 5;
 // Üretici, model adının ilk kelimesi ("Nvidia H100" → "Nvidia").
 const ureticiAd = (m) => m.split(" ")[0];
+const FIYATSIZ = data.fiyatlar.filter((f) => f.usd_saat == null).length;
 const URETICILER = [...new Set(data.fiyatlar.map((f) => ureticiAd(f.model)))]
   .map((u) => [u, data.fiyatlar.filter((f) => ureticiAd(f.model) === u).length])
   .sort((a, b) => b[1] - a[1]);
@@ -99,16 +100,18 @@ export default function Prices() {
   const [sort, setSort] = useState("fiyat");
   const [cokSaglayici, setCokSaglayici] = useState(false);
   const [uretici, setUretici] = useState(null);
+  const [fiyatsizGoster, setFiyatsizGoster] = useState(false);
 
   const rows = useMemo(() => {
     let liste = data.fiyatlar.filter((f) => !q || f.model.toLocaleLowerCase("tr").includes(q.toLocaleLowerCase("tr")));
     if (cokSaglayici) liste = liste.filter((f) => (f.saglayici ?? 0) >= MIN_SAGLAYICI);
     if (uretici) liste = liste.filter((f) => ureticiAd(f.model) === uretici);
+    if (!fiyatsizGoster) liste = liste.filter((f) => f.usd_saat != null);
     if (sort === "fiyat") liste = [...liste].sort((a, b) => (b.usd_saat ?? -1) - (a.usd_saat ?? -1));
     if (sort === "gb") liste = [...liste].sort((a, b) => (a.usd_saat && a.vram_gb ? a.usd_saat/a.vram_gb : 1e9) - (b.usd_saat && b.vram_gb ? b.usd_saat/b.vram_gb : 1e9));
     if (sort === "degisim") liste = [...liste].sort((a, b) => (b.degisim_pct ?? -999) - (a.degisim_pct ?? -999));
     return liste;
-  }, [q, sort, cokSaglayici, uretici]);
+  }, [q, sort, cokSaglayici, uretici, fiyatsizGoster]);
 
   return (
     <div className="min-h-[80vh]">
@@ -210,6 +213,11 @@ export default function Prices() {
               ))}
             </div>
           )}
+          {FIYATSIZ > 0 && (
+            <button type="button" onClick={() => setFiyatsizGoster((v) => !v)} aria-pressed={fiyatsizGoster} data-testid="fiyat-fiyatsiz" title="Kaynakta şu an fiyatı listelenmeyen modeller" className={cn("px-2.5 py-1 rounded-md text-xs font-medium border", fiyatsizGoster ? "bg-primary text-primary-foreground border-primary" : "bg-card text-muted-foreground border-border")}>
+              Fiyatsızları göster <span className="font-mono opacity-70">{FIYATSIZ}</span>
+            </button>
+          )}
           <span className="text-xs text-muted-foreground font-mono">{rows.length} model</span>
         </div>
         <div className="rounded-2xl border border-card-border bg-card overflow-hidden">
@@ -258,7 +266,7 @@ export default function Prices() {
             </table>
             {rows.length === 0 && (
               <p className="px-4 py-8 text-center text-sm text-muted-foreground" data-testid="fiyat-bos">
-                Eşleşen model yok{q ? ` ("${q}")` : ""}{cokSaglayici ? ` · en az ${MIN_SAGLAYICI} sağlayıcı filtresi açık` : ""}{uretici ? ` · yalnızca ${uretici}` : ""}.
+                Eşleşen model yok{q ? ` ("${q}")` : ""}{cokSaglayici ? ` · en az ${MIN_SAGLAYICI} sağlayıcı filtresi açık` : ""}{uretici ? ` · yalnızca ${uretici}` : ""}{!fiyatsizGoster && FIYATSIZ > 0 ? ` · fiyatsız ${FIYATSIZ} model gizli` : ""}.
               </p>
             )}
           </div>
