@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-29T07:04:26.760Z",
+  "guncelleme": "2026-10-29T07:07:27.923Z",
   "tarih": "2026-10-29",
   "durum": "dikkat",
   "ajanlar": [
@@ -75,7 +75,28 @@
       "alan": "otomasyon/GUNLUK.md"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-10-29",
+      "oneri": "Fiyat tablosuna üretici süzgeci (Nvidia / AMD / Intel)",
+      "durum": "birlesti",
+      "pr": 62,
+      "dal": "otomasyon/oneri-2026-10-29-1",
+      "ozet": "Fiyatlar tablosunda Tümü/Nvidia/AMD/Intel düğmeleriyle üreticiye göre süzme",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-29",
+      "oneri": "Fiyatı olmayan modelleri gizleme seçeneği",
+      "durum": "birlesti",
+      "pr": 63,
+      "dal": "otomasyon/oneri-2026-10-29-2",
+      "ozet": "Fiyatlar tablosunda fiyatsız modeller varsayılan gizli, 'Fiyatsızları göster' düğmesiyle açılıyor",
+      "neden": null,
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
@@ -376,6 +397,20 @@
       "durum": "acik",
       "pr": 61,
       "tarih": "2026-10-28",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyat tablosuna üretici süzgeci (Nvidia / AMD / Intel)",
+      "durum": "birlesti",
+      "pr": 62,
+      "tarih": "2026-10-29",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyatı olmayan modelleri gizleme seçeneği",
+      "durum": "birlesti",
+      "pr": 63,
+      "tarih": "2026-10-29",
       "kim": "otomasyon"
     }
   ],
