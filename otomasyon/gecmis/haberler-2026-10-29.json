@@ -1,0 +1,78 @@
+{
+  "tarih": "2026-10-29",
+  "haberler": [
+    {
+      "baslik": "SpaceX, Apollo ile 40 milyar dolarlık GPU finansmanı bağladı",
+      "detay": "Apollo'ya bağlı bir kuruluş Nvidia Vera Rubin çiplerini ve veri merkezi ekipmanını satın alıp SpaceX'e 5–5,25 yıllığına kiralayacak; kiralamalar 2027'nin ilk yarısında başlıyor. SpaceX 4. çeyrekte 35–40 milyar dolar yatırım planlıyor.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+      "yayin": "2026-10-26",
+      "konular": [
+        "cip",
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Samsung'un 2026 yatırımı 84,4 trilyon won, 76,8 trilyonu çipe",
+      "detay": "Samsung 2026 toplam sermaye harcamasını yaklaşık 84,4 trilyon won, çip bölümünün payını 76,8 trilyon won olarak verdi; dökümhanede 4. çeyrekte iki haneli büyüme ve Taylor (Teksas) fabrikasının devreye girmesini bekliyor.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/more/262250486-samsung-q3-operating-profit-record-ai-storage-demand-2027-tradingkey",
+      "yayin": "2026-10-29",
+      "konular": [
+        "bellek",
+        "cip"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Applied Materials, BESI'deki payını %20'ye çıkarıyor",
+      "detay": "Applied Materials hibrit bonding ortağı BESI'deki payını yaklaşık %9'dan %20'ye çıkaracak; işlem ABD antitröst incelemesine bağlı. BESI'nin 3. çeyrek siparişleri yıllık %96 artışla 342,6 milyon euro oldu; şirket hibrit bonding ekipman pazarının yaklaşık %70'ine sahip.",
+      "kaynak": "TrendForce",
+      "url": "https://www.trendforce.com/news/2026/10/27/news-applied-materials-to-double-besi-stake-to-20-on-hybrid-bonding-demand-pending-u-s-antitrust-review/",
+      "yayin": "2026-10-27",
+      "konular": [
+        "cip",
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Microsoft 60 bin çalışana gönüllü ayrılma teklif etti",
+      "detay": "Teklif iş gücünün yaklaşık dörtte birini kapsıyor; bazı veri merkezi ekipleri hariç. Habere göre Microsoft'un 2026 altyapı harcaması planı önceki 190 milyar dolarlık tahminden 175 milyar dolara indi.",
+      "kaynak": "BNN Bloomberg",
+      "url": "https://www.bnnbloomberg.ca/business/company-news/2026/10/26/microsoft-offers-voluntary-exit-packages-to-60000-staff/",
+      "yayin": "2026-10-26",
+      "konular": [
+        "yapay-zeka",
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Google DeepMind, gerçek zamanlı dünya modeli Genie 4'ü tanıttı",
+      "detay": "Genie 4 görüntüyle eş zamanlı ses üretiyor, simülasyon sürerken doğal dille sahne değiştirmeye izin veriyor ve Gemini 3.8 Flash ile hedefleri adımlara bölüyor. Şimdilik araştırma önizlemesi; sırada Google AI Ultra aboneleri var.",
+      "kaynak": "OfficeChai",
+      "url": "https://officechai.com/ai/google-genie-4/",
+      "yayin": "2026-10-27",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "OpenAI, GPT-6.1 Terra'nın API fiyatını yarıya indirdi",
+      "detay": "The Neuron'un 28 Ekim özetine göre yeni modelin standart API fiyatı öncekinin yarısı; aynı gün OpenAI ile Oracle, Oracle uygulamalarını ChatGPT'ye getirdiklerini duyurdu.",
+      "kaynak": "The Neuron",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-october-28-2026/",
+      "yayin": "2026-10-28",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    }
+  ]
+}

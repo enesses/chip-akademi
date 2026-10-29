@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-10-29",
+  "oneriler": [
+    {
+      "baslik": "Fiyat tablosuna üretici süzgeci (Nvidia / AMD / Intel)",
+      "neden": "src/pages/Prices.jsx yalnızca model araması, sıralama ve 'çok sağlayıcı' süzgeci sunuyor (satır 93–95); 107 modelin 98'i Nvidia, 8'i AMD, 1'i Intel. AMD hızlandırıcılarını (MI300X bugün 4,42→2,84 $) karşılaştırmak için kullanıcı aramaya tek tek yazmak zorunda. Üretici zaten model adının ilk kelimesinde.",
+      "etki": "orta",
+      "alan": "src/pages/Prices.jsx"
+    },
+    {
+      "baslik": "Fiyatı olmayan modelleri gizleme seçeneği",
+      "neden": "gpu_kiralama.json'da 107 modelden 8'inin usd_saat değeri null (bugün getdeploying /gpus tablosunda H20, H800, B100 vb. 0 sağlayıcıyla geldi); Prices.jsx bunları '—' ile listeliyor ve fiyat sıralamasında tablonun sonunu dolduruyor. Varsayılan olarak gizleyip bir düğmeyle açmak tabloyu sadeleştirir.",
+      "etki": "düşük",
+      "alan": "src/pages/Prices.jsx"
+    },
+    {
+      "baslik": "Bugün puan kartında dünkü puanla farkı göster",
+      "neden": "Hâlâ eksik: src ve otomasyon altında 'onceki_puan' yok (grep boş). Puan 28 Ekim'de 88, bugün 78; kullanıcı 10 puanlık düşüşü göremiyor. veri-isle.mjs gecmis/bugun-<önceki gün>.json puanını yazmalı, Bugun.jsx rozet göstermeli (otomasyon kısmı korunan dosya, onay gerekir).",
+      "etki": "orta",
+      "alan": "otomasyon/veri-isle.mjs, src/pages/Bugun.jsx"
+    },
+    {
+      "baslik": "Endeks verisi fiyat tablosu okunamasa da işlensin",
+      "neden": "Hâlâ geçerli: otomasyon/veri-isle.mjs endeksi yalnızca fiyatlar.json içinde işliyor; fiyatlar.json 30 satırsız yazılamıyor. 28 Ekim'de /gpus izin engeline takılınca okunabilen endeks (26 Ekim haftası) de kayboldu. Bugün iki sayfa da okundu ama sorun tekrar edebilir; endeks ayrı bir gelen/endeks.json'dan okunmalı.",
+      "etki": "orta",
+      "alan": "otomasyon/veri-isle.mjs"
+    },
+    {
+      "baslik": "GUNLUK.md: fiyat okumasında sütun sırasını açıkça iste",
+      "neden": "Bugün ilk WebFetch dördüncü alanı sağlayıcı SAYISI yerine en ucuz sağlayıcının ADI olarak döndürdü ('Seeweb', 'Lium'); veri-isle bunu reddederdi ama ikinci okuma gerekti. Sayfanın gerçek başlıkları 'Cheapest on-demand · Median on-demand · Providers'; GUNLUK.md istemine 'dördüncü alan Providers sütunundaki sayı' ve 'önce sütun başlıklarını yaz' eklenmeli.",
+      "etki": "düşük",
+      "alan": "otomasyon/GUNLUK.md"
+    }
+  ]
+}

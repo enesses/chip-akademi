@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-28T07:13:45.786Z",
-  "tarih": "2026-10-28",
+  "guncelleme": "2026-10-29T07:04:26.760Z",
+  "tarih": "2026-10-29",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-10-28T07:10:15.642Z"
+      "zaman": "2026-10-29T07:02:51.828Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-28T07:10:15.771Z"
+      "zaman": "2026-10-29T07:02:51.994Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-28T07:10:15.022Z"
+      "zaman": "2026-10-29T07:02:51.255Z"
     },
     {
       "id": "gelistirme",
@@ -33,14 +33,10 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-28T07:10:34.180Z"
+      "zaman": "2026-10-29T07:03:10.961Z"
     }
   ],
   "dikkat": [
-    {
-      "seviye": "uyarı",
-      "metin": "Yenileme · Fiyat verisi: izin engeli — kaynak sayfa okumaya izin vermedi, veri uydurulmadı (son veri 2026-10-27). WebFetch PROVENANCE_REQUIRED: getdeploying.com/gpus; iki WebSearch sorgusunda da tam adres çıkmadı"
-    },
     {
       "seviye": "dikkat",
       "tur": "onay",
@@ -49,80 +45,38 @@
   ],
   "oneriler": [
     {
-      "baslik": "Haberler'de gün başlığına ton dağılımı ekle",
-      "neden": "src/pages/Haberler.jsx gün başlığında yalnızca '{n} haber' sayısı var (satır 141); bugün akışa 16 haber eklendi ve günün olumlu/nötr/olumsuz dengesini görmek için tek tek noktalara bakmak gerekiyor. Başlığa her tonun renkli sayısı (ör. 11 olumlu · 5 nötr) eklenebilir; veri zaten h.ton alanında.",
-      "etki": "düşük",
-      "alan": "src/pages/Haberler.jsx"
-    },
-    {
-      "baslik": "Haber kartında kaynağa tıklayınca o kaynağın haberlerini süz",
-      "neden": "Haberler.jsx kaynak adını düz metin olarak gösteriyor (satır 158) ve akışta 283 haber var; konu etiketleri tıklanabilir ama kaynak değil. Kaynak adı düğme yapılıp arama kutusuna yazılırsa (mevcut sorgu süzgeci kaynak alanını zaten arıyor, satır 55) aynı yayıncının haberleri tek tıkla listelenir.",
-      "etki": "düşük",
-      "alan": "src/pages/Haberler.jsx"
-    },
-    {
-      "baslik": "Endeks verisi fiyat tablosu okunamasa da işlensin",
-      "neden": "otomasyon/veri-isle.mjs endeksi yalnızca fiyatlar.json içinde işliyor (satır 176–183) ve fiyatlar.json 30 satırsız yazılamıyor. 28 Ekim'de /gpus sayfası izin engeline takıldı ama /gpu-price-index okundu (26 Ekim haftası: 4 hafta +%8, 12 ay +%24; kayıtlı +%7/+%17) ve güncellenemedi. Endeks ayrı bir gelen/endeks.json'dan da kabul edilmeli (korunan dosya, onay gerekir).",
+      "baslik": "Fiyat tablosuna üretici süzgeci (Nvidia / AMD / Intel)",
+      "neden": "src/pages/Prices.jsx yalnızca model araması, sıralama ve 'çok sağlayıcı' süzgeci sunuyor (satır 93–95); 107 modelin 98'i Nvidia, 8'i AMD, 1'i Intel. AMD hızlandırıcılarını (MI300X bugün 4,42→2,84 $) karşılaştırmak için kullanıcı aramaya tek tek yazmak zorunda. Üretici zaten model adının ilk kelimesinde.",
       "etki": "orta",
-      "alan": "otomasyon/veri-isle.mjs"
+      "alan": "src/pages/Prices.jsx"
+    },
+    {
+      "baslik": "Fiyatı olmayan modelleri gizleme seçeneği",
+      "neden": "gpu_kiralama.json'da 107 modelden 8'inin usd_saat değeri null (bugün getdeploying /gpus tablosunda H20, H800, B100 vb. 0 sağlayıcıyla geldi); Prices.jsx bunları '—' ile listeliyor ve fiyat sıralamasında tablonun sonunu dolduruyor. Varsayılan olarak gizleyip bir düğmeyle açmak tabloyu sadeleştirir.",
+      "etki": "düşük",
+      "alan": "src/pages/Prices.jsx"
     },
     {
       "baslik": "Bugün puan kartında dünkü puanla farkı göster",
-      "neden": "Hâlâ eksik: src ve otomasyon altında 'onceki_puan' yok (grep boş). Puan 27 Ekim'de 79, bugün 88; kullanıcı değişimi göremiyor. veri-isle.mjs gecmis/bugun-<önceki gün>.json'daki puanı yazmalı, Bugun.jsx +9 gibi bir rozet göstermeli (otomasyon kısmı korunan dosya).",
+      "neden": "Hâlâ eksik: src ve otomasyon altında 'onceki_puan' yok (grep boş). Puan 28 Ekim'de 88, bugün 78; kullanıcı 10 puanlık düşüşü göremiyor. veri-isle.mjs gecmis/bugun-<önceki gün>.json puanını yazmalı, Bugun.jsx rozet göstermeli (otomasyon kısmı korunan dosya, onay gerekir).",
       "etki": "orta",
       "alan": "otomasyon/veri-isle.mjs, src/pages/Bugun.jsx"
     },
     {
-      "baslik": "GUNLUK.md: getdeploying /gpus için ek arama sorgusu",
-      "neden": "28 Ekim'de 'getdeploying GPU cloud prices' ve iki ek sorgu /gpus adresini sonuçlarda göstermedi (yalnızca /compare-gpus, /dataset/gpu-prices, /gpu-price-index çıktı); doğrudan WebFetch PROVENANCE_REQUIRED verdi ve fiyatlar güncellenemedi. Talimata sonuçlarda /gpus'u çıkaran başka sorgular (ör. 'getdeploying GPU pricing H100 B200 providers') ya da /gpu-price-index sayfasından /gpus'a bağlantı izleme yolu eklenmeli.",
+      "baslik": "Endeks verisi fiyat tablosu okunamasa da işlensin",
+      "neden": "Hâlâ geçerli: otomasyon/veri-isle.mjs endeksi yalnızca fiyatlar.json içinde işliyor; fiyatlar.json 30 satırsız yazılamıyor. 28 Ekim'de /gpus izin engeline takılınca okunabilen endeks (26 Ekim haftası) de kayboldu. Bugün iki sayfa da okundu ama sorun tekrar edebilir; endeks ayrı bir gelen/endeks.json'dan okunmalı.",
       "etki": "orta",
+      "alan": "otomasyon/veri-isle.mjs"
+    },
+    {
+      "baslik": "GUNLUK.md: fiyat okumasında sütun sırasını açıkça iste",
+      "neden": "Bugün ilk WebFetch dördüncü alanı sağlayıcı SAYISI yerine en ucuz sağlayıcının ADI olarak döndürdü ('Seeweb', 'Lium'); veri-isle bunu reddederdi ama ikinci okuma gerekti. Sayfanın gerçek başlıkları 'Cheapest on-demand · Median on-demand · Providers'; GUNLUK.md istemine 'dördüncü alan Providers sütunundaki sayı' ve 'önce sütun başlıklarını yaz' eklenmeli.",
+      "etki": "düşük",
       "alan": "otomasyon/GUNLUK.md"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-10-28",
-      "oneri": "Haberler'de gün başlığına ton dağılımı ekle",
-      "durum": "acik",
-      "pr": 60,
-      "dal": "otomasyon/oneri-2026-10-28-1",
-      "ozet": "Haberler gün başlıklarında olumlu/nötr/olumsuz haber sayıları",
-      "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-28",
-      "oneri": "Haber kartında kaynağa tıklayınca o kaynağın haberlerini süz",
-      "durum": "acik",
-      "pr": 61,
-      "dal": "otomasyon/oneri-2026-10-28-2",
-      "ozet": "Haberler'de kaynak adına tıklayınca o kaynağın haberleri süzülüyor",
-      "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "@grpc/grpc-js'i npm overrides ile ≥1.13.6'ya yükselt",
-      "durum": "acik",
-      "pr": 31,
-      "tarih": "2026-10-14",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Eğitim sayfasına 'ilerlemeyi sıfırla' düğmesi",
-      "durum": "acik",
-      "pr": 32,
-      "tarih": "2026-10-14",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Çip detayında kiralama fiyatının son değişimini göster",
-      "durum": "acik",
-      "pr": 33,
-      "tarih": "2026-10-14",
-      "kim": "otomasyon"
-    },
     {
       "oneri": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
       "durum": "acik",
@@ -497,18 +451,23 @@
     "adimlar": [
       {
         "ad": "Fiyat verisi",
-        "durum": "uyari",
-        "detay": "izin engeli — kaynak sayfa okumaya izin vermedi, veri uydurulmadı (son veri 2026-10-27). WebFetch PROVENANCE_REQUIRED: getdeploying.com/gpus; iki WebSearch sorgusunda da tam adres çıkmadı"
+        "durum": "ok",
+        "detay": "bu çalıştırmada güncellendi — 92 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu), 2 büyük oynama elle doğrulandı"
+      },
+      {
+        "ad": "Elle doğrulanan fiyat",
+        "durum": "ok",
+        "detay": "Nvidia A5000: 0.75 → 1.38 (ikinci okuma: medyan 1.38, en düşük 0.25 (Runpod)); Nvidia A4000: 0.49 → 0.76 (ikinci okuma: medyan 0.76, en düşük 0.17 (Runpod)) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 88, 2 yaklaşan olay; haber akışına +9"
+        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 78, 2 yaklaşan olay; haber akışına +9"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+7 haber (akışta 283); bugün toplam 16"
+        "detay": "+6 haber (akışta 298); bugün toplam 15"
       },
       {
         "ad": "Derleme",
@@ -518,7 +477,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2811 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2822 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -545,11 +504,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-10-11",
-      "durum": "dikkat",
-      "dikkat": 2
-    },
     {
       "tarih": "2026-10-12",
       "durum": "temiz",
@@ -614,6 +568,11 @@
       "tarih": "2026-10-28",
       "durum": "dikkat",
       "dikkat": 2
+    },
+    {
+      "tarih": "2026-10-29",
+      "durum": "dikkat",
+      "dikkat": 1
     }
   ]
 }
