@@ -12,6 +12,11 @@ const usd = (v) => (v == null ? "—" : `$${v.toLocaleString("tr-TR", { minimumF
 const AZ_SAGLAYICI = 5;
 // "Yaygın" filtresi: en az bu kadar sağlayıcının listelediği modeller.
 const MIN_SAGLAYICI = 5;
+// Üretici, model adının ilk kelimesi ("Nvidia H100" → "Nvidia").
+const ureticiAd = (m) => m.split(" ")[0];
+const URETICILER = [...new Set(data.fiyatlar.map((f) => ureticiAd(f.model)))]
+  .map((u) => [u, data.fiyatlar.filter((f) => ureticiAd(f.model) === u).length])
+  .sort((a, b) => b[1] - a[1]);
 const pct = (v) => `${v > 0 ? "+" : ""}%${Math.abs(v).toLocaleString("tr-TR")}`;
 // Fiyatlar iki ondalığa yuvarlı geliyor: 0,02 $ → 0,03 $ gibi 1 sentlik oynama
 // %50 "hareket" gibi görünür. Kartlarda yalnızca en az 2 sentlik değişimi göster.
@@ -93,15 +98,17 @@ export default function Prices() {
   const [q, setQ] = useState("");
   const [sort, setSort] = useState("fiyat");
   const [cokSaglayici, setCokSaglayici] = useState(false);
+  const [uretici, setUretici] = useState(null);
 
   const rows = useMemo(() => {
     let liste = data.fiyatlar.filter((f) => !q || f.model.toLocaleLowerCase("tr").includes(q.toLocaleLowerCase("tr")));
     if (cokSaglayici) liste = liste.filter((f) => (f.saglayici ?? 0) >= MIN_SAGLAYICI);
+    if (uretici) liste = liste.filter((f) => ureticiAd(f.model) === uretici);
     if (sort === "fiyat") liste = [...liste].sort((a, b) => (b.usd_saat ?? -1) - (a.usd_saat ?? -1));
     if (sort === "gb") liste = [...liste].sort((a, b) => (a.usd_saat && a.vram_gb ? a.usd_saat/a.vram_gb : 1e9) - (b.usd_saat && b.vram_gb ? b.usd_saat/b.vram_gb : 1e9));
     if (sort === "degisim") liste = [...liste].sort((a, b) => (b.degisim_pct ?? -999) - (a.degisim_pct ?? -999));
     return liste;
-  }, [q, sort, cokSaglayici]);
+  }, [q, sort, cokSaglayici, uretici]);
 
   return (
     <div className="min-h-[80vh]">
@@ -193,6 +200,16 @@ export default function Prices() {
           <button type="button" onClick={() => setCokSaglayici((v) => !v)} aria-pressed={cokSaglayici} data-testid="fiyat-saglayici-filtre" title={`Yalnızca en az ${MIN_SAGLAYICI} sağlayıcının listelediği modeller`} className={cn("px-2.5 py-1 rounded-md text-xs font-medium border", cokSaglayici ? "bg-primary text-primary-foreground border-primary" : "bg-card text-muted-foreground border-border")}>
             En az {MIN_SAGLAYICI} sağlayıcı
           </button>
+          {URETICILER.length > 1 && (
+            <div className="flex gap-1.5" role="group" aria-label="Üretici" data-testid="fiyat-uretici">
+              {[[null, "Tümü", data.fiyatlar.length], ...URETICILER.map(([u, n]) => [u, u, n])].map(([id, label, n]) => (
+                <button key={label} type="button" onClick={() => setUretici(id)} aria-pressed={uretici === id} data-uretici={id ?? "tumu"}
+                  className={cn("px-2.5 py-1 rounded-md text-xs font-medium border", uretici === id ? "bg-primary text-primary-foreground border-primary" : "bg-card text-muted-foreground border-border")}>
+                  {label} <span className="font-mono opacity-70">{n}</span>
+                </button>
+              ))}
+            </div>
+          )}
           <span className="text-xs text-muted-foreground font-mono">{rows.length} model</span>
         </div>
         <div className="rounded-2xl border border-card-border bg-card overflow-hidden">
@@ -241,7 +258,7 @@ export default function Prices() {
             </table>
             {rows.length === 0 && (
               <p className="px-4 py-8 text-center text-sm text-muted-foreground" data-testid="fiyat-bos">
-                Eşleşen model yok{q ? ` ("${q}")` : ""}{cokSaglayici ? ` · en az ${MIN_SAGLAYICI} sağlayıcı filtresi açık` : ""}.
+                Eşleşen model yok{q ? ` ("${q}")` : ""}{cokSaglayici ? ` · en az ${MIN_SAGLAYICI} sağlayıcı filtresi açık` : ""}{uretici ? ` · yalnızca ${uretici}` : ""}.
               </p>
             )}
           </div>
