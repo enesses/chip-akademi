@@ -1,0 +1,29 @@
+{
+  "tarih": "2026-10-30",
+  "oneriler": [
+    {
+      "baslik": "gpu_kiralama.json'daki kullanılmayan eski 'hareketler' alanını kaldır",
+      "neden": "Prices.jsx yalnızca data.iki_gun'u okuyor; 'hareketler' alanını ne src/ ne otomasyon/ betikleri kullanıyor ya da güncelliyor. Alan bayat: GH200'ü 6,50 → 2,52 $ gösteriyor, bugünkü medyan ise 5,19 $. Okuyan biri ya da sonraki bir geliştirme bu çelişkili veriyi kullanabilir.",
+      "etki": "düşük",
+      "alan": "src/data/gpu_kiralama.json"
+    },
+    {
+      "baslik": "Fiyat endeksi kartında ölçüm tarihini görünür yaz",
+      "neden": "Prices.jsx'te endeks ölçüm tarihi (kaynak.olcum_tarihi = 2026-10-26) yalnızca 'title' ipucunda; fiyat tablosu 30 Ekim'de çekilirken endeks 26 Ekim haftasına ait. Kart yalnızca 7 günden eskiyse uyarı gösteriyor, bu yüzden kullanıcı iki tarihin farklı olduğunu göremiyor.",
+      "etki": "düşük",
+      "alan": "src/pages/Prices.jsx"
+    },
+    {
+      "baslik": "Bugün puan kartında dünkü puanla farkı göster",
+      "neden": "Bugün puanı 29 Ekim'de 78, bugün 35; bu sert dönüş kartta görünmüyor (Bugun.jsx önceki günün puanını okumuyor, src/data/bugun.json yalnızca bugünü tutuyor). veri-isle'nin önceki puanı 'onceki_puan' olarak yazması ve kartın farkı göstermesi gerekiyor; otomasyon betiğine dokunduğu için onay ister.",
+      "etki": "orta",
+      "alan": "otomasyon/veri-isle.mjs, src/pages/Bugun.jsx"
+    },
+    {
+      "baslik": "GUNLUK.md: Bugün 'ozet' alanının paragraf dizisi olduğunu açıkça yaz",
+      "neden": "Bugün 30 Ekim'deki ilk çalıştırmada bugun.json 'özet eksik' hatasıyla reddedildi: talimat '3–4 paragraf' diyor ama veri-isle.mjs (satır 219) dizi bekliyor; tek metin olarak yazılan özet reddediliyor. Talimata örnek şema ('ozet': [\"…\", \"…\"]) eklenmeli.",
+      "etki": "orta",
+      "alan": "otomasyon/GUNLUK.md"
+    }
+  ]
+}
