@@ -8,12 +8,6 @@
       "alan": "src/data/gpu_kiralama.json"
     },
     {
-      "baslik": "Fiyat endeksi kartında ölçüm tarihini görünür yaz",
-      "neden": "Prices.jsx'te endeks ölçüm tarihi (kaynak.olcum_tarihi = 2026-10-26) yalnızca 'title' ipucunda; fiyat tablosu 30 Ekim'de çekilirken endeks 26 Ekim haftasına ait. Kart yalnızca 7 günden eskiyse uyarı gösteriyor, bu yüzden kullanıcı iki tarihin farklı olduğunu göremiyor.",
-      "etki": "düşük",
-      "alan": "src/pages/Prices.jsx"
-    },
-    {
       "baslik": "Bugün puan kartında dünkü puanla farkı göster",
       "neden": "Bugün puanı 29 Ekim'de 78, bugün 35; bu sert dönüş kartta görünmüyor (Bugun.jsx önceki günün puanını okumuyor, src/data/bugun.json yalnızca bugünü tutuyor). veri-isle'nin önceki puanı 'onceki_puan' olarak yazması ve kartın farkı göstermesi gerekiyor; otomasyon betiğine dokunduğu için onay ister.",
       "etki": "orta",
