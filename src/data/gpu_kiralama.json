@@ -20,50 +20,6 @@
     "degisim_12_ay_pct": 24,
     "panel_model_sayisi": 27
   },
-  "hareketler": {
-    "not": "Yalnızca en az 3 sağlayıcı tarafından listelenen modeller. Saatlik medyan on-demand fiyat (USD / GPU / saat).",
-    "artanlar": [
-      {
-        "model": "Nvidia RTX 3090 Ti",
-        "onceki": 0.18,
-        "guncel": 0.22,
-        "degisim_pct": 22
-      },
-      {
-        "model": "Nvidia RTX 2070",
-        "onceki": 0.06,
-        "guncel": 0.07,
-        "degisim_pct": 17
-      },
-      {
-        "model": "Nvidia B200",
-        "onceki": 6.37,
-        "guncel": 7.15,
-        "degisim_pct": 12,
-        "chip_id": "nvidia-blackwell-b200"
-      }
-    ],
-    "dusenler": [
-      {
-        "model": "Nvidia GH200",
-        "onceki": 6.5,
-        "guncel": 2.52,
-        "degisim_pct": -61
-      },
-      {
-        "model": "Nvidia V100",
-        "onceki": 2.14,
-        "guncel": 0.97,
-        "degisim_pct": -55
-      },
-      {
-        "model": "Nvidia A5000",
-        "onceki": 1.24,
-        "guncel": 0.75,
-        "degisim_pct": -40
-      }
-    ]
-  },
   "detay": [
     {
       "model": "Nvidia B300",
