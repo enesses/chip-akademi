@@ -720,6 +720,26 @@
       "ozet": "Fiyatlar tablosunda fiyatsız modeller varsayılan gizli, 'Fiyatsızları göster' düğmesiyle açılıyor",
       "neden": null,
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-30",
+      "oneri": "gpu_kiralama.json'daki kullanılmayan eski 'hareketler' alanını kaldır",
+      "durum": "birlesti",
+      "pr": 64,
+      "dal": "otomasyon/oneri-2026-10-30-1",
+      "ozet": "Hiçbir kodun okumadığı, bayat değerler içeren hareketler alanı fiyat verisinden silindi.",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-30",
+      "oneri": "GUNLUK.md: Bugün 'ozet' alanının paragraf dizisi olduğunu açıkça yaz",
+      "durum": "acik",
+      "pr": 65,
+      "dal": "otomasyon/oneri-2026-10-30-2",
+      "ozet": "Talimata ozet alanı için dizi şeması örneği eklendi.",
+      "neden": "Korunan dosya (otomasyon/GUNLUK.md); testler geçti, kullanıcı onayı bekliyor.",
+      "kim": "otomasyon"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-30T07:04:01.283Z",
+  "guncelleme": "2026-10-30T07:05:57.848Z",
   "tarih": "2026-10-30",
   "durum": "dikkat",
   "ajanlar": [
@@ -40,7 +40,7 @@
     {
       "seviye": "dikkat",
       "tur": "onay",
-      "metin": "4 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+      "metin": "5 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
   "oneriler": [
@@ -63,7 +63,28 @@
       "alan": "otomasyon/GUNLUK.md"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-10-30",
+      "oneri": "gpu_kiralama.json'daki kullanılmayan eski 'hareketler' alanını kaldır",
+      "durum": "birlesti",
+      "pr": 64,
+      "dal": "otomasyon/oneri-2026-10-30-1",
+      "ozet": "Hiçbir kodun okumadığı, bayat değerler içeren hareketler alanı fiyat verisinden silindi.",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-30",
+      "oneri": "GUNLUK.md: Bugün 'ozet' alanının paragraf dizisi olduğunu açıkça yaz",
+      "durum": "acik",
+      "pr": 65,
+      "dal": "otomasyon/oneri-2026-10-30-2",
+      "ozet": "Talimata ozet alanı için dizi şeması örneği eklendi.",
+      "neden": "Korunan dosya (otomasyon/GUNLUK.md); testler geçti, kullanıcı onayı bekliyor.",
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
@@ -379,6 +400,20 @@
       "pr": 63,
       "tarih": "2026-10-29",
       "kim": "otomasyon"
+    },
+    {
+      "oneri": "gpu_kiralama.json'daki kullanılmayan eski 'hareketler' alanını kaldır",
+      "durum": "birlesti",
+      "pr": 64,
+      "tarih": "2026-10-30",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "GUNLUK.md: Bugün 'ozet' alanının paragraf dizisi olduğunu açıkça yaz",
+      "durum": "acik",
+      "pr": 65,
+      "tarih": "2026-10-30",
+      "kim": "otomasyon"
     }
   ],
   "onayBekleyen": [
@@ -409,6 +444,13 @@
       "tarih": "2026-10-28",
       "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
       "dal": "otomasyon/oneri-2026-10-28-2"
+    },
+    {
+      "pr": 65,
+      "oneri": "GUNLUK.md: Bugün 'ozet' alanının paragraf dizisi olduğunu açıkça yaz",
+      "tarih": "2026-10-30",
+      "neden": "Korunan dosya (otomasyon/GUNLUK.md); testler geçti, kullanıcı onayı bekliyor.",
+      "dal": "otomasyon/oneri-2026-10-30-2"
     }
   ],
   "guvenlik": {
