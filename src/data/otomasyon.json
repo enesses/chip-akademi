@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-29T07:07:27.923Z",
-  "tarih": "2026-10-29",
+  "guncelleme": "2026-10-30T07:02:09.480Z",
+  "tarih": "2026-10-30",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-10-29T07:02:51.828Z"
+      "zaman": "2026-10-30T07:01:51.121Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-29T07:02:51.994Z"
+      "zaman": "2026-10-30T07:01:51.234Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-29T07:02:51.255Z"
+      "zaman": "2026-10-30T07:01:50.610Z"
     },
     {
       "id": "gelistirme",
@@ -33,7 +33,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-29T07:03:10.961Z"
+      "zaman": "2026-10-30T07:02:09.410Z"
     }
   ],
   "dikkat": [
@@ -43,60 +43,8 @@
       "metin": "4 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
-  "oneriler": [
-    {
-      "baslik": "Fiyat tablosuna üretici süzgeci (Nvidia / AMD / Intel)",
-      "neden": "src/pages/Prices.jsx yalnızca model araması, sıralama ve 'çok sağlayıcı' süzgeci sunuyor (satır 93–95); 107 modelin 98'i Nvidia, 8'i AMD, 1'i Intel. AMD hızlandırıcılarını (MI300X bugün 4,42→2,84 $) karşılaştırmak için kullanıcı aramaya tek tek yazmak zorunda. Üretici zaten model adının ilk kelimesinde.",
-      "etki": "orta",
-      "alan": "src/pages/Prices.jsx"
-    },
-    {
-      "baslik": "Fiyatı olmayan modelleri gizleme seçeneği",
-      "neden": "gpu_kiralama.json'da 107 modelden 8'inin usd_saat değeri null (bugün getdeploying /gpus tablosunda H20, H800, B100 vb. 0 sağlayıcıyla geldi); Prices.jsx bunları '—' ile listeliyor ve fiyat sıralamasında tablonun sonunu dolduruyor. Varsayılan olarak gizleyip bir düğmeyle açmak tabloyu sadeleştirir.",
-      "etki": "düşük",
-      "alan": "src/pages/Prices.jsx"
-    },
-    {
-      "baslik": "Bugün puan kartında dünkü puanla farkı göster",
-      "neden": "Hâlâ eksik: src ve otomasyon altında 'onceki_puan' yok (grep boş). Puan 28 Ekim'de 88, bugün 78; kullanıcı 10 puanlık düşüşü göremiyor. veri-isle.mjs gecmis/bugun-<önceki gün>.json puanını yazmalı, Bugun.jsx rozet göstermeli (otomasyon kısmı korunan dosya, onay gerekir).",
-      "etki": "orta",
-      "alan": "otomasyon/veri-isle.mjs, src/pages/Bugun.jsx"
-    },
-    {
-      "baslik": "Endeks verisi fiyat tablosu okunamasa da işlensin",
-      "neden": "Hâlâ geçerli: otomasyon/veri-isle.mjs endeksi yalnızca fiyatlar.json içinde işliyor; fiyatlar.json 30 satırsız yazılamıyor. 28 Ekim'de /gpus izin engeline takılınca okunabilen endeks (26 Ekim haftası) de kayboldu. Bugün iki sayfa da okundu ama sorun tekrar edebilir; endeks ayrı bir gelen/endeks.json'dan okunmalı.",
-      "etki": "orta",
-      "alan": "otomasyon/veri-isle.mjs"
-    },
-    {
-      "baslik": "GUNLUK.md: fiyat okumasında sütun sırasını açıkça iste",
-      "neden": "Bugün ilk WebFetch dördüncü alanı sağlayıcı SAYISI yerine en ucuz sağlayıcının ADI olarak döndürdü ('Seeweb', 'Lium'); veri-isle bunu reddederdi ama ikinci okuma gerekti. Sayfanın gerçek başlıkları 'Cheapest on-demand · Median on-demand · Providers'; GUNLUK.md istemine 'dördüncü alan Providers sütunundaki sayı' ve 'önce sütun başlıklarını yaz' eklenmeli.",
-      "etki": "düşük",
-      "alan": "otomasyon/GUNLUK.md"
-    }
-  ],
-  "uygulanan": [
-    {
-      "tarih": "2026-10-29",
-      "oneri": "Fiyat tablosuna üretici süzgeci (Nvidia / AMD / Intel)",
-      "durum": "birlesti",
-      "pr": 62,
-      "dal": "otomasyon/oneri-2026-10-29-1",
-      "ozet": "Fiyatlar tablosunda Tümü/Nvidia/AMD/Intel düğmeleriyle üreticiye göre süzme",
-      "neden": null,
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-29",
-      "oneri": "Fiyatı olmayan modelleri gizleme seçeneği",
-      "durum": "birlesti",
-      "pr": 63,
-      "dal": "otomasyon/oneri-2026-10-29-2",
-      "ozet": "Fiyatlar tablosunda fiyatsız modeller varsayılan gizli, 'Fiyatsızları göster' düğmesiyle açılıyor",
-      "neden": null,
-      "kim": "otomasyon"
-    }
-  ],
+  "oneriler": [],
+  "uygulanan": [],
   "uygulananSon": [
     {
       "oneri": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
@@ -475,7 +423,7 @@
       },
       "kod": {
         "dosyaSayisi": 77,
-        "toplamSatir": 18556,
+        "toplamSatir": 18581,
         "boyutKB": null
       }
     },
@@ -487,22 +435,17 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 92 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu), 2 büyük oynama elle doğrulandı"
-      },
-      {
-        "ad": "Elle doğrulanan fiyat",
-        "durum": "ok",
-        "detay": "Nvidia A5000: 0.75 → 1.38 (ikinci okuma: medyan 1.38, en düşük 0.25 (Runpod)); Nvidia A4000: 0.49 → 0.76 (ikinci okuma: medyan 0.76, en düşük 0.17 (Runpod)) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
+        "detay": "bu çalıştırmada güncellendi — 92 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu)"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 78, 2 yaklaşan olay; haber akışına +9"
+        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 35, 1 yaklaşan olay; haber akışına +8"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+6 haber (akışta 298); bugün toplam 15"
+        "detay": "+6 haber (akışta 304); bugün toplam 14"
       },
       {
         "ad": "Derleme",
@@ -512,7 +455,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2822 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2829 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -539,11 +482,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-10-12",
-      "durum": "temiz",
-      "dikkat": 0
-    },
     {
       "tarih": "2026-10-13",
       "durum": "dikkat",
@@ -608,6 +546,11 @@
       "tarih": "2026-10-29",
       "durum": "dikkat",
       "dikkat": 1
+    },
+    {
+      "tarih": "2026-10-30",
+      "durum": "dikkat",
+      "dikkat": 2
     }
   ]
 }

@@ -1,24 +1,18 @@
 {
-  "tarih": "2026-10-29",
-  "derlenme": "29 Ekim 2026",
+  "tarih": "2026-10-30",
+  "derlenme": "30 Ekim 2026",
   "puan": {
-    "etiket": "Bellek ve bulut rekor yazdı, Nvidia'da düzenleyici gölge",
-    "yorum": "Samsung'un 107,4 trilyon wonluk rekor faaliyet kârı ve SK hynix'in 2029'a kadar satılmış kapasitesi bellekte güçlü talebi teyit etti; Alphabet'in %103 büyüyen bulutu ve 2027 için 'belirgin artış' dediği yatırım planı ile Microsoft Azure'un %48 büyümesi çip talebini destekliyor. Nvidia'nın Hugging Face anlaşmasına dair bildirilen DOJ incelemesi ve Alphabet'in eksiye dönen serbest nakit akışı ise riskleri hatırlatıyor.",
-    "deger": 78
+    "etiket": "Bilanço şoku: Intel ve Amazon sonrası çip hisselerinde sert satış",
+    "yorum": "Intel'in zayıf rehberi ve Amazon'un 42 milyar dolarlık negatif nakit akışı, rekor bellek bilançolarının gölgesinde yapay zekâ harcamalarının finansmanına dair kaygıyı büyüttü; KOSPI'de devre kesici devreye girdi. Talep tarafı ise sağlam: AWS %39 büyüdü, Microsoft kapasite bulamadığı için harcamasını erteledi, bellek arzı 2028'e kadar sıkı kalacak.",
+    "deger": 35
   },
   "ozet": [
-    "Günün ana teması belleğin rekor kârlılığının Samsung'a da yayılması. Samsung Electronics 3. çeyrekte 195,3 trilyon won gelir ve 107,4 trilyon won faaliyet kârı açıkladı; tek çeyrekte 100 trilyon won faaliyet kârını aşan ilk teknoloji şirketi olduğunu söyledi. Çip bölümü (DS) tek başına 106,5 trilyon won kâr yazdı, HBM4 satışları belirgin şekilde arttı ve şirket 2027'de yapay zekâ kaynaklı talebin sektör arzını 2026'dan da fazla aşmasını bekliyor.",
-    "SK hynix aynı tabloyu sözleşmelerle destekledi: DRAM ve HBM üretimi 2029'a kadar fiilen satılmış, uzun vadeli anlaşma yapılan müşteri sayısı 10'dan 14'e çıktı ve bu anlaşmalar 2027–2028 kapasitesinin yarısından fazlasını kapsıyor. Bu açıklama Micron'u gün içinde %4,75 yükseltti.",
-    "Talebin kaynağı olan bulut tarafında Microsoft Azure %48, Google Cloud %103 büyüdü. Alphabet çeyrekte 51,4 milyar dolar yatırım yaptı, 2026 rehberini 195–205 milyar dolarda korudu ve 2027'de harcamanın belirgin artacağını söyledi; ancak serbest nakit akışı −9,1 milyar dolara geriledi. Enerji cephesinde ABD Enerji Bakanlığı, Google, Amazon ve Meta'ya güç satan Constellation'a nükleer kapasite artırımı için 5 milyar dolara kadar koşullu kredi taahhüt etti.",
-    "Olumsuz tarafta Reuters'a dayandırılan habere göre ABD Adalet Bakanlığı Nvidia'nın 12,9 milyar dolarlık Hugging Face satın almasını inceliyor; Nvidia hissesi %1,2 geriledi. Nvidia 3. çeyrek sonuçlarını 17 Kasım'da açıklayacak; o güne kadar bellek ve bulut verileri sektörün yönünü belirleyecek."
+    "Günün ana teması, güçlü talep ile yatırımcı sabrı arasındaki makas. Intel üçüncü çeyrekte beklentiyi aştı, veri merkezi geliri %78 büyüdü; ama bellek fiyatlarının vurduğu PC pazarı ve İsrail'deki Kiryat Gat fabrikasında yaşanan ölümcül patlama dördüncü çeyrek rehberini 15–16 milyar dolara çekti ve hisse mesai sonrası %21 düştü. Amazon tarafında AWS yaklaşık beş yılın en hızlı büyümesini (%39) yazdı, şirket çeyrekte 77 milyar doları aşan yatırım yaptı; fakat serbest nakit akışının −42,4 milyar dolara inmesi hisseyi aşağı çekti.",
+    "Bu iki sonuç, bir gün önceki Alphabet satışıyla birleşince Asya açılışında çip hisselerine ağır bir dalga olarak yansıdı: KOSPI %4,8'e kadar düştü, SK hynix %8,9 ve Samsung %6,3 geriledi, Seul'de program satışları beş dakika durduruldu. Yatırımcılar, büyük teknoloji şirketlerinin rekor harcamayı nasıl finanse edeceğine odaklanıyor.",
+    "Yine de arz-talep tablosu değişmiş değil. Microsoft, üçüncü taraf kapasite teslimatları geciktiği için çeyrek yatırımını 45,2 milyar dolarda bıraktı ve harcamanın yılın ikinci yarısına kayacağını söyledi; Samsung ve SK hynix 110 trilyon wonluk rekor ekipman yatırımına rağmen anlamlı arz artışını 2028'den önce beklemiyor. Equinix ise kıt kapasite ortamında rezervasyonlarını %35 artırdı.",
+    "Risk tarafında Nvidia yeniden Çin gündemiyle anıldı: New York Times'ın Megaspeed yöneticisine dair istihbarat iddiası, ihracat kontrolleri tartışmasını canlandırdı. Marvell'in Lumentum'u satın alma görüşmeleri ise optik bağlantının yapay zekâ altyapısındaki değerini teyit ederken alıcı hissesini %12 düşürdü."
   ],
   "yaklasan": [
-    {
-      "tarih": "2026-10-29",
-      "baslik": "Intel 3. çeyrek sonuçları (kapanış sonrası)",
-      "kaynak": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/intel-stock-fell-nearly-6-172638649.html"
-    },
     {
       "tarih": "2026-11-17",
       "baslik": "Nvidia 3. çeyrek sonuçları ve konferans çağrısı",
@@ -28,85 +22,76 @@
   ],
   "maddeler": [
     {
-      "baslik": "Samsung'dan 107,4 trilyon wonluk rekor çeyreklik kâr",
-      "detay": "3. çeyrek geliri 195,3 trilyon won (çeyreklik +%14), faaliyet kârı 107,4 trilyon won. Çip bölümü (DS) 147,1 trilyon won gelir ve 106,5 trilyon won kâr yazdı; bellek gelir ve kârı rekor kırdı, HBM4 satışları belirgin arttı.",
-      "kategori": "pozitif",
+      "baslik": "Intel %21 çöktü: zayıf 4. çeyrek rehberi ve İsrail fabrikasındaki patlama",
+      "detay": "3. çeyrek geliri %21 artışla 16,5 milyar dolar, düzeltilmiş EPS 0,52 dolar (beklenti 0,40). Ancak 4. çeyrek için 15–16 milyar dolar gelir ve 0,25 dolar EPS öngördü (beklenti 17,07 milyar ve 0,43). Kiryat Gat fabrikasındaki patlama iki çeyrekte ~600 milyon dolar gelir kaybı getirecek; hisse mesai sonrası %21 düştü.",
+      "kategori": "negatif",
       "agirlik": 3,
-      "neden": "İkinci büyük bellek üreticisi de rekor kâr açıkladı; şirket 2027'de yapay zekâ talebinin arzı daha da aşacağını öngörüyor.",
-      "kaynak": "Samsung Newsroom",
-      "url": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results"
+      "neden": "Veri merkezi ve yapay zekâ geliri %78 artsa da bellek kıtlığının vurduğu PC pazarı ve üretim darboğazları rehberi aşağı çekti; satış tüm çip hisselerine yayıldı.",
+      "kaynak": "The Straits Times (Reuters)",
+      "url": "https://www.straitstimes.com/business/intel-shares-drop-21-on-israel-factory-blast-pc-weakness"
     },
     {
-      "baslik": "Google Cloud %103, Azure %48 büyüdü; Alphabet 2027 yatırımını artıracak",
-      "detay": "Alphabet çeyrekte 51,4 milyar dolar yatırım yaptı (geçen yıl 24,0), 2026 rehberini 195–205 milyar dolarda korudu ve 2027'de 'belirgin artış' bekliyor; serbest nakit akışı −9,1 milyar dolar. Microsoft'ta Azure %48 büyüdü, kiralamalar dahil yatırım 45,2 milyar dolar.",
-      "kategori": "pozitif",
+      "baslik": "Asya'da çip satışı: KOSPI %4,8 düştü, SK hynix %8,9 geriledi",
+      "detay": "30 Ekim sabahı KOSPI %4,77 düşüşle 5.654'e indi; SK hynix %8,91, Samsung %6,25 değer kaybetti. Seul'de program satışları 5 dakika durduruldu (sidecar). Nikkei %2,81, Tayvan TAIEX %2,80 geriledi.",
+      "kategori": "negatif",
       "agirlik": 3,
-      "neden": "Bulut gelirleri hızlanıyor ve yatırım planları büyüyor; bu, hızlandırıcı ve bellek talebinin doğrudan kaynağı.",
-      "kaynak": "The Motley Fool",
-      "url": "https://www.fool.com/investing/2026/10/28/microsoft-and-alphabet-just-reported-earnings-putting-the-ai-boom-to-the-test/"
+      "neden": "Rekor bilançolara rağmen Alphabet'in negatif nakit akışı, Amazon ve Intel'in hayal kırıklığı yaratan sonuçları yapay zekâ harcamalarının sürdürülebilirliğine dair kaygıyı bellek üreticilerine taşıdı.",
+      "kaynak": "BeInCrypto / Chosun Ilbo",
+      "url": "https://beincrypto.com/kospi-falls-harder-than-nikkei"
     },
     {
-      "baslik": "SK hynix: DRAM ve HBM 2029'a kadar satılmış, 14 uzun vadeli müşteri",
-      "detay": "Uzun vadeli anlaşma yapılan müşteri sayısı 2. çeyrekteki 10'dan 14'e çıktı; anlaşmalar 2027–2028 kapasitesinin %50'sinden fazlasını kapsıyor. DRAM ortalama fiyatı çeyreklik yüksek-%20'ler, NAND orta-%20'ler arttı.",
+      "baslik": "AWS %39 büyüdü, Amazon çeyrekte 77 milyar dolar yatırım yaptı",
+      "detay": "AWS geliri yıllık %39 artışla 46,0 milyar dolar (beklenti 45,3), yıllık çalışma hızı 184 milyar dolar. Amazon çeyrekte 77 milyar doları aşan maddi duran varlık harcaması yaptı; serbest nakit akışı −42,4 milyar dolar. Toplam gelir ve EPS (1,89 $) beklentinin altında kaldı, hisse mesai sonrası %6'ya kadar düştü.",
       "kategori": "pozitif",
       "agirlik": 2,
-      "neden": "Çok yıllık sözleşmeler bellek talebinin görünürlüğünü uzatıyor ve döngüsel düşüş kaygısını azaltıyor.",
-      "kaynak": "TrendForce",
-      "url": "https://trendforce.com/news/2026/10/28/news-sk-hynix-3q26-opm-hits-record-80-says-dram-hbm-effectively-sold-out-to-2029-14-lta-customers-signed"
+      "neden": "Bulut büyümesinin yaklaşık beş yılın en hızlısı olması ve tahminleri aşan yatırım, çip ve veri merkezi talebi için olumlu; hisse tepkisi ise yatırımcıların nakit yakımına tahammülünün azaldığını gösteriyor.",
+      "kaynak": "Bloomberg / Amazon",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-29/amazon-spending-soars-on-effort-to-meet-demand-for-ai-services"
     },
     {
-      "baslik": "Micron, SK hynix açıklamasıyla %4,75 yükseldi",
-      "detay": "Micron 28 Ekim'de gün içinde %5,5'e kadar çıktı ve yaklaşık %4,75 yükselişle kapandı. SK hynix yönetiminin 'talep 2030'a kadar arzı aşacak' açıklaması 2028'den sonra talep düşer kaygısını hafifletti.",
-      "kategori": "pozitif",
-      "agirlik": 1,
-      "neden": "Rakibin sözleşme görünürlüğü üç büyük bellek üreticisinin tümüne olumlu yansıdı.",
-      "kaynak": "The Motley Fool",
-      "url": "https://www.fool.com/investing/2026/10/28/why-micron-technology-stock-rallied-today/"
-    },
-    {
-      "baslik": "Reuters: DOJ, Nvidia'nın Hugging Face satın almasını inceliyor",
-      "detay": "Habere göre ABD Adalet Bakanlığı 12,9 milyar dolarlık anlaşmanın yapay zekâ rekabetine ve model dağıtımına etkisini soruyor. Nvidia 28 Ekim'i %1,17 düşüşle 215,38 dolardan kapattı; aynı gün AMD %3,2, Micron %5,9 yükseldi.",
+      "baslik": "NYT: Megaspeed yöneticisi Çin istihbaratı adına Jensen Huang'a yaklaştı",
+      "detay": "New York Times'a göre ABD istihbaratı, Singapur merkezli Nvidia bulut ortağı Megaspeed'in yöneticisi Alice Huang'ı Çin istihbarat varlığı olarak değerlendirdi; şirket daha önce Nvidia çiplerini Çin'e yönlendirme şüphesiyle inceleniyordu. Nvidia, saptırma iddialarının 'incelenip çürütüldüğünü' ve görüşmelerin olağan olduğunu söyledi.",
       "kategori": "negatif",
       "agirlik": 2,
-      "neden": "Düzenleyici inceleme Nvidia'nın yazılım ve dağıtım katmanına genişleme stratejisini yavaşlatabilir.",
-      "kaynak": "Heygotrade (Reuters haberine atıfla)",
-      "url": "https://heygotrade.com/en/news/nvidia-nvda-stock-news-october-29-2026"
+      "neden": "İhracat kontrolleri ve Çin'e çip kaçakçılığı tartışmasını yeniden alevlendiriyor; dünkü DOJ haberinin ardından Nvidia üzerindeki düzenleyici baskıyı artırıyor.",
+      "kaynak": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/29/nvidia-jensen-huang-chinese-intelligence-asset.html"
     },
     {
-      "baslik": "Constellation'a nükleer kapasite artırımı için 5 milyar dolarlık DOE kredisi",
-      "detay": "ABD Enerji Bakanlığı Illinois, Maryland ve Pennsylvania'daki sekiz santralde kapasite artırımı için 5 milyar dolara kadar koşullu kredi taahhüt etti. Google (890 MW) ve Amazon (190 MW) ile 20 yıllık anlaşmalar yaklaşık 1.080 MW ek kapasiteyi destekliyor.",
-      "kategori": "pozitif",
+      "baslik": "Marvell, Lumentum'u satın almak için ileri görüşmelerde; hisse %12 düştü",
+      "detay": "Bloomberg'e göre Marvell, optik bileşen üreticisi Lumentum'u (piyasa değeri ~83 milyar dolar) almak için ileri aşamada; anlaşma gelecek hafta açıklanabilir. Marvell (~221 milyar dolar) hissesi %12 düştü, Lumentum %5'e kadar yükseldi.",
+      "kategori": "notr",
       "agirlik": 2,
-      "neden": "Veri merkezlerinin en büyük darboğazı olan enerji tarafında yeni kapasite finanse ediliyor.",
-      "kaynak": "Constellation Energy",
-      "url": "https://www.constellationenergy.com/news/2026/10/constellation-secures-conditional-doe-loan-commitment-of-up-to-5-billion-to-expand-nuclear-output.html"
+      "neden": "Yapay zekâ kümelerinde optik bağlantının önemini teyit ediyor; ancak alıcı tarafın hissesindeki sert düşüş, yatırımcıların büyük satın alma maliyetinden çekindiğini gösteriyor.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/article/lumentum-stock-rises-on-report-of-possible-merger-with-marvell-135945155.html"
     },
     {
-      "baslik": "Bellek hisseleri toparlanıyor ama bir ayda %11–29 geride",
-      "detay": "28 Ekim sabahı SK hynix %7, Micron %3 yükselirken Seagate güçlü rehbere rağmen %2 düştü. Son bir ayda Seagate %29, SanDisk %24, SK hynix %19, Micron %11 geriledi; Wedbush, Seagate rehberinin marj artışının yavaşladığını ima ettiğini söyledi.",
+      "baslik": "Microsoft'un yatırımı 45,2 milyar dolarda kaldı: dış kapasite teslimatları gecikti",
+      "detay": "Microsoft 1. mali çeyrekte 45,2 milyar dolar yatırım yaptı; bazı üçüncü taraf kapasite teslimatları ertelendi. Harcamanın yaklaşık dörtte üçü CPU/GPU gibi kısa ömürlü varlıklara gitti. 2. çeyrekte 50 milyar doların üzerinde, takvim yılında ~170 milyar dolar bekleniyor; artışın bir kısmı yüksek bellek ve depolama maliyetinden.",
       "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Temel veriler güçlü olsa da piyasa yüksek beklentileri fiyatlamış durumda; toparlanma henüz kayıpları kapatmadı.",
-      "kaynak": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/10/28/sk-hynix-jumps-7-micron-rises-3-on-memory-shortage-call-through-2030-while-seagate-slips-despite-upbeat-guidance"
+      "agirlik": 2,
+      "neden": "Talep güçlü ama veri merkezi kapasitesi zamanında gelmiyor; gecikme harcamayı yılın ikinci yarısına kaydırıyor.",
+      "kaynak": "Microsoft Yatırımcı İlişkileri",
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
     },
     {
-      "baslik": "GSA, Anthropic ile Claude için %40 indirimli kamu anlaşması yaptı",
-      "detay": "ABD Genel Hizmetler İdaresi'nin genişletilmiş OneGov anlaşması federal, eyalet ve yerel kurumlara token bazlı kullanımda %40 indirim sunuyor; asgari sipariş yok. GSA, OneGov'un bugüne kadar 1,8 milyar doların üzerinde tasarruf sağladığını açıkladı.",
+      "baslik": "Samsung ve SK hynix 110 trilyon won yatırıyor, arz artışı 2028'e kaydı",
+      "detay": "İki şirket 2026'da tarihlerinin en büyük ekipman yatırımını (toplam ~110 trilyon won) yapıyor; ancak bellek arzındaki artışın 2028'den önce gerçekleşmesi beklenmiyor.",
       "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Kamu tarafında yapay zekâ kullanımını genişletiyor ama çip talebine etkisi dolaylı ve küçük.",
-      "kaynak": "GSA",
-      "url": "https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-anthropic-reach-onegov-agreement-on-discounted-consumptionbased-pricing-10272026"
+      "agirlik": 2,
+      "neden": "Bellek üreticileri için fiyat gücünün sürmesi anlamına geliyor; GPU, sunucu ve PC alıcıları için ise yüksek bellek maliyetinin uzun süre kalacağına işaret.",
+      "kaynak": "DIGITIMES",
+      "url": "https://www.digitimes.com/news/a20261029PD208.html"
     },
     {
-      "baslik": "Nvidia 3. çeyrek sonuçlarını 17 Kasım'da açıklayacak",
-      "detay": "Nvidia sonuçların 17 Kasım'da yaklaşık 13:20 PT'de yayımlanacağını, konferans çağrısının 14:00 PT'de (17:00 ET) yapılacağını duyurdu.",
-      "kategori": "notr",
+      "baslik": "Equinix rehberini üçüncü kez yükseltti, rezervasyonlar %35 arttı",
+      "detay": "Equinix 3. çeyrekte 2,571 milyar dolar gelir (+%11) ve rekor 533 milyon dolar yıllıklandırılmış brüt rezervasyon (+%35) açıkladı; 2026 gelir rehberini 10,325–10,365 milyar dolara çıkardı. Nvidia ve Together AI ile Inference Exchange'i duyurdu.",
+      "kategori": "pozitif",
       "agirlik": 1,
-      "neden": "Takvim bilgisi; sektörün bir sonraki büyük veri noktası.",
-      "kaynak": "GlobeNewswire (Nvidia)",
-      "url": "https://www.globenewswire.com/news-release/2026/10/28/3390809/0/en/nvidia-sets-conference-call-for-third-quarter-financial-results.html"
+      "neden": "Veri merkezi kapasitesinin kıt olduğu ortamda kurumsal yapay zekâ çıkarım talebinin ve fiyatlama gücünün arttığını gösteriyor.",
+      "kaynak": "Equinix",
+      "url": "https://investor.equinix.com/news-events/press-releases/detail/1128/equinix-reports-third-quarter-results-and-raises-2026"
     }
   ],
   "yontem": {
@@ -114,6 +99,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = +9 · Σ ağırlık = 16 · Puan = 50 + 50 × 0.56 = 78"
+    "hesap": "Σ ağırlık×işaret = -5 · Σ ağırlık = 17 · Puan = 50 + 50 × -0.29 = 35"
   }
 }

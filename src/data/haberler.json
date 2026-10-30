@@ -2,6 +2,213 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-10-30-seeks-3-billion-financing-for-nvidia-chips-order",
+      "tarih": "2026-10-30",
+      "yayin": "2026-10-30",
+      "baslik": "Hintli AM Intelligence, Nvidia Vera Rubin siparişi için 3 milyar dolar arıyor",
+      "detay": "Hindistan'daki yapay zekâ altyapı şirketi AM Intelligence, ağustosta açıkladığı 9.000 Nvidia Vera Rubin sistemi alımını finanse etmek için 3 milyar dolara kadar kaynak toplamaya çalışıyor.",
+      "kaynak": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-30/indian-ai-firm-seeks-3-billion-financing-for-nvidia-chips-order",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-30-osoft-recorded-10-billion-in-revenue-from-openai",
+      "tarih": "2026-10-30",
+      "yayin": "2026-10-28",
+      "baslik": "Microsoft, OpenAI'den bir çeyrekte 10 milyar dolar gelir yazdı",
+      "detay": "Microsoft'un 10-Q bildirimine göre OpenAI ile ticari anlaşmalar Eylül çeyreğinde 10 milyar dolar gelir getirdi (toplam 92,3 milyar doların ~%11'i); OpenAI'den alacaklar 7,2 milyar dolara çıktı, Microsoft'un payı %24'e indi.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+      "ton": "pozitif",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-30-esponsible-data-center-growth-5-commitments-2026",
+      "tarih": "2026-10-30",
+      "yayin": "2026-10-29",
+      "baslik": "ITI'den veri merkezleri için beş maddelik 'sorumlu büyüme' taahhüdü",
+      "detay": "Bilgi Teknolojileri Endüstri Konseyi (ITI), sektörün yeni elektrik üretimini kendisinin sağlaması, şebeke yükseltmelerini ödemesi ve ayrı tarife yapıları müzakere etmesi gibi gönüllü taahhütler yayımladı; denetim mekanizması belirtilmedi.",
+      "kaynak": "Tech Insider",
+      "url": "https://tech-insider.org/iti-responsible-data-center-growth-5-commitments-2026",
+      "ton": "notr",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-30-obriefing-com-rosatom-us-nuclear-ai-data-centers",
+      "tarih": "2026-10-30",
+      "yayin": "2026-10-29",
+      "baslik": "Rosatom, ABD veri merkezleri için küçük reaktör görüşmelerini doğruladı",
+      "detay": "Rosatom CEO'su Alexey Likhachev, yapay zekâ veri merkezlerine küçük modüler reaktör ve mikroreaktör sağlanması konusunda ABD ile ön görüşmeler sürdüğünü söyledi; resmi anlaşma yok ve yaptırımlar ana engel.",
+      "kaynak": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/rosatom-us-nuclear-ai-data-centers/",
+      "ton": "notr",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-30-olutions-for-data-centers-in-asia-302923112-html",
+      "tarih": "2026-10-30",
+      "yayin": "2026-10-29",
+      "baslik": "DayOne ve Sembcorp, Asya'daki veri merkezleri için enerji iş birliğine gidiyor",
+      "detay": "Singapur merkezli DayOne Data Centers ile Sembcorp Utilities, DayOne'ın Asya'daki veri merkezi projelerine enerji çözümlerini entegre etmek için mutabakat zaptı imzaladı.",
+      "kaynak": "PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/dayone-and-sembcorp-to-explore-integrated-power-and-energy-solutions-for-data-centers-in-asia-302923112.html",
+      "ton": "notr",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-30-s-kospi-target-to-7500-from-8000-on-won-earnings",
+      "tarih": "2026-10-30",
+      "yayin": "2026-10-30",
+      "baslik": "UBS, KOSPI hedefini 8.000'den 7.500'e indirdi",
+      "detay": "UBS 12 aylık KOSPI hedefini yılın ikinci indirimiyle 7.500'e çekti; Haziran'dan bu yana ~%15 değer kazanan wonun endeks hisse başı kârını bu yıl %2, gelecek yıl %10 aşağı çekeceğini öngörüyor.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/10/30/ubs-cuts-kospi-target-to-7500-from-8000-on-won-earnings",
+      "ton": "negatif",
+      "konular": [
+        "pazar",
+        "bellek"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-30-ares-drop-21-on-israel-factory-blast-pc-weakness",
+      "tarih": "2026-10-30",
+      "yayin": null,
+      "baslik": "Intel %21 çöktü: zayıf 4. çeyrek rehberi ve İsrail fabrikasındaki patlama",
+      "detay": "3. çeyrek geliri %21 artışla 16,5 milyar dolar, düzeltilmiş EPS 0,52 dolar (beklenti 0,40). Ancak 4. çeyrek için 15–16 milyar dolar gelir ve 0,25 dolar EPS öngördü (beklenti 17,07 milyar ve 0,43). Kiryat Gat fabrikasındaki patlama iki çeyrekte ~600 milyon dolar gelir kaybı getirecek; hisse mesai sonrası %21 düştü.",
+      "kaynak": "The Straits Times (Reuters)",
+      "url": "https://www.straitstimes.com/business/intel-shares-drop-21-on-israel-factory-blast-pc-weakness",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-30-beincrypto-com-kospi-falls-harder-than-nikkei",
+      "tarih": "2026-10-30",
+      "yayin": null,
+      "baslik": "Asya'da çip satışı: KOSPI %4,8 düştü, SK hynix %8,9 geriledi",
+      "detay": "30 Ekim sabahı KOSPI %4,77 düşüşle 5.654'e indi; SK hynix %8,91, Samsung %6,25 değer kaybetti. Seul'de program satışları 5 dakika durduruldu (sidecar). Nikkei %2,81, Tayvan TAIEX %2,80 geriledi.",
+      "kaynak": "BeInCrypto / Chosun Ilbo",
+      "url": "https://beincrypto.com/kospi-falls-harder-than-nikkei",
+      "ton": "negatif",
+      "konular": [
+        "bellek"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-30-g-soars-on-effort-to-meet-demand-for-ai-services",
+      "tarih": "2026-10-30",
+      "yayin": null,
+      "baslik": "AWS %39 büyüdü, Amazon çeyrekte 77 milyar dolar yatırım yaptı",
+      "detay": "AWS geliri yıllık %39 artışla 46,0 milyar dolar (beklenti 45,3), yıllık çalışma hızı 184 milyar dolar. Amazon çeyrekte 77 milyar doları aşan maddi duran varlık harcaması yaptı; serbest nakit akışı −42,4 milyar dolar. Toplam gelir ve EPS (1,89 $) beklentinin altında kaldı, hisse mesai sonrası %6'ya kadar düştü.",
+      "kaynak": "Bloomberg / Amazon",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-29/amazon-spending-soars-on-effort-to-meet-demand-for-ai-services",
+      "ton": "pozitif",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-30-dia-jensen-huang-chinese-intelligence-asset-html",
+      "tarih": "2026-10-30",
+      "yayin": null,
+      "baslik": "NYT: Megaspeed yöneticisi Çin istihbaratı adına Jensen Huang'a yaklaştı",
+      "detay": "New York Times'a göre ABD istihbaratı, Singapur merkezli Nvidia bulut ortağı Megaspeed'in yöneticisi Alice Huang'ı Çin istihbarat varlığı olarak değerlendirdi; şirket daha önce Nvidia çiplerini Çin'e yönlendirme şüphesiyle inceleniyordu. Nvidia, saptırma iddialarının 'incelenip çürütüldüğünü' ve görüşmelerin olağan olduğunu söyledi.",
+      "kaynak": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/29/nvidia-jensen-huang-chinese-intelligence-asset.html",
+      "ton": "negatif",
+      "konular": [
+        "cip"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-30-t-of-possible-merger-with-marvell-135945155-html",
+      "tarih": "2026-10-30",
+      "yayin": null,
+      "baslik": "Marvell, Lumentum'u satın almak için ileri görüşmelerde; hisse %12 düştü",
+      "detay": "Bloomberg'e göre Marvell, optik bileşen üreticisi Lumentum'u (piyasa değeri ~83 milyar dolar) almak için ileri aşamada; anlaşma gelecek hafta açıklanabilir. Marvell (~221 milyar dolar) hissesi %12 düştü, Lumentum %5'e kadar yükseldi.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/article/lumentum-stock-rises-on-report-of-possible-merger-with-marvell-135945155.html",
+      "ton": "notr",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-30-n-us-investor-events-fy-2027-earnings-fy-2027-q1",
+      "tarih": "2026-10-30",
+      "yayin": null,
+      "baslik": "Microsoft'un yatırımı 45,2 milyar dolarda kaldı: dış kapasite teslimatları gecikti",
+      "detay": "Microsoft 1. mali çeyrekte 45,2 milyar dolar yatırım yaptı; bazı üçüncü taraf kapasite teslimatları ertelendi. Harcamanın yaklaşık dörtte üçü CPU/GPU gibi kısa ömürlü varlıklara gitti. 2. çeyrekte 50 milyar doların üzerinde, takvim yılında ~170 milyar dolar bekleniyor; artışın bir kısmı yüksek bellek ve depolama maliyetinden.",
+      "kaynak": "Microsoft Yatırımcı İlişkileri",
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1",
+      "ton": "notr",
+      "konular": [
+        "bellek",
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-30-digitimes-com-news-a20261029pd208-html",
+      "tarih": "2026-10-30",
+      "yayin": null,
+      "baslik": "Samsung ve SK hynix 110 trilyon won yatırıyor, arz artışı 2028'e kaydı",
+      "detay": "İki şirket 2026'da tarihlerinin en büyük ekipman yatırımını (toplam ~110 trilyon won) yapıyor; ancak bellek arzındaki artışın 2028'den önce gerçekleşmesi beklenmiyor.",
+      "kaynak": "DIGITIMES",
+      "url": "https://www.digitimes.com/news/a20261029PD208.html",
+      "ton": "notr",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-30-ix-reports-third-quarter-results-and-raises-2026",
+      "tarih": "2026-10-30",
+      "yayin": null,
+      "baslik": "Equinix rehberini üçüncü kez yükseltti, rezervasyonlar %35 arttı",
+      "detay": "Equinix 3. çeyrekte 2,571 milyar dolar gelir (+%11) ve rekor 533 milyon dolar yıllıklandırılmış brüt rezervasyon (+%35) açıkladı; 2026 gelir rehberini 10,325–10,365 milyar dolara çıkardı. Nvidia ve Together AI ile Inference Exchange'i duyurdu.",
+      "kaynak": "Equinix",
+      "url": "https://investor.equinix.com/news-events/press-releases/detail/1128/equinix-reports-third-quarter-results-and-raises-2026",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
       "id": "2026-10-29-electronics-announces-third-quarter-2026-results",
       "tarih": "2026-10-29",
       "yayin": null,
@@ -4466,7 +4673,7 @@
       "kaynakTuru": "bugun"
     }
   ],
-  "guncelleme": "2026-10-29",
+  "guncelleme": "2026-10-30",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",

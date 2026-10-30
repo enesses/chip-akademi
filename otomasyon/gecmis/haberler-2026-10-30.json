@@ -1,0 +1,76 @@
+{
+  "tarih": "2026-10-30",
+  "haberler": [
+    {
+      "baslik": "Hintli AM Intelligence, Nvidia Vera Rubin siparişi için 3 milyar dolar arıyor",
+      "detay": "Hindistan'daki yapay zekâ altyapı şirketi AM Intelligence, ağustosta açıkladığı 9.000 Nvidia Vera Rubin sistemi alımını finanse etmek için 3 milyar dolara kadar kaynak toplamaya çalışıyor.",
+      "kaynak": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-30/indian-ai-firm-seeks-3-billion-financing-for-nvidia-chips-order",
+      "yayin": "2026-10-30",
+      "konular": [
+        "cip",
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Microsoft, OpenAI'den bir çeyrekte 10 milyar dolar gelir yazdı",
+      "detay": "Microsoft'un 10-Q bildirimine göre OpenAI ile ticari anlaşmalar Eylül çeyreğinde 10 milyar dolar gelir getirdi (toplam 92,3 milyar doların ~%11'i); OpenAI'den alacaklar 7,2 milyar dolara çıktı, Microsoft'un payı %24'e indi.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+      "yayin": "2026-10-28",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "ITI'den veri merkezleri için beş maddelik 'sorumlu büyüme' taahhüdü",
+      "detay": "Bilgi Teknolojileri Endüstri Konseyi (ITI), sektörün yeni elektrik üretimini kendisinin sağlaması, şebeke yükseltmelerini ödemesi ve ayrı tarife yapıları müzakere etmesi gibi gönüllü taahhütler yayımladı; denetim mekanizması belirtilmedi.",
+      "kaynak": "Tech Insider",
+      "url": "https://tech-insider.org/iti-responsible-data-center-growth-5-commitments-2026",
+      "yayin": "2026-10-29",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Rosatom, ABD veri merkezleri için küçük reaktör görüşmelerini doğruladı",
+      "detay": "Rosatom CEO'su Alexey Likhachev, yapay zekâ veri merkezlerine küçük modüler reaktör ve mikroreaktör sağlanması konusunda ABD ile ön görüşmeler sürdüğünü söyledi; resmi anlaşma yok ve yaptırımlar ana engel.",
+      "kaynak": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/rosatom-us-nuclear-ai-data-centers/",
+      "yayin": "2026-10-29",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "DayOne ve Sembcorp, Asya'daki veri merkezleri için enerji iş birliğine gidiyor",
+      "detay": "Singapur merkezli DayOne Data Centers ile Sembcorp Utilities, DayOne'ın Asya'daki veri merkezi projelerine enerji çözümlerini entegre etmek için mutabakat zaptı imzaladı.",
+      "kaynak": "PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/dayone-and-sembcorp-to-explore-integrated-power-and-energy-solutions-for-data-centers-in-asia-302923112.html",
+      "yayin": "2026-10-29",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "UBS, KOSPI hedefini 8.000'den 7.500'e indirdi",
+      "detay": "UBS 12 aylık KOSPI hedefini yılın ikinci indirimiyle 7.500'e çekti; Haziran'dan bu yana ~%15 değer kazanan wonun endeks hisse başı kârını bu yıl %2, gelecek yıl %10 aşağı çekeceğini öngörüyor.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/10/30/ubs-cuts-kospi-target-to-7500-from-8000-on-won-earnings",
+      "yayin": "2026-10-30",
+      "konular": [
+        "pazar",
+        "bellek"
+      ],
+      "kategori": "negatif"
+    }
+  ]
+}

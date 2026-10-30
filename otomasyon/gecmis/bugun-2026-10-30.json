@@ -1,0 +1,104 @@
+{
+  "tarih": "2026-10-30",
+  "derlenme": "30 Ekim 2026",
+  "puan": {
+    "etiket": "Bilanço şoku: Intel ve Amazon sonrası çip hisselerinde sert satış",
+    "yorum": "Intel'in zayıf rehberi ve Amazon'un 42 milyar dolarlık negatif nakit akışı, rekor bellek bilançolarının gölgesinde yapay zekâ harcamalarının finansmanına dair kaygıyı büyüttü; KOSPI'de devre kesici devreye girdi. Talep tarafı ise sağlam: AWS %39 büyüdü, Microsoft kapasite bulamadığı için harcamasını erteledi, bellek arzı 2028'e kadar sıkı kalacak.",
+    "deger": 35
+  },
+  "ozet": [
+    "Günün ana teması, güçlü talep ile yatırımcı sabrı arasındaki makas. Intel üçüncü çeyrekte beklentiyi aştı, veri merkezi geliri %78 büyüdü; ama bellek fiyatlarının vurduğu PC pazarı ve İsrail'deki Kiryat Gat fabrikasında yaşanan ölümcül patlama dördüncü çeyrek rehberini 15–16 milyar dolara çekti ve hisse mesai sonrası %21 düştü. Amazon tarafında AWS yaklaşık beş yılın en hızlı büyümesini (%39) yazdı, şirket çeyrekte 77 milyar doları aşan yatırım yaptı; fakat serbest nakit akışının −42,4 milyar dolara inmesi hisseyi aşağı çekti.",
+    "Bu iki sonuç, bir gün önceki Alphabet satışıyla birleşince Asya açılışında çip hisselerine ağır bir dalga olarak yansıdı: KOSPI %4,8'e kadar düştü, SK hynix %8,9 ve Samsung %6,3 geriledi, Seul'de program satışları beş dakika durduruldu. Yatırımcılar, büyük teknoloji şirketlerinin rekor harcamayı nasıl finanse edeceğine odaklanıyor.",
+    "Yine de arz-talep tablosu değişmiş değil. Microsoft, üçüncü taraf kapasite teslimatları geciktiği için çeyrek yatırımını 45,2 milyar dolarda bıraktı ve harcamanın yılın ikinci yarısına kayacağını söyledi; Samsung ve SK hynix 110 trilyon wonluk rekor ekipman yatırımına rağmen anlamlı arz artışını 2028'den önce beklemiyor. Equinix ise kıt kapasite ortamında rezervasyonlarını %35 artırdı.",
+    "Risk tarafında Nvidia yeniden Çin gündemiyle anıldı: New York Times'ın Megaspeed yöneticisine dair istihbarat iddiası, ihracat kontrolleri tartışmasını canlandırdı. Marvell'in Lumentum'u satın alma görüşmeleri ise optik bağlantının yapay zekâ altyapısındaki değerini teyit ederken alıcı hissesini %12 düşürdü."
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2026-11-17",
+      "baslik": "Nvidia 3. çeyrek sonuçları ve konferans çağrısı",
+      "kaynak": "GlobeNewswire (Nvidia)",
+      "url": "https://www.globenewswire.com/news-release/2026/10/28/3390809/0/en/nvidia-sets-conference-call-for-third-quarter-financial-results.html"
+    }
+  ],
+  "maddeler": [
+    {
+      "baslik": "Intel %21 çöktü: zayıf 4. çeyrek rehberi ve İsrail fabrikasındaki patlama",
+      "detay": "3. çeyrek geliri %21 artışla 16,5 milyar dolar, düzeltilmiş EPS 0,52 dolar (beklenti 0,40). Ancak 4. çeyrek için 15–16 milyar dolar gelir ve 0,25 dolar EPS öngördü (beklenti 17,07 milyar ve 0,43). Kiryat Gat fabrikasındaki patlama iki çeyrekte ~600 milyon dolar gelir kaybı getirecek; hisse mesai sonrası %21 düştü.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "Veri merkezi ve yapay zekâ geliri %78 artsa da bellek kıtlığının vurduğu PC pazarı ve üretim darboğazları rehberi aşağı çekti; satış tüm çip hisselerine yayıldı.",
+      "kaynak": "The Straits Times (Reuters)",
+      "url": "https://www.straitstimes.com/business/intel-shares-drop-21-on-israel-factory-blast-pc-weakness"
+    },
+    {
+      "baslik": "Asya'da çip satışı: KOSPI %4,8 düştü, SK hynix %8,9 geriledi",
+      "detay": "30 Ekim sabahı KOSPI %4,77 düşüşle 5.654'e indi; SK hynix %8,91, Samsung %6,25 değer kaybetti. Seul'de program satışları 5 dakika durduruldu (sidecar). Nikkei %2,81, Tayvan TAIEX %2,80 geriledi.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "Rekor bilançolara rağmen Alphabet'in negatif nakit akışı, Amazon ve Intel'in hayal kırıklığı yaratan sonuçları yapay zekâ harcamalarının sürdürülebilirliğine dair kaygıyı bellek üreticilerine taşıdı.",
+      "kaynak": "BeInCrypto / Chosun Ilbo",
+      "url": "https://beincrypto.com/kospi-falls-harder-than-nikkei"
+    },
+    {
+      "baslik": "AWS %39 büyüdü, Amazon çeyrekte 77 milyar dolar yatırım yaptı",
+      "detay": "AWS geliri yıllık %39 artışla 46,0 milyar dolar (beklenti 45,3), yıllık çalışma hızı 184 milyar dolar. Amazon çeyrekte 77 milyar doları aşan maddi duran varlık harcaması yaptı; serbest nakit akışı −42,4 milyar dolar. Toplam gelir ve EPS (1,89 $) beklentinin altında kaldı, hisse mesai sonrası %6'ya kadar düştü.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Bulut büyümesinin yaklaşık beş yılın en hızlısı olması ve tahminleri aşan yatırım, çip ve veri merkezi talebi için olumlu; hisse tepkisi ise yatırımcıların nakit yakımına tahammülünün azaldığını gösteriyor.",
+      "kaynak": "Bloomberg / Amazon",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-29/amazon-spending-soars-on-effort-to-meet-demand-for-ai-services"
+    },
+    {
+      "baslik": "NYT: Megaspeed yöneticisi Çin istihbaratı adına Jensen Huang'a yaklaştı",
+      "detay": "New York Times'a göre ABD istihbaratı, Singapur merkezli Nvidia bulut ortağı Megaspeed'in yöneticisi Alice Huang'ı Çin istihbarat varlığı olarak değerlendirdi; şirket daha önce Nvidia çiplerini Çin'e yönlendirme şüphesiyle inceleniyordu. Nvidia, saptırma iddialarının 'incelenip çürütüldüğünü' ve görüşmelerin olağan olduğunu söyledi.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "İhracat kontrolleri ve Çin'e çip kaçakçılığı tartışmasını yeniden alevlendiriyor; dünkü DOJ haberinin ardından Nvidia üzerindeki düzenleyici baskıyı artırıyor.",
+      "kaynak": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/29/nvidia-jensen-huang-chinese-intelligence-asset.html"
+    },
+    {
+      "baslik": "Marvell, Lumentum'u satın almak için ileri görüşmelerde; hisse %12 düştü",
+      "detay": "Bloomberg'e göre Marvell, optik bileşen üreticisi Lumentum'u (piyasa değeri ~83 milyar dolar) almak için ileri aşamada; anlaşma gelecek hafta açıklanabilir. Marvell (~221 milyar dolar) hissesi %12 düştü, Lumentum %5'e kadar yükseldi.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Yapay zekâ kümelerinde optik bağlantının önemini teyit ediyor; ancak alıcı tarafın hissesindeki sert düşüş, yatırımcıların büyük satın alma maliyetinden çekindiğini gösteriyor.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/article/lumentum-stock-rises-on-report-of-possible-merger-with-marvell-135945155.html"
+    },
+    {
+      "baslik": "Microsoft'un yatırımı 45,2 milyar dolarda kaldı: dış kapasite teslimatları gecikti",
+      "detay": "Microsoft 1. mali çeyrekte 45,2 milyar dolar yatırım yaptı; bazı üçüncü taraf kapasite teslimatları ertelendi. Harcamanın yaklaşık dörtte üçü CPU/GPU gibi kısa ömürlü varlıklara gitti. 2. çeyrekte 50 milyar doların üzerinde, takvim yılında ~170 milyar dolar bekleniyor; artışın bir kısmı yüksek bellek ve depolama maliyetinden.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Talep güçlü ama veri merkezi kapasitesi zamanında gelmiyor; gecikme harcamayı yılın ikinci yarısına kaydırıyor.",
+      "kaynak": "Microsoft Yatırımcı İlişkileri",
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+    },
+    {
+      "baslik": "Samsung ve SK hynix 110 trilyon won yatırıyor, arz artışı 2028'e kaydı",
+      "detay": "İki şirket 2026'da tarihlerinin en büyük ekipman yatırımını (toplam ~110 trilyon won) yapıyor; ancak bellek arzındaki artışın 2028'den önce gerçekleşmesi beklenmiyor.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Bellek üreticileri için fiyat gücünün sürmesi anlamına geliyor; GPU, sunucu ve PC alıcıları için ise yüksek bellek maliyetinin uzun süre kalacağına işaret.",
+      "kaynak": "DIGITIMES",
+      "url": "https://www.digitimes.com/news/a20261029PD208.html"
+    },
+    {
+      "baslik": "Equinix rehberini üçüncü kez yükseltti, rezervasyonlar %35 arttı",
+      "detay": "Equinix 3. çeyrekte 2,571 milyar dolar gelir (+%11) ve rekor 533 milyon dolar yıllıklandırılmış brüt rezervasyon (+%35) açıkladı; 2026 gelir rehberini 10,325–10,365 milyar dolara çıkardı. Nvidia ve Together AI ile Inference Exchange'i duyurdu.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Veri merkezi kapasitesinin kıt olduğu ortamda kurumsal yapay zekâ çıkarım talebinin ve fiyatlama gücünün arttığını gösteriyor.",
+      "kaynak": "Equinix",
+      "url": "https://investor.equinix.com/news-events/press-releases/detail/1128/equinix-reports-third-quarter-results-and-raises-2026"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = -5 · Σ ağırlık = 17 · Puan = 50 + 50 × -0.29 = 35"
+  }
+}
