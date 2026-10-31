@@ -33,6 +33,37 @@ function yayinYaz(iso) {
 
 const ILK_GUN = 3;
 
+/** Karakter karakter sadeleştirir; her karakter tek karaktere düşerse konumlar özgün metinle eşleşir. */
+function harfSade(c) {
+  const n = c.toLocaleLowerCase("tr").replace(/ı/g, "i").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  return /\s/.test(n) ? " " : n;
+}
+
+/** Aramadaki kelimeleri metinde <mark> ile işaretler (Türkçe/aksan duyarsız). */
+function Vurgula({ metin, sorgu }) {
+  const terimler = sadelestir(sorgu).split(" ").filter(Boolean);
+  if (!terimler.length || !metin) return metin;
+  const harfler = [...metin];
+  const sade = harfler.map(harfSade);
+  if (sade.some((h) => h.length !== 1)) return metin;
+  const duz = sade.join("");
+  const isaret = new Array(harfler.length).fill(false);
+  for (const t of terimler) {
+    let i = duz.indexOf(t);
+    while (i !== -1) { for (let j = i; j < i + t.length; j++) isaret[j] = true; i = duz.indexOf(t, i + t.length); }
+  }
+  const parcalar = [];
+  let bas = 0;
+  for (let i = 1; i <= harfler.length; i++) {
+    if (i === harfler.length || isaret[i] !== isaret[bas]) {
+      const p = harfler.slice(bas, i).join("");
+      parcalar.push(isaret[bas] ? <mark key={bas} className="bg-primary/20 text-foreground rounded-sm">{p}</mark> : p);
+      bas = i;
+    }
+  }
+  return <>{parcalar}</>;
+}
+
 export default function Haberler() {
   const [konu, setKonu] = useState("hepsi");
   const [ton, setTon] = useState("hepsi");
@@ -152,11 +183,11 @@ export default function Haberler() {
                           <div className="min-w-0">
                             <h3 className="font-medium leading-snug">
                               <a href={h.url} target="_blank" rel="noreferrer" className="group hover:text-primary">
-                                {h.baslik}
+                                <Vurgula metin={h.baslik} sorgu={sorgu} />
                                 <ArrowUpRight className="inline h-3.5 w-3.5 ml-0.5 -mt-0.5 opacity-50 group-hover:opacity-100" aria-hidden="true" />
                               </a>
                             </h3>
-                            <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{h.detay}</p>
+                            <p className="text-sm text-muted-foreground mt-1 leading-relaxed"><Vurgula metin={h.detay} sorgu={sorgu} /></p>
                             <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] text-muted-foreground">
                               <span className="text-foreground/80">{h.kaynak}</span>
                               {h.kaynakTuru === "bugun" && (
