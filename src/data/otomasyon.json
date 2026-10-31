@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-31T06:56:01.393Z",
+  "guncelleme": "2026-10-31T06:58:24.321Z",
   "tarih": "2026-10-31",
   "durum": "dikkat",
   "ajanlar": [
@@ -69,7 +69,28 @@
       "alan": "veri / fiyatlar"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-10-31",
+      "oneri": "Haberler'de konu sayaçları ton ve arama süzgecini yansıtsın",
+      "durum": "birlesti",
+      "pr": 66,
+      "dal": "otomasyon/oneri-2026-10-31-1",
+      "ozet": "Konu sekmelerindeki sayılar seçili ton ve aramaya göre sayılıyor",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-31",
+      "oneri": "Haberler'de arama terimini başlık ve özette vurgula",
+      "durum": "birlesti",
+      "pr": 67,
+      "dal": "otomasyon/oneri-2026-10-31-2",
+      "ozet": "Arama kelimeleri haber başlığı ve özetinde işaretleniyor",
+      "neden": null,
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
@@ -398,6 +419,20 @@
       "durum": "acik",
       "pr": 65,
       "tarih": "2026-10-30",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Haberler'de konu sayaçları ton ve arama süzgecini yansıtsın",
+      "durum": "birlesti",
+      "pr": 66,
+      "tarih": "2026-10-31",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Haberler'de arama terimini başlık ve özette vurgula",
+      "durum": "birlesti",
+      "pr": 67,
+      "tarih": "2026-10-31",
       "kim": "otomasyon"
     }
   ],

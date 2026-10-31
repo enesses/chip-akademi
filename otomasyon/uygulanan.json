@@ -740,6 +740,26 @@
       "ozet": "Talimata ozet alanı için dizi şeması örneği eklendi.",
       "neden": "Korunan dosya (otomasyon/GUNLUK.md); testler geçti, kullanıcı onayı bekliyor.",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-31",
+      "oneri": "Haberler'de konu sayaçları ton ve arama süzgecini yansıtsın",
+      "durum": "birlesti",
+      "pr": 66,
+      "dal": "otomasyon/oneri-2026-10-31-1",
+      "ozet": "Konu sekmelerindeki sayılar seçili ton ve aramaya göre sayılıyor",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-10-31",
+      "oneri": "Haberler'de arama terimini başlık ve özette vurgula",
+      "durum": "birlesti",
+      "pr": 67,
+      "dal": "otomasyon/oneri-2026-10-31-2",
+      "ozet": "Arama kelimeleri haber başlığı ve özetinde işaretleniyor",
+      "neden": null,
+      "kim": "otomasyon"
     }
   ]
 }
