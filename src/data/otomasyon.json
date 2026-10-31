@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-10-30T07:05:57.848Z",
-  "tarih": "2026-10-30",
+  "guncelleme": "2026-10-31T06:56:01.393Z",
+  "tarih": "2026-10-31",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-10-30T07:01:51.121Z"
+      "zaman": "2026-10-31T06:54:33.075Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-10-30T07:01:51.234Z"
+      "zaman": "2026-10-31T06:54:33.188Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-10-30T07:01:50.610Z"
+      "zaman": "2026-10-31T06:54:32.621Z"
     },
     {
       "id": "gelistirme",
@@ -33,7 +33,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-10-30T07:02:09.410Z"
+      "zaman": "2026-10-31T06:54:50.177Z"
     }
   ],
   "dikkat": [
@@ -45,46 +45,31 @@
   ],
   "oneriler": [
     {
-      "baslik": "gpu_kiralama.json'daki kullanılmayan eski 'hareketler' alanını kaldır",
-      "neden": "Prices.jsx yalnızca data.iki_gun'u okuyor; 'hareketler' alanını ne src/ ne otomasyon/ betikleri kullanıyor ya da güncelliyor. Alan bayat: GH200'ü 6,50 → 2,52 $ gösteriyor, bugünkü medyan ise 5,19 $. Okuyan biri ya da sonraki bir geliştirme bu çelişkili veriyi kullanabilir.",
+      "baslik": "Haberler'de konu sayaçları ton ve arama süzgecini yansıtsın",
+      "neden": "src/pages/Haberler.jsx'te `sayilar` tüm akıştan (tum, 326 haber) hesaplanıyor; 'Olumsuz' tonu ya da 'Intel' araması seçiliyken konu sekmeleri hâlâ toplam sayıları gösteriyor, sekmeye tıklayınca çok daha az haber çıkıyor.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Haberler'de arama terimini başlık ve özette vurgula",
+      "neden": "Haberler.jsx araması başlık+detay+kaynakta eşleşiyor ama eşleşen kelime işaretlenmiyor; 326 haberlik akışta 'HBM' gibi bir aramada neden eşleştiği görünmüyor.",
       "etki": "düşük",
-      "alan": "src/data/gpu_kiralama.json"
+      "alan": "arayüz"
     },
     {
       "baslik": "Bugün puan kartında dünkü puanla farkı göster",
-      "neden": "Bugün puanı 29 Ekim'de 78, bugün 35; bu sert dönüş kartta görünmüyor (Bugun.jsx önceki günün puanını okumuyor, src/data/bugun.json yalnızca bugünü tutuyor). veri-isle'nin önceki puanı 'onceki_puan' olarak yazması ve kartın farkı göstermesi gerekiyor; otomasyon betiğine dokunduğu için onay ister.",
+      "neden": "src/data/bugun.json'da yalnızca günün puanı var (bugün 37, dün 35); Bugun.jsx önceki günü göstermiyor. Fark için veri-isle.mjs'nin önceki puanı bugun.json'a yazması gerekiyor (otomasyon/ korunan alan, elle onay ister).",
       "etki": "orta",
-      "alan": "otomasyon/veri-isle.mjs, src/pages/Bugun.jsx"
+      "alan": "veri / Bugün"
     },
     {
-      "baslik": "GUNLUK.md: Bugün 'ozet' alanının paragraf dizisi olduğunu açıkça yaz",
-      "neden": "Bugün 30 Ekim'deki ilk çalıştırmada bugun.json 'özet eksik' hatasıyla reddedildi: talimat '3–4 paragraf' diyor ama veri-isle.mjs (satır 219) dizi bekliyor; tek metin olarak yazılan özet reddediliyor. Talimata örnek şema ('ozet': [\"…\", \"…\"]) eklenmeli.",
-      "etki": "orta",
-      "alan": "otomasyon/GUNLUK.md"
+      "baslik": "Tek sağlayıcılı modellerde medyan yoksa tek fiyatı ölçüm olarak işle",
+      "neden": "Bugün getdeploying.com/gpus'ta 10 model (MI250, MI350X, RTX 5000 Ada, A16, T1000…) yalnızca tek fiyatla listelendi, medyan sütunu '--'; veri-isle bu satırları atladığı için gpu_kiralama.json'da olcum_tarihi 2026-10-30'da kaldı. Tek sağlayıcıda en düşük = medyan; otomasyon/ değişikliği olduğu için onay gerekir.",
+      "etki": "düşük",
+      "alan": "veri / fiyatlar"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-10-30",
-      "oneri": "gpu_kiralama.json'daki kullanılmayan eski 'hareketler' alanını kaldır",
-      "durum": "birlesti",
-      "pr": 64,
-      "dal": "otomasyon/oneri-2026-10-30-1",
-      "ozet": "Hiçbir kodun okumadığı, bayat değerler içeren hareketler alanı fiyat verisinden silindi.",
-      "neden": null,
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-10-30",
-      "oneri": "GUNLUK.md: Bugün 'ozet' alanının paragraf dizisi olduğunu açıkça yaz",
-      "durum": "acik",
-      "pr": 65,
-      "dal": "otomasyon/oneri-2026-10-30-2",
-      "ozet": "Talimata ozet alanı için dizi şeması örneği eklendi.",
-      "neden": "Korunan dosya (otomasyon/GUNLUK.md); testler geçti, kullanıcı onayı bekliyor.",
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
     {
       "oneri": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
@@ -496,17 +481,22 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 92 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu)"
+        "detay": "bu çalıştırmada güncellendi — 82 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 25 gelmedi (eski fiyat korundu), 1 büyük oynama elle doğrulandı"
+      },
+      {
+        "ad": "Elle doğrulanan fiyat",
+        "durum": "ok",
+        "detay": "Nvidia A4000: 0.49 → 0.82 (ikinci okuma: medyan 0.82, en düşük 0.21 (TensorDock), 11 sağlayıcı) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 35, 1 yaklaşan olay; haber akışına +8"
+        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 37, 1 yaklaşan olay; haber akışına +8"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+6 haber (akışta 304); bugün toplam 14"
+        "detay": "+6 haber (akışta 326); bugün toplam 14"
       },
       {
         "ad": "Derleme",
@@ -516,7 +506,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2829 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2839 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -543,11 +533,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-10-13",
-      "durum": "dikkat",
-      "dikkat": 2
-    },
     {
       "tarih": "2026-10-14",
       "durum": "dikkat",
@@ -610,6 +595,11 @@
     },
     {
       "tarih": "2026-10-30",
+      "durum": "dikkat",
+      "dikkat": 1
+    },
+    {
+      "tarih": "2026-10-31",
       "durum": "dikkat",
       "dikkat": 1
     }

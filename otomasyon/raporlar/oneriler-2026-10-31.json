@@ -1,0 +1,29 @@
+{
+  "tarih": "2026-10-31",
+  "oneriler": [
+    {
+      "baslik": "Haberler'de konu sayaçları ton ve arama süzgecini yansıtsın",
+      "neden": "src/pages/Haberler.jsx'te `sayilar` tüm akıştan (tum, 326 haber) hesaplanıyor; 'Olumsuz' tonu ya da 'Intel' araması seçiliyken konu sekmeleri hâlâ toplam sayıları gösteriyor, sekmeye tıklayınca çok daha az haber çıkıyor.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Haberler'de arama terimini başlık ve özette vurgula",
+      "neden": "Haberler.jsx araması başlık+detay+kaynakta eşleşiyor ama eşleşen kelime işaretlenmiyor; 326 haberlik akışta 'HBM' gibi bir aramada neden eşleştiği görünmüyor.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bugün puan kartında dünkü puanla farkı göster",
+      "neden": "src/data/bugun.json'da yalnızca günün puanı var (bugün 37, dün 35); Bugun.jsx önceki günü göstermiyor. Fark için veri-isle.mjs'nin önceki puanı bugun.json'a yazması gerekiyor (otomasyon/ korunan alan, elle onay ister).",
+      "etki": "orta",
+      "alan": "veri / Bugün"
+    },
+    {
+      "baslik": "Tek sağlayıcılı modellerde medyan yoksa tek fiyatı ölçüm olarak işle",
+      "neden": "Bugün getdeploying.com/gpus'ta 10 model (MI250, MI350X, RTX 5000 Ada, A16, T1000…) yalnızca tek fiyatla listelendi, medyan sütunu '--'; veri-isle bu satırları atladığı için gpu_kiralama.json'da olcum_tarihi 2026-10-30'da kaldı. Tek sağlayıcıda en düşük = medyan; otomasyon/ değişikliği olduğu için onay gerekir.",
+      "etki": "düşük",
+      "alan": "veri / fiyatlar"
+    }
+  ]
+}

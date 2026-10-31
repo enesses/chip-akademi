@@ -1,0 +1,34 @@
+{
+  "ajan": "rapor",
+  "tarih": "2026-10-31",
+  "zaman": "2026-10-31T06:56:01.394Z",
+  "durum": "dikkat",
+  "gunTamam": true,
+  "tazelik": [
+    {
+      "ad": "Bugün sayfası",
+      "tarih": "2026-10-31",
+      "gun": 0
+    },
+    {
+      "ad": "Fiyat verisi",
+      "tarih": "2026-10-31",
+      "gun": 0
+    }
+  ],
+  "otomatikTamamlanan": [],
+  "calisan": [
+    "guvenlik",
+    "iyilestirme",
+    "yenileme",
+    "gelistirme"
+  ],
+  "calismayan": [],
+  "dikkat": [
+    {
+      "seviye": "dikkat",
+      "tur": "onay",
+      "metin": "5 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+    }
+  ]
+}

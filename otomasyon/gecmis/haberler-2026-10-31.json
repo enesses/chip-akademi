@@ -1,0 +1,74 @@
+{
+  "tarih": "2026-10-31",
+  "haberler": [
+    {
+      "baslik": "FuriosaAI 620 milyon dolar topladı, değeri 2,9 milyar dolar",
+      "detay": "Seul merkezli çip girişimi Series D'de 620 milyon dolar (820 milyar won) topladı; en büyük yatırımcı 280 milyon dolarla Kore Ulusal Büyüme Fonu. 2026'da 20 bin, 2027'de 40 binden fazla RNGD çıkarım hızlandırıcısı üretmeyi, Broadcom ile üçüncü nesil çip geliştirmeyi planlıyor.",
+      "kaynak": "Yahoo Finance (basın bülteni)",
+      "url": "https://finance.yahoo.com/technology/ai/articles/furiosaai-secures-620-million-series-235700023.html",
+      "yayin": "2026-10-28",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Samsung: 2027 HBM kapasitesi önceden belirlenmiş fiyatlarla satıldı",
+      "detay": "Kazanç çağrısında DRAM ortalama fiyatının 3. çeyrekte ~%20, NAND'ın ~%10 arttığı, HBM4'ün toplam HBM gelirinin %60'ına ulaştığı söylendi. Samsung, DRAM arzının 2028'e kadar sıkı kalmasını bekliyor; 10 müşteriyle uzun vadeli anlaşma imzalandı.",
+      "kaynak": "KuCoin News (IT Home)",
+      "url": "https://www.kucoin.com/news/flash/samsung-electronics-hbm-capacity-sold-out-for-2027-memory-supply-to-remain-tight-in-2028",
+      "yayin": "2026-10-29",
+      "konular": [
+        "bellek"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Tayvan, Çin'e yapay zekâ çipi kaçakçılığını suç yapmaya hazırlanıyor",
+      "detay": "Ekonomi Bakanı Kung Ming-hsin, gelişmiş yarı iletkenleri ve yapay zekâ sunucularını Dış Ticaret Kanunu'ndaki kontrollü ürünler listesine ekleme planını açıkladı; yetkisiz ihracat uyarı yerine kovuşturmaya konu olacak. Değişikliğin meclisten geçmesi gerekiyor.",
+      "kaynak": "Startup Fortune",
+      "url": "https://startupfortune.com/taiwan-moves-to-make-ai-chip-smuggling-to-china-a-crime",
+      "yayin": "2026-10-31",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Veri merkezi yarışı artık bir enerji yarışı",
+      "detay": "Schneider Electric yöneticisinin görüş yazısına göre dünyada 2.500 GW üretim kapasitesi şebeke bağlantısı bekliyor; Avrupa'nın FLAP-D merkezlerinde bağlantı için bekleme ~10 yıla çıkabiliyor. Yılda 30 saatlik esneklik, ayrılabilecek kapasiteyi iki katından fazla artırabilir.",
+      "kaynak": "TechRadar",
+      "url": "https://www.techradar.com/pro/the-ai-data-center-race-is-now-a-race-to-power",
+      "yayin": "2026-10-30",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Çıkarım bulutlarına yeni sermaye: General Compute 100, Hyperbolic 30 milyon dolar",
+      "detay": "SiliconANGLE'ın haftalık analizine göre riskler artsa da yatırım sürüyor: Meta 95 milyar dolarlık hisse ihracı planlıyor, çıkarım bulutu girişimleri General Compute 100 milyon, Hyperbolic 30 milyon dolar topladı.",
+      "kaynak": "SiliconANGLE",
+      "url": "https://siliconangle.com/2026/10/30/as-anthropic-finally-files-for-ipo-rising-risks-arent-slowing-the-ai-buildout-yet",
+      "yayin": "2026-10-30",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Anthropic: Claude kendi konuşmalarında kötüye kullanımı tespit edebiliyor",
+      "detay": "Anthropic'in raporuna göre model, daha güçlü bir sınıflandırıcının işaretlediği konuşmaların %78'ini ve yüksek öncelikli vakaların %94'ünü %1 yanlış pozitifle yakaladı. OpenAI de yetkisiz ajan davranışlarını izleyen sistemini genişletti.",
+      "kaynak": "The Neuron",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-october-30-2026/",
+      "yayin": "2026-10-30",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    }
+  ]
+}

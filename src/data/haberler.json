@@ -2,6 +2,211 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-10-31-es-why-intel-stock-crashed-friday-024146893-html",
+      "tarih": "2026-10-31",
+      "yayin": null,
+      "baslik": "Intel Cuma günü %29 düştü: 1974'ten bu yana en kötü gün",
+      "detay": "Hisse, 4. çeyrek için 15–16 milyar dolar gelir ve 0,25 dolar EPS rehberinin (beklenti 17,1 milyar ve 0,43) ardından kapanışta ~%28,6 geriledi. CFO Zinsner PC yavaşlamasının en az 2027'nin ilk yarısına kadar süreceğini söyledi; istemci geliri %5 düşüşle 8,1 milyar dolar.",
+      "kaynak": "Motley Fool (Yahoo Finance)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-intel-stock-crashed-friday-024146893.html",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-31-oday-dow-jones-sp-500-nasdaq-updates-oct-30-2026",
+      "tarih": "2026-10-31",
+      "yayin": null,
+      "baslik": "Nasdaq %2,84 düştü, VIX gün içinde %32 sıçradı",
+      "detay": "Ekim'in son gününde Nasdaq 25.442, S&P 500 7.579 (−%1,83) seviyesinde kapandı; hisselerin ~%70'i düştü. Alphabet %12,6, Reddit %29 geriledi; Brent 117,80 dolara çıktı.",
+      "kaynak": "TheStreet",
+      "url": "https://thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026",
+      "ton": "negatif",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-31-rket-movers-262260899-market-movers-tsm-20261030",
+      "tarih": "2026-10-31",
+      "yayin": null,
+      "baslik": "TSMC açılışta %3,7, AMD %9,3 düştü",
+      "detay": "Teknoloji donanımı sektörü %4 geriledi; hacimde ilk üç hisse Intel (−%28,9), AMD (−%9,3) ve Apple (−%1,3). TSMC için 2 nm kaynaklı brüt marj gerilemesi (%67,7'den %66,4'e) ve 60–64 milyar dolarlık 2026 yatırımı risk olarak öne çıktı.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/news/market-movers/262260899-market-movers-tsm-20261030",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-31-0-nasdaq-amazon-intel-ai-sell-off-191429143-html",
+      "tarih": "2026-10-31",
+      "yayin": null,
+      "baslik": "Nvidia 52 haftalık zirvesinin %12 altında",
+      "detay": "Yahoo Finance'e göre yatırımcılar büyük teknoloji şirketlerinin aşırı harcadığından ve 2027'de geri adım atabileceğinden endişe ediyor; Amazon'un son 12 aylık serbest nakit akışı −42 milyar doların altında.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-ai-sell-off-191429143.html",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-31--selling-its-ai-chips-to-other-companies-in-2027",
+      "tarih": "2026-10-31",
+      "yayin": null,
+      "baslik": "Amazon, Trainium çiplerini 2027 sonundan itibaren dışarıya satacak",
+      "detay": "Andy Jassy kazanç çağrısında Trainium'un harici satışının ciddi bir iş kolu olacağını söyledi; Trainium ve Graviton yıllık 25 milyar doları aşan bir hızda. TorchNeuron açık kaynak yapıldı, AWS iş birikimi 578 milyar dolar.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/10/30/amazon-says-it-will-start-selling-its-ai-chips-to-other-companies-in-2027/",
+      "ton": "pozitif",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-31-mark-investment-cohere-scale-secure-sovereign-ai",
+      "tarih": "2026-10-31",
+      "yayin": null,
+      "baslik": "Kanada, Cohere'e 1,6 milyar dolara kadar ortak oluyor",
+      "detay": "Başbakanlık açıklamasına göre özkaynak yatırımı aşamalı yapılacak; Cohere genel merkezini Kanada'da tutacak, 2030'a kadar en az 1,7 milyar dolarlık bilgi işlem altyapısı kuracak ve 1.000 teknik iş yaratacak. Turda Nvidia, Bell ve Schwarz Group da var.",
+      "kaynak": "Kanada Başbakanlığı",
+      "url": "https://www.pm.gc.ca/en/news/news-releases/2026/10/29/canada-announces-landmark-investment-cohere-scale-secure-sovereign-ai",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-31-online-in-48-hours-this-startup-aims-to-find-out",
+      "tarih": "2026-10-31",
+      "yayin": null,
+      "baslik": "Romanya'da veri merkezleri bantta üretilecek",
+      "detay": "Runware, Sonic Inference Pod modüler veri merkezlerini fabrikada üretmeyi ve 2028'e kadar günde ~30 MW (ayda ~1 GW) kapasiteye ulaşmayı hedefliyor. 60 milyon doları aşan yatırım aldı, 1 milyar dolarlık taahhüt edilmiş ilgi bildiriyor.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
+      "ton": "pozitif",
+      "konular": [
+        "yapay-zeka",
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-31-llion-parameter-ai-model-targeting-cybersecurity",
+      "tarih": "2026-10-31",
+      "yayin": null,
+      "baslik": "Mistral, trilyon parametreli Large 4'ün ağırlıklarını yayımladı",
+      "detay": "Model Hugging Face'te açık ağırlıklı olarak sunuldu ve siber savunmayı hedefliyor; Mistral, GLM-5.3'e göre görev başına %47 daha az token kullandığını söylüyor.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
+      "ton": "notr",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-10-31-iosaai-secures-620-million-series-235700023-html",
+      "tarih": "2026-10-31",
+      "yayin": "2026-10-28",
+      "baslik": "FuriosaAI 620 milyon dolar topladı, değeri 2,9 milyar dolar",
+      "detay": "Seul merkezli çip girişimi Series D'de 620 milyon dolar (820 milyar won) topladı; en büyük yatırımcı 280 milyon dolarla Kore Ulusal Büyüme Fonu. 2026'da 20 bin, 2027'de 40 binden fazla RNGD çıkarım hızlandırıcısı üretmeyi, Broadcom ile üçüncü nesil çip geliştirmeyi planlıyor.",
+      "kaynak": "Yahoo Finance (basın bülteni)",
+      "url": "https://finance.yahoo.com/technology/ai/articles/furiosaai-secures-620-million-series-235700023.html",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-31-t-for-2027-memory-supply-to-remain-tight-in-2028",
+      "tarih": "2026-10-31",
+      "yayin": "2026-10-29",
+      "baslik": "Samsung: 2027 HBM kapasitesi önceden belirlenmiş fiyatlarla satıldı",
+      "detay": "Kazanç çağrısında DRAM ortalama fiyatının 3. çeyrekte ~%20, NAND'ın ~%10 arttığı, HBM4'ün toplam HBM gelirinin %60'ına ulaştığı söylendi. Samsung, DRAM arzının 2028'e kadar sıkı kalmasını bekliyor; 10 müşteriyle uzun vadeli anlaşma imzalandı.",
+      "kaynak": "KuCoin News (IT Home)",
+      "url": "https://www.kucoin.com/news/flash/samsung-electronics-hbm-capacity-sold-out-for-2027-memory-supply-to-remain-tight-in-2028",
+      "ton": "pozitif",
+      "konular": [
+        "bellek"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-31-moves-to-make-ai-chip-smuggling-to-china-a-crime",
+      "tarih": "2026-10-31",
+      "yayin": "2026-10-31",
+      "baslik": "Tayvan, Çin'e yapay zekâ çipi kaçakçılığını suç yapmaya hazırlanıyor",
+      "detay": "Ekonomi Bakanı Kung Ming-hsin, gelişmiş yarı iletkenleri ve yapay zekâ sunucularını Dış Ticaret Kanunu'ndaki kontrollü ürünler listesine ekleme planını açıkladı; yetkisiz ihracat uyarı yerine kovuşturmaya konu olacak. Değişikliğin meclisten geçmesi gerekiyor.",
+      "kaynak": "Startup Fortune",
+      "url": "https://startupfortune.com/taiwan-moves-to-make-ai-chip-smuggling-to-china-a-crime",
+      "ton": "notr",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-31-o-the-ai-data-center-race-is-now-a-race-to-power",
+      "tarih": "2026-10-31",
+      "yayin": "2026-10-30",
+      "baslik": "Veri merkezi yarışı artık bir enerji yarışı",
+      "detay": "Schneider Electric yöneticisinin görüş yazısına göre dünyada 2.500 GW üretim kapasitesi şebeke bağlantısı bekliyor; Avrupa'nın FLAP-D merkezlerinde bağlantı için bekleme ~10 yıla çıkabiliyor. Yılda 30 saatlik esneklik, ayrılabilecek kapasiteyi iki katından fazla artırabilir.",
+      "kaynak": "TechRadar",
+      "url": "https://www.techradar.com/pro/the-ai-data-center-race-is-now-a-race-to-power",
+      "ton": "notr",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-31-o-rising-risks-arent-slowing-the-ai-buildout-yet",
+      "tarih": "2026-10-31",
+      "yayin": "2026-10-30",
+      "baslik": "Çıkarım bulutlarına yeni sermaye: General Compute 100, Hyperbolic 30 milyon dolar",
+      "detay": "SiliconANGLE'ın haftalık analizine göre riskler artsa da yatırım sürüyor: Meta 95 milyar dolarlık hisse ihracı planlıyor, çıkarım bulutu girişimleri General Compute 100 milyon, Hyperbolic 30 milyon dolar topladı.",
+      "kaynak": "SiliconANGLE",
+      "url": "https://siliconangle.com/2026/10/30/as-anthropic-finally-files-for-ipo-rising-risks-arent-slowing-the-ai-buildout-yet",
+      "ton": "notr",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-10-31-ything-that-happened-in-ai-today-october-30-2026",
+      "tarih": "2026-10-31",
+      "yayin": "2026-10-30",
+      "baslik": "Anthropic: Claude kendi konuşmalarında kötüye kullanımı tespit edebiliyor",
+      "detay": "Anthropic'in raporuna göre model, daha güçlü bir sınıflandırıcının işaretlediği konuşmaların %78'ini ve yüksek öncelikli vakaların %94'ünü %1 yanlış pozitifle yakaladı. OpenAI de yetkisiz ajan davranışlarını izleyen sistemini genişletti.",
+      "kaynak": "The Neuron",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-october-30-2026/",
+      "ton": "notr",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
       "id": "2026-10-30-seeks-3-billion-financing-for-nvidia-chips-order",
       "tarih": "2026-10-30",
       "yayin": "2026-10-30",
@@ -4673,7 +4878,7 @@
       "kaynakTuru": "bugun"
     }
   ],
-  "guncelleme": "2026-10-30",
+  "guncelleme": "2026-10-31",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",

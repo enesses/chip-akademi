@@ -1,16 +1,16 @@
 {
-  "tarih": "2026-10-30",
-  "derlenme": "30 Ekim 2026",
+  "tarih": "2026-10-31",
+  "derlenme": "31 Ekim 2026",
   "puan": {
-    "etiket": "Bilanço şoku: Intel ve Amazon sonrası çip hisselerinde sert satış",
-    "yorum": "Intel'in zayıf rehberi ve Amazon'un 42 milyar dolarlık negatif nakit akışı, rekor bellek bilançolarının gölgesinde yapay zekâ harcamalarının finansmanına dair kaygıyı büyüttü; KOSPI'de devre kesici devreye girdi. Talep tarafı ise sağlam: AWS %39 büyüdü, Microsoft kapasite bulamadığı için harcamasını erteledi, bellek arzı 2028'e kadar sıkı kalacak.",
-    "deger": 35
+    "etiket": "Ekim sert kapandı: Intel 1974'ten bu yana en kötü gününü yaşadı",
+    "yorum": "Intel'in %29'luk çöküşü ve büyük teknoloji şirketlerinin yapay zekâ harcamalarına dair kaygı Nasdaq'ı %2,8 düşürdü; çip hisseleri geniş çaplı satıldı. Öte yandan Amazon'un Trainium'u dışarıya satma planı, Kanada'nın Cohere'e devlet yatırımı ve modüler veri merkezi üretimi, altyapı talebinin sürdüğünü gösteriyor.",
+    "deger": 37
   },
   "ozet": [
-    "Günün ana teması, güçlü talep ile yatırımcı sabrı arasındaki makas. Intel üçüncü çeyrekte beklentiyi aştı, veri merkezi geliri %78 büyüdü; ama bellek fiyatlarının vurduğu PC pazarı ve İsrail'deki Kiryat Gat fabrikasında yaşanan ölümcül patlama dördüncü çeyrek rehberini 15–16 milyar dolara çekti ve hisse mesai sonrası %21 düştü. Amazon tarafında AWS yaklaşık beş yılın en hızlı büyümesini (%39) yazdı, şirket çeyrekte 77 milyar doları aşan yatırım yaptı; fakat serbest nakit akışının −42,4 milyar dolara inmesi hisseyi aşağı çekti.",
-    "Bu iki sonuç, bir gün önceki Alphabet satışıyla birleşince Asya açılışında çip hisselerine ağır bir dalga olarak yansıdı: KOSPI %4,8'e kadar düştü, SK hynix %8,9 ve Samsung %6,3 geriledi, Seul'de program satışları beş dakika durduruldu. Yatırımcılar, büyük teknoloji şirketlerinin rekor harcamayı nasıl finanse edeceğine odaklanıyor.",
-    "Yine de arz-talep tablosu değişmiş değil. Microsoft, üçüncü taraf kapasite teslimatları geciktiği için çeyrek yatırımını 45,2 milyar dolarda bıraktı ve harcamanın yılın ikinci yarısına kayacağını söyledi; Samsung ve SK hynix 110 trilyon wonluk rekor ekipman yatırımına rağmen anlamlı arz artışını 2028'den önce beklemiyor. Equinix ise kıt kapasite ortamında rezervasyonlarını %35 artırdı.",
-    "Risk tarafında Nvidia yeniden Çin gündemiyle anıldı: New York Times'ın Megaspeed yöneticisine dair istihbarat iddiası, ihracat kontrolleri tartışmasını canlandırdı. Marvell'in Lumentum'u satın alma görüşmeleri ise optik bağlantının yapay zekâ altyapısındaki değerini teyit ederken alıcı hissesini %12 düşürdü."
+    "Ekim'in son işlem günü yarı iletken hisseleri için sert geçti. Intel, zayıf dördüncü çeyrek rehberi (15–16 milyar dolar gelir, 0,25 dolar hisse başı kâr) ve İsrail'deki fabrika kazası nedeniyle Cuma günü yaklaşık %29 değer kaybetti; TheStreet bunu 1974'ten bu yana hissenin en kötü günü olarak niteledi. Satış sektöre yayıldı: AMD %9'u aşan, TSMC ise açılışta %3,7'lik düşüş gördü.",
+    "Geniş piyasada Nasdaq %2,84, S&P 500 %1,83 geriledi. Amazon ve Alphabet bilançolarının ardından yatırımcılar, büyük teknoloji şirketlerinin yapay zekâ harcamalarının gelirle karşılanıp karşılanmayacağını sorguluyor. Brent petrolün 110 doların üzerinde kalması ve faiz beklentileri de baskıyı artırdı. Nvidia, 52 haftalık zirvesinin yaklaşık %12 altında.",
+    "Talep tarafında ise yatırım haberleri sürüyor. Amazon CEO'su Andy Jassy, Trainium çiplerinin 2027 sonundan itibaren dış müşterilere satılacağını söyledi; bu, Nvidia'nın hızlandırıcı pazarında yeni bir rakip anlamına geliyor. Kanada hükümeti Cohere'e 1,6 milyar Kanada dolarına kadar özkaynak yatırımı yapıyor; şirket karşılığında 2030'a kadar ülkede 1,7 milyar dolarlık bilgi işlem altyapısı kuracak.",
+    "Günün özeti: fiyatlar ile temeller arasındaki makas açılıyor. Hisse piyasası yapay zekâ yatırımlarının finansmanını sorgularken şirketler ve hükümetler kapasite kurmaya, Mistral gibi laboratuvarlar ise büyük açık modeller yayımlamaya devam ediyor."
   ],
   "yaklasan": [
     {
@@ -22,76 +22,76 @@
   ],
   "maddeler": [
     {
-      "baslik": "Intel %21 çöktü: zayıf 4. çeyrek rehberi ve İsrail fabrikasındaki patlama",
-      "detay": "3. çeyrek geliri %21 artışla 16,5 milyar dolar, düzeltilmiş EPS 0,52 dolar (beklenti 0,40). Ancak 4. çeyrek için 15–16 milyar dolar gelir ve 0,25 dolar EPS öngördü (beklenti 17,07 milyar ve 0,43). Kiryat Gat fabrikasındaki patlama iki çeyrekte ~600 milyon dolar gelir kaybı getirecek; hisse mesai sonrası %21 düştü.",
+      "baslik": "Intel Cuma günü %29 düştü: 1974'ten bu yana en kötü gün",
+      "detay": "Hisse, 4. çeyrek için 15–16 milyar dolar gelir ve 0,25 dolar EPS rehberinin (beklenti 17,1 milyar ve 0,43) ardından kapanışta ~%28,6 geriledi. CFO Zinsner PC yavaşlamasının en az 2027'nin ilk yarısına kadar süreceğini söyledi; istemci geliri %5 düşüşle 8,1 milyar dolar.",
       "kategori": "negatif",
       "agirlik": 3,
-      "neden": "Veri merkezi ve yapay zekâ geliri %78 artsa da bellek kıtlığının vurduğu PC pazarı ve üretim darboğazları rehberi aşağı çekti; satış tüm çip hisselerine yayıldı.",
-      "kaynak": "The Straits Times (Reuters)",
-      "url": "https://www.straitstimes.com/business/intel-shares-drop-21-on-israel-factory-blast-pc-weakness"
+      "neden": "Dünkü mesai sonrası düşüş kapanışta derinleşti; bellek fiyatlarının PC talebini vurması ve fabrika kesintisi sektör geneline satış getirdi.",
+      "kaynak": "Motley Fool (Yahoo Finance)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-intel-stock-crashed-friday-024146893.html"
     },
     {
-      "baslik": "Asya'da çip satışı: KOSPI %4,8 düştü, SK hynix %8,9 geriledi",
-      "detay": "30 Ekim sabahı KOSPI %4,77 düşüşle 5.654'e indi; SK hynix %8,91, Samsung %6,25 değer kaybetti. Seul'de program satışları 5 dakika durduruldu (sidecar). Nikkei %2,81, Tayvan TAIEX %2,80 geriledi.",
+      "baslik": "Nasdaq %2,84 düştü, VIX gün içinde %32 sıçradı",
+      "detay": "Ekim'in son gününde Nasdaq 25.442, S&P 500 7.579 (−%1,83) seviyesinde kapandı; hisselerin ~%70'i düştü. Alphabet %12,6, Reddit %29 geriledi; Brent 117,80 dolara çıktı.",
       "kategori": "negatif",
       "agirlik": 3,
-      "neden": "Rekor bilançolara rağmen Alphabet'in negatif nakit akışı, Amazon ve Intel'in hayal kırıklığı yaratan sonuçları yapay zekâ harcamalarının sürdürülebilirliğine dair kaygıyı bellek üreticilerine taşıdı.",
-      "kaynak": "BeInCrypto / Chosun Ilbo",
-      "url": "https://beincrypto.com/kospi-falls-harder-than-nikkei"
+      "neden": "Yapay zekâ harcamalarının getirisine dair şüphe ve yüksek petrol, teknoloji hisselerinde geniş çaplı satışa yol açtı.",
+      "kaynak": "TheStreet",
+      "url": "https://thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
     },
     {
-      "baslik": "AWS %39 büyüdü, Amazon çeyrekte 77 milyar dolar yatırım yaptı",
-      "detay": "AWS geliri yıllık %39 artışla 46,0 milyar dolar (beklenti 45,3), yıllık çalışma hızı 184 milyar dolar. Amazon çeyrekte 77 milyar doları aşan maddi duran varlık harcaması yaptı; serbest nakit akışı −42,4 milyar dolar. Toplam gelir ve EPS (1,89 $) beklentinin altında kaldı, hisse mesai sonrası %6'ya kadar düştü.",
+      "baslik": "TSMC açılışta %3,7, AMD %9,3 düştü",
+      "detay": "Teknoloji donanımı sektörü %4 geriledi; hacimde ilk üç hisse Intel (−%28,9), AMD (−%9,3) ve Apple (−%1,3). TSMC için 2 nm kaynaklı brüt marj gerilemesi (%67,7'den %66,4'e) ve 60–64 milyar dolarlık 2026 yatırımı risk olarak öne çıktı.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Satış, yapay zekâ çiplerinin en güçlü tedarikçilerine de sıçradı.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/news/market-movers/262260899-market-movers-tsm-20261030"
+    },
+    {
+      "baslik": "Nvidia 52 haftalık zirvesinin %12 altında",
+      "detay": "Yahoo Finance'e göre yatırımcılar büyük teknoloji şirketlerinin aşırı harcadığından ve 2027'de geri adım atabileceğinden endişe ediyor; Amazon'un son 12 aylık serbest nakit akışı −42 milyar doların altında.",
+      "kategori": "negatif",
+      "agirlik": 1,
+      "neden": "Yapay zekâ altyapısının en büyük tedarikçisi, harcama döngüsüne dair kaygıyı doğrudan fiyatlıyor.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-ai-sell-off-191429143.html"
+    },
+    {
+      "baslik": "Amazon, Trainium çiplerini 2027 sonundan itibaren dışarıya satacak",
+      "detay": "Andy Jassy kazanç çağrısında Trainium'un harici satışının ciddi bir iş kolu olacağını söyledi; Trainium ve Graviton yıllık 25 milyar doları aşan bir hızda. TorchNeuron açık kaynak yapıldı, AWS iş birikimi 578 milyar dolar.",
       "kategori": "pozitif",
       "agirlik": 2,
-      "neden": "Bulut büyümesinin yaklaşık beş yılın en hızlısı olması ve tahminleri aşan yatırım, çip ve veri merkezi talebi için olumlu; hisse tepkisi ise yatırımcıların nakit yakımına tahammülünün azaldığını gösteriyor.",
-      "kaynak": "Bloomberg / Amazon",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-29/amazon-spending-soars-on-effort-to-meet-demand-for-ai-services"
+      "neden": "Hızlandırıcı pazarına yeni bir tedarikçi ekleniyor; alıcı, fiyat ve hacim henüz açıklanmadı.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/10/30/amazon-says-it-will-start-selling-its-ai-chips-to-other-companies-in-2027/"
     },
     {
-      "baslik": "NYT: Megaspeed yöneticisi Çin istihbaratı adına Jensen Huang'a yaklaştı",
-      "detay": "New York Times'a göre ABD istihbaratı, Singapur merkezli Nvidia bulut ortağı Megaspeed'in yöneticisi Alice Huang'ı Çin istihbarat varlığı olarak değerlendirdi; şirket daha önce Nvidia çiplerini Çin'e yönlendirme şüphesiyle inceleniyordu. Nvidia, saptırma iddialarının 'incelenip çürütüldüğünü' ve görüşmelerin olağan olduğunu söyledi.",
-      "kategori": "negatif",
+      "baslik": "Kanada, Cohere'e 1,6 milyar dolara kadar ortak oluyor",
+      "detay": "Başbakanlık açıklamasına göre özkaynak yatırımı aşamalı yapılacak; Cohere genel merkezini Kanada'da tutacak, 2030'a kadar en az 1,7 milyar dolarlık bilgi işlem altyapısı kuracak ve 1.000 teknik iş yaratacak. Turda Nvidia, Bell ve Schwarz Group da var.",
+      "kategori": "pozitif",
       "agirlik": 2,
-      "neden": "İhracat kontrolleri ve Çin'e çip kaçakçılığı tartışmasını yeniden alevlendiriyor; dünkü DOJ haberinin ardından Nvidia üzerindeki düzenleyici baskıyı artırıyor.",
-      "kaynak": "CNBC",
-      "url": "https://www.cnbc.com/2026/10/29/nvidia-jensen-huang-chinese-intelligence-asset.html"
+      "neden": "Egemen yapay zekâ için kamu sermayesi, yeni veri merkezi ve çip talebi demek.",
+      "kaynak": "Kanada Başbakanlığı",
+      "url": "https://www.pm.gc.ca/en/news/news-releases/2026/10/29/canada-announces-landmark-investment-cohere-scale-secure-sovereign-ai"
     },
     {
-      "baslik": "Marvell, Lumentum'u satın almak için ileri görüşmelerde; hisse %12 düştü",
-      "detay": "Bloomberg'e göre Marvell, optik bileşen üreticisi Lumentum'u (piyasa değeri ~83 milyar dolar) almak için ileri aşamada; anlaşma gelecek hafta açıklanabilir. Marvell (~221 milyar dolar) hissesi %12 düştü, Lumentum %5'e kadar yükseldi.",
-      "kategori": "notr",
-      "agirlik": 2,
-      "neden": "Yapay zekâ kümelerinde optik bağlantının önemini teyit ediyor; ancak alıcı tarafın hissesindeki sert düşüş, yatırımcıların büyük satın alma maliyetinden çekindiğini gösteriyor.",
-      "kaynak": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/article/lumentum-stock-rises-on-report-of-possible-merger-with-marvell-135945155.html"
-    },
-    {
-      "baslik": "Microsoft'un yatırımı 45,2 milyar dolarda kaldı: dış kapasite teslimatları gecikti",
-      "detay": "Microsoft 1. mali çeyrekte 45,2 milyar dolar yatırım yaptı; bazı üçüncü taraf kapasite teslimatları ertelendi. Harcamanın yaklaşık dörtte üçü CPU/GPU gibi kısa ömürlü varlıklara gitti. 2. çeyrekte 50 milyar doların üzerinde, takvim yılında ~170 milyar dolar bekleniyor; artışın bir kısmı yüksek bellek ve depolama maliyetinden.",
-      "kategori": "notr",
-      "agirlik": 2,
-      "neden": "Talep güçlü ama veri merkezi kapasitesi zamanında gelmiyor; gecikme harcamayı yılın ikinci yarısına kaydırıyor.",
-      "kaynak": "Microsoft Yatırımcı İlişkileri",
-      "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
-    },
-    {
-      "baslik": "Samsung ve SK hynix 110 trilyon won yatırıyor, arz artışı 2028'e kaydı",
-      "detay": "İki şirket 2026'da tarihlerinin en büyük ekipman yatırımını (toplam ~110 trilyon won) yapıyor; ancak bellek arzındaki artışın 2028'den önce gerçekleşmesi beklenmiyor.",
-      "kategori": "notr",
-      "agirlik": 2,
-      "neden": "Bellek üreticileri için fiyat gücünün sürmesi anlamına geliyor; GPU, sunucu ve PC alıcıları için ise yüksek bellek maliyetinin uzun süre kalacağına işaret.",
-      "kaynak": "DIGITIMES",
-      "url": "https://www.digitimes.com/news/a20261029PD208.html"
-    },
-    {
-      "baslik": "Equinix rehberini üçüncü kez yükseltti, rezervasyonlar %35 arttı",
-      "detay": "Equinix 3. çeyrekte 2,571 milyar dolar gelir (+%11) ve rekor 533 milyon dolar yıllıklandırılmış brüt rezervasyon (+%35) açıkladı; 2026 gelir rehberini 10,325–10,365 milyar dolara çıkardı. Nvidia ve Together AI ile Inference Exchange'i duyurdu.",
+      "baslik": "Romanya'da veri merkezleri bantta üretilecek",
+      "detay": "Runware, Sonic Inference Pod modüler veri merkezlerini fabrikada üretmeyi ve 2028'e kadar günde ~30 MW (ayda ~1 GW) kapasiteye ulaşmayı hedefliyor. 60 milyon doları aşan yatırım aldı, 1 milyar dolarlık taahhüt edilmiş ilgi bildiriyor.",
       "kategori": "pozitif",
       "agirlik": 1,
-      "neden": "Veri merkezi kapasitesinin kıt olduğu ortamda kurumsal yapay zekâ çıkarım talebinin ve fiyatlama gücünün arttığını gösteriyor.",
-      "kaynak": "Equinix",
-      "url": "https://investor.equinix.com/news-events/press-releases/detail/1128/equinix-reports-third-quarter-results-and-raises-2026"
+      "neden": "Kurulum süresini aylara indirmeyi vaat ediyor; ancak uygulama riski yüksek ve ağ tarafında Nvidia'ya bağımlı.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/"
+    },
+    {
+      "baslik": "Mistral, trilyon parametreli Large 4'ün ağırlıklarını yayımladı",
+      "detay": "Model Hugging Face'te açık ağırlıklı olarak sunuldu ve siber savunmayı hedefliyor; Mistral, GLM-5.3'e göre görev başına %47 daha az token kullandığını söylüyor.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Büyük açık modeller şirket içi (on-prem) GPU talebini artırabilir, ama haber doğrudan çip pazarını hareket ettirmiyor.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
     }
   ],
   "yontem": {
@@ -99,6 +99,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = -5 · Σ ağırlık = 17 · Puan = 50 + 50 × -0.29 = 35"
+    "hesap": "Σ ağırlık×işaret = -4 · Σ ağırlık = 15 · Puan = 50 + 50 × -0.27 = 37"
   }
 }
