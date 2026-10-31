@@ -74,7 +74,9 @@ Hepsi okunduysa dosyayı yazmana gerek yok.
   bağlantıyla yaz. Betik aynı bağlantıyı ya da aynı başlığı önceki iki günle karşılaştırır,
   tekrarı işaretler ve **puana katmaz**.
 - 8–12 madde. Her madde: `baslik`, `detay` (somut isim/rakam), `kategori` (`pozitif|notr|negatif`), `agirlik` (1–3 tam sayı), `neden` (neden bu kategori), `kaynak`, `url` (gerçek, açılan bağlantı).
-- `ozet`: 3–4 paragraf, günün ana temasını bağlayan anlatı. `puan.etiket` ve `puan.yorum` yaz; `puan.deger` yazmana gerek yok — betik formülle hesaplar.
+- `ozet`: 3–4 paragraf, günün ana temasını bağlayan anlatı. **Paragraf dizisi** olarak yaz
+  (`"ozet": ["1. paragraf…", "2. paragraf…"]`); tek bir metin olarak yazılan özet
+  `veri-isle.mjs` tarafından "özet eksik" hatasıyla reddedilir (30 Ekim'de oldu). `puan.etiket` ve `puan.yorum` yaz; `puan.deger` yazmana gerek yok — betik formülle hesaplar.
 - İsteğe bağlı `yaklasan`: haberlerde geçen ve tarihi kaynağında doğrulanmış **ileri
   tarihli** olaylar (bilanço açıklaması, ürün lansmanı, konferans), en fazla 8:
   `"yaklasan": [{ "tarih": "YYYY-MM-DD", "baslik": "Samsung 3. çeyrek sonuçları", "kaynak": "Reuters", "url": "https://…" }]`.
