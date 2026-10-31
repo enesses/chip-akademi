@@ -40,26 +40,29 @@ export default function Haberler() {
   const [gunSiniri, setGunSiniri] = useState(ILK_GUN);
 
   const tum = data.haberler || [];
+  // Ton ve arama süzgecinden geçen haberler; konu sekmelerindeki sayılar bunlardan sayılır.
+  const tonVeAramayla = useMemo(() => {
+    const q = sadelestir(sorgu);
+    return tum.filter((h) =>
+      (ton === "hepsi" || h.ton === ton) &&
+      (!q || q.split(" ").every((k) => sadelestir(`${h.baslik} ${h.detay} ${h.kaynak}`).includes(k))));
+  }, [tum, ton, sorgu]);
   const sayilar = useMemo(() => {
-    const s = { hepsi: tum.length };
-    for (const h of tum) for (const k of h.konular) s[k] = (s[k] || 0) + 1;
+    const s = { hepsi: tonVeAramayla.length };
+    for (const h of tonVeAramayla) for (const k of h.konular) s[k] = (s[k] || 0) + 1;
     return s;
-  }, [tum]);
+  }, [tonVeAramayla]);
   const kaynakSayisi = useMemo(() => new Set(tum.map((h) => h.kaynak.split(/[(;]/)[0].trim())).size, [tum]);
 
   const gunler = useMemo(() => {
-    const q = sadelestir(sorgu);
-    const liste = tum.filter((h) =>
-      (konu === "hepsi" || h.konular.includes(konu)) &&
-      (ton === "hepsi" || h.ton === ton) &&
-      (!q || q.split(" ").every((k) => sadelestir(`${h.baslik} ${h.detay} ${h.kaynak}`).includes(k))));
+    const liste = tonVeAramayla.filter((h) => konu === "hepsi" || h.konular.includes(konu));
     const g = new Map();
     for (const h of liste) {
       if (!g.has(h.tarih)) g.set(h.tarih, []);
       g.get(h.tarih).push(h);
     }
     return [...g.entries()];
-  }, [tum, konu, ton, sorgu]);
+  }, [tonVeAramayla, konu]);
 
   const filtreVar = konu !== "hepsi" || ton !== "hepsi" || sorgu;
   // Filtre ya da aramada tüm günler taranır; düz akışta ilk günler gösterilir.
