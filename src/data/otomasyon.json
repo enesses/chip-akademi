@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-01T07:02:39.257Z",
+  "guncelleme": "2026-11-01T07:04:45.601Z",
   "tarih": "2026-11-01",
   "durum": "dikkat",
   "ajanlar": [
@@ -69,7 +69,28 @@
       "alan": "bugün"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-11-01",
+      "oneri": "Fiyat tablosunda Değişim sıralamasına 'en çok düşen önce' yönü ekle",
+      "durum": "birlesti",
+      "pr": 68,
+      "dal": "otomasyon/oneri-2026-11-01-1",
+      "ozet": "Fiyat tablosuna 'Değişim ↓' sıralama düğmesi eklendi; en çok düşen modeller önce listeleniyor.",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-01",
+      "oneri": "Ölçüm tarihi olmayan fiyatları da 'eski' olarak işaretle",
+      "durum": "birlesti",
+      "pr": 69,
+      "dal": "otomasyon/oneri-2026-11-01-2",
+      "ozet": "Ölçüm tarihi kayıtlı olmayan fiyatlar tabloda 'ölçüm tarihi yok' notuyla işaretleniyor.",
+      "neden": null,
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
@@ -412,6 +433,20 @@
       "durum": "birlesti",
       "pr": 67,
       "tarih": "2026-10-31",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyat tablosunda Değişim sıralamasına 'en çok düşen önce' yönü ekle",
+      "durum": "birlesti",
+      "pr": 68,
+      "tarih": "2026-11-01",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Ölçüm tarihi olmayan fiyatları da 'eski' olarak işaretle",
+      "durum": "birlesti",
+      "pr": 69,
+      "tarih": "2026-11-01",
       "kim": "otomasyon"
     }
   ],
