@@ -110,6 +110,8 @@ export default function Prices() {
     if (sort === "fiyat") liste = [...liste].sort((a, b) => (b.usd_saat ?? -1) - (a.usd_saat ?? -1));
     if (sort === "gb") liste = [...liste].sort((a, b) => (a.usd_saat && a.vram_gb ? a.usd_saat/a.vram_gb : 1e9) - (b.usd_saat && b.vram_gb ? b.usd_saat/b.vram_gb : 1e9));
     if (sort === "degisim") liste = [...liste].sort((a, b) => (b.degisim_pct ?? -999) - (a.degisim_pct ?? -999));
+    // "En çok düşen önce": değişimi olmayan modeller her iki yönde de sona kalır.
+    if (sort === "dusen") liste = [...liste].sort((a, b) => (a.degisim_pct ?? 999) - (b.degisim_pct ?? 999));
     return liste;
   }, [q, sort, cokSaglayici, uretici, fiyatsizGoster]);
 
@@ -196,8 +198,8 @@ export default function Prices() {
             <Input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Model ara…" className="pl-8 h-9 text-sm" data-testid="fiyat-arama" />
           </div>
           <div className="flex gap-1.5">
-            {[["fiyat","$/saat"],["gb","$/GB"],["degisim","Değişim"]].map(([id,label]) => (
-              <button key={id} onClick={() => setSort(id)} className={cn("px-2.5 py-1 rounded-md text-xs font-medium border", sort===id ? "bg-primary text-primary-foreground border-primary" : "bg-card text-muted-foreground border-border")}>{label}</button>
+            {[["fiyat","$/saat"],["gb","$/GB"],["degisim","Değişim ↑"],["dusen","Değişim ↓"]].map(([id,label]) => (
+              <button key={id} onClick={() => setSort(id)} aria-pressed={sort===id} data-testid={`fiyat-sirala-${id}`} title={id==="degisim" ? "En çok artan önce" : id==="dusen" ? "En çok düşen önce" : undefined} className={cn("px-2.5 py-1 rounded-md text-xs font-medium border", sort===id ? "bg-primary text-primary-foreground border-primary" : "bg-card text-muted-foreground border-border")}>{label}</button>
             ))}
           </div>
           <button type="button" onClick={() => setCokSaglayici((v) => !v)} aria-pressed={cokSaglayici} data-testid="fiyat-saglayici-filtre" title={`Yalnızca en az ${MIN_SAGLAYICI} sağlayıcının listelediği modeller`} className={cn("px-2.5 py-1 rounded-md text-xs font-medium border", cokSaglayici ? "bg-primary text-primary-foreground border-primary" : "bg-card text-muted-foreground border-border")}>
