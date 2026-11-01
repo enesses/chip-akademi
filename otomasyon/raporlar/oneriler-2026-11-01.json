@@ -1,0 +1,29 @@
+{
+  "tarih": "2026-11-01",
+  "oneriler": [
+    {
+      "baslik": "Fiyat tablosunda Değişim sıralamasına 'en çok düşen önce' yönü ekle",
+      "neden": "src/pages/Prices.jsx:112 değişimi yalnızca azalan sırada (en çok artan önce) sıralıyor. Bugünkü çekimde en büyük hareketler düşüş yönünde (RTX PRO 5000 −%45,3, GH200 −%42,6); kullanıcı bunları görmek için listenin sonuna inmek zorunda.",
+      "etki": "orta",
+      "alan": "fiyatlar"
+    },
+    {
+      "baslik": "Ölçüm tarihi olmayan fiyatları da 'eski' olarak işaretle",
+      "neden": "src/data/gpu_kiralama.json'da Nvidia P2000 0,03 $/saat fiyatla ama olcum_tarihi olmadan duruyor; kaynak bugün bu model için fiyat vermedi. Prices.jsx:247'deki 'fiyat-eski' rozeti r.olcum_tarihi şartına bağlı olduğundan bu satır güncel fiyat gibi görünüyor.",
+      "etki": "düşük",
+      "alan": "fiyatlar"
+    },
+    {
+      "baslik": "Kaynakta 14 günden uzun süredir gelmeyen fiyatları tabloda 'fiyat yok' say",
+      "neden": "Bugünkü yenilemede 14 model gelmedi; RTX 5880 Ada, RTX 4500 Ada, P40, GTX 1070 Ti ve RTX 2060 Super'in fiyatı 2026-10-12 ölçümünden (20 gün önce) taşınıyor. getdeploying.com/gpus bu modellerde artık medyan göstermiyor. Eşik otomasyon/veri-isle.mjs'de (korunan dosya) uygulanmalı.",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Bugün puan kartında dünkü puana göre değişimi göster",
+      "neden": "Bugün puanı 34, dün 37 (otomasyon/gecmis/bugun-2026-10-31.json); src/data/bugun.json'da önceki puan alanı yok ve Bugun.jsx'te karşılaştırma yapılmıyor. veri-isle.mjs'nin gecmis'ten 'onceki_puan' yazması ve kartın farkı göstermesi gerekiyor (korunan dosyaya dokunur).",
+      "etki": "orta",
+      "alan": "bugün"
+    }
+  ]
+}

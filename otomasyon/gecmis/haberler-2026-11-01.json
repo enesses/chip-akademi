@@ -1,0 +1,76 @@
+{
+  "tarih": "2026-11-01",
+  "haberler": [
+    {
+      "baslik": "SK hynix: bellek arz kısıtı 2030'a kadar sürebilir",
+      "detay": "Semiconductor Engineering'in haftalık özetine göre SK hynix DRAM ve HBM hacimlerinin 2029'a kadar fiilen satıldığını, Samsung ise 2027 HBM arzının tükendiğini söyledi. SK hynix 3. çeyrek geliri rekor 104,6 trilyon won (%328 artış).",
+      "kaynak": "Semiconductor Engineering",
+      "url": "https://semiengineering.com/chip-industry-week-in-review-162",
+      "yayin": "2026-10-30",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Intel kaynaklı satış yarı iletkenlerden bir günde ~1 trilyon dolar sildi",
+      "detay": "SOX endeksi %9,14 düşüşle 10.465 puana indi; Arm %12,7, AMD %12,5, Qualcomm %12,1, ASML %8,1, Micron %7,3 geriledi. Nvidia %5,7 düşüşle ~270 milyar dolar değer kaybetti.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/pc-components/cpus/intels-woes-wipe-out-usd1-trillion-of-semiconductor-market-cap-in-one-day-pc-market-bloodbath-leaves-few-chip-stocks-unscathed",
+      "yayin": "2026-10-30",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "TrendForce: Intel EMIB paketlemesine Google 2027'de geçebilir",
+      "detay": "Intel CEO'su Lip-Bu Tan önümüzdeki iki çeyrekte birkaç EMIB müşterisi duyurusu beklediğini söyledi; TrendForce, Google'ın TPU v9 serisinde EMIB-T kullanmasını ve AWS'nin teknolojiyi test ettiğini aktarıyor. Intel 2026 sermaye harcaması tahminini 18'den 20 milyar dolara çıkardı.",
+      "kaynak": "TrendForce",
+      "url": "https://www.trendforce.com/news/2026/10/30/news-intels-mixed-3q26-pc-israel-fab-weigh-on-guidance-but-emib-brightens-as-a-couple-of-customers-near-announcement/",
+      "yayin": "2026-10-30",
+      "konular": [
+        "cip"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "AMD 3 Kasım'da sonuç açıklıyor; Intel'in PC uyarısı gölge düşürüyor",
+      "detay": "AMD hissesi 30 Ekim'de ~%11 düşüşle 504,80 dolara indi. Counterpoint, küresel PC sevkiyatlarının 3. çeyrekte %21 düştüğünü ve 4. çeyrekte %27 düşmesini bekliyor; AMD'nin sunucu CPU payı %27,3'ten %34,5'e çıktı.",
+      "kaynak": "Motley Fool",
+      "url": "https://fool.com/investing/2026/10/31/intel-has-a-massive-warning-for-amd-stock-investors-is-it-time-to-book-profits-before-nov-3",
+      "yayin": "2026-10-31",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Nvidia'nın ağ geliri çeyreklik 17,5 milyar doları aşarak Cisco'yu geçti",
+      "detay": "The Register'ın derlemesine göre Nvidia'nın 2. çeyrek ağ geliri 17,5 milyar doları aştı; Cisco'nun tüm ürün geliri 17,3 milyar dolardı. Dell'Oro'ya göre NVSwitch artık ağ gelirinin yaklaşık üçte biri.",
+      "kaynak": "The Register",
+      "url": "https://theregister.com/networks/2026/10/31/backbone-of-a-beast-charting-nvidias-rise-to-networking-titan/5306499",
+      "yayin": "2026-10-31",
+      "konular": [
+        "cip",
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Amazon rekor marja rağmen satıldı: sermaye harcaması 77,3 milyar dolar",
+      "detay": "Amazon 3. çeyrekte 201,9 milyar dolar gelir ve %13,9 faaliyet marjı açıkladı; AWS %39,3 büyüdü, iş birikimi 578 milyar dolar. Çeyreklik sermaye harcaması ~%120 artışla 77,3 milyar dolara çıktı, son 12 ay serbest nakit akışı eksi 42,4 milyar dolar.",
+      "kaynak": "DEV Community (AI Daily Digest)",
+      "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-october-31-2026-grok-bot-gets-a-wallet-cloud-earnings-diverge-flaws-hit-five-14m7",
+      "yayin": "2026-10-31",
+      "konular": [
+        "veri-merkezi",
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    }
+  ]
+}

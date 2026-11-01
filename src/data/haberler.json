@@ -2,6 +2,231 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-11-01-hipments-stall-during-largest-shortage-in-memory",
+      "tarih": "2026-11-01",
+      "yayin": null,
+      "baslik": "Intel'in İsrail'deki Fab 28 tesisinde ölümcül patlama: 600 milyon dolarlık kayıp",
+      "detay": "Kiryat Gat'teki Fab 28'de ekim ortasındaki patlamada iki kişi öldü, bir kişi ağır yaralandı; tesis yaklaşık iki hafta kapalı kaldı. Intel ~600 milyon dolar gelir kaybı (300 milyonu 4Ç26'da) ve 4. çeyrekte ~2 puanlık brüt marj kaybı bekliyor; ağırlıkla 10nm Xeon sunucu işlemcileri etkileniyor.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://tomshardware.com/pc-components/cpus/deadly-intel-fab-28-explosion-causes-two-week-shutdown-to-cost-usd600-million-and-severely-disrupt-server-chip-manufacturing-for-six-months-10nm-xeon-shipments-stall-during-largest-shortage-in-memory",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-01-i-reportedly-lowers-funding-target-for-new-round",
+      "tarih": "2026-11-01",
+      "yayin": null,
+      "baslik": "OpenAI yatırım turu hedefini 30 milyardan 20 milyar dolara indirdi",
+      "detay": "Financial Times'a göre OpenAI yeni tur hedefini 20 milyar dolara çekti; ilk kapanışın bunun da altında kalması bekleniyor. WSJ şimdiye kadar 11 milyar dolar toplandığını ve bazı büyük yatırımcıların ilgisinin zayıf kaldığını yazdı. Değerleme hedefi daha önce 1,4'ten 1,25 trilyon dolara inmişti.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
+      "ton": "negatif",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-01-gner-for-nscales-ai-data-center-in-west-virginia",
+      "tarih": "2026-11-01",
+      "yayin": null,
+      "baslik": "Nvidia, Nscale'in West Virginia veri merkezi borcuna kefil olmayı tartışıyor",
+      "detay": "Nvidia, Anthropic'in 44,6 milyar dolarlık sözleşmeyle kiraladığı 460 MW'lık ilk bina için 'milyarlarca dolarlık' borca garanti vermeyi görüşüyor. Nvidia'nın neocloud'lara ve büyük müşterilere verdiği yatırım ve kredi desteği toplamı ~170 milyar dolar.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia",
+      "ton": "notr",
+      "konular": [
+        "cip",
+        "yapay-zeka",
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-01-r-ends-with-a-thud-for-intel-reddit-ai-stalwarts",
+      "tarih": "2026-11-01",
+      "yayin": null,
+      "baslik": "Nasdaq Ekim'i Mart 2025'ten bu yana en kötü ayla kapattı",
+      "detay": "Cuma seansında Nasdaq Composite Haziran'dan bu yana en büyük düşüşünü yaşadı ve zirvesinin %7,8 altında kapandı; Nasdaq 100 %3,5 düşerek %10'luk düzeltme eşiğine yaklaştı. Sandisk %13 geriledi, Microsoft, Meta, Amazon ve Alphabet %1–2 düştü.",
+      "kaynak": "The Star (Reuters)",
+      "url": "https://www.thestar.com.my/tech/tech-news/2026/10/31/october-ends-with-a-thud-for-intel-reddit-ai-stalwarts",
+      "ton": "negatif",
+      "konular": [
+        "bellek"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-01-ices-q4-2026-trendforce-ddr5-450-micron-54b-2026",
+      "tarih": "2026-11-01",
+      "yayin": null,
+      "baslik": "Bellek sözleşme fiyatları 4. çeyrekte artmaya devam ediyor",
+      "detay": "TrendForce verisine göre klasik DRAM sözleşme fiyatlarının 4Ç26'da çeyreklik %10–15, NAND'ın %15–20 artması bekleniyor; 20 Ekim notu karma DRAM artışını %20'ye yakın veriyor. ABD'de 32 GB DDR5-6000 kit ekim ortasında 429–450 dolara satıldı.",
+      "kaynak": "Shattered (TrendForce verisi)",
+      "url": "https://shattered.io/dram-prices-q4-2026-trendforce-ddr5-450-micron-54b-2026/",
+      "ton": "pozitif",
+      "konular": [
+        "bellek"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-01-centers-are-now-a-midterm-issue-even-in-brooklyn",
+      "tarih": "2026-11-01",
+      "yayin": null,
+      "baslik": "Veri merkezleri ABD ara seçimlerinde gündem maddesi oldu",
+      "detay": "Data Center Watch'a göre 2026'nın ilk yarısında yerel ve siyasi muhalefet yüzünden yaklaşık 200 milyar dolarlık veri merkezi projesi ertelendi, durduruldu ya da engellendi. Konu 3 Kasım seçimi öncesinde Brooklyn'de bile tartışılıyor.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/",
+      "ton": "negatif",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-01-ng-an-agentic-cpu-benchmark-and-a-primer-to-llms",
+      "tarih": "2026-11-01",
+      "yayin": null,
+      "baslik": "Nvidia Vera CPU genel kullanıma açıldı, Oracle OCI'da tek başına sunuluyor",
+      "detay": "Normalde NVL72 rafında GPU'ların yanında yer alan Vera CPU artık genel kullanımda; OCI süper kümelerinde bağımsız Vera örnekleri de sunuluyor. Tom's Hardware testinde Vera, çift Xeon 6 sunucusuna göre bellek bant genişliğinde belirgin üstünlük gösterdi.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://tomshardware.com/tech-industry/this-week-in-toms-hardware-premium-october-31-2026-vera-cpus-available-on-oracle-clusters-building-an-agentic-cpu-benchmark-and-a-primer-to-llms",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "cip",
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-01-ta-center-satellite-is-online-and-writing-poetry",
+      "tarih": "2026-11-01",
+      "yayin": null,
+      "baslik": "Google'ın ilk veri merkezi uydusu Suncatcher yörüngede çalışıyor",
+      "detay": "Planet Labs'in ürettiği uydu dört Google TPU taşıyor (aynı anda biri çalışabiliyor), en fazla 1 kW güç üretiyor ve Gemma 4 modelini çalıştırıyor; TPU'lar seferde ~20 dakika açık kalabiliyor. 2027'de daha güçlü çipli iki uydu daha fırlatılacak.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-01--the-company-doesnt-want-to-ship-ai-for-ais-sake",
+      "tarih": "2026-11-01",
+      "yayin": null,
+      "baslik": "Apple CEO'su Ternus: yapay zekâyı salt yapay zekâ olsun diye çıkarmayacağız",
+      "detay": "Eylül'de göreve gelen John Ternus, Wired'a verdiği röportajda Apple'ın yapay zekâdaki konumundan memnun olduğunu, yeni ürünlerde yapay zekâdan yararlanacaklarını ama kullanıcının bunu ayrıca düşünmek zorunda kalmaması gerektiğini söyledi.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+      "ton": "notr",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-01-engineering-com-chip-industry-week-in-review-162",
+      "tarih": "2026-11-01",
+      "yayin": "2026-10-30",
+      "baslik": "SK hynix: bellek arz kısıtı 2030'a kadar sürebilir",
+      "detay": "Semiconductor Engineering'in haftalık özetine göre SK hynix DRAM ve HBM hacimlerinin 2029'a kadar fiilen satıldığını, Samsung ise 2027 HBM arzının tükendiğini söyledi. SK hynix 3. çeyrek geliri rekor 104,6 trilyon won (%328 artış).",
+      "kaynak": "Semiconductor Engineering",
+      "url": "https://semiengineering.com/chip-industry-week-in-review-162",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-01-arket-bloodbath-leaves-few-chip-stocks-unscathed",
+      "tarih": "2026-11-01",
+      "yayin": "2026-10-30",
+      "baslik": "Intel kaynaklı satış yarı iletkenlerden bir günde ~1 trilyon dolar sildi",
+      "detay": "SOX endeksi %9,14 düşüşle 10.465 puana indi; Arm %12,7, AMD %12,5, Qualcomm %12,1, ASML %8,1, Micron %7,3 geriledi. Nvidia %5,7 düşüşle ~270 milyar dolar değer kaybetti.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/pc-components/cpus/intels-woes-wipe-out-usd1-trillion-of-semiconductor-market-cap-in-one-day-pc-market-bloodbath-leaves-few-chip-stocks-unscathed",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-01-htens-as-a-couple-of-customers-near-announcement",
+      "tarih": "2026-11-01",
+      "yayin": "2026-10-30",
+      "baslik": "TrendForce: Intel EMIB paketlemesine Google 2027'de geçebilir",
+      "detay": "Intel CEO'su Lip-Bu Tan önümüzdeki iki çeyrekte birkaç EMIB müşterisi duyurusu beklediğini söyledi; TrendForce, Google'ın TPU v9 serisinde EMIB-T kullanmasını ve AWS'nin teknolojiyi test ettiğini aktarıyor. Intel 2026 sermaye harcaması tahminini 18'den 20 milyar dolara çıkardı.",
+      "kaynak": "TrendForce",
+      "url": "https://www.trendforce.com/news/2026/10/30/news-intels-mixed-3q26-pc-israel-fab-weigh-on-guidance-but-emib-brightens-as-a-couple-of-customers-near-announcement/",
+      "ton": "pozitif",
+      "konular": [
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-01-nvestors-is-it-time-to-book-profits-before-nov-3",
+      "tarih": "2026-11-01",
+      "yayin": "2026-10-31",
+      "baslik": "AMD 3 Kasım'da sonuç açıklıyor; Intel'in PC uyarısı gölge düşürüyor",
+      "detay": "AMD hissesi 30 Ekim'de ~%11 düşüşle 504,80 dolara indi. Counterpoint, küresel PC sevkiyatlarının 3. çeyrekte %21 düştüğünü ve 4. çeyrekte %27 düşmesini bekliyor; AMD'nin sunucu CPU payı %27,3'ten %34,5'e çıktı.",
+      "kaynak": "Motley Fool",
+      "url": "https://fool.com/investing/2026/10/31/intel-has-a-massive-warning-for-amd-stock-investors-is-it-time-to-book-profits-before-nov-3",
+      "ton": "notr",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-01-harting-nvidias-rise-to-networking-titan-5306499",
+      "tarih": "2026-11-01",
+      "yayin": "2026-10-31",
+      "baslik": "Nvidia'nın ağ geliri çeyreklik 17,5 milyar doları aşarak Cisco'yu geçti",
+      "detay": "The Register'ın derlemesine göre Nvidia'nın 2. çeyrek ağ geliri 17,5 milyar doları aştı; Cisco'nun tüm ürün geliri 17,3 milyar dolardı. Dell'Oro'ya göre NVSwitch artık ağ gelirinin yaklaşık üçte biri.",
+      "kaynak": "The Register",
+      "url": "https://theregister.com/networks/2026/10/31/backbone-of-a-beast-charting-nvidias-rise-to-networking-titan/5306499",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-01-allet-cloud-earnings-diverge-flaws-hit-five-14m7",
+      "tarih": "2026-11-01",
+      "yayin": "2026-10-31",
+      "baslik": "Amazon rekor marja rağmen satıldı: sermaye harcaması 77,3 milyar dolar",
+      "detay": "Amazon 3. çeyrekte 201,9 milyar dolar gelir ve %13,9 faaliyet marjı açıkladı; AWS %39,3 büyüdü, iş birikimi 578 milyar dolar. Çeyreklik sermaye harcaması ~%120 artışla 77,3 milyar dolara çıktı, son 12 ay serbest nakit akışı eksi 42,4 milyar dolar.",
+      "kaynak": "DEV Community (AI Daily Digest)",
+      "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-october-31-2026-grok-bot-gets-a-wallet-cloud-earnings-diverge-flaws-hit-five-14m7",
+      "ton": "notr",
+      "konular": [
+        "veri-merkezi",
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
       "id": "2026-10-31-es-why-intel-stock-crashed-friday-024146893-html",
       "tarih": "2026-10-31",
       "yayin": null,
@@ -4878,7 +5103,7 @@
       "kaynakTuru": "bugun"
     }
   ],
-  "guncelleme": "2026-10-31",
+  "guncelleme": "2026-11-01",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",

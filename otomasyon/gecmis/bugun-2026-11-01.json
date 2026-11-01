@@ -1,0 +1,113 @@
+{
+  "tarih": "2026-11-01",
+  "derlenme": "1 Kasım 2026",
+  "puan": {
+    "etiket": "Hafta sonu bilançosu: fabrika kazası, finansman soğuması",
+    "yorum": "Intel'in Fab 28 patlaması, OpenAI'ın küçülen yatırım turu ve Nasdaq'ın kötü Ekim kapanışı ağır basıyor; bellek fiyatlarındaki artış ve Nvidia'nın yeni CPU'su gibi gelişmeler talebin tamamen sönmediğini gösteriyor.",
+    "deger": 34
+  },
+  "ozet": [
+    "Ekim'in son haftası yarı iletkenler için ağır geçti ve hafta sonuna gelen haberler, sert satışın arkasındaki kaygıları somutlaştırdı. Intel'in İsrail'deki Fab 28 tesisinde iki kişinin öldüğü patlama, yaklaşık 600 milyon dolarlık gelir kaybı ve altı ay sürebilecek sunucu işlemcisi aksaması anlamına geliyor; bu, bellek kıtlığının zaten sıkıştırdığı sunucu tedarik zincirine ikinci bir darbe.",
+    "Finansman tarafında soğuma belirgin: OpenAI yeni turun hedefini 30 milyardan 20 milyar dolara indirdi ve şu ana kadar 11 milyar dolar topladığı bildiriliyor. Aynı günlerde Nvidia'nın, Anthropic'in kiraladığı 460 MW'lık Nscale binasının borcuna kefil olmayı tartışması, talebin sürdüğünü ama finansmanın giderek çip üreticisinin bilançosuna yaslandığını gösteriyor. Nasdaq Ekim'i Mart 2025'ten bu yana en kötü ayla kapattı.",
+    "Fiziksel kısıtlar da gündemde: ABD'de yerel muhalefet yüzünden yılın ilk yarısında ~200 milyar dolarlık veri merkezi projesi ertelendi ya da durdu ve konu 3 Kasım ara seçimlerinin bir parçası oldu. Buna karşın bellek fiyatları yükselmeye devam ediyor; TrendForce 4. çeyrekte DRAM sözleşme fiyatlarında %10–15, NAND'da %15–20 artış bekliyor.",
+    "Olumlu cephede Nvidia'nın Vera CPU'su genel kullanıma açılıp Oracle'da tek başına sunulmaya başladı, Google'ın TPU taşıyan ilk veri merkezi uydusu çalışır hale geldi. Gözler şimdi 3 Kasım'daki AMD sonuçlarında: Intel'in zayıf PC görünümünün AMD'ye yansıyıp yansımayacağı haftanın ilk sınavı olacak."
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2026-11-03",
+      "baslik": "AMD 3. çeyrek sonuçları (borsa kapanışı sonrası)",
+      "kaynak": "Motley Fool",
+      "url": "https://fool.com/investing/2026/10/31/intel-has-a-massive-warning-for-amd-stock-investors-is-it-time-to-book-profits-before-nov-3"
+    }
+  ],
+  "maddeler": [
+    {
+      "baslik": "Intel'in İsrail'deki Fab 28 tesisinde ölümcül patlama: 600 milyon dolarlık kayıp",
+      "detay": "Kiryat Gat'teki Fab 28'de ekim ortasındaki patlamada iki kişi öldü, bir kişi ağır yaralandı; tesis yaklaşık iki hafta kapalı kaldı. Intel ~600 milyon dolar gelir kaybı (300 milyonu 4Ç26'da) ve 4. çeyrekte ~2 puanlık brüt marj kaybı bekliyor; ağırlıkla 10nm Xeon sunucu işlemcileri etkileniyor.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "Bellek kıtlığının sürdüğü bir dönemde sunucu CPU arzını altı ay boyunca aksatabilecek bir üretim kesintisi.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://tomshardware.com/pc-components/cpus/deadly-intel-fab-28-explosion-causes-two-week-shutdown-to-cost-usd600-million-and-severely-disrupt-server-chip-manufacturing-for-six-months-10nm-xeon-shipments-stall-during-largest-shortage-in-memory"
+    },
+    {
+      "baslik": "OpenAI yatırım turu hedefini 30 milyardan 20 milyar dolara indirdi",
+      "detay": "Financial Times'a göre OpenAI yeni tur hedefini 20 milyar dolara çekti; ilk kapanışın bunun da altında kalması bekleniyor. WSJ şimdiye kadar 11 milyar dolar toplandığını ve bazı büyük yatırımcıların ilgisinin zayıf kaldığını yazdı. Değerleme hedefi daha önce 1,4'ten 1,25 trilyon dolara inmişti.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "En büyük yapay zekâ alıcılarından birinin sermaye bulmakta zorlanması, çip ve veri merkezi talebine dair iştahın soğuduğunu gösteriyor.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/"
+    },
+    {
+      "baslik": "Nvidia, Nscale'in West Virginia veri merkezi borcuna kefil olmayı tartışıyor",
+      "detay": "Nvidia, Anthropic'in 44,6 milyar dolarlık sözleşmeyle kiraladığı 460 MW'lık ilk bina için 'milyarlarca dolarlık' borca garanti vermeyi görüşüyor. Nvidia'nın neocloud'lara ve büyük müşterilere verdiği yatırım ve kredi desteği toplamı ~170 milyar dolar.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Talep sürüyor ama finansmanın giderek çip üreticisinin bilançosuna dayanması döngüsel risk yaratıyor.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia"
+    },
+    {
+      "baslik": "Nasdaq Ekim'i Mart 2025'ten bu yana en kötü ayla kapattı",
+      "detay": "Cuma seansında Nasdaq Composite Haziran'dan bu yana en büyük düşüşünü yaşadı ve zirvesinin %7,8 altında kapandı; Nasdaq 100 %3,5 düşerek %10'luk düzeltme eşiğine yaklaştı. Sandisk %13 geriledi, Microsoft, Meta, Amazon ve Alphabet %1–2 düştü.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Aylık kayıp, yapay zekâ harcamalarına dair kaygının tek günlük bir tepki olmadığını gösteriyor.",
+      "kaynak": "The Star (Reuters)",
+      "url": "https://www.thestar.com.my/tech/tech-news/2026/10/31/october-ends-with-a-thud-for-intel-reddit-ai-stalwarts"
+    },
+    {
+      "baslik": "Bellek sözleşme fiyatları 4. çeyrekte artmaya devam ediyor",
+      "detay": "TrendForce verisine göre klasik DRAM sözleşme fiyatlarının 4Ç26'da çeyreklik %10–15, NAND'ın %15–20 artması bekleniyor; 20 Ekim notu karma DRAM artışını %20'ye yakın veriyor. ABD'de 32 GB DDR5-6000 kit ekim ortasında 429–450 dolara satıldı.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Sunucu belleği ve kurumsal SSD talebi bellek üreticilerinin fiyatlama gücünü koruyor (tüketici tarafı için olumsuz).",
+      "kaynak": "Shattered (TrendForce verisi)",
+      "url": "https://shattered.io/dram-prices-q4-2026-trendforce-ddr5-450-micron-54b-2026/"
+    },
+    {
+      "baslik": "Veri merkezleri ABD ara seçimlerinde gündem maddesi oldu",
+      "detay": "Data Center Watch'a göre 2026'nın ilk yarısında yerel ve siyasi muhalefet yüzünden yaklaşık 200 milyar dolarlık veri merkezi projesi ertelendi, durduruldu ya da engellendi. Konu 3 Kasım seçimi öncesinde Brooklyn'de bile tartışılıyor.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "İzin ve yerel direnç, çip talebini taşıyan kapasite inşasını yavaşlatabilir.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/"
+    },
+    {
+      "baslik": "Nvidia Vera CPU genel kullanıma açıldı, Oracle OCI'da tek başına sunuluyor",
+      "detay": "Normalde NVL72 rafında GPU'ların yanında yer alan Vera CPU artık genel kullanımda; OCI süper kümelerinde bağımsız Vera örnekleri de sunuluyor. Tom's Hardware testinde Vera, çift Xeon 6 sunucusuna göre bellek bant genişliğinde belirgin üstünlük gösterdi.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Nvidia'nın CPU pazarına açılması, x86 dışı sunucu işlemcileri için yeni bir talep kanalı.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://tomshardware.com/tech-industry/this-week-in-toms-hardware-premium-october-31-2026-vera-cpus-available-on-oracle-clusters-building-an-agentic-cpu-benchmark-and-a-primer-to-llms"
+    },
+    {
+      "baslik": "Google'ın ilk veri merkezi uydusu Suncatcher yörüngede çalışıyor",
+      "detay": "Planet Labs'in ürettiği uydu dört Google TPU taşıyor (aynı anda biri çalışabiliyor), en fazla 1 kW güç üretiyor ve Gemma 4 modelini çalıştırıyor; TPU'lar seferde ~20 dakika açık kalabiliyor. 2027'de daha güçlü çipli iki uydu daha fırlatılacak.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Henüz deneysel, ama uzayda hesaplama için ilk çalışan TPU prototipi.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry"
+    },
+    {
+      "baslik": "Apple CEO'su Ternus: yapay zekâyı salt yapay zekâ olsun diye çıkarmayacağız",
+      "detay": "Eylül'de göreve gelen John Ternus, Wired'a verdiği röportajda Apple'ın yapay zekâdaki konumundan memnun olduğunu, yeni ürünlerde yapay zekâdan yararlanacaklarını ama kullanıcının bunu ayrıca düşünmek zorunda kalmaması gerektiğini söyledi.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Büyük bir alıcının ölçülü yaklaşımı; kısa vadede çip talebine doğrudan etkisi sınırlı.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = -5 · Σ ağırlık = 16 · Puan = 50 + 50 × -0.31 = 34"
+  }
+}
