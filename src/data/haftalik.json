@@ -2,6 +2,338 @@
   "aciklama": "Haftalık rapor — otomasyon/haftalik.mjs üretir.",
   "haftalar": [
     {
+      "hafta": "2026-W44",
+      "bas": "2026-10-26",
+      "son": "2026-11-01",
+      "kismi": false,
+      "baslik": "26 Ekim – 1 Kasım",
+      "olusturma": "2026-11-02T07:46:08.087Z",
+      "ozet": [
+        "Otomasyon 7 günlük dönemde 6 gün çalıştı: 0 gün temiz bitti.",
+        "Uygulamaya 7 değişiklik girdi; bunların 7 tanesi otomasyonun kendi uyguladığı geliştirme önerisi.",
+        "Hafta boyunca 20 farklı geliştirme önerisi yazıldı; otomasyon 12 tanesini denedi (7 birleşti, 5 onay bekliyor, 0 bırakıldı).",
+        "H100 kiralama medyanı 3.8 → 3.86 $/saat (%+1.6).",
+        "Fiyat sayfası 1 gün izin engeline takıldı; o günlerde fiyat uydurulmadı, eski veri korundu.",
+        "Bugün sayfasının ortalama pozitiflik puanı 59/100."
+      ],
+      "sayilar": {
+        "calisanGun": 6,
+        "temizGun": 0,
+        "kritikGun": 0,
+        "oneri": 20,
+        "uygulananBirlesen": 7,
+        "elleUygulanan": 0,
+        "uygulananAcik": 5,
+        "uygulananVazgecilen": 0,
+        "degisiklik": 7,
+        "bugunOrtalama": 59,
+        "tekrarHaber": 0
+      },
+      "gunler": [
+        {
+          "tarih": "2026-10-26",
+          "durum": "calismadi",
+          "dikkat": 0,
+          "fiyat": null
+        },
+        {
+          "tarih": "2026-10-27",
+          "durum": "dikkat",
+          "dikkat": 1,
+          "fiyat": "güncellendi"
+        },
+        {
+          "tarih": "2026-10-28",
+          "durum": "dikkat",
+          "dikkat": 2,
+          "fiyat": "izin engeli"
+        },
+        {
+          "tarih": "2026-10-29",
+          "durum": "dikkat",
+          "dikkat": 1,
+          "fiyat": "güncellendi"
+        },
+        {
+          "tarih": "2026-10-30",
+          "durum": "dikkat",
+          "dikkat": 1,
+          "fiyat": "güncellendi"
+        },
+        {
+          "tarih": "2026-10-31",
+          "durum": "dikkat",
+          "dikkat": 1,
+          "fiyat": "güncellendi"
+        },
+        {
+          "tarih": "2026-11-01",
+          "durum": "dikkat",
+          "dikkat": 1,
+          "fiyat": "güncellendi"
+        }
+      ],
+      "bugun": [
+        {
+          "tarih": "2026-10-26",
+          "puan": null
+        },
+        {
+          "tarih": "2026-10-27",
+          "puan": 79,
+          "etiket": "Anthropic halka arzı yapay zekâ ticaretini yeniden ısıttı",
+          "madde": 10,
+          "tekrar": 0
+        },
+        {
+          "tarih": "2026-10-28",
+          "puan": 88,
+          "etiket": "Bellek rekor kâr yazdı, finansman akmaya devam ediyor",
+          "madde": 9,
+          "tekrar": 0
+        },
+        {
+          "tarih": "2026-10-29",
+          "puan": 78,
+          "etiket": "Bellek ve bulut rekor yazdı, Nvidia'da düzenleyici gölge",
+          "madde": 9,
+          "tekrar": 0
+        },
+        {
+          "tarih": "2026-10-30",
+          "puan": 35,
+          "etiket": "Bilanço şoku: Intel ve Amazon sonrası çip hisselerinde sert satış",
+          "madde": 8,
+          "tekrar": 0
+        },
+        {
+          "tarih": "2026-10-31",
+          "puan": 37,
+          "etiket": "Ekim sert kapandı: Intel 1974'ten bu yana en kötü gününü yaşadı",
+          "madde": 8,
+          "tekrar": 0
+        },
+        {
+          "tarih": "2026-11-01",
+          "puan": 34,
+          "etiket": "Hafta sonu bilançosu: fabrika kazası, finansman soğuması",
+          "madde": 9,
+          "tekrar": 0
+        }
+      ],
+      "fiyat": {
+        "olcumGunu": 5,
+        "izinEngeliGunu": 1,
+        "taban": "2026-10-25",
+        "son": "2026-11-01",
+        "h100": {
+          "model": "Nvidia H100",
+          "once": 3.8,
+          "sonra": 3.86,
+          "degisim": 1.6
+        },
+        "enCokOynayan": [
+          {
+            "model": "Nvidia A4000",
+            "once": 0.21,
+            "sonra": 0.82,
+            "degisim": 290.5
+          },
+          {
+            "model": "Nvidia V100",
+            "once": 1.39,
+            "sonra": 0.97,
+            "degisim": -30.2
+          },
+          {
+            "model": "Nvidia RTX 4090",
+            "once": 0.47,
+            "sonra": 0.52,
+            "degisim": 10.6
+          },
+          {
+            "model": "Nvidia L40S",
+            "once": 1.64,
+            "sonra": 1.5,
+            "degisim": -8.5
+          },
+          {
+            "model": "Nvidia T4",
+            "once": 0.69,
+            "sonra": 0.64,
+            "degisim": -7.2
+          }
+        ]
+      },
+      "uygulanan": [
+        {
+          "tarih": "2026-10-27",
+          "oneri": "Fiyat tablosunu CSV olarak indir düğmesi",
+          "durum": "acik",
+          "pr": 58,
+          "dal": "otomasyon/oneri-2026-10-27-1",
+          "ozet": "Fiyatlar tablosu süzülmüş/sıralı hâliyle CSV indirilebiliyor",
+          "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-27",
+          "oneri": "Bugün maddelerini ağırlığa göre sıralama seçeneği",
+          "durum": "acik",
+          "pr": 59,
+          "dal": "otomasyon/oneri-2026-10-27-2",
+          "ozet": "Bugün'de 'Ağırlığa göre sırala' düğmesi",
+          "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-28",
+          "oneri": "Haberler'de gün başlığına ton dağılımı ekle",
+          "durum": "acik",
+          "pr": 60,
+          "dal": "otomasyon/oneri-2026-10-28-1",
+          "ozet": "Haberler gün başlıklarında olumlu/nötr/olumsuz haber sayıları",
+          "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-28",
+          "oneri": "Haber kartında kaynağa tıklayınca o kaynağın haberlerini süz",
+          "durum": "acik",
+          "pr": 61,
+          "dal": "otomasyon/oneri-2026-10-28-2",
+          "ozet": "Haberler'de kaynak adına tıklayınca o kaynağın haberleri süzülüyor",
+          "neden": "Testler geçti; otomatik birleştirme oturumda izin denetimince engellendi, onay bekliyor",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-29",
+          "oneri": "Fiyat tablosuna üretici süzgeci (Nvidia / AMD / Intel)",
+          "durum": "birlesti",
+          "pr": 62,
+          "dal": "otomasyon/oneri-2026-10-29-1",
+          "ozet": "Fiyatlar tablosunda Tümü/Nvidia/AMD/Intel düğmeleriyle üreticiye göre süzme",
+          "neden": null,
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-29",
+          "oneri": "Fiyatı olmayan modelleri gizleme seçeneği",
+          "durum": "birlesti",
+          "pr": 63,
+          "dal": "otomasyon/oneri-2026-10-29-2",
+          "ozet": "Fiyatlar tablosunda fiyatsız modeller varsayılan gizli, 'Fiyatsızları göster' düğmesiyle açılıyor",
+          "neden": null,
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-30",
+          "oneri": "gpu_kiralama.json'daki kullanılmayan eski 'hareketler' alanını kaldır",
+          "durum": "birlesti",
+          "pr": 64,
+          "dal": "otomasyon/oneri-2026-10-30-1",
+          "ozet": "Hiçbir kodun okumadığı, bayat değerler içeren hareketler alanı fiyat verisinden silindi.",
+          "neden": null,
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-30",
+          "oneri": "GUNLUK.md: Bugün 'ozet' alanının paragraf dizisi olduğunu açıkça yaz",
+          "durum": "acik",
+          "pr": 65,
+          "dal": "otomasyon/oneri-2026-10-30-2",
+          "ozet": "Talimata ozet alanı için dizi şeması örneği eklendi.",
+          "neden": "Korunan dosya (otomasyon/GUNLUK.md); testler geçti, kullanıcı onayı bekliyor.",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-31",
+          "oneri": "Haberler'de konu sayaçları ton ve arama süzgecini yansıtsın",
+          "durum": "birlesti",
+          "pr": 66,
+          "dal": "otomasyon/oneri-2026-10-31-1",
+          "ozet": "Konu sekmelerindeki sayılar seçili ton ve aramaya göre sayılıyor",
+          "neden": null,
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-10-31",
+          "oneri": "Haberler'de arama terimini başlık ve özette vurgula",
+          "durum": "birlesti",
+          "pr": 67,
+          "dal": "otomasyon/oneri-2026-10-31-2",
+          "ozet": "Arama kelimeleri haber başlığı ve özetinde işaretleniyor",
+          "neden": null,
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-11-01",
+          "oneri": "Fiyat tablosunda Değişim sıralamasına 'en çok düşen önce' yönü ekle",
+          "durum": "birlesti",
+          "pr": 68,
+          "dal": "otomasyon/oneri-2026-11-01-1",
+          "ozet": "Fiyat tablosuna 'Değişim ↓' sıralama düğmesi eklendi; en çok düşen modeller önce listeleniyor.",
+          "neden": null,
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-11-01",
+          "oneri": "Ölçüm tarihi olmayan fiyatları da 'eski' olarak işaretle",
+          "durum": "birlesti",
+          "pr": 69,
+          "dal": "otomasyon/oneri-2026-11-01-2",
+          "ozet": "Ölçüm tarihi kayıtlı olmayan fiyatlar tabloda 'ölçüm tarihi yok' notuyla işaretleniyor.",
+          "neden": null,
+          "kim": "otomasyon"
+        }
+      ],
+      "degisiklikler": [
+        {
+          "tarih": "2026-10-29",
+          "baslik": "Öneri: Fiyatı olmayan modelleri gizleme seçeneği",
+          "pr": 63,
+          "url": "https://github.com/enesses/chip-akademi/pull/63"
+        },
+        {
+          "tarih": "2026-10-29",
+          "baslik": "Öneri: Fiyat tablosuna üretici süzgeci (Nvidia / AMD / Intel)",
+          "pr": 62,
+          "url": "https://github.com/enesses/chip-akademi/pull/62"
+        },
+        {
+          "tarih": "2026-10-30",
+          "baslik": "Öneri: gpu_kiralama.json'daki kullanılmayan eski 'hareketler' alanını kaldır",
+          "pr": 64,
+          "url": "https://github.com/enesses/chip-akademi/pull/64"
+        },
+        {
+          "tarih": "2026-10-31",
+          "baslik": "Öneri: Haberler'de arama terimini başlık ve özette vurgula",
+          "pr": 67,
+          "url": "https://github.com/enesses/chip-akademi/pull/67"
+        },
+        {
+          "tarih": "2026-10-31",
+          "baslik": "Öneri: Haberler'de konu sayaçları ton ve arama süzgecini yansıtsın",
+          "pr": 66,
+          "url": "https://github.com/enesses/chip-akademi/pull/66"
+        },
+        {
+          "tarih": "2026-11-01",
+          "baslik": "Öneri: Ölçüm tarihi olmayan fiyatları da 'eski' olarak işaretle",
+          "pr": 69,
+          "url": "https://github.com/enesses/chip-akademi/pull/69"
+        },
+        {
+          "tarih": "2026-11-01",
+          "baslik": "Öneri: Fiyat tablosunda Değişim sıralamasına 'en çok düşen önce' yönü ekle",
+          "pr": 68,
+          "url": "https://github.com/enesses/chip-akademi/pull/68"
+        }
+      ],
+      "gunlukCommit": 15
+    },
+    {
       "hafta": "2026-W42",
       "bas": "2026-10-12",
       "son": "2026-10-18",
@@ -925,5 +1257,5 @@
       "gunlukCommit": 3
     }
   ],
-  "guncelleme": "2026-10-19"
+  "guncelleme": "2026-11-02"
 }
