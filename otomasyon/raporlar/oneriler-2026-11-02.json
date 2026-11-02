@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-11-02",
+  "oneriler": [
+    {
+      "baslik": "Fiyatlar'da 'Son çekim' kartına yaş ve eski uyarısı ekle",
+      "neden": "Bugün getdeploying.com/gpus izin engeliyle okunamadı; src/pages/Prices.jsx:154 'Son çekim' kartında yalnızca tarih (2026-11-01) yazıyor. Endeks kartında 14 günü aşınca 'Eski: N gün önce' rozeti var (Prices.jsx:138) ama fiyat listesinin kendisinde yok; kullanıcı listenin kaç gündür güncellenmediğini görmüyor.",
+      "etki": "orta",
+      "alan": "fiyatlar"
+    },
+    {
+      "baslik": "Bugün madde kartlarında kaynağın alan adını göster",
+      "neden": "src/pages/Bugun.jsx:205 bağlantıda yalnızca 'kaynak' adını gösteriyor. Bugünkü 9 maddenin bazıları ikincil kaynaklardan (TokenPost, FourWeekMBA, Business Recorder üzerinden Reuters); alan adı görünmeden okur bağlantının nereye gittiğini ve kaynağın türünü anlayamıyor.",
+      "etki": "düşük",
+      "alan": "bugün"
+    },
+    {
+      "baslik": "Fiyat endeksi, fiyat tablosu okunamasa da işlensin",
+      "neden": "otomasyon/veri-isle.mjs:177 endeksi yalnızca fiyatlar.json içinden alıyor ve dosya en az 30 satır istiyor (veri-isle.mjs:89). Bugün gpu-price-index okundu (12 ay +%12, kayıtlı değer +%18) ama /gpus izin engeli yüzünden fiyatlar.json yazılamadığından güncel endeks uygulamaya giremedi. Ayrı bir endeks.json girdisi gerekiyor (korunan dosya).",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Kaynakta 14 günden uzun süredir gelmeyen fiyatları tabloda 'fiyat yok' say",
+      "neden": "Dünkü öneri hâlâ geçerli: RTX 5880 Ada, RTX 4500 Ada, P40 gibi modellerin fiyatı 2026-10-12 ölçümünden taşınıyor (bugün 21 gün); uygulanan.json'da kaydı yok. Eşik otomasyon/veri-isle.mjs'de (korunan dosya) uygulanmalı.",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Bugün puan kartında dünkü puana göre değişimi göster",
+      "neden": "Dünkü öneri hâlâ geçerli: bugün puan 53, dün 34 (otomasyon/gecmis/bugun-2026-11-01.json); src/data/bugun.json'da önceki puan alanı yok, Bugun.jsx karşılaştırma yapmıyor. veri-isle.mjs'nin 'onceki_puan' yazması gerekiyor (korunan dosya).",
+      "etki": "orta",
+      "alan": "bugün"
+    }
+  ]
+}

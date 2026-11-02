@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-11-01T07:04:45.601Z",
-  "tarih": "2026-11-01",
+  "guncelleme": "2026-11-02T07:13:20.553Z",
+  "tarih": "2026-11-02",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-11-01T07:01:14.779Z"
+      "zaman": "2026-11-02T07:11:49.233Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-11-01T07:01:14.939Z"
+      "zaman": "2026-11-02T07:11:49.408Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-11-01T07:01:14.218Z"
+      "zaman": "2026-11-02T07:11:48.580Z"
     },
     {
       "id": "gelistirme",
@@ -33,10 +33,14 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-11-01T07:01:34.392Z"
+      "zaman": "2026-11-02T07:12:07.904Z"
     }
   ],
   "dikkat": [
+    {
+      "seviye": "uyarı",
+      "metin": "Yenileme · Fiyat verisi: izin engeli — kaynak sayfa okumaya izin vermedi, veri uydurulmadı (son veri 2026-11-01). WebFetch PROVENANCE_REQUIRED (getdeploying.com/gpus; arama sonuçlarında tam adres çıkmadı, doğrudan istek de reddedildi)"
+    },
     {
       "seviye": "dikkat",
       "tur": "onay",
@@ -45,52 +49,37 @@
   ],
   "oneriler": [
     {
-      "baslik": "Fiyat tablosunda Değişim sıralamasına 'en çok düşen önce' yönü ekle",
-      "neden": "src/pages/Prices.jsx:112 değişimi yalnızca azalan sırada (en çok artan önce) sıralıyor. Bugünkü çekimde en büyük hareketler düşüş yönünde (RTX PRO 5000 −%45,3, GH200 −%42,6); kullanıcı bunları görmek için listenin sonuna inmek zorunda.",
+      "baslik": "Fiyatlar'da 'Son çekim' kartına yaş ve eski uyarısı ekle",
+      "neden": "Bugün getdeploying.com/gpus izin engeliyle okunamadı; src/pages/Prices.jsx:154 'Son çekim' kartında yalnızca tarih (2026-11-01) yazıyor. Endeks kartında 14 günü aşınca 'Eski: N gün önce' rozeti var (Prices.jsx:138) ama fiyat listesinin kendisinde yok; kullanıcı listenin kaç gündür güncellenmediğini görmüyor.",
       "etki": "orta",
       "alan": "fiyatlar"
     },
     {
-      "baslik": "Ölçüm tarihi olmayan fiyatları da 'eski' olarak işaretle",
-      "neden": "src/data/gpu_kiralama.json'da Nvidia P2000 0,03 $/saat fiyatla ama olcum_tarihi olmadan duruyor; kaynak bugün bu model için fiyat vermedi. Prices.jsx:247'deki 'fiyat-eski' rozeti r.olcum_tarihi şartına bağlı olduğundan bu satır güncel fiyat gibi görünüyor.",
+      "baslik": "Bugün madde kartlarında kaynağın alan adını göster",
+      "neden": "src/pages/Bugun.jsx:205 bağlantıda yalnızca 'kaynak' adını gösteriyor. Bugünkü 9 maddenin bazıları ikincil kaynaklardan (TokenPost, FourWeekMBA, Business Recorder üzerinden Reuters); alan adı görünmeden okur bağlantının nereye gittiğini ve kaynağın türünü anlayamıyor.",
       "etki": "düşük",
-      "alan": "fiyatlar"
+      "alan": "bugün"
+    },
+    {
+      "baslik": "Fiyat endeksi, fiyat tablosu okunamasa da işlensin",
+      "neden": "otomasyon/veri-isle.mjs:177 endeksi yalnızca fiyatlar.json içinden alıyor ve dosya en az 30 satır istiyor (veri-isle.mjs:89). Bugün gpu-price-index okundu (12 ay +%12, kayıtlı değer +%18) ama /gpus izin engeli yüzünden fiyatlar.json yazılamadığından güncel endeks uygulamaya giremedi. Ayrı bir endeks.json girdisi gerekiyor (korunan dosya).",
+      "etki": "orta",
+      "alan": "otomasyon"
     },
     {
       "baslik": "Kaynakta 14 günden uzun süredir gelmeyen fiyatları tabloda 'fiyat yok' say",
-      "neden": "Bugünkü yenilemede 14 model gelmedi; RTX 5880 Ada, RTX 4500 Ada, P40, GTX 1070 Ti ve RTX 2060 Super'in fiyatı 2026-10-12 ölçümünden (20 gün önce) taşınıyor. getdeploying.com/gpus bu modellerde artık medyan göstermiyor. Eşik otomasyon/veri-isle.mjs'de (korunan dosya) uygulanmalı.",
+      "neden": "Dünkü öneri hâlâ geçerli: RTX 5880 Ada, RTX 4500 Ada, P40 gibi modellerin fiyatı 2026-10-12 ölçümünden taşınıyor (bugün 21 gün); uygulanan.json'da kaydı yok. Eşik otomasyon/veri-isle.mjs'de (korunan dosya) uygulanmalı.",
       "etki": "orta",
       "alan": "otomasyon"
     },
     {
       "baslik": "Bugün puan kartında dünkü puana göre değişimi göster",
-      "neden": "Bugün puanı 34, dün 37 (otomasyon/gecmis/bugun-2026-10-31.json); src/data/bugun.json'da önceki puan alanı yok ve Bugun.jsx'te karşılaştırma yapılmıyor. veri-isle.mjs'nin gecmis'ten 'onceki_puan' yazması ve kartın farkı göstermesi gerekiyor (korunan dosyaya dokunur).",
+      "neden": "Dünkü öneri hâlâ geçerli: bugün puan 53, dün 34 (otomasyon/gecmis/bugun-2026-11-01.json); src/data/bugun.json'da önceki puan alanı yok, Bugun.jsx karşılaştırma yapmıyor. veri-isle.mjs'nin 'onceki_puan' yazması gerekiyor (korunan dosya).",
       "etki": "orta",
       "alan": "bugün"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-11-01",
-      "oneri": "Fiyat tablosunda Değişim sıralamasına 'en çok düşen önce' yönü ekle",
-      "durum": "birlesti",
-      "pr": 68,
-      "dal": "otomasyon/oneri-2026-11-01-1",
-      "ozet": "Fiyat tablosuna 'Değişim ↓' sıralama düğmesi eklendi; en çok düşen modeller önce listeleniyor.",
-      "neden": null,
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-11-01",
-      "oneri": "Ölçüm tarihi olmayan fiyatları da 'eski' olarak işaretle",
-      "durum": "birlesti",
-      "pr": 69,
-      "dal": "otomasyon/oneri-2026-11-01-2",
-      "ozet": "Ölçüm tarihi kayıtlı olmayan fiyatlar tabloda 'ölçüm tarihi yok' notuyla işaretleniyor.",
-      "neden": null,
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
     {
       "oneri": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
@@ -518,7 +507,7 @@
       },
       "kod": {
         "dosyaSayisi": 77,
-        "toplamSatir": 18615,
+        "toplamSatir": 18617,
         "boyutKB": null
       }
     },
@@ -529,18 +518,18 @@
     "adimlar": [
       {
         "ad": "Fiyat verisi",
-        "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 93 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 14 gelmedi (eski fiyat korundu)"
+        "durum": "uyari",
+        "detay": "izin engeli — kaynak sayfa okumaya izin vermedi, veri uydurulmadı (son veri 2026-11-01). WebFetch PROVENANCE_REQUIRED (getdeploying.com/gpus; arama sonuçlarında tam adres çıkmadı, doğrudan istek de reddedildi)"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 34, 1 yaklaşan olay; haber akışına +9"
+        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 53, 1 yaklaşan olay; haber akışına +9"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+6 haber (akışta 341); bugün toplam 15"
+        "detay": "+5 haber (akışta 345), 1 atlandı: akışta zaten var; bugün toplam 14"
       },
       {
         "ad": "Derleme",
@@ -550,7 +539,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2851 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2855 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -577,11 +566,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-10-18",
-      "durum": "dikkat",
-      "dikkat": 4
-    },
     {
       "tarih": "2026-10-19",
       "durum": "dikkat",
@@ -646,6 +630,11 @@
       "tarih": "2026-11-01",
       "durum": "dikkat",
       "dikkat": 1
+    },
+    {
+      "tarih": "2026-11-02",
+      "durum": "dikkat",
+      "dikkat": 2
     }
   ]
 }

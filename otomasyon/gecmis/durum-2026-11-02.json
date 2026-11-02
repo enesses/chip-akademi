@@ -1,0 +1,14 @@
+{
+  "fiyat": {
+    "durum": "izin-engeli",
+    "not": "WebFetch PROVENANCE_REQUIRED (getdeploying.com/gpus; arama sonuçlarında tam adres çıkmadı, doğrudan istek de reddedildi)"
+  },
+  "endeks": {
+    "durum": "ok",
+    "not": "gpu-price-index okundu (ölçüm 2026-10-26, 4 hafta +8%, 12 ay +12%) ama fiyat tablosu olmadan fiyatlar.json yazılamadı"
+  },
+  "bellek": {
+    "durum": "izin-engeli",
+    "not": "trendforce.com/presscenter PROVENANCE_REQUIRED; aramada 30 Eylül'den yeni sözleşme fiyatı tahmini görülmedi"
+  }
+}

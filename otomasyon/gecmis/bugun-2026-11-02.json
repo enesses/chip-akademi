@@ -1,0 +1,113 @@
+{
+  "tarih": "2026-11-02",
+  "derlenme": "2 Kasım 2026",
+  "puan": {
+    "etiket": "Rekor ihracat, soğuyan ivme",
+    "yorum": "Kore'nin rekor çip ihracatı ve bellek üreticilerinin uzun vadeli sözleşmeleri talebin güçlü olduğunu gösteriyor; Asya PMI'larındaki yavaşlama, Kioxia'nın zayıf görünümü ve ABD'deki veri merkezi moratoryumu riski tabloyu dengeliyor.",
+    "deger": 53
+  },
+  "ozet": [
+    "Haftaya iki farklı sinyalle başlıyoruz. Bir yanda veriler güçlü: Güney Kore'nin Ekim ihracatı yıllık %93,7 artışla 115,3 milyar dolara çıktı, çip ihracatı ise %259 artışla 56,4 milyar dolar oldu. Samsung ve SK hynix, müşterileriyle yıllara yayılan uzun vadeli sözleşmeler imzalıyor; SK hynix 2027–2028 kapasitesinin yarısından fazlasını şimdiden satmış durumda.",
+    "Öte yanda ivme kaybı belirginleşiyor. Ekim PMI'ları Kore, Tayvan ve Japonya'da imalat büyümesinin yavaşladığını gösterdi; Kore'de tempo sekiz ayın en düşüğünde. Tokyo'da Kioxia, Aralık çeyreği görünümü beklentiyi karşılamayınca %13 düştü — NAND tarafında talebin düzleştiğine dair ilk somut işaret. Tokyo Electron'un %50 kâr artışı öngörüsü ise ekipman tarafının hâlâ güçlü olduğunu hatırlatıyor.",
+    "Talep tarafında yapay zekâ şirketleri tedarik çeşitlendiriyor: OpenAI'ın Google TPU'larını satın almaya hazırlandığı bildiriliyor, Sam Altman da bellek tedariki için Samsung yönetimiyle görüştü. Bu, hesaplama talebinin sürdüğünü ama Nvidia dışı seçeneklerin ağırlık kazandığını gösteriyor.",
+    "Yarın ABD'de ara seçimler var ve veri merkezleri gündemin ortasında: moratoryumu savunan adaylar 15 eyalette valiliği kazanabilir. Sonuçlar, AI altyapı yatırımlarının izin ve inşaat takvimini doğrudan etkileyebilir; 17 Kasım'daki Nvidia bilançosu da sektörün bir sonraki büyük testi."
+  ],
+  "maddeler": [
+    {
+      "baslik": "Güney Kore'nin Ekim ihracatı rekor: çip satışları %259 arttı",
+      "detay": "Ekim'de toplam ihracat yıllık %93,7 artışla 115,3 milyar dolara, yarı iletken ihracatı %259 artışla 56,4 milyar dolara çıktı; çip artık toplam ihracatın yaklaşık yarısı.",
+      "kategori": "pozitif",
+      "agirlik": 3,
+      "neden": "Bellek fiyatları ve AI sunucu talebinin gerçek satışlara dönüştüğünü gösteren resmi veri.",
+      "kaynak": "The Korea Times",
+      "url": "https://www.koreatimes.co.kr/economy/20261101/koreas-monthly-exports-hit-1153-bil-in-oct-on-record-chip-sales"
+    },
+    {
+      "baslik": "Samsung ve SK hynix uzun vadeli bellek sözleşmelerini genişletiyor",
+      "detay": "Samsung 10 müşteriyle uzun vadeli sözleşme (LTA) imzaladı, 10'uyla daha görüşüyor ve 2030'a kadar kapasitenin %60–70'ini LTA'ya ayırmayı hedefliyor; SK hynix 14 müşteriyle LTA imzaladı, 2027–2028 kapasitesinin yarısından fazlası satılmış durumda.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Bellek üreticileri için yıllara yayılan talep görünürlüğü; ancak analistler 2028 civarında yeni fabrikalarla arz fazlası riskine dikkat çekiyor.",
+      "kaynak": "Korea JoongAng Daily",
+      "url": "https://www.koreajoongangdaily.com/business/samsung-sk-hynix-build-longterm-order-pipelines-on-back-of-continued-ai-chip-demand/12949893"
+    },
+    {
+      "baslik": "Asya'da fabrika büyümesi yavaşladı: çip ihracatçılarında PMI geriledi",
+      "detay": "Ekim imalat PMI'ları: Güney Kore 51,3 (önceki 53,9; sekiz ayın en yavaşı), Tayvan 54,9 (56,7), Japonya 53,3 (54,1), Çin 52,0 (52,1). IMF Asya büyümesini 2026 için %4,8, 2027 için %4,4 öngörüyor.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Genişleme sürse de çip ihracatçısı ekonomilerde ivme kaybı, AI patlamasının hız kestiği kaygısını besliyor.",
+      "kaynak": "Business Recorder (Reuters)",
+      "url": "https://brecorder.com/news/40447021/asias-factory-activity-feels-fading-glimmer-of-ai-boom"
+    },
+    {
+      "baslik": "OpenAI, Google'ın TPU çiplerini satın almaya hazırlanıyor",
+      "detay": "The Information'a dayanan habere göre OpenAI, 2025'ten beri kiraladığı Google TPU'larını satın almayı planlıyor; tutar ve takvim açıklanmadı. Alphabet CFO'su TPU anlaşmalarının gelirinin büyük kısmının 2027'de kaydedileceğini söyledi.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Hesaplama talebi sürüyor, ancak en büyük AI şirketlerinden birinin Nvidia dışı tedarikçiye yönelmesi pazar payı dengesini değiştirebilir.",
+      "kaynak": "TechRadar",
+      "url": "https://techradar.com/pro/openai-pledges-to-buy-google-ai-chips-in-its-first-move-away-from-depending-solely-on-nvidia"
+    },
+    {
+      "baslik": "Kioxia görünümüyle %13 düştü, Tokyo Electron %5 yükseldi",
+      "detay": "Kioxia, Aralık çeyreği görünümü hayal kırıklığı yaratınca %13,29 değer kaybetti ve Nikkei'yi en çok aşağı çeken hisse oldu; Tokyo Electron yıllık net kârının %50 artacağını öngörüp %5,11 yükseldi.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "NAND tarafında talebin düzleştiği sinyali; ekipman tarafında güçlü görünüm kısmen dengeliyor.",
+      "kaynak": "Business Recorder (Reuters)",
+      "url": "https://www.brecorder.com/news/40447020/japans-nikkei-falls-as-kioxia-tanks-mitigated-by-gains-in-tokyo-electron"
+    },
+    {
+      "baslik": "Veri merkezi moratoryumu savunan adaylar 15 eyalette kazanabilir",
+      "detay": "The Information analizine göre valilik seçimi yapılan 36 eyaletin 21'inde en az bir aday veri merkezi inşaatını durdurmayı destekliyor; 15'inde bu adaylar kazanabilir. New York, Teksas ve Oregon valileri yeni onayları askıya aldı.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "3 Kasım ara seçimleri, ABD'deki AI altyapı planları için izin ve inşaat riskini artırabilir.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/international/2026/11/02/data-center-moratorium-backers-could-win-up-to-15-us-states"
+    },
+    {
+      "baslik": "Sam Altman bellek tedariki için Samsung yönetimiyle görüştü",
+      "detay": "Altman 30 Ekim'de Yongin'de yaklaşık 50 Samsung yöneticisiyle bir araya geldi; yeni tedarik anlaşması açıklanmadı. TrendForce 2026'da DRAM arzının talebin %1–2 altında kalacağını, açığın 2027'de derinleşeceğini öngörüyor.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "AI şirketlerinin bellek için doğrudan üreticiye gitmesi kıtlığın derinliğini gösteriyor; somut anlaşma yok.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/sam-altman-travels-to-south-korea-to-meet-samsung-leadership-to-secure-more-ram-for-data-centers-amid-crushing-shortages-openai-ceo-meets-samsung-leadership-to-discuss-future-ai-data-centers"
+    },
+    {
+      "baslik": "KB Securities: SK hynix 4. çeyrekte 104 trilyon won faaliyet kârı açıklayabilir",
+      "detay": "KB Securities, SK hynix'in 4Ç26 faaliyet kârını 104 trilyon won (yıllık +%441) bekliyor; 3Ç26'da kâr 83,3 trilyon won, marj %80'di. 2027 için DRAM fiyatlarında %40 artış öngörülüyor; hisse zirveden ~%50 aşağıda.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Kâr beklentileri yükselmeye devam ediyor; tek bir aracı kurum tahmini olduğu için ağırlık düşük.",
+      "kaynak": "TokenPost",
+      "url": "https://www.tokenpost.com/news/business/46183"
+    },
+    {
+      "baslik": "Abu Dabi OpenAI ile dört anlaşma imzaladı",
+      "detay": "ADNOC, Mubadala ve Abu Dabi hükümeti, G42'nin Inception42 birimiyle birlikte OpenAI ile enerji, yatırım analizi ve 'makine tarafından okunabilir hükümet' alanlarında anlaşma yaptı; modeller BAE'deki altyapıda çalışacak. Tutar açıklanmadı.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Körfez'de egemen AI altyapısına yönelik kurumsal talep genişliyor.",
+      "kaynak": "FourWeekMBA",
+      "url": "https://fourweekmba.com/ai-abu-dhabi-signs-4-openai-deals-in-ai-native-government-push"
+    }
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2026-11-17",
+      "baslik": "Nvidia 3. çeyrek (FY2027) sonuçları",
+      "kaynak": "NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-third-quarter-financial-results-6928873"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = +1 · Σ ağırlık = 16 · Puan = 50 + 50 × 0.06 = 53"
+  }
+}

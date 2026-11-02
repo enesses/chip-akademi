@@ -1,106 +1,106 @@
 {
-  "tarih": "2026-11-01",
-  "derlenme": "1 Kasım 2026",
+  "tarih": "2026-11-02",
+  "derlenme": "2 Kasım 2026",
   "puan": {
-    "etiket": "Hafta sonu bilançosu: fabrika kazası, finansman soğuması",
-    "yorum": "Intel'in Fab 28 patlaması, OpenAI'ın küçülen yatırım turu ve Nasdaq'ın kötü Ekim kapanışı ağır basıyor; bellek fiyatlarındaki artış ve Nvidia'nın yeni CPU'su gibi gelişmeler talebin tamamen sönmediğini gösteriyor.",
-    "deger": 34
+    "etiket": "Rekor ihracat, soğuyan ivme",
+    "yorum": "Kore'nin rekor çip ihracatı ve bellek üreticilerinin uzun vadeli sözleşmeleri talebin güçlü olduğunu gösteriyor; Asya PMI'larındaki yavaşlama, Kioxia'nın zayıf görünümü ve ABD'deki veri merkezi moratoryumu riski tabloyu dengeliyor.",
+    "deger": 53
   },
   "ozet": [
-    "Ekim'in son haftası yarı iletkenler için ağır geçti ve hafta sonuna gelen haberler, sert satışın arkasındaki kaygıları somutlaştırdı. Intel'in İsrail'deki Fab 28 tesisinde iki kişinin öldüğü patlama, yaklaşık 600 milyon dolarlık gelir kaybı ve altı ay sürebilecek sunucu işlemcisi aksaması anlamına geliyor; bu, bellek kıtlığının zaten sıkıştırdığı sunucu tedarik zincirine ikinci bir darbe.",
-    "Finansman tarafında soğuma belirgin: OpenAI yeni turun hedefini 30 milyardan 20 milyar dolara indirdi ve şu ana kadar 11 milyar dolar topladığı bildiriliyor. Aynı günlerde Nvidia'nın, Anthropic'in kiraladığı 460 MW'lık Nscale binasının borcuna kefil olmayı tartışması, talebin sürdüğünü ama finansmanın giderek çip üreticisinin bilançosuna yaslandığını gösteriyor. Nasdaq Ekim'i Mart 2025'ten bu yana en kötü ayla kapattı.",
-    "Fiziksel kısıtlar da gündemde: ABD'de yerel muhalefet yüzünden yılın ilk yarısında ~200 milyar dolarlık veri merkezi projesi ertelendi ya da durdu ve konu 3 Kasım ara seçimlerinin bir parçası oldu. Buna karşın bellek fiyatları yükselmeye devam ediyor; TrendForce 4. çeyrekte DRAM sözleşme fiyatlarında %10–15, NAND'da %15–20 artış bekliyor.",
-    "Olumlu cephede Nvidia'nın Vera CPU'su genel kullanıma açılıp Oracle'da tek başına sunulmaya başladı, Google'ın TPU taşıyan ilk veri merkezi uydusu çalışır hale geldi. Gözler şimdi 3 Kasım'daki AMD sonuçlarında: Intel'in zayıf PC görünümünün AMD'ye yansıyıp yansımayacağı haftanın ilk sınavı olacak."
-  ],
-  "yaklasan": [
-    {
-      "tarih": "2026-11-03",
-      "baslik": "AMD 3. çeyrek sonuçları (borsa kapanışı sonrası)",
-      "kaynak": "Motley Fool",
-      "url": "https://fool.com/investing/2026/10/31/intel-has-a-massive-warning-for-amd-stock-investors-is-it-time-to-book-profits-before-nov-3"
-    }
+    "Haftaya iki farklı sinyalle başlıyoruz. Bir yanda veriler güçlü: Güney Kore'nin Ekim ihracatı yıllık %93,7 artışla 115,3 milyar dolara çıktı, çip ihracatı ise %259 artışla 56,4 milyar dolar oldu. Samsung ve SK hynix, müşterileriyle yıllara yayılan uzun vadeli sözleşmeler imzalıyor; SK hynix 2027–2028 kapasitesinin yarısından fazlasını şimdiden satmış durumda.",
+    "Öte yanda ivme kaybı belirginleşiyor. Ekim PMI'ları Kore, Tayvan ve Japonya'da imalat büyümesinin yavaşladığını gösterdi; Kore'de tempo sekiz ayın en düşüğünde. Tokyo'da Kioxia, Aralık çeyreği görünümü beklentiyi karşılamayınca %13 düştü — NAND tarafında talebin düzleştiğine dair ilk somut işaret. Tokyo Electron'un %50 kâr artışı öngörüsü ise ekipman tarafının hâlâ güçlü olduğunu hatırlatıyor.",
+    "Talep tarafında yapay zekâ şirketleri tedarik çeşitlendiriyor: OpenAI'ın Google TPU'larını satın almaya hazırlandığı bildiriliyor, Sam Altman da bellek tedariki için Samsung yönetimiyle görüştü. Bu, hesaplama talebinin sürdüğünü ama Nvidia dışı seçeneklerin ağırlık kazandığını gösteriyor.",
+    "Yarın ABD'de ara seçimler var ve veri merkezleri gündemin ortasında: moratoryumu savunan adaylar 15 eyalette valiliği kazanabilir. Sonuçlar, AI altyapı yatırımlarının izin ve inşaat takvimini doğrudan etkileyebilir; 17 Kasım'daki Nvidia bilançosu da sektörün bir sonraki büyük testi."
   ],
   "maddeler": [
     {
-      "baslik": "Intel'in İsrail'deki Fab 28 tesisinde ölümcül patlama: 600 milyon dolarlık kayıp",
-      "detay": "Kiryat Gat'teki Fab 28'de ekim ortasındaki patlamada iki kişi öldü, bir kişi ağır yaralandı; tesis yaklaşık iki hafta kapalı kaldı. Intel ~600 milyon dolar gelir kaybı (300 milyonu 4Ç26'da) ve 4. çeyrekte ~2 puanlık brüt marj kaybı bekliyor; ağırlıkla 10nm Xeon sunucu işlemcileri etkileniyor.",
-      "kategori": "negatif",
+      "baslik": "Güney Kore'nin Ekim ihracatı rekor: çip satışları %259 arttı",
+      "detay": "Ekim'de toplam ihracat yıllık %93,7 artışla 115,3 milyar dolara, yarı iletken ihracatı %259 artışla 56,4 milyar dolara çıktı; çip artık toplam ihracatın yaklaşık yarısı.",
+      "kategori": "pozitif",
       "agirlik": 3,
-      "neden": "Bellek kıtlığının sürdüğü bir dönemde sunucu CPU arzını altı ay boyunca aksatabilecek bir üretim kesintisi.",
-      "kaynak": "Tom's Hardware",
-      "url": "https://tomshardware.com/pc-components/cpus/deadly-intel-fab-28-explosion-causes-two-week-shutdown-to-cost-usd600-million-and-severely-disrupt-server-chip-manufacturing-for-six-months-10nm-xeon-shipments-stall-during-largest-shortage-in-memory"
+      "neden": "Bellek fiyatları ve AI sunucu talebinin gerçek satışlara dönüştüğünü gösteren resmi veri.",
+      "kaynak": "The Korea Times",
+      "url": "https://www.koreatimes.co.kr/economy/20261101/koreas-monthly-exports-hit-1153-bil-in-oct-on-record-chip-sales"
     },
     {
-      "baslik": "OpenAI yatırım turu hedefini 30 milyardan 20 milyar dolara indirdi",
-      "detay": "Financial Times'a göre OpenAI yeni tur hedefini 20 milyar dolara çekti; ilk kapanışın bunun da altında kalması bekleniyor. WSJ şimdiye kadar 11 milyar dolar toplandığını ve bazı büyük yatırımcıların ilgisinin zayıf kaldığını yazdı. Değerleme hedefi daha önce 1,4'ten 1,25 trilyon dolara inmişti.",
+      "baslik": "Samsung ve SK hynix uzun vadeli bellek sözleşmelerini genişletiyor",
+      "detay": "Samsung 10 müşteriyle uzun vadeli sözleşme (LTA) imzaladı, 10'uyla daha görüşüyor ve 2030'a kadar kapasitenin %60–70'ini LTA'ya ayırmayı hedefliyor; SK hynix 14 müşteriyle LTA imzaladı, 2027–2028 kapasitesinin yarısından fazlası satılmış durumda.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Bellek üreticileri için yıllara yayılan talep görünürlüğü; ancak analistler 2028 civarında yeni fabrikalarla arz fazlası riskine dikkat çekiyor.",
+      "kaynak": "Korea JoongAng Daily",
+      "url": "https://www.koreajoongangdaily.com/business/samsung-sk-hynix-build-longterm-order-pipelines-on-back-of-continued-ai-chip-demand/12949893"
+    },
+    {
+      "baslik": "Asya'da fabrika büyümesi yavaşladı: çip ihracatçılarında PMI geriledi",
+      "detay": "Ekim imalat PMI'ları: Güney Kore 51,3 (önceki 53,9; sekiz ayın en yavaşı), Tayvan 54,9 (56,7), Japonya 53,3 (54,1), Çin 52,0 (52,1). IMF Asya büyümesini 2026 için %4,8, 2027 için %4,4 öngörüyor.",
       "kategori": "negatif",
       "agirlik": 2,
-      "neden": "En büyük yapay zekâ alıcılarından birinin sermaye bulmakta zorlanması, çip ve veri merkezi talebine dair iştahın soğuduğunu gösteriyor.",
-      "kaynak": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/"
+      "neden": "Genişleme sürse de çip ihracatçısı ekonomilerde ivme kaybı, AI patlamasının hız kestiği kaygısını besliyor.",
+      "kaynak": "Business Recorder (Reuters)",
+      "url": "https://brecorder.com/news/40447021/asias-factory-activity-feels-fading-glimmer-of-ai-boom"
     },
     {
-      "baslik": "Nvidia, Nscale'in West Virginia veri merkezi borcuna kefil olmayı tartışıyor",
-      "detay": "Nvidia, Anthropic'in 44,6 milyar dolarlık sözleşmeyle kiraladığı 460 MW'lık ilk bina için 'milyarlarca dolarlık' borca garanti vermeyi görüşüyor. Nvidia'nın neocloud'lara ve büyük müşterilere verdiği yatırım ve kredi desteği toplamı ~170 milyar dolar.",
+      "baslik": "OpenAI, Google'ın TPU çiplerini satın almaya hazırlanıyor",
+      "detay": "The Information'a dayanan habere göre OpenAI, 2025'ten beri kiraladığı Google TPU'larını satın almayı planlıyor; tutar ve takvim açıklanmadı. Alphabet CFO'su TPU anlaşmalarının gelirinin büyük kısmının 2027'de kaydedileceğini söyledi.",
       "kategori": "notr",
       "agirlik": 2,
-      "neden": "Talep sürüyor ama finansmanın giderek çip üreticisinin bilançosuna dayanması döngüsel risk yaratıyor.",
-      "kaynak": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia"
+      "neden": "Hesaplama talebi sürüyor, ancak en büyük AI şirketlerinden birinin Nvidia dışı tedarikçiye yönelmesi pazar payı dengesini değiştirebilir.",
+      "kaynak": "TechRadar",
+      "url": "https://techradar.com/pro/openai-pledges-to-buy-google-ai-chips-in-its-first-move-away-from-depending-solely-on-nvidia"
     },
     {
-      "baslik": "Nasdaq Ekim'i Mart 2025'ten bu yana en kötü ayla kapattı",
-      "detay": "Cuma seansında Nasdaq Composite Haziran'dan bu yana en büyük düşüşünü yaşadı ve zirvesinin %7,8 altında kapandı; Nasdaq 100 %3,5 düşerek %10'luk düzeltme eşiğine yaklaştı. Sandisk %13 geriledi, Microsoft, Meta, Amazon ve Alphabet %1–2 düştü.",
+      "baslik": "Kioxia görünümüyle %13 düştü, Tokyo Electron %5 yükseldi",
+      "detay": "Kioxia, Aralık çeyreği görünümü hayal kırıklığı yaratınca %13,29 değer kaybetti ve Nikkei'yi en çok aşağı çeken hisse oldu; Tokyo Electron yıllık net kârının %50 artacağını öngörüp %5,11 yükseldi.",
       "kategori": "negatif",
       "agirlik": 2,
-      "neden": "Aylık kayıp, yapay zekâ harcamalarına dair kaygının tek günlük bir tepki olmadığını gösteriyor.",
-      "kaynak": "The Star (Reuters)",
-      "url": "https://www.thestar.com.my/tech/tech-news/2026/10/31/october-ends-with-a-thud-for-intel-reddit-ai-stalwarts"
+      "neden": "NAND tarafında talebin düzleştiği sinyali; ekipman tarafında güçlü görünüm kısmen dengeliyor.",
+      "kaynak": "Business Recorder (Reuters)",
+      "url": "https://www.brecorder.com/news/40447020/japans-nikkei-falls-as-kioxia-tanks-mitigated-by-gains-in-tokyo-electron"
     },
     {
-      "baslik": "Bellek sözleşme fiyatları 4. çeyrekte artmaya devam ediyor",
-      "detay": "TrendForce verisine göre klasik DRAM sözleşme fiyatlarının 4Ç26'da çeyreklik %10–15, NAND'ın %15–20 artması bekleniyor; 20 Ekim notu karma DRAM artışını %20'ye yakın veriyor. ABD'de 32 GB DDR5-6000 kit ekim ortasında 429–450 dolara satıldı.",
-      "kategori": "pozitif",
-      "agirlik": 2,
-      "neden": "Sunucu belleği ve kurumsal SSD talebi bellek üreticilerinin fiyatlama gücünü koruyor (tüketici tarafı için olumsuz).",
-      "kaynak": "Shattered (TrendForce verisi)",
-      "url": "https://shattered.io/dram-prices-q4-2026-trendforce-ddr5-450-micron-54b-2026/"
-    },
-    {
-      "baslik": "Veri merkezleri ABD ara seçimlerinde gündem maddesi oldu",
-      "detay": "Data Center Watch'a göre 2026'nın ilk yarısında yerel ve siyasi muhalefet yüzünden yaklaşık 200 milyar dolarlık veri merkezi projesi ertelendi, durduruldu ya da engellendi. Konu 3 Kasım seçimi öncesinde Brooklyn'de bile tartışılıyor.",
+      "baslik": "Veri merkezi moratoryumu savunan adaylar 15 eyalette kazanabilir",
+      "detay": "The Information analizine göre valilik seçimi yapılan 36 eyaletin 21'inde en az bir aday veri merkezi inşaatını durdurmayı destekliyor; 15'inde bu adaylar kazanabilir. New York, Teksas ve Oregon valileri yeni onayları askıya aldı.",
       "kategori": "negatif",
       "agirlik": 2,
-      "neden": "İzin ve yerel direnç, çip talebini taşıyan kapasite inşasını yavaşlatabilir.",
-      "kaynak": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/"
+      "neden": "3 Kasım ara seçimleri, ABD'deki AI altyapı planları için izin ve inşaat riskini artırabilir.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/international/2026/11/02/data-center-moratorium-backers-could-win-up-to-15-us-states"
     },
     {
-      "baslik": "Nvidia Vera CPU genel kullanıma açıldı, Oracle OCI'da tek başına sunuluyor",
-      "detay": "Normalde NVL72 rafında GPU'ların yanında yer alan Vera CPU artık genel kullanımda; OCI süper kümelerinde bağımsız Vera örnekleri de sunuluyor. Tom's Hardware testinde Vera, çift Xeon 6 sunucusuna göre bellek bant genişliğinde belirgin üstünlük gösterdi.",
-      "kategori": "pozitif",
-      "agirlik": 1,
-      "neden": "Nvidia'nın CPU pazarına açılması, x86 dışı sunucu işlemcileri için yeni bir talep kanalı.",
-      "kaynak": "Tom's Hardware",
-      "url": "https://tomshardware.com/tech-industry/this-week-in-toms-hardware-premium-october-31-2026-vera-cpus-available-on-oracle-clusters-building-an-agentic-cpu-benchmark-and-a-primer-to-llms"
-    },
-    {
-      "baslik": "Google'ın ilk veri merkezi uydusu Suncatcher yörüngede çalışıyor",
-      "detay": "Planet Labs'in ürettiği uydu dört Google TPU taşıyor (aynı anda biri çalışabiliyor), en fazla 1 kW güç üretiyor ve Gemma 4 modelini çalıştırıyor; TPU'lar seferde ~20 dakika açık kalabiliyor. 2027'de daha güçlü çipli iki uydu daha fırlatılacak.",
-      "kategori": "pozitif",
-      "agirlik": 1,
-      "neden": "Henüz deneysel, ama uzayda hesaplama için ilk çalışan TPU prototipi.",
-      "kaynak": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry"
-    },
-    {
-      "baslik": "Apple CEO'su Ternus: yapay zekâyı salt yapay zekâ olsun diye çıkarmayacağız",
-      "detay": "Eylül'de göreve gelen John Ternus, Wired'a verdiği röportajda Apple'ın yapay zekâdaki konumundan memnun olduğunu, yeni ürünlerde yapay zekâdan yararlanacaklarını ama kullanıcının bunu ayrıca düşünmek zorunda kalmaması gerektiğini söyledi.",
+      "baslik": "Sam Altman bellek tedariki için Samsung yönetimiyle görüştü",
+      "detay": "Altman 30 Ekim'de Yongin'de yaklaşık 50 Samsung yöneticisiyle bir araya geldi; yeni tedarik anlaşması açıklanmadı. TrendForce 2026'da DRAM arzının talebin %1–2 altında kalacağını, açığın 2027'de derinleşeceğini öngörüyor.",
       "kategori": "notr",
       "agirlik": 1,
-      "neden": "Büyük bir alıcının ölçülü yaklaşımı; kısa vadede çip talebine doğrudan etkisi sınırlı.",
-      "kaynak": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/"
+      "neden": "AI şirketlerinin bellek için doğrudan üreticiye gitmesi kıtlığın derinliğini gösteriyor; somut anlaşma yok.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/sam-altman-travels-to-south-korea-to-meet-samsung-leadership-to-secure-more-ram-for-data-centers-amid-crushing-shortages-openai-ceo-meets-samsung-leadership-to-discuss-future-ai-data-centers"
+    },
+    {
+      "baslik": "KB Securities: SK hynix 4. çeyrekte 104 trilyon won faaliyet kârı açıklayabilir",
+      "detay": "KB Securities, SK hynix'in 4Ç26 faaliyet kârını 104 trilyon won (yıllık +%441) bekliyor; 3Ç26'da kâr 83,3 trilyon won, marj %80'di. 2027 için DRAM fiyatlarında %40 artış öngörülüyor; hisse zirveden ~%50 aşağıda.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Kâr beklentileri yükselmeye devam ediyor; tek bir aracı kurum tahmini olduğu için ağırlık düşük.",
+      "kaynak": "TokenPost",
+      "url": "https://www.tokenpost.com/news/business/46183"
+    },
+    {
+      "baslik": "Abu Dabi OpenAI ile dört anlaşma imzaladı",
+      "detay": "ADNOC, Mubadala ve Abu Dabi hükümeti, G42'nin Inception42 birimiyle birlikte OpenAI ile enerji, yatırım analizi ve 'makine tarafından okunabilir hükümet' alanlarında anlaşma yaptı; modeller BAE'deki altyapıda çalışacak. Tutar açıklanmadı.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Körfez'de egemen AI altyapısına yönelik kurumsal talep genişliyor.",
+      "kaynak": "FourWeekMBA",
+      "url": "https://fourweekmba.com/ai-abu-dhabi-signs-4-openai-deals-in-ai-native-government-push"
+    }
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2026-11-17",
+      "baslik": "Nvidia 3. çeyrek (FY2027) sonuçları",
+      "kaynak": "NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-third-quarter-financial-results-6928873"
     }
   ],
   "yontem": {
@@ -108,6 +108,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = -5 · Σ ağırlık = 16 · Puan = 50 + 50 × -0.31 = 34"
+    "hesap": "Σ ağırlık×işaret = +1 · Σ ağırlık = 16 · Puan = 50 + 50 × 0.06 = 53"
   }
 }

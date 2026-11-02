@@ -1,0 +1,76 @@
+{
+  "tarih": "2026-11-02",
+  "haberler": [
+    {
+      "baslik": "Fractile, Sovereign AI Fonu'nun da katıldığı turla 6,5 milyar dolar değerlemeye ulaşıyor",
+      "detay": "İngiliz çıkarım çipi girişimi Fractile yaklaşık 700 milyon dolarlık (Companies House kayıtlarına göre ~774 milyon) Series C topluyor; turu Lightspeed ve Redpoint yönetiyor, İngiltere'nin Sovereign AI Fonu da katıldı. Değerleme yılbaşındaki ~1 milyar dolardan ~6,5 milyara çıktı.",
+      "kaynak": "Dealroom",
+      "url": "https://dealroom.co/news/168114-uk-taxpayers-buy-into-the-ai-chip-boom-as-the-sovereign-ai-fund-joins-fr/",
+      "yayin": "2026-11-01",
+      "konular": [
+        "cip",
+        "yapay-zeka"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "ABD'deki çip satışının ardından KOSPI güne %1,6 düşüşle başladı",
+      "detay": "ABD'de yarı iletken hisselerindeki sert düşüşün etkisiyle KOSPI pazartesi %1,6 düşüşle açıldı, ardından kayıplarını silip hafif artıya geçti; Samsung ve SK hynix de yükselişe döndü.",
+      "kaynak": "SBS News",
+      "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008826283",
+      "yayin": "2026-11-02",
+      "konular": [
+        "pazar",
+        "bellek"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "SK hynix: bellek arzı 2030'a kadar talebin gerisinde kalacak",
+      "detay": "SK hynix 3Ç26'da 104,6 trilyon won ciro ve 83,3 trilyon won faaliyet kârı açıkladı; HBM4'ün 4. çeyrekte HBM3E'yi sevkiyat ve ciroda geçmesini bekliyor. Şirket 23 Ekim'de Solidigm için halka arz incelemesini durdurdu.",
+      "kaynak": "Finanztrends",
+      "url": "https://www.finanztrends.de/news/sk-hynix-aktie-konzern-stoppt-boersenpruefung-fuer-solidigm/",
+      "yayin": "2026-11-02",
+      "konular": [
+        "bellek"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Mahkeme, xAI'ın Memphis'teki gaz türbini davasını reddetme talebini geri çevirdi",
+      "detay": "Federal yargıç Debra M. Brown, NAACP'nin Colossus veri merkezindeki en az 35 gaz türbinine karşı açtığı Temiz Hava Yasası davasında xAI'ın ret talebini reddetti; dava keşif aşamasına geçiyor.",
+      "kaynak": "Progressive Robot",
+      "url": "https://www.progressiverobot.com/2026/11/01/xai-data-center-lawsuit/",
+      "yayin": "2026-11-01",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Nvidia, Huang'ın çevresine yönelik casusluk iddialarını reddetti",
+      "detay": "ABD istihbaratının Jensen Huang'ın yakın çevresinden birini Çin'e bilgi sızdırma şüphesiyle izlediği haberlerine Nvidia itiraz etti; şirket, Singapur'daki müşterisi Megaspeed'le ilgili ihracat kontrolü soruşturmasının iddiaları çürüttüğünü söyledi.",
+      "kaynak": "Gokhshtein Media",
+      "url": "https://gokhshtein.com/news/2026-10-30-nvidia-denies-chinese-spy-allegations-says-prior-export",
+      "yayin": "2026-10-30",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "TSMC hissesi Intel kaynaklı satışta açılışta %3,7 düştü",
+      "detay": "TSMC 30 Ekim'de sektör genelindeki %4'lük düşüşle birlikte açılışta %3,67 geriledi; Intel'in zayıf görünümü ve AI sermaye harcamalarının sürdürülebilirliği kaygısı öne çıktı. Şirketin 2026 yatırım planı 60–64 milyar dolar.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/news/market-movers/262260899-market-movers-tsm-20261030",
+      "yayin": "2026-10-30",
+      "konular": [
+        "pazar",
+        "cip"
+      ],
+      "kategori": "negatif"
+    }
+  ]
+}
