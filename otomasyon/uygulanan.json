@@ -780,6 +780,26 @@
       "ozet": "Ölçüm tarihi kayıtlı olmayan fiyatlar tabloda 'ölçüm tarihi yok' notuyla işaretleniyor.",
       "neden": null,
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-02",
+      "oneri": "Fiyatlar'da 'Son çekim' kartına yaş ve eski uyarısı ekle",
+      "durum": "acik",
+      "pr": 70,
+      "dal": "otomasyon/oneri-2026-11-02-1",
+      "ozet": "Çekim tarihinin yanında kaç gün önce olduğu, 2 günü aşınca amber 'Eski' rozeti",
+      "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-02",
+      "oneri": "Bugün madde kartlarında kaynağın alan adını göster",
+      "durum": "acik",
+      "pr": 71,
+      "dal": "otomasyon/oneri-2026-11-02-2",
+      "ozet": "Kaynak bağlantısının yanında alan adı gösteriliyor",
+      "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
+      "kim": "otomasyon"
     }
   ]
 }

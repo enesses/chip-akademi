@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-02T07:13:20.553Z",
+  "guncelleme": "2026-11-02T07:15:31.304Z",
   "tarih": "2026-11-02",
   "durum": "dikkat",
   "ajanlar": [
@@ -44,7 +44,7 @@
     {
       "seviye": "dikkat",
       "tur": "onay",
-      "metin": "5 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+      "metin": "7 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65, PR #70, PR #71) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
   "oneriler": [
@@ -79,7 +79,28 @@
       "alan": "bugün"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-11-02",
+      "oneri": "Fiyatlar'da 'Son çekim' kartına yaş ve eski uyarısı ekle",
+      "durum": "acik",
+      "pr": 70,
+      "dal": "otomasyon/oneri-2026-11-02-1",
+      "ozet": "Çekim tarihinin yanında kaç gün önce olduğu, 2 günü aşınca amber 'Eski' rozeti",
+      "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-02",
+      "oneri": "Bugün madde kartlarında kaynağın alan adını göster",
+      "durum": "acik",
+      "pr": 71,
+      "dal": "otomasyon/oneri-2026-11-02-2",
+      "ozet": "Kaynak bağlantısının yanında alan adı gösteriliyor",
+      "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
@@ -437,6 +458,20 @@
       "pr": 69,
       "tarih": "2026-11-01",
       "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyatlar'da 'Son çekim' kartına yaş ve eski uyarısı ekle",
+      "durum": "acik",
+      "pr": 70,
+      "tarih": "2026-11-02",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Bugün madde kartlarında kaynağın alan adını göster",
+      "durum": "acik",
+      "pr": 71,
+      "tarih": "2026-11-02",
+      "kim": "otomasyon"
     }
   ],
   "onayBekleyen": [
@@ -474,6 +509,20 @@
       "tarih": "2026-10-30",
       "neden": "Korunan dosya (otomasyon/GUNLUK.md); testler geçti, kullanıcı onayı bekliyor.",
       "dal": "otomasyon/oneri-2026-10-30-2"
+    },
+    {
+      "pr": 70,
+      "oneri": "Fiyatlar'da 'Son çekim' kartına yaş ve eski uyarısı ekle",
+      "tarih": "2026-11-02",
+      "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
+      "dal": "otomasyon/oneri-2026-11-02-1"
+    },
+    {
+      "pr": 71,
+      "oneri": "Bugün madde kartlarında kaynağın alan adını göster",
+      "tarih": "2026-11-02",
+      "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
+      "dal": "otomasyon/oneri-2026-11-02-2"
     }
   ],
   "guvenlik": {
