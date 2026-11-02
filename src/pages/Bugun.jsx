@@ -12,6 +12,11 @@ function tarihYaz(iso, gunAdi = false) {
   const t = new Date(Date.UTC(y, a - 1, g));
   return `${g} ${AY[a - 1]}${gunAdi ? `, ${GUN[t.getUTCDay()]}` : ""}`;
 }
+/** Bağlantının alan adı ("www." olmadan); geçersiz adreste boş döner. */
+function alanAdi(url) {
+  try { return new URL(url).hostname.replace(/^www\./, ""); } catch { return ""; }
+}
+
 function kalanGun(iso) {
   const bugun = new Date(); bugun.setHours(0, 0, 0, 0);
   const [y, a, g] = iso.split("-").map(Number);
@@ -198,7 +203,9 @@ export default function Bugun() {
                   </div>
                 </div>
                 <a href={m.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-wider text-muted-foreground hover:text-foreground ml-10">
-                  {m.kaynak} <ExternalLink className="h-3 w-3" />
+                  {m.kaynak}
+                  {alanAdi(m.url) && <span className="normal-case tracking-normal text-muted-foreground/70" data-testid="bugun-alan-adi">· {alanAdi(m.url)}</span>}
+                  <ExternalLink className="h-3 w-3" />
                 </a>
               </div>
             );
