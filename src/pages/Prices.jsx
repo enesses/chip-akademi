@@ -27,6 +27,18 @@ const gunFarki = (a, b) => Math.round((new Date(`${b}T12:00:00Z`) - new Date(`${
 // Endeks haftalık ölçülür; kaynak bazen haftalarca güncellenmiyor. 14 günden eski ölçüm işaretlenir.
 const ENDEKS_ESKI_GUN = 14;
 const endeksYasi = (t) => (/^\d{4}-\d{2}-\d{2}$/.test(t || "") ? Math.floor((Date.now() - new Date(`${t}T12:00:00Z`)) / 86400000) : null);
+// Bu yüzdeyi aşan iki günlük değişim çoğu zaman tek bir ilanın girip çıkmasıdır; ayrıca işaretlenir.
+const SERT_PCT = 50;
+const sert = (it) => typeof it.degisim_pct === "number" && Math.abs(it.degisim_pct) > SERT_PCT;
+function SertNot({ it }) {
+  if (!sert(it)) return null;
+  return (
+    <span className="ml-2 rounded-full border border-amber-500/40 bg-amber-500/10 px-1.5 py-0.5 font-mono text-[9px] text-amber-300" data-testid="hareket-sert"
+      title={`İki ölçüm arasında %${SERT_PCT}'den büyük değişim: tek bir ilanın eklenmesi ya da kalkması medyanı bu kadar oynatabilir.`}>
+      sert oynama
+    </span>
+  );
+}
 const anlamli = (it) => it.usd_saat == null || it.onceki_usd == null || Math.abs(it.usd_saat - it.onceki_usd) >= ESIK_USD - 1e-9;
 
 /** Nereden ve nasıl kiralamalı: hyperscaler farkı, spot ve rezerve oranları. */
@@ -164,13 +176,13 @@ export default function Prices() {
               {tarihKisa(data.iki_gun.baslangic)} → {tarihKisa(data.iki_gun.bitis)} ({gunFarki(data.iki_gun.baslangic, data.iki_gun.bitis)} gün)
             </p>
           )}
-          <p className="text-xs text-muted-foreground mb-3">Soluk satırlar {AZ_SAGLAYICI}'ten az sağlayıcıyla listeleniyor; bu modellerde medyan tek bir ilanla büyük oynayabilir.</p>
+          <p className="text-xs text-muted-foreground mb-3">Soluk satırlar {AZ_SAGLAYICI}'ten az sağlayıcıyla listeleniyor; bu modellerde medyan tek bir ilanla büyük oynayabilir. %{SERT_PCT}'den büyük değişimler “sert oynama” notuyla işaretlenir.</p>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="rounded-2xl border border-red-500/40 bg-red-500/5 p-5">
               <div className="flex items-center gap-2 mb-3"><TrendingUp className="h-4 w-4 text-red-400" /><h3 className="font-display font-semibold text-red-300">Artanlar</h3></div>
               {data.iki_gun.artanlar.filter(anlamli).map((it) => (
                 <div key={it.model} className={cn("flex items-center justify-between text-sm py-1.5", it.saglayici != null && it.saglayici < AZ_SAGLAYICI && "opacity-60")} title={it.saglayici != null && it.saglayici < AZ_SAGLAYICI ? "Az sağlayıcı: medyan tek bir listelemeyle oynayabilir" : undefined}>
-                  <span>{it.model}{it.saglayici != null && <span className="ml-2 font-mono text-[10px] text-muted-foreground" data-testid="hareket-saglayici">{it.saglayici} sağlayıcı</span>}</span>
+                  <span>{it.model}{it.saglayici != null && <span className="ml-2 font-mono text-[10px] text-muted-foreground" data-testid="hareket-saglayici">{it.saglayici} sağlayıcı</span>}<SertNot it={it} /></span>
                   <span className="font-mono text-red-400 flex items-center gap-1"><ArrowUpRight className="h-3 w-3" />{pct(it.degisim_pct)}</span>
                 </div>
               ))}
@@ -179,7 +191,7 @@ export default function Prices() {
               <div className="flex items-center gap-2 mb-3"><TrendingDown className="h-4 w-4 text-emerald-400" /><h3 className="font-display font-semibold text-emerald-300">Düşenler</h3></div>
               {data.iki_gun.dusenler.filter(anlamli).map((it) => (
                 <div key={it.model} className={cn("flex items-center justify-between text-sm py-1.5", it.saglayici != null && it.saglayici < AZ_SAGLAYICI && "opacity-60")} title={it.saglayici != null && it.saglayici < AZ_SAGLAYICI ? "Az sağlayıcı: medyan tek bir listelemeyle oynayabilir" : undefined}>
-                  <span>{it.model}{it.saglayici != null && <span className="ml-2 font-mono text-[10px] text-muted-foreground" data-testid="hareket-saglayici">{it.saglayici} sağlayıcı</span>}</span>
+                  <span>{it.model}{it.saglayici != null && <span className="ml-2 font-mono text-[10px] text-muted-foreground" data-testid="hareket-saglayici">{it.saglayici} sağlayıcı</span>}<SertNot it={it} /></span>
                   <span className="font-mono text-emerald-400 flex items-center gap-1"><ArrowDownRight className="h-3 w-3" />{pct(it.degisim_pct)}</span>
                 </div>
               ))}
