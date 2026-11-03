@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-03T07:05:28.699Z",
+  "guncelleme": "2026-11-03T07:08:39.354Z",
   "tarih": "2026-11-03",
   "durum": "dikkat",
   "ajanlar": [
@@ -40,7 +40,7 @@
     {
       "seviye": "dikkat",
       "tur": "onay",
-      "metin": "7 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65, PR #70, PR #71) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+      "metin": "9 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65, PR #70, PR #71, PR #72, PR #73) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
   "oneriler": [
@@ -69,7 +69,28 @@
       "alan": "veri · Bellek"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-11-03",
+      "oneri": "İki günlük hareketlerde %50'yi aşan değişimlere 'sert oynama' notu ekle",
+      "durum": "acik",
+      "pr": 72,
+      "dal": "otomasyon/oneri-2026-11-03-1",
+      "ozet": "Fiyatlar'daki hareket kartlarında %50'yi aşan değişimlere amber 'sert oynama' rozeti eklendi.",
+      "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-03",
+      "oneri": "Kaynakta 14 günden uzun süredir gelmeyen fiyatları tabloda 'fiyat yok' say",
+      "durum": "acik",
+      "pr": 73,
+      "dal": "otomasyon/oneri-2026-11-03-2",
+      "ozet": "14 günden eski ölçümlü fiyatlar tabloda 'fiyat yok · son ölçüm …' olarak gösteriliyor, sıralamaya katılmıyor.",
+      "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Haberler'de yayın tarihini eklenme gününden farklıysa göster",
@@ -420,6 +441,20 @@
       "pr": 71,
       "tarih": "2026-11-02",
       "kim": "otomasyon"
+    },
+    {
+      "oneri": "İki günlük hareketlerde %50'yi aşan değişimlere 'sert oynama' notu ekle",
+      "durum": "acik",
+      "pr": 72,
+      "tarih": "2026-11-03",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Kaynakta 14 günden uzun süredir gelmeyen fiyatları tabloda 'fiyat yok' say",
+      "durum": "acik",
+      "pr": 73,
+      "tarih": "2026-11-03",
+      "kim": "otomasyon"
     }
   ],
   "onayBekleyen": [
@@ -471,6 +506,20 @@
       "tarih": "2026-11-02",
       "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
       "dal": "otomasyon/oneri-2026-11-02-2"
+    },
+    {
+      "pr": 72,
+      "oneri": "İki günlük hareketlerde %50'yi aşan değişimlere 'sert oynama' notu ekle",
+      "tarih": "2026-11-03",
+      "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
+      "dal": "otomasyon/oneri-2026-11-03-1"
+    },
+    {
+      "pr": 73,
+      "oneri": "Kaynakta 14 günden uzun süredir gelmeyen fiyatları tabloda 'fiyat yok' say",
+      "tarih": "2026-11-03",
+      "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
+      "dal": "otomasyon/oneri-2026-11-03-2"
     }
   ],
   "guvenlik": {

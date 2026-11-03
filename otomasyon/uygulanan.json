@@ -800,6 +800,26 @@
       "ozet": "Kaynak bağlantısının yanında alan adı gösteriliyor",
       "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-03",
+      "oneri": "İki günlük hareketlerde %50'yi aşan değişimlere 'sert oynama' notu ekle",
+      "durum": "acik",
+      "pr": 72,
+      "dal": "otomasyon/oneri-2026-11-03-1",
+      "ozet": "Fiyatlar'daki hareket kartlarında %50'yi aşan değişimlere amber 'sert oynama' rozeti eklendi.",
+      "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-03",
+      "oneri": "Kaynakta 14 günden uzun süredir gelmeyen fiyatları tabloda 'fiyat yok' say",
+      "durum": "acik",
+      "pr": 73,
+      "dal": "otomasyon/oneri-2026-11-03-2",
+      "ozet": "14 günden eski ölçümlü fiyatlar tabloda 'fiyat yok · son ölçüm …' olarak gösteriliyor, sıralamaya katılmıyor.",
+      "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
+      "kim": "otomasyon"
     }
   ]
 }
