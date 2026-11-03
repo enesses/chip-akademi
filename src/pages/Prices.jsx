@@ -14,7 +14,15 @@ const AZ_SAGLAYICI = 5;
 const MIN_SAGLAYICI = 5;
 // Üretici, model adının ilk kelimesi ("Nvidia H100" → "Nvidia").
 const ureticiAd = (m) => m.split(" ")[0];
-const FIYATSIZ = data.fiyatlar.filter((f) => f.usd_saat == null).length;
+// Kaynakta 14 günden uzun süredir gelmeyen fiyat güncel sayılmaz: tabloda "fiyat yok" gösterilir,
+// sıralamaya katılmaz. Son ölçüm tarihi yine de satırda görünür.
+const BAYAT_GUN = 14;
+const gunArasi = (a, b) => Math.round((new Date(`${b}T12:00:00Z`) - new Date(`${a}T12:00:00Z`)) / 86400000);
+const FIYATLAR = data.fiyatlar.map((f) =>
+  f.usd_saat != null && f.olcum_tarihi && data.kaynak.cekildigi_tarih && gunArasi(f.olcum_tarihi, data.kaynak.cekildigi_tarih) > BAYAT_GUN
+    ? { ...f, usd_saat: null, degisim_pct: null, bayat: f.olcum_tarihi }
+    : f);
+const FIYATSIZ = FIYATLAR.filter((f) => f.usd_saat == null).length;
 const URETICILER = [...new Set(data.fiyatlar.map((f) => ureticiAd(f.model)))]
   .map((u) => [u, data.fiyatlar.filter((f) => ureticiAd(f.model) === u).length])
   .sort((a, b) => b[1] - a[1]);
@@ -103,7 +111,7 @@ export default function Prices() {
   const [fiyatsizGoster, setFiyatsizGoster] = useState(false);
 
   const rows = useMemo(() => {
-    let liste = data.fiyatlar.filter((f) => !q || f.model.toLocaleLowerCase("tr").includes(q.toLocaleLowerCase("tr")));
+    let liste = FIYATLAR.filter((f) => !q || f.model.toLocaleLowerCase("tr").includes(q.toLocaleLowerCase("tr")));
     if (cokSaglayici) liste = liste.filter((f) => (f.saglayici ?? 0) >= MIN_SAGLAYICI);
     if (uretici) liste = liste.filter((f) => ureticiAd(f.model) === uretici);
     if (!fiyatsizGoster) liste = liste.filter((f) => f.usd_saat != null);
@@ -246,6 +254,11 @@ export default function Prices() {
                       <td className="px-4 py-2.5 text-xs text-muted-foreground">{r.bellek ?? "—"}</td>
                       <td className="px-4 py-2.5 font-mono text-right">
                         {usd(r.usd_saat)}
+                        {r.bayat && (
+                          <span className="block font-sans text-[10px] text-amber-300/90" data-testid="fiyat-bayat" title={`Bu model ${BAYAT_GUN} günden uzun süredir kaynakta gelmedi; eski fiyat güncel sayılmıyor`}>
+                            fiyat yok · son ölçüm {r.bayat}
+                          </span>
+                        )}
                         {r.usd_saat != null && (!r.olcum_tarihi || r.olcum_tarihi < data.kaynak.cekildigi_tarih) && (
                           <span className="block font-sans text-[10px] text-amber-300/90" data-testid="fiyat-eski" title={r.olcum_tarihi ? "Bu model son çekimde gelmedi; gösterilen fiyat daha eski bir ölçüme ait" : "Bu fiyatın ölçüm tarihi kayıtlı değil; güncel olmayabilir"}>
                             {r.olcum_tarihi ? `ölçüm ${r.olcum_tarihi}` : "ölçüm tarihi yok"}
