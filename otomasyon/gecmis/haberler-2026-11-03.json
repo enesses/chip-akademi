@@ -1,0 +1,76 @@
+{
+  "tarih": "2026-11-03",
+  "haberler": [
+    {
+      "baslik": "Veri merkezleri ara seçimlerin ana konusu oldu",
+      "detay": "AI veri merkezlerine bağlı kapasite maliyetleri Ohio, Pensilvanya ve Michigan'da konut faturalarını ayda 18 dolara kadar artırdı; PJM'ye göre tüketiciler bu yıl 7,3 milyar dolar ek kapasite ücreti ödeyecek. Ohio'da seçmenlerin %71'i moratoryumdan yana.",
+      "kaynak": "Forbes",
+      "url": "https://www.forbes.com/sites/maryroeloffs/2026/11/02/data-centers-are-key-issue-in-midterm-battleground-states-as-household-electric-rates-soar/",
+      "yayin": "2026-11-02",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Putin, özel veri merkezlerinden %10 kapasiteyi devlete ayırmalarını istedi",
+      "detay": "Rusya'da devlete ait olmayan veri merkezleri kapasitelerinin %10'unu devlet BT altyapısı için hazır tutacak; yeni bir komisyon talep ettiğinde 24 saat içinde açılması gerekecek. Karar, Ukrayna'nın İHA saldırılarıyla 63 MW'lık tesisin hasar görmesinin ardından geldi.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/putin-demands-russian-data-centers-supply-capacity-to-the-state-in-wake-of-ukraine-drone-attacks-10-percent-capacity-must-be-available-for-state-it-infrastructure-with-24-hours-notice",
+      "yayin": "2026-11-02",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "AMD'den 13,09 milyar dolar gelir bekleniyor",
+      "detay": "AMD 3. çeyrek sonuçlarını 3 Kasım'da piyasa kapanışından sonra açıklıyor. Konsensüs yaklaşık 13,09 milyar dolar gelir (yıllık %41,6 artış) ve 1,95 dolar düzeltilmiş hisse başı kâr.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262263680-amd-q3-earnings-preview-ai-chip-growth-reverse-tradingkey",
+      "yayin": "2026-11-02",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "DayOne ve Nxera, Sembcorp ile veri merkezi enerji ortaklıkları kurdu",
+      "detay": "DayOne, Sembcorp Utilities ile mutabakat imzaladı ve 2030'a kadar %100 yenilenebilir enerji hedefliyor; Singtel'in veri merkezi kolu Nxera da Sembcorp ile Singapur için hidrojen, biyometan ve bina güneşi seçeneklerini inceleyecek.",
+      "kaynak": "VoIP Review",
+      "url": "https://voip.review/2026/11/02/dayone-nxera-secure-power-partnerships-ai-data-centers/",
+      "yayin": "2026-11-02",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Neocloud borçları AI balonu kaygısını büyütüyor",
+      "detay": "Gartner, neocloud şirketlerinin %80'inin 2030'a kadar bağımsız kalamayacağını öngörüyor; Forrester en az üç satın alma bekliyor. Haber BBC'nin neocloud borç yükü incelemesine dayanıyor.",
+      "kaynak": "AI Weekly (BBC)",
+      "url": "https://aiweekly.co/alerts/coreweave-selloff-stokes-fears-over-neocloud-ai-debt-pile",
+      "yayin": "2026-11-01",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "KLA %3 düştü: ekipman hisselerinde capex kaygısı",
+      "detay": "KLA hisseleri 2 Kasım'ı %3,04 düşüşle kapattı; sektör yaklaşık %2,5 geriledi. Neden olarak büyük çip üreticilerinin yüksek sermaye harcamalarının sürdürülebilirliği ve artan bellek maliyetlerinin nakit akışına etkisi gösteriliyor.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/news/market-movers/262265030-market-movers-klac-20261102",
+      "yayin": "2026-11-02",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    }
+  ]
+}

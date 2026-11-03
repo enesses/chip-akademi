@@ -1,0 +1,110 @@
+{
+  "tarih": "2026-11-03",
+  "derlenme": "3 Kasım 2026",
+  "puan": {
+    "etiket": "Satış dalgası derinleşiyor",
+    "yorum": "Philadelphia Yarı İletken Endeksi'nin %3,4 düşüşü, Asya'da Kospi'nin yaklaşık %4 gerilemesi ve AI finansmanına dair borç kaygıları günün tonunu belirliyor; Marvell–Lumentum ve onsemi–Ferric anlaşmaları altyapı talebinin sürdüğünü gösterse de piyasa bunu ödüllendirmedi.",
+    "deger": 32
+  },
+  "ozet": [
+    "Kasım'ın ilk işlem günü çip hisseleri için ağır geçti. 2 Kasım'da Philadelphia Yarı İletken Endeksi %3,37 düşerek 10.328 puana indi, Nasdaq-100 Ekim zirvesinden %10'un üzerinde gerileyerek teknik düzeltme bölgesine girdi. Yatırımcılar teknolojiden diğer sektörlere geçti; Intel'in Cuma günkü %29'luk çöküşü ve ABD ara seçimleri öncesi risk azaltma satışları besledi.",
+    "Satışın merkezinde AI yatırımlarının getirisi ve finansmanı var. Oracle AI altyapısı için 10 milyar dolarlık tahvil ihracını duyurduğu gün %8,85 değer kaybetti; Anthropic'in güncellenmiş halka arz belgesi ise 3. çeyrekte yaklaşık 17 milyar dolar gelire karşılık 23,3 milyar dolar net zarar ve çoğu bilgi işlem için 895 milyar dolarlık taahhüt gösterdi. Bellek (Micron −%5,8) ve optik iletişim hisseleri (Ciena −%11,4) en çok düşenler arasındaydı.",
+    "Öte yandan şirketler AI altyapısına yatırımı sürdürüyor: Marvell, Lumentum'u borç dahil 115 milyar dolara tamamen hisse karşılığı satın alıyor; onsemi de AI işlemcilerine güç dağıtımı için Ferric'i 775 milyon dolara kadar bir bedelle alıyor. Ancak Marvell hissesi anlaşma günü %12,7 düştü — piyasa şu an büyüme hikâyesinden çok seyrelme ve değerlemeye bakıyor.",
+    "Asya 3 Kasım'da bu dalgayı devraldı: Kospi yaklaşık %4, Tayvan endeksi %3,6 geriledi; Samsung ve SK hynix %4'ün üzerinde kaybetti. Gözler bu akşam açıklanacak AMD 3. çeyrek sonuçlarında; Wall Street yaklaşık 13,09 milyar dolar gelir ve 1,95 dolar hisse başı kâr bekliyor. Politika cephesinde Tayvan, ileri çiplerin Çin'e izinsiz ihracatına 10 yıla kadar hapis öngören bir yasa teklifini görüşüyor."
+  ],
+  "maddeler": [
+    {
+      "baslik": "Yarı iletken endeksi %3,4 düştü, Nasdaq-100 düzeltmeye girdi",
+      "detay": "2 Kasım'da SOX %3,37 düşüşle 10.328 puana, Nasdaq %1,07 düşüşle 25.164'e indi. Oracle, AI altyapısı için 10 milyar dolarlık tahvil ihracını duyurduğu gün %8,85 değer kaybetti.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "Sektör geneline yayılan satış ve AI finansmanına dair borç kaygısı doğrudan çip değerlemelerini baskılıyor.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262264978-us-stock-close-nasdaq-falls-dow-rises-marvell-oracle-tradingkey"
+    },
+    {
+      "baslik": "Marvell, Lumentum'u 115 milyar dolara satın alıyor",
+      "detay": "Tamamen hisse karşılığı anlaşma, Lumentum hissesini 1.132 dolardan değerliyor (28 Ekim kapanışına göre %23,9 prim); özkaynak değeri 102,5 milyar dolar. Marvell hissesi gün sonunda %12,7 düştü.",
+      "kategori": "notr",
+      "agirlik": 3,
+      "neden": "Optik bağlantıya stratejik bahis AI veri merkezi talebine güveni gösteriyor, ancak piyasa seyrelme ve değerleme yüzünden anlaşmayı cezalandırdı.",
+      "kaynak": "BNN Bloomberg (Reuters)",
+      "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/11/02/marvell-to-buy-lumentum-in-us115-billion-deal-in-ai-data-center-bet/"
+    },
+    {
+      "baslik": "Bellek ve optik hisseleri çöktü: Micron %5,8, Ciena %11,4 düştü",
+      "detay": "Seagate −%7,9, Western Digital −%7,5, SanDisk −%6,6, Micron −%5,8; Intel Cuma'daki yaklaşık %29'luk düşüşün ardından %8,8 daha kaybetti. Analistler AI yatırımlarının getirisine dair artan şüpheyi gösteriyor.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Bellek döngüsünün en güçlü kalemleri bile satıştan nasibini aldı; risk iştahı geriliyor.",
+      "kaynak": "BigGo Finance",
+      "url": "https://finance.biggo.com/news/345f3228-1d14-4f62-bca9-0c4446b03f49"
+    },
+    {
+      "baslik": "Asya'da çip satışı derinleşti: Kospi yaklaşık %4 geriledi",
+      "detay": "3 Kasım'da Kospi yaklaşık %4, Tayvan ana endeksi %3,6 düştü; Samsung Electronics ve SK hynix %4'ün üzerinde kaybetti. MSCI Asya Pasifik %1,2 geriledi.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "ABD'deki satışın bellek ve dökümhane merkezlerine sıçraması tedarik zincirinin tamamında baskı yaratıyor.",
+      "kaynak": "FinancialJuice",
+      "url": "https://features.financialjuice.com/2026/11/03/asian-stocks-slide-as-chip-selloff-deepens-asia-market-wrap/"
+    },
+    {
+      "baslik": "AMD bilanço öncesi %7,5 düştü",
+      "detay": "AMD 2 Kasım'ı %7,52 düşüşle 466,84 dolardan kapattı. SOX son beş günde yaklaşık %10, Nvidia yaklaşık %8 geriledi; şirket 3. çeyrek sonuçlarını 3 Kasım akşamı açıklayacak.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Düşüş bilanço öncesi pozisyon azaltmaktan kaynaklanıyor; yön bu akşamki sonuçlarla belli olacak.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262265872-stock-amd-price-prediction-ai-sox-tradingkey"
+    },
+    {
+      "baslik": "Anthropic'in güncellenmiş S-1'i: 17 milyar dolar gelir, 895 milyar dolar taahhüt",
+      "detay": "Güncellenmiş halka arz belgesine göre 3. çeyrek geliri yaklaşık 17 milyar dolar (bir yıl önce 1,4 milyar), net zarar 23,3 milyar dolar. Çoğu bilgi işlem için olan taahhütler 895 milyar dolar; bunun 214 milyar doları fesih hakkına ya da koşullara bağlı.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Devasa bilgi işlem taahhütleri çip ve bulut talebini destekliyor, ama zararın büyüklüğü AI finansmanı kaygısını besliyor.",
+      "kaynak": "Gizmodo",
+      "url": "https://gizmodo.com/anthropic-is-betting-nearly-900-billion-that-the-ai-boom-wont-bust-2000833885"
+    },
+    {
+      "baslik": "onsemi, AI güç dağıtımı için Ferric'i satın alıyor",
+      "detay": "onsemi, entegre voltaj regülatörü geliştiren Ferric'i 600 milyon dolar peşin ve 175 milyon dolara kadar ek ödemeyle alıyor; 2030 AI veri merkezi gelir hedefini 3 milyar doların üzerine çıkardı.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "AI işlemcilerinin artan güç ihtiyacına yönelik somut yatırım ve yükseltilen gelir hedefi.",
+      "kaynak": "GlobeNewswire (onsemi)",
+      "url": "https://www.globenewswire.com/news-release/2026/11/02/3393726/0/en/onsemi-to-acquire-ferric-establishing-leadership-in-power-delivery-for-next-generation-ai-processors.html"
+    },
+    {
+      "baslik": "Tayvan, Çin'e çip kaçakçılığına 10 yıl hapis getirmeyi görüşüyor",
+      "detay": "DPP milletvekillerinin Dış Ticaret Kanunu değişikliği, izinsiz ileri çip ve ekipman ihracatına 10 yıla kadar hapis ve 5–10 milyon NT$ para cezası öngörüyor. Ağustos'ta 74 Nvidia B300 sunucusunu Çin'e yönlendirmekle suçlanan dokuz kişi tetikleyici oldu; muhalefet çoğunluğu teklifi tıkayabilir.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "İhracat denetimini sıkılaştırıyor ama yasalaşması belirsiz; kısa vadeli etkisi sınırlı.",
+      "kaynak": "Asia Times",
+      "url": "https://asiatimes.com/2026/11/taiwan-to-criminalize-nvidia-ai-chip-smuggling-to-china"
+    }
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2026-11-04",
+      "baslik": "Arm 2. çeyrek (FY2027) sonuçları",
+      "kaynak": "Arm Newsroom",
+      "url": "https://newsroom.arm.com/news/arm-announces-earnings-release-date-for-second-quarter-fiscal-year-ending-2027"
+    },
+    {
+      "tarih": "2026-11-17",
+      "baslik": "Nvidia 3. çeyrek (FY2027) sonuçları",
+      "kaynak": "NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-third-quarter-financial-results-6928873"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = -6 · Σ ağırlık = 17 · Puan = 50 + 50 × -0.35 = 32"
+  }
+}

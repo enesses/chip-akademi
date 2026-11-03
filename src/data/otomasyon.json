@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-11-02T07:46:27.152Z",
-  "tarih": "2026-11-02",
+  "guncelleme": "2026-11-03T07:05:28.699Z",
+  "tarih": "2026-11-03",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-11-02T07:11:49.233Z"
+      "zaman": "2026-11-03T07:04:03.835Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-11-02T07:11:49.408Z"
+      "zaman": "2026-11-03T07:04:03.963Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-11-02T07:11:48.580Z"
+      "zaman": "2026-11-03T07:04:03.223Z"
     },
     {
       "id": "gelistirme",
@@ -33,14 +33,10 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-11-02T07:12:07.904Z"
+      "zaman": "2026-11-03T07:04:23.717Z"
     }
   ],
   "dikkat": [
-    {
-      "seviye": "uyarı",
-      "metin": "Yenileme · Fiyat verisi: izin engeli — kaynak sayfa okumaya izin vermedi, veri uydurulmadı (son veri 2026-11-01). WebFetch PROVENANCE_REQUIRED (getdeploying.com/gpus; arama sonuçlarında tam adres çıkmadı, doğrudan istek de reddedildi)"
-    },
     {
       "seviye": "dikkat",
       "tur": "onay",
@@ -49,80 +45,32 @@
   ],
   "oneriler": [
     {
-      "baslik": "Fiyatlar'da 'Son çekim' kartına yaş ve eski uyarısı ekle",
-      "neden": "Bugün getdeploying.com/gpus izin engeliyle okunamadı; src/pages/Prices.jsx:154 'Son çekim' kartında yalnızca tarih (2026-11-01) yazıyor. Endeks kartında 14 günü aşınca 'Eski: N gün önce' rozeti var (Prices.jsx:138) ama fiyat listesinin kendisinde yok; kullanıcı listenin kaç gündür güncellenmediğini görmüyor.",
+      "baslik": "İki günlük hareketlerde %50'yi aşan değişimlere 'sert oynama' notu ekle",
+      "neden": "Bugünkü gpu_kiralama.json iki_gun.artanlar'da Nvidia GH200 +%74,2 (6 sağlayıcı) ve RTX PRO 5000 +%56,1 (5 sağlayıcı) var; ikisi de 1 Kasım'daki −%42,6 / −%45,3 düşüşlerin geri dönüşü. AZ_SAGLAYICI=5 olduğu için Prices.jsx bu satırları soluklaştırmıyor; kullanıcı bunun ilan kaynaklı bir sıçrama olabileceğini göremiyor.",
       "etki": "orta",
-      "alan": "fiyatlar"
-    },
-    {
-      "baslik": "Bugün madde kartlarında kaynağın alan adını göster",
-      "neden": "src/pages/Bugun.jsx:205 bağlantıda yalnızca 'kaynak' adını gösteriyor. Bugünkü 9 maddenin bazıları ikincil kaynaklardan (TokenPost, FourWeekMBA, Business Recorder üzerinden Reuters); alan adı görünmeden okur bağlantının nereye gittiğini ve kaynağın türünü anlayamıyor.",
-      "etki": "düşük",
-      "alan": "bugün"
-    },
-    {
-      "baslik": "Fiyat endeksi, fiyat tablosu okunamasa da işlensin",
-      "neden": "otomasyon/veri-isle.mjs:177 endeksi yalnızca fiyatlar.json içinden alıyor ve dosya en az 30 satır istiyor (veri-isle.mjs:89). Bugün gpu-price-index okundu (12 ay +%12, kayıtlı değer +%18) ama /gpus izin engeli yüzünden fiyatlar.json yazılamadığından güncel endeks uygulamaya giremedi. Ayrı bir endeks.json girdisi gerekiyor (korunan dosya).",
-      "etki": "orta",
-      "alan": "otomasyon"
+      "alan": "arayüz · Fiyatlar"
     },
     {
       "baslik": "Kaynakta 14 günden uzun süredir gelmeyen fiyatları tabloda 'fiyat yok' say",
-      "neden": "Dünkü öneri hâlâ geçerli: RTX 5880 Ada, RTX 4500 Ada, P40 gibi modellerin fiyatı 2026-10-12 ölçümünden taşınıyor (bugün 21 gün); uygulanan.json'da kaydı yok. Eşik otomasyon/veri-isle.mjs'de (korunan dosya) uygulanmalı.",
+      "neden": "gpu_kiralama.json'da 5 modelin olcum_tarihi hâlâ 2026-10-12 (22 gün önce); Prices.jsx (satır ~249) yalnızca amber 'ölçüm 2026-10-12' notu düşüyor, eski fiyat sıralamada ve en ucuz karşılaştırmalarında güncelmiş gibi kullanılmaya devam ediyor.",
       "etki": "orta",
-      "alan": "otomasyon"
+      "alan": "arayüz · Fiyatlar"
     },
     {
       "baslik": "Bugün puan kartında dünkü puana göre değişimi göster",
-      "neden": "Dünkü öneri hâlâ geçerli: bugün puan 53, dün 34 (otomasyon/gecmis/bugun-2026-11-01.json); src/data/bugun.json'da önceki puan alanı yok, Bugun.jsx karşılaştırma yapmıyor. veri-isle.mjs'nin 'onceki_puan' yazması gerekiyor (korunan dosya).",
-      "etki": "orta",
-      "alan": "bugün"
-    }
-  ],
-  "uygulanan": [
-    {
-      "tarih": "2026-11-02",
-      "oneri": "Fiyatlar'da 'Son çekim' kartına yaş ve eski uyarısı ekle",
-      "durum": "acik",
-      "pr": 70,
-      "dal": "otomasyon/oneri-2026-11-02-1",
-      "ozet": "Çekim tarihinin yanında kaç gün önce olduğu, 2 günü aşınca amber 'Eski' rozeti",
-      "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
-      "kim": "otomasyon"
+      "neden": "Bugün puanı 2 Kasım'da 53 iken bugün 32; Bugun.jsx'te önceki güne dair hiçbir alan yok (grep 'onceki' boş). Veri için veri-isle.mjs'nin bugun.json'a onceki_puan yazması gerekiyor — korunan dosya, onay ister.",
+      "etki": "düşük",
+      "alan": "otomasyon + arayüz · Bugün"
     },
     {
-      "tarih": "2026-11-02",
-      "oneri": "Bugün madde kartlarında kaynağın alan adını göster",
-      "durum": "acik",
-      "pr": 71,
-      "dal": "otomasyon/oneri-2026-11-02-2",
-      "ozet": "Kaynak bağlantısının yanında alan adı gösteriliyor",
-      "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
-      "kim": "otomasyon"
+      "baslik": "Bellek sözleşme fiyatlarını güncelle",
+      "neden": "İyileştirme ajanı: bellek_fiyat.json 11 gündür güncellenmedi. Bir sonraki pazartesi TrendForce basın merkezinden 4. çeyrek / 1. çeyrek 2027 DRAM-NAND sözleşme tahminleri okunmalı.",
+      "etki": "düşük",
+      "alan": "veri · Bellek"
     }
   ],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
-      "durum": "acik",
-      "pr": 35,
-      "tarih": "2026-10-19",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Fiyat endeksi kartında ölçüm tarihi eskiyse uyarı göster",
-      "durum": "acik",
-      "pr": 36,
-      "tarih": "2026-10-19",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "veri-isle kayıtlıdan eski endeks ölçümünü yazmasın",
-      "durum": "acik",
-      "pr": 34,
-      "tarih": "2026-10-19",
-      "kim": "otomasyon"
-    },
     {
       "oneri": "Haberler'de yayın tarihini eklenme gününden farklıysa göster",
       "durum": "acik",
@@ -560,25 +508,33 @@
         "boyutKB": null
       }
     },
-    "bulgular": []
+    "bulgular": [
+      {
+        "alan": "veri",
+        "baslik": "Bellek fiyatları 11 gündür güncellenmedi",
+        "etki": "düşük",
+        "otomatik": false,
+        "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
+      }
+    ]
   },
   "yenileme": {
     "durum": "ok",
     "adimlar": [
       {
         "ad": "Fiyat verisi",
-        "durum": "uyari",
-        "detay": "izin engeli — kaynak sayfa okumaya izin vermedi, veri uydurulmadı (son veri 2026-11-01). WebFetch PROVENANCE_REQUIRED (getdeploying.com/gpus; arama sonuçlarında tam adres çıkmadı, doğrudan istek de reddedildi)"
+        "durum": "ok",
+        "detay": "bu çalıştırmada güncellendi — 93 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 14 gelmedi (eski fiyat korundu)"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 53, 1 yaklaşan olay; haber akışına +9"
+        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 32, 2 yaklaşan olay; haber akışına +8"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+5 haber (akışta 345), 1 atlandı: akışta zaten var; bugün toplam 14"
+        "detay": "+6 haber (akışta 349); bugün toplam 14"
       },
       {
         "ad": "Derleme",
@@ -588,7 +544,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2855 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2866 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -615,11 +571,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-10-19",
-      "durum": "dikkat",
-      "dikkat": 2
-    },
     {
       "tarih": "2026-10-20",
       "durum": "dikkat",
@@ -684,6 +635,11 @@
       "tarih": "2026-11-02",
       "durum": "dikkat",
       "dikkat": 2
+    },
+    {
+      "tarih": "2026-11-03",
+      "durum": "dikkat",
+      "dikkat": 1
     }
   ]
 }

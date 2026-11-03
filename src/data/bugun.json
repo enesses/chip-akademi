@@ -1,101 +1,98 @@
 {
-  "tarih": "2026-11-02",
-  "derlenme": "2 Kasım 2026",
+  "tarih": "2026-11-03",
+  "derlenme": "3 Kasım 2026",
   "puan": {
-    "etiket": "Rekor ihracat, soğuyan ivme",
-    "yorum": "Kore'nin rekor çip ihracatı ve bellek üreticilerinin uzun vadeli sözleşmeleri talebin güçlü olduğunu gösteriyor; Asya PMI'larındaki yavaşlama, Kioxia'nın zayıf görünümü ve ABD'deki veri merkezi moratoryumu riski tabloyu dengeliyor.",
-    "deger": 53
+    "etiket": "Satış dalgası derinleşiyor",
+    "yorum": "Philadelphia Yarı İletken Endeksi'nin %3,4 düşüşü, Asya'da Kospi'nin yaklaşık %4 gerilemesi ve AI finansmanına dair borç kaygıları günün tonunu belirliyor; Marvell–Lumentum ve onsemi–Ferric anlaşmaları altyapı talebinin sürdüğünü gösterse de piyasa bunu ödüllendirmedi.",
+    "deger": 32
   },
   "ozet": [
-    "Haftaya iki farklı sinyalle başlıyoruz. Bir yanda veriler güçlü: Güney Kore'nin Ekim ihracatı yıllık %93,7 artışla 115,3 milyar dolara çıktı, çip ihracatı ise %259 artışla 56,4 milyar dolar oldu. Samsung ve SK hynix, müşterileriyle yıllara yayılan uzun vadeli sözleşmeler imzalıyor; SK hynix 2027–2028 kapasitesinin yarısından fazlasını şimdiden satmış durumda.",
-    "Öte yanda ivme kaybı belirginleşiyor. Ekim PMI'ları Kore, Tayvan ve Japonya'da imalat büyümesinin yavaşladığını gösterdi; Kore'de tempo sekiz ayın en düşüğünde. Tokyo'da Kioxia, Aralık çeyreği görünümü beklentiyi karşılamayınca %13 düştü — NAND tarafında talebin düzleştiğine dair ilk somut işaret. Tokyo Electron'un %50 kâr artışı öngörüsü ise ekipman tarafının hâlâ güçlü olduğunu hatırlatıyor.",
-    "Talep tarafında yapay zekâ şirketleri tedarik çeşitlendiriyor: OpenAI'ın Google TPU'larını satın almaya hazırlandığı bildiriliyor, Sam Altman da bellek tedariki için Samsung yönetimiyle görüştü. Bu, hesaplama talebinin sürdüğünü ama Nvidia dışı seçeneklerin ağırlık kazandığını gösteriyor.",
-    "Yarın ABD'de ara seçimler var ve veri merkezleri gündemin ortasında: moratoryumu savunan adaylar 15 eyalette valiliği kazanabilir. Sonuçlar, AI altyapı yatırımlarının izin ve inşaat takvimini doğrudan etkileyebilir; 17 Kasım'daki Nvidia bilançosu da sektörün bir sonraki büyük testi."
+    "Kasım'ın ilk işlem günü çip hisseleri için ağır geçti. 2 Kasım'da Philadelphia Yarı İletken Endeksi %3,37 düşerek 10.328 puana indi, Nasdaq-100 Ekim zirvesinden %10'un üzerinde gerileyerek teknik düzeltme bölgesine girdi. Yatırımcılar teknolojiden diğer sektörlere geçti; Intel'in Cuma günkü %29'luk çöküşü ve ABD ara seçimleri öncesi risk azaltma satışları besledi.",
+    "Satışın merkezinde AI yatırımlarının getirisi ve finansmanı var. Oracle AI altyapısı için 10 milyar dolarlık tahvil ihracını duyurduğu gün %8,85 değer kaybetti; Anthropic'in güncellenmiş halka arz belgesi ise 3. çeyrekte yaklaşık 17 milyar dolar gelire karşılık 23,3 milyar dolar net zarar ve çoğu bilgi işlem için 895 milyar dolarlık taahhüt gösterdi. Bellek (Micron −%5,8) ve optik iletişim hisseleri (Ciena −%11,4) en çok düşenler arasındaydı.",
+    "Öte yandan şirketler AI altyapısına yatırımı sürdürüyor: Marvell, Lumentum'u borç dahil 115 milyar dolara tamamen hisse karşılığı satın alıyor; onsemi de AI işlemcilerine güç dağıtımı için Ferric'i 775 milyon dolara kadar bir bedelle alıyor. Ancak Marvell hissesi anlaşma günü %12,7 düştü — piyasa şu an büyüme hikâyesinden çok seyrelme ve değerlemeye bakıyor.",
+    "Asya 3 Kasım'da bu dalgayı devraldı: Kospi yaklaşık %4, Tayvan endeksi %3,6 geriledi; Samsung ve SK hynix %4'ün üzerinde kaybetti. Gözler bu akşam açıklanacak AMD 3. çeyrek sonuçlarında; Wall Street yaklaşık 13,09 milyar dolar gelir ve 1,95 dolar hisse başı kâr bekliyor. Politika cephesinde Tayvan, ileri çiplerin Çin'e izinsiz ihracatına 10 yıla kadar hapis öngören bir yasa teklifini görüşüyor."
   ],
   "maddeler": [
     {
-      "baslik": "Güney Kore'nin Ekim ihracatı rekor: çip satışları %259 arttı",
-      "detay": "Ekim'de toplam ihracat yıllık %93,7 artışla 115,3 milyar dolara, yarı iletken ihracatı %259 artışla 56,4 milyar dolara çıktı; çip artık toplam ihracatın yaklaşık yarısı.",
-      "kategori": "pozitif",
+      "baslik": "Yarı iletken endeksi %3,4 düştü, Nasdaq-100 düzeltmeye girdi",
+      "detay": "2 Kasım'da SOX %3,37 düşüşle 10.328 puana, Nasdaq %1,07 düşüşle 25.164'e indi. Oracle, AI altyapısı için 10 milyar dolarlık tahvil ihracını duyurduğu gün %8,85 değer kaybetti.",
+      "kategori": "negatif",
       "agirlik": 3,
-      "neden": "Bellek fiyatları ve AI sunucu talebinin gerçek satışlara dönüştüğünü gösteren resmi veri.",
-      "kaynak": "The Korea Times",
-      "url": "https://www.koreatimes.co.kr/economy/20261101/koreas-monthly-exports-hit-1153-bil-in-oct-on-record-chip-sales"
+      "neden": "Sektör geneline yayılan satış ve AI finansmanına dair borç kaygısı doğrudan çip değerlemelerini baskılıyor.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262264978-us-stock-close-nasdaq-falls-dow-rises-marvell-oracle-tradingkey"
     },
     {
-      "baslik": "Samsung ve SK hynix uzun vadeli bellek sözleşmelerini genişletiyor",
-      "detay": "Samsung 10 müşteriyle uzun vadeli sözleşme (LTA) imzaladı, 10'uyla daha görüşüyor ve 2030'a kadar kapasitenin %60–70'ini LTA'ya ayırmayı hedefliyor; SK hynix 14 müşteriyle LTA imzaladı, 2027–2028 kapasitesinin yarısından fazlası satılmış durumda.",
-      "kategori": "pozitif",
-      "agirlik": 2,
-      "neden": "Bellek üreticileri için yıllara yayılan talep görünürlüğü; ancak analistler 2028 civarında yeni fabrikalarla arz fazlası riskine dikkat çekiyor.",
-      "kaynak": "Korea JoongAng Daily",
-      "url": "https://www.koreajoongangdaily.com/business/samsung-sk-hynix-build-longterm-order-pipelines-on-back-of-continued-ai-chip-demand/12949893"
+      "baslik": "Marvell, Lumentum'u 115 milyar dolara satın alıyor",
+      "detay": "Tamamen hisse karşılığı anlaşma, Lumentum hissesini 1.132 dolardan değerliyor (28 Ekim kapanışına göre %23,9 prim); özkaynak değeri 102,5 milyar dolar. Marvell hissesi gün sonunda %12,7 düştü.",
+      "kategori": "notr",
+      "agirlik": 3,
+      "neden": "Optik bağlantıya stratejik bahis AI veri merkezi talebine güveni gösteriyor, ancak piyasa seyrelme ve değerleme yüzünden anlaşmayı cezalandırdı.",
+      "kaynak": "BNN Bloomberg (Reuters)",
+      "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/11/02/marvell-to-buy-lumentum-in-us115-billion-deal-in-ai-data-center-bet/"
     },
     {
-      "baslik": "Asya'da fabrika büyümesi yavaşladı: çip ihracatçılarında PMI geriledi",
-      "detay": "Ekim imalat PMI'ları: Güney Kore 51,3 (önceki 53,9; sekiz ayın en yavaşı), Tayvan 54,9 (56,7), Japonya 53,3 (54,1), Çin 52,0 (52,1). IMF Asya büyümesini 2026 için %4,8, 2027 için %4,4 öngörüyor.",
+      "baslik": "Bellek ve optik hisseleri çöktü: Micron %5,8, Ciena %11,4 düştü",
+      "detay": "Seagate −%7,9, Western Digital −%7,5, SanDisk −%6,6, Micron −%5,8; Intel Cuma'daki yaklaşık %29'luk düşüşün ardından %8,8 daha kaybetti. Analistler AI yatırımlarının getirisine dair artan şüpheyi gösteriyor.",
       "kategori": "negatif",
       "agirlik": 2,
-      "neden": "Genişleme sürse de çip ihracatçısı ekonomilerde ivme kaybı, AI patlamasının hız kestiği kaygısını besliyor.",
-      "kaynak": "Business Recorder (Reuters)",
-      "url": "https://brecorder.com/news/40447021/asias-factory-activity-feels-fading-glimmer-of-ai-boom"
+      "neden": "Bellek döngüsünün en güçlü kalemleri bile satıştan nasibini aldı; risk iştahı geriliyor.",
+      "kaynak": "BigGo Finance",
+      "url": "https://finance.biggo.com/news/345f3228-1d14-4f62-bca9-0c4446b03f49"
     },
     {
-      "baslik": "OpenAI, Google'ın TPU çiplerini satın almaya hazırlanıyor",
-      "detay": "The Information'a dayanan habere göre OpenAI, 2025'ten beri kiraladığı Google TPU'larını satın almayı planlıyor; tutar ve takvim açıklanmadı. Alphabet CFO'su TPU anlaşmalarının gelirinin büyük kısmının 2027'de kaydedileceğini söyledi.",
+      "baslik": "Asya'da çip satışı derinleşti: Kospi yaklaşık %4 geriledi",
+      "detay": "3 Kasım'da Kospi yaklaşık %4, Tayvan ana endeksi %3,6 düştü; Samsung Electronics ve SK hynix %4'ün üzerinde kaybetti. MSCI Asya Pasifik %1,2 geriledi.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "ABD'deki satışın bellek ve dökümhane merkezlerine sıçraması tedarik zincirinin tamamında baskı yaratıyor.",
+      "kaynak": "FinancialJuice",
+      "url": "https://features.financialjuice.com/2026/11/03/asian-stocks-slide-as-chip-selloff-deepens-asia-market-wrap/"
+    },
+    {
+      "baslik": "AMD bilanço öncesi %7,5 düştü",
+      "detay": "AMD 2 Kasım'ı %7,52 düşüşle 466,84 dolardan kapattı. SOX son beş günde yaklaşık %10, Nvidia yaklaşık %8 geriledi; şirket 3. çeyrek sonuçlarını 3 Kasım akşamı açıklayacak.",
       "kategori": "notr",
       "agirlik": 2,
-      "neden": "Hesaplama talebi sürüyor, ancak en büyük AI şirketlerinden birinin Nvidia dışı tedarikçiye yönelmesi pazar payı dengesini değiştirebilir.",
-      "kaynak": "TechRadar",
-      "url": "https://techradar.com/pro/openai-pledges-to-buy-google-ai-chips-in-its-first-move-away-from-depending-solely-on-nvidia"
+      "neden": "Düşüş bilanço öncesi pozisyon azaltmaktan kaynaklanıyor; yön bu akşamki sonuçlarla belli olacak.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262265872-stock-amd-price-prediction-ai-sox-tradingkey"
     },
     {
-      "baslik": "Kioxia görünümüyle %13 düştü, Tokyo Electron %5 yükseldi",
-      "detay": "Kioxia, Aralık çeyreği görünümü hayal kırıklığı yaratınca %13,29 değer kaybetti ve Nikkei'yi en çok aşağı çeken hisse oldu; Tokyo Electron yıllık net kârının %50 artacağını öngörüp %5,11 yükseldi.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "NAND tarafında talebin düzleştiği sinyali; ekipman tarafında güçlü görünüm kısmen dengeliyor.",
-      "kaynak": "Business Recorder (Reuters)",
-      "url": "https://www.brecorder.com/news/40447020/japans-nikkei-falls-as-kioxia-tanks-mitigated-by-gains-in-tokyo-electron"
-    },
-    {
-      "baslik": "Veri merkezi moratoryumu savunan adaylar 15 eyalette kazanabilir",
-      "detay": "The Information analizine göre valilik seçimi yapılan 36 eyaletin 21'inde en az bir aday veri merkezi inşaatını durdurmayı destekliyor; 15'inde bu adaylar kazanabilir. New York, Teksas ve Oregon valileri yeni onayları askıya aldı.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "3 Kasım ara seçimleri, ABD'deki AI altyapı planları için izin ve inşaat riskini artırabilir.",
-      "kaynak": "Seoul Economic Daily",
-      "url": "https://en.sedaily.com/international/2026/11/02/data-center-moratorium-backers-could-win-up-to-15-us-states"
-    },
-    {
-      "baslik": "Sam Altman bellek tedariki için Samsung yönetimiyle görüştü",
-      "detay": "Altman 30 Ekim'de Yongin'de yaklaşık 50 Samsung yöneticisiyle bir araya geldi; yeni tedarik anlaşması açıklanmadı. TrendForce 2026'da DRAM arzının talebin %1–2 altında kalacağını, açığın 2027'de derinleşeceğini öngörüyor.",
+      "baslik": "Anthropic'in güncellenmiş S-1'i: 17 milyar dolar gelir, 895 milyar dolar taahhüt",
+      "detay": "Güncellenmiş halka arz belgesine göre 3. çeyrek geliri yaklaşık 17 milyar dolar (bir yıl önce 1,4 milyar), net zarar 23,3 milyar dolar. Çoğu bilgi işlem için olan taahhütler 895 milyar dolar; bunun 214 milyar doları fesih hakkına ya da koşullara bağlı.",
       "kategori": "notr",
-      "agirlik": 1,
-      "neden": "AI şirketlerinin bellek için doğrudan üreticiye gitmesi kıtlığın derinliğini gösteriyor; somut anlaşma yok.",
-      "kaynak": "Tom's Hardware",
-      "url": "https://www.tomshardware.com/tech-industry/data-centers/sam-altman-travels-to-south-korea-to-meet-samsung-leadership-to-secure-more-ram-for-data-centers-amid-crushing-shortages-openai-ceo-meets-samsung-leadership-to-discuss-future-ai-data-centers"
+      "agirlik": 2,
+      "neden": "Devasa bilgi işlem taahhütleri çip ve bulut talebini destekliyor, ama zararın büyüklüğü AI finansmanı kaygısını besliyor.",
+      "kaynak": "Gizmodo",
+      "url": "https://gizmodo.com/anthropic-is-betting-nearly-900-billion-that-the-ai-boom-wont-bust-2000833885"
     },
     {
-      "baslik": "KB Securities: SK hynix 4. çeyrekte 104 trilyon won faaliyet kârı açıklayabilir",
-      "detay": "KB Securities, SK hynix'in 4Ç26 faaliyet kârını 104 trilyon won (yıllık +%441) bekliyor; 3Ç26'da kâr 83,3 trilyon won, marj %80'di. 2027 için DRAM fiyatlarında %40 artış öngörülüyor; hisse zirveden ~%50 aşağıda.",
+      "baslik": "onsemi, AI güç dağıtımı için Ferric'i satın alıyor",
+      "detay": "onsemi, entegre voltaj regülatörü geliştiren Ferric'i 600 milyon dolar peşin ve 175 milyon dolara kadar ek ödemeyle alıyor; 2030 AI veri merkezi gelir hedefini 3 milyar doların üzerine çıkardı.",
       "kategori": "pozitif",
       "agirlik": 1,
-      "neden": "Kâr beklentileri yükselmeye devam ediyor; tek bir aracı kurum tahmini olduğu için ağırlık düşük.",
-      "kaynak": "TokenPost",
-      "url": "https://www.tokenpost.com/news/business/46183"
+      "neden": "AI işlemcilerinin artan güç ihtiyacına yönelik somut yatırım ve yükseltilen gelir hedefi.",
+      "kaynak": "GlobeNewswire (onsemi)",
+      "url": "https://www.globenewswire.com/news-release/2026/11/02/3393726/0/en/onsemi-to-acquire-ferric-establishing-leadership-in-power-delivery-for-next-generation-ai-processors.html"
     },
     {
-      "baslik": "Abu Dabi OpenAI ile dört anlaşma imzaladı",
-      "detay": "ADNOC, Mubadala ve Abu Dabi hükümeti, G42'nin Inception42 birimiyle birlikte OpenAI ile enerji, yatırım analizi ve 'makine tarafından okunabilir hükümet' alanlarında anlaşma yaptı; modeller BAE'deki altyapıda çalışacak. Tutar açıklanmadı.",
-      "kategori": "pozitif",
-      "agirlik": 1,
-      "neden": "Körfez'de egemen AI altyapısına yönelik kurumsal talep genişliyor.",
-      "kaynak": "FourWeekMBA",
-      "url": "https://fourweekmba.com/ai-abu-dhabi-signs-4-openai-deals-in-ai-native-government-push"
+      "baslik": "Tayvan, Çin'e çip kaçakçılığına 10 yıl hapis getirmeyi görüşüyor",
+      "detay": "DPP milletvekillerinin Dış Ticaret Kanunu değişikliği, izinsiz ileri çip ve ekipman ihracatına 10 yıla kadar hapis ve 5–10 milyon NT$ para cezası öngörüyor. Ağustos'ta 74 Nvidia B300 sunucusunu Çin'e yönlendirmekle suçlanan dokuz kişi tetikleyici oldu; muhalefet çoğunluğu teklifi tıkayabilir.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "İhracat denetimini sıkılaştırıyor ama yasalaşması belirsiz; kısa vadeli etkisi sınırlı.",
+      "kaynak": "Asia Times",
+      "url": "https://asiatimes.com/2026/11/taiwan-to-criminalize-nvidia-ai-chip-smuggling-to-china"
     }
   ],
   "yaklasan": [
+    {
+      "tarih": "2026-11-04",
+      "baslik": "Arm 2. çeyrek (FY2027) sonuçları",
+      "kaynak": "Arm Newsroom",
+      "url": "https://newsroom.arm.com/news/arm-announces-earnings-release-date-for-second-quarter-fiscal-year-ending-2027"
+    },
     {
       "tarih": "2026-11-17",
       "baslik": "Nvidia 3. çeyrek (FY2027) sonuçları",
@@ -108,6 +105,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = +1 · Σ ağırlık = 16 · Puan = 50 + 50 × 0.06 = 53"
+    "hesap": "Σ ağırlık×işaret = -6 · Σ ağırlık = 17 · Puan = 50 + 50 × -0.35 = 32"
   }
 }

@@ -1,0 +1,29 @@
+{
+  "tarih": "2026-11-03",
+  "oneriler": [
+    {
+      "baslik": "İki günlük hareketlerde %50'yi aşan değişimlere 'sert oynama' notu ekle",
+      "neden": "Bugünkü gpu_kiralama.json iki_gun.artanlar'da Nvidia GH200 +%74,2 (6 sağlayıcı) ve RTX PRO 5000 +%56,1 (5 sağlayıcı) var; ikisi de 1 Kasım'daki −%42,6 / −%45,3 düşüşlerin geri dönüşü. AZ_SAGLAYICI=5 olduğu için Prices.jsx bu satırları soluklaştırmıyor; kullanıcı bunun ilan kaynaklı bir sıçrama olabileceğini göremiyor.",
+      "etki": "orta",
+      "alan": "arayüz · Fiyatlar"
+    },
+    {
+      "baslik": "Kaynakta 14 günden uzun süredir gelmeyen fiyatları tabloda 'fiyat yok' say",
+      "neden": "gpu_kiralama.json'da 5 modelin olcum_tarihi hâlâ 2026-10-12 (22 gün önce); Prices.jsx (satır ~249) yalnızca amber 'ölçüm 2026-10-12' notu düşüyor, eski fiyat sıralamada ve en ucuz karşılaştırmalarında güncelmiş gibi kullanılmaya devam ediyor.",
+      "etki": "orta",
+      "alan": "arayüz · Fiyatlar"
+    },
+    {
+      "baslik": "Bugün puan kartında dünkü puana göre değişimi göster",
+      "neden": "Bugün puanı 2 Kasım'da 53 iken bugün 32; Bugun.jsx'te önceki güne dair hiçbir alan yok (grep 'onceki' boş). Veri için veri-isle.mjs'nin bugun.json'a onceki_puan yazması gerekiyor — korunan dosya, onay ister.",
+      "etki": "düşük",
+      "alan": "otomasyon + arayüz · Bugün"
+    },
+    {
+      "baslik": "Bellek sözleşme fiyatlarını güncelle",
+      "neden": "İyileştirme ajanı: bellek_fiyat.json 11 gündür güncellenmedi. Bir sonraki pazartesi TrendForce basın merkezinden 4. çeyrek / 1. çeyrek 2027 DRAM-NAND sözleşme tahminleri okunmalı.",
+      "etki": "düşük",
+      "alan": "veri · Bellek"
+    }
+  ]
+}

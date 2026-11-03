@@ -2,6 +2,217 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-11-03-nasdaq-falls-dow-rises-marvell-oracle-tradingkey",
+      "tarih": "2026-11-03",
+      "yayin": null,
+      "baslik": "Yarı iletken endeksi %3,4 düştü, Nasdaq-100 düzeltmeye girdi",
+      "detay": "2 Kasım'da SOX %3,37 düşüşle 10.328 puana, Nasdaq %1,07 düşüşle 25.164'e indi. Oracle, AI altyapısı için 10 milyar dolarlık tahvil ihracını duyurduğu gün %8,85 değer kaybetti.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262264978-us-stock-close-nasdaq-falls-dow-rises-marvell-oracle-tradingkey",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-03-ntum-in-us115-billion-deal-in-ai-data-center-bet",
+      "tarih": "2026-11-03",
+      "yayin": null,
+      "baslik": "Marvell, Lumentum'u 115 milyar dolara satın alıyor",
+      "detay": "Tamamen hisse karşılığı anlaşma, Lumentum hissesini 1.132 dolardan değerliyor (28 Ekim kapanışına göre %23,9 prim); özkaynak değeri 102,5 milyar dolar. Marvell hissesi gün sonunda %12,7 düştü.",
+      "kaynak": "BNN Bloomberg (Reuters)",
+      "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/11/02/marvell-to-buy-lumentum-in-us115-billion-deal-in-ai-data-center-bet/",
+      "ton": "notr",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-03-go-com-news-345f3228-1d14-4f62-bca9-0c4446b03f49",
+      "tarih": "2026-11-03",
+      "yayin": null,
+      "baslik": "Bellek ve optik hisseleri çöktü: Micron %5,8, Ciena %11,4 düştü",
+      "detay": "Seagate −%7,9, Western Digital −%7,5, SanDisk −%6,6, Micron −%5,8; Intel Cuma'daki yaklaşık %29'luk düşüşün ardından %8,8 daha kaybetti. Analistler AI yatırımlarının getirisine dair artan şüpheyi gösteriyor.",
+      "kaynak": "BigGo Finance",
+      "url": "https://finance.biggo.com/news/345f3228-1d14-4f62-bca9-0c4446b03f49",
+      "ton": "negatif",
+      "konular": [
+        "bellek",
+        "cip",
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-03-s-slide-as-chip-selloff-deepens-asia-market-wrap",
+      "tarih": "2026-11-03",
+      "yayin": null,
+      "baslik": "Asya'da çip satışı derinleşti: Kospi yaklaşık %4 geriledi",
+      "detay": "3 Kasım'da Kospi yaklaşık %4, Tayvan ana endeksi %3,6 düştü; Samsung Electronics ve SK hynix %4'ün üzerinde kaybetti. MSCI Asya Pasifik %1,2 geriledi.",
+      "kaynak": "FinancialJuice",
+      "url": "https://features.financialjuice.com/2026/11/03/asian-stocks-slide-as-chip-selloff-deepens-asia-market-wrap/",
+      "ton": "negatif",
+      "konular": [
+        "bellek"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-03-872-stock-amd-price-prediction-ai-sox-tradingkey",
+      "tarih": "2026-11-03",
+      "yayin": null,
+      "baslik": "AMD bilanço öncesi %7,5 düştü",
+      "detay": "AMD 2 Kasım'ı %7,52 düşüşle 466,84 dolardan kapattı. SOX son beş günde yaklaşık %10, Nvidia yaklaşık %8 geriledi; şirket 3. çeyrek sonuçlarını 3 Kasım akşamı açıklayacak.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262265872-stock-amd-price-prediction-ai-sox-tradingkey",
+      "ton": "notr",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-03-00-billion-that-the-ai-boom-wont-bust-2000833885",
+      "tarih": "2026-11-03",
+      "yayin": null,
+      "baslik": "Anthropic'in güncellenmiş S-1'i: 17 milyar dolar gelir, 895 milyar dolar taahhüt",
+      "detay": "Güncellenmiş halka arz belgesine göre 3. çeyrek geliri yaklaşık 17 milyar dolar (bir yıl önce 1,4 milyar), net zarar 23,3 milyar dolar. Çoğu bilgi işlem için olan taahhütler 895 milyar dolar; bunun 214 milyar doları fesih hakkına ya da koşullara bağlı.",
+      "kaynak": "Gizmodo",
+      "url": "https://gizmodo.com/anthropic-is-betting-nearly-900-billion-that-the-ai-boom-wont-bust-2000833885",
+      "ton": "notr",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-03--delivery-for-next-generation-ai-processors-html",
+      "tarih": "2026-11-03",
+      "yayin": null,
+      "baslik": "onsemi, AI güç dağıtımı için Ferric'i satın alıyor",
+      "detay": "onsemi, entegre voltaj regülatörü geliştiren Ferric'i 600 milyon dolar peşin ve 175 milyon dolara kadar ek ödemeyle alıyor; 2030 AI veri merkezi gelir hedefini 3 milyar doların üzerine çıkardı.",
+      "kaynak": "GlobeNewswire (onsemi)",
+      "url": "https://www.globenewswire.com/news-release/2026/11/02/3393726/0/en/onsemi-to-acquire-ferric-establishing-leadership-in-power-delivery-for-next-generation-ai-processors.html",
+      "ton": "pozitif",
+      "konular": [
+        "yapay-zeka",
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-03-to-criminalize-nvidia-ai-chip-smuggling-to-china",
+      "tarih": "2026-11-03",
+      "yayin": null,
+      "baslik": "Tayvan, Çin'e çip kaçakçılığına 10 yıl hapis getirmeyi görüşüyor",
+      "detay": "DPP milletvekillerinin Dış Ticaret Kanunu değişikliği, izinsiz ileri çip ve ekipman ihracatına 10 yıla kadar hapis ve 5–10 milyon NT$ para cezası öngörüyor. Ağustos'ta 74 Nvidia B300 sunucusunu Çin'e yönlendirmekle suçlanan dokuz kişi tetikleyici oldu; muhalefet çoğunluğu teklifi tıkayabilir.",
+      "kaynak": "Asia Times",
+      "url": "https://asiatimes.com/2026/11/taiwan-to-criminalize-nvidia-ai-chip-smuggling-to-china",
+      "ton": "notr",
+      "konular": [
+        "cip",
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-03-leground-states-as-household-electric-rates-soar",
+      "tarih": "2026-11-03",
+      "yayin": "2026-11-02",
+      "baslik": "Veri merkezleri ara seçimlerin ana konusu oldu",
+      "detay": "AI veri merkezlerine bağlı kapasite maliyetleri Ohio, Pensilvanya ve Michigan'da konut faturalarını ayda 18 dolara kadar artırdı; PJM'ye göre tüketiciler bu yıl 7,3 milyar dolar ek kapasite ücreti ödeyecek. Ohio'da seçmenlerin %71'i moratoryumdan yana.",
+      "kaynak": "Forbes",
+      "url": "https://www.forbes.com/sites/maryroeloffs/2026/11/02/data-centers-are-key-issue-in-midterm-battleground-states-as-household-electric-rates-soar/",
+      "ton": "negatif",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-03-for-state-it-infrastructure-with-24-hours-notice",
+      "tarih": "2026-11-03",
+      "yayin": "2026-11-02",
+      "baslik": "Putin, özel veri merkezlerinden %10 kapasiteyi devlete ayırmalarını istedi",
+      "detay": "Rusya'da devlete ait olmayan veri merkezleri kapasitelerinin %10'unu devlet BT altyapısı için hazır tutacak; yeni bir komisyon talep ettiğinde 24 saat içinde açılması gerekecek. Karar, Ukrayna'nın İHA saldırılarıyla 63 MW'lık tesisin hasar görmesinin ardından geldi.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/putin-demands-russian-data-centers-supply-capacity-to-the-state-in-wake-of-ukraine-drone-attacks-10-percent-capacity-must-be-available-for-state-it-infrastructure-with-24-hours-notice",
+      "ton": "negatif",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-03-rnings-preview-ai-chip-growth-reverse-tradingkey",
+      "tarih": "2026-11-03",
+      "yayin": "2026-11-02",
+      "baslik": "AMD'den 13,09 milyar dolar gelir bekleniyor",
+      "detay": "AMD 3. çeyrek sonuçlarını 3 Kasım'da piyasa kapanışından sonra açıklıyor. Konsensüs yaklaşık 13,09 milyar dolar gelir (yıllık %41,6 artış) ve 1,95 dolar düzeltilmiş hisse başı kâr.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262263680-amd-q3-earnings-preview-ai-chip-growth-reverse-tradingkey",
+      "ton": "notr",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-03--nxera-secure-power-partnerships-ai-data-centers",
+      "tarih": "2026-11-03",
+      "yayin": "2026-11-02",
+      "baslik": "DayOne ve Nxera, Sembcorp ile veri merkezi enerji ortaklıkları kurdu",
+      "detay": "DayOne, Sembcorp Utilities ile mutabakat imzaladı ve 2030'a kadar %100 yenilenebilir enerji hedefliyor; Singtel'in veri merkezi kolu Nxera da Sembcorp ile Singapur için hidrojen, biyometan ve bina güneşi seçeneklerini inceleyecek.",
+      "kaynak": "VoIP Review",
+      "url": "https://voip.review/2026/11/02/dayone-nxera-secure-power-partnerships-ai-data-centers/",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-03--selloff-stokes-fears-over-neocloud-ai-debt-pile",
+      "tarih": "2026-11-03",
+      "yayin": "2026-11-01",
+      "baslik": "Neocloud borçları AI balonu kaygısını büyütüyor",
+      "detay": "Gartner, neocloud şirketlerinin %80'inin 2030'a kadar bağımsız kalamayacağını öngörüyor; Forrester en az üç satın alma bekliyor. Haber BBC'nin neocloud borç yükü incelemesine dayanıyor.",
+      "kaynak": "AI Weekly (BBC)",
+      "url": "https://aiweekly.co/alerts/coreweave-selloff-stokes-fears-over-neocloud-ai-debt-pile",
+      "ton": "negatif",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-03-ket-movers-262265030-market-movers-klac-20261102",
+      "tarih": "2026-11-03",
+      "yayin": "2026-11-02",
+      "baslik": "KLA %3 düştü: ekipman hisselerinde capex kaygısı",
+      "detay": "KLA hisseleri 2 Kasım'ı %3,04 düşüşle kapattı; sektör yaklaşık %2,5 geriledi. Neden olarak büyük çip üreticilerinin yüksek sermaye harcamalarının sürdürülebilirliği ve artan bellek maliyetlerinin nakit akışına etkisi gösteriliyor.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/news/market-movers/262265030-market-movers-klac-20261102",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
       "id": "2026-11-02-exports-hit-1153-bil-in-oct-on-record-chip-sales",
       "tarih": "2026-11-02",
       "yayin": null,
@@ -5003,159 +5214,9 @@
         "pazar"
       ],
       "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-04-oadcom-starts-amassing-60-billion-041233805-html",
-      "tarih": "2026-10-04",
-      "yayin": null,
-      "baslik": "Broadcom, AI çipleri için 60 milyar $'lık finansman topluyor",
-      "detay": "Paket 42 milyar $'lık bankalar liderliğinde kıdemli teminatlı (Class A) ve 18 milyar $'lık Blackstone liderliğinde ast (Class B) borçtan oluşuyor; Blackstone kendi fonlarından 9 milyar $ taahhüt etti. Amaç Anthropic dahil AI şirketlerinin çip ve altyapı erişimini finanse etmek.",
-      "kaynak": "Bloomberg / Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-starts-amassing-60-billion-041233805.html",
-      "ton": "pozitif",
-      "konular": [
-        "cip",
-        "yapay-zeka",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-04-a-stock-record-high-market-cap-6-trillion-100226",
-      "tarih": "2026-10-04",
-      "yayin": null,
-      "baslik": "Nvidia rekor kırdı: piyasa değeri ~5,7 trilyon $",
-      "detay": "Nvidia hissesi mayıstan bu yana ilk kez tüm zamanların zirvesine çıktı; şirket yılbaşından bu yana ~%27 değer kazandı ve 6 trilyon $ eşiğine ~300 milyar $ kaldı.",
-      "kaynak": "Quartz",
-      "url": "https://qz.com/nvidia-stock-record-high-market-cap-6-trillion-100226",
-      "ton": "pozitif",
-      "konular": [
-        "cip",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-04-logic-substack-com-p-dispersion-brief-oct-2-2026",
-      "tarih": "2026-10-04",
-      "yayin": null,
-      "baslik": "Çip hisseleri yükseldi: SOXX %2,18 arttı",
-      "detay": "2 Ekim'de yarı iletken fonu SOXX %2,18 yükseldi; Broadcom %3,35, AMD %2,95, Nvidia %1,34 kazandı. Synaptics %14, ON Semiconductor %6 yükseldi.",
-      "kaynak": "Dispersion Brief (Substack)",
-      "url": "https://currentlogic.substack.com/p/dispersion-brief-oct-2-2026",
-      "ton": "pozitif",
-      "konular": [
-        "cip",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-04--and-synaptics-announce-revised-merger-agreement",
-      "tarih": "2026-10-04",
-      "yayin": null,
-      "baslik": "onsemi, Synaptics alımını 5,7 milyar $ nakde indirdi",
-      "detay": "Revize anlaşmada hisse başına 123 $ nakit ödenecek; toplam değer ~5,7 milyar $ (25 Haziran'daki ilk anlaşma ~7 milyar $ idi). Finansman eldeki nakit ve Morgan Stanley'nin taahhüt ettiği borçla.",
-      "kaynak": "onsemi basın bülteni",
-      "url": "https://www.onsemi.com/company/newsroom/news-and-insights/onsemi-and-synaptics-announce-revised-merger-agreement",
-      "ton": "notr",
-      "konular": [
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-04-eagate-tumbles-10-western-digital-125250923-html",
-      "tarih": "2026-10-04",
-      "yayin": null,
-      "baslik": "Toshiba HDD kapasitesini ikiye katlıyor; Seagate ve WD %10 düştü",
-      "detay": "Toshiba, Filipinler'deki tesisi merkezli genişlemeyle HDD üretim kapasitesini iki katına çıkarmayı ve kapasite bazında %30 pazar payını hedefliyor. Haberle Seagate %10,21, Western Digital %10,22 değer kaybetti.",
-      "kaynak": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/seagate-tumbles-10-western-digital-125250923.html",
-      "ton": "notr",
-      "konular": [
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-04-s-entry-level-shield-tv-as-component-prices-soar",
-      "tarih": "2026-10-04",
-      "yayin": null,
-      "baslik": "Bellek kıtlığı tüketiciye yansıdı: Shield TV Pro %50 zamlandı",
-      "detay": "Nvidia, yedi yıldır donanımı değişmeyen Shield TV Pro'nun fiyatını 199,99 $'dan 299,99 $'a çıkardı ve standart Shield TV'yi üretimden kaldırdı. Şirket gerekçe olarak bellek dahil bileşen maliyetlerindeki artışı gösterdi.",
-      "kaynak": "Tom's Hardware",
-      "url": "https://www.tomshardware.com/service-providers/streaming/7-year-old-nvidia-shield-tv-pro-gets-shocking-50-percent-price-hike-driven-by-ai-memory-shortage-chipmaker-axes-entry-level-shield-tv-as-component-prices-soar",
-      "ton": "negatif",
-      "konular": [
-        "bellek",
-        "cip"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-04-news-com-articles-calif-man-charged-nvidia-chips",
-      "tarih": "2026-10-04",
-      "yayin": null,
-      "baslik": "300 milyon $'lık Nvidia sunucu kaçakçılığı davası",
-      "detay": "Earthmade Computer'ın sahibi Greg Lui (38), Nvidia AI çipli sunucuları sahte belgelerle Malezya ve Singapur üzerinden Çin'e kaçırmakla suçlandı. İhracat kontrolü ihlali, kaçakçılık ve kara para aklama dahil üç suçlama var.",
-      "kaynak": "Transport Topics",
-      "url": "https://ttnews.com/articles/calif-man-charged-nvidia-chips",
-      "ton": "negatif",
-      "konular": [
-        "cip",
-        "yapay-zeka",
-        "veri-merkezi"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-04-intel-stocks-gain-21-as-highna-enters-production",
-      "tarih": "2026-10-04",
-      "yayin": null,
-      "baslik": "Intel: High-NA EUV üretime girdi",
-      "detay": "Intel, High-NA EUV litografinin Panther Lake işlemcilerinin seçili katmanlarında üretime girdiğini, test/araştırma/üretimde bir milyondan fazla wafer işlendiğini açıkladı. Hisse %2,1 yükseldi; maliyet ve dış müşteri hacmi açıklanmadı.",
-      "kaynak": "GuruFocus",
-      "url": "https://gurufocus.com/news/9107892/intel-stocks-gain-21-as-highna-enters-production",
-      "ton": "pozitif",
-      "konular": [
-        "cip",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-04-icrons-earnings-beat-eyes-turn-to-samsung-and-sk",
-      "tarih": "2026-10-04",
-      "yayin": null,
-      "baslik": "Samsung'dan rekor çeyrek bekleniyor: DRAM fiyatı çeyreklik ~%22 artış",
-      "detay": "Micron'un güçlü sonuçlarının ardından analistler Samsung'un 3. çeyrekte 217,7 trilyon won gelir ve 104,9 trilyon won faaliyet kârı açıklamasını, DRAM fiyatlarının çeyreklik %22 artmasını bekliyor. SK hynix için DRAM'de %15, NAND'da %18 fiyat artışı öngörülüyor.",
-      "kaynak": "Seoul Economic Daily",
-      "url": "https://en.sedaily.com/finance/2026/10/04/after-microns-earnings-beat-eyes-turn-to-samsung-and-sk",
-      "ton": "pozitif",
-      "konular": [
-        "bellek",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-04-design-week-openai-interview-and-ai-agent-safety",
-      "tarih": "2026-10-04",
-      "yayin": null,
-      "baslik": "AI ile çip tasarımı: OpenAI'nin Jalapeño ASIC'i",
-      "detay": "Tom's Hardware'in AI çip tasarımı haftasında OpenAI donanım başkan yardımcısı Richard Ho, Broadcom ile birlikte geliştirilen ve Hot Chips 2026'da tanıtılan Jalapeño ASIC'in tasarımında AI'ın nasıl kullanıldığını anlattı. Synopsys, Cadence ve Siemens'in AI destekli araçları da ele alındı.",
-      "kaynak": "Tom's Hardware",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/this-week-on-toms-hardware-premium-october-3-2026-ai-chip-design-week-openai-interview-and-ai-agent-safety",
-      "ton": "notr",
-      "konular": [
-        "cip",
-        "yapay-zeka"
-      ],
-      "kaynakTuru": "bugun"
     }
   ],
-  "guncelleme": "2026-11-02",
+  "guncelleme": "2026-11-03",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",

@@ -1,0 +1,33 @@
+{
+  "ajan": "iyilestirme",
+  "tarih": "2026-11-03",
+  "zaman": "2026-11-03T07:04:03.963Z",
+  "durum": "tamam",
+  "olcumler": {
+    "veri": {
+      "chipSayisi": 67,
+      "fiyatSayisi": 107
+    },
+    "egitim": {
+      "dersSayisi": 13
+    },
+    "erisim": {
+      "altsiz": 0,
+      "etiketsizDugme": 0
+    },
+    "kod": {
+      "dosyaSayisi": 77,
+      "toplamSatir": 18617,
+      "boyutKB": null
+    }
+  },
+  "bulgular": [
+    {
+      "alan": "veri",
+      "baslik": "Bellek fiyatları 11 gündür güncellenmedi",
+      "etki": "düşük",
+      "otomatik": false,
+      "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
+    }
+  ]
+}
