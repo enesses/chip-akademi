@@ -1,0 +1,120 @@
+{
+  "tarih": "2026-11-04",
+  "derlenme": "4 Kasım 2026",
+  "puan": {
+    "etiket": "Temeller güçlü, fiyatlar oynak",
+    "yorum": "AMD'nin beklenti üstü sonuçları, Apple'ın bellek fiyatı açıklaması ve Kore'nin rekor çip ihracatı talebin sürdüğünü gösteriyor; Asya'daki yeni satış dalgası ve ara seçim belirsizliği ise piyasanın hâlâ temkinli olduğunu hatırlatıyor.",
+    "deger": 71
+  },
+  "ozet": [
+    "Günün ana haberi AMD'nin 3 Kasım akşamı açıkladığı çeyrek oldu: gelir %45 artışla 13,4 milyar dolara, veri merkezi geliri neredeyse iki katına çıktı ve şirket 4. çeyrek için 17 milyar dolarla beklentinin üzerinde bir yönlendirme verdi. Hisse kapanış sonrası %9'a kadar yükseldi. Bu, bir aydır süren ve Yahoo Finance hesabına göre çip ve bellek şirketlerinden 3,7 trilyon dolar silen satış dalgasının ortasında gelen somut bir talep kanıtı.",
+    "Bellek tarafında sinyaller güçlü: Apple bellek fiyatlarının Aralık sonrasında da artacağını ve marjını baskılayacağını söyledi; Samsung ve SK hynix çok yıllı sözleşmelerle 2027–2028 üretiminin büyük kısmını bağladı; Counterpoint ve TrendForce HBM fiyatlarının gelecek yıl iki katına yakın artmasını bekliyor. Güney Kore'nin Ekim çip ihracatı da %259 artışla 56,4 milyar dolara ulaştı.",
+    "Piyasa ise bu haberleri henüz ödüllendirmiyor. 4 Kasım'da Asya'da Kospi açılıştaki yükselişini silip %3,2, Nikkei %3,6 düştü; Kioxia zayıf tahminle %10,8 geriledi. ABD ara seçimlerinin AI düzenlemesine ve veri merkezi yatırımlarına etkisi belirsizliği artırıyor. Nvidia'nın bulut ortaklarına Çin dışı müşteri payı için koyduğu bildirilen %51 kuralı da politika tarafındaki gerilimi gösteriyor.",
+    "Kısacası temel veriler (gelir, sözleşme, fiyat, ihracat) yukarıyı, fiyatlamalar ise değerleme ve politika kaygısını gösteriyor. Bu akşam Arm'ın sonuçları ve 17 Kasım'daki Nvidia bilançosu bu ayrışmanın hangi yöne kapanacağına dair bir sonraki işaret olacak."
+  ],
+  "maddeler": [
+    {
+      "baslik": "AMD rekor çeyrek açıkladı: gelir %45 artışla 13,4 milyar dolar",
+      "detay": "3. çeyrekte gelir 13,38 milyar dolar (geçen yıl 9,25 milyar), Data Center geliri %97 artışla 8,5 milyar dolar. Non-GAAP hisse başı kâr 2,09 dolar, brüt marj %56. 4. çeyrek için yaklaşık 17 milyar dolar (±%3) gelir bekleniyor.",
+      "kategori": "pozitif",
+      "agirlik": 3,
+      "neden": "Veri merkezi gelirinin neredeyse ikiye katlanması AI hızlandırıcı talebinin Nvidia dışına da yayıldığını gösteriyor.",
+      "kaynak": "AMD / GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/11/03/3394824/0/en/amd-reports-third-quarter-2026-financial-results.html"
+    },
+    {
+      "baslik": "AMD hissesi kapanış sonrası %9'a kadar yükseldi",
+      "detay": "Şirketin 17 milyar dolarlık çeyrek beklentisi analistlerin ortalama 16,3 milyar dolarlık tahmininin üzerinde kaldı. Lisa Su gelecek yıl %80'in üzerinde büyüme beklediğini söyledi (Wall Street tahmini %75–77); düzeltilmiş brüt marj tahmini %55 ile beklentinin (%55,3) biraz altında.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Beklenti üstü yönlendirme, son haftalardaki satış dalgasında baskılanan çip hisselerine somut bir dayanak veriyor.",
+      "kaynak": "BigGo Finance",
+      "url": "https://finance.biggo.com/news/97ebfd80-96d4-4248-bafd-df60c0002a4e"
+    },
+    {
+      "baslik": "ABD'de çip hisseleri satıştan sonra toparlandı",
+      "detay": "3 Kasım seansında AMD yaklaşık %4, Broadcom %3, Nvidia ve Micron %2 yükseldi. Yahoo Finance hesabına göre çip ve bellek şirketleri 6 Ekim'den bu yana yaklaşık 3,7 trilyon dolar piyasa değeri kaybetti.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Tek günlük tepki alımı, bir aylık büyük kaybı telafi etmiyor; yön henüz belirsiz.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/micron-nvidia-amd-lead-chip-stocks-rebound-140538628.html"
+    },
+    {
+      "baslik": "Asya'da satış sürdü: Nikkei %3,6, Kospi %3,2 düştü",
+      "detay": "4 Kasım'da Kospi açılıştaki yükselişi silip %3,2 düşüşle 5.466,83'e indi; Nikkei 225 Mayıs'tan bu yana en düşük seviyeye geriledi. Kioxia zayıf çeyrek tahminiyle %10,8, SK Hynix %3,2, Samsung %1,8 düştü.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "AI değerlemelerine dair kaygı ve ABD ara seçim belirsizliği Asya bellek üreticilerini doğrudan vurdu.",
+      "kaynak": "AP (News4JAX)",
+      "url": "https://www.news4jax.com/business/2026/11/04/asian-shares-fall-on-selling-of-tech-shares-as-markets-watch-for-results-of-us-midterm-elections/"
+    },
+    {
+      "baslik": "Nvidia'nın bulut ortaklarına '%51 Çin dışı müşteri' kuralı",
+      "detay": "Financial Times'a göre Nvidia, bulut ortaklarından gelecekteki sözleşmelerde hizmetlerinin en az %51'ini Çinli olmayan müşterilere satmalarını istedi. The Information ise yönergenin zorunlu olmadığını aktardı; Nvidia doğrulamadı ya da yalanlamadı.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Çin'in yurtdışı veri merkezleri üzerinden erişimini kısabilir, ama kuralın bağlayıcılığı belirsiz.",
+      "kaynak": "Vision Times (FT ve The Information'a atıfla)",
+      "url": "https://www.visiontimes.com/2026/11/03/nvidia-moves-to-restrict-chinas-access-to-ai-computing-as-us-china-tech-rivalry-intensifies.html"
+    },
+    {
+      "baslik": "Apple: bellek fiyatları Aralık sonrasında da artacak",
+      "detay": "CEO John Ternus bellek fiyatlandırmasını 'eşi görülmemiş' olarak niteledi ve artışın Aralık çeyreğinden sonra da süreceğini söyledi. Apple Aralık çeyreği için brüt marjı %45–46 bekliyor (önceki çeyrek %47,9); düşüşün büyük kısmı bellek maliyetinden.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Bellek üreticileri için güçlü fiyat sinyali, cihaz üreticileri için marj baskısı; sektör için iki yönlü.",
+      "kaynak": "The Motley Fool",
+      "url": "https://fool.com/investing/2026/11/03/apple-says-it-will-keep-paying-more-for-memory-chips-after-december-that-s-good-news-for-micron-stock"
+    },
+    {
+      "baslik": "Samsung ve SK hynix uzun vadeli sözleşmelerle 2028'e kadar satış bağladı",
+      "detay": "Samsung 10 müşteriyle uzun vadeli anlaşma imzaladı, 10 müşteriyle görüşüyor; SK hynix 14 müşteriyle çoğu beş yıllık sözleşme yaptı ve 2027–2028 üretiminin yarısından fazlasını sattı. İki şirketin 3. çeyrek faaliyet kârı toplam 190,77 trilyon won.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Çok yıllı sözleşmeler bellek talebinin görünürlüğünü artırıyor; arz fazlası riski 2028 civarına itiliyor.",
+      "kaynak": "Korea JoongAng Daily",
+      "url": "https://www.koreajoongangdaily.com/business/samsung-sk-hynix-build-longterm-order-pipelines-on-back-of-continued-ai-chip-demand/12949893",
+      "tekrar": "2026-11-02"
+    },
+    {
+      "baslik": "HBM4 fiyatının gelecek yıl iki katına çıkması bekleniyor",
+      "detay": "Counterpoint'e göre HBM4'ün GB fiyatı 16 dolardan 32 dolara çıkabilir; TrendForce HBM ortalama satış fiyatında gelecek yıl %121 artış öngörüyor. PC için 8Gb DDR4 modül fiyatı 27,50 dolarla bir yıl önceki 7 doların yaklaşık dört katı.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Genel DRAM'deki hızlı artışın ardından HBM'de de fiyat artışı bekleniyor; bellek üreticilerinin kârlılığını destekler.",
+      "kaynak": "EDAILY (Counterpoint, TrendForce, DRAMeXchange verisi)",
+      "url": "https://en.edaily.co.kr/news/eda202611025537/"
+    },
+    {
+      "baslik": "Güney Kore'nin Ekim çip ihracatı %259 artışla 56,4 milyar dolar",
+      "detay": "Yarı iletkenler Ekim'de toplam 115,3 milyar dolarlık ihracatın %48,9'unu oluşturdu; sunucu SSD ihracatı %584 arttı. Kore Merkez Bankası, ABD AI harcamasında yavaşlama ve %10 çip fiyat düşüşünün 2027 çip ihracatını 50–100 milyar dolar azaltabileceği uyarısında bulundu.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Gerçekleşmiş ticaret verisi AI kaynaklı bellek talebinin sürdüğünü gösteriyor; uyarı ise yoğunlaşma riskine işaret ediyor.",
+      "kaynak": "Tech Times",
+      "url": "https://www.techtimes.com/articles/329879/20261102/south-korea-chip-exports-approach-half-economy-first-trillion-dollar-year-due-november.htm"
+    }
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2026-11-04",
+      "baslik": "Arm 2. çeyrek (FY2027) sonuçları",
+      "kaynak": "Arm Newsroom",
+      "url": "https://newsroom.arm.com/news/arm-announces-earnings-release-date-for-second-quarter-fiscal-year-ending-2027"
+    },
+    {
+      "tarih": "2026-11-17",
+      "baslik": "Nvidia 3. çeyrek (FY2027) sonuçları",
+      "kaynak": "NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-third-quarter-financial-results-6928873"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = +7 · Σ ağırlık = 17 · Puan = 50 + 50 × 0.41 = 71 (önceki günlerden tekrar eden 1 madde puana katılmadı)"
+  }
+}

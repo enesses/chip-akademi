@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-11-03T07:08:39.354Z",
-  "tarih": "2026-11-03",
+  "guncelleme": "2026-11-04T06:58:35.624Z",
+  "tarih": "2026-11-04",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-11-03T07:04:03.835Z"
+      "zaman": "2026-11-04T06:56:40.766Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-11-03T07:04:03.963Z"
+      "zaman": "2026-11-04T06:56:40.894Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-11-03T07:04:03.223Z"
+      "zaman": "2026-11-04T06:56:40.213Z"
     },
     {
       "id": "gelistirme",
@@ -33,7 +33,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-11-03T07:04:23.717Z"
+      "zaman": "2026-11-04T06:57:00.031Z"
     }
   ],
   "dikkat": [
@@ -45,67 +45,38 @@
   ],
   "oneriler": [
     {
-      "baslik": "İki günlük hareketlerde %50'yi aşan değişimlere 'sert oynama' notu ekle",
-      "neden": "Bugünkü gpu_kiralama.json iki_gun.artanlar'da Nvidia GH200 +%74,2 (6 sağlayıcı) ve RTX PRO 5000 +%56,1 (5 sağlayıcı) var; ikisi de 1 Kasım'daki −%42,6 / −%45,3 düşüşlerin geri dönüşü. AZ_SAGLAYICI=5 olduğu için Prices.jsx bu satırları soluklaştırmıyor; kullanıcı bunun ilan kaynaklı bir sıçrama olabileceğini göremiyor.",
+      "baslik": "Fiyat hareketleri listesinde dünkü ve bugünkü fiyatı da göster",
+      "neden": "src/pages/Prices.jsx:171-185 'Son ölçümler arası hareketler' satırlarında yalnızca model, sağlayıcı sayısı ve yüzde var; gpu_kiralama.json iki_gun kayıtlarında onceki_usd ve usd_saat mevcut ama gösterilmiyor. Bugün artanların başında Nvidia RTX 4060 +%33,3 var — bu aslında 0,09 → 0,12 $/saat, yani 3 sentlik bir oynama; dolar karşılığı görünmeyince hareket olduğundan büyük algılanıyor.",
       "etki": "orta",
       "alan": "arayüz · Fiyatlar"
     },
     {
-      "baslik": "Kaynakta 14 günden uzun süredir gelmeyen fiyatları tabloda 'fiyat yok' say",
-      "neden": "gpu_kiralama.json'da 5 modelin olcum_tarihi hâlâ 2026-10-12 (22 gün önce); Prices.jsx (satır ~249) yalnızca amber 'ölçüm 2026-10-12' notu düşüyor, eski fiyat sıralamada ve en ucuz karşılaştırmalarında güncelmiş gibi kullanılmaya devam ediyor.",
+      "baslik": "Bugün kategori süzgecindeki sayılar puana katılmayan tekrarları ayrı göstersin",
+      "neden": "src/pages/Bugun.jsx:145 süzgeç sayılarını tüm maddelerden sayıyor, puan ise tekrarları dışarıda bırakıyor (Bugun.jsx:49). Bugün Samsung/SK hynix uzun vadeli sözleşme maddesi 2026-11-02'den tekrar; 'Pozitif' düğmesi 5 gösteriyor ama puana 4 olumlu madde katıldı. Sayının yanına '(1 tekrar)' ipucu eklenmeli.",
+      "etki": "düşük",
+      "alan": "arayüz · Bugün"
+    },
+    {
+      "baslik": "En ucuz fiyatı da kaydet ve tabloda medyanın yanında göster",
+      "neden": "fiyatlar.json satırları en ucuz sütununu taşıyor (bugün H100: medyan 3,99, en ucuz 1,80 $/saat) ama otomasyon/veri-isle.mjs bunu gpu_kiralama.json'a yazmıyor; fiyatlar[] kayıtlarında en_ucuz alanı yok. Medyan–en ucuz farkı kiralama kararında önemli. Korunan dosya (otomasyon/) değişikliği gerektirir.",
       "etki": "orta",
-      "alan": "arayüz · Fiyatlar"
+      "alan": "otomasyon · Fiyatlar"
+    },
+    {
+      "baslik": "Bellek fiyat göstergelerini yenile (12 gündür eski)",
+      "neden": "İyileştirme ajanı bugün 'Bellek fiyatları 12 gündür güncellenmedi' buldu. Bugünkü EDAILY haberi TrendForce'un 2027 HBM ortalama satış fiyatında %121 artış tahminini ve DRAMeXchange'in 8Gb DDR4 modül fiyatını (27,50 $) aktarıyor; birincil TrendForce açıklaması doğrulanıp gelen/bellek.json'a eklenmeli (pazartesi adımı).",
+      "etki": "orta",
+      "alan": "veri · Bellek"
     },
     {
       "baslik": "Bugün puan kartında dünkü puana göre değişimi göster",
-      "neden": "Bugün puanı 2 Kasım'da 53 iken bugün 32; Bugun.jsx'te önceki güne dair hiçbir alan yok (grep 'onceki' boş). Veri için veri-isle.mjs'nin bugun.json'a onceki_puan yazması gerekiyor — korunan dosya, onay ister.",
-      "etki": "düşük",
-      "alan": "otomasyon + arayüz · Bugün"
-    },
-    {
-      "baslik": "Bellek sözleşme fiyatlarını güncelle",
-      "neden": "İyileştirme ajanı: bellek_fiyat.json 11 gündür güncellenmedi. Bir sonraki pazartesi TrendForce basın merkezinden 4. çeyrek / 1. çeyrek 2027 DRAM-NAND sözleşme tahminleri okunmalı.",
-      "etki": "düşük",
-      "alan": "veri · Bellek"
+      "neden": "Dünkü öneri hâlâ geçerli: bugün puan 71, dün 32 (otomasyon/gecmis/bugun-2026-11-03.json); src/data/bugun.json'da önceki puan alanı yok, Bugun.jsx karşılaştırma yapmıyor. veri-isle.mjs'nin 'onceki_puan' yazması gerekiyor (korunan dosya).",
+      "etki": "orta",
+      "alan": "bugün"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-11-03",
-      "oneri": "İki günlük hareketlerde %50'yi aşan değişimlere 'sert oynama' notu ekle",
-      "durum": "acik",
-      "pr": 72,
-      "dal": "otomasyon/oneri-2026-11-03-1",
-      "ozet": "Fiyatlar'daki hareket kartlarında %50'yi aşan değişimlere amber 'sert oynama' rozeti eklendi.",
-      "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-11-03",
-      "oneri": "Kaynakta 14 günden uzun süredir gelmeyen fiyatları tabloda 'fiyat yok' say",
-      "durum": "acik",
-      "pr": 73,
-      "dal": "otomasyon/oneri-2026-11-03-2",
-      "ozet": "14 günden eski ölçümlü fiyatlar tabloda 'fiyat yok · son ölçüm …' olarak gösteriliyor, sıralamaya katılmıyor.",
-      "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "Haberler'de yayın tarihini eklenme gününden farklıysa göster",
-      "durum": "acik",
-      "pr": 37,
-      "tarih": "2026-10-20",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Bugün puanında tüm maddeler tekrar ise sıfıra bölmeyi önle",
-      "durum": "acik",
-      "pr": 38,
-      "tarih": "2026-10-20",
-      "kim": "otomasyon"
-    },
     {
       "oneri": "Fiyat tablosunda eski ölçümlü satırları işaretle",
       "durum": "acik",
@@ -560,7 +531,7 @@
     "bulgular": [
       {
         "alan": "veri",
-        "baslik": "Bellek fiyatları 11 gündür güncellenmedi",
+        "baslik": "Bellek fiyatları 12 gündür güncellenmedi",
         "etki": "düşük",
         "otomatik": false,
         "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
@@ -573,17 +544,17 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 93 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 14 gelmedi (eski fiyat korundu)"
+        "detay": "bu çalıştırmada güncellendi — 92 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu)"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 32, 2 yaklaşan olay; haber akışına +8"
+        "detay": "bu çalıştırmada güncellendi — 9 madde (1 tekrar, puana katılmadı), puan 71, 2 yaklaşan olay; haber akışına +8"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+6 haber (akışta 349); bugün toplam 14"
+        "detay": "+7 haber (akışta 355); bugün toplam 15"
       },
       {
         "ad": "Derleme",
@@ -593,7 +564,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2866 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2871 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -620,11 +591,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-10-20",
-      "durum": "dikkat",
-      "dikkat": 3
-    },
     {
       "tarih": "2026-10-21",
       "durum": "dikkat",
@@ -687,6 +653,11 @@
     },
     {
       "tarih": "2026-11-03",
+      "durum": "dikkat",
+      "dikkat": 1
+    },
+    {
+      "tarih": "2026-11-04",
       "durum": "dikkat",
       "dikkat": 1
     }

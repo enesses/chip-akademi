@@ -1,0 +1,87 @@
+{
+  "tarih": "2026-11-04",
+  "haberler": [
+    {
+      "baslik": "OpenAI 'Grid Protectors' programını başlattı",
+      "detay": "OpenAI, ABD'deki yeni veri merkezi kampüslerinin şebeke sıkıştığında tüketimi azaltacak şekilde tasarlanacağını açıkladı. Georgia'daki yaklaşık 3.200 MW'lık kampüs için en fazla 1.000 MW esnek talep taahhüt etti.",
+      "kaynak": "NetNewsLedger",
+      "url": "https://www.netnewsledger.com/2026/11/03/openai-offers-to-reduce-data-centre-demand-when-power-grids-are-strained/",
+      "yayin": "2026-11-03",
+      "konular": [
+        "veri-merkezi",
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Drax santralinde 1 GW'ı aşan AI veri merkezi planı",
+      "detay": "Drax, Brookfield ve Radiant ile Kuzey Yorkshire'da üç fazda 1 GW'ın üzerinde kapasite hedefliyor; ilk faz 100 MW ile 2028'in ilk çeyreğinde planlanıyor. Brookfield toplam potansiyel yatırımı 20 milyar sterlinin üzerinde tahmin ediyor.",
+      "kaynak": "Securities.io",
+      "url": "https://www.securities.io/drax-signs-brookfield-and-radiant-deal-for-yorkshire-ai-data-center/",
+      "yayin": "2026-11-03",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Ara seçimlerde en az 41 veri merkezi oylaması",
+      "detay": "Ballotpedia'ya göre veri merkezlerini ilgilendiren en az 41 yerel oylama var; Ohio'daki 21 oylamanın 11'i inşaatı yasaklamayı ya da durdurmayı öngörüyor. 2026'nın 2. çeyreğinde yerel muhalefet yüzünden 68 milyar dolarlık 45 proje aksadı.",
+      "kaynak": "Fortune",
+      "url": "https://fortune.com/2026/11/03/ai-is-on-the-ballot-data-centers-are-a-major-political-issue-in-the-midterms-but-the-implications-of-todays-vote-for-ai-go-much-further/",
+      "yayin": "2026-11-03",
+      "konular": [
+        "politika",
+        "veri-merkezi"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "AMD'de PC ve oyun geliri bellek fiyatları yüzünden %8 geriledi",
+      "detay": "AMD'nin Client ve Gaming segmentleri toplam 3,72 milyar dolarla yıllık %8 düştü; bellek ve NAND fiyatlarının bu pazarı baskıladığı belirtildi. Embedded gelir %29 artışla 1,11 milyar dolar oldu.",
+      "kaynak": "ServeTheHome",
+      "url": "https://www.servethehome.com/amd-q3-2026-earnings-data-center-growth/",
+      "yayin": "2026-11-03",
+      "konular": [
+        "cip",
+        "bellek"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Samsung'un Taylor 2 fabrikasının çıktısı AMD ağırlıklı satıldı",
+      "detay": "Maeil Business'a göre Samsung, Teksas Taylor'daki ikinci 2 nm fabrikasının tüm çıktısı için sipariş aldı, hacmin çoğu AMD'nin. İnşaatın Kasım'da başlaması, ekipman girişinin Şubat 2029'da, seri üretimin 2030'da olması bekleniyor; Samsung yorum yapmadı.",
+      "kaynak": "FourWeekMBA (Maeil Business'a atıfla)",
+      "url": "https://fourweekmba.com/ai-amd-nvidia-said-to-book-samsung-texas-fab-first-tools-2029/",
+      "yayin": "2026-11-03",
+      "konular": [
+        "cip"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Çıkarım platformu fal 16 milyar dolar değerlemeyle 1,3 milyar dolar topladı",
+      "detay": "Görsel, video ve ses modelleri için çıkarım hizmeti veren fal'ın Series F turunu Bessemer yönetti; Nvidia stratejik yatırımcı olarak katıldı. Şirket yazın talep yüzünden müşterilere hız sınırı uygulamak zorunda kaldığını söyledi.",
+      "kaynak": "SiliconANGLE",
+      "url": "https://siliconangle.com/2026/11/03/generative-media-inference-startup-fal-raises-1-3b-at-a-16b-valuation/",
+      "yayin": "2026-11-03",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Çinli çıkarım çipi üreticisi Moffett AI yaklaşık 1 milyar yuan topladı",
+      "detay": "Shenzhen merkezli, seyrek hesaplamaya dayalı çıkarım çipleri geliştiren Moffett AI, beş ay içinde ikinci kez yaklaşık 1 milyar yuanlık tur yaptı. Yeni nesil SP200 hızlandırıcı kartı yıl sonundan önce bekleniyor.",
+      "kaynak": "TechNode",
+      "url": "https://technode.com/2026/11/03/ai-inference-chipmaker-moffett-ai-raises-nearly-rmb-1-billion-in-series-c-funding/",
+      "yayin": "2026-11-03",
+      "konular": [
+        "cip",
+        "yapay-zeka"
+      ],
+      "kategori": "pozitif"
+    }
+  ]
+}

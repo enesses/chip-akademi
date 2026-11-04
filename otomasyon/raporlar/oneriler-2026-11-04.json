@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-11-04",
+  "oneriler": [
+    {
+      "baslik": "Fiyat hareketleri listesinde dünkü ve bugünkü fiyatı da göster",
+      "neden": "src/pages/Prices.jsx:171-185 'Son ölçümler arası hareketler' satırlarında yalnızca model, sağlayıcı sayısı ve yüzde var; gpu_kiralama.json iki_gun kayıtlarında onceki_usd ve usd_saat mevcut ama gösterilmiyor. Bugün artanların başında Nvidia RTX 4060 +%33,3 var — bu aslında 0,09 → 0,12 $/saat, yani 3 sentlik bir oynama; dolar karşılığı görünmeyince hareket olduğundan büyük algılanıyor.",
+      "etki": "orta",
+      "alan": "arayüz · Fiyatlar"
+    },
+    {
+      "baslik": "Bugün kategori süzgecindeki sayılar puana katılmayan tekrarları ayrı göstersin",
+      "neden": "src/pages/Bugun.jsx:145 süzgeç sayılarını tüm maddelerden sayıyor, puan ise tekrarları dışarıda bırakıyor (Bugun.jsx:49). Bugün Samsung/SK hynix uzun vadeli sözleşme maddesi 2026-11-02'den tekrar; 'Pozitif' düğmesi 5 gösteriyor ama puana 4 olumlu madde katıldı. Sayının yanına '(1 tekrar)' ipucu eklenmeli.",
+      "etki": "düşük",
+      "alan": "arayüz · Bugün"
+    },
+    {
+      "baslik": "En ucuz fiyatı da kaydet ve tabloda medyanın yanında göster",
+      "neden": "fiyatlar.json satırları en ucuz sütununu taşıyor (bugün H100: medyan 3,99, en ucuz 1,80 $/saat) ama otomasyon/veri-isle.mjs bunu gpu_kiralama.json'a yazmıyor; fiyatlar[] kayıtlarında en_ucuz alanı yok. Medyan–en ucuz farkı kiralama kararında önemli. Korunan dosya (otomasyon/) değişikliği gerektirir.",
+      "etki": "orta",
+      "alan": "otomasyon · Fiyatlar"
+    },
+    {
+      "baslik": "Bellek fiyat göstergelerini yenile (12 gündür eski)",
+      "neden": "İyileştirme ajanı bugün 'Bellek fiyatları 12 gündür güncellenmedi' buldu. Bugünkü EDAILY haberi TrendForce'un 2027 HBM ortalama satış fiyatında %121 artış tahminini ve DRAMeXchange'in 8Gb DDR4 modül fiyatını (27,50 $) aktarıyor; birincil TrendForce açıklaması doğrulanıp gelen/bellek.json'a eklenmeli (pazartesi adımı).",
+      "etki": "orta",
+      "alan": "veri · Bellek"
+    },
+    {
+      "baslik": "Bugün puan kartında dünkü puana göre değişimi göster",
+      "neden": "Dünkü öneri hâlâ geçerli: bugün puan 71, dün 32 (otomasyon/gecmis/bugun-2026-11-03.json); src/data/bugun.json'da önceki puan alanı yok, Bugun.jsx karşılaştırma yapmıyor. veri-isle.mjs'nin 'onceki_puan' yazması gerekiyor (korunan dosya).",
+      "etki": "orta",
+      "alan": "bugün"
+    }
+  ]
+}
