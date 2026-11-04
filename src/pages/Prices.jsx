@@ -171,7 +171,7 @@ export default function Prices() {
               {data.iki_gun.artanlar.filter(anlamli).map((it) => (
                 <div key={it.model} className={cn("flex items-center justify-between text-sm py-1.5", it.saglayici != null && it.saglayici < AZ_SAGLAYICI && "opacity-60")} title={it.saglayici != null && it.saglayici < AZ_SAGLAYICI ? "Az sağlayıcı: medyan tek bir listelemeyle oynayabilir" : undefined}>
                   <span>{it.model}{it.saglayici != null && <span className="ml-2 font-mono text-[10px] text-muted-foreground" data-testid="hareket-saglayici">{it.saglayici} sağlayıcı</span>}</span>
-                  <span className="font-mono text-red-400 flex items-center gap-1"><ArrowUpRight className="h-3 w-3" />{pct(it.degisim_pct)}</span>
+                  <span className="flex items-baseline gap-2">{it.onceki_usd != null && it.usd_saat != null && <span className="font-mono text-[10px] text-muted-foreground tabular-nums" data-testid="hareket-fiyat">{usd(it.onceki_usd)} → {usd(it.usd_saat)}</span>}<span className="font-mono text-red-400 flex items-center gap-1"><ArrowUpRight className="h-3 w-3" />{pct(it.degisim_pct)}</span></span>
                 </div>
               ))}
             </div>
@@ -180,7 +180,7 @@ export default function Prices() {
               {data.iki_gun.dusenler.filter(anlamli).map((it) => (
                 <div key={it.model} className={cn("flex items-center justify-between text-sm py-1.5", it.saglayici != null && it.saglayici < AZ_SAGLAYICI && "opacity-60")} title={it.saglayici != null && it.saglayici < AZ_SAGLAYICI ? "Az sağlayıcı: medyan tek bir listelemeyle oynayabilir" : undefined}>
                   <span>{it.model}{it.saglayici != null && <span className="ml-2 font-mono text-[10px] text-muted-foreground" data-testid="hareket-saglayici">{it.saglayici} sağlayıcı</span>}</span>
-                  <span className="font-mono text-emerald-400 flex items-center gap-1"><ArrowDownRight className="h-3 w-3" />{pct(it.degisim_pct)}</span>
+                  <span className="flex items-baseline gap-2">{it.onceki_usd != null && it.usd_saat != null && <span className="font-mono text-[10px] text-muted-foreground tabular-nums" data-testid="hareket-fiyat">{usd(it.onceki_usd)} → {usd(it.usd_saat)}</span>}<span className="font-mono text-emerald-400 flex items-center gap-1"><ArrowDownRight className="h-3 w-3" />{pct(it.degisim_pct)}</span></span>
                 </div>
               ))}
             </div>
