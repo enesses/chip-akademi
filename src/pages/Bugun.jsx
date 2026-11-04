@@ -165,9 +165,9 @@ export default function Bugun() {
         <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
           <h2 className="font-display font-semibold text-xl">Günün gelişmeleri</h2>
           <div className="flex flex-wrap gap-1.5" role="group" aria-label="Kategoriye göre süz" data-testid="bugun-suzgec">
-            {[["hepsi", "Tümü", data.maddeler.length], ...Object.entries(KATEGORI).map(([a, k]) => [a, k.ad, data.maddeler.filter((m) => m.kategori === a).length])].map(([a, ad, n]) => (
+            {[["hepsi", "Tümü", data.maddeler.length, tekrarSayisi], ...Object.entries(KATEGORI).map(([a, k]) => [a, k.ad, data.maddeler.filter((m) => m.kategori === a).length, data.maddeler.filter((m) => m.kategori === a && m.tekrar).length])].map(([a, ad, n, t]) => (
               <button key={a} type="button" onClick={() => setSuzgec(a)} aria-pressed={suzgec === a} disabled={n === 0 && a !== "hepsi"} className={cn("px-2.5 py-1 rounded-md text-xs font-medium border disabled:opacity-40", suzgec === a ? "bg-primary text-primary-foreground border-primary" : "bg-card text-muted-foreground border-border hover:text-foreground")}>
-                {ad} <span className="tabular-nums opacity-80">{n}</span>
+                {ad} <span className="tabular-nums opacity-80">{n}</span>{t > 0 && <span className="tabular-nums opacity-70 text-[10px]" data-testid="suzgec-tekrar" title="Önceki günlerden tekrar eden, puana katılmayan madde sayısı"> ({t} tekrar)</span>}
               </button>
             ))}
           </div>
