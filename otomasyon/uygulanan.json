@@ -820,6 +820,26 @@
       "ozet": "14 günden eski ölçümlü fiyatlar tabloda 'fiyat yok · son ölçüm …' olarak gösteriliyor, sıralamaya katılmıyor.",
       "neden": "Otomatik birleştirme bu oturumda izin denetimince engellendi (Merge Without Review); testler geçti, onay bekliyor",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-04",
+      "oneri": "Fiyat hareketleri listesinde dünkü ve bugünkü fiyatı da göster",
+      "durum": "acik",
+      "pr": 74,
+      "dal": "otomasyon/oneri-2026-11-04-1",
+      "ozet": "Hareketler listesinde yüzdenin yanında önceki → güncel $/saat gösteriliyor.",
+      "neden": "Testler geçti; otomatik birleştirme oturumdaki izin denetimince engellendi, onay bekliyor.",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-04",
+      "oneri": "Bugün kategori süzgecindeki sayılar puana katılmayan tekrarları ayrı göstersin",
+      "durum": "acik",
+      "pr": 75,
+      "dal": "otomasyon/oneri-2026-11-04-2",
+      "ozet": "Süzgeç düğmelerinde tekrar eden maddeler '(N tekrar)' olarak ayrıca gösteriliyor.",
+      "neden": "Testler geçti; otomatik birleştirme oturumdaki izin denetimince engellendi (PR #74'te), onay bekliyor.",
+      "kim": "otomasyon"
     }
   ]
 }
