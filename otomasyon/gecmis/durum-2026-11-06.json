@@ -1,0 +1,10 @@
+{
+  "fiyat": {
+    "durum": "izin-engeli",
+    "not": "WebFetch getdeploying.com/gpus için PROVENANCE_REQUIRED döndü; WebSearch sonuçlarında tam /gpus adresi çıkmadı (yalnızca model alt sayfaları)"
+  },
+  "endeks": {
+    "durum": "ok",
+    "not": "gpu-price-index okundu: ölçüm 2026-11-02, 4 hafta +%9, 12 ay +%19; fiyat dosyası yazılamadığı için işlenmedi (ölçüm tarihi kayıtlıyla aynı)"
+  }
+}

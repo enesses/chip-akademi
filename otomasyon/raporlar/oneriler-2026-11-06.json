@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-11-06",
+  "oneriler": [
+    {
+      "baslik": "Haberler'de gün başlığına o günün ton dağılımını ekle",
+      "neden": "src/pages/Haberler.jsx gün başlığında yalnızca '{liste.length} haber' yazıyor. 6 Kasım'da akışa giren 15 haberin 11'i olumsuz; gün başlığındaki küçük olumlu/nötr/olumsuz sayacı, günler arasında havanın nasıl döndüğünü (4 Kasım → 6 Kasım) kaydırmadan gösterir.",
+      "etki": "orta",
+      "alan": "Haberler"
+    },
+    {
+      "baslik": "Bugün maddelerini ağırlığa göre sıralama seçeneği",
+      "neden": "src/pages/Bugun.jsx'te gorunenMaddeler yalnızca kategoriye göre süzülüyor, sıralanmıyor. Bugün 10 maddenin 4'ü ağırlık 3; bunlar listede dağınık. 'Önce en etkili' düğmesi ağırlığı yüksek maddeleri öne alır.",
+      "etki": "orta",
+      "alan": "Bugün"
+    },
+    {
+      "baslik": "Bugün puanını dünkü puanla karşılaştır",
+      "neden": "Puan 4 Kasım'da 71 iken bugün 9'a düştü, ama src/data/bugun.json'da önceki günün puanı yok, sayfa farkı gösteremiyor. veri-isle.mjs bir önceki gecmis/bugun-*.json puanını 'onceki' alanına yazarsa kartta '▼ 62 (4 Kasım'a göre)' gösterilebilir. otomasyon/ korunduğu için onay gerekir.",
+      "etki": "orta",
+      "alan": "Bugün / otomasyon"
+    },
+    {
+      "baslik": "Bugün maddelerine kaynağın yayın tarihini taşı",
+      "neden": "src/data/haberler.json'da kaynakTuru 'bugun' olan maddelerin 'yayin' alanı null (ör. 2026-11-06 Nasdaq haberi); ek haberlerde dolu. Bugün şemasına isteğe bağlı 'yayin' eklenip veri-isle.mjs'te akışa aktarılırsa Haberler'deki 'Yayın:' etiketi her maddede çalışır.",
+      "etki": "düşük",
+      "alan": "Haberler / otomasyon"
+    },
+    {
+      "baslik": "Fiyat izin engelinde endeks özetini ayrıca işle",
+      "neden": "Bugün getdeploying.com/gpus izin engeline takıldı ama gpu-price-index okundu (12 ay +%19, kayıtlı +%20). veri-isle.mjs endeksi yalnızca fiyat satırları ≥30 iken işliyor (satır 89 ve 176–185); endeks ayrı işlenirse engelli günlerde de güncel kalır.",
+      "etki": "düşük",
+      "alan": "Fiyatlar / otomasyon"
+    }
+  ]
+}

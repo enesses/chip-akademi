@@ -1,0 +1,65 @@
+{
+  "tarih": "2026-11-06",
+  "haberler": [
+    {
+      "baslik": "Micron %17, SanDisk %22 düştü; Tayvan fabrika inşaatı askıda",
+      "detay": "5 Kasım'da Micron %17,5 düşüşle 656 dolara, SanDisk %22,3 düşüşle 806 dolara geriledi. Bloomberg'e göre Micron, uzun süren bir işçi anlaşmazlığı nedeniyle Tayvan'daki 4,5 milyar dolarlık fabrika inşaatını askıya aldı (Reuters bağımsız doğrulayamadı).",
+      "kaynak": "INDmoney",
+      "url": "https://www.indmoney.com/blog/us-stocks/inside-sandisk-sndk-micron-mu-stock-crash",
+      "yayin": "2026-11-06",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Teksas'ta veri merkezi onaylarının donması sürebilir",
+      "detay": "Seçilen vali Gina Hinojosa, yasama meclisi yeni kurallar çıkarana kadar tüm veri merkezi onaylarını durduracağını, vergi teşviklerini kaldırmak istediğini söyledi. 19 Ocak'ta göreve başlayacak; Abbott'un Ağustos'ta başlattığı izin durdurma halen geçerli.",
+      "kaynak": "The Texas Tribune",
+      "url": "https://www.texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/",
+      "yayin": "2026-11-04",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "J.P. Morgan: 2028'deki 96 GW'ın 37,5 GW'ı durdurulabilir",
+      "detay": "Strateji uzmanı Michael Cembalest'e göre 2027'de devreye girecek gücün %75'i zaten inşa edildi; asıl risk 2028 projelerinde, 96 GW'lık planın 37,5 GW'ı 'duraklatılabilir' görünüyor.",
+      "kaynak": "StockTitan",
+      "url": "https://www.stocktitan.net/articles/why-ai-stocks-are-down-today-nvidia-back-to-start-of-2026",
+      "yayin": "2026-11-05",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Microsoft'un capex açığı IREN'in Teksas gecikmelerine bağlandı",
+      "detay": "The Information'a göre IREN'in Childress tesisindeki gecikmeler Microsoft'un planlanandan 5 milyar dolar az yatırım yapmasında etkili oldu. Microsoft çeyrekte 45,2 milyar dolar capex açıkladı; Childress sözleşmesi 9,7 milyar dolarlık GPU sunucu kiralamasını kapsıyor.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/11/05/iren-sinks-9-after-report-links-it-to-microsofts-ai-spending-delay-nebius-tumbles-11-coreweave-slides-7/",
+      "yayin": "2026-11-05",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Arm rekor çeyreğe rağmen %11 düştü",
+      "detay": "Arm'ın mali 2027 2. çeyrek geliri %27 artışla 1,44 milyar dolar oldu, veri merkezi royalty geliri ikiye katlandı. Ancak yıllık sözleşme değeri yalnızca %12 artışla 1,79 milyar dolarda kaldı; hisse öğle saatlerinde %11,5 geriledi.",
+      "kaynak": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/05/is-arm-holdings-a-buy-after-its-latest-earnings-report/",
+      "yayin": "2026-11-05",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "notr"
+    }
+  ]
+}
