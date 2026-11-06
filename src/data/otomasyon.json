@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-06T07:01:35.286Z",
+  "guncelleme": "2026-11-06T07:04:22.419Z",
   "tarih": "2026-11-06",
   "durum": "dikkat",
   "ajanlar": [
@@ -44,7 +44,7 @@
     {
       "seviye": "dikkat",
       "tur": "onay",
-      "metin": "11 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65, PR #70, PR #71, PR #72, PR #73, PR #74, PR #75) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+      "metin": "13 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65, PR #70, PR #71, PR #72, PR #73, PR #74, PR #75, PR #76, PR #77) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
   "oneriler": [
@@ -79,7 +79,28 @@
       "alan": "Fiyatlar / otomasyon"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-11-06",
+      "oneri": "Haberler'de gün başlığına o günün ton dağılımını ekle",
+      "durum": "acik",
+      "pr": 76,
+      "dal": "otomasyon/oneri-2026-11-06-1",
+      "ozet": "Haberler gün başlığında olumlu/nötr/olumsuz sayıları renkli noktalarla gösteriliyor",
+      "neden": "Testler geçti; otomatik birleştirme oturumdaki izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-06",
+      "oneri": "Bugün maddelerini ağırlığa göre sıralama seçeneği",
+      "durum": "acik",
+      "pr": 77,
+      "dal": "otomasyon/oneri-2026-11-06-2",
+      "ozet": "Bugün listesine ağırlığa göre sıralayan 'Önce en etkili' düğmesi eklendi",
+      "neden": "Testler geçti; otomatik birleştirme oturumdaki izin denetimince engellendi (PR #76'da Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Fiyat tablosunda $/GB sıralamasında $/GB değerini göster",
@@ -409,6 +430,20 @@
       "pr": 75,
       "tarih": "2026-11-04",
       "kim": "otomasyon"
+    },
+    {
+      "oneri": "Haberler'de gün başlığına o günün ton dağılımını ekle",
+      "durum": "acik",
+      "pr": 76,
+      "tarih": "2026-11-06",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Bugün maddelerini ağırlığa göre sıralama seçeneği",
+      "durum": "acik",
+      "pr": 77,
+      "tarih": "2026-11-06",
+      "kim": "otomasyon"
     }
   ],
   "onayBekleyen": [
@@ -488,6 +523,20 @@
       "tarih": "2026-11-04",
       "neden": "Testler geçti; otomatik birleştirme oturumdaki izin denetimince engellendi (PR #74'te), onay bekliyor.",
       "dal": "otomasyon/oneri-2026-11-04-2"
+    },
+    {
+      "pr": 76,
+      "oneri": "Haberler'de gün başlığına o günün ton dağılımını ekle",
+      "tarih": "2026-11-06",
+      "neden": "Testler geçti; otomatik birleştirme oturumdaki izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "dal": "otomasyon/oneri-2026-11-06-1"
+    },
+    {
+      "pr": 77,
+      "oneri": "Bugün maddelerini ağırlığa göre sıralama seçeneği",
+      "tarih": "2026-11-06",
+      "neden": "Testler geçti; otomatik birleştirme oturumdaki izin denetimince engellendi (PR #76'da Merge Without Review), onay bekliyor.",
+      "dal": "otomasyon/oneri-2026-11-06-2"
     }
   ],
   "guvenlik": {

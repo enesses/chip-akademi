@@ -840,6 +840,26 @@
       "ozet": "Süzgeç düğmelerinde tekrar eden maddeler '(N tekrar)' olarak ayrıca gösteriliyor.",
       "neden": "Testler geçti; otomatik birleştirme oturumdaki izin denetimince engellendi (PR #74'te), onay bekliyor.",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-06",
+      "oneri": "Haberler'de gün başlığına o günün ton dağılımını ekle",
+      "durum": "acik",
+      "pr": 76,
+      "dal": "otomasyon/oneri-2026-11-06-1",
+      "ozet": "Haberler gün başlığında olumlu/nötr/olumsuz sayıları renkli noktalarla gösteriliyor",
+      "neden": "Testler geçti; otomatik birleştirme oturumdaki izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-06",
+      "oneri": "Bugün maddelerini ağırlığa göre sıralama seçeneği",
+      "durum": "acik",
+      "pr": 77,
+      "dal": "otomasyon/oneri-2026-11-06-2",
+      "ozet": "Bugün listesine ağırlığa göre sıralayan 'Önce en etkili' düğmesi eklendi",
+      "neden": "Testler geçti; otomatik birleştirme oturumdaki izin denetimince engellendi (PR #76'da Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
     }
   ]
 }
