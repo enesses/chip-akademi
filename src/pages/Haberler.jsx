@@ -141,9 +141,9 @@ export default function Haberler() {
               ))}
             </div>
           </div>
-          <div className="flex gap-1.5 overflow-x-auto serit-kaydir" role="tablist" aria-label="Konu">
+          <div className="flex gap-1.5 overflow-x-auto serit-kaydir" role="group" aria-label="Konu süzgeci">
             {[["hepsi", "Tüm konular"], ...Object.entries(KONULAR)].map(([k, ad]) => (
-              <button key={k} type="button" role="tab" aria-selected={konu === k} onClick={() => setKonu(k)}
+              <button key={k} type="button" aria-pressed={konu === k} onClick={() => setKonu(k)}
                 className={cn("shrink-0 rounded-sm border px-3 py-1 text-xs transition-colors",
                   konu === k ? "border-primary/60 bg-primary/10 text-foreground" : "border-card-border text-muted-foreground hover:text-foreground")}>
                 {ad} <span className="opacity-60 tabular-nums">{sayilar[k] || 0}</span>
