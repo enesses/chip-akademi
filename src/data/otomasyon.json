@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-07T06:58:59.619Z",
+  "guncelleme": "2026-11-07T07:01:28.604Z",
   "tarih": "2026-11-07",
   "durum": "dikkat",
   "ajanlar": [
@@ -40,7 +40,7 @@
     {
       "seviye": "dikkat",
       "tur": "onay",
-      "metin": "13 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65, PR #70, PR #71, PR #72, PR #73, PR #74, PR #75, PR #76, PR #77) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+      "metin": "15 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65, PR #70, PR #71, PR #72, PR #73, PR #74, PR #75, PR #76, PR #77, PR #78, PR #79) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
   "oneriler": [
@@ -75,7 +75,28 @@
       "alan": "Veri"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-11-07",
+      "oneri": "Fiyat hareketlerinde çok sağlayıcılı modelleri öne al",
+      "durum": "acik",
+      "pr": 78,
+      "dal": "otomasyon/oneri-2026-11-07-1",
+      "ozet": "Artanlar/Düşenler listelerinde en az 5 sağlayıcılı modeller önce gösteriliyor",
+      "neden": "Testler geçti; otomatik birleştirme oturumdaki izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-07",
+      "oneri": "Haberler konu sekmelerinde ARIA rolünü düzelt",
+      "durum": "acik",
+      "pr": 79,
+      "dal": "otomasyon/oneri-2026-11-07-2",
+      "ozet": "Konu şeridi role=group + aria-pressed süzgeç düğmelerine çevrildi",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #78'de Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Bugün puan kartında kategori dağılımını göster",
@@ -244,6 +265,20 @@
       "pr": 77,
       "tarih": "2026-11-06",
       "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyat hareketlerinde çok sağlayıcılı modelleri öne al",
+      "durum": "acik",
+      "pr": 78,
+      "tarih": "2026-11-07",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Haberler konu sekmelerinde ARIA rolünü düzelt",
+      "durum": "acik",
+      "pr": 79,
+      "tarih": "2026-11-07",
+      "kim": "otomasyon"
     }
   ],
   "onayBekleyen": [
@@ -337,6 +372,20 @@
       "tarih": "2026-11-06",
       "neden": "Testler geçti; otomatik birleştirme oturumdaki izin denetimince engellendi (PR #76'da Merge Without Review), onay bekliyor.",
       "dal": "otomasyon/oneri-2026-11-06-2"
+    },
+    {
+      "pr": 78,
+      "oneri": "Fiyat hareketlerinde çok sağlayıcılı modelleri öne al",
+      "tarih": "2026-11-07",
+      "neden": "Testler geçti; otomatik birleştirme oturumdaki izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "dal": "otomasyon/oneri-2026-11-07-1"
+    },
+    {
+      "pr": 79,
+      "oneri": "Haberler konu sekmelerinde ARIA rolünü düzelt",
+      "tarih": "2026-11-07",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #78'de Merge Without Review), onay bekliyor.",
+      "dal": "otomasyon/oneri-2026-11-07-2"
     }
   ],
   "guvenlik": {

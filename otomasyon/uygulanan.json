@@ -860,6 +860,26 @@
       "ozet": "Bugün listesine ağırlığa göre sıralayan 'Önce en etkili' düğmesi eklendi",
       "neden": "Testler geçti; otomatik birleştirme oturumdaki izin denetimince engellendi (PR #76'da Merge Without Review), onay bekliyor.",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-07",
+      "oneri": "Fiyat hareketlerinde çok sağlayıcılı modelleri öne al",
+      "durum": "acik",
+      "pr": 78,
+      "dal": "otomasyon/oneri-2026-11-07-1",
+      "ozet": "Artanlar/Düşenler listelerinde en az 5 sağlayıcılı modeller önce gösteriliyor",
+      "neden": "Testler geçti; otomatik birleştirme oturumdaki izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-07",
+      "oneri": "Haberler konu sekmelerinde ARIA rolünü düzelt",
+      "durum": "acik",
+      "pr": 79,
+      "dal": "otomasyon/oneri-2026-11-07-2",
+      "ozet": "Konu şeridi role=group + aria-pressed süzgeç düğmelerine çevrildi",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #78'de Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
     }
   ]
 }
