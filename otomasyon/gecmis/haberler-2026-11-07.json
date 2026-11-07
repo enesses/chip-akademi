@@ -1,0 +1,75 @@
+{
+  "tarih": "2026-11-07",
+  "haberler": [
+    {
+      "baslik": "Google, Wyoming veri merkezinin elektriğinin %100'ünü ödeyecek",
+      "detay": "Cheyenne yakınındaki 17 milyar dolarlık kampüs için Google, AEP ile Bloom yakıt hücreli 702 MW'lık (yaklaşık 4 milyar dolar) tesis için 20 yıllık 'al ya da öde' sözleşmesi imzaladı; Black Hills hizmeti 2027 sonunda başlayacak.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/11/06/google-is-spending-17-billion-on-a-wyoming-data-center-and-says-it-will-pay-for-100-of-its-power/",
+      "yayin": "2026-11-06",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Bloom Energy, NTT DATA ile 900 MW'lık yakıt hücresi anlaşması yaptı",
+      "detay": "NTT DATA, veri merkezlerini ana güç kaynağı olarak Bloom yakıt hücreleriyle çalıştıracak; ilk sevkiyatlar 2027'de. 900 MW, Bloom'un Ocak 2026'ya kadar kurduğu toplam 1,5 GW'ın yaklaşık %60'ı.",
+      "kaynak": "StockTitan",
+      "url": "https://www.stocktitan.net/articles/bloom-energy-ntt-900-mw-data-center-power-deal-2026",
+      "yayin": "2026-11-05",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Samsung ve SK hynix'te açığa satış bakiyesi iki haftada %70 arttı",
+      "detay": "Korea Exchange verilerine göre iki hissedeki açığa satış bakiyesi 3 Kasım'da 5,82 milyon hisseye çıktı (20 Ekim: 3,43 milyon). 4 Kasım'daki açığa satış hacmi 752,9 milyar won ile geçen ayın günlük ortalamasının 2,25 katı oldu.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/11/06/short-sale-balances-on-samsung-sk-hynix-jump-70-percent-in",
+      "yayin": "2026-11-06",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Micron'un Tayvan'daki 4,5 milyar dolarlık fabrika çalışması askıya alındı",
+      "detay": "Bloomberg'e dayanan habere göre Micron, Tayvan'da planlanan 4,5 milyar dolarlık bellek fabrikasındaki çalışmayı durdurdu. Hisse 5 Kasım'da %17,5 düşerek 656,39 dolara geriledi; 25 Haziran zirvesi 1.213,56 dolardı.",
+      "kaynak": "Trefis (Bloomberg haberi)",
+      "url": "https://www.trefis.com/stock/mu/articles/623345/what-sent-micron-stock-lower/2026-11-06",
+      "yayin": "2026-11-06",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Oracle, Tencent ile 7 milyar dolarlık çip kiralama anlaşmasını iptal etti",
+      "detay": "FT'ye göre Tencent'in Güneydoğu Asya'daki Oracle veri merkezlerinde yaklaşık 100.000 gelişmiş AI çipini beş yıllığına kiralaması planlanıyordu; ABD yetkililerinin baskısı sonrası anlaşma iptal edildi. Reuters haberi bağımsız doğrulayamadı.",
+      "kaynak": "The Next Web (FT haberi)",
+      "url": "https://thenextweb.com/news/oracle-cancels-tencent-ai-chip-lease",
+      "yayin": "2026-11-04",
+      "konular": [
+        "politika",
+        "veri-merkezi"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Teksas'taki dev projeler: Stargate Frontier 1,8 GW, Nexus Hubbard 6,4 GW",
+      "detay": "Seçim sonrası belirsizlikte iki büyük proje öne çıkıyor: Shackelford County'deki Stargate Frontier (1.820 MW) ve Anthropic ağırlıklı Nexus Hubbard (6.400 MW); ikincisi ABD'de inşa edilen en büyük ikinci proje.",
+      "kaynak": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+      "yayin": "2026-11-04",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kategori": "negatif"
+    }
+  ]
+}

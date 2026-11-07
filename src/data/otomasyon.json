@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-11-06T07:04:22.419Z",
-  "tarih": "2026-11-06",
+  "guncelleme": "2026-11-07T06:58:59.619Z",
+  "tarih": "2026-11-07",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-11-06T07:00:06.544Z"
+      "zaman": "2026-11-07T06:57:13.231Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-11-06T07:00:06.665Z"
+      "zaman": "2026-11-07T06:57:13.342Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-11-06T07:00:06.055Z"
+      "zaman": "2026-11-07T06:57:12.831Z"
     },
     {
       "id": "gelistirme",
@@ -33,14 +33,10 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-11-06T07:00:23.819Z"
+      "zaman": "2026-11-07T06:57:29.856Z"
     }
   ],
   "dikkat": [
-    {
-      "seviye": "uyarı",
-      "metin": "Yenileme · Fiyat verisi: izin engeli — kaynak sayfa okumaya izin vermedi, veri uydurulmadı (son veri 2026-11-04). WebFetch getdeploying.com/gpus için PROVENANCE_REQUIRED döndü; WebSearch sonuçlarında tam /gpus adresi çıkmadı (yalnızca model alt sayfaları)"
-    },
     {
       "seviye": "dikkat",
       "tur": "onay",
@@ -49,234 +45,38 @@
   ],
   "oneriler": [
     {
-      "baslik": "Haberler'de gün başlığına o günün ton dağılımını ekle",
-      "neden": "src/pages/Haberler.jsx gün başlığında yalnızca '{liste.length} haber' yazıyor. 6 Kasım'da akışa giren 15 haberin 11'i olumsuz; gün başlığındaki küçük olumlu/nötr/olumsuz sayacı, günler arasında havanın nasıl döndüğünü (4 Kasım → 6 Kasım) kaydırmadan gösterir.",
+      "baslik": "Fiyat hareketlerinde çok sağlayıcılı modelleri öne al",
+      "neden": "Bugünkü iki_gun.artanlar listesinin ilk satırı Nvidia RTX PRO 4000 (+%90, yalnızca 3 sağlayıcı); 6 sağlayıcılı GH200 (+%62,7) ikinci sırada. Prices.jsx az sağlayıcılı satırları yalnızca soluklaştırıyor, sıralamayı değiştirmiyor; güvenilir hareket listenin altında kalıyor.",
       "etki": "orta",
-      "alan": "Haberler"
+      "alan": "Fiyatlar"
     },
     {
-      "baslik": "Bugün maddelerini ağırlığa göre sıralama seçeneği",
-      "neden": "src/pages/Bugun.jsx'te gorunenMaddeler yalnızca kategoriye göre süzülüyor, sıralanmıyor. Bugün 10 maddenin 4'ü ağırlık 3; bunlar listede dağınık. 'Önce en etkili' düğmesi ağırlığı yüksek maddeleri öne alır.",
-      "etki": "orta",
-      "alan": "Bugün"
+      "baslik": "Haberler konu sekmelerinde ARIA rolünü düzelt",
+      "neden": "Haberler.jsx konu şeridi role=\"tablist\"/\"tab\" kullanıyor ama hiçbir role=\"tabpanel\" ya da aria-controls yok ve ok tuşlarıyla gezinme desteklenmiyor; ekran okuyucu sekme paneli bekliyor. Bunlar süzgeç düğmesi olduğu için aria-pressed'li bir role=\"group\" doğru desen.",
+      "etki": "düşük",
+      "alan": "Erişilebilirlik"
     },
     {
-      "baslik": "Bugün puanını dünkü puanla karşılaştır",
-      "neden": "Puan 4 Kasım'da 71 iken bugün 9'a düştü, ama src/data/bugun.json'da önceki günün puanı yok, sayfa farkı gösteremiyor. veri-isle.mjs bir önceki gecmis/bugun-*.json puanını 'onceki' alanına yazarsa kartta '▼ 62 (4 Kasım'a göre)' gösterilebilir. otomasyon/ korunduğu için onay gerekir.",
+      "baslik": "Elle doğrulanan büyük fiyat oynamalarını tabloda işaretle",
+      "neden": "Bugün Nvidia A4000 0,82 → 0,18 $/saat (-%78, 12 sağlayıcı) üç okumayla doğrulanıp yazıldı, ancak gpu_kiralama.json'a 'dogrulanan' bilgisi taşınmıyor (src altında 'dogrulan' geçen fiyat kodu yok); kullanıcı bu düşüşün hata mı gerçek mi olduğunu göremiyor. veri-isle.mjs (korunan) değişikliği gerektirir.",
+      "etki": "orta",
+      "alan": "Fiyatlar / otomasyon"
+    },
+    {
+      "baslik": "Bugün puanının günlük geçmişini göster",
+      "neden": "Puan dün 9, bugün 62; ancak Bugün.jsx yalnızca bugünkü bugun.json'u içe aktarıyor ve otomasyon.json 'gecmis' dizisinde yalnızca tarih/durum/dikkat var. Puanı gecmis'e eklemek (otomasyon/, korunan) ve Bugün'de küçük bir seri çizmek ani dönüşleri bağlama oturtur.",
       "etki": "orta",
       "alan": "Bugün / otomasyon"
     },
     {
-      "baslik": "Bugün maddelerine kaynağın yayın tarihini taşı",
-      "neden": "src/data/haberler.json'da kaynakTuru 'bugun' olan maddelerin 'yayin' alanı null (ör. 2026-11-06 Nasdaq haberi); ek haberlerde dolu. Bugün şemasına isteğe bağlı 'yayin' eklenip veri-isle.mjs'te akışa aktarılırsa Haberler'deki 'Yayın:' etiketi her maddede çalışır.",
+      "baslik": "Bellek sözleşme fiyatlarını pazartesi yenile",
+      "neden": "İyileştirme ajanı bellek_fiyat.json'un 15 gündür güncellenmediğini bildiriyor; bu çalıştırmada TrendForce'tan yeni bir sözleşme tahmini doğrulanamadı (yalnızca 31 Ekim tarihli ikincil DDR4 aylık fiyat haberi bulundu).",
       "etki": "düşük",
-      "alan": "Haberler / otomasyon"
-    },
-    {
-      "baslik": "Fiyat izin engelinde endeks özetini ayrıca işle",
-      "neden": "Bugün getdeploying.com/gpus izin engeline takıldı ama gpu-price-index okundu (12 ay +%19, kayıtlı +%20). veri-isle.mjs endeksi yalnızca fiyat satırları ≥30 iken işliyor (satır 89 ve 176–185); endeks ayrı işlenirse engelli günlerde de güncel kalır.",
-      "etki": "düşük",
-      "alan": "Fiyatlar / otomasyon"
+      "alan": "Veri"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-11-06",
-      "oneri": "Haberler'de gün başlığına o günün ton dağılımını ekle",
-      "durum": "acik",
-      "pr": 76,
-      "dal": "otomasyon/oneri-2026-11-06-1",
-      "ozet": "Haberler gün başlığında olumlu/nötr/olumsuz sayıları renkli noktalarla gösteriliyor",
-      "neden": "Testler geçti; otomatik birleştirme oturumdaki izin denetimince engellendi (Merge Without Review), onay bekliyor.",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-11-06",
-      "oneri": "Bugün maddelerini ağırlığa göre sıralama seçeneği",
-      "durum": "acik",
-      "pr": 77,
-      "dal": "otomasyon/oneri-2026-11-06-2",
-      "ozet": "Bugün listesine ağırlığa göre sıralayan 'Önce en etkili' düğmesi eklendi",
-      "neden": "Testler geçti; otomatik birleştirme oturumdaki izin denetimince engellendi (PR #76'da Merge Without Review), onay bekliyor.",
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "Fiyat tablosunda $/GB sıralamasında $/GB değerini göster",
-      "durum": "acik",
-      "pr": 46,
-      "tarih": "2026-10-23",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Fiyat aramasında sonuç yoksa boş tablo yerine mesaj göster",
-      "durum": "acik",
-      "pr": 47,
-      "tarih": "2026-10-23",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": " Notlar sayfasına sabitleme (pin) düğmesi",
-      "durum": "birlesti",
-      "pr": 29,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": " Seviye sınavında önceki sonuçları göster",
-      "durum": "birlesti",
-      "pr": 30,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": " @grpc/grpc-js'i npm overrides ile ≥1.13.6'ya yükselt",
-      "durum": "birlesti",
-      "pr": 31,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": " Eğitim sayfasına 'ilerlemeyi sıfırla' düğmesi",
-      "durum": "birlesti",
-      "pr": 32,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": " Çip detayında kiralama fiyatının son değişimini göster",
-      "durum": "birlesti",
-      "pr": 33,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": " veri-isle kayıtlıdan eski endeks ölçümünü yazmasın",
-      "durum": "birlesti",
-      "pr": 34,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": " Fiyatlar sayfasında 'Son ölçümler arası hareketler' bölümüne ölçüm aralığını yaz",
-      "durum": "birlesti",
-      "pr": 35,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": " Fiyat endeksi kartında ölçüm tarihi eskiyse uyarı göster",
-      "durum": "birlesti",
-      "pr": 36,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": " Haberler'de yayın tarihini eklenme gününden farklıysa göster",
-      "durum": "birlesti",
-      "pr": 37,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": " Bugün puanında tüm maddeler tekrar ise sıfıra bölmeyi önle",
-      "durum": "birlesti",
-      "pr": 38,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": " Fiyat tablosunda eski ölçümlü satırları işaretle",
-      "durum": "birlesti",
-      "pr": 39,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": " Fiyat tablosunda az sağlayıcılı satırları soluk göster",
-      "durum": "birlesti",
-      "pr": 40,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": " Vite'i 7.3.6'dan yamalı 7.3.x sürümüne güncelle",
-      "durum": "birlesti",
-      "pr": 41,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": " Bugün maddelerinde sınıflandırma gerekçesini ve ağırlığını göster",
-      "durum": "birlesti",
-      "pr": 42,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": " Bugün puan kartına hesap yöntemini (formül ve Σ) ekle",
-      "durum": "birlesti",
-      "pr": 43,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": " Fiyat tablosunda $/GB sıralamasında $/GB değerini göster",
-      "durum": "birlesti",
-      "pr": 46,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": " Fiyat aramasında sonuç yoksa boş tablo yerine mesaj göster",
-      "durum": "birlesti",
-      "pr": 47,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": "veri-isle sağlayıcı sütunu sayı değilse fiyat girdisini reddetsin",
-      "durum": "birlesti",
-      "pr": null,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": "oneri-uygula denetimi güvenliği main'e göre fark olarak değerlendirsin",
-      "durum": "birlesti",
-      "pr": null,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": "Hyperscaler farkı, taahhüt ve spot indirimi verisini tazeleyip Fiyatlar'da göster",
-      "durum": "birlesti",
-      "pr": null,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": "Bellek göstergelerine TrendForce'un 4Ç DRAM tahminini işle",
-      "durum": "birlesti",
-      "pr": null,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": "Arayüz testi Chromium'u sürüm klasöründen bağımsız bulsun",
-      "durum": "birlesti",
-      "pr": null,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
-    {
-      "oneri": "veri-isle aynı gün ikinci çalıştırmada son işleme sonucunu silmesin",
-      "durum": "birlesti",
-      "pr": 28,
-      "tarih": "2026-10-23",
-      "kim": "elle"
-    },
     {
       "oneri": "Bugün puan kartında kategori dağılımını göster",
       "durum": "birlesti",
@@ -577,7 +377,7 @@
     "bulgular": [
       {
         "alan": "veri",
-        "baslik": "Bellek fiyatları 14 gündür güncellenmedi",
+        "baslik": "Bellek fiyatları 15 gündür güncellenmedi",
         "etki": "düşük",
         "otomatik": false,
         "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
@@ -589,18 +389,23 @@
     "adimlar": [
       {
         "ad": "Fiyat verisi",
-        "durum": "uyari",
-        "detay": "izin engeli — kaynak sayfa okumaya izin vermedi, veri uydurulmadı (son veri 2026-11-04). WebFetch getdeploying.com/gpus için PROVENANCE_REQUIRED döndü; WebSearch sonuçlarında tam /gpus adresi çıkmadı (yalnızca model alt sayfaları)"
+        "durum": "ok",
+        "detay": "bu çalıştırmada güncellendi — 91 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 16 gelmedi (eski fiyat korundu), 1 büyük oynama elle doğrulandı"
+      },
+      {
+        "ad": "Elle doğrulanan fiyat",
+        "durum": "ok",
+        "detay": "Nvidia A4000: 0.82 → 0.18 (üç okuma (iki tam tablo + hedefli): medyan 0.18, en düşük 0.12) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 9, 3 yaklaşan olay; haber akışına +10"
+        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 62, 4 yaklaşan olay; haber akışına +9"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+5 haber (akışta 355); bugün toplam 15"
+        "detay": "+6 haber (akışta 363); bugün toplam 15"
       },
       {
         "ad": "Derleme",
@@ -610,7 +415,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2871 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2875 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -637,11 +442,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-10-22",
-      "durum": "dikkat",
-      "dikkat": 2
-    },
     {
       "tarih": "2026-10-23",
       "durum": "dikkat",
@@ -706,6 +506,11 @@
       "tarih": "2026-11-06",
       "durum": "dikkat",
       "dikkat": 2
+    },
+    {
+      "tarih": "2026-11-07",
+      "durum": "dikkat",
+      "dikkat": 1
     }
   ]
 }

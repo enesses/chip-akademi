@@ -1,110 +1,107 @@
 {
-  "tarih": "2026-11-06",
-  "derlenme": "6 Kasım 2026",
+  "tarih": "2026-11-07",
+  "derlenme": "7 Kasım 2026",
   "puan": {
-    "etiket": "Siyasi şok, çip hisselerinde çöküş",
-    "yorum": "ABD ara seçimlerinin ardından veri merkezi kısıtlaması korkusu Nasdaq'ı %5,5, çip endeksini %12 düşürdü; satış Asya'ya taşındı ve Kospi devre kesiciye takıldı. Talep verileri (AMD, DRAM payları) güçlü kalsa da Microsoft'un neocloud geri çekilmesi ve Qualcomm'un maliyet uyarısı kısa vadeli görünümü karartıyor.",
-    "deger": 9
+    "etiket": "Sert satışın ardından temkinli toparlanma",
+    "yorum": "Cuma günü çip hisseleri Perşembe kayıplarının yaklaşık üçte birini geri aldı; güçlü istihdam verisi ve TSMC'nin bellek üretimine girebileceği haberi alımları destekledi. Ancak Asya'da satış sürdü, Teksas'taki izin durdurma vaadi ve 11 GW'lık proje riski veri merkezi tarafındaki belirsizliği canlı tutuyor.",
+    "deger": 62
   },
   "ozet": [
-    "Günün tek konusu ABD ara seçimlerinin piyasaya yansıması. Demokratların Kongre'nin iki kanadını ve Teksas, Ohio, Georgia gibi veri merkezi yoğun eyaletlerin valiliklerini kazanması, yatırımcılarda yeni veri merkezi izinlerinin ve enerji onaylarının yavaşlayacağı korkusunu doğurdu. 5 Kasım'da Nasdaq %5,5, S&P 500 %4,4 düştü; VIX yaklaşık %70 sıçradı.",
-    "Satışın merkezinde çipler vardı: Philadelphia Yarı İletken Endeksi %12,2 geriledi, AMD ve Micron %17, Intel ve Broadcom %10, Nvidia %9 civarında değer kaybetti. Ertesi sabah Asya'da Kospi %8,5 düşerek devre kesiciyi tetikledi; SK hynix, Samsung, TSMC, Advantest ve SoftBank'ta %10'a yakın kayıplar görüldü.",
-    "Siyasi tablo somut: 41 yerel veri merkezi oylamasının 40'ında seçmen kısıtlamadan yana oy kullandı, Teksas'ın yeni valisi izinlerin dondurulmasını sürdüreceğini söyledi. OpenAI aynı gün tesislerinin tüm elektrik maliyetini üstleneceğini ve kamu görevlileriyle gizlilik anlaşmalarını bırakacağını açıklayarak tepkiyi yumuşatmaya çalıştı.",
-    "Talep tarafında ise tablo bozulmuş değil: DRAM pazarında SK hynix payını %29'a çıkardı, Çin'de 600.000 H200 ithalat onayı bekliyor. Ancak Microsoft'un neocloud projelerine mesafe koyması ve Qualcomm'un tedarik zinciri maliyet uyarısı, yatırım döngüsünün siyasi riskin yanında maliyet ve teslimat sorunlarıyla da sınandığını gösteriyor."
+    "Haftanın sert satışı Cuma günü ABD'de yerini kısmi bir toparlanmaya bıraktı. Nasdaq %1,09, S&P 500 %0,31 yükselirken Dow %0,46 geriledi; yine de üç endeks de haftayı kayıpla kapattı (Nasdaq haftalık %3,4, S&P 500 %2,7). Ekim'de tarım dışı istihdamın 165.000 artması (beklenti 59.000) resesyon kaygılarını azalttı.",
+    "Toparlanmanın önünde çipler vardı: AMD %11, Intel %7,7, Marvell %5,7, Micron %5,1, Nvidia %2,8 yükseldi. Sekiz büyük çip hissesi Perşembe kayıplarının ortalama %36'sını geri aldı. Micron'un cari çeyrek için verdiği 61,5 milyar dolarlık gelir tahmini, talebin henüz zayıflamadığını hatırlattı.",
+    "Asya ise ABD'nin Perşembe günkü düşüşünü Cuma sabahı fiyatladı: Kospi gün içinde %8,8 düşerek 20 dakikalık işlem durdurmasını tetikledi, Nikkei %6'nın üzerinde kaybetti, SoftBank %11 ve Kioxia %12'nin üzerinde değer yitirdi. Samsung ve SK hynix ise müşterilerden sipariş iptali gelmediğini, talebin arzı aşmaya devam ettiğini söylüyor.",
+    "Yapısal tarafta iki gelişme öne çıktı: TSMC'nin Nvidia'nın talebiyle 3D DRAM üretimini değerlendirdiği bildirildi ve Google, Crusoe'nun zorlanan Wyoming projesini devralarak kampüse 17 milyar dolar yatırım yapacağını açıkladı. Buna karşılık Teksas'ın seçilmiş valisi yeni veri merkezi izinlerinin durdurulmasını savunuyor; Modo Energy'ye göre vaatler uygulanırsa 11 GW'lık inşaat durabilir."
   ],
   "maddeler": [
     {
-      "baslik": "Nasdaq %5,5 düştü, Dow 1.830 puan kaybetti",
-      "detay": "5 Kasım'da Nasdaq Composite %5,5 düşerek düzeltme bölgesine girdi, S&P 500 %4,4, Dow Jones %3,4 (1.830 puan) geriledi. VIX yaklaşık %70 artışla 28,18'e çıktı.",
-      "kategori": "negatif",
-      "agirlik": 3,
-      "neden": "Seçim sonrası yükselişin tamamen silinmesi, AI yatırımlarına duyulan güvenin siyasi riskle sarsıldığını gösteriyor.",
-      "kaynak": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-futures-mixed-130952710.html"
-    },
-    {
-      "baslik": "AMD %17, Nvidia %9 düştü: 'AI düzenleme' korkusu",
-      "detay": "Gün sonunda AMD %17,3, Intel %10,3, Broadcom %10,4, Nvidia %9,3 değer kaybetti. Nvidia gün içinde 2026'daki kazancının tamamını sildi. Satış bilanço değil siyasi risk kaynaklı yorumlandı.",
-      "kategori": "negatif",
-      "agirlik": 3,
-      "neden": "Güçlü çeyrek açıklayan AMD'nin bile sert düşmesi, piyasanın temellerden çok veri merkezi inşaatının yavaşlama ihtimalini fiyatladığını gösteriyor.",
-      "kaynak": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/11/05/amd-tumbles-13-nvidia-slides-7-as-ai-regulation-fears-hit-chip-stocks-intel-sinks-8/"
-    },
-    {
-      "baslik": "Kospi %8,5 çöktü, devre kesici devreye girdi",
-      "detay": "6 Kasım sabahı Kospi %8,55 düşüşle 4.923 puana geriledi ve işlemler 20 dakika durduruldu. SK hynix %12,3, Samsung Electronics %10,1 düştü; Nikkei 225 yaklaşık %6,2 geriledi.",
-      "kategori": "negatif",
-      "agirlik": 3,
-      "neden": "AI bellek talebinin en büyük kazananları olan Koreli üreticilerdeki çöküş, satışın küresel tedarik zincirine yayıldığını gösteriyor.",
-      "kaynak": "TradingKey",
-      "url": "https://www.tradingkey.com/analysis/stocks/more/262287971-japan-korea-stocks-skhy-kospi-nikkei-samsung-skhynix-softbank-kioxia-mu-sox-tradingkey"
-    },
-    {
-      "baslik": "TSMC %9,6, Advantest %12 düştü; Tayvan endeksi %4,5 geriledi",
-      "detay": "TAIEX %4,51 düşüşle 39.702'de kapandı. TSMC %9,6, Foxconn %9,4, Advantest %12,2, SoftBank Group %11,6, Kioxia yaklaşık %10 kaybetti. Goldman Sachs'tan Timothy Moe pozisyon çözülmesinin düşüşü büyüttüğünü söyledi.",
-      "kategori": "negatif",
+      "baslik": "Nasdaq %1,1 toparlandı, hafta yine kayıpla kapandı",
+      "detay": "6 Kasım'da Nasdaq %1,09, S&P 500 %0,31 yükseldi, Dow %0,46 geriledi. Haftalık bazda Nasdaq %3,4, S&P 500 %2,7 kaybetti. Ekim'de tarım dışı istihdam 165.000 arttı (beklenti 59.000), işsizlik %4,1.",
+      "kategori": "pozitif",
       "agirlik": 2,
-      "neden": "Üretim, test ve sunucu montajındaki Asyalı tedarikçilerin topluca değer kaybetmesi, beklenen harcama yavaşlamasının tüm zinciri etkileyeceği korkusunu yansıtıyor.",
-      "kaynak": "Unite.AI",
-      "url": "https://www.unite.ai/asian-ai-and-chip-stocks-tumble-on-us-data-center-fears/"
+      "neden": "Güçlü istihdam verisi ve tepki alımları, Perşembe'deki panik satışının bir kısmını geri aldırdı; ancak haftalık kayıp sürüyor.",
+      "kaynak": "StockTitan",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-6-2026"
     },
     {
-      "baslik": "41 yerel oylamanın 40'ında seçmen veri merkezlerine karşı çıktı",
-      "detay": "10 eyalette 41 yerel önergenin 40'ında seçmenler kısıtlamayı destekledi ya da yeni gelişmeyi reddetti. Ohio'da Granville'de kısıtlama %82, Ashville'de 'hayır' oyu %82 oldu. Teksas, Ohio ve Georgia'da moratoryum ya da sıkı denetim yanlısı adaylar vali seçildi.",
-      "kategori": "negatif",
-      "agirlik": 3,
-      "neden": "Yerel onaylar veri merkezi inşaatının darboğazı haline geliyor; bu, GPU ve bellek talebinin zamanlamasını doğrudan etkileyebilir.",
-      "kaynak": "Fox Business",
-      "url": "https://www.foxbusiness.com/politics/data-centers-ballot-voters-sent-unmistakable-message"
-    },
-    {
-      "baslik": "OpenAI veri merkezlerinin tüm elektrik maliyetini üstlenecek",
-      "detay": "OpenAI, tesislerindeki elektrik ve altyapı maliyetinin tamamını ödeyeceğini, her konum için su planı hazırlayacağını ve kamu görevlileriyle gizlilik anlaşmalarını büyük ölçüde bırakacağını açıkladı. ABC anketinde seçmenlerin yaklaşık dörtte üçü bölgelerinde yeni veri merkezine karşı.",
-      "kategori": "notr",
+      "baslik": "AMD %11, Intel %7,7 yükseldi: çiplerde tepki alımı",
+      "detay": "Cuma kapanışında AMD %11,04, Intel %7,71, Marvell %5,73, Micron %5,12, Arm %4,74, Nvidia %2,78 değer kazandı.",
+      "kategori": "pozitif",
       "agirlik": 2,
-      "neden": "Tepkiyi azaltabilecek bir adım, ama veri merkezlerinin maliyetini artırıyor ve sektörün siyasi baskıyı ciddiye aldığını teyit ediyor.",
-      "kaynak": "ABC News",
-      "url": "https://abcnews.com/Business/openai-issues-new-data-center-policies-after-midterm/story?id=137874775"
+      "neden": "Perşembe günü en çok düşen çip hisselerinde güçlü geri dönüş, satışın aşırıya kaçtığı görüşünü destekliyor.",
+      "kaynak": "KuCoin News",
+      "url": "https://www.kucoin.com/news/flash/us-chip-stocks-rally-on-november-7-amd-surges-11"
     },
     {
-      "baslik": "Microsoft neocloud projelerinden geri çekiliyor",
-      "detay": "Bloomberg'e göre Microsoft, Nebius, IREN ve Nscale projelerinde denetimi sıkılaştırdı ve kendi veri merkezlerine öncelik veriyor; Nscale'in Teksas kapasitesini ikiye katlama opsiyonunu kullanmayacak. IREN %17, Nebius %15, CoreWeave %9,8 düştü.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "En büyük kiracının dış kapasiteye mesafe koyması, GPU kiralama pazarında talep ve fiyat baskısı riski yaratıyor.",
-      "kaynak": "MarketScreener (Reuters/Bloomberg)",
-      "url": "https://www.marketscreener.com/news/microsoft-tightens-oversight-of-neocloud-data-center-projects-bloomberg-news-reports-ce785fddda8bf42c"
-    },
-    {
-      "baslik": "Hong Kong'da 600.000 Nvidia H200 Çin onayı bekliyor",
-      "detay": "Reuters'a göre Pekin büyük hacimli ithalata onay vermediği için yaklaşık 600.000 H200 Hong Kong'da bekliyor. Çin'de sekiz çipli bir H200 sunucusu 6 milyon yuanın (yaklaşık 900.000 dolar) üzerinde, bir yıl öncesinin üç katı fiyattan teklif ediliyor.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "Talep olduğu halde siyasi engel nedeniyle satışa dönüşmeyen büyük bir stok, Nvidia'nın Çin gelirini belirsiz bırakıyor.",
-      "kaynak": "Express Tribune (Reuters)",
-      "url": "https://tribune.com.pk/story/2638831/nvidia-chips-pile-up-in-hong-kong-as-china-withholds-import-approval"
-    },
-    {
-      "baslik": "Qualcomm: tedarik zinciri maliyetleri marjı kesiyor",
-      "detay": "Qualcomm'un mali 4. çeyrek geliri %7 düşüşle 10,44 milyar dolar, hisse başı kâr 2,17 dolar oldu. Çip segmenti marjı %24'ten %20–22'ye inecek; şirket wafer, paketleme ve bellek maliyetlerindeki artışı gösterdi. Hisse kapanış sonrası %6'dan fazla düştü.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "AI kaynaklı bellek ve paketleme kıtlığı, AI dışı çip üreticilerinin kârlılığını aşındırıyor.",
-      "kaynak": "Tech Insider",
-      "url": "https://tech-insider.org/qualcomm-falls-6-percent-chip-supply-costs-margin-guidance-2026/"
-    },
-    {
-      "baslik": "DRAM pazarında SK hynix payını %29'a çıkardı",
-      "detay": "Counterpoint'e göre 3. çeyrekte gelire göre DRAM payları: Samsung %38 (önceki çeyrek %39), SK hynix %29 (+3 puan), Micron %21, Çinli CXMT %9.",
+      "baslik": "Micron %4 yükseldi; çeyrek tahmini 61,5 milyar dolar",
+      "detay": "Perşembe %17,5 düşen Micron Cuma günü %4,1 toparlandı. Şirketin son çeyrek satışı 54,23 milyar dolar (bir yıl önce 11,32 milyar), cari çeyrek tahmini 61,5 milyar dolar (beklenti 57 milyar).",
       "kategori": "pozitif",
       "agirlik": 1,
-      "neden": "HBM ağırlıklı satıcının pay kazanması, AI bellek talebinin çeyrek boyunca güçlü kaldığını gösteriyor.",
-      "kaynak": "Korea JoongAng Daily",
-      "url": "https://koreajoongangdaily.com/business/samsung-keeps-dram-lead-as-sk-hynix-claws-back-global-share-in-q3/12958078"
+      "neden": "Bellek talebinin ve fiyatlama gücünün henüz kırılmadığını gösteren somut rakamlar.",
+      "kaynak": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/06/why-micron-stock-is-up-today/"
+    },
+    {
+      "baslik": "TSMC, Nvidia için 3D DRAM üretmeyi değerlendiriyor",
+      "detay": "The Information'a dayanan Reuters haberine göre TSMC, en büyük müşterisi Nvidia'nın talebiyle 3D DRAM üretimi için plan başlattı; yeni fabrika kurmak ya da mevcut bir tesisi dönüştürmek seçenekler arasında. Çalışmaları gelişmiş paketlemeden sorumlu başkan yardımcısı Hsu Kuo-chin yürütüyor.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Bellek kıtlığına yeni ve büyük bir üretici adayı; Samsung, SK hynix ve Micron için uzun vadeli rekabet anlamına geliyor.",
+      "kaynak": "Reuters (Investing.com)",
+      "url": "https://www.investing.com/news/stock-market-news/tsmc-considers-making-advanced-memory-chips-the-information-reports-5008786"
+    },
+    {
+      "baslik": "Kospi gün içinde %8,8 düştü, işlemler 20 dakika durdu",
+      "detay": "6 Kasım sabahı Kospi 4.911,28'e kadar geriledi ve devre kesici devreye girdi; Nikkei 225 %6'nın üzerinde kaybederek 60.000'in altına indi. SoftBank Group %11, Kioxia %12'nin üzerinde düştü.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "ABD'deki veri merkezi düzenleme korkusu Asya'nın bellek ve AI yatırım hisselerine sert biçimde yansıdı.",
+      "kaynak": "Saxo",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---ai-chip-rout-spreads-from-wall-street-to-asia---6-november-2026-06112026"
+    },
+    {
+      "baslik": "Samsung ve SK hynix: sipariş iptali yok, talep arzı aşıyor",
+      "detay": "Şirketler müşterilerin sipariş iptali ya da hacim küçültme belirtisi göstermediğini söylüyor. Modo Energy'ye göre seçilen valiler vaatlerini uygularsa yaklaşık 11 GW'lık (10 GW'ı Teksas'ta) yeni veri merkezi inşaatı durabilir; projeler başka eyaletlere kayarsa 2030'daki net kayıp 3 GW'a iner.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Kısa vadeli talep sağlam görünse de düzenleme riski ölçülebilir büyüklükte; iki yönlü bir tablo.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/11/06/samsung-sk-hynix-see-limited-hit-from-us-data-center-curbs"
+    },
+    {
+      "baslik": "Teksas'ta yeni vali veri merkezi izinlerini durdurmak istiyor",
+      "detay": "Seçilmiş vali Gina Hinojosa, yasama meclisi 'gerçek korumalar' getirene kadar yeni veri merkezi izinlerinin durdurulmasını savunuyor. Eylül'de Vali Abbott da TCEQ'ye yeni izinleri durdurma talimatı vermişti; SpaceXAI'nin Teksas'taki projeleri de bu belirsizlikten etkileniyor.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "ABD'nin planlanan AI altyapı yatırımının yaklaşık dörtte biri Teksas'a gidiyor; izin durdurma doğrudan kapasite riski.",
+      "kaynak": "Newsweek",
+      "url": "https://www.newsweek.com/texas-hits-brakes-on-data-centers-and-elon-musks-plans-12675796"
+    },
+    {
+      "baslik": "Google, Crusoe'nun Wyoming projesini devraldı",
+      "detay": "Crusoe, maliyet ve takvim sorunları yaşayan Wyoming'deki tamamlanmamış veri merkezi projesini Google'a sattı; bedel açıklanmadı. Google kampüse 17 milyar dolar yatırım planlıyor. Proje nihai olarak 10 GW güç kapasitesini hedefliyordu.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Hiperölçekli bir oyuncunun zorlanan projeyi üstlenmesi, düzenleme kaygılarına rağmen kapasite talebinin sürdüğünü gösteriyor.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"
+    },
+    {
+      "baslik": "Tayvan, Çin'e çip malzeme ve ekipman ihracatını sıkılaştırmayı tartışıyor",
+      "detay": "Tayvan meclisinin ekonomi komitesi, kritik yarı iletken malzeme ve ekipman ihracatına sıkı kontrol getiren Ticaret Yasası değişikliğini görüştü. Öneride azami hapis cezası 10 yıla, para cezası NT$10 milyona çıkarılıyor.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "ABD ile uyumu artıran ama tedarik zincirine uyum yükü getirecek bir politika adımı.",
+      "kaynak": "Caixin Global",
+      "url": "https://www.caixinglobal.com/2026-11-05/taiwan-weighs-tighter-controls-on-chip-exports-to-chinese-mainland-102501072.html"
     }
   ],
   "yaklasan": [
+    {
+      "tarih": "2026-11-10",
+      "baslik": "SoftBank Group bilançosu",
+      "kaynak": "Saxo",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---ai-chip-rout-spreads-from-wall-street-to-asia---6-november-2026-06112026"
+    },
     {
       "tarih": "2026-11-15",
       "baslik": "Çin'in AI model ve çip tasarımı ihracat kontrolü taslağında yorum süresi sona eriyor",
@@ -129,6 +126,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = -19 · Σ ağırlık = 23 · Puan = 50 + 50 × -0.83 = 9"
+    "hesap": "Σ ağırlık×işaret = +4 · Σ ağırlık = 17 · Puan = 50 + 50 × 0.24 = 62"
   }
 }

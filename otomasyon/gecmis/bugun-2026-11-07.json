@@ -1,0 +1,131 @@
+{
+  "tarih": "2026-11-07",
+  "derlenme": "7 Kasım 2026",
+  "puan": {
+    "etiket": "Sert satışın ardından temkinli toparlanma",
+    "yorum": "Cuma günü çip hisseleri Perşembe kayıplarının yaklaşık üçte birini geri aldı; güçlü istihdam verisi ve TSMC'nin bellek üretimine girebileceği haberi alımları destekledi. Ancak Asya'da satış sürdü, Teksas'taki izin durdurma vaadi ve 11 GW'lık proje riski veri merkezi tarafındaki belirsizliği canlı tutuyor.",
+    "deger": 62
+  },
+  "ozet": [
+    "Haftanın sert satışı Cuma günü ABD'de yerini kısmi bir toparlanmaya bıraktı. Nasdaq %1,09, S&P 500 %0,31 yükselirken Dow %0,46 geriledi; yine de üç endeks de haftayı kayıpla kapattı (Nasdaq haftalık %3,4, S&P 500 %2,7). Ekim'de tarım dışı istihdamın 165.000 artması (beklenti 59.000) resesyon kaygılarını azalttı.",
+    "Toparlanmanın önünde çipler vardı: AMD %11, Intel %7,7, Marvell %5,7, Micron %5,1, Nvidia %2,8 yükseldi. Sekiz büyük çip hissesi Perşembe kayıplarının ortalama %36'sını geri aldı. Micron'un cari çeyrek için verdiği 61,5 milyar dolarlık gelir tahmini, talebin henüz zayıflamadığını hatırlattı.",
+    "Asya ise ABD'nin Perşembe günkü düşüşünü Cuma sabahı fiyatladı: Kospi gün içinde %8,8 düşerek 20 dakikalık işlem durdurmasını tetikledi, Nikkei %6'nın üzerinde kaybetti, SoftBank %11 ve Kioxia %12'nin üzerinde değer yitirdi. Samsung ve SK hynix ise müşterilerden sipariş iptali gelmediğini, talebin arzı aşmaya devam ettiğini söylüyor.",
+    "Yapısal tarafta iki gelişme öne çıktı: TSMC'nin Nvidia'nın talebiyle 3D DRAM üretimini değerlendirdiği bildirildi ve Google, Crusoe'nun zorlanan Wyoming projesini devralarak kampüse 17 milyar dolar yatırım yapacağını açıkladı. Buna karşılık Teksas'ın seçilmiş valisi yeni veri merkezi izinlerinin durdurulmasını savunuyor; Modo Energy'ye göre vaatler uygulanırsa 11 GW'lık inşaat durabilir."
+  ],
+  "maddeler": [
+    {
+      "baslik": "Nasdaq %1,1 toparlandı, hafta yine kayıpla kapandı",
+      "detay": "6 Kasım'da Nasdaq %1,09, S&P 500 %0,31 yükseldi, Dow %0,46 geriledi. Haftalık bazda Nasdaq %3,4, S&P 500 %2,7 kaybetti. Ekim'de tarım dışı istihdam 165.000 arttı (beklenti 59.000), işsizlik %4,1.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Güçlü istihdam verisi ve tepki alımları, Perşembe'deki panik satışının bir kısmını geri aldırdı; ancak haftalık kayıp sürüyor.",
+      "kaynak": "StockTitan",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-6-2026"
+    },
+    {
+      "baslik": "AMD %11, Intel %7,7 yükseldi: çiplerde tepki alımı",
+      "detay": "Cuma kapanışında AMD %11,04, Intel %7,71, Marvell %5,73, Micron %5,12, Arm %4,74, Nvidia %2,78 değer kazandı.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Perşembe günü en çok düşen çip hisselerinde güçlü geri dönüş, satışın aşırıya kaçtığı görüşünü destekliyor.",
+      "kaynak": "KuCoin News",
+      "url": "https://www.kucoin.com/news/flash/us-chip-stocks-rally-on-november-7-amd-surges-11"
+    },
+    {
+      "baslik": "Micron %4 yükseldi; çeyrek tahmini 61,5 milyar dolar",
+      "detay": "Perşembe %17,5 düşen Micron Cuma günü %4,1 toparlandı. Şirketin son çeyrek satışı 54,23 milyar dolar (bir yıl önce 11,32 milyar), cari çeyrek tahmini 61,5 milyar dolar (beklenti 57 milyar).",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Bellek talebinin ve fiyatlama gücünün henüz kırılmadığını gösteren somut rakamlar.",
+      "kaynak": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/06/why-micron-stock-is-up-today/"
+    },
+    {
+      "baslik": "TSMC, Nvidia için 3D DRAM üretmeyi değerlendiriyor",
+      "detay": "The Information'a dayanan Reuters haberine göre TSMC, en büyük müşterisi Nvidia'nın talebiyle 3D DRAM üretimi için plan başlattı; yeni fabrika kurmak ya da mevcut bir tesisi dönüştürmek seçenekler arasında. Çalışmaları gelişmiş paketlemeden sorumlu başkan yardımcısı Hsu Kuo-chin yürütüyor.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Bellek kıtlığına yeni ve büyük bir üretici adayı; Samsung, SK hynix ve Micron için uzun vadeli rekabet anlamına geliyor.",
+      "kaynak": "Reuters (Investing.com)",
+      "url": "https://www.investing.com/news/stock-market-news/tsmc-considers-making-advanced-memory-chips-the-information-reports-5008786"
+    },
+    {
+      "baslik": "Kospi gün içinde %8,8 düştü, işlemler 20 dakika durdu",
+      "detay": "6 Kasım sabahı Kospi 4.911,28'e kadar geriledi ve devre kesici devreye girdi; Nikkei 225 %6'nın üzerinde kaybederek 60.000'in altına indi. SoftBank Group %11, Kioxia %12'nin üzerinde düştü.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "ABD'deki veri merkezi düzenleme korkusu Asya'nın bellek ve AI yatırım hisselerine sert biçimde yansıdı.",
+      "kaynak": "Saxo",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---ai-chip-rout-spreads-from-wall-street-to-asia---6-november-2026-06112026"
+    },
+    {
+      "baslik": "Samsung ve SK hynix: sipariş iptali yok, talep arzı aşıyor",
+      "detay": "Şirketler müşterilerin sipariş iptali ya da hacim küçültme belirtisi göstermediğini söylüyor. Modo Energy'ye göre seçilen valiler vaatlerini uygularsa yaklaşık 11 GW'lık (10 GW'ı Teksas'ta) yeni veri merkezi inşaatı durabilir; projeler başka eyaletlere kayarsa 2030'daki net kayıp 3 GW'a iner.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Kısa vadeli talep sağlam görünse de düzenleme riski ölçülebilir büyüklükte; iki yönlü bir tablo.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/11/06/samsung-sk-hynix-see-limited-hit-from-us-data-center-curbs"
+    },
+    {
+      "baslik": "Teksas'ta yeni vali veri merkezi izinlerini durdurmak istiyor",
+      "detay": "Seçilmiş vali Gina Hinojosa, yasama meclisi 'gerçek korumalar' getirene kadar yeni veri merkezi izinlerinin durdurulmasını savunuyor. Eylül'de Vali Abbott da TCEQ'ye yeni izinleri durdurma talimatı vermişti; SpaceXAI'nin Teksas'taki projeleri de bu belirsizlikten etkileniyor.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "ABD'nin planlanan AI altyapı yatırımının yaklaşık dörtte biri Teksas'a gidiyor; izin durdurma doğrudan kapasite riski.",
+      "kaynak": "Newsweek",
+      "url": "https://www.newsweek.com/texas-hits-brakes-on-data-centers-and-elon-musks-plans-12675796"
+    },
+    {
+      "baslik": "Google, Crusoe'nun Wyoming projesini devraldı",
+      "detay": "Crusoe, maliyet ve takvim sorunları yaşayan Wyoming'deki tamamlanmamış veri merkezi projesini Google'a sattı; bedel açıklanmadı. Google kampüse 17 milyar dolar yatırım planlıyor. Proje nihai olarak 10 GW güç kapasitesini hedefliyordu.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Hiperölçekli bir oyuncunun zorlanan projeyi üstlenmesi, düzenleme kaygılarına rağmen kapasite talebinin sürdüğünü gösteriyor.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"
+    },
+    {
+      "baslik": "Tayvan, Çin'e çip malzeme ve ekipman ihracatını sıkılaştırmayı tartışıyor",
+      "detay": "Tayvan meclisinin ekonomi komitesi, kritik yarı iletken malzeme ve ekipman ihracatına sıkı kontrol getiren Ticaret Yasası değişikliğini görüştü. Öneride azami hapis cezası 10 yıla, para cezası NT$10 milyona çıkarılıyor.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "ABD ile uyumu artıran ama tedarik zincirine uyum yükü getirecek bir politika adımı.",
+      "kaynak": "Caixin Global",
+      "url": "https://www.caixinglobal.com/2026-11-05/taiwan-weighs-tighter-controls-on-chip-exports-to-chinese-mainland-102501072.html"
+    }
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2026-11-10",
+      "baslik": "SoftBank Group bilançosu",
+      "kaynak": "Saxo",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---ai-chip-rout-spreads-from-wall-street-to-asia---6-november-2026-06112026"
+    },
+    {
+      "tarih": "2026-11-15",
+      "baslik": "Çin'in AI model ve çip tasarımı ihracat kontrolü taslağında yorum süresi sona eriyor",
+      "kaynak": "The Next Web",
+      "url": "https://thenextweb.com/news/china-ai-export-controls-draft"
+    },
+    {
+      "tarih": "2026-11-17",
+      "baslik": "Nvidia 3. çeyrek (FY2027) sonuçları",
+      "kaynak": "NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-third-quarter-financial-results-6928873"
+    },
+    {
+      "tarih": "2027-01-19",
+      "baslik": "Teksas'ın yeni valisi Hinojosa göreve başlıyor (veri merkezi moratoryumu)",
+      "kaynak": "The Texas Tribune",
+      "url": "https://www.texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = +4 · Σ ağırlık = 17 · Puan = 50 + 50 × 0.24 = 62"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-11-07",
+  "oneriler": [
+    {
+      "baslik": "Fiyat hareketlerinde çok sağlayıcılı modelleri öne al",
+      "neden": "Bugünkü iki_gun.artanlar listesinin ilk satırı Nvidia RTX PRO 4000 (+%90, yalnızca 3 sağlayıcı); 6 sağlayıcılı GH200 (+%62,7) ikinci sırada. Prices.jsx az sağlayıcılı satırları yalnızca soluklaştırıyor, sıralamayı değiştirmiyor; güvenilir hareket listenin altında kalıyor.",
+      "etki": "orta",
+      "alan": "Fiyatlar"
+    },
+    {
+      "baslik": "Haberler konu sekmelerinde ARIA rolünü düzelt",
+      "neden": "Haberler.jsx konu şeridi role=\"tablist\"/\"tab\" kullanıyor ama hiçbir role=\"tabpanel\" ya da aria-controls yok ve ok tuşlarıyla gezinme desteklenmiyor; ekran okuyucu sekme paneli bekliyor. Bunlar süzgeç düğmesi olduğu için aria-pressed'li bir role=\"group\" doğru desen.",
+      "etki": "düşük",
+      "alan": "Erişilebilirlik"
+    },
+    {
+      "baslik": "Elle doğrulanan büyük fiyat oynamalarını tabloda işaretle",
+      "neden": "Bugün Nvidia A4000 0,82 → 0,18 $/saat (-%78, 12 sağlayıcı) üç okumayla doğrulanıp yazıldı, ancak gpu_kiralama.json'a 'dogrulanan' bilgisi taşınmıyor (src altında 'dogrulan' geçen fiyat kodu yok); kullanıcı bu düşüşün hata mı gerçek mi olduğunu göremiyor. veri-isle.mjs (korunan) değişikliği gerektirir.",
+      "etki": "orta",
+      "alan": "Fiyatlar / otomasyon"
+    },
+    {
+      "baslik": "Bugün puanının günlük geçmişini göster",
+      "neden": "Puan dün 9, bugün 62; ancak Bugün.jsx yalnızca bugünkü bugun.json'u içe aktarıyor ve otomasyon.json 'gecmis' dizisinde yalnızca tarih/durum/dikkat var. Puanı gecmis'e eklemek (otomasyon/, korunan) ve Bugün'de küçük bir seri çizmek ani dönüşleri bağlama oturtur.",
+      "etki": "orta",
+      "alan": "Bugün / otomasyon"
+    },
+    {
+      "baslik": "Bellek sözleşme fiyatlarını pazartesi yenile",
+      "neden": "İyileştirme ajanı bellek_fiyat.json'un 15 gündür güncellenmediğini bildiriyor; bu çalıştırmada TrendForce'tan yeni bir sözleşme tahmini doğrulanamadı (yalnızca 31 Ekim tarihli ikincil DDR4 aylık fiyat haberi bulundu).",
+      "etki": "düşük",
+      "alan": "Veri"
+    }
+  ]
+}

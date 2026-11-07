@@ -2,6 +2,227 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-11-07-articles-stock-market-today-live-november-6-2026",
+      "tarih": "2026-11-07",
+      "yayin": null,
+      "baslik": "Nasdaq %1,1 toparlandı, hafta yine kayıpla kapandı",
+      "detay": "6 Kasım'da Nasdaq %1,09, S&P 500 %0,31 yükseldi, Dow %0,46 geriledi. Haftalık bazda Nasdaq %3,4, S&P 500 %2,7 kaybetti. Ekim'de tarım dışı istihdam 165.000 arttı (beklenti 59.000), işsizlik %4,1.",
+      "kaynak": "StockTitan",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-6-2026",
+      "ton": "pozitif",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-07-us-chip-stocks-rally-on-november-7-amd-surges-11",
+      "tarih": "2026-11-07",
+      "yayin": null,
+      "baslik": "AMD %11, Intel %7,7 yükseldi: çiplerde tepki alımı",
+      "detay": "Cuma kapanışında AMD %11,04, Intel %7,71, Marvell %5,73, Micron %5,12, Arm %4,74, Nvidia %2,78 değer kazandı.",
+      "kaynak": "KuCoin News",
+      "url": "https://www.kucoin.com/news/flash/us-chip-stocks-rally-on-november-7-amd-surges-11",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "cip"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-07-nvesting-2026-11-06-why-micron-stock-is-up-today",
+      "tarih": "2026-11-07",
+      "yayin": null,
+      "baslik": "Micron %4 yükseldi; çeyrek tahmini 61,5 milyar dolar",
+      "detay": "Perşembe %17,5 düşen Micron Cuma günü %4,1 toparlandı. Şirketin son çeyrek satışı 54,23 milyar dolar (bir yıl önce 11,32 milyar), cari çeyrek tahmini 61,5 milyar dolar (beklenti 57 milyar).",
+      "kaynak": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/06/why-micron-stock-is-up-today/",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-07-ced-memory-chips-the-information-reports-5008786",
+      "tarih": "2026-11-07",
+      "yayin": null,
+      "baslik": "TSMC, Nvidia için 3D DRAM üretmeyi değerlendiriyor",
+      "detay": "The Information'a dayanan Reuters haberine göre TSMC, en büyük müşterisi Nvidia'nın talebiyle 3D DRAM üretimi için plan başlattı; yeni fabrika kurmak ya da mevcut bir tesisi dönüştürmek seçenekler arasında. Çalışmaları gelişmiş paketlemeden sorumlu başkan yardımcısı Hsu Kuo-chin yürütüyor.",
+      "kaynak": "Reuters (Investing.com)",
+      "url": "https://www.investing.com/news/stock-market-news/tsmc-considers-making-advanced-memory-chips-the-information-reports-5008786",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "cip"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-07-rom-wall-street-to-asia-6-november-2026-06112026",
+      "tarih": "2026-11-07",
+      "yayin": null,
+      "baslik": "Kospi gün içinde %8,8 düştü, işlemler 20 dakika durdu",
+      "detay": "6 Kasım sabahı Kospi 4.911,28'e kadar geriledi ve devre kesici devreye girdi; Nikkei 225 %6'nın üzerinde kaybederek 60.000'in altına indi. SoftBank Group %11, Kioxia %12'nin üzerinde düştü.",
+      "kaynak": "Saxo",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---ai-chip-rout-spreads-from-wall-street-to-asia---6-november-2026-06112026",
+      "ton": "negatif",
+      "konular": [
+        "bellek"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-07--hynix-see-limited-hit-from-us-data-center-curbs",
+      "tarih": "2026-11-07",
+      "yayin": null,
+      "baslik": "Samsung ve SK hynix: sipariş iptali yok, talep arzı aşıyor",
+      "detay": "Şirketler müşterilerin sipariş iptali ya da hacim küçültme belirtisi göstermediğini söylüyor. Modo Energy'ye göre seçilen valiler vaatlerini uygularsa yaklaşık 11 GW'lık (10 GW'ı Teksas'ta) yeni veri merkezi inşaatı durabilir; projeler başka eyaletlere kayarsa 2030'daki net kayıp 3 GW'a iner.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/11/06/samsung-sk-hynix-see-limited-hit-from-us-data-center-curbs",
+      "ton": "notr",
+      "konular": [
+        "bellek",
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-07-es-on-data-centers-and-elon-musks-plans-12675796",
+      "tarih": "2026-11-07",
+      "yayin": null,
+      "baslik": "Teksas'ta yeni vali veri merkezi izinlerini durdurmak istiyor",
+      "detay": "Seçilmiş vali Gina Hinojosa, yasama meclisi 'gerçek korumalar' getirene kadar yeni veri merkezi izinlerinin durdurulmasını savunuyor. Eylül'de Vali Abbott da TCEQ'ye yeni izinleri durdurma talimatı vermişti; SpaceXAI'nin Teksas'taki projeleri de bu belirsizlikten etkileniyor.",
+      "kaynak": "Newsweek",
+      "url": "https://www.newsweek.com/texas-hits-brakes-on-data-centers-and-elon-musks-plans-12675796",
+      "ton": "negatif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-07-s-troubled-wyoming-data-center-project-to-google",
+      "tarih": "2026-11-07",
+      "yayin": null,
+      "baslik": "Google, Crusoe'nun Wyoming projesini devraldı",
+      "detay": "Crusoe, maliyet ve takvim sorunları yaşayan Wyoming'deki tamamlanmamış veri merkezi projesini Google'a sattı; bedel açıklanmadı. Google kampüse 17 milyar dolar yatırım planlıyor. Proje nihai olarak 10 GW güç kapasitesini hedefliyordu.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-07--chip-exports-to-chinese-mainland-102501072-html",
+      "tarih": "2026-11-07",
+      "yayin": null,
+      "baslik": "Tayvan, Çin'e çip malzeme ve ekipman ihracatını sıkılaştırmayı tartışıyor",
+      "detay": "Tayvan meclisinin ekonomi komitesi, kritik yarı iletken malzeme ve ekipman ihracatına sıkı kontrol getiren Ticaret Yasası değişikliğini görüştü. Öneride azami hapis cezası 10 yıla, para cezası NT$10 milyona çıkarılıyor.",
+      "kaynak": "Caixin Global",
+      "url": "https://www.caixinglobal.com/2026-11-05/taiwan-weighs-tighter-controls-on-chip-exports-to-chinese-mainland-102501072.html",
+      "ton": "notr",
+      "konular": [
+        "cip",
+        "politika"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-07-center-and-says-it-will-pay-for-100-of-its-power",
+      "tarih": "2026-11-07",
+      "yayin": "2026-11-06",
+      "baslik": "Google, Wyoming veri merkezinin elektriğinin %100'ünü ödeyecek",
+      "detay": "Cheyenne yakınındaki 17 milyar dolarlık kampüs için Google, AEP ile Bloom yakıt hücreli 702 MW'lık (yaklaşık 4 milyar dolar) tesis için 20 yıllık 'al ya da öde' sözleşmesi imzaladı; Black Hills hizmeti 2027 sonunda başlayacak.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/11/06/google-is-spending-17-billion-on-a-wyoming-data-center-and-says-it-will-pay-for-100-of-its-power/",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-07-om-energy-ntt-900-mw-data-center-power-deal-2026",
+      "tarih": "2026-11-07",
+      "yayin": "2026-11-05",
+      "baslik": "Bloom Energy, NTT DATA ile 900 MW'lık yakıt hücresi anlaşması yaptı",
+      "detay": "NTT DATA, veri merkezlerini ana güç kaynağı olarak Bloom yakıt hücreleriyle çalıştıracak; ilk sevkiyatlar 2027'de. 900 MW, Bloom'un Ocak 2026'ya kadar kurduğu toplam 1,5 GW'ın yaklaşık %60'ı.",
+      "kaynak": "StockTitan",
+      "url": "https://www.stocktitan.net/articles/bloom-energy-ntt-900-mw-data-center-power-deal-2026",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-07--balances-on-samsung-sk-hynix-jump-70-percent-in",
+      "tarih": "2026-11-07",
+      "yayin": "2026-11-06",
+      "baslik": "Samsung ve SK hynix'te açığa satış bakiyesi iki haftada %70 arttı",
+      "detay": "Korea Exchange verilerine göre iki hissedeki açığa satış bakiyesi 3 Kasım'da 5,82 milyon hisseye çıktı (20 Ekim: 3,43 milyon). 4 Kasım'daki açığa satış hacmi 752,9 milyar won ile geçen ayın günlük ortalamasının 2,25 katı oldu.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/11/06/short-sale-balances-on-samsung-sk-hynix-jump-70-percent-in",
+      "ton": "negatif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-07-s-623345-what-sent-micron-stock-lower-2026-11-06",
+      "tarih": "2026-11-07",
+      "yayin": "2026-11-06",
+      "baslik": "Micron'un Tayvan'daki 4,5 milyar dolarlık fabrika çalışması askıya alındı",
+      "detay": "Bloomberg'e dayanan habere göre Micron, Tayvan'da planlanan 4,5 milyar dolarlık bellek fabrikasındaki çalışmayı durdurdu. Hisse 5 Kasım'da %17,5 düşerek 656,39 dolara geriledi; 25 Haziran zirvesi 1.213,56 dolardı.",
+      "kaynak": "Trefis (Bloomberg haberi)",
+      "url": "https://www.trefis.com/stock/mu/articles/623345/what-sent-micron-stock-lower/2026-11-06",
+      "ton": "negatif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-07-eb-com-news-oracle-cancels-tencent-ai-chip-lease",
+      "tarih": "2026-11-07",
+      "yayin": "2026-11-04",
+      "baslik": "Oracle, Tencent ile 7 milyar dolarlık çip kiralama anlaşmasını iptal etti",
+      "detay": "FT'ye göre Tencent'in Güneydoğu Asya'daki Oracle veri merkezlerinde yaklaşık 100.000 gelişmiş AI çipini beş yıllığına kiralaması planlanıyordu; ABD yetkililerinin baskısı sonrası anlaşma iptal edildi. Reuters haberi bağımsız doğrulayamadı.",
+      "kaynak": "The Next Web (FT haberi)",
+      "url": "https://thenextweb.com/news/oracle-cancels-tencent-ai-chip-lease",
+      "ton": "negatif",
+      "konular": [
+        "politika",
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-07--the-ai-data-center-buildout-that-might-be-kaput",
+      "tarih": "2026-11-07",
+      "yayin": "2026-11-04",
+      "baslik": "Teksas'taki dev projeler: Stargate Frontier 1,8 GW, Nexus Hubbard 6,4 GW",
+      "detay": "Seçim sonrası belirsizlikte iki büyük proje öne çıkıyor: Shackelford County'deki Stargate Frontier (1.820 MW) ve Anthropic ağırlıklı Nexus Hubbard (6.400 MW); ikincisi ABD'de inşa edilen en büyük ikinci proje.",
+      "kaynak": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+      "ton": "negatif",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
       "id": "2026-11-06--stock-market-today-futures-mixed-130952710-html",
       "tarih": "2026-11-06",
       "yayin": null,
@@ -5190,115 +5411,9 @@
         "pazar"
       ],
       "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-08-nue-surges-50-yy-beating-market-forecast-4937913",
-      "tarih": "2026-10-08",
-      "yayin": null,
-      "baslik": "TSMC 3. çeyrek geliri %50 arttı, beklentiyi aştı",
-      "detay": "Temmuz–eylül geliri 1,49 trilyon TWD (~46,71 milyar $), geçen yılın 989,92 milyar TWD'sine göre %50 artış. LSEG SmartEstimate (19 analist) 1,46 trilyon TWD bekliyordu; şirketin kendi rehberi 44,6–45,8 milyar $ idi. Eylül geliri 511,86 milyar TWD, yıllık %54,6 artış.",
-      "kaynak": "Reuters (Investing.com)",
-      "url": "https://investing.com/news/stock-market-news/tsmcs-thirdquarter-revenue-surges-50-yy-beating-market-forecast-4937913",
-      "ton": "pozitif",
-      "konular": [
-        "cip",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-08-chaincatcher-com-en-article-2294766",
-      "tarih": "2026-10-08",
-      "yayin": null,
-      "baslik": "Samsung'dan rekor ön sonuç: 107,4 trilyon won faaliyet kârı",
-      "detay": "3. çeyrek ön tahmine göre faaliyet kârı 107,4 trilyon won (~80,2 milyar $), yıllık %783 ve çeyreklik %20 artış; gelir 195 trilyon won, yıllık %127 artış. Açıklamadan önceki analist ortalaması 105,41 trilyon won kâr ve 200,26 trilyon won gelirdi (Seoul Economic Daily).",
-      "kaynak": "ChainCatcher (Samsung ön sonuçları)",
-      "url": "https://www.chaincatcher.com/en/article/2294766",
-      "ton": "pozitif",
-      "konular": [
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-08-ptobriefing-com-amd-ramps-hbm4-helios-production",
-      "tarih": "2026-10-08",
-      "yayin": null,
-      "baslik": "AMD Helios raflarının üretimini artırıyor",
-      "detay": "Seri üretimi temmuzda başlayan Helios raflarının her biri 72 Instinct MI455X içeriyor; çip başına 432 GB HBM4, raf başına 31.104 GB. İlk sevkiyatlar 3. çeyrek sonunda, asıl hacim 4. çeyrekte; büyük alıcılar OpenAI, Anthropic ve Microsoft olarak bildiriliyor. Haberde HBM4 kapasitesinin 2029'a kadar dolu olduğu aktarılıyor (tek kaynak).",
-      "kaynak": "Crypto Briefing",
-      "url": "https://cryptobriefing.com/amd-ramps-hbm4-helios-production",
-      "ton": "notr",
-      "konular": [
-        "bellek",
-        "cip",
-        "yapay-zeka",
-        "veri-merkezi"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-08-stockhub-kr-en-news-news-12f7e20cf3c0",
-      "tarih": "2026-10-08",
-      "yayin": null,
-      "baslik": "Lisa Su'dan sürpriz Tayvan ziyareti: paketleme ve alt tabaka darboğazı",
-      "detay": "AMD CEO'su Lisa Su, mayıstaki ziyaretinden beş ay sonra 5 Ekim'de Tayvan'a gitti. Digitimes'ın tedarik zinciri kaynaklarına göre amaç, kıtlık nedeniyle fiyatları yükselen paketleme, test ve alt tabaka tedarikçileriyle kapasite koordinasyonu; TSMC ile de görüşmesi bekleniyordu.",
-      "kaynak": "StockHub (Digitimes haberine dayanarak)",
-      "url": "https://stockhub.kr/en/news/news_12f7e20cf3c0",
-      "ton": "negatif",
-      "konular": [
-        "cip"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-08-rtainty-intel-runs-fab-tsmc-limited-sublease-htm",
-      "tarih": "2026-10-08",
-      "yayin": null,
-      "baslik": "Musk: Terafab'ı biz işleteceğiz, TSMC en fazla kiracı olur",
-      "detay": "Tesla, SpaceX ve xAI'ın ortak çip fabrikası Terafab'ın ilk aşaması Teksas Grimes County'de 16,8 milyar $; tam yatırım 119 milyar $'a kadar. Musk X'te fabrikayı kendilerinin kurup işleteceğini, TSMC'nin yalnızca bir kısmını kiralayabileceğini yazdı. Intel 14A süreciyle üretim ortağı olarak kalıyor; ilk çip 2027 sonu, yüksek hacim 2028 hedefleniyor.",
-      "kaynak": "Tech Times",
-      "url": "https://www.techtimes.com/articles/328713/20261007/musk-ends-terafab-uncertainty-intel-runs-fab-tsmc-limited-sublease.htm",
-      "ton": "notr",
-      "konular": [
-        "cip",
-        "yapay-zeka",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-08-rial-potential-for-huge-damages-in-focus-4937614",
-      "tarih": "2026-10-08",
-      "yayin": null,
-      "baslik": "Qualcomm–Arm davası: Arm'ın %18.500'lük telif artışı talebi gündemde",
-      "detay": "Delaware federal mahkemesindeki davada Qualcomm, Arm'ın sözleşmedeki test araçlarını teslim etmediğini ve Meta ile çip anlaşmasına zarar verdiğini öne sürüyor; Meta anlaşmasının değeri gecikme yüzünden 170 milyon $ azalmış. Dosyadaki bir grafiğe göre Arm, mimari sürüm 9'dan 10'a geçişte telif ücretinde %18.500 artış istiyor. Qualcomm beş yıla kadar telif ödememeyi talep ediyor.",
-      "kaynak": "Reuters (Investing.com)",
-      "url": "https://investing.com/news/stock-market-news/qualcomm-and-arm-kick-off-trial-potential-for-huge-damages-in-focus-4937614",
-      "ton": "negatif",
-      "konular": [
-        "cip",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-08-says-favors-it-sandisk-slips-2-micron-holds-firm",
-      "tarih": "2026-10-08",
-      "yayin": null,
-      "baslik": "SK Hynix kazanç öncesi %4 geriledi, bellek hisseleri satıcılı",
-      "detay": "SK Hynix ABD'de %4 düşüşle 187,25 $'a, SanDisk %2 geriledi; Micron %0,3 yükseldi, bellek ETF'si DRAM %2 düştü. Gerekçeler güçlü won ve artan çalışan primi karşılıkları. Micron CEO'su Sanjay Mehrotra: \"Arz ile talebin ne zaman dengeye geleceğini göremiyoruz.\"",
-      "kaynak": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/10/06/sk-hynix-falls-4-on-earnings-caution-before-a-rebalancing-goldman-says-favors-it-sandisk-slips-2-micron-holds-firm/",
-      "ton": "negatif",
-      "konular": [
-        "bellek",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
     }
   ],
-  "guncelleme": "2026-11-06",
+  "guncelleme": "2026-11-07",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",
