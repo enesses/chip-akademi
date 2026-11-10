@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-10T07:07:55.344Z",
+  "guncelleme": "2026-11-10T07:11:05.941Z",
   "tarih": "2026-11-10",
   "durum": "dikkat",
   "ajanlar": [
@@ -40,7 +40,7 @@
     {
       "seviye": "dikkat",
       "tur": "onay",
-      "metin": "15 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65, PR #70, PR #71, PR #72, PR #73, PR #74, PR #75, PR #76, PR #77, PR #78, PR #79) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+      "metin": "17 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65, PR #70, PR #71, PR #72, PR #73, PR #74, PR #75, PR #76, PR #77, PR #78, PR #79, PR #81, PR #82) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
   "oneriler": [
@@ -81,7 +81,28 @@
       "alan": "otomasyon"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-11-10",
+      "oneri": "Endeks kartında sıfır değişimi nötr renkle 'yatay' göster",
+      "durum": "acik",
+      "pr": 81,
+      "dal": "otomasyon/oneri-2026-11-10-1",
+      "ozet": "Endeks %0 değişimi kırmızı yerine varsayılan renkte 'Yatay · %0' olarak gösteriliyor",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-10",
+      "oneri": "Fiyat tablosunda önceki ölçümü olmayan yeni modellere 'yeni' rozeti",
+      "durum": "acik",
+      "pr": 82,
+      "dal": "otomasyon/oneri-2026-11-10-2",
+      "ozet": "Önceki ölçümü olmayan fiyat satırlarında değişim sütununda 'sabit' yerine 'yeni' rozeti",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #81'de Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Fiyat tablosunu CSV olarak indir düğmesi",
@@ -236,6 +257,20 @@
       "pr": 79,
       "tarih": "2026-11-07",
       "kim": "otomasyon"
+    },
+    {
+      "oneri": "Endeks kartında sıfır değişimi nötr renkle 'yatay' göster",
+      "durum": "acik",
+      "pr": 81,
+      "tarih": "2026-11-10",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyat tablosunda önceki ölçümü olmayan yeni modellere 'yeni' rozeti",
+      "durum": "acik",
+      "pr": 82,
+      "tarih": "2026-11-10",
+      "kim": "otomasyon"
     }
   ],
   "onayBekleyen": [
@@ -343,6 +378,20 @@
       "tarih": "2026-11-07",
       "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #78'de Merge Without Review), onay bekliyor.",
       "dal": "otomasyon/oneri-2026-11-07-2"
+    },
+    {
+      "pr": 81,
+      "oneri": "Endeks kartında sıfır değişimi nötr renkle 'yatay' göster",
+      "tarih": "2026-11-10",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "dal": "otomasyon/oneri-2026-11-10-1"
+    },
+    {
+      "pr": 82,
+      "oneri": "Fiyat tablosunda önceki ölçümü olmayan yeni modellere 'yeni' rozeti",
+      "tarih": "2026-11-10",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #81'de Merge Without Review), onay bekliyor.",
+      "dal": "otomasyon/oneri-2026-11-10-2"
     }
   ],
   "guvenlik": {

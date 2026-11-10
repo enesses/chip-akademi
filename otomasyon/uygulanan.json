@@ -880,6 +880,26 @@
       "ozet": "Konu şeridi role=group + aria-pressed süzgeç düğmelerine çevrildi",
       "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #78'de Merge Without Review), onay bekliyor.",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-10",
+      "oneri": "Endeks kartında sıfır değişimi nötr renkle 'yatay' göster",
+      "durum": "acik",
+      "pr": 81,
+      "dal": "otomasyon/oneri-2026-11-10-1",
+      "ozet": "Endeks %0 değişimi kırmızı yerine varsayılan renkte 'Yatay · %0' olarak gösteriliyor",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-10",
+      "oneri": "Fiyat tablosunda önceki ölçümü olmayan yeni modellere 'yeni' rozeti",
+      "durum": "acik",
+      "pr": 82,
+      "dal": "otomasyon/oneri-2026-11-10-2",
+      "ozet": "Önceki ölçümü olmayan fiyat satırlarında değişim sütununda 'sabit' yerine 'yeni' rozeti",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #81'de Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
     }
   ]
 }
