@@ -22,6 +22,8 @@ const pct = (v) => `${v > 0 ? "+" : ""}%${Math.abs(v).toLocaleString("tr-TR")}`;
 // Fiyatlar iki ondalığa yuvarlı geliyor: 0,02 $ → 0,03 $ gibi 1 sentlik oynama
 // %50 "hareket" gibi görünür. Kartlarda yalnızca en az 2 sentlik değişimi göster.
 const ESIK_USD = 0.02;
+// Endeks değişimi: düşüş yeşil (ucuzluyor), artış kırmızı, sıfır varsayılan metin rengi — %0 artış gibi görünmesin.
+const endeksRenk = (v) => (v < 0 ? "rgb(var(--t-emerald-400))" : v > 0 ? "rgb(var(--t-red-400))" : undefined);
 const tarihKisa = (t) => new Date(`${t}T12:00:00Z`).toLocaleDateString("tr-TR", { day: "numeric", month: "long" });
 const gunFarki = (a, b) => Math.round((new Date(`${b}T12:00:00Z`) - new Date(`${a}T12:00:00Z`)) / 86400000);
 // Endeks haftalık ölçülür; kaynak bazen haftalarca güncellenmiyor. 14 günden eski ölçüm işaretlenir.
@@ -128,10 +130,10 @@ export default function Prices() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
           <div className="rounded-xl border border-card-border bg-card p-4">
             <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground" title={`GetDeploying fiyat endeksi, ölçüm: ${data.kaynak.olcum_tarihi}`}>Endeks · 4 hafta</p>
-            <p className="font-display font-semibold text-xl mt-1" style={{ color: data.endeks.degisim_4_hafta_pct < 0 ? "rgb(var(--t-emerald-400))" : "rgb(var(--t-red-400))" }}>{pct(data.endeks.degisim_4_hafta_pct)}</p>
+            <p className="font-display font-semibold text-xl mt-1" style={{ color: endeksRenk(data.endeks.degisim_4_hafta_pct) }} data-testid="endeks-4-hafta">{data.endeks.degisim_4_hafta_pct === 0 ? "Yatay · %0" : pct(data.endeks.degisim_4_hafta_pct)}</p>
             {typeof data.endeks.degisim_12_ay_pct === "number" && (
               <p className="text-xs text-muted-foreground mt-0.5" data-testid="endeks-12-ay">
-                12 ay: <span className="font-medium tabular-nums" style={{ color: data.endeks.degisim_12_ay_pct < 0 ? "rgb(var(--t-emerald-400))" : "rgb(var(--t-red-400))" }}>{pct(data.endeks.degisim_12_ay_pct)}</span>
+                12 ay: <span className="font-medium tabular-nums" style={{ color: endeksRenk(data.endeks.degisim_12_ay_pct) }}>{data.endeks.degisim_12_ay_pct === 0 ? "yatay" : pct(data.endeks.degisim_12_ay_pct)}</span>
               </p>
             )}
             <p className="font-mono text-[9px] text-muted-foreground mt-0.5">ölçüm {data.kaynak.olcum_tarihi}</p>
