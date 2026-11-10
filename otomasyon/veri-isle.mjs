@@ -154,7 +154,7 @@ if (fs.existsSync(fiyatGirdi)) {
       const model = n.model;
       const slug = model.toLowerCase().replace(/\s+/g, "-");
       veri.fiyatlar.push({ model, bellek: "—", vram_gb: null, usd_saat: n.medyan, onceki_usd: null, degisim_pct: 0,
-        saglayici: n.saglayici ?? null, chip_id: null, url: `https://getdeploying.com/gpus/${slug}` });
+        saglayici: n.saglayici ?? null, chip_id: null, url: `https://getdeploying.com/gpus/${slug}`, olcum_tarihi: BUGUN });
       eklenen++;
     }
 
