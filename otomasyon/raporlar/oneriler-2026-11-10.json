@@ -1,0 +1,41 @@
+{
+  "tarih": "2026-11-10",
+  "oneriler": [
+    {
+      "baslik": "Endeks kartında sıfır değişimi nötr renkle 'yatay' göster",
+      "neden": "10 Kasım'da GetDeploying 4 haftalık endeksi 'flat' gösterdi ve gpu_kiralama.json'a degisim_4_hafta_pct: 0 yazıldı. src/pages/Prices.jsx:131 rengi yalnızca '< 0' ile seçtiği için %0 kırmızı (artış rengi) görünüyor; okuyucu fiyatların arttığını sanıyor.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Fiyat tablosunda önceki ölçümü olmayan yeni modellere 'yeni' rozeti",
+      "neden": "Bugün kaynağa Nvidia Vera Rubin (11,58 $/saat, 6 sağlayıcı) ve RTX PRO 4000 SFF eklendi; satırlarda onceki_usd null, degisim_pct 0. Prices.jsx'te bu durumu ayıran bir gösterim yok (grep 'yeni' sonuç vermiyor), değişim sütunu sıfır gibi okunuyor.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Elle doğrulanan büyük fiyat oynamalarını tabloda işaretle",
+      "neden": "7 Kasım'dan beri geçerli: src/ altında 'dogrulanan' alanını okuyan bir bileşen yok; veri-isle.mjs elle doğrulanan oynamaları kaydediyor ama arayüzde görünmüyor.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bugün puanının günlük geçmişini göster",
+      "neden": "7 Kasım'dan beri geçerli: otomasyon/gecmis/bugun-*.json günlük puanları tutuyor (bugün 74, 7 Kasım 62) ama src/ içinde puan geçmişini çizen bir bileşen yok.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bellek sözleşme fiyatlarını yenile",
+      "neden": "İyileştirme ajanı: bellek_fiyat.json 18 gündür güncellenmedi. Bugün salı; TrendForce'tan yeni bir sözleşme fiyatı açıklaması doğrulanmadı, pazartesi adımı (2b) kaçırılmış görünüyor.",
+      "etki": "düşük",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Onay bekleyen PR birikimini azalt",
+      "neden": "Rapor 15 açık öneri PR'ı gösteriyor (#58–#79); otomatik squash birleştirme her gün izin denetimince engelleniyor. 'Hepsini onayla' düğmesi var (OnayBekleyenler.jsx:70), ama her gün iki yeni PR eklendikçe birikim büyüyor; günlük deneme sayısını birikim 10'u aşınca 0'a indirmek düşünülebilir.",
+      "etki": "orta",
+      "alan": "otomasyon"
+    }
+  ]
+}
