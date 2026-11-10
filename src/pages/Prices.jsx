@@ -258,7 +258,9 @@ export default function Prices() {
                         </td>
                       )}
                       <td className={cn("px-4 py-2.5 font-mono text-right", r.degisim_pct > 0 ? "text-red-400" : r.degisim_pct < 0 ? "text-emerald-400" : "text-muted-foreground")}>
-                        {r.degisim_pct == null ? "—" : r.degisim_pct === 0 ? "sabit" : pct(r.degisim_pct)}
+                        {r.usd_saat != null && r.onceki_usd == null ? (
+                          <span className="inline-block rounded-full border border-primary/40 bg-primary/10 px-1.5 py-0.5 font-sans text-[10px] text-primary" data-testid="fiyat-yeni" title="Bu model kaynağa yeni eklendi; karşılaştırılacak önceki ölçüm yok">yeni</span>
+                        ) : r.degisim_pct == null ? "—" : r.degisim_pct === 0 ? "sabit" : pct(r.degisim_pct)}
                       </td>
                       <td className="px-4 py-2.5 font-mono text-right text-muted-foreground">{r.saglayici ?? "—"}</td>
                     </tr>
