@@ -1,0 +1,76 @@
+{
+  "tarih": "2026-11-10",
+  "haberler": [
+    {
+      "baslik": "Google TPU 8i Max ve TPU 8tx'i tanıttı",
+      "detay": "8i Max, TPU 8i'ye göre iki kat hesaplama, SRAM ve HBM sunuyor ve Gemini'nin 1 milyon token bağlamı için geliştirildi; 8tx, AMD CPU ana bilgisayarlı gizli çıkarım sistemi. Google bu yıl dört TPU sistemi tanıttı.",
+      "kaynak": "SiliconANGLE",
+      "url": "https://siliconangle.com/2026/11/09/google-advances-agentic-ai-custom-silicon-expanding-tpu-family-with-8tx-and-8i-max/",
+      "yayin": "2026-11-09",
+      "konular": [
+        "cip",
+        "yapay-zeka"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Anthropic Claude Fable 5.2 ve Mythos 5.2'yi yayınladı",
+      "detay": "Fable 5.2 milyon girdi tokenı başına 8 $, çıktı başına 40 $ ile genel erişimde; çıktı üretimi 5.1'e göre %30'a kadar hızlı. Mythos 5.2 onaylı siber güvenlik ve yaşam bilimleri kuruluşlarıyla sınırlı.",
+      "kaynak": "Gulf News",
+      "url": "https://gulfnews.com/business/anthropic-launches-new-claude-fable-52-mythos-52-before-ipo-1.500741965",
+      "yayin": "2026-11-10",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Anthropic 1,7 GW'lık gaz jeneratörü için 3,4 milyar dolarlık anlaşma yaptı",
+      "detay": "Financial Times'a dayanan habere göre Anthropic, OnePWR Solutions'ın Caterpillar'dan sipariş ettiği 1,7 GW'lık jeneratörleri mühendislik ve inşaat dahil 3,4 milyar dolara devraldı; bir AI laboratuvarının bilinen en büyük güç ekipmanı alımı.",
+      "kaynak": "Investing.com",
+      "url": "https://investing.com/news/stock-market-news/anthropic-reportedly-strikes-34-billion-deal-for-gasfired-power-at-data-centres-5010208",
+      "yayin": "2026-11-08",
+      "konular": [
+        "veri-merkezi",
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Nvidia soruşturması Kongre'de Çin'e çip ihracatı tasarılarını canlandırdı",
+      "detay": "AI Overwatch Act, Chip Security Act ve Match Act 2027 mali yılı NDAA'ya eklenmek üzere değerlendiriliyor; Senatörler Warren ve Banks Overwatch'ın eklenmesini istedi. Nvidia ve ITI tasarılara karşı.",
+      "kaynak": "SRN News",
+      "url": "https://srnnews.com/nvidia-spy-allegations-likely-to-spur-laws-to-tighten-chinas-access-to-ai-chips/",
+      "yayin": "2026-11-09",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Seul'deki Nvidia AI Day'de NVLink Fusion muhtırası imzalandı",
+      "detay": "Nvidia, SK Telecom, Rebellions ve Kore Bilim ve BT Bakanlığı ile NVLink Fusion iş birliği muhtırası imzaladı; Samsung ve SK hynix Vera Rubin için HBM4 üzerinde çalışıyor. Huang soruşturması etkinliğin önüne geçti.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/11/10/jensen-huang-risk-overshadows-nvidias-ai-day-in-seoul",
+      "yayin": "2026-11-10",
+      "konular": [
+        "cip",
+        "bellek"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Samsung ve SK hynix'in nakdi 329 trilyon wona ulaştı",
+      "detay": "3. çeyrek sonunda Samsung 214,8, SK hynix 114,5 trilyon won nakit tutuyor. Samsung'un 2026 yatırımı rekor 84,4 trilyon won; SK hynix 14 büyük müşteriyle 2027–2028 kapasitesinin yarısından fazlasını kapsayan uzun vadeli anlaşmalara sahip.",
+      "kaynak": "Korea JoongAng Daily",
+      "url": "https://koreajoongangdaily.com/business/samsung-sk-hynix-cash-holdings-top-329-trillion-won-as-investment-shareholder-returns-grow/12962780",
+      "yayin": "2026-11-09",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    }
+  ]
+}

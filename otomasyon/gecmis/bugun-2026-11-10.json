@@ -1,0 +1,113 @@
+{
+  "tarih": "2026-11-10",
+  "derlenme": "10 Kasım 2026",
+  "puan": {
+    "etiket": "Güçlü toparlanma, Nvidia'da yönetim gölgesi",
+    "yorum": "Çip endeksi %6,85 sıçradı, TSMC'nin Ekim geliri yıllık %59,7 arttı ve Asya güçlü açıldı; ancak Nvidia'daki soruşturma, Kongre'deki ihracat tasarıları ve HBM'de güç kayması temkini canlı tutuyor.",
+    "deger": 74
+  },
+  "ozet": [
+    "Çip hisseleri pazartesi günü geçen haftaki ara seçim kaynaklı satışın büyük bölümünü geri aldı. S&P 500 %2,35 ile Nisan'dan bu yana en iyi gününü yaşadı, Nasdaq %2,74 yükseldi ve Philadelphia Yarı İletken Endeksi %6,85 sıçradı. Liderlik AMD'deydi: Oppenheimer yükseltmesi ve Google'ın yeni TPU 8tx sisteminde EPYC işlemcilerinin kullanılması hisseyi %13 yukarı taşıdı.",
+    "Günün ayrışan ismi Nvidia oldu. Yönetim kurulunun Jensen Huang'ı hedef aldığı iddia edilen yabancı istihbarat faaliyetine dair bağımsız soruşturma başlatması hisseyi %4,3 düşürdü; konu Kongre'de Çin'e çip ihracatını sıkılaştıracak tasarıları da yeniden gündeme taşıdı. 17 Kasım'daki bilanço artık hem rakamlar hem yönetim açısından izlenecek.",
+    "Talep tarafındaki veriler güçlü kalmaya devam ediyor: TSMC'nin Ekim geliri yıllık %59,7 artışla yılın zirvesine çıktı ve tek başına 4. çeyrek rehberinin üçte birini aştı. Asya'da Salı sabahı KOSPI'de alım sidecar'ı devreye girdi, SK hynix %7, SoftBank %11 yükseldi.",
+    "Riskler ortadan kalkmış değil: Kore'de Nvidia'nın HBM taban kalıplarını TSMC'ye kaydırması bellek üreticilerinin pazarlık gücünü tartışmaya açtı, ABD'de yerel düzeyde veri merkezi projelerine direnç sürüyor ve Anthropic'in halka arz fiyat bilgisini geri çekmesi AI değerlemelerindeki belirsizliği hatırlattı."
+  ],
+  "maddeler": [
+    {
+      "baslik": "S&P 500 Nisan'dan beri en iyi gününü yaşadı, Nasdaq %2,7 yükseldi",
+      "detay": "9 Kasım'da S&P 500 %2,35, Dow %2,15 (1.104 puan), Nasdaq %2,74 yükseldi. QQQ %3,54 değer kazandı; S&P 500 için 8 Nisan'dan bu yana en iyi gün.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Geçen haftaki ara seçim kaynaklı satışın ardından geniş tabanlı güçlü bir toparlanma; çip ağırlıklı endeksler öne çıktı.",
+      "kaynak": "StockTitan",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-9-2026"
+    },
+    {
+      "baslik": "AMD %13,3 yükseldi: Oppenheimer 'outperform' dedi, hedef 600 dolar",
+      "detay": "AMD 508,58 dolardan kapandı; hacim 50,7 milyon hisseyle 3 aylık ortalamanın ~%123 üzerinde. Oppenheimer notu outperform'a yükseltti (hedef 600 $). 5. nesil EPYC işlemciler Google Cloud'un TPU 8tx sisteminde kullanılıyor. Intel %5,49 yükselerek 59,37 dolara çıktı.",
+      "kategori": "pozitif",
+      "agirlik": 3,
+      "neden": "Analist yükseltmesi ve Google'ın yeni TPU sisteminde yer alma, AMD'nin veri merkezi payının büyüdüğüne işaret ediyor.",
+      "kaynak": "The Motley Fool (Yahoo Finance)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-9-223002825.html"
+    },
+    {
+      "baslik": "Nvidia %4,3 düştü: kurul, Huang'ı hedef alan istihbarat iddialarını soruşturuyor",
+      "detay": "Nvidia yönetim kurulu 8 Kasım'da, Jensen Huang'ın yabancı bir istihbarat faaliyetinin hedefi olduğu haberleri üzerine bağımsız üyelerden oluşan bir komite ve dış danışmanlarla soruşturma başlattı; ticari sırların ya da ulusal güvenliğin zarar gördüğüne dair bulgu olmadığını söyledi. Hisse 9 Kasım'da %4,27 düşüşle 178,67 dolardan kapandı. 3. çeyrek sonuçları 17 Kasım'da.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "Sektörün en büyük şirketinde yönetim riski; endeks yükselirken Nvidia'nın ayrışması ve Kongre'de yeni ihracat kısıtlaması baskısı doğurması olumsuz.",
+      "kaynak": "NVIDIA Investor Relations",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/Statement-from-NVIDIA-Board-of-Directors/"
+    },
+    {
+      "baslik": "TSMC Ekim geliri yıllık %59,7 artışla yılın zirvesinde",
+      "detay": "TSMC'nin Ekim 2026 geliri NT$586,89 milyar: Eylül'e göre %14,7, Ekim 2025'e göre %59,7 artış; önceki zirve Ağustos'taki NT$514,81 milyardı. Ocak–Ekim toplamı NT$4.485,6 milyar (+%43,3). Ekim tek başına 4. çeyrek rehberi orta noktasının (53,3 milyar $) ~%34,6'sı.",
+      "kategori": "pozitif",
+      "agirlik": 3,
+      "neden": "AI çip talebinin üretim tarafında hız kesmediğini gösteren somut, resmî veri.",
+      "kaynak": "FourWeekMBA (TSMC aylık raporu)",
+      "url": "https://fourweekmba.com/ai-tsmcs-october-sales-jump-59-7-to-a-2026-high-of-nt586-9b/"
+    },
+    {
+      "baslik": "Kospi %4,6 yükselişle açıldı, alım sidecar'ı devreye girdi",
+      "detay": "10 Kasım'da KOSPI 5.247,22 puandan (+%4,55) açıldı, KOSDAQ +%3,56. Alıcı yönlü sidecar dokuz seans sonra ilk kez çalıştı. SK hynix +%7,04 (1.216.000 won), Samsung +%5,00 (199.400 won). ABD'de Philadelphia Yarı İletken Endeksi 9 Kasım'da %6,85 yükselmişti.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Bellek devlerinde güçlü geri dönüş; geçen haftaki Asya satışının tersine dönmesi.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/market/2026/11/10/kospi-kosdaq-surge-as-bargain-hunters-lift-us-chip-stocks"
+    },
+    {
+      "baslik": "Nikkei %3 yükseldi; SoftBank %11, Kioxia %8,6 sıçradı",
+      "detay": "10 Kasım açılışında Nikkei 225 %3,05 artışla 60.557,56 puana çıktı. SoftBank %11,15 (3.779 yen), Kioxia %8,59 (9.015 yen) yükseldi; KOSPI %5,55'e kadar ilerledi.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "AI altyapısı ve bellek hisselerinde Asya genelinde risk iştahı geri döndü.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/more/262297302-japan-korea-stocks-skhy-kospi-nikkei-samsung-skhynix-softbank-kioxia-nvda-sox-cpi-ppi-krx-tradingkey"
+    },
+    {
+      "baslik": "Micron %6,3 yükseldi; yerel veri merkezi muhalefeti risk olarak kalıyor",
+      "detay": "Micron hisseleri 9 Kasım'da %6,3 arttı; son çeyrek geliri yıllık %379 artışla 54,2 milyar dolar. Makaleye göre geçen hafta oylanan 41 veri merkezi ölçüsünden 40'ı reddedildi.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Bellek talebi güçlü ve hisse toparlandı; ancak yerel izin direnci yatırım temposunu yavaşlatabilir.",
+      "kaynak": "The Motley Fool (Yahoo Finance)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-micron-technology-stock-gained-230702184.html"
+    },
+    {
+      "baslik": "Nvidia'nın TSMC hamlesi Kore'li HBM üreticilerini taşeronluğa itebilir",
+      "detay": "Nvidia'nın Samsung, SK hynix ve Micron'dan NVHBM taban kalıplarını TSMC'nin 3 nm sürecinde üretmelerini istediği bildiriliyor; hibrit bonding'in ~20 katmanlı HBM yığınlarında zorunlu hale gelmesi bekleniyor. TSMC ana işinin sözleşmeli üretim olduğunu yineledi.",
+      "kategori": "negatif",
+      "agirlik": 1,
+      "neden": "Kore'li bellek üreticilerinin tasarım ve paketleme kontrolünü kaybetme riski; HBM'de güç dengesi Nvidia/TSMC lehine kayıyor.",
+      "kaynak": "Korea JoongAng Daily",
+      "url": "https://www.koreajoongangdaily.com/business/no-permanent-friends-nvidias-twotrack-play-may-reduce-korean-chipmakers-to-subcontractors/12963911"
+    },
+    {
+      "baslik": "Anthropic halka arz fiyat bilgisini 'hatalı' diyerek geri çekti",
+      "detay": "Reuters'a göre bankalara giden belgede ~867 milyon hisse, 70–80 $ aralığı ve üst fiyattan 69,3 milyar $ gelir vardı; şirket pazartesi gecesi bilgileri geri çekti. Google, Nvidia, AMD, Broadcom, Micron, Microsoft ve TSMC'nin 26 milyar $'lık eşzamanlı özel yerleştirmeye katılması planlanıyor.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Dev bir AI halka arzının takvimi sürüyor ama değerleme beklentisi düştü ve belirsizlik arttı; çip tedarikçileri yatırımcı tarafında.",
+      "kaynak": "Cyprus Mail (Reuters)",
+      "url": "https://cyprus-mail.com/2026/11/10/anthropic-retracts-70-billion-ipo-details"
+    }
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2026-11-17",
+      "baslik": "Nvidia 3. çeyrek sonuçları",
+      "kaynak": "StockTitan",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-9-2026"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = +8 · Σ ağırlık = 17 · Puan = 50 + 50 × 0.47 = 74"
+  }
+}

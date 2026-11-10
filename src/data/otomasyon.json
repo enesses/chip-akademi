@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-11-07T07:01:28.604Z",
-  "tarih": "2026-11-07",
+  "guncelleme": "2026-11-10T07:05:56.670Z",
+  "tarih": "2026-11-10",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-11-07T06:57:13.231Z"
+      "zaman": "2026-11-10T07:05:36.921Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-11-07T06:57:13.342Z"
+      "zaman": "2026-11-10T07:05:37.050Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-11-07T06:57:12.831Z"
+      "zaman": "2026-11-10T07:05:36.389Z"
     },
     {
       "id": "gelistirme",
@@ -33,7 +33,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-11-07T06:57:29.856Z"
+      "zaman": "2026-11-10T07:05:56.568Z"
     }
   ],
   "dikkat": [
@@ -43,89 +43,9 @@
       "metin": "15 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65, PR #70, PR #71, PR #72, PR #73, PR #74, PR #75, PR #76, PR #77, PR #78, PR #79) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
-  "oneriler": [
-    {
-      "baslik": "Fiyat hareketlerinde çok sağlayıcılı modelleri öne al",
-      "neden": "Bugünkü iki_gun.artanlar listesinin ilk satırı Nvidia RTX PRO 4000 (+%90, yalnızca 3 sağlayıcı); 6 sağlayıcılı GH200 (+%62,7) ikinci sırada. Prices.jsx az sağlayıcılı satırları yalnızca soluklaştırıyor, sıralamayı değiştirmiyor; güvenilir hareket listenin altında kalıyor.",
-      "etki": "orta",
-      "alan": "Fiyatlar"
-    },
-    {
-      "baslik": "Haberler konu sekmelerinde ARIA rolünü düzelt",
-      "neden": "Haberler.jsx konu şeridi role=\"tablist\"/\"tab\" kullanıyor ama hiçbir role=\"tabpanel\" ya da aria-controls yok ve ok tuşlarıyla gezinme desteklenmiyor; ekran okuyucu sekme paneli bekliyor. Bunlar süzgeç düğmesi olduğu için aria-pressed'li bir role=\"group\" doğru desen.",
-      "etki": "düşük",
-      "alan": "Erişilebilirlik"
-    },
-    {
-      "baslik": "Elle doğrulanan büyük fiyat oynamalarını tabloda işaretle",
-      "neden": "Bugün Nvidia A4000 0,82 → 0,18 $/saat (-%78, 12 sağlayıcı) üç okumayla doğrulanıp yazıldı, ancak gpu_kiralama.json'a 'dogrulanan' bilgisi taşınmıyor (src altında 'dogrulan' geçen fiyat kodu yok); kullanıcı bu düşüşün hata mı gerçek mi olduğunu göremiyor. veri-isle.mjs (korunan) değişikliği gerektirir.",
-      "etki": "orta",
-      "alan": "Fiyatlar / otomasyon"
-    },
-    {
-      "baslik": "Bugün puanının günlük geçmişini göster",
-      "neden": "Puan dün 9, bugün 62; ancak Bugün.jsx yalnızca bugünkü bugun.json'u içe aktarıyor ve otomasyon.json 'gecmis' dizisinde yalnızca tarih/durum/dikkat var. Puanı gecmis'e eklemek (otomasyon/, korunan) ve Bugün'de küçük bir seri çizmek ani dönüşleri bağlama oturtur.",
-      "etki": "orta",
-      "alan": "Bugün / otomasyon"
-    },
-    {
-      "baslik": "Bellek sözleşme fiyatlarını pazartesi yenile",
-      "neden": "İyileştirme ajanı bellek_fiyat.json'un 15 gündür güncellenmediğini bildiriyor; bu çalıştırmada TrendForce'tan yeni bir sözleşme tahmini doğrulanamadı (yalnızca 31 Ekim tarihli ikincil DDR4 aylık fiyat haberi bulundu).",
-      "etki": "düşük",
-      "alan": "Veri"
-    }
-  ],
-  "uygulanan": [
-    {
-      "tarih": "2026-11-07",
-      "oneri": "Fiyat hareketlerinde çok sağlayıcılı modelleri öne al",
-      "durum": "acik",
-      "pr": 78,
-      "dal": "otomasyon/oneri-2026-11-07-1",
-      "ozet": "Artanlar/Düşenler listelerinde en az 5 sağlayıcılı modeller önce gösteriliyor",
-      "neden": "Testler geçti; otomatik birleştirme oturumdaki izin denetimince engellendi (Merge Without Review), onay bekliyor.",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-11-07",
-      "oneri": "Haberler konu sekmelerinde ARIA rolünü düzelt",
-      "durum": "acik",
-      "pr": 79,
-      "dal": "otomasyon/oneri-2026-11-07-2",
-      "ozet": "Konu şeridi role=group + aria-pressed süzgeç düğmelerine çevrildi",
-      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #78'de Merge Without Review), onay bekliyor.",
-      "kim": "otomasyon"
-    }
-  ],
+  "oneriler": [],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "Bugün puan kartında kategori dağılımını göster",
-      "durum": "birlesti",
-      "pr": 54,
-      "tarih": "2026-10-24",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Bugün maddelerini kategoriye göre süzme düğmeleri",
-      "durum": "birlesti",
-      "pr": 55,
-      "tarih": "2026-10-24",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Haberler kartlarında Bugün'den gelen haberleri rozetle işaretle",
-      "durum": "birlesti",
-      "pr": 56,
-      "tarih": "2026-10-25",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Yaklaşan olayları takvime ekle (.ics) düğmesi",
-      "durum": "birlesti",
-      "pr": 57,
-      "tarih": "2026-10-25",
-      "kim": "otomasyon"
-    },
     {
       "oneri": "Fiyat tablosunu CSV olarak indir düğmesi",
       "durum": "acik",
@@ -408,7 +328,7 @@
     "olcumler": {
       "veri": {
         "chipSayisi": 67,
-        "fiyatSayisi": 107
+        "fiyatSayisi": 109
       },
       "egitim": {
         "dersSayisi": 13
@@ -426,7 +346,7 @@
     "bulgular": [
       {
         "alan": "veri",
-        "baslik": "Bellek fiyatları 15 gündür güncellenmedi",
+        "baslik": "Bellek fiyatları 18 gündür güncellenmedi",
         "etki": "düşük",
         "otomatik": false,
         "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
@@ -439,22 +359,17 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 91 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 16 gelmedi (eski fiyat korundu), 1 büyük oynama elle doğrulandı"
-      },
-      {
-        "ad": "Elle doğrulanan fiyat",
-        "durum": "ok",
-        "detay": "Nvidia A4000: 0.82 → 0.18 (üç okuma (iki tam tablo + hedefli): medyan 0.18, en düşük 0.12) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
+        "detay": "bu çalıştırmada güncellendi — 92 model güncellendi, 2 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu)"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 62, 4 yaklaşan olay; haber akışına +9"
+        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 74, 1 yaklaşan olay; haber akışına +9"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+6 haber (akışta 363); bugün toplam 15"
+        "detay": "+6 haber (akışta 349); bugün toplam 15"
       },
       {
         "ad": "Derleme",
@@ -464,7 +379,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2875 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2862 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
