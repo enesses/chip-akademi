@@ -1,0 +1,110 @@
+{
+  "tarih": "2026-11-11",
+  "derlenme": "11 Kasım 2026",
+  "puan": {
+    "etiket": "Nvidia skandalı ve enflasyon baskısı",
+    "yorum": "Nvidia iki günde %10'a yakın değer kaybetti, skandal 7,5 milyar dolarlık Çin sevkiyatı iddiasına genişledi, Ekim enflasyonu beklentiyi aştı ve SoftBank büyük zarar açıkladı; SK hynix'in toparlanması ve Infineon'un SiC adımı tabloyu kısmen dengeliyor.",
+    "deger": 21
+  },
+  "ozet": [
+    "Günün ana teması, Nvidia'nın yönetim krizinin bir şirket meselesinden sektörün politika riskine dönüşmesi. The Information'ın 7,5 milyar dolarlık Çin sevkiyatı iddiası ve Reuters'ın kara listedeki PLA bağlantılı bir üniversitenin H200 aldığını gösteren kayıtları, Washington'da ihracat kontrollerini sıkılaştırma isteğini canlandırdı; AI Overwatch Act'in NDAA'ya eklenmesi tartışılıyor ve Huang 18 Kasım'da Kongre'ye brifing verecek.",
+    "Piyasada ayrışma sürüyor: Nvidia 10 Kasım'da %5,52 düşüp 168,80 dolara inerken Broadcom ve AMD yükseldi, SK hynix %7,2 değer kazandı. Yatırımcılar AI talebini sorgulamaktan çok, talebin hangi şirketlere akacağını yeniden fiyatlıyor gibi görünüyor.",
+    "Makro taraf ise rüzgârı tersine çeviriyor. Ekim TÜFE'sinin aylık %0,4 ile beklentiyi aşması, Fed'in Aralık'ta faiz artırma ihtimalini güçlendirdi; bu, yüksek değerlemeli çip hisseleri için ek baskı demek. SoftBank'ın ABD veri merkezi maliyetleri ve finansman giderleriyle 7,1 milyar dolar zarar açıklaması da AI altyapı yatırımının finansman tarafındaki gerilimi hatırlattı.",
+    "Önümüzdeki haftanın kilit olayı 17 Kasım'daki Nvidia bilançosu: talep tarafı güçlü kalsa da yönetim ve ihracat soruları yanıt bekliyor."
+  ],
+  "maddeler": [
+    {
+      "baslik": "Nvidia ikinci gün de düştü: %5,52 kayıpla 168,80 dolar",
+      "detay": "10 Kasım'da Nvidia %5,52 gerileyerek 168,80 dolardan kapandı; hacim 420,8 milyon hisseyle 3 aylık ortalamanın (127,2 milyon) üç katını aştı. Aynı gün Broadcom %3,91, AMD %1,30 yükseldi; Nasdaq %0,74 düştü.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "Sektörün en büyük şirketinde yönetim skandalı kaynaklı ağır satış, 17 Kasım bilançosu öncesi belirsizliği büyütüyor.",
+      "kaynak": "Motley Fool / Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-10-223502212.html"
+    },
+    {
+      "baslik": "The Information: Huang ilişkisi en az 7,5 milyar dolarlık Çin sevkiyatıyla bağlantılı",
+      "detay": "The Information'ın 10 Kasım haberine göre Jensen Huang'ın Alice Huang ile ilişkisi, 2023'ten bu yana Çinli şirketlere yapılan en az 7,5 milyar dolarlık Nvidia çip sevkiyatını kolaylaştırdı. Hisse pazartesi %4'ün, salı %5'in üzerinde düştü.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "İddialar ihracat uyumu sorusunu şirket düzeyine taşıyor; düzenleyici ve hukuki risk artıyor.",
+      "kaynak": "Gizmodo (The Information verisi)",
+      "url": "https://gizmodo.com/nvidia-ceos-alleged-chinese-spy-affair-now-reportedly-involves-7-5-billion-in-chip-sales-2000837999"
+    },
+    {
+      "baslik": "Kara listedeki PLA bağlantılı üniversite H200 satın aldı",
+      "detay": "Reuters'ın incelediği alım kayıtlarına göre Xi'an'daki Northwestern Polytechnical University, Ekim'de 874.700 yuana iki H200 aldı; Ocak'ta da sekizer H200'lü sunucular için iki kiralama sözleşmesi (441.700 ve 441.000 yuan) imzaladı.",
+      "kategori": "negatif",
+      "agirlik": 1,
+      "neden": "İhracat kontrollerinin delindiğine dair yeni kanıt, Washington'da daha sert kısıtlamaları besleyebilir.",
+      "kaynak": "Reuters (TimesLIVE)",
+      "url": "https://www.timeslive.co.za/news/world/2026-11-11-pla-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist/"
+    },
+    {
+      "baslik": "Skandal, NDAA'ya çip ihracatı hükmü eklenmesi baskısını artırdı",
+      "detay": "Çin şahinleri, Kongre'ye ileri AI çipi ihracat lisanslarını inceleme ve engelleme yetkisi veren iki partili AI Overwatch Act'i savunma yetkilendirme yasasına (NDAA) eklemek istiyor. Üç Cumhuriyetçi komite başkanı Huang'ı 18 Kasım'da kapalı brifinge çağırdı.",
+      "kategori": "negatif",
+      "agirlik": 1,
+      "neden": "Yasalaşması belirsiz; ama Çin satışları için düzenleyici riski yükseltiyor.",
+      "kaynak": "AFP (EWN)",
+      "url": "https://www.ewn.co.za/2026/11/11/nvidia-ceo-affair-revives-push-for-tougher-us-line-on-china"
+    },
+    {
+      "baslik": "ABD Ekim enflasyonu beklentiyi aştı: aylık %0,4",
+      "detay": "Ekim TÜFE aylık %0,4 arttı (beklenti %0,3, Eylül %0,6). Piyasalar Fed'in Aralık'ta faizi 25 baz puan artırmasını büyük ölçüde fiyatlıyor; bir kesim 50 baz puan bekliyor.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Faiz artışı beklentisi yüksek değerlemeli teknoloji ve çip hisseleri için iskonto oranını yükseltiyor.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
+    },
+    {
+      "baslik": "SK hynix %7,2 yükseldi; analistler bellek arzında ikiye bölündü",
+      "detay": "Morgan Stanley hedef fiyatı 2,6 milyondan 1,6 milyon wona indirip 'Overweight'ı korurken 2027 faaliyet kârı tahminini %13 artırarak ~468 trilyon wona çıkardı. Goldman Sachs 2027 küresel AI altyapı harcamasını ~1,3 trilyon dolar öngörüyor.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "HBM liderinde güçlü toparlanma ve yükseltilen kâr tahminleri bellek döngüsünün sürdüğüne işaret ediyor.",
+      "kaynak": "ad-hoc-news",
+      "url": "https://ad-hoc-news.de/boerse/news/unternehmensnachrichten/sk-hynix-rises-7-2-prozent-as-analysts-split-on-whether-ai-demand-can-absorb-new-memory-supply/70488360"
+    },
+    {
+      "baslik": "SoftBank 7,1 milyar dolar zarar açıkladı, hisse %11'e kadar düştü",
+      "detay": "SoftBank ikinci mali çeyrekte 1,12 trilyon yen (~7,1 milyar dolar) net zarar açıkladı; ABD veri merkezi maliyetleri ve finansman giderleri öne çıktı. Hisse Tokyo'da en fazla %11 düşerek 3.465 yene geriledi.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "AI altyapısının en büyük finansörlerinden birinde zarar, yatırım döngüsünün maliyetine dair kaygıyı artırıyor.",
+      "kaynak": "TokenPost",
+      "url": "https://www.tokenpost.com/news/business/53443"
+    },
+    {
+      "baslik": "Infineon 300 mm SiC gofretlerde işlevsel güç cihazı üretti",
+      "detay": "Infineon, Villach (Avusturya) fabrikasında 300 mm silisyum karbür gofretleri işlevsel güç cihazlarına dönüştürdüğünü açıkladı ve bunu tam ölçekli fabrikada sektörde bir ilk olarak nitelendirdi. İlk gofret electronica fuarında (Münih) gösteriliyor.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Daha büyük SiC gofret, veri merkezi ve EV güç elektroniğinde birim maliyeti düşürebilir.",
+      "kaynak": "DIGITIMES",
+      "url": "https://www.digitimes.com/news/a20261111PR202/infineon-sic-300mm-silicon-2026.html"
+    }
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2026-11-17",
+      "baslik": "Nvidia 3. çeyrek sonuçları",
+      "kaynak": "Motley Fool / Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-10-223502212.html"
+    },
+    {
+      "tarih": "2026-11-18",
+      "baslik": "Jensen Huang'ın Temsilciler Meclisi komitelerine kapalı brifingi",
+      "kaynak": "AFP (EWN)",
+      "url": "https://www.ewn.co.za/2026/11/11/nvidia-ceo-affair-revives-push-for-tougher-us-line-on-china"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = -8 · Σ ağırlık = 14 · Puan = 50 + 50 × -0.57 = 21"
+  }
+}

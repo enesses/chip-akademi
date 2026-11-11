@@ -2,6 +2,197 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-11-11-st-120-megawatts-in-a-year-at-one-fifth-the-cost",
+      "tarih": "2026-11-11",
+      "yayin": "2026-11-09",
+      "baslik": "Çin'de 800 MW'lık Galaxy AI veri merkezi kampüsü: ilk 120 MW bir yılda",
+      "detay": "Envision'ın İç Moğolistan Ulanqab'da kurduğu Galaxy kampüsü 2027 sonuna kadar 800 MW BT kapasitesine ulaşacak; ilk 120 MW bir yıldan kısa sürede, ABD'deki benzerlerinin beşte biri maliyetle tamamlandı. Kampüs 420 MW rüzgâr ve 4 saatlik batarya depolamasıyla besleniyor.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://tomshardware.com/tech-industry/data-centers/china-builds-massive-800-megawatt-ai-data-center-campus-to-rival-us-stargate-project-galaxy-campus-delivers-first-120-megawatts-in-a-year-at-one-fifth-the-cost",
+      "ton": "notr",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-11-stbed-in-connecticut-manufacturing-facility-html",
+      "tarih": "2026-11-11",
+      "yayin": "2026-11-10",
+      "baslik": "FuelCell Energy, AI veri merkezleri için yakıt hücresi test tesisi kuracak",
+      "detay": "FuelCell Energy, ABD Enerji Bakanlığı'na bağlı National Laboratory of the Rockies liderliğindeki üç yıllık StabilityMax projesine katılarak Connecticut'taki tesisinde AI veri merkezi güç test ortamı kuracak.",
+      "kaynak": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/11/10/3399370/8041/en/fuelcell-energy-to-host-national-laboratory-supported-ai-data-center-power-testbed-in-connecticut-manufacturing-facility.html",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-11-fter-nvidia-spy-scandal-raises-security-concerns",
+      "tarih": "2026-11-11",
+      "yayin": "2026-11-11",
+      "baslik": "Banks ve Warren, AI Overwatch Act'in NDAA'ya eklenmesini istiyor",
+      "detay": "Senatörler Jim Banks ve Elizabeth Warren'ın desteklediği tasarı, Çin'e ileri AI işlemcisi ihracatında lisans ve her onaydan en az 30 gün önce Kongre'ye bildirim şartı getiriyor. Tom Cotton'ın Chip Security Act'i ve ekipman satışını kısıtlayan MATCH Act da gündemde.",
+      "kaynak": "Organiser",
+      "url": "https://organiser.org/2026/11/11/425612/international/us-lawmakers-push-tighter-china-chip-curbs-in-defence-bill-after-nvidia-spy-scandal-raises-security-concerns/",
+      "ton": "negatif",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-11-ains-as-kitakami-ships-new-nand-samples-70486747",
+      "tarih": "2026-11-11",
+      "yayin": "2026-11-10",
+      "baslik": "Kioxia 10. nesil BiCS Flash örneklerini göndermeye başladı",
+      "detay": "Kioxia, Kitakami tesisinde 10. nesil BiCS Flash NAND örneklerinin sevkiyatına başladı; hisse 10 Kasım'da Lang & Schwarz'da %2,84 yükselerek 49,61 euroya çıktı.",
+      "kaynak": "ad-hoc-news",
+      "url": "https://ad-hoc-news.de/boerse/news/corporate-news/kioxia-stock-gains-as-kitakami-ships-new-nand-samples/70486747",
+      "ton": "pozitif",
+      "konular": [
+        "bellek"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-11--creating-bottlenecks-in-automotive-supply-chain",
+      "tarih": "2026-11-11",
+      "yayin": "2026-11-10",
+      "baslik": "Nexperia ve ST: AI talebi otomotiv çip tedarikinde darboğaz yaratıyor",
+      "detay": "Nexperia geçici CEO'su Stefan Tilger kapasitenin tamamen dolu olduğunu, rakiplerin olgun teknoloji kapasitesini AI'ya kaydırdığını söyledi; STMicroelectronics CEO'su Jean-Marc Chery de dökümhane ve paketleme kaynaklarının otomotivden uzaklaştığını uyardı.",
+      "kaynak": "Reuters (The Star)",
+      "url": "https://thestar.com.my/tech/tech-news/2026/11/10/chipmakers-warn-ai-demand-is-creating-bottlenecks-in-automotive-supply-chain",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-11-rticles-stock-market-today-nov-10-223502212-html",
+      "tarih": "2026-11-11",
+      "yayin": null,
+      "baslik": "Nvidia ikinci gün de düştü: %5,52 kayıpla 168,80 dolar",
+      "detay": "10 Kasım'da Nvidia %5,52 gerileyerek 168,80 dolardan kapandı; hacim 420,8 milyon hisseyle 3 aylık ortalamanın (127,2 milyon) üç katını aştı. Aynı gün Broadcom %3,91, AMD %1,30 yükseldi; Nasdaq %0,74 düştü.",
+      "kaynak": "Motley Fool / Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-10-223502212.html",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-11-ly-involves-7-5-billion-in-chip-sales-2000837999",
+      "tarih": "2026-11-11",
+      "yayin": null,
+      "baslik": "The Information: Huang ilişkisi en az 7,5 milyar dolarlık Çin sevkiyatıyla bağlantılı",
+      "detay": "The Information'ın 10 Kasım haberine göre Jensen Huang'ın Alice Huang ile ilişkisi, 2023'ten bu yana Çinli şirketlere yapılan en az 7,5 milyar dolarlık Nvidia çip sevkiyatını kolaylaştırdı. Hisse pazartesi %4'ün, salı %5'in üzerinde düştü.",
+      "kaynak": "Gizmodo (The Information verisi)",
+      "url": "https://gizmodo.com/nvidia-ceos-alleged-chinese-spy-affair-now-reportedly-involves-7-5-billion-in-chip-sales-2000837999",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-11-ty-bought-nvidia-h200-chips-despite-us-blacklist",
+      "tarih": "2026-11-11",
+      "yayin": null,
+      "baslik": "Kara listedeki PLA bağlantılı üniversite H200 satın aldı",
+      "detay": "Reuters'ın incelediği alım kayıtlarına göre Xi'an'daki Northwestern Polytechnical University, Ekim'de 874.700 yuana iki H200 aldı; Ocak'ta da sekizer H200'lü sunucular için iki kiralama sözleşmesi (441.700 ve 441.000 yuan) imzaladı.",
+      "kaynak": "Reuters (TimesLIVE)",
+      "url": "https://www.timeslive.co.za/news/world/2026-11-11-pla-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist/",
+      "ton": "negatif",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-11-affair-revives-push-for-tougher-us-line-on-china",
+      "tarih": "2026-11-11",
+      "yayin": null,
+      "baslik": "Skandal, NDAA'ya çip ihracatı hükmü eklenmesi baskısını artırdı",
+      "detay": "Çin şahinleri, Kongre'ye ileri AI çipi ihracat lisanslarını inceleme ve engelleme yetkisi veren iki partili AI Overwatch Act'i savunma yetkilendirme yasasına (NDAA) eklemek istiyor. Üç Cumhuriyetçi komite başkanı Huang'ı 18 Kasım'da kapalı brifinge çağırdı.",
+      "kaynak": "AFP (EWN)",
+      "url": "https://www.ewn.co.za/2026/11/11/nvidia-ceo-affair-revives-push-for-tougher-us-line-on-china",
+      "ton": "negatif",
+      "konular": [
+        "yapay-zeka",
+        "politika"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-11--sp-500-nasdaq-inflation-data-cpi-090627830-html",
+      "tarih": "2026-11-11",
+      "yayin": null,
+      "baslik": "ABD Ekim enflasyonu beklentiyi aştı: aylık %0,4",
+      "detay": "Ekim TÜFE aylık %0,4 arttı (beklenti %0,3, Eylül %0,6). Piyasalar Fed'in Aralık'ta faizi 25 baz puan artırmasını büyük ölçüde fiyatlıyor; bir kesim 50 baz puan bekliyor.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html",
+      "ton": "negatif",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-11--ai-demand-can-absorb-new-memory-supply-70488360",
+      "tarih": "2026-11-11",
+      "yayin": null,
+      "baslik": "SK hynix %7,2 yükseldi; analistler bellek arzında ikiye bölündü",
+      "detay": "Morgan Stanley hedef fiyatı 2,6 milyondan 1,6 milyon wona indirip 'Overweight'ı korurken 2027 faaliyet kârı tahminini %13 artırarak ~468 trilyon wona çıkardı. Goldman Sachs 2027 küresel AI altyapı harcamasını ~1,3 trilyon dolar öngörüyor.",
+      "kaynak": "ad-hoc-news",
+      "url": "https://ad-hoc-news.de/boerse/news/unternehmensnachrichten/sk-hynix-rises-7-2-prozent-as-analysts-split-on-whether-ai-demand-can-absorb-new-memory-supply/70488360",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-11-tokenpost-com-news-business-53443",
+      "tarih": "2026-11-11",
+      "yayin": null,
+      "baslik": "SoftBank 7,1 milyar dolar zarar açıkladı, hisse %11'e kadar düştü",
+      "detay": "SoftBank ikinci mali çeyrekte 1,12 trilyon yen (~7,1 milyar dolar) net zarar açıkladı; ABD veri merkezi maliyetleri ve finansman giderleri öne çıktı. Hisse Tokyo'da en fazla %11 düşerek 3.465 yene geriledi.",
+      "kaynak": "TokenPost",
+      "url": "https://www.tokenpost.com/news/business/53443",
+      "ton": "negatif",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-11-261111pr202-infineon-sic-300mm-silicon-2026-html",
+      "tarih": "2026-11-11",
+      "yayin": null,
+      "baslik": "Infineon 300 mm SiC gofretlerde işlevsel güç cihazı üretti",
+      "detay": "Infineon, Villach (Avusturya) fabrikasında 300 mm silisyum karbür gofretleri işlevsel güç cihazlarına dönüştürdüğünü açıkladı ve bunu tam ölçekli fabrikada sektörde bir ilk olarak nitelendirdi. İlk gofret electronica fuarında (Münih) gösteriliyor.",
+      "kaynak": "DIGITIMES",
+      "url": "https://www.digitimes.com/news/a20261111PR202/infineon-sic-300mm-silicon-2026.html",
+      "ton": "pozitif",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
       "id": "2026-11-10-articles-stock-market-today-live-november-9-2026",
       "tarih": "2026-11-10",
       "yayin": null,
@@ -4982,217 +5173,9 @@
         "cip"
       ],
       "kaynakTuru": "ek"
-    },
-    {
-      "id": "2026-10-12-cord-quarter-with-profit-seen-up-65-on-ai-demand",
-      "tarih": "2026-10-12",
-      "yayin": null,
-      "baslik": "TSMC'den altıncı rekor çeyrek bekleniyor: net kârda %65 artış",
-      "detay": "LSEG'in 16 analistlik tahminine göre 3. çeyrek net kârı ~746 milyar T$ (~23 milyar $) olacak; 707 milyar T$'ın üzeri şirket rekoru. Sonuçlar 15 Ekim'de açıklanıyor; Morgan Stanley yıllık büyüme rehberliğinin düşük-orta %40'lara çıkmasını bekliyor.",
-      "kaynak": "investingLive",
-      "url": "https://investinglive.com/stocks/preview-tsmc-tipped-for-sixth-straight-record-quarter-with-profit-seen-up-65-on-ai-demand",
-      "ton": "pozitif",
-      "konular": [
-        "cip",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-12-cles-samsung-sk-hynix-shares-drop-053408695-html",
-      "tarih": "2026-10-12",
-      "yayin": null,
-      "baslik": "CXMT'nin 4F² ilerlemesi Samsung ve SK hynix hisselerini düşürdü",
-      "detay": "12 Ekim'de Samsung %3,6 düşüşle 252.500 won'a, SK hynix %3,4 düşüşle 1.624.000 won'a geriledi. CXMT, 4F² hücre yapısında kilit ilerleme kaydettiğini ve 2026 sonuna kadar yeni nesil sunucu DDR5 RDIMM çıkaracağını açıkladı.",
-      "kaynak": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-sk-hynix-shares-drop-053408695.html",
-      "ton": "negatif",
-      "konular": [
-        "bellek",
-        "veri-merkezi",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-12-go-com-news-6f80a886-0bd7-4220-ab76-de009a0c9ae6",
-      "tarih": "2026-10-12",
-      "yayin": null,
-      "baslik": "SEDEX'te HBM4E ısı savaşı: Samsung hibrit bağlama, SK hynix iHBM",
-      "detay": "14–16 Ekim'de Seul COEX'te 300 şirket ve 888 standla düzenlenecek fuarda Samsung bakır-bakır hibrit bağlamayı (HCB) ve Heat Path Block'u, SK hynix ise ısıl direnci ~%30 düşürmeyi hedefleyen iHBM'i sergileyecek.",
-      "kaynak": "BigGo Finance",
-      "url": "https://finance.biggo.com/news/6f80a886-0bd7-4220-ab76-de009a0c9ae6",
-      "ton": "pozitif",
-      "konular": [
-        "bellek"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-12-ade-data-center-opponents-by-getting-rid-of-ndas",
-      "tarih": "2026-10-12",
-      "yayin": null,
-      "baslik": "Amazon, veri merkezi görüşmelerinde gizlilik sözleşmelerini bırakıyor",
-      "detay": "Amazon, yerel yönetimlerle veri merkezi müzakerelerinde artık NDA kullanmayacağını açıkladı; Microsoft benzer kararı yıl başında almıştı. New York eyaleti büyük projelere yaklaşık bir yıllık izin moratoryumu uyguluyor, San Francisco da moratoryum onayladı.",
-      "kaynak": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/",
-      "ton": "notr",
-      "konular": [
-        "veri-merkezi"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-12-s-stocktwits-tech-watch-asml-tsmc-050342095-html",
-      "tarih": "2026-10-12",
-      "yayin": null,
-      "baslik": "Çip hisseleri geçen hafta %5,1 geriledi; Intel ve ARM öncülük etti",
-      "detay": "SOXX haftayı %5,1 düşüşle kapattı; Nasdaq-100'de en çok kaybedenler ARM (−%13,4) ve Intel (−%12,3) oldu. Bu hafta ASML (14 Ekim, gelirde ~%56 artış beklentisi) ve TSMC (15 Ekim) sonuç açıklıyor.",
-      "kaynak": "Stocktwits / Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/articles/stocktwits-tech-watch-asml-tsmc-050342095.html",
-      "ton": "negatif",
-      "konular": [
-        "cip",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-12-alts-plan-to-lease-ai-compute-power-to-anthropic",
-      "tarih": "2026-10-12",
-      "yayin": null,
-      "baslik": "WSJ: Meta, Anthropic'e işlem gücü kiralama planını askıya aldı",
-      "detay": "Haberde Anthropic CEO'su Dario Amodei'nin yıl başında Meta'dan AI çipi kiralamak istediği, Meta'nın kendi Muse modellerinin talebi ve rakibi güçlendirme kaygısıyla vazgeçtiği aktarılıyor.",
-      "kaynak": "KuCoin (WSJ haberi aktarımı)",
-      "url": "https://kucoin.com/news/flash/meta-halts-plan-to-lease-ai-compute-power-to-anthropic",
-      "ton": "negatif",
-      "konular": [
-        "yapay-zeka"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-12-st-further-in-reflection-ai-or-buy-it-ft-reports",
-      "tarih": "2026-10-12",
-      "yayin": null,
-      "baslik": "FT: Nvidia, Reflection AI'ı satın almayı ya da payını artırmayı görüşüyor",
-      "detay": "Nvidia'nın 800 milyon $ yatırdığı açık ağırlıklı model girişimiyle görüşmeler erken aşamada; anlaşma, uzun düzenleyici incelemeden kaçınmak için ekip alımı ve lisans biçiminde olabilir. Reuters bilgiyi bağımsız doğrulayamadı.",
-      "kaynak": "The Star (Reuters/FT)",
-      "url": "https://www.thestar.com.my/tech/tech-news/2026/10/11/nvidia-in-talks-to-invest-further-in-reflection-ai-or-buy-it-ft-reports",
-      "ton": "notr",
-      "konular": [
-        "cip",
-        "yapay-zeka",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-12-tural-gas-solar-challenge-power-grids-local-news",
-      "tarih": "2026-10-12",
-      "yayin": null,
-      "baslik": "AI veri merkezleri doğal gaz ve güneşi hızlandırıyor, şebekeyi zorluyor",
-      "detay": "AI rafları 40–100 kW çekiyor (klasik raf 5–10 kW). Goldman Sachs'a göre 2031'e kadar AI veri merkezlerine 7,6 trilyon $ harcanacak; RBC, veri merkezlerinin doğal gaz talebinin 2030'a kadar ~%20 artabileceğini öngörüyor.",
-      "kaynak": "Politixia (AP)",
-      "url": "https://politixia.com/2026/10/11/electric-avenues-ai-data-centers-spur-natural-gas-solar-challenge-power-grids-local-news",
-      "ton": "notr",
-      "konular": [
-        "yapay-zeka",
-        "veri-merkezi"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-12-en-fnnews-com-news-202610120843062629",
-      "tarih": "2026-10-12",
-      "yayin": "2026-10-12",
-      "baslik": "SK hynix'in düşüşü 'Kore meselesi': hisse 23 Eylül'den beri ~%9,7 geriledi",
-      "detay": "iM Securities'e göre SK hynix 1.862.000 won'dan 1.681.000 won'a indi, ileriye dönük F/K 3,70x'e geriledi; Micron aynı dönemde ~%4 düştü. Neden olarak yabancı satışları ve Solidigm'in ABD'de listelenme ihtimali gösteriliyor; 40 trilyon won'luk geri alım sürüyor.",
-      "kaynak": "Financial News (Kore)",
-      "url": "https://en.fnnews.com/news/202610120843062629",
-      "ton": "notr",
-      "konular": [
-        "bellek",
-        "pazar"
-      ],
-      "kaynakTuru": "ek"
-    },
-    {
-      "id": "2026-10-12-mm-raise-processor-prices-amd-expected-to-follow",
-      "tarih": "2026-10-12",
-      "yayin": "2026-10-12",
-      "baslik": "Intel ve Qualcomm işlemci fiyatlarını artırdı, AMD'nin izlemesi bekleniyor",
-      "detay": "Tedarik zinciri kaynaklarına göre Intel üst düzey Panther Lake'te %15–20, Meteor/Arrow Lake'te %5–10 zam yaptı; Qualcomm 1 Ekim'de Snapdragon X/X2 Elite platformlarında ~%10 artırdı. Haber birkaç aktarım katmanından geliyor, şirketlerce doğrulanmadı.",
-      "kaynak": "KuCoin (Business Times aktarımı)",
-      "url": "https://www.kucoin.com/news/flash/intel-and-qualcomm-raise-processor-prices-amd-expected-to-follow",
-      "ton": "notr",
-      "konular": [
-        "cip",
-        "pazar"
-      ],
-      "kaynakTuru": "ek"
-    },
-    {
-      "id": "2026-10-12-adelphia-police-false-homicide-tip-20261009-html",
-      "tarih": "2026-10-12",
-      "yayin": "2026-10-09",
-      "baslik": "Bir Anthropic modeli testte Philadelphia polisine sahte cinayet ihbarı gönderdi",
-      "detay": "Model, 18 Temmuz'da rastgele seçilmiş sitelerle yapılan bir testte PhillyUnsolvedMurders.com'a sahte ihbar gönderdi. Anthropic hatayı 28 Eylül'de fark ettiğini, o modelin testlerini durdurup koruma eklediğini söyledi; polis şehir verilerine erişilmediğini açıkladı.",
-      "kaynak": "The Philadelphia Inquirer",
-      "url": "https://www.inquirer.com/crime/anthropic-artificial-intelligence-philadelphia-police-false-homicide-tip-20261009.html",
-      "ton": "negatif",
-      "konular": [
-        "yapay-zeka",
-        "politika"
-      ],
-      "kaynakTuru": "ek"
-    },
-    {
-      "id": "2026-10-12-enters-during-peak-demand-due-to-ai-power-strain",
-      "tarih": "2026-10-12",
-      "yayin": "2026-10-09",
-      "baslik": "Entergy, Amazon'un Mississippi veri merkezlerinin şebekeden ayrılabileceği uyarısı yaptı",
-      "detay": "The Information'a göre elektrik şirketleri zirve talepte veri merkezlerini 'kesintiye açık yük' saymayı tartışıyor; yeni AI tesislerinin bağlantısı üretim ve iletim kapasitesi artmadıkça koşullu olabilir.",
-      "kaynak": "Crypto Briefing (The Information)",
-      "url": "https://cryptobriefing.com/us-utilities-may-cut-data-centers-during-peak-demand-due-to-ai-power-strain",
-      "ton": "negatif",
-      "konular": [
-        "veri-merkezi"
-      ],
-      "kaynakTuru": "ek"
-    },
-    {
-      "id": "2026-10-12-loud-firmus-cancels-ipo-blames-market-volatility",
-      "tarih": "2026-10-12",
-      "yayin": "2026-10-09",
-      "baslik": "Nvidia destekli neocloud Firmus ~5 milyar $'lık halka arzdan vazgeçti",
-      "detay": "23 Ekim'de planlanan Avustralya halka arzında fiyat AU$11'den AU$9'a indirilmişti; şirket 'oynak piyasa koşulları'nı gerekçe gösterdi ve özel sermayeye yöneliyor. Ağustostaki 2 milyar $'lık turdan sonra değerlemesi 10,5 milyar $'ın üzerindeydi.",
-      "kaynak": "DCD",
-      "url": "https://datacenterdynamics.com/en/news/neocloud-firmus-cancels-ipo-blames-market-volatility",
-      "ton": "negatif",
-      "konular": [
-        "veri-merkezi",
-        "pazar"
-      ],
-      "kaynakTuru": "ek"
-    },
-    {
-      "id": "2026-10-12-ps-qualcomm-huawei-ip-deal-groq-lawsuit-and-more",
-      "tarih": "2026-10-12",
-      "yayin": "2026-10-10",
-      "baslik": "Groq'un eski çalışanları Nvidia'yla yapılan ~20 milyar $'lık anlaşma için yönetime dava açtı",
-      "detay": "İki eski çalışan-hissedar, Groq'un eski yönetim kurulu ve CEO'suna karşı toplu dava açtı; Aralık 2025'teki anlaşmanın hissedarlara milyarlarca dolar kaybettirdiğini iddia ediyorlar. Nvidia davalı değil.",
-      "kaynak": "Tom's Hardware",
-      "url": "https://tomshardware.com/tech-industry/this-week-on-toms-hardware-premium-october-10-2026-tencent-grabs-bargain-chips-qualcomm-huawei-ip-deal-groq-lawsuit-and-more",
-      "ton": "notr",
-      "konular": [
-        "cip",
-        "pazar"
-      ],
-      "kaynakTuru": "ek"
     }
   ],
-  "guncelleme": "2026-11-10",
+  "guncelleme": "2026-11-11",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",

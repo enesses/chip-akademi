@@ -1,0 +1,62 @@
+{
+  "tarih": "2026-11-11",
+  "haberler": [
+    {
+      "baslik": "Çin'de 800 MW'lık Galaxy AI veri merkezi kampüsü: ilk 120 MW bir yılda",
+      "detay": "Envision'ın İç Moğolistan Ulanqab'da kurduğu Galaxy kampüsü 2027 sonuna kadar 800 MW BT kapasitesine ulaşacak; ilk 120 MW bir yıldan kısa sürede, ABD'deki benzerlerinin beşte biri maliyetle tamamlandı. Kampüs 420 MW rüzgâr ve 4 saatlik batarya depolamasıyla besleniyor.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://tomshardware.com/tech-industry/data-centers/china-builds-massive-800-megawatt-ai-data-center-campus-to-rival-us-stargate-project-galaxy-campus-delivers-first-120-megawatts-in-a-year-at-one-fifth-the-cost",
+      "yayin": "2026-11-09",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "FuelCell Energy, AI veri merkezleri için yakıt hücresi test tesisi kuracak",
+      "detay": "FuelCell Energy, ABD Enerji Bakanlığı'na bağlı National Laboratory of the Rockies liderliğindeki üç yıllık StabilityMax projesine katılarak Connecticut'taki tesisinde AI veri merkezi güç test ortamı kuracak.",
+      "kaynak": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/11/10/3399370/8041/en/fuelcell-energy-to-host-national-laboratory-supported-ai-data-center-power-testbed-in-connecticut-manufacturing-facility.html",
+      "yayin": "2026-11-10",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Banks ve Warren, AI Overwatch Act'in NDAA'ya eklenmesini istiyor",
+      "detay": "Senatörler Jim Banks ve Elizabeth Warren'ın desteklediği tasarı, Çin'e ileri AI işlemcisi ihracatında lisans ve her onaydan en az 30 gün önce Kongre'ye bildirim şartı getiriyor. Tom Cotton'ın Chip Security Act'i ve ekipman satışını kısıtlayan MATCH Act da gündemde.",
+      "kaynak": "Organiser",
+      "url": "https://organiser.org/2026/11/11/425612/international/us-lawmakers-push-tighter-china-chip-curbs-in-defence-bill-after-nvidia-spy-scandal-raises-security-concerns/",
+      "yayin": "2026-11-11",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Kioxia 10. nesil BiCS Flash örneklerini göndermeye başladı",
+      "detay": "Kioxia, Kitakami tesisinde 10. nesil BiCS Flash NAND örneklerinin sevkiyatına başladı; hisse 10 Kasım'da Lang & Schwarz'da %2,84 yükselerek 49,61 euroya çıktı.",
+      "kaynak": "ad-hoc-news",
+      "url": "https://ad-hoc-news.de/boerse/news/corporate-news/kioxia-stock-gains-as-kitakami-ships-new-nand-samples/70486747",
+      "yayin": "2026-11-10",
+      "konular": [
+        "bellek"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Nexperia ve ST: AI talebi otomotiv çip tedarikinde darboğaz yaratıyor",
+      "detay": "Nexperia geçici CEO'su Stefan Tilger kapasitenin tamamen dolu olduğunu, rakiplerin olgun teknoloji kapasitesini AI'ya kaydırdığını söyledi; STMicroelectronics CEO'su Jean-Marc Chery de dökümhane ve paketleme kaynaklarının otomotivden uzaklaştığını uyardı.",
+      "kaynak": "Reuters (The Star)",
+      "url": "https://thestar.com.my/tech/tech-news/2026/11/10/chipmakers-warn-ai-demand-is-creating-bottlenecks-in-automotive-supply-chain",
+      "yayin": "2026-11-10",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    }
+  ]
+}
