@@ -27,6 +27,8 @@ const gunFarki = (a, b) => Math.round((new Date(`${b}T12:00:00Z`) - new Date(`${
 // Endeks haftalık ölçülür; kaynak bazen haftalarca güncellenmiyor. 14 günden eski ölçüm işaretlenir.
 const ENDEKS_ESKI_GUN = 14;
 const endeksYasi = (t) => (/^\d{4}-\d{2}-\d{2}$/.test(t || "") ? Math.floor((Date.now() - new Date(`${t}T12:00:00Z`)) / 86400000) : null);
+// Fiyat listesi her gün çekilir; 2 günden eski çekim, kaynağın o günlerde okunamadığını gösterir.
+const CEKIM_ESKI_GUN = 2;
 const anlamli = (it) => it.usd_saat == null || it.onceki_usd == null || Math.abs(it.usd_saat - it.onceki_usd) >= ESIK_USD - 1e-9;
 
 /** Nereden ve nasıl kiralamalı: hyperscaler farkı, spot ve rezerve oranları. */
@@ -152,6 +154,13 @@ export default function Prices() {
           <div className="rounded-xl border border-card-border bg-card p-4">
             <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">Çekildiği tarih</p>
             <p className="font-display font-semibold text-sm mt-1">{data.kaynak.cekildigi_tarih}</p>
+            {endeksYasi(data.kaynak.cekildigi_tarih) > 0 && (
+              <p className={cn("font-mono text-[9px] mt-0.5", endeksYasi(data.kaynak.cekildigi_tarih) > CEKIM_ESKI_GUN ? "inline-flex items-center gap-1 rounded-full border border-amber-500/40 bg-amber-500/10 px-1.5 py-0.5 text-amber-300" : "text-muted-foreground")}
+                 data-testid="cekim-yasi" title="Fiyat listesinin kaynaktan son çekildiği günden bu yana geçen süre">
+                {endeksYasi(data.kaynak.cekildigi_tarih) > CEKIM_ESKI_GUN && <Clock className="h-2.5 w-2.5" aria-hidden="true" />}
+                {endeksYasi(data.kaynak.cekildigi_tarih) > CEKIM_ESKI_GUN ? "Eski: " : ""}{endeksYasi(data.kaynak.cekildigi_tarih)} gün önce
+              </p>
+            )}
           </div>
         </div>
       </section>
