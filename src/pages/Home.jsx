@@ -180,7 +180,14 @@ export default function Home() {
             <a className="group rounded-lg border border-card-border bg-card p-5 hover-elevate block">
               <Etiket ikon={Layers}>Kiralama · {fiyat.kaynak.cekildigi_tarih}</Etiket>
               {h100 && (
-                <p className="text-sm text-muted-foreground flex items-baseline justify-between">H100 / saat <span className="font-mono font-medium text-xl text-foreground rakam">{usd(h100.usd_saat)}</span></p>
+                <p className="text-sm text-muted-foreground flex items-baseline justify-between">H100 / saat
+                  <span className="flex items-baseline gap-2">
+                    {h100.onceki_usd != null && h100.degisim_pct ? (
+                      <span className={cn("font-mono text-xs rakam", h100.degisim_pct > 0 ? "text-red-400" : "text-emerald-400")} data-testid="h100-degisim" title={`Önceki ölçüm: ${usd(h100.onceki_usd)}`}>{pct(h100.degisim_pct)}</span>
+                    ) : null}
+                    <span className="font-mono font-medium text-xl text-foreground rakam">{usd(h100.usd_saat)}</span>
+                  </span>
+                </p>
               )}
               <div className="mt-3 pt-3 border-t border-dashed border-card-border space-y-1.5 text-xs">
                 {artan && <p className="flex items-center gap-1.5"><ArrowUpRight className="h-3.5 w-3.5 text-red-400 shrink-0" /><span className="truncate">{artan.model}</span><span className="ml-auto font-mono text-muted-foreground hidden sm:inline rakam">{artan.onceki_usd != null && `${usd(artan.onceki_usd)} → ${usd(artan.usd_saat)}`}</span><span className="ml-auto sm:ml-0 font-mono text-red-400 rakam">{pct(artan.degisim_pct)}</span></p>}
