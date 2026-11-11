@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-11T07:02:50.852Z",
+  "guncelleme": "2026-11-11T07:04:10.656Z",
   "tarih": "2026-11-11",
   "durum": "dikkat",
   "ajanlar": [
@@ -43,7 +43,50 @@
       "metin": "17 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65, PR #70, PR #71, PR #72, PR #73, PR #74, PR #75, PR #76, PR #77, PR #78, PR #79, PR #81, PR #82) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
-  "oneriler": [],
+  "oneriler": [
+    {
+      "baslik": "Ana sayfadaki Günün özeti kartında en yakın yaklaşan olayı göster",
+      "neden": "src/pages/Home.jsx bugun.json'u içe aktarıyor ama 'yaklasan' alanını hiç kullanmıyor; bugün 2 doğrulanmış ileri tarihli olay var (Nvidia bilançosu 17 Kasım, Huang'ın Kongre brifingi 18 Kasım) ve yalnızca /bugun sayfasının altında görünüyorlar.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Ana sayfada H100 fiyatının yanında günlük değişimi göster",
+      "neden": "Home.jsx 'Kiralama' kartı H100 için yalnızca usd_saat yazıyor; gpu_kiralama.json'daki degisim_pct ve onceki_usd (bugün 4,00 → 4,02 $, +%0,5) kullanılmıyor. Kartın altındaki artan/düşen satırları zaten aynı biçimi kullanıyor.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Elle doğrulanan büyük fiyat oynamalarını tabloda işaretle",
+      "neden": "Bugün Nvidia V100 1,06 → 1,60 $ (+%50,9, 21 sağlayıcı) ikinci okumayla doğrulanıp yazıldı, ama src/data/gpu_kiralama.json'daki kayıtta bunu gösteren bir alan yok; kullanıcı sert oynamanın doğrulanmış olduğunu göremiyor. veri-isle.mjs'in 'dogrulandi' alanı yazması ve Prices.jsx'in rozet göstermesi gerekiyor (korunan dosya içerir).",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Az sağlayıcılı modellerde gidip gelen medyanı işaretle",
+      "neden": "Nvidia RTX PRO 5000 (4 sağlayıcı) üç ölçümde 1,20 → 0,80 → 1,20 $ oldu ve bugün 'artanlar' listesinde +%50 olarak görünüyor; RTX PRO 4000 (3 sağlayıcı) 0,57 → 0,42 → 0,27. Önceki günün tersine dönen hareket için 'geri döndü' notu gürültüyü gerçek hareketten ayırır (gecmis/fiyatlar-*.json verisi gerekir).",
+      "etki": "düşük",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Haber doğrulama kayıplarını günlük rapora işle",
+      "neden": "Bugün aday haberlerin yaklaşık 12'si WebFetch'te açılamadı (client_error, robots_disallowed, PROVENANCE_REQUIRED; ör. CNBC, Bloomberg, Benzinga, DIGITIMES ana alan adı) ve Haberler'e 5 ek haber girebildi (hedef 6–12). gelen/durum.json'a 'haber' anahtarıyla açılamayan sayısı yazılırsa rapor düşük haber sayısının nedenini gösterir.",
+      "etki": "düşük",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Onay bekleyen PR birikimini azalt",
+      "neden": "Rapor 17 açık öneri PR'ı gösteriyor (#58–#82); 6 Kasım'dan beri her otomatik birleştirme 'Merge Without Review' izin denetimiyle engellendi. Eski ve birbirinin tekrarı olanlar (#59 ve #77 aynı öneri: 'Bugün maddelerini ağırlığa göre sıralama'; #60 ve #76 aynı: gün başlığına ton dağılımı) kapatılabilir.",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Bellek sözleşme fiyatlarını yenile",
+      "neden": "İyileştirme ajanı bellek_fiyat.json'un 19 gündür güncellenmediğini bildiriyor; bir sonraki pazartesi (16 Kasım) TrendForce basın merkezinden DRAM/NAND/HBM tahminleri okunmalı.",
+      "etki": "düşük",
+      "alan": "veri"
+    }
+  ],
   "uygulanan": [],
   "uygulananSon": [
     {
@@ -493,7 +536,7 @@
     {
       "tarih": "2026-11-11",
       "durum": "dikkat",
-      "dikkat": 3
+      "dikkat": 1
     }
   ]
 }
