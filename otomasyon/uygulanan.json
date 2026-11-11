@@ -900,6 +900,26 @@
       "ozet": "Önceki ölçümü olmayan fiyat satırlarında değişim sütununda 'sabit' yerine 'yeni' rozeti",
       "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #81'de Merge Without Review), onay bekliyor.",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-11",
+      "oneri": "Ana sayfadaki Günün özeti kartında en yakın yaklaşan olayı göster",
+      "durum": "acik",
+      "pr": 83,
+      "dal": "otomasyon/oneri-2026-11-11-1",
+      "ozet": "Günün özeti kartında en yakın ileri tarihli olay ve kalan gün gösteriliyor",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-11",
+      "oneri": "Ana sayfada H100 fiyatının yanında günlük değişimi göster",
+      "durum": "acik",
+      "pr": 84,
+      "dal": "otomasyon/oneri-2026-11-11-2",
+      "ozet": "Kiralama kartında H100 fiyatının yanında renkli günlük değişim yüzdesi",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #83'te Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
     }
   ]
 }
