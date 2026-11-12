@@ -920,6 +920,26 @@
       "ozet": "Kiralama kartında H100 fiyatının yanında renkli günlük değişim yüzdesi",
       "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #83'te Merge Without Review), onay bekliyor.",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-12",
+      "oneri": "Fiyat hareketi satırlarından çip sayfasına bağlantı ver",
+      "durum": "acik",
+      "pr": 85,
+      "dal": "otomasyon/oneri-2026-11-12-1",
+      "ozet": "Hareket kartlarında chip_id olan modeller çip sayfasına bağlanıyor",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-12",
+      "oneri": "Endeks kartında panel model sayısını göster",
+      "durum": "acik",
+      "pr": 86,
+      "dal": "otomasyon/oneri-2026-11-12-2",
+      "ozet": "Endeks kartının ölçüm satırında oranın hesaplandığı model sayısı gösteriliyor",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #85'te Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
     }
   ]
 }

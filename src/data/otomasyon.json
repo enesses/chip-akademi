@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-12T07:02:45.664Z",
+  "guncelleme": "2026-11-12T07:05:35.578Z",
   "tarih": "2026-11-12",
   "durum": "dikkat",
   "ajanlar": [
@@ -40,7 +40,7 @@
     {
       "seviye": "dikkat",
       "tur": "onay",
-      "metin": "19 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65, PR #70, PR #71, PR #72, PR #73, PR #74, PR #75, PR #76, PR #77, PR #78, PR #79, PR #81, PR #82, PR #83, PR #84) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+      "metin": "21 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65, PR #70, PR #71, PR #72, PR #73, PR #74, PR #75, PR #76, PR #77, PR #78, PR #79, PR #81, PR #82, PR #83, PR #84, PR #85, PR #86) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
   "oneriler": [
@@ -81,7 +81,28 @@
       "alan": "veri"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-11-12",
+      "oneri": "Fiyat hareketi satırlarından çip sayfasına bağlantı ver",
+      "durum": "acik",
+      "pr": 85,
+      "dal": "otomasyon/oneri-2026-11-12-1",
+      "ozet": "Hareket kartlarında chip_id olan modeller çip sayfasına bağlanıyor",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-12",
+      "oneri": "Endeks kartında panel model sayısını göster",
+      "durum": "acik",
+      "pr": 86,
+      "dal": "otomasyon/oneri-2026-11-12-2",
+      "ozet": "Endeks kartının ölçüm satırında oranın hesaplandığı model sayısı gösteriliyor",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #85'te Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Fiyat tablosuna üretici süzgeci (Nvidia / AMD / Intel)",
@@ -236,6 +257,20 @@
       "pr": 84,
       "tarih": "2026-11-11",
       "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyat hareketi satırlarından çip sayfasına bağlantı ver",
+      "durum": "acik",
+      "pr": 85,
+      "tarih": "2026-11-12",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Endeks kartında panel model sayısını göster",
+      "durum": "acik",
+      "pr": 86,
+      "tarih": "2026-11-12",
+      "kim": "otomasyon"
     }
   ],
   "onayBekleyen": [
@@ -371,6 +406,20 @@
       "tarih": "2026-11-11",
       "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #83'te Merge Without Review), onay bekliyor.",
       "dal": "otomasyon/oneri-2026-11-11-2"
+    },
+    {
+      "pr": 85,
+      "oneri": "Fiyat hareketi satırlarından çip sayfasına bağlantı ver",
+      "tarih": "2026-11-12",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "dal": "otomasyon/oneri-2026-11-12-1"
+    },
+    {
+      "pr": 86,
+      "oneri": "Endeks kartında panel model sayısını göster",
+      "tarih": "2026-11-12",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #85'te Merge Without Review), onay bekliyor.",
+      "dal": "otomasyon/oneri-2026-11-12-2"
     }
   ],
   "guvenlik": {
