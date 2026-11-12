@@ -170,7 +170,7 @@ export default function Prices() {
               <div className="flex items-center gap-2 mb-3"><TrendingUp className="h-4 w-4 text-red-400" /><h3 className="font-display font-semibold text-red-300">Artanlar</h3></div>
               {data.iki_gun.artanlar.filter(anlamli).map((it) => (
                 <div key={it.model} className={cn("flex items-center justify-between text-sm py-1.5", it.saglayici != null && it.saglayici < AZ_SAGLAYICI && "opacity-60")} title={it.saglayici != null && it.saglayici < AZ_SAGLAYICI ? "Az sağlayıcı: medyan tek bir listelemeyle oynayabilir" : undefined}>
-                  <span>{it.model}{it.saglayici != null && <span className="ml-2 font-mono text-[10px] text-muted-foreground" data-testid="hareket-saglayici">{it.saglayici} sağlayıcı</span>}</span>
+                  <span>{it.chip_id && getChipById(it.chip_id) ? <Link href={`/chip/${it.chip_id}`} asChild><a className="hover:underline underline-offset-2" data-testid="hareket-chip">{it.model}</a></Link> : it.model}{it.saglayici != null && <span className="ml-2 font-mono text-[10px] text-muted-foreground" data-testid="hareket-saglayici">{it.saglayici} sağlayıcı</span>}</span>
                   <span className="font-mono text-red-400 flex items-center gap-1"><ArrowUpRight className="h-3 w-3" />{pct(it.degisim_pct)}</span>
                 </div>
               ))}
@@ -179,7 +179,7 @@ export default function Prices() {
               <div className="flex items-center gap-2 mb-3"><TrendingDown className="h-4 w-4 text-emerald-400" /><h3 className="font-display font-semibold text-emerald-300">Düşenler</h3></div>
               {data.iki_gun.dusenler.filter(anlamli).map((it) => (
                 <div key={it.model} className={cn("flex items-center justify-between text-sm py-1.5", it.saglayici != null && it.saglayici < AZ_SAGLAYICI && "opacity-60")} title={it.saglayici != null && it.saglayici < AZ_SAGLAYICI ? "Az sağlayıcı: medyan tek bir listelemeyle oynayabilir" : undefined}>
-                  <span>{it.model}{it.saglayici != null && <span className="ml-2 font-mono text-[10px] text-muted-foreground" data-testid="hareket-saglayici">{it.saglayici} sağlayıcı</span>}</span>
+                  <span>{it.chip_id && getChipById(it.chip_id) ? <Link href={`/chip/${it.chip_id}`} asChild><a className="hover:underline underline-offset-2" data-testid="hareket-chip">{it.model}</a></Link> : it.model}{it.saglayici != null && <span className="ml-2 font-mono text-[10px] text-muted-foreground" data-testid="hareket-saglayici">{it.saglayici} sağlayıcı</span>}</span>
                   <span className="font-mono text-emerald-400 flex items-center gap-1"><ArrowDownRight className="h-3 w-3" />{pct(it.degisim_pct)}</span>
                 </div>
               ))}
