@@ -32,6 +32,12 @@ const ONE_CIKAN = ["nvidia-blackwell-b200", "nvidia-blackwell-rtx-5090", "amd-ze
 
 const usd = (v) => `$${v.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 const pct = (v) => `${v > 0 ? "+" : "−"}%${Math.abs(v).toLocaleString("tr-TR", { maximumFractionDigits: 1 })}`;
+/** Bugünden itibaren kalan gün (yerel takvim günü; geçmiş tarih negatif). */
+function kalanGun(iso) {
+  const bugun = new Date(); bugun.setHours(0, 0, 0, 0);
+  const [y, a, g] = iso.split("-").map(Number);
+  return Math.round((new Date(y, a - 1, g) - bugun) / 86400000);
+}
 const puanSinifi = (p) => (p >= 65 ? "text-emerald-400" : p >= 45 ? "text-amber-400" : "text-red-400");
 const DURUM_AD = { temiz: "temiz", dikkat: "dikkat", kritik: "kritik" };
 const DURUM_SINIF = { temiz: "text-emerald-400", dikkat: "text-amber-400", kritik: "text-red-400" };
@@ -101,6 +107,11 @@ export default function Home() {
   const artan = gucluHareket(fiyat.iki_gun?.artanlar);
   const dusen = gucluHareket(fiyat.iki_gun?.dusenler);
   const puan = bugun.puan?.deger;
+  // En yakın ileri tarihli olay (bilanço, lansman); geçmiş olanlar atlanır.
+  const yakinOlay = (bugun.yaklasan || [])
+    .map((o) => ({ ...o, kalan: kalanGun(o.tarih) }))
+    .filter((o) => o.kalan >= 0)
+    .sort((a, b) => a.kalan - b.kalan)[0];
   const bitenSayi = ilerleme.bitti.length;
   const hepsiBitti = bitenSayi >= lessons.length;
   const dersOrani = Math.round((bitenSayi / lessons.length) * 100);
@@ -172,6 +183,11 @@ export default function Home() {
                 <Etiket ikon={Newspaper}>Bugün · {bugun.derlenme}</Etiket>
                 <p className="font-display font-semibold leading-snug">{bugun.puan?.etiket}</p>
                 <p className="text-sm text-muted-foreground mt-1 line-clamp-2">{bugun.maddeler?.[0]?.baslik}</p>
+                {yakinOlay && (
+                  <p className="text-xs text-muted-foreground mt-1.5 truncate" data-testid="ozet-yaklasan">
+                    Yaklaşan: <span className="text-foreground">{yakinOlay.baslik}</span> · {yakinOlay.kalan === 0 ? "bugün" : yakinOlay.kalan === 1 ? "yarın" : `${yakinOlay.kalan} gün sonra`}
+                  </p>
+                )}
                 <span className="inline-flex items-center gap-1 text-xs font-medium text-primary mt-2">{bugun.maddeler?.length} gelişme <ArrowRight className="h-3 w-3" /></span>
               </div>
             </a>
