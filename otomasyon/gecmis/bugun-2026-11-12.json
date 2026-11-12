@@ -1,0 +1,122 @@
+{
+  "tarih": "2026-11-12",
+  "derlenme": "12 Kasım 2026",
+  "puan": {
+    "etiket": "Güçlü talep, Nvidia'da liderlik krizi",
+    "yorum": "CoreWeave'in güçlü sonuçları, TSMC'nin rekor sermaye bütçesi ve Infineon'un hedefleri sektör geneline ralli getirdi; Nvidia yönetim kurulunun Huang'ı görüşmesi ve yeni ihracat kısıtı taslağı ise riskleri canlı tutuyor.",
+    "deger": 64
+  },
+  "ozet": [
+    "Günün iki yüzü var. Bir yanda talep tarafı çok güçlü sinyal verdi: CoreWeave 3. çeyrekte 3,66 milyar dolar gelirle beklentiyi aştı, yıllık tahminini yükseltti ve üç ayda 9 milyar dolar ön ödeme beklediğini söyledi. Bu, AI altyapı harcamasının yavaşladığı korkusunu geri itti; Philadelphia Yarı İletken Endeksi %5,66, Micron %11,9, AMD ve Intel %7'nin üzerinde yükseldi.",
+    "Öbür yanda sektörün merkezindeki şirket bir liderlik kriziyle karşı karşıya. WSJ ve Reuters'a göre Nvidia yönetim kurulu Jensen Huang'ın görevden alınmasını görüştü; seansı %2,9 artıyla kapatan hisse seans sonrası %8'e yakın geriledi. Belirgin bir halefin olmaması ve 17 Kasım bilançosunun yaklaşması belirsizliği büyütüyor.",
+    "Arz zincirinin geri kalanı yatırım temposunu sürdürüyor. TSMC yaklaşık 40,9 milyar dolarlık sermaye bütçesini onayladı ve Anthropic ile OpenAI'ye 500'er milyon dolara kadar yatırım kararı aldı; Infineon 2027'de veri merkezi güç kaynaklarından 4 milyar euroya yakın gelir hedefliyor. Anthropic'in 1,7 GW'lık gaz jeneratörü alımı ise enerjinin hâlâ asıl darboğaz olduğunu gösteriyor.",
+    "Politika cephesinde Washington, Çin'in üçüncü ülkelerdeki veri merkezleri üzerinden Blackwell gücü kiralamasını kapatmak için lisans kurallarını yedi yeni ülkeye genişletmeyi tartışıyor. Kısacası talep sağlam, ama Nvidia'ya özgü yönetim ve ihracat riskleri günün tonunu dengeliyor."
+  ],
+  "maddeler": [
+    {
+      "baslik": "Nvidia yönetim kurulu Huang'ın geleceğini görüştü",
+      "detay": "WSJ'nin haberini Reuters da doğruladı: kurul 11 Kasım gecesi toplanıp Jensen Huang'ın görevden alınmasını değerlendirdi; NYT, Huang'ın sağlık birimi başkan yardımcısı Kimberly Powell ile ilişkisini yazdı. Belirgin bir halef yok, geçici CEO seçeneği konuşuluyor.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "Sektörün en büyük şirketinde liderlik krizi, 17 Kasım bilançosu öncesi belirsizliği derinleştiriyor.",
+      "kaynak": "Forbes (WSJ, Reuters, NYT)",
+      "url": "https://www.forbes.com/sites/siladityaray/2026/11/12/nvidia-shares-plunge-as-board-reportedly-prepares-to-oust-ceo-jensen-huang/"
+    },
+    {
+      "baslik": "Nvidia seansı %2,9 artıyla kapattı, sonra %8'e yakın düştü",
+      "detay": "Nvidia 11 Kasım'da iki günlük düşüşü kırıp %2,92 yükselişle 173,73 dolardan kapandı; kurul haberinin ardından seans sonrası %7,6 gerileyerek 160,53 dolara indi. Hisse Kasım'da yaklaşık %14 değer kaybetti; Baird notu 'Nötr'e indirdi.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Seans sonrası sert düşüş, gün içi toparlanmayı siliyor; analist not indirimi de geldi.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
+    },
+    {
+      "baslik": "CoreWeave beklentiyi aştı, hisse %24,7 yükseldi",
+      "detay": "CoreWeave 3. çeyrek geliri 3,661 milyar dolar oldu (beklenti 3,55 milyar); yıllık gelir tahminini 13 milyardan 13,3 milyar dolara çıkardı ve önümüzdeki üç ayda yaklaşık 9 milyar dolar müşteri ön ödemesi bekliyor. Hisse 60,77 dolardan kapandı.",
+      "kategori": "pozitif",
+      "agirlik": 3,
+      "neden": "AI altyapı harcamasının yavaşladığı endişesini doğrudan gerileten somut talep verisi.",
+      "kaynak": "Seoul Economic Daily / Yahoo Finance",
+      "url": "https://en.sedaily.com/market/2026/11/12/samsung-sk-hynix-rise-over-1-percent-premarket-on-coreweave"
+    },
+    {
+      "baslik": "Çip hisselerinde geniş ralli: AMD %7,3, Broadcom %4",
+      "detay": "11 Kasım'da AMD %7,32 artışla 552,90, Broadcom %3,99 artışla 345,22 dolardan kapandı; Nasdaq %1,60, S&P 500 %1,29 yükseldi.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Ara seçim sonrası satışın ardından sektör geneline yayılan güçlü dönüş.",
+      "kaynak": "Motley Fool / Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-11-220503244.html"
+    },
+    {
+      "baslik": "Bellek hisseleri fırladı: Micron %11,9, SanDisk %13,7",
+      "detay": "Micron 11 Kasım'da %11,89 yükselişle 811,30 dolardan kapandı (önceki kapanış 725,11); SanDisk %13,69, Marvell %9,33, Dell %11,75 arttı. Hisse yine de 52 haftalık zirvesinin yaklaşık %35 altında.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "CoreWeave verisi bellek talebine güveni tazeledi.",
+      "kaynak": "Gotrade",
+      "url": "https://heygotrade.com/en/news/micron-mu-stock-news-november-12-2026"
+    },
+    {
+      "baslik": "TSMC 40,9 milyar dolarlık sermaye bütçesi onayladı; Anthropic ve OpenAI'ye yatırım",
+      "detay": "TSMC yönetim kurulu yaklaşık 40,93 milyar dolarlık sermaye tahsisini, Anthropic halka arzından en fazla 500 milyon dolarlık hisse alımını, OpenAI'de en fazla 500 milyon dolarlık imtiyazlı hisseyi ve 500 milyon dolarlık bir yatırım şirketini onayladı. 3. çeyrek net kârı NT$763,06 milyar, temettü hisse başına NT$9.",
+      "kategori": "pozitif",
+      "agirlik": 3,
+      "neden": "Dünyanın en büyük dökümhanesinden rekor ölçekli kapasite yatırımı ve AI şirketlerine doğrudan ortaklık.",
+      "kaynak": "TSMC (SEC Form 6-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000797/tsm-boardx202611xx.htm"
+    },
+    {
+      "baslik": "Infineon 2027 için %20'nin üzerinde büyüme bekliyor",
+      "detay": "Infineon 4. çeyrekte 4,706 milyar euro gelir ve %23,8 segment marjı açıkladı; 2026 mali yılı geliri 16,35 milyar euro (+%12). 2027 için yaklaşık 20 milyar euro gelir, %20'lerin ortasında marj ve veri merkezi güç kaynaklarından 4 milyar euroya yakın gelir hedefliyor; yatırım 3,0–3,5 milyar euro.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "AI veri merkezlerinin güç yarı iletkenlerine talebi somut hedefe dönüştü.",
+      "kaynak": "Infineon (ad-hoc-news)",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/infineon-closes-fy-2026-with-record-quarter-expects-revenue-growth-of-more-than-20-percent-and-a-5/70484283"
+    },
+    {
+      "baslik": "Anthropic 1,7 GW'lık gaz jeneratörü için 3,4 milyar dolar ödüyor",
+      "detay": "Anthropic, San Antonio merkezli OnePWR Solutions'tan 1,7 GW ağır hizmet doğal gaz jeneratörü aldı; FT'ye göre bir AI şirketinin güç üretim ekipmanına en büyük doğrudan yatırımı. Ekipmanın iki yıl içinde hazır olması bekleniyor.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Kapasite için kararlılık gösteriyor, ama şebeke yetersizliği ve fosil yakıta dönüş de görünür kılıyor.",
+      "kaynak": "Fortune",
+      "url": "https://fortune.com/2026/11/10/anthropic-3-4-billion-deal-gas-data-centers-ai-ipo/"
+    },
+    {
+      "baslik": "ABD, AI çip lisans kurallarını yeni ülkelere genişletmeyi planlıyor",
+      "detay": "The Information'a göre Ticaret Bakanlığı'nın taslağı Singapur, Malezya, Tayland, Endonezya, Brezilya, Norveç ve Güney Afrika'ya daha sıkı lisans şartı getirecek; amaç Çinli firmaların bu ülkelerdeki veri merkezlerinden Blackwell gücü kiralamasını engellemek. Taslak aşamasında, takvim belli değil.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Nvidia'nın satabileceği pazar ve müşteri havuzunu daraltabilecek yeni kısıt.",
+      "kaynak": "TechFlow (The Information)",
+      "url": "https://www.techflowpost.com/en-US/newsletter/144292"
+    },
+    {
+      "baslik": "Kore'de çip hisseleri Nvidia krizine rağmen yükseldi",
+      "detay": "12 Kasım sabahı KOSPI %1,14 artışla 5.436,77'ye çıktı; Samsung Electronics %3,4, SK hynix %2,04 yükseldi. Bir önceki gün KOSPI %2,60 yükselmişti.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Asya bellek üreticileri ABD'deki talep sinyaline Nvidia'nın yönetim sorunundan daha çok ağırlık verdi.",
+      "kaynak": "The Korea Times",
+      "url": "https://www.koreatimes.co.kr/economy/20261112/seoul-shares-turn-lower-amid-nvidia-controversies-despite-wall-street-rally"
+    }
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2027-03-11",
+      "baslik": "TSMC 3. çeyrek temettüsü (NT$9) için hak kullanım tarihi",
+      "kaynak": "TSMC (SEC Form 6-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000797/tsm-boardx202611xx.htm"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = +6 · Σ ağırlık = 21 · Puan = 50 + 50 × 0.29 = 64"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "tarih": "2026-11-12",
+  "haberler": [
+    {
+      "baslik": "Google TPU 8tx ve TPU 8i Max'i tanıttı",
+      "detay": "8tx, 3D torus yerine 'boardfly' ağıyla gecikmeyi yaklaşık yarıya indiriyor ve AMD Epyc işlemciyle gizli bilişime yöneliyor; 8i Max soket başına iki çip ve 384 GB HBM taşıyor.",
+      "kaynak": "The Next Platform",
+      "url": "https://www.nextplatform.com/compute/2026/11/09/google-rejiggers-tpu-accelerators-for-broader-ai-inference-work/5308534",
+      "yayin": "2026-11-09",
+      "konular": [
+        "cip",
+        "yapay-zeka"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "SK hynix ABD birimine HBM deneyimli Ahn Hyun'u atadı",
+      "detay": "Eski geliştirme başkanı Ahn Hyun, yeni kurulan Amerika iş biriminin başına geçti; amaç özelleştirilmiş HBM rekabetinde ABD'li çip tasarımcılarına yakın olmak.",
+      "kaynak": "DIGITIMES",
+      "url": "https://www.digitimes.com/news/a20261110VL209/hbm-sk-hynix-competition-business-development.html",
+      "yayin": "2026-11-11",
+      "konular": [
+        "bellek"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "TSMC: gelişmiş çiplere talep 'eşi görülmemiş' düzeyde",
+      "detay": "TSMC yöneticileri, AI altyapı yatırımları hızlanırken gelişmiş paketleme ve 'fiziksel AI'nın ek büyüme fırsatı yarattığını söyledi.",
+      "kaynak": "DIGITIMES",
+      "url": "https://www.digitimes.com/news/a20261112VL203/tsmc-demand-packaging-ai-chip-infrastructure.html",
+      "yayin": "2026-11-12",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "BofA: bellek patlaması 2028'de çöküşe dönmeyebilir",
+      "detay": "BofA bellek sektörü gelirini 2026'da 970 milyar, 2027'de 1,47 trilyon, 2028'de 1,58 trilyon dolar bekliyor; 4. çeyrekte DRAM fiyatı ~%8, NAND ~%3 artış öngörüyor (TrendForce'un aralığının altında).",
+      "kaynak": "investingLive",
+      "url": "https://investinglive.com/stock-market-update/three-forecasts-that-show-why-bofa-thinks-the-memory-chip-boom-can-avoid-a-2028-bust",
+      "yayin": "2026-11-11",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "MetaAge: AI donanımında arz-talep açığı kısa vadede kapanmaz",
+      "detay": "MetaAge genel müdürü Jason Shih, kurumsal AI yatırımları sürerken talebin 2027'ye kadar artmasını beklediğini, ABD veri merkezi politikasının ise kapasite görünümünü bulandırdığını söyledi.",
+      "kaynak": "DIGITIMES",
+      "url": "https://digitimes.com/news/a20261111PD231/data-center-capacity-demand-policy-hardware.html",
+      "yayin": "2026-11-12",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Qualcomm Hindistan'da işten çıkarmalara başladı",
+      "detay": "İlk çıkarmalar 9 Kasım'da Bengaluru'da başladı; ilk tahminler ~1.000 kişi (Hindistan'da ~20.000 çalışan). El cihazı çip geliri yıllık %26 düşerek 5,14 milyar dolara geriledi; şirket veri merkezi ve otomotive yöneliyor.",
+      "kaynak": "Business Today",
+      "url": "https://businesstoday.in/technology/news/story/1000-qualcomm-jobs-at-risk-in-india-as-chipmaker-begins-layoffs-severance-details-emerge-566795-2026-11-11",
+      "yayin": "2026-11-11",
+      "konular": [
+        "cip"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Intel çip rallisiyle %7,5 yükseldi",
+      "detay": "Intel 11 Kasım'da 62,50 dolardan kapandı; 29 Ekim'deki zayıf 4. çeyrek tahminiyle gelen düşüşün ardından CoreWeave verisiyle toparlandı. 52 haftalık aralık 32,89–142,35 dolar.",
+      "kaynak": "Motley Fool",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/11/stock-market-today-nov-11-intel-climbs-on-broader-chip-rally-as-ai-infrastructure-demand-lifts-semiconductor-stocks/",
+      "yayin": "2026-11-11",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    }
+  ]
+}

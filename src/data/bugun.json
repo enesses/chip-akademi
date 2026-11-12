@@ -1,103 +1,115 @@
 {
-  "tarih": "2026-11-11",
-  "derlenme": "11 Kasım 2026",
+  "tarih": "2026-11-12",
+  "derlenme": "12 Kasım 2026",
   "puan": {
-    "etiket": "Nvidia skandalı ve enflasyon baskısı",
-    "yorum": "Nvidia iki günde %10'a yakın değer kaybetti, skandal 7,5 milyar dolarlık Çin sevkiyatı iddiasına genişledi, Ekim enflasyonu beklentiyi aştı ve SoftBank büyük zarar açıkladı; SK hynix'in toparlanması ve Infineon'un SiC adımı tabloyu kısmen dengeliyor.",
-    "deger": 21
+    "etiket": "Güçlü talep, Nvidia'da liderlik krizi",
+    "yorum": "CoreWeave'in güçlü sonuçları, TSMC'nin rekor sermaye bütçesi ve Infineon'un hedefleri sektör geneline ralli getirdi; Nvidia yönetim kurulunun Huang'ı görüşmesi ve yeni ihracat kısıtı taslağı ise riskleri canlı tutuyor.",
+    "deger": 64
   },
   "ozet": [
-    "Günün ana teması, Nvidia'nın yönetim krizinin bir şirket meselesinden sektörün politika riskine dönüşmesi. The Information'ın 7,5 milyar dolarlık Çin sevkiyatı iddiası ve Reuters'ın kara listedeki PLA bağlantılı bir üniversitenin H200 aldığını gösteren kayıtları, Washington'da ihracat kontrollerini sıkılaştırma isteğini canlandırdı; AI Overwatch Act'in NDAA'ya eklenmesi tartışılıyor ve Huang 18 Kasım'da Kongre'ye brifing verecek.",
-    "Piyasada ayrışma sürüyor: Nvidia 10 Kasım'da %5,52 düşüp 168,80 dolara inerken Broadcom ve AMD yükseldi, SK hynix %7,2 değer kazandı. Yatırımcılar AI talebini sorgulamaktan çok, talebin hangi şirketlere akacağını yeniden fiyatlıyor gibi görünüyor.",
-    "Makro taraf ise rüzgârı tersine çeviriyor. Ekim TÜFE'sinin aylık %0,4 ile beklentiyi aşması, Fed'in Aralık'ta faiz artırma ihtimalini güçlendirdi; bu, yüksek değerlemeli çip hisseleri için ek baskı demek. SoftBank'ın ABD veri merkezi maliyetleri ve finansman giderleriyle 7,1 milyar dolar zarar açıklaması da AI altyapı yatırımının finansman tarafındaki gerilimi hatırlattı.",
-    "Önümüzdeki haftanın kilit olayı 17 Kasım'daki Nvidia bilançosu: talep tarafı güçlü kalsa da yönetim ve ihracat soruları yanıt bekliyor."
+    "Günün iki yüzü var. Bir yanda talep tarafı çok güçlü sinyal verdi: CoreWeave 3. çeyrekte 3,66 milyar dolar gelirle beklentiyi aştı, yıllık tahminini yükseltti ve üç ayda 9 milyar dolar ön ödeme beklediğini söyledi. Bu, AI altyapı harcamasının yavaşladığı korkusunu geri itti; Philadelphia Yarı İletken Endeksi %5,66, Micron %11,9, AMD ve Intel %7'nin üzerinde yükseldi.",
+    "Öbür yanda sektörün merkezindeki şirket bir liderlik kriziyle karşı karşıya. WSJ ve Reuters'a göre Nvidia yönetim kurulu Jensen Huang'ın görevden alınmasını görüştü; seansı %2,9 artıyla kapatan hisse seans sonrası %8'e yakın geriledi. Belirgin bir halefin olmaması ve 17 Kasım bilançosunun yaklaşması belirsizliği büyütüyor.",
+    "Arz zincirinin geri kalanı yatırım temposunu sürdürüyor. TSMC yaklaşık 40,9 milyar dolarlık sermaye bütçesini onayladı ve Anthropic ile OpenAI'ye 500'er milyon dolara kadar yatırım kararı aldı; Infineon 2027'de veri merkezi güç kaynaklarından 4 milyar euroya yakın gelir hedefliyor. Anthropic'in 1,7 GW'lık gaz jeneratörü alımı ise enerjinin hâlâ asıl darboğaz olduğunu gösteriyor.",
+    "Politika cephesinde Washington, Çin'in üçüncü ülkelerdeki veri merkezleri üzerinden Blackwell gücü kiralamasını kapatmak için lisans kurallarını yedi yeni ülkeye genişletmeyi tartışıyor. Kısacası talep sağlam, ama Nvidia'ya özgü yönetim ve ihracat riskleri günün tonunu dengeliyor."
   ],
   "maddeler": [
     {
-      "baslik": "Nvidia ikinci gün de düştü: %5,52 kayıpla 168,80 dolar",
-      "detay": "10 Kasım'da Nvidia %5,52 gerileyerek 168,80 dolardan kapandı; hacim 420,8 milyon hisseyle 3 aylık ortalamanın (127,2 milyon) üç katını aştı. Aynı gün Broadcom %3,91, AMD %1,30 yükseldi; Nasdaq %0,74 düştü.",
+      "baslik": "Nvidia yönetim kurulu Huang'ın geleceğini görüştü",
+      "detay": "WSJ'nin haberini Reuters da doğruladı: kurul 11 Kasım gecesi toplanıp Jensen Huang'ın görevden alınmasını değerlendirdi; NYT, Huang'ın sağlık birimi başkan yardımcısı Kimberly Powell ile ilişkisini yazdı. Belirgin bir halef yok, geçici CEO seçeneği konuşuluyor.",
       "kategori": "negatif",
       "agirlik": 3,
-      "neden": "Sektörün en büyük şirketinde yönetim skandalı kaynaklı ağır satış, 17 Kasım bilançosu öncesi belirsizliği büyütüyor.",
-      "kaynak": "Motley Fool / Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-10-223502212.html"
+      "neden": "Sektörün en büyük şirketinde liderlik krizi, 17 Kasım bilançosu öncesi belirsizliği derinleştiriyor.",
+      "kaynak": "Forbes (WSJ, Reuters, NYT)",
+      "url": "https://www.forbes.com/sites/siladityaray/2026/11/12/nvidia-shares-plunge-as-board-reportedly-prepares-to-oust-ceo-jensen-huang/"
     },
     {
-      "baslik": "The Information: Huang ilişkisi en az 7,5 milyar dolarlık Çin sevkiyatıyla bağlantılı",
-      "detay": "The Information'ın 10 Kasım haberine göre Jensen Huang'ın Alice Huang ile ilişkisi, 2023'ten bu yana Çinli şirketlere yapılan en az 7,5 milyar dolarlık Nvidia çip sevkiyatını kolaylaştırdı. Hisse pazartesi %4'ün, salı %5'in üzerinde düştü.",
+      "baslik": "Nvidia seansı %2,9 artıyla kapattı, sonra %8'e yakın düştü",
+      "detay": "Nvidia 11 Kasım'da iki günlük düşüşü kırıp %2,92 yükselişle 173,73 dolardan kapandı; kurul haberinin ardından seans sonrası %7,6 gerileyerek 160,53 dolara indi. Hisse Kasım'da yaklaşık %14 değer kaybetti; Baird notu 'Nötr'e indirdi.",
       "kategori": "negatif",
       "agirlik": 2,
-      "neden": "İddialar ihracat uyumu sorusunu şirket düzeyine taşıyor; düzenleyici ve hukuki risk artıyor.",
-      "kaynak": "Gizmodo (The Information verisi)",
-      "url": "https://gizmodo.com/nvidia-ceos-alleged-chinese-spy-affair-now-reportedly-involves-7-5-billion-in-chip-sales-2000837999"
-    },
-    {
-      "baslik": "Kara listedeki PLA bağlantılı üniversite H200 satın aldı",
-      "detay": "Reuters'ın incelediği alım kayıtlarına göre Xi'an'daki Northwestern Polytechnical University, Ekim'de 874.700 yuana iki H200 aldı; Ocak'ta da sekizer H200'lü sunucular için iki kiralama sözleşmesi (441.700 ve 441.000 yuan) imzaladı.",
-      "kategori": "negatif",
-      "agirlik": 1,
-      "neden": "İhracat kontrollerinin delindiğine dair yeni kanıt, Washington'da daha sert kısıtlamaları besleyebilir.",
-      "kaynak": "Reuters (TimesLIVE)",
-      "url": "https://www.timeslive.co.za/news/world/2026-11-11-pla-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist/"
-    },
-    {
-      "baslik": "Skandal, NDAA'ya çip ihracatı hükmü eklenmesi baskısını artırdı",
-      "detay": "Çin şahinleri, Kongre'ye ileri AI çipi ihracat lisanslarını inceleme ve engelleme yetkisi veren iki partili AI Overwatch Act'i savunma yetkilendirme yasasına (NDAA) eklemek istiyor. Üç Cumhuriyetçi komite başkanı Huang'ı 18 Kasım'da kapalı brifinge çağırdı.",
-      "kategori": "negatif",
-      "agirlik": 1,
-      "neden": "Yasalaşması belirsiz; ama Çin satışları için düzenleyici riski yükseltiyor.",
-      "kaynak": "AFP (EWN)",
-      "url": "https://www.ewn.co.za/2026/11/11/nvidia-ceo-affair-revives-push-for-tougher-us-line-on-china"
-    },
-    {
-      "baslik": "ABD Ekim enflasyonu beklentiyi aştı: aylık %0,4",
-      "detay": "Ekim TÜFE aylık %0,4 arttı (beklenti %0,3, Eylül %0,6). Piyasalar Fed'in Aralık'ta faizi 25 baz puan artırmasını büyük ölçüde fiyatlıyor; bir kesim 50 baz puan bekliyor.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "Faiz artışı beklentisi yüksek değerlemeli teknoloji ve çip hisseleri için iskonto oranını yükseltiyor.",
+      "neden": "Seans sonrası sert düşüş, gün içi toparlanmayı siliyor; analist not indirimi de geldi.",
       "kaynak": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/article/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
     },
     {
-      "baslik": "SK hynix %7,2 yükseldi; analistler bellek arzında ikiye bölündü",
-      "detay": "Morgan Stanley hedef fiyatı 2,6 milyondan 1,6 milyon wona indirip 'Overweight'ı korurken 2027 faaliyet kârı tahminini %13 artırarak ~468 trilyon wona çıkardı. Goldman Sachs 2027 küresel AI altyapı harcamasını ~1,3 trilyon dolar öngörüyor.",
+      "baslik": "CoreWeave beklentiyi aştı, hisse %24,7 yükseldi",
+      "detay": "CoreWeave 3. çeyrek geliri 3,661 milyar dolar oldu (beklenti 3,55 milyar); yıllık gelir tahminini 13 milyardan 13,3 milyar dolara çıkardı ve önümüzdeki üç ayda yaklaşık 9 milyar dolar müşteri ön ödemesi bekliyor. Hisse 60,77 dolardan kapandı.",
+      "kategori": "pozitif",
+      "agirlik": 3,
+      "neden": "AI altyapı harcamasının yavaşladığı endişesini doğrudan gerileten somut talep verisi.",
+      "kaynak": "Seoul Economic Daily / Yahoo Finance",
+      "url": "https://en.sedaily.com/market/2026/11/12/samsung-sk-hynix-rise-over-1-percent-premarket-on-coreweave"
+    },
+    {
+      "baslik": "Çip hisselerinde geniş ralli: AMD %7,3, Broadcom %4",
+      "detay": "11 Kasım'da AMD %7,32 artışla 552,90, Broadcom %3,99 artışla 345,22 dolardan kapandı; Nasdaq %1,60, S&P 500 %1,29 yükseldi.",
       "kategori": "pozitif",
       "agirlik": 2,
-      "neden": "HBM liderinde güçlü toparlanma ve yükseltilen kâr tahminleri bellek döngüsünün sürdüğüne işaret ediyor.",
-      "kaynak": "ad-hoc-news",
-      "url": "https://ad-hoc-news.de/boerse/news/unternehmensnachrichten/sk-hynix-rises-7-2-prozent-as-analysts-split-on-whether-ai-demand-can-absorb-new-memory-supply/70488360"
+      "neden": "Ara seçim sonrası satışın ardından sektör geneline yayılan güçlü dönüş.",
+      "kaynak": "Motley Fool / Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-11-220503244.html"
     },
     {
-      "baslik": "SoftBank 7,1 milyar dolar zarar açıkladı, hisse %11'e kadar düştü",
-      "detay": "SoftBank ikinci mali çeyrekte 1,12 trilyon yen (~7,1 milyar dolar) net zarar açıkladı; ABD veri merkezi maliyetleri ve finansman giderleri öne çıktı. Hisse Tokyo'da en fazla %11 düşerek 3.465 yene geriledi.",
+      "baslik": "Bellek hisseleri fırladı: Micron %11,9, SanDisk %13,7",
+      "detay": "Micron 11 Kasım'da %11,89 yükselişle 811,30 dolardan kapandı (önceki kapanış 725,11); SanDisk %13,69, Marvell %9,33, Dell %11,75 arttı. Hisse yine de 52 haftalık zirvesinin yaklaşık %35 altında.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "CoreWeave verisi bellek talebine güveni tazeledi.",
+      "kaynak": "Gotrade",
+      "url": "https://heygotrade.com/en/news/micron-mu-stock-news-november-12-2026"
+    },
+    {
+      "baslik": "TSMC 40,9 milyar dolarlık sermaye bütçesi onayladı; Anthropic ve OpenAI'ye yatırım",
+      "detay": "TSMC yönetim kurulu yaklaşık 40,93 milyar dolarlık sermaye tahsisini, Anthropic halka arzından en fazla 500 milyon dolarlık hisse alımını, OpenAI'de en fazla 500 milyon dolarlık imtiyazlı hisseyi ve 500 milyon dolarlık bir yatırım şirketini onayladı. 3. çeyrek net kârı NT$763,06 milyar, temettü hisse başına NT$9.",
+      "kategori": "pozitif",
+      "agirlik": 3,
+      "neden": "Dünyanın en büyük dökümhanesinden rekor ölçekli kapasite yatırımı ve AI şirketlerine doğrudan ortaklık.",
+      "kaynak": "TSMC (SEC Form 6-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000797/tsm-boardx202611xx.htm"
+    },
+    {
+      "baslik": "Infineon 2027 için %20'nin üzerinde büyüme bekliyor",
+      "detay": "Infineon 4. çeyrekte 4,706 milyar euro gelir ve %23,8 segment marjı açıkladı; 2026 mali yılı geliri 16,35 milyar euro (+%12). 2027 için yaklaşık 20 milyar euro gelir, %20'lerin ortasında marj ve veri merkezi güç kaynaklarından 4 milyar euroya yakın gelir hedefliyor; yatırım 3,0–3,5 milyar euro.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "AI veri merkezlerinin güç yarı iletkenlerine talebi somut hedefe dönüştü.",
+      "kaynak": "Infineon (ad-hoc-news)",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/infineon-closes-fy-2026-with-record-quarter-expects-revenue-growth-of-more-than-20-percent-and-a-5/70484283"
+    },
+    {
+      "baslik": "Anthropic 1,7 GW'lık gaz jeneratörü için 3,4 milyar dolar ödüyor",
+      "detay": "Anthropic, San Antonio merkezli OnePWR Solutions'tan 1,7 GW ağır hizmet doğal gaz jeneratörü aldı; FT'ye göre bir AI şirketinin güç üretim ekipmanına en büyük doğrudan yatırımı. Ekipmanın iki yıl içinde hazır olması bekleniyor.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Kapasite için kararlılık gösteriyor, ama şebeke yetersizliği ve fosil yakıta dönüş de görünür kılıyor.",
+      "kaynak": "Fortune",
+      "url": "https://fortune.com/2026/11/10/anthropic-3-4-billion-deal-gas-data-centers-ai-ipo/"
+    },
+    {
+      "baslik": "ABD, AI çip lisans kurallarını yeni ülkelere genişletmeyi planlıyor",
+      "detay": "The Information'a göre Ticaret Bakanlığı'nın taslağı Singapur, Malezya, Tayland, Endonezya, Brezilya, Norveç ve Güney Afrika'ya daha sıkı lisans şartı getirecek; amaç Çinli firmaların bu ülkelerdeki veri merkezlerinden Blackwell gücü kiralamasını engellemek. Taslak aşamasında, takvim belli değil.",
       "kategori": "negatif",
       "agirlik": 2,
-      "neden": "AI altyapısının en büyük finansörlerinden birinde zarar, yatırım döngüsünün maliyetine dair kaygıyı artırıyor.",
-      "kaynak": "TokenPost",
-      "url": "https://www.tokenpost.com/news/business/53443"
+      "neden": "Nvidia'nın satabileceği pazar ve müşteri havuzunu daraltabilecek yeni kısıt.",
+      "kaynak": "TechFlow (The Information)",
+      "url": "https://www.techflowpost.com/en-US/newsletter/144292"
     },
     {
-      "baslik": "Infineon 300 mm SiC gofretlerde işlevsel güç cihazı üretti",
-      "detay": "Infineon, Villach (Avusturya) fabrikasında 300 mm silisyum karbür gofretleri işlevsel güç cihazlarına dönüştürdüğünü açıkladı ve bunu tam ölçekli fabrikada sektörde bir ilk olarak nitelendirdi. İlk gofret electronica fuarında (Münih) gösteriliyor.",
+      "baslik": "Kore'de çip hisseleri Nvidia krizine rağmen yükseldi",
+      "detay": "12 Kasım sabahı KOSPI %1,14 artışla 5.436,77'ye çıktı; Samsung Electronics %3,4, SK hynix %2,04 yükseldi. Bir önceki gün KOSPI %2,60 yükselmişti.",
       "kategori": "pozitif",
       "agirlik": 1,
-      "neden": "Daha büyük SiC gofret, veri merkezi ve EV güç elektroniğinde birim maliyeti düşürebilir.",
-      "kaynak": "DIGITIMES",
-      "url": "https://www.digitimes.com/news/a20261111PR202/infineon-sic-300mm-silicon-2026.html"
+      "neden": "Asya bellek üreticileri ABD'deki talep sinyaline Nvidia'nın yönetim sorunundan daha çok ağırlık verdi.",
+      "kaynak": "The Korea Times",
+      "url": "https://www.koreatimes.co.kr/economy/20261112/seoul-shares-turn-lower-amid-nvidia-controversies-despite-wall-street-rally"
     }
   ],
   "yaklasan": [
     {
-      "tarih": "2026-11-17",
-      "baslik": "Nvidia 3. çeyrek sonuçları",
-      "kaynak": "Motley Fool / Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-10-223502212.html"
-    },
-    {
-      "tarih": "2026-11-18",
-      "baslik": "Jensen Huang'ın Temsilciler Meclisi komitelerine kapalı brifingi",
-      "kaynak": "AFP (EWN)",
-      "url": "https://www.ewn.co.za/2026/11/11/nvidia-ceo-affair-revives-push-for-tougher-us-line-on-china"
+      "tarih": "2027-03-11",
+      "baslik": "TSMC 3. çeyrek temettüsü (NT$9) için hak kullanım tarihi",
+      "kaynak": "TSMC (SEC Form 6-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000797/tsm-boardx202611xx.htm"
     }
   ],
   "yontem": {
@@ -105,6 +117,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = -8 · Σ ağırlık = 14 · Puan = 50 + 50 × -0.57 = 21"
+    "hesap": "Σ ağırlık×işaret = +6 · Σ ağırlık = 21 · Puan = 50 + 50 × 0.29 = 64"
   }
 }

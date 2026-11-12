@@ -1,0 +1,41 @@
+{
+  "tarih": "2026-11-12",
+  "oneriler": [
+    {
+      "baslik": "Fiyat hareketi satırlarından çip sayfasına bağlantı ver",
+      "neden": "src/pages/Prices.jsx 'Son ölçümler arası hareketler' kartlarında model adı düz metin; gpu_kiralama.json'daki iki_gun kayıtlarında chip_id var (bugün düşenlerin başındaki Nvidia V100 → nvidia-volta-v100) ama yalnızca alttaki tabloda (satır 240) kullanılıyor.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Endeks kartında panel model sayısını göster",
+      "neden": "gpu_kiralama.json endeks.panel_model_sayisi = 27 yazılıyor ama src/ altında hiç okunmuyor (grep boş); kart '4 hafta +%1,8' gösteriyor, bu oranın kaç modelden hesaplandığını söylemiyor.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bir gün önceki hareketi tersine çeviren fiyatları 'geri döndü' diye işaretle",
+      "neden": "Nvidia V100 (20 sağlayıcı) 10→11 Kasım 1,06 → 1,60 $ (+%50,9, ikinci okumayla doğrulandı), bugün 1,60 → 1,06 $ (−%33,7) oldu ve ana sayfanın 'düşen' satırında görünüyor. Bu iki günlük gidip gelme gerçek bir hareket değil; gecmis/fiyatlar-*.json ile veri-isle.mjs'te 'geri_dondu' alanı üretilmesi gerekir (korunan dosya).",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Onay bekleyen PR birikimini azalt",
+      "neden": "Rapor 19 açık öneri PR'ı gösteriyor (#58–#84); 'Merge Without Review' denetimi her otomatik birleştirmeyi engelliyor. Tekrarlar hâlâ duruyor: #59 ve #77 (ağırlığa göre sıralama), #60 ve #76 (gün başlığına ton dağılımı).",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Haber doğrulama kayıplarını günlük rapora işle",
+      "neden": "Bugün aday haberlerin ~13'ü WebFetch'te açılamadı (CNBC, Quartz, DCD, Bloomberg robots, Modern Diplomacy, FourWeekMBA, sammyfans, cryptobriefing; anthropic.com, reuters.com, blog.google PROVENANCE_REQUIRED). gelen/durum.json'a 'haber' anahtarı eklenirse rapor bunu gösterir (otomasyon/ — korunan).",
+      "etki": "düşük",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Bellek sözleşme fiyatlarını yenile",
+      "neden": "İyileştirme ajanı bellek_fiyat.json'un 20 gündür güncellenmediğini bildiriyor; BofA notu (11 Kasım) TrendForce'un 4Ç26 DRAM %10–20 / NAND %8–13 aralığına atıf yapıyor, 16 Kasım pazartesi TrendForce basın merkezinden doğrulanmalı.",
+      "etki": "düşük",
+      "alan": "veri"
+    }
+  ]
+}

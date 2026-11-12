@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-11-11T07:06:28.914Z",
-  "tarih": "2026-11-11",
+  "guncelleme": "2026-11-12T07:02:45.664Z",
+  "tarih": "2026-11-12",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-11-11T07:02:34.593Z"
+      "zaman": "2026-11-12T07:00:47.758Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-11-11T07:02:34.706Z"
+      "zaman": "2026-11-12T07:00:47.887Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-11-11T07:02:34.181Z"
+      "zaman": "2026-11-12T07:00:47.288Z"
     },
     {
       "id": "gelistirme",
@@ -33,7 +33,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-11-11T07:02:50.794Z"
+      "zaman": "2026-11-12T07:01:04.857Z"
     }
   ],
   "dikkat": [
@@ -45,85 +45,44 @@
   ],
   "oneriler": [
     {
-      "baslik": "Ana sayfadaki Günün özeti kartında en yakın yaklaşan olayı göster",
-      "neden": "src/pages/Home.jsx bugun.json'u içe aktarıyor ama 'yaklasan' alanını hiç kullanmıyor; bugün 2 doğrulanmış ileri tarihli olay var (Nvidia bilançosu 17 Kasım, Huang'ın Kongre brifingi 18 Kasım) ve yalnızca /bugun sayfasının altında görünüyorlar.",
-      "etki": "orta",
-      "alan": "arayüz"
-    },
-    {
-      "baslik": "Ana sayfada H100 fiyatının yanında günlük değişimi göster",
-      "neden": "Home.jsx 'Kiralama' kartı H100 için yalnızca usd_saat yazıyor; gpu_kiralama.json'daki degisim_pct ve onceki_usd (bugün 4,00 → 4,02 $, +%0,5) kullanılmıyor. Kartın altındaki artan/düşen satırları zaten aynı biçimi kullanıyor.",
+      "baslik": "Fiyat hareketi satırlarından çip sayfasına bağlantı ver",
+      "neden": "src/pages/Prices.jsx 'Son ölçümler arası hareketler' kartlarında model adı düz metin; gpu_kiralama.json'daki iki_gun kayıtlarında chip_id var (bugün düşenlerin başındaki Nvidia V100 → nvidia-volta-v100) ama yalnızca alttaki tabloda (satır 240) kullanılıyor.",
       "etki": "düşük",
       "alan": "arayüz"
     },
     {
-      "baslik": "Elle doğrulanan büyük fiyat oynamalarını tabloda işaretle",
-      "neden": "Bugün Nvidia V100 1,06 → 1,60 $ (+%50,9, 21 sağlayıcı) ikinci okumayla doğrulanıp yazıldı, ama src/data/gpu_kiralama.json'daki kayıtta bunu gösteren bir alan yok; kullanıcı sert oynamanın doğrulanmış olduğunu göremiyor. veri-isle.mjs'in 'dogrulandi' alanı yazması ve Prices.jsx'in rozet göstermesi gerekiyor (korunan dosya içerir).",
+      "baslik": "Endeks kartında panel model sayısını göster",
+      "neden": "gpu_kiralama.json endeks.panel_model_sayisi = 27 yazılıyor ama src/ altında hiç okunmuyor (grep boş); kart '4 hafta +%1,8' gösteriyor, bu oranın kaç modelden hesaplandığını söylemiyor.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bir gün önceki hareketi tersine çeviren fiyatları 'geri döndü' diye işaretle",
+      "neden": "Nvidia V100 (20 sağlayıcı) 10→11 Kasım 1,06 → 1,60 $ (+%50,9, ikinci okumayla doğrulandı), bugün 1,60 → 1,06 $ (−%33,7) oldu ve ana sayfanın 'düşen' satırında görünüyor. Bu iki günlük gidip gelme gerçek bir hareket değil; gecmis/fiyatlar-*.json ile veri-isle.mjs'te 'geri_dondu' alanı üretilmesi gerekir (korunan dosya).",
       "etki": "orta",
       "alan": "veri"
-    },
-    {
-      "baslik": "Az sağlayıcılı modellerde gidip gelen medyanı işaretle",
-      "neden": "Nvidia RTX PRO 5000 (4 sağlayıcı) üç ölçümde 1,20 → 0,80 → 1,20 $ oldu ve bugün 'artanlar' listesinde +%50 olarak görünüyor; RTX PRO 4000 (3 sağlayıcı) 0,57 → 0,42 → 0,27. Önceki günün tersine dönen hareket için 'geri döndü' notu gürültüyü gerçek hareketten ayırır (gecmis/fiyatlar-*.json verisi gerekir).",
-      "etki": "düşük",
-      "alan": "veri"
-    },
-    {
-      "baslik": "Haber doğrulama kayıplarını günlük rapora işle",
-      "neden": "Bugün aday haberlerin yaklaşık 12'si WebFetch'te açılamadı (client_error, robots_disallowed, PROVENANCE_REQUIRED; ör. CNBC, Bloomberg, Benzinga, DIGITIMES ana alan adı) ve Haberler'e 5 ek haber girebildi (hedef 6–12). gelen/durum.json'a 'haber' anahtarıyla açılamayan sayısı yazılırsa rapor düşük haber sayısının nedenini gösterir.",
-      "etki": "düşük",
-      "alan": "otomasyon"
     },
     {
       "baslik": "Onay bekleyen PR birikimini azalt",
-      "neden": "Rapor 17 açık öneri PR'ı gösteriyor (#58–#82); 6 Kasım'dan beri her otomatik birleştirme 'Merge Without Review' izin denetimiyle engellendi. Eski ve birbirinin tekrarı olanlar (#59 ve #77 aynı öneri: 'Bugün maddelerini ağırlığa göre sıralama'; #60 ve #76 aynı: gün başlığına ton dağılımı) kapatılabilir.",
+      "neden": "Rapor 19 açık öneri PR'ı gösteriyor (#58–#84); 'Merge Without Review' denetimi her otomatik birleştirmeyi engelliyor. Tekrarlar hâlâ duruyor: #59 ve #77 (ağırlığa göre sıralama), #60 ve #76 (gün başlığına ton dağılımı).",
       "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Haber doğrulama kayıplarını günlük rapora işle",
+      "neden": "Bugün aday haberlerin ~13'ü WebFetch'te açılamadı (CNBC, Quartz, DCD, Bloomberg robots, Modern Diplomacy, FourWeekMBA, sammyfans, cryptobriefing; anthropic.com, reuters.com, blog.google PROVENANCE_REQUIRED). gelen/durum.json'a 'haber' anahtarı eklenirse rapor bunu gösterir (otomasyon/ — korunan).",
+      "etki": "düşük",
       "alan": "otomasyon"
     },
     {
       "baslik": "Bellek sözleşme fiyatlarını yenile",
-      "neden": "İyileştirme ajanı bellek_fiyat.json'un 19 gündür güncellenmediğini bildiriyor; bir sonraki pazartesi (16 Kasım) TrendForce basın merkezinden DRAM/NAND/HBM tahminleri okunmalı.",
+      "neden": "İyileştirme ajanı bellek_fiyat.json'un 20 gündür güncellenmediğini bildiriyor; BofA notu (11 Kasım) TrendForce'un 4Ç26 DRAM %10–20 / NAND %8–13 aralığına atıf yapıyor, 16 Kasım pazartesi TrendForce basın merkezinden doğrulanmalı.",
       "etki": "düşük",
       "alan": "veri"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-11-11",
-      "oneri": "Ana sayfadaki Günün özeti kartında en yakın yaklaşan olayı göster",
-      "durum": "acik",
-      "pr": 83,
-      "dal": "otomasyon/oneri-2026-11-11-1",
-      "ozet": "Günün özeti kartında en yakın ileri tarihli olay ve kalan gün gösteriliyor",
-      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-11-11",
-      "oneri": "Ana sayfada H100 fiyatının yanında günlük değişimi göster",
-      "durum": "acik",
-      "pr": 84,
-      "dal": "otomasyon/oneri-2026-11-11-2",
-      "ozet": "Kiralama kartında H100 fiyatının yanında renkli günlük değişim yüzdesi",
-      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #83'te Merge Without Review), onay bekliyor.",
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "Haberler'de gün başlığına ton dağılımı ekle",
-      "durum": "acik",
-      "pr": 60,
-      "tarih": "2026-10-28",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Haber kartında kaynağa tıklayınca o kaynağın haberlerini süz",
-      "durum": "acik",
-      "pr": 61,
-      "tarih": "2026-10-28",
-      "kim": "otomasyon"
-    },
     {
       "oneri": "Fiyat tablosuna üretici süzgeci (Nvidia / AMD / Intel)",
       "durum": "birlesti",
@@ -452,7 +411,7 @@
     "bulgular": [
       {
         "alan": "veri",
-        "baslik": "Bellek fiyatları 19 gündür güncellenmedi",
+        "baslik": "Bellek fiyatları 20 gündür güncellenmedi",
         "etki": "düşük",
         "otomatik": false,
         "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
@@ -465,22 +424,17 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 93 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 16 gelmedi (eski fiyat korundu), 1 büyük oynama elle doğrulandı"
-      },
-      {
-        "ad": "Elle doğrulanan fiyat",
-        "durum": "ok",
-        "detay": "Nvidia V100: 1.06 → 1.6 (ikinci okuma: medyan 1.60, en düşük 0.14 (HyperAI)) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
+        "detay": "bu çalıştırmada güncellendi — 93 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 16 gelmedi (eski fiyat korundu)"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 21, 2 yaklaşan olay; haber akışına +8"
+        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 64, 1 yaklaşan olay; haber akışına +10"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+5 haber (akışta 340); bugün toplam 13"
+        "detay": "+7 haber (akışta 350); bugün toplam 17"
       },
       {
         "ad": "Derleme",
@@ -490,7 +444,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2859 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2865 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -517,11 +471,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-10-25",
-      "durum": "temiz",
-      "dikkat": 0
-    },
     {
       "tarih": "2026-10-27",
       "durum": "dikkat",
@@ -584,6 +533,11 @@
     },
     {
       "tarih": "2026-11-11",
+      "durum": "dikkat",
+      "dikkat": 1
+    },
+    {
+      "tarih": "2026-11-12",
       "durum": "dikkat",
       "dikkat": 1
     }
