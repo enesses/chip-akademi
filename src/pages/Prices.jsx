@@ -134,7 +134,7 @@ export default function Prices() {
                 12 ay: <span className="font-medium tabular-nums" style={{ color: data.endeks.degisim_12_ay_pct < 0 ? "rgb(var(--t-emerald-400))" : "rgb(var(--t-red-400))" }}>{pct(data.endeks.degisim_12_ay_pct)}</span>
               </p>
             )}
-            <p className="font-mono text-[9px] text-muted-foreground mt-0.5">ölçüm {data.kaynak.olcum_tarihi}</p>
+            <p className="font-mono text-[9px] text-muted-foreground mt-0.5">ölçüm {data.kaynak.olcum_tarihi}{typeof data.endeks.panel_model_sayisi === "number" && <span data-testid="endeks-panel"> · {data.endeks.panel_model_sayisi} model</span>}</p>
             {endeksYasi(data.kaynak.olcum_tarihi) > ENDEKS_ESKI_GUN && (
               <p className="inline-flex items-center gap-1 mt-1 rounded-full border border-amber-500/40 bg-amber-500/10 px-1.5 py-0.5 font-mono text-[9px] text-amber-300" data-testid="endeks-eski">
                 <Clock className="h-2.5 w-2.5" aria-hidden="true" />Eski: {endeksYasi(data.kaynak.olcum_tarihi)} gün önce ölçüldü
