@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-11-13",
+  "oneriler": [
+    {
+      "baslik": "Ana sayfadaki fiyat hareketi satırında sağlayıcı sayısını göster",
+      "neden": "src/pages/Home.jsx (satır 186–187) en az 5 sağlayıcılı ilk hareketi gösteriyor; bugün bu Nvidia A4000 0,24 → 0,76 $ (+%216,7, 9 sağlayıcı, ikinci okumayla doğrulandı). Fiyatlar sayfası sağlayıcı sayısını yazıyor (data-testid=hareket-saglayici) ama ana sayfa yazmıyor; okur bu sıçramanın ince bir pazardan geldiğini göremiyor.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Endeks panel model sayısını kaynaktan güncelle",
+      "neden": "otomasyon/veri-isle.mjs (satır 182–184) endeksten yalnızca degisim_4_hafta_pct ve degisim_12_ay_pct alıyor; gpu_kiralama.json endeks.panel_model_sayisi 27'de kalıyor. Bugün kaynak sayfa 4 haftalık değişimi 25 modelden hesapladığını yazıyor ('Oct 12 → Nov 9 · 25 models'). Açık PR #86 bu sayıyı arayüzde gösterecek; değer bayatlarsa yanlış bilgi verir (korunan dosya).",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "İkinci okumayla doğrulanan büyük oynamaları veride işaretle",
+      "neden": "veri-isle.mjs 'dogrulanan' listesini yalnızca konsola yazıyor (elleDogrulanan, satır 143); iki_gun.artanlar kaydında bu bilgi yok. Bugün A4000 +%216,7 ile ana sayfada en çok artan olarak görünüyor; 'doğrulandı' alanı olsaydı arayüz bunu gürültüden ayırabilirdi (korunan dosya).",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Onay bekleyen PR birikimini azalt",
+      "neden": "Rapor 21 açık öneri PR'ı gösteriyor (#58–#86); 'Merge Without Review' denetimi her otomatik birleştirmeyi engelliyor. Tekrarlar hâlâ duruyor: #59 ve #77 (ağırlığa göre sıralama), #60 ve #76 (gün başlığına ton dağılımı).",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Bellek sözleşme fiyatlarını yenile",
+      "neden": "İyileştirme ajanı bellek_fiyat.json'un 21 gündür güncellenmediğini bildiriyor. TrendForce verisine dayanan 11 Kasım haberi PC DRAM sözleşme fiyatlarının 4Ç26'da %13–18 artacağını yazıyor; 16 Kasım pazartesi TrendForce basın merkezinden birincil kaynakla doğrulanmalı.",
+      "etki": "düşük",
+      "alan": "veri"
+    }
+  ]
+}

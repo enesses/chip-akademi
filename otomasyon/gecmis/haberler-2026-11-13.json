@@ -1,0 +1,76 @@
+{
+  "tarih": "2026-11-13",
+  "haberler": [
+    {
+      "baslik": "Fermi, adı açıklanmayan bir hiper ölçekçiyle 600 MW'lık anlaşma yaptı",
+      "detay": "Fermi, Teksas'taki Project Matador kampüsünde 2027'den itibaren 600 MW güç için anlaşma ve 200 milyon dolarlık ön ödeme açıkladı; uzun vadeli kira henüz imzalanmadı. Şirket 3. çeyrekte gelirsiz 141,6 milyon dolar net zarar yazdı.",
+      "kaynak": "Startup Fortune",
+      "url": "https://startupfortune.com/fermi-says-an-unnamed-hyperscaler-will-prepay-200-million-for-600-mw-at-project-matador/",
+      "yayin": "2026-11-13",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Intel CEO'su Lip-Bu Tan: 'Çok yıllık bir dönüşümün ortasındayım'",
+      "detay": "Intel'in ilk dokuz aylık satışları %18 artışla 46,2 milyar dolara çıktı, ancak hisse son bir ayda %38 düştü; zayıf 4. çeyrek beklentisi bellek kıtlığına bağlı PC satışlarından, Kiryat Gat tesisindeki patlama ise yaklaşık 600 milyon dolarlık satış kaybından kaynaklanıyor.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/article/intel-ceo-lip-bu-tan-on-turnaround-efforts-amid-stock-slump-i-feel-called-to-do-this-191138450.html",
+      "yayin": "2026-11-12",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "TSMC'nin ekim geliri yıllık %59,7 artışla 586,9 milyar NT$",
+      "detay": "TSMC'nin ekim geliri 586,89 milyar NT$ ile eylüle göre %14,7, geçen yılın aynı ayına göre %59,7 arttı; ocak–ekim geliri %43,3 artışla 4,49 trilyon NT$ oldu.",
+      "kaynak": "TSMC",
+      "url": "https://pr.tsmc.com/english/news/3349",
+      "yayin": "2026-11-10",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Micron rallinin ardından yeniden dalgalandı",
+      "detay": "Micron 11 Kasım'ı %11,89 artışla 811,30 dolardan kapattıktan sonra 12 Kasım öncesi işlemlerde %3–4 geriledi. Şirket HBM4'ü yüksek hacimde sevk etmeye başladı, HBM4E'nin 2027'de seri üretime girmesini bekliyor.",
+      "kaynak": "Coinpaper",
+      "url": "https://coinpaper.com/38761/micron-stock-faces-fresh-volatility-after-12-rally-as-ai-memory-demand-comes-under-scrutiny",
+      "yayin": "2026-11-12",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "TrendForce: PC DRAM sözleşme fiyatları 4. çeyrekte %13–18 artacak",
+      "detay": "TrendForce'a göre dizüstü sevkiyatları 3. çeyrekte çeyreklik %15,8 düştü; PC DRAM sözleşme fiyatlarının 4. çeyrekte %13–18, istemci SSD fiyatlarının %5'e kadar artması bekleniyor. Bazı PC üreticileri 2027 alımlarını kısmayı düşünüyor.",
+      "kaynak": "BigGo Finance (TrendForce verisi)",
+      "url": "https://finance.biggo.com/news/0b3996c5-f258-44d8-8fa9-f142e5142e88",
+      "yayin": "2026-11-11",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "ABD, Blackwell ihracat onayını yedi yeni ülkeye genişletmeyi planlıyor",
+      "detay": "The Information'a göre BIS, Singapur, Malezya, Tayland, Endonezya, Brezilya, Norveç ve Güney Afrika'yı AI çip ihracat listesine eklemek istiyor; Blackwell ve üstü GPU ithalatı ABD onayına bağlanacak. Nvidia'nın 2025 mali yılı gelirinin %18'i Singapur üzerinden faturalandı.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/world/2026/11/12/us-set-to-tighten-ai-chip-export-curbs-on-singapore",
+      "yayin": "2026-11-12",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kategori": "negatif"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-11-12T07:05:35.578Z",
-  "tarih": "2026-11-12",
+  "guncelleme": "2026-11-13T07:07:32.772Z",
+  "tarih": "2026-11-13",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-11-12T07:00:47.758Z"
+      "zaman": "2026-11-13T07:05:36.449Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-11-12T07:00:47.887Z"
+      "zaman": "2026-11-13T07:05:36.584Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-11-12T07:00:47.288Z"
+      "zaman": "2026-11-13T07:05:35.988Z"
     },
     {
       "id": "gelistirme",
@@ -33,7 +33,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-11-12T07:01:04.857Z"
+      "zaman": "2026-11-13T07:05:55.457Z"
     }
   ],
   "dikkat": [
@@ -45,79 +45,38 @@
   ],
   "oneriler": [
     {
-      "baslik": "Fiyat hareketi satırlarından çip sayfasına bağlantı ver",
-      "neden": "src/pages/Prices.jsx 'Son ölçümler arası hareketler' kartlarında model adı düz metin; gpu_kiralama.json'daki iki_gun kayıtlarında chip_id var (bugün düşenlerin başındaki Nvidia V100 → nvidia-volta-v100) ama yalnızca alttaki tabloda (satır 240) kullanılıyor.",
+      "baslik": "Ana sayfadaki fiyat hareketi satırında sağlayıcı sayısını göster",
+      "neden": "src/pages/Home.jsx (satır 186–187) en az 5 sağlayıcılı ilk hareketi gösteriyor; bugün bu Nvidia A4000 0,24 → 0,76 $ (+%216,7, 9 sağlayıcı, ikinci okumayla doğrulandı). Fiyatlar sayfası sağlayıcı sayısını yazıyor (data-testid=hareket-saglayici) ama ana sayfa yazmıyor; okur bu sıçramanın ince bir pazardan geldiğini göremiyor.",
       "etki": "düşük",
       "alan": "arayüz"
     },
     {
-      "baslik": "Endeks kartında panel model sayısını göster",
-      "neden": "gpu_kiralama.json endeks.panel_model_sayisi = 27 yazılıyor ama src/ altında hiç okunmuyor (grep boş); kart '4 hafta +%1,8' gösteriyor, bu oranın kaç modelden hesaplandığını söylemiyor.",
-      "etki": "düşük",
-      "alan": "arayüz"
+      "baslik": "Endeks panel model sayısını kaynaktan güncelle",
+      "neden": "otomasyon/veri-isle.mjs (satır 182–184) endeksten yalnızca degisim_4_hafta_pct ve degisim_12_ay_pct alıyor; gpu_kiralama.json endeks.panel_model_sayisi 27'de kalıyor. Bugün kaynak sayfa 4 haftalık değişimi 25 modelden hesapladığını yazıyor ('Oct 12 → Nov 9 · 25 models'). Açık PR #86 bu sayıyı arayüzde gösterecek; değer bayatlarsa yanlış bilgi verir (korunan dosya).",
+      "etki": "orta",
+      "alan": "veri"
     },
     {
-      "baslik": "Bir gün önceki hareketi tersine çeviren fiyatları 'geri döndü' diye işaretle",
-      "neden": "Nvidia V100 (20 sağlayıcı) 10→11 Kasım 1,06 → 1,60 $ (+%50,9, ikinci okumayla doğrulandı), bugün 1,60 → 1,06 $ (−%33,7) oldu ve ana sayfanın 'düşen' satırında görünüyor. Bu iki günlük gidip gelme gerçek bir hareket değil; gecmis/fiyatlar-*.json ile veri-isle.mjs'te 'geri_dondu' alanı üretilmesi gerekir (korunan dosya).",
+      "baslik": "İkinci okumayla doğrulanan büyük oynamaları veride işaretle",
+      "neden": "veri-isle.mjs 'dogrulanan' listesini yalnızca konsola yazıyor (elleDogrulanan, satır 143); iki_gun.artanlar kaydında bu bilgi yok. Bugün A4000 +%216,7 ile ana sayfada en çok artan olarak görünüyor; 'doğrulandı' alanı olsaydı arayüz bunu gürültüden ayırabilirdi (korunan dosya).",
       "etki": "orta",
       "alan": "veri"
     },
     {
       "baslik": "Onay bekleyen PR birikimini azalt",
-      "neden": "Rapor 19 açık öneri PR'ı gösteriyor (#58–#84); 'Merge Without Review' denetimi her otomatik birleştirmeyi engelliyor. Tekrarlar hâlâ duruyor: #59 ve #77 (ağırlığa göre sıralama), #60 ve #76 (gün başlığına ton dağılımı).",
+      "neden": "Rapor 21 açık öneri PR'ı gösteriyor (#58–#86); 'Merge Without Review' denetimi her otomatik birleştirmeyi engelliyor. Tekrarlar hâlâ duruyor: #59 ve #77 (ağırlığa göre sıralama), #60 ve #76 (gün başlığına ton dağılımı).",
       "etki": "orta",
       "alan": "otomasyon"
     },
     {
-      "baslik": "Haber doğrulama kayıplarını günlük rapora işle",
-      "neden": "Bugün aday haberlerin ~13'ü WebFetch'te açılamadı (CNBC, Quartz, DCD, Bloomberg robots, Modern Diplomacy, FourWeekMBA, sammyfans, cryptobriefing; anthropic.com, reuters.com, blog.google PROVENANCE_REQUIRED). gelen/durum.json'a 'haber' anahtarı eklenirse rapor bunu gösterir (otomasyon/ — korunan).",
-      "etki": "düşük",
-      "alan": "otomasyon"
-    },
-    {
       "baslik": "Bellek sözleşme fiyatlarını yenile",
-      "neden": "İyileştirme ajanı bellek_fiyat.json'un 20 gündür güncellenmediğini bildiriyor; BofA notu (11 Kasım) TrendForce'un 4Ç26 DRAM %10–20 / NAND %8–13 aralığına atıf yapıyor, 16 Kasım pazartesi TrendForce basın merkezinden doğrulanmalı.",
+      "neden": "İyileştirme ajanı bellek_fiyat.json'un 21 gündür güncellenmediğini bildiriyor. TrendForce verisine dayanan 11 Kasım haberi PC DRAM sözleşme fiyatlarının 4Ç26'da %13–18 artacağını yazıyor; 16 Kasım pazartesi TrendForce basın merkezinden birincil kaynakla doğrulanmalı.",
       "etki": "düşük",
       "alan": "veri"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-11-12",
-      "oneri": "Fiyat hareketi satırlarından çip sayfasına bağlantı ver",
-      "durum": "acik",
-      "pr": 85,
-      "dal": "otomasyon/oneri-2026-11-12-1",
-      "ozet": "Hareket kartlarında chip_id olan modeller çip sayfasına bağlanıyor",
-      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-11-12",
-      "oneri": "Endeks kartında panel model sayısını göster",
-      "durum": "acik",
-      "pr": 86,
-      "dal": "otomasyon/oneri-2026-11-12-2",
-      "ozet": "Endeks kartının ölçüm satırında oranın hesaplandığı model sayısı gösteriliyor",
-      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #85'te Merge Without Review), onay bekliyor.",
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "Fiyat tablosuna üretici süzgeci (Nvidia / AMD / Intel)",
-      "durum": "birlesti",
-      "pr": 62,
-      "tarih": "2026-10-29",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Fiyatı olmayan modelleri gizleme seçeneği",
-      "durum": "birlesti",
-      "pr": 63,
-      "tarih": "2026-10-29",
-      "kim": "otomasyon"
-    },
     {
       "oneri": "gpu_kiralama.json'daki kullanılmayan eski 'hareketler' alanını kaldır",
       "durum": "birlesti",
@@ -460,7 +419,7 @@
     "bulgular": [
       {
         "alan": "veri",
-        "baslik": "Bellek fiyatları 20 gündür güncellenmedi",
+        "baslik": "Bellek fiyatları 21 gündür güncellenmedi",
         "etki": "düşük",
         "otomatik": false,
         "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
@@ -473,17 +432,17 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 93 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 16 gelmedi (eski fiyat korundu)"
+        "detay": "bu çalıştırmada güncellendi — 94 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu)"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 64, 1 yaklaşan olay; haber akışına +10"
+        "detay": "bu çalıştırmada güncellendi — 11 madde, puan 38, 1 yaklaşan olay; haber akışına +11"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+7 haber (akışta 350); bugün toplam 17"
+        "detay": "+6 haber (akışta 352); bugün toplam 17"
       },
       {
         "ad": "Derleme",
@@ -493,7 +452,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2865 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2867 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -520,11 +479,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-10-27",
-      "durum": "dikkat",
-      "dikkat": 1
-    },
     {
       "tarih": "2026-10-28",
       "durum": "dikkat",
@@ -587,6 +541,11 @@
     },
     {
       "tarih": "2026-11-12",
+      "durum": "dikkat",
+      "dikkat": 1
+    },
+    {
+      "tarih": "2026-11-13",
       "durum": "dikkat",
       "dikkat": 1
     }

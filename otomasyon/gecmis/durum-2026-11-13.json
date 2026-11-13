@@ -1,0 +1,12 @@
+{
+  "fiyat": {
+    "durum": "ok"
+  },
+  "endeks": {
+    "durum": "ok"
+  },
+  "bellek": {
+    "durum": "okunamadi",
+    "not": "pazartesi değil; TrendForce'ta yeni basın açıklaması bulunamadı"
+  }
+}
