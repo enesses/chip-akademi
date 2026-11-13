@@ -48,7 +48,8 @@ Tarih her yerde UTC günüdür (`new Date().toISOString().slice(0,10)`); 10:00
   ```
 - En az 30 satır yoksa dosyayı yazma; rapora "fiyat sayfası okunamadı" diye not düş.
 - İsteğe bağlı: `https://getdeploying.com/gpu-price-index` sayfasından endeksin son ölçüm tarihini, 4 haftalık ve 12 aylık değişimini oku ve aynı dosyaya ekle:
-  `"endeks": { "olcum_tarihi": "YYYY-MM-DD", "degisim_4_hafta_pct": -3.2, "degisim_12_ay_pct": 1.7 }`.
+  `"endeks": { "olcum_tarihi": "YYYY-MM-DD", "degisim_4_hafta_pct": -3.2, "degisim_12_ay_pct": 1.7, "panel_model_sayisi": 25 }`.
+  `panel_model_sayisi`: sayfanın 4 haftalık değişim için yazdığı model sayısı ("Oct 12 → Nov 9 · 25 models"); yazılmazsa eski sayı silinir.
   Okuyamazsan alanı hiç yazma (eski endeks kalır, sayfada ölçüm tarihi görünür).
 
 ## 1b. Kaynak durumu → `otomasyon/gelen/durum.json`

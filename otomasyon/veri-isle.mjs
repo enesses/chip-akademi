@@ -181,6 +181,9 @@ if (fs.existsSync(fiyatGirdi)) {
     if (endeksEski) console.log(`  · Endeks atlandı: gelen ölçüm ${e.olcum_tarihi}, kayıtlı ${veri.kaynak.olcum_tarihi} daha yeni`);
     if (e && !endeksEski && /^\d{4}-\d{2}-\d{2}$/.test(e.olcum_tarihi || "") && Number.isFinite(e.degisim_4_hafta_pct) && Number.isFinite(e.degisim_12_ay_pct)) {
       veri.endeks = { ...veri.endeks, degisim_4_hafta_pct: e.degisim_4_hafta_pct, degisim_12_ay_pct: e.degisim_12_ay_pct };
+      // Panel model sayısı da gelirse güncellenir; gelmezse eski sayı bayat kalacağı için silinir.
+      if (Number.isInteger(e.panel_model_sayisi) && e.panel_model_sayisi > 0) veri.endeks.panel_model_sayisi = e.panel_model_sayisi;
+      else delete veri.endeks.panel_model_sayisi;
       veri.kaynak.olcum_tarihi = e.olcum_tarihi;
     }
     veri.kaynak.onceki_olcum = tabanTarih;
