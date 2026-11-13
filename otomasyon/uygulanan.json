@@ -940,6 +940,26 @@
       "ozet": "Endeks kartının ölçüm satırında oranın hesaplandığı model sayısı gösteriliyor",
       "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #85'te Merge Without Review), onay bekliyor.",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-13",
+      "oneri": "Ana sayfadaki fiyat hareketi satırında sağlayıcı sayısını göster",
+      "durum": "acik",
+      "pr": 88,
+      "dal": "otomasyon/oneri-2026-11-13-1",
+      "ozet": "Ana sayfadaki artan/düşen satırına sağlayıcı sayısı etiketi eklendi",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-13",
+      "oneri": "Endeks panel model sayısını kaynaktan güncelle",
+      "durum": "acik",
+      "pr": 87,
+      "dal": "otomasyon/duzeltme-2026-11-13",
+      "ozet": "veri-isle.mjs panel_model_sayisi'ni gelen veriden yazıyor, gelmezse siliyor; değer 27→25",
+      "neden": "Korunan dosya (otomasyon/) içeriyor; testler geçti, kullanıcı onayı bekliyor.",
+      "kim": "otomasyon"
     }
   ]
 }
