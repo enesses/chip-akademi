@@ -67,6 +67,7 @@ function Vurgula({ metin, sorgu }) {
 export default function Haberler() {
   const [konu, setKonu] = useState("hepsi");
   const [ton, setTon] = useState("hepsi");
+  const [tur, setTur] = useState("hepsi");
   const [sorgu, setSorgu] = useState("");
   const [gunSiniri, setGunSiniri] = useState(ILK_GUN);
 
@@ -76,8 +77,9 @@ export default function Haberler() {
     const q = sadelestir(sorgu);
     return tum.filter((h) =>
       (ton === "hepsi" || h.ton === ton) &&
+      (tur === "hepsi" || h.kaynakTuru === tur) &&
       (!q || q.split(" ").every((k) => sadelestir(`${h.baslik} ${h.detay} ${h.kaynak}`).includes(k))));
-  }, [tum, ton, sorgu]);
+  }, [tum, ton, tur, sorgu]);
   const sayilar = useMemo(() => {
     const s = { hepsi: tonVeAramayla.length };
     for (const h of tonVeAramayla) for (const k of h.konular) s[k] = (s[k] || 0) + 1;
@@ -95,7 +97,7 @@ export default function Haberler() {
     return [...g.entries()];
   }, [tonVeAramayla, konu]);
 
-  const filtreVar = konu !== "hepsi" || ton !== "hepsi" || sorgu;
+  const filtreVar = konu !== "hepsi" || ton !== "hepsi" || tur !== "hepsi" || sorgu;
   // Filtre ya da aramada tüm günler taranır; düz akışta ilk günler gösterilir.
   const gorunen = filtreVar ? gunler : gunler.slice(0, gunSiniri);
   const toplam = gunler.reduce((t, [, l]) => t + l.length, 0);
@@ -140,6 +142,15 @@ export default function Haberler() {
                 </button>
               ))}
             </div>
+            <div className="inline-flex rounded-xl border border-card-border p-0.5 bg-card/60" role="radiogroup" aria-label="Haber türü">
+              {[["hepsi", "Tüm haberler"], ["bugun", "Bugün maddeleri"], ["ek", "Ek haberler"]].map(([k, ad]) => (
+                <button key={k} type="button" role="radio" aria-checked={tur === k} onClick={() => setTur(k)} data-testid={`haber-tur-${k}`}
+                  title={k === "bugun" ? "O günün Bugün puanına katılan maddeler" : k === "ek" ? "Bugün'e girmeyen, akışa ayrıca eklenen haberler" : undefined}
+                  className={cn("rounded-lg px-2.5 py-1.5 text-xs transition-colors", tur === k ? "bg-primary/15 text-foreground" : "text-muted-foreground hover:text-foreground")}>
+                  {ad}
+                </button>
+              ))}
+            </div>
           </div>
           <div className="flex gap-1.5 overflow-x-auto serit-kaydir" role="tablist" aria-label="Konu">
             {[["hepsi", "Tüm konular"], ...Object.entries(KONULAR)].map(([k, ad]) => (
@@ -155,7 +166,7 @@ export default function Haberler() {
         <div className="flex items-center justify-between mt-4">
           <p className="text-sm text-muted-foreground" role="status">{filtreVar ? `${toplam} haber bulundu` : `${gunler.length} gün`}</p>
           {filtreVar && (
-            <button type="button" onClick={() => { setKonu("hepsi"); setTon("hepsi"); setSorgu(""); }} className="text-xs text-primary hover:underline">
+            <button type="button" onClick={() => { setKonu("hepsi"); setTon("hepsi"); setTur("hepsi"); setSorgu(""); }} className="text-xs text-primary hover:underline">
               Filtreleri temizle
             </button>
           )}
