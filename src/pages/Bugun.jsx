@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { CalendarDays, CalendarClock, ExternalLink, Minus, Repeat, ThumbsDown, ThumbsUp } from "lucide-react";
 import data from "@/data/bugun.json";
+import haberler from "@/data/haberler.json";
 import { Link } from "@/components/Nav";
 import { cn } from "@/lib/utils";
 import { dosyaKaydet } from "@/lib/dosyaKaydet";
@@ -53,6 +54,8 @@ export default function Bugun() {
   // Geçmişte kalan olayları sayfanın açıldığı güne göre gizle
   const yaklasan = (data.yaklasan || []).filter((o) => kalanGun(o.tarih) >= 0);
   const tekrarSayisi = data.maddeler.filter((m) => m.tekrar).length;
+  // Bugün'e girmeyen, aynı gün Haberler akışına ayrıca eklenen doğrulanmış haberler
+  const ekHaberSayisi = (haberler.haberler || []).filter((h) => h.tarih === data.tarih && h.kaynakTuru === "ek").length;
   const [suzgec, setSuzgec] = useState("hepsi");
   const [takvimDurum, setTakvimDurum] = useState(null);
   async function takvimeEkle() {
@@ -204,8 +207,10 @@ export default function Bugun() {
             );
           })}
         </div>
-        <Link href="/haberler" className="mt-5 inline-flex items-center gap-1.5 text-sm text-primary hover:underline">
-          Önceki günlerin haberleri ve konuya göre süzme → Haberler
+        <Link href="/haberler" className="mt-5 inline-flex items-center gap-1.5 text-sm text-primary hover:underline" data-testid="bugun-ek-haber">
+          {ekHaberSayisi > 0
+            ? `Bugün akışa eklenen ${ekHaberSayisi} ek haber, önceki günler ve konuya göre süzme → Haberler`
+            : "Önceki günlerin haberleri ve konuya göre süzme → Haberler"}
         </Link>
       </section>
     </div>
