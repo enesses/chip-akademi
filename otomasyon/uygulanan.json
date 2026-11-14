@@ -960,6 +960,26 @@
       "ozet": "veri-isle.mjs panel_model_sayisi'ni gelen veriden yazıyor, gelmezse siliyor; değer 27→25",
       "neden": "Korunan dosya (otomasyon/) içeriyor; testler geçti, kullanıcı onayı bekliyor.",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-14",
+      "oneri": "Haberler'e kaynak türü süzgeci ekle (Bugün maddeleri / Ek haberler)",
+      "durum": "acik",
+      "pr": 89,
+      "dal": "otomasyon/oneri-2026-11-14-1",
+      "ozet": "Haberler sayfasına Tüm/Bugün maddeleri/Ek haberler süzgeci eklendi",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-14",
+      "oneri": "Bugün sayfasından günün ek haberlerine bağlantı ver",
+      "durum": "acik",
+      "pr": 90,
+      "dal": "otomasyon/oneri-2026-11-14-2",
+      "ozet": "Bugün sayfasındaki Haberler bağlantısı günün ek haber sayısını gösteriyor",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
     }
   ]
 }
