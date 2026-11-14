@@ -2,6 +2,259 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-11-14-watt-ai-power-infrastructure-platform-targe-html",
+      "tarih": "2026-11-14",
+      "yayin": "2026-11-13",
+      "baslik": "GridAI, Wyoming'de gazla çalışacak AI enerji platformu için Pronghorn'u alıyor",
+      "detay": "GridAI, günde ~100 MMcf gaz üreten Pronghorn Resources'ı hisse karşılığı satın alacak; ilk 300 MW güç teslimi 2027'de hedefleniyor, kapanış 22 Kasım'dan önce bekleniyor.",
+      "kaynak": "GlobeNewswire",
+      "url": "https://globenewswire.com/news-release/2026/11/13/3402604/0/en/gridai-technologies-signs-definitive-agreement-to-acquire-pronghorn-resources-establishing-major-wyoming-owned-natural-gas-and-multi-gigawatt-ai-power-infrastructure-platform-targe.html",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-14-24-nvidia-china-ai-chip-regulation-security-html",
+      "tarih": "2026-11-14",
+      "yayin": "2026-11-13",
+      "baslik": "Çinli AI şirketleri yurt dışında işlem gücü anlaşması için yarışıyor",
+      "detay": "Nvidia casusluk skandalı sonrası Kongre'nin uzaktan erişimi kısıtlayabileceği korkusuyla Çinli firmaların yurt dışı compute anlaşmalarını hızlandırdığı bildiriliyor.",
+      "kaynak": "DIGITIMES",
+      "url": "https://www.digitimes.com/news/a20261113VL224/nvidia-china-ai-chip-regulation-security.html",
+      "ton": "negatif",
+      "konular": [
+        "politika",
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-14-engineering-com-chip-industry-week-in-review-164",
+      "tarih": "2026-11-14",
+      "yayin": "2026-11-13",
+      "baslik": "Samsung Asan'da HBM gelişmiş paketleme tesisinin temelini attı",
+      "detay": "Üretim başlangıcı bir yıl öne çekilerek Haziran 2028'e alındı. Aynı haftada Winbond Kaohsiung bellek fabrikası için 2,2 milyar dolar, Fractile AI çipleri için 720 milyon dolar onayladı/topladı.",
+      "kaynak": "Semiconductor Engineering",
+      "url": "https://semiengineering.com/chip-industry-week-in-review-164/",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-14-s-fall-as-nvidia-earnings-and-anthropic-ipo-loom",
+      "tarih": "2026-11-14",
+      "yayin": "2026-11-14",
+      "baslik": "Haftanın kazananları AMD ve Broadcom, kaybedeni Nvidia",
+      "detay": "Haftalık bazda AMD %18,93, Broadcom %18,16, Monolithic Power %16,81, Astera Labs %16,32 yükselirken Nvidia %12,75 geriledi.",
+      "kaynak": "Eurasia Business News",
+      "url": "https://eurasiabusinessnews.com/2026/11/14/stock-market-today-november-13-2026-tech-stocks-fall-as-nvidia-earnings-and-anthropic-ipo-loom/",
+      "ton": "notr",
+      "konular": [
+        "pazar",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-14-agile-chip-rally-chart-of-the-day-110000355-html",
+      "tarih": "2026-11-14",
+      "yayin": "2026-11-12",
+      "baslik": "SOX endeksi 200 günlük ortalamanın altında sıkıştı",
+      "detay": "Yarı iletken endeksi 5 Kasım'daki ~9.000 dibinden ~%17 toparlanıp ~10.560'a çıktı ama 11.100–11.200 direncinin altında; 62 çip hissesi sepeti Ekim başından beri kaybettiği 5,7 trilyon doların yalnızca 1,6 trilyonunu geri aldı.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/nvidias-boardroom-bombshell-hits-a-fragile-chip-rally-chart-of-the-day-110000355.html",
+      "ton": "negatif",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-14-cles-nvidia-amd-broadcom-ai-stock-180603430-html",
+      "tarih": "2026-11-14",
+      "yayin": "2026-11-12",
+      "baslik": "Huang istifası günü CoreWeave %7,5, Micron %2,7 düştü",
+      "detay": "12 Kasım'da Nvidia %4,59 düşüşle 165,75 dolar olurken AMD %5,79, Broadcom %5,65 yükseldi; CoreWeave %7,49, TSMC %1,15, Micron %2,70 geriledi.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-amd-broadcom-ai-stock-180603430.html",
+      "ton": "notr",
+      "konular": [
+        "pazar",
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-14-tte-kress-to-serve-as-interim-ceo-140341430-html",
+      "tarih": "2026-11-14",
+      "yayin": "2026-11-12",
+      "baslik": "Analistler Nvidia hedeflerini indiriyor",
+      "detay": "Oppenheimer notunu düşürüp hedef fiyatı kaldırdı, Dan Ives hedefini 300 dolardan 225 dolara indirdi; Bernstein 'Piyasa Performansı' ve 200 dolar hedefini korudu.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/live/nvidia-live-updates-jensen-huang-resigns-cfo-colette-kress-to-serve-as-interim-ceo-140341430.html",
+      "ton": "negatif",
+      "konular": [
+        "pazar",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-14-r-13-dow-sp-500-nasdaq-nvidia-ppi-141451558-html",
+      "tarih": "2026-11-14",
+      "yayin": null,
+      "baslik": "Nvidia haftayı %12,75 kayıpla kapattı, değeri 4 trilyon doların altında",
+      "detay": "Nvidia cuma günü %2,01 düşüşle 162,85 dolardan kapandı; Huang'ın istifasıyla geçen haftada yaklaşık %12,75 kaybetti. HSBC hisseyi 'Tut'a indirip hedef fiyatı 365 dolardan 170 dolara çekti. Aynı gün ABD üretici fiyatları ekimde %0,3 arttı (yıllık %6,5), 10 yıllık tahvil faizi %5,17'ye çıktı.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-14-ector-ai-chip-sell-off-after-early-gains-reverse",
+      "tarih": "2026-11-14",
+      "yayin": null,
+      "baslik": "AMD gün içi kazancını silip %8,75 düştü",
+      "detay": "AMD 13 Kasım'da 534,06 dolardan kapandı (−51,24 dolar); hacim ortalamanın yaklaşık %98 üstündeydi. S&P 500 %0,40, Nasdaq %0,91 geriledi. Hisse hafta içinde %30'a kadar yükselmişti.",
+      "kaynak": "The Motley Fool",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/13/stock-market-today-nov-13-amd-sinks-8-75-on-sector-ai-chip-sell-off-after-early-gains-reverse/",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-14-ced-ai-chip-exports-to-china-126111300657-1-html",
+      "tarih": "2026-11-14",
+      "yayin": null,
+      "baslik": "Kongre'de çip ihracatını sınırlama konusunda 'fikir birliği' oluşuyor",
+      "detay": "Meclis Başkanı Mike Johnson Çin'e çip ihracatını kısıtlamada gelişen bir fikir birliği olduğunu söyledi. Masada AI Overwatch Act, Chip Security Act, Match Act ve Remote Access Security Act var; Cumhuriyetçiler bunları NDAA'ya eklemek istiyor. Çinli AI hisselerinden Z.AI %12, MiniMax %8,4 düştü.",
+      "kaynak": "Business Standard (Reuters)",
+      "url": "https://www.business-standard.com/amp/world-news/us-lawmakers-push-for-tougher-curbs-on-advanced-ai-chip-exports-to-china-126111300657_1.html",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "yapay-zeka",
+        "pazar",
+        "politika"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-14-r-nvidia-probes-new-chip-export-limits-intensify",
+      "tarih": "2026-11-14",
+      "yayin": null,
+      "baslik": "Huang'dan 1 Aralık'ta kapalı oturumda ifade istendi",
+      "detay": "Meclis Çin Komitesi Başkanı Moolenaar, Huang'ın 1 Aralık'ta kapalı kapılar ardında ifade vermesini istedi; tarih kabul edilmezse celp gönderilecek. Senato Bankacılık Komitesi Huang'ı 3 Aralık'ta, Ticaret Bakanı Lutnick'i 10 Aralık'ta çağırdı.",
+      "kaynak": "Roll Call",
+      "url": "https://rollcall.com/2026/11/12/calls-for-nvidia-probes-new-chip-export-limits-intensify/",
+      "ton": "notr",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-14-hind-chinas-most-powerful-ai-models-uh-oh-jensen",
+      "tarih": "2026-11-14",
+      "yayin": null,
+      "baslik": "Araştırma: Çin'in en güçlü açık modelleri yasaklı Blackwell'lerde eğitilmiş olabilir",
+      "detay": "Unemployment Labs'in ağırlık analizine göre Moonshot'un Kimi K3 ve DeepSeek'in V4 modelleri Blackwell izleri taşıyor. Epoch AI'ya göre 2024–2025'te yaklaşık 2 milyon gelişmiş çip dolaylı yollarla Çin'e girdi; Hong Kong'da onay bekleyen yaklaşık 600 bin H200 bulunuyor. Çipler yurt dışı veri merkezlerinde de kullanılmış olabilir.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "yapay-zeka",
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-14-26-11-13-china-warns-against-fresh-us-chip-curbs",
+      "tarih": "2026-11-14",
+      "yayin": null,
+      "baslik": "Çin yeni ABD çip kısıtlamalarına karşı uyardı",
+      "detay": "Çin, Huang skandalının ardından ABD'nin yapay zekâ çiplerine ek ihracat kontrolleri getirmemesi konusunda uyarıda bulundu.",
+      "kaynak": "Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/china-warns-against-fresh-us-chip-curbs",
+      "ton": "notr",
+      "konular": [
+        "yapay-zeka",
+        "politika"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-14--sk-hynix-hbm4-production-packaging-samsung-html",
+      "tarih": "2026-11-14",
+      "yayin": null,
+      "baslik": "SK hynix'te HBM4 verimi %70'i aştı",
+      "detay": "Chosun Biz'in sektör kaynaklarına dayanan haberine göre SK hynix'in altıncı nesil HBM4 üretim verimi %70'in üzerine çıktı; Samsung da çip paketleme kapasitesini genişletiyor.",
+      "kaynak": "DIGITIMES",
+      "url": "https://www.digitimes.com/news/a20261113VL217/sk-hynix-hbm4-production-packaging-samsung.html",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "cip"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-14-ospi-surrenders-5300-line-after-early-gains-fade",
+      "tarih": "2026-11-14",
+      "yayin": null,
+      "baslik": "KOSPI 5.500'den geri döndü; SK hynix %3 düştü",
+      "detay": "KOSPI 13 Kasım'ı %0,98 düşüşle 5.290,53'te kapattı; gün içinde 5.500'ü aşmıştı. SK hynix %3,03 düşüşle 1.216.000 won, Samsung Electronics %0,96 düşüşle 206.000 won oldu; düşüşü yabancı satışları getirdi.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/market/2026/11/13/kospi-surrenders-5300-line-after-early-gains-fade",
+      "ton": "negatif",
+      "konular": [
+        "bellek"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-14-ge-at-70-to-78-valuing-it-at-up-to-1405-trillion",
+      "tarih": "2026-11-14",
+      "yayin": null,
+      "baslik": "Anthropic halka arzında 70–78 dolar aralığı, işlem 19 Kasım'da bekleniyor",
+      "detay": "Anthropic hisse başına 70–78 dolar fiyat aralığı belirledi; bu, tam seyreltilmiş bazda yaklaşık 1,4 trilyon dolarlık değerlemeye karşılık geliyor. İşlemlerin 19 Kasım perşembe başlaması bekleniyor.",
+      "kaynak": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/13/anthropic-set-its-ipo-price-range-at-70-to-78-valuing-it-at-up-to-1405-trillion/",
+      "ton": "pozitif",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-14-s-tsmc-faces-major-security-scare-115950867-html",
+      "tarih": "2026-11-14",
+      "yayin": null,
+      "baslik": "TSMC çalışan verilerinin sızdırıldığını doğruladı",
+      "detay": "TSMC, 12 Kasım tarihli bildirimde çalışan bilgilerinin izinsiz bir sitede göründüğünü doğruladı. Saldırganlar yaklaşık 46.000 kaydı (6,9 GB) 3 Bitcoin'e sattığını iddia ediyor. TSMC iç sistemlerinde ihlal olmadığını, verinin bir bulut sağlayıcısından çıktığını ve üretimin etkilenmediğini söyledi.",
+      "kaynak": "Yahoo Finance (GuruFocus)",
+      "url": "https://finance.yahoo.com/technology/ai/articles/tsmc-faces-major-security-scare-115950867.html",
+      "ton": "negatif",
+      "konular": [
+        "cip"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
       "id": "2026-11-13-ase-details-2026-nvidia-announces-ceo-transition",
       "tarih": "2026-11-13",
       "yayin": null,
@@ -5238,7 +5491,7 @@
       "kaynakTuru": "ek"
     }
   ],
-  "guncelleme": "2026-11-13",
+  "guncelleme": "2026-11-14",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",

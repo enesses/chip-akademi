@@ -1,0 +1,87 @@
+{
+  "tarih": "2026-11-14",
+  "haberler": [
+    {
+      "baslik": "GridAI, Wyoming'de gazla çalışacak AI enerji platformu için Pronghorn'u alıyor",
+      "detay": "GridAI, günde ~100 MMcf gaz üreten Pronghorn Resources'ı hisse karşılığı satın alacak; ilk 300 MW güç teslimi 2027'de hedefleniyor, kapanış 22 Kasım'dan önce bekleniyor.",
+      "kaynak": "GlobeNewswire",
+      "url": "https://globenewswire.com/news-release/2026/11/13/3402604/0/en/gridai-technologies-signs-definitive-agreement-to-acquire-pronghorn-resources-establishing-major-wyoming-owned-natural-gas-and-multi-gigawatt-ai-power-infrastructure-platform-targe.html",
+      "yayin": "2026-11-13",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Çinli AI şirketleri yurt dışında işlem gücü anlaşması için yarışıyor",
+      "detay": "Nvidia casusluk skandalı sonrası Kongre'nin uzaktan erişimi kısıtlayabileceği korkusuyla Çinli firmaların yurt dışı compute anlaşmalarını hızlandırdığı bildiriliyor.",
+      "kaynak": "DIGITIMES",
+      "url": "https://www.digitimes.com/news/a20261113VL224/nvidia-china-ai-chip-regulation-security.html",
+      "yayin": "2026-11-13",
+      "konular": [
+        "politika",
+        "yapay-zeka"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Samsung Asan'da HBM gelişmiş paketleme tesisinin temelini attı",
+      "detay": "Üretim başlangıcı bir yıl öne çekilerek Haziran 2028'e alındı. Aynı haftada Winbond Kaohsiung bellek fabrikası için 2,2 milyar dolar, Fractile AI çipleri için 720 milyon dolar onayladı/topladı.",
+      "kaynak": "Semiconductor Engineering",
+      "url": "https://semiengineering.com/chip-industry-week-in-review-164/",
+      "yayin": "2026-11-13",
+      "konular": [
+        "bellek",
+        "cip"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Haftanın kazananları AMD ve Broadcom, kaybedeni Nvidia",
+      "detay": "Haftalık bazda AMD %18,93, Broadcom %18,16, Monolithic Power %16,81, Astera Labs %16,32 yükselirken Nvidia %12,75 geriledi.",
+      "kaynak": "Eurasia Business News",
+      "url": "https://eurasiabusinessnews.com/2026/11/14/stock-market-today-november-13-2026-tech-stocks-fall-as-nvidia-earnings-and-anthropic-ipo-loom/",
+      "yayin": "2026-11-14",
+      "konular": [
+        "pazar",
+        "cip"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "SOX endeksi 200 günlük ortalamanın altında sıkıştı",
+      "detay": "Yarı iletken endeksi 5 Kasım'daki ~9.000 dibinden ~%17 toparlanıp ~10.560'a çıktı ama 11.100–11.200 direncinin altında; 62 çip hissesi sepeti Ekim başından beri kaybettiği 5,7 trilyon doların yalnızca 1,6 trilyonunu geri aldı.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/nvidias-boardroom-bombshell-hits-a-fragile-chip-rally-chart-of-the-day-110000355.html",
+      "yayin": "2026-11-12",
+      "konular": [
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Huang istifası günü CoreWeave %7,5, Micron %2,7 düştü",
+      "detay": "12 Kasım'da Nvidia %4,59 düşüşle 165,75 dolar olurken AMD %5,79, Broadcom %5,65 yükseldi; CoreWeave %7,49, TSMC %1,15, Micron %2,70 geriledi.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-amd-broadcom-ai-stock-180603430.html",
+      "yayin": "2026-11-12",
+      "konular": [
+        "pazar",
+        "veri-merkezi"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Analistler Nvidia hedeflerini indiriyor",
+      "detay": "Oppenheimer notunu düşürüp hedef fiyatı kaldırdı, Dan Ives hedefini 300 dolardan 225 dolara indirdi; Bernstein 'Piyasa Performansı' ve 200 dolar hedefini korudu.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/live/nvidia-live-updates-jensen-huang-resigns-cfo-colette-kress-to-serve-as-interim-ceo-140341430.html",
+      "yayin": "2026-11-12",
+      "konular": [
+        "pazar",
+        "cip"
+      ],
+      "kategori": "negatif"
+    }
+  ]
+}

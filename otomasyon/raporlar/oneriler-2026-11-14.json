@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-11-14",
+  "oneriler": [
+    {
+      "baslik": "Haberler'e kaynak türü süzgeci ekle (Bugün maddeleri / Ek haberler)",
+      "neden": "src/data/haberler.json'daki 369 haberin 217'si 'bugun', 152'si 'ek' kaynakTuru taşıyor; Haberler.jsx bu alanı yalnızca rozet için kullanıyor, süzgeç yok. Bugün eklenen 7 ek haber, 10 Bugün maddesinin arasında kayboluyor.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bugün sayfasından günün ek haberlerine bağlantı ver",
+      "neden": "Bugün.jsx haberler.json'u okumuyor; bugün Haberler akışına Bugün'e girmeyen 7 doğrulanmış ek haber eklendi ama Bugün sayfasında bunlara işaret yok.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Onay bekleyen 23 öneri PR'ını gözden geçir",
+      "neden": "Rapor 23 açık PR gösteriyor (#58–#88). Son günlerde testleri geçen öneriler bile 'Merge Without Review' izin denetimi yüzünden otomatik birleşemiyor (uygulanan.json, 12–13 Kasım kayıtları); kuyruk her gün 2 büyüyor.",
+      "etki": "yüksek",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Az sağlayıcılı modellerde %50'yi aşan fiyat hareketlerini işaretle",
+      "neden": "Bugün Nvidia A4000 medyanı 0,76 → 0,28 $/saat (−%63) oldu; 9 sağlayıcısı olduğu için ne şüpheli eşiğine (≥10) ne de AZ_SAGLAYICI=5 soluklaştırmasına giriyor ve tabloda sıradan bir düşüş gibi görünüyor. (3 Kasım'daki 'sert oynama' önerisi hâlâ açık PR olarak bekliyor.)",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Bellek sözleşme fiyatlarını güncelle",
+      "neden": "İyileştirme ajanı bellek_fiyat.json'un 22 gündür güncellenmediğini bildiriyor; bugünkü aramada TrendForce'un 4Ç26 tahminine ait birincil kaynak açılamadı, veri yazılmadı.",
+      "etki": "düşük",
+      "alan": "veri"
+    }
+  ]
+}
