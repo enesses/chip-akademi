@@ -144,6 +144,10 @@ export default function Bugun() {
                 <li key={i} className="flex items-start gap-4 px-5 py-3.5">
                   <div className="w-24 shrink-0">
                     <p className="text-sm font-medium tabular-nums">{tarihYaz(o.tarih)}</p>
+                    {o.saat && (
+                      // İsteğe bağlı: kaynakta saat yazıyorsa (ör. "13:20 PT · TSİ 18 Kasım 00:20") gösterilir.
+                      <p className="text-[11px] text-muted-foreground tabular-nums" data-testid="yaklasan-saat">{o.saat}</p>
+                    )}
                     <p className={cn("text-xs", k <= 1 ? "text-primary" : "text-muted-foreground")}>
                       {k === 0 ? "bugün" : k === 1 ? "yarın" : `${k} gün sonra`}
                     </p>
