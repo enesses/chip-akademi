@@ -980,6 +980,26 @@
       "ozet": "Bugün sayfasındaki Haberler bağlantısı günün ek haber sayısını gösteriyor",
       "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-15",
+      "oneri": "Yaklaşan olaylarda isteğe bağlı saat ve saat dilimini göster",
+      "durum": "acik",
+      "pr": 92,
+      "dal": "otomasyon/oneri-2026-11-15-1",
+      "ozet": "Bugun.jsx yaklaşan olaylarda isteğe bağlı saat metnini tarih altında gösteriyor",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-15",
+      "oneri": "Kataloğa yeni eklenen fiyat satırlarına ölçüm tarihi yaz",
+      "durum": "acik",
+      "pr": 91,
+      "dal": "otomasyon/duzeltme-2026-11-15",
+      "ozet": "veri-isle.mjs yeni satırlara olcum_tarihi yazıyor",
+      "neden": "Korunan dosya (otomasyon/) içeriyor; testler geçti, kullanıcı onayı bekliyor.",
+      "kim": "otomasyon"
     }
   ]
 }

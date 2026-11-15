@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-15T07:02:45.641Z",
+  "guncelleme": "2026-11-15T07:04:46.252Z",
   "tarih": "2026-11-15",
   "durum": "dikkat",
   "ajanlar": [
@@ -40,7 +40,7 @@
     {
       "seviye": "dikkat",
       "tur": "onay",
-      "metin": "25 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65, PR #70, PR #71, PR #72, PR #73, PR #74, PR #75, PR #76, PR #77, PR #78, PR #79, PR #81, PR #82, PR #83, PR #84, PR #85, PR #86, PR #87, PR #88, PR #89, PR #90) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+      "metin": "27 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65, PR #70, PR #71, PR #72, PR #73, PR #74, PR #75, PR #76, PR #77, PR #78, PR #79, PR #81, PR #82, PR #83, PR #84, PR #85, PR #86, PR #87, PR #88, PR #89, PR #90, PR #91, PR #92) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
   "oneriler": [
@@ -75,7 +75,28 @@
       "alan": "veri"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-11-15",
+      "oneri": "Yaklaşan olaylarda isteğe bağlı saat ve saat dilimini göster",
+      "durum": "acik",
+      "pr": 92,
+      "dal": "otomasyon/oneri-2026-11-15-1",
+      "ozet": "Bugun.jsx yaklaşan olaylarda isteğe bağlı saat metnini tarih altında gösteriyor",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-15",
+      "oneri": "Kataloğa yeni eklenen fiyat satırlarına ölçüm tarihi yaz",
+      "durum": "acik",
+      "pr": 91,
+      "dal": "otomasyon/duzeltme-2026-11-15",
+      "ozet": "veri-isle.mjs yeni satırlara olcum_tarihi yazıyor",
+      "neden": "Korunan dosya (otomasyon/) içeriyor; testler geçti, kullanıcı onayı bekliyor.",
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Fiyat tablosunda Değişim sıralamasına 'en çok düşen önce' yönü ekle",
@@ -229,6 +250,20 @@
       "durum": "acik",
       "pr": 90,
       "tarih": "2026-11-14",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Yaklaşan olaylarda isteğe bağlı saat ve saat dilimini göster",
+      "durum": "acik",
+      "pr": 92,
+      "tarih": "2026-11-15",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Kataloğa yeni eklenen fiyat satırlarına ölçüm tarihi yaz",
+      "durum": "acik",
+      "pr": 91,
+      "tarih": "2026-11-15",
       "kim": "otomasyon"
     }
   ],
@@ -407,6 +442,20 @@
       "tarih": "2026-11-14",
       "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
       "dal": "otomasyon/oneri-2026-11-14-2"
+    },
+    {
+      "pr": 91,
+      "oneri": "Kataloğa yeni eklenen fiyat satırlarına ölçüm tarihi yaz",
+      "tarih": "2026-11-15",
+      "neden": "Korunan dosya (otomasyon/) içeriyor; testler geçti, kullanıcı onayı bekliyor.",
+      "dal": "otomasyon/duzeltme-2026-11-15"
+    },
+    {
+      "pr": 92,
+      "oneri": "Yaklaşan olaylarda isteğe bağlı saat ve saat dilimini göster",
+      "tarih": "2026-11-15",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "dal": "otomasyon/oneri-2026-11-15-1"
     }
   ],
   "guvenlik": {
