@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-11-15",
+  "oneriler": [
+    {
+      "baslik": "Kataloğa yeni eklenen fiyat satırlarına ölçüm tarihi yaz",
+      "neden": "otomasyon/veri-isle.mjs (\"Katalogda olmayan yeni modeller\" döngüsü) yeni satırı olcum_tarihi olmadan ekliyor. Bugün eklenen 9 model (AMD MI350P, 5 Radeon RX, RTX 5050, GTX 1660 Ti, T600) aynı gün ölçüldüğü hâlde Prices.jsx'te 'ölçüm tarihi yok' uyarısıyla göründü; ertesi gün de olcum_tarihi olmadığı için 'eski kural'la işleniyor. Bugünkü veride elle düzeltildi, kod düzeltmesi ayrı PR'da.",
+      "etki": "yüksek",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Onay bekleyen 25 öneri PR'ını birleştir ya da kapat",
+      "neden": "uygulanan.json'a göre 2 Kasım'dan beri hiçbir öneri kendiliğinden birleşmedi (izin denetimi: 'Merge Without Review'); rapor 25 açık PR gösteriyor (#58–#90). Bazıları aynı dosyalara (Prices.jsx, Bugun.jsx) dokunduğu için bekledikçe çakışma riski büyüyor. Ya Otomasyon sayfasındaki Onayla düğmeleriyle kuyruk eritilmeli ya da bu oturumların birleştirme izni açılmalı; aksi hâlde her gün 2 PR daha birikiyor.",
+      "etki": "yüksek",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Yeni eklenen modellerde değişimi 'sabit' yerine 'yeni' göster",
+      "neden": "veri-isle.mjs yeni satırı degisim_pct: 0, onceki_usd: null ile yazıyor; Prices.jsx degisim_pct === 0 ise 'sabit' yazıyor. Bugün eklenen 9 modelin hepsi tabloda 'sabit' görünüyor, oysa önceki ölçüm yok. Açık PR #82 ('yeni' rozeti) birleşirse bu da çözülür; birleşmezse onceki_usd == null kontrolü yeterli.",
+      "etki": "orta",
+      "alan": "fiyat"
+    },
+    {
+      "baslik": "Yaklaşan olaylarda isteğe bağlı saat ve saat dilimini göster",
+      "neden": "Nvidia 3. çeyrek sonuçları 17 Kasım 13:20 PT'de açıklanıyor; bu Türkiye saatiyle 18 Kasım 00:20. Bugun.jsx yaklaşan olayı yalnızca tarihle ve kalanGun() ile gösteriyor, saat alanı yok; kullanıcı sonucu bir gün erken bekleyebilir. Şema isteğe bağlı 'saat' alanını zaten engellemiyor (veri-isle.mjs yalnızca tarihi doğruluyor).",
+      "etki": "düşük",
+      "alan": "bugun"
+    },
+    {
+      "baslik": "Bellek sözleşme fiyatlarını güncelle",
+      "neden": "İyileştirme ajanı bellek_fiyat.json'un 23 gündür güncellenmediğini bildiriyor (guncelleme: 2026-10-23); bugün TrendForce aramasında 4Ç26/1Ç27 için yeni bir birincil açıklama çıkmadı, veri yazılmadı. Yarın pazartesi kontrolünde yeniden bakılmalı.",
+      "etki": "düşük",
+      "alan": "veri"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "tarih": "2026-11-15",
+  "haberler": [
+    {
+      "baslik": "Malezya, veri merkezlerine elektrik kullanımı ve GPU ithalatını açıklama zorunluluğu getirecek",
+      "detay": "Ticaret Bakanı Johari Abdul Ghani, yeni yasayla veri merkezlerinin elektrik tüketimini ve ithal GPU sayısını bildirmesinin zorunlu olacağını söyledi; onaylanan 117 projeden 55'i faaliyette. Kullanılmayan rezerve kapasite için de ücret alınacak; amaç ABD kısıtlamalı çiplerin yeniden ihracını önlemek.",
+      "kaynak": "Malay Mail",
+      "url": "https://www.malaymail.com/news/malaysia/2026/11/12/malaysia-to-make-data-centre-operators-disclose-power-use-gpu-imports-under-new-law-says-johari-ghani/242961",
+      "yayin": "2026-11-12",
+      "konular": [
+        "politika",
+        "veri-merkezi"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Kore'nin ekim ICT ihracatı üç katına çıkarak 70,35 milyar dolara ulaştı",
+      "detay": "Kore'nin bilgi ve iletişim teknolojileri ihracatı ekimde 70,35 milyar dolar oldu; bir yıl önce 23,29 milyar dolardı. Aynı gün KOSPI %0,61 düşüşle 5.342,73'ten kapandı.",
+      "kaynak": "Korea JoongAng Daily",
+      "url": "https://www.koreajoongangdaily.com/business/live-samsung-sk-hynix-split-on-nvidia-turmoil-as-kospi-slides/12968391",
+      "yayin": "2026-11-12",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Dört sivil toplum kuruluşu, yapay zekâ şirketlerine yeni model eğitimini durdurma davası açtı",
+      "detay": "Public Citizen, Heat Initiative ve diğer iki kuruluş, Anthropic, Google, Meta, OpenAI ve SpaceX'e karşı San Francisco'da dava açarak insan kontrolü kanıtlanana kadar yeni model eğitimi ve dağıtımının durdurulması için ihtiyati tedbir istedi.",
+      "kaynak": "BYOBOT AI Daily Newsstand (Al Jazeera ve ABC News'e atıfla)",
+      "url": "https://byobot.ai/ai-news/ai-daily-newsstand-november-14-2026",
+      "yayin": "2026-11-14",
+      "konular": [
+        "yapay-zeka",
+        "politika"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "SpaceX 74 milyar dolarlık veri merkezi kampüsleri planlıyor",
+      "detay": "NYT'ye dayanan özete göre SpaceX, kendi enerjisiyle Starbase'de (Teksas) 24 milyar, Arizona Cochise County'de ilçe onayı bekleyen 50 milyar dolarlık kampüs planlıyor. ABD Senatosu da büyük veri merkezlerine daha fazla şebeke maliyeti yükleyen izin yasası için 73-25 oyla görüşmeyi açtı.",
+      "kaynak": "The & Report (NYT ve Reuters'a atıfla)",
+      "url": "https://jpatoconnell.substack.com/p/the-and-report-46-november-14-2026",
+      "yayin": "2026-11-14",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Lutnick, Megaspeed çip kaçakçılığı iddiaları için 10 Aralık'ta Senato'da ifade verecek",
+      "detay": "Ticaret Bakanı Howard Lutnick, gelişmiş Nvidia çiplerini Çin'e yönlendirmekle suçlanan Megaspeed konusunda Senato Bankacılık Komitesi'nde ifade vermeyi kabul etti. Nvidia hissesi cuma %2,01 düşüşle 162,85 dolardan kapandı; altıncı haftalık kayıp.",
+      "kaynak": "Nocta Daily Brief",
+      "url": "https://noctaaa.substack.com/p/daily-brief-saturday-14-november-2026",
+      "yayin": "2026-11-14",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Microsoft 365 ve Copilot uzun kesintinin ardından geri geldi",
+      "detay": "Microsoft 365 hizmetleri Copilot dahil iki güne yayılan kesintinin ardından yeniden çalışıyor; aynı bültene göre CoreWeave 4 milyar dolarlık kredi aldı, Samsung'un Modine'i satın alma görüşmeleri sürüyor.",
+      "kaynak": "Deep Gains Morning Brief",
+      "url": "https://deepgains.substack.com/p/morning-brief-saturday-november-14-aef",
+      "yayin": "2026-11-14",
+      "konular": [
+        "yapay-zeka",
+        "veri-merkezi"
+      ],
+      "kategori": "notr"
+    }
+  ]
+}

@@ -1,127 +1,121 @@
 {
-  "tarih": "2026-11-14",
-  "derlenme": "14 Kasım 2026",
+  "tarih": "2026-11-15",
+  "derlenme": "15 Kasım 2026",
   "puan": {
-    "etiket": "Nvidia krizi rakiplere de sıçradı",
-    "yorum": "Rakiplere kayan para cuma günü geri çekildi; ihracat kısıtlamalarında Kongre'nin sertleşmesi ve yükselen faizler sektörü bastırırken HBM4 verimi ve Anthropic halka arzı olumlu kaldı.",
-    "deger": 29
+    "etiket": "Bilanço öncesi sessiz pazar: gözler 17 Kasım'da",
+    "yorum": "Nvidia'da halef arayışı ve girişim finansmanı kaygısı ile Kore'de kredili işlem yığılması baskı yaratırken TSMC'nin ekim büyümesi ve Micron'a dönük güçlü bellek görüşü dengeyi koruyor.",
+    "deger": 50
   },
   "ozet": [
-    "Haftanın son işlem günü, Nvidia'daki yönetim krizinin etkisinin sektöre yayıldığı gün oldu. Nvidia 162,85 dolarla haftayı yaklaşık %12,75 kayıpla kapattı ve piyasa değeri 4 trilyon doların altında kaldı; HSBC'nin hedef fiyatı 365 dolardan 170 dolara indirmesi baskıyı artırdı.",
-    "Hafta boyunca Nvidia'dan çıkan para AMD ve Broadcom'a akmıştı; cuma günü bu hareket tersine döndü. AMD %8,75 düştü, Kore'de KOSPI 5.500'den geri çekilirken SK hynix %3 kaybetti. Ekim ÜFE'sinin yıllık %6,5 olması ve 10 yıllık faizin %5,17'ye çıkması da yüksek değerlemeli teknoloji hisselerini zorladı.",
-    "Politika cephesinde Washington'da ihracat kontrollerini sıkılaştırma konusunda bir fikir birliği oluşuyor: dört ayrı tasarı masada ve NDAA'ya eklenmeleri gündemde. TechCrunch'ın aktardığı araştırma, Çin'in en güçlü açık modellerinin yasaklı Blackwell çiplerinde eğitilmiş olabileceğini öne sürüyor; Çin ise yeni kısıtlamalara karşı uyardı.",
-    "Olumlu tarafta SK hynix'in HBM4 veriminin %70'i aştığı bildiriliyor ve Anthropic halka arzı için 70–78 dolar aralığını belirledi. Gözler 17 Kasım'daki Nvidia bilançosunda."
+    "Hafta sonu yeni bir şok gelmedi; gündem, Jensen Huang'ın istifasının bıraktığı boşluğu kimin dolduracağı ve 17 Kasım'daki Nvidia bilançosu etrafında dönüyor. Financial Times'a göre Nvidia yönetim kurulu, şirketin eski çalışanı olan Arm CEO'su Rene Haas'a yaklaştı; ancak resmi bir teklif olup olmadığı belirsiz.",
+    "Huang'ın ayrılığının etkisi yalnızca hisseyle sınırlı değil. PitchBook verisine göre Nvidia bu yıl 105 yatırım turuna katıldı; yatırımcılar geçici CEO Colette Kress döneminde bu musluğun kısılmasından, özellikle GPU maliyetini Nvidia'nın sübvanse ettiği neocloud ve çıkarım girişimlerinde değerleme düzeltmesinden çekiniyor. Michael Burry ise karışıklıktan AMD ve Broadcom'un kazançlı çıkabileceğini savunuyor.",
+    "Kore tarafında risk birikiyor: Samsung ve SK hynix'e bağlı kredili işlem borcu yaklaşık 7 trilyon won'a ulaştı ve piyasadaki toplamın %27,2'sini oluşturuyor; iki hisse haziran zirvesinden %40–58 düşmüş durumda. Samsung'un Onyang'daki 34 milyar dolarlık HBM paketleme yatırımı ise 2028–2029'da arz fazlası tartışmasını başlattı.",
+    "Öte yandan temel veriler hâlâ güçlü: TSMC'nin ekim geliri yıllık yaklaşık %60 arttı, Bernstein Micron için 1.300 dolarlık hedefle 'Al' notunu yineledi. AMD'nin yarı DRAM ile aynı sunucu performansını hedefleyen MEXT motoru ve Rapidus'un 2 nm gofreti TSMC'den ucuza sunma iddiası da tedarik zincirinde rekabetin arttığını gösteriyor."
   ],
   "maddeler": [
     {
-      "baslik": "Nvidia haftayı %12,75 kayıpla kapattı, değeri 4 trilyon doların altında",
-      "detay": "Nvidia cuma günü %2,01 düşüşle 162,85 dolardan kapandı; Huang'ın istifasıyla geçen haftada yaklaşık %12,75 kaybetti. HSBC hisseyi 'Tut'a indirip hedef fiyatı 365 dolardan 170 dolara çekti. Aynı gün ABD üretici fiyatları ekimde %0,3 arttı (yıllık %6,5), 10 yıllık tahvil faizi %5,17'ye çıktı.",
-      "kategori": "negatif",
-      "agirlik": 3,
-      "neden": "Sektörün lideri hem yönetim krizini hem analist not indirimini yaşıyor; yükselen faizler yüksek değerlemeli çip hisselerine ek baskı yapıyor.",
-      "kaynak": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
-    },
-    {
-      "baslik": "AMD gün içi kazancını silip %8,75 düştü",
-      "detay": "AMD 13 Kasım'da 534,06 dolardan kapandı (−51,24 dolar); hacim ortalamanın yaklaşık %98 üstündeydi. S&P 500 %0,40, Nasdaq %0,91 geriledi. Hisse hafta içinde %30'a kadar yükselmişti.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "Nvidia'dan rakiplere kayan para cuma günü kâr satışıyla geri çekildi; AI çip sepetinde genel satış.",
-      "kaynak": "The Motley Fool",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/13/stock-market-today-nov-13-amd-sinks-8-75-on-sector-ai-chip-sell-off-after-early-gains-reverse/"
-    },
-    {
-      "baslik": "Kongre'de çip ihracatını sınırlama konusunda 'fikir birliği' oluşuyor",
-      "detay": "Meclis Başkanı Mike Johnson Çin'e çip ihracatını kısıtlamada gelişen bir fikir birliği olduğunu söyledi. Masada AI Overwatch Act, Chip Security Act, Match Act ve Remote Access Security Act var; Cumhuriyetçiler bunları NDAA'ya eklemek istiyor. Çinli AI hisselerinden Z.AI %12, MiniMax %8,4 düştü.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "Yeni yasal kısıtlamalar ABD'li çip üreticilerinin Çin ve uzaktan erişim gelirini daraltabilir.",
-      "kaynak": "Business Standard (Reuters)",
-      "url": "https://www.business-standard.com/amp/world-news/us-lawmakers-push-for-tougher-curbs-on-advanced-ai-chip-exports-to-china-126111300657_1.html"
-    },
-    {
-      "baslik": "Huang'dan 1 Aralık'ta kapalı oturumda ifade istendi",
-      "detay": "Meclis Çin Komitesi Başkanı Moolenaar, Huang'ın 1 Aralık'ta kapalı kapılar ardında ifade vermesini istedi; tarih kabul edilmezse celp gönderilecek. Senato Bankacılık Komitesi Huang'ı 3 Aralık'ta, Ticaret Bakanı Lutnick'i 10 Aralık'ta çağırdı.",
+      "baslik": "Nvidia yönetim kurulu, Huang'ın halefi için Arm CEO'su Rene Haas'a yaklaştı",
+      "detay": "Financial Times'a dayanan habere göre Haas birkaç aday arasında; resmi teklif yapılıp yapılmayacağı belirsiz. Haas 2013'e kadar yaklaşık yedi yıl Nvidia'da çalıştı. Nvidia'nın yaklaşık 42.000, Arm'ın 10.000 çalışanı var. Geçici CEO Colette Kress.",
       "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Soruşturmanın takvimi netleşiyor; sonuç belirsiz, yeni bir kısıt henüz yok.",
-      "kaynak": "Roll Call",
-      "url": "https://rollcall.com/2026/11/12/calls-for-nvidia-probes-new-chip-export-limits-intensify/"
+      "agirlik": 2,
+      "neden": "Liderlik belirsizliğini giderme yönünde bir adım olabilir ama henüz bir karar yok.",
+      "kaynak": "Tom's Hardware / Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/articles/nvidia-board-reportedly-approached-arm-210000850.html"
     },
     {
-      "baslik": "Araştırma: Çin'in en güçlü açık modelleri yasaklı Blackwell'lerde eğitilmiş olabilir",
-      "detay": "Unemployment Labs'in ağırlık analizine göre Moonshot'un Kimi K3 ve DeepSeek'in V4 modelleri Blackwell izleri taşıyor. Epoch AI'ya göre 2024–2025'te yaklaşık 2 milyon gelişmiş çip dolaylı yollarla Çin'e girdi; Hong Kong'da onay bekleyen yaklaşık 600 bin H200 bulunuyor. Çipler yurt dışı veri merkezlerinde de kullanılmış olabilir.",
+      "baslik": "Nvidia'nın yatırım musluğu soru işareti: bu yıl 105 tura katıldı",
+      "detay": "PitchBook verisine göre Nvidia 2026'da 105 yatırım turuna katıldı. Yatırımcılar Kress döneminde daha temkinli bir Nvidia bekliyor; GPU maliyetinin yaklaşık yarısını Nvidia'nın karşıladığı, 1 milyar doların üzerinde değerlenen neocloud ve çıkarım girişimlerinde değerleme düzeltmesi öngörülüyor.",
       "kategori": "negatif",
       "agirlik": 2,
-      "neden": "İhracat denetiminin delindiği algısı daha sert kısıtlamalar için siyasi baskıyı artırıyor.",
-      "kaynak": "TechCrunch",
-      "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/"
+      "neden": "Yapay zekâ girişim ekosisteminin önemli bir finansman kaynağı zayıflayabilir; bu GPU talebini de dolaylı etkiler.",
+      "kaynak": "Herve Cuviliez bülteni (TechCrunch ve PitchBook'a atıfla)",
+      "url": "https://hervecuviliez.substack.com/p/market-news-sunday-15-november-2026"
     },
     {
-      "baslik": "Çin yeni ABD çip kısıtlamalarına karşı uyardı",
-      "detay": "Çin, Huang skandalının ardından ABD'nin yapay zekâ çiplerine ek ihracat kontrolleri getirmemesi konusunda uyarıda bulundu.",
-      "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Karşılıklı gerilim tırmanıyor ama somut bir yaptırım ya da misilleme açıklanmadı.",
-      "kaynak": "Al Jazeera",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/china-warns-against-fresh-us-chip-curbs"
-    },
-    {
-      "baslik": "SK hynix'te HBM4 verimi %70'i aştı",
-      "detay": "Chosun Biz'in sektör kaynaklarına dayanan haberine göre SK hynix'in altıncı nesil HBM4 üretim verimi %70'in üzerine çıktı; Samsung da çip paketleme kapasitesini genişletiyor.",
-      "kategori": "pozitif",
-      "agirlik": 2,
-      "neden": "Yüksek verim, AI hızlandırıcılarının en dar boğazı olan HBM arzını rahatlatır.",
-      "kaynak": "DIGITIMES",
-      "url": "https://www.digitimes.com/news/a20261113VL217/sk-hynix-hbm4-production-packaging-samsung.html"
-    },
-    {
-      "baslik": "KOSPI 5.500'den geri döndü; SK hynix %3 düştü",
-      "detay": "KOSPI 13 Kasım'ı %0,98 düşüşle 5.290,53'te kapattı; gün içinde 5.500'ü aşmıştı. SK hynix %3,03 düşüşle 1.216.000 won, Samsung Electronics %0,96 düşüşle 206.000 won oldu; düşüşü yabancı satışları getirdi.",
+      "baslik": "Samsung ve SK hynix'e kredili işlem borcu 7 trilyon won'a ulaştı",
+      "detay": "FnGuide verisine göre (12 Kasım) Samsung'da 3,64, SK hynix'te 3,33 trilyon won kredili işlem var; toplam 6,97 trilyon won, KOSPI+KOSDAQ toplamının %27,2'si (yalnız KOSPI'de %36,5). 2023'te bu pay %2,71'di. KOSPI haziran zirvesinden %42, Samsung %41,7, SK hynix %58,3 düştü.",
       "kategori": "negatif",
-      "agirlik": 1,
-      "neden": "Sabahki bellek rallisi kapanışa kadar tutunamadı.",
+      "agirlik": 2,
+      "neden": "Düşen piyasada kaldıraçlı pozisyonların yoğunlaşması zorunlu satış riskini ve oynaklığı artırıyor.",
       "kaynak": "Seoul Economic Daily",
-      "url": "https://en.sedaily.com/market/2026/11/13/kospi-surrenders-5300-line-after-early-gains-fade"
+      "url": "https://en.sedaily.com/market/2026/11/15/margin-debt-on-samsung-sk-hynix-hits-7-trillion-won-27"
     },
     {
-      "baslik": "Anthropic halka arzında 70–78 dolar aralığı, işlem 19 Kasım'da bekleniyor",
-      "detay": "Anthropic hisse başına 70–78 dolar fiyat aralığı belirledi; bu, tam seyreltilmiş bazda yaklaşık 1,4 trilyon dolarlık değerlemeye karşılık geliyor. İşlemlerin 19 Kasım perşembe başlaması bekleniyor.",
+      "baslik": "TSMC'nin ekim geliri yıllık yaklaşık %60 arttı",
+      "detay": "Temmuz–eylülde %45, %53 ve %55 olan yıllık büyüme ekimde yaklaşık %60'a çıktı; ilk 10 ayda gelir %43,3 arttı. TSMC 2026 için 60–64 milyar dolar yatırım planlıyor (2025: 40,9 milyar). SOX endeksi ekim başından beri %17 düştü.",
       "kategori": "pozitif",
       "agirlik": 2,
-      "neden": "Büyük bir AI model şirketinin halka açılması, işlem gücü talebinin finansmanına yeni sermaye kanalı açıyor.",
+      "neden": "Hisse satışına rağmen dökümhane talebi hızlanarak sürüyor; yapay zekâ çip talebinin somut göstergesi.",
       "kaynak": "The Motley Fool",
-      "url": "https://www.fool.com/investing/2026/11/13/anthropic-set-its-ipo-price-range-at-70-to-78-valuing-it-at-up-to-1405-trillion/"
+      "url": "https://www.fool.com/investing/2026/11/13/tsmc-s-terrific-growth-clearly-shows-that-the-chip-sell-off-is-overdone-here-are-the-best-stocks-to-buy-hand-over-fist/"
     },
     {
-      "baslik": "TSMC çalışan verilerinin sızdırıldığını doğruladı",
-      "detay": "TSMC, 12 Kasım tarihli bildirimde çalışan bilgilerinin izinsiz bir sitede göründüğünü doğruladı. Saldırganlar yaklaşık 46.000 kaydı (6,9 GB) 3 Bitcoin'e sattığını iddia ediyor. TSMC iç sistemlerinde ihlal olmadığını, verinin bir bulut sağlayıcısından çıktığını ve üretimin etkilenmediğini söyledi.",
-      "kategori": "negatif",
+      "baslik": "Bernstein, Micron için 'Al' notunu ve 1.300 dolar hedefini yineledi",
+      "detay": "Analist Mark Li, DRAM arz açığının beklenenden keskin ve uzun sürdüğünü savunuyor. Micron'un mali 4. çeyrek geliri 54,23 milyar dolar (bir yıl önce 11,32 milyar), sonraki çeyrek beklentisi yaklaşık 61,5 milyar dolar; piyasa değeri 903 milyar dolar.",
+      "kategori": "pozitif",
       "agirlik": 1,
-      "neden": "Üretimi etkilemese de tedarik zincirinin en kritik halkasında güvenlik açığı.",
-      "kaynak": "Yahoo Finance (GuruFocus)",
-      "url": "https://finance.yahoo.com/technology/ai/articles/tsmc-faces-major-security-scare-115950867.html"
+      "neden": "Bellek döngüsüne dair güçlü kazanç görünürlüğü; ancak not yeni bir yükseltme değil, yineleme.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bernstein-sees-micron-mu-memory-213006767.html"
+    },
+    {
+      "baslik": "Samsung'un 34 milyar dolarlık HBM yatırımı arz fazlası tartışması açtı",
+      "detay": "Samsung Onyang'da ₩46 trilyonluk (≈34 milyar $) HBM paketleme kompleksi planlıyor; beş hat, Haziran 2028'de başlangıç. SK hynix'in Yongin Y2 (₩35,2 trilyon) ve Cheongju M17 (₩19,1 trilyon) yatırımlarıyla birlikte 2028–2029'da arz fazlası riski konuşuluyor. HBM geliri tahmini: 2026'da 50,5, 2027'de 63 milyar dolar.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Bugünkü kıtlığı hafifletmez; uzun vadede fiyat baskısı riski, kısa vadede ekipman üreticilerine sipariş anlamına gelir.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/11/14/samsungs-34-billion-hbm-bet-raises-memory-glut-risks/"
+    },
+    {
+      "baslik": "AMD'nin MEXT motoru yarı DRAM ile sunucu performansının %99'unu hedefliyor",
+      "detay": "Tahmine dayalı bellek motoru MEXT, bir transformer modeli ve flash depolama kullanarak DRAM ihtiyacını yarıya indirmeyi amaçlıyor. 145 sunucuda çalışıyor; 2027'de 2.000 sunucuya çıkarılması planlanıyor.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Pahalı DRAM'e bağımlılığı azaltacak bir yazılım çözümü; ölçeği şimdilik küçük.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/this-week-in-toms-hardware-premium-november-14-2026-mac-studio-versus-dgx-spark-amds-mext-cuts-dram-requirements-in-half-and-the-huang-saga-reaches-critical-mass"
+    },
+    {
+      "baslik": "Michael Burry: Nvidia karışıklığından AMD ve Broadcom kazanabilir",
+      "detay": "Burry'ye göre AMD, bulut şirketlerine hazır ikinci GPU tedarikçisi; Broadcom ise özel çip tasarımıyla Nvidia'ya bağımlılığı azaltıyor. Nvidia'nın yüksek performanslı veri merkezi GPU pazarındaki payı yaklaşık %90. Burry Nasdaq-100 put pozisyonunu iki katına çıkardı.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Pazarın lideri için olumsuz, rakipleri için olumlu bir görüş; sektör toplamına etkisi nötr.",
+      "kaynak": "TheStreet / AOL",
+      "url": "https://www.aol.com/articles/michael-burry-sees-2-chip-003300000.html"
+    },
+    {
+      "baslik": "Rapidus, 2 nm gofreti TSMC'den yaklaşık %30 ucuza sunuyor",
+      "detay": "Japonya'nın devlet destekli Rapidus'u 2 nm gofret için yaklaşık 21.000 dolar istiyor (TSMC ≈30.000 $). Seri üretim hedefi 2027 sonu–2028 başı; 60'tan fazla potansiyel müşteriyle görüşüyor. Bloomberg'e göre henüz işlevsel SRAM hücresi üretemedi. TSMC'nin gofret gelirinin %8'i 2 nm'den geliyor.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Dökümhane rekabeti açısından ilginç ama teknik engeller sürdüğü için yakın vadede etkisi sınırlı.",
+      "kaynak": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/14/why-a-rising-tsmc-challenger-could-reshape-the-chi/"
+    },
+    {
+      "baslik": "Kore rekabet kurumu dokuz çip tasarım yazılımı tedarikçisini cezalandırdı",
+      "detay": "Kore Haksız Ticareti Önleme Komisyonu, ETRI gibi alıcıların 2005–2025 arasındaki 95 EDA yazılımı ihalesinde anlaşan dokuz şirkete (Dahan Tech, Seloco, ED&C dahil) toplam 206 milyon won ceza verdi; şirketler 95 ihalenin 91'ini kazanmıştı.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Küçük ölçekli bir düzenleyici karar; sektöre mali etkisi önemsiz.",
+      "kaynak": "MLex",
+      "url": "https://www.mlex.com/mlex/antitrust/articles/2549689"
     }
   ],
   "yaklasan": [
     {
       "tarih": "2026-11-17",
-      "baslik": "Nvidia 3. çeyrek (FY2027) sonuçları",
-      "kaynak": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/live/nvidia-live-updates-jensen-huang-resigns-cfo-colette-kress-to-serve-as-interim-ceo-140341430.html"
+      "baslik": "Nvidia 3. çeyrek sonuçları (13:20 PT, telekonferans 14:00 PT)",
+      "kaynak": "NVIDIA Investor Relations",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/"
     },
     {
-      "tarih": "2026-11-19",
-      "baslik": "Anthropic hisselerinin işlem görmeye başlaması (beklenen)",
-      "kaynak": "The Motley Fool",
-      "url": "https://www.fool.com/investing/2026/11/13/anthropic-set-its-ipo-price-range-at-70-to-78-valuing-it-at-up-to-1405-trillion/"
-    },
-    {
-      "tarih": "2026-12-16",
-      "baslik": "Micron çeyrek sonuçları",
-      "kaynak": "TIKR",
-      "url": "https://www.tikr.com/ja/blog/micron-soars-6-as-memory-stocks-bounce-back-from-thursdays-17-crash"
+      "tarih": "2026-12-10",
+      "baslik": "Ticaret Bakanı Lutnick'in Senato Bankacılık Komitesi'nde Megaspeed ifadesi",
+      "kaynak": "Nocta Daily Brief",
+      "url": "https://noctaaa.substack.com/p/daily-brief-saturday-14-november-2026"
     }
   ],
   "yontem": {
@@ -129,6 +123,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = -7 · Σ ağırlık = 17 · Puan = 50 + 50 × -0.41 = 29"
+    "hesap": "Σ ağırlık×işaret = +0 · Σ ağırlık = 14 · Puan = 50 + 50 × 0.00 = 50"
   }
 }
