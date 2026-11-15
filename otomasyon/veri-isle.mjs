@@ -153,8 +153,9 @@ if (fs.existsSync(fiyatGirdi)) {
     for (const n of yeni.values()) {
       const model = n.model;
       const slug = model.toLowerCase().replace(/\s+/g, "-");
+      // Ölçüm tarihi yazılmazsa satır aynı gün ölçüldüğü hâlde arayüzde "ölçüm tarihi yok" görünür.
       veri.fiyatlar.push({ model, bellek: "—", vram_gb: null, usd_saat: n.medyan, onceki_usd: null, degisim_pct: 0,
-        saglayici: n.saglayici ?? null, chip_id: null, url: `https://getdeploying.com/gpus/${slug}` });
+        saglayici: n.saglayici ?? null, chip_id: null, url: `https://getdeploying.com/gpus/${slug}`, olcum_tarihi: BUGUN });
       eklenen++;
     }
 
