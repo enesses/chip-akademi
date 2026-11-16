@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-11-15T07:04:46.252Z",
-  "tarih": "2026-11-15",
+  "guncelleme": "2026-11-16T06:56:42.870Z",
+  "tarih": "2026-11-16",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-11-15T07:00:38.305Z"
+      "zaman": "2026-11-16T06:55:03.170Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-11-15T07:00:38.402Z"
+      "zaman": "2026-11-16T06:55:03.272Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-11-15T07:00:37.928Z"
+      "zaman": "2026-11-16T06:55:02.775Z"
     },
     {
       "id": "gelistirme",
@@ -33,7 +33,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-11-15T07:00:53.738Z"
+      "zaman": "2026-11-16T06:55:19.091Z"
     }
   ],
   "dikkat": [
@@ -45,73 +45,38 @@
   ],
   "oneriler": [
     {
-      "baslik": "Kataloğa yeni eklenen fiyat satırlarına ölçüm tarihi yaz",
-      "neden": "otomasyon/veri-isle.mjs (\"Katalogda olmayan yeni modeller\" döngüsü) yeni satırı olcum_tarihi olmadan ekliyor. Bugün eklenen 9 model (AMD MI350P, 5 Radeon RX, RTX 5050, GTX 1660 Ti, T600) aynı gün ölçüldüğü hâlde Prices.jsx'te 'ölçüm tarihi yok' uyarısıyla göründü; ertesi gün de olcum_tarihi olmadığı için 'eski kural'la işleniyor. Bugünkü veride elle düzeltildi, kod düzeltmesi ayrı PR'da.",
-      "etki": "yüksek",
-      "alan": "otomasyon"
-    },
-    {
-      "baslik": "Onay bekleyen 25 öneri PR'ını birleştir ya da kapat",
-      "neden": "uygulanan.json'a göre 2 Kasım'dan beri hiçbir öneri kendiliğinden birleşmedi (izin denetimi: 'Merge Without Review'); rapor 25 açık PR gösteriyor (#58–#90). Bazıları aynı dosyalara (Prices.jsx, Bugun.jsx) dokunduğu için bekledikçe çakışma riski büyüyor. Ya Otomasyon sayfasındaki Onayla düğmeleriyle kuyruk eritilmeli ya da bu oturumların birleştirme izni açılmalı; aksi hâlde her gün 2 PR daha birikiyor.",
-      "etki": "yüksek",
-      "alan": "otomasyon"
-    },
-    {
-      "baslik": "Yeni eklenen modellerde değişimi 'sabit' yerine 'yeni' göster",
-      "neden": "veri-isle.mjs yeni satırı degisim_pct: 0, onceki_usd: null ile yazıyor; Prices.jsx degisim_pct === 0 ise 'sabit' yazıyor. Bugün eklenen 9 modelin hepsi tabloda 'sabit' görünüyor, oysa önceki ölçüm yok. Açık PR #82 ('yeni' rozeti) birleşirse bu da çözülür; birleşmezse onceki_usd == null kontrolü yeterli.",
+      "baslik": "Bugün'de gelişmeleri ağırlığa göre sıralama seçeneği",
+      "neden": "src/pages/Bugun.jsx maddeleri yalnızca JSON sırasıyla gösteriyor; kategori süzgeci var ama sıralama yok. Bugün 10 maddenin 2'si ağırlık 3, 1'i ağırlık 1 — en etkili gelişmeleri öne almak okuru hızlandırır.",
       "etki": "orta",
-      "alan": "fiyat"
+      "alan": "arayüz"
     },
     {
-      "baslik": "Yaklaşan olaylarda isteğe bağlı saat ve saat dilimini göster",
-      "neden": "Nvidia 3. çeyrek sonuçları 17 Kasım 13:20 PT'de açıklanıyor; bu Türkiye saatiyle 18 Kasım 00:20. Bugun.jsx yaklaşan olayı yalnızca tarihle ve kalanGun() ile gösteriyor, saat alanı yok; kullanıcı sonucu bir gün erken bekleyebilir. Şema isteğe bağlı 'saat' alanını zaten engellemiyor (veri-isle.mjs yalnızca tarihi doğruluyor).",
+      "baslik": "Haberler kartlarında bağlantının alan adını göster",
+      "neden": "src/pages/Haberler.jsx kartta yalnızca 'kaynak' metnini gösteriyor (satır 192); bugün 8 ek haberin 2'si bülten (substack) kaynaklı. Alan adı (ör. sedaily.com, substack.com) okurun birincil/ikincil kaynağı ayırt etmesini sağlar.",
       "etki": "düşük",
-      "alan": "bugun"
+      "alan": "arayüz"
     },
     {
-      "baslik": "Bellek sözleşme fiyatlarını güncelle",
-      "neden": "İyileştirme ajanı bellek_fiyat.json'un 23 gündür güncellenmediğini bildiriyor (guncelleme: 2026-10-23); bugün TrendForce aramasında 4Ç26/1Ç27 için yeni bir birincil açıklama çıkmadı, veri yazılmadı. Yarın pazartesi kontrolünde yeniden bakılmalı.",
+      "baslik": "Bellek kartına 'son kontrol' tarihi ekle",
+      "neden": "İyileştirme ajanı 'Bellek fiyatları 24 gündür güncellenmedi' diyor, ama 16 Kasım'da TrendForce basın merkezi kontrol edildi ve yeni sözleşme fiyatı tahmini yoktu (son bellek açıklamaları 6 ve 11 Kasım, oranlı tahmin içermiyor). bellek_fiyat.json'a son_kontrol alanı yazılıp BellekFiyatlari.jsx'te gösterilirse 'güncellenmedi' ile 'yeni veri yok' ayrılır. otomasyon/veri-isle.mjs değişikliği gerektirir (korunan).",
       "etki": "düşük",
       "alan": "veri"
-    }
-  ],
-  "uygulanan": [
-    {
-      "tarih": "2026-11-15",
-      "oneri": "Yaklaşan olaylarda isteğe bağlı saat ve saat dilimini göster",
-      "durum": "acik",
-      "pr": 92,
-      "dal": "otomasyon/oneri-2026-11-15-1",
-      "ozet": "Bugun.jsx yaklaşan olaylarda isteğe bağlı saat metnini tarih altında gösteriyor",
-      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
-      "kim": "otomasyon"
     },
     {
-      "tarih": "2026-11-15",
-      "oneri": "Kataloğa yeni eklenen fiyat satırlarına ölçüm tarihi yaz",
-      "durum": "acik",
-      "pr": 91,
-      "dal": "otomasyon/duzeltme-2026-11-15",
-      "ozet": "veri-isle.mjs yeni satırlara olcum_tarihi yazıyor",
-      "neden": "Korunan dosya (otomasyon/) içeriyor; testler geçti, kullanıcı onayı bekliyor.",
-      "kim": "otomasyon"
+      "baslik": "Bugün puanını önceki günle karşılaştır",
+      "neden": "Puan bugün 38, dün 50; Bugun.jsx ve Home.jsx yalnızca günün puanını gösteriyor. Önceki puan otomasyon/gecmis/bugun-*.json'da var ama src/data'ya taşınmıyor; veri-isle.mjs bugun.json'a 'onceki_puan' yazarsa kartta '▼12' gösterilebilir (korunan dosya içerir).",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Onay bekleyen öneri birikimini azalt",
+      "neden": "Rapor 27 açık öneri PR'ı gösteriyor (#58–#92). 10–15 Kasım kayıtlarının çoğunda neden 'otomatik birleştirme izin denetimince engellendi (Merge Without Review)'. Birbirine dokunan PR'lar bekledikçe çakışma riski artıyor; ya kullanıcı topluca onaylamalı ya da günlük uygulama sayısı onay gelene kadar düşürülmeli.",
+      "etki": "yüksek",
+      "alan": "otomasyon"
     }
   ],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "Fiyat tablosunda Değişim sıralamasına 'en çok düşen önce' yönü ekle",
-      "durum": "birlesti",
-      "pr": 68,
-      "tarih": "2026-11-01",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Ölçüm tarihi olmayan fiyatları da 'eski' olarak işaretle",
-      "durum": "birlesti",
-      "pr": 69,
-      "tarih": "2026-11-01",
-      "kim": "otomasyon"
-    },
     {
       "oneri": "Fiyatlar'da 'Son çekim' kartına yaş ve eski uyarısı ekle",
       "durum": "acik",
@@ -496,7 +461,7 @@
     "bulgular": [
       {
         "alan": "veri",
-        "baslik": "Bellek fiyatları 23 gündür güncellenmedi",
+        "baslik": "Bellek fiyatları 24 gündür güncellenmedi",
         "etki": "düşük",
         "otomatik": false,
         "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
@@ -509,17 +474,17 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 94 model güncellendi, 9 yeni, 3 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu)"
+        "detay": "bu çalıştırmada güncellendi — 95 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 23 gelmedi (eski fiyat korundu)"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 50, 2 yaklaşan olay; haber akışına +10"
+        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 38, 5 yaklaşan olay; haber akışına +10"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+6 haber (akışta 385); bugün toplam 16"
+        "detay": "+6 haber (akışta 401), 2 atlandı: akışta zaten var; bugün toplam 16"
       },
       {
         "ad": "Derleme",
@@ -529,7 +494,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2890 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2901 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -556,11 +521,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-10-30",
-      "durum": "dikkat",
-      "dikkat": 1
-    },
     {
       "tarih": "2026-10-31",
       "durum": "dikkat",
@@ -623,6 +583,11 @@
     },
     {
       "tarih": "2026-11-15",
+      "durum": "dikkat",
+      "dikkat": 1
+    },
+    {
+      "tarih": "2026-11-16",
       "durum": "dikkat",
       "dikkat": 1
     }

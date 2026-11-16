@@ -1,0 +1,98 @@
+{
+  "tarih": "2026-11-16",
+  "haberler": [
+    {
+      "baslik": "LS Electric, ABD'deki bir AI veri merkezi için 94 milyon dolarlık güç ekipmanı sözleşmesi aldı",
+      "detay": "Küresel bir teknoloji şirketinin veri merkezi için 38 kV yüksek ve alçak gerilim şalt ekipmanı (130 milyar won) aşamalı teslim edilecek; şirket DC dağıtım pazarını da hedefliyor.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/business/2026/11/16/ls-electric-wins-94-million-ai-data-center-power-deal",
+      "yayin": "2026-11-16",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Samsung ve SK hynix'e bağlı ELS ürünleri bariyere yaklaşıyor",
+      "detay": "Bariyeri aşmış ürünlerin bakiyesi 86,6 milyar won (SK hynix'e bağlı 23 milyar won); hedge satışlarının KOSPI'ye ek baskı yapabileceği endişesi var. KOSPI 22 Haziran zirvesinden yaklaşık %42 aşağıda.",
+      "kaynak": "The Korea Herald",
+      "url": "https://www.koreaherald.com/article/10938789",
+      "yayin": "2026-11-16",
+      "konular": [
+        "pazar",
+        "bellek"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Bernstein: Sıradan DRAM'in gigabayt fiyatı HBM'yi geçti",
+      "detay": "Bernstein grafiğine göre geleneksel DRAM yaklaşık 25 $/GB, HBM yaklaşık 20 $/GB. Micron'a göre HBM benzer kapasitede yaklaşık üç kat gofret tüketiyor; Idaho fabrikasının ilk çıktısı 2027 ortasında.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/11/15/dram-just-got-more-expensive-than-ai-memory-heres-why-micron-could-soar-in-2027",
+      "yayin": "2026-11-15",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Asia Times: Huang krizi AI çip ticaretini 'güvenilir ticaret' modeline itiyor",
+      "detay": "Analize göre Singapur, Hong Kong, Orta Doğu ve Güneydoğu Asya'daki alıcılara denetim sıkılaşacak; kapsam HBM, ağ ekipmanı, sunucu ve bulut erişimine genişleyebilir. Nvidia kurulu ulusal güvenliğin tehlikeye girdiğine dair bir neden görmediğini söylüyor.",
+      "kaynak": "Asia Times",
+      "url": "https://asiatimes.com/2026/11/toward-a-new-global-ai-chip-order/",
+      "yayin": "2026-11-16",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Morgan Stanley: ABD veri merkezi güç ihtiyacı 2028'de yaklaşık 100 GW olabilir",
+      "detay": "Aynı bültene göre SK hynix Cheongju'da HBM4 kapasitesi için yatırım yapıyor ve IREN'in 2027 harcama planında yaklaşık 6 milyar dolarlık finansman açığı bulunuyor.",
+      "kaynak": "456X Semi-AI Evening Brief",
+      "url": "https://404kresearch.substack.com/p/456x-evening-brief-november-15-2026",
+      "yayin": "2026-11-15",
+      "konular": [
+        "veri-merkezi",
+        "bellek"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Samsung ve STMicroelectronics, SpaceX uydu çipleri için Austin'de 1,9 milyar dolarlık genişleme planlıyor",
+      "detay": "Bültene göre Austin fabrikasındaki genişlemeyle SpaceX için uydu çipleri üretilmesi hedefleniyor; hedef yıl 2030.",
+      "kaynak": "456X Semi-AI Evening Brief",
+      "url": "https://404kresearch.substack.com/p/456x-evening-brief-november-15-2026",
+      "yayin": "2026-11-15",
+      "konular": [
+        "cip"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Mount Thor, Apple silikonlu AI ajan veri merkezleri için 45 milyon dolar topladı",
+      "detay": "Tohum ve A serisi turlarında toplam 45 milyon dolar; şirket AI ajanları için Apple çipli veri merkezleri kuruyor.",
+      "kaynak": "Herve Cuviliez Market News",
+      "url": "https://hervecuviliez.substack.com/p/market-news-monday-16-november-2026",
+      "yayin": "2026-11-16",
+      "konular": [
+        "veri-merkezi",
+        "yapay-zeka"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Runway, 27 milyar parametreli robot modeli Praxis-1'in ağırlıklarını açtı",
+      "detay": "Bültene göre model RoboLab-120 sıralamasında beşinci. Aynı gün Fractile'dan Walter Goodwin, uzun süre çalışan ajanlarda bellek bant genişliğinin ham işlemden daha büyük kısıt olduğunu söyledi.",
+      "kaynak": "Herve Cuviliez Market News",
+      "url": "https://hervecuviliez.substack.com/p/market-news-monday-16-november-2026",
+      "yayin": "2026-11-16",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    }
+  ]
+}

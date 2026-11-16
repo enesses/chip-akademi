@@ -1,121 +1,139 @@
 {
-  "tarih": "2026-11-15",
-  "derlenme": "15 Kasım 2026",
+  "tarih": "2026-11-16",
+  "derlenme": "16 Kasım 2026",
   "puan": {
-    "etiket": "Bilanço öncesi sessiz pazar: gözler 17 Kasım'da",
-    "yorum": "Nvidia'da halef arayışı ve girişim finansmanı kaygısı ile Kore'de kredili işlem yığılması baskı yaratırken TSMC'nin ekim büyümesi ve Micron'a dönük güçlü bellek görüşü dengeyi koruyor.",
-    "deger": 50
+    "etiket": "Bilanço arifesinde satış dalgası",
+    "yorum": "Bessent'in Nvidia'ya baskısı, NAND fiyat düşüşü ve DRAM davası Asya çip hisselerini sert düşürdü; Microsoft–Cerebras, Anthropic'in AMD geçişi ve 'ulusal şampiyon' planı ise alternatif tedarikçiler için olumlu.",
+    "deger": 38
   },
   "ozet": [
-    "Hafta sonu yeni bir şok gelmedi; gündem, Jensen Huang'ın istifasının bıraktığı boşluğu kimin dolduracağı ve 17 Kasım'daki Nvidia bilançosu etrafında dönüyor. Financial Times'a göre Nvidia yönetim kurulu, şirketin eski çalışanı olan Arm CEO'su Rene Haas'a yaklaştı; ancak resmi bir teklif olup olmadığı belirsiz.",
-    "Huang'ın ayrılığının etkisi yalnızca hisseyle sınırlı değil. PitchBook verisine göre Nvidia bu yıl 105 yatırım turuna katıldı; yatırımcılar geçici CEO Colette Kress döneminde bu musluğun kısılmasından, özellikle GPU maliyetini Nvidia'nın sübvanse ettiği neocloud ve çıkarım girişimlerinde değerleme düzeltmesinden çekiniyor. Michael Burry ise karışıklıktan AMD ve Broadcom'un kazançlı çıkabileceğini savunuyor.",
-    "Kore tarafında risk birikiyor: Samsung ve SK hynix'e bağlı kredili işlem borcu yaklaşık 7 trilyon won'a ulaştı ve piyasadaki toplamın %27,2'sini oluşturuyor; iki hisse haziran zirvesinden %40–58 düşmüş durumda. Samsung'un Onyang'daki 34 milyar dolarlık HBM paketleme yatırımı ise 2028–2029'da arz fazlası tartışmasını başlattı.",
-    "Öte yandan temel veriler hâlâ güçlü: TSMC'nin ekim geliri yıllık yaklaşık %60 arttı, Bernstein Micron için 1.300 dolarlık hedefle 'Al' notunu yineledi. AMD'nin yarı DRAM ile aynı sunucu performansını hedefleyen MEXT motoru ve Rapidus'un 2 nm gofreti TSMC'den ucuza sunma iddiası da tedarik zincirinde rekabetin arttığını gösteriyor."
+    "Haftaya Asya'da sert bir çip satışıyla girildi. SK hynix %7,6, Samsung %4,9 düştü, KOSPI 5.000 seviyesine geriledi; Japonya'da Advantest ve Lasertec yüzde 10 civarında kaybetti. Satışın arka planında Nvidia'nın salı günkü bilançosu öncesi biriken belirsizlik var.",
+    "Bu belirsizliğin merkezinde siyaset var: ABD Hazine Bakanı Bessent, Huang'ın istifasından üç gün sonra Nvidia'ya dışarıdan bir CEO bulmasını ve Çin satışlarını 10 gün içinde açıklamasını istedi. Öte yandan yönetimin Nvidia, Microsoft, OpenAI ve Anthropic'i 'AI ulusal şampiyonu' ilan edip ihracat lisanslarını hızlandırma planı, ABD şirketlerine destek mesajı veriyor.",
+    "Bellek tarafında iki ayrı baskı birleşti: Bank of America NAND spot fiyatlarının ekimden bu yana yaklaşık %20 düştüğünü söylerken (DRAM tahmini korunuyor), ABD'de bir mahkeme üç büyük DRAM üreticisinin fiyat anlaşması davasını reddetme talebini geri çevirdi.",
+    "Tedarik çeşitlenmesi günün diğer teması: Microsoft Cerebras ile ortaklık kurdu, Anthropic de Claude'u AMD MI355'e üç günde taşıdığını açıkladı. Yönü bu hafta Nvidia'nın rehberi, FOMC tutanakları ve 19 Kasım'daki Anthropic halka arzı belirleyecek."
   ],
   "maddeler": [
     {
-      "baslik": "Nvidia yönetim kurulu, Huang'ın halefi için Arm CEO'su Rene Haas'a yaklaştı",
-      "detay": "Financial Times'a dayanan habere göre Haas birkaç aday arasında; resmi teklif yapılıp yapılmayacağı belirsiz. Haas 2013'e kadar yaklaşık yedi yıl Nvidia'da çalıştı. Nvidia'nın yaklaşık 42.000, Arm'ın 10.000 çalışanı var. Geçici CEO Colette Kress.",
-      "kategori": "notr",
-      "agirlik": 2,
-      "neden": "Liderlik belirsizliğini giderme yönünde bir adım olabilir ama henüz bir karar yok.",
-      "kaynak": "Tom's Hardware / Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/articles/nvidia-board-reportedly-approached-arm-210000850.html"
+      "baslik": "ABD Hazine Bakanı Bessent, Nvidia'ya dışarıdan CEO ve Çin satışları için 10 gün süre istedi",
+      "detay": "Bessent 15 Kasım'da Nvidia'da 'köklü bir değişiklik' çağrısı yaptı; Jensen Huang'ın istifasından üç gün sonra yönetim kurulundan halefi şirket dışından seçmesini ve Çin çip satışlarına ilişkin yanıtları 10 gün içinde vermesini istedi.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "Sektörün en büyük şirketinde yönetim ve düzenleme belirsizliğini artırıyor.",
+      "kaynak": "DIGITIMES",
+      "url": "https://www.digitimes.com/news/a20261116VL208/nvidia-ceo-sales-revenue-earnings.html"
     },
     {
-      "baslik": "Nvidia'nın yatırım musluğu soru işareti: bu yıl 105 tura katıldı",
-      "detay": "PitchBook verisine göre Nvidia 2026'da 105 yatırım turuna katıldı. Yatırımcılar Kress döneminde daha temkinli bir Nvidia bekliyor; GPU maliyetinin yaklaşık yarısını Nvidia'nın karşıladığı, 1 milyar doların üzerinde değerlenen neocloud ve çıkarım girişimlerinde değerleme düzeltmesi öngörülüyor.",
+      "baslik": "Samsung %4,85, SK hynix %7,61 düştü; KOSPI 5.000'e geriledi",
+      "detay": "16 Kasım kapanışında Samsung 196.000 won, SK hynix 1.123.500 won, SK Square -%10,10. Yabancılar 1,48 trilyon won net sattı. Nedenler: Nvidia belirsizliği, DRAM davası ve NAND fiyatlarındaki düşüş.",
       "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "Yapay zekâ girişim ekosisteminin önemli bir finansman kaynağı zayıflayabilir; bu GPU talebini de dolaylı etkiler.",
-      "kaynak": "Herve Cuviliez bülteni (TechCrunch ve PitchBook'a atıfla)",
-      "url": "https://hervecuviliez.substack.com/p/market-news-sunday-15-november-2026"
-    },
-    {
-      "baslik": "Samsung ve SK hynix'e kredili işlem borcu 7 trilyon won'a ulaştı",
-      "detay": "FnGuide verisine göre (12 Kasım) Samsung'da 3,64, SK hynix'te 3,33 trilyon won kredili işlem var; toplam 6,97 trilyon won, KOSPI+KOSDAQ toplamının %27,2'si (yalnız KOSPI'de %36,5). 2023'te bu pay %2,71'di. KOSPI haziran zirvesinden %42, Samsung %41,7, SK hynix %58,3 düştü.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "Düşen piyasada kaldıraçlı pozisyonların yoğunlaşması zorunlu satış riskini ve oynaklığı artırıyor.",
+      "agirlik": 3,
+      "neden": "Bellek liderlerinde sert satış, AI yatırım beklentisinin zayıfladığını gösteriyor.",
       "kaynak": "Seoul Economic Daily",
-      "url": "https://en.sedaily.com/market/2026/11/15/margin-debt-on-samsung-sk-hynix-hits-7-trillion-won-27"
+      "url": "https://en.sedaily.com/market/2026/11/16/ai-jitters-drag-samsung-down-5-percent-sk-hynix-7-percent"
     },
     {
-      "baslik": "TSMC'nin ekim geliri yıllık yaklaşık %60 arttı",
-      "detay": "Temmuz–eylülde %45, %53 ve %55 olan yıllık büyüme ekimde yaklaşık %60'a çıktı; ilk 10 ayda gelir %43,3 arttı. TSMC 2026 için 60–64 milyar dolar yatırım planlıyor (2025: 40,9 milyar). SOX endeksi ekim başından beri %17 düştü.",
+      "baslik": "Japon çip ekipmanı hisseleri Nvidia bilançosu öncesi çöktü",
+      "detay": "Advantest %10, Lasertec %9'un üzerinde, Tokyo Electron %5,2 düştü; TSMC -%2,1, Nikkei -%1,6. Nvidia salı günü yaklaşık 109 milyar dolar gelir beklentisiyle sonuç açıklayacak.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Tedarik zincirinde yaygın risk iştahı kaybı.",
+      "kaynak": "Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/asian-chip-stocks-slide-ahead-of-nvidia-earnings-5028327"
+    },
+    {
+      "baslik": "BofA: NAND spot fiyatları ekimden bu yana yaklaşık %20 düştü",
+      "detay": "Bank of America, akıllı telefon üreticileri ve Çinli bulut sağlayıcılarından siparişlerin yavaşladığını, NAND beklentilerinin düşürülmesi gerektiğini söyledi; DRAM için 4Ç26 +%8, 1Ç27 +%5 tahminini korudu.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Bellek döngüsünde ilk zayıflama işareti NAND'dan geliyor.",
+      "kaynak": "Seoul Economic Daily (BofA verisi)",
+      "url": "https://en.sedaily.com/market/2026/11/16/samsung-falls-3-percent-sk-hynix-5-percent-on-nand-price"
+    },
+    {
+      "baslik": "DRAM fiyat anlaşması davası ret talebini aştı",
+      "detay": "Kaliforniya Kuzey Bölge Mahkemesi (Yargıç Noël Wise) Samsung, Micron ve SK hynix'in ret talebini 14 Kasım'da reddetti. Davacılar üç şirketin DRAM gelirinin %91'inden fazlasını kontrol ettiğini ve fiyatların 18 ayda %697 arttığını iddia ediyor.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Bellek üreticileri için hukuki ve fiyatlama riski.",
+      "kaynak": "Wccftech",
+      "url": "https://wccftech.com/federal-judge-rejects-memory-makers-defense-samsung-micron-sk-hynix-dram-shortage-lawsuit/"
+    },
+    {
+      "baslik": "ABD, Nvidia ve Microsoft dahil 25'ten fazla şirketi 'AI ulusal şampiyonu' ilan edecek",
+      "detay": "WSJ'ye dayanan habere göre Nvidia, Amazon, Microsoft, OpenAI ve Anthropic ile yirmiden fazla şirket hızlandırılmış ihracat lisansı, uluslararası destek ve federal fonlara erişim alacak; duyuruyu Ticaret Bakanı Lutnick yapacak.",
       "kategori": "pozitif",
       "agirlik": 2,
-      "neden": "Hisse satışına rağmen dökümhane talebi hızlanarak sürüyor; yapay zekâ çip talebinin somut göstergesi.",
-      "kaynak": "The Motley Fool",
-      "url": "https://www.fool.com/investing/2026/11/13/tsmc-s-terrific-growth-clearly-shows-that-the-chip-sell-off-is-overdone-here-are-the-best-stocks-to-buy-hand-over-fist/"
+      "neden": "İhracat lisanslarında kolaylık, ABD çip şirketlerinin yurt dışı satışını destekleyebilir.",
+      "kaynak": "The Tribune (ANI/WSJ)",
+      "url": "https://tribuneindia.com/news/ai-chip-exports/trump-administration-to-name-nvidia-microsoft-among-over-two-dozen-ai-national-champions-report"
     },
     {
-      "baslik": "Bernstein, Micron için 'Al' notunu ve 1.300 dolar hedefini yineledi",
-      "detay": "Analist Mark Li, DRAM arz açığının beklenenden keskin ve uzun sürdüğünü savunuyor. Micron'un mali 4. çeyrek geliri 54,23 milyar dolar (bir yıl önce 11,32 milyar), sonraki çeyrek beklentisi yaklaşık 61,5 milyar dolar; piyasa değeri 903 milyar dolar.",
+      "baslik": "Microsoft, Cerebras ile AI altyapı ortaklığı kurdu",
+      "detay": "Cerebras donanımı ve yazılımı Microsoft'un AI altyapısında kullanılacak; Microsoft'un 2026 AI/veri merkezi harcama planı 175–190 milyar dolar. Haber sırasında CBRS %7,27 yükseldi.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Hızlandırıcı tedarikinde çeşitlenme alternatif çip üreticilerine pazar açıyor.",
+      "kaynak": "Simply Wall St / Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/microsoft-msft-strikes-ai-deal-061353570.html"
+    },
+    {
+      "baslik": "Anthropic, Claude'u AMD MI355'e üç günde taşıdığını açıkladı",
+      "detay": "Halka arz sunumundaki slayta göre Claude Mythos Preview, çekirdeklerin tamamını yazarak modeli AMD MI355 GPU'larına üç günde uyarladı; bu iş normalde bir düzine mühendisle 6–12 ay sürüyordu. Hedef Nvidia, AMD, Trainium ve TPU arasında değiştirilebilir bir işlem havuzu.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Yazılım bağımlılığını azaltıp AMD gibi rakiplere kapı açıyor.",
+      "kaynak": "The Motley Fool",
+      "url": "https://fool.com/investing/2026/11/15/anthropic-just-delivered-great-news-for-amd-investors-and-bad-news-for-nvidia"
+    },
+    {
+      "baslik": "Piyasa Nvidia bilançosu, FOMC tutanakları ve Anthropic halka arzını bekliyor",
+      "detay": "Nvidia 17 Kasım'da açıklıyor; 4. çeyrek gelir rehberinin 123,3–124,5 milyar doların üstünde, brüt marjın %74 olması eşik görülüyor. Anthropic halka arzı 70–78 dolar aralığında, fiyatlama 18, Nasdaq işlemi 19 Kasım; değerleme hedefi yaklaşık 1,2 trilyon dolara indirildi.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Yönü belirleyecek olaylar bu hafta; henüz sonuç yok.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/market/2026/11/16/samsung-sk-hynix-stall-before-nvidia-earnings-anthropic-ipo"
+    },
+    {
+      "baslik": "SK Telecom ve Hyosung, gigavat ölçekli AI veri merkezi enerjisi için anlaştı",
+      "detay": "345 kV trafo merkezi bileşenleri ve uzun teslim süreli trafolar için tedarik koordinasyonu, 800 V DC dağıtım testleri planlanıyor. SK Telecom AI veri merkezi kapasitesini 2029'da 5 GW, 2035'te 15 GW'a çıkarmayı hedefliyor.",
       "kategori": "pozitif",
       "agirlik": 1,
-      "neden": "Bellek döngüsüne dair güçlü kazanç görünürlüğü; ancak not yeni bir yükseltme değil, yineleme.",
-      "kaynak": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/bernstein-sees-micron-mu-memory-213006767.html"
-    },
-    {
-      "baslik": "Samsung'un 34 milyar dolarlık HBM yatırımı arz fazlası tartışması açtı",
-      "detay": "Samsung Onyang'da ₩46 trilyonluk (≈34 milyar $) HBM paketleme kompleksi planlıyor; beş hat, Haziran 2028'de başlangıç. SK hynix'in Yongin Y2 (₩35,2 trilyon) ve Cheongju M17 (₩19,1 trilyon) yatırımlarıyla birlikte 2028–2029'da arz fazlası riski konuşuluyor. HBM geliri tahmini: 2026'da 50,5, 2027'de 63 milyar dolar.",
-      "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Bugünkü kıtlığı hafifletmez; uzun vadede fiyat baskısı riski, kısa vadede ekipman üreticilerine sipariş anlamına gelir.",
-      "kaynak": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/11/14/samsungs-34-billion-hbm-bet-raises-memory-glut-risks/"
-    },
-    {
-      "baslik": "AMD'nin MEXT motoru yarı DRAM ile sunucu performansının %99'unu hedefliyor",
-      "detay": "Tahmine dayalı bellek motoru MEXT, bir transformer modeli ve flash depolama kullanarak DRAM ihtiyacını yarıya indirmeyi amaçlıyor. 145 sunucuda çalışıyor; 2027'de 2.000 sunucuya çıkarılması planlanıyor.",
-      "kategori": "pozitif",
-      "agirlik": 1,
-      "neden": "Pahalı DRAM'e bağımlılığı azaltacak bir yazılım çözümü; ölçeği şimdilik küçük.",
-      "kaynak": "Tom's Hardware",
-      "url": "https://www.tomshardware.com/tech-industry/this-week-in-toms-hardware-premium-november-14-2026-mac-studio-versus-dgx-spark-amds-mext-cuts-dram-requirements-in-half-and-the-huang-saga-reaches-critical-mass"
-    },
-    {
-      "baslik": "Michael Burry: Nvidia karışıklığından AMD ve Broadcom kazanabilir",
-      "detay": "Burry'ye göre AMD, bulut şirketlerine hazır ikinci GPU tedarikçisi; Broadcom ise özel çip tasarımıyla Nvidia'ya bağımlılığı azaltıyor. Nvidia'nın yüksek performanslı veri merkezi GPU pazarındaki payı yaklaşık %90. Burry Nasdaq-100 put pozisyonunu iki katına çıkardı.",
-      "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Pazarın lideri için olumsuz, rakipleri için olumlu bir görüş; sektör toplamına etkisi nötr.",
-      "kaynak": "TheStreet / AOL",
-      "url": "https://www.aol.com/articles/michael-burry-sees-2-chip-003300000.html"
-    },
-    {
-      "baslik": "Rapidus, 2 nm gofreti TSMC'den yaklaşık %30 ucuza sunuyor",
-      "detay": "Japonya'nın devlet destekli Rapidus'u 2 nm gofret için yaklaşık 21.000 dolar istiyor (TSMC ≈30.000 $). Seri üretim hedefi 2027 sonu–2028 başı; 60'tan fazla potansiyel müşteriyle görüşüyor. Bloomberg'e göre henüz işlevsel SRAM hücresi üretemedi. TSMC'nin gofret gelirinin %8'i 2 nm'den geliyor.",
-      "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Dökümhane rekabeti açısından ilginç ama teknik engeller sürdüğü için yakın vadede etkisi sınırlı.",
-      "kaynak": "The Motley Fool",
-      "url": "https://www.fool.com/investing/2026/11/14/why-a-rising-tsmc-challenger-could-reshape-the-chi/"
-    },
-    {
-      "baslik": "Kore rekabet kurumu dokuz çip tasarım yazılımı tedarikçisini cezalandırdı",
-      "detay": "Kore Haksız Ticareti Önleme Komisyonu, ETRI gibi alıcıların 2005–2025 arasındaki 95 EDA yazılımı ihalesinde anlaşan dokuz şirkete (Dahan Tech, Seloco, ED&C dahil) toplam 206 milyon won ceza verdi; şirketler 95 ihalenin 91'ini kazanmıştı.",
-      "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Küçük ölçekli bir düzenleyici karar; sektöre mali etkisi önemsiz.",
-      "kaynak": "MLex",
-      "url": "https://www.mlex.com/mlex/antitrust/articles/2549689"
+      "neden": "Veri merkezi enerji darboğazını hafifletmeye dönük somut adım.",
+      "kaynak": "The Korea Times",
+      "url": "https://www.koreatimes.co.kr/business/companies/20261116/sk-telecom-hyosung-team-up-to-build-ai-data-center-power-infrastructure"
     }
   ],
   "yaklasan": [
     {
       "tarih": "2026-11-17",
-      "baslik": "Nvidia 3. çeyrek sonuçları (13:20 PT, telekonferans 14:00 PT)",
-      "kaynak": "NVIDIA Investor Relations",
-      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/"
+      "baslik": "Nvidia 3. çeyrek sonuçları (piyasa kapanışından sonra)",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/market/2026/11/16/samsung-sk-hynix-stall-before-nvidia-earnings-anthropic-ipo"
     },
     {
-      "tarih": "2026-12-10",
-      "baslik": "Ticaret Bakanı Lutnick'in Senato Bankacılık Komitesi'nde Megaspeed ifadesi",
-      "kaynak": "Nocta Daily Brief",
-      "url": "https://noctaaa.substack.com/p/daily-brief-saturday-14-november-2026"
+      "tarih": "2026-11-18",
+      "baslik": "Anthropic halka arz fiyatlaması",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/market/2026/11/16/samsung-sk-hynix-stall-before-nvidia-earnings-anthropic-ipo"
+    },
+    {
+      "tarih": "2026-11-19",
+      "baslik": "Anthropic (ANT) Nasdaq'ta işlem görmeye başlıyor; FOMC tutanakları",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/market/2026/11/16/samsung-sk-hynix-stall-before-nvidia-earnings-anthropic-ipo"
+    },
+    {
+      "tarih": "2026-12-07",
+      "baslik": "DRAM antitröst davasında cevap dilekçeleri son günü",
+      "kaynak": "Wccftech",
+      "url": "https://wccftech.com/federal-judge-rejects-memory-makers-defense-samsung-micron-sk-hynix-dram-shortage-lawsuit/"
+    },
+    {
+      "tarih": "2027-01-12",
+      "baslik": "DRAM antitröst davası ilk dava yönetim konferansı",
+      "kaynak": "Wccftech",
+      "url": "https://wccftech.com/federal-judge-rejects-memory-makers-defense-samsung-micron-sk-hynix-dram-shortage-lawsuit/"
     }
   ],
   "yontem": {
@@ -123,6 +141,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = +0 · Σ ağırlık = 14 · Puan = 50 + 50 × 0.00 = 50"
+    "hesap": "Σ ağırlık×işaret = -5 · Σ ağırlık = 21 · Puan = 50 + 50 × -0.24 = 38"
   }
 }

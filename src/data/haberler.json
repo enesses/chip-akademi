@@ -2,6 +2,247 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-11-16-1116vl208-nvidia-ceo-sales-revenue-earnings-html",
+      "tarih": "2026-11-16",
+      "yayin": null,
+      "baslik": "ABD Hazine Bakanı Bessent, Nvidia'ya dışarıdan CEO ve Çin satışları için 10 gün süre istedi",
+      "detay": "Bessent 15 Kasım'da Nvidia'da 'köklü bir değişiklik' çağrısı yaptı; Jensen Huang'ın istifasından üç gün sonra yönetim kurulundan halefi şirket dışından seçmesini ve Çin çip satışlarına ilişkin yanıtları 10 gün içinde vermesini istedi.",
+      "kaynak": "DIGITIMES",
+      "url": "https://www.digitimes.com/news/a20261116VL208/nvidia-ceo-sales-revenue-earnings.html",
+      "ton": "negatif",
+      "konular": [
+        "cip"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-16-s-drag-samsung-down-5-percent-sk-hynix-7-percent",
+      "tarih": "2026-11-16",
+      "yayin": null,
+      "baslik": "Samsung %4,85, SK hynix %7,61 düştü; KOSPI 5.000'e geriledi",
+      "detay": "16 Kasım kapanışında Samsung 196.000 won, SK hynix 1.123.500 won, SK Square -%10,10. Yabancılar 1,48 trilyon won net sattı. Nedenler: Nvidia belirsizliği, DRAM davası ve NAND fiyatlarındaki düşüş.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/market/2026/11/16/ai-jitters-drag-samsung-down-5-percent-sk-hynix-7-percent",
+      "ton": "negatif",
+      "konular": [
+        "bellek",
+        "cip"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-16-ip-stocks-slide-ahead-of-nvidia-earnings-5028327",
+      "tarih": "2026-11-16",
+      "yayin": null,
+      "baslik": "Japon çip ekipmanı hisseleri Nvidia bilançosu öncesi çöktü",
+      "detay": "Advantest %10, Lasertec %9'un üzerinde, Tokyo Electron %5,2 düştü; TSMC -%2,1, Nikkei -%1,6. Nvidia salı günü yaklaşık 109 milyar dolar gelir beklentisiyle sonuç açıklayacak.",
+      "kaynak": "Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/asian-chip-stocks-slide-ahead-of-nvidia-earnings-5028327",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-16-falls-3-percent-sk-hynix-5-percent-on-nand-price",
+      "tarih": "2026-11-16",
+      "yayin": null,
+      "baslik": "BofA: NAND spot fiyatları ekimden bu yana yaklaşık %20 düştü",
+      "detay": "Bank of America, akıllı telefon üreticileri ve Çinli bulut sağlayıcılarından siparişlerin yavaşladığını, NAND beklentilerinin düşürülmesi gerektiğini söyledi; DRAM için 4Ç26 +%8, 1Ç27 +%5 tahminini korudu.",
+      "kaynak": "Seoul Economic Daily (BofA verisi)",
+      "url": "https://en.sedaily.com/market/2026/11/16/samsung-falls-3-percent-sk-hynix-5-percent-on-nand-price",
+      "ton": "negatif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-16-se-samsung-micron-sk-hynix-dram-shortage-lawsuit",
+      "tarih": "2026-11-16",
+      "yayin": null,
+      "baslik": "DRAM fiyat anlaşması davası ret talebini aştı",
+      "detay": "Kaliforniya Kuzey Bölge Mahkemesi (Yargıç Noël Wise) Samsung, Micron ve SK hynix'in ret talebini 14 Kasım'da reddetti. Davacılar üç şirketin DRAM gelirinin %91'inden fazlasını kontrol ettiğini ve fiyatların 18 ayda %697 arttığını iddia ediyor.",
+      "kaynak": "Wccftech",
+      "url": "https://wccftech.com/federal-judge-rejects-memory-makers-defense-samsung-micron-sk-hynix-dram-shortage-lawsuit/",
+      "ton": "negatif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-16-mong-over-two-dozen-ai-national-champions-report",
+      "tarih": "2026-11-16",
+      "yayin": null,
+      "baslik": "ABD, Nvidia ve Microsoft dahil 25'ten fazla şirketi 'AI ulusal şampiyonu' ilan edecek",
+      "detay": "WSJ'ye dayanan habere göre Nvidia, Amazon, Microsoft, OpenAI ve Anthropic ile yirmiden fazla şirket hızlandırılmış ihracat lisansı, uluslararası destek ve federal fonlara erişim alacak; duyuruyu Ticaret Bakanı Lutnick yapacak.",
+      "kaynak": "The Tribune (ANI/WSJ)",
+      "url": "https://tribuneindia.com/news/ai-chip-exports/trump-administration-to-name-nvidia-microsoft-among-over-two-dozen-ai-national-champions-report",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-16-es-microsoft-msft-strikes-ai-deal-061353570-html",
+      "tarih": "2026-11-16",
+      "yayin": null,
+      "baslik": "Microsoft, Cerebras ile AI altyapı ortaklığı kurdu",
+      "detay": "Cerebras donanımı ve yazılımı Microsoft'un AI altyapısında kullanılacak; Microsoft'un 2026 AI/veri merkezi harcama planı 175–190 milyar dolar. Haber sırasında CBRS %7,27 yükseldi.",
+      "kaynak": "Simply Wall St / Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/microsoft-msft-strikes-ai-deal-061353570.html",
+      "ton": "pozitif",
+      "konular": [
+        "yapay-zeka",
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-16-t-news-for-amd-investors-and-bad-news-for-nvidia",
+      "tarih": "2026-11-16",
+      "yayin": null,
+      "baslik": "Anthropic, Claude'u AMD MI355'e üç günde taşıdığını açıkladı",
+      "detay": "Halka arz sunumundaki slayta göre Claude Mythos Preview, çekirdeklerin tamamını yazarak modeli AMD MI355 GPU'larına üç günde uyarladı; bu iş normalde bir düzine mühendisle 6–12 ay sürüyordu. Hedef Nvidia, AMD, Trainium ve TPU arasında değiştirilebilir bir işlem havuzu.",
+      "kaynak": "The Motley Fool",
+      "url": "https://fool.com/investing/2026/11/15/anthropic-just-delivered-great-news-for-amd-investors-and-bad-news-for-nvidia",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-16-hynix-stall-before-nvidia-earnings-anthropic-ipo",
+      "tarih": "2026-11-16",
+      "yayin": null,
+      "baslik": "Piyasa Nvidia bilançosu, FOMC tutanakları ve Anthropic halka arzını bekliyor",
+      "detay": "Nvidia 17 Kasım'da açıklıyor; 4. çeyrek gelir rehberinin 123,3–124,5 milyar doların üstünde, brüt marjın %74 olması eşik görülüyor. Anthropic halka arzı 70–78 dolar aralığında, fiyatlama 18, Nasdaq işlemi 19 Kasım; değerleme hedefi yaklaşık 1,2 trilyon dolara indirildi.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/market/2026/11/16/samsung-sk-hynix-stall-before-nvidia-earnings-anthropic-ipo",
+      "ton": "notr",
+      "konular": [
+        "cip",
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-16--up-to-build-ai-data-center-power-infrastructure",
+      "tarih": "2026-11-16",
+      "yayin": null,
+      "baslik": "SK Telecom ve Hyosung, gigavat ölçekli AI veri merkezi enerjisi için anlaştı",
+      "detay": "345 kV trafo merkezi bileşenleri ve uzun teslim süreli trafolar için tedarik koordinasyonu, 800 V DC dağıtım testleri planlanıyor. SK Telecom AI veri merkezi kapasitesini 2029'da 5 GW, 2035'te 15 GW'a çıkarmayı hedefliyor.",
+      "kaynak": "The Korea Times",
+      "url": "https://www.koreatimes.co.kr/business/companies/20261116/sk-telecom-hyosung-team-up-to-build-ai-data-center-power-infrastructure",
+      "ton": "pozitif",
+      "konular": [
+        "yapay-zeka",
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-16-ectric-wins-94-million-ai-data-center-power-deal",
+      "tarih": "2026-11-16",
+      "yayin": "2026-11-16",
+      "baslik": "LS Electric, ABD'deki bir AI veri merkezi için 94 milyon dolarlık güç ekipmanı sözleşmesi aldı",
+      "detay": "Küresel bir teknoloji şirketinin veri merkezi için 38 kV yüksek ve alçak gerilim şalt ekipmanı (130 milyar won) aşamalı teslim edilecek; şirket DC dağıtım pazarını da hedefliyor.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/business/2026/11/16/ls-electric-wins-94-million-ai-data-center-power-deal",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-16-koreaherald-com-article-10938789",
+      "tarih": "2026-11-16",
+      "yayin": "2026-11-16",
+      "baslik": "Samsung ve SK hynix'e bağlı ELS ürünleri bariyere yaklaşıyor",
+      "detay": "Bariyeri aşmış ürünlerin bakiyesi 86,6 milyar won (SK hynix'e bağlı 23 milyar won); hedge satışlarının KOSPI'ye ek baskı yapabileceği endişesi var. KOSPI 22 Haziran zirvesinden yaklaşık %42 aşağıda.",
+      "kaynak": "The Korea Herald",
+      "url": "https://www.koreaherald.com/article/10938789",
+      "ton": "negatif",
+      "konular": [
+        "pazar",
+        "bellek"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-16-an-ai-memory-heres-why-micron-could-soar-in-2027",
+      "tarih": "2026-11-16",
+      "yayin": "2026-11-15",
+      "baslik": "Bernstein: Sıradan DRAM'in gigabayt fiyatı HBM'yi geçti",
+      "detay": "Bernstein grafiğine göre geleneksel DRAM yaklaşık 25 $/GB, HBM yaklaşık 20 $/GB. Micron'a göre HBM benzer kapasitede yaklaşık üç kat gofret tüketiyor; Idaho fabrikasının ilk çıktısı 2027 ortasında.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/11/15/dram-just-got-more-expensive-than-ai-memory-heres-why-micron-could-soar-in-2027",
+      "ton": "notr",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-16-es-com-2026-11-toward-a-new-global-ai-chip-order",
+      "tarih": "2026-11-16",
+      "yayin": "2026-11-16",
+      "baslik": "Asia Times: Huang krizi AI çip ticaretini 'güvenilir ticaret' modeline itiyor",
+      "detay": "Analize göre Singapur, Hong Kong, Orta Doğu ve Güneydoğu Asya'daki alıcılara denetim sıkılaşacak; kapsam HBM, ağ ekipmanı, sunucu ve bulut erişimine genişleyebilir. Nvidia kurulu ulusal güvenliğin tehlikeye girdiğine dair bir neden görmediğini söylüyor.",
+      "kaynak": "Asia Times",
+      "url": "https://asiatimes.com/2026/11/toward-a-new-global-ai-chip-order/",
+      "ton": "notr",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-16-bstack-com-p-456x-evening-brief-november-15-2026",
+      "tarih": "2026-11-16",
+      "yayin": "2026-11-15",
+      "baslik": "Morgan Stanley: ABD veri merkezi güç ihtiyacı 2028'de yaklaşık 100 GW olabilir",
+      "detay": "Aynı bültene göre SK hynix Cheongju'da HBM4 kapasitesi için yatırım yapıyor ve IREN'in 2027 harcama planında yaklaşık 6 milyar dolarlık finansman açığı bulunuyor.",
+      "kaynak": "456X Semi-AI Evening Brief",
+      "url": "https://404kresearch.substack.com/p/456x-evening-brief-november-15-2026",
+      "ton": "notr",
+      "konular": [
+        "veri-merkezi",
+        "bellek"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-16-bstack-com-p-market-news-monday-16-november-2026",
+      "tarih": "2026-11-16",
+      "yayin": "2026-11-16",
+      "baslik": "Mount Thor, Apple silikonlu AI ajan veri merkezleri için 45 milyon dolar topladı",
+      "detay": "Tohum ve A serisi turlarında toplam 45 milyon dolar; şirket AI ajanları için Apple çipli veri merkezleri kuruyor.",
+      "kaynak": "Herve Cuviliez Market News",
+      "url": "https://hervecuviliez.substack.com/p/market-news-monday-16-november-2026",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi",
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
       "id": "2026-11-15-a-board-reportedly-approached-arm-210000850-html",
       "tarih": "2026-11-15",
       "yayin": null,
@@ -5729,7 +5970,7 @@
       "kaynakTuru": "ek"
     }
   ],
-  "guncelleme": "2026-11-15",
+  "guncelleme": "2026-11-16",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",

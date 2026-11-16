@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-11-16",
+  "oneriler": [
+    {
+      "baslik": "Bugün'de gelişmeleri ağırlığa göre sıralama seçeneği",
+      "neden": "src/pages/Bugun.jsx maddeleri yalnızca JSON sırasıyla gösteriyor; kategori süzgeci var ama sıralama yok. Bugün 10 maddenin 2'si ağırlık 3, 1'i ağırlık 1 — en etkili gelişmeleri öne almak okuru hızlandırır.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Haberler kartlarında bağlantının alan adını göster",
+      "neden": "src/pages/Haberler.jsx kartta yalnızca 'kaynak' metnini gösteriyor (satır 192); bugün 8 ek haberin 2'si bülten (substack) kaynaklı. Alan adı (ör. sedaily.com, substack.com) okurun birincil/ikincil kaynağı ayırt etmesini sağlar.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bellek kartına 'son kontrol' tarihi ekle",
+      "neden": "İyileştirme ajanı 'Bellek fiyatları 24 gündür güncellenmedi' diyor, ama 16 Kasım'da TrendForce basın merkezi kontrol edildi ve yeni sözleşme fiyatı tahmini yoktu (son bellek açıklamaları 6 ve 11 Kasım, oranlı tahmin içermiyor). bellek_fiyat.json'a son_kontrol alanı yazılıp BellekFiyatlari.jsx'te gösterilirse 'güncellenmedi' ile 'yeni veri yok' ayrılır. otomasyon/veri-isle.mjs değişikliği gerektirir (korunan).",
+      "etki": "düşük",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Bugün puanını önceki günle karşılaştır",
+      "neden": "Puan bugün 38, dün 50; Bugun.jsx ve Home.jsx yalnızca günün puanını gösteriyor. Önceki puan otomasyon/gecmis/bugun-*.json'da var ama src/data'ya taşınmıyor; veri-isle.mjs bugun.json'a 'onceki_puan' yazarsa kartta '▼12' gösterilebilir (korunan dosya içerir).",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Onay bekleyen öneri birikimini azalt",
+      "neden": "Rapor 27 açık öneri PR'ı gösteriyor (#58–#92). 10–15 Kasım kayıtlarının çoğunda neden 'otomatik birleştirme izin denetimince engellendi (Merge Without Review)'. Birbirine dokunan PR'lar bekledikçe çakışma riski artıyor; ya kullanıcı topluca onaylamalı ya da günlük uygulama sayısı onay gelene kadar düşürülmeli.",
+      "etki": "yüksek",
+      "alan": "otomasyon"
+    }
+  ]
+}
