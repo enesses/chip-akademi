@@ -2,6 +2,293 @@
   "aciklama": "Haftalık rapor — otomasyon/haftalik.mjs üretir.",
   "haftalar": [
     {
+      "hafta": "2026-W46",
+      "bas": "2026-11-09",
+      "son": "2026-11-15",
+      "kismi": false,
+      "baslik": "9 Kasım – 15 Kasım",
+      "olusturma": "2026-11-16T07:44:00.211Z",
+      "ozet": [
+        "Otomasyon 7 günlük dönemde 6 gün çalıştı: 0 gün temiz bitti.",
+        "Hafta boyunca 25 farklı geliştirme önerisi yazıldı; otomasyon 12 tanesini denedi (0 birleşti, 12 onay bekliyor, 0 bırakıldı).",
+        "H100 kiralama medyanı 3.97 → 3.63 $/saat (%-8.6).",
+        "Bugün sayfasının ortalama pozitiflik puanı 46/100."
+      ],
+      "sayilar": {
+        "calisanGun": 6,
+        "temizGun": 0,
+        "kritikGun": 0,
+        "oneri": 25,
+        "uygulananBirlesen": 0,
+        "elleUygulanan": 0,
+        "uygulananAcik": 12,
+        "uygulananVazgecilen": 0,
+        "degisiklik": 0,
+        "bugunOrtalama": 46,
+        "tekrarHaber": 0
+      },
+      "gunler": [
+        {
+          "tarih": "2026-11-09",
+          "durum": "calismadi",
+          "dikkat": 0,
+          "fiyat": null
+        },
+        {
+          "tarih": "2026-11-10",
+          "durum": "dikkat",
+          "dikkat": 1,
+          "fiyat": "güncellendi"
+        },
+        {
+          "tarih": "2026-11-11",
+          "durum": "dikkat",
+          "dikkat": 1,
+          "fiyat": "güncellendi"
+        },
+        {
+          "tarih": "2026-11-12",
+          "durum": "dikkat",
+          "dikkat": 1,
+          "fiyat": "güncellendi"
+        },
+        {
+          "tarih": "2026-11-13",
+          "durum": "dikkat",
+          "dikkat": 1,
+          "fiyat": "güncellendi"
+        },
+        {
+          "tarih": "2026-11-14",
+          "durum": "dikkat",
+          "dikkat": 1,
+          "fiyat": "güncellendi"
+        },
+        {
+          "tarih": "2026-11-15",
+          "durum": "dikkat",
+          "dikkat": 1,
+          "fiyat": "güncellendi"
+        }
+      ],
+      "bugun": [
+        {
+          "tarih": "2026-11-09",
+          "puan": null
+        },
+        {
+          "tarih": "2026-11-10",
+          "puan": 74,
+          "etiket": "Güçlü toparlanma, Nvidia'da yönetim gölgesi",
+          "madde": 9,
+          "tekrar": 0
+        },
+        {
+          "tarih": "2026-11-11",
+          "puan": 21,
+          "etiket": "Nvidia skandalı ve enflasyon baskısı",
+          "madde": 8,
+          "tekrar": 0
+        },
+        {
+          "tarih": "2026-11-12",
+          "puan": 64,
+          "etiket": "Güçlü talep, Nvidia'da liderlik krizi",
+          "madde": 10,
+          "tekrar": 0
+        },
+        {
+          "tarih": "2026-11-13",
+          "puan": 38,
+          "etiket": "Nvidia'da CEO şoku, para rakiplere kaydı",
+          "madde": 11,
+          "tekrar": 0
+        },
+        {
+          "tarih": "2026-11-14",
+          "puan": 29,
+          "etiket": "Nvidia krizi rakiplere de sıçradı",
+          "madde": 10,
+          "tekrar": 0
+        },
+        {
+          "tarih": "2026-11-15",
+          "puan": 50,
+          "etiket": "Bilanço öncesi sessiz pazar: gözler 17 Kasım'da",
+          "madde": 10,
+          "tekrar": 0
+        }
+      ],
+      "fiyat": {
+        "olcumGunu": 6,
+        "izinEngeliGunu": 0,
+        "taban": "2026-11-07",
+        "son": "2026-11-15",
+        "h100": {
+          "model": "Nvidia H100",
+          "once": 3.97,
+          "sonra": 3.63,
+          "degisim": -8.6
+        },
+        "enCokOynayan": [
+          {
+            "model": "Nvidia A4000",
+            "once": 0.18,
+            "sonra": 0.25,
+            "degisim": 38.9
+          },
+          {
+            "model": "Nvidia GB200",
+            "once": 13.25,
+            "sonra": 10.5,
+            "degisim": -20.8
+          },
+          {
+            "model": "Nvidia A30",
+            "once": 0.76,
+            "sonra": 0.67,
+            "degisim": -11.8
+          },
+          {
+            "model": "Nvidia RTX 4090",
+            "once": 0.49,
+            "sonra": 0.44,
+            "degisim": -10.2
+          },
+          {
+            "model": "Nvidia RTX A6000",
+            "once": 0.6,
+            "sonra": 0.66,
+            "degisim": 10
+          }
+        ]
+      },
+      "uygulanan": [
+        {
+          "tarih": "2026-11-10",
+          "oneri": "Endeks kartında sıfır değişimi nötr renkle 'yatay' göster",
+          "durum": "acik",
+          "pr": 81,
+          "dal": "otomasyon/oneri-2026-11-10-1",
+          "ozet": "Endeks %0 değişimi kırmızı yerine varsayılan renkte 'Yatay · %0' olarak gösteriliyor",
+          "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-11-10",
+          "oneri": "Fiyat tablosunda önceki ölçümü olmayan yeni modellere 'yeni' rozeti",
+          "durum": "acik",
+          "pr": 82,
+          "dal": "otomasyon/oneri-2026-11-10-2",
+          "ozet": "Önceki ölçümü olmayan fiyat satırlarında değişim sütununda 'sabit' yerine 'yeni' rozeti",
+          "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #81'de Merge Without Review), onay bekliyor.",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-11-11",
+          "oneri": "Ana sayfadaki Günün özeti kartında en yakın yaklaşan olayı göster",
+          "durum": "acik",
+          "pr": 83,
+          "dal": "otomasyon/oneri-2026-11-11-1",
+          "ozet": "Günün özeti kartında en yakın ileri tarihli olay ve kalan gün gösteriliyor",
+          "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-11-11",
+          "oneri": "Ana sayfada H100 fiyatının yanında günlük değişimi göster",
+          "durum": "acik",
+          "pr": 84,
+          "dal": "otomasyon/oneri-2026-11-11-2",
+          "ozet": "Kiralama kartında H100 fiyatının yanında renkli günlük değişim yüzdesi",
+          "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #83'te Merge Without Review), onay bekliyor.",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-11-12",
+          "oneri": "Fiyat hareketi satırlarından çip sayfasına bağlantı ver",
+          "durum": "acik",
+          "pr": 85,
+          "dal": "otomasyon/oneri-2026-11-12-1",
+          "ozet": "Hareket kartlarında chip_id olan modeller çip sayfasına bağlanıyor",
+          "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-11-12",
+          "oneri": "Endeks kartında panel model sayısını göster",
+          "durum": "acik",
+          "pr": 86,
+          "dal": "otomasyon/oneri-2026-11-12-2",
+          "ozet": "Endeks kartının ölçüm satırında oranın hesaplandığı model sayısı gösteriliyor",
+          "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (PR #85'te Merge Without Review), onay bekliyor.",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-11-13",
+          "oneri": "Ana sayfadaki fiyat hareketi satırında sağlayıcı sayısını göster",
+          "durum": "acik",
+          "pr": 88,
+          "dal": "otomasyon/oneri-2026-11-13-1",
+          "ozet": "Ana sayfadaki artan/düşen satırına sağlayıcı sayısı etiketi eklendi",
+          "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-11-13",
+          "oneri": "Endeks panel model sayısını kaynaktan güncelle",
+          "durum": "acik",
+          "pr": 87,
+          "dal": "otomasyon/duzeltme-2026-11-13",
+          "ozet": "veri-isle.mjs panel_model_sayisi'ni gelen veriden yazıyor, gelmezse siliyor; değer 27→25",
+          "neden": "Korunan dosya (otomasyon/) içeriyor; testler geçti, kullanıcı onayı bekliyor.",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-11-14",
+          "oneri": "Haberler'e kaynak türü süzgeci ekle (Bugün maddeleri / Ek haberler)",
+          "durum": "acik",
+          "pr": 89,
+          "dal": "otomasyon/oneri-2026-11-14-1",
+          "ozet": "Haberler sayfasına Tüm/Bugün maddeleri/Ek haberler süzgeci eklendi",
+          "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-11-14",
+          "oneri": "Bugün sayfasından günün ek haberlerine bağlantı ver",
+          "durum": "acik",
+          "pr": 90,
+          "dal": "otomasyon/oneri-2026-11-14-2",
+          "ozet": "Bugün sayfasındaki Haberler bağlantısı günün ek haber sayısını gösteriyor",
+          "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-11-15",
+          "oneri": "Yaklaşan olaylarda isteğe bağlı saat ve saat dilimini göster",
+          "durum": "acik",
+          "pr": 92,
+          "dal": "otomasyon/oneri-2026-11-15-1",
+          "ozet": "Bugun.jsx yaklaşan olaylarda isteğe bağlı saat metnini tarih altında gösteriyor",
+          "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+          "kim": "otomasyon"
+        },
+        {
+          "tarih": "2026-11-15",
+          "oneri": "Kataloğa yeni eklenen fiyat satırlarına ölçüm tarihi yaz",
+          "durum": "acik",
+          "pr": 91,
+          "dal": "otomasyon/duzeltme-2026-11-15",
+          "ozet": "veri-isle.mjs yeni satırlara olcum_tarihi yazıyor",
+          "neden": "Korunan dosya (otomasyon/) içeriyor; testler geçti, kullanıcı onayı bekliyor.",
+          "kim": "otomasyon"
+        }
+      ],
+      "degisiklikler": [],
+      "gunlukCommit": 14
+    },
+    {
       "hafta": "2026-W44",
       "bas": "2026-10-26",
       "son": "2026-11-01",
@@ -1257,5 +1544,5 @@
       "gunlukCommit": 3
     }
   ],
-  "guncelleme": "2026-11-02"
+  "guncelleme": "2026-11-16"
 }
