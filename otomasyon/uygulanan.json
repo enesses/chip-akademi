@@ -1000,6 +1000,26 @@
       "ozet": "veri-isle.mjs yeni satırlara olcum_tarihi yazıyor",
       "neden": "Korunan dosya (otomasyon/) içeriyor; testler geçti, kullanıcı onayı bekliyor.",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-16",
+      "oneri": "Bugün'de gelişmeleri ağırlığa göre sıralama seçeneği",
+      "durum": "acik",
+      "pr": 93,
+      "dal": "otomasyon/oneri-2026-11-16-1",
+      "ozet": "Bugun.jsx'e Derleme sırası / Ağırlığa göre sıralama düğmeleri eklendi",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-16",
+      "oneri": "Haberler kartlarında bağlantının alan adını göster",
+      "durum": "acik",
+      "pr": 94,
+      "dal": "otomasyon/oneri-2026-11-16-2",
+      "ozet": "Haberler.jsx kaynak adının yanında bağlantının alan adını gösteriyor",
+      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
+      "kim": "otomasyon"
     }
   ]
 }
