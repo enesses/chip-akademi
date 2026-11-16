@@ -59,7 +59,10 @@ export default function Bugun() {
     const sonuc = await dosyaKaydet(`chip-akademi-yaklasan-${data.tarih}.ics`, icsUret(yaklasan), "text/calendar");
     setTakvimDurum(sonuc.durum === "kaydedildi" ? "Takvim dosyası kaydedildi." : sonuc.durum === "iptal" ? null : sonuc.mesaj);
   }
-  const gorunenMaddeler = suzgec === "hepsi" ? data.maddeler : data.maddeler.filter((m) => m.kategori === suzgec);
+  const [sirala, setSirala] = useState("varsayilan");
+  const suzulen = suzgec === "hepsi" ? data.maddeler : data.maddeler.filter((m) => m.kategori === suzgec);
+  // Ağırlığa göre sıralamada eşit ağırlıklı maddeler özgün sıralarını korur (sort kararlıdır).
+  const gorunenMaddeler = sirala === "agirlik" ? [...suzulen].sort((x, y) => (y.agirlik || 0) - (x.agirlik || 0)) : suzulen;
   // Puana katılan maddelerin kategoriye göre sayısı ve ağırlık toplamı
   const dagilim = useMemo(() => {
     const d = { pozitif: { n: 0, w: 0 }, notr: { n: 0, w: 0 }, negatif: { n: 0, w: 0 } };
@@ -164,12 +167,21 @@ export default function Bugun() {
       <section className="container mx-auto px-4 pb-16">
         <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
           <h2 className="font-display font-semibold text-xl">Günün gelişmeleri</h2>
+          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex gap-1.5" role="group" aria-label="Sıralama" data-testid="bugun-sirala">
+            {[["varsayilan", "Derleme sırası"], ["agirlik", "Ağırlığa göre"]].map(([a, ad]) => (
+              <button key={a} type="button" onClick={() => setSirala(a)} aria-pressed={sirala === a} className={cn("px-2.5 py-1 rounded-md text-xs font-medium border", sirala === a ? "bg-primary text-primary-foreground border-primary" : "bg-card text-muted-foreground border-border hover:text-foreground")}>
+                {ad}
+              </button>
+            ))}
+          </div>
           <div className="flex flex-wrap gap-1.5" role="group" aria-label="Kategoriye göre süz" data-testid="bugun-suzgec">
             {[["hepsi", "Tümü", data.maddeler.length], ...Object.entries(KATEGORI).map(([a, k]) => [a, k.ad, data.maddeler.filter((m) => m.kategori === a).length])].map(([a, ad, n]) => (
               <button key={a} type="button" onClick={() => setSuzgec(a)} aria-pressed={suzgec === a} disabled={n === 0 && a !== "hepsi"} className={cn("px-2.5 py-1 rounded-md text-xs font-medium border disabled:opacity-40", suzgec === a ? "bg-primary text-primary-foreground border-primary" : "bg-card text-muted-foreground border-border hover:text-foreground")}>
                 {ad} <span className="tabular-nums opacity-80">{n}</span>
               </button>
             ))}
+          </div>
           </div>
         </div>
         <div className="space-y-3">
