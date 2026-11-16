@@ -8,6 +8,10 @@ import { cn } from "@/lib/utils";
 const AY = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
 const GUN = ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"];
 const KONULAR = data.konular || {};
+/** Bağlantının alan adı ("www." olmadan); geçersiz adres için null. */
+function alanAdi(url) {
+  try { return new URL(url).hostname.replace(/^www\./, ""); } catch { return null; }
+}
 const TON = {
   pozitif: { ad: "Olumlu", renk: "rgb(var(--t-emerald-400))" },
   notr: { ad: "Nötr", renk: "hsl(var(--muted-foreground))" },
@@ -190,6 +194,10 @@ export default function Haberler() {
                             <p className="text-sm text-muted-foreground mt-1 leading-relaxed"><Vurgula metin={h.detay} sorgu={sorgu} /></p>
                             <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] text-muted-foreground">
                               <span className="text-foreground/80">{h.kaynak}</span>
+                              {alanAdi(h.url) && (
+                                <><span aria-hidden="true">·</span>
+                                <span data-testid="haber-alan-adi" className="font-mono" title="Bağlantının açıldığı alan adı">{alanAdi(h.url)}</span></>
+                              )}
                               {h.kaynakTuru === "bugun" && (
                                 <><span aria-hidden="true">·</span>
                                 <span data-testid="haber-bugun-rozet" title="Bu haber o günün Bugün sayfasında puana katılan maddelerden biri"
