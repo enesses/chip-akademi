@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-17T06:57:14.687Z",
+  "guncelleme": "2026-11-17T06:59:57.017Z",
   "tarih": "2026-11-17",
   "durum": "dikkat",
   "ajanlar": [
@@ -40,7 +40,7 @@
     {
       "seviye": "dikkat",
       "tur": "onay",
-      "metin": "29 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65, PR #70, PR #71, PR #72, PR #73, PR #74, PR #75, PR #76, PR #77, PR #78, PR #79, PR #81, PR #82, PR #83, PR #84, PR #85, PR #86, PR #87, PR #88, PR #89, PR #90, PR #91, PR #92, PR #93, PR #94) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
+      "metin": "30 öneri onay bekliyor (PR #58, PR #59, PR #60, PR #61, PR #65, PR #70, PR #71, PR #72, PR #73, PR #74, PR #75, PR #76, PR #77, PR #78, PR #79, PR #81, PR #82, PR #83, PR #84, PR #85, PR #86, PR #87, PR #88, PR #89, PR #90, PR #91, PR #92, PR #93, PR #94, PR #96) — Otomasyon sayfasındaki \"Onay bekleyen öneriler\" bölümünden onaylanabilir."
     }
   ],
   "oneriler": [
@@ -75,7 +75,28 @@
       "alan": "src/data/bellek_fiyat.json"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-11-17",
+      "oneri": "Fiyat tablosuna 'yalnızca güncel ölçümler' süzgeci ekle",
+      "durum": "birlesti",
+      "pr": 95,
+      "dal": "otomasyon/oneri-2026-11-17-1",
+      "ozet": "Prices.jsx'e son çekimde ölçülmeyen fiyatları gizleyen 'Yalnızca güncel ölçümler' düğmesi eklendi",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-17",
+      "oneri": "Fiyat hareketi kartlarında az sağlayıcılı modelleri gizleme düğmesi",
+      "durum": "acik",
+      "pr": 96,
+      "dal": "otomasyon/oneri-2026-11-17-2",
+      "ozet": "Prices.jsx hareket kartlarına 'Az sağlayıcılıları gizle' düğmesi eklendi",
+      "neden": "Testler geçti; otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor.",
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "İki günlük hareketlerde %50'yi aşan değişimlere 'sert oynama' notu ekle",
@@ -229,6 +250,20 @@
       "durum": "acik",
       "pr": 94,
       "tarih": "2026-11-16",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyat tablosuna 'yalnızca güncel ölçümler' süzgeci ekle",
+      "durum": "birlesti",
+      "pr": 95,
+      "tarih": "2026-11-17",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyat hareketi kartlarında az sağlayıcılı modelleri gizleme düğmesi",
+      "durum": "acik",
+      "pr": 96,
+      "tarih": "2026-11-17",
       "kim": "otomasyon"
     }
   ],
@@ -435,6 +470,13 @@
       "tarih": "2026-11-16",
       "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
       "dal": "otomasyon/oneri-2026-11-16-2"
+    },
+    {
+      "pr": 96,
+      "oneri": "Fiyat hareketi kartlarında az sağlayıcılı modelleri gizleme düğmesi",
+      "tarih": "2026-11-17",
+      "neden": "Testler geçti; otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor.",
+      "dal": "otomasyon/oneri-2026-11-17-2"
     }
   ],
   "guvenlik": {

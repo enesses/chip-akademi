@@ -1020,6 +1020,26 @@
       "ozet": "Haberler.jsx kaynak adının yanında bağlantının alan adını gösteriyor",
       "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-17",
+      "oneri": "Fiyat tablosuna 'yalnızca güncel ölçümler' süzgeci ekle",
+      "durum": "birlesti",
+      "pr": 95,
+      "dal": "otomasyon/oneri-2026-11-17-1",
+      "ozet": "Prices.jsx'e son çekimde ölçülmeyen fiyatları gizleyen 'Yalnızca güncel ölçümler' düğmesi eklendi",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-17",
+      "oneri": "Fiyat hareketi kartlarında az sağlayıcılı modelleri gizleme düğmesi",
+      "durum": "acik",
+      "pr": 96,
+      "dal": "otomasyon/oneri-2026-11-17-2",
+      "ozet": "Prices.jsx hareket kartlarına 'Az sağlayıcılıları gizle' düğmesi eklendi",
+      "neden": "Testler geçti; otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor.",
+      "kim": "otomasyon"
     }
   ]
 }
