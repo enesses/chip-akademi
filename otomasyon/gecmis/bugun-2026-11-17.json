@@ -1,0 +1,134 @@
+{
+  "tarih": "2026-11-17",
+  "derlenme": "17 Kasım 2026",
+  "puan": {
+    "etiket": "İhracat kontrolleri 2.0 ve bilanço gerginliği",
+    "yorum": "ABD'nin uzaktan erişim kuralı, Nasdaq ve Kore'deki sert satışlar ve AI harcama tahminlerindeki indirimler ağır basıyor; TSMC'nin rekor geliri, dökümhane zamları ve bellek üreticilerinin güçlü nakdi temelin sağlam olduğunu gösteriyor.",
+    "deger": 18
+  },
+  "ozet": [
+    "Günün ana teması 'ihracat kontrolleri 2.0'. ABD Ticaret Bakanlığı, Çinli şirketlerin Güneydoğu Asya'daki veri merkezlerinden kiraladığı işlem gücüyle yasakları aşmasını kapatmak için uzaktan erişimi lisansa bağladı ve Endonezya, Malezya, Singapur, Tayland ile Brezilya'yı yüksek riskli ülkeler arasına aldı. Kural, Nvidia'daki skandalın doğrudan sonucu olarak sunuluyor.",
+    "Piyasa tepkisi sert oldu: Nasdaq %2,5, yarı iletken endeksi %5'in üzerinde geriledi; Nvidia, AMD, Micron ve TSMC'de satışlar derinleşti. Asya'da KOSPI %3,59 düştü, emeklilik fonları beş yılın en büyük satışını yaptı. SemiAnalysis'in AI hızlandırıcı harcama tahminlerini düşürmesi ve Nvidia'nın yeni yönetiminin sektöre finansmanı kısacağı haberi, 'AI harcaması ne kadar sürdürülebilir?' sorusunu öne çıkardı.",
+    "Buna karşın temel veriler zayıf değil: TSMC rekor aylık gelir açıkladı, dökümhaneler 2027 için fiyat artışı bildiriyor ve Samsung ile SK hynix'in nakit varlığı 329 trilyon won'a çıktı. AWS'nin veri merkezlerini Blackstone'a devretmesi de altyapı finansmanında yeni bir kanal açıyor.",
+    "Bu akşam Nvidia, Jensen Huang'sız ilk bilançosunu açıklıyor; çarşamba günü Anthropic halka arzının fiyatı belirlenecek. İki olay da kısa vadede sektörün yönünü belirleyecek."
+  ],
+  "maddeler": [
+    {
+      "baslik": "ABD, Çin'in yurt dışı veri merkezleri üzerinden AI çiplerine uzaktan erişimini kısıtladı",
+      "detay": "BIS'in 16 Kasım'da yayımladığı geçici nihai kurala göre Çin/Makao ya da D:5 merkezli şirketlere toplam 12 milyon TPP'yi (yaklaşık 758 H100 ya da 222 B300) aşan işlem gücü sunan veri merkezlerine çip sevkiyatı lisansa bağlandı; Endonezya, Malezya, Singapur, Tayland ve Brezilya'ya gelişmiş çip ihracatı da lisans gerektirecek. Mevcut D:5 müşterili merkezlere 90 günlük geçiş süresi tanındı.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "Nvidia/AMD için Güneydoğu Asya talebini ve neocloud kiralama modelini doğrudan daraltıyor; 'ihracat kontrolleri 2.0' olarak yorumlanıyor.",
+      "kaynak": "BERI",
+      "url": "https://www.beri.net/article/bis-remote-access-rule-ai-chips-12-million-tpp-data-center-license-singapore-malaysia-indonesia-thailand-brazil-monthly-reporting-gpu-capacity-contracts"
+    },
+    {
+      "baslik": "Wall Street'te teknoloji satışı: Nasdaq %2,5, Nvidia %4,1, AMD %5,6 düştü",
+      "detay": "16 Kasım'da S&P 500 %1,9, Nasdaq %2,5 geriledi; Nvidia %4,1, AMD %5,6, Broadcom %3,9, CoreWeave %6,1 düştü. Nvidia skandal başladığından beri yaklaşık 735 milyar dolar piyasa değeri kaybetti.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "Bilanço öncesi AI altyapı hisselerinde geniş çaplı risk iştahı kaybı.",
+      "kaynak": "BNN Bloomberg (AP)",
+      "url": "https://bnnbloomberg.ca/markets/nasdaq/2026/11/16/stocks-decline-on-tech-sell-off-as-concerns-over-the-nvidia-fallout-persist"
+    },
+    {
+      "baslik": "Micron üçüncü gün de düştü: %6,1 kayıpla 730 dolar",
+      "detay": "Micron hissesi 16 Kasım'da yaklaşık %6,1 düşüşle 730,49 dolara indi (52 haftalık zirve 1.255 dolar). Nvidia'daki liderlik krizi ve olası soruşturmaların bellek talebine yansıması endişesi öne çıktı.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Bellek üreticilerinde AI talebinin sürdürülebilirliğine dair kaygı fiyatlanıyor.",
+      "kaynak": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/16/why-micron-stock-keeps-going-down/"
+    },
+    {
+      "baslik": "KOSPI %3,59 geriledi; emeklilik fonları 5 yılın en büyük satışını yaptı",
+      "detay": "KOSPI 190 puan düşüşle 5.100,50'ye indi; yabancılar 1,38 trilyon, emeklilik fonları 564,7 milyar won net sattı (Eylül 2021'den beri en büyük). UBS'ten Tim Arcuri, Nvidia'nın finansman desteğini kısmasının piyasadan büyük miktarda fon çekebileceğini söylüyor.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Samsung ve SK hynix'in ağırlıkta olduğu Kore piyasasında kurumsal satış baskısı.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/economy/2026/11/17/samsung-sk-hynix-tumble-together-as-kospi-sinks-359-percent"
+    },
+    {
+      "baslik": "WSJ: Nvidia'nın geçici CEO'su Kress, AI sektörüne finansmanı kısacak",
+      "detay": "Habere göre Nvidia bulut ortaklarından müşterilerinden peşin ödeme almalarını istiyor; şirket son bir yılda rekor 129 girişim yatırımına katıldı ve son çeyrekte 36 milyar dolarlık bilanço dışı AI bulut taahhüdü raporladı. Nscale'in 45 milyar dolarlık Batı Virginia projesindeki borç garantisi de belirsiz.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Neocloud'ların ve veri merkezi projelerinin finansman kaynağı daralabilir.",
+      "kaynak": "The Next Web (WSJ)",
+      "url": "https://thenextweb.com/news/nvidia-financing-kress-neoclouds-upfront-payments"
+    },
+    {
+      "baslik": "TSMC rekor ekim gelirine rağmen üç günde %9,7 değer kaybetti",
+      "detay": "TSMC ekimde yaklaşık NT$587 milyar ile tarihinin en yüksek aylık gelirini açıkladı; ancak ADR'si 16 Kasım'da %6,3 düşüşle 373,45 dolara indi ve 5 Ekim zirvesinin %23,1 altına geriledi.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Temel veri güçlü, ama hisse müşteri riski ve AI harcamasının borçla finansmanı kaygısıyla düşüyor.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/11/16/taiwan-semiconductor-booked-a-record-nt587-billion-month-the-stock-has-lost-nearly-10-in-three-days-anyway/"
+    },
+    {
+      "baslik": "Dökümhaneler 2027 için %10–20'nin üzerinde zam bildiriyor",
+      "detay": "Çip tasarım sektöründeki kaynaklara göre TSMC dahil dökümhaneler gelecek yıl fiyatları %10 ile %20'nin üzerinde artıracak; satış fiyatı değişmezse tasarımcıların brüt marjı 4–5 puan etkilenebilir.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Dökümhaneler için fiyatlama gücü, çip tasarımcıları için marj baskısı.",
+      "kaynak": "TechFlow (Jin10)",
+      "url": "https://www.techflowpost.com/en-US/newsletter/145109"
+    },
+    {
+      "baslik": "Samsung ve SK hynix'in nakit varlığı 329 trilyon won'a ulaştı",
+      "detay": "3. çeyrek sonunda Samsung'un nakdi 214,8, SK hynix'inki 114,5 trilyon won; ikisinin net nakdi toplam 296,3 trilyon won. Yıl sonunda toplamın 400 trilyon won'a yaklaşabileceği belirtiliyor.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "AI bellek döngüsünün bilançoları güçlendirdiğini ve yatırım kapasitesini gösteriyor.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/business/2026/11/17/samsung-sk-hynix-cash-piles-top-300-trillion-won-on-ai"
+    },
+    {
+      "baslik": "AWS, 647 MW'lık 13 veri merkezinin %75'ini Blackstone fonuna devrediyor",
+      "detay": "Indiana ve Mississippi'deki 13 bina 5 milyar dolar değerlemeyle Blackstone Digital Infrastructure Trust'a geçiyor; AWS %25 payı koruyup tamamını 12 yıl (uzatmalarla 32 yıl) kiralayacak, kira yılda %2,75 artacak.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Hiperölçekleyicilerin altyapı harcamasını finanse etmek için yeni sermaye kaynağı açıyor.",
+      "kaynak": "Coinpaper",
+      "url": "https://coinpaper.com/38919/amazon-stock-aws-strikes-5-b-blackstone-data-center-deal-as-ai-spending-grows"
+    },
+    {
+      "baslik": "SemiAnalysis AI hızlandırıcı harcama tahminlerini düşürdü",
+      "detay": "SemiAnalysis tahminlerini 2027 için %19, 2028 için %28, 2030 için %40 indirdi. 16 Kasım'da Philadelphia Yarı İletken Endeksi %5,28, Micron %7,59 düştü; Kiwoom ise Samsung (290.000 won) ve SK hynix (1,8 milyon won) için 'al' önerisini korudu.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "AI donanım talebinin uzun vadeli büyüme varsayımları aşağı çekiliyor.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/market/2026/11/17/top-1-percent-traders-dump-samsung-sk-hynix-for-second-day"
+    }
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2026-11-17",
+      "baslik": "Nvidia 3. çeyrek sonuçları (piyasa kapanışından sonra, geçici CEO Kress)",
+      "kaynak": "BNN Bloomberg (AP)",
+      "url": "https://bnnbloomberg.ca/markets/nasdaq/2026/11/16/stocks-decline-on-tech-sell-off-as-concerns-over-the-nvidia-fallout-persist"
+    },
+    {
+      "tarih": "2026-11-18",
+      "baslik": "Anthropic halka arz fiyatlaması (aralık 70–78 dolar)",
+      "kaynak": "StockAnalysis (Bloomberg)",
+      "url": "https://stockanalysis.com/news/anthropic-ipo-six-times-oversubscribed/"
+    },
+    {
+      "tarih": "2026-11-19",
+      "baslik": "Anthropic hisseleri Nasdaq'ta işlem görmeye başlıyor",
+      "kaynak": "StockAnalysis (Bloomberg)",
+      "url": "https://stockanalysis.com/news/anthropic-ipo-six-times-oversubscribed/"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = -12 · Σ ağırlık = 19 · Puan = 50 + 50 × -0.63 = 18"
+  }
+}

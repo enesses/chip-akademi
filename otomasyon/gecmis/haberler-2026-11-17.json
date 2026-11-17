@@ -1,0 +1,87 @@
+{
+  "tarih": "2026-11-17",
+  "haberler": [
+    {
+      "baslik": "Harvard çalışması: ABD'deki 403 hiperölçekli veri merkezi yılda 82 TWh tüketiyor",
+      "detay": "Nature Sustainability'de yayımlanan çalışmaya göre bu tesisler ABD elektriğinin %1,8'ini kullanıyor, yılda yaklaşık 28 milyon ton CO2 salıyor; elektriğin %54'ü fosil yakıtlardan geliyor.",
+      "kaynak": "Gizmodo",
+      "url": "https://gizmodo.com/scientists-finally-know-how-much-power-americas-biggest-data-centers-use-and-its-worse-than-we-thought-2000839941",
+      "yayin": "2026-11-16",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Google, Michigan'daki 1 GW'lık 'Project Cannoli' veri merkezinin inşaatına başladı",
+      "detay": "Van Buren Township'teki 282 dönümlük kampüs tam kapasitede yaklaşık 1 GW güç ve günde 3,6 milyon galon su kullanabilecek; Google yerel altyapıya 15,4 milyon dolar ayırdı, 125 milyon dolarlık vergi indirimi aldı.",
+      "kaynak": "NewsBytes",
+      "url": "https://www.newsbytesapp.com/news/business/google-begins-construction-on-project-cannoli-data-center-in-michigan/tldr",
+      "yayin": "2026-11-16",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "ONE Nuclear, Louisiana'da 1.000 MW'lık veri merkezi kampüsü planlıyor",
+      "detay": "Şirket Baton Rouge'daki 'Barracuda' kampüsünü 1.800 MW gaz üretimi ve 450 MW/900 MWh batarya ile desteklemeyi, ayrıca 1.000 MW küçük modüler reaktör kurmayı planlıyor; projeler bağlayıcı anlaşma ve finansmana bağlı.",
+      "kaynak": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/11/16/3404182/0/en/one-nuclear-energy-inc-reports-third-quarter-and-year-to-date-2026-financial-results-and-highlights-inaugural-public-listing-milestone.html",
+      "yayin": "2026-11-16",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Çin, uzaktan erişim kısıtlaması öncesi Nvidia çiplerini stokluyor",
+      "detay": "Reuters'a göre yaklaşık 600.000 H200, Pekin'in ithalat onayını beklerken Hong Kong'da birikmiş durumda; WSJ'ye göre Singapurlu Megaspeed 2024–2025'te Çinli şirketler adına yaklaşık 12 milyar dolarlık Nvidia çipi siparişine aracılık etti.",
+      "kaynak": "Asia Times",
+      "url": "https://asiatimes.com/2026/11/china-hoards-nvidias-ai-chips-as-us-curbs-remote-access/",
+      "yayin": "2026-11-16",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "ABD, Megaspeed hakkında cezai soruşturma başlattı; Singapur kuralı inceliyor",
+      "detay": "Ticaret ve Adalet bakanlıkları Singapur merkezli Megaspeed'e soruşturma açıldığını doğruladı; Nvidia hissesi son bir ayda piyasa değerinin %30'undan fazlasını kaybetti, salı sabahı Nikkei %1,45, Kospi %1,93 düştü.",
+      "kaynak": "Al Jazeera",
+      "url": "https://www.aljazeera.com/economy/2026/11/17/us-moves-to-block-chinas-remote-access-to-ai-chips-amid-nvidia-scandal",
+      "yayin": "2026-11-17",
+      "konular": [
+        "politika",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Uzaktan erişim kuralı Güneydoğu Asya veri merkezi hisselerini düşürdü",
+      "detay": "Kural Singapur, Tayland, Malezya, Endonezya ve Brezilya'yı çiplerin Çin'e yönlendirilme riski yüksek ülkeler olarak belirledi; bölgedeki veri merkezi ve tedarik zinciri hisseleri salı günü sert düştü. Counterpoint'ten Neil Shah: 'Export controls 2.0 is here.'",
+      "kaynak": "Investing.com (Reuters)",
+      "url": "https://www.investing.com/news/stock-market-news/people-react-to-us-ai-chip-curbs-that-threaten-data-centre-boom-5031675",
+      "yayin": "2026-11-17",
+      "konular": [
+        "politika",
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Trump yönetimi kuralı yayımladı: beş ülkeye çip ihracatı lisansa bağlandı",
+      "detay": "CBS'e göre Ticaret Bakanlığı'nın 16 Kasım'daki geçici kuralı Brezilya, Endonezya, Malezya, Singapur ve Tayland'a gelişmiş AI çiplerinin ihracatı, yeniden ihracatı ve transferi için lisans şartı getiriyor; amaç üçüncü ülke veri merkezleri üzerinden kısıtlamaların aşılmasını önlemek.",
+      "kaynak": "CBS News",
+      "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-commerce-department-limit-remote-access-ai-chips/",
+      "yayin": "2026-11-16",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kategori": "negatif"
+    }
+  ]
+}

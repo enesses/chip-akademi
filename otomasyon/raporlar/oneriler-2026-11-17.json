@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-11-17",
+  "oneriler": [
+    {
+      "baslik": "Fiyat tablosuna 'yalnızca güncel ölçümler' süzgeci ekle",
+      "neden": "Bugünkü çekimde 23 model gelmedi ve eski fiyatla duruyor (ör. Nvidia RTX 5880 Ada, RTX 4500 Ada, P40: ölçüm 2026-10-12). Prices.jsx bu satırları yalnızca 'ölçüm …' notuyla işaretliyor; tabloyu bugünkü ölçümle sınırlayan bir düğme yok.",
+      "etki": "orta",
+      "alan": "src/pages/Prices.jsx"
+    },
+    {
+      "baslik": "Fiyat hareketi kartlarında az sağlayıcılı modelleri gizleme düğmesi",
+      "neden": "Bugünkü hareket kartlarında tek/iki sağlayıcılı modeller (Nvidia T600 %-28,6, 1 sağlayıcı; RTX 2000 Ada %-20,8, 2 sağlayıcı) yalnızca soluk gösteriliyor; 'En az 5 sağlayıcı' süzgeci tabloya uygulanıyor ama Artanlar/Düşenler kartlarına uygulanmıyor (Prices.jsx, iki_gun bölümü).",
+      "etki": "orta",
+      "alan": "src/pages/Prices.jsx"
+    },
+    {
+      "baslik": "Tek fiyatlı kaynak satırlarını (ör. Vera Rubin) güncellemenin yolunu belirle",
+      "neden": "getdeploying tablosunda yalnızca tek fiyat sütunu dolu gelen modeller (Nvidia Vera Rubin 6 sağlayıcı, AMD MI210, MI350P, P600, P1000, T1000, RTX PRO 2000) medyan=null olarak işleniyor; veri-isle.mjs bunları güncellemiyor ve fiyatları 2026-11-15 ölçümünde kalıyor.",
+      "etki": "düşük",
+      "alan": "otomasyon/veri-isle.mjs"
+    },
+    {
+      "baslik": "Otomasyon sayfasında onay bekleyen PR'ların yaşını ve sayısını öne çıkar",
+      "neden": "Rapor 29 öneri PR'ının onay beklediğini gösteriyor (#58–#94); otomatik birleştirme 11 Kasım'dan beri 'Merge Without Review' izin denetimince engelleniyor (uygulanan.json). OnayBekleyenler.jsx listede en eski bekleyenin kaç gündür beklediğini göstermiyor.",
+      "etki": "orta",
+      "alan": "src/components/OnayBekleyenler.jsx"
+    },
+    {
+      "baslik": "Bellek sözleşme fiyatlarını yenile",
+      "neden": "İyileştirme ajanı: bellek fiyatları 25 gündür güncellenmedi (bellek_fiyat.json). Son günlerde NAND spot fiyat düşüşü (BofA, 16 Kasım) ve DRAM davası haberleri çıktı; pazartesi TrendForce adımı yeni bir sözleşme tahmini bulmadı.",
+      "etki": "düşük",
+      "alan": "src/data/bellek_fiyat.json"
+    }
+  ]
+}

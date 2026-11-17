@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-11-16T07:44:35.121Z",
-  "tarih": "2026-11-16",
+  "guncelleme": "2026-11-17T06:57:14.687Z",
+  "tarih": "2026-11-17",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-11-16T06:55:03.170Z"
+      "zaman": "2026-11-17T06:55:39.684Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-11-16T06:55:03.272Z"
+      "zaman": "2026-11-17T06:55:39.809Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-11-16T06:55:02.775Z"
+      "zaman": "2026-11-17T06:55:39.282Z"
     },
     {
       "id": "gelistirme",
@@ -33,7 +33,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-11-16T06:55:19.091Z"
+      "zaman": "2026-11-17T06:55:55.338Z"
     }
   ],
   "dikkat": [
@@ -45,73 +45,38 @@
   ],
   "oneriler": [
     {
-      "baslik": "Bugün'de gelişmeleri ağırlığa göre sıralama seçeneği",
-      "neden": "src/pages/Bugun.jsx maddeleri yalnızca JSON sırasıyla gösteriyor; kategori süzgeci var ama sıralama yok. Bugün 10 maddenin 2'si ağırlık 3, 1'i ağırlık 1 — en etkili gelişmeleri öne almak okuru hızlandırır.",
+      "baslik": "Fiyat tablosuna 'yalnızca güncel ölçümler' süzgeci ekle",
+      "neden": "Bugünkü çekimde 23 model gelmedi ve eski fiyatla duruyor (ör. Nvidia RTX 5880 Ada, RTX 4500 Ada, P40: ölçüm 2026-10-12). Prices.jsx bu satırları yalnızca 'ölçüm …' notuyla işaretliyor; tabloyu bugünkü ölçümle sınırlayan bir düğme yok.",
       "etki": "orta",
-      "alan": "arayüz"
+      "alan": "src/pages/Prices.jsx"
     },
     {
-      "baslik": "Haberler kartlarında bağlantının alan adını göster",
-      "neden": "src/pages/Haberler.jsx kartta yalnızca 'kaynak' metnini gösteriyor (satır 192); bugün 8 ek haberin 2'si bülten (substack) kaynaklı. Alan adı (ör. sedaily.com, substack.com) okurun birincil/ikincil kaynağı ayırt etmesini sağlar.",
-      "etki": "düşük",
-      "alan": "arayüz"
-    },
-    {
-      "baslik": "Bellek kartına 'son kontrol' tarihi ekle",
-      "neden": "İyileştirme ajanı 'Bellek fiyatları 24 gündür güncellenmedi' diyor, ama 16 Kasım'da TrendForce basın merkezi kontrol edildi ve yeni sözleşme fiyatı tahmini yoktu (son bellek açıklamaları 6 ve 11 Kasım, oranlı tahmin içermiyor). bellek_fiyat.json'a son_kontrol alanı yazılıp BellekFiyatlari.jsx'te gösterilirse 'güncellenmedi' ile 'yeni veri yok' ayrılır. otomasyon/veri-isle.mjs değişikliği gerektirir (korunan).",
-      "etki": "düşük",
-      "alan": "veri"
-    },
-    {
-      "baslik": "Bugün puanını önceki günle karşılaştır",
-      "neden": "Puan bugün 38, dün 50; Bugun.jsx ve Home.jsx yalnızca günün puanını gösteriyor. Önceki puan otomasyon/gecmis/bugun-*.json'da var ama src/data'ya taşınmıyor; veri-isle.mjs bugun.json'a 'onceki_puan' yazarsa kartta '▼12' gösterilebilir (korunan dosya içerir).",
+      "baslik": "Fiyat hareketi kartlarında az sağlayıcılı modelleri gizleme düğmesi",
+      "neden": "Bugünkü hareket kartlarında tek/iki sağlayıcılı modeller (Nvidia T600 %-28,6, 1 sağlayıcı; RTX 2000 Ada %-20,8, 2 sağlayıcı) yalnızca soluk gösteriliyor; 'En az 5 sağlayıcı' süzgeci tabloya uygulanıyor ama Artanlar/Düşenler kartlarına uygulanmıyor (Prices.jsx, iki_gun bölümü).",
       "etki": "orta",
-      "alan": "veri"
+      "alan": "src/pages/Prices.jsx"
     },
     {
-      "baslik": "Onay bekleyen öneri birikimini azalt",
-      "neden": "Rapor 27 açık öneri PR'ı gösteriyor (#58–#92). 10–15 Kasım kayıtlarının çoğunda neden 'otomatik birleştirme izin denetimince engellendi (Merge Without Review)'. Birbirine dokunan PR'lar bekledikçe çakışma riski artıyor; ya kullanıcı topluca onaylamalı ya da günlük uygulama sayısı onay gelene kadar düşürülmeli.",
-      "etki": "yüksek",
-      "alan": "otomasyon"
+      "baslik": "Tek fiyatlı kaynak satırlarını (ör. Vera Rubin) güncellemenin yolunu belirle",
+      "neden": "getdeploying tablosunda yalnızca tek fiyat sütunu dolu gelen modeller (Nvidia Vera Rubin 6 sağlayıcı, AMD MI210, MI350P, P600, P1000, T1000, RTX PRO 2000) medyan=null olarak işleniyor; veri-isle.mjs bunları güncellemiyor ve fiyatları 2026-11-15 ölçümünde kalıyor.",
+      "etki": "düşük",
+      "alan": "otomasyon/veri-isle.mjs"
+    },
+    {
+      "baslik": "Otomasyon sayfasında onay bekleyen PR'ların yaşını ve sayısını öne çıkar",
+      "neden": "Rapor 29 öneri PR'ının onay beklediğini gösteriyor (#58–#94); otomatik birleştirme 11 Kasım'dan beri 'Merge Without Review' izin denetimince engelleniyor (uygulanan.json). OnayBekleyenler.jsx listede en eski bekleyenin kaç gündür beklediğini göstermiyor.",
+      "etki": "orta",
+      "alan": "src/components/OnayBekleyenler.jsx"
+    },
+    {
+      "baslik": "Bellek sözleşme fiyatlarını yenile",
+      "neden": "İyileştirme ajanı: bellek fiyatları 25 gündür güncellenmedi (bellek_fiyat.json). Son günlerde NAND spot fiyat düşüşü (BofA, 16 Kasım) ve DRAM davası haberleri çıktı; pazartesi TrendForce adımı yeni bir sözleşme tahmini bulmadı.",
+      "etki": "düşük",
+      "alan": "src/data/bellek_fiyat.json"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-11-16",
-      "oneri": "Bugün'de gelişmeleri ağırlığa göre sıralama seçeneği",
-      "durum": "acik",
-      "pr": 93,
-      "dal": "otomasyon/oneri-2026-11-16-1",
-      "ozet": "Bugun.jsx'e Derleme sırası / Ağırlığa göre sıralama düğmeleri eklendi",
-      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-11-16",
-      "oneri": "Haberler kartlarında bağlantının alan adını göster",
-      "durum": "acik",
-      "pr": 94,
-      "dal": "otomasyon/oneri-2026-11-16-2",
-      "ozet": "Haberler.jsx kaynak adının yanında bağlantının alan adını gösteriyor",
-      "neden": "Testler geçti; otomatik birleştirme izin denetimince engellendi (Merge Without Review), onay bekliyor.",
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "Fiyatlar'da 'Son çekim' kartına yaş ve eski uyarısı ekle",
-      "durum": "acik",
-      "pr": 70,
-      "tarih": "2026-11-02",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Bugün madde kartlarında kaynağın alan adını göster",
-      "durum": "acik",
-      "pr": 71,
-      "tarih": "2026-11-02",
-      "kim": "otomasyon"
-    },
     {
       "oneri": "İki günlük hareketlerde %50'yi aşan değişimlere 'sert oynama' notu ekle",
       "durum": "acik",
@@ -510,7 +475,7 @@
     "bulgular": [
       {
         "alan": "veri",
-        "baslik": "Bellek fiyatları 24 gündür güncellenmedi",
+        "baslik": "Bellek fiyatları 25 gündür güncellenmedi",
         "etki": "düşük",
         "otomatik": false,
         "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
@@ -528,12 +493,12 @@
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 38, 5 yaklaşan olay; haber akışına +10"
+        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 18, 3 yaklaşan olay; haber akışına +10"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+6 haber (akışta 401), 2 atlandı: akışta zaten var; bugün toplam 16"
+        "detay": "+7 haber (akışta 405); bugün toplam 17"
       },
       {
         "ad": "Derleme",
@@ -543,7 +508,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2901 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2912 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -570,11 +535,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-10-31",
-      "durum": "dikkat",
-      "dikkat": 1
-    },
     {
       "tarih": "2026-11-01",
       "durum": "dikkat",
@@ -637,6 +597,11 @@
     },
     {
       "tarih": "2026-11-16",
+      "durum": "dikkat",
+      "dikkat": 1
+    },
+    {
+      "tarih": "2026-11-17",
       "durum": "dikkat",
       "dikkat": 1
     }
