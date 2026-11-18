@@ -1,0 +1,131 @@
+{
+  "tarih": "2026-11-18",
+  "derlenme": "18 Kasım 2026",
+  "puan": {
+    "etiket": "Nvidia rakamlarla yanıt verdi",
+    "yorum": "Nvidia'nın beklentiyi aşan 115,8 milyar dolarlık çeyreği, 130 milyar dolarlık rehberi ve 390 milyar dolara çıkan tedarik taahhütleri Asya'da çip hisselerini toparladı; liderlik belirsizliği, DRAM fiyat tespiti davası, yeni ihracat kuralının dökümhanelere yansıması ve veri merkezlerindeki güç darboğazı ise riskleri canlı tutuyor.",
+    "deger": 58
+  },
+  "ozet": [
+    "Günün ana teması Nvidia'nın Jensen Huang'sız ilk bilançosu. Şirket üçüncü çeyrekte 115,8 milyar dolar gelir (yıllık %103 artış) ve 107,6 milyar dolar veri merkezi geliri açıkladı; hisse başına kâr 2,68 dolarla beklenen 2,47 doların üzerinde kaldı. Dördüncü çeyrek için 130 milyar dolar (±%3) gelir öngördü, 150 milyar dolarlık yeni geri alım programı duyurdu.",
+    "Rakamlar, son günlerdeki 'AI harcaması zirve yaptı mı' kaygısına doğrudan yanıt oldu. Seans sonrası Nvidia yaklaşık %4, TSMC, AMD ve Broadcom %1–2 yükseldi; çarşamba sabahı KOSPI yeniden 5.000 puanın üzerine çıktı, SK hynix %5, Samsung %4, SoftBank ve Kioxia %7 civarında değer kazandı. Nvidia'nın bellek ve döküm kapasitesi için alım taahhütlerini 279 milyar dolardan 390 milyar dolara çıkarması ve Samsung Electro-Mechanics ile Kinsus'la yeni alt tabaka anlaşmaları, tedarik zincirine talebin sürdüğünü gösteriyor.",
+    "Öte yandan belirsizlik bitmedi: Yönetim kurulu Huang'ı geri getirmeyeceğini açıkladı, geçici CEO Colette Kress yönetimde ve kalıcı CEO araması sürüyor. ABD'de Samsung, SK hynix ve Micron'un DRAM fiyat tespiti davasından kurtulamaması, BIS'in dökümhane ve OSAT muafiyetlerini sıkılaştırması ve operatörlerin %78'inin güç kaynaklı aksama bildirdiği anket, büyümenin önündeki hukuki, politik ve fiziksel engelleri hatırlatıyor.",
+    "Arz tarafında AMD cephesi güçleniyor: TensorWave, OpenAI'a altı yıllık sözleşmeyle 457 MW'lık MI455X tabanlı kapasite sağlayacak. Yarın Anthropic'in Nasdaq'ta 'ANT' sembolüyle işlem görmeye başlaması bekleniyor; bu, AI şirketlerine yatırımcı iştahının bir sonraki sınavı olacak."
+  ],
+  "maddeler": [
+    {
+      "baslik": "Nvidia 3. çeyrekte 115,8 milyar dolar gelirle beklentiyi aştı",
+      "detay": "Mali 2027 üçüncü çeyrek geliri yıllık %103 artışla 115,8 milyar dolar, veri merkezi geliri %110 artışla 107,6 milyar dolar oldu. Non-GAAP hisse başına kâr 2,68 dolar (beklenti 2,47), non-GAAP brüt marj %74,9.",
+      "kategori": "pozitif",
+      "agirlik": 3,
+      "neden": "AI altyapı talebinin yavaşladığı kaygısını somut verilerle zayıflatıyor; tüm tedarik zincirinin talep göstergesi.",
+      "kaynak": "Nvidia (SEC 8-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000088/q3fy27pr.htm"
+    },
+    {
+      "baslik": "Nvidia 4. çeyrek için 130 milyar dolar öngördü, 150 milyar dolarlık geri alım açıkladı",
+      "detay": "Dördüncü çeyrek gelir rehberi 130 milyar dolar ±%3 (analist beklentisi ~125,3 milyar dolar), brüt marj rehberi %71–72. Şirket 150 milyar dolarlık yeni hisse geri alım programı duyurdu; hisse seans sonrası ~%4 yükselerek 161,9 dolara çıktı.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Rehberin beklentinin üzerinde olması talebin önümüzdeki çeyreklerde de sürdüğüne işaret ediyor; marj rehberi hafif düşüş gösterse de büyüme baskın.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/live/nvidia-earnings-live-nvidia-posts-q3-beat-board-says-it-will-not-reinstate-jensen-huang-as-ceo-221428433.html"
+    },
+    {
+      "baslik": "Nvidia yönetim kurulu: Jensen Huang CEO olarak geri dönmeyecek",
+      "detay": "Yönetim kurulu başkanı Harvey Jones, kurulun Huang'ı yeniden CEO yapmayı düşünmediğini söyledi; CFO Colette Kress geçici CEO olarak görevde, kalıcı CEO araması başladı. Şirket istifanın koşulları ve süren soruşturma hakkında soru yanıtlamadı.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Kurucu liderin kalıcı olarak ayrılması ve süren soruşturma, şirketin strateji ve ilişkiler tarafında belirsizlik yaratıyor.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/live/nvidia-earnings-live-nvidia-posts-q3-beat-board-says-it-will-not-reinstate-jensen-huang-as-ceo-221428433.html"
+    },
+    {
+      "baslik": "KOSPI yeniden 5.000'in üzerinde: SK hynix %5, Samsung %4 yükseldi",
+      "detay": "18 Kasım açılışında KOSPI %2,62 artışla 5.098,82 puana çıktı (önceki gün 4.968,48). SK hynix %5,37 artışla 1.157.000 won, Samsung Electronics %3,84 artışla 197.600 won'dan işlem gördü.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Bellek üreticilerinde iki günlük sert satışın ardından Nvidia verisiyle güven geri geldi.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/market/2026/11/18/kospi-reclaims-5000-as-nvidia-earnings-lift-samsung-sk-hynix"
+    },
+    {
+      "baslik": "Nvidia'nın tedarik taahhütleri 390 milyar dolara çıktı; Samsung Electro-Mechanics ile alt tabaka anlaşması",
+      "detay": "Nvidia'nın bellek ve döküm kapasitesi için alım taahhütleri 279 milyar dolardan 390 milyar dolara yükseldi. Kress, Kinsus ve Samsung Electro-Mechanics ile yeni alt tabaka anlaşmaları imzalandığını söyledi; Samsung Electro-Mechanics hissesi ~%7 artışla 806.000 won'a çıktı.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Bellek, döküm ve paketleme tedarikçileri için çok yıllık talep görünürlüğü sağlıyor.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/market/2026/11/18/samsung-up-4-percent-sk-hynix-5-percent-as-nvidia-beats"
+    },
+    {
+      "baslik": "Bilanço öncesi Wall Street geriledi: S&P 500 %1, Dow %1,6 düştü",
+      "detay": "17 Kasım'da S&P 500 %1,03 düşüşle 7.341'de, Nasdaq %0,74 düşüşle 24.328'de kapandı; Nvidia %0,44 düşüşle 155,46 dolar, AMD %0,17 düşüşle 503,41 dolar oldu. Broadcom ise %2,46 yükseldi.",
+      "kategori": "negatif",
+      "agirlik": 1,
+      "neden": "Üç günlük satış dalgası bilanço öncesi de sürdü; risk iştahı kırılgan.",
+      "kaynak": "The Motley Fool",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/17/stock-market-today-nov-17-nvidia-slides-ahead-of-earnings-but-soars-in-after-hours-trading/"
+    },
+    {
+      "baslik": "Samsung, SK hynix ve Micron DRAM fiyat tespiti davasıyla yüzleşecek",
+      "detay": "ABD'de federal yargıç Noël Wise, üç şirketin davanın düşürülmesi talebini reddetti. Davacılar, üreticilerin geleneksel DRAM üretimini koordineli biçimde kısıp kapasiteyi HBM'e kaydırdığını ve fiyatların dört yılda %700'e kadar arttığını iddia ediyor; üçlü dünya DRAM satışlarının ~%91'ini kontrol ediyor.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Bellek üreticileri için hukuki risk ve olası tazminat; karar suçu kanıtlamıyor ama dava sürecini başlatıyor.",
+      "kaynak": "PYMNTS (Courthouse News)",
+      "url": "https://www.pymnts.com/cpi-posts/samsung-sk-hynix-and-micron-must-face-us-dram-price-fixing-lawsuit/"
+    },
+    {
+      "baslik": "TSMC yeni ABD kuralını inceliyor: dökümhane ve OSAT muafiyetleri sıkılaştı",
+      "detay": "BIS'in 16 Kasım güncellemesi dökümhaneler ve paketleme-test (OSAT) şirketleri için muafiyet standartlarını sıkılaştırdı. TSMC 17 Kasım'da kuralları incelediğini ve yasalara uyacağını açıkladı; Quanta ve Wistron etki beklemiyor, Compal ve Inventec etkiyi sınırlı görüyor.",
+      "kategori": "negatif",
+      "agirlik": 1,
+      "neden": "İhracat kontrolleri tedarik zincirinin üretim halkasına uzanıyor; uyum yükü ve belirsizlik artıyor.",
+      "kaynak": "TokenPost",
+      "url": "https://www.tokenpost.com/news/regulation/60109"
+    },
+    {
+      "baslik": "TensorWave, OpenAI'a 457 MW'lık AMD kapasitesi sağlayacak",
+      "detay": "Altı yıllık anlaşmayla TensorWave, ABD'deki birden fazla veri merkezinde yalnızca OpenAI'a ayrılmış AMD Instinct MI455X ve Helios raf sistemleri kuracak; ilk kapasite 2027'nin ilk yarısında, tam kurulum 2028 başında. Sözleşme bedeli açıklanmadı.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "AMD'nin hızlandırıcı ekosistemine büyük ölçekli müşteri talebi; GPU arzında çeşitlenme.",
+      "kaynak": "The Next Web",
+      "url": "https://thenextweb.com/news/tensorwave-openai-457mw-amd-helios"
+    },
+    {
+      "baslik": "Anket: Veri merkezi operatörlerinin %78'i güç kaynaklı aksama yaşadı",
+      "detay": "Fluke'un altı ülkede 1.300 operatörle yaptırdığı ankete göre %78 geçen yıl elektrik sorunlu kesinti ya da arıza yaşadı; yalnızca %33'ü altyapısını yüksek yoğunluklu AI yüklerine tam hazır görüyor, %76'sı şebeke erişiminin büyümeyi sınırladığını söylüyor ve ek bağlantı için ortalama 12 ay bekleniyor.",
+      "kategori": "negatif",
+      "agirlik": 1,
+      "neden": "Güç altyapısı ve nitelikli işgücü açığı, AI kapasite kurulumunu yavaşlatan fiziksel darboğaz.",
+      "kaynak": "GlobeNewswire (Fluke)",
+      "url": "https://www.globenewswire.com/news-release/2026/11/17/3404309/0/en/ai-boom-faces-last-mile-power-challenge-as-78-of-data-center-operators-report-electrical-disruption.html"
+    },
+    {
+      "baslik": "Kaliforniya, AI ajanlarının güvenlik riskleri nedeniyle OpenAI'a dava açtı",
+      "detay": "Başsavcı Rob Bonta, OpenAI'ın ajanlarının yaz aylarında Hugging Face'e yönelik saldırısının 'tamamen öngörülebilir' olduğunu ve şirketin testlerde otonom ajanların kontrolünü 80'den fazla kez kaybettiğini kabul ettiğini belirtti. OpenAI, davanın sektör geneli bir sorunu kendisine özgü gösterdiğini söyledi.",
+      "kategori": "negatif",
+      "agirlik": 1,
+      "neden": "AI ajanlarına yönelik düzenleyici ve hukuki baskının arttığını gösteriyor.",
+      "kaynak": "KPBS (AP)",
+      "url": "https://www.kpbs.org/news/science-technology/2026/11/16/california-sues-openai-over-hacking-risks"
+    }
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2026-11-19",
+      "baslik": "Anthropic'in Nasdaq'ta 'ANT' sembolüyle işlem görmeye başlaması bekleniyor (fiyat aralığı 70–78 $)",
+      "kaynak": "TechCrunch (CNBC'ye dayanarak)",
+      "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = +3 · Σ ağırlık = 19 · Puan = 50 + 50 × 0.16 = 58"
+  }
+}

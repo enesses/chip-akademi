@@ -1,0 +1,29 @@
+{
+  "tarih": "2026-11-18",
+  "oneriler": [
+    {
+      "baslik": "Onay bekleyen önerilerde bekleme süresini gün olarak göster",
+      "neden": "Rapor 30 öneri PR'ının onay beklediğini gösteriyor (#58–#96, en eskisi Ekim başından). OnayBekleyenler.jsx her satırda yalnızca '18 Kas' gibi tarih yazıyor (satır 101); kaç gündür beklediği ve en eski bekleyenin yaşı görünmüyor, bu yüzden hangi PR'ın önce onaylanması gerektiği anlaşılmıyor.",
+      "etki": "orta",
+      "alan": "src/components/OnayBekleyenler.jsx"
+    },
+    {
+      "baslik": "Bellek fiyatları kartına 'eski veri' uyarısı ekle",
+      "neden": "İyileştirme ajanı bellek fiyatlarının 26 gündür güncellenmediğini bildiriyor (bellek_fiyat.json guncelleme 2026-10-23). BellekFiyatlari.jsx yalnızca 'Son kontrol: …' yazıyor (satır 111); Prices.jsx'teki endeks kartında olduğu gibi 'Eski: N gün önce' uyarısı yok, okuyucu 4Ç tahminlerinin yaşını fark etmiyor.",
+      "etki": "orta",
+      "alan": "src/components/BellekFiyatlari.jsx"
+    },
+    {
+      "baslik": "Medyanı boş gelen satırlarda sağlayıcı sayısını yine de güncelle",
+      "neden": "veri-isle.mjs satır 110 yalnızca medyanı sayı olan satırları işliyor; bugün Nvidia Vera Rubin kaynakta 9 sağlayıcıyla geldi ama medyan okuması belirsiz olduğu için null yazıldı ve kayıtta 6 sağlayıcı / 11,58 $ (ölçüm 2026-11-15) kaldı. Fiyatı korurken sağlayıcı sayısını güncellemek tabloyu daha doğru yapar (otomasyon/ — korunan dosya, onay gerekir).",
+      "etki": "düşük",
+      "alan": "otomasyon/veri-isle.mjs"
+    },
+    {
+      "baslik": "Bellek sözleşme fiyatlarını yenile",
+      "neden": "bellek_fiyat.json 26 gündür aynı; bugün TrendForce'ta yalnızca NAND spot fiyatlarının iki haftada %20 düştüğü haberi (17 Kasım) var, yeni sözleşme fiyatı tahmini yok. Pazartesi adımı 1Ç 2027 tahmini çıktığında bunu yakalamalı.",
+      "etki": "düşük",
+      "alan": "src/data/bellek_fiyat.json"
+    }
+  ]
+}

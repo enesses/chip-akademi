@@ -1,0 +1,98 @@
+{
+  "tarih": "2026-11-18",
+  "haberler": [
+    {
+      "baslik": "AMD, World Labs satın almasını tamamladı; Fei-Fei Li baş bilim insanı oldu",
+      "detay": "AMD 16 Kasım'da World Labs alımını tamamladı. Fei-Fei Li yönetim kurulu başkan yardımcısı ve baş bilim insanı olarak doğrudan Lisa Su'ya bağlı çalışacak; ekip dünya modeli araştırmalarını AMD'nin gelecekteki AI altyapısına taşıyacak.",
+      "kaynak": "AMD",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1306/amd-completes-acquisition-of-world-labs",
+      "yayin": "2026-11-16",
+      "konular": [
+        "cip",
+        "yapay-zeka"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "SK hynix, Cheongju P&T6 için yeni HBM4 ekipman siparişlerine hazırlanıyor",
+      "detay": "ETNews'e göre SK hynix bağlama, kesme ve denetim ekipmanları için tedarikçilerle görüşüyor; P&T6 tam kapasitede HBM üretimine ayda 20.000'den fazla wafer ekleyebilir. Şirket beş yılda yerli tedarikçilere 1,4 trilyon won yatıracak.",
+      "kaynak": "TrendForce",
+      "url": "https://trendforce.com/news/2026/11/16/news-sk-hynix-reportedly-plans-new-hbm4-equipment-orders-with-pt6-in-focus-despite-nvidia-uncertainty",
+      "yayin": "2026-11-16",
+      "konular": [
+        "bellek"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "OpenAI, GPT-6.2 Astra ve Sol modellerini ChatGPT ve Codex'e getirdi",
+      "detay": "Astra zor projeler için, Sol günlük kodlama için; Sol, FrontierCode 2.0'da Astra'ya yarım puan yakın sonucu yaklaşık beşte bir maliyetle veriyor. Astra'nın API fiyatları GPT-6 Astra'ya göre %20 düşük; Ultrafast modu 4,5 kata kadar hızlı token üretiyor.",
+      "kaynak": "9to5Mac",
+      "url": "https://9to5mac.com/2026/11/17/openai-upgrades-chatgpt-and-codex-with-new-gpt-6-2-astra-and-sol-models/",
+      "yayin": "2026-11-17",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Alibaba, 2,4 trilyon parametreli Qwen4-Max'i genel kullanıma açtı",
+      "detay": "Uzman karışımı mimarili model bir milyon token bağlam penceresi ve görsel girdi destekliyor. Alibaba'nın Work360 testinde ortalama görev maliyeti 26,58 RMB'den 11,16 RMB'ye (~%58) düştü; küçük Qwen4 modelleri açık kaynak olacak.",
+      "kaynak": "TechNode",
+      "url": "https://technode.com/2026/11/16/alibaba-launches-qwen4-max-with-lower-api-prices-and-a-million-token-context-window/",
+      "yayin": "2026-11-16",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Baidu CEO'su Robin Li: AI balonu korkuları gerçeğe dönüşebilir",
+      "detay": "Li, şirketlerin çoğunun AI'dan daha yüksek satış ya da kâr elde etmediğini söyledi; Xiaomi CEO'su Lei Jun da benzer uyarıda bulundu. Baidu'nun AI işleri yıllık %37 büyüdü ama toplam satışlar altıncı çeyrek üst üste geriledi.",
+      "kaynak": "Asia Business Daily",
+      "url": "https://asiabusinessdaily.substack.com/p/us-ai-chip-curbs-hit-southeast-asian",
+      "yayin": "2026-11-17",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Nvidia bilançosu sonrası CoreWeave ve Nebius da yükseldi",
+      "detay": "Seans sonrası CoreWeave ~%2, Nebius ~%3, TSMC ~%2 yükseldi; AMD ve Broadcom %1'in üzerinde arttı. Morningstar analisti Brian Colello sonuçları 'olağan iş akışı' olarak yorumladı.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/article/amd-broadcom-tsmc-stocks-rise-on-nvidia-earnings-coreweave-nebius-shares-also-rally-220159436.html",
+      "yayin": "2026-11-17",
+      "konular": [
+        "pazar",
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Japonya'da SoftBank ve Kioxia %7 yükseldi",
+      "detay": "18 Kasım açılışında Nikkei 225 %1,04 artışla 59.474 puana, SoftBank %7,01, bellek üreticisi Kioxia %6,8 yükseldi; KOSPI %2,97 artışla 5.115,92'ye çıktı.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/more/262309976-japan-korea-stocks-skhy-kospi-nikkei-samsung-skhynix-softbank-kioxia-nvda-tradingkey",
+      "yayin": "2026-11-18",
+      "konular": [
+        "pazar",
+        "bellek"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "ABD çip kuralı Brezilya'daki AI veri merkezlerini de kapsıyor",
+      "detay": "BIS kuralı, Çin bağlantılı firmalara 12 milyon TPP üzerinde işlem gücü sağlayacak Brezilya'daki veri merkezlerini lisansa bağlıyor; ABD merkezli firmalar lisanstan muaf ama BIS'e raporlama yapmak zorunda. Kısıtlı firmalara hizmet veren mevcut merkezlere 90 gün süre tanındı.",
+      "kaynak": "The Rio Times",
+      "url": "https://www.riotimesonline.com/the-big-read-brazil-18-november-2026",
+      "yayin": "2026-11-18",
+      "konular": [
+        "politika",
+        "veri-merkezi"
+      ],
+      "kategori": "negatif"
+    }
+  ]
+}

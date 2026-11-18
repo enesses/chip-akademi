@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-11-17T06:59:57.017Z",
-  "tarih": "2026-11-17",
+  "guncelleme": "2026-11-18T06:58:00.342Z",
+  "tarih": "2026-11-18",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -8,8 +8,8 @@
       "ad": "Güvenlik",
       "saat": "10:00",
       "calisti": true,
-      "durum": "temiz",
-      "zaman": "2026-11-17T06:55:39.684Z"
+      "durum": "dikkat",
+      "zaman": "2026-11-18T06:56:37.073Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-11-17T06:55:39.809Z"
+      "zaman": "2026-11-18T06:56:37.195Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-11-17T06:55:39.282Z"
+      "zaman": "2026-11-18T06:56:36.068Z"
     },
     {
       "id": "gelistirme",
@@ -33,10 +33,14 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-11-17T06:55:55.338Z"
+      "zaman": "2026-11-18T06:56:55.120Z"
     }
   ],
   "dikkat": [
+    {
+      "seviye": "uyarı",
+      "metin": "Güvenlik: 11 yüksek seviye bağımlılık açığı var."
+    },
     {
       "seviye": "dikkat",
       "tur": "onay",
@@ -45,73 +49,32 @@
   ],
   "oneriler": [
     {
-      "baslik": "Fiyat tablosuna 'yalnızca güncel ölçümler' süzgeci ekle",
-      "neden": "Bugünkü çekimde 23 model gelmedi ve eski fiyatla duruyor (ör. Nvidia RTX 5880 Ada, RTX 4500 Ada, P40: ölçüm 2026-10-12). Prices.jsx bu satırları yalnızca 'ölçüm …' notuyla işaretliyor; tabloyu bugünkü ölçümle sınırlayan bir düğme yok.",
-      "etki": "orta",
-      "alan": "src/pages/Prices.jsx"
-    },
-    {
-      "baslik": "Fiyat hareketi kartlarında az sağlayıcılı modelleri gizleme düğmesi",
-      "neden": "Bugünkü hareket kartlarında tek/iki sağlayıcılı modeller (Nvidia T600 %-28,6, 1 sağlayıcı; RTX 2000 Ada %-20,8, 2 sağlayıcı) yalnızca soluk gösteriliyor; 'En az 5 sağlayıcı' süzgeci tabloya uygulanıyor ama Artanlar/Düşenler kartlarına uygulanmıyor (Prices.jsx, iki_gun bölümü).",
-      "etki": "orta",
-      "alan": "src/pages/Prices.jsx"
-    },
-    {
-      "baslik": "Tek fiyatlı kaynak satırlarını (ör. Vera Rubin) güncellemenin yolunu belirle",
-      "neden": "getdeploying tablosunda yalnızca tek fiyat sütunu dolu gelen modeller (Nvidia Vera Rubin 6 sağlayıcı, AMD MI210, MI350P, P600, P1000, T1000, RTX PRO 2000) medyan=null olarak işleniyor; veri-isle.mjs bunları güncellemiyor ve fiyatları 2026-11-15 ölçümünde kalıyor.",
-      "etki": "düşük",
-      "alan": "otomasyon/veri-isle.mjs"
-    },
-    {
-      "baslik": "Otomasyon sayfasında onay bekleyen PR'ların yaşını ve sayısını öne çıkar",
-      "neden": "Rapor 29 öneri PR'ının onay beklediğini gösteriyor (#58–#94); otomatik birleştirme 11 Kasım'dan beri 'Merge Without Review' izin denetimince engelleniyor (uygulanan.json). OnayBekleyenler.jsx listede en eski bekleyenin kaç gündür beklediğini göstermiyor.",
+      "baslik": "Onay bekleyen önerilerde bekleme süresini gün olarak göster",
+      "neden": "Rapor 30 öneri PR'ının onay beklediğini gösteriyor (#58–#96, en eskisi Ekim başından). OnayBekleyenler.jsx her satırda yalnızca '18 Kas' gibi tarih yazıyor (satır 101); kaç gündür beklediği ve en eski bekleyenin yaşı görünmüyor, bu yüzden hangi PR'ın önce onaylanması gerektiği anlaşılmıyor.",
       "etki": "orta",
       "alan": "src/components/OnayBekleyenler.jsx"
     },
     {
+      "baslik": "Bellek fiyatları kartına 'eski veri' uyarısı ekle",
+      "neden": "İyileştirme ajanı bellek fiyatlarının 26 gündür güncellenmediğini bildiriyor (bellek_fiyat.json guncelleme 2026-10-23). BellekFiyatlari.jsx yalnızca 'Son kontrol: …' yazıyor (satır 111); Prices.jsx'teki endeks kartında olduğu gibi 'Eski: N gün önce' uyarısı yok, okuyucu 4Ç tahminlerinin yaşını fark etmiyor.",
+      "etki": "orta",
+      "alan": "src/components/BellekFiyatlari.jsx"
+    },
+    {
+      "baslik": "Medyanı boş gelen satırlarda sağlayıcı sayısını yine de güncelle",
+      "neden": "veri-isle.mjs satır 110 yalnızca medyanı sayı olan satırları işliyor; bugün Nvidia Vera Rubin kaynakta 9 sağlayıcıyla geldi ama medyan okuması belirsiz olduğu için null yazıldı ve kayıtta 6 sağlayıcı / 11,58 $ (ölçüm 2026-11-15) kaldı. Fiyatı korurken sağlayıcı sayısını güncellemek tabloyu daha doğru yapar (otomasyon/ — korunan dosya, onay gerekir).",
+      "etki": "düşük",
+      "alan": "otomasyon/veri-isle.mjs"
+    },
+    {
       "baslik": "Bellek sözleşme fiyatlarını yenile",
-      "neden": "İyileştirme ajanı: bellek fiyatları 25 gündür güncellenmedi (bellek_fiyat.json). Son günlerde NAND spot fiyat düşüşü (BofA, 16 Kasım) ve DRAM davası haberleri çıktı; pazartesi TrendForce adımı yeni bir sözleşme tahmini bulmadı.",
+      "neden": "bellek_fiyat.json 26 gündür aynı; bugün TrendForce'ta yalnızca NAND spot fiyatlarının iki haftada %20 düştüğü haberi (17 Kasım) var, yeni sözleşme fiyatı tahmini yok. Pazartesi adımı 1Ç 2027 tahmini çıktığında bunu yakalamalı.",
       "etki": "düşük",
       "alan": "src/data/bellek_fiyat.json"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-11-17",
-      "oneri": "Fiyat tablosuna 'yalnızca güncel ölçümler' süzgeci ekle",
-      "durum": "birlesti",
-      "pr": 95,
-      "dal": "otomasyon/oneri-2026-11-17-1",
-      "ozet": "Prices.jsx'e son çekimde ölçülmeyen fiyatları gizleyen 'Yalnızca güncel ölçümler' düğmesi eklendi",
-      "neden": null,
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-11-17",
-      "oneri": "Fiyat hareketi kartlarında az sağlayıcılı modelleri gizleme düğmesi",
-      "durum": "acik",
-      "pr": 96,
-      "dal": "otomasyon/oneri-2026-11-17-2",
-      "ozet": "Prices.jsx hareket kartlarına 'Az sağlayıcılıları gizle' düğmesi eklendi",
-      "neden": "Testler geçti; otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor.",
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "İki günlük hareketlerde %50'yi aşan değişimlere 'sert oynama' notu ekle",
-      "durum": "acik",
-      "pr": 72,
-      "tarih": "2026-11-03",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Kaynakta 14 günden uzun süredir gelmeyen fiyatları tabloda 'fiyat yok' say",
-      "durum": "acik",
-      "pr": 73,
-      "tarih": "2026-11-03",
-      "kim": "otomasyon"
-    },
     {
       "oneri": "Fiyat hareketleri listesinde dünkü ve bugünkü fiyatı da göster",
       "durum": "acik",
@@ -480,13 +443,13 @@
     }
   ],
   "guvenlik": {
-    "durum": "temiz",
+    "durum": "dikkat",
     "bagimlilik": {
       "kritik": 0,
-      "yuksek": 0,
+      "yuksek": 11,
       "orta": 0,
       "dusuk": 0,
-      "toplam": 0,
+      "toplam": 11,
       "kabulEdilen": [],
       "kabulNedenleri": [
         "braces (GHSA-vfj7-8cjw-p6xm): Yalnızca derleme sırasında Tailwind 3'ün dosya taramasında kullanılıyor; açık, saldırganın glob deseni verebilmesini gerektiriyor ve desenler bizim tailwind.config.js dosyamızdan geliyor. Yayınlanan HTML'de bu kod yok. Yamalı braces sürümü yok; tek çözüm Tailwind 4'e geçiş (ayrı bir iş). — gözden geçirme 2027-01-15"
@@ -510,14 +473,14 @@
       },
       "kod": {
         "dosyaSayisi": 77,
-        "toplamSatir": 18617,
+        "toplamSatir": 18627,
         "boyutKB": null
       }
     },
     "bulgular": [
       {
         "alan": "veri",
-        "baslik": "Bellek fiyatları 25 gündür güncellenmedi",
+        "baslik": "Bellek fiyatları 26 gündür güncellenmedi",
         "etki": "düşük",
         "otomatik": false,
         "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
@@ -530,17 +493,22 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 95 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 23 gelmedi (eski fiyat korundu)"
+        "detay": "bu çalıştırmada güncellendi — 95 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 23 gelmedi (eski fiyat korundu), 1 büyük oynama elle doğrulandı"
+      },
+      {
+        "ad": "Elle doğrulanan fiyat",
+        "durum": "ok",
+        "detay": "Nvidia A4000: 0.52 → 0.24 (ikinci hedefli okuma: medyan 0.24, en düşük 0.10 (GPU.ai), 10 sağlayıcı) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 18, 3 yaklaşan olay; haber akışına +10"
+        "detay": "bu çalıştırmada güncellendi — 11 madde, puan 58, 1 yaklaşan olay; haber akışına +10"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+7 haber (akışta 405); bugün toplam 17"
+        "detay": "+8 haber (akışta 407); bugün toplam 18"
       },
       {
         "ad": "Derleme",
@@ -550,7 +518,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2912 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2915 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -577,11 +545,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-11-01",
-      "durum": "dikkat",
-      "dikkat": 1
-    },
     {
       "tarih": "2026-11-02",
       "durum": "dikkat",
@@ -646,6 +609,11 @@
       "tarih": "2026-11-17",
       "durum": "dikkat",
       "dikkat": 1
+    },
+    {
+      "tarih": "2026-11-18",
+      "durum": "dikkat",
+      "dikkat": 2
     }
   ]
 }
