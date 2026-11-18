@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-18T06:58:00.342Z",
+  "guncelleme": "2026-11-18T06:59:53.469Z",
   "tarih": "2026-11-18",
   "durum": "dikkat",
   "ajanlar": [
@@ -73,7 +73,28 @@
       "alan": "src/data/bellek_fiyat.json"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-11-18",
+      "oneri": "Onay bekleyen önerilerde bekleme süresini gün olarak göster",
+      "durum": "birlesti",
+      "pr": 97,
+      "dal": "otomasyon/oneri-2026-11-18-1",
+      "ozet": "OnayBekleyenler.jsx her satırda bekleme süresini ve başlıkta en eski bekleyenin yaşını gösteriyor",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-18",
+      "oneri": "Bellek fiyatları kartına 'eski veri' uyarısı ekle",
+      "durum": "birlesti",
+      "pr": 98,
+      "dal": "otomasyon/oneri-2026-11-18-2",
+      "ozet": "BellekFiyatlari.jsx 'Son kontrol' 14 günden eskiyse 'N gün önce' uyarısı gösteriyor",
+      "neden": null,
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Fiyat hareketleri listesinde dünkü ve bugünkü fiyatı da göster",
@@ -227,6 +248,20 @@
       "durum": "acik",
       "pr": 96,
       "tarih": "2026-11-17",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Onay bekleyen önerilerde bekleme süresini gün olarak göster",
+      "durum": "birlesti",
+      "pr": 97,
+      "tarih": "2026-11-18",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Bellek fiyatları kartına 'eski veri' uyarısı ekle",
+      "durum": "birlesti",
+      "pr": 98,
+      "tarih": "2026-11-18",
       "kim": "otomasyon"
     }
   ],

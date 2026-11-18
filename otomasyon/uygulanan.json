@@ -1050,6 +1050,16 @@
       "ozet": "OnayBekleyenler.jsx her satırda bekleme süresini ve başlıkta en eski bekleyenin yaşını gösteriyor",
       "neden": null,
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-18",
+      "oneri": "Bellek fiyatları kartına 'eski veri' uyarısı ekle",
+      "durum": "birlesti",
+      "pr": 98,
+      "dal": "otomasyon/oneri-2026-11-18-2",
+      "ozet": "BellekFiyatlari.jsx 'Son kontrol' 14 günden eskiyse 'N gün önce' uyarısı gösteriyor",
+      "neden": null,
+      "kim": "otomasyon"
     }
   ]
 }
