@@ -1040,6 +1040,16 @@
       "ozet": "Prices.jsx hareket kartlarına 'Az sağlayıcılıları gizle' düğmesi eklendi",
       "neden": "Testler geçti; otomatik birleştirme bu oturumda izin denetimince engellendi, onay bekliyor.",
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-18",
+      "oneri": "Onay bekleyen önerilerde bekleme süresini gün olarak göster",
+      "durum": "birlesti",
+      "pr": 97,
+      "dal": "otomasyon/oneri-2026-11-18-1",
+      "ozet": "OnayBekleyenler.jsx her satırda bekleme süresini ve başlıkta en eski bekleyenin yaşını gösteriyor",
+      "neden": null,
+      "kim": "otomasyon"
     }
   ]
 }
