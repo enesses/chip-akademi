@@ -19,6 +19,10 @@ function eskilik(g) {
   return null;
 }
 
+/** Son kontrol bu kadar günden eskiyse bölüm altında uyarı gösterilir (sözleşme tahminleri çeyreklik açıklanır). */
+const KONTROL_ESKI_GUN = 14;
+const kontrolYasi = (t) => Math.floor((Date.now() - new Date(`${t}T12:00:00Z`)) / 86400000);
+
 const tarihTR = (t) => new Date(`${t}T12:00:00Z`).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" });
 
 /** Çeyreklik göstergeleri aynı ölçekte (0–25%) çizer; yıllık HBM ayrı kartta, çünkü ölçeği bambaşka. */
@@ -108,7 +112,14 @@ export default function BellekFiyatlari() {
           ))}
         </ul>
       )}
-      <p className="font-mono text-[10px] text-muted-foreground mt-3">Son kontrol: {tarihTR(bellek.guncelleme)}</p>
+      <p className="font-mono text-[10px] text-muted-foreground mt-3">
+        Son kontrol: {tarihTR(bellek.guncelleme)}
+        {kontrolYasi(bellek.guncelleme) > KONTROL_ESKI_GUN && (
+          <span className="ml-2 inline-flex items-center gap-1 text-amber-300" data-testid="bellek-eski">
+            <Clock className="h-2.5 w-2.5" aria-hidden="true" />{kontrolYasi(bellek.guncelleme)} gün önce
+          </span>
+        )}
+      </p>
       {bellek.kontrol_notu && <p className="text-[11px] text-muted-foreground mt-1">{bellek.kontrol_notu}</p>}
     </section>
   );
