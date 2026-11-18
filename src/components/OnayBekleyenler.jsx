@@ -6,6 +6,9 @@ import { cn } from "@/lib/utils";
 const DEPO = "https://github.com/enesses/chip-akademi";
 const AY = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
 const tarih = (iso) => { const [, a, g] = iso.split("-").map(Number); return `${g} ${AY[a - 1]}`; };
+// Kaç gündür beklediği (UTC günü); bugün eklenen 0 gün.
+const gunOnce = (iso) => Math.max(0, Math.round((Date.parse(new Date().toISOString().slice(0, 10)) - Date.parse(iso)) / 86400000));
+const yasMetni = (n) => (n === 0 ? "bugün" : `${n} gündür bekliyor`);
 const SAAT = 6 * 3600 * 1000; // "iletildi" işareti bu süre sonra düşer (görev yayını yenilemediyse yeniden basılabilsin)
 
 /**
@@ -42,6 +45,7 @@ export default function OnayBekleyenler({ liste }) {
   };
 
   const bekleyen = liste.filter((k) => !durum[k.pr] || durum[k.pr].asama === "hata" || durum[k.pr].asama === "soru");
+  const enEski = liste.length ? Math.max(...liste.map((k) => gunOnce(k.tarih))) : 0;
   const hepsiSoruda = bekleyen.length > 1 && bekleyen.every((k) => durum[k.pr]?.asama === "soru");
 
   return (
@@ -53,6 +57,11 @@ export default function OnayBekleyenler({ liste }) {
             Otomasyon bunları uyguladı ve testleri geçti, ama birleştirmek için senin onayın gerekiyor.
             Onaylayınca Claude birkaç dakika içinde birleştirir, uygulamayı yeniden yayınlar ve sana bildirim gönderir.
           </p>
+          {liste.length > 0 && (
+            <p className="text-xs mt-1.5 text-amber-300" data-testid="onay-ozet">
+              {liste.length} öneri bekliyor{enEski > 0 ? ` · en eskisi ${enEski} gündür` : ""}
+            </p>
+          )}
         </div>
         {hazir.durum === "hazir" && bekleyen.length > 1 && (
           hepsiSoruda ? (
@@ -98,7 +107,9 @@ export default function OnayBekleyenler({ liste }) {
                     <a href={`${DEPO}/pull/${k.pr}`} target="_blank" rel="noreferrer" className="text-primary hover:underline inline-flex items-center gap-0.5">
                       PR #{k.pr}<ExternalLink className="h-3 w-3" aria-hidden="true" />
                     </a>
-                    {" · "}{tarih(k.tarih)}{k.neden ? <> · {k.neden}</> : null}
+                    {" · "}{tarih(k.tarih)}
+                    {" · "}<span className={cn(gunOnce(k.tarih) >= 7 && "text-amber-300")} data-testid="onay-yas">{yasMetni(gunOnce(k.tarih))}</span>
+                    {k.neden ? <> · {k.neden}</> : null}
                   </p>
                   {d?.hata && (
                     <p className={cn("text-xs mt-1.5 inline-flex items-start gap-1", d.belirsiz ? "text-amber-300" : "text-red-300")} role="status">
