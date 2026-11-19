@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-19T07:03:05.677Z",
+  "guncelleme": "2026-11-19T07:04:59.963Z",
   "tarih": "2026-11-19",
   "durum": "dikkat",
   "ajanlar": [
@@ -75,7 +75,28 @@
       "alan": "Veri"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-11-19",
+      "oneri": "Takvim (.ics) dosyasında uzun satırları RFC 5545'e göre katla",
+      "durum": "birlesti",
+      "pr": 99,
+      "dal": "otomasyon/oneri-2026-11-19-1",
+      "ozet": "icsUret() 75 sekizliden uzun satırları CRLF+boşlukla, UTF-8 karakterlerini bölmeden katlıyor",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-19",
+      "oneri": "Haberler arama kutusunda Escape tuşu aramayı temizlesin",
+      "durum": "birlesti",
+      "pr": 100,
+      "dal": "otomasyon/oneri-2026-11-19-2",
+      "ozet": "Arama kutusunda Escape aramayı temizliyor; aria-keyshortcuts eklendi",
+      "neden": null,
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Haberler'de gün başlığına o günün ton dağılımını ekle",
@@ -229,6 +250,20 @@
       "durum": "birlesti",
       "pr": 98,
       "tarih": "2026-11-18",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Takvim (.ics) dosyasında uzun satırları RFC 5545'e göre katla",
+      "durum": "birlesti",
+      "pr": 99,
+      "tarih": "2026-11-19",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Haberler arama kutusunda Escape tuşu aramayı temizlesin",
+      "durum": "birlesti",
+      "pr": 100,
+      "tarih": "2026-11-19",
       "kim": "otomasyon"
     }
   ],
