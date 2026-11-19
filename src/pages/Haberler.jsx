@@ -128,7 +128,9 @@ export default function Haberler() {
             <label className="relative flex-1 min-w-[12rem] max-w-sm">
               <span className="sr-only">Haberlerde ara</span>
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" aria-hidden="true" />
-              <input type="search" value={sorgu} onChange={(e) => setSorgu(e.target.value)} placeholder="Ara: Nvidia, HBM, TSMC…"
+              <input type="search" value={sorgu} onChange={(e) => setSorgu(e.target.value)}
+                onKeyDown={(e) => { if (e.key === "Escape" && sorgu) { e.preventDefault(); setSorgu(""); } }}
+                aria-keyshortcuts="Escape" placeholder="Ara: Nvidia, HBM, TSMC…"
                 className="w-full rounded-xl border border-card-border bg-card/70 pl-9 pr-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:border-primary/60" />
             </label>
             <div className="inline-flex rounded-xl border border-card-border p-0.5 bg-card/60" role="radiogroup" aria-label="Ton">
