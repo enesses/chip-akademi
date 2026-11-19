@@ -33,7 +33,21 @@ function icsUret(olaylar) {
       `SUMMARY:${kac(o.baslik)}`, `DESCRIPTION:${kac(`Kaynak: ${o.kaynak}`)}`, ...(o.url ? [`URL:${o.url}`] : []), "END:VEVENT");
   });
   satirlar.push("END:VCALENDAR");
-  return satirlar.join("\r\n") + "\r\n";
+  return satirlar.map(katla).join("\r\n") + "\r\n";
+}
+
+/** RFC 5545 §3.1: 75 sekizliden uzun satırları CRLF + boşlukla katlar (UTF-8 karakterlerini bölmeden). */
+function katla(satir) {
+  const enc = new TextEncoder();
+  const parcalar = [];
+  let parca = "", boy = 0, sinir = 75;
+  for (const c of satir) {
+    const n = enc.encode(c).length;
+    if (boy + n > sinir) { parcalar.push(parca); parca = ""; boy = 0; sinir = 74; }
+    parca += c; boy += n;
+  }
+  parcalar.push(parca);
+  return parcalar.join("\r\n ");
 }
 
 const KATEGORI = {
