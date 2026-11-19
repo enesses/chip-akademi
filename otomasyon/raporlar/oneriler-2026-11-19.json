@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-11-19",
+  "oneriler": [
+    {
+      "baslik": "Takvim (.ics) dosyasında uzun satırları RFC 5545'e göre katla",
+      "neden": "src/pages/Bugun.jsx icsUret() satırları katlamadan yazıyor; RFC 5545 satırların 75 sekizliyi aşmamasını istiyor. Bugünkü yaklaşan olaylardaki 'URL:https://thenextweb.com/news/china-weighs-response-to-us-chip-curbs-before-trump-summit' satırı 88 karakter, bazı takvim istemcileri bu satırları kesebiliyor.",
+      "etki": "düşük",
+      "alan": "Bugün"
+    },
+    {
+      "baslik": "Haberler arama kutusunda Escape tuşu aramayı temizlesin",
+      "neden": "src/pages/Haberler.jsx'teki arama kutusunda (type=search) klavyeyle temizleme için onKeyDown yok; yalnızca 'Filtreleri temizle' düğmesi var. Akışta 408 haber var, arama sık kullanılıyor.",
+      "etki": "düşük",
+      "alan": "Haberler"
+    },
+    {
+      "baslik": "Bugün puanının dünkü puana göre değişimini göster",
+      "neden": "Puan dün 58 (gecmis/bugun-2026-11-18.json), bugün 47; src/data/bugun.json'da önceki puan alanı olmadığı için sayfa bu 11 puanlık düşüşü göstermiyor. veri-isle.mjs'in önceki günün puanını yazması gerekiyor (korunan dosya, onay ister).",
+      "etki": "orta",
+      "alan": "Bugün / otomasyon"
+    },
+    {
+      "baslik": "Fiyat hareketlerinde ikinci okumayla doğrulanan büyük oynamaları işaretle",
+      "neden": "Bugün V100 +%56,3 ve GH200 +%58,2 (gpu_kiralama.json iki_gun.artanlar) ikinci WebFetch ile doğrulandı, ama bu bilgi yalnızca raporda; kullanıcı sayfada bunun veri hatası olmadığını göremiyor. veri-isle.mjs'in 'dogrulanan' listesini fiyat satırına taşıması gerekir.",
+      "etki": "orta",
+      "alan": "Fiyatlar / otomasyon"
+    },
+    {
+      "baslik": "Bellek sözleşme fiyatlarını pazartesi arama üzerinden yenile",
+      "neden": "İyileştirme ajanı bellek_fiyat.json'un 27 gündür güncellenmediğini bildiriyor; bugün trendforce.com/presscenter doğrudan adresle WebFetch'te izin engeline takıldı. Fiyat sayfasında olduğu gibi önce WebSearch ile TrendForce bülten bağlantısı bulunup açılmalı.",
+      "etki": "orta",
+      "alan": "Veri"
+    }
+  ]
+}

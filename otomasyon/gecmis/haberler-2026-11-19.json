@@ -1,0 +1,87 @@
+{
+  "tarih": "2026-11-19",
+  "haberler": [
+    {
+      "baslik": "Çin, ABD kurallarına yanıtı tartıyor; SMIC %9'a kadar yükseldi",
+      "detay": "ABD'nin yurt dışı veri merkezlerinin Çinli firmalara hesaplama sağlamasını lisansa bağlayan kuralının ardından Minimax %6,5, Z.ai %6,8 düştü, SMIC en fazla %9 yükseldi. Çin'in galyum, germanyum ve antimon yasağı askısı 27 Kasım'da sona eriyor.",
+      "kaynak": "The Next Web",
+      "url": "https://thenextweb.com/news/china-weighs-response-to-us-chip-curbs-before-trump-summit",
+      "yayin": "2026-11-17",
+      "konular": [
+        "politika",
+        "cip",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Blackstone'un veri merkezi REIT'i Amazon'a kiralı 647 MW'lık kampüsler için 5 milyar dolarlık işlem yaptı",
+      "detay": "BXDC, Kuzey Indiana'daki iki kampüsün %75'ini %7,0 başlangıç getiri oranıyla alıyor; varlıkların tamamı 12 yıllığına Amazon'a kiralı. Beş büyük hyperscaler'ın 2026 veri merkezi harcamasının 815 milyar dolar olması bekleniyor.",
+      "kaynak": "Investing.com",
+      "url": "https://www.investing.com/news/company-news/blackstone-data-center-reit-nov-2026-slides-5b-amazon-deal-2t-market-93CH-5030320",
+      "yayin": "2026-11-16",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Giga Energy, Teksas'taki 60 MW'lık AI veri merkezi için 1 milyar dolarlık kira anlaşması imzaladı",
+      "detay": "Adı açıklanmayan ABD'li bir AI bulut sağlayıcısıyla 10 yıllık anlaşma, Hunt County'deki 'Project Clay' tesisini kapsıyor; hizmete giriş hedefi 2027 baharı.",
+      "kaynak": "Shattered",
+      "url": "https://shattered.io/giga-energy-1-billion-lease-60mw-texas-ai-data-center-project-clay/",
+      "yayin": "2026-11-17",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Nvidia bilançosu yatırımcıyı sakinleştirmedi; altın 3.800 doların altına indi",
+      "detay": "18 Kasım seansında spot altın %2,4 düşüşle 3.756 dolara, Brent %1,4 düşüşle 91,86 dolara geriledi; 10 yıllık ABD tahvil faizi %5,08.",
+      "kaynak": "Eurasia Business News",
+      "url": "https://eurasiabusinessnews.com/2026/11/18/stock-market-today-november-18-2026-nvidia-earnings-fail-to-calm-investors-as-gold-and-oil-fall/",
+      "yayin": "2026-11-18",
+      "konular": [
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "TrendForce: HBM4 fiyatının 2027'de Gb başına 5,50 dolara çıkması bekleniyor",
+      "detay": "Sabah bültenine göre TrendForce, 4. çeyrekte konvansiyonel DRAM ortalama fiyatlarında çeyreklik %10–15 artış bekliyor; Bernstein 2027 küresel WFE tahminini 204 milyar dolardan 217 milyar dolara yükseltti.",
+      "kaynak": "456X Research (TrendForce ve Bernstein verisi)",
+      "url": "https://456xresearch.substack.com/p/456x-semi-ai-morning-brief-november",
+      "yayin": "2026-11-18",
+      "konular": [
+        "bellek",
+        "cip"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Amazon CEO'su Jassy: veri merkezi büyümesini yavaşlatmak ABD'nin AI liderliğini riske atar",
+      "detay": "Andy Jassy, veri merkezi yatırımlarının yavaşlatılmasının ABD'nin Çin karşısındaki AI liderliğini ve küresel standart belirleme gücünü tehlikeye atacağını söyledi; Alphabet'ten Ruth Porat da sektörün seçmenlere faydayı anlatmakta zorlandığını kabul etti.",
+      "kaynak": "The Neuron",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-18-2026/",
+      "yayin": "2026-11-18",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "FrontierHarness v1.1: kodlama ajanlarında harcamanın %64,5'i başarısız çalışmalara gidiyor",
+      "detay": "22 kodlama aracı × 5 açık modelle 27.280 ajan çalışması ve 83 milyar token ölçüldü; görev başına maliyet araçlar arasında 1,8–5,0 kat değişiyor.",
+      "kaynak": "Bitdoze (Runta verisi)",
+      "url": "https://www.bitdoze.com/news/2026-11-18/",
+      "yayin": "2026-11-18",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    }
+  ]
+}

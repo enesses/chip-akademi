@@ -1,0 +1,38 @@
+{
+  "ajan": "yenileme",
+  "tarih": "2026-11-19",
+  "zaman": "2026-11-19T07:01:34.351Z",
+  "durum": "ok",
+  "adimlar": [
+    {
+      "ad": "Fiyat verisi",
+      "durum": "ok",
+      "detay": "bu çalıştırmada güncellendi — 103 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu), 1 büyük oynama elle doğrulandı"
+    },
+    {
+      "ad": "Elle doğrulanan fiyat",
+      "durum": "ok",
+      "detay": "Nvidia V100: 1.03 → 1.61 (ikinci okuma: medyan 1.61, en düşük 0.14) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
+    },
+    {
+      "ad": "Bugün sayfası",
+      "durum": "ok",
+      "detay": "bu çalıştırmada güncellendi — 9 madde, puan 47, 3 yaklaşan olay; haber akışına +9"
+    },
+    {
+      "ad": "Haber akışı",
+      "durum": "ok",
+      "detay": "+7 haber (akışta 408); bugün toplam 16"
+    },
+    {
+      "ad": "Derleme",
+      "durum": "ok",
+      "detay": "başarılı"
+    },
+    {
+      "ad": "Tek dosya",
+      "durum": "ok",
+      "detay": "17 görsel, HTML: 2915 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+    }
+  ]
+}
