@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { CalendarDays, CalendarClock, ExternalLink, Minus, Repeat, ThumbsDown, ThumbsUp } from "lucide-react";
+import { CalendarDays, CalendarClock, Clock, ExternalLink, Minus, Repeat, ThumbsDown, ThumbsUp } from "lucide-react";
 import data from "@/data/bugun.json";
 import { Link } from "@/components/Nav";
 import { cn } from "@/lib/utils";
@@ -67,6 +67,8 @@ export default function Bugun() {
   // Geçmişte kalan olayları sayfanın açıldığı güne göre gizle
   const yaklasan = (data.yaklasan || []).filter((o) => kalanGun(o.tarih) >= 0);
   const tekrarSayisi = data.maddeler.filter((m) => m.tekrar).length;
+  // Derleme bugünden eskiyse (o gün doğrulanmış yeterli haber yoksa dosya yazılmaz) bunu açıkça göster.
+  const derlemeYasi = data.tarih ? -kalanGun(data.tarih) : 0;
   const [suzgec, setSuzgec] = useState("hepsi");
   const [takvimDurum, setTakvimDurum] = useState(null);
   async function takvimeEkle() {
@@ -87,6 +89,11 @@ export default function Bugun() {
       <section className="relative overflow-hidden border-b border-border">
         <div className="relative container mx-auto px-4 py-12">
           <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-primary mb-3"><CalendarDays className="h-3.5 w-3.5" />{data.derlenme}</div>
+          {derlemeYasi > 0 && (
+            <p className="mb-3 inline-flex items-center gap-1 rounded-sm border border-amber-400/40 px-2 py-0.5 text-xs text-amber-300 ml-3 align-top" data-testid="bugun-eski" title="Bugün sayfası bu gün güncellenemedi; gösterilen içerik daha eski bir derlemeye ait">
+              <Clock className="h-3 w-3" aria-hidden="true" />{derlemeYasi} gün önceki derleme
+            </p>
+          )}
           <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em] mb-2">Bugün AI dünyası ne konuşuyor?</h1>
         </div>
       </section>
