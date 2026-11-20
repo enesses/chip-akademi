@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-11-19T07:04:59.963Z",
-  "tarih": "2026-11-19",
+  "guncelleme": "2026-11-20T07:01:40.723Z",
+  "tarih": "2026-11-20",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-11-19T07:01:34.687Z"
+      "zaman": "2026-11-20T07:00:16.306Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-11-19T07:01:34.777Z"
+      "zaman": "2026-11-20T07:00:16.394Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-11-19T07:01:34.351Z"
+      "zaman": "2026-11-20T07:00:15.931Z"
     },
     {
       "id": "gelistirme",
@@ -33,7 +33,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-11-19T07:01:49.951Z"
+      "zaman": "2026-11-20T07:00:31.467Z"
     }
   ],
   "dikkat": [
@@ -45,58 +45,37 @@
   ],
   "oneriler": [
     {
-      "baslik": "Takvim (.ics) dosyasında uzun satırları RFC 5545'e göre katla",
-      "neden": "src/pages/Bugun.jsx icsUret() satırları katlamadan yazıyor; RFC 5545 satırların 75 sekizliyi aşmamasını istiyor. Bugünkü yaklaşan olaylardaki 'URL:https://thenextweb.com/news/china-weighs-response-to-us-chip-curbs-before-trump-summit' satırı 88 karakter, bazı takvim istemcileri bu satırları kesebiliyor.",
+      "baslik": "Bellek bölümündeki yıllık kartlara da 'eski veri' rozeti ekle",
+      "neden": "src/components/BellekFiyatlari.jsx'te eskilik() yalnızca çeyreklik göstergeler için çağrılıyor; yıllık kartlarda (HBM karma 2027, 29 Eylül tarihli; bugün eklenen HBM4 2027) hiçbir eskilik işareti yok. 29 Eylül göstergesi 60 gün sınırına 9 gün kaldı.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bugün sayfası eski derlemeyle açılırsa uyarı göster",
+      "neden": "src/pages/Bugun.jsx (satır 89) yalnızca data.derlenme'yi yazıyor; GUNLUK.md 2. adıma göre doğrulanmış 5 madde yoksa dosya yazılmıyor ve sayfa önceki günün içeriğini bugünmüş gibi gösteriyor. bugun.tarih bugünden eskiyse 'N gün önceki derleme' rozeti gerekli.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Ana sayfadaki Günün özeti kartında Bugün verisinin yaşını göster",
+      "neden": "src/pages/Home.jsx satır 172 'Bugün · {derlenme}' yazıyor; Bugün verisi o gün güncellenmezse ana sayfada da bunu ayırt eden bir işaret yok.",
       "etki": "düşük",
-      "alan": "Bugün"
+      "alan": "arayüz"
     },
     {
-      "baslik": "Haberler arama kutusunda Escape tuşu aramayı temizlesin",
-      "neden": "src/pages/Haberler.jsx'teki arama kutusunda (type=search) klavyeyle temizleme için onKeyDown yok; yalnızca 'Filtreleri temizle' düğmesi var. Akışta 408 haber var, arama sık kullanılıyor.",
+      "baslik": "Kaynakta 'ilan yok' görünen modellerin eski fiyatını 'ilan yok' diye işaretle",
+      "neden": "20 Kasım çekiminde 15 model 'gelmedi (eski fiyat korundu)'; kaynak tablosunda bunların çoğu (AMD MI250, Nvidia P40, RTX 4500 Ada, RTX 5880 Ada, P2000) açıkça 'No listings yet' / 0 sağlayıcı gösteriyor. Prices.jsx yalnızca 'ölçüm <tarih>' yazıyor; kaynaktaki sıfır sağlayıcı bilgisi otomasyon/veri-isle.mjs'te kayboluyor (korunan dosya, onay gerekir).",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Fiyatı olmayan ama sağlayıcısı olan yeni modelleri kataloğa 'fiyat yok' olarak ekle",
+      "neden": "Kaynak sayfa 121 model gösteriyor, katalogda 118 var: AMD MI455X (5 sağlayıcı) ve Intel Gaudi 3 (1 sağlayıcı) fiyatsız satır olduğu için veri-isle.mjs'te atlanıyor (bugün '0 yeni'). Yeni nesil hızlandırıcıların listede görünmesi kullanıcı için değerli; korunan dosya.",
       "etki": "düşük",
-      "alan": "Haberler"
-    },
-    {
-      "baslik": "Bugün puanının dünkü puana göre değişimini göster",
-      "neden": "Puan dün 58 (gecmis/bugun-2026-11-18.json), bugün 47; src/data/bugun.json'da önceki puan alanı olmadığı için sayfa bu 11 puanlık düşüşü göstermiyor. veri-isle.mjs'in önceki günün puanını yazması gerekiyor (korunan dosya, onay ister).",
-      "etki": "orta",
-      "alan": "Bugün / otomasyon"
-    },
-    {
-      "baslik": "Fiyat hareketlerinde ikinci okumayla doğrulanan büyük oynamaları işaretle",
-      "neden": "Bugün V100 +%56,3 ve GH200 +%58,2 (gpu_kiralama.json iki_gun.artanlar) ikinci WebFetch ile doğrulandı, ama bu bilgi yalnızca raporda; kullanıcı sayfada bunun veri hatası olmadığını göremiyor. veri-isle.mjs'in 'dogrulanan' listesini fiyat satırına taşıması gerekir.",
-      "etki": "orta",
-      "alan": "Fiyatlar / otomasyon"
-    },
-    {
-      "baslik": "Bellek sözleşme fiyatlarını pazartesi arama üzerinden yenile",
-      "neden": "İyileştirme ajanı bellek_fiyat.json'un 27 gündür güncellenmediğini bildiriyor; bugün trendforce.com/presscenter doğrudan adresle WebFetch'te izin engeline takıldı. Fiyat sayfasında olduğu gibi önce WebSearch ile TrendForce bülten bağlantısı bulunup açılmalı.",
-      "etki": "orta",
-      "alan": "Veri"
+      "alan": "veri"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-11-19",
-      "oneri": "Takvim (.ics) dosyasında uzun satırları RFC 5545'e göre katla",
-      "durum": "birlesti",
-      "pr": 99,
-      "dal": "otomasyon/oneri-2026-11-19-1",
-      "ozet": "icsUret() 75 sekizliden uzun satırları CRLF+boşlukla, UTF-8 karakterlerini bölmeden katlıyor",
-      "neden": null,
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-11-19",
-      "oneri": "Haberler arama kutusunda Escape tuşu aramayı temizlesin",
-      "durum": "birlesti",
-      "pr": 100,
-      "dal": "otomasyon/oneri-2026-11-19-2",
-      "ozet": "Arama kutusunda Escape aramayı temizliyor; aria-keyshortcuts eklendi",
-      "neden": null,
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
     {
       "oneri": "Haberler'de gün başlığına o günün ton dağılımını ekle",
@@ -510,14 +489,14 @@
       },
       "kod": {
         "dosyaSayisi": 77,
-        "toplamSatir": 18649,
+        "toplamSatir": 18665,
         "boyutKB": null
       }
     },
     "bulgular": [
       {
         "alan": "veri",
-        "baslik": "Bellek fiyatları 27 gündür güncellenmedi",
+        "baslik": "Bellek fiyatları 28 gündür güncellenmedi",
         "etki": "düşük",
         "otomatik": false,
         "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
@@ -530,22 +509,17 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 103 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu), 1 büyük oynama elle doğrulandı"
-      },
-      {
-        "ad": "Elle doğrulanan fiyat",
-        "durum": "ok",
-        "detay": "Nvidia V100: 1.03 → 1.61 (ikinci okuma: medyan 1.61, en düşük 0.14) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
+        "detay": "bu çalıştırmada güncellendi — 103 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu)"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 47, 3 yaklaşan olay; haber akışına +9"
+        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 44; haber akışına +9"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+7 haber (akışta 408); bugün toplam 16"
+        "detay": "+5 haber (akışta 407); bugün toplam 14"
       },
       {
         "ad": "Derleme",
@@ -555,7 +529,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2915 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2913 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -582,11 +556,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-11-03",
-      "durum": "dikkat",
-      "dikkat": 1
-    },
     {
       "tarih": "2026-11-04",
       "durum": "dikkat",
@@ -649,6 +618,11 @@
     },
     {
       "tarih": "2026-11-19",
+      "durum": "dikkat",
+      "dikkat": 1
+    },
+    {
+      "tarih": "2026-11-20",
       "durum": "dikkat",
       "dikkat": 1
     }

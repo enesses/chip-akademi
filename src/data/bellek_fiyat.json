@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-10-23",
+  "guncelleme": "2026-11-20",
   "not": "Bellek, GPU kiralaması gibi saatlik bir piyasada fiyatlanmaz: üreticiler büyük alıcılarla çeyreklik sözleşme yapar. Aşağıdaki rakamlar bu sözleşme fiyatları için yayımlanmış tahminlerdir; gerçekleşen fiyat alıcıya göre değişir.",
   "gostergeler": [
     {
@@ -61,6 +61,16 @@
       "kaynak": "TrendForce",
       "tarih": "2026-09-29",
       "url": "https://www.trendforce.com/presscenter/news/20260929-13255.html"
+    },
+    {
+      "urun": "HBM4 (Gb başına fiyat)",
+      "donem": "2027",
+      "olcu": "yıllık",
+      "alt": 46,
+      "ust": 168,
+      "kaynak": "TechTimes (TrendForce verisi)",
+      "tarih": "2026-11-18",
+      "url": "https://www.techtimes.com/articles/331031/20261118/hbm4-memory-price-forecast-trendforce-sees-3-550-per-gigabit-next-year-205-now.htm"
     }
   ],
   "yigin": {
@@ -87,7 +97,12 @@
       "metin": "Micron 2027 üretiminin yaklaşık %75'inin şimdiden satıldığını, kıtlığın 2028'e kadar süreceğini söylüyor.",
       "kaynak": "Semiconductor Engineering",
       "url": "https://semiengineering.com/chip-industry-week-in-review-158/"
+    },
+    {
+      "metin": "TrendForce 18 Kasım Seul sunumu: HBM4'ün 2026'daki Gb başına 2,05 dolardan 2027'de 3–5,50 dolara çıkması, HBM'nin DRAM wafer girdisindeki payının %23'ten %30'a yükselmesi bekleniyor.",
+      "kaynak": "TechTimes (TrendForce verisi)",
+      "url": "https://www.techtimes.com/articles/331031/20261118/hbm4-memory-price-forecast-trendforce-sees-3-550-per-gigabit-next-year-205-now.htm"
     }
   ],
-  "kontrol_notu": "23 Ekim 2026: TrendForce basın merkezinde 30 Eylül'den sonra yeni DRAM/NAND fiyat tahmini yok. Sunucu DRAM için 4Ç'e ayrı rakam yayımlanmadı; 3Ç rakamı duruyor."
+  "kontrol_notu": "20 Kasım 2026: TrendForce'un 18 Kasım Seul sunumundaki HBM4 2027 fiyat tahmini eklendi (ikincil kaynak). Konvansiyonel DRAM/NAND için 1Ç 2027 sözleşme tahmini henüz doğrulanmadı."
 }

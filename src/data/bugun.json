@@ -1,118 +1,98 @@
 {
-  "tarih": "2026-11-19",
-  "derlenme": "19 Kasım 2026",
+  "tarih": "2026-11-20",
+  "derlenme": "20 Kasım 2026",
   "puan": {
-    "etiket": "Güçlü rakam, zayıf güven",
-    "yorum": "Anthropic'in aralık üstü halka arzı ve AMD–Cerebras çıkarım hamlesi sermayenin AI altyapısına akmaya devam ettiğini gösterirken, Nvidia'nın Çin'e Hopper sevkiyatını durdurması, Pekin'in misilleme uyarısı ve Huang'ın Kongre görüşmeleri hisse fiyatlarını baskılıyor.",
-    "deger": 47
+    "etiket": "Halka arz coştu, çipler sarsıldı",
+    "yorum": "Anthropic'in ilk işlem gününde %17 primle kapanması AI'ya sermaye iştahının sürdüğünü gösterirken, Hunterbrook'un AMD iddiası, Çin'e onaylanan 879 bin çipin ortaya çıkması ve yeni ABD kuralları yarı iletken hisselerini ve Kore bellek devlerini sert düşürdü.",
+    "deger": 44
   },
   "ozet": [
-    "Günün ana teması, Nvidia'nın rekor bilançosuyla piyasanın tepkisi arasındaki açıklık. 115,8 milyar dolarlık çeyrek ve yükseltilen büyüme beklentisine rağmen hisse 18 Kasım'da %2,9 düşüşle 150,96 dolardan kapandı. Yatırımcılar yönetim belirsizliğine, Jensen Huang'ın 1 Aralık'taki Kongre görüşmesine ve Çin pazarının kapanmasına odaklanıyor.",
-    "Çin cephesi sertleşiyor. Nvidia, Çin'e lisanslı Hopper sevkiyatını durdurduğunu açıkladı. Pekin'deki Ticaret Bakanlığı da ABD'nin 16 Kasım'da duyurduğu uzaktan erişim ve yurt dışı veri merkezi kurallarına karşı önlem alacağını söyledi. Bu, ABD'li çip tedarikçileri için Çin gelirinin kalıcı olarak kaybolabileceği anlamına geliyor.",
-    "Öte yandan sermaye akışı sürüyor. Anthropic halka arzı aralığın üzerinde, 83 dolardan fiyatlandı ve bugün Nasdaq'ta işleme başlıyor. AMD ve Broadcom aynı gün %4–5 yükseldi. Cerebras da AMD GPU'larıyla ayrıştırılmış çıkarım hizmetini megavat başına 5 kat verimle başlattı. Nvidia dışı donanım ekosistemi güç kazanıyor.",
-    "Kısacası talep tarafındaki veriler hâlâ güçlü, ancak jeopolitik ve yönetim riskleri fiyatlamayı baskılıyor. Önümüzdeki günlerde Anthropic'in ilk işlem günü ve 1–3 Aralık'taki Kongre görüşmeleri izlenecek."
+    "Günün ana teması, yapay zekâya akan sermaye ile çip şirketlerine yönelik siyasi ve hukuki riskin aynı anda yükselmesi. Anthropic 19 Kasım'da Nasdaq'ta 'ANT' koduyla işleme başladı; ilk işlem 111,50 dolardan gerçekleşti, gün 97,17 dolardan, 83 dolarlık halka arz fiyatının %17,1 üzerinde kapandı.",
+    "Aynı gün yarı iletken tarafı kırmızıydı. Hunterbrook'un AMD ürünlerinin yaptırımlı bir Çin şirketine dolaylı yoldan ulaşmış olabileceği iddiasıyla AMD %7,7, Nvidia %3,3 geriledi; Philadelphia Yarı İletken Endeksi %2,4 düştü. Rapor doğrudan sevkiyatı ya da ihracat ihlalini kanıtlamadığını da belirtiyor.",
+    "Washington'dan gelen rakamlar tartışmayı büyüttü: Temsilciler Meclisi Dış İlişkiler Komitesi, Ticaret Bakanlığı'nın Aralık 2025–Mayıs 2026 arasında Çinli şirketlere 879 bin AI çipi için lisans verdiğini açıkladı. Çinli teknoloji şirketleri ise üçüncü ülkelerdeki veri merkezleri üzerinden uzaktan erişimi kısıtlayan yeni kuralların AI planlarını vurmasından endişeli.",
+    "Dalga 20 Kasım sabahı Seul'e ulaştı: KOSPI %4 düşüşle 5.000'in altında açıldı, SK hynix %5,8, Samsung %4,4 kaybetti. Öte yandan Micron 2027'de bellek arzının 2026'dan da sıkı olacağını söyledi; Google ise Gemini 4 Neon modeli ve Mac'te bilgisayar kullanımı özelliğiyle yazılım tarafında hız kesmiyor."
   ],
   "maddeler": [
     {
-      "baslik": "Anthropic halka arzı 83 dolardan fiyatlandı; 19 Kasım'da Nasdaq'ta 'ANT' koduyla işleme başlıyor",
-      "detay": "Fiyat, 70–78 dolarlık aralığın üzerinde belirlendi; değerleme yaklaşık 1,5 trilyon dolar olarak aktarılıyor. Nvidia, Google ve Microsoft dahil yedi teknoloji şirketi aynı fiyattan toplam 26 milyar dolarlık hisse almayı kabul etti.",
+      "baslik": "Anthropic Nasdaq'ta ilk gününü %17,1 primle kapattı",
+      "detay": "ANT hissesi 83 dolarlık halka arz fiyatına karşı ilk işlemi 111,50 dolardan yaptı, gün içinde 92,72–114,99 dolar arasında dalgalandı ve 97,17 dolardan kapandı; yaklaşık 832 milyon hisse el değiştirdi.",
       "kategori": "pozitif",
       "agirlik": 3,
-      "neden": "Zayıf teknoloji piyasasına rağmen aralığın üzerinde fiyatlama, AI altyapısına sermaye akışının sürdüğünü gösteriyor; çip ve bulut tedarikçileri doğrudan faydalanıyor.",
-      "kaynak": "investingLive",
-      "url": "https://investinglive.com/stocks/anthropic-prices-ipo-at-83-above-range-setting-up-thursday-s-nasdaq-debut-as-ant/"
+      "neden": "Zayıf teknoloji piyasasında güçlü ilk gün, AI altyapısına (çip, bulut, veri merkezi) sermaye akışının süreceğine işaret ediyor.",
+      "kaynak": "Stock Titan",
+      "url": "https://www.stocktitan.net/articles/anthropic-ipo-live-ant-first-trading-day-2026"
     },
     {
-      "baslik": "Nvidia güçlü bilançoya rağmen %2,9 düşüşle 150,96 dolardan kapandı",
-      "detay": "Hisse 18 Kasım'da açılışta yükseldikten sonra 4,50 dolar kaybetti (gün içi aralık 150,40–159,70 $). Yatırımcılar liderlik belirsizliği, Kongre görüşmeleri ve yeni ihracat kısıtlamalarını tartıyor.",
+      "baslik": "Hunterbrook iddiası AMD'yi %7,7 düşürdü; yarı iletken endeksi %2,4 geriledi",
+      "detay": "Hunterbrook, AMD ürünlerinin yaptırımlı bir Çin şirketine dolaylı yoldan ulaşmış olabileceğini öne sürdü. 19 Kasım'da AMD %7,72, Nvidia %3,30, Micron %2,10, Broadcom %2,09 düştü. Rapor doğrudan sevkiyatı ya da ihlali kanıtlamadığını belirtiyor.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "İhracat denetimi riskinin Nvidia'dan AMD'ye yayılması sektör geneline değerleme baskısı getiriyor.",
+      "kaynak": "Bloomingbit",
+      "url": "https://en.bloomingbit.io/feed/news/124840"
+    },
+    {
+      "baslik": "ABD, altı ayda Çin'e yaklaşık 879 bin AI çipi satışını onaylamış",
+      "detay": "Meclis Dış İlişkiler Komitesi'ne göre Aralık 2025–Mayıs 2026 arasındaki onaylar Tencent için 150 bin, Alibaba için 75 bin, Baidu için 43 bin çipi kapsıyor; şirketler 3,4 milyon çip için izin istemişti. Nvidia H200 sevkiyatını durdurduğunu söyledi.",
       "kategori": "negatif",
       "agirlik": 2,
-      "neden": "Rekor sonuçların hisseye yansımaması, sektörün öncü hissesinde güven kaybının sürdüğünü gösteriyor.",
-      "kaynak": "The Motley Fool",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/18/stock-market-today-nov-18-nvidia-slips-on-strong-results-as-succession-and-china-business-risks-weigh/"
+      "neden": "Açıklanan rakamlar Kongre'de ihracat denetimlerinin sıkılaştırılması baskısını artırıyor; Çin gelirinin geleceği belirsizleşiyor.",
+      "kaynak": "Al Jazeera (Reuters)",
+      "url": "https://www.aljazeera.com/economy/2026/11/19/us-signed-off-on-sales-of-nearly-900000-ai-chips-to-china-in-six-months"
     },
     {
-      "baslik": "Dow 560 puan düştü, Nasdaq dört günlük kayıp serisini bitirdi; AMD %5, Broadcom %4 yükseldi",
-      "detay": "18 Kasım'da Dow yaklaşık %1,1, S&P 500 %0,2 geriledi (üst üste beşinci düşüş); Nasdaq %0,4 yükseldi. Marvell yaklaşık %2, Intel ve Micron yaklaşık %1 düştü.",
-      "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Çip hisselerinde ayrışma var: AMD ve Broadcom yükselirken Nvidia ve bellek hisseleri geriledi; genel tablo karışık.",
+      "baslik": "KOSPI %4 düşüşle 5.000'in altında açıldı; SK hynix %5,8, Samsung %4,4 geriledi",
+      "detay": "20 Kasım'da KOSPI 4.928,51'den (−209,38 puan) açıldı. Samsung Electronics 188.300 won, SK hynix 1.114.000 won seviyesine indi; düşüş ABD'deki AMD ve Nvidia satışını izledi.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "HBM tedarikçilerindeki sert düşüş, ABD çip hisselerindeki risk iştahı kaybının Asya bellek zincirine yayıldığını gösteriyor.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/market/2026/11/20/samsung-sk-hynix-tumble-4-5-percent-as-kospi-opens-below"
+    },
+    {
+      "baslik": "Micron: 2027'de bellek arzı 2026'dan da sıkı olacak",
+      "detay": "Micron yöneticisi Scott DeBoer 2027'de bellek arzının bu yıldan daha sıkı olacağını söyledi; hisse 19 Kasım sabahı işlem öncesinde %4 yükseldi. AMD bir önceki gün %5,31 artışla 530,14 dolardan kapanmıştı.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Sıkı bellek arzı, DRAM/HBM üreticileri için fiyatlama gücünün 2027'ye uzayacağını gösteriyor.",
       "kaynak": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nasdaq-p-125812319.html"
+      "url": "https://finance.yahoo.com/markets/article/copy-nvidia-stock-slips-as-investors-digest-ceo-exit-rest-of-chip-sector-falls-134408467.html"
     },
     {
-      "baslik": "Nvidia Çin'e lisanslı Hopper sevkiyatını durdurdu",
-      "detay": "Geçici CEO Colette Kress kazanç çağrısında Çin'e lisanslı Hopper veri merkezi ürünleri gönderilmediğini söyledi; son çeyrekte bu ürünlerden 2,4 milyar dolarlık satış yapılmıştı. Reuters'a göre Hong Kong'da yaklaşık 600.000 H200 Çin onayı bekliyor.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "Nvidia için milyarlarca dolarlık bir gelir kalemi kapanıyor; Çin pazarı ABD tedarikçilerine fiilen kapanıyor.",
-      "kaynak": "Fox News",
-      "url": "https://www.foxnews.com/live-news/ai-news-nvidia-china-11-18-26"
-    },
-    {
-      "baslik": "Çin Ticaret Bakanlığı yeni ABD çip kurallarına karşı önlem uyarısı yaptı",
-      "detay": "MOFCOM sözcüsü, ABD Ticaret Bakanlığı'nın 16 Kasım'da duyurduğu ve Çin'in gelişmiş AI çiplerine erişimini daha da kısıtlayan kuralları kabul etmediklerini, ısrar edilirse karşı önlem alınacağını açıkladı.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "ABD–Çin teknoloji gerilimini tırmandırıyor; tedarik zinciri ve hammadde ihracatında misilleme riski doğuyor.",
-      "kaynak": "Global Times",
-      "url": "https://www.globaltimes.cn/page/202611/1374476.shtml"
-    },
-    {
-      "baslik": "Jensen Huang 1 Aralık'ta üç Meclis komitesine ifade verecek",
-      "detay": "Huang Dış İlişkiler, ÇKP Seçilmiş Komitesi ve İstihbarat komiteleriyle kayıtlı görüşmeye katılacak; Nvidia genel danışmanı Tim Teter 2 Aralık'ta aynı komitelere çıkacak. Senato Bankacılık Komitesi de 3 Aralık'ta ifade istiyor.",
+      "baslik": "Çinli teknoloji şirketleri yeni ABD kısıtlamalarının AI planlarını vurmasından endişeli",
+      "detay": "Yeni kurallar üçüncü ülkelerdeki veri merkezleri üzerinden uzaktan işlem erişimini kısıtlıyor; Pekin bunu 'ekonomik baskı' diye niteledi. Alibaba'nın AI bulut ve işlem geliri Temmuz–Eylül'de yıllık %53 artışla yaklaşık 61 milyar yuana ulaştı.",
       "kategori": "negatif",
       "agirlik": 1,
-      "neden": "Çiplerin Çin'e nasıl ulaştığına dair soruşturma Nvidia'nın yönetim belirsizliğini uzatıyor.",
-      "kaynak": "The Next Web",
-      "url": "https://thenextweb.com/news/jensen-huang-house-committees-december-1-tim-teter"
+      "neden": "Uzaktan erişimin kapanması Çin'in AI işlem kapasitesini ve bu talebe hizmet eden çip satıcılarını sınırlıyor.",
+      "kaynak": "ABC News (AP)",
+      "url": "https://abcnews.com/Technology/wireStory/chinese-tech-firms-fear-ai-hits-us-curbs-138291748"
     },
     {
-      "baslik": "Cerebras, AMD Instinct ile ayrıştırılmış çıkarım hizmetini başlattı",
-      "detay": "Ön doldurma AMD Instinct GPU'larda, token üretimi Cerebras CS-3 sistemlerinde yapılıyor; GPT-OSS-120B üretim uç noktasında yalnızca CS-3'e göre megavat başına 5 kat token elde edildi. AWS, Fireworks AI, Gimlet Labs ve General Compute erken erişimde.",
-      "kategori": "pozitif",
-      "agirlik": 2,
-      "neden": "Nvidia dışı çıkarım donanımına somut, ölçülmüş bir verim kazancı ve bulut müşterisi geliyor; AMD'nin veri merkezi konumunu güçlendiriyor.",
-      "kaynak": "Cerebras",
-      "url": "https://cerebras.ai/blog/cerebras-launches-disaggregated-inference"
-    },
-    {
-      "baslik": "Yardeni: Nvidia'nın Çin kısıtlamalarına rağmen AI çip talebi güçlü kalacak",
-      "detay": "Ekonomist Ed Yardeni, Nvidia gelirinde yaklaşık %20 olarak tahmin edilen Çin payının düşeceğini, ancak Orta Doğu, Kanada ve Latin Amerika'daki veri merkezi yatırımlarının talebi destekleyeceğini söyledi.",
+      "baslik": "Google, Gemini 4 Neon'u çıkardı: 1 milyon token bağlam, 3/15 dolar fiyat",
+      "detay": "Google 18 Kasım'da Gemini 4 ailesinin iki aydan kısa sürede dördüncü modelini yayımladı; milyon girdi tokenı 3 dolar, çıktı 15 dolar. Artificial Analysis zekâ endeksinde 61 puan aldı.",
       "kategori": "pozitif",
       "agirlik": 1,
-      "neden": "Çin kaybının küresel veri merkezi yatırımıyla telafi edilebileceği görüşü talep kaygılarını hafifletiyor.",
-      "kaynak": "TokenPost",
-      "url": "https://www.tokenpost.com/news/investing/61159"
+      "neden": "Hızlı model yarışı çıkarım talebini, dolayısıyla hızlandırıcı ve bellek talebini canlı tutuyor.",
+      "kaynak": "The Rundown AI",
+      "url": "https://www.therundown.ai/news/google-gemini-4-neon-release"
     },
     {
-      "baslik": "Microsoft Ignite'ta MAI Code 2 ve MAI Code 2 Flash kodlama modellerini duyurdu",
-      "detay": "Microsoft, Code 2'nin GPT-6.1 Sol performansının %98'ini maliyetin %40'ına sunduğunu iddia ediyor. İki model de GitHub Copilot'ta kullanılabiliyor; Flash, Microsoft Foundry'de sınırlı önizlemede.",
+      "baslik": "Gemini, Mac'te bilgisayarı kullanıcı adına kullanabilecek",
+      "detay": "Gemini'nin macOS uygulamasına yerel uygulamalarda çalışan ve arka planda gezinen bilgisayar kullanımı geldi; başlangıçta yalnızca ABD'de, İngilizce ve AI Plus/Pro/Ultra aboneleri için.",
       "kategori": "notr",
       "agirlik": 1,
-      "neden": "Model fiyatlarındaki rekabet çıkarım maliyetini düşürüyor; çip talebine etkisi iki yönlü.",
-      "kaynak": "The New Stack",
-      "url": "https://thenewstack.io/microsoft-mai-code-2/"
-    }
-  ],
-  "yaklasan": [
-    {
-      "tarih": "2026-11-27",
-      "baslik": "Çin'in galyum, germanyum ve antimon ihracat yasağı askısının sona ermesi",
-      "kaynak": "The Next Web",
-      "url": "https://thenextweb.com/news/china-weighs-response-to-us-chip-curbs-before-trump-summit"
+      "neden": "Ajan özellikleri tüketici tarafında yayılıyor; donanım talebine etkisi henüz dolaylı.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/"
     },
     {
-      "tarih": "2026-12-01",
-      "baslik": "Jensen Huang üç Meclis komitesine ifade veriyor",
-      "kaynak": "The Next Web",
-      "url": "https://thenextweb.com/news/jensen-huang-house-committees-december-1-tim-teter"
-    },
-    {
-      "tarih": "2026-12-02",
-      "baslik": "Nvidia genel danışmanı Tim Teter Meclis komitelerine ifade veriyor",
-      "kaynak": "The Next Web",
-      "url": "https://thenextweb.com/news/jensen-huang-house-committees-december-1-tim-teter"
+      "baslik": "Veri merkezlerinin şebeke maliyeti federal izin yasası tartışmasının merkezinde",
+      "detay": "495 sayfalık BAAJA tasarısı şebekeye 35 milyar dolarlık yatırım getirmeyi hedefliyor; Grid Strategies veri merkezlerinin 10 yılda ek 35 milyar dolar iletim maliyeti ödeyeceğini hesaplıyor. Harvard çalışmasına göre büyük ABD veri merkezleri yılda 25,7 milyon ton CO2 salıyor.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Enerji ve izin kuralları veri merkezi inşa hızını belirleyecek; sonuç henüz belirsiz.",
+      "kaynak": "Inside Climate News",
+      "url": "https://insideclimatenews.org/news/19112026/bipartisan-permitting-bill-data-center-impact"
     }
   ],
   "yontem": {
@@ -120,6 +100,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = -1 · Σ ağırlık = 15 · Puan = 50 + 50 × -0.07 = 47"
+    "hesap": "Σ ağırlık×işaret = -2 · Σ ağırlık = 16 · Puan = 50 + 50 × -0.13 = 44"
   }
 }

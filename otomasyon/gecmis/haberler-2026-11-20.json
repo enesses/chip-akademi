@@ -1,0 +1,63 @@
+{
+  "tarih": "2026-11-20",
+  "haberler": [
+    {
+      "baslik": "Argentum AI, Kyndryl ile 630 milyon dolarlık veri merkezi anlaşması imzaladı",
+      "detay": "20 yıllık anlaşma, Kyndryl'in Boulder (Colorado) tesisinde ilk aşamada 10 MW kapasiteyi kapsıyor; Argentum burada Nvidia B300 sistemleri kuruyor.",
+      "kaynak": "Kyndryl",
+      "url": "https://www.kyndryl.com/us/en/about-us/news/2026/11/argentum-ai-deal",
+      "yayin": "2026-11-17",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Tayvanlı TECO, Japonya'da AI veri merkezini dokuz ayda kurmayı hedefliyor",
+      "detay": "TECO, GMI Cloud ile Kagoşima'daki Satsumasendai'de modüler bir AI veri merkezi kuracak; ilk aşama 6,4 MW ve 2027'de devreye girecek. Proje 1 GW'a ölçeklenmesi planlanan 12 milyar dolarlık 'AI Fabrikası'nın parçası.",
+      "kaynak": "The Storm Media",
+      "url": "https://world.storm.mg/articles/1182313",
+      "yayin": "2026-11-19",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Samsung ve SK hynix ikinci gün de yükseldi; uzmanlar kalıcı kârlılığa dikkat çekiyor",
+      "detay": "19 Kasım'da Samsung %1,13 artışla 196.900 won, SK hynix %3,41 artışla 1.183.000 won'dan kapandı; KOSPI %1,39 yükselişle 5.137,89'a çıktı. Ertesi sabah iki hisse de sert düştü.",
+      "kaynak": "MoneyToday",
+      "url": "https://mt.co.kr/en/stock/2026/11/19/2026111917233266474",
+      "yayin": "2026-11-19",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Arm bir ayda %21 değer kaybetti",
+      "detay": "Arm, 2027 mali yılı 2. çeyreğinde 1,44 milyar dolar gelirle (%27 artış) beklentiyi aştı ve 3. çeyrek için 1,54 milyar dolar öngördü; hisse 180 dolar civarında, geçmiş kârın yaklaşık 210 katından işlem görüyor.",
+      "kaynak": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/11/19/arm-just-dropped-21-in-a-month-will-arm-stock-hit-150-or-200-first",
+      "yayin": "2026-11-19",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Harvard çalışması: büyük ABD veri merkezleri Danimarka'dan fazla karbon salıyor",
+      "detay": "403 büyük ABD veri merkezinin Mayıs 2024–Nisan 2025 arasında 25,7 milyon ton CO2 saldığı hesaplandı; elektriğin yarıdan fazlası fosil kaynaklı. AB veri merkezi kapasitesini yedi yılda üçe katlamak istiyor.",
+      "kaynak": "Euronews",
+      "url": "https://euronews.com/2026/11/19/the-dark-side-of-ai-us-data-centres-emit-more-carbon-than-all-of-denmark",
+      "yayin": "2026-11-19",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kategori": "negatif"
+    }
+  ]
+}

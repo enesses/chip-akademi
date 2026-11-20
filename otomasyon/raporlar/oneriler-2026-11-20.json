@@ -1,0 +1,35 @@
+{
+  "oneriler": [
+    {
+      "baslik": "Bellek bölümündeki yıllık kartlara da 'eski veri' rozeti ekle",
+      "neden": "src/components/BellekFiyatlari.jsx'te eskilik() yalnızca çeyreklik göstergeler için çağrılıyor; yıllık kartlarda (HBM karma 2027, 29 Eylül tarihli; bugün eklenen HBM4 2027) hiçbir eskilik işareti yok. 29 Eylül göstergesi 60 gün sınırına 9 gün kaldı.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Bugün sayfası eski derlemeyle açılırsa uyarı göster",
+      "neden": "src/pages/Bugun.jsx (satır 89) yalnızca data.derlenme'yi yazıyor; GUNLUK.md 2. adıma göre doğrulanmış 5 madde yoksa dosya yazılmıyor ve sayfa önceki günün içeriğini bugünmüş gibi gösteriyor. bugun.tarih bugünden eskiyse 'N gün önceki derleme' rozeti gerekli.",
+      "etki": "orta",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Ana sayfadaki Günün özeti kartında Bugün verisinin yaşını göster",
+      "neden": "src/pages/Home.jsx satır 172 'Bugün · {derlenme}' yazıyor; Bugün verisi o gün güncellenmezse ana sayfada da bunu ayırt eden bir işaret yok.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Kaynakta 'ilan yok' görünen modellerin eski fiyatını 'ilan yok' diye işaretle",
+      "neden": "20 Kasım çekiminde 15 model 'gelmedi (eski fiyat korundu)'; kaynak tablosunda bunların çoğu (AMD MI250, Nvidia P40, RTX 4500 Ada, RTX 5880 Ada, P2000) açıkça 'No listings yet' / 0 sağlayıcı gösteriyor. Prices.jsx yalnızca 'ölçüm <tarih>' yazıyor; kaynaktaki sıfır sağlayıcı bilgisi otomasyon/veri-isle.mjs'te kayboluyor (korunan dosya, onay gerekir).",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Fiyatı olmayan ama sağlayıcısı olan yeni modelleri kataloğa 'fiyat yok' olarak ekle",
+      "neden": "Kaynak sayfa 121 model gösteriyor, katalogda 118 var: AMD MI455X (5 sağlayıcı) ve Intel Gaudi 3 (1 sağlayıcı) fiyatsız satır olduğu için veri-isle.mjs'te atlanıyor (bugün '0 yeni'). Yeni nesil hızlandırıcıların listede görünmesi kullanıcı için değerli; korunan dosya.",
+      "etki": "düşük",
+      "alan": "veri"
+    }
+  ],
+  "tarih": "2026-11-20"
+}

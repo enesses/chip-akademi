@@ -1,0 +1,105 @@
+{
+  "tarih": "2026-11-20",
+  "derlenme": "20 Kasım 2026",
+  "puan": {
+    "etiket": "Halka arz coştu, çipler sarsıldı",
+    "yorum": "Anthropic'in ilk işlem gününde %17 primle kapanması AI'ya sermaye iştahının sürdüğünü gösterirken, Hunterbrook'un AMD iddiası, Çin'e onaylanan 879 bin çipin ortaya çıkması ve yeni ABD kuralları yarı iletken hisselerini ve Kore bellek devlerini sert düşürdü.",
+    "deger": 44
+  },
+  "ozet": [
+    "Günün ana teması, yapay zekâya akan sermaye ile çip şirketlerine yönelik siyasi ve hukuki riskin aynı anda yükselmesi. Anthropic 19 Kasım'da Nasdaq'ta 'ANT' koduyla işleme başladı; ilk işlem 111,50 dolardan gerçekleşti, gün 97,17 dolardan, 83 dolarlık halka arz fiyatının %17,1 üzerinde kapandı.",
+    "Aynı gün yarı iletken tarafı kırmızıydı. Hunterbrook'un AMD ürünlerinin yaptırımlı bir Çin şirketine dolaylı yoldan ulaşmış olabileceği iddiasıyla AMD %7,7, Nvidia %3,3 geriledi; Philadelphia Yarı İletken Endeksi %2,4 düştü. Rapor doğrudan sevkiyatı ya da ihracat ihlalini kanıtlamadığını da belirtiyor.",
+    "Washington'dan gelen rakamlar tartışmayı büyüttü: Temsilciler Meclisi Dış İlişkiler Komitesi, Ticaret Bakanlığı'nın Aralık 2025–Mayıs 2026 arasında Çinli şirketlere 879 bin AI çipi için lisans verdiğini açıkladı. Çinli teknoloji şirketleri ise üçüncü ülkelerdeki veri merkezleri üzerinden uzaktan erişimi kısıtlayan yeni kuralların AI planlarını vurmasından endişeli.",
+    "Dalga 20 Kasım sabahı Seul'e ulaştı: KOSPI %4 düşüşle 5.000'in altında açıldı, SK hynix %5,8, Samsung %4,4 kaybetti. Öte yandan Micron 2027'de bellek arzının 2026'dan da sıkı olacağını söyledi; Google ise Gemini 4 Neon modeli ve Mac'te bilgisayar kullanımı özelliğiyle yazılım tarafında hız kesmiyor."
+  ],
+  "maddeler": [
+    {
+      "baslik": "Anthropic Nasdaq'ta ilk gününü %17,1 primle kapattı",
+      "detay": "ANT hissesi 83 dolarlık halka arz fiyatına karşı ilk işlemi 111,50 dolardan yaptı, gün içinde 92,72–114,99 dolar arasında dalgalandı ve 97,17 dolardan kapandı; yaklaşık 832 milyon hisse el değiştirdi.",
+      "kategori": "pozitif",
+      "agirlik": 3,
+      "neden": "Zayıf teknoloji piyasasında güçlü ilk gün, AI altyapısına (çip, bulut, veri merkezi) sermaye akışının süreceğine işaret ediyor.",
+      "kaynak": "Stock Titan",
+      "url": "https://www.stocktitan.net/articles/anthropic-ipo-live-ant-first-trading-day-2026"
+    },
+    {
+      "baslik": "Hunterbrook iddiası AMD'yi %7,7 düşürdü; yarı iletken endeksi %2,4 geriledi",
+      "detay": "Hunterbrook, AMD ürünlerinin yaptırımlı bir Çin şirketine dolaylı yoldan ulaşmış olabileceğini öne sürdü. 19 Kasım'da AMD %7,72, Nvidia %3,30, Micron %2,10, Broadcom %2,09 düştü. Rapor doğrudan sevkiyatı ya da ihlali kanıtlamadığını belirtiyor.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "İhracat denetimi riskinin Nvidia'dan AMD'ye yayılması sektör geneline değerleme baskısı getiriyor.",
+      "kaynak": "Bloomingbit",
+      "url": "https://en.bloomingbit.io/feed/news/124840"
+    },
+    {
+      "baslik": "ABD, altı ayda Çin'e yaklaşık 879 bin AI çipi satışını onaylamış",
+      "detay": "Meclis Dış İlişkiler Komitesi'ne göre Aralık 2025–Mayıs 2026 arasındaki onaylar Tencent için 150 bin, Alibaba için 75 bin, Baidu için 43 bin çipi kapsıyor; şirketler 3,4 milyon çip için izin istemişti. Nvidia H200 sevkiyatını durdurduğunu söyledi.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Açıklanan rakamlar Kongre'de ihracat denetimlerinin sıkılaştırılması baskısını artırıyor; Çin gelirinin geleceği belirsizleşiyor.",
+      "kaynak": "Al Jazeera (Reuters)",
+      "url": "https://www.aljazeera.com/economy/2026/11/19/us-signed-off-on-sales-of-nearly-900000-ai-chips-to-china-in-six-months"
+    },
+    {
+      "baslik": "KOSPI %4 düşüşle 5.000'in altında açıldı; SK hynix %5,8, Samsung %4,4 geriledi",
+      "detay": "20 Kasım'da KOSPI 4.928,51'den (−209,38 puan) açıldı. Samsung Electronics 188.300 won, SK hynix 1.114.000 won seviyesine indi; düşüş ABD'deki AMD ve Nvidia satışını izledi.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "HBM tedarikçilerindeki sert düşüş, ABD çip hisselerindeki risk iştahı kaybının Asya bellek zincirine yayıldığını gösteriyor.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/market/2026/11/20/samsung-sk-hynix-tumble-4-5-percent-as-kospi-opens-below"
+    },
+    {
+      "baslik": "Micron: 2027'de bellek arzı 2026'dan da sıkı olacak",
+      "detay": "Micron yöneticisi Scott DeBoer 2027'de bellek arzının bu yıldan daha sıkı olacağını söyledi; hisse 19 Kasım sabahı işlem öncesinde %4 yükseldi. AMD bir önceki gün %5,31 artışla 530,14 dolardan kapanmıştı.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Sıkı bellek arzı, DRAM/HBM üreticileri için fiyatlama gücünün 2027'ye uzayacağını gösteriyor.",
+      "kaynak": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/article/copy-nvidia-stock-slips-as-investors-digest-ceo-exit-rest-of-chip-sector-falls-134408467.html"
+    },
+    {
+      "baslik": "Çinli teknoloji şirketleri yeni ABD kısıtlamalarının AI planlarını vurmasından endişeli",
+      "detay": "Yeni kurallar üçüncü ülkelerdeki veri merkezleri üzerinden uzaktan işlem erişimini kısıtlıyor; Pekin bunu 'ekonomik baskı' diye niteledi. Alibaba'nın AI bulut ve işlem geliri Temmuz–Eylül'de yıllık %53 artışla yaklaşık 61 milyar yuana ulaştı.",
+      "kategori": "negatif",
+      "agirlik": 1,
+      "neden": "Uzaktan erişimin kapanması Çin'in AI işlem kapasitesini ve bu talebe hizmet eden çip satıcılarını sınırlıyor.",
+      "kaynak": "ABC News (AP)",
+      "url": "https://abcnews.com/Technology/wireStory/chinese-tech-firms-fear-ai-hits-us-curbs-138291748"
+    },
+    {
+      "baslik": "Google, Gemini 4 Neon'u çıkardı: 1 milyon token bağlam, 3/15 dolar fiyat",
+      "detay": "Google 18 Kasım'da Gemini 4 ailesinin iki aydan kısa sürede dördüncü modelini yayımladı; milyon girdi tokenı 3 dolar, çıktı 15 dolar. Artificial Analysis zekâ endeksinde 61 puan aldı.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Hızlı model yarışı çıkarım talebini, dolayısıyla hızlandırıcı ve bellek talebini canlı tutuyor.",
+      "kaynak": "The Rundown AI",
+      "url": "https://www.therundown.ai/news/google-gemini-4-neon-release"
+    },
+    {
+      "baslik": "Gemini, Mac'te bilgisayarı kullanıcı adına kullanabilecek",
+      "detay": "Gemini'nin macOS uygulamasına yerel uygulamalarda çalışan ve arka planda gezinen bilgisayar kullanımı geldi; başlangıçta yalnızca ABD'de, İngilizce ve AI Plus/Pro/Ultra aboneleri için.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Ajan özellikleri tüketici tarafında yayılıyor; donanım talebine etkisi henüz dolaylı.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/"
+    },
+    {
+      "baslik": "Veri merkezlerinin şebeke maliyeti federal izin yasası tartışmasının merkezinde",
+      "detay": "495 sayfalık BAAJA tasarısı şebekeye 35 milyar dolarlık yatırım getirmeyi hedefliyor; Grid Strategies veri merkezlerinin 10 yılda ek 35 milyar dolar iletim maliyeti ödeyeceğini hesaplıyor. Harvard çalışmasına göre büyük ABD veri merkezleri yılda 25,7 milyon ton CO2 salıyor.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Enerji ve izin kuralları veri merkezi inşa hızını belirleyecek; sonuç henüz belirsiz.",
+      "kaynak": "Inside Climate News",
+      "url": "https://insideclimatenews.org/news/19112026/bipartisan-permitting-bill-data-center-impact"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = -2 · Σ ağırlık = 16 · Puan = 50 + 50 × -0.13 = 44"
+  }
+}
