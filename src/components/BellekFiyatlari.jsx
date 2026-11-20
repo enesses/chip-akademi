@@ -77,15 +77,23 @@ export default function BellekFiyatlari() {
         </div>
 
         <div className="space-y-4">
-          {yillik.map((g) => (
-            <div key={g.urun} className="rounded-2xl border border-red-500/40 bg-red-500/5 p-5">
+          {yillik.map((g) => {
+            const eski = eskilik(g);
+            return (
+            <div key={g.urun} className={`rounded-2xl border border-red-500/40 bg-red-500/5 p-5${eski ? " opacity-70" : ""}`}>
               <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">{g.urun} · {g.donem}, yıllık</p>
+              {eski && (
+                <span className="mt-1 inline-flex items-center gap-1 rounded-sm border border-amber-400/40 px-1.5 py-0.5 text-[10px] text-amber-300" data-testid="bellek-yillik-eski">
+                  <Clock className="h-2.5 w-2.5" aria-hidden="true" />Eski: {eski}
+                </span>
+              )}
               <p className="font-display font-semibold text-4xl text-red-300 mt-1">{aralik(g)}</p>
               <a href={g.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 mt-2 font-mono text-[10px] text-muted-foreground hover:text-primary">
                 {g.kaynak} · {tarihTR(g.tarih)}<ExternalLink className="h-2.5 w-2.5" />
               </a>
             </div>
-          ))}
+            );
+          })}
           {y && (
             <div className="rounded-2xl border border-card-border bg-card p-5">
               <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground mb-3">{y.urun}</p>
