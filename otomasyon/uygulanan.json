@@ -1080,6 +1080,26 @@
       "ozet": "Arama kutusunda Escape aramayı temizliyor; aria-keyshortcuts eklendi",
       "neden": null,
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-20",
+      "oneri": "Bellek bölümündeki yıllık kartlara da 'eski veri' rozeti ekle",
+      "durum": "birlesti",
+      "pr": 101,
+      "dal": "otomasyon/oneri-2026-11-20-1",
+      "ozet": "Yıllık HBM kartları da 60 günü geçince ya da dönemi bitince 'Eski' rozeti ve soluk görünüm alıyor.",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-20",
+      "oneri": "Bugün sayfası eski derlemeyle açılırsa uyarı göster",
+      "durum": "birlesti",
+      "pr": 102,
+      "dal": "otomasyon/oneri-2026-11-20-2",
+      "ozet": "Bugün verisi sayfanın açıldığı günden eskiyse başlıkta 'N gün önceki derleme' rozeti görünüyor.",
+      "neden": null,
+      "kim": "otomasyon"
     }
   ]
 }

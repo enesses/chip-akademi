@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-20T07:01:40.723Z",
+  "guncelleme": "2026-11-20T07:03:57.598Z",
   "tarih": "2026-11-20",
   "durum": "dikkat",
   "ajanlar": [
@@ -75,7 +75,28 @@
       "alan": "veri"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-11-20",
+      "oneri": "Bellek bölümündeki yıllık kartlara da 'eski veri' rozeti ekle",
+      "durum": "birlesti",
+      "pr": 101,
+      "dal": "otomasyon/oneri-2026-11-20-1",
+      "ozet": "Yıllık HBM kartları da 60 günü geçince ya da dönemi bitince 'Eski' rozeti ve soluk görünüm alıyor.",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-20",
+      "oneri": "Bugün sayfası eski derlemeyle açılırsa uyarı göster",
+      "durum": "birlesti",
+      "pr": 102,
+      "dal": "otomasyon/oneri-2026-11-20-2",
+      "ozet": "Bugün verisi sayfanın açıldığı günden eskiyse başlıkta 'N gün önceki derleme' rozeti görünüyor.",
+      "neden": null,
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Haberler'de gün başlığına o günün ton dağılımını ekle",
@@ -243,6 +264,20 @@
       "durum": "birlesti",
       "pr": 100,
       "tarih": "2026-11-19",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Bellek bölümündeki yıllık kartlara da 'eski veri' rozeti ekle",
+      "durum": "birlesti",
+      "pr": 101,
+      "tarih": "2026-11-20",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Bugün sayfası eski derlemeyle açılırsa uyarı göster",
+      "durum": "birlesti",
+      "pr": 102,
+      "tarih": "2026-11-20",
       "kim": "otomasyon"
     }
   ],
