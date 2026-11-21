@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-21T07:00:25.625Z",
+  "guncelleme": "2026-11-21T07:02:56.435Z",
   "tarih": "2026-11-21",
   "durum": "dikkat",
   "ajanlar": [
@@ -69,7 +69,28 @@
       "alan": "Bugün"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-11-21",
+      "oneri": "Yaklaşan olaylarda farklı yıla ait tarihlerde yılı göster",
+      "durum": "birlesti",
+      "pr": 103,
+      "dal": "otomasyon/oneri-2026-11-21-1",
+      "ozet": "Bugün sayfasındaki yaklaşan olaylar bu yıldan farklı bir yıla düşüyorsa tarihe yıl ekleniyor (19 Ocak 2027).",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-21",
+      "oneri": "Dış bağlantılara ekran okuyucu için 'yeni sekmede açılır' notu ekle",
+      "durum": "birlesti",
+      "pr": 104,
+      "dal": "otomasyon/oneri-2026-11-21-2",
+      "ozet": "Bugün sayfasındaki kaynak bağlantılarına ekran okuyucular için görünmez '(yeni sekmede açılır)' metni eklendi.",
+      "neden": null,
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Fiyat hareketlerinde çok sağlayıcılı modelleri öne al",
@@ -237,6 +258,20 @@
       "durum": "birlesti",
       "pr": 102,
       "tarih": "2026-11-20",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Yaklaşan olaylarda farklı yıla ait tarihlerde yılı göster",
+      "durum": "birlesti",
+      "pr": 103,
+      "tarih": "2026-11-21",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Dış bağlantılara ekran okuyucu için 'yeni sekmede açılır' notu ekle",
+      "durum": "birlesti",
+      "pr": 104,
+      "tarih": "2026-11-21",
       "kim": "otomasyon"
     }
   ],
