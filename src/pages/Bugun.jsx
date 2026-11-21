@@ -174,7 +174,7 @@ export default function Bugun() {
                   <div className="min-w-0 flex-1">
                     <p className="text-sm leading-snug">{o.baslik}</p>
                     <a href={o.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground mt-1">
-                      {o.kaynak} <ExternalLink className="h-3 w-3" aria-hidden="true" />
+                      {o.kaynak} <ExternalLink className="h-3 w-3" aria-hidden="true" /><span className="sr-only"> (yeni sekmede açılır)</span>
                     </a>
                   </div>
                 </li>
@@ -221,7 +221,7 @@ export default function Bugun() {
                   </div>
                 </div>
                 <a href={m.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-wider text-muted-foreground hover:text-foreground ml-10">
-                  {m.kaynak} <ExternalLink className="h-3 w-3" />
+                  {m.kaynak} <ExternalLink className="h-3 w-3" aria-hidden="true" /><span className="sr-only"> (yeni sekmede açılır)</span>
                 </a>
               </div>
             );
