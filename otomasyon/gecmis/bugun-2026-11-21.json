@@ -1,0 +1,110 @@
+{
+  "tarih": "2026-11-21",
+  "derlenme": "21 Kasım 2026",
+  "puan": {
+    "etiket": "Kara Cuma erken geldi: AI hisselerinde çöküş",
+    "yorum": "Nvidia'nın %14, yarı iletken endeksinin %10,7 düştüğü Cuma seansı, BofA'nın yatırım kesintisi uyarısı ve yeni ABD ihracat kurallarıyla birleşince günün tonu belirgin biçimde olumsuz; HBM fiyat tahmini ve Nvidia'nın büyüyen tedarik taahhütleri ise talebin henüz kırılmadığını gösteriyor.",
+    "deger": 22
+  },
+  "ozet": [
+    "Günün ana teması, AI altyapı rallisine duyulan güvenin bir haftada çözülmesi. 20 Kasım Cuma günü Nvidia %14, Philadelphia Yarı İletken Endeksi %10,7 düştü; Nasdaq 100 %5,6, S&P 500 %3,7 geriledi. Nvidia'nın piyasa değeri 6 Ekim zirvesinden bu yana yaklaşık 2,74 trilyon dolar eridi ve piyasa Nisan 2025'ten beri en kötü haftasını yaşadı.",
+    "Satışın gerekçeleri talep tarafında yoğunlaşıyor: BofA, bulut harcamaları bugünkü düzeyde kalırsa öngörülen yatırımların %20 azalabileceğini ve AI çip kârlarında %35–40'a varan aşağı yön riski olduğunu yazdı. Micron %11, Broadcom ise Google'ın sipariş kaydırdığı haberiyle %8 düştü. Perşembe rekor halka arzla %17 yükselen Anthropic bile Cuma günü satıldı.",
+    "Politika cephesi de baskıyı artırıyor. 19 Kasım'da yürürlüğe giren BIS kuralıyla TSMC ve Samsung bazı Çinli müşterilere sevkiyatı durdurdu; Kongre daha sıkı kurallar ve Bakan Lutnick hakkında soruşturma isterken Trump yurt dışında veri merkezi kuran ABD şirketlerine ceza sinyali verdi.",
+    "Karşı tarafta temel veriler hâlâ sıkı: TrendForce HBM4 fiyatının 2027'de 2,7 kata kadar artacağını öngörüyor, Citi de Nvidia'nın tedarik taahhütlerinin bir çeyrekte ~100 milyar dolar büyüdüğünü bildiriyor. Yani düşüş şimdilik siparişlerden çok değerleme ve harcama sürdürülebilirliği endişesinden kaynaklanıyor."
+  ],
+  "maddeler": [
+    {
+      "baslik": "Yapay zekâ hisselerinde çöküş: Nvidia %14, SOX %10,7 düştü",
+      "detay": "20 Kasım Cuma seansında Nvidia %14 geriledi; Philadelphia Yarı İletken Endeksi %10,7, Nasdaq 100 %5,6, S&P 500 %3,7 düştü. Nvidia'nın piyasa değeri 6 Ekim zirvesinden bu yana yedi günlük düşüşte yaklaşık 2,74 trilyon dolar eridi; VIX bir ara 40'a çıktı.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "Sektörün tamamında çift haneli düşüş, AI altyapı harcamalarının sürdürülebilirliğine dair güvenin sert biçimde sarsıldığını gösteriyor.",
+      "kaynak": "36Kr (Zhidx)",
+      "url": "https://eu.36kr.com/en/p/4078935983182722"
+    },
+    {
+      "baslik": "Micron %11 düştü; BofA AI çip kârlarında %35–40 aşağı yön riski görüyor",
+      "detay": "Micron, CEO'sunun arzın sıkılaşacağını söylemesine rağmen %11 geriledi. BofA, bulut harcamalarının bugünkü düzeyde kalmasının öngörülen yatırımlarda yaklaşık %20 azalma ve AI yarı iletken hisse başı kârında %35–40'a varan düşüş anlamına gelebileceğini yazdı. Google'ın Broadcom tasarımlı AI çip siparişlerini azaltıp MediaTek'e kaydırdığı haberiyle Broadcom %8 düştü.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "Büyük bir bankanın yatırım harcaması kesintisi senaryosu ve bir müşterinin tedarikçi değiştirmesi, talep görünürlüğüne doğrudan darbe.",
+      "kaynak": "Seeking Alpha",
+      "url": "https://www.seekingalpha.com/news/4675206-micron-leads-semiconductor-and-ai-stocks-down-as-sox-plunges-7"
+    },
+    {
+      "baslik": "Wall Street Nisan 2025'ten beri en kötü haftasında; Anthropic de düşüşe geçti",
+      "detay": "Schwab'a göre açılışta S&P 500 %2, Nasdaq %2,25 düştü; VIX 31,3'e, 10 yıllık getiri %4,96'ya çıktı. Perşembe %17 yükselen Anthropic hissesi Cuma erken saatlerde yaklaşık %10 geriledi.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Geniş piyasada risk iştahının kaybı ve yeni halka arz edilen AI şirketinin bile satılması, sermaye akışının yavaşlayabileceğine işaret.",
+      "kaynak": "Charles Schwab",
+      "url": "https://www.schwab.com/learn/story/stock-market-update-open"
+    },
+    {
+      "baslik": "ABD Kongresi daha sıkı AI çip kuralları istiyor; Trump yurt dışı veri merkezlerine ceza dedi",
+      "detay": "Yeni BIS kuralı Tayland, Endonezya, Malezya, Singapur ve Brezilya'daki veri merkezi müşterilerine gelişmiş çip almak için özel lisans şartı getiriyor. Temsilciler Meclisi Dış İlişkiler Komitesi, Aralık 2025–Mayıs 2026 arasında Çinli şirketlere 879 bin Nvidia/AMD çipi ihracatının onaylandığını açıkladı; Yargı Komitesi'nin azınlık üyeleri Bakan Lutnick hakkında soruşturma başlattı. Trump, yurt dışında veri merkezi kuran ABD şirketlerine 'ağır cezalar' geleceğini söyledi.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "İhracat ve yurt dışı yatırım üzerindeki siyasi baskı, çip üreticileri ve bulut şirketlerinin pazarını daraltabilir.",
+      "kaynak": "Al Jazeera",
+      "url": "https://www.aljazeera.com/economy/2026/11/20/us-lawmakers-push-for-tougher-ai-chip-rules-amid-china-export-crackdown"
+    },
+    {
+      "baslik": "TSMC ve Samsung, yeni ABD kuralıyla Çin'e bazı çip sevkiyatlarını durdurdu",
+      "detay": "BIS'in 'gelişmiş yarı iletkenlere uzaktan erişim' ara kuralı 19 Kasım'da yürürlüğe girdi; iki şirket lisans başvurusu yaparken bazı Çinli müşterilere sevkiyatı askıya aldı (FT haberine dayanarak). Çinli şirketlere hizmet veren mevcut veri merkezlerinin 90 gün içinde lisans alması gerekiyor; kural için görüşler 19 Ocak 2027'ye kadar alınıyor.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Dökümhanelerin Çin gelirinin bir kısmı belirsizleşiyor; Çinli tasarım şirketlerinin üretime erişimi zorlaşıyor.",
+      "kaynak": "CASRAI",
+      "url": "https://casrai.org/news/tsmc-samsung-suspend-china-chip-shipments-bis-rule-2026"
+    },
+    {
+      "baslik": "TrendForce: HBM4 fiyatı gelecek yıl gigabit başına 3–5,5 dolara çıkacak",
+      "detay": "TrendForce'un 18 Kasım tahminine göre HBM4 fiyatı bu yılki 2,05 dolar/Gb'tan 2027'de 3–5,5 dolar/Gb'a yükselecek (2,7 kata kadar). Samsung, SK hynix ve Micron'da HBM'in DRAM wafer girdisindeki payı %23'ten %30'a yaklaşacak.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Bellek üreticilerinin fiyatlama gücü ve kâr marjı için güçlü sinyal; düşüşe rağmen talep tarafı sıkı.",
+      "kaynak": "Seoul Economic Daily (TrendForce verisi)",
+      "url": "https://en.sedaily.com/business/2026/11/19/latest-hbm-prices-to-jump-up-to-27-fold-next-year"
+    },
+    {
+      "baslik": "Citi: Nvidia'nın satın alma taahhütleri bir çeyrekte ~100 milyar dolar arttı",
+      "detay": "Citi'ye göre Nvidia'nın Ekim'de biten çeyrekteki satın alma taahhütleri, ağırlıkla bellek, alt tabaka ve optik bileşenler nedeniyle çeyreklik bazda yaklaşık 100 milyar dolar yükseldi.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Tedarik zincirine (bellek, paketleme, optik) uzun vadeli sipariş güvencesi; ancak bir analist notuna dayanıyor.",
+      "kaynak": "456X Semi-AI (Citi notu)",
+      "url": "https://456xresearch.substack.com/p/nvidia-expands-purchase-commitments"
+    },
+    {
+      "baslik": "ABD'de dört senatör, halka açık şirketlere AI açıklama zorunluluğu getiren tasarı sundu",
+      "detay": "İki partili tasarı, borsada işlem gören şirketlerin yapay zekâ kullanımı hakkında daha fazla bilgi açıklamasını zorunlu kılmayı öngörüyor.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Düzenleme yükünü bir miktar artırabilir ama doğrudan talep etkisi sınırlı.",
+      "kaynak": "The Neuron",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-20-2026/"
+    }
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2026-12-10",
+      "baslik": "Ticaret Bakanı Lutnick Senato Bankacılık Komitesi'nde ifade verecek",
+      "kaynak": "CBS News",
+      "url": "https://www.cbsnews.com/news/china-us-export-controls-chips-nvidia-huang-scandal/"
+    },
+    {
+      "tarih": "2027-01-19",
+      "baslik": "BIS uzaktan erişim kuralı için görüş süresinin sonu",
+      "kaynak": "CASRAI",
+      "url": "https://casrai.org/news/tsmc-samsung-suspend-china-chip-shipments-bis-rule-2026"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = -9 · Σ ağırlık = 16 · Puan = 50 + 50 × -0.56 = 22"
+  }
+}

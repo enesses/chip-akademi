@@ -1,0 +1,29 @@
+{
+  "tarih": "2026-11-21",
+  "oneriler": [
+    {
+      "baslik": "Yaklaşan olaylarda farklı yıla ait tarihlerde yılı göster",
+      "neden": "src/pages/Bugun.jsx tarihYaz() yalnızca gün ve ay yazıyor; bugünkü bugun.json'daki 2027-01-19 tarihli BIS görüş süresi olayı '19 Ocak' diye görünüyor ve hangi yıl olduğu anlaşılmıyor.",
+      "etki": "orta",
+      "alan": "Bugün"
+    },
+    {
+      "baslik": "Dış bağlantılara ekran okuyucu için 'yeni sekmede açılır' notu ekle",
+      "neden": "Bugun.jsx'te kaynak bağlantıları (yaklaşan olaylar ve madde kartları) target=_blank ile açılıyor ama src/ içinde hiçbir yerde 'yeni sekmede' bilgisi yok; ekran okuyucu kullanıcısı sekme değiştiğini bilmiyor.",
+      "etki": "düşük",
+      "alan": "Erişilebilirlik"
+    },
+    {
+      "baslik": "Fiyat okumasında kesilen tablonun ikinci yarısı için yedek yol",
+      "neden": "getdeploying.com/gpus sayfası ~74 bin karakter; WebFetch yalnızca ilk ~40 binini birebir veriyor, kalanı özetliyor (özette medyan/en ucuz sütunları karışık, ör. A30 0.32/0.67). Bugün yalnızca 52 model güncellendi, 66 model gelmedi. GUNLUK.md'ye model sayfaları (getdeploying.com/gpus/<model>) üzerinden hedefli okuma eklenebilir.",
+      "etki": "yüksek",
+      "alan": "Otomasyon"
+    },
+    {
+      "baslik": "Bugün puanının bir önceki güne göre değişimini göster",
+      "neden": "Bugün puanı 44'ten 22'ye düştü ama sayfa (Bugun.jsx) önceki puanı göstermiyor; bugun.json'da önceki puan alanı yok. veri-isle.mjs otomasyon/gecmis/bugun-<dün>.json'dan 'onceki_puan' yazabilir.",
+      "etki": "orta",
+      "alan": "Bugün"
+    }
+  ]
+}

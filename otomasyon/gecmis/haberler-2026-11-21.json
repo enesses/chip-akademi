@@ -1,0 +1,91 @@
+{
+  "tarih": "2026-11-21",
+  "haberler": [
+    {
+      "baslik": "Nvidia rekor 3. çeyrek açıkladı ama hisse zirveden %36 aşağıda",
+      "detay": "Nvidia 2027 mali yılı 3. çeyreğinde 115,8 milyar dolar gelir (%103 artış) ve 107,6 milyar dolar veri merkezi geliri açıkladı, bu çeyrek için 130 milyar dolar öngördü; hisse 6 Ekim rekor kapanışından yaklaşık %36 geride.",
+      "kaynak": "InformationWeek",
+      "url": "https://www.informationweek.com/machine-learning-ai/the-week-of-nov-16-20-what-happened-what-matters-what-s-next",
+      "yayin": "2026-11-20",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "AMD ve Intel 20 Kasım'da açılış öncesi sert düştü",
+      "detay": "ABD piyasası açılmadan AMD %5, Intel %4,5 geriledi.",
+      "kaynak": "TokenPost",
+      "url": "https://www.tokenpost.com/news/investing/61922",
+      "yayin": "2026-11-20",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Nvidia %4,7 düşüşle Haziran 2025'ten beri en düşük seviyede",
+      "detay": "Cuma sabahı Nvidia %4,7 düşerek Haziran 2025'ten bu yana en düşük düzeye indi; Philadelphia Yarı İletken Endeksi %4,3 kayıpla iki haftanın dibinde.",
+      "kaynak": "TokenPost",
+      "url": "https://www.tokenpost.com/news/investing/62129",
+      "yayin": "2026-11-20",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "TSM hissesi %4,4 düşüşle açıldı; TSMC'nin 16 nm ve altı Çin siparişlerini durdurduğu bildirildi",
+      "detay": "Yeni ara kural sonrası TSMC'nin ABD lisansı olmayan Çinli tasarım şirketlerine 16 nm ve altı gelişmiş çip siparişlerini durdurduğu bildirildi; Nvidia TSMC gelirinin yaklaşık %19'unu oluşturuyor.",
+      "kaynak": "TradingKey",
+      "url": "https://www.tradingkey.com/news/market-movers/262315557-market-movers-tsm-20261120",
+      "yayin": "2026-11-20",
+      "konular": [
+        "cip",
+        "politika",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Opsiyon piyasasında TSMC, Nvidia ve Micron'a karşı rekor düşüş bahisleri",
+      "detay": "Net put primi TSM'de 32 milyon, NVDA'da 7,85 milyon, MU'da 3,06 milyon dolara ulaştı; S&P 500'deki net put primi günlük ortalamanın 8,3 katı oldu.",
+      "kaynak": "Yahoo Finance (GuruFocus)",
+      "url": "https://finance.yahoo.com/markets/options/articles/nvidia-micron-tsmc-face-massive-191112704.html",
+      "yayin": "2026-11-18",
+      "konular": [
+        "pazar",
+        "cip"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "ABD Senatosu enerji altyapısı yasasını geçirdi; büyük veri merkezleri şebeke maliyetine daha çok katlanacak",
+      "detay": "İki partili tasarı enerji projelerinin iznini hızlandırıyor ve büyük AI veri merkezlerinin şebeke yükseltme maliyetinin daha büyük kısmını üstlenmesini öneriyor; Temsilciler Meclisi onayı gerekiyor.",
+      "kaynak": "Weekly Data Centre News (Reuters haberi)",
+      "url": "https://datacentrenews.substack.com/p/weekly-data-centre-news-20112026",
+      "yayin": "2026-11-20",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "AMD: Ajan tabanlı AI, CPU:GPU oranını 1:4'ten 1:1'e taşıyor",
+      "detay": "AMD'ye göre ajan iş yükleri sunucularda CPU payını artırıyor; şirket EPYC 'Venice'in Intel Xeon 6980P'ye göre 2,4–3,5 kat verim sağladığını savunuyor.",
+      "kaynak": "AI News Rundown (iTWire haberi)",
+      "url": "https://riorundown.substack.com/p/ai-news-nov-20-2026-agentic-ai-infrastructure",
+      "yayin": "2026-11-20",
+      "konular": [
+        "cip",
+        "yapay-zeka",
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    }
+  ]
+}

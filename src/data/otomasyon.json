@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-11-20T07:03:57.598Z",
-  "tarih": "2026-11-20",
+  "guncelleme": "2026-11-21T07:00:25.625Z",
+  "tarih": "2026-11-21",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-11-20T07:00:16.306Z"
+      "zaman": "2026-11-21T06:59:16.725Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-11-20T07:00:16.394Z"
+      "zaman": "2026-11-21T06:59:16.837Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-11-20T07:00:15.931Z"
+      "zaman": "2026-11-21T06:59:16.280Z"
     },
     {
       "id": "gelistirme",
@@ -33,7 +33,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-11-20T07:00:31.467Z"
+      "zaman": "2026-11-21T06:59:34.034Z"
     }
   ],
   "dikkat": [
@@ -45,73 +45,32 @@
   ],
   "oneriler": [
     {
-      "baslik": "Bellek bölümündeki yıllık kartlara da 'eski veri' rozeti ekle",
-      "neden": "src/components/BellekFiyatlari.jsx'te eskilik() yalnızca çeyreklik göstergeler için çağrılıyor; yıllık kartlarda (HBM karma 2027, 29 Eylül tarihli; bugün eklenen HBM4 2027) hiçbir eskilik işareti yok. 29 Eylül göstergesi 60 gün sınırına 9 gün kaldı.",
+      "baslik": "Yaklaşan olaylarda farklı yıla ait tarihlerde yılı göster",
+      "neden": "src/pages/Bugun.jsx tarihYaz() yalnızca gün ve ay yazıyor; bugünkü bugun.json'daki 2027-01-19 tarihli BIS görüş süresi olayı '19 Ocak' diye görünüyor ve hangi yıl olduğu anlaşılmıyor.",
       "etki": "orta",
-      "alan": "arayüz"
+      "alan": "Bugün"
     },
     {
-      "baslik": "Bugün sayfası eski derlemeyle açılırsa uyarı göster",
-      "neden": "src/pages/Bugun.jsx (satır 89) yalnızca data.derlenme'yi yazıyor; GUNLUK.md 2. adıma göre doğrulanmış 5 madde yoksa dosya yazılmıyor ve sayfa önceki günün içeriğini bugünmüş gibi gösteriyor. bugun.tarih bugünden eskiyse 'N gün önceki derleme' rozeti gerekli.",
-      "etki": "orta",
-      "alan": "arayüz"
-    },
-    {
-      "baslik": "Ana sayfadaki Günün özeti kartında Bugün verisinin yaşını göster",
-      "neden": "src/pages/Home.jsx satır 172 'Bugün · {derlenme}' yazıyor; Bugün verisi o gün güncellenmezse ana sayfada da bunu ayırt eden bir işaret yok.",
+      "baslik": "Dış bağlantılara ekran okuyucu için 'yeni sekmede açılır' notu ekle",
+      "neden": "Bugun.jsx'te kaynak bağlantıları (yaklaşan olaylar ve madde kartları) target=_blank ile açılıyor ama src/ içinde hiçbir yerde 'yeni sekmede' bilgisi yok; ekran okuyucu kullanıcısı sekme değiştiğini bilmiyor.",
       "etki": "düşük",
-      "alan": "arayüz"
+      "alan": "Erişilebilirlik"
     },
     {
-      "baslik": "Kaynakta 'ilan yok' görünen modellerin eski fiyatını 'ilan yok' diye işaretle",
-      "neden": "20 Kasım çekiminde 15 model 'gelmedi (eski fiyat korundu)'; kaynak tablosunda bunların çoğu (AMD MI250, Nvidia P40, RTX 4500 Ada, RTX 5880 Ada, P2000) açıkça 'No listings yet' / 0 sağlayıcı gösteriyor. Prices.jsx yalnızca 'ölçüm <tarih>' yazıyor; kaynaktaki sıfır sağlayıcı bilgisi otomasyon/veri-isle.mjs'te kayboluyor (korunan dosya, onay gerekir).",
+      "baslik": "Fiyat okumasında kesilen tablonun ikinci yarısı için yedek yol",
+      "neden": "getdeploying.com/gpus sayfası ~74 bin karakter; WebFetch yalnızca ilk ~40 binini birebir veriyor, kalanı özetliyor (özette medyan/en ucuz sütunları karışık, ör. A30 0.32/0.67). Bugün yalnızca 52 model güncellendi, 66 model gelmedi. GUNLUK.md'ye model sayfaları (getdeploying.com/gpus/<model>) üzerinden hedefli okuma eklenebilir.",
+      "etki": "yüksek",
+      "alan": "Otomasyon"
+    },
+    {
+      "baslik": "Bugün puanının bir önceki güne göre değişimini göster",
+      "neden": "Bugün puanı 44'ten 22'ye düştü ama sayfa (Bugun.jsx) önceki puanı göstermiyor; bugun.json'da önceki puan alanı yok. veri-isle.mjs otomasyon/gecmis/bugun-<dün>.json'dan 'onceki_puan' yazabilir.",
       "etki": "orta",
-      "alan": "veri"
-    },
-    {
-      "baslik": "Fiyatı olmayan ama sağlayıcısı olan yeni modelleri kataloğa 'fiyat yok' olarak ekle",
-      "neden": "Kaynak sayfa 121 model gösteriyor, katalogda 118 var: AMD MI455X (5 sağlayıcı) ve Intel Gaudi 3 (1 sağlayıcı) fiyatsız satır olduğu için veri-isle.mjs'te atlanıyor (bugün '0 yeni'). Yeni nesil hızlandırıcıların listede görünmesi kullanıcı için değerli; korunan dosya.",
-      "etki": "düşük",
-      "alan": "veri"
+      "alan": "Bugün"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-11-20",
-      "oneri": "Bellek bölümündeki yıllık kartlara da 'eski veri' rozeti ekle",
-      "durum": "birlesti",
-      "pr": 101,
-      "dal": "otomasyon/oneri-2026-11-20-1",
-      "ozet": "Yıllık HBM kartları da 60 günü geçince ya da dönemi bitince 'Eski' rozeti ve soluk görünüm alıyor.",
-      "neden": null,
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-11-20",
-      "oneri": "Bugün sayfası eski derlemeyle açılırsa uyarı göster",
-      "durum": "birlesti",
-      "pr": 102,
-      "dal": "otomasyon/oneri-2026-11-20-2",
-      "ozet": "Bugün verisi sayfanın açıldığı günden eskiyse başlıkta 'N gün önceki derleme' rozeti görünüyor.",
-      "neden": null,
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "Haberler'de gün başlığına o günün ton dağılımını ekle",
-      "durum": "acik",
-      "pr": 76,
-      "tarih": "2026-11-06",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Bugün maddelerini ağırlığa göre sıralama seçeneği",
-      "durum": "acik",
-      "pr": 77,
-      "tarih": "2026-11-06",
-      "kim": "otomasyon"
-    },
     {
       "oneri": "Fiyat hareketlerinde çok sağlayıcılı modelleri öne al",
       "durum": "acik",
@@ -524,19 +483,11 @@
       },
       "kod": {
         "dosyaSayisi": 77,
-        "toplamSatir": 18665,
+        "toplamSatir": 18680,
         "boyutKB": null
       }
     },
-    "bulgular": [
-      {
-        "alan": "veri",
-        "baslik": "Bellek fiyatları 28 gündür güncellenmedi",
-        "etki": "düşük",
-        "otomatik": false,
-        "aciklama": "Günlük görev pazartesileri TrendForce ve benzeri kaynaklardan bellek sözleşme fiyatı tahminlerini kontrol etmeli (GUNLUK.md, adım 2b)."
-      }
-    ]
+    "bulgular": []
   },
   "yenileme": {
     "durum": "ok",
@@ -544,17 +495,17 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 103 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu)"
+        "detay": "bu çalıştırmada güncellendi — 52 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 66 gelmedi (eski fiyat korundu)"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 9 madde, puan 44; haber akışına +9"
+        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 22, 2 yaklaşan olay; haber akışına +7"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+5 haber (akışta 407); bugün toplam 14"
+        "detay": "+7 haber (akışta 403); bugün toplam 14"
       },
       {
         "ad": "Derleme",
@@ -591,11 +542,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-11-04",
-      "durum": "dikkat",
-      "dikkat": 1
-    },
     {
       "tarih": "2026-11-06",
       "durum": "dikkat",
@@ -658,6 +604,11 @@
     },
     {
       "tarih": "2026-11-20",
+      "durum": "dikkat",
+      "dikkat": 1
+    },
+    {
+      "tarih": "2026-11-21",
       "durum": "dikkat",
       "dikkat": 1
     }
