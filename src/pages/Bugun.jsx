@@ -7,10 +7,12 @@ import { dosyaKaydet } from "@/lib/dosyaKaydet";
 
 const AY = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
 const GUN = ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"];
-function tarihYaz(iso, gunAdi = false) {
+function tarihYaz(iso, gunAdi = false, yilGoster = false) {
   const [y, a, g] = iso.split("-").map(Number);
   const t = new Date(Date.UTC(y, a - 1, g));
-  return `${g} ${AY[a - 1]}${gunAdi ? `, ${GUN[t.getUTCDay()]}` : ""}`;
+  // Bu yıldan farklı bir yıla düşen tarihlerde yılı da yaz ("19 Ocak 2027")
+  const yil = yilGoster && y !== new Date().getFullYear() ? ` ${y}` : "";
+  return `${g} ${AY[a - 1]}${yil}${gunAdi ? `, ${GUN[t.getUTCDay()]}` : ""}`;
 }
 function kalanGun(iso) {
   const bugun = new Date(); bugun.setHours(0, 0, 0, 0);
@@ -164,7 +166,7 @@ export default function Bugun() {
               return (
                 <li key={i} className="flex items-start gap-4 px-5 py-3.5">
                   <div className="w-24 shrink-0">
-                    <p className="text-sm font-medium tabular-nums">{tarihYaz(o.tarih)}</p>
+                    <p className="text-sm font-medium tabular-nums" data-testid="yaklasan-tarih">{tarihYaz(o.tarih, false, true)}</p>
                     <p className={cn("text-xs", k <= 1 ? "text-primary" : "text-muted-foreground")}>
                       {k === 0 ? "bugün" : k === 1 ? "yarın" : `${k} gün sonra`}
                     </p>
