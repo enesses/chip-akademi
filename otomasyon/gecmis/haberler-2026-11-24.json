@@ -1,0 +1,99 @@
+{
+  "tarih": "2026-11-24",
+  "haberler": [
+    {
+      "baslik": "OpenRouter, istem hırsızlığı tespit edilen 3 sağlayıcıyı çıkardı",
+      "detay": "Dragos'un ~2 milyon tuzak istemle yaptığı araştırmada üç AI çıkarım sağlayıcısında aylarca süren veri hırsızlığı bulundu; OpenRouter 3 sağlayıcıyı kaldırdı ve 125 uç noktayı Sıfır Veri Saklama uygunluğundan çıkardı.",
+      "kaynak": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+      "yayin": "2026-11-22",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Samsung ve SK hynix, rekor kâra rağmen zirvelerinin yarısına indi",
+      "detay": "Samsung'un bellek çipleri yılın ilk dokuz ayında geçen yılın ortalamasının ~3,7 katı fiyata satıldı. SemiAnalysis 2028 küresel HBM bit talebi tahminini ~%30, AI hızlandırıcı harcama tahminini 1,054 trilyondan 758 milyar dolara indirdi.",
+      "kaynak": "Korea JoongAng Daily",
+      "url": "https://www.koreajoongangdaily.com/business/samsung-sk-hynix-face-ai-memory-doubts-despite-record-profits-as-shares-slide/12984231",
+      "yayin": "2026-11-22",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "NAND spot fiyatı bir haftada %11,7 düştü",
+      "detay": "DRAMeXchange verisine göre 512 Gb TLC NAND wafer spot fiyatı 9 Kasım'da 14,267 dolara geriledi (2 Kasım: 16,152 $). TrendForce, Çinli bulut sağlayıcılarının SSD siparişlerindeki düşüş nedeniyle NAND spot ve sözleşme fiyatlarının gelecek yıl düşmesini bekliyor.",
+      "kaynak": "Maeil Business (MK)",
+      "url": "https://www.mk.co.kr/en/business/12215688",
+      "yayin": "2026-11-22",
+      "konular": [
+        "bellek"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "SK hynix ve Samsung'un 3. çeyrek faaliyet kârı toplam 190,7 trilyon won",
+      "detay": "SK hynix %80 faaliyet marjıyla 83,33 trilyon won, Samsung 107,44 trilyon won faaliyet kârı açıkladı. Ticari DRAM spot fiyatı son bir ayda %5, NAND spot %20 düştü; sunucu modüllerinde sözleşme fiyatının spot üzerindeki primi %20'yi aştı.",
+      "kaynak": "East Asia Brief",
+      "url": "https://eastasiabrief.com/semiconductors/samsung-sk-hynix-slide-ai-peak-out-doubts-rattle-1674",
+      "yayin": "2026-11-22",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "ABD, Megaspeed'in 4,13 milyar dolarlık Nvidia ithalatı sonrası uzaktan erişim yolunu kapattı",
+      "detay": "BIS'in 19 Kasım'da yürürlüğe giren kuralı Çin'in uzaktan veri merkezi erişimini kesiyor. Singapur merkezli Megaspeed, Mayıs 2024–Şubat 2026 arasında 4,13 milyar dolarlık Nvidia donanımı ithal etti; bölgesel bulut veri merkezleri 31 Aralık'a kadar müşteri kimlik bildirimi yapmalı.",
+      "kaynak": "East Asia Brief",
+      "url": "https://eastasiabrief.com/trade-policy/us-blocks-covert-ai-chip-routes-4-1b-china-1666",
+      "yayin": "2026-11-22",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Stanford: Veri merkezi tepkisi büyüyor, ama 300 bin fabrika işi yaratıyor",
+      "detay": "SIEPR forumunda Mesa (Arizona) belediye meclis üyesi halkın veri merkezlerine öfkesini anlattı; araştırmacılar mevcut yatırım düzeyinde veri merkezi tedarik zincirinin ABD'de 300.000'den fazla imalat işi yarattığını hesapladı.",
+      "kaynak": "Stanford SIEPR",
+      "url": "https://siepr.stanford.edu/news/AI-infrastructure-data-center-backlash",
+      "yayin": "2026-11-23",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "AI veri merkezleri özel altyapı fonlarına milyarlar çekiyor",
+      "detay": "Preqin'e göre altyapı fon toplama 2026'nın 3. çeyreğinde 21 fonla 62 milyar dolara toparlandı; AI veri merkezleri, elektrik talebi ve enerji güvenliği 2027'ye girerken sermaye ihtiyacını artırıyor.",
+      "kaynak": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/23/infrastructure-assets-inflation-investors-ai.html",
+      "yayin": "2026-11-23",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "AMD'nin Taalas alımı 2,9 milyar dolar; modeli silikona kazıyan çipler",
+      "detay": "AMD 17 Kasım'da tamamladığı Taalas alımını çeyreklik raporunda ~2,9 milyar dolar (1,4 milyarı koşullu) olarak değerledi. Taalas'ın HC1 çipi Llama 3.1 8B'yi taşıyor ve kullanıcı başına saniyede ~17.000 token üretiyor; model değişikliği yeni çip gerektiriyor.",
+      "kaynak": "ActuIA",
+      "url": "https://www.actuia.com/en/news/amd-bets-up-to-29-billion-on-single-model-chips",
+      "yayin": "2026-11-23",
+      "konular": [
+        "cip",
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    }
+  ]
+}

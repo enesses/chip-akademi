@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-11-21T07:02:56.435Z",
-  "tarih": "2026-11-21",
+  "guncelleme": "2026-11-24T06:53:27.672Z",
+  "tarih": "2026-11-24",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-11-21T06:59:16.725Z"
+      "zaman": "2026-11-24T06:52:17.669Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-11-21T06:59:16.837Z"
+      "zaman": "2026-11-24T06:52:17.815Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-11-21T06:59:16.280Z"
+      "zaman": "2026-11-24T06:52:17.223Z"
     },
     {
       "id": "gelistirme",
@@ -33,7 +33,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-11-21T06:59:34.034Z"
+      "zaman": "2026-11-24T06:52:34.711Z"
     }
   ],
   "dikkat": [
@@ -45,67 +45,32 @@
   ],
   "oneriler": [
     {
-      "baslik": "Yaklaşan olaylarda farklı yıla ait tarihlerde yılı göster",
-      "neden": "src/pages/Bugun.jsx tarihYaz() yalnızca gün ve ay yazıyor; bugünkü bugun.json'daki 2027-01-19 tarihli BIS görüş süresi olayı '19 Ocak' diye görünüyor ve hangi yıl olduğu anlaşılmıyor.",
+      "baslik": "Sözlük aramasını Türkçe karakter duyarsız yap",
+      "neden": "src/data/glossary.js searchGlossary yalnızca toLocaleLowerCase('tr') kullanıyor; 'onbellek' yazan kullanıcı 'Önbellek' terimini bulamaz. Haberler.jsx aynı iş için src/lib/bolumler.js'deki sadelestir()'i kullanıyor; Sözlük'te bu yok.",
       "etki": "orta",
-      "alan": "Bugün"
+      "alan": "arayüz"
     },
     {
-      "baslik": "Dış bağlantılara ekran okuyucu için 'yeni sekmede açılır' notu ekle",
-      "neden": "Bugun.jsx'te kaynak bağlantıları (yaklaşan olaylar ve madde kartları) target=_blank ile açılıyor ama src/ içinde hiçbir yerde 'yeni sekmede' bilgisi yok; ekran okuyucu kullanıcısı sekme değiştiğini bilmiyor.",
+      "baslik": "Sözlük arama kutusunda Escape tuşu aramayı temizlesin",
+      "neden": "Haberler.jsx:132'de Escape ile temizleme var (#100), src/pages/Glossary.jsx'teki Input'ta onKeyDown yok; iki arama kutusu farklı davranıyor.",
       "etki": "düşük",
-      "alan": "Erişilebilirlik"
+      "alan": "erişilebilirlik"
     },
     {
-      "baslik": "Fiyat okumasında kesilen tablonun ikinci yarısı için yedek yol",
-      "neden": "getdeploying.com/gpus sayfası ~74 bin karakter; WebFetch yalnızca ilk ~40 binini birebir veriyor, kalanı özetliyor (özette medyan/en ucuz sütunları karışık, ör. A30 0.32/0.67). Bugün yalnızca 52 model güncellendi, 66 model gelmedi. GUNLUK.md'ye model sayfaları (getdeploying.com/gpus/<model>) üzerinden hedefli okuma eklenebilir.",
-      "etki": "yüksek",
-      "alan": "Otomasyon"
+      "baslik": "Sözlükte bulunan terim sayısını ekran okuyucuya duyur",
+      "neden": "Glossary.jsx 31 terimi süzüyor ama sonuç sayısını göstermiyor; yalnızca 0 sonuçta 'Sonuç yok.' yazıyor. aria-live ile 'N terim' bilgisi eksik.",
+      "etki": "düşük",
+      "alan": "erişilebilirlik"
     },
     {
-      "baslik": "Bugün puanının bir önceki güne göre değişimini göster",
-      "neden": "Bugün puanı 44'ten 22'ye düştü ama sayfa (Bugun.jsx) önceki puanı göstermiyor; bugun.json'da önceki puan alanı yok. veri-isle.mjs otomasyon/gecmis/bugun-<dün>.json'dan 'onceki_puan' yazabilir.",
+      "baslik": "Kaynakta adı değişen 'Intel Gaudi2' satırını 'Intel Gaudi 2' ile eşle",
+      "neden": "24 Kasım okumasında getdeploying 121 modelden 'Intel Gaudi 2' (medyan 1,40 $) verdi; src/data/gpu_kiralama.json'daki 'Intel Gaudi2' satırı eşleşmediği için eski fiyatla kaldı (rapor: 15 model gelmedi, 1 yeni). Ad eşlemesi otomasyon betiğinde (korunan alan) yapılmalı.",
       "etki": "orta",
-      "alan": "Bugün"
+      "alan": "veri"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-11-21",
-      "oneri": "Yaklaşan olaylarda farklı yıla ait tarihlerde yılı göster",
-      "durum": "birlesti",
-      "pr": 103,
-      "dal": "otomasyon/oneri-2026-11-21-1",
-      "ozet": "Bugün sayfasındaki yaklaşan olaylar bu yıldan farklı bir yıla düşüyorsa tarihe yıl ekleniyor (19 Ocak 2027).",
-      "neden": null,
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-11-21",
-      "oneri": "Dış bağlantılara ekran okuyucu için 'yeni sekmede açılır' notu ekle",
-      "durum": "birlesti",
-      "pr": 104,
-      "dal": "otomasyon/oneri-2026-11-21-2",
-      "ozet": "Bugün sayfasındaki kaynak bağlantılarına ekran okuyucular için görünmez '(yeni sekmede açılır)' metni eklendi.",
-      "neden": null,
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "Fiyat hareketlerinde çok sağlayıcılı modelleri öne al",
-      "durum": "acik",
-      "pr": 78,
-      "tarih": "2026-11-07",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Haberler konu sekmelerinde ARIA rolünü düzelt",
-      "durum": "acik",
-      "pr": 79,
-      "tarih": "2026-11-07",
-      "kim": "otomasyon"
-    },
     {
       "oneri": "Endeks kartında sıfır değişimi nötr renkle 'yatay' göster",
       "durum": "acik",
@@ -507,7 +472,7 @@
     "olcumler": {
       "veri": {
         "chipSayisi": 67,
-        "fiyatSayisi": 118
+        "fiyatSayisi": 119
       },
       "egitim": {
         "dersSayisi": 13
@@ -518,7 +483,7 @@
       },
       "kod": {
         "dosyaSayisi": 77,
-        "toplamSatir": 18680,
+        "toplamSatir": 18682,
         "boyutKB": null
       }
     },
@@ -530,17 +495,17 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 52 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 66 gelmedi (eski fiyat korundu)"
+        "detay": "bu çalıştırmada güncellendi — 103 model güncellendi, 1 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu)"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 8 madde, puan 22, 2 yaklaşan olay; haber akışına +7"
+        "detay": "bu çalıştırmada güncellendi — 12 madde, puan 65, 2 yaklaşan olay; haber akışına +12"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+7 haber (akışta 403); bugün toplam 14"
+        "detay": "+8 haber (akışta 374); bugün toplam 20"
       },
       {
         "ad": "Derleme",
@@ -550,7 +515,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2913 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2898 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -577,11 +542,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-11-06",
-      "durum": "dikkat",
-      "dikkat": 2
-    },
     {
       "tarih": "2026-11-07",
       "durum": "dikkat",
@@ -644,6 +604,11 @@
     },
     {
       "tarih": "2026-11-21",
+      "durum": "dikkat",
+      "dikkat": 1
+    },
+    {
+      "tarih": "2026-11-24",
       "durum": "dikkat",
       "dikkat": 1
     }

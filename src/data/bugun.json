@@ -1,103 +1,139 @@
 {
-  "tarih": "2026-11-21",
-  "derlenme": "21 Kasım 2026",
+  "tarih": "2026-11-24",
+  "derlenme": "24 Kasım 2026",
   "puan": {
-    "etiket": "Kara Cuma erken geldi: AI hisselerinde çöküş",
-    "yorum": "Nvidia'nın %14, yarı iletken endeksinin %10,7 düştüğü Cuma seansı, BofA'nın yatırım kesintisi uyarısı ve yeni ABD ihracat kurallarıyla birleşince günün tonu belirgin biçimde olumsuz; HBM fiyat tahmini ve Nvidia'nın büyüyen tedarik taahhütleri ise talebin henüz kırılmadığını gösteriyor.",
-    "deger": 22
+    "etiket": "Huang döndü, AI rallisi geri geldi",
+    "yorum": "Nvidia'nın Huang'ı göreve iade etmesi ABD ve Asya'da tarihî bir çip rallisini tetikledi; ancak süren soruşturmalar, Çin satışlarına dair Kongre raporu ve bellek fiyat tahminlerindeki indirimler iyimserliği sınırlıyor.",
+    "deger": 65
   },
   "ozet": [
-    "Günün ana teması, AI altyapı rallisine duyulan güvenin bir haftada çözülmesi. 20 Kasım Cuma günü Nvidia %14, Philadelphia Yarı İletken Endeksi %10,7 düştü; Nasdaq 100 %5,6, S&P 500 %3,7 geriledi. Nvidia'nın piyasa değeri 6 Ekim zirvesinden bu yana yaklaşık 2,74 trilyon dolar eridi ve piyasa Nisan 2025'ten beri en kötü haftasını yaşadı.",
-    "Satışın gerekçeleri talep tarafında yoğunlaşıyor: BofA, bulut harcamaları bugünkü düzeyde kalırsa öngörülen yatırımların %20 azalabileceğini ve AI çip kârlarında %35–40'a varan aşağı yön riski olduğunu yazdı. Micron %11, Broadcom ise Google'ın sipariş kaydırdığı haberiyle %8 düştü. Perşembe rekor halka arzla %17 yükselen Anthropic bile Cuma günü satıldı.",
-    "Politika cephesi de baskıyı artırıyor. 19 Kasım'da yürürlüğe giren BIS kuralıyla TSMC ve Samsung bazı Çinli müşterilere sevkiyatı durdurdu; Kongre daha sıkı kurallar ve Bakan Lutnick hakkında soruşturma isterken Trump yurt dışında veri merkezi kuran ABD şirketlerine ceza sinyali verdi.",
-    "Karşı tarafta temel veriler hâlâ sıkı: TrendForce HBM4 fiyatının 2027'de 2,7 kata kadar artacağını öngörüyor, Citi de Nvidia'nın tedarik taahhütlerinin bir çeyrekte ~100 milyar dolar büyüdüğünü bildiriyor. Yani düşüş şimdilik siparişlerden çok değerleme ve harcama sürdürülebilirliği endişesinden kaynaklanıyor."
+    "Günün tek bir ana teması var: Nvidia yönetim kurulu, istifasından 12 gün sonra Jensen Huang'ı CEO olarak geri getirdi. Kararın ardından Nvidia hisseleri 2003'ten bu yana en büyük günlük artışını (%31,5) yaşadı ve piyasa değerine yaklaşık 1 trilyon dolar geri ekledi; AMD, Intel, Micron ve TSMC de çift haneli ya da güçlü yükselişlerle izledi.",
+    "Ralli Salı sabahı Asya'ya taşındı: Tayvan borsası %9'u aşan rekor puan artışı gördü, KOSPI %7,5 yükseldi. Geçen haftaki çöküşün en büyük nedenlerinden biri olan liderlik belirsizliğinin kalkması, AI altyapı harcamalarının finansmanına dair korkuları en azından geçici olarak yatıştırdı.",
+    "Yine de tablo tamamen pembe değil. Megaspeed ve Alice Huang soruşturması, SEC'in muhasebe incelemesi ve Çin'e onaylanan 880 bine yakın çipe dair Kongre raporu Nvidia üzerindeki düzenleyici baskıyı sürdürüyor. Goldman Sachs'ın Samsung ve SK hynix hedeflerini sert kırması ve Citi'nin sunucu DDR5 sözleşme fiyatında yalnızca %1 artış beklemesi, bellek süper döngüsünün yavaşladığını işaret ediyor.",
+    "Altyapı tarafında talep sinyalleri güçlü kalıyor: Applied Digital'in 18 yıllık 150 MW kira anlaşması bunun örneği. Ancak SpaceX'in 6 GW'lık Arizona kampüsü gibi projeler, elektrik maliyetinin kime kalacağı sorusunun AI yatırımlarının hızını belirleyecek ana etkenlerden biri olduğunu gösteriyor."
   ],
   "maddeler": [
     {
-      "baslik": "Yapay zekâ hisselerinde çöküş: Nvidia %14, SOX %10,7 düştü",
-      "detay": "20 Kasım Cuma seansında Nvidia %14 geriledi; Philadelphia Yarı İletken Endeksi %10,7, Nasdaq 100 %5,6, S&P 500 %3,7 düştü. Nvidia'nın piyasa değeri 6 Ekim zirvesinden bu yana yedi günlük düşüşte yaklaşık 2,74 trilyon dolar eridi; VIX bir ara 40'a çıktı.",
-      "kategori": "negatif",
+      "baslik": "Nvidia, Jensen Huang'ı CEO olarak geri getirdi",
+      "detay": "Nvidia yönetim kurulu 23 Kasım'da oybirliğiyle Huang'ı başkan, CEO ve yönetim kurulu üyesi olarak derhal göreve iade etti; geçici CEO Colette Kress'e teşekkür edildi. Yabancı istihbarat iddialarına dair bağımsız komite soruşturması sürecek; yeni bir Ulusal Güvenlik ve İhracat Kontrolü Komitesi ve Baş Uyum Yöneticisi pozisyonu oluşturuluyor.",
+      "kategori": "pozitif",
       "agirlik": 3,
-      "neden": "Sektörün tamamında çift haneli düşüş, AI altyapı harcamalarının sürdürülebilirliğine dair güvenin sert biçimde sarsıldığını gösteriyor.",
-      "kaynak": "36Kr (Zhidx)",
-      "url": "https://eu.36kr.com/en/p/4078935983182722"
+      "neden": "Sektörün en kritik şirketinde 12 günlük liderlik belirsizliği sona erdi; ancak soruşturmalar sürdüğü için risk tamamen kalkmış değil.",
+      "kaynak": "NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
     },
     {
-      "baslik": "Micron %11 düştü; BofA AI çip kârlarında %35–40 aşağı yön riski görüyor",
-      "detay": "Micron, CEO'sunun arzın sıkılaşacağını söylemesine rağmen %11 geriledi. BofA, bulut harcamalarının bugünkü düzeyde kalmasının öngörülen yatırımlarda yaklaşık %20 azalma ve AI yarı iletken hisse başı kârında %35–40'a varan düşüş anlamına gelebileceğini yazdı. Google'ın Broadcom tasarımlı AI çip siparişlerini azaltıp MediaTek'e kaydırdığı haberiyle Broadcom %8 düştü.",
-      "kategori": "negatif",
+      "baslik": "Nvidia %31,5 yükseldi; Nasdaq %6,5, S&P 500 %4,7 arttı",
+      "detay": "23 Kasım seansında Nvidia %31,48 artışla 165,05 dolardan kapandı; Intel %16,3, AMD %6,9 (453,46 $) yükseldi. Nasdaq Bileşik 24.090'a (%6,51), S&P 500 7.237'ye (%4,73) çıktı.",
+      "kategori": "pozitif",
       "agirlik": 3,
-      "neden": "Büyük bir bankanın yatırım harcaması kesintisi senaryosu ve bir müşterinin tedarikçi değiştirmesi, talep görünürlüğüne doğrudan darbe.",
-      "kaynak": "Seeking Alpha",
-      "url": "https://www.seekingalpha.com/news/4675206-micron-leads-semiconductor-and-ai-stocks-down-as-sox-plunges-7"
+      "neden": "Cuma günkü çöküşün ardından AI çip hisselerinde geniş tabanlı ve sert bir toparlanma.",
+      "kaynak": "The Motley Fool",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/23/stock-market-today-nov-23-advanced-micro-devices-climbs-on-ai-chip-rebound-after-nvidia-reinstates-jensen-huang-as-ceo/"
     },
     {
-      "baslik": "Wall Street Nisan 2025'ten beri en kötü haftasında; Anthropic de düşüşe geçti",
-      "detay": "Schwab'a göre açılışta S&P 500 %2, Nasdaq %2,25 düştü; VIX 31,3'e, 10 yıllık getiri %4,96'ya çıktı. Perşembe %17 yükselen Anthropic hissesi Cuma erken saatlerde yaklaşık %10 geriledi.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "Geniş piyasada risk iştahının kaybı ve yeni halka arz edilen AI şirketinin bile satılması, sermaye akışının yavaşlayabileceğine işaret.",
-      "kaynak": "Charles Schwab",
-      "url": "https://www.schwab.com/learn/story/stock-market-update-open"
-    },
-    {
-      "baslik": "ABD Kongresi daha sıkı AI çip kuralları istiyor; Trump yurt dışı veri merkezlerine ceza dedi",
-      "detay": "Yeni BIS kuralı Tayland, Endonezya, Malezya, Singapur ve Brezilya'daki veri merkezi müşterilerine gelişmiş çip almak için özel lisans şartı getiriyor. Temsilciler Meclisi Dış İlişkiler Komitesi, Aralık 2025–Mayıs 2026 arasında Çinli şirketlere 879 bin Nvidia/AMD çipi ihracatının onaylandığını açıkladı; Yargı Komitesi'nin azınlık üyeleri Bakan Lutnick hakkında soruşturma başlattı. Trump, yurt dışında veri merkezi kuran ABD şirketlerine 'ağır cezalar' geleceğini söyledi.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "İhracat ve yurt dışı yatırım üzerindeki siyasi baskı, çip üreticileri ve bulut şirketlerinin pazarını daraltabilir.",
-      "kaynak": "Al Jazeera",
-      "url": "https://www.aljazeera.com/economy/2026/11/20/us-lawmakers-push-for-tougher-ai-chip-rules-amid-china-export-crackdown"
-    },
-    {
-      "baslik": "TSMC ve Samsung, yeni ABD kuralıyla Çin'e bazı çip sevkiyatlarını durdurdu",
-      "detay": "BIS'in 'gelişmiş yarı iletkenlere uzaktan erişim' ara kuralı 19 Kasım'da yürürlüğe girdi; iki şirket lisans başvurusu yaparken bazı Çinli müşterilere sevkiyatı askıya aldı (FT haberine dayanarak). Çinli şirketlere hizmet veren mevcut veri merkezlerinin 90 gün içinde lisans alması gerekiyor; kural için görüşler 19 Ocak 2027'ye kadar alınıyor.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "Dökümhanelerin Çin gelirinin bir kısmı belirsizleşiyor; Çinli tasarım şirketlerinin üretime erişimi zorlaşıyor.",
-      "kaynak": "CASRAI",
-      "url": "https://casrai.org/news/tsmc-samsung-suspend-china-chip-shipments-bis-rule-2026"
-    },
-    {
-      "baslik": "TrendForce: HBM4 fiyatı gelecek yıl gigabit başına 3–5,5 dolara çıkacak",
-      "detay": "TrendForce'un 18 Kasım tahminine göre HBM4 fiyatı bu yılki 2,05 dolar/Gb'tan 2027'de 3–5,5 dolar/Gb'a yükselecek (2,7 kata kadar). Samsung, SK hynix ve Micron'da HBM'in DRAM wafer girdisindeki payı %23'ten %30'a yaklaşacak.",
+      "baslik": "TSMC ADR %14,1 arttı ama 52 haftalık zirvenin %25 altında",
+      "detay": "TSMC'nin ABD'deki hisseleri 23 Kasım'da %14,08 artışla 363,60 dolara çıktı; Micron %19,0, ASML %9,3 yükseldi. TSMC bir önceki hafta %20,1 düşmüştü; Ekim gelirleri yıllık %59,7 artmıştı.",
       "kategori": "pozitif",
       "agirlik": 2,
-      "neden": "Bellek üreticilerinin fiyatlama gücü ve kâr marjı için güçlü sinyal; düşüşe rağmen talep tarafı sıkı.",
-      "kaynak": "Seoul Economic Daily (TrendForce verisi)",
-      "url": "https://en.sedaily.com/business/2026/11/19/latest-hbm-prices-to-jump-up-to-27-fold-next-year"
+      "neden": "Nvidia'nın tek üretim ortağı olan TSMC'de güven geri dönüyor; yine de hisse zirvesinin belirgin altında.",
+      "kaynak": "Gotrade",
+      "url": "https://www.heygotrade.com/en/news/tsmc-tsm-stock-news-november-24-2026/"
     },
     {
-      "baslik": "Citi: Nvidia'nın satın alma taahhütleri bir çeyrekte ~100 milyar dolar arttı",
-      "detay": "Citi'ye göre Nvidia'nın Ekim'de biten çeyrekteki satın alma taahhütleri, ağırlıkla bellek, alt tabaka ve optik bileşenler nedeniyle çeyreklik bazda yaklaşık 100 milyar dolar yükseldi.",
+      "baslik": "Asya borsaları uçtu: Tayvan %9,1, KOSPI %7,5",
+      "detay": "24 Kasım Salı sabahı Tayvan borsası %9,1, Güney Kore KOSPI %7,5, Japonya Nikkei %4,5 yükseldi; MSCI Asya-Pasifik (Japonya hariç) %4,6 arttı. Toparlanma, ABD'de Aralık'ta faiz artırımı beklentisini kesinliğe taşıdı; 10 yıllık getiri %4,94.",
       "kategori": "pozitif",
-      "agirlik": 1,
-      "neden": "Tedarik zincirine (bellek, paketleme, optik) uzun vadeli sipariş güvencesi; ancak bir analist notuna dayanıyor.",
-      "kaynak": "456X Semi-AI (Citi notu)",
-      "url": "https://456xresearch.substack.com/p/nvidia-expands-purchase-commitments"
+      "agirlik": 2,
+      "neden": "Bellek ve dökümhane devlerinin bulunduğu Asya piyasalarında AI işlemine güven hızla geri geldi; faiz artışı beklentisi ise karşı rüzgâr.",
+      "kaynak": "Reuters (Yahoo Finance)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-rally-huangs-nvidia-013042563.html"
     },
     {
-      "baslik": "ABD'de dört senatör, halka açık şirketlere AI açıklama zorunluluğu getiren tasarı sundu",
-      "detay": "İki partili tasarı, borsada işlem gören şirketlerin yapay zekâ kullanımı hakkında daha fazla bilgi açıklamasını zorunlu kılmayı öngörüyor.",
+      "baslik": "WSJ: Trump, Huang'ın dönüşü için Vance'ten yardım istedi",
+      "detay": "Wall Street Journal'a göre Başkan Trump, Nvidia yönetim kurulunu Huang'ı geri getirmeye ikna etmesi için Başkan Yardımcısı Vance'ten destek istedi; Trump kurulla 'doğrudan ve dolaylı' konuştuğunu söyledi.",
       "kategori": "notr",
       "agirlik": 1,
-      "neden": "Düzenleme yükünü bir miktar artırabilir ama doğrudan talep etkisi sınırlı.",
-      "kaynak": "The Neuron",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-20-2026/"
+      "neden": "Dönüşü hızlandırdı ama şirket yönetimine siyasi müdahale algısı yönetişim tartışmasını canlı tutuyor.",
+      "kaynak": "The Wall Street Journal",
+      "url": "https://www.wsj.com/politics/policy/nvidia-ceo-trump-vance-jensen-huang-bdec91c3"
+    },
+    {
+      "baslik": "Megaspeed ve Alice Huang soruşturması sürüyor",
+      "detay": "Ulusal İstihbarat Direktörü Jay Clayton, Alice Huang ve eski şirketi Megaspeed hakkındaki soruşturmanın devam ettiğini söyledi. WSJ'ye göre Çin vatandaşı Li Ming, Megaspeed'in önemli kararlarında 'derinden' yer aldı.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Huang geri dönse de ihracat kontrolü ve ulusal güvenlik soruşturmaları Nvidia üzerinde hukuki risk olarak kalıyor.",
+      "kaynak": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/23/nvidia-megaspeed-chipmaker-us.html"
+    },
+    {
+      "baslik": "Rapor: ABD, Çin bağlantılı şirketlere 879.868 H200/MI325X onayladı; SEC Nvidia'yı inceliyor",
+      "detay": "Temsilciler Meclisi Dış İlişkiler Komitesi raporuna göre BIS, 21 lisans başvurusunda Çin bağlantılı şirketlere 879.868 çip onayladı (talep 3,4 milyonun üzerindeydi). Hazine Bakanı Bessent eski çiplere yeni kısıt gerekmediğini söyledi. NYT'ye göre SEC, Nvidia'nın muhasebe uygulamalarını erken aşamada inceliyor.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Çin satışları ve muhasebe incelemesi, Nvidia ve AMD için düzenleyici baskının sürdüğünü gösteriyor.",
+      "kaynak": "Taipei Times (AP)",
+      "url": "https://www.taipeitimes.com/News/biz/archives/2026/11/23/2003868201"
+    },
+    {
+      "baslik": "Goldman, Samsung ve SK hynix hedeflerini %30–42 düşürdü",
+      "detay": "Goldman Sachs 23 Kasım raporunda Samsung hedefini 500.000'den 350.000 wona, SK hynix'i 3,5 milyondan 2 milyon wona indirdi (Al tavsiyesi korundu). 2028 DRAM arz-talep açığı tahmini %3,9'dan %1,2'ye indi; 2028'de geleneksel DRAM fiyatlarında ~%20, aynı özellikli HBM'de %20'den fazla düşüş öngörülüyor.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Bellek süper döngüsünün 2028'de dengeye yaklaşacağı beklentisi, sektörün en kârlı kalemine dair görünümü zayıflatıyor.",
+      "kaynak": "BigGo Finance",
+      "url": "https://finance.biggo.com/news/cc39f504-e7dd-4f74-aa27-ea1a456f73a0"
+    },
+    {
+      "baslik": "Citi: Sunucu DDR5 sözleşme fiyatı 1. çeyrekte yalnızca %1 artacak",
+      "detay": "Citi, 64 GB DDR5 RDIMM ortalama sözleşme fiyatının 2027'nin ilk çeyreğinde %1 artışla 1.823 dolara çıkacağını öngörüyor (bu yıl %361 artmıştı). Banka, HBM ortalama fiyatının ikiye katlanmasıyla toplam DRAM satış fiyatlarının gelecek yıl %35 artmasını bekliyor.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Sözleşme fiyatlarında artış yavaşlıyor ama HBM ve uzun vadeli sözleşmeler talebin hâlâ güçlü olduğunu gösteriyor.",
+      "kaynak": "MoneyToday",
+      "url": "https://www.mt.co.kr/en/industry/2026/11/23/2026112316063996545"
+    },
+    {
+      "baslik": "Applied Digital, hiper ölçekli bir müşteriyle 150 MW'lık 18 yıllık kira imzaladı",
+      "detay": "Anlaşma yaklaşık 5,4 milyar dolar ana dönem geliri sağlıyor (yenilemelerle 12,7 milyar dolar). Şirketin sözleşmeli toplam ana dönem kira geliri 41 milyar doları aştı; portföy 1,6 GW sözleşmeli kritik BT yüküne ulaştı. Teslimatlar 2028'in ilk yarısında başlayacak.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Uzun vadeli, yatırım notlu müşteri talebi AI veri merkezi kapasitesine ilginin sürdüğünü gösteriyor.",
+      "kaynak": "Applied Digital",
+      "url": "https://ir.applieddigital.com/news-events/press-releases/detail/165/applied-digital-secures-new-150-mw-18-year-lease-with"
+    },
+    {
+      "baslik": "SpaceX'in 74 milyar dolarlık AI veri merkezi planı elektrik sorusuyla karşı karşıya",
+      "detay": "Arizona'daki ~50 milyar dolarlık kampüs tam kapasitede 6 GW çekecek — APS'nin bu yazki tüm zamanların zirve talebinin yaklaşık üçte ikisi. Teksas Starbase'deki 24 milyar dolarlık tesisin vergi muafiyeti ve Arizona'daki imar oylaması 9 Aralık'ta.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Talep güçlü ama elektrik maliyeti ve yerel muhalefet büyük AI kampüslerinin zamanlamasını belirsizleştiriyor.",
+      "kaynak": "Fortune",
+      "url": "https://fortune.com/2026/11/22/spacex-74-billion-ai-data-centers-texas-arizona-who-pays/"
+    },
+    {
+      "baslik": "AI ajanlarının tasarladığı CPU, simülasyonda 4,59 kat watt başına performans gösterdi",
+      "detay": "Architect Labs'ın 'Frostbite' çekirdeği 25 iş yükünde benzer boyutlu sıralı (in-order) bir çekirdeğe göre 4,59 kat, AI'ya özel ayar yapılmayan 15 iş yükünde 3,83 kat watt başına performans gösterdi. Sonuçlar üretilmemiş 7 nm bir tasarımın simülasyonundan.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Çip tasarımında AI ajanlarının kullanımına dair umut verici ama henüz silikonda doğrulanmamış bir sonuç.",
+      "kaynak": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/ai-agents-design-an-entirely-new-cpu-architecture-from-scratch-startup-claims-frostbite-posts-4-59x-the-performance-per-watt-of-an-in-order-core-in-pre-silicon-tests"
     }
   ],
   "yaklasan": [
     {
-      "tarih": "2026-12-10",
-      "baslik": "Ticaret Bakanı Lutnick Senato Bankacılık Komitesi'nde ifade verecek",
-      "kaynak": "CBS News",
-      "url": "https://www.cbsnews.com/news/china-us-export-controls-chips-nvidia-huang-scandal/"
+      "tarih": "2026-12-01",
+      "baslik": "ABD Temsilciler Meclisi komitelerinde ihracat uyumu görüşmesi (Megaspeed dosyası)",
+      "kaynak": "East Asia Brief",
+      "url": "https://eastasiabrief.com/trade-policy/us-blocks-covert-ai-chip-routes-4-1b-china-1666"
     },
     {
-      "tarih": "2027-01-19",
-      "baslik": "BIS uzaktan erişim kuralı için görüş süresinin sonu",
-      "kaynak": "CASRAI",
-      "url": "https://casrai.org/news/tsmc-samsung-suspend-china-chip-shipments-bis-rule-2026"
+      "tarih": "2026-12-09",
+      "baslik": "SpaceX AI veri merkezleri için Cochise County imar ve Starbase vergi muafiyeti oylamaları",
+      "kaynak": "MLQ.ai (Fortune)",
+      "url": "https://mlq.ai/news/spacexs-74-billion-ai-data-center-plan-faces-december-9-votes-in-texas-and-arizona"
     }
   ],
   "yontem": {
@@ -105,6 +141,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = -9 · Σ ağırlık = 16 · Puan = 50 + 50 × -0.56 = 22"
+    "hesap": "Σ ağırlık×işaret = +7 · Σ ağırlık = 23 · Puan = 50 + 50 × 0.30 = 65"
   }
 }
