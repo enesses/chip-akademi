@@ -1,3 +1,4 @@
+import { sadelestir } from "@/lib/bolumler";
 export const glossary = [
   { term: "ALU", def: "Aritmetik Mantık Birimi. Toplama, çıkarma ve mantık işlemlerini yapan temel hesap devresi." },
   { term: "ASML", def: "EUV litografi makinelerini üreten tek şirket. Modern çip üretiminin kilit tedarikçisi." },
@@ -32,7 +33,7 @@ export const glossary = [
   { term: "Chiplet paketleme", def: "Farklı die'ların (CCD, IOD gibi) tek paket içinde birbirine bağlanması." },
 ];
 export function searchGlossary(q) {
-  const query = (q || "").toLocaleLowerCase("tr");
+  const query = sadelestir(q);
   if (!query) return glossary;
-  return glossary.filter((g) => g.term.toLocaleLowerCase("tr").includes(query) || g.def.toLocaleLowerCase("tr").includes(query));
+  return glossary.filter((g) => sadelestir(g.term).includes(query) || sadelestir(g.def).includes(query));
 }
