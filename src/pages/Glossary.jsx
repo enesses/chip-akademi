@@ -22,7 +22,7 @@ export default function Glossary() {
         <h1 className="font-display text-3xl sm:text-[2.5rem] leading-[1.1] font-semibold tracking-[-0.025em] mb-4">Chip terimleri sözlüğü</h1>
         <div className="relative max-w-sm">
           <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-muted-foreground pointer-events-none" />
-          <Input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Terim ara…" className="pl-8" />
+          <Input value={q} onChange={(e) => setQ(e.target.value)} onKeyDown={(e) => { if (e.key === "Escape" && q) { e.preventDefault(); setQ(""); } }} aria-keyshortcuts="Escape" placeholder="Terim ara…" className="pl-8" />
         </div>
       </section>
       <section className="container mx-auto px-4 pb-16">
