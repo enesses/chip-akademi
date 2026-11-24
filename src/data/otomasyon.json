@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-24T06:53:27.672Z",
+  "guncelleme": "2026-11-24T06:55:28.012Z",
   "tarih": "2026-11-24",
   "durum": "dikkat",
   "ajanlar": [
@@ -69,7 +69,28 @@
       "alan": "veri"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-11-24",
+      "oneri": "Sözlük aramasını Türkçe karakter duyarsız yap",
+      "durum": "birlesti",
+      "pr": 105,
+      "dal": "otomasyon/oneri-2026-11-24-1",
+      "ozet": "searchGlossary sadelestir() ile karşılaştırıyor; 'onbellek' → 'Önbellek' bulunuyor",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-24",
+      "oneri": "Sözlük arama kutusunda Escape tuşu aramayı temizlesin",
+      "durum": "birlesti",
+      "pr": 106,
+      "dal": "otomasyon/oneri-2026-11-24-2",
+      "ozet": "Glossary.jsx arama kutusunda Escape sorguyu temizliyor",
+      "neden": null,
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Endeks kartında sıfır değişimi nötr renkle 'yatay' göster",
@@ -237,6 +258,20 @@
       "durum": "birlesti",
       "pr": 104,
       "tarih": "2026-11-21",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Sözlük aramasını Türkçe karakter duyarsız yap",
+      "durum": "birlesti",
+      "pr": 105,
+      "tarih": "2026-11-24",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Sözlük arama kutusunda Escape tuşu aramayı temizlesin",
+      "durum": "birlesti",
+      "pr": 106,
+      "tarih": "2026-11-24",
       "kim": "otomasyon"
     }
   ],

@@ -1120,6 +1120,26 @@
       "ozet": "Bugün sayfasındaki kaynak bağlantılarına ekran okuyucular için görünmez '(yeni sekmede açılır)' metni eklendi.",
       "neden": null,
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-24",
+      "oneri": "Sözlük aramasını Türkçe karakter duyarsız yap",
+      "durum": "birlesti",
+      "pr": 105,
+      "dal": "otomasyon/oneri-2026-11-24-1",
+      "ozet": "searchGlossary sadelestir() ile karşılaştırıyor; 'onbellek' → 'Önbellek' bulunuyor",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-24",
+      "oneri": "Sözlük arama kutusunda Escape tuşu aramayı temizlesin",
+      "durum": "birlesti",
+      "pr": 106,
+      "dal": "otomasyon/oneri-2026-11-24-2",
+      "ozet": "Glossary.jsx arama kutusunda Escape sorguyu temizliyor",
+      "neden": null,
+      "kim": "otomasyon"
     }
   ]
 }
