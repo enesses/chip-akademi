@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-25T06:55:37.593Z",
+  "guncelleme": "2026-11-25T06:57:47.215Z",
   "tarih": "2026-11-25",
   "durum": "dikkat",
   "ajanlar": [
@@ -79,7 +79,28 @@
       "alan": "veri"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-11-25",
+      "oneri": "Sözlükte bulunan terim sayısını ekran okuyucuya duyur",
+      "durum": "birlesti",
+      "pr": 107,
+      "dal": "otomasyon/oneri-2026-11-25-1",
+      "ozet": "Sözlük sonuç sayısı role=status/aria-live bölgesinde gösteriliyor.",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-25",
+      "oneri": "Modeller arama kutusunda Escape tuşu aramayı temizlesin",
+      "durum": "birlesti",
+      "pr": 108,
+      "dal": "otomasyon/oneri-2026-11-25-2",
+      "ozet": "Modeller arama kutusu Escape ile temizleniyor.",
+      "neden": null,
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Ana sayfadaki Günün özeti kartında en yakın yaklaşan olayı göster",
@@ -247,6 +268,20 @@
       "durum": "birlesti",
       "pr": 106,
       "tarih": "2026-11-24",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Sözlükte bulunan terim sayısını ekran okuyucuya duyur",
+      "durum": "birlesti",
+      "pr": 107,
+      "tarih": "2026-11-25",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Modeller arama kutusunda Escape tuşu aramayı temizlesin",
+      "durum": "birlesti",
+      "pr": 108,
+      "tarih": "2026-11-25",
       "kim": "otomasyon"
     }
   ],

@@ -1140,6 +1140,26 @@
       "ozet": "Glossary.jsx arama kutusunda Escape sorguyu temizliyor",
       "neden": null,
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-25",
+      "oneri": "Sözlükte bulunan terim sayısını ekran okuyucuya duyur",
+      "durum": "birlesti",
+      "pr": 107,
+      "dal": "otomasyon/oneri-2026-11-25-1",
+      "ozet": "Sözlük sonuç sayısı role=status/aria-live bölgesinde gösteriliyor.",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-25",
+      "oneri": "Modeller arama kutusunda Escape tuşu aramayı temizlesin",
+      "durum": "birlesti",
+      "pr": 108,
+      "dal": "otomasyon/oneri-2026-11-25-2",
+      "ozet": "Modeller arama kutusu Escape ile temizleniyor.",
+      "neden": null,
+      "kim": "otomasyon"
     }
   ]
 }
