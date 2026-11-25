@@ -26,6 +26,7 @@ export default function Glossary() {
         </div>
       </section>
       <section className="container mx-auto px-4 pb-16">
+        <p className="text-sm text-muted-foreground mb-3" role="status" aria-live="polite">{q.trim() ? `${list.length} terim bulundu` : `${list.length} terim`}</p>
         <div className="grid md:grid-cols-2 gap-3">
           {list.map((g) => (
             <div key={g.term} className="rounded-xl border border-card-border bg-card p-4">
