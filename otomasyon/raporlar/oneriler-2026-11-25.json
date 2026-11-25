@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-11-25",
+  "oneriler": [
+    {
+      "baslik": "Sözlükte bulunan terim sayısını ekran okuyucuya duyur",
+      "neden": "src/pages/Glossary.jsx hâlâ sonuç sayısını göstermiyor ve aria-live/role=status bölgesi yok; yalnızca 0 sonuçta 'Sonuç yok.' yazıyor. Haberler.jsx:158'de aynı iş role=\"status\" ile yapılıyor.",
+      "etki": "düşük",
+      "alan": "erişilebilirlik"
+    },
+    {
+      "baslik": "Modeller arama kutusunda Escape tuşu aramayı temizlesin",
+      "neden": "src/pages/Modeller.jsx:102'deki arama kutusunda onKeyDown yok; Haberler.jsx:132 ve Glossary.jsx:25 Escape ile temizliyor (#100, #106). Üç arama kutusundan biri farklı davranıyor.",
+      "etki": "düşük",
+      "alan": "erişilebilirlik"
+    },
+    {
+      "baslik": "Sözlük arama kutusuna erişilebilir ad ekle",
+      "neden": "Glossary.jsx:25'teki Input yalnızca placeholder ('Terim ara…') taşıyor; Haberler.jsx:129 ve Modeller.jsx:100'de sr-only etiket var. Placeholder ekran okuyucularda güvenilir bir ad değil.",
+      "etki": "düşük",
+      "alan": "erişilebilirlik"
+    },
+    {
+      "baslik": "Fiyat okumasında kesilen tablonun ikinci yarısını ayrı kaynaktan tamamla",
+      "neden": "25 Kasım'da WebFetch getdeploying.com/gpus sayfasının 74.797 karakterinin yalnızca ilk ~40 bininde düz metin verdi; 121 modelden 54'ü doğrulanabildi, rapor '67 gelmedi (eski fiyat korundu)' diyor. getdeploying.com/dataset/gpu-prices veri kümesi ya da sayfalı okuma ile kalan satırlar alınabilir (otomasyon/GUNLUK.md, korunan alan).",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Nvidia A4000 fiyat sıçramasını hedefli okumayla doğrula",
+      "neden": "Yenileme raporu A4000 için 0,53 → 0,82 $ (%55) oynamayı şüpheli sayıp yazmadı; 10 sağlayıcılı satır. Yarın hedefli ikinci okuma yapılıp 'dogrulanan' listesine eklenmezse fiyat her gün reddedilecek.",
+      "etki": "düşük",
+      "alan": "veri"
+    }
+  ]
+}

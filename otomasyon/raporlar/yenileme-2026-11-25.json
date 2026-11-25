@@ -1,0 +1,43 @@
+{
+  "ajan": "yenileme",
+  "tarih": "2026-11-25",
+  "zaman": "2026-11-25T06:54:38.389Z",
+  "durum": "ok",
+  "adimlar": [
+    {
+      "ad": "Fiyat verisi",
+      "durum": "ok",
+      "detay": "bu çalıştırmada güncellendi — 51 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 67 gelmedi (eski fiyat korundu), 1 büyük oynama elle doğrulandı"
+    },
+    {
+      "ad": "Şüpheli fiyat",
+      "durum": "uyari",
+      "detay": "Nvidia A4000: 0.53 → 0.82 — tek seferde >%50 oynama, yazılmadı; elle kontrol et, doğruysa gelen/fiyatlar.json'daki \"dogrulanan\" listesine ekle"
+    },
+    {
+      "ad": "Elle doğrulanan fiyat",
+      "durum": "ok",
+      "detay": "Nvidia V100: 1.08 → 1.86 (ikinci okuma: medyan 1.86, en düşük 0.14) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
+    },
+    {
+      "ad": "Bugün sayfası",
+      "durum": "ok",
+      "detay": "bu çalıştırmada güncellendi — 10 madde, puan 24, 2 yaklaşan olay; haber akışına +10"
+    },
+    {
+      "ad": "Haber akışı",
+      "durum": "ok",
+      "detay": "+7 haber (akışta 391); bugün toplam 17"
+    },
+    {
+      "ad": "Derleme",
+      "durum": "ok",
+      "detay": "başarılı"
+    },
+    {
+      "ad": "Tek dosya",
+      "durum": "ok",
+      "detay": "17 görsel, HTML: 2908 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+    }
+  ]
+}

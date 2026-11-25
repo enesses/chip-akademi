@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-11-24T06:55:28.012Z",
-  "tarih": "2026-11-24",
+  "guncelleme": "2026-11-25T06:55:37.593Z",
+  "tarih": "2026-11-25",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-11-24T06:52:17.669Z"
+      "zaman": "2026-11-25T06:54:38.798Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-11-24T06:52:17.815Z"
+      "zaman": "2026-11-25T06:54:38.907Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-11-24T06:52:17.223Z"
+      "zaman": "2026-11-25T06:54:38.389Z"
     },
     {
       "id": "gelistirme",
@@ -33,10 +33,14 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-11-24T06:52:34.711Z"
+      "zaman": "2026-11-25T06:54:54.208Z"
     }
   ],
   "dikkat": [
+    {
+      "seviye": "uyarı",
+      "metin": "Yenileme · Şüpheli fiyat: Nvidia A4000: 0.53 → 0.82 — tek seferde >%50 oynama, yazılmadı; elle kontrol et, doğruysa gelen/fiyatlar.json'daki \"dogrulanan\" listesine ekle"
+    },
     {
       "seviye": "dikkat",
       "tur": "onay",
@@ -45,67 +49,38 @@
   ],
   "oneriler": [
     {
-      "baslik": "Sözlük aramasını Türkçe karakter duyarsız yap",
-      "neden": "src/data/glossary.js searchGlossary yalnızca toLocaleLowerCase('tr') kullanıyor; 'onbellek' yazan kullanıcı 'Önbellek' terimini bulamaz. Haberler.jsx aynı iş için src/lib/bolumler.js'deki sadelestir()'i kullanıyor; Sözlük'te bu yok.",
-      "etki": "orta",
-      "alan": "arayüz"
-    },
-    {
-      "baslik": "Sözlük arama kutusunda Escape tuşu aramayı temizlesin",
-      "neden": "Haberler.jsx:132'de Escape ile temizleme var (#100), src/pages/Glossary.jsx'teki Input'ta onKeyDown yok; iki arama kutusu farklı davranıyor.",
-      "etki": "düşük",
-      "alan": "erişilebilirlik"
-    },
-    {
       "baslik": "Sözlükte bulunan terim sayısını ekran okuyucuya duyur",
-      "neden": "Glossary.jsx 31 terimi süzüyor ama sonuç sayısını göstermiyor; yalnızca 0 sonuçta 'Sonuç yok.' yazıyor. aria-live ile 'N terim' bilgisi eksik.",
+      "neden": "src/pages/Glossary.jsx hâlâ sonuç sayısını göstermiyor ve aria-live/role=status bölgesi yok; yalnızca 0 sonuçta 'Sonuç yok.' yazıyor. Haberler.jsx:158'de aynı iş role=\"status\" ile yapılıyor.",
       "etki": "düşük",
       "alan": "erişilebilirlik"
     },
     {
-      "baslik": "Kaynakta adı değişen 'Intel Gaudi2' satırını 'Intel Gaudi 2' ile eşle",
-      "neden": "24 Kasım okumasında getdeploying 121 modelden 'Intel Gaudi 2' (medyan 1,40 $) verdi; src/data/gpu_kiralama.json'daki 'Intel Gaudi2' satırı eşleşmediği için eski fiyatla kaldı (rapor: 15 model gelmedi, 1 yeni). Ad eşlemesi otomasyon betiğinde (korunan alan) yapılmalı.",
+      "baslik": "Modeller arama kutusunda Escape tuşu aramayı temizlesin",
+      "neden": "src/pages/Modeller.jsx:102'deki arama kutusunda onKeyDown yok; Haberler.jsx:132 ve Glossary.jsx:25 Escape ile temizliyor (#100, #106). Üç arama kutusundan biri farklı davranıyor.",
+      "etki": "düşük",
+      "alan": "erişilebilirlik"
+    },
+    {
+      "baslik": "Sözlük arama kutusuna erişilebilir ad ekle",
+      "neden": "Glossary.jsx:25'teki Input yalnızca placeholder ('Terim ara…') taşıyor; Haberler.jsx:129 ve Modeller.jsx:100'de sr-only etiket var. Placeholder ekran okuyucularda güvenilir bir ad değil.",
+      "etki": "düşük",
+      "alan": "erişilebilirlik"
+    },
+    {
+      "baslik": "Fiyat okumasında kesilen tablonun ikinci yarısını ayrı kaynaktan tamamla",
+      "neden": "25 Kasım'da WebFetch getdeploying.com/gpus sayfasının 74.797 karakterinin yalnızca ilk ~40 bininde düz metin verdi; 121 modelden 54'ü doğrulanabildi, rapor '67 gelmedi (eski fiyat korundu)' diyor. getdeploying.com/dataset/gpu-prices veri kümesi ya da sayfalı okuma ile kalan satırlar alınabilir (otomasyon/GUNLUK.md, korunan alan).",
       "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Nvidia A4000 fiyat sıçramasını hedefli okumayla doğrula",
+      "neden": "Yenileme raporu A4000 için 0,53 → 0,82 $ (%55) oynamayı şüpheli sayıp yazmadı; 10 sağlayıcılı satır. Yarın hedefli ikinci okuma yapılıp 'dogrulanan' listesine eklenmezse fiyat her gün reddedilecek.",
+      "etki": "düşük",
       "alan": "veri"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-11-24",
-      "oneri": "Sözlük aramasını Türkçe karakter duyarsız yap",
-      "durum": "birlesti",
-      "pr": 105,
-      "dal": "otomasyon/oneri-2026-11-24-1",
-      "ozet": "searchGlossary sadelestir() ile karşılaştırıyor; 'onbellek' → 'Önbellek' bulunuyor",
-      "neden": null,
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-11-24",
-      "oneri": "Sözlük arama kutusunda Escape tuşu aramayı temizlesin",
-      "durum": "birlesti",
-      "pr": 106,
-      "dal": "otomasyon/oneri-2026-11-24-2",
-      "ozet": "Glossary.jsx arama kutusunda Escape sorguyu temizliyor",
-      "neden": null,
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "Endeks kartında sıfır değişimi nötr renkle 'yatay' göster",
-      "durum": "acik",
-      "pr": 81,
-      "tarih": "2026-11-10",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Fiyat tablosunda önceki ölçümü olmayan yeni modellere 'yeni' rozeti",
-      "durum": "acik",
-      "pr": 82,
-      "tarih": "2026-11-10",
-      "kim": "otomasyon"
-    },
     {
       "oneri": "Ana sayfadaki Günün özeti kartında en yakın yaklaşan olayı göster",
       "durum": "acik",
@@ -518,7 +493,7 @@
       },
       "kod": {
         "dosyaSayisi": 77,
-        "toplamSatir": 18682,
+        "toplamSatir": 18683,
         "boyutKB": null
       }
     },
@@ -530,17 +505,27 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 103 model güncellendi, 1 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu)"
+        "detay": "bu çalıştırmada güncellendi — 51 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 67 gelmedi (eski fiyat korundu), 1 büyük oynama elle doğrulandı"
+      },
+      {
+        "ad": "Şüpheli fiyat",
+        "durum": "uyari",
+        "detay": "Nvidia A4000: 0.53 → 0.82 — tek seferde >%50 oynama, yazılmadı; elle kontrol et, doğruysa gelen/fiyatlar.json'daki \"dogrulanan\" listesine ekle"
+      },
+      {
+        "ad": "Elle doğrulanan fiyat",
+        "durum": "ok",
+        "detay": "Nvidia V100: 1.08 → 1.86 (ikinci okuma: medyan 1.86, en düşük 0.14) — >%50 oynama ikinci okumayla doğrulandı, yazıldı"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 12 madde, puan 65, 2 yaklaşan olay; haber akışına +12"
+        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 24, 2 yaklaşan olay; haber akışına +10"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+8 haber (akışta 374); bugün toplam 20"
+        "detay": "+7 haber (akışta 391); bugün toplam 17"
       },
       {
         "ad": "Derleme",
@@ -550,7 +535,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2898 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2908 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -577,11 +562,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-11-07",
-      "durum": "dikkat",
-      "dikkat": 1
-    },
     {
       "tarih": "2026-11-10",
       "durum": "dikkat",
@@ -646,6 +626,11 @@
       "tarih": "2026-11-24",
       "durum": "dikkat",
       "dikkat": 1
+    },
+    {
+      "tarih": "2026-11-25",
+      "durum": "dikkat",
+      "dikkat": 2
     }
   ]
 }

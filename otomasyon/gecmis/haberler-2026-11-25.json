@@ -1,0 +1,84 @@
+{
+  "tarih": "2026-11-25",
+  "haberler": [
+    {
+      "baslik": "Crusoe yatırımcısı G2VP: Geleceğin veri merkezleri güneş ve depolamayla şebeke dışına çıkacak",
+      "detay": "G2 Venture Partners, veri merkezi yatırımının on yılın sonuna kadar 4 trilyon doları aşacağını tahmin ediyor; küresel gaz türbini kapasitesinin yılda 60-70 GW, güneşinkinin ise 1 TW'ın üzerinde olduğunu vurguluyor.",
+      "kaynak": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/24/why-a-crusoe-investor-is-betting-on-solar-and-batteries-to-power-future-ai-data-centers/",
+      "yayin": "2026-11-24",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "IEA: Veri merkezlerinin elektrik talebi 2030'dan önce iki katına çıkabilir",
+      "detay": "Uluslararası Enerji Ajansı, veri merkezlerinin elektrik ihtiyacının 2030'dan önce ikiye katlanabileceğini, 93 dev AI tesisinin 50 GW tüketebileceğini ve bunun hane faturalarını yükseltebileceğini belirtti.",
+      "kaynak": "TechRadar",
+      "url": "https://www.techradar.com/pro/power-demands-at-ai-data-centers-set-to-double-by-2030-adding-the-equivalent-of-another-great-britain-to-the-grid-as-an-extra-usd4-trillion-in-spending-kicks-in",
+      "yayin": "2026-11-24",
+      "konular": [
+        "veri-merkezi",
+        "politika"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "PC DRAM sözleşme fiyatlarındaki artış 4. çeyrekte %13-18'e yavaşlıyor",
+      "detay": "TrendForce'un 11 Kasım tahminine göre PC DRAM sözleşme fiyatları 4. çeyrekte çeyreklik %13-18 artacak; güç yarı iletkenleri AI altyapı talebi nedeniyle tahsise geçti.",
+      "kaynak": "Shattered.io (TrendForce verisi)",
+      "url": "https://shattered.io/dram-prices-pc-contract-13-18-percent-power-semiconductors-allocation-nov-25/",
+      "yayin": "2026-11-25",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Samsung'un 2027-2029 bellek kapasitesinin çoğu sözleşmeli",
+      "detay": "Economy Tribune'e göre Samsung'un 2027 genel amaçlı DRAM yonga plakaları fiilen satıldı; şirket 10 müşteriyle uzun vadeli anlaşma imzaladı, 10'uyla görüşüyor ve 2030'a kadar kapasitenin %60-70'ini bu anlaşmalara bağlamayı hedefliyor.",
+      "kaynak": "explainx.ai (Economy Tribune'e dayanarak)",
+      "url": "https://explainx.ai/blog/samsung-memory-production-booked-through-2029-ai-data-center-lta-november-2026",
+      "yayin": "2026-11-23",
+      "konular": [
+        "bellek"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Zhipu, milyon token bağlamlı GLM-5.4'ü yayına aldı",
+      "detay": "GLM-5.4, Zhipu'nun Coding Plan aboneliğinde görsel anlama ve 1 milyon token bağlam penceresiyle sunuldu; aboneler %50 daha fazla kullanım hakkı aldı. Şirket mimari ve kıyaslama ayrıntılarını henüz yayımlamadı.",
+      "kaynak": "TechNode",
+      "url": "https://technode.com/2026/11/23/zhipu-rolls-out-glm-5-4-with-vision-and-million-token-context/",
+      "yayin": "2026-11-23",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "OpenAI ve Cisco, yamalar gelene kadar açıkları engelleyen Shirudo'yu açık kaynak yaptı",
+      "detay": "Linux için geliştirilen Shirudo, eBPF ile kriptografik olarak imzalı 'kalkanlar' dağıtarak açığın duyurulmasıyla yamanın uygulanması arasındaki sürede savunmasız kod yollarını engelliyor.",
+      "kaynak": "DEV Community (OpenAI duyurusuna dayanarak)",
+      "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-november-25-2026-jensen-huang-returns-to-lead-nvidia-walmart-opens-its-aisles-jgn",
+      "yayin": "2026-11-24",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Google DeepMind ajanları füzyon için kuantum algoritmalarının maliyetini 11,8 kat düşürdü",
+      "detay": "DeepMind'ın AI ajanları, matematiksel ispat sistemiyle doğrulanan çözümlerle füzyon araştırmasına yönelik kuantum algoritmalarının tahmini hesaplama maliyetini 11,8 kat azalttı.",
+      "kaynak": "The Neuron",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-24-2026/",
+      "yayin": "2026-11-24",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "pozitif"
+    }
+  ]
+}
