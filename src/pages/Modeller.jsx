@@ -99,7 +99,9 @@ export default function Modeller() {
               <label className="relative flex-1 min-w-[180px] max-w-xs">
                 <span className="sr-only">Model ara</span>
                 <Search className="h-4 w-4 absolute left-2.5 top-1/2 -translate-y-1/2 text-muted-foreground" aria-hidden="true" />
-                <input value={ara} onChange={(e) => setAra(e.target.value)} placeholder="Model ya da şirket ara"
+                <input value={ara} onChange={(e) => setAra(e.target.value)}
+                  onKeyDown={(e) => { if (e.key === "Escape" && ara) { e.preventDefault(); setAra(""); } }}
+                  aria-keyshortcuts="Escape" placeholder="Model ya da şirket ara"
                   className="w-full rounded-lg border border-card-border bg-card pl-8 pr-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:border-primary/60" />
               </label>
               <label className="text-sm">
