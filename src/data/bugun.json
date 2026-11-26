@@ -1,121 +1,127 @@
 {
-  "tarih": "2026-11-25",
-  "derlenme": "25 Kasım 2026",
+  "tarih": "2026-11-26",
+  "derlenme": "26 Kasım 2026",
   "puan": {
-    "etiket": "Ralli bir günde söndü",
-    "yorum": "Huang'ın dönüşüyle gelen tarihî çip rallisi Salı günü SOX'taki %7,9'luk düşüşle büyük ölçüde geri verildi; ihracat kısıtlarının uygulamaya geçmesi ve bellek döngüsüne dair 2028 uyarıları baskıyı artırırken Dell'in rekor AI siparişi ve Amazon'un Decart alımı talebin sürdüğünü gösteriyor.",
-    "deger": 24
+    "etiket": "Satış sürüyor, bellekte ilk çatlak",
+    "yorum": "Çip hisseleri Çarşamba da geriledi; TrendForce'un Çinli bulut sağlayıcılarının 2027 bellek siparişlerini kestiğini açıklaması ve ABD'nin uzaktan erişim kuralının Asya'daki veri merkezi kredilerini dondurması baskıyı artırdı. Buna karşın TSMC Arizona yatırımı ve Goldman'ın 52 GW'lık güç tahmini altyapı talebinin sürdüğünü gösteriyor.",
+    "deger": 41
   },
   "ozet": [
-    "Günün ana teması, Pazartesi'nin tarihî rallisinin ne kadar kırılgan olduğu. Philadelphia Yarı İletken Endeksi 24 Kasım'da %7,88 düştü, Nvidia %5,86 geriledi; Analog Devices ve HPE güçlü sonuçlara rağmen %16-17 değer kaybetti. Yeni halka arz olan Anthropic de 83 dolarlık arz fiyatının altında kapandı.",
-    "Politika cephesinde ihracat kuralları kâğıttan sahaya indi. TSMC'nin Çinli tasarımcılardan 16 nm ve altı siparişleri lisanssız kabul etmemesi, Megaspeed dahil yedi şirketin Entity List'e alınması ve Singapur'un aktarma yollarına karşı Washington'la iş birliği, Çin'e dolaylı çip akışının daraldığını gösteriyor.",
-    "Bellekte görüşler ayrışıyor. BNP Paribas Micron'un hedef fiyatını yarıdan fazla kesti, iM Securities 2028'de DRAM arz fazlası senaryosu çizdi; buna karşın Micron ve Koreli üreticiler 2027-2028'in daha da sıkı geçeceğini, müşterilerin kesintiye gitmediğini söylüyor. SK hynix ve Samsung'un 33 milyar dolarlık temettüsü rekor kârlılığı somutlaştırıyor.",
-    "Talep tarafında sinyaller hâlâ güçlü: Dell 132,3 milyar dolarlık rekor AI siparişi açıkladı, Amazon Trainium'u Nvidia'ya rakip yapmak için Decart'ın optimizasyon yazılımına 7,5 milyar dolar ödüyor. Darboğaz ise giderek enerjiye kayıyor; ABD'de veri merkezleri için 115 GW'ı aşan şebeke dışı gaz santrali planlanıyor."
+    "Günün ana teması, AI işlemlerindeki satışın bellek cephesine sıçraması. 25 Kasım'da Micron %4,53 düşüşle 601,25 dolardan kapandı, Sandisk %5,57, Nvidia %3,91, TSMC %1,96 geriledi. Huang'ın Nvidia'ya dönüşüyle başlayan ralli büyük ölçüde geri verildi; Barclays'ten Venu Krishna piyasanın 'AI büyüme anlatısının duvara çarptığını' söylediğini aktardı.",
+    "Satışın somut tetikleyicisi TrendForce oldu: Çinli bulut sağlayıcıları 2027 bellek siparişlerini azalttı. Kurum 2027 NAND gelir tahminini 419,3 milyar dolara (%29 büyüme), DRAM tahminini 1,15 trilyon dolara (%69 büyüme) indirdi; DRAM arzının 2027 boyunca sıkı kalacağını ama çeyreklik sözleşme fiyatı artışlarının daralacağını, NAND'ın ise düşüş döngüsüne gireceğini öngörüyor.",
+    "Politika tarafında 19 Kasım'da yürürlüğe giren ABD uzaktan erişim kuralının etkileri görünür hale geliyor. Kredi verenler ByteDance, Alibaba ve Tencent bağlantılı milyarlarca dolarlık veri merkezi kredisini durdurdu; Asyalı operatörler B300 kira fiyatlarını %7 indirip ABD'li alıcılara yöneliyor, Çinli şirketler ise Avrupa ve Güneydoğu Asya'da Nvidia kapasitesi arıyor.",
+    "Uzun vadeli talep sinyalleri ise güçlü kalıyor: Trump'ın TSMC'nin Arizona genişlemesinin temel atma törenine katılacağı bildirildi, Goldman Sachs ABD'de 2028'e kadar 52 GW ek veri merkezi gücü bekliyor. Huawei'nin rakiplerinin iki katı pin yoğunluklu HBM'si de bellekte rekabetin Çin'e doğru genişlediğini gösteriyor."
   ],
   "maddeler": [
     {
-      "baslik": "Çip hisseleri Pazartesi rallisini geri verdi: SOX %7,88 düştü",
-      "detay": "Philadelphia Yarı İletken Endeksi 24 Kasım'da %7,88 düşüşle 8.832,50'ye geriledi; Nvidia %5,86 kayıpla 155,38 dolardan kapandı. Anthropic hissesi %6,54 düşüşle 81,91 dolara inerek 83 dolarlık halka arz fiyatının altında kapandı. Dell ise kapanış sonrası 54,9 milyar dolar (yıllık %103 artış) çeyrek geliri ve 132,3 milyar dolarlık rekor AI siparişi açıkladı.",
+      "baslik": "Bellek ve çip hisseleri yine düştü: Micron %4,5, Nvidia %3,9 geriledi",
+      "detay": "Micron 25 Kasım'da %4,53 düşüşle 601,25 dolardan kapandı (gün içi en düşük 548,13). Sandisk %5,57, Nvidia %3,91, TSMC %1,96 değer kaybetti. Micron'un mali 1. çeyrek sonuçlarının 17 Aralık civarında açıklanması bekleniyor.",
       "kategori": "negatif",
       "agirlik": 3,
-      "neden": "Huang'ın dönüşüyle gelen tarihî rallinin bir gün sonra büyük ölçüde silinmesi, AI işlemlerindeki yığılmanın ve oynaklığın sürdüğünü gösteriyor.",
-      "kaynak": "Chip Dispatch",
-      "url": "https://chipdispatch.com/articles/chip-stocks-give-back-monday-s-gains-as-nvidia-falls-5-9"
+      "neden": "Huang'ın dönüşüyle gelen rallinin silinmesi ve bellek hisselerine yayılan satış, AI işlemlerine güvenin zayıfladığını gösteriyor.",
+      "kaynak": "Gotrade",
+      "url": "https://www.heygotrade.com/en/news/micron-mu-stock-news-november-26-2026/"
     },
     {
-      "baslik": "Nasdaq %1,48 geriledi; Analog Devices %17, HPE %16 düştü",
-      "detay": "S&P 500 %0,50 düşüşle 7.201'e, Nasdaq Bileşik %1,48 düşüşle 23.734'e indi; Dow ise değer hisselerine dönüşle %0,85 artıp 50.019'da kapandı. Teknoloji satışında Analog Devices %17,37, Hewlett Packard Enterprise %16,31 değer kaybetti.",
+      "baslik": "TrendForce: Çinli bulut sağlayıcıları 2027 bellek siparişlerini kesti",
+      "detay": "TrendForce 2027 NAND Flash gelir tahminini 419,3 milyar dolara (%29 büyüme), DRAM tahminini 1,15 trilyon dolara (%69 büyüme) indirdi. DRAM arzının 2027 boyunca sıkı kalması, ancak çeyreklik sözleşme fiyatı artışlarının daralıp yılın ikinci yarısında yatay seyre geçmesi bekleniyor; NAND düşen fiyat döngüsüne giriyor.",
       "kategori": "negatif",
       "agirlik": 2,
-      "neden": "Güçlü bilançolara rağmen donanım hisselerinin sert satılması, yatırımcıların AI temalı şirketlerde kâr realize ettiğine işaret ediyor.",
-      "kaynak": "The Motley Fool",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/24/stock-market-today-nov-24-tech-sell-off-drags-nasdaq-as-dow-gains-on-value-rotation/"
+      "neden": "Bellek döngüsünün zirveye yaklaştığına dair ilk resmî tahmin revizyonu; büyüme sürse de fiyat ivmesi yavaşlıyor.",
+      "kaynak": "TrendForce",
+      "url": "https://www.trendforce.com/presscenter/news/20261125-13321.html"
     },
     {
-      "baslik": "TSMC, Çinli çip tasarımcılarından 16 nm ve altı siparişleri askıya aldı",
-      "detay": "19 Kasım'da yürürlüğe giren yeni ABD ihracat kurallarının ardından TSMC, etkilenen Çinli müşterilere ABD lisansı ya da istisna olmadıkça 16 nm ve daha ileri süreçlerdeki siparişleri durdurmalarını bildirdi. 28 ve 40 nm süreçler koşullu olarak açık kalıyor.",
+      "baslik": "ABD çip kısıtları Asya'da milyarlarca dolarlık veri merkezi kredisini durdurdu",
+      "detay": "Bloomberg'e göre kredi verenler, yeni ABD çip erişim kısıtları nedeniyle ByteDance, Alibaba ve Tencent bağlantılı milyarlarca dolarlık krediyi askıya aldı; bu durum Asya'nın büyüyen AI borç finansmanı piyasasını sarsıyor.",
       "kategori": "negatif",
       "agirlik": 2,
-      "neden": "Dünyanın en büyük dökümhanesinde düzenleyici uygunluk artık kapasite ve fiyat kadar belirleyici; Çin gelirinde ve tedarik zincirinde belirsizlik artıyor.",
-      "kaynak": "CommonWealth Magazine (Reuters'a dayanarak)",
-      "url": "https://english.cw.com.tw/article/article.action?id=5146"
-    },
-    {
-      "baslik": "ABD, Megaspeed dahil 7 şirketi Entity List'e ekledi",
-      "detay": "ABD Ticaret Bakanlığı Pazartesi günü Federal Register bildirimiyle Singapur merkezli Megaspeed dahil yedi şirketi, ABD'nin ulusal güvenlik ve dış politika çıkarlarına aykırı davrandıkları gerekçesiyle ticaret kara listesine aldı. Huang'ın dönüşüyle TSMC aynı gün 158 milyar dolar değer kazanmıştı.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "Nvidia çiplerinin Çin'e yönlendirilmesi dosyasında soruşturma aşamasından resmî yaptırım aşamasına geçildi.",
-      "kaynak": "Fortune",
-      "url": "https://fortune.com/2026/11/24/tsmc-gains-158-billion-in-value-in-one-day-as-jensen-huang-returns-as-nvidia-ceo/"
-    },
-    {
-      "baslik": "Singapur, yönlendirilen ABD çipleri için Washington'la bilgi paylaşıyor",
-      "detay": "Başbakan Lawrence Wong 24 Kasım'da, ülkeyi ABD çiplerini başka yerlere aktarmak için kullanan şirketleri soruşturduklarını ve uygulamayı desteklemek için ABD ile bilgi paylaştıklarını söyledi. Yeni kurallar Singapur'daki veri merkezi işletmecilerinin Çinli müşterilere gelişmiş çip için lisans almasını gerektiriyor.",
-      "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Aktarma yollarının kapanması kuralların uygulanabilirliğini artırıyor, ama bölgedeki veri merkezi işini de zorlaştırıyor.",
-      "kaynak": "AFP / The China-Global South Project",
-      "url": "https://chinaglobalsouth.com/2026/11/24/singapore-us-ai-chip-export-controls/"
-    },
-    {
-      "baslik": "Amazon, Decart'ın AI optimizasyon teknolojisini 7,5 milyar dolara alıyor",
-      "detay": "Bloomberg'e göre Amazon, Decart Optimization Stack (DOS) yazılımını ve kurucu ekibini 7,5 milyar dolara satın alıyor. DOS, modellerin Nvidia, Amazon ve Google donanımında verimli çalışmasını sağlıyor; Amazon Trainium çiplerini müşterilere satmaya hazırlanıyor.",
-      "kategori": "pozitif",
-      "agirlik": 2,
-      "neden": "Özel çiplerin yazılım açığını kapatma yatırımı, hızlandırıcı pazarında rekabeti ve Nvidia'ya alternatifi güçlendiriyor.",
-      "kaynak": "TechCrunch",
-      "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/"
-    },
-    {
-      "baslik": "BNP Paribas, Micron'u 'Nötr'e indirdi; hedef 1.700'den 775 dolara",
-      "detay": "Analist Karl Ackerman, hiper ölçekleyicilerin 2028 kapasite planlarına dair riskleri ve Nvidia Vera Rubin Ultra'da HBM içeriğinin azaltılmasını gerekçe gösterdi. Micron hissesi sabah işlemlerinde %7'den fazla düştü; şirket ise 2027 ve 2028'de talebin arzı aşacağını söylüyor.",
-      "kategori": "negatif",
-      "agirlik": 2,
-      "neden": "Bellek süper döngüsünün 2028'de tersine dönebileceği endişesi büyük kurumlarca da dile getirilmeye başlandı.",
-      "kaynak": "Stocktwits (TheFly'a dayanarak)",
-      "url": "https://stocktwits.com/news-articles/markets/equity/mu-stock-downgraded-price-target-cut-by-almost-1-000-bnp-paribas-flags-2028-hyperscaler-capacity-risks/cNbsaFoR9ko"
-    },
-    {
-      "baslik": "iM Securities: Veri merkezi kısıtları DRAM'i 2028'de arz fazlasına çevirebilir",
-      "detay": "Senaryoya göre 2028 sunucu DRAM talebinin %9'u kaybolursa piyasa %4 açıktan %1 fazlaya, HBM talebi de düşerse %5 fazlaya dönebilir. Google 3. çeyrekte 9,07 milyar dolar negatif serbest nakit akışı açıkladı; Meta ve Oracle da açık verdi.",
-      "kategori": "negatif",
-      "agirlik": 1,
-      "neden": "Büyük teknoloji şirketlerinin nakit sıkışıklığı AI yatırımlarının finansmanını ve bellek talebini sorgulatıyor; Koreli üreticiler ise sahada kesinti görmediklerini söylüyor.",
-      "kaynak": "Seoul Economic Daily",
-      "url": "https://en.sedaily.com/market/2026/11/24/data-center-curbs-could-flip-dram-to-oversupply-by-2028"
-    },
-    {
-      "baslik": "ABD'de veri merkezleri için 115 GW'lık şebeke dışı gaz santrali planı",
-      "detay": "Cleanview verilerine göre Ekim 2026 itibarıyla veri merkezi geliştiricileri 100'den fazla 'sayaç arkası' gaz santrali açıkladı; toplam planlanan kapasite 115 GW'ı aşıyor. Bugün yalnızca 4,9 GW çalışıyor, 15,8 GW inşa hâlinde.",
-      "kategori": "notr",
-      "agirlik": 1,
-      "neden": "Şebeke bağlantı bekleyişini aşma yolu kapasiteyi hızlandırıyor ama emisyon ve gaz fiyatı riskini büyütüyor.",
-      "kaynak": "MIT Technology Review",
-      "url": "https://www.technologyreview.com/2026/11/24/1149622/data-centers-natural-gas/"
-    },
-    {
-      "baslik": "SK hynix ve Samsung, 33 milyar dolarlık temettü için döviz bozduracak",
-      "detay": "Bloomberg'e göre iki şirket, AI donanımı kaynaklı ihracat gelirlerinin büyük kısmını 33 milyar dolarlık 3. çeyrek temettüsü, rekor çalışan primleri ve vergi ödemeleri için wona çevirecek; bunun wonu yaklaşık on yılın en iyi yılına taşıması bekleniyor.",
-      "kategori": "pozitif",
-      "agirlik": 1,
-      "neden": "Bellek üreticilerinin rekor kârlılığı somut nakit dağıtımına dönüşüyor.",
+      "neden": "Finansmanın durması, bölgedeki veri merkezi projelerini ve dolaylı GPU talebini yavaşlatabilir.",
       "kaynak": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-25/ai-chip-boom-to-see-won-build-on-best-year-in-almost-a-decade"
+      "url": "https://www.bloomberg.com/news/articles/2026-11-25/billions-in-data-center-deals-grind-to-halt-after-ai-chip-curbs"
+    },
+    {
+      "baslik": "Asyalı veri merkezleri B300 kirasını %7 indirip ABD'li alıcılara yöneliyor",
+      "detay": "Liquid Compute endeksinde Nvidia B300 kirası Ekim sonundaki 7,72 dolardan 24 Kasım'da GPU-saat başına 7,19 dolara düştü. Kural, Çinli kuruluşlara toplam 12 milyon TPP'yi (yaklaşık 750 H200) aşan uzaktan hizmet için lisans istiyor; mevcut düzenlemelere 90 gün süre tanındı, yorum süresi 19 Ocak 2027'de bitiyor.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Kapasite ortadan kalkmıyor, alıcı değiştiriyor; kiralayanlar için fiyatlar geriliyor.",
+      "kaynak": "Streamline (Bloomberg verisi)",
+      "url": "https://streamlinefeed.co.ke/news/asian-data-centers-pitch-us-buyers-after-chip-curbs"
+    },
+    {
+      "baslik": "Çinli AI şirketleri yurt dışı veri merkezlerinde Nvidia kapasitesi arıyor",
+      "detay": "The Information'a göre Moonshot AI, ByteDance, Alibaba ve Tencent Malezya, Singapur, Tayland ve Endonezya'da kapasite arıyor; Moonshot Avrupa'da 8.000'den fazla Blackwell GPU'luk kümeler için görüşüyor. Çin'in Nvidia iş istasyonu GPU siparişleri Kasım itibarıyla 35 milyar doları aştı.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Talep güçlü ama yeni lisans kuralları her yolu daha belirsiz ve maliyetli hale getiriyor.",
+      "kaynak": "Crypto Briefing (The Information'a dayanarak)",
+      "url": "https://wpnews.pro/news/chinese-ai-firms-explore-remote-access-to-nvidia-chips-as-us-export-rules"
+    },
+    {
+      "baslik": "Trump, TSMC'nin Arizona genişlemesinin temel atma törenine katılacak",
+      "detay": "Beyaz Saray yetkilisine göre sahada 12.000-15.000 inşaat işçisi çalışıyor; genişleme tamamlandığında 10.000'den fazla doğrudan istihdam sağlanacak. TSMC ABD'de 265 milyar dolarlık yatırım taahhüt etti; Arizona tesisi Nvidia Blackwell'in yanı sıra AMD ve Apple için de üretim yapıyor.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "ABD'de ileri düğüm kapasitesinin büyümesi tedarik zinciri riskini azaltıyor ve siyasi destek sürüyor.",
+      "kaynak": "Taipei Times (Bloomberg)",
+      "url": "https://taipeitimes.com/News/biz/archives/2026/11/26/2003868390"
+    },
+    {
+      "baslik": "Goldman Sachs: ABD'de 2028'e kadar 52 GW ek veri merkezi gücü devreye girebilir",
+      "detay": "Goldman'a göre ABD veri merkezi güç kapasitesi ve talebi yılbaşından bu yana yaklaşık %30 arttı ve ülkenin toplam elektrik talebi artışının üçte birinden fazlasını oluşturdu; banka doğal gaz tüketiminin artmasını bekliyor.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Enerji kısıtına rağmen büyük ölçekli kapasite artışı öngörüsü, çip talebinin süreceğine işaret ediyor.",
+      "kaynak": "The Motley Fool (Reuters'a dayanarak)",
+      "url": "https://www.fool.com/investing/2026/11/25/goldman-sachs-sees-52-more-gw-of-data-center-power-in-2028-these-3-stocks-look-best-positioned-to-cash-in/"
+    },
+    {
+      "baslik": "Huawei, rakiplerinin iki katı pin yoğunluklu HBM geliştirdi",
+      "detay": "Bloomberg'e göre Huawei'nin yeni HBM'si Samsung ve SK hynix'in seri üretimdeki ürünlerinin iki katı veri pini yoğunluğuna sahip; ayrıntılar Şubat'ta San Francisco'daki ISSCC'de sunulacak. Huawei 2029'a kadar her yıl en az bir yeni çip çıkarmayı planlıyor.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Çin'in bellek darboğazını aşma çabası rekabeti artırıyor; seri üretim henüz belirsiz.",
+      "kaynak": "SBS (Bloomberg'e dayanarak)",
+      "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008865098"
+    },
+    {
+      "baslik": "OpenAI, GPT-6.2'yi ChatGPT'nin sohbet sekmesine ücretli kullanıcılar için getirdi",
+      "detay": "23 Kasım'dan itibaren Plus, Pro, Business ve Enterprise aboneleri GPT-6.2 Sol tabanlı sohbet modelini kullanıyor; ücretsiz ve Go kullanıcıları GPT-5.6 Luna'da kalıyor. GPT-5.6 Sol 23 Aralık 2026'da emekliye ayrılacak.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Yeni modelin geniş kitleye yayılması çıkarım (inference) talebini artırıyor.",
+      "kaynak": "India Today",
+      "url": "https://indiatoday.in/technology/story/openai-brings-gpt-62-to-chatgpts-chat-tab-but-free-and-go-users-get-nothing-3046620-2026-11-25"
+    },
+    {
+      "baslik": "Tayvan, ABD'nin önerdiği aşırı kapasite gümrük listesindeki 14 ekonomi arasında",
+      "detay": "GuruFocus'a göre Washington Tayvan'ı aşırı kapasite tarifesi önerilen 14 ekonomi arasında saydı; anlaşması olan ortaklar için oranların mevcut tavanlarda (Tayvan için %15) kalması bekleniyor, öneri henüz yorum ve duruşma aşamasında. TSMC ADR'si 25 Kasım'da 342,34 dolardan kapandı.",
+      "kategori": "negatif",
+      "agirlik": 1,
+      "neden": "Gümrük belirsizliği Tayvan çip tedarik zincirine yeni bir maliyet riski ekliyor.",
+      "kaynak": "Gotrade",
+      "url": "https://www.heygotrade.com/en/news/tsmc-tsm-stock-news-november-26-2026/"
     }
   ],
   "yaklasan": [
     {
-      "tarih": "2026-12-17",
-      "baslik": "Micron mali 1. çeyrek sonuçları",
-      "kaynak": "Shattered.io",
-      "url": "https://shattered.io/dram-prices-pc-contract-13-18-percent-power-semiconductors-allocation-nov-25/"
+      "tarih": "2026-12-23",
+      "baslik": "OpenAI GPT-5.6 Sol'u ChatGPT'den kaldırıyor",
+      "kaynak": "India Today",
+      "url": "https://indiatoday.in/technology/story/openai-brings-gpt-62-to-chatgpts-chat-tab-but-free-and-go-users-get-nothing-3046620-2026-11-25"
     },
     {
       "tarih": "2027-01-19",
-      "baslik": "BIS uzaktan erişim kuralı (RIN 0694-AK50) kamuoyu yorum süresinin sonu",
-      "kaynak": "CASRAI",
-      "url": "https://casrai.org/news/bessent-us-nvidia-chip-export-policy-china-holds-remote-access-2026"
+      "baslik": "BIS uzaktan erişim kuralı kamuoyu yorum süresinin sonu",
+      "kaynak": "Streamline (Federal Register)",
+      "url": "https://streamlinefeed.co.ke/news/asian-data-centers-pitch-us-buyers-after-chip-curbs"
+    },
+    {
+      "tarih": "2027-02-14",
+      "baslik": "ISSCC 2027 başlıyor (Samsung HBM4E, SK hynix, Huawei bellek sunumları)",
+      "kaynak": "Wisevoter",
+      "url": "https://wisevoter.com/world/2026/11/25/samsung-sk-hynix-hbm4e-dram-issc-2027"
     }
   ],
   "yontem": {
@@ -123,6 +129,6 @@
     "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
     "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
     "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
-    "hesap": "Σ ağırlık×işaret = -9 · Σ ağırlık = 17 · Puan = 50 + 50 × -0.53 = 24"
+    "hesap": "Σ ağırlık×işaret = -3 · Σ ağırlık = 17 · Puan = 50 + 50 × -0.18 = 41"
   }
 }

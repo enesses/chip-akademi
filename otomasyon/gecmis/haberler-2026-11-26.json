@@ -1,0 +1,96 @@
+{
+  "tarih": "2026-11-26",
+  "haberler": [
+    {
+      "baslik": "Samsung ve SK hynix, ISSCC 2027'de HBM4E ve yeni DRAM araştırmalarını sunacak",
+      "detay": "Samsung'un 48 GB'lık HBM4E'si pin başına 17 Gb/s hedefliyor (HBM4: 36 GB, 11,7 Gb/s). SK hynix ayrı plakalarda üretilmiş 16 Gb DDR5, CXMT ise hibrit bağlamalı 32 Gb DDR5 gösterecek; konferans 14-18 Şubat 2027'de.",
+      "kaynak": "Wisevoter",
+      "url": "https://wisevoter.com/world/2026/11/25/samsung-sk-hynix-hbm4e-dram-issc-2027",
+      "yayin": "2026-11-25",
+      "konular": [
+        "bellek"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Micron, Tayvan ve Singapur'da HBM yatırımını hızlandırıyor",
+      "detay": "Micron, Samsung ve SK hynix ile kapasite farkını kapatmak için Tayvan ve Singapur'daki yüksek bant genişlikli bellek üretim yatırımlarını artırıyor.",
+      "kaynak": "DIGITIMES",
+      "url": "https://digitimes.com/news/a20261124VL216/micron-hbm-investment-taiwan-production.html",
+      "yayin": "2026-11-24",
+      "konular": [
+        "bellek"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Nvidia, 30 milyar parametreli Nemotron-Labs görüntü modelinin ağırlıklarını açtı",
+      "detay": "Nemotron-Labs-Image-30B-A3B adlı uzmanlar karışımı (MoE) görüntü üretim modeli Hugging Face'te açık ağırlıklı olarak yayımlandı; Nemotron-H hibrit mimarisini dilden görüntüye taşıyor.",
+      "kaynak": "Wisevoter",
+      "url": "https://wisevoter.com/world/2026/11/25/nvidia-open-weight-nemotron-labs-image-model",
+      "yayin": "2026-11-25",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Anthropic, kurumsal müşteriler için Enterprise Frontier Safeguards'ı beta olarak açtı",
+      "detay": "Araç, müşterinin kendi bulutunda saklanan konuşmaları sıfır veri saklama ilkesiyle tarayıp çok adımlı zararlı etkinliği güvenlik ekiplerine 'Safety Case' olarak bildiriyor; erişim politikası, denetim kaydı ve şifreleme anahtarı müşteride.",
+      "kaynak": "Wisevoter",
+      "url": "https://wisevoter.com/world/2026/11/25/anthropic-enterprise-frontier-safeguards-beta",
+      "yayin": "2026-11-25",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "Fluidstack, altı ayda kurulabilen 400 MW'lık modüler veri merkezi ürününü tanıttı",
+      "detay": "Blackbird modüler yapı, Arizona Glendale'deki 1,1 milyon fit karelik tesiste küresel kaynaklı bileşenlerle üretiliyor.",
+      "kaynak": "k4i (PR Newswire)",
+      "url": "https://k4i.com/chip-and-ai-infrastructure-announcements-november-25-2026/",
+      "yayin": "2026-11-25",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "ABD uzaktan erişim kuralı sonrası Nvidia çip satıcıları yeni alıcı arıyor",
+      "detay": "CNBC'nin kaynaklarına göre kural, Çin bağlantılı müşterilere büyük miktarda ileri işlem gücü sağlayan bazı yurt dışı veri merkezi düzenlemelerini kısıtladığı için satıcılar donanımlarına yeni alıcı arıyor.",
+      "kaynak": "CNBC",
+      "url": "https://cnbc.com/2026/11/25/nvidia-china-ai-chip-remote-access.html",
+      "yayin": "2026-11-25",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "TSMC'de 2 nm, 3. çeyrek plaka gelirinin %8'ine ulaştı",
+      "detay": "TSMC N2'yi Hsinchu ve Kaohsiung'da kademeli artırıyor ve N2 ailesi kapasitesinin 2027'de iki katından fazla artmasını bekliyor. Nvidia'nın 3. çeyrek veri merkezi geliri 107,6 milyar dolar (%110 artış) oldu; Vera Rubin hâlâ 3/5 nm'de.",
+      "kaynak": "Shattered.io",
+      "url": "https://shattered.io/ai-chip-shortage-tsmc-2nm-8-percent-wafer-revenue-nov-26",
+      "yayin": "2026-11-26",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Koreli telekom ve bulut şirketleri savunma AI ihaleleri için ekip kurdu",
+      "detay": "KT ve Naver Cloud savunma yapay zekâ dönüşümü (AX) görev güçleri kurdu, SK Telecom kamu, savunma ve B2B pazarları için kurumsal bir ekip oluşturdu; önerilen savunma AI bütçesi büyüyor.",
+      "kaynak": "ChosunBiz",
+      "url": "https://biz.chosun.com/en/en-it/2026/11/25/FWFOBPVHHVCKFH76Z4UPYWDAJI",
+      "yayin": "2026-11-25",
+      "konular": [
+        "yapay-zeka",
+        "politika"
+      ],
+      "kategori": "notr"
+    }
+  ]
+}
