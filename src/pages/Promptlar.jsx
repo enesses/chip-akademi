@@ -248,6 +248,8 @@ export default function Promptlar() {
               type="search"
               value={sorgu}
               onChange={(e) => setSorgu(e.target.value)}
+              onKeyDown={(e) => { if (e.key === "Escape" && sorgu) { e.preventDefault(); setSorgu(""); } }}
+              aria-keyshortcuts="Escape"
               placeholder="Ara: oyun, logo, e-posta, sınav…"
               className="w-full rounded-xl border border-card-border bg-card/70 pl-9 pr-3 py-2.5 text-sm placeholder:text-muted-foreground focus:outline-none focus:border-primary/60"
             />
