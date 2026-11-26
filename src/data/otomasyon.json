@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-26T06:55:34.999Z",
+  "guncelleme": "2026-11-26T06:57:54.170Z",
   "tarih": "2026-11-26",
   "durum": "dikkat",
   "ajanlar": [
@@ -75,7 +75,28 @@
       "alan": "fiyat"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-11-26",
+      "oneri": "Fiyatlar arama kutusunda Escape tuşu aramayı temizlesin",
+      "durum": "birlesti",
+      "pr": 109,
+      "dal": "otomasyon/oneri-2026-11-26-1",
+      "ozet": "Fiyatlar sayfasındaki model arama kutusu Escape ile temizleniyor ve aria-label aldı.",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-26",
+      "oneri": "Promptlar arama kutusunda Escape tuşu aramayı temizlesin",
+      "durum": "birlesti",
+      "pr": 110,
+      "dal": "otomasyon/oneri-2026-11-26-2",
+      "ozet": "Promptlar sayfasındaki arama kutusu Escape ile temizleniyor.",
+      "neden": null,
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Fiyat hareketi satırlarından çip sayfasına bağlantı ver",
@@ -243,6 +264,20 @@
       "durum": "birlesti",
       "pr": 108,
       "tarih": "2026-11-25",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyatlar arama kutusunda Escape tuşu aramayı temizlesin",
+      "durum": "birlesti",
+      "pr": 109,
+      "tarih": "2026-11-26",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Promptlar arama kutusunda Escape tuşu aramayı temizlesin",
+      "durum": "birlesti",
+      "pr": 110,
+      "tarih": "2026-11-26",
       "kim": "otomasyon"
     }
   ],

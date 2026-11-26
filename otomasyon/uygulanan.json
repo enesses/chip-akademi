@@ -1160,6 +1160,26 @@
       "ozet": "Modeller arama kutusu Escape ile temizleniyor.",
       "neden": null,
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-26",
+      "oneri": "Fiyatlar arama kutusunda Escape tuşu aramayı temizlesin",
+      "durum": "birlesti",
+      "pr": 109,
+      "dal": "otomasyon/oneri-2026-11-26-1",
+      "ozet": "Fiyatlar sayfasındaki model arama kutusu Escape ile temizleniyor ve aria-label aldı.",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-26",
+      "oneri": "Promptlar arama kutusunda Escape tuşu aramayı temizlesin",
+      "durum": "birlesti",
+      "pr": 110,
+      "dal": "otomasyon/oneri-2026-11-26-2",
+      "ozet": "Promptlar sayfasındaki arama kutusu Escape ile temizleniyor.",
+      "neden": null,
+      "kim": "otomasyon"
     }
   ]
 }
