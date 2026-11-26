@@ -200,7 +200,7 @@ export default function Prices() {
         <div className="flex flex-wrap items-center gap-2 mb-3">
           <div className="relative flex-1 min-w-[14rem] max-w-sm">
             <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-muted-foreground pointer-events-none" />
-            <Input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Model ara…" className="pl-8 h-9 text-sm" data-testid="fiyat-arama" />
+            <Input value={q} onChange={(e) => setQ(e.target.value)} onKeyDown={(e) => { if (e.key === "Escape" && q) { e.preventDefault(); setQ(""); } }} aria-keyshortcuts="Escape" aria-label="Model ara" placeholder="Model ara…" className="pl-8 h-9 text-sm" data-testid="fiyat-arama" />
           </div>
           <div className="flex gap-1.5">
             {[["fiyat","$/saat"],["gb","$/GB"],["degisim","Değişim ↑"],["dusen","Değişim ↓"]].map(([id,label]) => (
