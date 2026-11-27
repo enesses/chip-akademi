@@ -1180,6 +1180,26 @@
       "ozet": "Promptlar sayfasındaki arama kutusu Escape ile temizleniyor.",
       "neden": null,
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-27",
+      "oneri": "Fiyat tablosunda gösterilen model sayısını ekran okuyucuya duyur",
+      "durum": "birlesti",
+      "pr": 111,
+      "dal": "otomasyon/oneri-2026-11-27-1",
+      "ozet": "Fiyatlar sayfasındaki model sayacına role=status ve aria-live eklendi.",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-27",
+      "oneri": "Modeller tablosunda gösterilen model sayısını ekran okuyucuya duyur",
+      "durum": "birlesti",
+      "pr": 112,
+      "dal": "otomasyon/oneri-2026-11-27-2",
+      "ozet": "Modeller sayfasındaki model sayacına role=status ve aria-live eklendi.",
+      "neden": null,
+      "kim": "otomasyon"
     }
   ]
 }

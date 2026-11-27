@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-27T06:56:30.164Z",
+  "guncelleme": "2026-11-27T06:58:21.441Z",
   "tarih": "2026-11-27",
   "durum": "dikkat",
   "ajanlar": [
@@ -79,7 +79,28 @@
       "alan": "veri"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-11-27",
+      "oneri": "Fiyat tablosunda gösterilen model sayısını ekran okuyucuya duyur",
+      "durum": "birlesti",
+      "pr": 111,
+      "dal": "otomasyon/oneri-2026-11-27-1",
+      "ozet": "Fiyatlar sayfasındaki model sayacına role=status ve aria-live eklendi.",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-27",
+      "oneri": "Modeller tablosunda gösterilen model sayısını ekran okuyucuya duyur",
+      "durum": "birlesti",
+      "pr": 112,
+      "dal": "otomasyon/oneri-2026-11-27-2",
+      "ozet": "Modeller sayfasındaki model sayacına role=status ve aria-live eklendi.",
+      "neden": null,
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Ana sayfadaki fiyat hareketi satırında sağlayıcı sayısını göster",
@@ -247,6 +268,20 @@
       "durum": "birlesti",
       "pr": 110,
       "tarih": "2026-11-26",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Fiyat tablosunda gösterilen model sayısını ekran okuyucuya duyur",
+      "durum": "birlesti",
+      "pr": 111,
+      "tarih": "2026-11-27",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Modeller tablosunda gösterilen model sayısını ekran okuyucuya duyur",
+      "durum": "birlesti",
+      "pr": 112,
+      "tarih": "2026-11-27",
       "kim": "otomasyon"
     }
   ],
