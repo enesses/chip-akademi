@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-11-27",
+  "oneriler": [
+    {
+      "baslik": "Fiyat tablosunda gösterilen model sayısını ekran okuyucuya duyur",
+      "neden": "src/pages/Prices.jsx satır 233'teki \"{rows.length} model\" sayacı role=\"status\" taşımıyor; arama ya da üretici filtresi değişince ekran okuyucu sonucu duyurmuyor. Sözlük (Glossary.jsx:29) ve Haberler (Haberler.jsx:158) aynı sayacı role=\"status\" ile duyuruyor.",
+      "etki": "düşük",
+      "alan": "erişilebilirlik"
+    },
+    {
+      "baslik": "Modeller tablosunda gösterilen model sayısını ekran okuyucuya duyur",
+      "neden": "src/pages/Modeller.jsx satır 115'teki \"{liste.length} model\" sayacı canlı bölge değil; arama ya da şirket seçimi sonrası sonuç sayısı ekran okuyucuya iletilmiyor.",
+      "etki": "düşük",
+      "alan": "erişilebilirlik"
+    },
+    {
+      "baslik": "Fiyat okumasının kısmi kaldığını raporda ayrı bir uyarı olarak göster",
+      "neden": "Bugün getdeploying.com/gpus sayfasında 121 model vardı ama WebFetch yanıtı ~40.000 karakterde kesildi; yalnızca 54 satır doğrulanabildi ve 68 modelin fiyatı eski kaldı. Rapor bunu yalnızca '68 gelmedi' diye yazıyor; okunan satır / sayfadaki model oranı %60'ın altına düşünce sarı uyarı vermesi kısmi günleri görünür kılar (otomasyon/veri-isle.mjs, korunan dosya).",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Nvidia A4000 fiyatını hedefli ikinci okumayla doğrula",
+      "neden": "Bugünkü okumada A4000 medyanı 0,25 $ (kayıtlı 0,76 $, 11 sağlayıcı) çıktı ve betik %67'lik oynamayı şüpheli sayıp yazmadı; kayıtlı fiyat 26 Kasım'da 0,53'ten 0,76'ya %43 sıçramıştı. Model sayfasından ikinci okuma yapılıp 'dogrulanan' listesine eklenmeli.",
+      "etki": "düşük",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Intel Gaudi 3'ü GPU kiralama kataloğuna ekle",
+      "neden": "getdeploying.com/gpus bugün Intel Gaudi 3'ü 1 sağlayıcıyla listeliyor; src/data/gpu_kiralama.json'da yalnızca 'Intel Gaudi2' var. Fiyat yayımlanmadığı için satır fiyatsız eklenmeli.",
+      "etki": "düşük",
+      "alan": "veri"
+    }
+  ]
+}

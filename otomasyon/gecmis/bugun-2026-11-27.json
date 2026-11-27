@@ -1,0 +1,128 @@
+{
+  "tarih": "2026-11-27",
+  "derlenme": "27 Kasım 2026",
+  "puan": {
+    "etiket": "Bellekte ayrışma, politikada sıkılaşma",
+    "yorum": "Kore bellek hisseleri sert düşüşün ardından toparlandı, ancak BNP'nin 2027 ortası arz fazlası uyarısı ve Goldman'ın 2028 DRAM fiyat kesintisi döngü kaygısını canlı tutuyor. Kongre'de yeni ihracat kontrolleri gündemde; buna karşın JERA'nın 400 MW'lık projesi ve SpaceX'in yörünge veri merkezi onayı altyapı talebinin sürdüğünü gösteriyor.",
+    "deger": 57
+  },
+  "ozet": [
+    "Günün ana teması bellek pazarının ikiye ayrılması. Goldman Sachs 2027 HBM pazar tahminini %72 artırıp 200 milyar dolara çıkarırken 2028 klasik DRAM fiyat düşüşü tahminini %19'a derinleştirdi. BNP Paribas ise DRAM ve NAND'da dengenin 2028 yerine 2027 ortasında gelebileceğini söyleyip Micron'un hedef fiyatını yarıdan fazla düşürdü.",
+    "Kore'de 25 Kasım'daki %6'lık KOSPI çöküşünün ardından SK hynix ve Samsung 26 Kasım'da tepki alımıyla yükseldi. Kore çip ihracatı Kasım'ın ilk 20 gününde rekor kırsa da Kore Merkez Bankası'nın faiz artırımı değerlemeler üzerinde ek baskı oluşturuyor.",
+    "Politika cephesinde ABD'nin 19 Kasım'da yürürlüğe giren uzaktan erişim kuralının etkisi görülmeye başladı: Reuters, Z.AI ve Moonshot gibi Çinli laboratuvarların model takviminin kaydığını bildirdi. Kongre'nin de NDAA içinde yeni ihracat kontrolleri geçirmesi bekleniyor; bu beklenti Nvidia ve ekipman hisselerini aşağı çekti.",
+    "Altyapı tarafında talep güçlü kalıyor: JERA Chiba'da 400 MW'lık santral yanı veri merkezi planlıyor, FCC SpaceX'in 1 milyon uydulu Starmind ağına izin verdi, Kioxia-Nvidia ise SSD'lerle GPU belleğini petabayta genişletti. OpenRouter verisi kullanımın harcamadan çok daha hızlı büyüdüğünü gösteriyor."
+  ],
+  "maddeler": [
+    {
+      "baslik": "Reuters: ABD çip kısıtları ve damıtma önlemleri Çinli AI modellerini geciktiriyor",
+      "detay": "Reuters'a göre Z.AI'nin yeni amiral modeli takvimin gerisinde kaldı; Moonshot AI yurt dışı işlem gücüne erişimi kaybederse büyük sürümler arasındaki aralığın 6 aydan 1 yıla çıkabileceğini bekliyor. 19 Kasım'da yürürlüğe giren ABD kuralı yurt dışı veri merkezlerinden uzaktan erişimi lisansa bağladı.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "Çin'deki AI geliştirmesi için olumsuz, ABD'li model ve çip sağlayıcıları için rekabet avantajı; sektöre net etkisi karışık.",
+      "kaynak": "Reuters (Investing.com)",
+      "url": "https://www.investing.com/news/stock-market-news/exclusiveus-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-sources-say-5052154"
+    },
+    {
+      "baslik": "Kongre yeni çip ihracat kontrollerine hazırlanıyor; Nvidia %4 geriledi",
+      "detay": "Nvidia çiplerinin Çin'e kaçırıldığı iddialarının ardından Kongre'nin 3–4 yeni ihracat kontrol tedbirini, büyük olasılıkla 2027 mali yılı NDAA içinde geçirmesi bekleniyor. Nvidia Çarşamba %4 düştü; ASML, Lam Research ve Applied Materials da geriledi. ASML satışlarının yaklaşık %30'u 2025'te Çin'den geldi.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Ekipman ve çip üreticilerinin Çin gelirini daha da daraltabilecek düzenleme riski.",
+      "kaynak": "Wisevoter",
+      "url": "https://wisevoter.com/world/us/2026/11/26/congress-chip-export-controls-nvidia-smuggling"
+    },
+    {
+      "baslik": "KOSPI %2 toparlandı: SK hynix %5,5, Samsung %2,5 yükseldi",
+      "detay": "Bir gün önce SK hynix %11,1, Samsung %9,9 düştükten sonra 26 Kasım sabahı SK hynix 1,087 milyon wona (+%5,53), Samsung 175.000 wona (+%2,52) çıktı; KOSPI %2,09 artışla 4.795,70'teydi.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Sert satışın ardından bellek hisselerinde tepki alımı geldi.",
+      "kaynak": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/market/2026/11/26/kospi-rebounds-2-percent-as-samsung-sk-hynix-lead-recovery"
+    },
+    {
+      "baslik": "BNP Paribas: Bellekte arz fazlası 2027 ortasında başlayabilir",
+      "detay": "BNP Paribas, DRAM ve NAND arz-talebinin 2028 yerine 2027 ortasında dengeye gelmesini bekliyor; Micron notunu 'Nötr'e indirip hedefini 1.700'den 775 dolara çekti. Kore Merkez Bankası faizi 25 baz puan artırıp %3,25'e çıkardı. Öte yandan Kore çip ihracatı Kasım'ın ilk 20 gününde %294,4 artışla 38,5 milyar dolarla rekor kırdı.",
+      "kategori": "negatif",
+      "agirlik": 2,
+      "neden": "Bellek döngüsünün beklenenden erken döneceği uyarısı ve faiz artışı değerlemelere baskı yapıyor.",
+      "kaynak": "Invezz",
+      "url": "https://invezz.com/ng/news/2026/11/26/why-samsung-and-sk-hynix-stock-rebound-could-be-a-classic-bull-trap/"
+    },
+    {
+      "baslik": "Goldman Sachs: 2027 HBM pazarı 200 milyar dolar, 2028'de klasik DRAM fiyatı %19 düşebilir",
+      "detay": "Goldman'ın 22 Kasım tarihli model revizyonunda 2027 HBM pazar büyüklüğü 116'dan 200 milyar dolara (+%72) yükseltildi; HBM ortalama fiyatının GB başına 12,2'den 24,7 dolara çıkacağı varsayıldı. Buna karşılık 2028 klasik DRAM fiyat tahmini yıllık -%5'ten -%19'a derinleştirildi.",
+      "kategori": "notr",
+      "agirlik": 2,
+      "neden": "HBM için güçlü, klasik DRAM için zayıf görünüm: bellek pazarı ikiye ayrılıyor.",
+      "kaynak": "VLSI Korea (Goldman Sachs verisi, ikincil)",
+      "url": "https://www.vlsi.kr/en/goldman-memory-model-revision-verdict-en/"
+    },
+    {
+      "baslik": "JERA, Chiba'daki santralinin yanına 400 MW'lık AI veri merkezi planlıyor",
+      "detay": "Japonya'nın en büyük elektrik üreticisi JERA, Dell ve RHAELM ile 4,38 GW'lık Chiba LNG santralinin yanında 400 MW'lık, şebekeden bağımsız (behind-the-meter) veri merkezi geliştiriyor. Yatırımın 15 milyar doları aşması, işletmenin 2028'de aşamalı başlaması bekleniyor; tesislerin Anthropic ve Meta için kurulacağı bildiriliyor.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Güç kısıtını aşan yeni kapasite, AI altyapı talebinin sürdüğünü gösteriyor.",
+      "kaynak": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/jera-ai-data-centers-anthropic-meta-power-plants/"
+    },
+    {
+      "baslik": "FCC, SpaceX'in 1 milyon uydulu yörünge veri merkezi ağı Starmind'a onay verdi",
+      "detay": "FCC 25 Kasım'da SpaceX'e Starmind adlı yörünge veri merkezi takımyıldızı için 1 milyona kadar uydu izni verdi. İlk uydunun Kasım 2033'e, 100.000 uydunun 2035'e, tamamının 2040'a kadar çalışır olması gerekiyor. FCC onayın teknik ya da ekonomik uygulanabilirliği kanıtlamadığını belirtti.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Uzun vadeli yeni bir işlem gücü talep kaynağı; ancak uygulanabilirlik belirsiz.",
+      "kaynak": "Tech Times",
+      "url": "https://www.techtimes.com/articles/331558/20261126/spacexs-1-million-satellite-plan-gets-fcc-approval-what-will-they-used.htm"
+    },
+    {
+      "baslik": "Kioxia ve Nvidia, SSD'lerle GPU belleğini petabayt ölçeğine genişletti",
+      "detay": "Nvidia SCADA yazılımı ve 144 adet Kioxia XD8 7,68 TB SSD ile donatılmış bir GB200 NVL72 rafında yaklaşık 1,1 PB ham kapasiteyle 2 trilyon vektörlük veritabanının işlenebileceği gösterildi; amaç HBM kapasite sınırını aşmak.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Kıt HBM'ye bağımlılığı azaltan ve NAND talebini artırabilecek yaklaşım.",
+      "kaynak": "Kioxia",
+      "url": "https://americas.kioxia.com/en-us/business/news/2026/ssd-20261125-1.html"
+    },
+    {
+      "baslik": "OpenRouter: Token hacmi bu yıl 44 kat arttı, harcama yalnızca 7,6 kat",
+      "detay": "OpenRouter verilerine göre 2026'da token hacmi 44 kat, toplam harcama 7,6 kat arttı. Ekim 790 trilyon token ile rekor ay oldu (Eylül'e göre +%37); ajan sistemleri Ekim hacminin %76'sını oluşturdu (bir yıl önce %8).",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Kullanım patlıyor ama birim fiyat düştüğü için gelir aynı hızda büyümüyor.",
+      "kaynak": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/openrouter-44x-token-growth-spending-lags/"
+    },
+    {
+      "baslik": "Anthropic, Messages API'yi Rust'a taşıdı: istek başına CPU %70 azaldı",
+      "detay": "Anthropic, trafiği 2024 başından bu yana yaklaşık 1.800 kat artan Messages API'yi Python'dan Rust'a kesintisiz taşıdı; istek başına CPU kullanımı yaklaşık %70, ilk tokene kadar geçen medyan süre yaklaşık %20 düştü.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Aynı donanımla daha fazla istek sunulması çıkarım verimliliğini artırıyor.",
+      "kaynak": "Anthropic",
+      "url": "https://www.anthropic.com/research/migrating-api-to-rust"
+    }
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2026-12-11",
+      "baslik": "ABD hükümet finansmanı son günü (çip yasası 2027'ye kayabilir)",
+      "kaynak": "Wisevoter",
+      "url": "https://wisevoter.com/world/us/2026/11/26/congress-chip-export-controls-nvidia-smuggling"
+    },
+    {
+      "tarih": "2026-12-14",
+      "baslik": "Trump–Xi görüşmesi, G20 Miami (14–15 Aralık)",
+      "kaynak": "Wisevoter",
+      "url": "https://wisevoter.com/world/us/2026/11/26/congress-chip-export-controls-nvidia-smuggling"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = +2 · Σ ağırlık = 15 · Puan = 50 + 50 × 0.13 = 57"
+  }
+}

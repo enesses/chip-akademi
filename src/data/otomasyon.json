@@ -1,6 +1,6 @@
 {
-  "guncelleme": "2026-11-26T06:57:54.170Z",
-  "tarih": "2026-11-26",
+  "guncelleme": "2026-11-27T06:56:30.164Z",
+  "tarih": "2026-11-27",
   "durum": "dikkat",
   "ajanlar": [
     {
@@ -9,7 +9,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "temiz",
-      "zaman": "2026-11-26T06:54:31.206Z"
+      "zaman": "2026-11-27T06:55:27.321Z"
     },
     {
       "id": "iyilestirme",
@@ -17,7 +17,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "tamam",
-      "zaman": "2026-11-26T06:54:31.328Z"
+      "zaman": "2026-11-27T06:55:27.428Z"
     },
     {
       "id": "yenileme",
@@ -25,7 +25,7 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "ok",
-      "zaman": "2026-11-26T06:54:30.647Z"
+      "zaman": "2026-11-27T06:55:26.892Z"
     },
     {
       "id": "gelistirme",
@@ -33,10 +33,14 @@
       "saat": "10:00",
       "calisti": true,
       "durum": "degisiklik-yok",
-      "zaman": "2026-11-26T06:54:50.755Z"
+      "zaman": "2026-11-27T06:55:43.518Z"
     }
   ],
   "dikkat": [
+    {
+      "seviye": "uyarı",
+      "metin": "Yenileme · Şüpheli fiyat: Nvidia A4000: 0.76 → 0.25 — tek seferde >%50 oynama, yazılmadı; elle kontrol et, doğruysa gelen/fiyatlar.json'daki \"dogrulanan\" listesine ekle"
+    },
     {
       "seviye": "dikkat",
       "tur": "onay",
@@ -45,73 +49,38 @@
   ],
   "oneriler": [
     {
-      "baslik": "Fiyatlar arama kutusunda Escape tuşu aramayı temizlesin",
-      "neden": "src/pages/Prices.jsx:203'teki 'Model ara…' kutusunda onKeyDown/aria-keyshortcuts yok; Haberler (Haberler.jsx:132), Modeller (Modeller.jsx:103) ve Sözlük (Glossary.jsx:25) kutuları Escape ile temizleniyor. Kutuda ayrıca aria-label yok, yalnızca placeholder var.",
-      "etki": "düşük",
-      "alan": "erişilebilirlik"
-    },
-    {
-      "baslik": "Promptlar arama kutusunda Escape tuşu aramayı temizlesin",
-      "neden": "src/pages/Promptlar.jsx:248'deki type=search kutusu Escape'i işlemiyor; uygulamadaki diğer üç arama kutusuyla tutarlılık için aynı davranış eklenmeli.",
-      "etki": "düşük",
-      "alan": "erişilebilirlik"
-    },
-    {
       "baslik": "Fiyat tablosunda gösterilen model sayısını ekran okuyucuya duyur",
-      "neden": "Prices.jsx:233'teki '{rows.length} model' sayacında role=status/aria-live yok; arama ya da süzgeç değişince sonuç sayısı duyurulmuyor. Haberler.jsx:158 ve Sözlük bunu role=status ile yapıyor.",
+      "neden": "src/pages/Prices.jsx satır 233'teki \"{rows.length} model\" sayacı role=\"status\" taşımıyor; arama ya da üretici filtresi değişince ekran okuyucu sonucu duyurmuyor. Sözlük (Glossary.jsx:29) ve Haberler (Haberler.jsx:158) aynı sayacı role=\"status\" ile duyuruyor.",
       "etki": "düşük",
       "alan": "erişilebilirlik"
     },
     {
-      "baslik": "Intel Gaudi 3'ü GPU kiralama kataloğuna ekle",
-      "neden": "26 Kasım'da getdeploying.com/gpus sayfasında 'Intel Gaudi 3' (1 sağlayıcı, fiyat talep üzerine) listelendi; src/data/gpu_kiralama.json'da yalnızca 'Intel Gaudi2' var. Fiyatı olmadığı için şimdilik yalnızca katalog kaydı ve 'fiyat talep üzerine' notu gerekir.",
+      "baslik": "Modeller tablosunda gösterilen model sayısını ekran okuyucuya duyur",
+      "neden": "src/pages/Modeller.jsx satır 115'teki \"{liste.length} model\" sayacı canlı bölge değil; arama ya da şirket seçimi sonrası sonuç sayısı ekran okuyucuya iletilmiyor.",
+      "etki": "düşük",
+      "alan": "erişilebilirlik"
+    },
+    {
+      "baslik": "Fiyat okumasının kısmi kaldığını raporda ayrı bir uyarı olarak göster",
+      "neden": "Bugün getdeploying.com/gpus sayfasında 121 model vardı ama WebFetch yanıtı ~40.000 karakterde kesildi; yalnızca 54 satır doğrulanabildi ve 68 modelin fiyatı eski kaldı. Rapor bunu yalnızca '68 gelmedi' diye yazıyor; okunan satır / sayfadaki model oranı %60'ın altına düşünce sarı uyarı vermesi kısmi günleri görünür kılar (otomasyon/veri-isle.mjs, korunan dosya).",
+      "etki": "orta",
+      "alan": "otomasyon"
+    },
+    {
+      "baslik": "Nvidia A4000 fiyatını hedefli ikinci okumayla doğrula",
+      "neden": "Bugünkü okumada A4000 medyanı 0,25 $ (kayıtlı 0,76 $, 11 sağlayıcı) çıktı ve betik %67'lik oynamayı şüpheli sayıp yazmadı; kayıtlı fiyat 26 Kasım'da 0,53'ten 0,76'ya %43 sıçramıştı. Model sayfasından ikinci okuma yapılıp 'dogrulanan' listesine eklenmeli.",
       "etki": "düşük",
       "alan": "veri"
     },
     {
-      "baslik": "Fiyat hareketi kartlarında az sağlayıcılı büyük sıçramaları işaretle",
-      "neden": "Bugünkü fiyat girdisinde RTX A2000 (+%89, 3 sağlayıcı) ve A4500 (+%65, 3 sağlayıcı) gibi büyük hareketler az sayıda sağlayıcıdan geliyor; bu tür değişimlerin yanına 'az sağlayıcı' rozeti kullanıcıyı yanıltıcı yorumdan korur. ('az sağlayıcılı modelleri gizleme düğmesi' 17 Kasım'dan beri onay bekliyor; rozet ondan bağımsız ve daha küçük bir adım.)",
-      "etki": "orta",
-      "alan": "fiyat"
+      "baslik": "Intel Gaudi 3'ü GPU kiralama kataloğuna ekle",
+      "neden": "getdeploying.com/gpus bugün Intel Gaudi 3'ü 1 sağlayıcıyla listeliyor; src/data/gpu_kiralama.json'da yalnızca 'Intel Gaudi2' var. Fiyat yayımlanmadığı için satır fiyatsız eklenmeli.",
+      "etki": "düşük",
+      "alan": "veri"
     }
   ],
-  "uygulanan": [
-    {
-      "tarih": "2026-11-26",
-      "oneri": "Fiyatlar arama kutusunda Escape tuşu aramayı temizlesin",
-      "durum": "birlesti",
-      "pr": 109,
-      "dal": "otomasyon/oneri-2026-11-26-1",
-      "ozet": "Fiyatlar sayfasındaki model arama kutusu Escape ile temizleniyor ve aria-label aldı.",
-      "neden": null,
-      "kim": "otomasyon"
-    },
-    {
-      "tarih": "2026-11-26",
-      "oneri": "Promptlar arama kutusunda Escape tuşu aramayı temizlesin",
-      "durum": "birlesti",
-      "pr": 110,
-      "dal": "otomasyon/oneri-2026-11-26-2",
-      "ozet": "Promptlar sayfasındaki arama kutusu Escape ile temizleniyor.",
-      "neden": null,
-      "kim": "otomasyon"
-    }
-  ],
+  "uygulanan": [],
   "uygulananSon": [
-    {
-      "oneri": "Fiyat hareketi satırlarından çip sayfasına bağlantı ver",
-      "durum": "acik",
-      "pr": 85,
-      "tarih": "2026-11-12",
-      "kim": "otomasyon"
-    },
-    {
-      "oneri": "Endeks kartında panel model sayısını göster",
-      "durum": "acik",
-      "pr": 86,
-      "tarih": "2026-11-12",
-      "kim": "otomasyon"
-    },
     {
       "oneri": "Ana sayfadaki fiyat hareketi satırında sağlayıcı sayısını göster",
       "durum": "acik",
@@ -524,7 +493,7 @@
       },
       "kod": {
         "dosyaSayisi": 77,
-        "toplamSatir": 18686,
+        "toplamSatir": 18688,
         "boyutKB": null
       }
     },
@@ -536,17 +505,22 @@
       {
         "ad": "Fiyat verisi",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 104 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 15 gelmedi (eski fiyat korundu)"
+        "detay": "bu çalıştırmada güncellendi — 50 model güncellendi, 0 yeni, 0 kataloğa bağlandı, 68 gelmedi (eski fiyat korundu)"
+      },
+      {
+        "ad": "Şüpheli fiyat",
+        "durum": "uyari",
+        "detay": "Nvidia A4000: 0.76 → 0.25 — tek seferde >%50 oynama, yazılmadı; elle kontrol et, doğruysa gelen/fiyatlar.json'daki \"dogrulanan\" listesine ekle"
       },
       {
         "ad": "Bugün sayfası",
         "durum": "ok",
-        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 41, 3 yaklaşan olay; haber akışına +10"
+        "detay": "bu çalıştırmada güncellendi — 10 madde, puan 57, 2 yaklaşan olay; haber akışına +10"
       },
       {
         "ad": "Haber akışı",
         "durum": "ok",
-        "detay": "+8 haber (akışta 392); bugün toplam 18"
+        "detay": "+8 haber (akışta 394); bugün toplam 18"
       },
       {
         "ad": "Derleme",
@@ -556,7 +530,7 @@
       {
         "ad": "Tek dosya",
         "durum": "ok",
-        "detay": "17 görsel, HTML: 2910 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
+        "detay": "17 görsel, HTML: 2911 KB -> chip-akademi.html, /mnt/user-data/outputs/chip-akademi.html"
       }
     ]
   },
@@ -583,11 +557,6 @@
     ]
   },
   "gecmis": [
-    {
-      "tarih": "2026-11-11",
-      "durum": "dikkat",
-      "dikkat": 1
-    },
     {
       "tarih": "2026-11-12",
       "durum": "dikkat",
@@ -652,6 +621,11 @@
       "tarih": "2026-11-26",
       "durum": "dikkat",
       "dikkat": 1
+    },
+    {
+      "tarih": "2026-11-27",
+      "durum": "dikkat",
+      "dikkat": 2
     }
   ]
 }
