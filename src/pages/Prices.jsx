@@ -230,7 +230,7 @@ export default function Prices() {
               Yalnızca güncel ölçümler <span className="font-mono opacity-70">−{ESKI}</span>
             </button>
           )}
-          <span className="text-xs text-muted-foreground font-mono">{rows.length} model</span>
+          <span className="text-xs text-muted-foreground font-mono" role="status" aria-live="polite" data-testid="fiyat-sayac">{rows.length} model</span>
         </div>
         <div className="rounded-2xl border border-card-border bg-card overflow-hidden">
           <div className="overflow-x-auto max-h-[36rem]">
