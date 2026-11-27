@@ -112,7 +112,7 @@ export default function Modeller() {
                   {sirketler.map((s) => <option key={s} value={s}>{s}</option>)}
                 </select>
               </label>
-              <span className="text-xs text-muted-foreground ml-auto">{liste.length} model</span>
+              <span className="text-xs text-muted-foreground ml-auto" role="status" aria-live="polite" data-testid="model-sayac">{liste.length} model</span>
             </div>
 
             <div className="rounded-2xl border border-card-border bg-card overflow-x-auto">
