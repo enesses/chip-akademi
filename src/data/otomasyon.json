@@ -1,5 +1,5 @@
 {
-  "guncelleme": "2026-11-28T06:55:05.044Z",
+  "guncelleme": "2026-11-28T06:57:12.547Z",
   "tarih": "2026-11-28",
   "durum": "dikkat",
   "ajanlar": [
@@ -75,7 +75,28 @@
       "alan": "veri"
     }
   ],
-  "uygulanan": [],
+  "uygulanan": [
+    {
+      "tarih": "2026-11-28",
+      "oneri": "Karşılaştırma seçicisinde aramayı Türkçe karakter duyarsız yap",
+      "durum": "birlesti",
+      "pr": 113,
+      "dal": "otomasyon/oneri-2026-11-28-1",
+      "ozet": "Compare seçici araması sadelestir() ile Türkçe harf ve aksan duyarsız oldu.",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-28",
+      "oneri": "Promptlar'da gösterilen prompt sayısını ekran okuyucuya duyur",
+      "durum": "birlesti",
+      "pr": 114,
+      "dal": "otomasyon/oneri-2026-11-28-2",
+      "ozet": "Promptlar sayfasına role=status sonuç sayacı eklendi.",
+      "neden": null,
+      "kim": "otomasyon"
+    }
+  ],
   "uygulananSon": [
     {
       "oneri": "Haberler'e kaynak türü süzgeci ekle (Bugün maddeleri / Ek haberler)",
@@ -243,6 +264,20 @@
       "durum": "birlesti",
       "pr": 112,
       "tarih": "2026-11-27",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Karşılaştırma seçicisinde aramayı Türkçe karakter duyarsız yap",
+      "durum": "birlesti",
+      "pr": 113,
+      "tarih": "2026-11-28",
+      "kim": "otomasyon"
+    },
+    {
+      "oneri": "Promptlar'da gösterilen prompt sayısını ekran okuyucuya duyur",
+      "durum": "birlesti",
+      "pr": 114,
+      "tarih": "2026-11-28",
       "kim": "otomasyon"
     }
   ],

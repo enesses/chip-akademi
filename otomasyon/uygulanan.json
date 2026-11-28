@@ -1200,6 +1200,26 @@
       "ozet": "Modeller sayfasındaki model sayacına role=status ve aria-live eklendi.",
       "neden": null,
       "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-28",
+      "oneri": "Karşılaştırma seçicisinde aramayı Türkçe karakter duyarsız yap",
+      "durum": "birlesti",
+      "pr": 113,
+      "dal": "otomasyon/oneri-2026-11-28-1",
+      "ozet": "Compare seçici araması sadelestir() ile Türkçe harf ve aksan duyarsız oldu.",
+      "neden": null,
+      "kim": "otomasyon"
+    },
+    {
+      "tarih": "2026-11-28",
+      "oneri": "Promptlar'da gösterilen prompt sayısını ekran okuyucuya duyur",
+      "durum": "birlesti",
+      "pr": 114,
+      "dal": "otomasyon/oneri-2026-11-28-2",
+      "ozet": "Promptlar sayfasına role=status sonuç sayacı eklendi.",
+      "neden": null,
+      "kim": "otomasyon"
     }
   ]
 }
