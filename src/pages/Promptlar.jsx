@@ -279,6 +279,9 @@ export default function Promptlar() {
           ))}
         </div>
         {kat !== "hepsi" && <p className="text-xs text-muted-foreground mt-2">{KATEGORILER.find((k) => k.id === kat)?.ozet}</p>}
+        <p className="text-xs text-muted-foreground mt-2 tabular-nums" role="status" aria-live="polite" data-testid="prompt-sayac">
+          {sorgu.trim() ? `${liste.length} prompt bulundu` : `${liste.length} prompt`}
+        </p>
       </section>
 
       <section className="container mx-auto px-4 pb-16">
