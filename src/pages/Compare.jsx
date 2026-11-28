@@ -10,6 +10,7 @@ import { GAP_METRICS, metricsFrom, findGaps } from "@/lib/advisor";
 import { listDesigns } from "@/lib/designs";
 import { isMultiDie, parseArea, parseTransistors, parseWatts } from "@/lib/specDecoder";
 import { categoryLabels, cn, imageUrl, manufacturerColors } from "@/lib/utils";
+import { sadelestir } from "@/lib/bolumler";
 
 const MAX_ITEMS = 7;
 /** Tasarımlar sayfasından "Karşılaştır" ile gelinirse eklenecek tasarım burada bekler. */
@@ -124,9 +125,10 @@ export default function Compare() {
   function cikar(key) { setItems((prev) => prev.filter((x) => `${x.kind}:${x.id}` !== key)); }
 
   const secili = new Set(items.map((x) => `${x.kind}:${x.id}`));
-  const q = arama.trim().toLocaleLowerCase("tr");
-  const uygunCipler = chips.filter((c) => !secili.has(`chip:${c.id}`) && (!q || c.name.toLocaleLowerCase("tr").includes(q)));
-  const uygunTasarimlar = designs.filter((d) => !secili.has(`design:${d.id}`) && (!q || d.name.toLocaleLowerCase("tr").includes(q)));
+  // Türkçe harf ve aksan duyarsız: "tasarim" → "Tasarımım", "cip" → "Çip".
+  const q = sadelestir(arama);
+  const uygunCipler = chips.filter((c) => !secili.has(`chip:${c.id}`) && (!q || sadelestir(c.name).includes(q)));
+  const uygunTasarimlar = designs.filter((d) => !secili.has(`design:${d.id}`) && (!q || sadelestir(d.name).includes(q)));
 
   const Hucre = ({ e, children, kazandi }) => (
     <td className={cn("px-4 py-2 text-sm whitespace-nowrap", kazandi && "text-primary font-semibold")}>
