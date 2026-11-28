@@ -1,0 +1,25 @@
+{
+  "ajan": "iyilestirme",
+  "tarih": "2026-11-28",
+  "zaman": "2026-11-28T06:53:54.067Z",
+  "durum": "tamam",
+  "olcumler": {
+    "veri": {
+      "chipSayisi": 67,
+      "fiyatSayisi": 119
+    },
+    "egitim": {
+      "dersSayisi": 13
+    },
+    "erisim": {
+      "altsiz": 0,
+      "etiketsizDugme": 0
+    },
+    "kod": {
+      "dosyaSayisi": 77,
+      "toplamSatir": 18688,
+      "boyutKB": null
+    }
+  },
+  "bulgular": []
+}

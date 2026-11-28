@@ -2,6 +2,263 @@
   "aciklama": "Birikimli haber akışı — otomasyon/haberler.mjs yazar.",
   "haberler": [
     {
+      "id": "2026-11-28-d-at-china-site-tied-to-spy-alice-huang-12387797",
+      "tarih": "2026-11-28",
+      "yayin": null,
+      "baslik": "Bloomberg: Alice Huang bağlantılı Şanghay veri merkezinde Nvidia Blackwell sunucuları bulundu",
+      "detay": "Çinli düzenleyicilere sunulan belgelere göre Shanghai Shuoyao bir GB300 NVL72 rafını (72 Blackwell Ultra) 96 milyon yuan (≈14 milyon $) kredi için teminat gösterdi; Shanghai Kezhan da tesiste GB200 sunucusu tuttuğunu bildirdi. Nvidia hissesi cuma günü %2,6'ya varan düşüşün ardından %1'in altında artışla 150,49 $'dan kapandı.",
+      "kaynak": "Bloomberg (NDTV)",
+      "url": "https://www.ndtv.com/world-news/nvidia-blackwell-tech-used-at-china-site-tied-to-spy-alice-huang-12387797",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-28-rver-shipments-southeast-asia-malaysia-singapore",
+      "tarih": "2026-11-28",
+      "yayin": null,
+      "baslik": "FT: Nvidia, Malezya, Singapur, Tayland ve Endonezya'ya sunucu sevkiyatını durdurdu",
+      "detay": "Dell ve Supermicro bu dört ülkedeki alıcılara siparişlerin gönderilemeyeceğini bildirdi. 19 Kasım'dan beri yürürlükteki ABD kuralı bu ülkeler ve Brezilya'ya gelişmiş AI çipleri için lisans istiyor; Nvidia 2025'te Singapur birimi üzerinden 104 milyar $ gelir kaydetmişti. Aolani'nin ByteDance için planladığı ≈500 milyon $'lık kredi de durduruldu.",
+      "kaynak": "Certified Strategic (Financial Times verisi)",
+      "url": "https://certifiedstrategic.com/insights/nvidia-halts-ai-server-shipments-southeast-asia-malaysia-singapore",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "yapay-zeka",
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-28-king-to-us-to-keep-ai-chip-access-deputy-pm-says",
+      "tarih": "2026-11-28",
+      "yayin": null,
+      "baslik": "Singapur, gelişmiş çiplere erişimi korumak için ABD ile görüşüyor",
+      "detay": "Başbakan Yardımcısı Gan Kim Yong, Washington'un Singapur'a çip ihracatını sıkılaştırmasının ardından ABD ile erişimin sürmesi için görüşme yapıldığını söyledi.",
+      "kaynak": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-27/singapore-talking-to-us-to-keep-ai-chip-access-deputy-pm-says",
+      "ton": "notr",
+      "konular": [
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-28-en-fnnews-com-news-202611272110350289",
+      "tarih": "2026-11-28",
+      "yayin": null,
+      "baslik": "SK hynix günlük geri alımı 700 bin hisseye çıkardı; hisse %5,4 yükseldi",
+      "detay": "SK hynix günlük geri alım emrini ≈350 binden ≈700 bin hisseye iki katına çıkardı; 2026 için toplam ≈100 trilyon won (en az 30 trilyon temettü, 60 trilyon geri alım/iptal) dağıtım hedefliyor. Hisse 1,11 milyon won'dan kapandı (25 Haziran zirvesinin ≈%63 altında); KOSPI %4,34 artışla 4.915,68'e çıktı.",
+      "kaynak": "Financial News (fnnews)",
+      "url": "https://en.fnnews.com/news/202611272110350289",
+      "ton": "pozitif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-28-pute-access-fund-with-700-million-expansion-html",
+      "tarih": "2026-11-28",
+      "yayin": null,
+      "baslik": "Kanada, AI Compute Access Fund'a 700 milyon C$ ekleyip fonu 1 milyar C$'a çıkardı",
+      "detay": "Kanadalı KOBİ'lerin işlem gücü maliyetleri, Kanada'ya ait (egemen) sağlayıcı kullanılırsa %80'e kadar karşılanacak (önceden üçte iki); 45 şirkete 52 milyon C$ daha verildi, toplam taahhüt 89 şirkete 118 milyon C$'ı aştı.",
+      "kaynak": "Kanada Hükümeti (ISED)",
+      "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/11/government-of-canada-boosts-the-ai-compute-access-fund-with-700-million-expansion.html",
+      "ton": "pozitif",
+      "konular": [
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-28--ai-data-centers-japan-gas-plants-anthropic-meta",
+      "tarih": "2026-11-28",
+      "yayin": null,
+      "baslik": "JERA, santral yanı veri merkezleri için beş ABD'li AI devi ile görüşüyor",
+      "detay": "JERA'nın küresel CEO'su Yukio Kani, Anthropic, Meta, Amazon, Microsoft ve Google ile Tokyo bölgesindeki LNG santrallerinde şebekeyi atlayan ('behind the meter') veri merkezleri için görüşüldüğünü doğruladı. Chiba'daki 400 MW, 15 milyar $'ı aşan proje 2028 civarı devreye girmeyi hedefliyor.",
+      "kaynak": "TFTC (Nikkei verisi)",
+      "url": "https://www.tftc.io/jera-ai-data-centers-japan-gas-plants-anthropic-meta",
+      "ton": "pozitif",
+      "konular": [
+        "yapay-zeka",
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-28--towns-halted-data-centers-on-top-of-state-pause",
+      "tarih": "2026-11-28",
+      "yayin": null,
+      "baslik": "New York'ta 97 belde veri merkezlerini geçici olarak durdurdu",
+      "detay": "USA TODAY Network incelemesine göre eyalet çapındaki 50 MW üstü izin moratoryumuna ek olarak en az 97 belediye veri merkezlerini askıya aldı, 8'i tamamen yasakladı; yalnızca Ekim'de en az 7 yeni moratoryum çıktı.",
+      "kaynak": "SupplyChainBrain (USA TODAY Network)",
+      "url": "https://www.supplychainbrain.com/technology/artificial-intelligence/article/16543008/why-97-ny-towns-halted-data-centers-on-top-of-state-pause",
+      "ton": "negatif",
+      "konular": [
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-28-vidia-b300-resale-us-remote-access-rule-shenzhen",
+      "tarih": "2026-11-28",
+      "yayin": null,
+      "baslik": "Uzaktan erişim kuralı sonrası binlerce Nvidia B300 satışa çıktı",
+      "detay": "GPU Mart başkanı Jack Duhamel'e göre Çinli kiracılara hizmet verecek veri merkezleri için alınan binlerce B300 doğrudan yeni kural yüzünden satışa sunuldu. Temsilciler Meclisi verisine göre Aralık 2025–Mayıs 2026 arasında Çinli şirketlere yaklaşık 900 bin Nvidia ve AMD AI çipi onaylanmıştı.",
+      "kaynak": "The Next Web (CNBC verisi)",
+      "url": "https://thenextweb.com/news/nvidia-b300-resale-us-remote-access-rule-shenzhen",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "yapay-zeka",
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-28-ly-plans-to-lay-off-10000-employees-amid-ai-push",
+      "tarih": "2026-11-28",
+      "yayin": null,
+      "baslik": "SAP, AI yeniden yapılanmasında en az 10 bin kişiyi çıkarmayı planlıyor",
+      "detay": "Bloomberg'e göre kesinti iş gücünün %9'undan fazlası; Almanya'da 2028'e kadar istihdam güvencesi olduğundan işten çıkarmalar ağırlıkla diğer pazarlarda, ürün, mühendislik ve satış birimlerinde olacak.",
+      "kaynak": "SiliconANGLE (Bloomberg verisi)",
+      "url": "https://siliconangle.com/2026/11/26/sap-reportedly-plans-to-lay-off-10000-employees-amid-ai-push",
+      "ton": "notr",
+      "konular": [
+        "yapay-zeka"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-28-11-26-sakana-ai-namazu-small-30b-nemotron-3-nano",
+      "tarih": "2026-11-28",
+      "yayin": null,
+      "baslik": "Sakana AI, Nemotron 3 Nano tabanlı 30B'lik Namazu Small'ı tanıttı",
+      "detay": "30 milyar toplam / 3 milyar aktif parametreli akıl yürütme modeli, Sakana'nın kendi 25 testlik ölçümünde 60,1 ortalamayla Nvidia'nın 120B'lik Nemotron 3 Super'ını (56,2) geçti; BrowseComp'ta 73,5 aldı. Ağırlıklar henüz yayımlanmadı.",
+      "kaynak": "MarkTechPost",
+      "url": "https://www.marktechpost.com/2026/11/26/sakana-ai-namazu-small-30b-nemotron-3-nano",
+      "ton": "pozitif",
+      "konular": [
+        "cip",
+        "yapay-zeka",
+        "pazar"
+      ],
+      "kaynakTuru": "bugun"
+    },
+    {
+      "id": "2026-11-28-s-nvidia-credit-rating-sp-creditwatch-governance",
+      "tarih": "2026-11-28",
+      "yayin": "2026-11-26",
+      "baslik": "S&P, Nvidia'nın AA kredi notunu yönetişim nedeniyle izlemeye aldı",
+      "detay": "S&P, Huang krizinin yönetim ve denetimde zayıflıklar ortaya koyduğunu belirterek notu 90 gün içinde bir kademe AA-'ya indirebileceğini açıkladı; Moody's de 18 Kasım'da görünümü pozitiften durağana çekmişti.",
+      "kaynak": "The Next Web",
+      "url": "https://thenextweb.com/news/nvidia-credit-rating-sp-creditwatch-governance",
+      "ton": "negatif",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-28-bc-com-2026-11-26-neoclouds-nvidia-china-ai-html",
+      "tarih": "2026-11-28",
+      "yayin": "2026-11-26",
+      "baslik": "Nvidia çip alıcılarına Çinli kiracıları dışlama şartı",
+      "detay": "CNBC'ye göre Nvidia GPU satıcıları neocloud'lara Çinli şirketlere kapasite kiralamaları halinde GPU erişimini kaybedebileceklerini bildirdi; Nvidia daha önce GPU'larının %50'den fazlasını Çinli şirketlere kiralayanlara satış yapmayacağını söylemişti.",
+      "kaynak": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html",
+      "ton": "negatif",
+      "konular": [
+        "politika",
+        "veri-merkezi"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-28-el-stake-commerce-pressure-court-documents-wired",
+      "tarih": "2026-11-28",
+      "yayin": "2026-11-26",
+      "baslik": "WIRED: Ticaret Bakanlığı Intel'e %10 hisse talebinin pazarlık olmadığını söyledi",
+      "detay": "Dava belgelerine göre hükümet Intel'in zaten kazandığı 8,9 milyar $ hibeyi serbest bırakma karşılığında şirketin yaklaşık %10'unu bedelsiz aldı; davada duruşma 10 Aralık'ta.",
+      "kaynak": "The Next Web (WIRED verisi)",
+      "url": "https://thenextweb.com/news/intel-stake-commerce-pressure-court-documents-wired",
+      "ton": "notr",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-28-ews-hp-hpe-earnings-memory-costs-hpe-shares-fall",
+      "tarih": "2026-11-28",
+      "yayin": "2026-11-25",
+      "baslik": "HPE: Bellek ve NAND arzı en az 2028'in ikinci yarısına kadar kısıtlı kalacak",
+      "detay": "HPE'nin geliri AI sunucularıyla ≈%50 artıp 14,5 milyar $'a çıktı ama Cloud ve AI biriminin faaliyet marjının %18,4'ten %14'e düşmesi bekleniyor; hisse %16 ile 2015'ten beri en sert günlük düşüşünü yaşadı.",
+      "kaynak": "The Next Web",
+      "url": "https://thenextweb.com/news/hp-hpe-earnings-memory-costs-hpe-shares-fall",
+      "ton": "negatif",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-28-ears-coreweave-bond-yield-oracle-nvidia-sell-off",
+      "tarih": "2026-11-28",
+      "yayin": "2026-11-25",
+      "baslik": "CoreWeave tahvil getirisi %17'yi aştı; AI borç kaygısı geri döndü",
+      "detay": "CoreWeave'in 2031 vadeli %9,75 kuponlu tahvilinin getirisi %17'nin üstüne çıktı, beş yıllık CDS primi 1.200 baz puanı aştı; Nvidia'nın AI projeleri için 118 milyar $'lık garantisi bulunuyor.",
+      "kaynak": "The Next Web (CNBC verisi)",
+      "url": "https://thenextweb.com/news/ai-debt-fears-coreweave-bond-yield-oracle-nvidia-sell-off",
+      "ton": "negatif",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-28-working-chip-startup-altair-nabs-100m-investment",
+      "tarih": "2026-11-28",
+      "yayin": "2026-11-26",
+      "baslik": "Kablosuz ağ çipi girişimi Altair 100 milyon $ yatırım aldı",
+      "detay": "Sony'den ayrılan Altair'in A serisi turuna Maverick Silicon liderlik etti; şirketin ALT1550 çipi alıcı-verici, baseband işlemci ve uydu bağlantı modülünü birleştiriyor.",
+      "kaynak": "SiliconANGLE",
+      "url": "https://siliconangle.com/2026/11/26/wireless-networking-chip-startup-altair-nabs-100m-investment/",
+      "ton": "pozitif",
+      "konular": [
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
+      "id": "2026-11-28-m-power-sector-news-roundup-for-november-27-2026",
+      "tarih": "2026-11-28",
+      "yayin": "2026-11-27",
+      "baslik": "Hindistan'da CEL, 1 GW yeşil veri merkezi ve çip paketleme projeleri için danışman arıyor",
+      "detay": "Central Electronics Limited, 10 noktada 100'er MW'lık Tier-III yeşil veri merkezleri ve 28–130 nm çipler için ATMP (montaj, test, paketleme) tesisleri dahil projeler için 21 Aralık'a kadar başvuru topluyor.",
+      "kaynak": "Power Peak Digest",
+      "url": "https://powerpeakdigest.com/power-sector-news-roundup-for-november-27-2026/",
+      "ton": "pozitif",
+      "konular": [
+        "veri-merkezi",
+        "cip"
+      ],
+      "kaynakTuru": "ek"
+    },
+    {
       "id": "2026-11-27-chinese-ai-model-development-sources-say-5052154",
       "tarih": "2026-11-27",
       "yayin": null,
@@ -5655,234 +5912,9 @@
         "pazar"
       ],
       "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-29-electronics-announces-third-quarter-2026-results",
-      "tarih": "2026-10-29",
-      "yayin": null,
-      "baslik": "Samsung'dan 107,4 trilyon wonluk rekor çeyreklik kâr",
-      "detay": "3. çeyrek geliri 195,3 trilyon won (çeyreklik +%14), faaliyet kârı 107,4 trilyon won. Çip bölümü (DS) 147,1 trilyon won gelir ve 106,5 trilyon won kâr yazdı; bellek gelir ve kârı rekor kırdı, HBM4 satışları belirgin arttı.",
-      "kaynak": "Samsung Newsroom",
-      "url": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results",
-      "ton": "pozitif",
-      "konular": [
-        "bellek",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-29-eported-earnings-putting-the-ai-boom-to-the-test",
-      "tarih": "2026-10-29",
-      "yayin": null,
-      "baslik": "Google Cloud %103, Azure %48 büyüdü; Alphabet 2027 yatırımını artıracak",
-      "detay": "Alphabet çeyrekte 51,4 milyar dolar yatırım yaptı (geçen yıl 24,0), 2026 rehberini 195–205 milyar dolarda korudu ve 2027'de 'belirgin artış' bekliyor; serbest nakit akışı −9,1 milyar dolar. Microsoft'ta Azure %48 büyüdü, kiralamalar dahil yatırım 45,2 milyar dolar.",
-      "kaynak": "The Motley Fool",
-      "url": "https://www.fool.com/investing/2026/10/28/microsoft-and-alphabet-just-reported-earnings-putting-the-ai-boom-to-the-test/",
-      "ton": "pozitif",
-      "konular": [
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-29-ctively-sold-out-to-2029-14-lta-customers-signed",
-      "tarih": "2026-10-29",
-      "yayin": null,
-      "baslik": "SK hynix: DRAM ve HBM 2029'a kadar satılmış, 14 uzun vadeli müşteri",
-      "detay": "Uzun vadeli anlaşma yapılan müşteri sayısı 2. çeyrekteki 10'dan 14'e çıktı; anlaşmalar 2027–2028 kapasitesinin %50'sinden fazlasını kapsıyor. DRAM ortalama fiyatı çeyreklik yüksek-%20'ler, NAND orta-%20'ler arttı.",
-      "kaynak": "TrendForce",
-      "url": "https://trendforce.com/news/2026/10/28/news-sk-hynix-3q26-opm-hits-record-80-says-dram-hbm-effectively-sold-out-to-2029-14-lta-customers-signed",
-      "ton": "pozitif",
-      "konular": [
-        "bellek",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-29--10-28-why-micron-technology-stock-rallied-today",
-      "tarih": "2026-10-29",
-      "yayin": null,
-      "baslik": "Micron, SK hynix açıklamasıyla %4,75 yükseldi",
-      "detay": "Micron 28 Ekim'de gün içinde %5,5'e kadar çıktı ve yaklaşık %4,75 yükselişle kapandı. SK hynix yönetiminin 'talep 2030'a kadar arzı aşacak' açıklaması 2028'den sonra talep düşer kaygısını hafifletti.",
-      "kaynak": "The Motley Fool",
-      "url": "https://www.fool.com/investing/2026/10/28/why-micron-technology-stock-rallied-today/",
-      "ton": "pozitif",
-      "konular": [
-        "bellek"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-29-m-en-news-nvidia-nvda-stock-news-october-29-2026",
-      "tarih": "2026-10-29",
-      "yayin": null,
-      "baslik": "Reuters: DOJ, Nvidia'nın Hugging Face satın almasını inceliyor",
-      "detay": "Habere göre ABD Adalet Bakanlığı 12,9 milyar dolarlık anlaşmanın yapay zekâ rekabetine ve model dağıtımına etkisini soruyor. Nvidia 28 Ekim'i %1,17 düşüşle 215,38 dolardan kapattı; aynı gün AMD %3,2, Micron %5,9 yükseldi.",
-      "kaynak": "Heygotrade (Reuters haberine atıfla)",
-      "url": "https://heygotrade.com/en/news/nvidia-nvda-stock-news-october-29-2026",
-      "ton": "negatif",
-      "konular": [
-        "bellek",
-        "cip",
-        "yapay-zeka",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-29-of-up-to-5-billion-to-expand-nuclear-output-html",
-      "tarih": "2026-10-29",
-      "yayin": null,
-      "baslik": "Constellation'a nükleer kapasite artırımı için 5 milyar dolarlık DOE kredisi",
-      "detay": "ABD Enerji Bakanlığı Illinois, Maryland ve Pennsylvania'daki sekiz santralde kapasite artırımı için 5 milyar dolara kadar koşullu kredi taahhüt etti. Google (890 MW) ve Amazon (190 MW) ile 20 yıllık anlaşmalar yaklaşık 1.080 MW ek kapasiteyi destekliyor.",
-      "kaynak": "Constellation Energy",
-      "url": "https://www.constellationenergy.com/news/2026/10/constellation-secures-conditional-doe-loan-commitment-of-up-to-5-billion-to-expand-nuclear-output.html",
-      "ton": "pozitif",
-      "konular": [
-        "veri-merkezi",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-29-2030-while-seagate-slips-despite-upbeat-guidance",
-      "tarih": "2026-10-29",
-      "yayin": null,
-      "baslik": "Bellek hisseleri toparlanıyor ama bir ayda %11–29 geride",
-      "detay": "28 Ekim sabahı SK hynix %7, Micron %3 yükselirken Seagate güçlü rehbere rağmen %2 düştü. Son bir ayda Seagate %29, SanDisk %24, SK hynix %19, Micron %11 geriledi; Wedbush, Seagate rehberinin marj artışının yavaşladığını ima ettiğini söyledi.",
-      "kaynak": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/10/28/sk-hynix-jumps-7-micron-rises-3-on-memory-shortage-call-through-2030-while-seagate-slips-despite-upbeat-guidance",
-      "ton": "notr",
-      "konular": [
-        "bellek",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-29--on-discounted-consumptionbased-pricing-10272026",
-      "tarih": "2026-10-29",
-      "yayin": null,
-      "baslik": "GSA, Anthropic ile Claude için %40 indirimli kamu anlaşması yaptı",
-      "detay": "ABD Genel Hizmetler İdaresi'nin genişletilmiş OneGov anlaşması federal, eyalet ve yerel kurumlara token bazlı kullanımda %40 indirim sunuyor; asgari sipariş yok. GSA, OneGov'un bugüne kadar 1,8 milyar doların üzerinde tasarruf sağladığını açıkladı.",
-      "kaynak": "GSA",
-      "url": "https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-anthropic-reach-onegov-agreement-on-discounted-consumptionbased-pricing-10272026",
-      "ton": "notr",
-      "konular": [
-        "yapay-zeka",
-        "pazar"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-29-ce-call-for-third-quarter-financial-results-html",
-      "tarih": "2026-10-29",
-      "yayin": null,
-      "baslik": "Nvidia 3. çeyrek sonuçlarını 17 Kasım'da açıklayacak",
-      "detay": "Nvidia sonuçların 17 Kasım'da yaklaşık 13:20 PT'de yayımlanacağını, konferans çağrısının 14:00 PT'de (17:00 ET) yapılacağını duyurdu.",
-      "kaynak": "GlobeNewswire (Nvidia)",
-      "url": "https://www.globenewswire.com/news-release/2026/10/28/3390809/0/en/nvidia-sets-conference-call-for-third-quarter-financial-results.html",
-      "ton": "notr",
-      "konular": [
-        "cip"
-      ],
-      "kaynakTuru": "bugun"
-    },
-    {
-      "id": "2026-10-29-acex-locks-in-40b-gpu-financing-deal-with-apollo",
-      "tarih": "2026-10-29",
-      "yayin": "2026-10-26",
-      "baslik": "SpaceX, Apollo ile 40 milyar dolarlık GPU finansmanı bağladı",
-      "detay": "Apollo'ya bağlı bir kuruluş Nvidia Vera Rubin çiplerini ve veri merkezi ekipmanını satın alıp SpaceX'e 5–5,25 yıllığına kiralayacak; kiralamalar 2027'nin ilk yarısında başlıyor. SpaceX 4. çeyrekte 35–40 milyar dolar yatırım planlıyor.",
-      "kaynak": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
-      "ton": "pozitif",
-      "konular": [
-        "cip",
-        "veri-merkezi",
-        "pazar"
-      ],
-      "kaynakTuru": "ek"
-    },
-    {
-      "id": "2026-10-29--profit-record-ai-storage-demand-2027-tradingkey",
-      "tarih": "2026-10-29",
-      "yayin": "2026-10-29",
-      "baslik": "Samsung'un 2026 yatırımı 84,4 trilyon won, 76,8 trilyonu çipe",
-      "detay": "Samsung 2026 toplam sermaye harcamasını yaklaşık 84,4 trilyon won, çip bölümünün payını 76,8 trilyon won olarak verdi; dökümhanede 4. çeyrekte iki haneli büyüme ve Taylor (Teksas) fabrikasının devreye girmesini bekliyor.",
-      "kaynak": "TradingKey",
-      "url": "https://www.tradingkey.com/analysis/stocks/more/262250486-samsung-q3-operating-profit-record-ai-storage-demand-2027-tradingkey",
-      "ton": "pozitif",
-      "konular": [
-        "bellek",
-        "cip"
-      ],
-      "kaynakTuru": "ek"
-    },
-    {
-      "id": "2026-10-29-brid-bonding-demand-pending-u-s-antitrust-review",
-      "tarih": "2026-10-29",
-      "yayin": "2026-10-27",
-      "baslik": "Applied Materials, BESI'deki payını %20'ye çıkarıyor",
-      "detay": "Applied Materials hibrit bonding ortağı BESI'deki payını yaklaşık %9'dan %20'ye çıkaracak; işlem ABD antitröst incelemesine bağlı. BESI'nin 3. çeyrek siparişleri yıllık %96 artışla 342,6 milyon euro oldu; şirket hibrit bonding ekipman pazarının yaklaşık %70'ine sahip.",
-      "kaynak": "TrendForce",
-      "url": "https://www.trendforce.com/news/2026/10/27/news-applied-materials-to-double-besi-stake-to-20-on-hybrid-bonding-demand-pending-u-s-antitrust-review/",
-      "ton": "pozitif",
-      "konular": [
-        "cip",
-        "bellek",
-        "pazar"
-      ],
-      "kaynakTuru": "ek"
-    },
-    {
-      "id": "2026-10-29-ft-offers-voluntary-exit-packages-to-60000-staff",
-      "tarih": "2026-10-29",
-      "yayin": "2026-10-26",
-      "baslik": "Microsoft 60 bin çalışana gönüllü ayrılma teklif etti",
-      "detay": "Teklif iş gücünün yaklaşık dörtte birini kapsıyor; bazı veri merkezi ekipleri hariç. Habere göre Microsoft'un 2026 altyapı harcaması planı önceki 190 milyar dolarlık tahminden 175 milyar dolara indi.",
-      "kaynak": "BNN Bloomberg",
-      "url": "https://www.bnnbloomberg.ca/business/company-news/2026/10/26/microsoft-offers-voluntary-exit-packages-to-60000-staff/",
-      "ton": "notr",
-      "konular": [
-        "yapay-zeka",
-        "veri-merkezi",
-        "pazar"
-      ],
-      "kaynakTuru": "ek"
-    },
-    {
-      "id": "2026-10-29-officechai-com-ai-google-genie-4",
-      "tarih": "2026-10-29",
-      "yayin": "2026-10-27",
-      "baslik": "Google DeepMind, gerçek zamanlı dünya modeli Genie 4'ü tanıttı",
-      "detay": "Genie 4 görüntüyle eş zamanlı ses üretiyor, simülasyon sürerken doğal dille sahne değiştirmeye izin veriyor ve Gemini 3.8 Flash ile hedefleri adımlara bölüyor. Şimdilik araştırma önizlemesi; sırada Google AI Ultra aboneleri var.",
-      "kaynak": "OfficeChai",
-      "url": "https://officechai.com/ai/google-genie-4/",
-      "ton": "notr",
-      "konular": [
-        "yapay-zeka"
-      ],
-      "kaynakTuru": "ek"
-    },
-    {
-      "id": "2026-10-29-t-happened-in-ai-today-wednesday-october-28-2026",
-      "tarih": "2026-10-29",
-      "yayin": "2026-10-28",
-      "baslik": "OpenAI, GPT-6.1 Terra'nın API fiyatını yarıya indirdi",
-      "detay": "The Neuron'un 28 Ekim özetine göre yeni modelin standart API fiyatı öncekinin yarısı; aynı gün OpenAI ile Oracle, Oracle uygulamalarını ChatGPT'ye getirdiklerini duyurdu.",
-      "kaynak": "The Neuron",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-october-28-2026/",
-      "ton": "notr",
-      "konular": [
-        "yapay-zeka"
-      ],
-      "kaynakTuru": "ek"
     }
   ],
-  "guncelleme": "2026-11-27",
+  "guncelleme": "2026-11-28",
   "konular": {
     "yapay-zeka": "Yapay zekâ",
     "cip": "Çip ve üretim",

@@ -1,0 +1,88 @@
+{
+  "tarih": "2026-11-28",
+  "haberler": [
+    {
+      "baslik": "S&P, Nvidia'nın AA kredi notunu yönetişim nedeniyle izlemeye aldı",
+      "detay": "S&P, Huang krizinin yönetim ve denetimde zayıflıklar ortaya koyduğunu belirterek notu 90 gün içinde bir kademe AA-'ya indirebileceğini açıkladı; Moody's de 18 Kasım'da görünümü pozitiften durağana çekmişti.",
+      "kaynak": "The Next Web",
+      "url": "https://thenextweb.com/news/nvidia-credit-rating-sp-creditwatch-governance",
+      "yayin": "2026-11-26",
+      "konular": [
+        "cip",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Nvidia çip alıcılarına Çinli kiracıları dışlama şartı",
+      "detay": "CNBC'ye göre Nvidia GPU satıcıları neocloud'lara Çinli şirketlere kapasite kiralamaları halinde GPU erişimini kaybedebileceklerini bildirdi; Nvidia daha önce GPU'larının %50'den fazlasını Çinli şirketlere kiralayanlara satış yapmayacağını söylemişti.",
+      "kaynak": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html",
+      "yayin": "2026-11-26",
+      "konular": [
+        "politika",
+        "veri-merkezi"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "WIRED: Ticaret Bakanlığı Intel'e %10 hisse talebinin pazarlık olmadığını söyledi",
+      "detay": "Dava belgelerine göre hükümet Intel'in zaten kazandığı 8,9 milyar $ hibeyi serbest bırakma karşılığında şirketin yaklaşık %10'unu bedelsiz aldı; davada duruşma 10 Aralık'ta.",
+      "kaynak": "The Next Web (WIRED verisi)",
+      "url": "https://thenextweb.com/news/intel-stake-commerce-pressure-court-documents-wired",
+      "yayin": "2026-11-26",
+      "konular": [
+        "politika",
+        "cip"
+      ],
+      "kategori": "notr"
+    },
+    {
+      "baslik": "HPE: Bellek ve NAND arzı en az 2028'in ikinci yarısına kadar kısıtlı kalacak",
+      "detay": "HPE'nin geliri AI sunucularıyla ≈%50 artıp 14,5 milyar $'a çıktı ama Cloud ve AI biriminin faaliyet marjının %18,4'ten %14'e düşmesi bekleniyor; hisse %16 ile 2015'ten beri en sert günlük düşüşünü yaşadı.",
+      "kaynak": "The Next Web",
+      "url": "https://thenextweb.com/news/hp-hpe-earnings-memory-costs-hpe-shares-fall",
+      "yayin": "2026-11-25",
+      "konular": [
+        "bellek",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "CoreWeave tahvil getirisi %17'yi aştı; AI borç kaygısı geri döndü",
+      "detay": "CoreWeave'in 2031 vadeli %9,75 kuponlu tahvilinin getirisi %17'nin üstüne çıktı, beş yıllık CDS primi 1.200 baz puanı aştı; Nvidia'nın AI projeleri için 118 milyar $'lık garantisi bulunuyor.",
+      "kaynak": "The Next Web (CNBC verisi)",
+      "url": "https://thenextweb.com/news/ai-debt-fears-coreweave-bond-yield-oracle-nvidia-sell-off",
+      "yayin": "2026-11-25",
+      "konular": [
+        "veri-merkezi",
+        "pazar"
+      ],
+      "kategori": "negatif"
+    },
+    {
+      "baslik": "Kablosuz ağ çipi girişimi Altair 100 milyon $ yatırım aldı",
+      "detay": "Sony'den ayrılan Altair'in A serisi turuna Maverick Silicon liderlik etti; şirketin ALT1550 çipi alıcı-verici, baseband işlemci ve uydu bağlantı modülünü birleştiriyor.",
+      "kaynak": "SiliconANGLE",
+      "url": "https://siliconangle.com/2026/11/26/wireless-networking-chip-startup-altair-nabs-100m-investment/",
+      "yayin": "2026-11-26",
+      "konular": [
+        "cip"
+      ],
+      "kategori": "pozitif"
+    },
+    {
+      "baslik": "Hindistan'da CEL, 1 GW yeşil veri merkezi ve çip paketleme projeleri için danışman arıyor",
+      "detay": "Central Electronics Limited, 10 noktada 100'er MW'lık Tier-III yeşil veri merkezleri ve 28–130 nm çipler için ATMP (montaj, test, paketleme) tesisleri dahil projeler için 21 Aralık'a kadar başvuru topluyor.",
+      "kaynak": "Power Peak Digest",
+      "url": "https://powerpeakdigest.com/power-sector-news-roundup-for-november-27-2026/",
+      "yayin": "2026-11-27",
+      "konular": [
+        "veri-merkezi",
+        "cip"
+      ],
+      "kategori": "pozitif"
+    }
+  ]
+}

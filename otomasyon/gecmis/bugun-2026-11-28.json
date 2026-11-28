@@ -1,0 +1,134 @@
+{
+  "tarih": "2026-11-28",
+  "derlenme": "28 Kasım 2026",
+  "puan": {
+    "etiket": "Kısıtlar sertleşiyor, bellek direniyor",
+    "yorum": "Blackwell sunucularının Şanghay'da ortaya çıkması ve Nvidia'nın Güneydoğu Asya sevkiyatlarını durdurması ihracat kontrollerini günün merkezine taşıdı; binlerce B300'ün satışa çıkması da kuralın piyasaya yansıdığını gösteriyor. Buna karşın SK hynix'in hızlandırdığı geri alım KOSPI'yi %4 yukarı taşıdı, Kanada ve JERA'dan gelen haberler AI altyapı talebinin sürdüğünü gösteriyor.",
+    "deger": 40
+  },
+  "ozet": [
+    "Günün ana teması ABD ihracat kontrollerinin sahadaki etkisi. Bloomberg, Alice Huang ile bağlantılı Şanghay'daki Yangtze River Delta Project'te bir GB300 NVL72 rafının ve GB200 sunucularının kredi teminatı olarak kayıtlara girdiğini ortaya koydu; bu, Blackwell çiplerinin lisanssız biçimde Çin'e ulaştığına dair ilk belgeli kanıt. Nvidia hissesi cuma günü ilk tepkide %2,6'ya kadar düştü ama günü hafif artıda kapattı.",
+    "Aynı kuralın ikinci yüzü Güneydoğu Asya'da. Financial Times'a göre Nvidia, Dell ve Supermicro gibi ortaklarına Malezya, Singapur, Tayland ve Endonezya'ya sunucu göndermemelerini söyledi; Singapur hükümeti erişimi korumak için Washington'la görüştüğünü açıkladı. Çinli kiracılara hizmet için alınan binlerce B300'ün ikinci el piyasaya düşmesi, kiralama fiyatlarında oynaklığın sürebileceğine işaret ediyor.",
+    "Bellek tarafında tablo daha olumlu: SK hynix günlük geri alımını iki katına çıkardı ve 2026 için yaklaşık 100 trilyon wonluk dağıtım hedefini yineledi; hisse %5,4, KOSPI %4,3 yükseldi. Altyapı cephesinde Kanada işlem gücü fonunu 1 milyar C$'a çıkarırken JERA beş büyük ABD'li AI şirketiyle santral yanı veri merkezleri için görüşüyor.",
+    "Öte yandan New York'ta 97 beldenin veri merkezlerini durdurması, enerji tüketimine yerel tepkinin büyüdüğünü hatırlatıyor. Model tarafında Sakana AI'ın küçük ama güçlü Namazu Small'ı ve SAP'ın AI odaklı 10 bin kişilik küçülme planı, yapay zekânın hem verimlilik hem iş gücü etkisini gösteriyor."
+  ],
+  "maddeler": [
+    {
+      "baslik": "Bloomberg: Alice Huang bağlantılı Şanghay veri merkezinde Nvidia Blackwell sunucuları bulundu",
+      "detay": "Çinli düzenleyicilere sunulan belgelere göre Shanghai Shuoyao bir GB300 NVL72 rafını (72 Blackwell Ultra) 96 milyon yuan (≈14 milyon $) kredi için teminat gösterdi; Shanghai Kezhan da tesiste GB200 sunucusu tuttuğunu bildirdi. Nvidia hissesi cuma günü %2,6'ya varan düşüşün ardından %1'in altında artışla 150,49 $'dan kapandı.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "İhracat kontrollerinin delindiğine dair ilk belgeli kanıt; Nvidia üzerindeki yönetişim ve düzenleme baskısını artırıyor.",
+      "kaynak": "Bloomberg (NDTV)",
+      "url": "https://www.ndtv.com/world-news/nvidia-blackwell-tech-used-at-china-site-tied-to-spy-alice-huang-12387797"
+    },
+    {
+      "baslik": "FT: Nvidia, Malezya, Singapur, Tayland ve Endonezya'ya sunucu sevkiyatını durdurdu",
+      "detay": "Dell ve Supermicro bu dört ülkedeki alıcılara siparişlerin gönderilemeyeceğini bildirdi. 19 Kasım'dan beri yürürlükteki ABD kuralı bu ülkeler ve Brezilya'ya gelişmiş AI çipleri için lisans istiyor; Nvidia 2025'te Singapur birimi üzerinden 104 milyar $ gelir kaydetmişti. Aolani'nin ByteDance için planladığı ≈500 milyon $'lık kredi de durduruldu.",
+      "kategori": "negatif",
+      "agirlik": 3,
+      "neden": "Güneydoğu Asya'nın ana veri merkezi pazarlarında yatırım ve sevkiyatları belirsizliğe sokuyor.",
+      "kaynak": "Certified Strategic (Financial Times verisi)",
+      "url": "https://certifiedstrategic.com/insights/nvidia-halts-ai-server-shipments-southeast-asia-malaysia-singapore"
+    },
+    {
+      "baslik": "Singapur, gelişmiş çiplere erişimi korumak için ABD ile görüşüyor",
+      "detay": "Başbakan Yardımcısı Gan Kim Yong, Washington'un Singapur'a çip ihracatını sıkılaştırmasının ardından ABD ile erişimin sürmesi için görüşme yapıldığını söyledi.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "Kısıtların gevşetilmesi ihtimali açık ama sonuç belirsiz.",
+      "kaynak": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-27/singapore-talking-to-us-to-keep-ai-chip-access-deputy-pm-says"
+    },
+    {
+      "baslik": "SK hynix günlük geri alımı 700 bin hisseye çıkardı; hisse %5,4 yükseldi",
+      "detay": "SK hynix günlük geri alım emrini ≈350 binden ≈700 bin hisseye iki katına çıkardı; 2026 için toplam ≈100 trilyon won (en az 30 trilyon temettü, 60 trilyon geri alım/iptal) dağıtım hedefliyor. Hisse 1,11 milyon won'dan kapandı (25 Haziran zirvesinin ≈%63 altında); KOSPI %4,34 artışla 4.915,68'e çıktı.",
+      "kategori": "pozitif",
+      "agirlik": 2,
+      "neden": "Bellek hisselerindeki sert düşüşe karşı güçlü bilanço desteği ve yatırımcı güveni.",
+      "kaynak": "Financial News (fnnews)",
+      "url": "https://en.fnnews.com/news/202611272110350289"
+    },
+    {
+      "baslik": "Kanada, AI Compute Access Fund'a 700 milyon C$ ekleyip fonu 1 milyar C$'a çıkardı",
+      "detay": "Kanadalı KOBİ'lerin işlem gücü maliyetleri, Kanada'ya ait (egemen) sağlayıcı kullanılırsa %80'e kadar karşılanacak (önceden üçte iki); 45 şirkete 52 milyon C$ daha verildi, toplam taahhüt 89 şirkete 118 milyon C$'ı aştı.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Kamu desteğiyle AI işlem gücü talebi ve yerel bulut yatırımı artıyor.",
+      "kaynak": "Kanada Hükümeti (ISED)",
+      "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/11/government-of-canada-boosts-the-ai-compute-access-fund-with-700-million-expansion.html"
+    },
+    {
+      "baslik": "JERA, santral yanı veri merkezleri için beş ABD'li AI devi ile görüşüyor",
+      "detay": "JERA'nın küresel CEO'su Yukio Kani, Anthropic, Meta, Amazon, Microsoft ve Google ile Tokyo bölgesindeki LNG santrallerinde şebekeyi atlayan ('behind the meter') veri merkezleri için görüşüldüğünü doğruladı. Chiba'daki 400 MW, 15 milyar $'ı aşan proje 2028 civarı devreye girmeyi hedefliyor.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Güç darboğazına somut çözüm; AI altyapı talebinin sürdüğünü gösteriyor.",
+      "kaynak": "TFTC (Nikkei verisi)",
+      "url": "https://www.tftc.io/jera-ai-data-centers-japan-gas-plants-anthropic-meta"
+    },
+    {
+      "baslik": "New York'ta 97 belde veri merkezlerini geçici olarak durdurdu",
+      "detay": "USA TODAY Network incelemesine göre eyalet çapındaki 50 MW üstü izin moratoryumuna ek olarak en az 97 belediye veri merkezlerini askıya aldı, 8'i tamamen yasakladı; yalnızca Ekim'de en az 7 yeni moratoryum çıktı.",
+      "kategori": "negatif",
+      "agirlik": 1,
+      "neden": "Elektrik tüketimine yerel tepki ABD'de yeni kapasitenin önünü kesiyor.",
+      "kaynak": "SupplyChainBrain (USA TODAY Network)",
+      "url": "https://www.supplychainbrain.com/technology/artificial-intelligence/article/16543008/why-97-ny-towns-halted-data-centers-on-top-of-state-pause"
+    },
+    {
+      "baslik": "Uzaktan erişim kuralı sonrası binlerce Nvidia B300 satışa çıktı",
+      "detay": "GPU Mart başkanı Jack Duhamel'e göre Çinli kiracılara hizmet verecek veri merkezleri için alınan binlerce B300 doğrudan yeni kural yüzünden satışa sunuldu. Temsilciler Meclisi verisine göre Aralık 2025–Mayıs 2026 arasında Çinli şirketlere yaklaşık 900 bin Nvidia ve AMD AI çipi onaylanmıştı.",
+      "kategori": "negatif",
+      "agirlik": 1,
+      "neden": "İkinci el arz fazlası, kiralama fiyatları ve Asya'daki neocloud'lar üzerinde baskı yaratıyor.",
+      "kaynak": "The Next Web (CNBC verisi)",
+      "url": "https://thenextweb.com/news/nvidia-b300-resale-us-remote-access-rule-shenzhen"
+    },
+    {
+      "baslik": "SAP, AI yeniden yapılanmasında en az 10 bin kişiyi çıkarmayı planlıyor",
+      "detay": "Bloomberg'e göre kesinti iş gücünün %9'undan fazlası; Almanya'da 2028'e kadar istihdam güvencesi olduğundan işten çıkarmalar ağırlıkla diğer pazarlarda, ürün, mühendislik ve satış birimlerinde olacak.",
+      "kategori": "notr",
+      "agirlik": 1,
+      "neden": "AI'nın verimlilik etkisini gösteriyor; çip talebine doğrudan etkisi sınırlı.",
+      "kaynak": "SiliconANGLE (Bloomberg verisi)",
+      "url": "https://siliconangle.com/2026/11/26/sap-reportedly-plans-to-lay-off-10000-employees-amid-ai-push"
+    },
+    {
+      "baslik": "Sakana AI, Nemotron 3 Nano tabanlı 30B'lik Namazu Small'ı tanıttı",
+      "detay": "30 milyar toplam / 3 milyar aktif parametreli akıl yürütme modeli, Sakana'nın kendi 25 testlik ölçümünde 60,1 ortalamayla Nvidia'nın 120B'lik Nemotron 3 Super'ını (56,2) geçti; BrowseComp'ta 73,5 aldı. Ağırlıklar henüz yayımlanmadı.",
+      "kategori": "pozitif",
+      "agirlik": 1,
+      "neden": "Küçük, verimli modeller yerel donanımda çalıştırmayı kolaylaştırıyor.",
+      "kaynak": "MarkTechPost",
+      "url": "https://www.marktechpost.com/2026/11/26/sakana-ai-namazu-small-30b-nemotron-3-nano"
+    }
+  ],
+  "yaklasan": [
+    {
+      "tarih": "2026-12-10",
+      "baslik": "Intel hisse anlaşması davasında duruşma",
+      "kaynak": "The Next Web (WIRED verisi)",
+      "url": "https://thenextweb.com/news/intel-stake-commerce-pressure-court-documents-wired"
+    },
+    {
+      "tarih": "2026-12-17",
+      "baslik": "Kanada AI Compute Access Fund sağlık çağrısı: ilgi beyanı son günü",
+      "kaynak": "HRD / ISED",
+      "url": "https://www.hcamag.com/ca/specialization/transformation/ai-compute-access-fund-hits-1-billion-as-ottawa-backs-45-more-firms/599119"
+    },
+    {
+      "tarih": "2027-02-17",
+      "baslik": "Çinli müşterilere hizmet veren veri merkezleri için ABD lisans son tarihi",
+      "kaynak": "Certified Strategic",
+      "url": "https://certifiedstrategic.com/insights/nvidia-halts-ai-server-shipments-southeast-asia-malaysia-singapore"
+    }
+  ],
+  "yontem": {
+    "aciklama": "Puan bir duygu analizi motorundan gelmiyor. Günün öne çıkan gelişmelerini elle üç kategoriye ayırdım ve her birine önem ağırlığı verdim.",
+    "formul": "Puan = 50 + 50 × (Σ ağırlık×işaret ÷ Σ ağırlık)",
+    "isaretler": "pozitif = +1 · nötr = 0 · negatif = −1",
+    "uyari": "Sınıflandırma benim yargım — başka biri aynı haberleri farklı etiketleyip farklı bir puan bulabilir. Sayıyı bir ölçüm değil, gerekçesi açıkta duran bir görüş olarak oku.",
+    "hesap": "Σ ağırlık×işaret = -3 · Σ ağırlık = 15 · Puan = 50 + 50 × -0.20 = 40"
+  }
+}

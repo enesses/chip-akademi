@@ -1,0 +1,35 @@
+{
+  "tarih": "2026-11-28",
+  "oneriler": [
+    {
+      "baslik": "Karşılaştırma seçicisinde aramayı Türkçe karakter duyarsız yap",
+      "neden": "src/pages/Compare.jsx:127-129 aramada yalnızca toLocaleLowerCase('tr') kullanıyor; Sözlük (src/data/glossary.js → sadelestir) ve Haberler aksan/Türkçe harf duyarsız arıyor. 'tasarim' yazan kullanıcı 'Tasarımım' adlı tasarımı bulamıyor.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Promptlar'da gösterilen prompt sayısını ekran okuyucuya duyur",
+      "neden": "src/pages/Promptlar.jsx arama/kategori değişince sonuç sayısını bildiren role=status öğesi yok; Fiyatlar (Prices.jsx:233), Modeller (Modeller.jsx:115) ve Sözlük (Glossary.jsx:29) bunu yapıyor.",
+      "etki": "düşük",
+      "alan": "erişilebilirlik"
+    },
+    {
+      "baslik": "Karşılaştırma seçicisinde bulunan sonuç sayısını duyur ve boş sonucu belirt",
+      "neden": "src/pages/Compare.jsx seçici listesinde (data-testid='secici') eşleşme yoksa hiçbir metin görünmüyor; kullanıcı boş bir kutu görüyor.",
+      "etki": "düşük",
+      "alan": "arayüz"
+    },
+    {
+      "baslik": "Az sağlayıcılı modellerde büyük fiyat sıçramasına 'az veri' notu ekle",
+      "neden": "Bugünkü fiyat okumasında Nvidia GH200 %32 (7 sağlayıcı), RTX 4000 Ada %42 (9 sağlayıcı) oynadı; betiğin şüpheli eşiği yalnızca ≥10 sağlayıcıyı kapsıyor, bu hareketler kullanıcıya gerçek trend gibi görünüyor.",
+      "etki": "orta",
+      "alan": "veri"
+    },
+    {
+      "baslik": "Bellek sözleşme fiyatlarını yenile",
+      "neden": "src/data/bellek_fiyat.json'daki 7 göstergeden 6'sı Eylül 2026 veya öncesine ait (en yenisi 2026-11-18); pazartesi TrendForce taramasında güncellenmeli.",
+      "etki": "orta",
+      "alan": "veri"
+    }
+  ]
+}
